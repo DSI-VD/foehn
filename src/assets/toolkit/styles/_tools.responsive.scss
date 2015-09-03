@@ -1,0 +1,107 @@
+///*------------------------------------*\
+//    #TOOLS-RESPONSIVE
+//\*------------------------------------*/
+
+// Here we set a variable assuming that responsive settings are not set
+// globally. If they have been previously been defined, the following variable
+// will be overriden and will be set to `true`.
+$responsive-settings: false !default;
+
+@if (responsive-settings == false) {
+    @warn "Oops! Have you included a responsive settings file?"
+}
+
+
+
+
+
+// A simple mixin to quickly generate whole media queries from the aliases and
+// conditions defined in `_settings.responsive.scss`.
+//
+// Usage:
+//
+// .foo {
+//     color: green;
+//
+//     @include media-query(palm) {
+//         color: red;
+//     }
+//
+// }
+
+@mixin media-query($mq) {
+
+    $breakpoint-found: false;
+
+    // Loop through the list of breakpoints we’ve provided in our settings file.
+    @each $breakpoint in $breakpoints {
+
+        // Grab the alias and the condition from their respective locations in
+        // the list.
+        $alias:     nth($breakpoint, 1);
+        $condition: nth($breakpoint, 2);
+
+        // If the media query we’ve specified has an alias and a condition...
+        @if $mq == $alias and $condition {
+
+            // ...tell the mixin that we’ve found it...
+            $breakpoint-found: true;
+
+            // ...and spit it out here.
+            @media #{$condition} {
+                @content;
+            }
+
+        }
+
+    }
+
+    // If the user specifies a non-exitent alias, send them a warning.
+    @if $breakpoint-found == false{
+        @warn "Oops! Breakpoint ‘#{$mq}’ does not exist."
+    }
+
+}
+
+
+
+
+
+// Internally used mixin to quickly generate our different variants based upon
+// the breakpoints defined in `settings.responsive`.
+//
+//     @include generate-responsive-item() {
+//       .foo--#{$generate-responsive-item-alias} {
+//         ...
+//       }
+//     }
+//     // result
+//     // .foo--palm {...}
+//     // .foo--lap {...}
+//     // .foo--lap-and-up {...}
+//     // .foo--portable {...}
+//     // .foo--desk {...}
+//     // .foo--retina {...}
+
+@mixin generate-responsive-item() {
+  // Loop through our previously-defined breakpoints.
+  @each $breakpoint in $breakpoints {
+
+      $generate-responsive-item-alias:      nth($breakpoint, 1) !global;
+      $generate-responsive-item-condition:  nth($breakpoint, 2);
+
+      // This isn’t ideal, but we definitely don’t want to generate widths
+      // for retina devices. Exclude retina media-qeuries manually.
+      @if ($generate-responsive-item-alias != "retina") {
+
+          @include media-query($generate-responsive-item-alias) {
+              @content;
+          } // Close media query.
+
+      } // Close retina check.
+
+      // Take the global variable back out of scope.
+      $generate-responsive-item-alias: null !global;
+
+  } // Close breakpoints loop.
+}
