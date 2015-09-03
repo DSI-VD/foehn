@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+
+
+
+
+// Variables
+// 'Cabin Sketch' is loaded via a `<link>` in the header.
+$base-font-family:    "sketchnote-text", cursive;
+$base-font-weight:    400;
+
+$heading-font-family: "sketchnote-square", $base-font-family;
+$heading-font-weight: 700;
+
+
+
+
+
+/**
+ * Base text fontface
+ */
+html {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+}
+
+
+
+
+
+/**
+ * Headins fontface
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+}
