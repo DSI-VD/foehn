@@ -1,3 +1,15 @@
+---
+notes: |
+  Depending the width you want on wich viewport add the following class:
+  `.layout__item--{viewport}--{size}`.
+  
+  Here are the availables viewports:
+  - **palm** `< 44.9375em`
+  - `45em >` **lap** `< 64em`
+  - `45em >` **lap-and-up**
+  - **portable** `< 64em`
+  - `64em >` **desk**
+---
 <div class="layout layout--flex">
 	<div class="layout__item layout__item--full layout__item--lap-and-up--1    layout__item--desk--1"><div class="demo-block">1st item</div></div>
 	<div class="layout__item layout__item--full layout__item--lap-and-up--3    layout__item--desk--3"><div class="demo-block">2nd item</div></div>
