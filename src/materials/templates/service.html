@@ -11,15 +11,13 @@
 <a href="#">Organigramme (PDF)</a>
 
 <h2>Prestations</h2>
-{{#iterate 2}}
-	<div class="layout layout--flex">
-	{{#iterate 4}}
-		<div class="layout__item layout__item--lap-and-up--1">
-			{{> boxes.box}}
-		</div>
-	{{/iterate}}
+<div class="layout">
+	{{#iterate 7}}
+	<div class="layout__item layout__item--thumbnails--1 layout__item--lap-and-up--thumbnails--2 layout__item--desk--thumbnails--4">
+		{{> boxes.box}}
 	</div>
-{{/iterate}}
+	{{/iterate}}
+</div>
 
 <h2>Bases léglales</h2>
 

@@ -11,6 +11,7 @@ $layout-fixed-grid-enable: false !default;
 $layout-enable-order:      false !default;
 $layout-enable-reverse:    false !default;
 $layout-enable-offset:     false !default;
+$layout-enable-thumbnails: true  !default;
 
 
 
@@ -267,5 +268,70 @@ $layout-enable-offset:     false !default;
       }
     }
   }
+
+}
+
+
+
+
+
+//------------------------------------
+// Thumbnails
+//------------------------------------
+
+/**
+ * Ideal to display a media galery or cards.
+ *
+ *     <div clas="layout">
+ *         <div class="layout__item layout__item--thumbnails--2">...</div>
+ *         ...
+ *     </div>
+ */
+
+// Number of columns available
+$layout-thumbnails-number: 4;
+
+@if $layout-enable-thumbnails == true {
+
+    $i: 1;
+    @while $i <= $layout-thumbnails-number {
+
+        /**
+        * #{$i} item per row
+        */
+        .layout__item--thumbnails--#{$i} {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 100%/$i;
+        }
+
+        $i: $i + 1;
+
+    }
+
+    // responsive thumnails
+    // check if inuit-responsive-settings is include
+    @if $responsive-settings == true {
+
+        @include generate-responsive-item() {
+
+          $i: 1;
+          @while $i <= $layout-thumbnails-number {
+
+            /**
+            * #{$i} item per row for #{$generate-responsive-item-alias} viewport
+            */
+            .layout__item--#{$generate-responsive-item-alias}--thumbnails--#{$i} {
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%/$i;
+            }
+
+            $i: $i + 1;
+          }
+
+        }
+
+    }
 
 }
