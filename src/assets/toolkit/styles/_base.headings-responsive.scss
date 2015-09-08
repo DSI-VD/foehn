@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    #HEADINGS-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Headings 1–6.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+
+$heading-size-1--palm:  36px !default;
+$heading-size-2--palm:  30px !default;
+$heading-size-3--palm:  24px !default;
+$heading-size-4--palm:  20px !default;
+$heading-size-5--palm:  16px !default;
+$heading-size-6--palm:  14px !default;
+
+$heading-size-1--lap:   36px !default;
+$heading-size-2--lap:   30px !default;
+$heading-size-3--lap:   24px !default;
+$heading-size-4--lap:   20px !default;
+$heading-size-5--lap:   16px !default;
+$heading-size-6--lap:   14px !default;
+
+$heading-size-1--desk:  36px !default;
+$heading-size-2--desk:  30px !default;
+$heading-size-3--desk:  24px !default;
+$heading-size-4--desk:  20px !default;
+$heading-size-5--desk:  16px !default;
+$heading-size-6--desk:  14px !default;
+
+h1 {
+    @include media-query(palm) { @include font-size($heading-size-1--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-1--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-1--desk); }
+}
+
+h2 {
+    @include media-query(palm) { @include font-size($heading-size-2--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-2--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-2--desk); }
+}
+
+h3 {
+    @include media-query(palm) { @include font-size($heading-size-3--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-3--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-3--desk); }
+}
+
+h4 {
+    @include media-query(palm) { @include font-size($heading-size-4--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-4--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-4--desk); }
+}
+
+h5 {
+    @include media-query(palm) { @include font-size($heading-size-5--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-5--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-5--desk); }
+}
+
+h6 {
+    @include media-query(palm) { @include font-size($heading-size-6--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-6--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-6--desk); }
+}
