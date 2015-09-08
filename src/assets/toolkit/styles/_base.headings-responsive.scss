@@ -3,7 +3,10 @@
 \*------------------------------------*/
 
 /**
- * Headings 1–6.
+ * Reponsive Headings 1–6.
+ *
+ * If media queries arn't supported, fallback `font-size` and `line-height` is
+ * defined by the default headings settings
  */
 
 // Predefine the variables below in order to alter and enable specific features.
@@ -15,12 +18,12 @@ $heading-size-4--palm:  20px !default;
 $heading-size-5--palm:  16px !default;
 $heading-size-6--palm:  14px !default;
 
-$heading-size-1--lap:   36px !default;
-$heading-size-2--lap:   30px !default;
-$heading-size-3--lap:   24px !default;
-$heading-size-4--lap:   20px !default;
-$heading-size-5--lap:   16px !default;
-$heading-size-6--lap:   14px !default;
+$heading-size-1--lap:   $heading-size-1 !default;
+$heading-size-2--lap:   $heading-size-2 !default;
+$heading-size-3--lap:   $heading-size-3 !default;
+$heading-size-4--lap:   $heading-size-4 !default;
+$heading-size-5--lap:   $heading-size-5 !default;
+$heading-size-6--lap:   $heading-size-6 !default;
 
 $heading-size-1--desk:  36px !default;
 $heading-size-2--desk:  30px !default;
