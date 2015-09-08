@@ -7,7 +7,7 @@
   "scripts": {
     "gulp": "gulp",
     "prestart": "npm install",
-    "build": "npm install && gulp",
+    "build": "npm install && gulp && gulp deploy",
     "start": "gulp --dev",
     "test": "npm run build"
   },
