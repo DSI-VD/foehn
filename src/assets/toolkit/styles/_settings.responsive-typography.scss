@@ -1,0 +1,20 @@
+///*------------------------------------*\
+//    #SETTINGS-RESPONSIVE
+//\*------------------------------------*/
+
+// Comment here
+
+$base-font-size--palm:          16px !default;
+$base-line-height--palm:        24px !default;
+$base-font-size--lap:           16px !default;
+$base-line-height--lap:         24px !default;
+$base-font-size--desk:          16px !default;
+$base-line-height--desk:        24px !default;
+
+
+
+
+
+// If we have included this file, set a variable to tell the rest of the
+// framework that we have some responsive settings.
+$responsive-typography-settings: true;
