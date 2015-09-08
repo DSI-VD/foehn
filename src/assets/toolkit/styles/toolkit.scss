@@ -1,5 +1,6 @@
 @import "settings.defaults";
 @import "settings.responsive";
+@import "settings.responsive-typography";
 
 @import "tools.functions";
 @import "tools.mixins";
@@ -10,6 +11,7 @@
 @import "generic.shared";
 
 @import "base.page";
+@import "base.page-responsive";
 @import "base.fontface";
 @import "base.headings-responsive";
 @import "base.lists";

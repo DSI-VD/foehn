@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #PAGE-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * High-, page-level styling.
+ */
+
+@if $responsive-typography-settings == true {
+
+    html {
+        @include media-query(palm) {
+            font-size: ($base-font-size--palm / 16px) * 1em; /* [1] */
+            line-height: ($base-line-height--palm / $base-font-size--palm); /* [1] */}
+        @include media-query(lap) {
+            font-size: ($base-font-size--lap / 16px) * 1em; /* [1] */
+            line-height: $base-line-height--lap / $base-font-size--lap; /* [1] */
+        }
+        @include media-query(desk) {
+            font-size: ($base-font-size--desk / 16px) * 1em; /* [1] */
+            line-height: $base-line-height--desk / $base-font-size--desk; /* [1] */
+        }
+    }
+
+}
