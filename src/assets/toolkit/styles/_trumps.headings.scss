@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Headings 1–6’s corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ *
+ * Use these helper classes to cause other elements to adopt the styling of the
+ * respective heading, e.g.:
+ *
+   <h2 class="alpha">Lorem ipsum</h2>
+ *
+ */
+
+.alpha,
+%alpha {
+    @include font-size($heading-size-1);
+}
+
+.beta,
+%beta {
+    @include font-size($heading-size-2);
+}
+
+.gamma,
+%gamma {
+    @include font-size($heading-size-3);
+}
+
+.delta,
+%delta {
+    @include font-size($heading-size-4);
+}
+
+.epsilon,
+%epsilon {
+    @include font-size($heading-size-5);
+}
+
+.zeta,
+%zeta {
+    @include font-size($heading-size-6);
+}
