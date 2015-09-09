@@ -42,3 +42,25 @@
 %zeta {
     @include font-size($heading-size-6);
 }
+
+// check if fontface has been set
+@if $fontface-settings == true {
+    /**
+     * Headings helpers fontface
+     */
+    .alpha,
+    %alpha,
+    .beta,
+    %beta,
+    .gamma,
+    %gamma,
+    .delta,
+    %delta,
+    .epsilon,
+    %epsilon,
+    .zeta,
+    %zeta {
+        font-family: $heading-font-family;
+        font-weight: $heading-font-weight;
+    }
+}
