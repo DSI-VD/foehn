@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Make the headings helpers responsive.
+ *
+ * Default style for these helpers works as a fallback if browser doesn't
+ * support media queries.
+ */
+
+.alpha,
+%alpha {
+    @include media-query(palm) { @include font-size($heading-size-1--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-1--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-1--desk); }
+}
+
+.beta,
+%beta {
+    @include media-query(palm) { @include font-size($heading-size-2--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-2--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-2--desk); }
+}
+
+.gamma,
+%gamma {
+    @include media-query(palm) { @include font-size($heading-size-3--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-3--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-3--desk); }
+}
+
+.delta,
+%delta {
+    @include media-query(palm) { @include font-size($heading-size-4--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-4--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-4--desk); }
+}
+
+.epsilon,
+%epsilon {
+    @include media-query(palm) { @include font-size($heading-size-5--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-5--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-5--desk); }
+}
+
+.zeta,
+%zeta {
+    @include media-query(palm) { @include font-size($heading-size-6--palm); }
+    @include media-query(lap)  { @include font-size($heading-size-6--lap);  }
+    @include media-query(desk) { @include font-size($heading-size-6--desk); }
+}
