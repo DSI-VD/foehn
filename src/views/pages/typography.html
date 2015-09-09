@@ -1,0 +1,32 @@
+<p><a class="btn bookmarklet-link" href="javascript:(function(){function%20loadScript(a,b){var%20c=document.createElement('script');c.type='text/javascript';c.src=a;var%20d=document.getElementsByTagName('head')[0],done=false;c.onload=c.onreadystatechange=function(){if(!done&&(!this.readyState||this.readyState=='loaded'||this.readyState=='complete')){done=true;b()}};d.appendChild(c)}loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js',function(){
+
+var redOutline={outline:'2px solid red'},text;var textyElements='p, li, dt, dd, h1, h2, h3, h4, h5, h6';$(textyElements).on('mouseover.red',function(){$(this).css(redOutline)}).on('mouseleave.red',function(){$(this).removeAttr('style')}).on('click.red',function(){text=$(this).text();var e=text.substring(0,45);var t=text.substring(45,75);var n=text.substring(75,text.length);var r=e+'<span style=\'color: red;\'>'+t+'</span>'+n;$(this).html(r);$(textyElements).off('mouseover.red mouseleave.red click.red');$(this).removeAttr('style');})
+
+ })})()">45-75</a>
+
+&larr; Click that. Then hover over a text element and click that.
+</p>
+
+{{> headings.heading-level-1}}
+
+{{> paragraph}}
+
+{{> headings.heading-level-2}}
+
+{{> paragraph}}
+
+{{> text.blockquote-with-citation}}
+
+{{> paragraph}}
+
+{{> headings.heading-level-2}}
+
+{{> paragraph}}
+
+{{> headings.heading-level-3}}
+
+{{> paragraph}}
+
+{{> lists.unorderd}}
+
+{{> paragraph}}
