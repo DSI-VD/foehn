@@ -25,12 +25,12 @@ $heading-size-4--lap:   $heading-size-4 !default;
 $heading-size-5--lap:   $heading-size-5 !default;
 $heading-size-6--lap:   $heading-size-6 !default;
 
-$heading-size-1--desk:  36px !default;
-$heading-size-2--desk:  30px !default;
-$heading-size-3--desk:  24px !default;
-$heading-size-4--desk:  20px !default;
-$heading-size-5--desk:  16px !default;
-$heading-size-6--desk:  14px !default;
+$heading-size-1--desk:  54px !default;
+$heading-size-2--desk:  45px !default;
+$heading-size-3--desk:  36px !default;
+$heading-size-4--desk:  30px !default;
+$heading-size-5--desk:  24px !default;
+$heading-size-6--desk:  21px !default;
 
 h1 {
     @include media-query(palm) { @include font-size($heading-size-1--palm); }

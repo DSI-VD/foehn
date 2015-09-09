@@ -7,12 +7,12 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$heading-size-1:  36px !default;
-$heading-size-2:  30px !default;
-$heading-size-3:  24px !default;
-$heading-size-4:  20px !default;
-$heading-size-5:  16px !default;
-$heading-size-6:  14px !default;
+$heading-size-1:  45px !default;
+$heading-size-2:  37px !default;
+$heading-size-3:  30px !default;
+$heading-size-4:  25px !default;
+$heading-size-5:  20px !default;
+$heading-size-6:  17px !default;
 
 h1 {
     @include font-size($heading-size-1);
