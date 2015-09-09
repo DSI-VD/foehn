@@ -73,13 +73,6 @@ $i: 1;
         $i: $i + 1;
       }
 
-      /**
-       * Flexible item with a size of 100% (full width) for #{$generate-responsive-item-alias} viewport
-       */
-      .layout--fixed .layout__item--#{$generate-responsive-item-alias}--full {
-        flex: 0 1 100%;
-      }
-
     }
 
 }
