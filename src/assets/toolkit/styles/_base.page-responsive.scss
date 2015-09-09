@@ -3,23 +3,28 @@
 \*------------------------------------*/
 
 /**
- * High-, page-level styling.
+ * Set the base reposnsive typography
  */
 
-@if $responsive-typography-settings == true {
+$base-font-size--palm:          16px !default;
+$base-line-height--palm:        24px !default;
 
-    html {
-        @include media-query(palm) {
-            font-size: ($base-font-size--palm / 16px) * 1em; /* [1] */
-            line-height: ($base-line-height--palm / $base-font-size--palm); /* [1] */}
-        @include media-query(lap) {
-            font-size: ($base-font-size--lap / 16px) * 1em; /* [1] */
-            line-height: $base-line-height--lap / $base-font-size--lap; /* [1] */
-        }
-        @include media-query(desk) {
-            font-size: ($base-font-size--desk / 16px) * 1em; /* [1] */
-            line-height: $base-line-height--desk / $base-font-size--desk; /* [1] */
-        }
+$base-font-size--lap:           16px !default;
+$base-line-height--lap:         24px !default;
+
+$base-font-size--desk:          16px !default;
+$base-line-height--desk:        24px !default;
+
+html {
+    @include media-query(palm) {
+        font-size: ($base-font-size--palm / 16px) * 1em; /* [1] */
+        line-height: ($base-line-height--palm / $base-font-size--palm); /* [1] */}
+    @include media-query(lap) {
+        font-size: ($base-font-size--lap / 16px) * 1em; /* [1] */
+        line-height: $base-line-height--lap / $base-font-size--lap; /* [1] */
     }
-
+    @include media-query(desk) {
+        font-size: ($base-font-size--desk / 16px) * 1em; /* [1] */
+        line-height: $base-line-height--desk / $base-font-size--desk; /* [1] */
+    }
 }
