@@ -11,15 +11,21 @@
 <a href="#">Organigramme (PDF)</a>
 
 <h2>Prestations</h2>
-<div class="layout">
+<div class="expo expo--1 expo--lap-and-up--2 expo--desk--4">
 	{{#iterate 7}}
-	<div class="layout__item layout__item--thumbnails--1 layout__item--lap-and-up--thumbnails--2 layout__item--desk--thumbnails--4">
-		{{> boxes.box}}
+	<div class="expo__item">
+		<div class="box box--default">
+			<h3>Prestation {{@index}}</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vitae nemo porro quidem incidunt recusandae!</p>
+		</div>
 	</div>
 	{{/iterate}}
+	<div class="expo__item">
+		{{> inline-text.link}}
+	</div>
 </div>
 
-<h2>Bases léglales</h2>
+<h2>Bases légales</h2>
 
 {{> lists.unorderd}}
 
