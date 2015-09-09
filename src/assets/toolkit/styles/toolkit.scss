@@ -1,4 +1,5 @@
 @import "settings.defaults";
+@import "settings.fontface";
 @import "settings.responsive";
 
 @import "tools.functions";
@@ -11,7 +12,6 @@
 
 @import "base.page";
 @import "base.page-responsive";
-@import "base.fontface";
 @import "base.headings";
 @import "base.headings-responsive";
 @import "base.lists";
@@ -27,3 +27,5 @@
 @import "components.box";
 
 @import "trumps.clearfix";
+@import "trumps.headings";
+@import "trumps.headings-responsive";

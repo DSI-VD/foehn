@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #HEADINGS
+    #FONTFACE
 \*------------------------------------*/
 
 
@@ -18,27 +18,6 @@ $heading-font-weight: 700;
 
 
 
-/**
- * Base text fontface
- */
-html {
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-}
-
-
-
-
-
-/**
- * Headins fontface
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-font-family;
-  font-weight: $heading-font-weight;
-}
+// If we have included this file, set a variable to tell the rest of the
+// framework that we have some responsive settings.
+$fontface-settings: true;
