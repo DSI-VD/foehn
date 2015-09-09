@@ -7,13 +7,13 @@
  */
 
 $base-font-size--palm:          16px !default;
-$base-line-height--palm:        24px !default;
+$base-line-height--palm:        26px !default;
 
-$base-font-size--lap:           16px !default;
-$base-line-height--lap:         24px !default;
+$base-font-size--lap:           20px !default;
+$base-line-height--lap:         30px !default;
 
-$base-font-size--desk:          16px !default;
-$base-line-height--desk:        24px !default;
+$base-font-size--desk:          24px !default;
+$base-line-height--desk:        36px !default;
 
 html {
     @include media-query(palm) {
