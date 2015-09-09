@@ -37,3 +37,23 @@ h5 {
 h6 {
     @include font-size($heading-size-6);
 }
+
+
+
+
+
+// check if fontface has been set
+@if $fontface-settings == true {
+    /**
+     * Headings fontface
+     */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $heading-font-family;
+        font-weight: $heading-font-weight;
+    }
+}
