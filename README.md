@@ -1,8 +1,12 @@
-# vd.ch UI
+# Foehn
 
-In this repo, we are testing [fabricator](http://fbrctr.github.io/) to build vd.ch's new UI.
+Foehn (*føn*) is the design system build for [the website of the State of Vaud](http://www.vd.ch/).
 
-[](http://vdch.github.io/regenair-fabricator/)
+[Take a look at the documentation](http://vdch.github.io/regenair-fabricator/).
+
+## Build tools
+
+[Fabricator](http://fbrctr.github.io/) is used to build foehn.
 
 ## Quick Start
 
