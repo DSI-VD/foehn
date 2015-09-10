@@ -3,12 +3,12 @@
 \*------------------------------------*/
 
 a {
-	color: $base-text-color;
+    color: $base-text-color;
 
-	&:hover {
-		color: $base-primary-color;
-		@include transition(color);
-	}
+    &:hover {
+        color: $base-primary-color;
+        @include transition(color);
+    }
 }
 
 
@@ -23,6 +23,6 @@ a {
  * Link without visual modification.
  */
 .silent-link {
-	text-decoration: none;
-	@include transition(color);
+    text-decoration: none;
+    @include transition(color);
 }
