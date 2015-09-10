@@ -72,3 +72,14 @@
     }
 
 }
+
+
+
+
+
+// A simple mixin for transition
+// A mixin is used so that all transitions are consistent across the code.
+
+@mixin transition($property) {
+       transition: $property .1s ease;
+}
