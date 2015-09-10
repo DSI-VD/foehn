@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #LINK
+\*------------------------------------*/
+
+a {
+	color: $base-text-color;
+
+	&:hover {
+		color: $base-primary-color;
+		@include transition(color);
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+    #SILENT-LINK
+\*------------------------------------*/
+
+/**
+ * Link without visual modification.
+ */
+.silent-link {
+	text-decoration: none;
+	@include transition(color);
+}
