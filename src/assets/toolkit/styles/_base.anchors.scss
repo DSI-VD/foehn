@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #LINK
+\*------------------------------------*/
+
+a {
+	color: $base-text-color;
+
+	&:hover {
+		color: $base-primary-color;
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+    #SILENT-LINK
+\*------------------------------------*/
+
+/**
+ * Link without visual modification.
+ */
+.silent-link {
+	text-decoration: none;
+}
