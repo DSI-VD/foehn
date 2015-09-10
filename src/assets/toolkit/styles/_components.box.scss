@@ -6,7 +6,7 @@
  * Default box UI.
  */
 .box--default {
-	outline: 1px solid $base-text-color;
-	margin-bottom: $base-spacing-unit;
+    outline: 1px solid $base-text-color;
+    margin-bottom: $base-spacing-unit;
     margin-bottom: ($base-spacing-unit / $base-font-size) * 1rem;
 }
