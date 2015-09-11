@@ -1,3 +1,47 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Defaults.............Globally-available variables and config.
+ * Fontface.............Set the font to use.
+ * Responsive...........Breakpoint.
+ *
+ * TOOLS
+ * Functions............Useful functions.
+ * Mixins...............Useful mixins.
+ * responsive...........Useful responsive mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ * Shared...............Vertical rhythm.
+ *
+ * BASE
+ * Page.................Fonts, colors and all stuff for `<html>.
+ * Page responsive......Responsive typography for body text.
+ * Headings.............H1–H6 styles.
+ * Headings responsive..Responsive typography for headings.
+ * Lists................UL, OL & DL styles.
+ * Anchors..............Links styles.
+ * Images...............Images styles.
+ * Figures..............Figures styles.
+ *
+ * OBJECTS
+ * Buttons..............Buttons.
+ * Layouts..............Grid system.
+ * Expos................Thumbnails system.
+ * Boxes................Boxes.
+ * Tables...............Tables.
+ *
+ * COMPONENTS
+ * Boxes................Boxes styles.
+ *
+ * TRUMPS
+ * Clearfix.............Text helpers.
+ * Headings.............Headings styles for texts.
+ * Headings responsive..Responsive headings styles for texts.
+ */
+
 @import "settings.defaults";
 @import "settings.fontface";
 @import "settings.responsive";
