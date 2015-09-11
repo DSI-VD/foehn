@@ -81,5 +81,5 @@
 // A mixin is used so that all transitions are consistent across the code.
 
 @mixin transition($property) {
-       transition: $property .1s ease;
+    transition: $property .1s ease;
 }
