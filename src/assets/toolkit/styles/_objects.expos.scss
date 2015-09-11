@@ -32,45 +32,45 @@ $expo-columns-number:    6 !default;
 
 
 
-/**
- * Expo item
- *
- * 1. The items doesn't grow. His size is the value of `flex-basis`.
- */
-.expo__item {
-  padding-right: $expo-gutter;
-  padding-left: $expo-gutter;
-  flex-grow: 0; /* [1] */
-  flex-shrink: 1;
-}
-
-$i: 1;
-@while $i <= $layout-columns-number {
-    .expo--#{$i} .expo__item {
-        flex-basis: 100%/$i; /* [1] */
+    /**
+     * Expo item
+     *
+     * 1. The items doesn't grow. His size is the value of `flex-basis`.
+     */
+    .expo__item {
+      padding-right: $expo-gutter;
+      padding-left: $expo-gutter;
+      flex-grow: 0; /* [1] */
+      flex-shrink: 1;
     }
-    $i: $i + 1;
-}
 
-
-
-
-
-@if $responsive-settings == true {
-
-    @include generate-responsive-item() {
-
-      $i: 1;
-      @while $i <= $expo-columns-number {
-        /**
-         * Fixed item with a size of #{$i} for #{$generate-responsive-item-alias} viewport
-         */
-        .expo--#{$generate-responsive-item-alias}--#{$i} .expo__item {
-          flex-basis: 100%/$i;
+    $i: 1;
+    @while $i <= $layout-columns-number {
+        .expo--#{$i} .expo__item {
+            flex-basis: 100%/$i; /* [1] */
         }
         $i: $i + 1;
-      }
-
     }
 
-}
+
+
+
+
+    @if $responsive-settings == true {
+
+        @include generate-responsive-item() {
+
+          $i: 1;
+          @while $i <= $expo-columns-number {
+            /**
+             * Fixed item with a size of #{$i} for #{$generate-responsive-item-alias} viewport
+             */
+            .expo--#{$generate-responsive-item-alias}--#{$i} .expo__item {
+              flex-basis: 100%/$i;
+            }
+            $i: $i + 1;
+          }
+
+        }
+
+    }
