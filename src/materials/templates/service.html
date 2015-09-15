@@ -1,15 +1,16 @@
-<h1>Service name</h1>
+<h1 class="container">Service name</h1>
 
 {{> last-news}}
 
-<h2>Présentation / Missions</h2>
+<div class="container">
+	<h2>Présentation / Missions</h2>
 
-{{> paragraph}}
+	{{> paragraph}}
+	{{> lists.unorderd}}
+	<p><a href="#">Organigramme (PDF)</a></p>
+</div>
 
-{{> lists.unorderd}}
-
-<a href="#">Organigramme (PDF)</a>
-
+<div class="container">
 <h2>Prestations</h2>
 <div class="expo expo--1 expo--lap-and-up--2 expo--desk--4">
 	{{#iterate 7}}
@@ -24,11 +25,16 @@
 		{{> inline-text.link}}
 	</div>
 </div>
+</div>
 
-<h2>Bases légales</h2>
+<div class="container">
+	<h2>Bases légales</h2>
 
-{{> lists.unorderd}}
+	{{> lists.unorderd}}
+</div>
 
-<h2>Contact</h2>
+<div class="container">
+	<h2>Contact</h2>
 
-{{> text.address}}
+	{{> text.address}}
+</div>
