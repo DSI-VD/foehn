@@ -50,7 +50,7 @@
 @import "tools.mixins";
 @import "tools.responsive";
 
-//@import "../../bower_components/normalize.css/normalize.scss";
+@import "../../../../build/normalize.scss";
 @import "generic.box-sizing";
 @import "generic.shared";
 
