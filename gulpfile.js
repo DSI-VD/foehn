@@ -13,6 +13,7 @@ var prefix = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
+var cssScss = require('gulp-css-scss');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack');
@@ -62,7 +63,13 @@ gulp.task('styles:fabricator', function () {
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('styles:toolkit', function () {
+gulp.task('css-scss', function() {
+  return gulp.src('node_modules/normalize.css/normalize.css')
+    .pipe(cssScss())
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('styles:toolkit', ['css-scss'], function () {
 	gulp.src(config.src.styles.toolkit)
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
