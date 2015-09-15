@@ -222,8 +222,6 @@ $layout-enable-thumbnails: true  !default;
     * Reverse item direction
     */
     .layout--reverse {
-        -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     }
 }
