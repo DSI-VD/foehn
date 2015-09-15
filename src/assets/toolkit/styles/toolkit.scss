@@ -27,6 +27,7 @@
  * Figures..............Figures styles.
  *
  * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
  * Buttons..............Buttons.
  * Layouts..............Grid system.
  * Expos................Thumbnails system.
@@ -63,6 +64,7 @@
 @import "base.images";
 @import "base.figures";
 
+@import "objects.wrappers";
 @import "objects.buttons";
 @import "objects.layouts";
 @import "objects.expos";
