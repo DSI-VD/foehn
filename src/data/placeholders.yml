@@ -1,0 +1,20 @@
+images:
+  landscape-4x3:
+    src: "http://placehold.it/800x600"
+    alt: "4x3 landscape image"
+  landscape-16x9:
+    src: "http://placehold.it/3200x1800"
+    alt: "16x9 landscape image"
+  portrait-4x3:
+    src: "http://placehold.it/600x800"
+    alt: "4x3 portrait image"
+  portrait-16x9:
+    src: "http://placehold.it/1800x3200"
+    alt: "16x9 portrait image"
+headline:
+  short: "Lorem ipsum dolor sit (37 characters)"
+  medium: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+bodytext:
+  short: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem veniam delectus, ducimus laudantium adipisci est. (128 characters)"
+  medium: "A paragraph (from the Greek paragraphos, \"to write beside\" or \"written beside\") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)"
+  long: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus, nam tempora, deserunt qui adipisci laboriosam temporibus, labore quibusdam minima voluptate nobis voluptatibus totam. Minima molestiae, deleniti eveniet ullam iure culpa non aperiam voluptas animi asperiores. Assumenda mollitia eos nesciunt at nostrum totam ipsa ex quibusdam nulla voluptas cum voluptates illo eum nam, adipisci consectetur iste, deserunt cumque fuga. Cumque, sed. Sit quos aspernatur quasi voluptas, est quia modi, sapiente, eius quis quae magni consequuntur quaerat voluptates hic corporis, suscipit vero? Atque minima, consequatur obcaecati. Nisi officia dolorum ipsam dignissimos corporis, quo aut doloremque, nemo sed maiores accusantium, facilis debitis. (766 characters)"
