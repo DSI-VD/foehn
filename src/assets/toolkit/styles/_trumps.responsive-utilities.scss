@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #RESPONSIVE-UTILITIES
+\*------------------------------------*/
+
+/**
+ * Hide content depending of the viewport
+ */
+@include generate-responsive-item() {
+
+    .hidden--#{$generate-responsive-item-alias} {
+        display: none !important;
+    }
+
+}
