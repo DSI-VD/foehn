@@ -41,6 +41,7 @@
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
  * Headings responsive..Responsive headings styles for texts.
+ * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  */
 
@@ -78,4 +79,5 @@
 @import "trumps.clearfix";
 @import "trumps.headings";
 @import "trumps.headings-responsive";
+@import "trumps.utilities";
 @import "trumps.responsive-utilities";
