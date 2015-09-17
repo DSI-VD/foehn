@@ -4,11 +4,17 @@
 
 /**
  * Hide content depending of the viewport
+ *
+ * 1. Screen readers sometimes ignore display:none1. This means the content
+ *    will be read despite being “hidden”. To hide content completely from
+ *    screen readers use the following
+ *    http://a11yproject.com/posts/how-to-hide-content/
  */
 @include generate-responsive-item() {
 
     .hidden--#{$generate-responsive-item-alias} {
         display: none !important;
+        visibility: hidden !important; /* 1 */
     }
 
 }
