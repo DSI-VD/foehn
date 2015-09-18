@@ -15,3 +15,5 @@ $ git clone https://github.com/vdch/foehn.git
 $ cd regenair-fabricator
 $ npm start
 ```
+
+![](https://travis-ci.org/vdch/foehn.svg)
