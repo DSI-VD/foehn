@@ -33,6 +33,7 @@ var config = {
             toolkit: 'src/assets/toolkit/styles/toolkit.scss'
         },
         images: 'src/assets/toolkit/images/**/*',
+        fonts: 'src/assets/toolkit/fonts/**/*',
         views: 'src/toolkit/views/*.html'
     },
     dest: 'dist'
@@ -113,6 +114,13 @@ gulp.task('favicon', function () {
 });
 
 
+// fonts
+gulp.task('fonts', function () {
+    return gulp.src(config.src.fonts)
+        .pipe(gulp.dest(config.dest + '/assets/toolkit/fonts'));
+});
+
+
 // assemble
 gulp.task('assemble', function (done) {
     assemble({
@@ -184,6 +192,7 @@ gulp.task('default', ['clean'], function () {
         'styles',
         'scripts',
         'images',
+        'fonts',
         'assemble'
     ];
 
