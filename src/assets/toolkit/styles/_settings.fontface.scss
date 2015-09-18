@@ -8,11 +8,45 @@
 
 // Variables
 // 'Cabin Sketch' is loaded via a `<link>` in the header.
-$base-font-family:    "sketchnote-text", cursive;
+$base-font-family:    'sketchnote-text', 'cabinsketchregular', cursive;
 $base-font-weight:    400;
 
-$heading-font-family: "sketchnote-square", $base-font-family;
+$heading-font-family: 'sketchnote-square', 'cabinsketchbold', $base-font-family;
 $heading-font-weight: 700;
+
+
+
+
+
+@font-face {
+    font-family: 'cabinsketchbold';
+    src: url('../fonts/cabinsketch-bold-webfont.eot');
+    src: url('../fonts/cabinsketch-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabinsketch-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cabinsketch-bold-webfont.woff') format('woff'),
+         url('../fonts/cabinsketch-bold-webfont.ttf') format('truetype'),
+         url('../fonts/cabinsketch-bold-webfont.svg#cabinsketchbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'cabinsketchregular';
+    src: url('../fonts/cabinsketch-regular-webfont.eot');
+    src: url('../fonts/cabinsketch-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabinsketch-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cabinsketch-regular-webfont.woff') format('woff'),
+         url('../fonts/cabinsketch-regular-webfont.ttf') format('truetype'),
+         url('../fonts/cabinsketch-regular-webfont.svg#cabinsketchregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 
