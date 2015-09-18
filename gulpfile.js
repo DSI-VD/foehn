@@ -175,6 +175,9 @@ gulp.task('serve', function () {
     gulp.task('images:watch', ['images'], reload);
     gulp.watch(config.src.images, ['images:watch']);
 
+    gulp.task('fonts:watch', ['fonts'], reload);
+    gulp.watch(config.src.fonts, ['fonts:watch']);
+
 });
 
 
