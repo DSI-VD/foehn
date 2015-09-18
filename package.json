@@ -7,9 +7,10 @@
   "scripts": {
     "gulp": "gulp",
     "prestart": "npm install",
-    "build": "npm install && gulp && gulp deploy",
+    "build": "npm install && gulp",
     "start": "gulp --dev",
-    "test": "npm run build"
+    "test": "npm run build",
+    "deploy": "npm install && gulp && gulp deploy"
   },
   "keywords": [
     "toolkit",
