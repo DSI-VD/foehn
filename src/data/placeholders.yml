@@ -2,8 +2,8 @@ images:
   landscape-4x3:
     src:
       1x: "http://placehold.it/800x600?text=800x600+(1x)"
-      2x: "http://placehold.it/800x600?text=1600x1200+(2x)"
-      3x: "http://placehold.it/800x600?text=2400x1800+(3x)"
+      2x: "http://placehold.it/1600x1200?text=1600x1200+(2x)"
+      3x: "http://placehold.it/2400x1800?text=2400x1800+(3x)"
     alt: "4x3 landscape image"
   landscape-16x9:
     src: "http://placehold.it/3200x1800"
