@@ -1,15 +1,27 @@
 images:
   landscape-4x3:
-    src: "http://placehold.it/800x600"
+    src:
+      1x: "http://placehold.it/800x600?text=800x600+(1x)"
+      2x: "http://placehold.it/1600x1200?text=1600x1200+(2x)"
+      3x: "http://placehold.it/2400x1800?text=2400x1800+(3x)"
     alt: "4x3 landscape image"
   landscape-16x9:
-    src: "http://placehold.it/3200x1800"
+    src:
+      1x: "http://placehold.it/3200x1800?text=3200x1800+(1x)"
+      2x: "http://placehold.it/6400x3600?text=6400x3600+(2x)"
+      3x: "http://placehold.it/9600x5400?text=9600x5400+(3x)"
     alt: "16x9 landscape image"
   portrait-4x3:
-    src: "http://placehold.it/600x800"
+    src:
+      1x: "http://placehold.it/600x800?text=600x800+(1x)"
+      2x: "http://placehold.it/1200x1600?text=1200x1600+(2x)"
+      3x: "http://placehold.it/1800x2400?text=1800x2400+(3x)"
     alt: "4x3 portrait image"
   portrait-16x9:
-    src: "http://placehold.it/1800x3200"
+    src:
+      1x: "http://placehold.it/1800x3200?text=1800x3200+(1x)"
+      2x: "http://placehold.it/3600x6400?text=3600x6400+(2x)"
+      3x: "http://placehold.it/5400x9600?text=5400x9600+(3x)"
     alt: "16x9 portrait image"
 headline:
   short: "Lorem ipsum dolor sit (37 characters)"
