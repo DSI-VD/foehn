@@ -12,7 +12,7 @@ Fœhn (*føn*) is the design system build for [the website of the State of Vaud]
 
 ```shell
 $ git clone https://github.com/vdch/foehn.git
-$ cd regenair-fabricator
+$ cd foehn
 $ npm start
 ```
 
