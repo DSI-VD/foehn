@@ -79,8 +79,10 @@ gulp.task('styles:toolkit', ['css-scss'], function () {
         autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
+        .pipe(sourcemaps.init())
         .pipe( postcss(processors) )
         .pipe(gulpif(!config.dev, cssnano()))
+        .pipe(sourcemaps.write())
         .pipe( gulp.dest(config.dest + '/assets/toolkit/styles') )
         .pipe(gulpif(config.dev, reload({stream:true})));
 
