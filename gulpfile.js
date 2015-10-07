@@ -19,6 +19,10 @@ var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
 
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
+
 
 // configuration
 var config = {
@@ -30,7 +34,7 @@ var config = {
         },
         styles: {
             fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-            toolkit: 'src/assets/toolkit/styles/toolkit.scss'
+            toolkit: 'src/assets/toolkit/styles/toolkit.css'
         },
         images: 'src/assets/toolkit/images/**/*',
         fonts: 'src/assets/toolkit/fonts/**/*',
@@ -71,14 +75,23 @@ gulp.task('css-scss', function() {
 });
 
 gulp.task('styles:toolkit', ['css-scss'], function () {
-    gulp.src(config.src.styles.toolkit)
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(prefix('last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR'))
-        .pipe(gulpif(!config.dev, csso()))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
+    var processors = [
+        autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
+    ]
+    return gulp.src(config.src.styles.toolkit)
+        .pipe( postcss(processors) )
+        .pipe(gulpif(!config.dev, cssnano()))
+        .pipe( gulp.dest(config.dest + '/assets/toolkit/styles') )
         .pipe(gulpif(config.dev, reload({stream:true})));
+
+    // gulp.src(config.src.styles.toolkit)
+    //     .pipe(sourcemaps.init())
+    //     .pipe(sass().on('error', sass.logError))
+    //     .pipe(prefix('last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR'))
+    //     .pipe(gulpif(!config.dev, csso()))
+    //     .pipe(sourcemaps.write())
+    //     .pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
+    //     .pipe(gulpif(config.dev, reload({stream:true})));
 });
 
 gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
