@@ -3,7 +3,7 @@
 // modules
 var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
-var csso = require('gulp-csso');
+var nano = require('gulp-cssnano');
 var del = require('del');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
@@ -20,8 +20,6 @@ var ghPages = require('gulp-gh-pages');
 
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-var nano = require('gulp-cssnano');
-
 
 // configuration
 var config = {
@@ -56,15 +54,18 @@ gulp.task('clean', function (cb) {
 
 // styles
 gulp.task('styles:fabricator', function () {
+    var processors = [
+        autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
+    ]
     gulp.src(config.src.styles.fabricator)
         // Start sourcemaps
         .pipe(sourcemaps.init())
         // Build CSS files
         .pipe(sass().on('error', sass.logError))
-        // Autoprefix the styles
-        .pipe(prefix('last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR'))
+        // We always want PostCSS to run
+        .pipe( postcss(processors) )
         // If we are in dev, do not minify
-        .pipe(gulpif(!config.dev, csso()))
+        .pipe( gulpif(!config.dev, nano()) )
         // Rename the CSS file
         .pipe(rename('f.css'))
         // Write the sourcemaps
