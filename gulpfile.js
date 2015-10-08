@@ -91,15 +91,6 @@ gulp.task('styles:toolkit', ['css-scss'], function () {
         .pipe( gulp.dest(config.dest + '/assets/toolkit/styles') )
         // If we are in dev, reload the browser
         .pipe( gulpif(config.dev, reload({stream:true})) );
-
-    // gulp.src(config.src.styles.toolkit)
-    //     .pipe(sourcemaps.init())
-    //     .pipe(sass().on('error', sass.logError))
-    //     .pipe(prefix('last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR'))
-    //     .pipe(gulpif(!config.dev, csso()))
-    //     .pipe(sourcemaps.write())
-    //     .pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
-    //     .pipe(gulpif(config.dev, reload({stream:true})));
 });
 
 gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
