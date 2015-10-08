@@ -12,7 +12,6 @@ var imagemin = require('gulp-imagemin');
 var rename = require('gulp-rename');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
-var cssScss = require('gulp-css-scss');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
@@ -76,13 +75,7 @@ gulp.task('styles:fabricator', function () {
         .pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('css-scss', function() {
-  return gulp.src('node_modules/normalize.css/normalize.css')
-    .pipe(cssScss())
-    .pipe(gulp.dest('build'));
-});
-
-gulp.task('styles:toolkit', ['css-scss'], function () {
+gulp.task('styles:toolkit', function () {
     var processors = [
         atImport,
         autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
