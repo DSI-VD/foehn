@@ -57,13 +57,21 @@ gulp.task('clean', function (cb) {
 // styles
 gulp.task('styles:fabricator', function () {
     gulp.src(config.src.styles.fabricator)
+        // Start sourcemaps
         .pipe(sourcemaps.init())
+        // Build CSS files
         .pipe(sass().on('error', sass.logError))
+        // Autoprefix the styles
         .pipe(prefix('last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR'))
+        // If we are in dev, do not minify
         .pipe(gulpif(!config.dev, csso()))
+        // Rename the CSS file
         .pipe(rename('f.css'))
+        // Write the sourcemaps
         .pipe(sourcemaps.write())
+        // Set the destination of the CSS files
         .pipe(gulp.dest(config.dest + '/assets/fabricator/styles'))
+        // If we are in dev, reload the browser
         .pipe(gulpif(config.dev, reload({stream:true})));
 });
 
