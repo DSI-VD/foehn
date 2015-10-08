@@ -38,7 +38,6 @@
     "del": "^1.1.1",
     "fabricator-assemble": "^1.1.8",
     "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.2.0",
     "gulp-cssnano": "^2.0.0",
     "gulp-csso": "^1.0.0",
     "gulp-gh-pages": "^0.5.2",
