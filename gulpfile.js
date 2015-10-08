@@ -83,10 +83,13 @@ gulp.task('styles:toolkit', ['css-scss'], function () {
         .pipe(gulpif(config.dev, sourcemaps.init()))
         // We always want PostCSS to run
         .pipe( postcss(processors) )
+        // If we are on dev, don't minify the styles
         .pipe(gulpif(!config.dev, cssnano()))
         // If we are in dev, write sourcemaps
         .pipe(gulpif(config.dev, sourcemaps.write()))
+        // Set the destination for the CSS file
         .pipe( gulp.dest(config.dest + '/assets/toolkit/styles') )
+        // If we are in dev, reload the browser
         .pipe(gulpif(config.dev, reload({stream:true})));
 
     // gulp.src(config.src.styles.toolkit)
