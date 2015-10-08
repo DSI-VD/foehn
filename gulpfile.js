@@ -21,7 +21,7 @@ var ghPages = require('gulp-gh-pages');
 
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-var cssnano = require('cssnano');
+var nano = require('gulp-cssnano');
 
 
 // configuration
@@ -84,13 +84,13 @@ gulp.task('styles:toolkit', ['css-scss'], function () {
         // We always want PostCSS to run
         .pipe( postcss(processors) )
         // If we are on dev, don't minify the styles
-        .pipe(gulpif(!config.dev, cssnano()))
+        .pipe( gulpif(!config.dev, nano()) )
         // If we are in dev, write sourcemaps
-        .pipe(gulpif(config.dev, sourcemaps.write()))
+        .pipe( gulpif(config.dev, sourcemaps.write()) )
         // Set the destination for the CSS file
         .pipe( gulp.dest(config.dest + '/assets/toolkit/styles') )
         // If we are in dev, reload the browser
-        .pipe(gulpif(config.dev, reload({stream:true})));
+        .pipe( gulpif(config.dev, reload({stream:true})) );
 
     // gulp.src(config.src.styles.toolkit)
     //     .pipe(sourcemaps.init())
