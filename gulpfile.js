@@ -15,11 +15,11 @@ var runSequence = require('run-sequence');
 var cssScss = require('gulp-css-scss');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var postcss = require('gulp-postcss');
+var atImport = require('postcss-import');
+var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
-
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
 
 // configuration
 var config = {
@@ -84,6 +84,7 @@ gulp.task('css-scss', function() {
 
 gulp.task('styles:toolkit', ['css-scss'], function () {
     var processors = [
+        atImport,
         autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
