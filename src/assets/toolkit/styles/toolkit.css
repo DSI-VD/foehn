@@ -53,7 +53,7 @@
 @import "_tools.mixins.css";
 @import "_tools.responsive.css";
 
-@import "_../../../../build/normalize.scss.css";
+@import "normalize.css";
 @import "_generic.reset.css";
 @import "_generic.box-sizing.css";
 @import "_generic.shared.css";
