@@ -18,7 +18,8 @@ var postcss = require('gulp-postcss');
 var atImport = require('postcss-import');
 var customProperties = require("postcss-custom-properties");
 var calc = require("postcss-calc");
-var customMedia = require("postcss-custom-media")
+var customMedia = require("postcss-custom-media");
+var pixrem  = require('pixrem');
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
@@ -84,6 +85,7 @@ gulp.task('styles:toolkit', function () {
         customProperties,
         customMedia,
         calc,
+        pixrem,
         autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
