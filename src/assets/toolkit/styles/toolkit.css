@@ -47,7 +47,7 @@
 
 @import "_settings.defaults.css";
 @import "_settings.fontface.css";
-/*@import "_settings.responsive.css";*/
+@import "_settings.responsive.css";
 
 /*@import "_tools.functions.css";*/
 /*@import "_tools.mixins.css";*/
