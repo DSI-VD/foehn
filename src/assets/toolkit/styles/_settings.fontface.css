@@ -6,14 +6,17 @@
 
 
 
-// Variables
-// 'Cabin Sketch' is loaded via a `<link>` in the header.
-$base-font-family:    "sketchnote-text", "cabinsketchregular", "Garamond" cursive;
-$base-font-weight:    400;
+/**
+ * Variables
+ * 'Cabin Sketch' is loaded via a `<link>` in the header.
+ */
+:root {
+    --base-font-family:    "sketchnote-text", "cabinsketchregular", "Garamond" cursive;
+    --base-font-weight:    400;
 
-$heading-font-family: "sketchnote-square", "cabinsketchbold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; ;
-$heading-font-weight: 700;
-
+    --heading-font-family: "sketchnote-square", "cabinsketchbold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif    ; ;
+    --heading-font-weight: 700;
+}
 
 
 
@@ -52,6 +55,12 @@ $heading-font-weight: 700;
 
 
 
-// If we have included this file, set a variable to tell the rest of the
-// framework that we have some responsive settings.
-$fontface-settings: true;
+/**
+ * If we have included this file, set a variable to tell the rest of the
+ * framework that we have some responsive settings.
+ * 
+ * TODO: check if this variable is usefull
+ */
+:root {
+    --fontface-settings: true;
+}
