@@ -1,28 +1,37 @@
-///*------------------------------------*\
-//    #DEFAULTS
-//\*------------------------------------*/
+/*------------------------------------*\
+    #DEFAULTS
+\*------------------------------------*/
 
 
 
 
 
-// High-level base settings.
-$base-font-size:          20px !default;
-$base-line-height:        30px !default;
-$base-text-color:         rgb(51, 51, 51) !default;
-$base-background-color:   rgb(255, 255, 255) !default;
-$base-primary-color:      rgb(39, 102, 143) !default;
+/* High-level base settings.*/
+:root {
+    --base-font-size:          20px;
+    --base-line-height:        30px;
+    --base-text-color:         rgb(51, 51, 51);
+    --base-background-color:   rgb(255, 255, 255);
+    --base-primary-color:      rgb(39, 102, 143);
+}
 
 
 
 
 
+/*
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
+ */
+:root {
+    --base-spacing-unit:           var(--base-line-height);
+    --base-spacing-unit--tiny:     calc(var(--base-spacing-unit) / 4);
+    --base-spacing-unit--small:    calc(var(--base-spacing-unit) / 2);
+    --base-spacing-unit--large:    calc(var(--base-spacing-unit) * 2);
+    --base-spacing-unit--huge:     calc(var(--base-spacing-unit) * 4);
+}
 
-// These variables are framework variables, sourced from variables defined
-// above. Feel free to use these variables throughout your project, but do not
-// modify or reassign them.
-$base-spacing-unit:           $base-line-height;
-$base-spacing-unit--tiny:     round($base-spacing-unit / 4);
-$base-spacing-unit--small:    round($base-spacing-unit / 2);
-$base-spacing-unit--large:    round($base-spacing-unit * 2);
-$base-spacing-unit--huge:     round($base-spacing-unit * 4);
+a {
+    margin: var(--base-spacing-unit--huge);
+}
