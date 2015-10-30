@@ -6,54 +6,53 @@
  * Headings 1–6.
  */
 
-// Predefine the variables below in order to alter and enable specific features.
-$heading-size-1:  45px !default;
-$heading-size-2:  37px !default;
-$heading-size-3:  30px !default;
-$heading-size-4:  25px !default;
-$heading-size-5:  20px !default;
-$heading-size-6:  17px !default;
+/*Predefine the variables below in order to alter and enable specific features.*/
+root{
+    --heading-size-1:  2.8125;
+    --heading-size-2:  2.3125rem;
+    --heading-size-3:  1.875rem;
+    --heading-size-4:  1.5625rem;
+    --heading-size-5:  1.25rem;
+    --heading-size-6:  1.0625rem;
+}
 
 h1 {
-    @include font-size($heading-size-1);
+    font-size: var(--heading-size-1);
 }
 
 h2 {
-    @include font-size($heading-size-2);
+    font-size: var(--heading-size-2);
 }
 
 h3 {
-    @include font-size($heading-size-3);
+    font-size: var(--heading-size-3);
 }
 
 h4 {
-    @include font-size($heading-size-4);
+    font-size: var(--heading-size-4);
 }
 
 h5 {
-    @include font-size($heading-size-5);
+    font-size: var(--heading-size-5);
 }
 
 h6 {
-    @include font-size($heading-size-6);
+    font-size: var(--heading-size-6);
 }
 
 
 
 
 
-// check if fontface has been set
-@if $fontface-settings == true {
-    /**
-     * Headings fontface
-     */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $heading-font-family;
-        font-weight: $heading-font-weight;
-    }
+/**
+ * Headings fontface
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
 }
