@@ -7,8 +7,8 @@
  */
 
 /*Predefine the variables below in order to alter and enable specific features.*/
-root{
-    --heading-size-1:  2.8125;
+:root{
+    --heading-size-1:  2.8125rem;
     --heading-size-2:  2.3125rem;
     --heading-size-3:  1.875rem;
     --heading-size-4:  1.5625rem;
@@ -18,6 +18,7 @@ root{
 
 h1 {
     font-size: var(--heading-size-1);
+    margin-bottom: 3vr;
 }
 
 h2 {
