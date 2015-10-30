@@ -58,7 +58,7 @@
 @import "_generic.box-sizing.css";
 @import "_generic.shared.css";
 
-/*@import "_base.page.css";*/
+@import "_base.page.css";
 /*@import "_base.page-responsive.css";*/
 /*@import "_base.headings.css";*/
 /*@import "_base.headings-responsive.css";*/
