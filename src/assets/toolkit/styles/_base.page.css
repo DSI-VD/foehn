@@ -17,10 +17,10 @@
  *    render text using sub-pixel anti-aliasing.
  */
 html {
-    font-size: ($base-font-size / 16px) * 1em; /* [1] */
-    line-height: $base-line-height / $base-font-size; /* [1] */
-    background-color: $base-background-color;
-    color: $base-text-color;
+    font-size: var(--base-font-size); /* [1] */
+    line-height: var(--base-line-height); /* [1] */
+    background-color: var(--base-background-color);
+    color: var(--base-text-color);
     overflow-y: scroll; /* [2] */
     min-height: 100%; /* [3] */
     -webkit-text-size-adjust: 100%; /* [4] */
@@ -28,10 +28,6 @@ html {
     -moz-osx-font-smoothing: grayscale; /* [5] */
      -webkit-font-smoothing: antialiased; /* [5] */
 
-    // check if fontface has been set.
-    @if $fontface-settings == true {
-        font-family: $base-font-family;
-        font-weight: $base-font-weight;
-    }
-
+    font-family: var(--base-font-family);
+    font-weight: var(--base-font-weight);
 }
