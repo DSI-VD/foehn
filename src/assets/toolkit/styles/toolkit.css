@@ -54,7 +54,7 @@
 /*@import "_tools.responsive.css";*/
 
 @import "normalize.css";
-/*@import "_generic.reset.css";*/
+@import "_generic.reset.css";
 /*@import "_generic.box-sizing.css";*/
 /*@import "_generic.shared.css";*/
 
