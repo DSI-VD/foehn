@@ -16,7 +16,8 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var atImport = require('postcss-import');
-var customProperties = require("postcss-custom-properties")
+var customProperties = require("postcss-custom-properties");
+var calc = require("postcss-calc");
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
@@ -80,6 +81,7 @@ gulp.task('styles:toolkit', function () {
     var processors = [
         atImport,
         customProperties,
+        calc,
         autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
