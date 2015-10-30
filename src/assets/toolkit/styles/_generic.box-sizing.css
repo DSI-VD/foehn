@@ -9,23 +9,24 @@
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-* {
-
-    &,
-    &:before,
-    &:after {
-                box-sizing: inherit;
-        }
-
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 
 
 
-
-// If we have included this file, set a variable to tell the rest of the
-// framework that global `box-sizing: border-box` has been set.
-$global-border-box: true;
+/**
+ * If we have included this file, set a variable to tell the rest of the
+ * framework that global `box-sizing: border-box` has been set.
+ *
+ * TODO: see if the following variable is usefull.
+ */
+:root {
+    --global-border-box: true;
+}
