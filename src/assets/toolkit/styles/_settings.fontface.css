@@ -11,10 +11,10 @@
  * 'Cabin Sketch' is loaded via a `<link>` in the header.
  */
 :root {
-    --base-font-family:    "sketchnote-text", "cabinsketchregular", "Garamond" cursive;
+    --base-font-family:    "sketchnote-text", "cabinsketchregular", "Garamond", cursive;
     --base-font-weight:    400;
 
-    --heading-font-family: "sketchnote-square", "cabinsketchbold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif    ; ;
+    --heading-font-family: "sketchnote-square", "cabinsketchbold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     --heading-font-weight: 700;
 }
 
@@ -31,7 +31,6 @@
          url('../fonts/cabinsketch-bold-webfont.svg#cabinsketchbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -48,19 +47,4 @@
          url('../fonts/cabinsketch-regular-webfont.svg#cabinsketchregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-
-
-
-
-
-/**
- * If we have included this file, set a variable to tell the rest of the
- * framework that we have some responsive settings.
- * 
- * TODO: check if this variable is usefull
- */
-:root {
-    --fontface-settings: true;
 }
