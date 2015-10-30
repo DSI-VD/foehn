@@ -9,8 +9,8 @@
  * `_tools.responsive`.
  */
 
-@custom-media --palm-viewport screen and (max-width: 44.9375em);
-@custom-media --lap-viewport screen and (min-width: 45em) and (max-width: 63.9375em);
+@custom-media --palm screen and (max-width: 44.9375em);
+@custom-media --lap screen and (min-width: 45em) and (max-width: 63.9375em);
 @custom-media --lap-and-up screen and (min-width: 45em);
 @custom-media --portable screen and (max-width: 63.9375em);
 @custom-media --desk screen and (min-width: 64em);
