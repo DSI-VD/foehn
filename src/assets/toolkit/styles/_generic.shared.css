@@ -7,12 +7,22 @@
  * base line-height. This allows us to keep a consistent vertical rhythm.
  * As per: csswizardry.com/2012/06/single-direction-margin-declarations
  */
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-blockquote, p, address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
 hr,
 table,
-fieldset, figure,
+fieldset,
+figure,
 pre {
     margin-bottom: var(--base-spacing-unit);
 }
@@ -25,6 +35,8 @@ pre {
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once,here.
  */
-ul, ol, dd {
+ul,
+ol,
+dd {
     margin-left: calc(2 * var(--base-spacing-unit));
 }
