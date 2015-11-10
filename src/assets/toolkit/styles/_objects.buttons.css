@@ -27,7 +27,7 @@
     vertical-align: middle; /* [2] */
     font: inherit; /* [3] */
     text-align: center; /* [4] */
-    margin:  0; /* [4] */
+    margin: 0; /* [4] */
     cursor: pointer; /* [5] */
     overflow: visible; /* [6] */
     padding: calc(var(--btn-padding) - var(--btn-border-width))  calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
@@ -48,6 +48,6 @@ btn:focus {
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
 .btn::-moz-focus-inner {
-    border:  0;
+    border: 0;
     padding: 0;
 }
