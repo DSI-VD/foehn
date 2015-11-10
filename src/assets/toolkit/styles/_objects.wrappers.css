@@ -13,7 +13,7 @@
     padding-right: var(--base-spacing-unit--small);
 
     margin-left: auto; /* [1] */
-    margin-left: auto; /* [1] */
+    margin-right: auto; /* [1] */
 }
 
 @media (--lap-and-up) .container {
