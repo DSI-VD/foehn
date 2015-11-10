@@ -110,7 +110,7 @@ gulp.task('styles:fabricator', function () {
 });
 
 gulp.task("lint-styles", function() {
-    return gulp.src("src/assets/toolkit/styles/*.css")
+    return gulp.src(["src/assets/toolkit/styles/*.css", "!src/assets/toolkit/styles/__*.css"])
     .pipe(postcss([
         stylelint(stylelintConfig),
         reporter({
