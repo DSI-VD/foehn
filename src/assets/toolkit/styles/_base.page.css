@@ -13,8 +13,6 @@
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
  * 4. Prevent certain mobile browsers from automatically zooming fonts.
- * 5. Fonts on OSX will look more consistent with other systems that do not
- *    render text using sub-pixel anti-aliasing.
  */
 html {
     font-size: var(--base-font-size); /* [1] */
@@ -24,7 +22,6 @@ html {
     overflow-y: scroll; /* [2] */
     min-height: 100%; /* [3] */
     text-size-adjust: 100%; /* [4] */
-    font-smooth: grayscale; /* [5] */
 
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
