@@ -7,7 +7,7 @@
  */
 
 :root {
-    --box-padding:         var(--base-spacing-unit);
+    --box-padding: var(--base-spacing-unit);
 }
 
 
