@@ -20,7 +20,9 @@ var customProperties = require("postcss-custom-properties");
 var calc = require("postcss-calc");
 var customMedia = require("postcss-custom-media");
 var pixrem  = require('pixrem');
-var colorRgbaFallback = require("postcss-color-rgba-fallback")
+var colorRgbaFallback = require("postcss-color-rgba-fallback");
+var stylelint = require("stylelint");
+var reporter = require("postcss-reporter");
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
@@ -42,6 +44,33 @@ var config = {
         views: 'src/toolkit/views/*.html'
     },
     dest: 'dist'
+};
+
+
+// Config for linting
+var stylelintConfig = {
+    "rules": {
+        "block-no-empty": 2,
+        "color-no-invalid-hex": 2,
+        "declaration-colon-space-after": [2, "always"],
+        "declaration-colon-space-before": [2, "never"],
+        "function-comma-space-after": [2, "always"],
+        "function-url-quotes": [2, "double"],
+        "media-feature-colon-space-after": [2, "always"],
+        "media-feature-colon-space-before": [2, "never"],
+        "media-feature-name-no-vendor-prefix": 2,
+        "no-multiple-empty-lines": 2,
+        "number-leading-zero": [2, "never"],
+        "number-no-trailing-zeros": 2,
+        "property-no-vendor-prefix": 2,
+        "rule-no-duplicate-properties": 2,
+        "rule-no-single-line": 2,
+        "rule-trailing-semicolon": [2, "always"],
+        "selector-list-comma-newline-after": [2, "always-multi-line"],
+        "selector-no-id": 2,
+        "string-quotes": [2, "double"],
+        "value-no-vendor-prefix": 2
+    }
 };
 
 
@@ -88,6 +117,8 @@ gulp.task('styles:toolkit', function () {
         calc,
         pixrem,
         colorRgbaFallback,
+        stylelint(stylelintConfig),
+        reporter({ clearMessages: true }),
         autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
