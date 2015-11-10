@@ -109,7 +109,17 @@ gulp.task('styles:fabricator', function () {
         .pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('styles:toolkit', function () {
+gulp.task("lint-styles", function() {
+    return gulp.src("src/assets/toolkit/styles/*.css")
+    .pipe(postcss([
+        stylelint(stylelintConfig),
+        reporter({
+            clearMessages: true,
+        }),
+    ]));
+});
+
+gulp.task('styles:toolkit', ["lint-styles"], function () {
     var processors = [
         atImport,
         customProperties,
@@ -117,8 +127,6 @@ gulp.task('styles:toolkit', function () {
         calc,
         pixrem,
         colorRgbaFallback,
-        stylelint(stylelintConfig),
-        reporter({ clearMessages: true }),
         autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
