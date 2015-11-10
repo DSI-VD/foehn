@@ -14,7 +14,7 @@
 @custom-media --lap-and-up screen and (min-width: 45em);
 @custom-media --portable screen and (max-width: 63.9375em);
 @custom-media --desk screen and (min-width: 64em);
-@custom-media --retina (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx);
+@custom-media --retina (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx);
 
 
 
