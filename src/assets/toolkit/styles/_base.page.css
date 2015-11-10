@@ -23,10 +23,8 @@ html {
     color: var(--base-text-color);
     overflow-y: scroll; /* [2] */
     min-height: 100%; /* [3] */
-    -webkit-text-size-adjust: 100%; /* [4] */
-        -ms-text-size-adjust: 100%; /* [4] */
-    -moz-osx-font-smoothing: grayscale; /* [5] */
-     -webkit-font-smoothing: antialiased; /* [5] */
+    text-size-adjust: 100%; /* [4] */
+    font-smooth: grayscale; /* [5] */
 
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
