@@ -32,7 +32,7 @@
     overflow: visible; /* [6] */
     padding: calc(var(--btn-padding) - var(--btn-border-width))  calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
     background-color: var(--btn-background);
-    border: var(--btn-border-width) var(--btn-border-style) var(btn-border-color);
+    border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
 }
 
 btn,
