@@ -62,7 +62,7 @@
 @import "_base.page.css";
 @import "_base.page-responsive.css";
 @import "_base.headings.css";
-/*@import "_base.headings-responsive.css";*/
+@import "_base.headings-responsive.css";
 @import "_base.lists.css";
 @import "_base.anchors.css";
 @import "_base.images.css";
@@ -79,6 +79,6 @@
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";
-/*@import "_trumps.headings-responsive.css";*/
+@import "_trumps.headings-responsive.css";
 @import "_trumps.utilities.css";
 @import "_trumps.utilities-responsive.css";
