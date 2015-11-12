@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #WRAPPERS
+\*------------------------------------*/
+
+/**
+ * Container
+ *
+ * 1. Center horizontaly
+ */
+
+.container {
+    padding-left: var(--base-spacing-unit--small);
+    padding-right: var(--base-spacing-unit--small);
+
+    margin-left: auto; /* [1] */
+    margin-right: auto; /* [1] */
+}
+
+@media (--lap-and-up) .container {
+    padding-left: var(--base-spacing-unit);
+    padding-right: var(--base-spacing-unit);
+}

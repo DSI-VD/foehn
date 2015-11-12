@@ -3,12 +3,12 @@
 \*------------------------------------*/
 
 a {
-    color: $base-text-color;
-
-    &:hover {
-        color: $base-primary-color;
-        @include transition(color);
-    }
+    color: var(--base-text-color);
+    transition: var(--transition-color);
+}
+a:hover {
+    color: var(--base-primary-color);
+    transition: var(--transition-color);
 }
 
 
@@ -24,5 +24,5 @@ a {
  */
 .silent-link {
     text-decoration: none;
-    @include transition(color);
+    transition: var(--transition-color);
 }

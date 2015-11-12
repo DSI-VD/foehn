@@ -1,0 +1,168 @@
+/*------------------------------------*\
+    #RESPONSIVE-UTILITIES
+\*------------------------------------*/
+
+/**
+ * Hide content depending of the viewport
+ *
+ * 1. Screen readers sometimes ignore display:none1. This means the content
+ *    will be read despite being “hidden”. To hide content completely from
+ *    screen readers use the following
+ *    http://a11yproject.com/posts/how-to-hide-content/
+ */
+@media (--palm) {
+    .hidden--palm {
+        display: none !important;
+        visibility: hidden !important; /* 1 */
+    }
+}
+
+@media (--lap) {
+    .hidden--lap {
+        display: none !important;
+        visibility: hidden !important; /* 1 */
+    }
+}
+
+@media (--lap-and-up) {
+    .hidden--lap-and-up {
+        display: none !important;
+        visibility: hidden !important; /* 1 */
+    }
+}
+
+@media (--portable) {
+    .hidden--portable {
+        display: none !important;
+        visibility: hidden !important; /* 1 */
+    }
+}
+
+@media (--desk) {
+    .hidden--desk {
+        display: none !important;
+        visibility: hidden !important; /* 1 */
+    }
+}
+
+@media (--retina) {
+    .hidden--retina {
+        display: none !important;
+        visibility: hidden !important; /* 1 */
+    }
+}
+
+
+
+
+
+/**
+ * Visually hide content depending on viewports.
+ */
+@media (--palm) {
+    .visually-hidden--palm {
+         position: absolute !important;
+         clip: rect(1px, 1px, 1px, 1px);
+         padding: 0 !important;
+         border: 0 !important;
+         height: 1px !important;
+         width: 1px !important;
+         overflow: hidden;
+     }
+
+    body:hover .visually-hidden--palm a,
+    body:hover .visually-hidden--palm input,
+    body:hover .visually-hidden--palm button {
+     display: none !important;
+    }
+}
+
+@media (--lap) {
+    .visually-hidden--lap {
+         position: absolute !important;
+         clip: rect(1px, 1px, 1px, 1px);
+         padding: 0 !important;
+         border: 0 !important;
+         height: 1px !important;
+         width: 1px !important;
+         overflow: hidden;
+     }
+
+    body:hover .visually-hidden--lap a,
+    body:hover .visually-hidden--lap input,
+    body:hover .visually-hidden--lap button {
+     display: none !important;
+    }
+}
+
+@media (--lap-and-up) {
+    .visually-hidden--lap-and-up {
+         position: absolute !important;
+         clip: rect(1px, 1px, 1px, 1px);
+         padding: 0 !important;
+         border: 0 !important;
+         height: 1px !important;
+         width: 1px !important;
+         overflow: hidden;
+     }
+
+    body:hover .visually-hidden--lap-and-up a,
+    body:hover .visually-hidden--lap-and-up input,
+    body:hover .visually-hidden--lap-and-up button {
+     display: none !important;
+    }
+}
+
+@media (--portable) {
+    .visually-hidden--portable {
+         position: absolute !important;
+         clip: rect(1px, 1px, 1px, 1px);
+         padding: 0 !important;
+         border: 0 !important;
+         height: 1px !important;
+         width: 1px !important;
+         overflow: hidden;
+     }
+
+    body:hover .visually-hidden--portable a,
+    body:hover .visually-hidden--portable input,
+    body:hover .visually-hidden--portable button {
+     display: none !important;
+    }
+}
+
+@media (--desk) {
+    .visually-hidden--desk {
+         position: absolute !important;
+         clip: rect(1px, 1px, 1px, 1px);
+         padding: 0 !important;
+         border: 0 !important;
+         height: 1px !important;
+         width: 1px !important;
+         overflow: hidden;
+     }
+
+    body:hover .visually-hidden--desk a,
+    body:hover .visually-hidden--desk input,
+    body:hover .visually-hidden--desk button {
+     display: none !important;
+    }
+}
+
+@media (--retina) {
+    .visually-hidden--retina {
+         position: absolute !important;
+         clip: rect(1px, 1px, 1px, 1px);
+         padding: 0 !important;
+         border: 0 !important;
+         height: 1px !important;
+         width: 1px !important;
+         overflow: hidden;
+     }
+
+    body:hover .visually-hidden--retina a,
+    body:hover .visually-hidden--retina input,
+    body:hover .visually-hidden--retina button {
+     display: none !important;
+    }
+}
