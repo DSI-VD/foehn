@@ -50,10 +50,6 @@
 @import "_settings.responsive.css";
 @import "_settings.animations.css";
 
-/*@import "_tools.functions.css";*/
-/*@import "_tools.mixins.css";*/
-/*@import "_tools.responsive.css";*/
-
 @import "normalize.css";
 @import "_generic.reset.css";
 @import "_generic.box-sizing.css";
