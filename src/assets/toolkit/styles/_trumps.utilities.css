@@ -1,0 +1,42 @@
+///*------------------------------------*\
+//    #UTILITIES
+//\*------------------------------------*/
+
+/**
+ * Visually hide content.
+ *
+ * The content still readable by screen readers
+ * https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+ */
+ .visually-hidden {
+     position: absolute !important;
+     clip: rect(1px, 1px, 1px, 1px);
+     padding: 0 !important;
+     border: 0 !important;
+     height: 1px !important;
+     width: 1px !important;
+     overflow: hidden;
+ }
+
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+ display: none !important;
+}
+
+
+
+
+
+/**
+ * Hide content depending of the viewport
+ *
+ * 1. Screen readers sometimes ignore display:none1. This means the content
+ *    will be read despite being “hidden”. To hide content completely from
+ *    screen readers use the following
+ *    http://a11yproject.com/posts/how-to-hide-content/
+ */
+.hidden {
+    display: none !important;
+    visibility: hidden !important; /* 1 */
+}

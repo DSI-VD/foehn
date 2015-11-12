@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #BOX
+\*------------------------------------*/
+
+/**
+ * The box object simply boxes off content.
+ */
+
+:root {
+    --box-padding: var(--base-spacing-unit);
+}
+
+
+
+
+
+/**
+ * 1. So we can apply the `.box` class to naturally-inline elements.
+ */
+.box {
+    @extend %clearfix;
+    display: block; /* [1] */
+    padding: var(--box-padding);
+}
+
+/* clearfix */
+.box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box > :last-child {
+    margin-bottom: 0;
+}

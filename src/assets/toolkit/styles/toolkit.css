@@ -45,39 +45,36 @@
  * Responsive utilities.Hide and show content depending on viewport.
  */
 
-@import "settings.defaults";
-@import "settings.fontface";
-@import "settings.responsive";
+@import "_settings.defaults.css";
+@import "_settings.fontface.css";
+@import "_settings.responsive.css";
+@import "_settings.animations.css";
 
-@import "tools.functions";
-@import "tools.mixins";
-@import "tools.responsive";
+@import "normalize.css";
+@import "_generic.reset.css";
+@import "_generic.box-sizing.css";
+@import "_generic.shared.css";
 
-@import "../../../../build/normalize.scss";
-@import "generic.reset";
-@import "generic.box-sizing";
-@import "generic.shared";
+@import "_base.page.css";
+@import "_base.page-responsive.css";
+@import "_base.headings.css";
+@import "_base.headings-responsive.css";
+@import "_base.lists.css";
+@import "_base.anchors.css";
+@import "_base.images.css";
+@import "_base.figures.css";
 
-@import "base.page";
-@import "base.page-responsive";
-@import "base.headings";
-@import "base.headings-responsive";
-@import "base.lists";
-@import "base.anchors";
-@import "base.images";
-@import "base.figures";
+@import "_objects.wrappers.css";
+@import "_objects.buttons.css";
+@import "_objects.layouts.css";
+@import "_objects.expos.css";
+@import "_objects.box.css";
+@import "_objects.tables.css";
 
-@import "objects.wrappers";
-@import "objects.buttons";
-@import "objects.layouts";
-@import "objects.expos";
-@import "objects.box";
-@import "objects.tables";
+@import "_components.box.css";
 
-@import "components.box";
-
-@import "trumps.clearfix";
-@import "trumps.headings";
-@import "trumps.headings-responsive";
-@import "trumps.utilities";
-@import "trumps.utilities-responsive";
+@import "_trumps.clearfix.css";
+@import "_trumps.headings.css";
+@import "_trumps.headings-responsive.css";
+@import "_trumps.utilities.css";
+@import "_trumps.utilities-responsive.css";
