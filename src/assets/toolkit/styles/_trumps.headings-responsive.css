@@ -9,7 +9,7 @@
  * support media queries.
  */
 
-@media(--palm) {
+@media (--palm) {
     .alpha { font-size: var(--heading-size-1--palm); }
     .beta { font-size: var(--heading-size-2--palm); }
     .gamma { font-size: var(--heading-size-3--palm); }
@@ -18,7 +18,7 @@
     .zeta { font-size: var(--heading-size-6--palm); }
 }
 
-@media(--lap) {
+@media (--lap) {
     .alpha { font-size: var(--heading-size-1--lap); }
     .beta { font-size: var(--heading-size-2--lap); }
     .gamma { font-size: var(--heading-size-3--lap); }
@@ -27,7 +27,7 @@
     .zeta { font-size: var(--heading-size-6--lap); }
 }
 
-@media(--desk) {
+@media (--desk) {
     .alpha { font-size: var(--heading-size-1--desk); }
     .beta { font-size: var(--heading-size-2--desk); }
     .gamma { font-size: var(--heading-size-3--desk); }
