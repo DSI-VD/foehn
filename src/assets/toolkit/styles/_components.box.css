@@ -8,5 +8,4 @@
 .box--default {
     outline: 1px solid var(--base-text-color);
     margin-bottom: var(--base-spacing-unit);
-    margin-bottom: calc(var(--base-spacing-unit) / var(--base-font-size));
 }
