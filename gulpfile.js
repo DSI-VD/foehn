@@ -21,6 +21,8 @@ var advancedVariables = require('postcss-advanced-variables');
 var customProperties = require("postcss-custom-properties");
 var calc = require("postcss-calc");
 var customMedia = require("postcss-custom-media");
+var nesting = require('postcss-nesting');
+var nested = require('postcss-nested');
 var pixrem  = require('pixrem');
 var colorRgbaFallback = require("postcss-color-rgba-fallback");
 var stylelint = require("stylelint");
@@ -128,6 +130,8 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         advancedVariables,
         customProperties,
         customMedia,
+        nesting,
+        nested,
         calc,
         pixrem,
         colorRgbaFallback,
