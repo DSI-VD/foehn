@@ -54,3 +54,29 @@
     display: none !important;
     visibility: hidden !important; /* 1 */
 }
+
+
+
+
+
+/**
+ * Create classes for each breakponts
+ *
+ *     @mixin breakpoints-classes {
+ *         .foo--$breakpoint {
+ *             ...
+ *         }
+ *     }
+ *
+ *     .foo--palm {...}
+ *     .foo--lap {...}
+ *     .foo--lap-and-up {...}
+ *     ...
+ */
+@define-mixin breakpoints-classes {
+    @each $breakpoint in $breackpoints {
+        @media (--$breakpoint) {
+            @mixin-content;
+        }
+    }
+}
