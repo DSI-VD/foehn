@@ -51,6 +51,7 @@
     "normalize.css": "^3.0.3",
     "picturefill": "^2.3.1",
     "pixrem": "^3.0.0",
+    "postcss-advanced-variables": "^1.2.2",
     "postcss-calc": "^5.0.0",
     "postcss-color-rgba-fallback": "^2.0.0",
     "postcss-custom-media": "^5.0.0",

@@ -17,6 +17,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var atImport = require('postcss-import');
 var mixins = require('postcss-mixins');
+var advancedVariables = require('postcss-advanced-variables');
 var customProperties = require("postcss-custom-properties");
 var calc = require("postcss-calc");
 var customMedia = require("postcss-custom-media");
@@ -123,8 +124,9 @@ gulp.task("lint-styles", function() {
 gulp.task('styles:toolkit', ["lint-styles"], function () {
     var processors = [
         atImport,
-        customProperties,
         mixins,
+        advancedVariables,
+        customProperties,
         customMedia,
         calc,
         pixrem,
