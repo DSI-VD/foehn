@@ -16,7 +16,12 @@
 @custom-media --desk screen and (min-width: 64em);
 @custom-media --retina (min-resolution: 192dpi), (min-resolution: 2dppx);
 
-
+/**
+ * List all breackpoints
+ *
+ * This is used in mixins.
+ */
+$breackpoints: (palm, lap, lap-and-up, portable, desk, retina);
 
 
 
