@@ -16,4 +16,4 @@ $ cd foehn
 $ npm start
 ```
 
-![](https://travis-ci.org/vdch/foehn.svg)
+[![Build Status](https://travis-ci.org/DSI-VD/foehn.svg?branch=master)](https://travis-ci.org/DSI-VD/foehn)
