@@ -8,7 +8,7 @@
 @media (--palm) {
     .visually-hidden--palm {
         @mixin visually-hidden;
-     }
+    }
 
     body:hover .visually-hidden--palm a,
     body:hover .visually-hidden--palm input,
