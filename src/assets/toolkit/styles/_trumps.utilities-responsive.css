@@ -6,75 +6,27 @@
  * Visually hide content depending on viewports.
  */
 @media (--palm) {
-    .visually-hidden--palm {
-        @mixin visually-hidden;
-    }
-
-    body:hover .visually-hidden--palm a,
-    body:hover .visually-hidden--palm input,
-    body:hover .visually-hidden--palm button {
-        display: none !important;
-    }
+    @mixin visually-hidden .visually-hidden--palm;
 }
 
 @media (--lap) {
-    .visually-hidden--lap {
-        @mixin visually-hidden;
-    }
-
-    body:hover .visually-hidden--lap a,
-    body:hover .visually-hidden--lap input,
-    body:hover .visually-hidden--lap button {
-        display: none !important;
-    }
+    @mixin visually-hidden .visually-hidden--lap;
 }
 
 @media (--lap-and-up) {
-    .visually-hidden--lap-and-up {
-        @mixin visually-hidden;
-    }
-
-    body:hover .visually-hidden--lap-and-up a,
-    body:hover .visually-hidden--lap-and-up input,
-    body:hover .visually-hidden--lap-and-up button {
-        display: none !important;
-    }
+    @mixin visually-hidden .visually-hidden--lap-and-up;
 }
 
 @media (--portable) {
-    .visually-hidden--portable {
-        @mixin visually-hidden;
-    }
-
-    body:hover .visually-hidden--portable a,
-    body:hover .visually-hidden--portable input,
-    body:hover .visually-hidden--portable button {
-        display: none !important;
-    }
+    @mixin visually-hidden .visually-hidden--portable;
 }
 
 @media (--desk) {
-    .visually-hidden--desk {
-        @mixin visually-hidden;
-    }
-
-    body:hover .visually-hidden--desk a,
-    body:hover .visually-hidden--desk input,
-    body:hover .visually-hidden--desk button {
-        display: none !important;
-    }
+    @mixin visually-hidden .visually-hidden--desk;
 }
 
 @media (--retina) {
-    .visually-hidden--retina {
-        @mixin visually-hidden;
-    }
-
-    body:hover .visually-hidden--retina a,
-    body:hover .visually-hidden--retina input,
-    body:hover .visually-hidden--retina button {
-        display: none !important;
-    }
+    @mixin visually-hidden .visually-hidden--retina;
 }
 
 /**
