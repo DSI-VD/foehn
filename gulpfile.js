@@ -15,19 +15,8 @@ var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
-var atImport = require('postcss-import');
-var mixins = require('postcss-mixins');
-var advancedVariables = require('postcss-advanced-variables');
-var customProperties = require("postcss-custom-properties");
-var calc = require("postcss-calc");
-var customMedia = require("postcss-custom-media");
-var nesting = require('postcss-nesting');
-var nested = require('postcss-nested');
-var pixrem  = require('pixrem');
-var colorRgbaFallback = require("postcss-color-rgba-fallback");
 var stylelint = require("stylelint");
 var reporter = require("postcss-reporter");
-var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
 
@@ -92,7 +81,7 @@ gulp.task('clean', function (cb) {
 // styles
 gulp.task('styles:fabricator', function () {
     var processors = [
-        autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
+        require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     gulp.src(config.src.styles.fabricator)
         // Start sourcemaps
@@ -125,17 +114,17 @@ gulp.task("lint-styles", function() {
 
 gulp.task('styles:toolkit', ["lint-styles"], function () {
     var processors = [
-        atImport,
-        mixins,
-        advancedVariables,
-        customProperties,
-        customMedia,
-        nesting,
-        nested,
-        calc,
-        pixrem,
-        colorRgbaFallback,
-        autoprefixer({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
+        require('postcss-import'),
+        require('postcss-mixins'),
+        require('postcss-advanced-variables'),
+        require('postcss-custom-properties'),
+        require('postcss-custom-media'),
+        require('postcss-nesting'),
+        require('postcss-nested'),
+        require('postcss-calc'),
+        require('pixrem'),
+        require('postcss-color-rgba-fallback'),
+        require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
         // If we are in dev, start sourcemaps
