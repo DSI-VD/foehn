@@ -52,7 +52,6 @@
     "picturefill": "^2.3.1",
     "pixrem": "^3.0.0",
     "postcss-advanced-variables": "^1.2.2",
-    "postcss-atroot": "^0.1.2",
     "postcss-calc": "^5.0.0",
     "postcss-color-function": "^2.0.0",
     "postcss-color-rgba-fallback": "^2.0.0",

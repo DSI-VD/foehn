@@ -124,7 +124,6 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         require('postcss-nesting'),
         require('postcss-nested'),
         require('postcss-custom-selectors'),
-        require('postcss-atroot'),
         require('postcss-property-lookup'),
         require('postcss-extend'),
         require('postcss-selector-matches'),
