@@ -35,10 +35,10 @@
     border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
 }
 
-btn,
-btn:hover,
-btn:active,
-btn:focus {
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus {
     text-decoration: none; /* [4] */
     color: var(--btn-color);
 }
