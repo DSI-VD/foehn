@@ -6,111 +6,54 @@
     --layout-gutter: var(--base-spacing-unit--small);
 }
 
+/**
+ * The layout is based on lost framework
+ * https://github.com/corysimmons/lost
+ */
+@lost gutter 1rem;
+
 
 
 
 
 /**
  * Layout
- *
- * 1. Defines the default behaviour for how flex items are laid out along the
- *    cross axis on the current line. Item are aligned at the top. Items are
- *    aligned to the top.
- * 2. Defines the alignment along the main axis. Items are aligne on the left.
  */
 .layout {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start; /* [1] */
-  justify-content: flex-start; /* [2] */
-  margin-right: calc(var(--layout-gutter) * -1);
-  margin-left: calc(var(--layout-gutter) * -1);
+  lost-flex-container: row;
 }
-
-
-
-
-
-    /**
-     * Flex item
-     */
-    .layout__item {
-      padding-right: var(--layout-gutter);
-      padding-left: var(--layout-gutter);
-    }
 
 
 
 
 
 /**
- * Flexible grid system
+ * Flex items
  */
-.layout--flex .layout__item--1 { flex: 1; }
-.layout--flex .layout__item--2 { flex: 2; }
-.layout--flex .layout__item--3 { flex: 3; }
-.layout--flex .layout__item--4 { flex: 4; }
-.layout--flex .layout__item--5 { flex: 5; }
-.layout--flex .layout__item--6 { flex: 6; }
-.layout--flex .layout__item--full { flex: 1 1 100%; }
 
-@media (--palm) {
-    .layout--flex .layout__item--palm--1 { flex: 1; }
-    .layout--flex .layout__item--palm--2 { flex: 2; }
-    .layout--flex .layout__item--palm--3 { flex: 3; }
-    .layout--flex .layout__item--palm--4 { flex: 4; }
-    .layout--flex .layout__item--palm--5 { flex: 5; }
-    .layout--flex .layout__item--palm--6 { flex: 6; }
-    .layout--flex .layout__item--palm--full { flex: 1 1 100%; }
+@for $cycle from 2 to 5 {
+    @for $fraction from 1 to 5 {
+        @if $fraction < $cycle {
+            .layout__item--$(fraction)-$(cycle) {
+                lost-column: $fraction/$cycle flex;
+            }
+        }
+    }
 }
 
-@media (--lap) {
-    .layout--flex .layout__item--lap--1 { flex: 1; }
-    .layout--flex .layout__item--lap--2 { flex: 2; }
-    .layout--flex .layout__item--lap--3 { flex: 3; }
-    .layout--flex .layout__item--lap--4 { flex: 4; }
-    .layout--flex .layout__item--lap--5 { flex: 5; }
-    .layout--flex .layout__item--lap--6 { flex: 6; }
-    .layout--flex .layout__item--lap--full { flex: 1 1 100%; }
-}
-
-@media (--lap-and-up) {
-    .layout--flex .layout__item--lap-and-up--1 { flex: 1; }
-    .layout--flex .layout__item--lap-and-up--2 { flex: 2; }
-    .layout--flex .layout__item--lap-and-up--3 { flex: 3; }
-    .layout--flex .layout__item--lap-and-up--4 { flex: 4; }
-    .layout--flex .layout__item--lap-and-up--5 { flex: 5; }
-    .layout--flex .layout__item--lap-and-up--6 { flex: 6; }
-    .layout--flex .layout__item--lap-and-up--full { flex: 1 1 100%; }
-}
-
-@media (--portable) {
-    .layout--flex .layout__item--portable--1 { flex: 1; }
-    .layout--flex .layout__item--portable--2 { flex: 2; }
-    .layout--flex .layout__item--portable--3 { flex: 3; }
-    .layout--flex .layout__item--portable--4 { flex: 4; }
-    .layout--flex .layout__item--portable--5 { flex: 5; }
-    .layout--flex .layout__item--portable--6 { flex: 6; }
-    .layout--flex .layout__item--portable--full { flex: 1 1 100%; }
-}
-
-@media (--desk) {
-    .layout--flex .layout__item--desk--1 { flex: 1; }
-    .layout--flex .layout__item--desk--2 { flex: 2; }
-    .layout--flex .layout__item--desk--3 { flex: 3; }
-    .layout--flex .layout__item--desk--4 { flex: 4; }
-    .layout--flex .layout__item--desk--5 { flex: 5; }
-    .layout--flex .layout__item--desk--6 { flex: 6; }
-    .layout--flex .layout__item--desk--full { flex: 1 1 100%; }
-}
-
-@media (--retina) {
-    .layout--flex .layout__item--retina--1 { flex: 1; }
-    .layout--flex .layout__item--retina--2 { flex: 2; }
-    .layout--flex .layout__item--retina--3 { flex: 3; }
-    .layout--flex .layout__item--retina--4 { flex: 4; }
-    .layout--flex .layout__item--retina--5 { flex: 5; }
-    .layout--flex .layout__item--retina--6 { flex: 6; }
-    .layout--flex .layout__item--retina--full { flex: 1 1 100%; }
+/**
+ * Repsonsive flex items
+ */
+@each $query in (--palm, --lap, --lap-and-up, --portable, --desk, --retina) {
+    @media ($(query)) {
+        @for $cycle from 2 to 5 {
+            @for $fraction from 1 to 5 {
+                @if $fraction < $cycle {
+                    .layout__item$(query)--$(fraction)-$(cycle) {
+                        lost-column: $fraction/$cycle flex;
+                    }
+                }
+            }
+        }
+    }
 }
