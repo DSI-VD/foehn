@@ -11,12 +11,13 @@
  * "Cabin Sketch" is loaded via a `<link>` in the header.
  */
 :root {
-    --base-font-family: "sketchnote-text", "cabinsketchregular", "Garamond", cursive;
+    --base-font-family: "cabinsketchregular", "Garamond", cursive;
     --base-font-weight: 400;
 
-    --heading-font-family: "sketchnote-square", "cabinsketchbold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    --heading-font-family: "cabinsketchbold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     --heading-font-weight: 700;
 }
+
 
 
 
