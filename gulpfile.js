@@ -81,7 +81,7 @@ gulp.task('clean', function (cb) {
 // styles
 gulp.task('styles:fabricator', function () {
     var processors = [
-        require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
+        require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']})
     ]
     gulp.src(config.src.styles.fabricator)
         // Start sourcemaps
