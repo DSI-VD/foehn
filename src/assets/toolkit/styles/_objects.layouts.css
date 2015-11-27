@@ -31,14 +31,14 @@
  * Flex items
  */
 
-@for $i from 2 to 5 {
- @for $j from 1 to 5 {
-     @if $j < $i {
-         .layout__item--$(j)-$(i) {
-             lost-column: $j/$i flex;
-         }
-     }
- }
+@for $cycle from 2 to 5 {
+    @for $fraction from 1 to 5 {
+        @if $fraction < $cycle {
+            .layout__item--$(fraction)-$(cycle) {
+                lost-column: $fraction/$cycle flex;
+            }
+        }
+    }
 }
 
 /**
@@ -46,11 +46,11 @@
  */
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk, --retina) {
     @media ($(query)) {
-        @for $i from 2 to 5 {
-            @for $j from 1 to 5 {
-                @if $j < $i {
-                    .layout__item$(query)--$(j)-$(i) {
-                        lost-column: $j/$i flex;
+        @for $cycle from 2 to 5 {
+            @for $fraction from 1 to 5 {
+                @if $fraction < $cycle {
+                    .layout__item$(query)--$(fraction)-$(cycle) {
+                        lost-column: $fraction/$cycle flex;
                     }
                 }
             }
