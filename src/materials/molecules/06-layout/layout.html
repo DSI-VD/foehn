@@ -1,49 +1,27 @@
 ---
 notes: |
-  Layouts are based on flexbox. It means that the width is not specifies with
-  `%` but with a growing factor. It specifies what amount of space inside the
-  flex container the item should take up.
-
-  If on the same row there is a container with a width of `1` and
-  another one with a width of `2`, the second contanier will take two time more
-  space.
+  Layouts are expressed in fraction.
+  For exemple `class="layout__item--1-2"` means that the div will 1/2 the width
+  of his parent container
 ---
-<div class="layout layout--flex">
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
+
+<div class="layout">
+    <div class="layout__item--1-2"><div class="demo-block">1/2</div></div>
+    <div class="layout__item--1-2"><div class="demo-block">1/2</div></div>
 </div>
 
-<div class="layout layout--flex">
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
+<div class="layout">
+    <div class="layout__item--1-3"><div class="demo-block">1/3</div></div>
+    <div class="layout__item--2-3"><div class="demo-block">2/3</div></div>
 </div>
 
-<div class="layout layout--flex">
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
+<div class="layout">
+    <div class="layout__item--1-4"><div class="demo-block">1/4</div></div>
+    <div class="layout__item--2-4"><div class="demo-block">2/4</div></div>
+    <div class="layout__item--1-4"><div class="demo-block">1/4</div></div>
 </div>
 
-<div class="layout layout--flex">
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-</div>
-
-<div class="layout layout--flex">
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--2"><div class="demo-block">2</div></div>
-</div>
-
-<div class="layout layout--flex">
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--2"><div class="demo-block">2</div></div>
-    <div class="layout__item layout__item--3"><div class="demo-block">3</div></div>
-</div>
-
-<div class="layout layout--flex">
-    <div class="layout__item layout__item--1"><div class="demo-block">1</div></div>
-    <div class="layout__item layout__item--2"><div class="demo-block">2</div></div>
-    <div class="layout__item layout__item--3"><div class="demo-block">3</div></div>
-    <div class="layout__item layout__item--4"><div class="demo-block">4</div></div>
+<div class="layout">
+    <div class="layout__item--1-5"><div class="demo-block">1/4</div></div>
+    <div class="layout__item--4-5"><div class="demo-block">2/4</div></div>
 </div>
