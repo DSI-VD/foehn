@@ -131,6 +131,7 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         require('pixrem'),
         require('postcss-color-rgba-fallback'),
         require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 8', 'Firefox >= 31', 'Firefox ESR']})
+        require('doiuse')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']})
     ]
     return gulp.src(config.src.styles.toolkit)
         // If we are in dev, start sourcemaps
