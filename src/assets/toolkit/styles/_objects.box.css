@@ -27,15 +27,8 @@
         display: table;
         clear: both;
     }
-}
 
-/* clearfix */
-.box:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.box > :last-child {
-    margin-bottom: 0;
+    > :last-child {
+        margin-bottom: 0;
+    }
 }
