@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Topics</h2>
+    <ul>
+        {{#each toolkit.topics}}
+        <li>{{@key}}
+            <ul>
+                {{#each this}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </li>
+        {{/each}}
+    </ul>
+</div>
