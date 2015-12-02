@@ -4,22 +4,24 @@
 
 {{> last-news}}
 
-<h2>Thèmes</h2>
-<ul>
-    {{#each thema.thema}}
-    <li>{{@key}}
-        <ul>
-            {{#each this}}
-                <li>{{this}}</li>
-            {{/each}}
-        </ul>
-    </li>
-    {{/each}}
-</ul>
+<div class="container">
+    <h2>Thèmes</h2>
+    <ul>
+        {{#each thema.thema}}
+        <li>{{@key}}
+            <ul>
+                {{#each this}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </li>
+        {{/each}}
+    </ul>
+</container>
 
 <h2>Préstations</h2>
 
-<h2>Agenda</h2>
+{{> agenda}}
 
 <footer>
     <h3>Partenaires</h3>
