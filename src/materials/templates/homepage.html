@@ -1,0 +1,37 @@
+{{> global.header}}
+
+{{> page-title}}
+
+{{> last-news}}
+
+<h2>Thèmes</h2>
+<ul>
+    {{#each thema.thema}}
+    <li>{{@key}}
+        <ul>
+            {{#each this}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>
+
+<h2>Préstations</h2>
+
+<h2>Agenda</h2>
+
+<footer>
+    <h3>Partenaires</h3>
+    <ul>
+        <li><a href="#">Lorem ipsum dolor.</a></li>
+        <li><a href="#">Lorem ipsum dolor.</a></li>
+        <li><a href="#">Lorem ipsum dolor.</a></li>
+    </ul>
+    <h3>Réseaux sociaux</h3>
+    <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Google+</a></li>
+    </ul>
+</footer>
