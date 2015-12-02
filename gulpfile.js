@@ -127,7 +127,6 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         require('postcss-selector-matches'),
         require('postcss-selector-not'),
         require('lost'),
-        require('postcss-calc'),
         require('pixrem'),
         require('postcss-color-rgba-fallback'),
         require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']})
