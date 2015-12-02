@@ -4,20 +4,7 @@
 
 {{> last-news}}
 
-<div class="container">
-    <h2>Thèmes</h2>
-    <ul>
-        {{#each thema.thema}}
-        <li>{{@key}}
-            <ul>
-                {{#each this}}
-                    <li>{{this}}</li>
-                {{/each}}
-            </ul>
-        </li>
-        {{/each}}
-    </ul>
-</container>
+{{> topics-list}}
 
 <h2>Préstations</h2>
 
