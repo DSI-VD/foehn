@@ -95,12 +95,3 @@
         .expo--desk--5 .expo__item { flex-basis: calc( 100% / 5); }
         .expo--desk--6 .expo__item { flex-basis: calc( 100% / 6); }
     }
-
-    @media (--retina) {
-        .expo--retina--1 .expo__item { flex-basis: calc( 100% / 1); }
-        .expo--retina--2 .expo__item { flex-basis: calc( 100% / 2); }
-        .expo--retina--3 .expo__item { flex-basis: calc( 100% / 3); }
-        .expo--retina--4 .expo__item { flex-basis: calc( 100% / 4); }
-        .expo--retina--5 .expo__item { flex-basis: calc( 100% / 5); }
-        .expo--retina--6 .expo__item { flex-basis: calc( 100% / 6); }
-    }
