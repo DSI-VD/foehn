@@ -36,7 +36,8 @@ var config = {
         fonts: 'src/assets/toolkit/fonts/**/*',
         views: 'src/toolkit/views/*.html'
     },
-    dest: 'dist'
+    dest: 'dist',
+    browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']
 };
 
 
@@ -79,7 +80,7 @@ gulp.task('clean', function (cb) {
 // styles
 gulp.task('styles:fabricator', function () {
     var processors = [
-        require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']})
+        require('autoprefixer')({browsers: config.browsers})
     ]
     gulp.src(config.src.styles.fabricator)
         // Start sourcemaps
@@ -129,7 +130,7 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         require('lost'),
         require('pixrem'),
         require('postcss-color-rgba-fallback'),
-        require('autoprefixer')({browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']})
+        require('autoprefixer')({browsers: config.browsers})
     ]
     return gulp.src(config.src.styles.toolkit)
         // If we are in dev, start sourcemaps
