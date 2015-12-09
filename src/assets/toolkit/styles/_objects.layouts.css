@@ -23,6 +23,18 @@
   lost-flex-container: row;
 }
 
+.layout--column {
+  lost-flex-container: column;
+}
+
+@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
+    @media ($(query)) {
+        .layout$(query)--column {
+            lost-flex-container: column;
+        }
+    }
+}
+
 
 
 
