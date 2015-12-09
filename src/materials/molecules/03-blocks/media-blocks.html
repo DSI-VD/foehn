@@ -1,7 +1,16 @@
 <a href="#" class="silent-link">
-    <article>
-        {{> medias.figure-with-caption}}
-        {{> headings.heading-level-3}}
-        {{> paragraph}}
+    <article class="layout">
+        <div class="layout__item--1-3">
+            {{> medias.figure-with-caption}}
+        </div>
+        <div class="layout__item layout__item--2-3">
+            {{> headings.heading-level-3}}
+            <p>
+                {{> time }}
+            </p>
+            <div class="hidden--palm">
+                {{> paragraph}}
+            </div>
+        </div>
     </article>
 </a>
