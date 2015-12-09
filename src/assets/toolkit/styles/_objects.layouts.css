@@ -41,9 +41,6 @@
     }
 }
 
-/**
- * Repsonsive flex items
- */
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
     @media ($(query)) {
         @for $cycle from 2 to 5 {
@@ -51,6 +48,43 @@
                 @if $fraction < $cycle {
                     .layout__item$(query)--$(fraction)-$(cycle) {
                         lost-column: $fraction/$cycle flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * Move
+ */
+
+@for $cycle from 2 to 5 {
+    @for $fraction from 1 to 5 {
+        @if $fraction < $cycle {
+            .layout__item--move--$(fraction)-$(cycle) {
+                lost-move: $fraction/$cycle;
+            }
+            .layout__item--move---$(fraction)-$(cycle) {
+                lost-move: -$fraction/$cycle;
+            }
+        }
+    }
+}
+
+@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
+    @media ($(query)) {
+        @for $cycle from 2 to 5 {
+            @for $fraction from 1 to 5 {
+                @if $fraction < $cycle {
+                    .layout__item$(query)--move--$(fraction)-$(cycle) {
+                        lost-move: $fraction/$cycle;
+                    }
+                    .layout__item$(query)--move---$(fraction)-$(cycle) {
+                        lost-move: -$fraction/$cycle;
                     }
                 }
             }
