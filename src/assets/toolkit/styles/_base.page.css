@@ -13,6 +13,7 @@
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
  * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ * 5. Use webfont only when it's loaded to avoid FOIT
  */
 html {
     font-size: var(--base-font-size); /* [1] */
@@ -25,4 +26,8 @@ html {
 
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
+
+    &.wf-active {
+        font-family: var(--enhance-base-font-family); /* [5] */
+    }
 }
