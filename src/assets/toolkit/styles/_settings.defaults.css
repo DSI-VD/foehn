@@ -8,7 +8,7 @@
 
 /* High-level base settings.*/
 :root {
-    --base-font-size: 1.25rem;
+    --base-font-size: 1.125rem;
     --base-line-height: 1.5;
     --base-text-color: rgb(51, 51, 51);
     --base-background-color: rgb(255, 255, 255);
