@@ -28,6 +28,7 @@ html {
     font-weight: var(--base-font-weight);
 
     &.wf-active {
-        font-family: var(--enhance-base-font-family); /* [5] */
+        font-family: var(--enhance-base-font-family); /* [6] */
+        font-weight: var(--enhance-base-font-weight);
     }
 }
