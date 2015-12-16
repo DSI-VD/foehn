@@ -24,6 +24,7 @@ html {
     color: var(--base-text-color);
     overflow-y: scroll; /* [2] */
     min-height: 100%; /* [3] */
+
     text-size-adjust: 100%; /* [4] */
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale; /* [5] */
@@ -31,6 +32,8 @@ html {
 
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "liga", "clig";
 
     &.wf-active {
         font-family: var(--enhance-base-font-family); /* [6] */
