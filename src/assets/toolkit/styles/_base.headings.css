@@ -46,6 +46,8 @@ h6 {
 
 /**
  * Headings fontface
+ *
+ * 1. Use Typekit webfont only when it's loaded to avoid FOIT
  */
 h1,
 h2,
@@ -56,4 +58,15 @@ h6 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     letter-spacing: var(--heading-letter-spacing);
+}
+
+.wf-active {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--enhance-heading-font-family); /* [1] */
+    }
 }
