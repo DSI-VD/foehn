@@ -13,7 +13,9 @@
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
  * 4. Prevent certain mobile browsers from automatically zooming fonts.
- * 5. Use Typekit webfont only when it's loaded to avoid FOIT
+ * 5. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ * 6. Use Typekit webfont only when it's loaded to avoid FOIT
  */
 html {
     font-size: var(--base-font-size); /* [1] */
@@ -23,6 +25,9 @@ html {
     overflow-y: scroll; /* [2] */
     min-height: 100%; /* [3] */
     text-size-adjust: 100%; /* [4] */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale; /* [5] */
+    -webkit-font-smoothing: antialiased; /* [5] */
 
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
