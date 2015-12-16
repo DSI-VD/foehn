@@ -9,13 +9,6 @@
  * defined by the default headings settings
  */
 :root {
-    --heading-size-1--palm: 2.25rem;
-    --heading-size-2--palm: 1.875rem;
-    --heading-size-3--palm: 1.5625rem;
-    --heading-size-4--palm: 1.25rem;
-    --heading-size-5--palm: 1rem;
-    --heading-size-6--palm: .875rem;
-
     --heading-size-1--lap: var(--heading-size-1);
     --heading-size-2--lap: var(--heading-size-2);
     --heading-size-3--lap: var(--heading-size-3);
@@ -23,21 +16,12 @@
     --heading-size-5--lap: var(--heading-size-5);
     --heading-size-6--lap: var(--heading-size-6);
 
-    --heading-size-1--desk: 3.375rem;
-    --heading-size-2--desk: 2.8125rem;
-    --heading-size-3--desk: 2.25rem;
-    --heading-size-4--desk: 1.875rem;
-    --heading-size-5--desk: 1.5rem;
-    --heading-size-6--desk: 1.3125rem;
-}
-
-@media (--palm) {
-    h1 { font-size: var(--heading-size-1--palm); }
-    h2 { font-size: var(--heading-size-2--palm); }
-    h3 { font-size: var(--heading-size-3--palm); }
-    h4 { font-size: var(--heading-size-4--palm); }
-    h5 { font-size: var(--heading-size-5--palm); }
-    h6 { font-size: var(--heading-size-6--palm); }
+    --heading-size-1--desk: var(--heading-size-1);
+    --heading-size-2--desk: var(--heading-size-2);
+    --heading-size-3--desk: var(--heading-size-3);
+    --heading-size-4--desk: var(--heading-size-4);
+    --heading-size-5--desk: var(--heading-size-5);
+    --heading-size-6--desk: var(--heading-size-6);
 }
 
 @media (--lap) {
