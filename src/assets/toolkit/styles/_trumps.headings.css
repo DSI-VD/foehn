@@ -52,6 +52,8 @@
 
 /**
  * Headings fontface
+ *
+ * 1. Use Typekit webfont only when it's loaded to avoid FOIT
  */
 .alpha,
 .beta,
@@ -61,4 +63,15 @@
 .zeta {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
+}
+
+.wf-active {
+    .alpha,
+    .beta,
+    .gamma,
+    .delta,
+    .epsilon,
+    .zeta {
+        font-family: var(--enhance-heading-font-family); /* [1] */
+    }
 }
