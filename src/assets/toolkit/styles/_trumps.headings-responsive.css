@@ -9,15 +9,6 @@
  * support media queries.
  */
 
-@media (--palm) {
-    .alpha { font-size: var(--heading-size-1--palm); }
-    .beta { font-size: var(--heading-size-2--palm); }
-    .gamma { font-size: var(--heading-size-3--palm); }
-    .delta { font-size: var(--heading-size-4--palm); }
-    .epsilon { font-size: var(--heading-size-5--palm); }
-    .zeta { font-size: var(--heading-size-6--palm); }
-}
-
 @media (--lap) {
     .alpha { font-size: var(--heading-size-1--lap); }
     .beta { font-size: var(--heading-size-2--lap); }
