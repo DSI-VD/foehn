@@ -74,6 +74,7 @@
     "webpack": "^1.8.11"
   },
   "dependencies": {
-    "gulp-css-scss": "0.0.2"
+    "gulp-css-scss": "0.0.2",
+    "postcss-calc": "^5.0.0"
   }
 }
