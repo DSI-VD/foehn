@@ -29,33 +29,35 @@
 
 @define-extend heading-1,
 h1 {
-    @mixin font-size 3, var(--heading-size-1), var(--heading-line-height-1) {}
+    font-size: var(--heading-size-1);
+    line-height: var(--heading-line-height-1);
 }
 
 @define-extend heading-2,
 h2 {
-    @mixin font-size 2, var(--heading-size-2), var(--heading-line-height-2) {}
+    font-size: var(--heading-size-2);
+    line-height: var(--heading-line-height-2);
 }
 
 @define-extend heading-3,
 h3 {
-    @mixin font-size 2, var(--heading-size-3), var(--heading-line-height-3) {}
-}
+    font-size: var(--heading-size-3);
+    line-height: var(--heading-line-height-3);}
 
 @define-extend heading-4,
 h4 {
-    @mixin font-size 2, var(--heading-size-4), var(--heading-line-height-4) {}
-}
+    font-size: var(--heading-size-4);
+    line-height: var(--heading-line-height-4);}
 
 @define-extend heading-5,
 h5 {
-    @mixin font-size 2, var(--heading-size-5), var(--heading-line-height-5) {}
-}
+    font-size: var(--heading-size-5);
+    line-height: var(--heading-line-height-5);}
 
 @define-extend heading-6,
 h6 {
-    @mixin font-size 2, var(--heading-size-6), var(--heading-line-height-6) {}
-}
+    font-size: var(--heading-size-6);
+    line-height: var(--heading-line-height-6);}
 
 
 
