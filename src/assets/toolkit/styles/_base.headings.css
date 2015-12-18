@@ -7,42 +7,64 @@
  */
 
 /*Predefine the variables below in order to alter and enable specific features.*/
-:root{
-    --heading-size-1: calc( 2 * var(--base-font-size) );
+:root {
+    --heading-size-1: calc( 2 * var(--base-font-size ));
+    --heading-line-height-1: 1.2;
+
     --heading-size-2: calc( 1.667 * var(--base-font-size) );
+    --heading-line-height-2: 1.2;
+
     --heading-size-3: calc( 1.333 * var(--base-font-size) );
+    --heading-line-height-3: 1.2;
+
     --heading-size-4: calc( 1 * var(--base-font-size) );
+    --heading-line-height-4: var(--base-line-height );
+
     --heading-size-5: calc( 0.8 * var(--base-font-size) );
+    --heading-line-height-5: var(--base-line-height );
+
     --heading-size-6: calc( 0.8 * var(--base-font-size) );
+    --heading-line-height-6: var(--base-line-height );
 }
+
+/**
+ * Vertical rhythme unit is font-size of the root * root line-height
+ * var(--base-font-size) * var(--base-line-height) = 16px * 1.125 * 1.5
+ */
 
 h1 {
     font-size: var(--heading-size-1);
+    line-height: var(--heading-line-height-1);
     font-weight: var(--heading-font-weight);
 }
 
 h2 {
     font-size: var(--heading-size-2);
+    line-height: var(--heading-line-height-2);
     font-weight: var(--heading-font-weight);
 }
 
 h3 {
     font-size: var(--heading-size-3);
+    line-height: var(--heading-line-height-3);
     font-weight: var(--heading-font-weight);
 }
 
 h4 {
     font-size: var(--heading-size-4);
+    line-height: var(--heading-line-height-4);
     font-weight: var(--heading-font-weight);
 }
 
 h5 {
     font-size: var(--heading-size-5);
+    line-height: var(--heading-line-height-5);
     font-weight: var(--heading-font-weight);
 }
 
 h6 {
     font-size: var(--heading-size-6);
+    line-height: var(--heading-line-height-6);
     font-weight: 400;
 }
 
