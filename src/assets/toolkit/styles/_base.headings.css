@@ -20,10 +20,10 @@
     --heading-size-4: 1rem;
     --heading-line-height-4: 1.5;
 
-    --heading-size-5: 0.8rem;
+    --heading-size-5: .8rem;
     --heading-line-height-5: 1.5;
 
-    --heading-size-6: 0.8rem;
+    --heading-size-6: .8rem;
     --heading-line-height-6: 1.5;
 }
 
@@ -33,31 +33,51 @@ h1 {
     line-height: var(--heading-line-height-1);
 }
 
+/**
+ * Vertical rhythme unit is font-size of the root * root line-height
+ * var(--base-font-size) * var(--base-line-height) = 16px * 1.125 * 1.5
+ */
+
+h1 {
+    font-size: var(--heading-size-1);
+    line-height: var(--heading-line-height-1);
+    font-weight: var(--heading-font-weight);
+}
+
 @define-extend heading-2,
 h2 {
     font-size: var(--heading-size-2);
     line-height: var(--heading-line-height-2);
+    font-weight: var(--heading-font-weight);
 }
 
 @define-extend heading-3,
 h3 {
     font-size: var(--heading-size-3);
-    line-height: var(--heading-line-height-3);}
+    line-height: var(--heading-line-height-3);
+    font-weight: var(--heading-font-weight);
+}
 
 @define-extend heading-4,
 h4 {
     font-size: var(--heading-size-4);
-    line-height: var(--heading-line-height-4);}
+    line-height: var(--heading-line-height-4);
+    font-weight: var(--heading-font-weight);
+}
 
 @define-extend heading-5,
 h5 {
     font-size: var(--heading-size-5);
-    line-height: var(--heading-line-height-5);}
+    line-height: var(--heading-line-height-5);
+    font-weight: var(--heading-font-weight);
+}
 
 @define-extend heading-6,
 h6 {
     font-size: var(--heading-size-6);
-    line-height: var(--heading-line-height-6);}
+    line-height: var(--heading-line-height-6);
+    font-weight: 400;
+}
 
 
 
