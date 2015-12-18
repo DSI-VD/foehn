@@ -54,3 +54,20 @@
     display: none !important;
     visibility: hidden !important; /* 1 */
 }
+
+
+
+
+
+/**
+ * Add the right margin-bottom to fit into the vertical rhythme.
+ *
+ * $ratio: number of baseline height the text will take
+ * $font-size: size of the font
+ * $line-height: line-height
+ */
+@define-mixin font-size $ratio, $font-size: var(--base-font-size), $line-height: var(--base-line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin-bottom: calc( ( $ratio * var(--base-line-height) * 1rem ) - ( $font-size * $line-height ) );
+}
