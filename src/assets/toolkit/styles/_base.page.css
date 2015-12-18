@@ -7,7 +7,7 @@
  *
  * 1. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
- *    in ems, the `line-height` is calculated to exist unitlessly.
+ *    in rems, the `line-height` is calculated to exist unitlessly.
  * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
