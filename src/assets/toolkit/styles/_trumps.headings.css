@@ -2,15 +2,6 @@
     #HEADINGS
 \*------------------------------------*/
 
-:root {
-    --heading-size-alpha: var(--heading-size-1);
-    --heading-size-beta: var(--heading-size-2);
-    --heading-size-gamma: var(--heading-size-3);
-    --heading-size-delta: var(--heading-size-4);
-    --heading-size-epsilon: var(--heading-size-5);
-    --heading-size-zeta: var(--heading-size-6);
-}
-
 /**
  * Headings 1–6’s corresponding Greek-alphabet abstract classes for double-
  * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
@@ -23,27 +14,27 @@
  */
 
 .alpha {
-    font-size: var(--heading-size-alpha);
+    @extend heading-1;
 }
 
 .beta {
-    font-size: var(--heading-size-beta);
+    @extend heading-2;
 }
 
 .gamma {
-    font-size: var(--heading-size-gamma);
+    @extend heading-3;
 }
 
 .delta {
-    font-size: var(--heading-size-delta);
+    @extend heading-4;
 }
 
 .epsilon {
-    font-size: var(--heading-size-epsilon);
+    @extend heading-5;
 }
 
 .zeta {
-    font-size: var(--heading-size-zeta);
+    @extend heading-6;
 }
 
 
@@ -61,8 +52,7 @@
 .delta,
 .epsilon,
 .zeta {
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
+    @extend heading-fontface;
 }
 
 .wf-active {
@@ -72,6 +62,6 @@
     .delta,
     .epsilon,
     .zeta {
-        font-family: var(--enhance-heading-font-family); /* [1] */
+        @extend heading-wf-active;
     }
 }

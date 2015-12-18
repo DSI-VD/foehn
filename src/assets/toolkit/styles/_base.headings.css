@@ -18,54 +18,43 @@
     --heading-line-height-3: 1.2;
 
     --heading-size-4: 1rem;
-    --heading-line-height-4: var(--base-line-height );
+    --heading-line-height-4: 1.5;
 
     --heading-size-5: 0.8rem;
-    --heading-line-height-5: var(--base-line-height );
+    --heading-line-height-5: 1.5;
 
     --heading-size-6: 0.8rem;
-    --heading-line-height-6: var(--base-line-height );
+    --heading-line-height-6: 1.5;
 }
 
-/**
- * Vertical rhythme unit is font-size of the root * root line-height
- * var(--base-font-size) * var(--base-line-height) = 16px * 1.125 * 1.5
- */
-
+@define-extend heading-1,
 h1 {
-    font-size: var(--heading-size-1);
-    line-height: var(--heading-line-height-1);
-    font-weight: var(--heading-font-weight);
+    @mixin font-size 3, var(--heading-size-1), var(--heading-line-height-1) {}
 }
 
+@define-extend heading-2,
 h2 {
-    font-size: var(--heading-size-2);
-    line-height: var(--heading-line-height-2);
-    font-weight: var(--heading-font-weight);
+    @mixin font-size 2, var(--heading-size-2), var(--heading-line-height-2) {}
 }
 
+@define-extend heading-3,
 h3 {
-    font-size: var(--heading-size-3);
-    line-height: var(--heading-line-height-3);
-    font-weight: var(--heading-font-weight);
+    @mixin font-size 2, var(--heading-size-3), var(--heading-line-height-3) {}
 }
 
+@define-extend heading-4,
 h4 {
-    font-size: var(--heading-size-4);
-    line-height: var(--heading-line-height-4);
-    font-weight: var(--heading-font-weight);
+    @mixin font-size 2, var(--heading-size-4), var(--heading-line-height-4) {}
 }
 
+@define-extend heading-5,
 h5 {
-    font-size: var(--heading-size-5);
-    line-height: var(--heading-line-height-5);
-    font-weight: var(--heading-font-weight);
+    @mixin font-size 2, var(--heading-size-5), var(--heading-line-height-5) {}
 }
 
+@define-extend heading-6,
 h6 {
-    font-size: var(--heading-size-6);
-    line-height: var(--heading-line-height-6);
-    font-weight: 400;
+    @mixin font-size 2, var(--heading-size-6), var(--heading-line-height-6) {}
 }
 
 
@@ -77,6 +66,7 @@ h6 {
  *
  * 1. Use Typekit webfont only when it's loaded to avoid FOIT
  */
+@define-extend heading-fontface,
 h1,
 h2,
 h3,
@@ -85,15 +75,15 @@ h5,
 h6 {
     font-family: var(--heading-font-family);
     letter-spacing: var(--heading-letter-spacing);
+    font-weight: var(--heading-font-weight);
 }
 
-.wf-active {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: var(--enhance-heading-font-family); /* [1] */
-    }
+@define-extend heading-wf-active,
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active h6 {
+    font-family: var(--enhance-heading-font-family); /* [1] */
 }
