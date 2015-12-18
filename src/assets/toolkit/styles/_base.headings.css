@@ -8,7 +8,7 @@
 
 /*Predefine the variables below in order to alter and enable specific features.*/
 :root {
-    --heading-size-1: calc( 2 * var(--base-font-size ));
+    --heading-size-1: 2rem;
     --heading-line-height-1: 1.2;
 
     --heading-size-2: 1.667rem;
