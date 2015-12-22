@@ -37,6 +37,7 @@
  *
  * COMPONENTS
  * Boxes................Boxes styles.
+ * Small................Small text styles.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -76,6 +77,7 @@
 @import "_objects.tables.css";
 
 @import "_components.box.css";
+@import "_components.small.css";
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";

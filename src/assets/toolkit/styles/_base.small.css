@@ -17,6 +17,7 @@
 
 
 
+@define-extend small,
 small {
     font-family: var(--small-font-family);
     font-size: var(--small-font-size);
@@ -33,8 +34,7 @@ small {
  * 1. Use Typekit webfont only when it's loaded to avoid FOIT
  */
 
-.wf-active {
-    small {
+@define-extend small-wf-active,
+.wf-active small {
         font-family: var(--enhance-small-font-family); /* [1] */
-    }
 }
