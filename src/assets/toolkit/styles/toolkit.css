@@ -38,6 +38,7 @@
  * COMPONENTS
  * Boxes................Boxes styles.
  * Small................Small text styles.
+ * Strong...............Strong text styles.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -64,6 +65,7 @@
 @import "_base.headings.css";
 @import "_base.headings-responsive.css";
 @import "_base.small.css";
+@import "_base.strong.css";
 @import "_base.lists.css";
 @import "_base.anchors.css";
 @import "_base.images.css";
@@ -78,6 +80,7 @@
 
 @import "_components.box.css";
 @import "_components.small.css";
+@import "_components.strong.css";
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";

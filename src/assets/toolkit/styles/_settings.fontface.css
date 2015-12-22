@@ -15,6 +15,7 @@
     --enhance-base-font-family: "ff-meta-serif-web-pro", var(--base-font-family);
     --enhance-base-font-weight: 500;
 
+    --heading-font-weight: 700;
     --heading-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     --heading-font-weight: 700;
     --heading-letter-spacing: -.03em;
