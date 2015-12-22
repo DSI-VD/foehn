@@ -31,16 +31,6 @@
 h1 {
     font-size: var(--heading-size-1);
     line-height: var(--heading-line-height-1);
-}
-
-/**
- * Vertical rhythme unit is font-size of the root * root line-height
- * var(--base-font-size) * var(--base-line-height) = 16px * 1.125 * 1.5
- */
-
-h1 {
-    font-size: var(--heading-size-1);
-    line-height: var(--heading-line-height-1);
     font-weight: var(--heading-font-weight);
 }
 
