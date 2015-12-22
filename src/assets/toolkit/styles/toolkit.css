@@ -61,6 +61,7 @@
 @import "_base.page-responsive.css";
 @import "_base.headings.css";
 @import "_base.headings-responsive.css";
+@import "_base.small.css";
 @import "_base.lists.css";
 @import "_base.anchors.css";
 @import "_base.images.css";
