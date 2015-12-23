@@ -14,46 +14,32 @@
  */
 
 .alpha {
-    @extend heading-1;
+    @extend h1;
 }
 
 .beta {
-    @extend heading-2;
+    @extend h2;
 }
 
 .gamma {
-    @extend heading-3;
+    @extend h3;
 }
 
 .delta {
-    @extend heading-4;
+    @extend h4;
 }
 
 .epsilon {
-    @extend heading-5;
+    @extend h5;
 }
 
 .zeta {
-    @extend heading-6;
+    @extend h6;
 }
 
 
 
 
-
-/**
- * Headings fontface
- *
- * 1. Use Typekit webfont only when it's loaded to avoid FOIT
- */
-.alpha,
-.beta,
-.gamma,
-.delta,
-.epsilon,
-.zeta {
-    @extend heading-fontface;
-}
 
 .wf-active {
     .alpha,

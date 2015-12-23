@@ -27,42 +27,36 @@
     --heading-line-height-6: 1.5;
 }
 
-@define-extend heading-1,
 h1 {
     font-size: var(--heading-size-1);
     line-height: var(--heading-line-height-1);
     font-weight: var(--heading-font-weight);
 }
 
-@define-extend heading-2,
 h2 {
     font-size: var(--heading-size-2);
     line-height: var(--heading-line-height-2);
     font-weight: var(--heading-font-weight);
 }
 
-@define-extend heading-3,
 h3 {
     font-size: var(--heading-size-3);
     line-height: var(--heading-line-height-3);
     font-weight: var(--heading-font-weight);
 }
 
-@define-extend heading-4,
 h4 {
     font-size: var(--heading-size-4);
     line-height: var(--heading-line-height-4);
     font-weight: var(--heading-font-weight);
 }
 
-@define-extend heading-5,
 h5 {
     font-size: var(--heading-size-5);
     line-height: var(--heading-line-height-5);
     font-weight: var(--heading-font-weight);
 }
 
-@define-extend heading-6,
 h6 {
     font-size: var(--heading-size-6);
     line-height: var(--heading-line-height-6);
@@ -78,7 +72,6 @@ h6 {
  *
  * 1. Use Typekit webfont only when it's loaded to avoid FOIT
  */
-@define-extend heading-fontface,
 h1,
 h2,
 h3,
