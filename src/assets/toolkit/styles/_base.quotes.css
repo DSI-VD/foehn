@@ -8,6 +8,7 @@
 
 :root {
     --blockquote-text-color: var(--base-text-color);
+    --blockquote-left-margin: var(--base-spacing-unit--large);
 }
 
 
@@ -23,15 +24,13 @@ blockquote {
     font-style: italic;
     letter-spacing: -.003rem;
 
-    padding-left: var(--base-spacing-unit);
+    padding-left: calc( var(--blockquote-left-margin) / 2 );
     margin-left: @padding-left;
     border-left: .2rem var(--blockquote-text-color) solid;
+}
 
-    cite {
-        &::before {
-            content: "\2013\0020";
-        }
-    }
+blockquote cite::before {
+    content: "\2013\0020"; /* [1] */
 }
 
 
