@@ -13,7 +13,10 @@
 	<link rel="stylesheet" href=".//assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 
-
+	<!-- typekit fonts -->
+	<script src="https://use.typekit.net/cov3xdm.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<!-- /typekit fonts -->
 
 </head>
 <body>
@@ -195,6 +198,9 @@
 						</li>
 						<li>
 							<a href="pages/prestations.html" target="_blank">Prestations</a>
+						</li>
+						<li>
+							<a href="pages/typography-font-comparaison.html" target="_blank">Typography Font Comparaison</a>
 						</li>
 						<li>
 							<a href="pages/typography.html" target="_blank">Typography</a>
@@ -1027,14 +1033,24 @@ respective heading.</p>
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Blockquote</h2>
 		<div class="f-item-controls">
-			
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>The blockquote indicates that the enclosed text is an extended quotation.
+A URL for the source of the quotation may be given using the cite attribute,
+while a text representation of the source can be given using the
+<a href="molecules.html#01-text.blockquote-with-citation"><code>&lt;cite&gt;</code></a> element.</p>
+
+</div>
 <div class="f-item-preview">
 	<blockquote>
 	<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or
