@@ -23,7 +23,7 @@
  * 7. Subtract the border size from the padding value so that buttons do not
  *    grow larger as we add borders.
  */
-.btn{
+.btn {
     display: inline-block; /* [1] */
     vertical-align: middle; /* [2] */
     font: inherit; /* [3] */
