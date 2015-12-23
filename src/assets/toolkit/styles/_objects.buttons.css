@@ -3,13 +3,13 @@
 \*------------------------------------*/
 
 :root {
-    --btn-padding: var(--base-spacing-unit);
-    --btn-background: var(--base-text-color);
-    --btn-color: var(--base-background-color);
+    --btn-padding: var(--base-spacing-unit--small);
+    --btn-background: var(--base-background-color);
+    --btn-color: var(--base-text-color);
     --btn-border-width: 1px;
     --btn-border-style: solid;
-    --btn-border-color: var(--btn-background);
     --btn-border-color: var(--base-text-color);
+    --btn-font-family: var(--headings-font-family);
 }
 
 /**
@@ -34,6 +34,8 @@
     padding: calc(var(--btn-padding) - var(--btn-border-width))  calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
     background-color: var(--btn-background);
     border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
+
+    font-family: var(--heading-font-family);
 }
 
 .btn,
