@@ -9,6 +9,7 @@
     --btn-border-width: 1px;
     --btn-border-style: solid;
     --btn-border-color: var(--btn-background);
+    --btn-border-color: var(--base-text-color);
 }
 
 /**
