@@ -1,7 +1,0 @@
-node_modules
-dist
-.sass-cache
-npm-debug.*
-.publish
-build
-.DS_Store
