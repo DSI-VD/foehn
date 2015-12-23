@@ -1,9 +1,9 @@
 colors:
   primary:
-    Dark: "rgb(51, 51, 51)"
-    Light: "rgb(242, 242, 242)"
-    Primary: "rgb(74, 135, 63)"
-    Background: "rgb(255, 255, 255)"
+    Dark: "rgba(0, 0, 0, .8)"
+    Light: "rgba(242, 242, 242, 1)"
+    Primary: "rgba(74, 135, 63, 1)"
+    Background: "rgba(255, 255, 255, 1)"
 topics:
   Vie privée:
     - Familles
