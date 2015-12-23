@@ -33,7 +33,9 @@ html {
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
     font-variant-ligatures: common-ligatures;
-    font-feature-settings: "liga", "clig";
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "liga", "clig", "lnum";
+
 
     &.wf-active {
         font-family: var(--enhance-base-font-family); /* [6] */
