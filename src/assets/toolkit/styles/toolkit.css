@@ -18,9 +18,7 @@
  *
  * BASE
  * Page.................Fonts, colors and all stuff for `<html>.
- * Page responsive......Responsive typography for body text.
  * Headings.............H1–H6 styles.
- * Headings responsive..Responsive typography for headings.
  * Small................Small text.
  * Lists................UL, OL & DL styles.
  * Anchors..............Links styles.
@@ -45,7 +43,6 @@
  * TRUMPS
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
- * Headings responsive..Responsive headings styles for texts.
  * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  */
@@ -63,9 +60,7 @@
 @import "_generic.shared.css";
 
 @import "_base.page.css";
-@import "_base.page-responsive.css";
 @import "_base.headings.css";
-@import "_base.headings-responsive.css";
 @import "_base.small.css";
 @import "_base.strong.css";
 @import "_base.lists.css";
@@ -88,6 +83,5 @@
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";
-@import "_trumps.headings-responsive.css";
 @import "_trumps.utilities.css";
 @import "_trumps.utilities-responsive.css";
