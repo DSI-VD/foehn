@@ -1,4 +1,28 @@
 <style>
+    /**
+     * Font choice 1
+     *
+     * Myriad Pro Semi Condensed & FF Meta Serif Pro
+     */
+    .font-choice-1::before {
+        content: "Myriad Pro Semi Condensed & FF Meta Serif Pro";
+        font-family: "myriad-pro-semi-condensed",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.25);
+    }
+    /**
+     * Font choice 2
+     *
+     * Museo Sans Condensed & Freight Text Pro
+     */
+    .font-choice-2::before {
+        content: "Museo Sans Condensed & Freight Text Pro";
+        font-family: "myriad-pro-semi-condensed",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.25);
+    }
     html.wf-active .font-choice-2,
     html.wf-active .font-choice-2 .small {
         font-family: "freight-text-pro",sans-serif;
@@ -20,6 +44,40 @@
         font-style: normal;
         font-weight: 300;
     }
+
+    /**
+     * Font choice 3
+     *
+     * JAF Facit & Calluna
+     */
+    .font-choice-3::before {
+        content: "JAF Facit & Calluna";
+        font-family: "myriad-pro-semi-condensed",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.25);
+    }
+    html.wf-active .font-choice-3,
+    html.wf-active .font-choice-3 .small {
+        font-family: "calluna",serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .wf-active .font-choice-3 h1,
+    .wf-active .font-choice-3 h2,
+    .wf-active .font-choice-3 h3,
+    .wf-active .font-choice-3 h4,
+    .wf-active .font-choice-3 h5,
+    .wf-active .font-choice-3 h6 {
+        font-family: "jaf-facitweb",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .wf-active .font-choice-3 .btn {
+        font-family: "jaf-facitweb",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
 </style>
 
 <div class="container">
@@ -29,7 +87,7 @@
     </p>
 
     <h1>À propos</h1>
-    <p>Les deux propositions ont les même auteurs de lignes, ainsi que la même taille de caractère.</p>
+    <p>Les propositions ont les même auteurs de lignes, ainsi que la même taille de caractère.</p>
     <p>La taille des caractères est optimisé pour un affichage sur mobile. Il est donc pertinant de <strong>tester ces polices en premier lieu sur des appareils mobiles</strong>.</p>
     <p>Voici les paramètres definit pour toutes les polices:</p>
     <ul>
@@ -39,7 +97,7 @@
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing">L'espacement des caractère</a> des titres est réduit de <code>-0.03em</code> soit <code>-0.54px</code>.</li>
         <li>La hauteur de ligne est de <code>1.5</code>.</li>
     </ul>
-    <h2>Les deux choix</h2>
+    <h2>Les choix</h2>
     <h3>Myriad Pro Semi Condensed & FF Meta Serif Pro</h3>
     <ul>
         <li>Titre: Myriad Pro Semi Condensed</li>
@@ -50,13 +108,16 @@
         <li>Titre: Museo Sans Condensed</li>
         <li>Texte: Freight Text Pro</li>
     </ul>
+    <h3>JAF Facit & Calluna</h3>
+    <ul>
+        <li>Titre: JAF Facit</li>
+        <li>Texte: Calluna</li>
+    </ul>
 
     <hr>
 
     <div class="layout">
-            <div class="layout__item--lap-and-up--1-2">
-                <h6>Myriad Pro Semi Condensed & FF Meta Serif Pro</h6>
-
+            <div class="layout__item--lap-and-up--1-3 font-choice-1">
                 <h1>Production faible, mais millésime d'une qualité exceptionnelle</h1>
                 <p>L'été 2015 s'est montré généreux, notamment au travers d'un ensoleillement exceptionnel et des températures dépassant souvent les normes tropicales. La vigne apprécie particulièrement ces conditions. Le résultat est là: le raisin issu des dernières vendanges présente une qualité en tous points exemplaire. Le milieu vitivinicole vaudois admet déjà que les vins 2015 s'annoncent comme de très haute tenue. Un bémol toutefois: les rendements ont été extrêmement faibles. Certaines exploitations vitivinicoles pourraient ainsi se retrouver face à des difficultés économiques.</p>
                 <p>Les petits rendements viticoles sont gages de qualité ; <a href="#">le millésime 2015</a> le confirme. En effet, les grappes des vignes vaudoises sont restées petites, de manière générale, précisément en raison d'un été marqué par une sécheresse persistante. En revanche, l'effet positif de cette situation est une grande concentration des sucres, de l'acidité et des composés aromatiques. En comparaison de l'année 2003 qui a marqué les esprits, le présent millésime s'annonce encore plus équilibré, grâce à l'acidité plus élevée conservée dans les raisins.</p>
@@ -65,10 +126,9 @@
                 <p>Le vignoble vaudois couvre aujourd'hui 3804 hectares (ha). La diversification de l'encépagement se poursuit avec comme conséquence une diminution des surfaces des trois principaux cépages ; le chasselas et le gamay perdent ensemble plus de 600 ha depuis 1993, année de référence. Quant au pinot noir, malgré un léger repli depuis 2008, il demeure stable aux environs de 490 ha. Ces trois cépages précédemment évoqués occupent encore 83 % du vignoble vaudois, dont 60 % pour le chasselas. La presque totalité des autres cépages rouges et spécialités blanches poursuivent leur progression.</p>
                 <p>L'Office cantonal de la viticulture et de <strong>la promotion</strong> se réjouit de cette année viticole remarquable pour la qualité de sa production.</p>
                 <p>Toutefois, après deux millésimes déjà peu généreux en quantité de production, force est de constater que 2015 s'inscrit à nouveau dans cette tendance. La filière vitivinicole vaudoise souffre de cette situation.</p>
-            </div><!-- /.layout__item--lap-and-up--1 -->
-            <div class="layout__item--lap-and-up--1-2 font-choice-2">
-                <h6>Museo Sans Condensed & Freight Text Pro</h6>
+            </div><!-- /.layout__item--lap-and-up--1-3 -->
 
+            <div class="layout__item--lap-and-up--1-3 font-choice-2">
                 <h1>Production faible, mais millésime d'une qualité exceptionnelle</h1>
                 <p>L'été 2015 s'est montré généreux, notamment au travers d'un ensoleillement exceptionnel et des températures dépassant souvent les normes tropicales. La vigne apprécie particulièrement ces conditions. Le résultat est là: le raisin issu des dernières vendanges présente une qualité en tous points exemplaire. Le milieu vitivinicole vaudois admet déjà que les vins 2015 s'annoncent comme de très haute tenue. Un bémol toutefois: les rendements ont été extrêmement faibles. Certaines exploitations vitivinicoles pourraient ainsi se retrouver face à des difficultés économiques.</p>
                 <p>Les petits rendements viticoles sont gages de qualité ; <a href="#">le millésime 2015</a> le confirme. En effet, les grappes des vignes vaudoises sont restées petites, de manière générale, précisément en raison d'un été marqué par une sécheresse persistante. En revanche, l'effet positif de cette situation est une grande concentration des sucres, de l'acidité et des composés aromatiques. En comparaison de l'année 2003 qui a marqué les esprits, le présent millésime s'annonce encore plus équilibré, grâce à l'acidité plus élevée conservée dans les raisins.</p>
@@ -77,15 +137,24 @@
                 <p>Le vignoble vaudois couvre aujourd'hui 3804 hectares (ha). La diversification de l'encépagement se poursuit avec comme conséquence une diminution des surfaces des trois principaux cépages ; le chasselas et le gamay perdent ensemble plus de 600 ha depuis 1993, année de référence. Quant au pinot noir, malgré un léger repli depuis 2008, il demeure stable aux environs de 490 ha. Ces trois cépages précédemment évoqués occupent encore 83 % du vignoble vaudois, dont 60 % pour le chasselas. La presque totalité des autres cépages rouges et spécialités blanches poursuivent leur progression.</p>
                 <p>L'Office cantonal de la viticulture et de <strong>la promotion</strong> se réjouit de cette année viticole remarquable pour la qualité de sa production.</p>
                 <p>Toutefois, après deux millésimes déjà peu généreux en quantité de production, force est de constater que 2015 s'inscrit à nouveau dans cette tendance. La filière vitivinicole vaudoise souffre de cette situation.</p>
-            </div><!-- /.layout__item--lap-and-up--1 -->
+            </div><!-- /.layout__item--lap-and-up--1-3 -->
+
+            <div class="layout__item--lap-and-up--1-3 font-choice-3">
+                <h1>Production faible, mais millésime d'une qualité exceptionnelle</h1>
+                <p>L'été 2015 s'est montré généreux, notamment au travers d'un ensoleillement exceptionnel et des températures dépassant souvent les normes tropicales. La vigne apprécie particulièrement ces conditions. Le résultat est là: le raisin issu des dernières vendanges présente une qualité en tous points exemplaire. Le milieu vitivinicole vaudois admet déjà que les vins 2015 s'annoncent comme de très haute tenue. Un bémol toutefois: les rendements ont été extrêmement faibles. Certaines exploitations vitivinicoles pourraient ainsi se retrouver face à des difficultés économiques.</p>
+                <p>Les petits rendements viticoles sont gages de qualité ; <a href="#">le millésime 2015</a> le confirme. En effet, les grappes des vignes vaudoises sont restées petites, de manière générale, précisément en raison d'un été marqué par une sécheresse persistante. En revanche, l'effet positif de cette situation est une grande concentration des sucres, de l'acidité et des composés aromatiques. En comparaison de l'année 2003 qui a marqué les esprits, le présent millésime s'annonce encore plus équilibré, grâce à l'acidité plus élevée conservée dans les raisins.</p>
+                <p>Sur le plan quantitatif, la récolte 2015 atteint 21.81 millions de litres de vin clair, soit 15.42 de blancs et 6.39 de rouges, majoritairement de classe 1 (Premier grand cru, Grand cru et AOC). Le volume de cette récolte est inférieur de 6 millions de litres à la moyenne des dix dernières années. Les productions 2013, 2014 et 2015 constituent les plus petites récoltes depuis 1981.</p>
+                <p>Les sondages cantonaux moyens s'élèvent à 84.7 degrés Oechslé pour le chasselas, 94.3 pour le gamay et 97.4 pour le pinot noir. La qualité de cette récolte 2015 s'inscrit parmi des millésimes qui laissent rêveurs bon nombre d'amateurs de vins tels que 1945, 1947 ou 1959.</p>
+                <p>Le vignoble vaudois couvre aujourd'hui 3804 hectares (ha). La diversification de l'encépagement se poursuit avec comme conséquence une diminution des surfaces des trois principaux cépages ; le chasselas et le gamay perdent ensemble plus de 600 ha depuis 1993, année de référence. Quant au pinot noir, malgré un léger repli depuis 2008, il demeure stable aux environs de 490 ha. Ces trois cépages précédemment évoqués occupent encore 83 % du vignoble vaudois, dont 60 % pour le chasselas. La presque totalité des autres cépages rouges et spécialités blanches poursuivent leur progression.</p>
+                <p>L'Office cantonal de la viticulture et de <strong>la promotion</strong> se réjouit de cette année viticole remarquable pour la qualité de sa production.</p>
+                <p>Toutefois, après deux millésimes déjà peu généreux en quantité de production, force est de constater que 2015 s'inscrit à nouveau dans cette tendance. La filière vitivinicole vaudoise souffre de cette situation.</p>
+            </div><!-- /.layout__item--lap-and-up--1-3 -->
     </div><!-- /.layout -->
 
     <hr>
 
     <div class="layout">
-        <div class="layout__item--lap-and-up--1-2">
-            <h6>Myriad Pro Semi Condensed & FF Meta Serif Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-1">
             {{> headings.heading-level-1}}
             <p>{{placeholders.bodytext.short}}</p>
 
@@ -103,10 +172,9 @@
 
             {{> headings.heading-level-6}}
             <p>{{placeholders.bodytext.short}}</p>
-        </div><!-- /.layout__item--lap-and-up--1 -->
-        <div class="layout__item--lap-and-up--1-2 font-choice-2">
-            <h6>Museo Sans Condensed & Freight Text Pro</h6>
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
 
+        <div class="layout__item--lap-and-up--1-3 font-choice-2">
             {{> headings.heading-level-1}}
             <p>{{placeholders.bodytext.short}}</p>
 
@@ -124,85 +192,121 @@
 
             {{> headings.heading-level-6}}
             <p>{{placeholders.bodytext.short}}</p>
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
+
+        <div class="layout__item--lap-and-up--1-3 font-choice-3">
+            {{> headings.heading-level-1}}
+            <p>{{placeholders.bodytext.short}}</p>
+
+            {{> headings.heading-level-2}}
+            <p>{{placeholders.bodytext.short}}</p>
+
+            {{> headings.heading-level-3}}
+            <p>{{placeholders.bodytext.short}}</p>
+
+            {{> headings.heading-level-4}}
+            <p>{{placeholders.bodytext.short}}</p>
+
+            {{> headings.heading-level-5}}
+            <p>{{placeholders.bodytext.short}}</p>
+
+            {{> headings.heading-level-6}}
+            <p>{{placeholders.bodytext.short}}</p>
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
+
     </div><!-- /.layout -->
 
     <hr>
 
     <div class="layout">
-        <div class="layout__item--lap-and-up--1-2">
-            <h6>Myriad Pro Semi Condensed & FF Meta Serif Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-1">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis, assumenda at, a unde ad saepe aspernatur velit, voluptas cumque veniam. Necessitatibus facere architecto ipsam illo veniam enim consectetur, nesciunt earum odit dignissimos totam voluptate asperiores, cum alias dicta error non et, inventore eius voluptas modi, natus optio! Magnam, sunt!</p>
             <blockquote cite="http://https://fr.wikipedia.org/wiki/Jean_Villard#Citations">
                 <p>C'est formidable le public, cette masse anonyme qui ne forme qu'une âme. Il n'y a rien de plus extraordinaire qu'une salle qui rit. On voit alors l'humanité sous son plus beau visage.</p>
                 <p><cite>Jean Villard</cite></p>
             </blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quasi neque, architecto praesentium unde eaque, quidem iste cupiditate vero veniam.</p>
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
 
-        <div class="layout__item--lap-and-up--1-2 font-choice-2">
-            <h6>Museo Sans Condensed & Freight Text Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-2">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis, assumenda at, a unde ad saepe aspernatur velit, voluptas cumque veniam. Necessitatibus facere architecto ipsam illo veniam enim consectetur, nesciunt earum odit dignissimos totam voluptate asperiores, cum alias dicta error non et, inventore eius voluptas modi, natus optio! Magnam, sunt!</p>
             <blockquote cite="http://https://fr.wikipedia.org/wiki/Jean_Villard#Citations">
                 <p>C'est formidable le public, cette masse anonyme qui ne forme qu'une âme. Il n'y a rien de plus extraordinaire qu'une salle qui rit. On voit alors l'humanité sous son plus beau visage.</p>
                 <p><cite>Jean Villard</cite></p>
             </blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quasi neque, architecto praesentium unde eaque, quidem iste cupiditate vero veniam.</p>
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
+
+        <div class="layout__item--lap-and-up--1-3 font-choice-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis, assumenda at, a unde ad saepe aspernatur velit, voluptas cumque veniam. Necessitatibus facere architecto ipsam illo veniam enim consectetur, nesciunt earum odit dignissimos totam voluptate asperiores, cum alias dicta error non et, inventore eius voluptas modi, natus optio! Magnam, sunt!</p>
+            <blockquote cite="http://https://fr.wikipedia.org/wiki/Jean_Villard#Citations">
+                <p>C'est formidable le public, cette masse anonyme qui ne forme qu'une âme. Il n'y a rien de plus extraordinaire qu'une salle qui rit. On voit alors l'humanité sous son plus beau visage.</p>
+                <p><cite>Jean Villard</cite></p>
+            </blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quasi neque, architecto praesentium unde eaque, quidem iste cupiditate vero veniam.</p>
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
     </div><!-- /.layout -->
 
     <hr>
 
     <div class="layout">
-        <div class="layout__item--lap-and-up--1-2">
-            <h6>Myriad Pro Semi Condensed & FF Meta Serif Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-1">
             <ul>
                 <li class="btn">Button</li>
                 <li class="btn">Accueil</li>
                 <li class="btn">Contact</li>
                 <li class="btn">Lire la suite</li>
             </ul>
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
 
-        <div class="layout__item--lap-and-up--1-2 font-choice-2">
-            <h6>Museo Sans Condensed & Freight Text Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-2">
             <ul>
                 <li class="btn">Button</li>
                 <li class="btn">Accueil</li>
                 <li class="btn">Contact</li>
                 <li class="btn">Lire la suite</li>
             </ul>
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
+
+        <div class="layout__item--lap-and-up--1-3 font-choice-3">
+            <ul>
+                <li class="btn">Button</li>
+                <li class="btn">Accueil</li>
+                <li class="btn">Contact</li>
+                <li class="btn">Lire la suite</li>
+            </ul>
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
     </div><!-- /.layout -->
 
     <hr>
 
     <div class="layout">
-        <div class="layout__item--lap-and-up--1-2">
-            <h6>Myriad Pro Semi Condensed & FF Meta Serif Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-1">
             <figure>
                 {{> images.images}}
                 <figcaption class="small">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis, commodi reprehenderit et incidunt.
                 </figcaption>
             </figure>1.11.1
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
 
-        <div class="layout__item--lap-and-up--1-2 font-choice-2">
-            <h6>Museo Sans Condensed & Freight Text Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-2">
             <figure>
                 {{> images.images}}
                 <figcaption class="small">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis, commodi reprehenderit et incidunt.
                 </figcaption>
             </figure>
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
+
+        <div class="layout__item--lap-and-up--1-3 font-choice-3">
+            <figure>
+                {{> images.images}}
+                <figcaption class="small">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis, commodi reprehenderit et incidunt.
+                </figcaption>
+            </figure>
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
     </div><!-- /.layout -->
 
     <hr>
@@ -210,17 +314,13 @@
     <h5>Presbytie</h5>
 
     <div class="layout">
-        <div class="layout__item--lap-and-up--1-2">
-            <h6>Myriad Pro Semi Condensed & FF Meta Serif Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-1">
             <img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/myriad-meta-presbyopia-edUp3rWdgR/myriad-meta-presbyopia.png" alt="" />
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
 
-        <div class="layout__item--lap-and-up--1-2 font-choice-2">
-            <h6>Museo Sans Condensed & Freight Text Pro</h6>
-
+        <div class="layout__item--lap-and-up--1-3 font-choice-2">
             <img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/museo-freight-presbyopia-hktmMn7QZY/museo-freight-presbyopia.png" alt="" />
-        </div><!-- /.layout__item--lap-and-up--1 -->
+        </div><!-- /.layout__item--lap-and-up--1-3 -->
     </div><!-- /.layout -->
 
 </div><!-- /.container -->
