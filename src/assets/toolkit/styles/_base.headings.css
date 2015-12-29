@@ -80,7 +80,6 @@ h5,
 h6 {
     font-family: var(--heading-font-family);
     letter-spacing: var(--heading-letter-spacing);
-    font-weight: var(--heading-font-weight);
 }
 
 @define-extend heading-wf-active,
