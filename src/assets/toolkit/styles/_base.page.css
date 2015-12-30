@@ -32,7 +32,6 @@ html {
 
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
-    letter-spacing: var(--base-letter-spacing);
     font-variant-ligatures: common-ligatures;
     font-variant-numeric: lining-nums;
     font-feature-settings: "liga", "clig", "lnum";
@@ -41,6 +40,5 @@ html {
     &.wf-active {
         font-family: var(--enhance-base-font-family); /* [6] */
         font-weight: var(--enhance-base-font-weight); /* [6] */
-        letter-spacing: var(--enhance-base-letter-spacing); /* [6] */
     }
 }

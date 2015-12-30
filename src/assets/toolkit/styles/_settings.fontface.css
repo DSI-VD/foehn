@@ -12,11 +12,9 @@
 :root {
     --base-font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     --base-font-weight: 400;
-    --base-letter-spacing: normal;
 
     --enhance-base-font-family: "ff-meta-serif-web-pro", var(--base-font-family);
     --enhance-base-font-weight: 500;
-    --enhance-base-letter-spacing: normal;
 
     --heading-font-weight: 700;
     --heading-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
