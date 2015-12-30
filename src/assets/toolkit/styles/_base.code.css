@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+
+:root {
+    --code-text-background: color(var(--base-text-color) a(5%));
+}
+
+/**
+ * Code, preformated text and other robotic styles
+ */
+code,
+pre {
+    font-family: var(--monospaced-font-family);
+    font-size: var(--monospaced-font-size);
+
+    white-space: pre;
+    word-spacing: normal;
+    tab-size: 4;
+
+    cursor: text;
+    letter-spacing: normal;
+}
+
+
+
+
+
+/**
+ * Inline computer text style
+ *
+ * 1. `<code>` inside a `<pre>` has no background. This avoid alpha color
+ *    overlay.
+ */
+code {
+    background: var(--code-text-background);
+}
+
+pre > code {
+    background: none; /* [1] */
+}
+
+tt, code, kbd, samp {
+    font-family: var(--monospaced-font-family);
+}
