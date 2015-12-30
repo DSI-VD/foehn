@@ -21,4 +21,7 @@
 
     --heading-letter-spacing: -.03em;
     --enhance-heading-font-family: "myriad-pro-semi-condensed", var(--heading-font-family);
+
+    --monospaced-font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    --monospaced-font-size: .8rem;
 }
