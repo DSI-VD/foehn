@@ -69,3 +69,17 @@
     font-variant-numeric: oldstyle-nums, proportional-nums;
     font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
 }
+
+
+
+
+
+/**
+ * Mor readable headings
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+@define-mixin font-headings {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+}
