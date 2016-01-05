@@ -15,7 +15,8 @@
  * 4. Prevent certain mobile browsers from automatically zooming fonts.
  * 5. Fonts on OSX will look more consistent with other systems that do not
  *    render text using sub-pixel anti-aliasing.
- * 6. Use Typekit webfont only when it's loaded to avoid FOIT
+ * 6. OpenType fetaures
+ * 7. Use Typekit webfont only when it's loaded to avoid FOIT
  */
 html {
     font-size: var(--base-font-size); /* [1] */
@@ -32,13 +33,14 @@ html {
 
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight);
-    font-variant-ligatures: common-ligatures;
-    font-variant-numeric: lining-nums;
-    font-feature-settings: "liga", "clig", "lnum";
+
+    font-kerning: normal; /* [6] */
+    font-variant-ligatures: common-ligatures, contextual; /* [6] */
+    font-feature-settings: "kern", "liga", "clig", "calt"; /* [6] */
 
 
     &.wf-active {
-        font-family: var(--enhance-base-font-family); /* [6] */
-        font-weight: var(--enhance-base-font-weight); /* [6] */
+        font-family: var(--enhance-base-font-family); /* [7] */
+        font-weight: var(--enhance-base-font-weight); /* [7] */
     }
 }
