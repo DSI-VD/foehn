@@ -81,7 +81,7 @@ h6 {
     font-family: var(--heading-font-family);
     letter-spacing: var(--heading-letter-spacing);
 
-    @mixins font-headings;
+    @mixin font-headings;
 }
 
 @define-extend heading-wf-active,
