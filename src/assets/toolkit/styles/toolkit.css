@@ -63,6 +63,7 @@
 
 @import "_base.page.css";
 @import "_base.headings.css";
+@import "_base.paragraph.css";
 @import "_base.small.css";
 @import "_base.strong.css";
 @import "_base.lists.css";
