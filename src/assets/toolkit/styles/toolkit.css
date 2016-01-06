@@ -20,6 +20,8 @@
  * Page.................Fonts, colors and all stuff for `<html>.
  * Headings.............H1–H6 styles.
  * Small................Small text.
+ * Strong...............Strong text.
+ * Subs.................Subscript element style.
  * Lists................UL, OL & DL styles.
  * Anchors..............Links styles.
  * Images...............Images styles.
@@ -67,6 +69,7 @@
 @import "_base.paragraph.css";
 @import "_base.small.css";
 @import "_base.strong.css";
+@import "_base.subs.css";
 @import "_base.lists.css";
 @import "_base.anchors.css";
 @import "_base.images.css";
