@@ -29,6 +29,7 @@
  * Quotes...............Quotes styles.
  * Abbreviation.........Abbreviation styles.
  * Code.................Code, keyborad input, etc. styles.
+ * Selections...........Text highlight color.
  *
  * OBJECTS
  * Wrappers.............Wrapping and constraining elements.
@@ -78,6 +79,7 @@
 @import "_base.quotes.css";
 @import "_base.abbreviation.css";
 @import "_base.code.css";
+@import "_base.selections.css";
 
 @import "_objects.wrappers.css";
 @import "_objects.buttons.css";

@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #SELECTIONS
+\*------------------------------------*/
+
+/**
+ * Selections color
+ *
+ * Overrides browser-level or system-level text highlight color.
+ */
+::selection {
+  background: color( var(--base-primary-color) a(60%) );
+}
