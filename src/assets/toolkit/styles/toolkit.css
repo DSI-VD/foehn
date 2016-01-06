@@ -37,6 +37,7 @@
  * Tables...............Tables.
  *
  * COMPONENTS
+ * Inline texts.........Fraction, Small-caps, etc.
  * Boxes................Boxes styles.
  * Small................Small text styles.
  * Strong...............Strong text styles.
@@ -82,6 +83,7 @@
 @import "_objects.box.css";
 @import "_objects.tables.css";
 
+@import "_components.inline-texts.css";
 @import "_components.box.css";
 @import "_components.small.css";
 @import "_components.strong.css";
