@@ -14,32 +14,50 @@
  */
 
 .alpha {
-    @extend h1;
+    font-size: var(--heading-size-1);
+    line-height: var(--heading-line-height-1);
+    font-weight: var(--heading-font-weight-bold);
 }
 
 .beta {
-    @extend h2;
+    font-size: var(--heading-size-2);
+    line-height: var(--heading-line-height-2);
+    font-weight: var(--heading-font-weight-bold);
 }
 
 .gamma {
-    @extend h3;
+    font-size: var(--heading-size-3);
+    line-height: var(--heading-line-height-3);
+    font-weight: var(--heading-font-weight-bold);
 }
 
 .delta {
-    @extend h4;
+    font-size: var(--heading-size-4);
+    line-height: var(--heading-line-height-4);
+    font-weight: var(--heading-font-weight-bold);
 }
 
 .epsilon {
-    @extend h5;
+    font-size: var(--heading-size-5);
+    line-height: var(--heading-line-height-5);
+    font-weight: var(--heading-font-weight-bold);
 }
 
 .zeta {
-    @extend h6;
+    font-size: var(--heading-size-6);
+    line-height: var(--heading-line-height-6);
+    font-weight: var(--heading-font-weight-regular);
 }
 
-
-
-
+.alpha,
+.beta,
+.gamma,
+.delta,
+.epsilon,
+.zeta {
+    font-family: var(--heading-font-family);
+    @mixin font-headings;
+}
 
 .wf-active {
     .alpha,
@@ -47,7 +65,20 @@
     .gamma,
     .delta,
     .epsilon,
+    .zeta  {
+        font-family: var(--enhance-heading-font-family); /* [1] */
+        letter-spacing: var(--heading-letter-spacing);
+    }
+
+    .alpha,
+    .beta,
+    .gamma,
+    .delta,
+    .epsilon  {
+        font-weight: var(--enhance-heading-font-weight-bold);
+    }
+
     .zeta {
-        @extend heading-wf-active;
+        font-weight: var(--enhance-heading-font-weight-regular);
     }
 }

@@ -29,5 +29,5 @@ strong {
 @define-extend strong-wf-active,
 .wf-active b,
 .wf-active strong {
-    font-weight: var(--heading-font-weight);
+    font-weight: var(--enhance-base-font-weight-bold);
 }

@@ -41,6 +41,6 @@ html {
 
     &.wf-active {
         font-family: var(--enhance-base-font-family); /* [7] */
-        font-weight: var(--enhance-base-font-weight); /* [7] */
+        font-weight: var(--enhance-base-font-weight-regular); /* [7] */
     }
 }

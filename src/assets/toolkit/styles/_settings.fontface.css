@@ -14,13 +14,17 @@
     --base-font-weight: 400;
 
     --enhance-base-font-family: "ff-meta-serif-web-pro", var(--base-font-family);
-    --enhance-base-font-weight: 500;
+    --enhance-base-font-weight-regular: 500;
+    --enhance-base-font-weight-bold: 700;
 
-    --heading-font-weight: 700;
     --heading-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-
+    --heading-font-weight-regular: normal;
+    --heading-font-weight-bold: bold;
     --heading-letter-spacing: -.03em;
+
     --enhance-heading-font-family: "myriad-pro-semi-condensed", var(--heading-font-family);
+    --enhance-heading-font-weight-regular: 400;
+    --enhance-heading-font-weight-bold: 700;
 
     --monospaced-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     --monospaced-font-size: .8rem;
