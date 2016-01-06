@@ -30,3 +30,14 @@
 .footnote {
     @mixin font-sub;
 }
+
+
+
+
+
+/**
+ * Small caps
+ */
+.small-caps {
+    @mixin font-small-caps;
+}
