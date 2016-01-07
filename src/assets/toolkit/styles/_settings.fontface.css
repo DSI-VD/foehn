@@ -20,7 +20,6 @@
     --heading-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     --heading-font-weight-regular: normal;
     --heading-font-weight-bold: bold;
-    --heading-letter-spacing: -.03em;
 
     --enhance-heading-font-family: "myriad-pro-semi-condensed", var(--heading-font-family);
     --enhance-heading-font-weight-regular: 400;
