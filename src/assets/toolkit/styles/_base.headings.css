@@ -9,23 +9,25 @@
  */
 
 :root {
-    --heading-size-1: calc(1rem * 1.26 * 1.26 * 1.26);
-    --heading-line-height-1: 1.2;
+    --typographic-ratio: 1.26;
 
-    --heading-size-2: calc(1rem * 1.26 * 1.26);
-    --heading-line-height-2: 1.2;
+    --heading-size-1: calc( 1rem * var(--typographic-ratio) * var(--typographic-ratio) * var(--typographic-ratio) );
+    --heading-line-height-1: calc( var(--base-line-height) / var(--typographic-ratio) );
 
-    --heading-size-3: calc(1rem * 1.26);
-    --heading-line-height-3: 1.2;
+    --heading-size-2: calc( 1rem * var(--typographic-ratio) * var(--typographic-ratio) );
+    --heading-line-height-2: calc( var(--base-line-height) / var(--typographic-ratio) );
+
+    --heading-size-3: calc( 1rem * var(--typographic-ratio) );
+    --heading-line-height-3: calc( var(--base-line-height) / var(--typographic-ratio) );
 
     --heading-size-4: 1rem;
-    --heading-line-height-4: 1.5;
+    --heading-line-height-4: var(--base-line-height);
 
-    --heading-size-5: calc(1rem / 1.26);
-    --heading-line-height-5: 1.5;
+    --heading-size-5: calc( 1rem / var(--typographic-ratio) );
+    --heading-line-height-5: var(--base-line-height);
 
-    --heading-size-6: calc(1rem / 1.26);
-    --heading-line-height-6: 1.5;
+    --heading-size-6: calc( 1rem / var(--typographic-ratio) );
+    --heading-line-height-6: var(--base-line-height);
 }
 
 h1 {
