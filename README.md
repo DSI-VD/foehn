@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DSI-VD/foehn.svg?branch=master)](https://travis-ci.org/DSI-VD/foehn) [![Dependencies](https://david-dm.org/DSI-VD/foehn.svg)](https://david-dm.org/DSI-VD/foehn#info=devDependencies)
+[![Build Status](https://travis-ci.org/DSI-VD/foehn.svg?branch=master)](https://travis-ci.org/DSI-VD/foehn)
 
 # Fœhn
 
