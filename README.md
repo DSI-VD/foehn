@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/DSI-VD/foehn.svg?branch=master)](https://travis-ci.org/DSI-VD/foehn)
-
 # Fœhn
 
 Fœhn (*føn*) is the design system build for [the website of the State of Vaud](http://www.vd.ch/).
