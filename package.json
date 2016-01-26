@@ -12,7 +12,7 @@
     "test": "npm run build",
     "deploy": "npm install && gulp && gulp deploy",
     "preversion": "npm test",
-    "version": "npm deploy"
+    "version": "npm run deploy"
   },
   "keywords": [
     "toolkit",
