@@ -15,3 +15,27 @@ $ git clone https://github.com/vdch/foehn.git
 $ cd foehn
 $ npm start
 ```
+
+## Versioning
+
+The project use [Semantic Versioning](http://semver.org/).
+
+
+### How to bump version ?
+
+To bump version use the following commands ([more info](https://docs.npmjs.com/cli/version)):
+
+Patch (v0.0.x)
+```shell
+$ npm version patch -m "Upgrade to %s for reasons"
+```
+
+Minor version (v0.x.0)
+```shell
+$ npm version minor -m "Upgrade to %s for reasons"
+```
+
+Major version (vX.0.0)
+```shell
+$ npm version major -m "Upgrade to %s for reasons"
+```
