@@ -2,7 +2,7 @@
   "name": "fabricator",
   "version": "0.1.0",
   "description": "A tool for building website UI toolkits",
-  "homepage": "http://fbrctr.github.io/",
+  "homepage": "http://dsi-vd.github.io/foehn/",
   "main": "README.md",
   "scripts": {
     "gulp": "gulp",
@@ -23,11 +23,11 @@
     "patterns",
     "library"
   ],
-  "author": "Luke Askew",
+  "author": "Cédric Aellen (DSI, Etat de Vaud)",
   "licenses": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fbrctr/fabricator.git"
+    "url": "https://github.com/DSI-VD/foehn.git"
   },
   "engines": {
     "node": ">=0.10.0",
