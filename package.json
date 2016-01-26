@@ -10,7 +10,9 @@
     "build": "npm install && gulp",
     "start": "gulp --dev",
     "test": "npm run build",
-    "deploy": "npm install && gulp && gulp deploy"
+    "deploy": "npm install && gulp && gulp deploy",
+    "preversion": "npm test",
+    "version": "npm deploy"
   },
   "keywords": [
     "toolkit",
