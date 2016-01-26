@@ -13,7 +13,10 @@
 	<link rel="stylesheet" href=".//assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 
-
+	<!-- typekit fonts -->
+	<script src="https://use.typekit.net/cov3xdm.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<!-- /typekit fonts -->
 
 </head>
 <body>
@@ -194,7 +197,13 @@
 							<a href="pages/organisation.html" target="_blank">Organisation</a>
 						</li>
 						<li>
+							<a href="pages/prestations-font-comparaison.html" target="_blank">Prestations Font Comparaison</a>
+						</li>
+						<li>
 							<a href="pages/prestations.html" target="_blank">Prestations</a>
+						</li>
+						<li>
+							<a href="pages/typography-font-comparaison.html" target="_blank">Typography Font Comparaison</a>
 						</li>
 						<li>
 							<a href="pages/typography.html" target="_blank">Typography</a>
@@ -581,6 +590,63 @@ respective heading.</p>
 </div>
 
 		</div>
+		<div class="f-item-group" id="03-inline-text.footnote">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Footnote</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<ul>
+<li>This class should not be used for typographical reasons. The <code>&lt;sub&gt;</code> tag is a good candidate for this purpose.</li>
+<li>This class must used for styling purpose like the styling of the product name Latex.</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	There is a footnote<span class="footnote">1</span> on this word.
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">There is a footnote&lt;span class=&quot;footnote&quot;&gt;1&lt;/span&gt; on this word.</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="03-inline-text.fraction">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Fraction</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>This class replaces figures separated by a slash with common (diagonal) fractions.</p>
+
+</div>
+<div class="f-item-preview">
+	Add 1<span class="fraction">3/4</span> of flour, <span class="fraction">1/2</span> cup at a time.
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">Add 1&lt;span class=&quot;fraction&quot;&gt;3/4&lt;/span&gt; of flour, &lt;span class=&quot;fraction&quot;&gt;1/2&lt;/span&gt; cup at a time.</code></pre>
+</div>
+
+		</div>
 		<div class="f-item-group" id="03-inline-text.i">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">I</h3>
@@ -743,6 +809,38 @@ respective heading.</p>
 </div>
 
 		</div>
+		<div class="f-item-group" id="03-inline-text.small-caps">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Small Caps</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Small capitals are used to emphasize certain words without irregularity in type color.</p>
+<ul>
+<li>The authors' names that are found in a bibliography are written in small capitals.</li>
+<li>Small caps are used for signatures at the end of the official documents or letters.</li>
+</ul>
+<p><a href="http://caniuse.com/#feat=font-feature" title="List of browser who support font features">OpenType font features are not supported by all browsers</a>. For these browsers the text will be in standard capitals.</p>
+
+</div>
+<div class="f-item-preview">
+	Small capitals are used to <span class="small-caps">emphasize</span> certain words without irregularity in type color.
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">Small capitals are used to &lt;span class=&quot;small-caps&quot;&gt;emphasize&lt;/span&gt; certain words without irregularity in type color.</code></pre>
+</div>
+
+		</div>
 		<div class="f-item-group" id="03-inline-text.small">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Small</h3>
@@ -807,14 +905,24 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Subscript</h3>
 				<div class="f-item-controls">
-					
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<ul>
+<li>This element should be used for typographical reasons only, i.e. changing the position of the text changing its meaning like in mathematical (like t<sub>2</sub>) or chemical formulas (like H<sub>2</sub>O).</li>
+<li>This element must not be used for styling purpose like the styling of the product name Latex. In that case CSS class <code>footnote</code> should be used.</li>
+</ul>
+
+</div>
 <div class="f-item-preview">
 	Subscript for things like H<sub>2</sub>O
 </div>
@@ -1027,14 +1135,24 @@ respective heading.</p>
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Blockquote</h2>
 		<div class="f-item-controls">
-			
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>The blockquote indicates that the enclosed text is an extended quotation.
+A URL for the source of the quotation may be given using the cite attribute,
+while a text representation of the source can be given using the
+<a href="molecules.html#01-text.blockquote-with-citation"><code>&lt;cite&gt;</code></a> element.</p>
+
+</div>
 <div class="f-item-preview">
 	<blockquote>
 	<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or
