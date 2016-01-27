@@ -25,22 +25,16 @@ $ npm start
 
 The project use [Semantic Versioning](http://semver.org/).
 
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+- MAJOR version when you make incompatible API changes,
+- MINOR version when you add functionality in a backwards-compatible manner, and
+- PATCH version when you make backwards-compatible bug fixes.
 
 ### How to bump version ?
 
-To bump version use the following commands ([more info](https://docs.npmjs.com/cli/version)):
+To bump version use the following commands **only after the changed have been merged on the master** ([more info](https://docs.npmjs.com/cli/version)):
 
-Patch (v0.0.x)
-```shell
-$ npm version patch -m "Upgrade to %s for reasons"
-```
-
-Minor version (v0.x.0)
-```shell
-$ npm version minor -m "Upgrade to %s for reasons"
-```
-
-Major version (vX.0.0)
-```shell
-$ npm version major -m "Upgrade to %s for reasons"
-```
+- PATCH: `$ npm version patch -m "Upgrade to %s for reasons"`
+- MINOR: `$ npm version minor -m "Upgrade to %s for reasons"`
+- MAJOR: `$ npm version major -m "Upgrade to %s for reasons"`
