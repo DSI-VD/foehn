@@ -5,6 +5,7 @@
         "color-no-named": true,
         "declaration-colon-space-after": "always",
         "declaration-colon-space-before": "never",
+        "function-calc-no-unspaced-operator": true,
         "function-comma-space-after": "always",
         "function-url-quotes": "double",
         "media-feature-colon-space-after": "always",
