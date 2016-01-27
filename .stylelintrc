@@ -1,8 +1,8 @@
 {
     "rules": {
         "block-no-empty": true,
-        "color-hex-case": "lower",
-        "color-no-invalid-hex": true,
+        "color-no-hex": true,
+        "color-no-named": true,
         "declaration-colon-space-after": "always",
         "declaration-colon-space-before": "never",
         "function-comma-space-after": "always",
