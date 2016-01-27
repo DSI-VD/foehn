@@ -1,5 +1,6 @@
 {
     "rules": {
+        "block-closing-brace-newline-after": "always",
         "block-no-empty": true,
         "color-no-hex": true,
         "color-no-named": true,
