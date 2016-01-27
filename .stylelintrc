@@ -4,6 +4,7 @@
         "block-closing-brace-space-before": "always-single-line",
         "block-no-empty": true,
         "block-opening-brace-newline-after": "always-multi-line",
+        "block-opening-brace-newline-before": "always-multi-line",
         "color-no-hex": true,
         "color-no-named": true,
         "declaration-bang-space-after": "never",
