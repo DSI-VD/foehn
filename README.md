@@ -4,6 +4,11 @@ Fœhn (*føn*) is the design system build for [the website of the State of Vaud]
 
 [Take a look at the documentation](http://dsi-vd.github.io/foehn/).
 
+## Issues
+
+If you don't like the [usual issues view](https://github.com/DSI-VD/foehn/issues), we have [a Waffle board view](https://waffle.io/DSI-VD/foehn).  
+[![Stories in Progress](https://badge.waffle.io/DSI-VD/foehn.png?label=Ready)](https://waffle.io/DSI-VD/foehn)
+
 ## Build tools
 
 [Fabricator](http://fbrctr.github.io/) is used to build fœhn.
