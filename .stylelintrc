@@ -30,6 +30,7 @@
         "property-no-vendor-prefix": true,
         "rule-no-duplicate-properties": true,
         "rule-trailing-semicolon": "always",
+        "selector-combinator-space-after": "always",
         "selector-list-comma-newline-after": "always-multi-line",
         "selector-no-id": true,
         "string-quotes": "double",
