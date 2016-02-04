@@ -38,31 +38,41 @@
  *    http://a11yproject.com/posts/how-to-hide-content/
  */
 @media (--palm) {
+
     .hidden--palm {
         @mixin hidden;
     }
+
 }
 
 @media (--lap) {
+
     .hidden--lap {
         @mixin hidden;
     }
+
 }
 
 @media (--lap-and-up) {
+
     .hidden--lap-and-up {
         @mixin hidden;
     }
+
 }
 
 @media (--portable) {
+
     .hidden--portable {
         @mixin hidden;
     }
+
 }
 
 @media (--desk) {
+
     .hidden--desk {
         @mixin hidden;
     }
+
 }

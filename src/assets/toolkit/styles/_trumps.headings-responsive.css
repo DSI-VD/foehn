@@ -10,28 +10,49 @@
  */
 
 @media (--palm) {
+
     .alpha { font-size: var(--heading-size-1--palm); }
+
     .beta { font-size: var(--heading-size-2--palm); }
+
     .gamma { font-size: var(--heading-size-3--palm); }
+
     .delta { font-size: var(--heading-size-4--palm); }
+
     .epsilon { font-size: var(--heading-size-5--palm); }
+
     .zeta { font-size: var(--heading-size-6--palm); }
+
 }
 
 @media (--lap) {
+
     .alpha { font-size: var(--heading-size-1--lap); }
+
     .beta { font-size: var(--heading-size-2--lap); }
+
     .gamma { font-size: var(--heading-size-3--lap); }
+
     .delta { font-size: var(--heading-size-4--lap); }
+
     .epsilon { font-size: var(--heading-size-5--lap); }
+
     .zeta { font-size: var(--heading-size-6--lap); }
+
 }
 
 @media (--desk) {
+    
     .alpha { font-size: var(--heading-size-1--desk); }
+
     .beta { font-size: var(--heading-size-2--desk); }
+
     .gamma { font-size: var(--heading-size-3--desk); }
+
     .delta { font-size: var(--heading-size-4--desk); }
+
     .epsilon { font-size: var(--heading-size-5--desk); }
+
     .zeta { font-size: var(--heading-size-6--desk); }
+
 }

@@ -6,6 +6,7 @@ a {
     color: var(--base-text-color);
     transition: var(--transition-color);
 }
+
 a:hover {
     color: var(--base-primary-color);
     transition: var(--transition-color);
@@ -22,6 +23,7 @@ a:hover {
 /**
  * Link without visual modification.
  */
+
 .silent-link {
     text-decoration: none;
     transition: var(--transition-color);
