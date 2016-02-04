@@ -45,17 +45,45 @@
  * Responsive utilities.Hide and show content depending on viewport.
  */
 
+/**
+ * SETINGS
+ */
+
 @import "_settings.defaults.css";
 @import "_settings.fontface.css";
 @import "_settings.responsive.css";
 @import "_settings.animations.css";
 
+
+
+
+
+/**
+ * TOOLS
+ */
+
 @import "_tools.mixins.css";
+
+
+
+
+
+/**
+ * GENERIC
+ */
 
 @import "normalize.css";
 @import "_generic.reset.css";
 @import "_generic.box-sizing.css";
 @import "_generic.shared.css";
+
+
+
+
+
+/**
+ * BASE
+ */
 
 @import "_base.page.css";
 @import "_base.page-responsive.css";
@@ -66,6 +94,14 @@
 @import "_base.images.css";
 @import "_base.figures.css";
 
+
+
+
+
+/**
+ * OBJECTS
+ */
+
 @import "_objects.wrappers.css";
 @import "_objects.buttons.css";
 @import "_objects.layouts.css";
@@ -73,7 +109,22 @@
 @import "_objects.box.css";
 @import "_objects.tables.css";
 
+
+
+
+
+/**
+ * COMPONENTS
+ */
+
 @import "_components.box.css";
+
+
+
+
+/**
+ * TRUMPS
+ */
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";

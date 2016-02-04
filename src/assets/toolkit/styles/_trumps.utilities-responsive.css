@@ -1,10 +1,11 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #RESPONSIVE-UTILITIES
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Visually hide content depending on viewports.
  */
+
 @media (--palm) {
     @mixin visually-hidden .visually-hidden--palm;
 }
@@ -37,6 +38,7 @@
  *    screen readers use the following
  *    http://a11yproject.com/posts/how-to-hide-content/
  */
+
 @media (--palm) {
 
     .hidden--palm {
