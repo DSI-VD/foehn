@@ -6,7 +6,8 @@
  * Headings 1–6.
  */
 
-/* Predefine the variables below in order to alter and enable specific features. */
+/* Predefine the variables below in order to alter and enable specific
+ features. */
 :root{
     --heading-size-1: 2.8125rem;
     --heading-size-2: 2.3125rem;
