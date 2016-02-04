@@ -20,12 +20,14 @@
  */
 .box {
     display: block; /* [1] */
+
     padding: var(--box-padding);
 
     &::after { /* [2] */
-        content: "";
         display: table;
+
         clear: both;
+        content: "";
     }
 
     > :last-child {

@@ -32,6 +32,78 @@
         "rule-no-duplicate-properties": true,
         "rule-no-shorthand-property-overrides": true,
         "rule-non-nested-empty-line-before": ["always", ignore: ["after-comment"]],
+        "rule-properties-order": [
+            [
+                {
+                    order: "strict",
+                    emptyLineBefore: true,
+                    properties: [
+                        "position",
+                        "top",
+                        "right",
+                        "bottom",
+                        "left",
+                        "z-index"
+                    ]
+                },
+                {
+                    order: "strict",
+                    emptyLineBefore: true,
+                    properties: [
+                        "display",
+                        "float",
+                        "clear",
+                        "flex",
+                        "flex-grow",
+                        "flex-shrink",
+                        "flex-basis",
+                        "width",
+                        "max-width",
+                        "height",
+                        "max-height"
+                    ]
+                },
+                {
+                    order: "strict",
+                    emptyLineBefore: true,
+                    properties: [
+                        "font",
+                        "font-style",
+                        "font-variant",
+                        "font-weight",
+                        "font-stretch",
+                        "font-size",
+                        "font-family",
+                        "line-height",
+                        "color",
+                        "text"
+                    ]
+                },
+                {
+                    order: "strict",
+                    emptyLineBefore: true,
+                    properties: [
+                        "background",
+                        "border",
+                        "border-top",
+                        "border-right",
+                        "border-bottom",
+                        "border-left",
+                        "margin",
+                        "margin-top",
+                        "margin-right",
+                        "margin-bottom",
+                        "margin-left",
+                        "padding",
+                        "padding-top",
+                        "padding-right",
+                        "padding-bottom",
+                        "padding-left",
+                    ]
+                }
+            ],
+            { unspecified: "bottom" }
+        ],
         "rule-trailing-semicolon": "always",
         "selector-combinator-space-after": "always",
         "selector-combinator-space-before": "always",

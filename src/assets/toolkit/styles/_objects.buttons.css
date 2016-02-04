@@ -24,23 +24,25 @@
  */
 .btn{
     display: inline-block; /* [1] */
-    vertical-align: middle; /* [2] */
+
     font: inherit; /* [3] */
     text-align: center; /* [4] */
-    margin: 0; /* [4] */
-    cursor: pointer; /* [5] */
-    overflow: visible; /* [6] */
-    padding: calc(var(--btn-padding) - var(--btn-border-width))  calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
+
     background-color: var(--btn-background);
     border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
+    margin: 0; /* [4] */
+    padding: calc(var(--btn-padding) - var(--btn-border-width))  calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
+    vertical-align: middle; /* [2] */
+    overflow: visible; /* [6] */
+    cursor: pointer; /* [5] */
 }
 
 .btn,
 .btn:hover,
 .btn:active,
 .btn:focus {
-    text-decoration: none; /* [4] */
     color: var(--btn-color);
+    text-decoration: none; /* [4] */
 }
 
 

@@ -11,13 +11,15 @@
  */
 @define-mixin visually-hidden $class: none {
     @if $class == none {
-
         position: absolute !important;
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0 !important;
-        border: 0 !important;
-        height: 1px !important;
+
         width: 1px !important;
+        height: 1px !important;
+
+        border: 0 !important;
+        padding: 0 !important;
+
+        clip: rect(1px, 1px, 1px, 1px);
         overflow: hidden;
 
     }
@@ -26,13 +28,17 @@
         $class {
 
             position: absolute !important;
-            clip: rect(1px, 1px, 1px, 1px);
-            padding: 0 !important;
-            border: 0 !important;
-            height: 1px !important;
+
             width: 1px !important;
+            height: 1px !important;
+
+
+            border: 0 !important;
+            padding: 0 !important;
+
+            clip: rect(1px, 1px, 1px, 1px);
             overflow: hidden;
-            
+
         }
 
         body:hover $class a,
@@ -57,5 +63,6 @@
  */
 @define-mixin hidden {
     display: none !important;
+
     visibility: hidden !important; /* 1 */
 }
