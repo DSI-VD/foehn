@@ -33,6 +33,8 @@
             4,
             ignore: ["value"]
         ],
+        "max-line-length": 80,
+        "max-empty-lines": 5,
         "media-feature-colon-space-after": "always",
         "media-feature-colon-space-before": "never",
         "media-feature-name-no-vendor-prefix": true,
@@ -43,6 +45,8 @@
         "media-query-list-comma-newline-before": "never-multi-line",
         "media-query-list-comma-space-after": "always-single-line",
         "media-query-list-comma-space-before": "never",
+        "no-eol-whitespace": true,
+        "no-missing-eof-newline": true,
         "number-leading-zero": "never",
         "number-no-trailing-zeros": true,
         "number-zero-length-no-unit": true,
