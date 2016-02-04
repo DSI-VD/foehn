@@ -29,9 +29,11 @@
 
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
     @media ($(query)) {
+
         .layout$(query)--column {
             lost-flex-container: column;
         }
+
     }
 }
 
@@ -45,11 +47,15 @@
 
 @for $cycle from 2 to 5 {
     @for $fraction from 1 to 5 {
+
         @if $fraction < $cycle {
+
             .layout__item--$(fraction)-$(cycle) {
                 lost-column: $fraction/$cycle flex;
             }
+
         }
+
     }
 }
 
@@ -58,9 +64,11 @@
         @for $cycle from 2 to 5 {
             @for $fraction from 1 to 5 {
                 @if $fraction < $cycle {
+
                     .layout__item$(query)--$(fraction)-$(cycle) {
                         lost-column: $fraction/$cycle flex;
                     }
+
                 }
             }
         }
@@ -77,12 +85,15 @@
 @for $cycle from 2 to 5 {
     @for $fraction from 1 to 5 {
         @if $fraction < $cycle {
+
             .layout__item--move--$(fraction)-$(cycle) {
                 lost-move: $fraction/$cycle;
             }
+
             .layout__item--move---$(fraction)-$(cycle) {
                 lost-move: -$fraction/$cycle;
             }
+
         }
     }
 }
@@ -92,12 +103,15 @@
         @for $cycle from 2 to 5 {
             @for $fraction from 1 to 5 {
                 @if $fraction < $cycle {
+
                     .layout__item$(query)--move--$(fraction)-$(cycle) {
                         lost-move: $fraction/$cycle;
                     }
+
                     .layout__item$(query)--move---$(fraction)-$(cycle) {
                         lost-move: -$fraction/$cycle;
                     }
+                    
                 }
             }
         }

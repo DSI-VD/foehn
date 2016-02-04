@@ -16,7 +16,7 @@
 
     --heading-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     --heading-font-weight: 700;
-    --heading-letter-spacing: -0.03em;
+    --heading-letter-spacing: -.03em;
 }
 
 
