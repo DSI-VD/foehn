@@ -6,7 +6,7 @@
 :root {
     --table-border-width: 1px;
     --table-border-style: solid;
-    --table-border-color: #ccc;
+    --table-border-color: var(--base-font-color);
 }
 
 

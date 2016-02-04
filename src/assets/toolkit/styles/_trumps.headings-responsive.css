@@ -42,7 +42,7 @@
 }
 
 @media (--desk) {
-    
+
     .alpha { font-size: var(--heading-size-1--desk); }
 
     .beta { font-size: var(--heading-size-2--desk); }
