@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #LAYOUT
-\*------------------------------------*/
+\* ------------------------------------ */
 
 :root {
     --layout-gutter: var(--base-spacing-unit--small);
@@ -10,6 +10,7 @@
  * The layout is based on lost framework
  * https://github.com/corysimmons/lost
  */
+
 @lost gutter 1rem;
 
 
@@ -20,18 +21,20 @@
  * Layout
  */
 .layout {
-  lost-flex-container: row;
+    lost-flex-container: row;
 }
 
 .layout--column {
-  lost-flex-container: column;
+    lost-flex-container: column;
 }
 
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
     @media ($(query)) {
+
         .layout$(query)--column {
             lost-flex-container: column;
         }
+
     }
 }
 
@@ -46,11 +49,13 @@
 @for $cycle from 2 to 5 {
     @for $fraction from 1 to 5 {
         @if $fraction < $cycle {
+
             .layout__item--$(fraction)-$(cycle) {
                 lost-column: $fraction/$cycle flex;
             }
         }
     }
+
 }
 
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
@@ -58,9 +63,11 @@
         @for $cycle from 2 to 5 {
             @for $fraction from 1 to 5 {
                 @if $fraction < $cycle {
+
                     .layout__item$(query)--$(fraction)-$(cycle) {
                         lost-column: $fraction/$cycle flex;
                     }
+
                 }
             }
         }
@@ -77,12 +84,15 @@
 @for $cycle from 2 to 5 {
     @for $fraction from 1 to 5 {
         @if $fraction < $cycle {
+
             .layout__item--move--$(fraction)-$(cycle) {
                 lost-move: $fraction/$cycle;
             }
+
             .layout__item--move---$(fraction)-$(cycle) {
                 lost-move: -$fraction/$cycle;
             }
+
         }
     }
 }
@@ -92,12 +102,15 @@
         @for $cycle from 2 to 5 {
             @for $fraction from 1 to 5 {
                 @if $fraction < $cycle {
+
                     .layout__item$(query)--move--$(fraction)-$(cycle) {
                         lost-move: $fraction/$cycle;
                     }
+
                     .layout__item$(query)--move---$(fraction)-$(cycle) {
                         lost-move: -$fraction/$cycle;
                     }
+
                 }
             }
         }

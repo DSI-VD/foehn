@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #FONTFACE
-\*------------------------------------*/
+\* ------------------------------------ */
 
 
 
@@ -11,12 +11,21 @@
  * "Cabin Sketch" is loaded via a `<link>` in the header.
  */
 :root {
-    --base-font-family: "HoeflerText-Regular", "Georgia", serif;
+    --base-font-family: "HoeflerText-Regular",
+                        "Georgia",
+                        serif;
     --base-font-weight: 400;
 
-    --heading-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    --heading-font-family: -apple-system,
+                           ".SFNSText-Regular",
+                           "San Francisco",
+                           "Roboto",
+                           "Segoe UI",
+                           "Helvetica Neue",
+                           "Lucida Grande",
+                           sans-serif;
     --heading-font-weight: 700;
-    --heading-letter-spacing: -0.03em;
+    --heading-letter-spacing: -.03em;
 }
 
 
@@ -24,14 +33,14 @@
 
 
 @font-face {
+    font-style: normal;
+    font-weight: normal;
     font-family: "cabinsketchbold";
     src: url("../fonts/cabinsketch-bold-webfont.eot") format("eot"),
          url("../fonts/cabinsketch-bold-webfont.woff2") format("woff2"),
          url("../fonts/cabinsketch-bold-webfont.woff") format("woff"),
          url("../fonts/cabinsketch-bold-webfont.ttf") format("truetype"),
          url("../fonts/cabinsketch-bold-webfont.svg#cabinsketchbold") format("svg");
-    font-weight: normal;
-    font-style: normal;
 }
 
 
@@ -39,12 +48,12 @@
 
 
 @font-face {
+    font-style: normal;
+    font-weight: normal;
     font-family: "cabinsketchregular";
     src: url("../fonts/cabinsketch-regular-webfont.eot") format("eot"),
          url("../fonts/cabinsketch-regular-webfont.woff2") format("woff2"),
          url("../fonts/cabinsketch-regular-webfont.woff") format("woff"),
          url("../fonts/cabinsketch-regular-webfont.ttf") format("truetype"),
          url("../fonts/cabinsketch-regular-webfont.svg#cabinsketchregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
 }

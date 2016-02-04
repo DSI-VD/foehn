@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #PAGE
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * High-, page-level styling.
@@ -15,14 +15,14 @@
  * 4. Prevent certain mobile browsers from automatically zooming fonts.
  */
 html {
+    font-weight: var(--base-font-weight);
     font-size: var(--base-font-size); /* [1] */
+    font-family: var(--base-font-family);
     line-height: var(--base-line-height); /* [1] */
-    background-color: var(--base-background-color);
     color: var(--base-text-color);
-    overflow-y: scroll; /* [2] */
-    min-height: 100%; /* [3] */
     text-size-adjust: 100%; /* [4] */
 
-    font-family: var(--base-font-family);
-    font-weight: var(--base-font-weight);
+    background-color: var(--base-background-color);
+    min-height: 100%; /* [3] */
+    overflow-y: scroll; /* [2] */
 }

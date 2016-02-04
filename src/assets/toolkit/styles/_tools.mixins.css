@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #LINK
-\*------------------------------------*/
+\* ------------------------------------ */
 
 
 /**
@@ -9,25 +9,38 @@
  * The content still readable by screen readers
  * https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
  */
+
 @define-mixin visually-hidden $class: none {
     @if $class == none {
         position: absolute !important;
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0 !important;
-        border: 0 !important;
-        height: 1px !important;
+
         width: 1px !important;
+        height: 1px !important;
+
+        border: 0 !important;
+        padding: 0 !important;
+
+        clip: rect(1px, 1px, 1px, 1px);
         overflow: hidden;
+
     }
+
     @else {
+
         $class {
+
             position: absolute !important;
-            clip: rect(1px, 1px, 1px, 1px);
-            padding: 0 !important;
-            border: 0 !important;
-            height: 1px !important;
+
             width: 1px !important;
+            height: 1px !important;
+
+
+            border: 0 !important;
+            padding: 0 !important;
+
+            clip: rect(1px, 1px, 1px, 1px);
             overflow: hidden;
+
         }
 
         body:hover $class a,
@@ -50,7 +63,9 @@
  *    screen readers use the following
  *    http://a11yproject.com/posts/how-to-hide-content/
  */
+
 @define-mixin hidden {
     display: none !important;
+
     visibility: hidden !important; /* 1 */
 }

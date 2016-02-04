@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #WRAPPERS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Container
@@ -9,14 +9,14 @@
  */
 
 .container {
-    padding-left: var(--base-spacing-unit--small);
-    padding-right: var(--base-spacing-unit--small);
-
-    margin-left: auto; /* [1] */
     margin-right: auto; /* [1] */
+    margin-left: auto; /* [1] */
+
+    padding-right: var(--base-spacing-unit--small);
+    padding-left: var(--base-spacing-unit--small);
 }
 
 @media (--lap-and-up) .container {
-    padding-left: var(--base-spacing-unit);
     padding-right: var(--base-spacing-unit);
+    padding-left: var(--base-spacing-unit);
 }
