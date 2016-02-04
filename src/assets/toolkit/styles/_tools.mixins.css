@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #LINK
-\*------------------------------------*/
+\* ------------------------------------ */
 
 
 /**
@@ -9,6 +9,7 @@
  * The content still readable by screen readers
  * https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
  */
+
 @define-mixin visually-hidden $class: none {
     @if $class == none {
         position: absolute !important;
@@ -23,6 +24,7 @@
         overflow: hidden;
 
     }
+
     @else {
 
         $class {
@@ -61,6 +63,7 @@
  *    screen readers use the following
  *    http://a11yproject.com/posts/how-to-hide-content/
  */
+
 @define-mixin hidden {
     display: none !important;
 
