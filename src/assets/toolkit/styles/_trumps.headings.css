@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #HEADINGS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 :root {
     --heading-size-alpha: var(--heading-size-1);
@@ -13,7 +13,8 @@
 
 /**
  * Headings 1–6’s corresponding Greek-alphabet abstract classes for double-
- * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ * stranded heading hierarchy:
+ * csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
  *
  * Use these helper classes to cause other elements to adopt the styling of the
  * respective heading, e.g.:
@@ -22,29 +23,17 @@
  *
  */
 
-.alpha {
-    font-size: var(--heading-size-alpha);
-}
+.alpha { font-size: var(--heading-size-alpha); }
 
-.beta {
-    font-size: var(--heading-size-beta);
-}
+.beta { font-size: var(--heading-size-beta); }
 
-.gamma {
-    font-size: var(--heading-size-gamma);
-}
+.gamma { font-size: var(--heading-size-gamma); }
 
-.delta {
-    font-size: var(--heading-size-delta);
-}
+.delta { font-size: var(--heading-size-delta); }
 
-.epsilon {
-    font-size: var(--heading-size-epsilon);
-}
+.epsilon { font-size: var(--heading-size-epsilon); }
 
-.zeta {
-    font-size: var(--heading-size-zeta);
-}
+.zeta { font-size: var(--heading-size-zeta); }
 
 
 
@@ -59,6 +48,6 @@
 .delta,
 .epsilon,
 .zeta {
-    font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
+    font-family: var(--heading-font-family);
 }

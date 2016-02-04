@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #PAGE-RESPONSIVE
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Set the base reposnsive typography
@@ -17,22 +17,28 @@
 }
 
 @media (--palm) {
+
     html {
         font-size: var(--base-font-size--palm);
         line-height: var(--base-line-height--palm);
     }
+
 }
 
 @media (--lap) {
+
     html {
         font-size: var(--base-font-size--lap);
         line-height: var(--base-line-height--lap);
     }
+
 }
 
 @media (--desk) {
+
     html {
         font-size: var(--base-font-size--desk);
         line-height: var(--base-line-height--desk);
     }
+    
 }

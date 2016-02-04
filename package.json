@@ -73,7 +73,7 @@
     "postcss-selector-not": "^2.0.0",
     "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
-    "stylelint": "^2.2.0",
+    "stylelint": "^4.2.0",
     "webpack": "^1.8.11"
   },
   "dependencies": {

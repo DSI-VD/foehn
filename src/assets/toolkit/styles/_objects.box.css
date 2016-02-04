@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #BOX
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * The box object simply boxes off content.
@@ -20,12 +20,14 @@
  */
 .box {
     display: block; /* [1] */
+
     padding: var(--box-padding);
 
-    &:after { /* [2] */
-        content: "";
+    &::after { /* [2] */
         display: table;
+
         clear: both;
+        content: "";
     }
 
     > :last-child {
