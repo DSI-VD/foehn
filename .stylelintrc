@@ -88,8 +88,10 @@
                         "flex-basis",
                         "width",
                         "max-width",
+                        "min-width",
                         "height",
-                        "max-height"
+                        "max-height",
+                        "min-height"
                     ]
                 },
                 {
