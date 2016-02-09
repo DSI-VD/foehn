@@ -4,26 +4,50 @@
 
 /**
  * Visually hide content depending on viewports.
+ *
+ *  Use it when you want to hide something but keep it available to screen
+  * readers and assistive technology. It will not use up space in the document
+  * flow.
  */
 
 @media (--palm) {
-    @mixin visually-hidden .visually-hidden--palm;
+
+    .visually-hidden--palm {
+        display: hidden;
+    }
+
 }
 
 @media (--lap) {
-    @mixin visually-hidden .visually-hidden--lap;
+
+    .visually-hidden--lap {
+        display: hidden;
+    }
+
 }
 
 @media (--lap-and-up) {
-    @mixin visually-hidden .visually-hidden--lap-and-up;
+
+    .visually-hidden--lap-and-up {
+        display: hidden;
+    }
+
 }
 
 @media (--portable) {
-    @mixin visually-hidden .visually-hidden--portable;
+
+    .visually-hidden--portable {
+        display: hidden;
+    }
+
 }
 
 @media (--desk) {
-    @mixin visually-hidden .visually-hidden--desk;
+
+    .visually-hidden--desk {
+        display: hidden;
+    }
+
 }
 
 
@@ -33,16 +57,15 @@
 /**
  * Hide content depending of the viewport
  *
- * 1. Screen readers sometimes ignore display:none1. This means the content
- *    will be read despite being “hidden”. To hide content completely from
- *    screen readers use the following
- *    http://a11yproject.com/posts/how-to-hide-content/
+ * Use disappear when you want to remove something completely from the page.
+ * This includes hiding the item screen readers and assistive technology. It
+ * will do this with `display: none !important;`.
  */
 
 @media (--palm) {
 
     .hidden--palm {
-        @mixin hidden;
+        display: disappear;
     }
 
 }
@@ -50,7 +73,7 @@
 @media (--lap) {
 
     .hidden--lap {
-        @mixin hidden;
+        display: disappear;
     }
 
 }
@@ -58,7 +81,7 @@
 @media (--lap-and-up) {
 
     .hidden--lap-and-up {
-        @mixin hidden;
+        display: disappear;
     }
 
 }
@@ -66,7 +89,7 @@
 @media (--portable) {
 
     .hidden--portable {
-        @mixin hidden;
+        display: disappear;
     }
 
 }
@@ -74,7 +97,7 @@
 @media (--desk) {
 
     .hidden--desk {
-        @mixin hidden;
+        display: disappear;
     }
 
 }

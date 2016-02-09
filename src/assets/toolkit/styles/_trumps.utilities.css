@@ -5,26 +5,26 @@
 /**
  * Visually hide content.
  *
- * The content still readable by screen readers
- * https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+ * Use it when you want to hide something but keep it available to screen
+ * readers and assistive technology. It will not use up space in the document
+ * flow.
  */
 
-@mixin visually-hidden .visually-hidden;
+.visually-hidden {
+    display: hidden;
+}
 
 
 
 
 
 /**
- * Hide content depending of the viewport
+ * Hide content
  *
- * 1. Screen readers sometimes ignore display:none1. This means the content
- *    will be read despite being “hidden”. To hide content completely from
- *    screen readers use the following
- *    http://a11yproject.com/posts/how-to-hide-content/
+ * Use disappear when you want to remove something completely from the page.
+ * This includes hiding the item screen readers and assistive technology. It
+ * will do this with `display: none !important;`.
  */
 .hidden {
-    display: none !important;
-
-    @mixin hidden;
+    display: disappear;
 }
