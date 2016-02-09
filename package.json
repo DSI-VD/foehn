@@ -62,6 +62,7 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-custom-selectors": "^3.0.0",
     "postcss-extend": "^1.0.1",
+    "postcss-hidden": "^1.0.7",
     "postcss-import": "^7.0.0",
     "postcss-media-minmax": "^2.1.0",
     "postcss-mixins": "^2.1.1",
