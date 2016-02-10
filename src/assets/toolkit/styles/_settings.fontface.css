@@ -13,7 +13,7 @@
     --base-font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     --base-font-weight: 400;
 
-    --enhance-base-font-family: "ff-meta-serif-web-pro", var(--base-font-family);
+    --enhance-base-font-family: "MetaSerifWeb", var(--base-font-family);
     --enhance-base-font-weight-regular: 500;
     --enhance-base-font-weight-bold: 700;
 
@@ -21,7 +21,7 @@
     --heading-font-weight-regular: normal;
     --heading-font-weight-bold: bold;
 
-    --enhance-heading-font-family: "roboto_condensed", var(--heading-font-family);
+    --enhance-heading-font-family: "meta-sans", var(--heading-font-family);
     --enhance-heading-font-weight-regular: 400;
     --enhance-heading-font-weight-bold: 700;
 
@@ -32,6 +32,96 @@
 
 
 
+/**
+ * Meta Serif
+ */
+
+/* Normal normal */
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-Book.eot');
+    src: url('../fonts/MetaSerifWeb-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-Book.woff') format('woff');
+    font-weight: normal; /* or 400 */
+    font-style: normal;
+}
+
+/* Normal italic*/
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-BookItalic.eot');
+    src: url('../fonts/MetaSerifWeb-BookItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-BookItalic.woff') format('woff');
+    font-weight: normal; /* or 400 */
+    font-style: italic;
+}
+
+/* Bold normal */
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-Bold.eot');
+    src: url('../fonts/MetaSerifWeb-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-Bold.woff') format('woff');
+    font-weight: bold; /* or 700 */
+    font-style: normal;
+}
+
+/* Bold itlaic */
+/*
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-BoldItalic.eot');
+    src: url('../fonts/MetaSerifWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+*/
+/**
+ * Meta Serif
+ */
+
+/* Normal normal */
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-Book.eot');
+    src: url('../fonts/MetaSerifWeb-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-Book.woff') format('woff');
+    font-weight: normal; /* or 400 */
+    font-style: normal;
+}
+
+/* Normal italic*/
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-BookItalic.eot');
+    src: url('../fonts/MetaSerifWeb-BookItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-BookItalic.woff') format('woff');
+    font-weight: normal; /* or 400 */
+    font-style: italic;
+}
+
+/* Bold normal */
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-Bold.eot');
+    src: url('../fonts/MetaSerifWeb-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-Bold.woff') format('woff');
+    font-weight: bold; /* or 700 */
+    font-style: normal;
+}
+
+/* Bold itlaic */
+/*
+@font-face {
+    font-family: 'MetaSerifWeb';
+    src: url('../fonts/MetaSerifWeb-BoldItalic.eot');
+    src: url('../fonts/MetaSerifWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MetaSerifWeb-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+*/
 
 /**
  * Roboto font-face
@@ -41,9 +131,7 @@
     font-family: 'roboto_condensed';
     src: url('../fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.eot');
     src: url('../fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.woff') format('woff'),
-         url('../fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
+         url('../fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.woff') format('woff');
     font-weight: bold; /* or 700 */
     font-style: normal;
 }
