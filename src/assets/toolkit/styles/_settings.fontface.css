@@ -119,5 +119,5 @@
     src: url('../fonts/MetaWeb-CondBoldItalic.eot?#iefix') format('embedded-opentype'),
          url('../fonts/MetaWeb-CondBoldItalic.woff') format('woff');
     font-weight: bold; /* or 700 */
-    font-style: normal;
+    font-style: italic;
 }
