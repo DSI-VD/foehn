@@ -39,7 +39,7 @@ html {
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [6] */
 
 
-    &.wf-active {
+    &.wf-metaserifweb-n4-active {
         font-family: var(--enhance-base-font-family); /* [7] */
         font-weight: var(--enhance-base-font-weight-regular); /* [7] */
     }
