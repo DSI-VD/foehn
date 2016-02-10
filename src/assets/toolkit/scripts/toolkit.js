@@ -17,6 +17,6 @@ var WebFont = require('webfontloader');
 
 WebFont.load({
     custom: {
-      families: ['roboto_condensed']
+      families: ['MetaSerifWeb', 'MetaWeb']
     }
 });
