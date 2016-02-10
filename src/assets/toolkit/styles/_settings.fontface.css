@@ -38,40 +38,32 @@
 
 /* Normal normal */
 @font-face {
-    font-family: 'MetaSerifWeb';
-    src: url('../fonts/MetaSerifWeb-Book.eot');
-    src: url('../fonts/MetaSerifWeb-Book.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaSerifWeb-Book.woff') format('woff');
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-Book.woff") format("woff");
     font-weight: normal; /* or 400 */
     font-style: normal;
 }
 
 /* Normal italic*/
 @font-face {
-    font-family: 'MetaSerifWeb';
-    src: url('../fonts/MetaSerifWeb-BookItalic.eot');
-    src: url('../fonts/MetaSerifWeb-BookItalic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaSerifWeb-BookItalic.woff') format('woff');
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-BookItalic.woff") format("woff");
     font-weight: normal; /* or 400 */
     font-style: italic;
 }
 
 /* Bold normal */
 @font-face {
-    font-family: 'MetaSerifWeb';
-    src: url('../fonts/MetaSerifWeb-Bold.eot');
-    src: url('../fonts/MetaSerifWeb-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaSerifWeb-Bold.woff') format('woff');
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-Bold.woff") format("woff");
     font-weight: bold; /* or 700 */
     font-style: normal;
 }
 
 /* Bold itlaic */
 @font-face {
-    font-family: 'MetaSerifWeb';
-    src: url('../fonts/MetaSerifWeb-BoldItalic.eot');
-    src: url('../fonts/MetaSerifWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaSerifWeb-BoldItalic.woff') format('woff');
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-BoldItalic.woff") format("woff");
     font-weight: bold;
     font-style: normal;
 }
@@ -82,40 +74,32 @@
 
 /* Normal normal */
 @font-face {
-    font-family: 'MetaWeb';
-    src: url('../fonts/MetaWeb-CondBook.eot');
-    src: url('../fonts/MetaWeb-CondBook.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaWeb-CondBook.woff') format('woff');
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBook.woff") format("woff");
     font-weight: normal; /* or 400 */
     font-style: normal;
 }
 
 /* Normal italic*/
 @font-face {
-    font-family: 'MetaWeb';
-    src: url('../fonts/MetaWeb-CondBookItalic.eot');
-    src: url('../fonts/MetaWeb-CondBookItalic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaWeb-CondBookItalic.woff') format('woff');
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBookItalic.woff") format("woff");
     font-weight: normal; /* or 400 */
     font-style: italic;
 }
 
 /* Bold normal */
 @font-face {
-    font-family: 'MetaWeb';
-    src: url('../fonts/MetaWeb-CondBold.eot');
-    src: url('../fonts/MetaWeb-CondBold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaWeb-CondBold.woff') format('woff');
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBold.woff") format("woff");
     font-weight: bold; /* or 700 */
     font-style: normal;
 }
 
 /* Bold itlaic */
 @font-face {
-    font-family: 'MetaWeb';
-    src: url('../fonts/MetaWeb-CondBoldItalic.eot');
-    src: url('../fonts/MetaWeb-CondBoldItalic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MetaWeb-CondBoldItalic.woff') format('woff');
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBoldItalic.woff") format("woff");
     font-weight: bold; /* or 700 */
     font-style: italic;
 }
