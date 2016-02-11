@@ -108,7 +108,8 @@
                         "font-family",
                         "line-height",
                         "color",
-                        "text"
+                        "text",
+                        "letter-spacing"
                     ]
                 },
                 {
@@ -134,7 +135,9 @@
                     ]
                 }
             ],
-            { unspecified: "bottom" }
+            {
+                unspecified: "bottom"
+            }
         ],
         "rule-trailing-semicolon": "always",
         "root-no-standard-properties": true,
