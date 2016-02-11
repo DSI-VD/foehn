@@ -9,6 +9,9 @@
 :root {
     --blockquote-text-color: var(--base-text-color);
     --blockquote-left-margin: var(--base-spacing-unit--large);
+    --blockquote-border-width: calc(var(--base-spacing-unit--tiny) / 2);
+    --blockquote-border-color: var(--blockquote-text-color);
+    --blockquote-border-style: solid;
 }
 
 
@@ -23,7 +26,9 @@
 blockquote {
     font-style: italic;
 
-    border-left: .2rem var(--blockquote-text-color) solid;
+    border-left: var(--blockquote-border-width)
+                 var(--blockquote-border-color)
+                 var(--blockquote-border-style);
 
     margin-left: @padding-left;
     padding-left: calc( var(--blockquote-left-margin) / 2 );
