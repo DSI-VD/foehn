@@ -10,10 +10,10 @@
  * http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 .fraction {
-    font-kerning: normal;
-    font-feature-settings: "kern", "liga", "clig", "calt", "frac";
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: diagonal-fractions;
+    font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+    font-kerning: normal;
 }
 
 

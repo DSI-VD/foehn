@@ -15,38 +15,38 @@
  */
 
 .alpha {
-    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-1);
+    font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-1);
 }
 
 .beta {
-    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-2);
+    font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-2);
 }
 
 .gamma {
-    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-3);
+    font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-3);
 }
 
 .delta {
-    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-4);
+    font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-4);
 }
 
 .epsilon {
-    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-5);
+    font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-5);
 }
 
 .zeta {
-    font-weight: var(--heading-font-weight-regular);
     font-size: var(--heading-size-6);
+    font-weight: var(--heading-font-weight-regular);
     line-height: var(--heading-line-height-6);
 }
 
