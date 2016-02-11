@@ -21,6 +21,7 @@
  * 5. Line different sized buttons up a little nicer.
  * 6. Fixes odd inner spacing in IE7.
  * 7. Force all button-styled elements to appear clickable.
+ * 8. Hover state color
  */
 .btn {
     display: inline-block; /* [1] */
@@ -38,14 +39,21 @@
     vertical-align: middle; /* [5] */
     overflow: visible; /* [6] */
     cursor: pointer; /* [7] */
-}
 
-.btn,
-.btn:hover,
-.btn:active,
-.btn:focus {
-    color: var(--btn-color);
-    text-decoration: none; /* [3] */
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        color: var(--btn-color);
+        text-decoration: none; /* [3] */
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: color( var(--btn-background) a(60%) ); /* [8] */
+    }
+
 }
 
 
