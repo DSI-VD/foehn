@@ -104,7 +104,8 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         require('postcss-selector-not'),
         require('postcss-hidden'),
         require('lost'),
-        require('pixrem'),
+        require('postcss-calc'),
+        require('pixrem')({html: false}),
         require('postcss-color-rgba-fallback'),
         require('autoprefixer')({browsers: config.browsers})
     ]

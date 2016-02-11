@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #SMALL
+\*------------------------------------*/
+
+/**
+ * Small text
+ */
+
+/*Predefine the variables below in order to alter and enable specific features.*/
+:root{
+    --small-font-size: calc( 1rem / 1.26 );
+    --small-font-family: var(--base-font-family);
+    --enhance-small-font-family: var(--enhance-base-font-family);
+}
+
+
+
+
+
+@define-extend small,
+small {
+    font-family: var(--small-font-family);
+    font-size: var(--small-font-size);
+    line-height: 1;
+}
+
+
+
+
+
+/**
+ * Small fontface
+ *
+ * 1. Use Typekit webfont only when it's loaded to avoid FOIT
+ */
+
+@define-extend small-wf-active,
+.wf-active small {
+        font-family: var(--enhance-small-font-family); /* [1] */
+}

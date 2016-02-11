@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #SUBS
+\*------------------------------------*/
+
+/**
+ * Subscript Element
+ *
+ * 1. Override normalize.css if font with subscript features is loaded.
+ */
+sub {
+    @mixin font-sub;
+}
+
+.wf-active sub {
+    font-size: 100%; /* [1] */
+    bottom: 0; /* [1] */
+}

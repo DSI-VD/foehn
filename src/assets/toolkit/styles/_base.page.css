@@ -8,22 +8,41 @@
  * 1. Ensure the page always fills at least the entire height of the viewport.
  * 2. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
- *    in ems, the `line-height` is calculated to exist unitlessly.
+ *    in rems, the `line-height` is calculated to exist unitlessly.
  * 3. Prevent certain mobile browsers from automatically zooming fonts.
  * 4. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ * 5. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ * 6. OpenType fetaures
+ * 7. Use Typekit webfont only when it's loaded to avoid FOIT
  */
 html {
+    font-size: var(--base-font-size); /* [1] */
+    line-height: var(--base-line-height); /* [1] */
+    background-color: var(--base-background-color);
+    color: var(--base-text-color);
+    overflow-y: scroll; /* [2] */
     min-height: 100%; /* [1] */
 
-    font-weight: var(--base-font-weight);
-    font-size: var(--base-font-size); /* [2] */
-    font-family: var(--base-font-family);
-    line-height: var(--base-line-height); /* [2] */
-    color: var(--base-text-color);
-    text-size-adjust: 100%; /* [3] */
+    text-size-adjust: 100%; /* [4] */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale; /* [5] */
+    -webkit-font-smoothing: antialiased; /* [5] */
 
-    background-color: var(--base-background-color);
-    overflow-y: scroll; /* [4] */
+    font-family: var(--base-font-family);
+    font-weight: var(--base-font-weight);
+
+    font-kerning: normal; /* [6] */
+    font-variant-ligatures: common-ligatures, contextual; /* [6] */
+    font-feature-settings: "kern", "liga", "clig", "calt"; /* [6] */
+
+
+    &.wf-metaserifweb-n4-active {
+        font-family: var(--enhance-base-font-family); /* [7] */
+        font-weight: var(--enhance-base-font-weight-regular); /* [7] */
+    }
 }

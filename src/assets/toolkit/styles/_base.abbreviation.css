@@ -1,0 +1,12 @@
+/* ------------------------------------ *\
+    #ABBREVIATION
+\* ------------------------------------ */
+
+/**
+ * Mor readable `<abbr>`
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+
+abbr {
+    @mixin font-small-caps;
+}

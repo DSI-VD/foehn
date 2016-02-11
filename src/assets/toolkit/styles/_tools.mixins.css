@@ -1,3 +1,63 @@
 /* ------------------------------------ *\
-    #LINK
+    #MIXINS
 \* ------------------------------------ */
+
+/**
+ * Mor readable bodytext
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+@define-mixin font-bodytext {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures, contextual;
+    font-variant-numeric: oldstyle-nums, proportional-nums;
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+}
+
+
+
+
+
+/**
+ * Mor readable headings
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+@define-mixin font-headings {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+}
+
+
+
+
+
+/**
+ * More readable sub text
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+@define-mixin font-sub {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures, contextual;
+    font-variant-position: sub;
+    font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+}
+
+
+
+
+
+/**
+ * OpenType feature for small caps
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ *
+ * 1. Safari iOs doesn't support `font-feature` so we use `text-transform` to
+ *    make the texte uppercase. http://caniuse.com/#search=font-feature
+ */
+@define-mixin font-small-caps {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures, contextual;
+    font-variant-numeric: oldstyle-nums, proportional-nums;
+    font-variant-caps: all-small-caps;
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+    text-transform: uppercase; /* [1] */
+}
