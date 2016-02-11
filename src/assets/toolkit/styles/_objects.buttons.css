@@ -3,7 +3,7 @@
 \* ------------------------------------ */
 
 :root {
-    --btn-padding: var(--base-spacing-unit);
+    --btn-padding: calc(var(--base-spacing-unit) / 2);
     --btn-background: var(--base-text-color);
     --btn-color: var(--base-background-color);
     --btn-border-width: 1px;
@@ -13,31 +13,31 @@
 
 /**
  * 1. Allow us to style box model properties.
- * 2. Line different sized buttons up a little nicer.
- * 3. Make buttons inherit font styles (often necessary when styling `input`s
+ * 2. Make buttons inherit font styles (often necessary when styling `input`s
  *    as buttons).
- * 4. Reset/normalize some styles.
- * 5. Force all button-styled elements to appear clickable.
- * 6. Fixes odd inner spacing in IE7.
- * 7. Subtract the border size from the padding value so that buttons do not
+ * 3. Reset/normalize some styles.
+ * 4. Subtract the border size from the padding value so that buttons do not
  *    grow larger as we add borders.
+ * 5. Line different sized buttons up a little nicer.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Force all button-styled elements to appear clickable.
  */
-.btn{
+.btn {
     display: inline-block; /* [1] */
 
-    font: inherit; /* [3] */
-    text-align: center; /* [4] */
+    font: inherit; /* [2] */
+    text-align: center; /* [3] */
 
     background-color: var(--btn-background);
     border: var(--btn-border-width)
             var(--btn-border-style)
             var(--btn-border-color);
-    margin: 0; /* [4] */
+    margin: 0; /* [3] */
     padding: calc(var(--btn-padding) - var(--btn-border-width))
-             calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
-    vertical-align: middle; /* [2] */
+             calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [4] */
+    vertical-align: middle; /* [5] */
     overflow: visible; /* [6] */
-    cursor: pointer; /* [5] */
+    cursor: pointer; /* [7] */
 }
 
 .btn,
@@ -45,7 +45,7 @@
 .btn:active,
 .btn:focus {
     color: var(--btn-color);
-    text-decoration: none; /* [4] */
+    text-decoration: none; /* [3] */
 }
 
 
