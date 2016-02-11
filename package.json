@@ -30,27 +30,27 @@
     "url": "https://github.com/DSI-VD/foehn.git"
   },
   "engines": {
-    "node": ">=0.10.0",
+    "node": ">=0.12.0",
     "npm": ">=2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "babel-core": "^5.2.17",
-    "babel-loader": "5.0.0",
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
     "browser-sync": "^2.7.1",
-    "del": "^1.1.1",
-    "fabricator-assemble": "^1.1.8",
+    "del": "^2",
+    "fabricator-assemble": "^1.1.9",
     "gulp": "^3.8.11",
     "gulp-cssnano": "^2.0.0",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-if": "^1.2.5",
+    "gulp-if": "^2",
     "gulp-imagemin": "^2.4.0",
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.0",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.4",
-    "imports-loader": "^0.6.3",
+    "imports-loader": "^0.6.4",
     "lost": "^6.6.2",
     "normalize.css": "^3.0.3",
     "picturefill": "^2.3.1",
@@ -77,7 +77,7 @@
     "script-loader": "^0.6.1",
     "stylelint": "^4.2.0",
     "webfontloader": "^1.6.20",
-    "webpack": "^1.8.11"
+    "webpack": "^1.12.1"
   },
   "dependencies": {
     "gulp-css-scss": "0.0.2"
