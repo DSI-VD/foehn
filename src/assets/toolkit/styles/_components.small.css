@@ -1,19 +1,29 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #SMALL
-\*------------------------------------*/
+\* ------------------------------------ */
+
+
+
+
 
 /**
  * Small text
  */
-
-.small {
-    @extend small;
+small {
+    font-size: var(--small-font-size);
+    font-family: var(--small-font-family);
+    line-height: 1;
 }
 
 
 
 
 
-.wf-active .small {
-    @extend small-wf-active;
+/**
+ * Small fontface
+ *
+ * 1. Use Typekit webfont only when it's loaded to avoid FOIT
+ */
+.wf-active small {
+    font-family: var(--enhance-small-font-family); /* [1] */
 }

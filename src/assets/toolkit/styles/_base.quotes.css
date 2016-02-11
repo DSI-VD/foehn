@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #QUOTES
-\*------------------------------------*/
+\* ------------------------------------ */
 
 
 
@@ -22,11 +22,13 @@
  */
 blockquote {
     font-style: italic;
-    letter-spacing: -.003rem;
 
-    padding-left: calc( var(--blockquote-left-margin) / 2 );
-    margin-left: @padding-left;
     border-left: .2rem var(--blockquote-text-color) solid;
+
+    margin-left: @padding-left;
+    padding-left: calc( var(--blockquote-left-margin) / 2 );
+
+    letter-spacing: -.003rem;
 }
 
 blockquote cite::before {
@@ -43,5 +45,6 @@ blockquote cite::before {
 cite,
 q {
     font-style: italic;
+
     letter-spacing: -.003em;
 }

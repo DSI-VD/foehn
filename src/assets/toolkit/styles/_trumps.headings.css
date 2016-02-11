@@ -1,10 +1,11 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #HEADINGS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Headings 1–6’s corresponding Greek-alphabet abstract classes for double-
- * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ * stranded heading hierarchy:
+ * csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
  *
  * Use these helper classes to cause other elements to adopt the styling of the
  * respective heading, e.g.:
@@ -14,39 +15,39 @@
  */
 
 .alpha {
+    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-1);
     line-height: var(--heading-line-height-1);
-    font-weight: var(--heading-font-weight-bold);
 }
 
 .beta {
+    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-2);
     line-height: var(--heading-line-height-2);
-    font-weight: var(--heading-font-weight-bold);
 }
 
 .gamma {
+    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-3);
     line-height: var(--heading-line-height-3);
-    font-weight: var(--heading-font-weight-bold);
 }
 
 .delta {
+    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-4);
     line-height: var(--heading-line-height-4);
-    font-weight: var(--heading-font-weight-bold);
 }
 
 .epsilon {
+    font-weight: var(--heading-font-weight-bold);
     font-size: var(--heading-size-5);
     line-height: var(--heading-line-height-5);
-    font-weight: var(--heading-font-weight-bold);
 }
 
 .zeta {
+    font-weight: var(--heading-font-weight-regular);
     font-size: var(--heading-size-6);
     line-height: var(--heading-line-height-6);
-    font-weight: var(--heading-font-weight-regular);
 }
 
 .alpha,
@@ -56,10 +57,12 @@
 .epsilon,
 .zeta {
     font-family: var(--heading-font-family);
+
     @mixin font-headings;
 }
 
 .wf-metaweb-n7-active {
+
     .alpha,
     .beta,
     .gamma,

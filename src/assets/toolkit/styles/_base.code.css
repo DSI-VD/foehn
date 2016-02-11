@@ -11,8 +11,8 @@
  */
 code,
 pre {
-    font-family: var(--monospaced-font-family);
     font-size: var(--monospaced-font-size);
+    font-family: var(--monospaced-font-family);
 
     white-space: pre;
     word-spacing: normal;

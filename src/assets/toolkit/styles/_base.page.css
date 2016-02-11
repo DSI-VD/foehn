@@ -21,28 +21,26 @@
  * 7. Use Typekit webfont only when it's loaded to avoid FOIT
  */
 html {
-    font-size: var(--base-font-size); /* [1] */
-    line-height: var(--base-line-height); /* [1] */
-    background-color: var(--base-background-color);
-    color: var(--base-text-color);
-    overflow-y: scroll; /* [2] */
     min-height: 100%; /* [1] */
 
-    text-size-adjust: 100%; /* [4] */
-    text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale; /* [5] */
     -webkit-font-smoothing: antialiased; /* [5] */
-
-    font-family: var(--base-font-family);
-    font-weight: var(--base-font-weight);
-
     font-kerning: normal; /* [6] */
-    font-variant-ligatures: common-ligatures, contextual; /* [6] */
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [6] */
+    font-variant-ligatures: common-ligatures, contextual; /* [6] */
+    font-weight: var(--base-font-weight);
+    font-size: var(--base-font-size); /* [1] */
+    font-family: var(--base-font-family);
+    line-height: var(--base-line-height); /* [1] */
+    color: var(--base-text-color);
+    text-size-adjust: 100%; /* [4] */
+    text-rendering: optimizeLegibility;
 
+    background-color: var(--base-background-color);
+    overflow-y: scroll; /* [2] */
 
     &.wf-metaserifweb-n4-active {
-        font-family: var(--enhance-base-font-family); /* [7] */
         font-weight: var(--enhance-base-font-weight-regular); /* [7] */
+        font-family: var(--enhance-base-font-family); /* [7] */
     }
 }
