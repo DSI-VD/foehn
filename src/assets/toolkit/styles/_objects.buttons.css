@@ -65,7 +65,7 @@
 
 
 /**
- * Use typekit fonts only when loaded
+ * Use fonts only when loaded
  */
 .wf-active .btn {
     font-family: var(--enhance-heading-font-family);

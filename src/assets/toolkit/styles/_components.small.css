@@ -22,7 +22,7 @@ small {
 /**
  * Small fontface
  *
- * 1. Use Typekit webfont only when it's loaded to avoid FOIT
+ * 1. Use webfont only when it's loaded to avoid FOIT
  */
 .wf-active small {
     font-family: var(--enhance-small-font-family); /* [1] */
