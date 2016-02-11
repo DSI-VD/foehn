@@ -58,6 +58,7 @@
  */
 
 @import "_settings.defaults.css";
+@import "_settings.colors.css";
 @import "_settings.fontface.css";
 @import "_settings.responsive.css";
 @import "_settings.animations.css";

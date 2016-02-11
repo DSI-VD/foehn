@@ -78,3 +78,71 @@
 .wf-active .btn {
     font-family: var(--enhance-heading-font-family);
 }
+
+
+
+
+
+/**
+ * Valid
+ */
+:root {
+    --btn-color-valid: var(--base-color-valid);
+}
+
+
+.btn--valid {
+
+    background-color: var(--btn-color-valid);
+    border: var(--btn-border-width)
+            var(--btn-border-style)
+            color( var(--btn-color-valid) shade(20%) );
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        color: var(--btn-color);
+        text-decoration: none; /* [3] */
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: color( var(--btn-color-valid) shade(20%) ); /* [8] */
+    }
+}
+
+
+
+
+
+/**
+ * Danger
+ */
+:root {
+    --btn-color-danger: var(--base-color-danger);
+}
+
+
+.btn--danger {
+
+    background-color: var(--btn-color-danger);
+    border: var(--btn-border-width)
+            var(--btn-border-style)
+            color( var(--btn-color-danger) shade(20%) );
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        color: var(--btn-color);
+        text-decoration: none; /* [3] */
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: color( var(--btn-color-danger) shade(20%) ); /* [8] */
+    }
+}
