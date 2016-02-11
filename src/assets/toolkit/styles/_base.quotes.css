@@ -22,7 +22,6 @@
  */
 blockquote {
     font-style: italic;
-    letter-spacing: -.003rem;
 
     border-left: .2rem var(--blockquote-text-color) solid;
 
