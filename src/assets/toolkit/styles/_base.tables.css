@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #TABLES
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Enable OpenType features to make more readable data
@@ -9,7 +9,7 @@
  */
 td {
     font-kerning: normal;
+    font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: lining-nums, tabular-nums;
-    font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
 }

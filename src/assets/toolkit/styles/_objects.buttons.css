@@ -3,14 +3,12 @@
 \* ------------------------------------ */
 
 :root {
-    --btn-padding: var(--base-spacing-unit--small);
-    --btn-background: var(--base-background-color);
-    --btn-color: var(--base-text-color);
+    --btn-padding: var(--base-spacing-unit);
+    --btn-background: var(--base-text-color);
+    --btn-color: var(--base-background-color);
     --btn-border-width: 1px;
-    --btn-border-radius: 0;
     --btn-border-style: solid;
-    --btn-border-color: var(--base-text-color);
-    --btn-font-family: var(--headings-font-family);
+    --btn-border-color: var(--btn-background);
 }
 
 /**
@@ -24,39 +22,34 @@
  * 7. Subtract the border size from the padding value so that buttons do not
  *    grow larger as we add borders.
  */
-.btn {
+.btn{
     display: inline-block; /* [1] */
 
     font: inherit; /* [3] */
     text-align: center; /* [4] */
-    margin: 0; /* [4] */
-    cursor: pointer; /* [5] */
-    overflow: visible; /* [6] */
-    padding: calc(var(--btn-padding) - var(--btn-border-width))  calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
+
     background-color: var(--btn-background);
-    border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
-    font-family: var(--heading-font-family);
-
-    @if var(--btn-border-width) != 0 {
-    border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
-        } @else {
-            border: none; /* [4] */
-        }
-
-    @if var(--btn-border-radius) != 0 {
-        border-radius: var(--btn-border-radius);
+    border: var(--btn-border-width)
+            var(--btn-border-style)
+            var(--btn-border-color);
+    margin: 0; /* [4] */
+    padding: calc(var(--btn-padding) - var(--btn-border-width))
+             calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [7] */
+    vertical-align: middle; /* [2] */
     overflow: visible; /* [6] */
-    }
-
+    cursor: pointer; /* [5] */
 }
 
 .btn,
 .btn:hover,
 .btn:active,
 .btn:focus {
-    text-decoration: none; /* [4] */
     color: var(--btn-color);
+    text-decoration: none; /* [4] */
 }
+
+
+
 
 
 /**

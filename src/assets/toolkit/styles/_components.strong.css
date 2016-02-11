@@ -1,13 +1,13 @@
-/*------------------------------------*\
-    #SMALL
-\*------------------------------------*/
+/* ------------------------------------ *\
+    #STRONG
+\* ------------------------------------ */
 
 /**
- * Small text
+ * Strong text
  */
 
 .strong {
-    @extend strong;
+    font-weight: bold;
 }
 
 
@@ -15,5 +15,5 @@
 
 
 .wf-active .strong {
-    @extend strong-wf-active;
+    font-weight: var(--enhance-base-font-weight-bold);
 }

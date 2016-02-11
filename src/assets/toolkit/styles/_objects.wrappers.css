@@ -9,15 +9,11 @@
  */
 
 .container {
-    padding-left: var(--base-spacing-unit--tiny);
-    padding-right: var(--base-spacing-unit--tiny);
-
-    margin-left: auto; /* [1] */
     margin-right: auto; /* [1] */
     margin-left: auto; /* [1] */
 
-    padding-right: var(--base-spacing-unit--small);
-    padding-left: var(--base-spacing-unit--small);
+    padding-right: var(--base-spacing-unit--tiny);
+    padding-left: var(--base-spacing-unit--tiny);
 }
 
 @media (--lap-and-up) .container {

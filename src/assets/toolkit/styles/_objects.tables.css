@@ -25,5 +25,7 @@
  */
 .table--cells th,
 .table--cells td {
-    border: var(--table-border-width) var(--table-border-style) var(--table-border-color);
+    border: var(--table-border-width)
+            var(--table-border-style)
+            var(--table-border-color);
 }

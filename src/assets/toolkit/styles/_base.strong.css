@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #STRONG
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Strong
@@ -10,7 +10,6 @@
 
 
 
-@define-extend strong,
 b,
 strong {
     font-weight: bold;
@@ -26,7 +25,6 @@ strong {
  * 1. Enhance webfont use 700 for strong text.
  */
 
-@define-extend strong-wf-active,
 .wf-active b,
 .wf-active strong {
     font-weight: var(--enhance-base-font-weight-bold);
