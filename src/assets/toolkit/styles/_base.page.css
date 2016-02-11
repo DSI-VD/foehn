@@ -23,14 +23,14 @@
 html {
     min-height: 100%; /* [1] */
 
+    font-size: var(--base-font-size); /* [1] */
+    font-weight: var(--base-font-weight);
+    font-family: var(--base-font-family);
+    font-variant-ligatures: common-ligatures, contextual; /* [6] */
+    font-feature-settings: "kern", "liga", "clig", "calt"; /* [6] */
+    font-kerning: normal; /* [6] */
     -moz-osx-font-smoothing: grayscale; /* [5] */
     -webkit-font-smoothing: antialiased; /* [5] */
-    font-kerning: normal; /* [6] */
-    font-feature-settings: "kern", "liga", "clig", "calt"; /* [6] */
-    font-variant-ligatures: common-ligatures, contextual; /* [6] */
-    font-weight: var(--base-font-weight);
-    font-size: var(--base-font-size); /* [1] */
-    font-family: var(--base-font-family);
     line-height: var(--base-line-height); /* [1] */
     color: var(--base-text-color);
     text-size-adjust: 100%; /* [4] */
