@@ -1,6 +1,6 @@
-/* ------------------------------------ *\
+/*------------------------------------*\
     #FONTFACE
-\* ------------------------------------ */
+\*------------------------------------*/
 
 
 
@@ -8,52 +8,98 @@
 
 /**
  * Variables
- * "Cabin Sketch" is loaded via a `<link>` in the header.
  */
 :root {
-    --base-font-family: "HoeflerText-Regular",
-                        "Georgia",
-                        serif;
+    --base-font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     --base-font-weight: 400;
 
-    --heading-font-family: -apple-system,
-                           ".SFNSText-Regular",
-                           "San Francisco",
-                           "Roboto",
-                           "Segoe UI",
-                           "Helvetica Neue",
-                           "Lucida Grande",
-                           sans-serif;
-    --heading-font-weight: 700;
-    --heading-letter-spacing: -.03em;
+    --enhance-base-font-family: "MetaSerifWeb", var(--base-font-family);
+    --enhance-base-font-weight-regular: 500;
+    --enhance-base-font-weight-bold: 700;
+
+    --heading-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    --heading-font-weight-regular: normal;
+    --heading-font-weight-bold: bold;
+
+    --enhance-heading-font-family: "MetaWeb", var(--heading-font-family);
+    --enhance-heading-font-weight-regular: 400;
+    --enhance-heading-font-weight-bold: 700;
+
+    --monospaced-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    --monospaced-font-size: .8rem;
 }
 
 
 
 
+/**
+ * Meta Serif
+ */
 
+/* Normal normal */
 @font-face {
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-Book.woff") format("woff");
+    font-weight: normal; /* or 400 */
     font-style: normal;
-    font-weight: normal;
-    font-family: "cabinsketchbold";
-    src: url("../fonts/cabinsketch-bold-webfont.eot") format("eot"),
-         url("../fonts/cabinsketch-bold-webfont.woff2") format("woff2"),
-         url("../fonts/cabinsketch-bold-webfont.woff") format("woff"),
-         url("../fonts/cabinsketch-bold-webfont.ttf") format("truetype"),
-         url("../fonts/cabinsketch-bold-webfont.svg#cabinsketchbold") format("svg");
 }
 
-
-
-
-
+/* Normal italic*/
 @font-face {
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-BookItalic.woff") format("woff");
+    font-weight: normal; /* or 400 */
+    font-style: italic;
+}
+
+/* Bold normal */
+@font-face {
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-Bold.woff") format("woff");
+    font-weight: bold; /* or 700 */
     font-style: normal;
-    font-weight: normal;
-    font-family: "cabinsketchregular";
-    src: url("../fonts/cabinsketch-regular-webfont.eot") format("eot"),
-         url("../fonts/cabinsketch-regular-webfont.woff2") format("woff2"),
-         url("../fonts/cabinsketch-regular-webfont.woff") format("woff"),
-         url("../fonts/cabinsketch-regular-webfont.ttf") format("truetype"),
-         url("../fonts/cabinsketch-regular-webfont.svg#cabinsketchregular") format("svg");
+}
+
+/* Bold itlaic */
+@font-face {
+    font-family: "MetaSerifWeb";
+    src: url("../fonts/MetaSerifWeb-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/**
+ * Meta Web Condensed
+ */
+
+/* Normal normal */
+@font-face {
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBook.woff") format("woff");
+    font-weight: normal; /* or 400 */
+    font-style: normal;
+}
+
+/* Normal italic*/
+@font-face {
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBookItalic.woff") format("woff");
+    font-weight: normal; /* or 400 */
+    font-style: italic;
+}
+
+/* Bold normal */
+@font-face {
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBold.woff") format("woff");
+    font-weight: bold; /* or 700 */
+    font-style: normal;
+}
+
+/* Bold itlaic */
+@font-face {
+    font-family: "MetaWeb";
+    src: url("../fonts/MetaWeb-CondBoldItalic.woff") format("woff");
+    font-weight: bold; /* or 700 */
+    font-style: italic;
 }

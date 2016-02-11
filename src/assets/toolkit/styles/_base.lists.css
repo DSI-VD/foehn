@@ -9,3 +9,7 @@ li > ul,
 li > ol {
     margin-bottom: 0;
 }
+
+li {
+    @mixin font-bodytext;
+}

@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #QUOTES
+\*------------------------------------*/
+
+
+
+
+
+:root {
+    --blockquote-text-color: var(--base-text-color);
+    --blockquote-left-margin: var(--base-spacing-unit--large);
+}
+
+
+
+
+
+/**
+ * Blockquote
+ *
+ * 1. Unicode for En dash and Space.
+ */
+blockquote {
+    font-style: italic;
+    letter-spacing: -.003rem;
+
+    padding-left: calc( var(--blockquote-left-margin) / 2 );
+    margin-left: @padding-left;
+    border-left: .2rem var(--blockquote-text-color) solid;
+}
+
+blockquote cite::before {
+    content: "\2013\0020"; /* [1] */
+}
+
+
+
+
+
+/**
+ * Inline quotations and source citations
+ */
+cite,
+q {
+    font-style: italic;
+    letter-spacing: -.003em;
+}

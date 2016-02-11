@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #SMALL
+\*------------------------------------*/
+
+/**
+ * Small text
+ */
+
+.small {
+    @extend small;
+}
+
+
+
+
+
+.wf-active .small {
+    @extend small-wf-active;
+}

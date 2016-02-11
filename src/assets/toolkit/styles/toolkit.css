@@ -18,13 +18,18 @@
  *
  * BASE
  * Page.................Fonts, colors and all stuff for `<html>.
- * Page responsive......Responsive typography for body text.
  * Headings.............H1–H6 styles.
- * Headings responsive..Responsive typography for headings.
+ * Small................Small text.
+ * Strong...............Strong text.
+ * Subs.................Subscript element style.
  * Lists................UL, OL & DL styles.
  * Anchors..............Links styles.
  * Images...............Images styles.
  * Figures..............Figures styles.
+ * Quotes...............Quotes styles.
+ * Abbreviation.........Abbreviation styles.
+ * Code.................Code, keyborad input, etc. styles.
+ * Selections...........Text highlight color.
  *
  * OBJECTS
  * Wrappers.............Wrapping and constraining elements.
@@ -35,12 +40,15 @@
  * Tables...............Tables.
  *
  * COMPONENTS
+ * Inline texts.........Fraction, Small-caps, etc.
  * Boxes................Boxes styles.
+ * Small................Small text styles.
+ * Strong...............Strong text styles.
+ * Quotes...............Stlyles for quotes.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
- * Headings responsive..Responsive headings styles for texts.
  * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  */
@@ -86,15 +94,18 @@
  */
 
 @import "_base.page.css";
-@import "_base.page-responsive.css";
 @import "_base.headings.css";
-@import "_base.headings-responsive.css";
+@import "_base.paragraph.css";
+@import "_base.small.css";
+@import "_base.strong.css";
+@import "_base.subs.css";
 @import "_base.lists.css";
 @import "_base.anchors.css";
 @import "_base.images.css";
+@import "_base.tables.css";
 @import "_base.figures.css";
-
-
+@import "_base.quotes.css";
+@import "_base.abbreviation.css";
 
 
 
@@ -108,6 +119,7 @@
 @import "_objects.expos.css";
 @import "_objects.box.css";
 @import "_objects.tables.css";
+@import "_components.inline-texts.css";
 
 
 
@@ -118,9 +130,9 @@
  */
 
 @import "_components.box.css";
-
-
-
+@import "_components.small.css";
+@import "_components.strong.css";
+@import "_components.quotes.css";
 
 /**
  * TRUMPS
@@ -128,6 +140,5 @@
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";
-@import "_trumps.headings-responsive.css";
 @import "_trumps.utilities.css";
 @import "_trumps.utilities-responsive.css";

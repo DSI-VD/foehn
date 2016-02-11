@@ -1,20 +1,10 @@
-/* ------------------------------------ *\
+/*------------------------------------*\
     #HEADINGS
-\* ------------------------------------ */
-
-:root {
-    --heading-size-alpha: var(--heading-size-1);
-    --heading-size-beta: var(--heading-size-2);
-    --heading-size-gamma: var(--heading-size-3);
-    --heading-size-delta: var(--heading-size-4);
-    --heading-size-epsilon: var(--heading-size-5);
-    --heading-size-zeta: var(--heading-size-6);
-}
+\*------------------------------------*/
 
 /**
  * Headings 1–6’s corresponding Greek-alphabet abstract classes for double-
- * stranded heading hierarchy:
- * csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
  *
  * Use these helper classes to cause other elements to adopt the styling of the
  * respective heading, e.g.:
@@ -23,31 +13,71 @@
  *
  */
 
-.alpha { font-size: var(--heading-size-alpha); }
+.alpha {
+    font-size: var(--heading-size-1);
+    line-height: var(--heading-line-height-1);
+    font-weight: var(--heading-font-weight-bold);
+}
 
-.beta { font-size: var(--heading-size-beta); }
+.beta {
+    font-size: var(--heading-size-2);
+    line-height: var(--heading-line-height-2);
+    font-weight: var(--heading-font-weight-bold);
+}
 
-.gamma { font-size: var(--heading-size-gamma); }
+.gamma {
+    font-size: var(--heading-size-3);
+    line-height: var(--heading-line-height-3);
+    font-weight: var(--heading-font-weight-bold);
+}
 
-.delta { font-size: var(--heading-size-delta); }
+.delta {
+    font-size: var(--heading-size-4);
+    line-height: var(--heading-line-height-4);
+    font-weight: var(--heading-font-weight-bold);
+}
 
-.epsilon { font-size: var(--heading-size-epsilon); }
+.epsilon {
+    font-size: var(--heading-size-5);
+    line-height: var(--heading-line-height-5);
+    font-weight: var(--heading-font-weight-bold);
+}
 
-.zeta { font-size: var(--heading-size-zeta); }
+.zeta {
+    font-size: var(--heading-size-6);
+    line-height: var(--heading-line-height-6);
+    font-weight: var(--heading-font-weight-regular);
+}
 
-
-
-
-
-/**
- * Headings fontface
- */
 .alpha,
 .beta,
 .gamma,
 .delta,
 .epsilon,
 .zeta {
-    font-weight: var(--heading-font-weight);
     font-family: var(--heading-font-family);
+    @mixin font-headings;
+}
+
+.wf-metaweb-n7-active {
+    .alpha,
+    .beta,
+    .gamma,
+    .delta,
+    .epsilon,
+    .zeta  {
+        font-family: var(--enhance-heading-font-family); /* [1] */
+    }
+
+    .alpha,
+    .beta,
+    .gamma,
+    .delta,
+    .epsilon  {
+        font-weight: var(--enhance-heading-font-weight-bold);
+    }
+
+    .zeta {
+        font-weight: var(--enhance-heading-font-weight-regular);
+    }
 }
