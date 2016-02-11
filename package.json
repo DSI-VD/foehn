@@ -56,6 +56,7 @@
     "picturefill": "^2.3.1",
     "pixrem": "^3.0.0",
     "postcss-advanced-variables": "^1.2.2",
+    "postcss-calc": "^5.2.0",
     "postcss-color-function": "^2.0.0",
     "postcss-color-rgba-fallback": "^2.0.0",
     "postcss-custom-media": "^5.0.0",
@@ -79,7 +80,6 @@
     "webpack": "^1.8.11"
   },
   "dependencies": {
-    "gulp-css-scss": "0.0.2",
-    "postcss-calc": "^5.0.0"
+    "gulp-css-scss": "0.0.2"
   }
 }
