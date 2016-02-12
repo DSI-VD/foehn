@@ -84,65 +84,41 @@
 
 
 /**
- * Valid
+ * State buttons
+ *
+ * Color variations
  */
+
 :root {
     --btn-color-valid: var(--base-color-valid);
-}
+    --btn-color-valid-hover: var(--base-color-valid-hover);
 
-
-.btn--valid {
-
-    background-color: var(--btn-color-valid);
-    border: var(--btn-border-width)
-            var(--btn-border-style)
-            color( var(--btn-color-valid) shade(20%) );
-
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-        color: var(--btn-color);
-        text-decoration: none; /* [3] */
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: color( var(--btn-color-valid) shade(20%) ); /* [8] */
-    }
-}
-
-
-
-
-
-/**
- * Danger
- */
-:root {
     --btn-color-danger: var(--base-color-danger);
+    --btn-color-danger-hover: var(--base-color-danger-hover);
 }
 
+@define-mixin btn $modifier, $color, $color-hover,
+              $color-text:var(--btn-color) {
 
-.btn--danger {
+    .btn--$(modifier) {
+        background-color: $color;
+        border: var(--btn-border-width) var(--btn-border-style) $color-hover;
 
-    background-color: var(--btn-color-danger);
-    border: var(--btn-border-width)
-            var(--btn-border-style)
-            color( var(--btn-color-danger) shade(20%) );
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color-text;
+        }
 
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-        color: var(--btn-color);
-        text-decoration: none; /* [3] */
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $color-hover; /* [2] */
+        }
     }
 
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: color( var(--btn-color-danger) shade(20%) ); /* [8] */
-    }
 }
+
+@mixin btn valid, var(--btn-color-valid), var(--btn-color-valid-hover);
+@mixin btn danger, var(--btn-color-danger), var(--btn-color-danger-hover);
