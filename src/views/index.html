@@ -19,7 +19,22 @@ fabricator: true
 
 <h2>Color</h2>
 
-{{#each toolkit.colors}}
+<h3>Primary colors</h3>
+
+{{#each colors.primary}}
+    <div class="f-color-chips">
+    {{#each this}}
+        <div class="f-color-chip">
+            <div class="f-color-chip__name">{{@key}}</div>
+            <div class="f-color-chip__color">{{this}}</div>
+        </div>
+    {{/each}}
+    </div>
+{{/each}}
+
+<h3>States colors</h3>
+
+{{#each colors.states}}
     <div class="f-color-chips">
     {{#each this}}
         <div class="f-color-chip">

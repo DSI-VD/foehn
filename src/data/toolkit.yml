@@ -1,12 +1,3 @@
-colors:
-  primary:
-    Dark: "rgba(0, 0, 0, .8)"
-    Light: "rgba(242, 242, 242, 1)"
-    Primary: "rgba(74, 135, 63, 1)"
-    Background: "rgba(255, 255, 255, 1)"
-  states:
-    Valid: "rgba(0, 131, 55, 1)"
-    Danger: "rgba(178, 13, 12, 1)"
 topics:
   Vie privée:
     - Familles
