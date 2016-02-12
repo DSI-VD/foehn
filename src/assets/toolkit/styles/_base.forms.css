@@ -1,3 +1,38 @@
 /* ------------------------------------ *\
     #FORMS
 \* ------------------------------------ */
+
+:root {
+    --input-height: calc(var(--base-font-size) * var(--base-line-height));
+    --input-margin: 1px;
+    --input-background-color: var(--base-background-color);
+    --input-border-color: var(--base-text-color);
+    --input-border-width: 1px;
+    --input-border-style: solid;
+    --input-font-size: var(--small-font-size);
+    --input-color: var(--base-text-color);
+    --input-text-indent: calc(var(--base-spacing-unit) / 4);
+}
+
+input {
+    height: calc(
+                var(--input-height)
+                - 2 * var(--input-border-width)
+                - 2 * var(--input-margin)
+            );
+
+    font-size: var(--input-font-size);
+    text-indent: calc(var(--input-text-indent) / 4);
+
+    background-color: var(--input-background-color);
+    border: var(--input-border-width)
+            var(--input-border-style)
+            var(--input-border-color);
+
+    margin-top: var(--input-border-width);
+    margin-bottom: var(--input-border-width);
+
+    &::placeholder {
+        color: var(--input-color);
+    }
+}
