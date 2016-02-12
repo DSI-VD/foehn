@@ -8,6 +8,7 @@
 
 :root {
     --base-text-color: rgba(0, 0, 0, .8);
+    --base-mute-color: color(var(--base-text-color) lightness(50%));
     --base-background-color: rgba(255, 255, 255, 1);
     --base-primary-color: rgba(74, 135, 63, 1);
 
