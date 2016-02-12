@@ -21,6 +21,7 @@
  * Headings.............H1–H6 styles.
  * Small................Small text.
  * Strong...............Strong text.
+ * Forms................Forms, input and buttons.
  * Subs.................Subscript element style.
  * Lists................UL, OL & DL styles.
  * Anchors..............Links styles.
@@ -99,6 +100,7 @@
 @import "_base.paragraph.css";
 @import "_base.small.css";
 @import "_base.strong.css";
+@import "_base.forms.css";
 @import "_base.subs.css";
 @import "_base.lists.css";
 @import "_base.anchors.css";
@@ -107,6 +109,7 @@
 @import "_base.figures.css";
 @import "_base.quotes.css";
 @import "_base.abbreviation.css";
+@import "_base.code.css";
 
 
 
