@@ -12,5 +12,7 @@
     --base-primary-color: rgba(74, 135, 63, 1);
 
     --base-color-danger: rgba(178, 13, 12, 1);
+    --base-color-danger-hover: color(var(--base-color-danger) shade(20%));
     --base-color-valid: rgba(0, 131, 55, 1);
+    --base-color-valid-hover: color(var(--base-color-valid) shade(20%));
 }
