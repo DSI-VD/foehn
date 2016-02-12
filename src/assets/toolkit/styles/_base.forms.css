@@ -13,8 +13,17 @@
     --input-color: var(--base-text-color);
     --input-placeholder-color: var(--base-mute-color);
     --input-text-indent: calc(var(--base-spacing-unit) / 4);
+
+    --input-color-disabled: var(--base-mute-color);
+    --input-background-color-disabled: color( var(--base-mute-color) l(90%) );
 }
 
+
+/**
+ *
+ * 1. Placeholder style
+ * 2. Style disabled states with placeholder
+ */
 input {
     height: calc(
                 var(--input-height)
@@ -34,6 +43,19 @@ input {
     margin-bottom: var(--input-border-width);
 
     &::placeholder {
-        color: var(--input-placeholder-color);
+        color: var(--input-placeholder-color); /* [1] */
+    }
+
+    &[disabled],
+    &:disabled,
+    &[readonly] {
+        background-color: var(--input-background-color-disabled); /* [2] */
+
+        cursor: not-allowed; /* [2] */
+
+        &,
+        &::placeholder {
+            color: var(--input-color-disabled); /* [2] */
+        }
     }
 }
