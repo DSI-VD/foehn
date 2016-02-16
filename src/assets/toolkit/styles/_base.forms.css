@@ -3,46 +3,97 @@
 \* ------------------------------------ */
 
 :root {
-    --input-height: calc(var(--base-font-size) * var(--base-line-height));
-    --input-margin: 1px;
-    --input-background-color: var(--base-background-color);
-    --input-border-color: var(--base-mute-color);
-    --input-border-width: 1px;
-    --input-border-style: solid;
-    --input-font-size: 1rem;
-    --input-color: var(--base-text-color);
-    --input-placeholder-color: var(--base-mute-color);
-    --input-text-indent: calc(var(--base-spacing-unit) / 4);
+    --form-background-color: var(--base-background-color);
+    --form-border-color: var(--base-mute-color);
+    --form-border-width: 1px;
+    --form-border-style: solid;
 
-    --input-color-disabled: var(--base-mute-color);
-    --input-background-color-disabled: color( var(--base-mute-color) l(90%) );
+    --form-font-size: inherit;
+    --form-text-indent: calc(var(--base-spacing-unit) / 4);
+    --form-placeholder-color: var(--base-mute-color);
+
+    --form-color-disabled: var(--base-mute-color);
+    --form-background-color-disabled: color( var(--base-mute-color) l(90%) );
 }
+
+
+
 
 
 /**
  *
- * 1. Placeholder style
- * 2. Override content-box in Normalize
- * 2. Style disabled states with placeholder
  */
+@define-mixin form-style {
+    font-size: var(--form-font-size);
+    text-indent: calc(var(--form-text-indent) / 4);
+
+    background-color: var(--form-background-color);
+    border: var(--form-border-width)
+            var(--form-border-style)
+            var(--form-border-color);
+}
+
+
+
+
+
+@define-mixin form-placeholder {
+
+}
+
+
+
+
+
+/**
+ * Disabled mixin
+ *
+ * Set the color for disabled state.
+ */
+@define-mixin form-disabled {
+
+    &[disabled],
+    &:disabled,
+    &[readonly] {
+        background-color: var(--form-background-color-disabled);
+
+        cursor: not-allowed; /* [2] */
+
+        &,
+        &::placeholder {
+            color: var(--form-color-disabled);
+        }
+    }
+
+}
+
+
+
+
+
+/**
+ * Input style
+ *
+ * 1. Placeholder style
+ */
+
+:root {
+    --input-height: calc(var(--base-font-size) * var(--base-line-height));
+    --input-margin: 1px;
+
+    --input-placeholder-color: var(--form-placeholder-color);
+}
+
 input {
     width: 100%;
     height: calc(
                 var(--input-height)
-                - 2 * var(--input-border-width)
+                - 2 * var(--form-border-width)
                 - 2 * var(--input-margin)
             );
 
-    font-size: var(--input-font-size);
-    text-indent: calc(var(--input-text-indent) / 4);
-
-    background-color: var(--input-background-color);
-    border: var(--input-border-width)
-            var(--input-border-style)
-            var(--input-border-color);
-
-    margin-top: var(--input-border-width);
-    margin-bottom: var(--input-border-width);
+    margin-top: var(--form-border-width);
+    margin-bottom: var(--form-border-width);
 
     &::placeholder {
         color: var(--input-placeholder-color); /* [1] */
@@ -52,18 +103,25 @@ input {
         box-sizing: border-box; /* [2] */
     }
 
-    &[disabled],
-    &:disabled,
-    &[readonly] {
-        background-color: var(--input-background-color-disabled); /* [3] */
+    @mixin form-style;
+    @mixin form-disabled;
+}
 
-        cursor: not-allowed; /* [2] */
 
-        &,
-        &::placeholder {
-            color: var(--input-color-disabled); /* [3] */
-        }
+
+
+
+/**
+ * Textarea
+ */
+textarea {
+
+    &::placeholder {
+        color: var(--input-placeholder-color); /* [1] */
     }
+
+    @mixin form-style;
+    @mixin form-disabled;
 }
 
 
