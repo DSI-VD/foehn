@@ -14,6 +14,9 @@
 
     --form-color-disabled: var(--base-mute-color);
     --form-background-color-disabled: color( var(--base-mute-color) l(90%) );
+
+    --input-height: calc(var(--base-font-size) * var(--base-line-height));
+    --input-margin: 1px;
 }
 
 
@@ -21,9 +24,13 @@
 
 
 /**
+ * Inputs and textarea
  *
+ * 1. Placeholder
+ * 2. Override content-box in Normalize
  */
-@define-mixin form-style {
+input,
+textarea {
     font-size: var(--form-font-size);
     text-indent: calc(var(--form-text-indent) / 4);
 
@@ -31,50 +38,23 @@
     border: var(--form-border-width)
             var(--form-border-style)
             var(--form-border-color);
-}
 
-
-
-
-
-
-/**
- * Disabled mixin
- *
- * Set the color for disabled state.
- */
-@define-mixin form-disabled {
+    &::placeholder {
+        color: var(--form-placeholder-color); /* [1] */
+    }
 
     &[disabled],
     &:disabled,
     &[readonly] {
         background-color: var(--form-background-color-disabled);
 
-        cursor: not-allowed; /* [2] */
+        cursor: not-allowed;
 
         &,
         &::placeholder {
             color: var(--form-color-disabled);
         }
     }
-
-}
-
-
-
-
-
-/**
- * Input style
- *
- * 1. Placeholder style
- */
-
-:root {
-    --input-height: calc(var(--base-font-size) * var(--base-line-height));
-    --input-margin: 1px;
-
-    --input-placeholder-color: var(--form-placeholder-color);
 }
 
 input {
@@ -88,25 +68,11 @@ input {
     margin-top: var(--form-border-width);
     margin-bottom: var(--form-border-width);
 
-    &::placeholder {
-        color: var(--input-placeholder-color); /* [1] */
-    }
-
     &[type="search"] {
         box-sizing: border-box; /* [2] */
     }
-
-    @mixin form-style;
-    @mixin form-disabled;
 }
 
-
-
-
-
-/**
- * Textarea
- */
 textarea {
 
     &::placeholder {
