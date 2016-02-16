@@ -1,0 +1,106 @@
+/* ------------------------------------ *\
+    #FORMS
+\* ------------------------------------ */
+
+:root {
+    --form-background-color: var(--base-background-color);
+    --form-border-color: var(--base-mute-color);
+    --form-border-width: 1px;
+    --form-border-style: solid;
+
+    --form-font-size: inherit;
+    --form-text-indent: calc(var(--base-spacing-unit) / 4);
+    --form-placeholder-color: var(--base-mute-color);
+
+    --form-color-disabled: var(--base-mute-color);
+    --form-background-color-disabled: color( var(--base-mute-color) l(90%) );
+
+    --input-height: calc(var(--base-font-size) * var(--base-line-height));
+    --input-margin: 1px;
+}
+
+
+
+
+
+/**
+ * Inputs and textarea
+ *
+ * 1. Placeholder
+ * 2. Override content-box in Normalize
+ */
+input,
+textarea {
+    font-size: var(--form-font-size);
+    text-indent: calc(var(--form-text-indent) / 4);
+
+    background-color: var(--form-background-color);
+    border: var(--form-border-width)
+            var(--form-border-style)
+            var(--form-border-color);
+
+    &::placeholder {
+        color: var(--form-placeholder-color); /* [1] */
+    }
+
+    &[disabled],
+    &:disabled,
+    &[readonly] {
+        background-color: var(--form-background-color-disabled);
+
+        cursor: not-allowed;
+
+        &,
+        &::placeholder {
+            color: var(--form-color-disabled);
+        }
+    }
+}
+
+input {
+    width: 100%;
+    height: calc(
+                var(--input-height)
+                - 2 * var(--form-border-width)
+                - 2 * var(--input-margin)
+            );
+
+    margin-top: var(--form-border-width);
+    margin-bottom: var(--form-border-width);
+
+    &[type="search"] {
+        box-sizing: border-box; /* [2] */
+    }
+}
+
+textarea {
+
+    &::placeholder {
+        color: var(--form-placeholder-color); /* [1] */
+    }
+
+    @mixin form-style;
+    @mixin form-disabled;
+}
+
+
+
+
+
+/**
+ * Labels
+ *
+ * 1. Apply enhance font weight when the webfont is loaded
+ */
+
+:root {
+    --label-font-weight: var(--base-font-weight-bold);
+}
+
+label {
+    font-weight: var(--label-font-weight);
+}
+
+.wf-metaserifweb-n7-active label {
+    font-weight: var(--enhance-base-font-weight-bold); /* [1] */
+}
