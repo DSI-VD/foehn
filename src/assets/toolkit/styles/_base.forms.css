@@ -110,7 +110,7 @@ input {
 textarea {
 
     &::placeholder {
-        color: var(--input-placeholder-color); /* [1] */
+        color: var(--form-placeholder-color); /* [1] */
     }
 
     @mixin form-style;
