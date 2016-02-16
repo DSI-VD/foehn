@@ -30,6 +30,7 @@
                         Georgia,
                         serif;
     --base-font-weight: 400;
+    --base-font-weight-bold: 700;
 
     /* Enhance base font */
     --enhance-base-font-family: "MetaSerifWeb", var(--base-font-family);

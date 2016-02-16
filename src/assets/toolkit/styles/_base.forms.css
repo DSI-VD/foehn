@@ -65,3 +65,25 @@ input {
         }
     }
 }
+
+
+
+
+
+/**
+ * Labels
+ *
+ * 1. Apply enhance font weight when the webfont is loaded
+ */
+
+:root {
+    --label-font-weight: var(--base-font-weight-bold);
+}
+
+label {
+    font-weight: var(--label-font-weight);
+}
+
+.wf-metaserifweb-n7-active label {
+    font-weight: var(--enhance-base-font-weight-bold); /* [1] */
+}
