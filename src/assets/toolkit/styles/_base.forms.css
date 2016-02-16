@@ -25,6 +25,7 @@
  * 2. Style disabled states with placeholder
  */
 input {
+    width: 100%;
     height: calc(
                 var(--input-height)
                 - 2 * var(--input-border-width)
