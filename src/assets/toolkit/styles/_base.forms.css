@@ -79,8 +79,6 @@ textarea {
         color: var(--form-placeholder-color); /* [1] */
     }
 
-    @mixin form-style;
-    @mixin form-disabled;
 }
 
 
