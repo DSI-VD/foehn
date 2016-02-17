@@ -48,6 +48,4 @@ blockquote cite::before {
 cite,
 q {
     font-style: italic;
-
-    letter-spacing: -.003em;
 }
