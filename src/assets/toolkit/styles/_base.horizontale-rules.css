@@ -1,0 +1,22 @@
+/* ------------------------------------ *\
+    #HORIZONTALE RULES
+\* ------------------------------------ */
+
+/**
+ * Horizontale rules
+ */
+
+:root{
+    --hr-color: var(--base-mute-color);
+}
+
+
+
+
+
+hr {
+    height: 1px;
+
+    background: var(--hr-color);
+    border: 0;
+}
