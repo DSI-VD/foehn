@@ -28,6 +28,8 @@
  *
  * 1. Placeholder
  * 2. Override content-box in Normalize
+ * 3. Default `textarea` width can be bigger than the viewport and cause
+ *    some overflows
  */
 input,
 textarea {
@@ -74,6 +76,8 @@ input {
 }
 
 textarea {
+
+    max-width: 100%; /* [3] */
 
     &::placeholder {
         color: var(--form-placeholder-color); /* [1] */
