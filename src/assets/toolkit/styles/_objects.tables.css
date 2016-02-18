@@ -16,8 +16,24 @@
 
 
 
+
+/**
+ * Table default layout
+ *
+ * 1. Allow the table to scroll horizontally
+ * 2. Reset scroll horizontally for mobile
+ */
 .table {
+    display: block; /* [1] */
     width: 100%;
+
+    overflow-x: auto; /* [1] */
+
+    @media (--lap-and-up) {
+        display: table; /* [2] */
+
+        overflow-x: visible; /* [2] */
+    }
 }
 
 
