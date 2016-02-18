@@ -19,7 +19,6 @@
 small {
     font-size: var(--small-font-size);
     font-family: var(--small-font-family);
-    line-height: 1;
 }
 
 
