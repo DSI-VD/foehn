@@ -1,9 +1,12 @@
 images:
   landscape-4x3:
     src:
-      1x: "http://placehold.it/800x600?text=800x600+(1x)"
-      2x: "http://placehold.it/1600x1200?text=1600x1200+(2x)"
-      3x: "http://placehold.it/2400x1800?text=2400x1800+(3x)"
+      360w: "http://placehold.it/360x270?text=4x3+(360x270)"
+      540w: "http://placehold.it/540x405?text=4x3+(540x405)"
+      800w: "http://placehold.it/800x600?text=4x3+(800x600)"
+      1060w: "http://placehold.it/1060x795?text=4x3+(1060x795)"
+      1600w: "http://placehold.it/1600x1200?text=4x3+(1600x1200)"
+      2400w: "http://placehold.it/2400x1800?text=4x3+(2400x1800)"
     alt: "4x3 landscape image"
   landscape-16x9:
     src:
