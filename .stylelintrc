@@ -32,7 +32,7 @@
         "function-linear-gradient-no-nonstandard-direction": true,
         "function-url-quotes": "double",
         "function-whitespace-after": "always",
-        "indentation": [A
+        "indentation": [
             4,
             ignore: ["value", "param"]
         ],
