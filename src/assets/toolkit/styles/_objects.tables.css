@@ -8,9 +8,11 @@
     --table-border-style: solid;
     --table-border-color: var(--base-text-color);
 
-    --table-padding--compact: calc(var(--base-spacing-unit) / 4);
+    --table-padding: calc(var(--base-spacing-unit) / 4);
     --table-padding--cosy: calc(var(--base-spacing-unit) / 2);
     --table-padding--comfy: calc(var(--base-spacing-unit));
+
+    --table-background-color: var(--base-mute-color);
 }
 
 
@@ -29,6 +31,19 @@
 
     overflow-x: auto; /* [1] */
 
+    thead,
+    tfoot {
+        background-color: var(--table-background-color);
+    }
+
+    th,
+    td {
+        border: var(--table-border-width)
+                var(--table-border-style)
+                var(--table-border-color);
+        padding: var(--table-padding);
+    }
+
     @media (--lap-and-up) {
         display: table; /* [2] */
 
@@ -41,23 +56,9 @@
 
 
 /**
- * Add borders around a `table`.
- */
-.table--cells th,
-.table--cells td {
-    border: var(--table-border-width)
-            var(--table-border-style)
-            var(--table-border-color);
-}
-
-
-
-
-
-/**
  * Add borders only to `table`’s rows.
  */
-.table--rows {
+.table--borderless {
 
     &,
     th,
@@ -65,86 +66,18 @@
         border: 0 var(--table-border-style) var(--table-border-color);
     }
 
+    thead,
+    tfoot {
+        background-color: transparent;
+    }
+
 }
 
-.table--rows {
+.table--borderless {
     border-top-width: var(--table-border-width);
 
     th,
     td {
         border-bottom-width: var(--table-border-width);
     }
-}
-
-
-
-
-
-/**
- * Add borders only to `table`’s columns.
- */
-.table--columns {
-
-    &,
-    th,
-    td {
-        border: 0 var(--table-border-style) var(--table-border-color);
-    }
-}
-
-.table--columns {
-    border-left-width: var(--table-border-width);
-
-    th,
-    td {
-        border-right-width: var(--table-border-width);
-    }
-}
-
-
-
-
-
-/**
- * Tables with very tightly packed cells.
- */
-.table--compact {
-
-    th,
-    td {
-        padding: var(--table-padding--compact);
-    }
-
-}
-
-
-
-
-
-/**
- * Lightly packed cells.
- */
-.table--cosy {
-
-    th,
-    td {
-        padding: var(--table-padding--cosy);
-    }
-
-}
-
-
-
-
-
-/**
- * Tables with very widely padded cells.
- */
-.table--comfy {
-
-    th,
-    td {
-        padding: var(--table-padding--comfy);
-    }
-
 }
