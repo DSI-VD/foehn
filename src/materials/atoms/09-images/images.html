@@ -2,9 +2,12 @@
 notes: |
   Image with `height` and/or `width` attributes are fix.
   If these attributes are missing, the image is responsive.
+
+  Do not use the `sizes`/`srcset` attribute for art direction.
 ---
 
 <img src="{{placeholders.images.landscape-4x3.src.800w}}"
+     sizes="100w"
      srcset="{{placeholders.images.landscape-4x3.src.360w}} 360w,
              {{placeholders.images.landscape-4x3.src.540w}} 540w,
              {{placeholders.images.landscape-4x3.src.800w}} 800w,
