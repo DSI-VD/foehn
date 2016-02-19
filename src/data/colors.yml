@@ -8,6 +8,8 @@ secondary:
   colors:
     primary-alt: "rgba(62, 159, 240, 1)"
     secondary: "rgba(208, 64, 76, 1)"
+    secondary-lighter: "rgba(231, 149, 147, 1)"
+    secondary-lightest: "rgba(250, 223, 222, 1)"
 tertiary:
   colors:
     gold: "rgba(254, 183, 26, 1)"
