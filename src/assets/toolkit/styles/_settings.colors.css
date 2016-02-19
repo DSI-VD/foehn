@@ -17,6 +17,8 @@
     /* Secondary colors */
     --color-primary-alt: rgba(62, 159, 240, 1);
     --color-secondary: rgba(208, 64, 76, 1);
+    --color-secondary-lighter: rgba(231, 149, 147, 1);
+    --color-secondary-lightest: rgba(250, 223, 222, 1);
 
     /* Tertiary colors */
     --color-gold: rgba(254, 183, 26, 1);
@@ -35,14 +37,4 @@
     /* Special state */
     --color-focus: rgba(58, 149, 207, 1);
     --color-visited: rgba(77, 52, 146, 1);
-
-
-    /**
-     * TODO: Refactor the following vars
-     */
-
-    --base-color-danger: var(--color-secondary);
-    --base-color-danger-hover: color(var(--base-color-danger) shade(20%));
-    --base-color-valid: var(--color-green);
-    --base-color-valid-hover: color(var(--base-color-valid) shade(20%));
 }
