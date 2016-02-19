@@ -8,12 +8,8 @@
  * 3. Setting `vertical-align` removes the whitespace that appears under `img`
  *    elements when they are dropped into a page as-is. Safer alternative to
  *    using `display: block;`.
- * 4. iOS add a `width` attribute if there a `srcset`. It means that `max-width`
- *    is not applied. This make sure that it won't break the design.
- *    see https://github.com/DSI-VD/foehn/issues/100
  */
-img,
-img[data-pfsrcset][width] { /* [4] */
+img {
     max-width: 100%; /* [1] */
 
     font-style: italic; /* [2] */
