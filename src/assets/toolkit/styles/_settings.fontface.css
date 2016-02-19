@@ -12,6 +12,7 @@
 :root {
 
     /* Base font */
+    --base-text-color: var(--color-dark);
     --base-font-family: "Palatino Linotype",
                         Palatino,
                         Palladio,

@@ -7,13 +7,34 @@
 
 
 :root {
-    --base-text-color: rgba(0, 0, 0, .8);
-    --base-mute-color: color(var(--base-text-color) lightness(45%));
-    --base-background-color: rgba(255, 255, 255, 1);
-    --base-primary-color: rgba(74, 135, 63, 1);
 
-    --base-color-danger: rgba(178, 13, 12, 1);
-    --base-color-danger-hover: color(var(--base-color-danger) shade(20%));
-    --base-color-valid: rgba(0, 131, 55, 1);
-    --base-color-valid-hover: color(var(--base-color-valid) shade(20%));
+    /* Primary color */
+    --color-primary: rgba(74, 135, 63, 1);
+    --color-dark: rgba(0, 0, 0, .8);
+    --color-light: rgba(242, 242, 242, 1);
+    --color-white: rgba(255, 255, 255, 1);
+
+    /* Secondary colors */
+    --color-primary-alt: rgba(62, 159, 240, 1);
+    --color-secondary: rgba(208, 64, 76, 1);
+    --color-secondary-lighter: rgba(231, 149, 147, 1);
+    --color-secondary-lightest: rgba(250, 223, 222, 1);
+
+    /* Tertiary colors */
+    --color-gold: rgba(254, 183, 26, 1);
+    --color-gold-light: rgba(250, 197, 64, 1);
+    --color-gold-lighter: rgba(251, 216, 127, 1);
+    --color-gold-lightest: rgba(255, 240, 210, 1);
+    --color-green: rgba(41, 130, 64, 1);
+    --color-green-light: rgba(69, 162, 100, 1);
+    --color-green-lighter: rgba(147, 189, 162, 1);
+    --color-green-lightest: rgba(231, 243, 228, 1);
+    --color-blue: rgba(30, 86, 147, 1);
+    --color-blue-light: rgba(70, 117, 170, 1);
+    --color-blue-lighter: rgba(138, 167, 202, 1);
+    --color-blue-lightest: rgba(220, 228, 239, 1);
+
+    /* Special state */
+    --color-focus: rgba(58, 149, 207, 1);
+    --color-visited: rgba(77, 52, 146, 1);
 }

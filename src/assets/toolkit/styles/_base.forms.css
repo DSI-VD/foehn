@@ -3,17 +3,17 @@
 \* ------------------------------------ */
 
 :root {
-    --form-background-color: var(--base-background-color);
-    --form-border-color: var(--base-mute-color);
+    --form-background-color: var(--color-white);
+    --form-border-color: var(--color-light);
     --form-border-width: 1px;
     --form-border-style: solid;
 
     --form-font-size: inherit;
     --form-text-indent: calc(var(--base-spacing-unit) / 4);
-    --form-placeholder-color: var(--base-mute-color);
+    --form-placeholder-color: var(--color-light);
 
-    --form-color-disabled: var(--base-mute-color);
-    --form-background-color-disabled: color( var(--base-mute-color) l(90%) );
+    --form-color-disabled: var(--color-light);
+    --form-background-color-disabled: color( var(--color-light) l(90%) );
 
     --input-height: calc(var(--base-font-size) * var(--base-line-height));
     --input-margin: 1px;

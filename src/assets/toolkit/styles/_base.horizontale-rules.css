@@ -7,7 +7,7 @@
  */
 
 :root{
-    --hr-color: var(--base-mute-color);
+    --hr-color: var(--color-light);
 }
 
 

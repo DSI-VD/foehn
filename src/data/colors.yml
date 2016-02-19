@@ -1,10 +1,30 @@
 primary:
   colors:
-    Dark: "rgba(0, 0, 0, .8)"
-    Light: "rgba(242, 242, 242, 1)"
-    Primary: "rgba(74, 135, 63, 1)"
-    Background: "rgba(255, 255, 255, 1)"
-states:
+    primary: "rgba(74, 135, 63, 1)"
+    dark: "rgba(0, 0, 0, .8)"
+    light: "rgba(242, 242, 242, 1)"
+    white: "rgba(255, 255, 255, 1)"
+secondary:
   colors:
-    Valid: "rgba(0, 131, 55, 1)"
-    Danger: "rgba(178, 13, 12, 1)"
+    primary-alt: "rgba(62, 159, 240, 1)"
+    secondary: "rgba(208, 64, 76, 1)"
+    secondary-lighter: "rgba(231, 149, 147, 1)"
+    secondary-lightest: "rgba(250, 223, 222, 1)"
+tertiary:
+  colors:
+    gold: "rgba(254, 183, 26, 1)"
+    gold-light: "rgba(250, 197, 64, 1)"
+    gold-lighter: "rgba(251, 216, 127, 1)"
+    gold-lightest: "rgba(255, 240, 210, 1)"
+    green: "rgba(41, 130, 64, 1)"
+    green-light: "rgba(69, 162, 100, 1)"
+    green-lighter: "rgba(147, 189, 162, 1)"
+    green-lightest: "rgba(231, 243, 228, 1)"
+    blue: "rgba(30, 86, 147, 1)"
+    blue-light: "rgba(70, 117, 170, 1)"
+    blue-lighter: "rgba(138, 167, 202, 1)"
+    blue-lightest: "rgba(220, 228, 239, 1)"
+special-state:
+  colors:
+    focus: "rgba(58, 149, 207, 1)"
+    visited: "rgba(77, 52, 146, 1)"

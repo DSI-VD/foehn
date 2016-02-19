@@ -3,12 +3,18 @@
 \* ------------------------------------ */
 
 :root {
+    --btn-color-danger: var(--color-secondary-lightest);
+    --btn-color-danger-hover: var(--color-secondary-lighter);
+    --btn-color-valid: var(--color-green-lightest);
+    --btn-color-valid-hover: var(--color-green-lighter);
+
+
     --btn-padding: calc(var(--base-spacing-unit) / 2);
-    --btn-background: var(--base-text-color);
-    --btn-color: var(--base-background-color);
+    --btn-background: var(--color-light);
+    --btn-color: var(--color-dark);
     --btn-border-width: 1px;
     --btn-border-style: solid;
-    --btn-border-color: var(--btn-background);
+    --btn-border-color: var(--color-dark);
 }
 
 /**
@@ -88,14 +94,6 @@
  *
  * Color variations
  */
-
-:root {
-    --btn-color-valid: var(--base-color-valid);
-    --btn-color-valid-hover: var(--base-color-valid-hover);
-
-    --btn-color-danger: var(--base-color-danger);
-    --btn-color-danger-hover: var(--base-color-danger-hover);
-}
 
 @define-mixin btn $modifier, $color, $color-hover,
               $color-text:var(--btn-color) {

@@ -34,7 +34,7 @@ html {
     text-size-adjust: 100%; /* [5] */
     text-rendering: optimizeLegibility;
 
-    background-color: var(--base-background-color);
+    background-color: var(--color-white);
     overflow-y: scroll; /* [6] */
 
     &.wf-metaserifweb-n4-active {
