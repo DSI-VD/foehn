@@ -4,7 +4,8 @@
 
 :root {
     --link-color: var(--color-dark);
-    --link-hover-color: var(--color-dark);
+    --link-hover-color: var(--color-focus);
+    --link-visited-color: var(--color-visited);
 }
 
 a {
@@ -13,8 +14,16 @@ a {
     transition: var(--transition-color);
 }
 
-a:hover {
+a:hover,
+a:focus,
+a:active {
     color: var(--link-hover-color);
+
+    transition: var(--transition-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
 
     transition: var(--transition-color);
 }
