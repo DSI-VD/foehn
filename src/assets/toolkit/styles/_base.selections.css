@@ -7,6 +7,11 @@
  *
  * Overrides browser-level or system-level text highlight color.
  */
+
+:root {
+    --color-selection: var(--color-blue-lighter);
+}
+
 ::selection {
-    background: color( var(--color-primary) a(60%) );
+    background: var(--color-selection);
 }
