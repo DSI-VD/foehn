@@ -5,7 +5,7 @@
 :root {
     --btn-padding: calc(var(--base-spacing-unit) / 2);
     --btn-background: var(--base-text-color);
-    --btn-color: var(--base-background-color);
+    --btn-color: var(--color-white);
     --btn-border-width: 1px;
     --btn-border-style: solid;
     --btn-border-color: var(--btn-background);

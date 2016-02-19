@@ -2,14 +2,19 @@
     #LINK
 \* ------------------------------------ */
 
+:root {
+    --link-color: var(--color-dark);
+    --link-hover-color: var(--color-dark);
+}
+
 a {
-    color: var(--base-text-color);
+    color: var(--link-color);
 
     transition: var(--transition-color);
 }
 
 a:hover {
-    color: var(--base-primary-color);
+    color: var(--link-hover-color);
 
     transition: var(--transition-color);
 }
