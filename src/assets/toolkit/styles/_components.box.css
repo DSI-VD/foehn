@@ -5,8 +5,14 @@
 /**
  * Default box UI.
  */
-.box--default {
-    margin-bottom: var(--base-spacing-unit);
 
-    outline: 1px solid var(--base-text-color);
+:root {
+    --box-border-color: var(--color-dark);
+    --box-margin-bottom: var(--base-spacing-unit);
+}
+
+.box--default {
+    margin-bottom: var(--box-margin-bottom);
+
+    outline: 1px solid var(--box-border-color);
 }

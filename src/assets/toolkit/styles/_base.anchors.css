@@ -2,14 +2,28 @@
     #LINK
 \* ------------------------------------ */
 
+:root {
+    --link-color: var(--color-dark);
+    --link-hover-color: var(--color-focus);
+    --link-visited-color: var(--color-visited);
+}
+
 a {
-    color: var(--base-text-color);
+    color: var(--link-color);
 
     transition: var(--transition-color);
 }
 
-a:hover {
-    color: var(--base-primary-color);
+a:hover,
+a:focus,
+a:active {
+    color: var(--link-hover-color);
+
+    transition: var(--transition-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
 
     transition: var(--transition-color);
 }
