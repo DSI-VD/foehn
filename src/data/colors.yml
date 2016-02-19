@@ -11,8 +11,17 @@ secondary:
 tertiary:
   colors:
     gold: "rgba(254, 183, 26, 1)"
+    gold-light: "rgba(250, 197, 64, 1)"
+    gold-lighter: "rgba(251, 216, 127, 1)"
+    gold-lightest: "rgba(255, 240, 210, 1)"
     green: "rgba(41, 130, 64, 1)"
+    green-light: "rgba(69, 162, 100, 1)"
+    green-lighter: "rgba(147, 189, 162, 1)"
+    green-lightest: "rgba(231, 243, 228, 1)"
     blue: "rgba(30, 86, 147, 1)"
+    blue-light: "rgba(70, 117, 170, 1)"
+    blue-lighter: "rgba(138, 167, 202, 1)"
+    blue-lightest: "rgba(220, 228, 239, 1)"
 special-state:
   colors:
     focus: "rgba(58, 149, 207, 1)"
