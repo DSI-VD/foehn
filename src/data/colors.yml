@@ -7,6 +7,7 @@ primary:
 secondary:
   colors:
     primary-alt: "rgba(62, 159, 240, 1)"
+    secondary: "rgba(208, 64, 76, 1)"
 tertiary:
   colors:
     gold: "rgba(254, 183, 26, 1)"
