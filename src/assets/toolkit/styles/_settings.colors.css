@@ -7,6 +7,30 @@
 
 
 :root {
+
+    /* Primary color */
+    --color-primary: rgba(74, 135, 63, 1);
+    --color-dark: rgba(0, 0, 0, .8);
+    --color-light: color(var(--base-text-color) lightness(45%));
+    --color-white: rgba(255, 255, 255, 1);
+
+    /* Secondary colors */
+    --color-primary-alt: rgba(62, 159, 240, 1);
+
+    /* Tertiary colors */
+    --color-gold: rgba(254, 183, 26, 1);
+    --color-green: rgba(41, 130, 64, 1);
+    --color-blue: rgba(30, 86, 147, 1);
+
+    /* Special state */
+    --color-focus: rgba(58, 149, 207, 1);
+    --color-visited: rgba(77, 52, 146, 1);
+
+
+    /**
+     * TODO: Refactor the following vars
+     */
+
     --base-text-color: rgba(0, 0, 0, .8);
     --base-mute-color: color(var(--base-text-color) lightness(45%));
     --base-background-color: rgba(255, 255, 255, 1);
