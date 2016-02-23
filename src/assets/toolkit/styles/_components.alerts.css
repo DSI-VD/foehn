@@ -1,0 +1,31 @@
+/* ------------------------------------ *\
+    #ALERTS
+\* ------------------------------------ */
+
+
+
+
+
+:root {
+    --alert-sucess-bacground: var(--color-green-lightest);
+}
+
+
+
+
+
+.alert {
+
+    &__body {
+        padding-left: calc(var(--base-spacing-unit) * 2);
+    }
+
+}
+
+.alert--success {
+    background-image: url("../images/success.svg");
+    background-repeat: no-repeat;
+    background-size: var(--base-spacing-unit);
+    background-position: var(--base-spacing-unit) var(--base-spacing-unit);
+    background-color: var(--alert-sucess-bacground);
+}
