@@ -6,12 +6,12 @@
  * High-, page-level styling.
  *
  * 1. Ensure the page always fills at least the entire height of the viewport.
- * 2. Set the default `font-size` and `line-height` for the entire project,
+ * 2. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ * 3. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in rems, the `line-height` is calculated to exist unitlessly.
- * 3. OpenType fetaures
- * 4. Fonts on OSX will look more consistent with other systems that do not
- *    render text using sub-pixel anti-aliasing.
+ * 4. OpenType fetaures
  * 5. Prevent certain mobile browsers from automatically zooming fonts.
  * 6. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
@@ -21,14 +21,14 @@
 html {
     min-height: 100%; /* [1] */
 
-    font-size: var(--base-font-size); /* [2] */
+    -moz-osx-font-smoothing: grayscale; /* [2] */
+    -webkit-font-smoothing: antialiased; /* [2] */
+    font-size: var(--base-font-size); /* [3] */
     font-weight: var(--base-font-weight);
     font-family: var(--base-font-family);
     font-variant-ligatures: common-ligatures, contextual; /* [3] */
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [3] */
     font-kerning: normal; /* [3] */
-    -moz-osx-font-smoothing: grayscale; /* [4] */
-    -webkit-font-smoothing: antialiased; /* [4] */
     line-height: var(--base-line-height); /* [2] */
     color: var(--base-text-color);
     text-size-adjust: 100%; /* [5] */
