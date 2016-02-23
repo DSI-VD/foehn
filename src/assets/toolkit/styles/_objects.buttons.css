@@ -110,7 +110,6 @@
  */
 
 :root {
-    /* danger */
     --btn-text-color-secondary: var(--btn-color);
     --btn-background-color-secondary: var(--color-secondary);
     --btn-text-color-secondary-hover: var(--btn-color);
@@ -128,17 +127,20 @@
                   $backgroundcolor-active {
 
     .btn--$(modifier) {
-        background-color: $background-color;
         color: $text-color;
 
+        background-color: $background-color;
+
         &:hover {
-            background-color: $background-color-hover;
             color: $text-color-hover;
+
+            background-color: $background-color-hover;
         }
 
         &:active {
-            background-color: $backgroundcolor-active;
             color: $text-color-active;
+
+            background-color: $backgroundcolor-active;
         }
     }
 }
