@@ -15,6 +15,7 @@
     --btn-border-width: 1px;
     --btn-border-style: solid;
     --btn-border-color: var(--color-base);
+    --btn-border-radius: calc(var(--base-spacing-unit) / 8);
 }
 
 /**
@@ -39,6 +40,7 @@
     border: var(--btn-border-width)
             var(--btn-border-style)
             var(--btn-border-color);
+    border-radius: var(--btn-border-radius);
     margin: 0; /* [3] */
     padding: calc(var(--btn-padding) - var(--btn-border-width))
              calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [4] */
