@@ -101,6 +101,7 @@
                     order: "strict",
                     emptyLineBefore: true,
                     properties: [
+                        "font",
                         "font-size",
                         "font-weight",
                         "font-style",
@@ -108,7 +109,6 @@
                         "font-variant",
                         "font-feature",
                         "font-stretch",
-                        "font",
                         "line-height",
                         "color",
                         "text",
