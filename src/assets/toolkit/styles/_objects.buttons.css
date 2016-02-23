@@ -3,11 +3,6 @@
 \* ------------------------------------ */
 
 :root {
-    --btn-color-danger: var(--color-secondary);
-    --btn-color-danger-hover: var(--color-secondary-lighter);
-    --btn-color-valid: var(--color-green);
-    --btn-color-valid-hover: var(--color-green-light);
-
     --btn-background: var(--color-primary-alt);
     --btn-color: var(--color-base);
 
@@ -22,6 +17,14 @@
     --btn-border-style: none;
     --btn-border-color: var(--color-base);
     --btn-border-radius: calc(var(--base-spacing-unit) / 8);
+
+    /* danger */
+    --btn-color-danger: var(--color-secondary);
+    --btn-color-danger-hover: var(--color-secondary-lighter);
+
+    /* success */
+    --btn-color-valid: var(--color-green);
+    --btn-color-valid-hover: var(--color-green-light);
 }
 
 /**
