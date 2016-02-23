@@ -7,7 +7,7 @@
  */
 
 :root {
-    --box-border-color: var(--color-dark);
+    --box-border-color: var(--color-base);
     --box-margin-bottom: var(--base-spacing-unit);
 }
 

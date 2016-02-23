@@ -1,8 +1,9 @@
 primary:
   colors:
     primary: "rgba(74, 135, 63, 1)"
-    dark: "rgba(0, 0, 0, .8)"
-    light: "rgba(242, 242, 242, 1)"
+    base: "rgba(0, 0, 0, .8)"
+    gray-dark: "rgba(50, 58, 69, 1)"
+    gray-light: "rgba(174, 176, 181, 1)"
     white: "rgba(255, 255, 255, 1)"
 secondary:
   colors:

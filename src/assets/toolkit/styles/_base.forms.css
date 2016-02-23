@@ -4,16 +4,16 @@
 
 :root {
     --form-background-color: var(--color-white);
-    --form-border-color: var(--color-light);
+    --form-border-color: var(--color-gray-light);
     --form-border-width: 1px;
     --form-border-style: solid;
 
     --form-font-size: inherit;
     --form-text-indent: calc(var(--base-spacing-unit) / 4);
-    --form-placeholder-color: var(--color-light);
+    --form-placeholder-color: var(--color-gray-light);
 
-    --form-color-disabled: var(--color-light);
-    --form-background-color-disabled: color( var(--color-light) l(90%) );
+    --form-color-disabled: var(--color-gray-light);
+    --form-background-color-disabled: color( var(--color-gray-light) l(90%) );
 
     --input-height: calc(var(--base-font-size) * var(--base-line-height));
     --input-margin: 1px;

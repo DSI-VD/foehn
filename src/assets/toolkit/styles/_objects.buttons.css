@@ -10,11 +10,11 @@
 
 
     --btn-padding: calc(var(--base-spacing-unit) / 2);
-    --btn-background: var(--color-light);
-    --btn-color: var(--color-dark);
+    --btn-background: var(--color-gray-light);
+    --btn-color: var(--color-base);
     --btn-border-width: 1px;
     --btn-border-style: solid;
-    --btn-border-color: var(--color-dark);
+    --btn-border-color: var(--color-base);
 }
 
 /**
