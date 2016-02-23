@@ -20,16 +20,21 @@
 
 
 /**
+ * Alerts
  *
+ * alerts are build to work with the `.box` class.
+ *
+ * 1. Icon settings
+ * 2. Add padding between icon and content
  */
 .alert {
 
-    background-repeat: no-repeat;
-    background-size: var(--alert-background-size);
-    background-position: var(--alert-background-position);
+    background-repeat: no-repeat; /* [1] */
+    background-size: var(--alert-background-size); /* [1] */
+    background-position: var(--alert-background-position); /* [1] */
 
     &__body {
-        padding-left: calc(var(--base-spacing-unit) * 2);
+        padding-left: calc(var(--base-spacing-unit) * 2); /* [2] */
     }
 
 }
