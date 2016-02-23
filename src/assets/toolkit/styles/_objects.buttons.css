@@ -66,18 +66,20 @@
         text-decoration: none; /* [3] */
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
         color: var(--btn-color-hover);
 
         background-color: var(--btn-background-hover); /* [8] */
-
     }
 
     &:active {
         color: var(--btn-color-active);
 
         background-color: var(--btn-background-active); /* [8] */
+    }
+
+    &:focus {
+        box-shadow: 0 0 3px var(--color-focus), 0 0 7px var(--color-focus);
     }
 
 }
