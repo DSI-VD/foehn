@@ -108,6 +108,7 @@
                         "font-family",
                         "font-variant",
                         "font-feature",
+                        "font-kerning",
                         "font-stretch",
                         "line-height",
                         "color",
