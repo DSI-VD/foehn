@@ -22,6 +22,8 @@
     --primary-alt-light: rgba(153, 218, 242, 1);
     --primary-alt-lightest: rgba(224, 243, 248, 1);
     --color-secondary: rgba(208, 64, 76, 1);
+    --color-secondary-darkest: rgba(154, 25, 25, 1);
+    --color-secondary-dark: rgba(207, 29, 29, 1);
     --color-secondary-lighter: rgba(231, 149, 147, 1);
     --color-secondary-lightest: rgba(250, 223, 222, 1);
 

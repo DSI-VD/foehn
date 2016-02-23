@@ -111,38 +111,42 @@
 
 :root {
     /* danger */
-    --btn-color-danger: var(--color-secondary);
-    --btn-color-danger-hover: var(--color-secondary-lighter);
-
-    /* success */
-    --btn-color-valid: var(--color-green);
-    --btn-color-valid-hover: var(--color-green-light);
+    --btn-text-color-secondary: var(--btn-color);
+    --btn-background-color-secondary: var(--color-secondary);
+    --btn-text-color-secondary-hover: var(--btn-color);
+    --btn-background-color-secondary-hover: var(--color-secondary-dark);
+    --btn-text-color-secondary-active: var(--color-white);
+    --btn-background-color-secondary-active: var(--color-secondary-darkest);
 }
 
 @define-mixin btn $modifier,
-                  $text-color:var(--btn-color),
+                  $text-color,
                   $background-color,
-                  $text-color-hover:var(--btn-background),
-                  $backgroundcolor-hover:var(--btn-background-hover),
-                  $text-color-active:var(--btn-color-hover),
+                  $text-color-hover,
+                  $background-color-hover,
+                  $text-color-active,
                   $backgroundcolor-active {
 
     .btn--$(modifier) {
         background-color: $background-color;
         color: $text-color;
-
-        &:hover {
-            background-color: $background-color-hover;
-            color: $color-text-hover;
-        }
-
-        &:active {
-            background-color: $background-color-active;
-            color: $color-text-active;
-        }
     }
+    .btn--$(modifier):hover {
+            background-color: $background-color-hover;
+            color: $text-color-hover;
+        }
+
+    .btn--$(modifier):active {
+            background-color: $backgroundcolor-active;
+            color: $text-color-active;
+        }
 
 }
 
-@mixin btn valid, var(--btn-color-valid), var(--btn-color-valid-hover);
-@mixin btn danger, var(--btn-color-danger), var(--btn-color-danger-hover);
+@mixin btn secondary,
+           var(--btn-text-color-secondary),
+           var(--btn-background-color-secondary),
+           var(--btn-text-color-secondary-hover),
+           var(--btn-background-color-secondary-hover),
+           var(--btn-text-color-secondary-active),
+           var(--btn-background-color-secondary-active);

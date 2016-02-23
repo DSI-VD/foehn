@@ -13,6 +13,8 @@ secondary:
     primary-alt-light: "rgba(153, 218, 242, 1)"
     primary-alt-lightest: "rgba(224, 243, 248, 1)"
     secondary: "rgba(208, 64, 76, 1)"
+    secondary-darkest: "rgba(154, 25, 25, 1)"
+    secondary-darker: "rgba(207, 29, 29, 1)"
     secondary-lighter: "rgba(231, 149, 147, 1)"
     secondary-lightest: "rgba(250, 223, 222, 1)"
 tertiary:
