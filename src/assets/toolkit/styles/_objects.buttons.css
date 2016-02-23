@@ -130,17 +130,17 @@
     .btn--$(modifier) {
         background-color: $background-color;
         color: $text-color;
-    }
-    .btn--$(modifier):hover {
+
+        &:hover {
             background-color: $background-color-hover;
             color: $text-color-hover;
         }
 
-    .btn--$(modifier):active {
+        &:active {
             background-color: $backgroundcolor-active;
             color: $text-color-active;
         }
-
+    }
 }
 
 @mixin btn secondary,
