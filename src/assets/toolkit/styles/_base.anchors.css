@@ -3,7 +3,7 @@
 \* ------------------------------------ */
 
 :root {
-    --link-color: var(--color-dark);
+    --link-color: var(--color-base);
     --link-hover-color: var(--color-focus);
     --link-visited-color: var(--color-visited);
 }

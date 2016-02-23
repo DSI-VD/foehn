@@ -10,8 +10,9 @@
 
     /* Primary color */
     --color-primary: rgba(74, 135, 63, 1);
-    --color-dark: rgba(0, 0, 0, .8);
-    --color-light: rgba(242, 242, 242, 1);
+    --color-base: rgba(0, 0, 0, .8);
+    --color-gray-dark: rgba(50, 58, 69, 1);
+    --color-gray-light: rgba(174, 176, 181, 1);
     --color-white: rgba(255, 255, 255, 1);
 
     /* Secondary colors */

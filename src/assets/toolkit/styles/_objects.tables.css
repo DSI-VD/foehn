@@ -12,7 +12,7 @@
     --table-padding--cosy: calc(var(--base-spacing-unit) / 2);
     --table-padding--comfy: calc(var(--base-spacing-unit));
 
-    --table-background-color: var(--color-light);
+    --table-background-color: var(--color-gray-light);
 }
 
 
