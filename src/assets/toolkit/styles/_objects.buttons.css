@@ -17,14 +17,6 @@
     --btn-border-style: none;
     --btn-border-color: var(--color-base);
     --btn-border-radius: calc(var(--base-spacing-unit) / 8);
-
-    /* danger */
-    --btn-color-danger: var(--color-secondary);
-    --btn-color-danger-hover: var(--color-secondary-lighter);
-
-    /* success */
-    --btn-color-valid: var(--color-green);
-    --btn-color-valid-hover: var(--color-green-light);
 }
 
 /**
@@ -117,24 +109,36 @@
  * Color variations
  */
 
-@define-mixin btn $modifier, $color, $color-hover,
-              $color-text:var(--btn-color) {
+:root {
+    /* danger */
+    --btn-color-danger: var(--color-secondary);
+    --btn-color-danger-hover: var(--color-secondary-lighter);
+
+    /* success */
+    --btn-color-valid: var(--color-green);
+    --btn-color-valid-hover: var(--color-green-light);
+}
+
+@define-mixin btn $modifier,
+                  $text-color:var(--btn-color),
+                  $background-color,
+                  $text-color-hover:var(--btn-background),
+                  $backgroundcolor-hover:var(--btn-background-hover),
+                  $text-color-active:var(--btn-color-hover),
+                  $backgroundcolor-active {
 
     .btn--$(modifier) {
-        background-color: $color;
-        border: var(--btn-border-width) var(--btn-border-style) $color-hover;
+        background-color: $background-color;
+        color: $text-color;
 
-        &,
-        &:hover,
-        &:active,
-        &:focus {
-            color: $color-text;
+        &:hover {
+            background-color: $background-color-hover;
+            color: $color-text-hover;
         }
 
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $color-hover; /* [2] */
+        &:active {
+            background-color: $background-color-active;
+            color: $color-text-active;
         }
     }
 
