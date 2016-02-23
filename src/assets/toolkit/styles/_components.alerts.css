@@ -1,0 +1,60 @@
+/* ------------------------------------ *\
+    #ALERTS
+\* ------------------------------------ */
+
+
+
+
+
+:root {
+    --alert-background-size: var(--base-spacing-unit) var(--base-spacing-unit);
+    --alert-background-position: var(--alert-background-size);
+    --alert-sucess-background: var(--color-green-lightest);
+    --alert-warning-background: var(--color-gold-lightest);
+    --alert-error-background: var(--color-secondary-lightest);
+    --alert-info-background: var(--color-blue-lightest);
+}
+
+
+
+
+
+/**
+ * Alerts
+ *
+ * Alerts are build to work with the `.box` class.
+ *
+ * 1. Icon settings
+ * 2. Add padding between icon and content
+ */
+.alert {
+
+    background-repeat: no-repeat; /* [1] */
+    background-size: var(--alert-background-size); /* [1] */
+    background-position: var(--alert-background-position); /* [1] */
+
+    &__body {
+        padding-left: calc(var(--base-spacing-unit) * 2); /* [2] */
+    }
+
+}
+
+.alert--success {
+    background-image: url("../images/success.svg");
+    background-color: var(--alert-sucess-background);
+}
+
+.alert--warning {
+    background-image: url("../images/warning.svg");
+    background-color: var(--alert-warning-background);
+}
+
+.alert--error {
+    background-image: url("../images/error.svg");
+    background-color: var(--alert-error-background);
+}
+
+.alert--info {
+    background-image: url("../images/info.svg");
+    background-color: var(--alert-info-background);
+}

@@ -46,6 +46,7 @@
  * Small................Small text styles.
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
+ * Alerts...............Styles for alerts.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -142,6 +143,7 @@
 @import "_components.small.css";
 @import "_components.strong.css";
 @import "_components.quotes.css";
+@import "_components.alerts.css";
 
 /**
  * TRUMPS
