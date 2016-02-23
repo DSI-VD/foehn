@@ -17,6 +17,10 @@
 
     /* Secondary colors */
     --color-primary-alt: rgba(62, 159, 240, 1);
+    --primary-alt-darkest: rgba(0, 106, 155, 1);
+    --primary-alt-dark: rgba(0, 165, 212, 1);
+    --primary-alt-light: rgba(153, 218, 242, 1);
+    --primary-alt-lightest: rgba(224, 243, 248, 1);
     --color-secondary: rgba(208, 64, 76, 1);
     --color-secondary-lighter: rgba(231, 149, 147, 1);
     --color-secondary-lightest: rgba(250, 223, 222, 1);
