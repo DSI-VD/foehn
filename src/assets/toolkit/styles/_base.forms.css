@@ -9,12 +9,16 @@
     --form-border-style: solid;
     --form-border-radius: 0;
 
+    --form-checkbox-border-radius: calc(var(--base-spacing-unit) / 6);
+
     --form-font-size: inherit;
     --form-text-indent: calc(var(--base-spacing-unit) / 4);
     --form-placeholder-color: var(--color-gray-light);
 
     --form-color-disabled: var(--color-gray-light);
     --form-background-color-disabled: color( var(--color-gray-light) l(90%) );
+
+    --form-color-checked: var(--color-primary-alt);
 
     --input-height: calc(var(--base-font-size) * var(--base-line-height));
     --input-margin: 1px;
@@ -27,12 +31,10 @@
 /**
  * Shared styles
  *
- * 1. Overried useragent styles. `border-radius` have to be set even at 0 to
- *    correctly override styles.
+ * 1. Overrid browser style. Even if the `border-radius` is `0` it has to be
+ *    to properly override the styles
  * 2. Placeholder
  * 3. Override content-box in Normalize
- * 4. Default `textarea` width can be bigger than the viewport and cause
- *    some overflows
  */
 input,
 textarea,
@@ -41,7 +43,7 @@ select {
     width: 100%;
 
     font-size: var(--form-font-size);
-    text-indent: var(--form-text-indent);
+    text-indent: calc(var(--form-text-indent) / 4);
 
     background-color: var(--form-background-color);
     border: var(--form-border-width)
@@ -70,6 +72,7 @@ select {
 }
 
 input {
+    width: 100%;
     height: calc(
                 var(--input-height)
                 - 2 * var(--form-border-width)
@@ -84,17 +87,47 @@ input {
     }
 }
 
-textarea {
+/**
+ * Checkbox and radio button
+ *
+ * 1. Hide default checkbox and radio button
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    display: hidden; /* [1] */
 
-    max-width: 100%; /* [4] */
+    + label {
 
-    &::placeholder {
-        color: var(--form-placeholder-color); /* [2] */
+        cursor: pointer;
+
+        &::before{
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+
+            background: var(--form-background-color);
+            border-radius: var(--form-checkbox-border-radius);
+            margin-right: var(--form-text-indent);
+            box-shadow: 0 0 0 var(--form-border-width) var(--form-border-color);
+            content: "\a0";
+            vertical-align: -.1rem;
+        }
     }
 
+    &:checked + label::before {
+        background-color: var(--form-color-checked);
+        background-image: url("../images/checkmark.svg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 0.8rem;
+
+        box-shadow: 0 0 0 var(--form-border-width) var(--form-color-checked);
+    }
 }
 
 /**
+ * Select Menu
+ *
  * 1. Arrow down icon
  * 2. Remove browser appearance
  */
@@ -104,6 +137,7 @@ select {
     background-image: url("../images/arrow_down.svg"); /* [2] */
     background-size: 1rem;  /* [2] */
 }
+
 
 
 
