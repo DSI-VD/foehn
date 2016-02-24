@@ -116,6 +116,9 @@ input[type="radio"] {
 
     &:checked + label::before {
         background-color: var(--form-color-checked);
+        background-image: url("../images/checkmark.svg");
+        background-position: 50%;
+        background-repeat: no-repeat;
 
         box-shadow: 0 0 0 var(--form-border-width) var(--form-color-checked);
     }
