@@ -29,17 +29,21 @@
 
 
 /**
- * Inputs and textarea
+ * Shared styles
  *
  * 1. Overrid browser style. Even if the `border-radius` is `0` it has to be
  *    to properly override the styles
- * 1. Placeholder
- * 2. Override content-box in Normalize
- * 3. Default `textarea` width can be bigger than the viewport and cause
+ * 2. Placeholder
+ * 3. Override content-box in Normalize
+ * 4. Default `textarea` width can be bigger than the viewport and cause
  *    some overflows
  */
 input,
-textarea {
+textarea,
+select {
+    display: block;
+    width: 100%;
+
     font-size: var(--form-font-size);
     text-indent: calc(var(--form-text-indent) / 4);
 
@@ -50,7 +54,7 @@ textarea {
     border-radius: var(--form-border-radius); /* [1] */
 
     &::placeholder {
-        color: var(--form-placeholder-color); /* [1] */
+        color: var(--form-placeholder-color); /* [2] */
     }
 
     &[disabled],
@@ -79,16 +83,16 @@ input {
     margin-bottom: var(--form-border-width);
 
     &[type="search"] {
-        box-sizing: border-box; /* [2] */
+        box-sizing: border-box; /* [3] */
     }
 }
 
 textarea {
 
-    max-width: 100%; /* [3] */
+    max-width: 100%; /* [4] */
 
     &::placeholder {
-        color: var(--form-placeholder-color); /* [1] */
+        color: var(--form-placeholder-color); /* [2] */
     }
 
 }
