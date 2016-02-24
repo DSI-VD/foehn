@@ -41,7 +41,7 @@ select {
     width: 100%;
 
     font-size: var(--form-font-size);
-    text-indent: calc(var(--form-text-indent) / 4);
+    text-indent: var(--form-text-indent);
 
     background-color: var(--form-background-color);
     border: var(--form-border-width)
@@ -99,10 +99,10 @@ textarea {
  * 2. Remove browser appearance
  */
 select {
-    background-position: right 1.3rem center; /* [2] */
+    background-position: right var(--form-text-indent) center; /* [2] */
     background-repeat: no-repeat;  /* [2] */
     background-image: url("../images/arrow_down.svg"); /* [2] */
-    background-size: 1.3rem;  /* [2] */
+    background-size: 1rem;  /* [2] */
 }
 
 
