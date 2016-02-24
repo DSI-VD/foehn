@@ -35,8 +35,6 @@
  *    to properly override the styles
  * 2. Placeholder
  * 3. Override content-box in Normalize
- * 4. Default `textarea` width can be bigger than the viewport and cause
- *    some overflows
  */
 input,
 textarea,
@@ -52,6 +50,8 @@ select {
             var(--form-border-style)
             var(--form-border-color);
     border-radius: var(--form-border-radius); /* [1] */
+
+    appearance: none; /* [1] */
 
     &::placeholder {
         color: var(--form-placeholder-color); /* [2] */
@@ -85,16 +85,6 @@ input {
     &[type="search"] {
         box-sizing: border-box; /* [3] */
     }
-}
-
-textarea {
-
-    max-width: 100%; /* [4] */
-
-    &::placeholder {
-        color: var(--form-placeholder-color); /* [2] */
-    }
-
 }
 
 /**
