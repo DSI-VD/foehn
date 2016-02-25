@@ -91,6 +91,8 @@ input {
 /**
  * Checkbox and radio button
  *
+ * Shared properties between checkboxes and radio buttons
+ *
  * 1. Hide default checkbox and radio button
  */
 input[type="checkbox"],
@@ -117,13 +119,42 @@ input[type="radio"] {
 
     &:checked + label::before {
         background-color: var(--form-color-checked);
-        background-image: url("../images/checkmark.svg");
-        background-position: 50%;
-        background-repeat: no-repeat;
         background-size: var(--form-checkbox-background-image-size);
 
         box-shadow: 0 0 0 var(--form-border-width) var(--form-color-checked);
     }
+}
+
+/**
+ * Checkbox
+ */
+input[type="checkbox"] {
+
+    + label {
+
+        &::before {
+            background-image: url("../images/checkmark.svg");
+            background-position: 50%;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+}
+
+/**
+ * Radio button
+ */
+input[type="radio"] {
+
+    + label {
+
+        &::before {
+            border-radius: 100%;
+        }
+
+    }
+
 }
 
 /**
