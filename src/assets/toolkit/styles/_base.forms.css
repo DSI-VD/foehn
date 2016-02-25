@@ -100,7 +100,7 @@ input[type="radio"] {
 
         cursor: pointer;
 
-        &::before{
+        &::before {
             display: inline-block;
             width: 1rem;
             height: 1rem;
