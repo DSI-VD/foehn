@@ -144,15 +144,19 @@ input[type="checkbox"] {
 
 /**
  * Radio button
+ *
+ * 1. Make the button round.
+ * 2. Add a border around the button when checked.
  */
 input[type="radio"] {
 
-    + label {
+    + label::before {
+            border-radius: 100%; /* [1] */
+    }
 
-        &::before {
-            border-radius: 100%;
-        }
-
+    &:checked + label::before {
+        box-shadow: 0 0 0 2px var(--form-background-color),
+                    0 0 0 4px var(--form-color-checked); /* [2] */
     }
 
 }
