@@ -151,7 +151,7 @@ input[type="checkbox"] {
 input[type="radio"] {
 
     + label::before {
-            border-radius: 100%; /* [1] */
+        border-radius: 100%; /* [1] */
     }
 
     &:checked + label::before {
