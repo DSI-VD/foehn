@@ -144,6 +144,19 @@ select {
 
 
 /**
+ * Fieldset
+ */
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/**
  * Labels
  *
  * 1. Apply enhance font weight when the webfont is loaded
