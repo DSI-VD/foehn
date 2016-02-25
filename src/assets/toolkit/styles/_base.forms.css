@@ -10,6 +10,7 @@
     --form-border-radius: 0;
 
     --form-checkbox-border-radius: calc(var(--base-spacing-unit) / 6);
+    --form-checkbox-background-image-size: var(--small-font-size);
 
     --form-font-size: inherit;
     --form-text-indent: calc(var(--base-spacing-unit) / 4);
@@ -100,7 +101,7 @@ input[type="radio"] {
 
         cursor: pointer;
 
-        &::before{
+        &::before {
             display: inline-block;
             width: 1rem;
             height: 1rem;
@@ -119,7 +120,7 @@ input[type="radio"] {
         background-image: url("../images/checkmark.svg");
         background-position: 50%;
         background-repeat: no-repeat;
-        background-size: 0.8rem;
+        background-size: var(--form-checkbox-background-image-size);
 
         box-shadow: 0 0 0 var(--form-border-width) var(--form-color-checked);
     }
