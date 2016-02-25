@@ -136,6 +136,9 @@
 						<li>
 							<a href="molecules.html#07-expos">Expos</a>
 						</li>
+						<li>
+							<a href="molecules.html#08-alerts">Alerts</a>
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -211,6 +214,9 @@
 					<ul>
 						<li>
 							<a href="docs.html#breakpoints">Breakpoints</a>
+						</li>
+						<li>
+							<a href="docs.html#credits">Credits</a>
 						</li>
 						<li>
 							<a href="docs.html#css">Css</a>
@@ -1651,29 +1657,7 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 	<div class="f-item-heading-group">
 		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
 	</div>
-		<div class="f-item-group" id="12-buttons.button-alternate">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Button Alternate</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
-			</div>
-<div class="f-item-preview">
-	<button class="btn btn--valid">Valid</button>
-<button class="btn btn--danger">Danger</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;btn btn--valid&quot;&gt;Valid&lt;/button&gt;
-&lt;button class=&quot;btn btn--danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
-</div>
-
-		</div>
-		<div class="f-item-group" id="12-buttons.button">
+		<div class="f-item-group" id="12-buttons.01-button">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Button</h3>
 				<div class="f-item-controls">
@@ -1690,6 +1674,26 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="12-buttons.02-button-alternate">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Button Alternate</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="btn btn--secondary">Secondary</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class=&quot;btn btn--secondary&quot;&gt;Secondary&lt;/button&gt;</code></pre>
 </div>
 
 		</div>
@@ -1715,10 +1719,12 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 				</div>
 			</div>
 <div class="f-item-preview">
-	<input id="checkbox" name="checkbox" type="checkbox">
+	<input id="checkbox" type="checkbox" name="checkbox" value="value" checked="">
+<label for="checkbox">Sojourner Truth</label>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;input id=&quot;checkbox&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;</code></pre>
+	<pre><code class="language-markup">&lt;input id=&quot;checkbox&quot; type=&quot;checkbox&quot; name=&quot;checkbox&quot; value=&quot;value&quot; checked=&quot;&quot;&gt;
+&lt;label for=&quot;checkbox&quot;&gt;Sojourner Truth&lt;/label&gt;</code></pre>
 </div>
 
 		</div>
@@ -1735,10 +1741,12 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 				</div>
 			</div>
 <div class="f-item-preview">
-	<input id="radio" name="radio" type="radio" class="radio">
+	<input id="henri-guisan" type="radio" name="personality" value="guisan">
+<label for="henri-guisan">Henri Guisan</label>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;input id=&quot;radio&quot; name=&quot;radio&quot; type=&quot;radio&quot; class=&quot;radio&quot;&gt;</code></pre>
+	<pre><code class="language-markup">&lt;input id=&quot;henri-guisan&quot; type=&quot;radio&quot; name=&quot;personality&quot; value=&quot;guisan&quot;&gt;
+&lt;label for=&quot;henri-guisan&quot;&gt;Henri Guisan&lt;/label&gt;</code></pre>
 </div>
 
 		</div>
@@ -1755,22 +1763,24 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 				</div>
 			</div>
 <div class="f-item-preview">
-	<select id="select">
-    <optgroup label="Option Group">
-        <option>Option One</option>
-        <option>Option Two</option>
-        <option>Option Three</option>
-    </optgroup>
-</select>
+	<form>
+	<label for="options">Dropdown label</label>
+	<select name="options" id="options">
+    <option value="value1">Option A</option>
+    <option value="value2">Option B</option>
+    <option value="value3">Option C</option>
+  </select>
+</form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select id=&quot;select&quot;&gt;
-    &lt;optgroup label=&quot;Option Group&quot;&gt;
-        &lt;option&gt;Option One&lt;/option&gt;
-        &lt;option&gt;Option Two&lt;/option&gt;
-        &lt;option&gt;Option Three&lt;/option&gt;
-    &lt;/optgroup&gt;
-&lt;/select&gt;</code></pre>
+	<pre><code class="language-markup">&lt;form&gt;
+	&lt;label for=&quot;options&quot;&gt;Dropdown label&lt;/label&gt;
+	&lt;select name=&quot;options&quot; id=&quot;options&quot;&gt;
+    &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/form&gt;</code></pre>
 </div>
 
 		</div>
