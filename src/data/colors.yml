@@ -1,32 +1,36 @@
 primary:
-  colors:
+  primary:
     primary: "rgba(74, 135, 63, 1)"
+  base:
     base: "rgba(0, 0, 0, .8)"
     gray-dark: "rgba(50, 58, 69, 1)"
     gray-light: "rgba(174, 176, 181, 1)"
     white: "rgba(255, 255, 255, 1)"
 secondary:
-  colors:
+  primary-alt:
     primary-alt: "rgba(62, 159, 240, 1)"
     primary-alt-darkest: "rgba(0, 106, 155, 1)"
     primary-alt-dark: "rgba(0, 165, 212, 1)"
     primary-alt-light: "rgba(153, 218, 242, 1)"
     primary-alt-lightest: "rgba(224, 243, 248, 1)"
+  secondary:
     secondary: "rgba(208, 64, 76, 1)"
     secondary-darkest: "rgba(154, 25, 25, 1)"
     secondary-darker: "rgba(207, 29, 29, 1)"
     secondary-lighter: "rgba(231, 149, 147, 1)"
     secondary-lightest: "rgba(250, 223, 222, 1)"
 tertiary:
-  colors:
+  gold:
     gold: "rgba(254, 183, 26, 1)"
     gold-light: "rgba(250, 197, 64, 1)"
     gold-lighter: "rgba(251, 216, 127, 1)"
     gold-lightest: "rgba(255, 240, 210, 1)"
+  green:
     green: "rgba(41, 130, 64, 1)"
     green-light: "rgba(69, 162, 100, 1)"
     green-lighter: "rgba(147, 189, 162, 1)"
     green-lightest: "rgba(231, 243, 228, 1)"
+  blue:
     blue: "rgba(30, 86, 147, 1)"
     blue-light: "rgba(70, 117, 170, 1)"
     blue-lighter: "rgba(138, 167, 202, 1)"
