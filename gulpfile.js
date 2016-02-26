@@ -109,7 +109,11 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         require('pixrem')({html: false}),
         require('postcss-color-rgba-fallback'),
         require('autoprefixer')({browsers: config.browsers}),
-        require('postcss-class-prefix')('vd-')
+        require('postcss-class-prefix')('vd-', {
+            ignore: [
+                /wf-/ // ignore webfontloader classes
+            ]
+        })
     ]
     return gulp.src(config.src.styles.toolkit)
         // If we are in dev, start sourcemaps
