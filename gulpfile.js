@@ -16,6 +16,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var stylelint = require("stylelint");
+var classPrfx = require('postcss-class-prefix');
 var reporter = require("postcss-reporter");
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
@@ -107,7 +108,8 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         require('postcss-calc'),
         require('pixrem')({html: false}),
         require('postcss-color-rgba-fallback'),
-        require('autoprefixer')({browsers: config.browsers})
+        require('autoprefixer')({browsers: config.browsers}),
+        require('postcss-class-prefix')('vd-')
     ]
     return gulp.src(config.src.styles.toolkit)
         // If we are in dev, start sourcemaps
