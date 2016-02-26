@@ -16,8 +16,8 @@
     --form-text-indent: calc(var(--base-spacing-unit) / 4);
     --form-placeholder-color: var(--color-gray-light);
 
-    --form-color-disabled: var(--color-gray-light);
-    --form-background-color-disabled: color( var(--color-gray-light) l(90%) );
+    --form-color-disabled: var(--color-white);
+    --form-background-color-disabled: var(--color-gray-light);
 
     --form-color-checked: var(--color-primary-alt);
 
