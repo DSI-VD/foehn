@@ -13,7 +13,6 @@
     --form-checkbox-background-image-size: var(--small-font-size);
 
     --form-font-size: inherit;
-    --form-text-indent: calc(var(--base-spacing-unit) / 4);
     --form-placeholder-color: var(--color-gray-light);
 
     --form-color-disabled: var(--color-white);
@@ -45,7 +44,6 @@ select {
     width: 100%;
 
     font-size: var(--form-font-size);
-    text-indent: calc(var(--form-text-indent) / 4);
 
     background-color: var(--form-background-color);
     border: var(--form-border-width)
@@ -107,7 +105,6 @@ input[type="radio"] {
 
             background: var(--form-background-color);
             border-radius: var(--form-checkbox-border-radius);
-            margin-right: var(--form-text-indent);
             box-shadow: 0 0 0 var(--form-border-width) var(--form-border-color);
             content: "\a0";
             vertical-align: -.1rem;
@@ -162,13 +159,12 @@ input[type="radio"] {
  * Select Menu
  *
  * 1. Arrow down icon
- * 2. Remove browser appearance
  */
 select {
-    background-position: right var(--form-text-indent) center; /* [2] */
-    background-repeat: no-repeat;  /* [2] */
-    background-image: url("../images/arrow_down.svg"); /* [2] */
-    background-size: 1rem;  /* [2] */
+    background-position: right calc( calc( var(--form-height) - 1rem ) / 2) center; /* [1] */
+    background-repeat: no-repeat;  /* [1] */
+    background-image: url("../images/arrow_down.svg"); /* [1] */
+    background-size: 1rem;  /* [1] */
 }
 
 
