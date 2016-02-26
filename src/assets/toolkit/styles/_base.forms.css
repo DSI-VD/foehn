@@ -37,6 +37,7 @@
  * 2. Define the min-height of forms.
  * 3. Placeholder
  * 4. Override content-box in Normalize
+ * 5. Focus state
  */
 input,
 textarea,
@@ -70,6 +71,11 @@ select {
         &::placeholder {
             color: var(--form-color-disabled);
         }
+    }
+
+    &:focus {
+        box-shadow: 0 0 3px var(--color-focus),
+                    0 0 7px var(--color-focus); /* [5] */
     }
 }
 
