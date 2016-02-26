@@ -146,7 +146,7 @@
 }
 
 @mixin btn secondary,
-           var(--btn-text-color-secondary),
+           var(--color-white),
            var(--btn-background-color-secondary),
            var(--btn-text-color-secondary-hover),
            var(--btn-background-color-secondary-hover),
