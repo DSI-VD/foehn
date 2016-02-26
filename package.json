@@ -1,6 +1,6 @@
 {
   "name": "fabricator",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A tool for building website UI toolkits",
   "homepage": "http://dsi-vd.github.io/foehn/",
   "main": "README.md",
