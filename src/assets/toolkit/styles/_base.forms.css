@@ -11,6 +11,7 @@
 
     --form-checkbox-border-radius: calc(var(--base-spacing-unit) / 6);
     --form-checkbox-background-image-size: var(--small-font-size);
+    --form-checkbox-margin: calc( var(--base-spacing-unit) / 4);
 
     --form-font-size: inherit;
     --form-placeholder-color: var(--color-gray-light);
@@ -103,8 +104,11 @@ input[type="radio"] {
             width: 1rem;
             height: 1rem;
 
+
             background: var(--form-background-color);
             border-radius: var(--form-checkbox-border-radius);
+            margin-right: var(--form-checkbox-margin);
+
             box-shadow: 0 0 0 var(--form-border-width) var(--form-border-color);
             content: "\a0";
             vertical-align: -.1rem;
