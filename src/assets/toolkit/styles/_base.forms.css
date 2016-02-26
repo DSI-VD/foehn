@@ -179,7 +179,9 @@ input[type="radio"] {
  * 1. Arrow down icon
  */
 select {
-    background-position: right calc( calc( var(--form-height) - 1rem ) / 2) center; /* [1] */
+    background-position: right
+                         calc( calc( var(--form-height) - 1rem ) / 2)
+                         center; /* [1] */
     background-repeat: no-repeat;  /* [1] */
     background-image: url("../images/arrow_down.svg"); /* [1] */
     background-size: 1rem;  /* [1] */
