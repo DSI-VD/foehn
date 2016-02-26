@@ -4,7 +4,7 @@
 
 :root {
     --form-background-color: var(--color-white);
-    --form-border-color: var(--color-gray-light);
+    --form-border-color: var(--color-base);
     --form-border-width: 1px;
     --form-border-style: solid;
     --form-border-radius: 0;
@@ -21,7 +21,7 @@
 
     --form-color-checked: var(--color-primary-alt);
 
-    --input-height: calc(var(--base-font-size) * var(--base-line-height));
+    --form-height: 2rem;
     --input-margin: 1px;
 }
 
@@ -34,8 +34,9 @@
  *
  * 1. Overrid browser style. Even if the `border-radius` is `0` it has to be
  *    to properly override the styles
- * 2. Placeholder
- * 3. Override content-box in Normalize
+ * 2. Define the min-height of forms.
+ * 3. Placeholder
+ * 4. Override content-box in Normalize
  */
 input,
 textarea,
@@ -51,11 +52,12 @@ select {
             var(--form-border-style)
             var(--form-border-color);
     border-radius: var(--form-border-radius); /* [1] */
+    padding: calc( calc( var(--form-height) - 1rem ) / 2); /* [2] */
 
     appearance: none; /* [1] */
 
     &::placeholder {
-        color: var(--form-placeholder-color); /* [2] */
+        color: var(--form-placeholder-color); /* [3] */
     }
 
     &[disabled],
@@ -74,17 +76,12 @@ select {
 
 input {
     width: 100%;
-    height: calc(
-                var(--input-height)
-                - 2 * var(--form-border-width)
-                - 2 * var(--input-margin)
-            );
 
     margin-top: var(--form-border-width);
     margin-bottom: var(--form-border-width);
 
     &[type="search"] {
-        box-sizing: border-box; /* [3] */
+        box-sizing: border-box; /* [4] */
     }
 }
 
