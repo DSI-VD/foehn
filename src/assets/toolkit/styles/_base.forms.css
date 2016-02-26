@@ -20,7 +20,7 @@
 
     --form-color-checked: var(--color-primary-alt);
 
-    --form-height: 2rem;
+    --form-height: var(--base-spacing-unit);
     --input-margin: 1px;
 }
 
