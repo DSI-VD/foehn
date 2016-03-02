@@ -15,10 +15,22 @@ If you don't like the [usual issues view](https://github.com/DSI-VD/foehn/issues
 
 ## Quick Start
 
+The following script let you build, watch and serve the code.
+
 ```shell
 $ git clone https://github.com/vdch/foehn.git
 $ cd foehn
 $ npm start
+```
+
+### Build 
+
+If you only want to build the code.
+
+```shell
+$ git clone https://github.com/vdch/foehn.git
+$ cd foehn
+$ npm run build
 ```
 
 ## Versioning
