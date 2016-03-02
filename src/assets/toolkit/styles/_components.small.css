@@ -9,21 +9,4 @@
 /**
  * Small text
  */
-.small {
-    font-size: var(--small-font-size);
-    font-family: var(--small-font-family);
-    line-height: 1;
-}
-
-
-
-
-
-/**
- * Small fontface
- *
- * 1. Use webfont only when it's loaded to avoid FOIT
- */
-.wf-active .small {
-    font-family: var(--enhance-small-font-family); /* [1] */
-}
+@mixin small .small;
