@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * Toolkit JavaScript
+	 * foehn JavaScript
 	 */
 
 	'use strict';

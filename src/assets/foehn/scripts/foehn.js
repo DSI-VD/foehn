@@ -1,5 +1,5 @@
 /**
- * Toolkit JavaScript
+ * foehn JavaScript
  */
 
 'use strict';
