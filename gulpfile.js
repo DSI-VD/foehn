@@ -37,7 +37,8 @@ var config = {
         fonts: 'src/assets/toolkit/fonts/**/*',
         views: 'src/toolkit/views/*.html'
     },
-    dest: 'dist',
+    dest: 'www',
+    dist: 'dist',
     browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']
 };
 
@@ -49,7 +50,7 @@ var webpackCompiler = webpack(webpackConfig);
 
 // clean
 gulp.task('clean', function () {
-	return del([config.dest]);
+	return del([config.dest, config.dist]);
 });
 
 
@@ -126,6 +127,7 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         .pipe( gulpif(config.dev, sourcemaps.write()) )
         // Set the destination for the CSS file
         .pipe( gulp.dest(config.dest + '/assets/toolkit/styles') )
+        .pipe( gulp.dest(config.dist + '/styles') )
         // If we are in dev, reload the browser
         .pipe( gulpif(config.dev, reload({stream:true})) );
 });
@@ -147,6 +149,9 @@ gulp.task('scripts', function (done) {
         }
         done();
     });
+
+    gulp.src('www/assets/toolkit/scripts/toolkit.js')
+    .pipe( gulp.dest(config.dist + '/scripts') )
 });
 
 
@@ -154,26 +159,30 @@ gulp.task('scripts', function (done) {
 gulp.task('images', ['favicon'], function () {
     return gulp.src(config.src.images)
         .pipe(imagemin())
-        .pipe(gulp.dest(config.dest + '/assets/toolkit/images'));
+        .pipe(gulp.dest(config.dest + '/assets/toolkit/images'))
+        .pipe(gulp.dest(config.dist + '/images'));
 });
 
 gulp.task('favicon', function () {
     return gulp.src('./src/favicon.ico')
-        .pipe(gulp.dest(config.dest));
+        .pipe(gulp.dest(config.dest))
+        .pipe(gulp.dest(config.dist));
 });
 
 
 // fonts
 gulp.task('fonts', function () {
     return gulp.src(config.src.fonts)
-        .pipe(gulp.dest(config.dest + '/assets/toolkit/fonts'));
+        .pipe(gulp.dest(config.dest + '/assets/toolkit/fonts'))
+        .pipe(gulp.dest(config.dist + '/fonts'));
 });
 
 
 // assemble
 gulp.task('assemble', function (done) {
     assemble({
-        logErrors: config.dev
+        logErrors: config.dev,
+        dest: config.dest
     });
     done();
 });
@@ -229,12 +238,10 @@ gulp.task('serve', function () {
 
 });
 
-
 gulp.task('deploy', function() {
   return gulp.src(config.dest + '/**/*')
     .pipe(ghPages());
 });
-
 
 // default build task
 gulp.task('default', ['clean'], function () {

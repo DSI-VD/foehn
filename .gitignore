@@ -1,5 +1,5 @@
 node_modules
-dist
+www
 .sass-cache
 npm-debug.*
 .publish
