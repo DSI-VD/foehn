@@ -231,7 +231,7 @@ gulp.task('serve', function () {
 
 
 gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src(config.dest + '/**/*')
     .pipe(ghPages());
 });
 
