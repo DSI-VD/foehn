@@ -37,7 +37,7 @@ var config = {
         fonts: 'src/assets/toolkit/fonts/**/*',
         views: 'src/toolkit/views/*.html'
     },
-    dest: 'dist',
+    dest: 'www',
     browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']
 };
 
@@ -173,7 +173,8 @@ gulp.task('fonts', function () {
 // assemble
 gulp.task('assemble', function (done) {
     assemble({
-        logErrors: config.dev
+        logErrors: config.dev,
+        dest: config.dest
     });
     done();
 });
