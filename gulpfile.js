@@ -27,15 +27,15 @@ var config = {
     src: {
         scripts: {
             fabricator: './src/assets/fabricator/scripts/fabricator.js',
-            toolkit: './src/assets/toolkit/scripts/foehn.js'
+            foehn: './src/assets/foehn/scripts/foehn.js'
         },
         styles: {
             fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-            toolkit: 'src/assets/toolkit/styles/foehn.css'
+            foehn: 'src/assets/foehn/styles/foehn.css'
         },
-        images: 'src/assets/toolkit/images/**/*',
-        fonts: 'src/assets/toolkit/fonts/**/*',
-        views: 'src/toolkit/views/*.html'
+        images: 'src/assets/foehn/images/**/*',
+        fonts: 'src/assets/foehn/fonts/**/*',
+        views: 'src/foehn/views/*.html'
     },
     dest: 'dist',
     browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']
@@ -78,7 +78,7 @@ gulp.task('styles:fabricator', function () {
 });
 
 gulp.task("lint-styles", function() {
-    return gulp.src("src/assets/toolkit/styles/*.css")
+    return gulp.src("src/assets/foehn/styles/*.css")
     .pipe(postcss([
         stylelint(),
         reporter({
@@ -87,7 +87,7 @@ gulp.task("lint-styles", function() {
     ]));
 });
 
-gulp.task('styles:toolkit', ["lint-styles"], function () {
+gulp.task('styles:foehn', ["lint-styles"], function () {
     var processors = [
         require('postcss-import'),
         require('postcss-mixins'),
@@ -115,7 +115,7 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
             ]
         })
     ]
-    return gulp.src(config.src.styles.toolkit)
+    return gulp.src(config.src.styles.foehn)
         // If we are in dev, start sourcemaps
         .pipe(gulpif(config.dev, sourcemaps.init()))
         // We always want PostCSS to run
@@ -125,12 +125,12 @@ gulp.task('styles:toolkit', ["lint-styles"], function () {
         // If we are in dev, write sourcemaps
         .pipe( gulpif(config.dev, sourcemaps.write()) )
         // Set the destination for the CSS file
-        .pipe( gulp.dest(config.dest + '/assets/toolkit/styles') )
+        .pipe( gulp.dest(config.dest + '/assets/foehn/styles') )
         // If we are in dev, reload the browser
         .pipe( gulpif(config.dev, reload({stream:true})) );
 });
 
-gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
+gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
 
 
 // scripts
@@ -154,7 +154,7 @@ gulp.task('scripts', function (done) {
 gulp.task('images', ['favicon'], function () {
     return gulp.src(config.src.images)
         .pipe(imagemin())
-        .pipe(gulp.dest(config.dest + '/assets/toolkit/images'));
+        .pipe(gulp.dest(config.dest + '/assets/foehn/images'));
 });
 
 gulp.task('favicon', function () {
@@ -166,7 +166,7 @@ gulp.task('favicon', function () {
 // fonts
 gulp.task('fonts', function () {
     return gulp.src(config.src.fonts)
-        .pipe(gulp.dest(config.dest + '/assets/toolkit/fonts'));
+        .pipe(gulp.dest(config.dest + '/assets/foehn/fonts'));
 });
 
 
@@ -215,11 +215,11 @@ gulp.task('serve', function () {
     gulp.task('styles:fabricator:watch', ['styles:fabricator']);
     gulp.watch('src/assets/fabricator/styles/**/*.scss', ['styles:fabricator:watch']);
 
-    gulp.task('styles:toolkit:watch', ['styles:toolkit']);
-    gulp.watch('src/assets/toolkit/styles/**/*.css', ['styles:toolkit:watch']);
+    gulp.task('styles:foehn:watch', ['styles:foehn']);
+    gulp.watch('src/assets/foehn/styles/**/*.css', ['styles:foehn:watch']);
 
     gulp.task('scripts:watch', ['scripts'], reload);
-    gulp.watch('src/assets/{fabricator,toolkit}/scripts/**/*.js', ['scripts:watch']).on('change', webpackCache);
+    gulp.watch('src/assets/{fabricator,foehn}/scripts/**/*.js', ['scripts:watch']).on('change', webpackCache);
 
     gulp.task('images:watch', ['images'], reload);
     gulp.watch(config.src.images, ['images:watch']);
