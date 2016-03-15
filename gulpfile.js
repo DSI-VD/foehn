@@ -27,7 +27,7 @@ var config = {
     src: {
         scripts: {
             fabricator: './src/assets/fabricator/scripts/fabricator.js',
-            toolkit: './src/assets/toolkit/scripts/toolkit.js'
+            toolkit: './src/assets/toolkit/scripts/foehn.js'
         },
         styles: {
             fabricator: 'src/assets/fabricator/styles/fabricator.scss',
