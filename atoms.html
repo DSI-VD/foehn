@@ -1383,10 +1383,10 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 		</div>
 	</div>
 <div class="f-item-preview">
-	<figcaption>Lorem ipsum dolor sit.</figcaption>
+	<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;figcaption&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;</code></pre>
+	<pre><code class="language-markup">&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;</code></pre>
 </div>
 
 
@@ -1719,12 +1719,16 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 				</div>
 			</div>
 <div class="f-item-preview">
+	<div class="vd-form">
 	<input id="checkbox" type="checkbox" name="checkbox" value="value" checked="">
-<label for="checkbox">Sojourner Truth</label>
+	<label for="checkbox">Sojourner Truth</label>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;input id=&quot;checkbox&quot; type=&quot;checkbox&quot; name=&quot;checkbox&quot; value=&quot;value&quot; checked=&quot;&quot;&gt;
-&lt;label for=&quot;checkbox&quot;&gt;Sojourner Truth&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class=&quot;vd-form&quot;&gt;
+	&lt;input id=&quot;checkbox&quot; type=&quot;checkbox&quot; name=&quot;checkbox&quot; value=&quot;value&quot; checked=&quot;&quot;&gt;
+	&lt;label for=&quot;checkbox&quot;&gt;Sojourner Truth&lt;/label&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 		</div>
@@ -1741,12 +1745,16 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 				</div>
 			</div>
 <div class="f-item-preview">
+	<div class="vd-form">
 	<input id="henri-guisan" type="radio" name="personality" value="guisan">
-<label for="henri-guisan">Henri Guisan</label>
+	<label for="henri-guisan">Henri Guisan</label>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;input id=&quot;henri-guisan&quot; type=&quot;radio&quot; name=&quot;personality&quot; value=&quot;guisan&quot;&gt;
-&lt;label for=&quot;henri-guisan&quot;&gt;Henri Guisan&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class=&quot;vd-form&quot;&gt;
+	&lt;input id=&quot;henri-guisan&quot; type=&quot;radio&quot; name=&quot;personality&quot; value=&quot;guisan&quot;&gt;
+	&lt;label for=&quot;henri-guisan&quot;&gt;Henri Guisan&lt;/label&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 		</div>
@@ -1763,7 +1771,7 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 				</div>
 			</div>
 <div class="f-item-preview">
-	<form>
+	<form class="vd-form">
 	<label for="options">Dropdown label</label>
 	<select name="options" id="options">
     <option value="value1">Option A</option>
@@ -1773,7 +1781,7 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 </form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;form&gt;
+	<pre><code class="language-markup">&lt;form class=&quot;vd-form&quot;&gt;
 	&lt;label for=&quot;options&quot;&gt;Dropdown label&lt;/label&gt;
 	&lt;select name=&quot;options&quot; id=&quot;options&quot;&gt;
     &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
@@ -1804,56 +1812,56 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 
 </div>
 <div class="f-item-preview">
-	<p>
-	Lorem dolor sit <input type="text" placeholder="Text Input"> ipsum dolor sit amet, consectetur adipisicing elit. Culpa, nisi dolor dolorem et quis animi omnis in quaerat quasi quam minima impedit delectus.
-</p>
+	<form class="vd-form" action="#" method="post">
 
-<label for="text">Text Input</label>
-<input id="text" type="text" placeholder="Text Input"><br>
+	<label for="text">Text Input</label>
+	<input id="text" type="text" placeholder="Text Input"><br>
 
-<label for="password">Password</label>
-<input id="password" type="password" placeholder="Type your Password"><br>
+	<label for="password">Password</label>
+	<input id="password" type="password" placeholder="Type your Password"><br>
 
-<label for="url">Url</label>
-<input id="url" type="url" placeholder="http://yoursite.com"><br>
+	<label for="url">Url</label>
+	<input id="url" type="url" placeholder="http://yoursite.com"><br>
 
-<label for="email">Email</label>
-<input id="email" type="email" placeholder="name@email.com"><br>
+	<label for="email">Email</label>
+	<input id="email" type="email" placeholder="name@email.com"><br>
 
-<label for="search">Search</label>
-<input id="search" type="search" placeholder="Enter Search Term"><br>
+	<label for="search">Search</label>
+	<input id="search" type="search" placeholder="Enter Search Term"><br>
 
-<label for="number">Number</label>
-<input id="number" type="number" placeholder="Enter a Number" pattern="[0-9]*"><br>
+	<label for="number">Number</label>
+	<input id="number" type="number" placeholder="Enter a Number" pattern="[0-9]*"><br>
 
-<label for="disabled">Disabled</label>
-<input id="disabled" type="text" placeholder="Disabled" value="Disabled" disabled>
+	<label for="disabled">Disabled</label>
+	<input id="disabled" type="text" placeholder="Disabled" value="Disabled" disabled>
+
+</form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;
-	Lorem dolor sit &lt;input type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt; ipsum dolor sit amet, consectetur adipisicing elit. Culpa, nisi dolor dolorem et quis animi omnis in quaerat quasi quam minima impedit delectus.
-&lt;/p&gt;
+	<pre><code class="language-markup">&lt;form class=&quot;vd-form&quot; action=&quot;#&quot; method=&quot;post&quot;&gt;
 
-&lt;label for=&quot;text&quot;&gt;Text Input&lt;/label&gt;
-&lt;input id=&quot;text&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;&lt;br&gt;
+	&lt;label for=&quot;text&quot;&gt;Text Input&lt;/label&gt;
+	&lt;input id=&quot;text&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;&lt;br&gt;
 
-&lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
-&lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;&lt;br&gt;
+	&lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+	&lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;&lt;br&gt;
 
-&lt;label for=&quot;url&quot;&gt;Url&lt;/label&gt;
-&lt;input id=&quot;url&quot; type=&quot;url&quot; placeholder=&quot;http://yoursite.com&quot;&gt;&lt;br&gt;
+	&lt;label for=&quot;url&quot;&gt;Url&lt;/label&gt;
+	&lt;input id=&quot;url&quot; type=&quot;url&quot; placeholder=&quot;http://yoursite.com&quot;&gt;&lt;br&gt;
 
-&lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
-&lt;input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;&lt;br&gt;
+	&lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+	&lt;input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;&lt;br&gt;
 
-&lt;label for=&quot;search&quot;&gt;Search&lt;/label&gt;
-&lt;input id=&quot;search&quot; type=&quot;search&quot; placeholder=&quot;Enter Search Term&quot;&gt;&lt;br&gt;
+	&lt;label for=&quot;search&quot;&gt;Search&lt;/label&gt;
+	&lt;input id=&quot;search&quot; type=&quot;search&quot; placeholder=&quot;Enter Search Term&quot;&gt;&lt;br&gt;
 
-&lt;label for=&quot;number&quot;&gt;Number&lt;/label&gt;
-&lt;input id=&quot;number&quot; type=&quot;number&quot; placeholder=&quot;Enter a Number&quot; pattern=&quot;[0-9]*&quot;&gt;&lt;br&gt;
+	&lt;label for=&quot;number&quot;&gt;Number&lt;/label&gt;
+	&lt;input id=&quot;number&quot; type=&quot;number&quot; placeholder=&quot;Enter a Number&quot; pattern=&quot;[0-9]*&quot;&gt;&lt;br&gt;
 
-&lt;label for=&quot;disabled&quot;&gt;Disabled&lt;/label&gt;
-&lt;input id=&quot;disabled&quot; type=&quot;text&quot; placeholder=&quot;Disabled&quot; value=&quot;Disabled&quot; disabled&gt;</code></pre>
+	&lt;label for=&quot;disabled&quot;&gt;Disabled&lt;/label&gt;
+	&lt;input id=&quot;disabled&quot; type=&quot;text&quot; placeholder=&quot;Disabled&quot; value=&quot;Disabled&quot; disabled&gt;
+
+&lt;/form&gt;</code></pre>
 </div>
 
 		</div>
@@ -1870,10 +1878,18 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 				</div>
 			</div>
 <div class="f-item-preview">
+	<form class="vd-form" action="index.html" method="post">
+
 	<textarea rows="8" cols="48" placeholder="Enter your message here"></textarea>
+
+</form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;textarea rows=&quot;8&quot; cols=&quot;48&quot; placeholder=&quot;Enter your message here&quot;&gt;&lt;/textarea&gt;</code></pre>
+	<pre><code class="language-markup">&lt;form class=&quot;vd-form&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+
+	&lt;textarea rows=&quot;8&quot; cols=&quot;48&quot; placeholder=&quot;Enter your message here&quot;&gt;&lt;/textarea&gt;
+
+&lt;/form&gt;</code></pre>
 </div>
 
 		</div>
