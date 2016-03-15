@@ -1,0 +1,1597 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="stylesheet" href=".//assets/fabricator/styles/f.css">
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href=".//assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+</head>
+<body>
+
+		<!-- fabricator icons -->
+		<svg style="display: none;">
+			<symbol id="f-icon-code" viewBox="0 0 512 512">
+				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+			</symbol>
+			<symbol id="f-icon-notes" viewBox="0 0 512 512">
+				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+			</symbol>
+			<symbol id="f-icon-labels" viewBox="0 0 512 512">
+				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+			</symbol>
+			<symbol id="f-icon-menu" viewBox="0 0 512 512">
+				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+			</symbol>
+			<symbol id="f-icon-settings" viewBox="0 0 512 512">
+				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+			</symbol>
+		</svg>
+		<!-- /fabricator icons -->
+		<!-- fabricator menu -->
+		<div class="f-menu">
+		
+			<div class="f-controls">
+				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+					<svg>
+						<use xlink:href="#f-icon-labels" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+					<svg>
+						<use xlink:href="#f-icon-notes" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</div>
+			</div>
+		
+			<ul>
+		
+				<li>
+					<a href="index.html" class="f-menu__heading">Overview</a>
+				</li>
+		
+				<li>
+					<a href="atoms.html" class="f-menu__heading">Atoms</a>
+					<ul>
+						<li>
+							<a href="atoms.html#01-headings">Headings</a>
+						</li>
+						<li>
+							<a href="atoms.html#02-paragraph">Paragraph</a>
+						</li>
+						<li>
+							<a href="atoms.html#03-inline-text">Inline Text</a>
+						</li>
+						<li>
+							<a href="atoms.html#04-time">Time</a>
+						</li>
+						<li>
+							<a href="atoms.html#05-lists">Lists</a>
+						</li>
+						<li>
+							<a href="atoms.html#06-blockquote">Blockquote</a>
+						</li>
+						<li>
+							<a href="atoms.html#07-preformated-text">Preformated Text</a>
+						</li>
+						<li>
+							<a href="atoms.html#08-hr">Hr</a>
+						</li>
+						<li>
+							<a href="atoms.html#09-images">Images</a>
+						</li>
+						<li>
+							<a href="atoms.html#10-figure-caption">Figure Caption</a>
+						</li>
+						<li>
+							<a href="atoms.html#11-table">Table</a>
+						</li>
+						<li>
+							<a href="atoms.html#12-buttons">Buttons</a>
+						</li>
+						<li>
+							<a href="atoms.html#13-forms">Forms</a>
+						</li>
+						<li>
+							<a href="atoms.html#14-containers">Containers</a>
+						</li>
+						<li>
+							<a href="atoms.html#15-visibility">Visibility</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="molecules.html" class="f-menu__heading">Molecules</a>
+					<ul>
+						<li>
+							<a href="molecules.html#01-text">Text</a>
+						</li>
+						<li>
+							<a href="molecules.html#02-medias">Medias</a>
+						</li>
+						<li>
+							<a href="molecules.html#03-blocks">Blocks</a>
+						</li>
+						<li>
+							<a href="molecules.html#04-forms">Forms</a>
+						</li>
+						<li>
+							<a href="molecules.html#05-boxes">Boxes</a>
+						</li>
+						<li>
+							<a href="molecules.html#06-layout">Layout</a>
+						</li>
+						<li>
+							<a href="molecules.html#07-expos">Expos</a>
+						</li>
+						<li>
+							<a href="molecules.html#08-alerts">Alerts</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="organisms.html" class="f-menu__heading">Organisms</a>
+					<ul>
+						<li>
+							<a href="organisms.html#00-global">Global</a>
+						</li>
+						<li>
+							<a href="organisms.html#agenda">Agenda</a>
+						</li>
+						<li>
+							<a href="organisms.html#boxes-list">Boxes List</a>
+						</li>
+						<li>
+							<a href="organisms.html#last-news">Last News</a>
+						</li>
+						<li>
+							<a href="organisms.html#list-news">List News</a>
+						</li>
+						<li>
+							<a href="organisms.html#login">Login</a>
+						</li>
+						<li>
+							<a href="organisms.html#navigation">Navigation</a>
+						</li>
+						<li>
+							<a href="organisms.html#page-title">Page Title</a>
+						</li>
+						<li>
+							<a href="organisms.html#topics-list">Topics List</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="templates.html" class="f-menu__heading">Templates</a>
+					<ul>
+						<li>
+							<a href="templates.html#homepage">Homepage</a>
+						</li>
+						<li>
+							<a href="templates.html#organisation">Organisation</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="pages.html" class="f-menu__heading">Pages</a>
+					<ul>
+						<li>
+							<a href="pages/home.html" target="_blank">Home</a>
+						</li>
+						<li>
+							<a href="pages/organisation.html" target="_blank">Organisation</a>
+						</li>
+						<li>
+							<a href="pages/prestations-font-comparaison.html" target="_blank">Prestations Font Comparaison</a>
+						</li>
+						<li>
+							<a href="pages/prestations.html" target="_blank">Prestations</a>
+						</li>
+						<li>
+							<a href="pages/typography-font-comparaison.html" target="_blank">Typography Font Comparaison</a>
+						</li>
+						<li>
+							<a href="pages/typography.html" target="_blank">Typography</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="docs.html" class="f-menu__heading">Docs</a>
+					<ul>
+						<li>
+							<a href="docs.html#breakpoints">Breakpoints</a>
+						</li>
+						<li>
+							<a href="docs.html#credits">Credits</a>
+						</li>
+						<li>
+							<a href="docs.html#css">Css</a>
+						</li>
+						<li>
+							<a href="docs.html#javascript">Javascript</a>
+						</li>
+						<li>
+							<a href="docs.html#typography">Typography</a>
+						</li>
+					</ul>
+				</li>
+		
+			</ul>
+		
+		
+		</div>
+		<!-- /fabricator menu -->
+		<div class="f-container">
+			<div class="f-control-bar">
+				<div class="f-control f-menu-toggle">
+					<svg>
+						<use xlink:href="#f-icon-menu" />
+					</svg>
+				</div>
+			</div>
+
+
+	
+<h1 data-f-toggle="labels">Organisms</h1>
+
+
+<div class="f-item-group" id="00-global">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Global</h2>
+	</div>
+		<div class="f-item-group" id="00-global.footer">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Footer</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<footer class="vd-container">
+	<div class="demo-block">Footer</div>
+</footer>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;footer class=&quot;vd-container&quot;&gt;
+	&lt;div class=&quot;demo-block&quot;&gt;Footer&lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="00-global.header">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<header class="vd-container">
+	<a href="#">
+		<picture>
+			<source type="image/svg+xml" srcset="assets/toolkit/images/logo-square.svg">
+			<img src="assets/toolkit/images/logo-square@1x.png" srcset="assets/toolkit/images/logo-square@2x.png 2x, assets/toolkit/images/logo-square@3x.png 3x" alt="Logo de l'Etat de Vaud">
+		</picture>vd.ch</a>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class=&quot;vd-container&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;
+		&lt;picture&gt;
+			&lt;source type=&quot;image/svg+xml&quot; srcset=&quot;assets/toolkit/images/logo-square.svg&quot;&gt;
+			&lt;img src=&quot;assets/toolkit/images/logo-square@1x.png&quot; srcset=&quot;assets/toolkit/images/logo-square@2x.png 2x, assets/toolkit/images/logo-square@3x.png 3x&quot; alt=&quot;Logo de l&#x27;Etat de Vaud&quot;&gt;
+		&lt;/picture&gt;vd.ch&lt;/a&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="agenda">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Agenda</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="vd-container">
+	<h2>Agenda</h2>
+	<a href="#" class="vd-silent-link">
+		<article>
+			<h3>Lorem ipsum dolor sit (37 characters)</h3>
+			<p>
+				<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+			<p>
+				A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			</p>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article>
+			<h3>Lorem ipsum dolor sit (37 characters)</h3>
+			<p>
+				<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+			<p>
+				A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			</p>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article>
+			<h3>Lorem ipsum dolor sit (37 characters)</h3>
+			<p>
+				<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+			<p>
+				A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			</p>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article>
+			<h3>Lorem ipsum dolor sit (37 characters)</h3>
+			<p>
+				<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+			<p>
+				A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			</p>
+		</article>
+	</a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;vd-container&quot;&gt;
+	&lt;h2&gt;Agenda&lt;/h2&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article&gt;
+			&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+			&lt;p&gt;
+				&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+			&lt;p&gt;
+				A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article&gt;
+			&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+			&lt;p&gt;
+				&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+			&lt;p&gt;
+				A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article&gt;
+			&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+			&lt;p&gt;
+				&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+			&lt;p&gt;
+				A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article&gt;
+			&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+			&lt;p&gt;
+				&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+			&lt;p&gt;
+				A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+				by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+			&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="boxes-list">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Boxes List</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="vd-container">
+	<h2>Boxes list</h2>
+	<div class="vd-expo vd-expo--1 vd-expo--lap-and-up--2 vd-expo--desk--4">
+		<div class="vd-expo__item">
+			<div class="vd-box vd-box--default">
+				<h3>Box 0</h3>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div class="vd-expo__item">
+			<div class="vd-box vd-box--default">
+				<h3>Box 1</h3>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div class="vd-expo__item">
+			<div class="vd-box vd-box--default">
+				<h3>Box 2</h3>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div class="vd-expo__item">
+			<div class="vd-box vd-box--default">
+				<h3>Box 3</h3>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div class="vd-expo__item">
+			<div class="vd-box vd-box--default">
+				<h3>Box 4</h3>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div class="vd-expo__item">
+			<div class="vd-box vd-box--default">
+				<h3>Box 5</h3>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div class="vd-expo__item">
+			<div class="vd-box vd-box--default">
+				<h3>Box 6</h3>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div class="vd-expo__item">
+			<a href="#">This is a text link</a> </div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;vd-container&quot;&gt;
+	&lt;h2&gt;Boxes list&lt;/h2&gt;
+	&lt;div class=&quot;vd-expo vd-expo--1 vd-expo--lap-and-up--2 vd-expo--desk--4&quot;&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;div class=&quot;vd-box vd-box--default&quot;&gt;
+				&lt;h3&gt;Box 0&lt;/h3&gt;
+				&lt;p&gt;
+
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;div class=&quot;vd-box vd-box--default&quot;&gt;
+				&lt;h3&gt;Box 1&lt;/h3&gt;
+				&lt;p&gt;
+
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;div class=&quot;vd-box vd-box--default&quot;&gt;
+				&lt;h3&gt;Box 2&lt;/h3&gt;
+				&lt;p&gt;
+
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;div class=&quot;vd-box vd-box--default&quot;&gt;
+				&lt;h3&gt;Box 3&lt;/h3&gt;
+				&lt;p&gt;
+
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;div class=&quot;vd-box vd-box--default&quot;&gt;
+				&lt;h3&gt;Box 4&lt;/h3&gt;
+				&lt;p&gt;
+
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;div class=&quot;vd-box vd-box--default&quot;&gt;
+				&lt;h3&gt;Box 5&lt;/h3&gt;
+				&lt;p&gt;
+
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;div class=&quot;vd-box vd-box--default&quot;&gt;
+				&lt;h3&gt;Box 6&lt;/h3&gt;
+				&lt;p&gt;
+
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;vd-expo__item&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;This is a text link&lt;/a&gt; &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="last-news">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Last News</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="vd-container">
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a> <a href="#">This is a text link</a></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;vd-container&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;This is a text link&lt;/a&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="list-news">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">List News</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="vd-container">
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a>
+	<a href="#" class="vd-silent-link">
+		<article class="vd-layout vd-layout--lap-and-up--column">
+			<div class="vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3">
+				<h3>Lorem ipsum dolor sit (37 characters)</h3>
+				<p>
+					<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time> </p>
+				<div class="vd-hidden--palm">
+					<p>
+						A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					</p>
+				</div>
+			</div>
+			<div class="vd-layout__item--1-3 vd-layout__item--palm--move---2-3">
+				<figure>
+					<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+					<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
+				</figure>
+			</div>
+		</article>
+	</a> <a href="#">This is a text link</a></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;vd-container&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;vd-silent-link&quot;&gt;
+		&lt;article class=&quot;vd-layout vd-layout--lap-and-up--column&quot;&gt;
+			&lt;div class=&quot;vd-layout__item layout__item--2-3 vd-layout__item--palm--move--1-3&quot;&gt;
+				&lt;h3&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; &lt;/p&gt;
+				&lt;div class=&quot;vd-hidden--palm&quot;&gt;
+					&lt;p&gt;
+						A paragraph (from the Greek paragraphos, &amp;quot;to write beside&amp;quot; or &amp;quot;written beside&amp;quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
+						by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;vd-layout__item--1-3 vd-layout__item--palm--move---2-3&quot;&gt;
+				&lt;figure&gt;
+					&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
+                                 http://placehold.it/540x405?text=4x3+(540x405) 540w,
+                                 http://placehold.it/800x600?text=4x3+(800x600) 800w,
+                                 http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+                                 http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+                                 http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;
+					&lt;figcaption class=&quot;vd-small&quot;&gt;Lorem ipsum dolor sit.&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/article&gt;
+	&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;This is a text link&lt;/a&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="login">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Login</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="vd-container">
+	<h2>Login</h2>
+	<form action="#" method="post">
+		<fieldset>
+			<legend></legend>
+			<label for="user">User authentication</label>
+			<input id="user" type="text" name="name" value="">
+			<label for="password">Password</label>
+			<input id="password" type="password" placeholder="Type your Password">
+			<button type="button" name="button">Enter</button>
+		</fieldset>
+	</form>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;vd-container&quot;&gt;
+	&lt;h2&gt;Login&lt;/h2&gt;
+	&lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
+		&lt;fieldset&gt;
+			&lt;legend&gt;&lt;/legend&gt;
+			&lt;label for=&quot;user&quot;&gt;User authentication&lt;/label&gt;
+			&lt;input id=&quot;user&quot; type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+			&lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+			&lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
+			&lt;button type=&quot;button&quot; name=&quot;button&quot;&gt;Enter&lt;/button&gt;
+		&lt;/fieldset&gt;
+	&lt;/form&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="navigation">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Navigation</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="vd-container">
+	<div class="demo-block">Navigation</div>
+</nav>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class=&quot;vd-container&quot;&gt;
+	&lt;div class=&quot;demo-block&quot;&gt;Navigation&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="page-title">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Page Title</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="vd-container">
+	<h1>Page title</h1>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;vd-container&quot;&gt;
+	&lt;h1&gt;Page title&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="topics-list">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Topics List</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="vd-container">
+	<h2>Topics</h2>
+	<ul>
+		<li>Vie privée
+			<ul>
+				<li>Familles</li>
+				<li>Enfance et jeunesse</li>
+				<li>Logement</li>
+				<li>Contrôle des habitants</li>
+				<li>Etat civil</li>
+				<li>Documents d&#x27;identité</li>
+				<li>Population étrangère</li>
+				<li>Religions</li>
+				<li>Animaux</li>
+				<li>Sport</li>
+				<li>Violence domestiqu</li>
+			</ul>
+		</li>
+		<li>Formation
+			<ul>
+				<li>Avant l&#x27;Ecole</li>
+				<li>Scolarité obligatoire</li>
+				<li>Gymnase</li>
+				<li>Apprentissage</li>
+				<li>Enseignement supérieur</li>
+				<li>Orientation</li>
+				<li>Bourses</li>
+				<li>Pédagogie spécialisée</li>
+				<li>Santé à l&#x27;école</li>
+				<li>Jours fériés et vacances scolaires</li>
+				<li>Schooling</li>
+				<li>Espace enseignant</li>
+			</ul>
+		</li>
+		<li>Economie
+			<ul>
+				<li>Entreprises</li>
+				<li>Marchés publics</li>
+				<li>Emploi - Chômage</li>
+				<li>Développement économique</li>
+				<li>Tourisme</li>
+				<li>Agriculture</li>
+				<li>Protection consommateur</li>
+				<li>Poursuites et faillites</li>
+				<li>Registre du commerce</li>
+				<li>Police du commerce</li>
+			</ul>
+		</li>
+		<li>Santé
+			<ul>
+				<li>Actualités</li>
+				<li>Système de santé</li>
+				<li>Organisation</li>
+				<li>Lutte contre les maladies</li>
+				<li>Prévention</li>
+				<li>Dépendances</li>
+				<li>Professionnels</li>
+			</ul>
+		</li>
+		<li>Social
+			<ul>
+				<li>Informations sociales</li>
+				<li>Prestations, assurances et soutien</li>
+				<li>Vivre à domicile</li>
+				<li>EMS</li>
+				<li>Handicaps</li>
+				<li>Dettes et surendettement</li>
+				<li>Aide aux victimes et auteur-e-s de violences</li>
+				<li>Bénévolat</li>
+			</ul>
+		</li>
+		<li>Culture
+			<ul>
+				<li>Aides et soutiens</li>
+				<li>Ecole-Musée</li>
+				<li>Bibliothèque cantonale et universitaire</li>
+				<li>Musées cantonaux</li>
+				<li>Patrimoine vaudois</li>
+				<li>Passculture</li>
+				<li>Formations artistiques</li>
+				<li>Cinéma</li>
+				<li>Assises de la culture</li>
+			</ul>
+		</li>
+		<li>Sécurité
+			<ul>
+				<li>Prévention</li>
+				<li>Protection de la population</li>
+				<li>Police</li>
+				<li>Pompiers</li>
+				<li>Armée</li>
+				<li>Protection civile</li>
+				<li>Pénitentiaire</li>
+				<li>Catastrophe</li>
+				<li>Service civil</li>
+			</ul>
+		</li>
+		<li>Mobilité
+			<ul>
+				<li>Mobilité et planification</li>
+				<li>Mobilité douce</li>
+				<li>Promotion des mobilités durables</li>
+				<li>Routes</li>
+				<li>Transports publics</li>
+				<li>Automobile</li>
+				<li>Navigation</li>
+			</ul>
+		</li>
+		<li>Environnement
+			<ul>
+				<li>Développement durable</li>
+				<li>Faune et nature</li>
+				<li>Forêts</li>
+				<li>Air</li>
+				<li>Sols</li>
+				<li>Eaux</li>
+				<li>Energie</li>
+				<li>Bruit</li>
+				<li>Rayonnement</li>
+				<li>Produits chimiques</li>
+				<li>Déchets</li>
+				<li>Sites pollués</li>
+			</ul>
+		</li>
+		<li>Territoire
+			<ul>
+				<li>Aménagement</li>
+				<li>Améliorations foncières</li>
+				<li>Opérations foncières</li>
+				<li>Géologie</li>
+				<li>Dangers Naturels</li>
+				<li>Informations sur le territoire</li>
+				<li>Construction</li>
+				<li>Registre foncier</li>
+				<li>Districts / Préfectures</li>
+				<li>Communes</li>
+			</ul>
+		</li>
+		<li>Etat, Droit, Finance
+			<ul>
+				<li>Lois / Constitution</li>
+				<li>Votations et élections</li>
+				<li>Justice</li>
+				<li>Médiations</li>
+				<li>Protection des données et transparence</li>
+				<li>Curatelles et tutelles</li>
+				<li>Égalité</li>
+				<li>Impôts</li>
+				<li>Finances publiques</li>
+				<li>Affaires extérieures</li>
+				<li>Personnel de l&#x27;État</li>
+				<li>Statistiques</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;vd-container&quot;&gt;
+	&lt;h2&gt;Topics&lt;/h2&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Vie privée
+			&lt;ul&gt;
+				&lt;li&gt;Familles&lt;/li&gt;
+				&lt;li&gt;Enfance et jeunesse&lt;/li&gt;
+				&lt;li&gt;Logement&lt;/li&gt;
+				&lt;li&gt;Contrôle des habitants&lt;/li&gt;
+				&lt;li&gt;Etat civil&lt;/li&gt;
+				&lt;li&gt;Documents d&amp;#x27;identité&lt;/li&gt;
+				&lt;li&gt;Population étrangère&lt;/li&gt;
+				&lt;li&gt;Religions&lt;/li&gt;
+				&lt;li&gt;Animaux&lt;/li&gt;
+				&lt;li&gt;Sport&lt;/li&gt;
+				&lt;li&gt;Violence domestiqu&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Formation
+			&lt;ul&gt;
+				&lt;li&gt;Avant l&amp;#x27;Ecole&lt;/li&gt;
+				&lt;li&gt;Scolarité obligatoire&lt;/li&gt;
+				&lt;li&gt;Gymnase&lt;/li&gt;
+				&lt;li&gt;Apprentissage&lt;/li&gt;
+				&lt;li&gt;Enseignement supérieur&lt;/li&gt;
+				&lt;li&gt;Orientation&lt;/li&gt;
+				&lt;li&gt;Bourses&lt;/li&gt;
+				&lt;li&gt;Pédagogie spécialisée&lt;/li&gt;
+				&lt;li&gt;Santé à l&amp;#x27;école&lt;/li&gt;
+				&lt;li&gt;Jours fériés et vacances scolaires&lt;/li&gt;
+				&lt;li&gt;Schooling&lt;/li&gt;
+				&lt;li&gt;Espace enseignant&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Economie
+			&lt;ul&gt;
+				&lt;li&gt;Entreprises&lt;/li&gt;
+				&lt;li&gt;Marchés publics&lt;/li&gt;
+				&lt;li&gt;Emploi - Chômage&lt;/li&gt;
+				&lt;li&gt;Développement économique&lt;/li&gt;
+				&lt;li&gt;Tourisme&lt;/li&gt;
+				&lt;li&gt;Agriculture&lt;/li&gt;
+				&lt;li&gt;Protection consommateur&lt;/li&gt;
+				&lt;li&gt;Poursuites et faillites&lt;/li&gt;
+				&lt;li&gt;Registre du commerce&lt;/li&gt;
+				&lt;li&gt;Police du commerce&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Santé
+			&lt;ul&gt;
+				&lt;li&gt;Actualités&lt;/li&gt;
+				&lt;li&gt;Système de santé&lt;/li&gt;
+				&lt;li&gt;Organisation&lt;/li&gt;
+				&lt;li&gt;Lutte contre les maladies&lt;/li&gt;
+				&lt;li&gt;Prévention&lt;/li&gt;
+				&lt;li&gt;Dépendances&lt;/li&gt;
+				&lt;li&gt;Professionnels&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Social
+			&lt;ul&gt;
+				&lt;li&gt;Informations sociales&lt;/li&gt;
+				&lt;li&gt;Prestations, assurances et soutien&lt;/li&gt;
+				&lt;li&gt;Vivre à domicile&lt;/li&gt;
+				&lt;li&gt;EMS&lt;/li&gt;
+				&lt;li&gt;Handicaps&lt;/li&gt;
+				&lt;li&gt;Dettes et surendettement&lt;/li&gt;
+				&lt;li&gt;Aide aux victimes et auteur-e-s de violences&lt;/li&gt;
+				&lt;li&gt;Bénévolat&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Culture
+			&lt;ul&gt;
+				&lt;li&gt;Aides et soutiens&lt;/li&gt;
+				&lt;li&gt;Ecole-Musée&lt;/li&gt;
+				&lt;li&gt;Bibliothèque cantonale et universitaire&lt;/li&gt;
+				&lt;li&gt;Musées cantonaux&lt;/li&gt;
+				&lt;li&gt;Patrimoine vaudois&lt;/li&gt;
+				&lt;li&gt;Passculture&lt;/li&gt;
+				&lt;li&gt;Formations artistiques&lt;/li&gt;
+				&lt;li&gt;Cinéma&lt;/li&gt;
+				&lt;li&gt;Assises de la culture&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Sécurité
+			&lt;ul&gt;
+				&lt;li&gt;Prévention&lt;/li&gt;
+				&lt;li&gt;Protection de la population&lt;/li&gt;
+				&lt;li&gt;Police&lt;/li&gt;
+				&lt;li&gt;Pompiers&lt;/li&gt;
+				&lt;li&gt;Armée&lt;/li&gt;
+				&lt;li&gt;Protection civile&lt;/li&gt;
+				&lt;li&gt;Pénitentiaire&lt;/li&gt;
+				&lt;li&gt;Catastrophe&lt;/li&gt;
+				&lt;li&gt;Service civil&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Mobilité
+			&lt;ul&gt;
+				&lt;li&gt;Mobilité et planification&lt;/li&gt;
+				&lt;li&gt;Mobilité douce&lt;/li&gt;
+				&lt;li&gt;Promotion des mobilités durables&lt;/li&gt;
+				&lt;li&gt;Routes&lt;/li&gt;
+				&lt;li&gt;Transports publics&lt;/li&gt;
+				&lt;li&gt;Automobile&lt;/li&gt;
+				&lt;li&gt;Navigation&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Environnement
+			&lt;ul&gt;
+				&lt;li&gt;Développement durable&lt;/li&gt;
+				&lt;li&gt;Faune et nature&lt;/li&gt;
+				&lt;li&gt;Forêts&lt;/li&gt;
+				&lt;li&gt;Air&lt;/li&gt;
+				&lt;li&gt;Sols&lt;/li&gt;
+				&lt;li&gt;Eaux&lt;/li&gt;
+				&lt;li&gt;Energie&lt;/li&gt;
+				&lt;li&gt;Bruit&lt;/li&gt;
+				&lt;li&gt;Rayonnement&lt;/li&gt;
+				&lt;li&gt;Produits chimiques&lt;/li&gt;
+				&lt;li&gt;Déchets&lt;/li&gt;
+				&lt;li&gt;Sites pollués&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Territoire
+			&lt;ul&gt;
+				&lt;li&gt;Aménagement&lt;/li&gt;
+				&lt;li&gt;Améliorations foncières&lt;/li&gt;
+				&lt;li&gt;Opérations foncières&lt;/li&gt;
+				&lt;li&gt;Géologie&lt;/li&gt;
+				&lt;li&gt;Dangers Naturels&lt;/li&gt;
+				&lt;li&gt;Informations sur le territoire&lt;/li&gt;
+				&lt;li&gt;Construction&lt;/li&gt;
+				&lt;li&gt;Registre foncier&lt;/li&gt;
+				&lt;li&gt;Districts / Préfectures&lt;/li&gt;
+				&lt;li&gt;Communes&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;Etat, Droit, Finance
+			&lt;ul&gt;
+				&lt;li&gt;Lois / Constitution&lt;/li&gt;
+				&lt;li&gt;Votations et élections&lt;/li&gt;
+				&lt;li&gt;Justice&lt;/li&gt;
+				&lt;li&gt;Médiations&lt;/li&gt;
+				&lt;li&gt;Protection des données et transparence&lt;/li&gt;
+				&lt;li&gt;Curatelles et tutelles&lt;/li&gt;
+				&lt;li&gt;Égalité&lt;/li&gt;
+				&lt;li&gt;Impôts&lt;/li&gt;
+				&lt;li&gt;Finances publiques&lt;/li&gt;
+				&lt;li&gt;Affaires extérieures&lt;/li&gt;
+				&lt;li&gt;Personnel de l&amp;#x27;État&lt;/li&gt;
+				&lt;li&gt;Statistiques&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+
+
+		</div>
+	<script src=".//assets/fabricator/scripts/f.js"></script>
+
+	<!-- toolkit scripts -->
+	<script src=".//assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+</html>
