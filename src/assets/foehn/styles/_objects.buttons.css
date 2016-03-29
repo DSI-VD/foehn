@@ -174,3 +174,16 @@
     var(--btn-background-color-transparent-hover),
     var(--btn-text-color-transparent-active),
     var(--btn-background-color-transparent-active);
+
+
+
+/**
+ * Size of buttons
+ *
+ * Size variation
+ */
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
