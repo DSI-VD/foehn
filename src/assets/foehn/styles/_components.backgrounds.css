@@ -1,0 +1,27 @@
+/* ------------------------------------ *\
+    #BACKGROUNDS
+\* ------------------------------------ */
+
+
+
+
+
+/**
+ * Background black
+ */
+:root {
+    --background-black: var(--color-base;);
+    --background-black-color: var(--color-white;);
+}
+
+
+
+
+
+.background--black {
+    background-color: var(--background-black);
+    color: var(--background-black-color);
+    a {
+        color: currentcolor;
+    }
+}
