@@ -109,15 +109,6 @@
  * Color variations
  */
 
-:root {
-    --btn-text-color-secondary: var(--btn-color);
-    --btn-background-color-secondary: var(--color-secondary);
-    --btn-text-color-secondary-hover: var(--btn-color);
-    --btn-background-color-secondary-hover: var(--color-secondary-dark);
-    --btn-text-color-secondary-active: var(--color-white);
-    --btn-background-color-secondary-active: var(--color-secondary-darkest);
-}
-
 @define-mixin btn $modifier,
                   $text-color,
                   $background-color,
@@ -145,10 +136,41 @@
     }
 }
 
+
+/* Button secondary */
+:root {
+    --btn-text-color-secondary: var(--btn-color);
+    --btn-background-color-secondary: var(--color-secondary);
+    --btn-text-color-secondary-hover: var(--btn-color);
+    --btn-background-color-secondary-hover: var(--color-secondary-dark);
+    --btn-text-color-secondary-active: var(--color-white);
+    --btn-background-color-secondary-active: var(--color-secondary-darkest);
+}
+
 @mixin btn secondary,
-           var(--color-white),
-           var(--btn-background-color-secondary),
-           var(--btn-text-color-secondary-hover),
-           var(--btn-background-color-secondary-hover),
-           var(--btn-text-color-secondary-active),
-           var(--btn-background-color-secondary-active);
+    var(--color-white),
+    var(--btn-background-color-secondary),
+    var(--btn-text-color-secondary-hover),
+    var(--btn-background-color-secondary-hover),
+    var(--btn-text-color-secondary-active),
+    var(--btn-background-color-secondary-active);
+
+
+
+/* Button invisible */
+:root {
+    --btn-text-color-invisible: inherit;
+    --btn-background-color-invisible: inherit;
+    --btn-text-color-invisible-hover: inherit;
+    --btn-background-color-invisible-hover: inherit;
+    --btn-text-color-invisible-active: inherit;
+    --btn-background-color-invisible-active: inherit;
+}
+
+@mixin btn invisible,
+    inherit,
+    var(--btn-background-color-invisible),
+    var(--btn-text-color-invisible-hover),
+    var(--btn-background-color-invisible-hover),
+    var(--btn-text-color-invisible-active),
+    var(--btn-background-color-invisible-active);

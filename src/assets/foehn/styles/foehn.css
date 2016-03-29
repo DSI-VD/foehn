@@ -43,6 +43,7 @@
  *
  * COMPONENTS
  * Inline texts.........Fraction, Small-caps, etc.
+ * Backgrounds..........Change backgrounds color
  * Boxes................Boxes styles.
  * Small................Small text styles.
  * Strong...............Strong text styles.
@@ -141,6 +142,7 @@
  */
 
 @import "_components.box.css";
+@import "_components.backgrounds.css";
 @import "_components.small.css";
 @import "_components.strong.css";
 @import "_components.quotes.css";
