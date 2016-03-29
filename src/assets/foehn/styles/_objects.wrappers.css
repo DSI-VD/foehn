@@ -14,9 +14,25 @@
 
     padding-right: var(--base-spacing-unit--tiny);
     padding-left: var(--base-spacing-unit--tiny);
+
+    @media (--lap-and-up) {
+        padding-right: var(--base-spacing-unit);
+        padding-left: var(--base-spacing-unit);
+    }
+
 }
 
-@media (--lap-and-up) .container {
-    padding-right: var(--base-spacing-unit);
-    padding-left: var(--base-spacing-unit);
+/**
+ * Container offset
+ *
+ * Get out of the container
+ */
+.container--offset {
+    margin-right: -var(--base-spacing-unit--tiny);
+    margin-left: -var(--base-spacing-unit--tiny);
+
+    @media (--lap-and-up) {
+        margin-right: -var(--base-spacing-unit);
+        margin-left: -var(--base-spacing-unit);
+    }
 }
