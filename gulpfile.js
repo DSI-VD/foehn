@@ -113,7 +113,8 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
             ignore: [
                 /wf-/ // ignore webfontloader classes
             ]
-        })
+        }),
+        require('perfectionist')
     ]
     return gulp.src(config.src.styles.foehn)
         // If we are in dev, start sourcemaps
