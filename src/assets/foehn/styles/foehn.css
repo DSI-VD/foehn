@@ -42,6 +42,7 @@
  * Tables...............Tables.
  *
  * COMPONENTS
+ * Navbar...............Top bar.
  * Inline texts.........Fraction, Small-caps, etc.
  * Backgrounds..........Change backgrounds color
  * Boxes................Boxes styles.
@@ -141,6 +142,7 @@
  * COMPONENTS
  */
 
+@import "_components.navbar.css";
 @import "_components.box.css";
 @import "_components.backgrounds.css";
 @import "_components.small.css";
