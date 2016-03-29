@@ -126,7 +126,11 @@
                 border-radius: var(--form-checkbox-border-radius);
                 margin-right: var(--form-checkbox-margin);
 
-                box-shadow: 0 0 0 var(--form-border-width) var(--form-border-color);
+                box-shadow: 0
+                            0
+                            0
+                            var(--form-border-width)
+                            var(--form-border-color);
                 content: "\a0";
                 vertical-align: -.1rem;
             }
@@ -136,7 +140,11 @@
             background-color: var(--form-color-checked);
             background-size: var(--form-checkbox-background-image-size);
 
-            box-shadow: 0 0 0 var(--form-border-width) var(--form-color-checked);
+            box-shadow: 0
+                        0
+                        0
+                        var(--form-border-width)
+                        var(--form-color-checked);
         }
     }
 
@@ -192,14 +200,18 @@
  * 1. Arrow down icon
  */
 .form {
+
     select {
         background-position: right
-                             calc( calc( var(--form-height) - 1rem ) / 2)
+                             calc(
+                               calc( var(--form-height) - 1rem )
+                               / 2)
                              center; /* [1] */
         background-repeat: no-repeat;  /* [1] */
         background-image: url("../images/arrow_down.svg"); /* [1] */
         background-size: 1rem;  /* [1] */
     }
+
 }
 
 
@@ -210,11 +222,13 @@
  * Fieldset
  */
 .form {
+
     fieldset {
         border: none;
         margin: 0;
         padding: 0;
     }
+
 }
 
 
