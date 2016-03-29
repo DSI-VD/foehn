@@ -19,9 +19,20 @@
 
 
 .background--black {
-    background-color: var(--background-black);
-    color: var(--background-black-color);
+    background-color: black;
+    color: white;
+
     a {
         color: currentcolor;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--link-hover-color);
+        }
+
+        &:visited {
+            color: var(--link-visited-color);
+        }
     }
 }
