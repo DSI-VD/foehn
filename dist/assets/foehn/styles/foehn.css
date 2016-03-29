@@ -1643,6 +1643,8 @@ hr {
  * Color variations
  */
 
+/* Button secondary */
+
 .vd-btn--secondary {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
@@ -1662,6 +1664,23 @@ hr {
     color: rgba(255, 255, 255, 1);
     background-color: #9a1919;
     background-color: rgba(154, 25, 25, 1);
+}
+
+/* Button invisible*/
+
+.vd-btn--invisible {
+    color: inherit;
+    background-color: inherit;
+}
+
+.vd-btn--invisible:hover {
+    color: inherit;
+    background-color: inherit;
+}
+
+.vd-btn--invisible:active {
+    color: inherit;
+    background-color: inherit;
 }
 
 /* ------------------------------------ *\
