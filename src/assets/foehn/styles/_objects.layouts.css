@@ -54,6 +54,10 @@
     }
 }
 
+.layout__item--order-first {
+    order: -1;
+}
+
 /* Grid */
 @for $cycle from 2 to 5 {
     @for $fraction from 1 to 5 {
