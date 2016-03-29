@@ -35,6 +35,7 @@
  * OBJECTS
  * Wrappers.............Wrapping and constraining elements.
  * Buttons..............Buttons.
+ * List-inline..........Displays a list as one horizontal row.
  * Layouts..............Grid system.
  * Expos................Thumbnails system.
  * Boxes................Boxes.
@@ -124,6 +125,7 @@
 
 @import "_objects.wrappers.css";
 @import "_objects.buttons.css";
+@import "_objects.list-inline.css";
 @import "_objects.layouts.css";
 @import "_objects.expos.css";
 @import "_objects.box.css";
