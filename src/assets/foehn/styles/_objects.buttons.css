@@ -157,20 +157,20 @@
 
 
 
-/* Button invisible */
+/* Button transparent */
 :root {
-    --btn-text-color-invisible: inherit;
-    --btn-background-color-invisible: inherit;
-    --btn-text-color-invisible-hover: inherit;
-    --btn-background-color-invisible-hover: inherit;
-    --btn-text-color-invisible-active: inherit;
-    --btn-background-color-invisible-active: inherit;
+    --btn-text-color-transparent: inherit;
+    --btn-background-color-transparent: inherit;
+    --btn-text-color-transparent-hover: inherit;
+    --btn-background-color-transparent-hover: inherit;
+    --btn-text-color-transparent-active: inherit;
+    --btn-background-color-transparent-active: inherit;
 }
 
-@mixin btn invisible,
+@mixin btn transparent,
     inherit,
-    var(--btn-background-color-invisible),
-    var(--btn-text-color-invisible-hover),
-    var(--btn-background-color-invisible-hover),
-    var(--btn-text-color-invisible-active),
-    var(--btn-background-color-invisible-active);
+    var(--btn-background-color-transparent),
+    var(--btn-text-color-transparent-hover),
+    var(--btn-background-color-transparent-hover),
+    var(--btn-text-color-transparent-active),
+    var(--btn-background-color-transparent-active);
