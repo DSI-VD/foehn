@@ -4,3 +4,4 @@ npm-debug.*
 .publish
 build
 .DS_Store
+dist
