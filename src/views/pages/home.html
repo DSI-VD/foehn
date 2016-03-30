@@ -1,13 +1,17 @@
-<div class="container">
-    <h1>Hello, World!</h1>
-</div>
+{{> global.header}}
+
+{{> global.navigation}}
+
+{{> page-title title='Site officiel du Canton de Vaud'}}
+
+{{> last-news}}
 
 <div class="container">
-    {{> paragraph}}
-</div>
+    <h2>Présentation / Missions</h2>
 
-<div class="container">
     {{> paragraph}}
+    {{> lists.unorderd}}
+    <p><a href="#">Organigramme (PDF)</a></p>
 </div>
 
 {{> global.footer}}
