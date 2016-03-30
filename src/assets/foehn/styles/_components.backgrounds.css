@@ -14,13 +14,9 @@
     --background-black-color: var(--color-white;);
 }
 
-
-
-
-
 .background--black {
-    background-color: black;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--background-black-color);
 
     a {
         color: currentcolor;
