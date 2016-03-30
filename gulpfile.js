@@ -17,6 +17,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var stylelint = require("stylelint");
 var classPrfx = require('postcss-class-prefix');
+var htmllint = require('gulp-htmllint');
 var reporter = require("postcss-reporter");
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
@@ -170,9 +171,23 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest(config.dest + '/assets/foehn/fonts'));
 });
 
+// lit HTML
+gulp.task('lint-html', function() {
+    return gulp.src(['src/**/*.html', '!src/**/f-*.html'])
+        .pipe(htmllint({}, htmllintReporter));
+});
+function htmllintReporter(filepath, issues) {
+    if (issues.length > 0) {
+        issues.forEach(function (issue) {
+            gutil.log(gutil.colors.cyan('[gulp-htmllint] ') + gutil.colors.white(filepath + ' [' + issue.line + ',' + issue.column + ']: ') + gutil.colors.red('(' + issue.code + ') ' + issue.msg));
+        });
+
+        process.exitCode = 1;
+    }
+}
 
 // assemble
-gulp.task('assemble', function (done) {
+gulp.task('assemble', ["lint-html"], function (done) {
     assemble({
         logErrors: config.dev
     });
