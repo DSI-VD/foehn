@@ -36,17 +36,3 @@
         margin-left: -var(--base-spacing-unit);
     }
 }
-
-/**
- * Container vertical padding
- *
- * Add vertical padding on the container
- */
-.container--padding-vertical {
-    padding-top: var(--base-spacing-unit);
-    padding-bottom: var(--base-spacing-unit);
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
