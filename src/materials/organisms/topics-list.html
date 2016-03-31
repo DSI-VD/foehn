@@ -1,14 +1,13 @@
-<div class="vd-container">
-    <h2>Topics</h2>
-    <ul>
+<nav class="vd-container">
+    {{> headings.heading-level-two}}
+    <ul class="vd-list-bare">
         {{#each foehn.topics}}
-        <li>{{@key}}
-            <ul>
-                {{#each this}}
-                    <li>{{this}}</li>
-                {{/each}}
-            </ul>
+        <li>
+            <a href="#">
+                <h3 class="vd-u-mb0">{{@key}}</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </a>
         </li>
         {{/each}}
     </ul>
-</div>
+</nav>
