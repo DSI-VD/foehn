@@ -32,3 +32,14 @@
         }
     }
 }
+
+/**
+ * Background gray light
+ */
+:root {
+    --background-gray-light: var(--color-gray-light;);
+}
+
+.background--gray-light {
+    background-color: var(--background-gray-light);
+}
