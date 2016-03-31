@@ -1,0 +1,169 @@
+/* ------------------------------------ *\
+    #SPACING
+\* ------------------------------------ */
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding
+ * top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+/* Predefine the variables below in order to alter and enable specific
+features. */
+
+:root {
+    --margin: var(--base-spacing-unit);
+    --padding: var(--base-spacing-unit);
+}
+
+
+
+
+
+/**
+ * Margin helper classes.
+ *
+ * Add margins.
+ */
+
+.u-m {
+    margin: var(--margin);
+}
+
+.u-mt {
+    margin-top: var(--margin);
+}
+
+.u-mr {
+    margin-right: var(--margin);
+}
+
+.u-mb {
+    margin-bottom: var(--margin);
+}
+
+.u-ml {
+    margin-left: var(--margin);
+}
+
+.u-mh {
+    margin-right: var(--margin);
+    margin-left: var(--margin);
+}
+
+.u-mv {
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+
+/**
+ * Remove margins.
+ */
+
+.u-m0 {
+    margin: 0 !important;
+}
+
+.u-mt0 {
+    margin-top: 0 !important;
+}
+
+.u-mr0 {
+    margin-right: 0 !important;
+}
+
+.u-mb0 {
+    margin-bottom: 0 !important;
+}
+
+.u-ml0 {
+    margin-left: 0 !important;
+}
+
+.u-mh0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.u-mv0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+
+
+
+/**
+ * Padding helper classes.
+ *
+ * Add paddings.
+ */
+
+.u-p {
+    padding: var(--padding) !important;
+}
+
+.u-pt {
+    padding-top: var(--padding) !important;
+}
+
+.u-pr {
+    padding-right: var(--padding) !important;
+}
+
+.u-pb {
+    padding-bottom: var(--padding) !important;
+}
+
+.u-pl {
+    padding-left: var(--padding) !important;
+}
+
+.u-ph {
+    padding-right: var(--padding) !important;
+    padding-left: var(--padding) !important;
+}
+
+.u-pv {
+    padding-top: var(--padding) !important;
+    padding-bottom: var(--padding) !important;
+}
+
+
+/**
+ * Remove paddings.
+ */
+
+.u-p0 {
+    padding: 0 !important;
+}
+
+.u-pt0 {
+    padding-top: 0 !important;
+}
+
+.u-pr0 {
+    padding-right: 0 !important;
+}
+
+.u-pb0 {
+    padding-bottom: 0 !important;
+}
+
+.u-pl0 {
+    padding-left: 0 !important;
+}
+
+.u-ph0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.u-pv0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
