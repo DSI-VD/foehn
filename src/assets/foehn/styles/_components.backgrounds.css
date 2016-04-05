@@ -15,8 +15,9 @@
 }
 
 .background--black {
-    background-color: var(--background-black);
     color: var(--background-black-color);
+
+    background-color: var(--background-black);
 
     a {
         color: currentcolor;

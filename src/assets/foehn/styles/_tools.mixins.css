@@ -58,7 +58,8 @@
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: oldstyle-nums, proportional-nums;
     font-variant-caps: all-small-caps;
-    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum",
+        "smcp", "c2sc";
     font-kerning: normal;
     text-transform: uppercase; /* [1] */
 }

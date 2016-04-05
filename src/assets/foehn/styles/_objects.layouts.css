@@ -42,16 +42,17 @@
 
 
 
-
 /**
  * Flex items
  */
 
-/* Micro layout*/
+/* Micro layout */
 @for $flex-grow from 1 to 3 {
+
     .layout__item--flex-$(flex-grow) {
         flex: $flex-grow;
     }
+
 }
 
 .layout__item--order-first {
