@@ -84,6 +84,6 @@
     "webpack": "^1.12.1"
   },
   "dependencies": {
-    "gulp-css-scss": "0.0.2"
+    "gulp-css-scss": "0.1.0"
   }
 }
