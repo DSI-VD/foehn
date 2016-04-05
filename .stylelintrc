@@ -14,17 +14,99 @@
         "block-opening-brace-space-after": "always-single-line",
         "block-opening-brace-space-before": "always-single-line",
         "color-no-hex": true,
-        "color-no-named": true,
+        "color-named": "never",
         "comment-empty-line-before": "always",
         "comment-whitespace-inside": "always",
         "declaration-bang-space-after": "never",
         "declaration-bang-space-before": "always",
         "declaration-colon-space-after": "always",
         "declaration-colon-space-before": "never",
+        "declaration-block-no-duplicate-properties": true,
+        "declaration-block-no-shorthand-property-overrides": true,
+        "declaration-block-properties-order": [
+            [
+                {
+                    order: "strict",
+                    emptyLineBefore: "always",
+                    properties: [
+                        "position",
+                        "top",
+                        "right",
+                        "bottom",
+                        "left",
+                        "z-index"
+                    ]
+                },
+                {
+                    order: "strict",
+                    emptyLineBefore: "always",
+                    properties: [
+                        "display",
+                        "float",
+                        "clear",
+                        "flex",
+                        "flex-grow",
+                        "flex-shrink",
+                        "flex-basis",
+                        "width",
+                        "max-width",
+                        "min-width",
+                        "height",
+                        "max-height",
+                        "min-height"
+                    ]
+                },
+                {
+                    order: "strict",
+                    emptyLineBefore: "always",
+                    properties: [
+                        "font",
+                        "font-size",
+                        "font-weight",
+                        "font-style",
+                        "font-family",
+                        "font-variant",
+                        "font-feature",
+                        "font-kerning",
+                        "font-stretch",
+                        "line-height",
+                        "color",
+                        "text",
+                        "letter-spacing"
+                    ]
+                },
+                {
+                    order: "strict",
+                    emptyLineBefore: "always",
+                    properties: [
+                        "background",
+                        "border",
+                        "border-top",
+                        "border-right",
+                        "border-bottom",
+                        "border-left",
+                        "margin",
+                        "margin-top",
+                        "margin-right",
+                        "margin-bottom",
+                        "margin-left",
+                        "padding",
+                        "padding-top",
+                        "padding-right",
+                        "padding-bottom",
+                        "padding-left",
+                    ]
+                }
+            ],
+            {
+                unspecified: "bottom"
+            }
+        ],
         "declaration-block-semicolon-newline-after": "always",
         "declaration-block-semicolon-newline-before": "never-multi-line",
         "declaration-block-semicolon-space-after": "always-single-line",
         "declaration-block-single-line-max-declarations": 1,
+        "declaration-block-trailing-semicolon": "always",
         "function-comma-newline-after": "always-multi-line",
         "function-comma-newline-before": "never-multi-line",
         "function-comma-space-after": "always",
@@ -58,92 +140,10 @@
             "always",
             ignore: ["after-comment"]
         ],
-        "rule-no-duplicate-properties": true,
-        "rule-no-shorthand-property-overrides": true,
         "rule-non-nested-empty-line-before": [
             "always",
             ignore: ["after-comment"]
         ],
-        "rule-properties-order": [
-            [
-                {
-                    order: "strict",
-                    emptyLineBefore: true,
-                    properties: [
-                        "position",
-                        "top",
-                        "right",
-                        "bottom",
-                        "left",
-                        "z-index"
-                    ]
-                },
-                {
-                    order: "strict",
-                    emptyLineBefore: true,
-                    properties: [
-                        "display",
-                        "float",
-                        "clear",
-                        "flex",
-                        "flex-grow",
-                        "flex-shrink",
-                        "flex-basis",
-                        "width",
-                        "max-width",
-                        "min-width",
-                        "height",
-                        "max-height",
-                        "min-height"
-                    ]
-                },
-                {
-                    order: "strict",
-                    emptyLineBefore: true,
-                    properties: [
-                        "font",
-                        "font-size",
-                        "font-weight",
-                        "font-style",
-                        "font-family",
-                        "font-variant",
-                        "font-feature",
-                        "font-kerning",
-                        "font-stretch",
-                        "line-height",
-                        "color",
-                        "text",
-                        "letter-spacing"
-                    ]
-                },
-                {
-                    order: "strict",
-                    emptyLineBefore: true,
-                    properties: [
-                        "background",
-                        "border",
-                        "border-top",
-                        "border-right",
-                        "border-bottom",
-                        "border-left",
-                        "margin",
-                        "margin-top",
-                        "margin-right",
-                        "margin-bottom",
-                        "margin-left",
-                        "padding",
-                        "padding-top",
-                        "padding-right",
-                        "padding-bottom",
-                        "padding-left",
-                    ]
-                }
-            ],
-            {
-                unspecified: "bottom"
-            }
-        ],
-        "rule-trailing-semicolon": "always",
         "root-no-standard-properties": true,
         "selector-combinator-space-after": "always",
         "selector-combinator-space-before": "always",
