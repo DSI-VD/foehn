@@ -41,7 +41,7 @@
     "babel-preset-stage-2": "^6",
     "browser-sync": "^2.7.1",
     "del": "^2",
-    "fabricator-assemble": "^1.1.10",
+    "fabricator-assemble": "1.1.10",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.0.0",
     "gulp-gh-pages": "^0.5.4",
