@@ -189,7 +189,8 @@ function htmllintReporter(filepath, issues) {
 // assemble
 gulp.task('assemble', ["lint-html"], function (done) {
     assemble({
-        logErrors: config.dev
+        logErrors: config.dev,
+        dest: config.dest
     });
     done();
 });
