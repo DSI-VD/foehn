@@ -68,7 +68,7 @@
     "postcss-hidden": "^1.0.7",
     "postcss-import": "^8.1.0",
     "postcss-media-minmax": "^2.1.0",
-    "postcss-mixins": "^2.1.1",
+    "postcss-mixins": "^4.0.1",
     "postcss-nested": "^1.0.0",
     "postcss-nesting": "^2.0.6",
     "postcss-property-lookup": "^1.1.4",
