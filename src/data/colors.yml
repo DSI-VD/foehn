@@ -5,6 +5,7 @@ primary:
     base: "rgba(0, 0, 0, .8)"
     gray-dark: "rgba(50, 58, 69, 1)"
     gray-light: "rgba(174, 176, 181, 1)"
+    gray-lighter: "rgba(214, 215, 217, 1)"
     white: "rgba(255, 255, 255, 1)"
 secondary:
   primary-alt:

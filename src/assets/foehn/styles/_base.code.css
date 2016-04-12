@@ -3,7 +3,7 @@
 \* ------------------------------------ */
 
 :root {
-    --code-text-background: var(--color-gray-light);
+    --code-text-background: var(--color-gray-lighter);
 }
 
 /**
