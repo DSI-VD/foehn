@@ -171,7 +171,7 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest(config.dest + '/assets/foehn/fonts'));
 });
 
-// lit HTML
+// lint HTML
 gulp.task('lint-html', function() {
     return gulp.src(['src/**/*.html', '!src/**/f-*.html'])
         .pipe(htmllint({}, htmllintReporter));
