@@ -106,6 +106,8 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
         require('postcss-selector-not'),
         require('postcss-hidden'),
         require('lost'),
+        require('postcss-calc'),
+        require('pixrem')({html: false}),
         require('postcss-color-rgba-fallback'),
         require('autoprefixer')({browsers: config.browsers}),
         require('postcss-class-prefix')('vd-', {
@@ -113,9 +115,7 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
                 /wf-/ // ignore webfontloader classes
             ]
         }),
-        require('perfectionist'),
-        require('postcss-calc'),
-        require('pixrem')({html: false})
+        require('perfectionist')
     ]
     return gulp.src(config.src.styles.foehn)
         // If we are in dev, start sourcemaps
