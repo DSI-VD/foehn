@@ -1,251 +1,249 @@
 <!doctype html>
-<html>
+<html lang="">
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title></title>
+    <title></title>
 
-	<link rel="stylesheet" href=".//assets/fabricator/styles/f.css">
+    <link rel="stylesheet" href=".//assets/fabricator/styles/f.css">
 
-	<!-- toolkit styles -->
-	<link rel="stylesheet" href=".//assets/toolkit/styles/toolkit.css">
-	<!-- /toolkit styles -->
+    <!-- foehn styles -->
+    <link rel="stylesheet" href=".//assets/foehn/styles/foehn.css">
+    <!-- /foehn styles -->
 
 </head>
 <body>
 
-		<!-- fabricator icons -->
-		<svg style="display: none;">
-			<symbol id="f-icon-code" viewBox="0 0 512 512">
-				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
-			</symbol>
-			<symbol id="f-icon-notes" viewBox="0 0 512 512">
-				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
-			</symbol>
-			<symbol id="f-icon-labels" viewBox="0 0 512 512">
-				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
-			</symbol>
-			<symbol id="f-icon-menu" viewBox="0 0 512 512">
-				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
-			</symbol>
-			<symbol id="f-icon-settings" viewBox="0 0 512 512">
-				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
-			</symbol>
-		</svg>
-		<!-- /fabricator icons -->
-		<!-- fabricator menu -->
-		<div class="f-menu">
-		
-			<div class="f-controls">
-				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
-					<svg>
-						<use xlink:href="#f-icon-labels" />
-					</svg>
-				</div>
-				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
-					<svg>
-						<use xlink:href="#f-icon-notes" />
-					</svg>
-				</div>
-				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
-					<svg>
-						<use xlink:href="#f-icon-code" />
-					</svg>
-				</div>
-			</div>
-		
-			<ul>
-		
-				<li>
-					<a href="index.html" class="f-menu__heading">Overview</a>
-				</li>
-		
-				<li>
-					<a href="atoms.html" class="f-menu__heading">Atoms</a>
-					<ul>
-						<li>
-							<a href="atoms.html#01-headings">Headings</a>
-						</li>
-						<li>
-							<a href="atoms.html#02-paragraph">Paragraph</a>
-						</li>
-						<li>
-							<a href="atoms.html#03-inline-text">Inline Text</a>
-						</li>
-						<li>
-							<a href="atoms.html#04-time">Time</a>
-						</li>
-						<li>
-							<a href="atoms.html#05-lists">Lists</a>
-						</li>
-						<li>
-							<a href="atoms.html#06-blockquote">Blockquote</a>
-						</li>
-						<li>
-							<a href="atoms.html#07-preformated-text">Preformated Text</a>
-						</li>
-						<li>
-							<a href="atoms.html#08-hr">Hr</a>
-						</li>
-						<li>
-							<a href="atoms.html#09-images">Images</a>
-						</li>
-						<li>
-							<a href="atoms.html#10-figure-caption">Figure Caption</a>
-						</li>
-						<li>
-							<a href="atoms.html#11-table">Table</a>
-						</li>
-						<li>
-							<a href="atoms.html#12-buttons">Buttons</a>
-						</li>
-						<li>
-							<a href="atoms.html#13-forms">Forms</a>
-						</li>
-						<li>
-							<a href="atoms.html#14-containers">Containers</a>
-						</li>
-						<li>
-							<a href="atoms.html#15-visibility">Visibility</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="molecules.html" class="f-menu__heading">Molecules</a>
-					<ul>
-						<li>
-							<a href="molecules.html#01-text">Text</a>
-						</li>
-						<li>
-							<a href="molecules.html#02-medias">Medias</a>
-						</li>
-						<li>
-							<a href="molecules.html#03-blocks">Blocks</a>
-						</li>
-						<li>
-							<a href="molecules.html#04-forms">Forms</a>
-						</li>
-						<li>
-							<a href="molecules.html#05-boxes">Boxes</a>
-						</li>
-						<li>
-							<a href="molecules.html#06-layout">Layout</a>
-						</li>
-						<li>
-							<a href="molecules.html#07-expos">Expos</a>
-						</li>
-						<li>
-							<a href="molecules.html#08-alerts">Alerts</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="organisms.html" class="f-menu__heading">Organisms</a>
-					<ul>
-						<li>
-							<a href="organisms.html#00-global">Global</a>
-						</li>
-						<li>
-							<a href="organisms.html#agenda">Agenda</a>
-						</li>
-						<li>
-							<a href="organisms.html#boxes-list">Boxes List</a>
-						</li>
-						<li>
-							<a href="organisms.html#last-news">Last News</a>
-						</li>
-						<li>
-							<a href="organisms.html#list-news">List News</a>
-						</li>
-						<li>
-							<a href="organisms.html#login">Login</a>
-						</li>
-						<li>
-							<a href="organisms.html#navigation">Navigation</a>
-						</li>
-						<li>
-							<a href="organisms.html#page-title">Page Title</a>
-						</li>
-						<li>
-							<a href="organisms.html#topics-list">Topics List</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="templates.html" class="f-menu__heading">Templates</a>
-					<ul>
-						<li>
-							<a href="templates.html#homepage">Homepage</a>
-						</li>
-						<li>
-							<a href="templates.html#organisation">Organisation</a>
-						</li>
-					</ul>
-				</li>
-		
-				<li>
-					<a href="pages.html" class="f-menu__heading">Pages</a>
-					<ul>
-						<li>
-							<a href="pages/home.html" target="_blank">Home</a>
-						</li>
-						<li>
-							<a href="pages/organisation.html" target="_blank">Organisation</a>
-						</li>
-						<li>
-							<a href="pages/prestations-font-comparaison.html" target="_blank">Prestations Font Comparaison</a>
-						</li>
-						<li>
-							<a href="pages/prestations.html" target="_blank">Prestations</a>
-						</li>
-						<li>
-							<a href="pages/typography-font-comparaison.html" target="_blank">Typography Font Comparaison</a>
-						</li>
-						<li>
-							<a href="pages/typography.html" target="_blank">Typography</a>
-						</li>
-					</ul>
-				</li>
-		
-				<li>
-					<a href="docs.html" class="f-menu__heading">Docs</a>
-					<ul>
-						<li>
-							<a href="docs.html#breakpoints">Breakpoints</a>
-						</li>
-						<li>
-							<a href="docs.html#credits">Credits</a>
-						</li>
-						<li>
-							<a href="docs.html#css">Css</a>
-						</li>
-						<li>
-							<a href="docs.html#javascript">Javascript</a>
-						</li>
-						<li>
-							<a href="docs.html#typography">Typography</a>
-						</li>
-					</ul>
-				</li>
-		
-			</ul>
-		
-		
-		</div>
-		<!-- /fabricator menu -->
-		<div class="f-container">
-			<div class="f-control-bar">
-				<div class="f-control f-menu-toggle">
-					<svg>
-						<use xlink:href="#f-icon-menu" />
-					</svg>
-				</div>
-			</div>
+        <!-- fabricator icons -->
+        <svg style="display: none;">
+        	<symbol id="f-icon-code" viewBox="0 0 512 512">
+        		<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+        	</symbol>
+        	<symbol id="f-icon-notes" viewBox="0 0 512 512">
+        		<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+        	</symbol>
+        	<symbol id="f-icon-labels" viewBox="0 0 512 512">
+        		<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+        	</symbol>
+        	<symbol id="f-icon-menu" viewBox="0 0 512 512">
+        		<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+        	</symbol>
+        	<symbol id="f-icon-settings" viewBox="0 0 512 512">
+        		<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+        	</symbol>
+        </svg>
+        <!-- /fabricator icons -->
+        <!-- fabricator menu -->
+        <div class="f-menu">
+        
+        	<div class="f-controls">
+        		<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+        			<svg>
+        				<use xlink:href="#f-icon-labels" />
+        			</svg>
+        		</div>
+        		<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+        			<svg>
+        				<use xlink:href="#f-icon-notes" />
+        			</svg>
+        		</div>
+        		<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+        			<svg>
+        				<use xlink:href="#f-icon-code" />
+        			</svg>
+        		</div>
+        	</div>
+        
+        	<ul>
+        
+        		<li>
+        			<a href="index.html" class="f-menu__heading">Overview</a>
+        		</li>
+        
+        		<li>
+        			<a href="atoms.html" class="f-menu__heading">Atoms</a>
+        			<ul>
+        				<li>
+        					<a href="atoms.html#01-headings">Headings</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#02-paragraph">Paragraph</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#03-inline-text">Inline Text</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#04-time">Time</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#05-lists">Lists</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#06-blockquote">Blockquote</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#07-preformated-text">Preformated Text</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#08-hr">Hr</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#09-images">Images</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#10-figure-caption">Figure Caption</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#11-table">Table</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#12-buttons">Buttons</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#13-forms">Forms</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#14-containers">Containers</a>
+        				</li>
+        				<li>
+        					<a href="atoms.html#15-visibility">Visibility</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="molecules.html" class="f-menu__heading">Molecules</a>
+        			<ul>
+        				<li>
+        					<a href="molecules.html#01-text">Text</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#02-medias">Medias</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#03-blocks">Blocks</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#04-forms">Forms</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#05-boxes">Boxes</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#06-layout">Layout</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#07-expos">Expos</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#08-alerts">Alerts</a>
+        				</li>
+        				<li>
+        					<a href="molecules.html#09-backgrounds">Backgrounds</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="organisms.html" class="f-menu__heading">Organisms</a>
+        			<ul>
+        				<li>
+        					<a href="organisms.html#00-global">Global</a>
+        				</li>
+        				<li>
+        					<a href="organisms.html#agenda">Agenda</a>
+        				</li>
+        				<li>
+        					<a href="organisms.html#boxes-list">Boxes List</a>
+        				</li>
+        				<li>
+        					<a href="organisms.html#last-news">Last News</a>
+        				</li>
+        				<li>
+        					<a href="organisms.html#list-news">List News</a>
+        				</li>
+        				<li>
+        					<a href="organisms.html#login">Login</a>
+        				</li>
+        				<li>
+        					<a href="organisms.html#page-title">Page Title</a>
+        				</li>
+        				<li>
+        					<a href="organisms.html#topics-list">Topics List</a>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a href="templates.html" class="f-menu__heading">Templates</a>
+        			<ul>
+        				<li>
+        					<a href="templates.html#homepage">Homepage</a>
+        				</li>
+        				<li>
+        					<a href="templates.html#organisation">Organisation</a>
+        				</li>
+        				<li>
+        					<a href="templates.html#theme">Theme</a>
+        				</li>
+        			</ul>
+        		</li>
+        
+        		<li>
+        			<a href="pages.html" class="f-menu__heading">Pages</a>
+        			<ul>
+        				<li>
+        					<a href="pages/home.html" target="_blank">Home</a>
+        				</li>
+        				<li>
+        					<a href="pages/organisation.html" target="_blank">Organisation</a>
+        				</li>
+        				<li>
+        					<a href="pages/prestations.html" target="_blank">Prestations</a>
+        				</li>
+        				<li>
+        					<a href="pages/typography.html" target="_blank">Typography</a>
+        				</li>
+        			</ul>
+        		</li>
+        
+        		<li>
+        			<a href="docs.html" class="f-menu__heading">Docs</a>
+        			<ul>
+        				<li>
+        					<a href="docs.html#breakpoints">Breakpoints</a>
+        				</li>
+        				<li>
+        					<a href="docs.html#credits">Credits</a>
+        				</li>
+        				<li>
+        					<a href="docs.html#css">Css</a>
+        				</li>
+        				<li>
+        					<a href="docs.html#javascript">Javascript</a>
+        				</li>
+        				<li>
+        					<a href="docs.html#typography">Typography</a>
+        				</li>
+        			</ul>
+        		</li>
+        
+        	</ul>
+        
+        
+        </div>
+        <!-- /fabricator menu -->
+        <div class="f-container">
+            <div class="f-control-bar">
+            	<div class="f-control f-menu-toggle">
+            		<svg>
+            			<use xlink:href="#f-icon-menu" />
+            		</svg>
+            	</div>
+            </div>
 
 
-	
+    
 <h1 data-f-toggle="labels">Atoms</h1>
 
 
@@ -258,15 +256,13 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Heading Level One</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<h1>Lorem ipsum dolor sit (37 characters)</h1>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -278,15 +274,13 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Heading Level Two</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<h2>Lorem ipsum dolor sit (37 characters)</h2>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -298,15 +292,13 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Heading Level Tree</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<h3>Lorem ipsum dolor sit (37 characters)</h3>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -318,15 +310,13 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Heading Level Four</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<h4>Lorem ipsum dolor sit (37 characters)</h4>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -338,15 +328,13 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Heading Level Five</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<h5>Lorem ipsum dolor sit (37 characters)</h5>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -358,15 +346,13 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Heading Level Six</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<h6>Lorem ipsum dolor sit (37 characters)</h6>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -421,15 +407,13 @@ respective heading.</p>
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Paragraph</h2>
 		<div class="f-item-controls">
-			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div>
-<div class="f-item-preview">
+	</div><div class="f-item-preview">
 	<p>
 	A paragraph (from the Greek paragraphos, &quot;to write beside&quot; or &quot;written beside&quot;) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required
 	by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. (376 characters)
@@ -455,15 +439,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Abbreviation</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -475,15 +457,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">B</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	The <b>b element</b> is stylistically different text from normal text, without any special importance
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -495,15 +475,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Citation</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<cite>This is a citation</cite>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -515,15 +493,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Code</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<code>This is what inline code looks like.</code>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -535,15 +511,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Definition</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	The <dfn>dfn element</dfn> indicates a definition.
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -555,15 +529,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Deleted</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<del>This text is deleted</del>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -575,15 +547,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Emphasis</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<em>This text has added emphasis</em>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -608,7 +578,7 @@ respective heading.</p>
 				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<ul>
-<li>This class should not be used for typographical reasons. The <code>&lt;sub&gt;</code> tag is a good candidate for this purpose.</li>
+<li>This class should not be used for typographical reasons. The <code>sub</code> tag is a good candidate for this purpose.</li>
 <li>This class must used for styling purpose like the styling of the product name Latex.</li>
 </ul>
 
@@ -652,15 +622,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">I</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	The <i>i element</i> is text that is set off from the normal text
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -672,15 +640,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Inserted</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<ins>This text is inserted</ins>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -692,15 +658,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Keyboard Input</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	Keybord input: <kbd>Cmd</kbd>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -712,15 +676,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Link Silent</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<a href="#" class="vd-silent-link">This is a silent link</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -732,15 +694,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Link</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<a href="#">This is a text link</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -752,15 +712,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Mark</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	The <mark>mark element</mark> indicates a highlight
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -772,15 +730,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Quotation</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -792,15 +748,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Sample</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<samp>This is sample output from a computer program</samp>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -844,15 +798,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Small</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<small>This small text is small for for fine print, etc.</small>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -864,15 +816,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Strike</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<s>This text has a strikethrough</s>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -884,15 +834,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Strong</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<strong>Strong is used to indicate strong importance</strong>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -934,15 +882,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Superscript</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	Superscript<sup>®</sup>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -954,15 +900,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Unarticulated</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -974,15 +918,13 @@ respective heading.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Variable</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	The <var>variable element</var>, such as <var>x</var> = <var>y</var>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -999,15 +941,13 @@ respective heading.</p>
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Time</h2>
 		<div class="f-item-controls">
-			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div>
-<div class="f-item-preview">
+	</div><div class="f-item-preview">
 	<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -1023,19 +963,77 @@ respective heading.</p>
 	<div class="f-item-heading-group">
 		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
 	</div>
-		<div class="f-item-group" id="05-lists.definition">
+		<div class="f-item-group" id="05-lists.01-unorderd">
 			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Definition</h3>
+				<h3 class="f-item-heading">Unorderd</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
+	<ul>
+	<li>List Item 0</li>
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+	<li>List Item 3</li>
+	<li>List Item 4</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul&gt;
+	&lt;li&gt;List Item 0&lt;/li&gt;
+	&lt;li&gt;List Item 1&lt;/li&gt;
+	&lt;li&gt;List Item 2&lt;/li&gt;
+	&lt;li&gt;List Item 3&lt;/li&gt;
+	&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="05-lists.02-ordered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ordered</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<ol>
+	<li>List Item 0</li>
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+	<li>List Item 3</li>
+	<li>List Item 4</li>
+</ol>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ol&gt;
+	&lt;li&gt;List Item 0&lt;/li&gt;
+	&lt;li&gt;List Item 1&lt;/li&gt;
+	&lt;li&gt;List Item 2&lt;/li&gt;
+	&lt;li&gt;List Item 3&lt;/li&gt;
+	&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="05-lists.03-definition">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Definition</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
 	<dl>
 	<dt>Definition List</dt>
 	<dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
@@ -1061,52 +1059,18 @@ respective heading.</p>
 </div>
 
 		</div>
-		<div class="f-item-group" id="05-lists.ordered">
+		<div class="f-item-group" id="05-lists.04-inline">
 			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Ordered</h3>
+				<h3 class="f-item-heading">Inline</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
-	<ol>
-	<li>List Item 0</li>
-	<li>List Item 1</li>
-	<li>List Item 2</li>
-	<li>List Item 3</li>
-	<li>List Item 4</li>
-</ol>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ol&gt;
-	&lt;li&gt;List Item 0&lt;/li&gt;
-	&lt;li&gt;List Item 1&lt;/li&gt;
-	&lt;li&gt;List Item 2&lt;/li&gt;
-	&lt;li&gt;List Item 3&lt;/li&gt;
-	&lt;li&gt;List Item 4&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-</div>
-
-		</div>
-		<div class="f-item-group" id="05-lists.unorderd">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Unorderd</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
-			</div>
-<div class="f-item-preview">
-	<ul>
+			</div><div class="f-item-preview">
+	<ul class="vd-list-inline">
 	<li>List Item 0</li>
 	<li>List Item 1</li>
 	<li>List Item 2</li>
@@ -1115,7 +1079,46 @@ respective heading.</p>
 </ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ul&gt;
+	<pre><code class="language-markup">&lt;ul class=&quot;vd-list-inline&quot;&gt;
+	&lt;li&gt;List Item 0&lt;/li&gt;
+	&lt;li&gt;List Item 1&lt;/li&gt;
+	&lt;li&gt;List Item 2&lt;/li&gt;
+	&lt;li&gt;List Item 3&lt;/li&gt;
+	&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="05-lists.05-bare">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Bare</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Remove any indents and bullet points from lists.</p>
+
+</div>
+<div class="f-item-preview">
+	<ul class="vd-list-bare">
+	<li>List Item 0</li>
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+	<li>List Item 3</li>
+	<li>List Item 4</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class=&quot;vd-list-bare&quot;&gt;
 	&lt;li&gt;List Item 0&lt;/li&gt;
 	&lt;li&gt;List Item 1&lt;/li&gt;
 	&lt;li&gt;List Item 2&lt;/li&gt;
@@ -1174,15 +1177,13 @@ while a text representation of the source can be given using the
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Preformated Text</h2>
 		<div class="f-item-controls">
-			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div>
-<div class="f-item-preview">
+	</div><div class="f-item-preview">
 	<pre>
 P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
@@ -1214,15 +1215,13 @@ p q r s t u v w x y z { | } ~
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Hr</h2>
 		<div class="f-item-controls">
-			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div>
-<div class="f-item-preview">
+	</div><div class="f-item-preview">
 	<hr>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -1261,19 +1260,19 @@ If these attributes are missing, the image is responsive.</p>
 </div>
 <div class="f-item-preview">
 	<img src="http://placehold.it/800x600?text=4x3+(800x600)" sizes="100w" srcset="http://placehold.it/360x270?text=4x3+(360x270) 360w,
-             http://placehold.it/540x405?text=4x3+(540x405) 540w,
-             http://placehold.it/800x600?text=4x3+(800x600) 800w,
-             http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
-             http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
-             http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
+        http://placehold.it/540x405?text=4x3+(540x405) 540w,
+        http://placehold.it/800x600?text=4x3+(800x600) 800w,
+        http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+        http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+        http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w" alt="4x3 landscape image">
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;img src=&quot;http://placehold.it/800x600?text=4x3+(800x600)&quot; sizes=&quot;100w&quot; srcset=&quot;http://placehold.it/360x270?text=4x3+(360x270) 360w,
-             http://placehold.it/540x405?text=4x3+(540x405) 540w,
-             http://placehold.it/800x600?text=4x3+(800x600) 800w,
-             http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
-             http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
-             http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;</code></pre>
+        http://placehold.it/540x405?text=4x3+(540x405) 540w,
+        http://placehold.it/800x600?text=4x3+(800x600) 800w,
+        http://placehold.it/1060x795?text=4x3+(1060x795) 1060w,
+        http://placehold.it/1600x1200?text=4x3+(1600x1200) 1600w,
+        http://placehold.it/2400x1800?text=4x3+(2400x1800) 2400w&quot; alt=&quot;4x3 landscape image&quot;&gt;</code></pre>
 </div>
 
 		</div>
@@ -1317,24 +1316,22 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Logo Square</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<picture>
-	<source type="image/svg+xml" srcset="assets/toolkit/images/logo-square.svg">
-	<img src="assets/toolkit/images/logo-square@1x.png" srcset="assets/toolkit/images/logo-square@2x.png 2x, assets/toolkit/images/logo-square@3x.png 3x" alt="Logo de l'Etat de Vaud">
+	<source type="image/svg+xml" srcset="assets/foehn/images/logo-square.svg">
+	<img src="assets/foehn/images/logo-square@1x.png" srcset="assets/foehn/images/logo-square@2x.png 2x, assets/foehn/images/logo-square@3x.png 3x" alt="Logo de l'Etat de Vaud">
 </picture>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;picture&gt;
-	&lt;source type=&quot;image/svg+xml&quot; srcset=&quot;assets/toolkit/images/logo-square.svg&quot;&gt;
-	&lt;img src=&quot;assets/toolkit/images/logo-square@1x.png&quot; srcset=&quot;assets/toolkit/images/logo-square@2x.png 2x, assets/toolkit/images/logo-square@3x.png 3x&quot; alt=&quot;Logo de l&#x27;Etat de Vaud&quot;&gt;
+	&lt;source type=&quot;image/svg+xml&quot; srcset=&quot;assets/foehn/images/logo-square.svg&quot;&gt;
+	&lt;img src=&quot;assets/foehn/images/logo-square@1x.png&quot; srcset=&quot;assets/foehn/images/logo-square@2x.png 2x, assets/foehn/images/logo-square@3x.png 3x&quot; alt=&quot;Logo de l&#x27;Etat de Vaud&quot;&gt;
 &lt;/picture&gt;</code></pre>
 </div>
 
@@ -1343,24 +1340,22 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Logo</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<picture>
-	<source type="image/svg+xml" srcset="assets/toolkit/images/logo.svg">
-	<img src="assets/toolkit/images/logo@1x.png" srcset="assets/toolkit/images/logo@2x.png 2x, assets/toolkit/images/logo@3x.png 3x" alt="Logo de l'Etat de Vaud">
+	<source type="image/svg+xml" srcset="assets/foehn/images/logo.svg">
+	<img src="assets/foehn/images/logo@1x.png" srcset="assets/foehn/images/logo@2x.png 2x, assets/foehn/images/logo@3x.png 3x" alt="Logo de l'Etat de Vaud">
 </picture>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;picture&gt;
-	&lt;source type=&quot;image/svg+xml&quot; srcset=&quot;assets/toolkit/images/logo.svg&quot;&gt;
-	&lt;img src=&quot;assets/toolkit/images/logo@1x.png&quot; srcset=&quot;assets/toolkit/images/logo@2x.png 2x, assets/toolkit/images/logo@3x.png 3x&quot; alt=&quot;Logo de l&#x27;Etat de Vaud&quot;&gt;
+	&lt;source type=&quot;image/svg+xml&quot; srcset=&quot;assets/foehn/images/logo.svg&quot;&gt;
+	&lt;img src=&quot;assets/foehn/images/logo@1x.png&quot; srcset=&quot;assets/foehn/images/logo@2x.png 2x, assets/foehn/images/logo@3x.png 3x&quot; alt=&quot;Logo de l&#x27;Etat de Vaud&quot;&gt;
 &lt;/picture&gt;</code></pre>
 </div>
 
@@ -1374,15 +1369,13 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Figure Caption</h2>
 		<div class="f-item-controls">
-			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div>
-<div class="f-item-preview">
+	</div><div class="f-item-preview">
 	<figcaption class="vd-small">Lorem ipsum dolor sit.</figcaption>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -1661,15 +1654,13 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Button</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<button class="vd-btn">Button</button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -1681,19 +1672,62 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Button Alternate</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<button class="vd-btn vd-btn--secondary">Secondary</button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;button class=&quot;vd-btn vd-btn--secondary&quot;&gt;Secondary&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="12-buttons.02-button-transparent">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Button Transparent</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<button class="vd-btn vd-btn--transparent">Transparent</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class=&quot;vd-btn vd-btn--transparent&quot;&gt;Transparent&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="12-buttons.04-button-block">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Button Block</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Create block level buttons—those that span the full width of a parent— by adding <code>.vd-btn--block</code>.</p>
+
+</div>
+<div class="f-item-preview">
+	<button class="vd-btn vd-btn--block">Block</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class=&quot;vd-btn vd-btn--block&quot;&gt;Block&lt;/button&gt;</code></pre>
 </div>
 
 		</div>
@@ -1710,15 +1744,13 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Checkbox</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<div class="vd-form">
 	<input id="checkbox" type="checkbox" name="checkbox" value="value" checked="">
 	<label for="checkbox">Sojourner Truth</label>
@@ -1736,15 +1768,13 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Radio Button</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<div class="vd-form">
 	<input id="henri-guisan" type="radio" name="personality" value="guisan">
 	<label for="henri-guisan">Henri Guisan</label>
@@ -1762,32 +1792,30 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Select Menu</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<form class="vd-form">
 	<label for="options">Dropdown label</label>
 	<select name="options" id="options">
-    <option value="value1">Option A</option>
-    <option value="value2">Option B</option>
-    <option value="value3">Option C</option>
-  </select>
+        <option value="value1">Option A</option>
+        <option value="value2">Option B</option>
+        <option value="value3">Option C</option>
+    </select>
 </form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;form class=&quot;vd-form&quot;&gt;
 	&lt;label for=&quot;options&quot;&gt;Dropdown label&lt;/label&gt;
 	&lt;select name=&quot;options&quot; id=&quot;options&quot;&gt;
-    &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
-    &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
-    &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
-  &lt;/select&gt;
+        &lt;option value=&quot;value1&quot;&gt;Option A&lt;/option&gt;
+        &lt;option value=&quot;value2&quot;&gt;Option B&lt;/option&gt;
+        &lt;option value=&quot;value3&quot;&gt;Option C&lt;/option&gt;
+    &lt;/select&gt;
 &lt;/form&gt;</code></pre>
 </div>
 
@@ -1869,15 +1897,13 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Textarea</h3>
 				<div class="f-item-controls">
-					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg>
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-			</div>
-<div class="f-item-preview">
+			</div><div class="f-item-preview">
 	<form class="vd-form" action="index.html" method="post">
 
 	<textarea rows="8" cols="48" placeholder="Enter your message here"></textarea>
@@ -2047,12 +2073,12 @@ readers.</p>
 
 
 
-		</div>
-	<script src=".//assets/fabricator/scripts/f.js"></script>
+        </div>
+    <script src=".//assets/fabricator/scripts/f.js"></script>
 
-	<!-- toolkit scripts -->
-	<script src=".//assets/toolkit/scripts/toolkit.js"></script>
-	<!-- /toolkit scripts -->
+    <!-- foehn scripts -->
+    <script src=".//assets/foehn/scripts/foehn.js"></script>
+    <!-- /foehn scripts -->
 
 </body>
 </html>
