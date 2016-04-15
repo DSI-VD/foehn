@@ -29,6 +29,7 @@
     display: block; /* [1] */
     width: 100%;
 
+    border-collapse: collapse;
     overflow-x: auto; /* [1] */
 
     thead,
