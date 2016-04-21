@@ -118,6 +118,7 @@
             4,
             indentInsideParens: ["once-at-root-twice-in-block"],
             ignore: ["value", "param"],
+            hierarchicalSelectors: true,
             indentClosingBrace: false,
         ],
         "max-line-length": 80,
@@ -156,6 +157,7 @@
         "selector-list-comma-space-after": "always-single-line",
         "selector-list-comma-space-before": "never",
         "string-quotes": "double",
+        "unit-case": "lower",
         "unit-no-unknown": true,
         "value-no-vendor-prefix": true,
         "value-list-comma-space-after": "always-single-line"
