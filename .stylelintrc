@@ -135,7 +135,6 @@
         "number-leading-zero": "never",
         "number-no-trailing-zeros": true,
         "number-zero-length-no-unit": true,
-        "property-case": "lower",
         "property-no-vendor-prefix": true,
         "rule-nested-empty-line-before": [
             "always",
@@ -155,7 +154,6 @@
         "selector-list-comma-space-after": "always-single-line",
         "selector-list-comma-space-before": "never",
         "string-quotes": "double",
-        "unit-case": "lower",
         "unit-no-unknown": true,
         "value-no-vendor-prefix": true,
         "value-list-comma-space-after": "always-single-line"
