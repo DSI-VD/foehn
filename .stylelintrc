@@ -135,6 +135,7 @@
         "number-leading-zero": "never",
         "number-no-trailing-zeros": true,
         "number-zero-length-no-unit": true,
+        "property-case": "lower",
         "property-no-vendor-prefix": true,
         "rule-nested-empty-line-before": [
             "always",
