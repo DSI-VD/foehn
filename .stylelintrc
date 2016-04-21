@@ -154,6 +154,7 @@
         "selector-list-comma-space-after": "always-single-line",
         "selector-list-comma-space-before": "never",
         "string-quotes": "double",
+        "unit-no-unknown": true,
         "value-no-vendor-prefix": true,
         "value-list-comma-space-after": "always-single-line"
     }
