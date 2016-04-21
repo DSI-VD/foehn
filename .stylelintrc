@@ -116,7 +116,8 @@
         "function-whitespace-after": "always",
         "indentation": [
             4,
-            ignore: ["value", "param"]
+            indentInsideParens: ["once-at-root-twice-in-block"],
+            ignore: ["value", "param"],
         ],
         "max-line-length": 80,
         "max-empty-lines": 5,

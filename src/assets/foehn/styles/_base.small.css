@@ -17,10 +17,9 @@
 
 
 @define-mixin small $class,
-                         $font-size: var(--small-font-size),
-                         $font-family: var(--small-font-family),
-                         $enhance-font-family:
-                             var(--enhance-small-font-family) {
+    $font-size: var(--small-font-size),
+    $font-family: var(--small-font-family),
+    $enhance-font-family: var(--enhance-small-font-family) {
 
     /**
      * $(class)

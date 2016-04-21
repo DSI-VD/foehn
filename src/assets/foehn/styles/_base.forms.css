@@ -52,8 +52,8 @@
 
         background-color: var(--form-background-color);
         border: var(--form-border-width)
-                var(--form-border-style)
-                var(--form-border-color);
+            var(--form-border-style)
+            var(--form-border-color);
         border-radius: var(--form-border-radius); /* [1] */
         padding: calc( calc( var(--form-height) - 1rem ) / 2); /* [2] */
 
@@ -78,7 +78,7 @@
 
         &:focus {
             box-shadow: 0 0 3px var(--color-focus),
-                        0 0 7px var(--color-focus); /* [5] */
+                0 0 7px var(--color-focus); /* [5] */
         }
     }
 
@@ -127,10 +127,10 @@
                 margin-right: var(--form-checkbox-margin);
 
                 box-shadow: 0
-                            0
-                            0
-                            var(--form-border-width)
-                            var(--form-border-color);
+                    0
+                    0
+                    var(--form-border-width)
+                    var(--form-border-color);
                 content: "\a0";
                 vertical-align: -.1rem;
             }
@@ -141,10 +141,10 @@
             background-size: var(--form-checkbox-background-image-size);
 
             box-shadow: 0
-                        0
-                        0
-                        var(--form-border-width)
-                        var(--form-color-checked);
+                0
+                0
+                var(--form-border-width)
+                var(--form-color-checked);
         }
     }
 
@@ -183,7 +183,7 @@
 
         &:checked + label::before {
             box-shadow: 0 0 0 2px var(--form-background-color),
-                        0 0 0 4px var(--form-color-checked); /* [2] */
+                0 0 0 4px var(--form-color-checked); /* [2] */
         }
 
     }
@@ -203,10 +203,7 @@
 
     select {
         background-position: right
-                             calc(
-                               calc( var(--form-height) - 1rem )
-                               / 2)
-                             center; /* [1] */
+            calc( calc( var(--form-height) - 1rem ) / 2) center; /* [1] */
         background-repeat: no-repeat;  /* [1] */
         background-image: url("../images/arrow_down.svg"); /* [1] */
         background-size: 1rem;  /* [1] */

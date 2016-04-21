@@ -23,7 +23,7 @@
  */
 @define-mixin font-headings {
     font-variant-ligatures: common-ligatures, contextual,
-                            discretionary-ligatures;
+        discretionary-ligatures;
     font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
     font-kerning: normal;
 }
