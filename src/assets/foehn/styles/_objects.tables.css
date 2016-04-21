@@ -40,8 +40,8 @@
     th,
     td {
         border: var(--table-border-width)
-                var(--table-border-style)
-                var(--table-border-color);
+            var(--table-border-style)
+            var(--table-border-color);
         padding: var(--table-padding);
     }
 

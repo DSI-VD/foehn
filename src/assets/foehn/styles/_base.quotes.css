@@ -27,8 +27,8 @@ blockquote {
     font-style: italic;
 
     border-left: var(--blockquote-border-width)
-                 var(--blockquote-border-color)
-                 var(--blockquote-border-style);
+        var(--blockquote-border-color)
+        var(--blockquote-border-style);
 
     margin-left: @padding-left;
     padding-left: calc( var(--blockquote-left-margin) / 2 );

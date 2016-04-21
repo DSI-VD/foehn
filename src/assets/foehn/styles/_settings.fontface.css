@@ -14,22 +14,22 @@
     /* Base font */
     --base-text-color: var(--color-base);
     --base-font-family: "Palatino Linotype",
-                        Palatino,
-                        Palladio,
-                        "URW Palladio L",
-                        "Book Antiqua",
-                        Baskerville,
-                        "Bookman Old Style",
-                        "Bitstream Charter",
-                        "Nimbus Roman No9 L",
-                        Garamond,
-                        "Apple Garamond",
-                        "ITC Garamond Narrow",
-                        "New Century Schoolbook",
-                        "Century Schoolbook",
-                        "Century Schoolbook L",
-                        Georgia,
-                        serif;
+        Palatino,
+        Palladio,
+        "URW Palladio L",
+        "Book Antiqua",
+        Baskerville,
+        "Bookman Old Style",
+        "Bitstream Charter",
+        "Nimbus Roman No9 L",
+        Garamond,
+        "Apple Garamond",
+        "ITC Garamond Narrow",
+        "New Century Schoolbook",
+        "Century Schoolbook",
+        "Century Schoolbook L",
+        Georgia,
+        serif;
     --base-font-weight: 400;
     --base-font-weight-bold: 700;
 
@@ -40,13 +40,13 @@
 
     /* Heading font */
     --heading-font-family: -apple-system,
-                           ".SFNSText-Regular",
-                           "San Francisco",
-                           "Roboto",
-                           "Segoe UI",
-                           "Helvetica Neue",
-                           "Lucida Grande",
-                           sans-serif;
+        ".SFNSText-Regular",
+        "San Francisco",
+        "Roboto",
+        "Segoe UI",
+        "Helvetica Neue",
+        "Lucida Grande",
+        sans-serif;
     --heading-font-weight-regular: normal;
     --heading-font-weight-bold: bold;
 
@@ -56,10 +56,10 @@
     --enhance-heading-font-weight-bold: 700;
 
     --monospaced-font-family: Consolas,
-                              "Liberation Mono",
-                              Menlo,
-                              Courier,
-                              monospace;
+        "Liberation Mono",
+        Menlo,
+        Courier,
+        monospace;
     --monospaced-font-size: .8rem;
 
 }

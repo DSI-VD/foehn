@@ -40,12 +40,12 @@
 
     background-color: var(--btn-background);
     border: var(--btn-border-width)
-            var(--btn-border-style)
-            var(--btn-border-color);
+        var(--btn-border-style)
+        var(--btn-border-color);
     border-radius: var(--btn-border-radius);
     margin: 0; /* [3] */
     padding: calc(var(--btn-padding) - var(--btn-border-width))
-             calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [4] */
+        calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [4] */
     vertical-align: middle; /* [5] */
     overflow: visible; /* [6] */
     cursor: pointer; /* [7] */
@@ -110,12 +110,12 @@
  */
 
 @define-mixin btn $modifier,
-                  $text-color,
-                  $background-color,
-                  $text-color-hover,
-                  $background-color-hover,
-                  $text-color-active,
-                  $backgroundcolor-active {
+    $text-color,
+    $background-color,
+    $text-color-hover,
+    $background-color-hover,
+    $text-color-active,
+    $backgroundcolor-active {
 
     .btn--$(modifier) {
         color: $text-color;
