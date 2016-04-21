@@ -118,6 +118,7 @@
             4,
             indentInsideParens: ["once-at-root-twice-in-block"],
             ignore: ["value", "param"],
+            indentClosingBrace: false,
         ],
         "max-line-length": 80,
         "max-empty-lines": 5,
