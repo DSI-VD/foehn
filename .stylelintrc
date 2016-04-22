@@ -153,6 +153,7 @@
         "selector-combinator-space-after": "always",
         "selector-combinator-space-before": "always",
         "selector-no-id": true,
+        "selector-pseudo-class-case": "lower",
         "selector-pseudo-element-case": "lower",
         "selector-pseudo-element-colon-notation": "double",
         "selector-list-comma-newline-after": "always-multi-line",
