@@ -6,6 +6,7 @@
                 ignore: ["after-comment"]
             }
         ],
+        "at-rule-name-case": "lower",
         "at-rule-no-vendor-prefix": true,
         "block-closing-brace-newline-after": "always",
         "block-closing-brace-space-before": "always-single-line",
