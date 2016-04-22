@@ -15,10 +15,8 @@ var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
-var stylelint = require("stylelint");
 var classPrfx = require('postcss-class-prefix');
 var htmllint = require('gulp-htmllint');
-var reporter = require("postcss-reporter");
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
 
@@ -78,14 +76,17 @@ gulp.task('styles:fabricator', function () {
         .pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task("lint-styles", function() {
-    return gulp.src("src/assets/foehn/styles/*.css")
-    .pipe(postcss([
-        stylelint(),
-        reporter({
-            clearMessages: true,
-        }),
-    ]));
+gulp.task('lint-styles', function lintCssTask() {
+  const gulp = require('gulp');
+  const gulpStylelint = require('gulp-stylelint');
+
+  return gulp
+    .src('src/**/*.css')
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
 });
 
 gulp.task('styles:foehn', ["lint-styles"], function () {
