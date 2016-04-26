@@ -4,6 +4,10 @@ Fœhn (*føn*) is the design system build for [the website of the State of Vaud]
 
 [Take a look at the documentation](http://dsi-vd.github.io/foehn/).
 
+## Changelog
+
+Upgrading? Please read our [CHANGELOG](https://github.com/DSI-VD/foehn/blob/master/CHANGELOG.md) to learn what changes to expect in the latest version, whether that's new features, bug fixes, changes, or whatever else.
+
 ## Issues
 
 If you don't like the [usual issues view](https://github.com/DSI-VD/foehn/issues), we have [a Waffle board view](https://waffle.io/DSI-VD/foehn).  
@@ -23,7 +27,7 @@ $ cd foehn
 $ npm start
 ```
 
-### Build 
+### Build
 
 If you only want to build the code.
 
