@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Refactor CSS
 - Stylelint rules extends a shared configuration
 - Update Stylelint
 - Update Stylelint rules
