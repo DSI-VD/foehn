@@ -5,14 +5,9 @@
 /**
  * Strong text
  */
-
 .strong {
     font-weight: bold;
 }
-
-
-
-
 
 .wf-active .strong {
     font-weight: var(--enhance-base-font-weight-bold);

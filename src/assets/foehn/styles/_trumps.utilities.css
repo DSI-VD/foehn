@@ -9,7 +9,6 @@
  * readers and assistive technology. It will not use up space in the document
  * flow.
  */
-
 .visually-hidden {
     display: hidden;
 }

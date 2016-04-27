@@ -5,7 +5,6 @@
 /**
  * Default box UI.
  */
-
 :root {
     --box-border-color: var(--color-base);
     --box-margin-bottom: var(--base-spacing-unit);

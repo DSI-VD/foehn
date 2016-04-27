@@ -2,10 +2,6 @@
     #FONTFACE
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Variables
  */
@@ -67,6 +63,7 @@
 
 
 
+
 /**
  * Meta Serif
  */
@@ -106,6 +103,7 @@
 
     src: url("../fonts/MetaSerifWeb-BoldItalic.woff") format("woff");
 }
+
 
 /**
  * Meta Web Condensed

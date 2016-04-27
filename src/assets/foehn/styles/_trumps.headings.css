@@ -13,7 +13,6 @@
    <h2 class="alpha">Lorem ipsum</h2>
  *
  */
-
 .alpha {
     font-size: var(--heading-size-1);
     font-weight: var(--heading-font-weight-bold);

@@ -2,10 +2,6 @@
     #QUOTES
 \* ------------------------------------ */
 
-
-
-
-
 :root {
     --blockquote-text-color: var(--base-text-color);
     --blockquote-left-margin: var(--base-spacing-unit--large);
