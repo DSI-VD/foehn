@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Update normalize.css to 4.1.1
 - Refactor CSS
 - Stylelint rules extends a shared configuration
 - Update Stylelint
