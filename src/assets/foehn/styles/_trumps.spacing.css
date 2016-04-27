@@ -9,10 +9,6 @@
  * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding
  * top/right/bottom/left/horizontal/vertical less/more/none
  */
-
-/* Predefine the variables below in order to alter and enable specific
-features. */
-
 :root {
     --margin: var(--base-spacing-unit);
     --padding: var(--base-spacing-unit);

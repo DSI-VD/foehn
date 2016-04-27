@@ -2,10 +2,6 @@
     #ALERTS
 \* ------------------------------------ */
 
-
-
-
-
 :root {
     --alert-background-size: var(--base-spacing-unit) var(--base-spacing-unit);
     --alert-background-position: var(--alert-background-size);
@@ -14,10 +10,6 @@
     --alert-error-background: var(--color-secondary-lightest);
     --alert-info-background: var(--color-blue-lightest);
 }
-
-
-
-
 
 /**
  * Alerts
