@@ -7,12 +7,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Add a changelog
+- Add a GitHub Template for Pull Request
 
 ### Changed
 
 - Stylelint rules extends a shared configuration
 - Update Stylelint
 - Update Stylelint rules
+- Move GitHub related files to `/.github`
 
 ### Fixed
 
