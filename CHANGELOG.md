@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 - Fix uncollapsed table cells
+- Fix `foehn.css` table of content
 
 ## [0.4.2]
 
