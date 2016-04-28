@@ -135,7 +135,7 @@
             background-color: $background-color-hover;
         }
 
-        &:active
+        &:active,
         &.is-active {
             color: $text-color-active;
 
