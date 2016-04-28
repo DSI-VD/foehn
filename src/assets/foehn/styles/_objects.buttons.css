@@ -115,7 +115,7 @@
  * Color variations
  */
 
-@define-mixin button $modifier,
+@define-mixin button,
     $text-color,
     $background-color,
     $text-color-hover,
@@ -123,24 +123,22 @@
     $text-color-active,
     $backgroundcolor-active {
 
-    .button--$(modifier) {
-        color: $text-color;
+    color: $text-color;
 
-        background-color: $background-color;
+    background-color: $background-color;
 
-        &:hover,
-        &.is-hover {
-            color: $text-color-hover;
+    &:hover,
+    &.is-hover {
+        color: $text-color-hover;
 
-            background-color: $background-color-hover;
-        }
+        background-color: $background-color-hover;
+    }
 
-        &:active,
-        &.is-active {
-            color: $text-color-active;
+    &:active,
+    &.is-active {
+        color: $text-color-active;
 
-            background-color: $backgroundcolor-active;
-        }
+        background-color: $backgroundcolor-active;
     }
 }
 
@@ -155,14 +153,15 @@
     --button-background-color-secondary-active: var(--color-secondary-darkest);
 }
 
-@mixin button secondary,
-    var(--color-white),
-    var(--button-background-color-secondary),
-    var(--button-text-color-secondary-hover),
-    var(--button-background-color-secondary-hover),
-    var(--button-text-color-secondary-active),
-    var(--button-background-color-secondary-active);
-
+.button--secondary {
+    @mixin button,
+        var(--color-white),
+        var(--button-background-color-secondary),
+        var(--button-text-color-secondary-hover),
+        var(--button-background-color-secondary-hover),
+        var(--button-text-color-secondary-active),
+        var(--button-background-color-secondary-active);
+}
 
 
 /* Button transparent */
@@ -175,13 +174,41 @@
     --button-background-color-transparent-active: inherit;
 }
 
-@mixin button transparent,
-    inherit,
-    var(--button-background-color-transparent),
-    var(--button-text-color-transparent-hover),
-    var(--button-background-color-transparent-hover),
-    var(--button-text-color-transparent-active),
-    var(--button-background-color-transparent-active);
+.button--transparent {
+    @mixin button,
+        inherit,
+        var(--button-background-color-transparent),
+        var(--button-text-color-transparent-hover),
+        var(--button-background-color-transparent-hover),
+        var(--button-text-color-transparent-active),
+        var(--button-background-color-transparent-active);
+}
+
+
+/* Button disabled */
+:root {
+    --button-text-color-disabled: inherit;
+    --button-background-color-disabled: var(--color-gray-light);
+    --button-text-color-disabled-hover: inherit;
+    --button-background-color-disabled-hover: var(--color-gray-light);
+    --button-text-color-disabled-active: inherit;
+    --button-background-color-disabled-active: var(--color-gray-light);
+}
+
+.button--disabled,
+[disabled] {
+    cursor: default;
+
+    @mixin button,
+        inherit,
+        var(--button-background-color-disabled),
+        var(--button-text-color-disabled-hover),
+        var(--button-background-color-disabled-hover),
+        var(--button-text-color-disabled-active),
+        var(--button-background-color-disabled-active);
+}
+
+
 
 
 
