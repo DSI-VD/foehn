@@ -38,39 +38,45 @@
     font-weight: 700;
     text-align: center; /* [3] */
 
-    background-color: var(--btn-background);
-    border: var(--btn-border-width)
-        var(--btn-border-style)
-        var(--btn-border-color);
-    border-radius: var(--btn-border-radius);
+    background-color: var(--button-background);
+    border: var(--button-border-width)
+        var(--button-border-style)
+        var(--button-border-color);
+    border-radius: var(--button-border-radius);
     margin: 0; /* [3] */
-    padding: calc(var(--btn-padding) - var(--btn-border-width))
-        calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [4] */
+    padding: calc(var(--button-padding) - var(--button-border-width))
+        calc(var(--button-padding) * 2 - var(--button-border-width)); /* [4] */
     vertical-align: middle; /* [5] */
     overflow: visible; /* [6] */
     cursor: pointer; /* [7] */
 
     &,
     &:hover,
+    &.is-hover,
     &:active,
-    &:focus {
-        color: var(--btn-color);
+    &.is-active,
+    &:focus
+    &.is-focus {
+        color: var(--button-color);
         text-decoration: none; /* [3] */
     }
 
-    &:hover {
-        color: var(--btn-color-hover);
+    &:hover,
+    &.is-hover {
+        color: var(--button-color-hover);
 
-        background-color: var(--btn-background-hover); /* [8] */
+        background-color: var(--button-background-hover); /* [8] */
     }
 
-    &:active {
-        color: var(--btn-color-active);
+    &:active,
+    &.is-active {
+        color: var(--button-color-active);
 
-        background-color: var(--btn-background-active); /* [8] */
+        background-color: var(--button-background-active); /* [8] */
     }
 
-    &:focus {
+    &:focus,
+    &.is-focus {
         box-shadow: 0 0 3px var(--color-focus), 0 0 7px var(--color-focus);
     }
 
@@ -122,13 +128,15 @@
 
         background-color: $background-color;
 
-        &:hover {
+        &:hover,
+        &.is-hover {
             color: $text-color-hover;
 
             background-color: $background-color-hover;
         }
 
-        &:active {
+        &:active
+        &.is-active {
             color: $text-color-active;
 
             background-color: $backgroundcolor-active;
