@@ -113,7 +113,8 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
         require('autoprefixer')({browsers: config.browsers}),
         require('postcss-class-prefix')('vd-', {
             ignore: [
-                /wf-/ // ignore webfontloader classes
+                /wf-/, // ignore webfontloader classes
+                /is-/
             ]
         }),
         require('perfectionist')
