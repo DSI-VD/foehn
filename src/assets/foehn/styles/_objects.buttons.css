@@ -3,20 +3,20 @@
 \* ------------------------------------ */
 
 :root {
-    --btn-background: var(--color-primary-alt);
-    --btn-color: var(--color-base);
+    --button-background: var(--color-primary-alt);
+    --button-color: var(--color-base);
 
-    --btn-background-hover: var(--primary-alt-dark);
-    --btn-color-hover: var(--btn-color);
+    --button-background-hover: var(--primary-alt-dark);
+    --button-color-hover: var(--button-color);
 
-    --btn-background-active: var(--primary-alt-darkest);
-    --btn-color-active: var(--color-white);
+    --button-background-active: var(--primary-alt-darkest);
+    --button-color-active: var(--color-white);
 
-    --btn-padding: calc(var(--base-spacing-unit) / 2);
-    --btn-border-width: 1px;
-    --btn-border-style: none;
-    --btn-border-color: var(--color-base);
-    --btn-border-radius: calc(var(--base-spacing-unit) / 8);
+    --button-padding: calc(var(--base-spacing-unit) / 2);
+    --button-border-width: 1px;
+    --button-border-style: none;
+    --button-border-color: var(--color-base);
+    --button-border-radius: calc(var(--base-spacing-unit) / 8);
 }
 
 /**
@@ -31,46 +31,52 @@
  * 7. Force all button-styled elements to appear clickable.
  * 8. Hover state color
  */
-.btn {
+.button {
     display: inline-block; /* [1] */
 
     font: inherit; /* [2] */
     font-weight: 700;
     text-align: center; /* [3] */
 
-    background-color: var(--btn-background);
-    border: var(--btn-border-width)
-        var(--btn-border-style)
-        var(--btn-border-color);
-    border-radius: var(--btn-border-radius);
+    background-color: var(--button-background);
+    border: var(--button-border-width)
+        var(--button-border-style)
+        var(--button-border-color);
+    border-radius: var(--button-border-radius);
     margin: 0; /* [3] */
-    padding: calc(var(--btn-padding) - var(--btn-border-width))
-        calc(var(--btn-padding) * 2 - var(--btn-border-width)); /* [4] */
+    padding: calc(var(--button-padding) - var(--button-border-width))
+        calc(var(--button-padding) * 2 - var(--button-border-width)); /* [4] */
     vertical-align: middle; /* [5] */
     overflow: visible; /* [6] */
     cursor: pointer; /* [7] */
 
     &,
     &:hover,
+    &.is-hover,
     &:active,
-    &:focus {
-        color: var(--btn-color);
+    &.is-active,
+    &:focus
+    &.is-focus {
+        color: var(--button-color);
         text-decoration: none; /* [3] */
     }
 
-    &:hover {
-        color: var(--btn-color-hover);
+    &:hover,
+    &.is-hover {
+        color: var(--button-color-hover);
 
-        background-color: var(--btn-background-hover); /* [8] */
+        background-color: var(--button-background-hover); /* [8] */
     }
 
-    &:active {
-        color: var(--btn-color-active);
+    &:active,
+    &.is-active {
+        color: var(--button-color-active);
 
-        background-color: var(--btn-background-active); /* [8] */
+        background-color: var(--button-background-active); /* [8] */
     }
 
-    &:focus {
+    &:focus,
+    &.is-focus {
         box-shadow: 0 0 3px var(--color-focus), 0 0 7px var(--color-focus);
     }
 
@@ -83,7 +89,7 @@
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
-.btn::-moz-focus-inner {
+.button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
@@ -95,7 +101,7 @@
 /**
  * Use fonts only when loaded
  */
-.wf-active .btn {
+.wf-active .button {
     font-family: var(--enhance-heading-font-family);
 }
 
@@ -109,7 +115,7 @@
  * Color variations
  */
 
-@define-mixin btn $modifier,
+@define-mixin button $modifier,
     $text-color,
     $background-color,
     $text-color-hover,
@@ -117,18 +123,20 @@
     $text-color-active,
     $backgroundcolor-active {
 
-    .btn--$(modifier) {
+    .button--$(modifier) {
         color: $text-color;
 
         background-color: $background-color;
 
-        &:hover {
+        &:hover,
+        &.is-hover {
             color: $text-color-hover;
 
             background-color: $background-color-hover;
         }
 
-        &:active {
+        &:active
+        &.is-active {
             color: $text-color-active;
 
             background-color: $backgroundcolor-active;
@@ -139,41 +147,41 @@
 
 /* Button secondary */
 :root {
-    --btn-text-color-secondary: var(--btn-color);
-    --btn-background-color-secondary: var(--color-secondary);
-    --btn-text-color-secondary-hover: var(--btn-color);
-    --btn-background-color-secondary-hover: var(--color-secondary-dark);
-    --btn-text-color-secondary-active: var(--color-white);
-    --btn-background-color-secondary-active: var(--color-secondary-darkest);
+    --button-text-color-secondary: var(--button-color);
+    --button-background-color-secondary: var(--color-secondary);
+    --button-text-color-secondary-hover: var(--button-color);
+    --button-background-color-secondary-hover: var(--color-secondary-dark);
+    --button-text-color-secondary-active: var(--color-white);
+    --button-background-color-secondary-active: var(--color-secondary-darkest);
 }
 
-@mixin btn secondary,
+@mixin button secondary,
     var(--color-white),
-    var(--btn-background-color-secondary),
-    var(--btn-text-color-secondary-hover),
-    var(--btn-background-color-secondary-hover),
-    var(--btn-text-color-secondary-active),
-    var(--btn-background-color-secondary-active);
+    var(--button-background-color-secondary),
+    var(--button-text-color-secondary-hover),
+    var(--button-background-color-secondary-hover),
+    var(--button-text-color-secondary-active),
+    var(--button-background-color-secondary-active);
 
 
 
 /* Button transparent */
 :root {
-    --btn-text-color-transparent: inherit;
-    --btn-background-color-transparent: inherit;
-    --btn-text-color-transparent-hover: inherit;
-    --btn-background-color-transparent-hover: inherit;
-    --btn-text-color-transparent-active: inherit;
-    --btn-background-color-transparent-active: inherit;
+    --button-text-color-transparent: inherit;
+    --button-background-color-transparent: inherit;
+    --button-text-color-transparent-hover: inherit;
+    --button-background-color-transparent-hover: inherit;
+    --button-text-color-transparent-active: inherit;
+    --button-background-color-transparent-active: inherit;
 }
 
-@mixin btn transparent,
+@mixin button transparent,
     inherit,
-    var(--btn-background-color-transparent),
-    var(--btn-text-color-transparent-hover),
-    var(--btn-background-color-transparent-hover),
-    var(--btn-text-color-transparent-active),
-    var(--btn-background-color-transparent-active);
+    var(--button-background-color-transparent),
+    var(--button-text-color-transparent-hover),
+    var(--button-background-color-transparent-hover),
+    var(--button-text-color-transparent-active),
+    var(--button-background-color-transparent-active);
 
 
 
@@ -183,7 +191,7 @@
  * Size variation
  */
 
-.btn--block {
+.button--block {
     display: block;
     width: 100%;
 }
