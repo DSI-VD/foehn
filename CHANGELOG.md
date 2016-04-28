@@ -8,9 +8,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add a changelog
 - Add a GitHub Template for Pull Request
+- Add states class for button
 
 ### Changed
 
+- `.btn` object class is renamed `.buttton`
 - Update normalize.css to 4.1.1
 - Refactor CSS
 - Stylelint rules extends a shared configuration
