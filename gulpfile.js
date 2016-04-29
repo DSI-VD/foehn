@@ -124,10 +124,14 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
         .pipe(gulpif(config.dev, sourcemaps.init()))
         // We always want PostCSS to run
         .pipe( postcss(processors) )
-        // If we are on dev, don't minify the styles
-        .pipe( gulpif(!config.dev, nano()) )
-        // If we are in dev, write sourcemaps
-        .pipe( gulpif(config.dev, sourcemaps.write()) )
+        // Set the destination for the CSS file
+        .pipe( gulp.dest(config.dest + '/assets/foehn/styles') )
+        // Minify the styles
+        .pipe( nano() )
+        // Write sourcemaps
+        .pipe( sourcemaps.write() )
+        // Rename minified styles file
+        .pipe(rename({ extname: '.min.css' }))
         // Set the destination for the CSS file
         .pipe( gulp.dest(config.dest + '/assets/foehn/styles') )
         // If we are in dev, reload the browser
