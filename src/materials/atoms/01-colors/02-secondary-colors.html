@@ -1,0 +1,19 @@
+---
+notes: |
+    These are accent colors to provide additional lightness and style to pages
+    looking for a more modern flair. These colors should be used to highlight
+    important features on a page, such as buttons, or for visual style
+    elements, such as illustrations. They should be used sparingly and never
+    draw the eye to more than one piece of information at a time.
+---
+
+{{#each colors.secondary}}
+    <div class="f-color-chips">
+    {{#each this}}
+        <div class="f-color-chip">
+            <div class="f-color-chip__name">{{@key}}</div>
+            <div class="f-color-chip__color">{{this}}</div>
+        </div>
+    {{/each}}
+    </div>
+{{/each}}
