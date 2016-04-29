@@ -189,23 +189,22 @@
 :root {
     --button-text-color-disabled: inherit;
     --button-background-color-disabled: var(--color-gray-light);
-    --button-text-color-disabled-hover: inherit;
-    --button-background-color-disabled-hover: var(--color-gray-light);
-    --button-text-color-disabled-active: inherit;
-    --button-background-color-disabled-active: var(--color-gray-light);
 }
 
 .button--disabled,
-[disabled] {
-    cursor: default;
+[type="submit"][disabled] {
 
-    @mixin button,
-        inherit,
-        var(--button-background-color-disabled),
-        var(--button-text-color-disabled-hover),
-        var(--button-background-color-disabled-hover),
-        var(--button-text-color-disabled-active),
-        var(--button-background-color-disabled-active);
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--button-text-color-disabled-hover);
+
+        background-color: var(--button-background-color-disabled);
+
+        cursor: not-allowed;
+    }
+
 }
 
 
