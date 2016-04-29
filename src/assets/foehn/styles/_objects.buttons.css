@@ -198,7 +198,7 @@
     &:hover,
     &:focus,
     &:active {
-        color: var(--button-text-color-disabled-hover);
+        color: var(--button-text-color-disabled);
 
         background-color: var(--button-background-color-disabled);
 
