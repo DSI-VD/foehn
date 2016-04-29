@@ -4,4 +4,10 @@ npm-debug.*
 .publish
 build
 .DS_Store
-dist
+
+# Include only foehn files
+dist/*
+!dist/assets/
+
+dist/assets/*
+!dist/assets/foehn/
