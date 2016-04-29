@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a changelog
 - Add a GitHub Template for Pull Request
 - Add states class for button
+- Add style for disabled button
 
 ### Changed
 
