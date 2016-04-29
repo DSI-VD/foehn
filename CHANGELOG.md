@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Update Stylelint
 - Update Stylelint rules
 - Move GitHub related files to `/.github`
+- Colors have moved in an atom
 
 ### Fixed
 
