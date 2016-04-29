@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Update Stylelint rules
 - Move GitHub related files to `/.github`
 - Colors have moved in an atom
+- Typography has been removed from the overview page. It was already documented in atoms
 
 ### Fixed
 
