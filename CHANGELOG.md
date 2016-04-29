@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Provide a `/dist` folder with all foehn files
 - Add a changelog
 - Add a GitHub Template for Pull Request
 - Add states class for button
