@@ -11,7 +11,6 @@
     "indent-style": "spaces",
     "indent-width": 4,
     "label-req-for": true,
-    "line-max-len": 80,
     "tag-bans": ["style"],
     "tag-name-lowercase": true,
     "tag-name-match": true
