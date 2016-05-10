@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add a molecule for search results
 - Provide a `/dist` folder with all foehn files
 - Add a changelog
 - Add a GitHub Template for Pull Request
