@@ -2,7 +2,6 @@ node_modules
 .sass-cache
 npm-debug.*
 .publish
-build
 .DS_Store
 
 # Include only foehn files
