@@ -1277,6 +1277,8 @@ sub {
 
 /**
  * Remove extra vertical spacing when nesting lists.
+ *
+ * 1. Without it, if there's buttons in the list, they would be collapsed.
  */
 
 li > ul, li > ol {
@@ -1288,6 +1290,8 @@ li {
     font-variant-numeric: oldstyle-nums, proportional-nums;
     font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
     font-kerning: normal;
+    margin-bottom: 6.75px;
+    margin-bottom: 0.42188rem; /* [1] */
 }
 
 /* ------------------------------------ *\
