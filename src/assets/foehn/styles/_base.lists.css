@@ -4,6 +4,8 @@
 
 /**
  * Remove extra vertical spacing when nesting lists.
+ *
+ * 1. Without it, if there's buttons in the list, they would be collapsed.
  */
 li > ul,
 li > ol {
@@ -12,4 +14,5 @@ li > ol {
 
 li {
     @mixin font-bodytext;
+    margin-bottom: var(--base-spacing-unit--tiny); /* [1] */
 }

@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add a molecule for search results
 
+### Changed
+
+- Add margin at the bottom of list items
+
 ## [0.5.0]
 
 ### Added
