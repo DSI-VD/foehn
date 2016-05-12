@@ -12,6 +12,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add margin at the bottom of list items
 
+### Fixed
+
+- Fix missing `vd-*` prefix in Small Caps material
+- Fix missing `vd-*` prefix in Fraction material
+- Fix missing `vd-*` prefix in Footnote material
+
 ## [0.5.0]
 
 ### Added
