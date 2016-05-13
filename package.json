@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@alienlebarge/stylelint-config": "^1.0.4",
-    "autoprefixer": "^6.0.3",
+    "autoprefixer": "^6.3.6",
     "babel-core": "^6.7.4",
     "babel-loader": "^6",
     "babel-preset-es2015": "^6",
