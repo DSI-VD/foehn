@@ -4505,6 +4505,45 @@ hr {
 }
 
 /* ------------------------------------ *\
+    #FONT
+\* ------------------------------------ */
+
+/**
+ * Use these helper classes to cause other elements to adopt the heading
+ * fonts., e.g.:
+ *
+ *    <p class="vd-font-heading">Lorem ipsum</h2>
+ *
+ * 1. Apply enhanced font only if it is loaded
+ */
+
+.vd-font-heading {
+    font-family: -apple-system,
+                 ".SFNSText-Regular",
+                 "San Francisco",
+                 "Roboto",
+                 "Segoe UI",
+                 "Helvetica Neue",
+                 "Lucida Grande",
+                 sans-serif;
+    font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+    font-kerning: normal;
+}
+
+.wf-metaweb-n4-active .vd-font-heading {
+    font-family: "MetaWeb",
+                 -apple-system,
+                 ".SFNSText-Regular",
+                 "San Francisco",
+                 "Roboto",
+                 "Segoe UI",
+                 "Helvetica Neue",
+                 "Lucida Grande",
+                 sans-serif; /* [1] */
+}
+
+/* ------------------------------------ *\
 //    #UTILITIES
 \* ------------------------------------ */
 
