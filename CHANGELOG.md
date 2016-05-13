@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Add a molecule for search results
-- CSS linting support stylelint 3.3.3 rules
+- CSS linting support stylelint 6.3.3 rules
 
 ### Changed
 
