@@ -27,17 +27,9 @@
 
 
 /**
- * Background black
+ * White links on dark background
  */
-:root {
-    --background-black: var(--color-base;);
-    --background-black-color: var(--color-white;);
-}
-
-.background--black {
-    color: var(--background-black-color);
-
-    background-color: var(--background-black);
+@define-mixin background-white-link {
 
     a {
         color: currentcolor;
@@ -52,6 +44,43 @@
             color: var(--link-visited-color);
         }
     }
+
+}
+
+
+
+/**
+ * Background primary
+ */
+:root {
+    --background-primary: var(--color-primary;);
+    --background-primary-color: var(--color-white;);
+}
+
+.background--primary {
+    color: var(--background-primary-color);
+
+    background-color: var(--background-primary);
+
+    @mixin background-white-link;
+}
+
+
+
+/**
+ * Background black
+ */
+:root {
+    --background-black: var(--color-base;);
+    --background-black-color: var(--color-white;);
+}
+
+.background--black {
+    color: var(--background-black-color);
+
+    background-color: var(--background-black);
+
+    @mixin background-white-link;
 }
 
 

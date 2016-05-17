@@ -4365,6 +4365,36 @@ hr {
 }
 
 /**
+ * White links on dark background
+ */
+
+/**
+ * Background primary
+ */
+
+.vd-background--primary {
+    color: ;;
+    color: rgba(255, 255, 255, 1);
+    background-color: ;;
+    background-color: rgba(74, 135, 63, 1);
+}
+
+.vd-background--primary a {
+    color: currentcolor;
+}
+
+.vd-background--primary a:hover, .vd-background--primary a:focus,
+.vd-background--primary a:active {
+    color: #3a95cf;
+    color: rgba(58, 149, 207, 1);
+}
+
+.vd-background--primary a:visited {
+    color: #4d3492;
+    color: rgba(77, 52, 146, 1);
+}
+
+/**
  * Background black
  */
 
