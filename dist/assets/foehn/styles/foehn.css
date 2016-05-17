@@ -1733,7 +1733,8 @@ hr {
  */
 
 .vd-list-bare {
-    margin: 0;
+    margin: 0 0 27px;
+    margin: 0 0 1.6875rem;
     padding: 0;
     list-style: none;
 }
@@ -4343,6 +4344,29 @@ hr {
 /**
  * Background black
  */
+
+/**
+ * Add vertical space on items that have a background color.
+ *
+ * 1. Remove margin bottom of the last child to avoid double bottom space
+ *    (padding + margin)
+ */
+
+.vd-background {
+    padding-top: 27px;
+    padding-top: 1.6875rem;
+    padding-bottom: 27px;
+    padding-bottom: 1.6875rem;
+}
+
+.vd-background > :last-child {
+    margin-bottom: 0;
+}
+
+.vd-background ~ .vd-background {
+    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
+}
 
 .vd-background--black {
     color: ;;
