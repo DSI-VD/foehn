@@ -4342,10 +4342,6 @@ hr {
 \* ------------------------------------ */
 
 /**
- * Background black
- */
-
-/**
  * Add vertical space on items that have a background color.
  *
  * 1. Remove margin bottom of the last child to avoid double bottom space
@@ -4367,6 +4363,10 @@ hr {
     margin-top: 27px;
     margin-top: 1.6875rem;
 }
+
+/**
+ * Background black
+ */
 
 .vd-background--black {
     color: ;;

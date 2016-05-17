@@ -2,13 +2,7 @@
     #BACKGROUNDS
 \* ------------------------------------ */
 
-/**
- * Background black
- */
-:root {
-    --background-black: var(--color-base;);
-    --background-black-color: var(--color-white;);
-}
+
 
 /**
  * Add vertical space on items that have a background color.
@@ -28,6 +22,16 @@
     & + :not(.background) {
         margin-top: var(--base-spacing-unit);
     }
+}
+
+
+
+/**
+ * Background black
+ */
+:root {
+    --background-black: var(--color-base;);
+    --background-black-color: var(--color-white;);
 }
 
 .background--black {
