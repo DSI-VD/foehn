@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- remove vertical spacing in media-blocks
 - remove figcaption from media-block molecule
 - 3 news instead of 5 are shown in the `latest-news` organism
 - Add margin at bottom of `.vd-list-bare`
