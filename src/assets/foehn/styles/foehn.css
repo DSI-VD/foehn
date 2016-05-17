@@ -171,6 +171,7 @@
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";
+@import "_trumps.fonts.css";
 @import "_trumps.utilities.css";
 @import "_trumps.utilities-responsive.css";
 @import "_trumps.spacing.css";
