@@ -25,8 +25,8 @@
         margin-bottom: 0;
     }
 
-    & ~ .background {
-        margin-bottom: var(--base-spacing-unit);
+    & + :not(.background) {
+        margin-top: var(--base-spacing-unit);
     }
 }
 
@@ -50,6 +50,8 @@
     }
 }
 
+
+
 /**
  * Background gray light
  */
@@ -60,6 +62,7 @@
 .background--gray-light {
     background-color: var(--background-gray-light);
 }
+
 
 
 /**

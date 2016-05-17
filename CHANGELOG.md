@@ -19,6 +19,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - 3 news instead of 5 are shown in the `latest-news` organism
 - Add margin at bottom of `.vd-list-bare`
 
+### Fixed
+
+- Fix `.vd-background` vertical spacing
+
 ## [Unreleased]
 
 ### Added
