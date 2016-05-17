@@ -15,7 +15,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- refactor HTML of page-titles organim 
+- Homepage template has been updated
+- refactor HTML of page-titles organim
 - remove vertical spacing in media-blocks
 - remove figcaption from media-block molecule
 - 3 news instead of 5 are shown in the `latest-news` organism

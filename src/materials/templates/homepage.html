@@ -1,28 +1,29 @@
 {{> global.header}}
 
-{{> login}}
-
 {{> page-title title='Site officiel du Canton de Vaud'}}
 
-{{> last-news}}
-
-{{> topics-list}}
-
-<h2>Préstations</h2>
-
-{{> agenda}}
-
-<footer>
-    <h3>Partenaires</h3>
-    <ul>
-        <li><a href="#">Lorem ipsum dolor.</a></li>
-        <li><a href="#">Lorem ipsum dolor.</a></li>
-        <li><a href="#">Lorem ipsum dolor.</a></li>
+<div class="vd-container vd-background vd-background--gray-light">
+    <h2>Accès direct</h2>
+    <ul class="vd-font-heading vd-list-bare">
+        <li><a href="#">Offres d'emploi</a></li>
+        <li><a href="#">Signalement mineur en danger</a></li>
+        <li><a href="#">Formulaire automobile</a></li>
+        <li><a href="#">VaudTax 2015</a></li>
+        <li><a href="#" class="vd-button vd-button--block">VaudTax 2015</a></li>
     </ul>
-    <h3>Réseaux sociaux</h3>
-    <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Google+</a></li>
+</div>
+
+{{> last-news last-news-modifier='vd-background vd-background--gray-lighter'}}
+
+<div class="vd-container">
+    <h2>Autorités</h2>
+    <ul class="vd-font-heading vd-list-bare">
+        <li><a href="#" class="vd-gamma">Grand conseil</a></li>
+        <li><a href="#" class="vd-gamma">Conseil d'&Eacute;tat</a></li>
+        <li><a href="#" class="vd-gamma">Ordre judiciaire</a></li>
+        <li><a href="#" class="vd-gamma">Organigramme</a></li>
+        <li><a href="#" class="vd-button vd-button--block">Toutes les autorit&eacute;s</a></li>
     </ul>
-</footer>
+</div>
+
+{{> global.footer}}
