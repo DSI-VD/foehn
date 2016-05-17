@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Homepage view has been updated
 - Homepage template has been updated
 - refactor HTML of page-titles organim
 - remove vertical spacing in media-blocks
