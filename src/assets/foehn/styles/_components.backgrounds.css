@@ -60,3 +60,15 @@
 .background--gray-light {
     background-color: var(--background-gray-light);
 }
+
+
+/**
+ * Background gray lighter
+ */
+:root {
+    --background-gray-lighter: var(--color-gray-lighter;);
+}
+
+.background--gray-lighter {
+    background-color: var(--background-gray-lighter);
+}
