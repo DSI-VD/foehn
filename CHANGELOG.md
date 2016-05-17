@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add missing molcule for `.vd-background--gray-lighter`
 - Add `.background--gray-lighter` class
 - Add modifier on last-news organism
 - Add the possibilie to add a modifier on headings atoms
