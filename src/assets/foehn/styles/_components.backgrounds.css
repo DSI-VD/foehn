@@ -10,6 +10,26 @@
     --background-black-color: var(--color-white;);
 }
 
+/**
+ * Add vertical space on items that have a background color.
+ *
+ * 1. Remove margin bottom of the last child to avoid double bottom space
+ *    (padding + margin)
+ */
+.background {
+
+    padding-top: var(--base-spacing-unit);
+    padding-bottom: var(--base-spacing-unit);
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    & ~ .background {
+        margin-bottom: var(--base-spacing-unit);
+    }
+}
+
 .background--black {
     color: var(--background-black-color);
 

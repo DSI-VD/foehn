@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add `.vd-background` class that add vertical spacing on items that have colored background
 - Add an atom for fonts
 - Add `.vd-font-heading` class
 - Upgrade autoprefixer to 6.3.6
