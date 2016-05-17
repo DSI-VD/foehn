@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add modifier on last-news organism
 - Add the possibilie to add a modifier on headings atoms
 - Add `.vd-background` class that add vertical spacing on items that have colored background
 - Add an atom for fonts
