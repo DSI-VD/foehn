@@ -4363,9 +4363,9 @@ hr {
     margin-bottom: 0;
 }
 
-.vd-background ~ .vd-background {
-    margin-bottom: 27px;
-    margin-bottom: 1.6875rem;
+.vd-background + :not(.vd-background) {
+    margin-top: 27px;
+    margin-top: 1.6875rem;
 }
 
 .vd-background--black {
@@ -4397,6 +4397,15 @@ hr {
 .vd-background--gray-light {
     background-color: ;;
     background-color: rgba(174, 176, 181, 1);
+}
+
+/**
+ * Background gray lighter
+ */
+
+.vd-background--gray-lighter {
+    background-color: ;;
+    background-color: rgba(214, 215, 217, 1);
 }
 
 /* ------------------------------------ *\
