@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `.vd-font-heading` class
 - Upgrade autoprefixer to 6.3.6
 
+### Changed
+
+- Add margin at bottom of `.vd-list-bare`
+
 ## [Unreleased]
 
 ### Added
