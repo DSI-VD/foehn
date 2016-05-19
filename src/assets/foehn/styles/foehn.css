@@ -59,6 +59,7 @@
  * TRUMPS
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
+ * Colors...............Text colors.
  * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  * Spacing..............Utilities to work with spaces.
@@ -171,6 +172,7 @@
 
 @import "_trumps.clearfix.css";
 @import "_trumps.headings.css";
+@import "_trumps.colors.css";
 @import "_trumps.fonts.css";
 @import "_trumps.utilities.css";
 @import "_trumps.utilities-responsive.css";

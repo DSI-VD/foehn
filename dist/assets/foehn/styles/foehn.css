@@ -59,6 +59,7 @@
  * TRUMPS
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
+ * Colors...............Text colors.
  * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  * Spacing..............Utilities to work with spaces.
@@ -4686,6 +4687,90 @@ hr {
 
 .wf-metaweb-n7-active .vd-zeta {
     font-weight: 400;
+}
+
+/* ------------------------------------ *\
+    #COLORS
+\* ------------------------------------ */
+
+.vd-color--primary {
+    color: #4a873f;
+    color: rgba(74, 135, 63, 1);
+}
+
+.vd-color--base {
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
+}
+
+.vd-color--gray-dark {
+    color: #323a45;
+    color: rgba(50, 58, 69, 1);
+}
+
+.vd-color--gray-light {
+    color: #aeb0b5;
+    color: rgba(174, 176, 181, 1);
+}
+
+.vd-color--gray {
+    color: #d6d7d9;
+    color: rgba(214, 215, 217, 1);
+}
+
+.vd-color--white {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+}
+
+.vd-color-primary-alt {
+    color: #3e9ff0;
+    color: rgba(62, 159, 240, 1);
+}
+
+.vd-color--primary-alt-darkest {
+    color: #006a9b;
+    color: rgba(0, 106, 155, 1);
+}
+
+.vd-color-primary-alt-dark {
+    color: #00a5d4;
+    color: rgba(0, 165, 212, 1);
+}
+
+.vd-color--primary-alt-light {
+    color: #99daf2;
+    color: rgba(153, 218, 242, 1);
+}
+
+.vd-color--primary-alt-lightest {
+    color: #e0f3f8;
+    color: rgba(224, 243, 248, 1);
+}
+
+.vd-color--secondary {
+    color: #d0404c;
+    color: rgba(208, 64, 76, 1);
+}
+
+.vd-color--secondary-darkest {
+    color: #9a1919;
+    color: rgba(154, 25, 25, 1);
+}
+
+.vd-color--secondary-dark {
+    color: #cf1d1d;
+    color: rgba(207, 29, 29, 1);
+}
+
+.vd-color--secondary-lighter {
+    color: #e79593;
+    color: rgba(231, 149, 147, 1);
+}
+
+.vd-color--secondary-lightest {
+    color: #fadfde;
+    color: rgba(250, 223, 222, 1);
 }
 
 /* ------------------------------------ *\
