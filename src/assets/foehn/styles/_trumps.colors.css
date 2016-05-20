@@ -2,68 +2,43 @@
     #COLORS
 \* ------------------------------------ */
 
-.color--primary {
-    color: var(--color-primary);
-}
-
-.color--base {
-    color: var(--color-base);
-}
-
-.color--gray-dark {
-    color: var(--color-gray-dark);
-}
-
-
-.color--gray-light {
-    color: var(--color-gray-light);
-}
-
-.color--gray {
-    color: var(--color-gray-lighter);
-}
-
-.color--white {
-    color: var(--color-white);
-}
-
-
-.color-primary-alt {
-    color: var(--color-primary-alt);
-}
-
-.color--primary-alt-darkest {
-    color: var(--primary-alt-darkest);
-}
-
-.color-primary-alt-dark {
-    color: var(--primary-alt-dark);
-}
-
-.color--primary-alt-light {
-    color: var(--primary-alt-light);
-}
-
-.color--primary-alt-lightest {
-    color: var(--primary-alt-lightest);
-}
-
-.color--secondary {
-    color: var(--color-secondary);
-}
-
-.color--secondary-darkest {
-    color: var(--color-secondary-darkest);
-}
-
-.color--secondary-dark {
-    color: var(--color-secondary-dark);
-}
-
-.color--secondary-lighter {
-    color: var(--color-secondary-lighter);
-}
-
-.color--secondary-lightest {
-    color: var(--color-secondary-lightest);
+/**
+ * Set text color
+ *
+ * Be sure that the contrast meet the standard of accessibility.
+ */
+@each $color in primary,
+    primary,
+    base,
+    gray-dark,
+    gray-light,
+    gray-lighter,
+    white,
+    primary-alt,
+    primary-alt-darkest,
+    primary-alt-dark,
+    primary-alt-light,
+    primary-alt-lightest,
+    secondary,
+    secondary-darkest,
+    secondary-dark,
+    secondary-lighter,
+    secondary-lightest,
+    gold,
+    gold-light,
+    gold-lighter,
+    gold-lightest,
+    green,
+    green-light,
+    green-lighter,
+    green-lightest,
+    blue,
+    blue-light,
+    blue-lighter,
+    blue-lightest,
+    focus,
+    visited {
+    .color--$(color) {
+        color: var(--color-$(color));
+    }
 }

@@ -4452,6 +4452,17 @@ hr {
     #COLORS
 \* ------------------------------------ */
 
+/**
+ * Set text color
+ *
+ * Be sure that the contrast meet the standard of accessibility.
+ */
+
+.vd-color--primary {
+    color: #4a873f;
+    color: rgba(74, 135, 63, 1);
+}
+
 .vd-color--primary {
     color: #4a873f;
     color: rgba(74, 135, 63, 1);
@@ -4472,7 +4483,7 @@ hr {
     color: rgba(174, 176, 181, 1);
 }
 
-.vd-color--gray {
+.vd-color--gray-lighter {
     color: #d6d7d9;
     color: rgba(214, 215, 217, 1);
 }
@@ -4482,7 +4493,7 @@ hr {
     color: rgba(255, 255, 255, 1);
 }
 
-.vd-color-primary-alt {
+.vd-color--primary-alt {
     color: #3e9ff0;
     color: rgba(62, 159, 240, 1);
 }
@@ -4492,7 +4503,7 @@ hr {
     color: rgba(0, 106, 155, 1);
 }
 
-.vd-color-primary-alt-dark {
+.vd-color--primary-alt-dark {
     color: #00a5d4;
     color: rgba(0, 165, 212, 1);
 }
@@ -4530,6 +4541,76 @@ hr {
 .vd-color--secondary-lightest {
     color: #fadfde;
     color: rgba(250, 223, 222, 1);
+}
+
+.vd-color--gold {
+    color: #feb71a;
+    color: rgba(254, 183, 26, 1);
+}
+
+.vd-color--gold-light {
+    color: #fac540;
+    color: rgba(250, 197, 64, 1);
+}
+
+.vd-color--gold-lighter {
+    color: #fbd87f;
+    color: rgba(251, 216, 127, 1);
+}
+
+.vd-color--gold-lightest {
+    color: #fff0d2;
+    color: rgba(255, 240, 210, 1);
+}
+
+.vd-color--green {
+    color: #298240;
+    color: rgba(41, 130, 64, 1);
+}
+
+.vd-color--green-light {
+    color: #45a264;
+    color: rgba(69, 162, 100, 1);
+}
+
+.vd-color--green-lighter {
+    color: #93bda2;
+    color: rgba(147, 189, 162, 1);
+}
+
+.vd-color--green-lightest {
+    color: #e7f3e4;
+    color: rgba(231, 243, 228, 1);
+}
+
+.vd-color--blue {
+    color: #1e5693;
+    color: rgba(30, 86, 147, 1);
+}
+
+.vd-color--blue-light {
+    color: #4675aa;
+    color: rgba(70, 117, 170, 1);
+}
+
+.vd-color--blue-lighter {
+    color: #8aa7ca;
+    color: rgba(138, 167, 202, 1);
+}
+
+.vd-color--blue-lightest {
+    color: #dce4ef;
+    color: rgba(220, 228, 239, 1);
+}
+
+.vd-color--focus {
+    color: #3a95cf;
+    color: rgba(58, 149, 207, 1);
+}
+
+.vd-color--visited {
+    color: #4d3492;
+    color: rgba(77, 52, 146, 1);
 }
 
 /* ------------------------------------ *\
