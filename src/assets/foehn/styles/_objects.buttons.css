@@ -6,10 +6,10 @@
     --button-background: var(--color-primary-alt);
     --button-color: var(--color-base);
 
-    --button-background-hover: var(--primary-alt-dark);
+    --button-background-hover: var(--color-primary-alt-dark);
     --button-color-hover: var(--button-color);
 
-    --button-background-active: var(--primary-alt-darkest);
+    --button-background-active: var(--color-primary-alt-darkest);
     --button-color-active: var(--color-white);
 
     --button-padding: calc(var(--base-spacing-unit) / 2);
