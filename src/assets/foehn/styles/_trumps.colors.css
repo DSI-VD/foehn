@@ -14,28 +14,34 @@
     gray-light,
     gray-lighter,
     white,
+
     primary-alt,
     primary-alt-darkest,
     primary-alt-dark,
     primary-alt-light,
     primary-alt-lightest,
+
     secondary,
     secondary-darkest,
     secondary-dark,
     secondary-lighter,
     secondary-lightest,
+
     gold,
     gold-light,
     gold-lighter,
     gold-lightest,
+
     green,
     green-light,
     green-lighter,
     green-lightest,
+
     blue,
     blue-light,
     blue-lighter,
     blue-lightest,
+
     focus,
     visited {
     .color--$(color) {
