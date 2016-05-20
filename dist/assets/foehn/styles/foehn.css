@@ -4124,78 +4124,159 @@ hr {
     margin-top: 1.6875rem;
 }
 
-/**
- * White links on dark background
- */
-
-/**
- * Background primary
- */
-
 .vd-background--primary {
-    color: ;;
-    color: rgba(255, 255, 255, 1);
-    background-color: ;;
+    background-color: #4a873f;
     background-color: rgba(74, 135, 63, 1);
 }
 
-.vd-background--primary a {
-    color: currentcolor;
+.vd-background--primary {
+    background-color: #4a873f;
+    background-color: rgba(74, 135, 63, 1);
 }
 
-.vd-background--primary a:hover, .vd-background--primary a:focus,
-.vd-background--primary a:active {
-    color: #3a95cf;
-    color: rgba(58, 149, 207, 1);
-}
-
-.vd-background--primary a:visited {
-    color: #4d3492;
-    color: rgba(77, 52, 146, 1);
-}
-
-/**
- * Background black
- */
-
-.vd-background--black {
-    color: ;;
-    color: rgba(255, 255, 255, 1);
-    background-color: ;;
+.vd-background--base {
+    background-color: #000000;
     background-color: rgba(0, 0, 0, .8);
 }
 
-.vd-background--black a {
-    color: currentcolor;
+.vd-background--gray-dark {
+    background-color: #323a45;
+    background-color: rgba(50, 58, 69, 1);
 }
-
-.vd-background--black a:hover, .vd-background--black a:focus,
-.vd-background--black a:active {
-    color: #3a95cf;
-    color: rgba(58, 149, 207, 1);
-}
-
-.vd-background--black a:visited {
-    color: #4d3492;
-    color: rgba(77, 52, 146, 1);
-}
-
-/**
- * Background gray light
- */
 
 .vd-background--gray-light {
-    background-color: ;;
+    background-color: #aeb0b5;
     background-color: rgba(174, 176, 181, 1);
 }
 
-/**
- * Background gray lighter
- */
-
 .vd-background--gray-lighter {
-    background-color: ;;
+    background-color: #d6d7d9;
     background-color: rgba(214, 215, 217, 1);
+}
+
+.vd-background--white {
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.vd-background--primary-alt {
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1);
+}
+
+.vd-background--primary-alt-darkest {
+    background-color: #006a9b;
+    background-color: rgba(0, 106, 155, 1);
+}
+
+.vd-background--primary-alt-dark {
+    background-color: #00a5d4;
+    background-color: rgba(0, 165, 212, 1);
+}
+
+.vd-background--primary-alt-light {
+    background-color: #99daf2;
+    background-color: rgba(153, 218, 242, 1);
+}
+
+.vd-background--primary-alt-lightest {
+    background-color: #e0f3f8;
+    background-color: rgba(224, 243, 248, 1);
+}
+
+.vd-background--secondary {
+    background-color: #d0404c;
+    background-color: rgba(208, 64, 76, 1);
+}
+
+.vd-background--secondary-darkest {
+    background-color: #9a1919;
+    background-color: rgba(154, 25, 25, 1);
+}
+
+.vd-background--secondary-dark {
+    background-color: #cf1d1d;
+    background-color: rgba(207, 29, 29, 1);
+}
+
+.vd-background--secondary-lighter {
+    background-color: #e79593;
+    background-color: rgba(231, 149, 147, 1);
+}
+
+.vd-background--secondary-lightest {
+    background-color: #fadfde;
+    background-color: rgba(250, 223, 222, 1);
+}
+
+.vd-background--gold {
+    background-color: #feb71a;
+    background-color: rgba(254, 183, 26, 1);
+}
+
+.vd-background--gold-light {
+    background-color: #fac540;
+    background-color: rgba(250, 197, 64, 1);
+}
+
+.vd-background--gold-lighter {
+    background-color: #fbd87f;
+    background-color: rgba(251, 216, 127, 1);
+}
+
+.vd-background--gold-lightest {
+    background-color: #fff0d2;
+    background-color: rgba(255, 240, 210, 1);
+}
+
+.vd-background--green {
+    background-color: #298240;
+    background-color: rgba(41, 130, 64, 1);
+}
+
+.vd-background--green-light {
+    background-color: #45a264;
+    background-color: rgba(69, 162, 100, 1);
+}
+
+.vd-background--green-lighter {
+    background-color: #93bda2;
+    background-color: rgba(147, 189, 162, 1);
+}
+
+.vd-background--green-lightest {
+    background-color: #e7f3e4;
+    background-color: rgba(231, 243, 228, 1);
+}
+
+.vd-background--blue {
+    background-color: #1e5693;
+    background-color: rgba(30, 86, 147, 1);
+}
+
+.vd-background--blue-light {
+    background-color: #4675aa;
+    background-color: rgba(70, 117, 170, 1);
+}
+
+.vd-background--blue-lighter {
+    background-color: #8aa7ca;
+    background-color: rgba(138, 167, 202, 1);
+}
+
+.vd-background--blue-lightest {
+    background-color: #dce4ef;
+    background-color: rgba(220, 228, 239, 1);
+}
+
+.vd-background--focus {
+    background-color: #3a95cf;
+    background-color: rgba(58, 149, 207, 1);
+}
+
+.vd-background--visited {
+    background-color: #4d3492;
+    background-color: rgba(77, 52, 146, 1);
 }
 
 /* ------------------------------------ *\
