@@ -24,87 +24,38 @@
     }
 }
 
-
-
-/**
- * White links on dark background
- */
-@define-mixin background-white-link {
-
-    a {
-        color: currentcolor;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: var(--link-hover-color);
-        }
-
-        &:visited {
-            color: var(--link-visited-color);
-        }
+@each $color in primary,
+    primary,
+    base,
+    gray-dark,
+    gray-light,
+    gray-lighter,
+    white,
+    primary-alt,
+    primary-alt-darkest,
+    primary-alt-dark,
+    primary-alt-light,
+    primary-alt-lightest,
+    secondary,
+    secondary-darkest,
+    secondary-dark,
+    secondary-lighter,
+    secondary-lightest,
+    gold,
+    gold-light,
+    gold-lighter,
+    gold-lightest,
+    green,
+    green-light,
+    green-lighter,
+    green-lightest,
+    blue,
+    blue-light,
+    blue-lighter,
+    blue-lightest,
+    focus,
+    visited {
+    .background--$(color) {
+        background-color: var(--color-$(color));
     }
-
-}
-
-
-
-/**
- * Background primary
- */
-:root {
-    --background-primary: var(--color-primary;);
-    --background-primary-color: var(--color-white;);
-}
-
-.background--primary {
-    color: var(--background-primary-color);
-
-    background-color: var(--background-primary);
-
-    @mixin background-white-link;
-}
-
-
-
-/**
- * Background black
- */
-:root {
-    --background-black: var(--color-base;);
-    --background-black-color: var(--color-white;);
-}
-
-.background--black {
-    color: var(--background-black-color);
-
-    background-color: var(--background-black);
-
-    @mixin background-white-link;
-}
-
-
-
-/**
- * Background gray light
- */
-:root {
-    --background-gray-light: var(--color-gray-light;);
-}
-
-.background--gray-light {
-    background-color: var(--background-gray-light);
-}
-
-
-
-/**
- * Background gray lighter
- */
-:root {
-    --background-gray-lighter: var(--color-gray-lighter;);
-}
-
-.background--gray-lighter {
-    background-color: var(--background-gray-lighter);
 }
