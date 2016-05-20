@@ -14,10 +14,10 @@
 
     /* Secondary colors */
     --color-primary-alt: rgba(62, 159, 240, 1);
-    --primary-alt-darkest: rgba(0, 106, 155, 1);
-    --primary-alt-dark: rgba(0, 165, 212, 1);
-    --primary-alt-light: rgba(153, 218, 242, 1);
-    --primary-alt-lightest: rgba(224, 243, 248, 1);
+    --color-primary-alt-darkest: rgba(0, 106, 155, 1);
+    --color-primary-alt-dark: rgba(0, 165, 212, 1);
+    --color-primary-alt-light: rgba(153, 218, 242, 1);
+    --color-primary-alt-lightest: rgba(224, 243, 248, 1);
     --color-secondary: rgba(208, 64, 76, 1);
     --color-secondary-darkest: rgba(154, 25, 25, 1);
     --color-secondary-dark: rgba(207, 29, 29, 1);
