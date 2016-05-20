@@ -8,41 +8,87 @@ If you choose to customize beyond this palette, this color contrast tool is a us
 
 #### Colors on a white background
 
-<div class="vd-layout vd-u-mb">
-<div class="vd-layout__item--1-2 vd-color--base vd-background vd-background--white vd-u-ph">
-    <p>base on white</p>
-</div>
+##### Primary colors
 
+<div class="vd-layout vd-u-mb">
 <div class="vd-layout__item--1-2 vd-color--primary vd-background vd-background--white vd-u-ph">
     <p>primary on white</p>
 </div>
 
-<div class="vd-layout__item--1-2 vd-color--primary-alt vd-background vd-background--white vd-u-ph">
-    <p>primary-alt on white</p>
+<div class="vd-layout__item--1-2 vd-color--base vd-background vd-background--white vd-u-ph">
+    <p>base on white</p>
 </div>
 
-<div class="vd-layout__item--1-2 vd-color--secondary vd-background vd-background--white vd-u-ph">
-    <p>secondary on white</p>
+<div class="vd-layout__item--1-2 vd-color--gray-dark vd-background vd-background--white vd-u-ph">
+    <p>gray-dark on white</p>
 </div>
 
+<div class="vd-layout__item--1-2 vd-color--gray-light vd-background vd-background--white vd-u-ph">
+    <p>gray-light on white</p>
+</div>
+
+<div class="vd-layout__item--1-2 vd-color--gray-lighter vd-background vd-background--white vd-u-ph">
+    <p>gray-lighter on graywhite</p>
+</div>
+</div>
+
+##### Gold
+
+<div class="vd-layout vd-u-mb">
 <div class="vd-layout__item--1-2 vd-color--gold vd-background vd-background--white vd-u-ph">
     <p>gold on white</p>
 </div>
 
+<div class="vd-layout__item--1-2 vd-color--gold-light vd-background vd-background--white vd-u-ph">
+    <p>gold-light on white</p>
+</div>
+
+<div class="vd-layout__item--1-2 vd-color--gold-lighter vd-background vd-background--white vd-u-ph">
+    <p>gold-lighter on white</p>
+</div>
+
+<div class="vd-layout__item--1-2 vd-color--gold-lightest vd-background vd-background--white vd-u-ph">
+    <p>gold-lightest on graywhite</p>
+</div>
+</div>
+
+##### Green
+
+<div class="vd-layout vd-u-mb">
 <div class="vd-layout__item--1-2 vd-color--green vd-background vd-background--white vd-u-ph">
     <p>green on white</p>
 </div>
 
+<div class="vd-layout__item--1-2 vd-color--green-light vd-background vd-background--white vd-u-ph">
+    <p>green-light on white</p>
+</div>
+
+<div class="vd-layout__item--1-2 vd-color--green-lighter vd-background vd-background--white vd-u-ph">
+    <p>green-lighter on white</p>
+</div>
+
+<div class="vd-layout__item--1-2 vd-color--green-lightest vd-background vd-background--white vd-u-ph">
+    <p>green-lightest on graywhite</p>
+</div>
+</div>
+
+##### Blue
+
+<div class="vd-layout vd-u-mb">
 <div class="vd-layout__item--1-2 vd-color--blue vd-background vd-background--white vd-u-ph">
     <p>blue on white</p>
 </div>
 
-<div class="vd-layout__item--1-2 vd-color--focus vd-background vd-background--white vd-u-ph">
-    <p>blue on white</p>
+<div class="vd-layout__item--1-2 vd-color--blue-light vd-background vd-background--white vd-u-ph">
+    <p>blue-light on white</p>
 </div>
 
-<div class="vd-layout__item--1-2 vd-color--visited vd-background vd-background--white vd-u-ph">
-    <p>blue on white</p>
+<div class="vd-layout__item--1-2 vd-color--blue-lighter vd-background vd-background--white vd-u-ph">
+    <p>blue-lighter on white</p>
+</div>
+
+<div class="vd-layout__item--1-2 vd-color--blue-lightest vd-background vd-background--white vd-u-ph">
+    <p>blue-lightest on graywhite</p>
 </div>
 </div>
 
