@@ -179,7 +179,7 @@ gulp.task('fonts', function () {
 
 // lint HTML
 gulp.task('lint-html', function() {
-    return gulp.src(['src/**/*.html', '!src/**/f-*.html'])
+    return gulp.src(['dist/**/*.html'])
         .pipe(htmllint({}, htmllintReporter));
 });
 function htmllintReporter(filepath, issues) {

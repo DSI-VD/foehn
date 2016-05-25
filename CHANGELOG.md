@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- HTML in `dist/` instead of `src/` is linted
 - Homepage view has been updated
 - Homepage template has been updated
 - refactor HTML of page-titles organim
