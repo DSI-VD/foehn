@@ -1,6 +1,13 @@
 # Change Log
+
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+## [Unreleased]
+
+nothing yet
+
+## [0.6.0]
 
 ### Added
 
@@ -15,6 +22,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add an atom for fonts
 - Add `.vd-font-heading` class
 - Upgrade autoprefixer to 6.3.6
+- Add a molecule for search results
+- CSS linting support stylelint 6.3.3 rules
 
 ### Changed
 
@@ -26,25 +35,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - remove figcaption from media-block molecule
 - 3 news instead of 5 are shown in the `latest-news` organism
 - Add margin at bottom of `.vd-list-bare`
+- Add margin at the bottom of list items
 
 ### Fixed
 
 - Fix color variables names
 - Fix `.vd-background` vertical spacing
-
-## [Unreleased]
-
-### Added
-
-- Add a molecule for search results
-- CSS linting support stylelint 6.3.3 rules
-
-### Changed
-
-- Add margin at the bottom of list items
-
-### Fixed
-
 - Fix missing `vd-*` prefix in Small Caps atom
 - Fix missing `vd-*` prefix in Fraction atom
 - Fix missing `vd-*` prefix in Footnote atom
@@ -263,7 +259,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/DSI-VD/foehn/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/DSI-VD/foehn/compare/v0.4.2...v0.5.0
 [0.4.2]: https://github.com/DSI-VD/foehn/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/DSI-VD/foehn/compare/v0.4.0...v0.4.1
