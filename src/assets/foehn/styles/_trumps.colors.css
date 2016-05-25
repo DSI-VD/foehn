@@ -1,61 +1,49 @@
 /* ------------------------------------ *\
-    #BACKGROUNDS
+    #COLORS
 \* ------------------------------------ */
 
-
-
 /**
- * Add vertical space on items that have a background color.
+ * Set text color
  *
- * 1. Remove margin bottom of the last child to avoid double bottom space
- *    (padding + margin)
+ * Be sure that the contrast meet the standard of accessibility.
  */
-.background {
-
-    padding-top: var(--base-spacing-unit);
-    padding-bottom: var(--base-spacing-unit);
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-
-    & + :not(.background) {
-        margin-top: var(--base-spacing-unit);
-    }
-}
-
 @each $color in primary,
-    primary,
     base,
     gray-dark,
     gray-light,
     gray-lighter,
     white,
+
     primary-alt,
     primary-alt-darkest,
     primary-alt-dark,
     primary-alt-light,
     primary-alt-lightest,
+
     secondary,
     secondary-darkest,
     secondary-dark,
     secondary-lighter,
     secondary-lightest,
+
     gold,
     gold-light,
     gold-lighter,
     gold-lightest,
+
     green,
     green-light,
     green-lighter,
     green-lightest,
+
     blue,
     blue-light,
     blue-lighter,
     blue-lightest,
+
     focus,
     visited {
-    .background--$(color) {
-        background-color: var(--color-$(color));
+    .color-text--$(color) {
+        color: var(--color-$(color));
     }
 }
