@@ -43,7 +43,7 @@
 
     focus,
     visited {
-    .color--$(color) {
+    .color-text--$(color) {
         color: var(--color-$(color));
     }
 }
