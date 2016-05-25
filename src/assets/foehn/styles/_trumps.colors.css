@@ -8,7 +8,6 @@
  * Be sure that the contrast meet the standard of accessibility.
  */
 @each $color in primary,
-    primary,
     base,
     gray-dark,
     gray-light,
