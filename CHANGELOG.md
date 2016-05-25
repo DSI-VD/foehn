@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add text accessibility documentation
+- Add `.vd-color-text--*` classes to set text color
 - Add `.vd-background-primary` class
 - Add missing molcule for `.vd-background--gray-lighter`
 - Add `.vd-background--gray-lighter` class
