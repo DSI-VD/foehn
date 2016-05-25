@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `.vd-background--gray-lighter` class
 - Add modifier on last-news organism
 - Add the possibilie to add a modifier on headings atoms
-- Add `.vd-background` class that add vertical spacing on items that have colored background
+- Add `.vd-background` class to add vertical spacing on items that have colored background
 - Add an atom for fonts
 - Add `.vd-font-heading` class
 - Upgrade autoprefixer to 6.3.6
