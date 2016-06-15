@@ -72,7 +72,7 @@
 @font-face {
     font-weight: normal; /* or 400 */
     font-style: normal;
-    font-family: "MetaSerifWeb";
+    font-family: MetaSerifWeb;
 
     src: url("../fonts/MetaSerifWeb-Book.woff") format("woff");
 }
@@ -81,7 +81,7 @@
 @font-face {
     font-weight: normal; /* or 400 */
     font-style: italic;
-    font-family: "MetaSerifWeb";
+    font-family: MetaSerifWeb;
 
     src: url("../fonts/MetaSerifWeb-BookItalic.woff") format("woff");
 }
@@ -90,7 +90,7 @@
 @font-face {
     font-weight: bold; /* or 700 */
     font-style: normal;
-    font-family: "MetaSerifWeb";
+    font-family: MetaSerifWeb;
 
     src: url("../fonts/MetaSerifWeb-Bold.woff") format("woff");
 }
@@ -99,7 +99,7 @@
 @font-face {
     font-weight: bold;
     font-style: italic;
-    font-family: "MetaSerifWeb";
+    font-family: MetaSerifWeb;
 
     src: url("../fonts/MetaSerifWeb-BoldItalic.woff") format("woff");
 }
@@ -113,7 +113,7 @@
 @font-face {
     font-weight: normal; /* or 400 */
     font-style: normal;
-    font-family: "MetaWeb";
+    font-family: MetaWeb;
 
     src: url("../fonts/MetaWeb-CondBook.woff") format("woff");
 }
@@ -122,7 +122,7 @@
 @font-face {
     font-weight: normal; /* or 400 */
     font-style: italic;
-    font-family: "MetaWeb";
+    font-family: MetaWeb;
 
     src: url("../fonts/MetaWeb-CondBookItalic.woff") format("woff");
 }
@@ -131,7 +131,7 @@
 @font-face {
     font-weight: bold; /* or 700 */
     font-style: normal;
-    font-family: "MetaWeb";
+    font-family: MetaWeb;
 
     src: url("../fonts/MetaWeb-CondBold.woff") format("woff");
 }
@@ -140,7 +140,7 @@
 @font-face {
     font-weight: bold; /* or 700 */
     font-style: italic;
-    font-family: "MetaWeb";
+    font-family: MetaWeb;
 
     src: url("../fonts/MetaWeb-CondBoldItalic.woff") format("woff");
 }
