@@ -5,7 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-nothing yet
+### Changed
+
+- Update CSS linting rules
 
 ## [0.6.0]
 
