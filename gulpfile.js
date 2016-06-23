@@ -4,7 +4,6 @@
 var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
 var nano = require('gulp-cssnano');
-var del = require('del');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var gulpif = require('gulp-if');
@@ -20,7 +19,6 @@ var htmllint = require('gulp-htmllint');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
 
-
 // configuration
 var config = require('./gulp-config.json');
 
@@ -31,9 +29,7 @@ var webpackCompiler = webpack(webpackConfig);
 
 
 // clean
-gulp.task('clean', function () {
-	return del([config.dest]);
-});
+require('./gulp-tasks/clean')();
 
 
 // styles
