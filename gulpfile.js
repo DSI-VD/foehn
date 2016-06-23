@@ -9,7 +9,6 @@ var imagemin = require('gulp-imagemin');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var htmllint = require('gulp-htmllint');
-var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
 
 // configuration
@@ -18,29 +17,12 @@ var config = require('./gulp-config.json');
 
 // webpack
 var webpackConfig = require('./webpack.config')(config);
-var webpackCompiler = webpack(webpackConfig);
 
 
-// clean
+// tasks
 require('./gulp-tasks/clean')();
 require('./gulp-tasks/styles')();
-
-
-// scripts
-gulp.task('scripts', function (done) {
-    webpackCompiler.run(function (error, result) {
-        if (error) {
-            gutil.log(gutil.colors.red(error));
-        }
-        result = result.toJson();
-        if (result.errors.length) {
-            result.errors.forEach(function (error) {
-                gutil.log(gutil.colors.red(error));
-            });
-        }
-        done();
-    });
-});
+require('./gulp-tasks/scripts')();
 
 
 // images
