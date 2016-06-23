@@ -4,10 +4,8 @@
 var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
-var gutil = require('gulp-util');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
-var htmllint = require('gulp-htmllint');
 var ghPages = require('gulp-gh-pages');
 
 // configuration
@@ -25,29 +23,8 @@ require('./gulp-tasks/scripts')();
 require('./gulp-tasks/images')();
 require('./gulp-tasks/favicon')();
 require('./gulp-tasks/fonts')();
+require('./gulp-tasks/html-lint')();
 
-
-
-
-
-
-// fonts
-
-
-// lint HTML
-gulp.task('lint-html', function() {
-    return gulp.src(['dist/**/*.html'])
-        .pipe(htmllint({}, htmllintReporter));
-});
-function htmllintReporter(filepath, issues) {
-    if (issues.length > 0) {
-        issues.forEach(function (issue) {
-            gutil.log(gutil.colors.cyan('[gulp-htmllint] ') + gutil.colors.white(filepath + ' [' + issue.line + ',' + issue.column + ']: ') + gutil.colors.red('(' + issue.code + ') ' + issue.msg));
-        });
-
-        process.exitCode = 1;
-    }
-}
 
 // assemble
 gulp.task('assemble', ["lint-html"], function (done) {
