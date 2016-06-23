@@ -23,13 +23,11 @@ require('./gulp-tasks/clean')();
 require('./gulp-tasks/styles')();
 require('./gulp-tasks/scripts')();
 require('./gulp-tasks/images')();
+require('./gulp-tasks/favicon')();
 
 
 
-gulp.task('favicon', function () {
-    return gulp.src('./src/favicon.ico')
-        .pipe(gulp.dest(config.dest));
-});
+
 
 
 // fonts
