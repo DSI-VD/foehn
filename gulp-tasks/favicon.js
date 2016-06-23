@@ -1,12 +1,8 @@
-'use strict'
+var config = require('../gulp-config.json');
 
-var gulp          = require('gulp'),
-    config        = require('../gulp-config.json');
-
-module.exports = function () {
-
-    gulp.task('favicon', function () {
-        return gulp.src('./src/favicon.ico')
+module.exports = function (gulp, plugins) {
+    return function () {
+        gulp.src('./src/favicon.ico')
             .pipe(gulp.dest(config.dest));
-    });
-}
+    };
+};

@@ -1,15 +1,10 @@
-'use strict'
+var config = require('../gulp-config.json');
 
-var gulp          = require('gulp'),
-    config        = require('../gulp-config.json'),
-    del           = require('del');
-
-module.exports = function () {
-
-    /**
-     * Clean output directoriesnew
-     */
-    gulp.task('clean', function () {
-        return del([config.dest]);
-    });
-}
+/**
+ * Clean output directories
+ */
+module.exports = function (gulp, plugins) {
+    return function () {
+        plugins.del([config.dest]);
+    };
+};

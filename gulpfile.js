@@ -6,6 +6,9 @@ var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
+var plugins = require('gulp-load-plugins')({
+        pattern: ['gulp-*', 'gulp.*', 'del']
+});
 
 // configuration
 var config = require('./gulp-config.json');
@@ -16,12 +19,16 @@ var webpackConfig = require('./webpack.config')(config);
 
 
 // tasks
-require('./gulp-tasks/clean')();
+function getTask(task) {
+    return require('./gulp-tasks/' + task)(gulp, plugins);
+}
+
+gulp.task('clean', getTask('clean'));
 require('./gulp-tasks/styles')();
 require('./gulp-tasks/scripts')();
-require('./gulp-tasks/images')();
-require('./gulp-tasks/favicon')();
-require('./gulp-tasks/fonts')();
+gulp.task('images', ['favicon'], getTask('images'));
+gulp.task('favicon', getTask('favicon'));
+gulp.task('fonts', getTask('fonts'));
 require('./gulp-tasks/html-lint')();
 
 
