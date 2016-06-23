@@ -24,6 +24,7 @@ require('./gulp-tasks/styles')();
 require('./gulp-tasks/scripts')();
 require('./gulp-tasks/images')();
 require('./gulp-tasks/favicon')();
+require('./gulp-tasks/fonts')();
 
 
 
@@ -31,10 +32,7 @@ require('./gulp-tasks/favicon')();
 
 
 // fonts
-gulp.task('fonts', function () {
-    return gulp.src(config.src.fonts)
-        .pipe(gulp.dest(config.dest + '/assets/foehn/fonts'));
-});
+
 
 // lint HTML
 gulp.task('lint-html', function() {
