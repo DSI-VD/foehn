@@ -6,7 +6,6 @@ var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
-var ghPages = require('gulp-gh-pages');
 
 // configuration
 var config = require('./gulp-config.json');
@@ -86,11 +85,8 @@ gulp.task('serve', function () {
 
 });
 
+require('./gulp-tasks/deploy')();
 
-gulp.task('deploy', function() {
-  return gulp.src(config.dest + '/**/*')
-    .pipe(ghPages());
-});
 
 
 // default build task
