@@ -34,17 +34,8 @@ gulp.task('favicon', getTask('favicon'));
 gulp.task('fonts', getTask('fonts'));
 gulp.task('lint-html', getTask('html-lint'));
 gulp.task('assemble', ['lint-html'], getTask('assemble'));
+gulp.task('deploy', getTask('deploy'));
 
-
-
-// // assemble
-// gulp.task('assemble', ['lint-html'], function (done) {
-//     assemble({
-//         logErrors: config.dev,
-//         dest: config.dest
-//     });
-//     done();
-// });
 
 
 // server
@@ -96,8 +87,6 @@ gulp.task('serve', function () {
     gulp.watch(config.src.fonts, ['fonts:watch']);
 
 });
-
-require('./gulp-tasks/deploy')();
 
 
 
