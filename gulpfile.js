@@ -7,7 +7,7 @@ var gulp = require('gulp');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var plugins = require('gulp-load-plugins')({
-        pattern: ['gulp-*', 'gulp.*', 'del', 'browser-sync']
+        pattern: ['gulp-*', 'gulp.*', 'del', 'autoprefixer', 'browser-sync']
 });
 
 // configuration
@@ -26,7 +26,7 @@ function getTask(task) {
 gulp.task('clean', getTask('clean'));
 gulp.task('lint-styles', getTask('style-lint'));
 gulp.task('styles:foehn', ['lint-styles'], getTask('style-foehn'));
-require('./gulp-tasks/styles')();
+gulp.task('styles:fabricator', getTask('style-fabricator'));
 gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
 require('./gulp-tasks/scripts')();
 gulp.task('images', ['favicon'], getTask('images'));
