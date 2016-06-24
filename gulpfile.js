@@ -32,11 +32,11 @@ require('./gulp-tasks/scripts')();
 gulp.task('images', ['favicon'], getTask('images'));
 gulp.task('favicon', getTask('favicon'));
 gulp.task('fonts', getTask('fonts'));
-require('./gulp-tasks/html-lint')();
+gulp.task('lint-html', getTask('html-lint'));
 
 
 // assemble
-gulp.task('assemble', ["lint-html"], function (done) {
+gulp.task('assemble', ['lint-html'], function (done) {
     assemble({
         logErrors: config.dev,
         dest: config.dest
