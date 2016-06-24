@@ -35,19 +35,6 @@ module.exports = function () {
             .pipe(gulpif(config.dev, reload({stream:true})));
     });
 
-    gulp.task('lint-styles', function lintCssTask() {
-      const gulp = require('gulp');
-      const gulpStylelint = require('gulp-stylelint');
-
-      return gulp
-        .src('src/**/*.css')
-        .pipe(gulpStylelint({
-          reporters: [
-            {formatter: 'string', console: true}
-          ]
-        }));
-    });
-
     gulp.task('styles:foehn', ["lint-styles"], function () {
         var processors = [
             require('postcss-import'),

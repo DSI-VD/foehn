@@ -24,6 +24,7 @@ function getTask(task) {
 }
 
 gulp.task('clean', getTask('clean'));
+gulp.task('lint-styles', getTask('style-lint'));
 require('./gulp-tasks/styles')();
 require('./gulp-tasks/scripts')();
 gulp.task('images', ['favicon'], getTask('images'));
