@@ -7,7 +7,7 @@ var gulp = require('gulp');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var plugins = require('gulp-load-plugins')({
-        pattern: ['gulp-*', 'gulp.*', 'del', 'autoprefixer', 'browser-sync']
+        pattern: ['gulp-*', 'gulp.*', 'del', 'autoprefixer', 'browser-sync', 'fabricator-assemble']
 });
 
 // configuration
@@ -33,16 +33,18 @@ gulp.task('images', ['favicon'], getTask('images'));
 gulp.task('favicon', getTask('favicon'));
 gulp.task('fonts', getTask('fonts'));
 gulp.task('lint-html', getTask('html-lint'));
+gulp.task('assemble', ['lint-html'], getTask('assemble'));
 
 
-// assemble
-gulp.task('assemble', ['lint-html'], function (done) {
-    assemble({
-        logErrors: config.dev,
-        dest: config.dest
-    });
-    done();
-});
+
+// // assemble
+// gulp.task('assemble', ['lint-html'], function (done) {
+//     assemble({
+//         logErrors: config.dev,
+//         dest: config.dest
+//     });
+//     done();
+// });
 
 
 // server
