@@ -7,7 +7,7 @@ var gulp = require('gulp');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var plugins = require('gulp-load-plugins')({
-        pattern: ['gulp-*', 'gulp.*', 'del', 'autoprefixer', 'browser-sync', 'fabricator-assemble']
+        pattern: ['gulp-*', 'gulp.*', 'del', 'autoprefixer', 'browser-sync', 'fabricator-assemble', 'webpack']
 });
 
 // configuration
@@ -28,7 +28,7 @@ gulp.task('lint-styles', getTask('style-lint'));
 gulp.task('styles:foehn', ['lint-styles'], getTask('style-foehn'));
 gulp.task('styles:fabricator', getTask('style-fabricator'));
 gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
-require('./gulp-tasks/scripts')();
+gulp.task('scripts', getTask('scripts'));
 gulp.task('images', ['favicon'], getTask('images'));
 gulp.task('favicon', getTask('favicon'));
 gulp.task('fonts', getTask('fonts'));
