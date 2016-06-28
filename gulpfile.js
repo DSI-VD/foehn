@@ -11,10 +11,6 @@ var plugins = require('gulp-load-plugins')({
 var config = require('./gulp-config.json');
 
 
-// webpack
-var webpackConfig = require('./webpack.config')(config);
-
-
 // tasks
 function getTask(task) {
     return require('./gulp-tasks/' + task)(gulp, plugins);
