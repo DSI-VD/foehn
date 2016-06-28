@@ -90,10 +90,11 @@ gulp.task('serve', function () {
 
 
 // default build task
-gulp.task('default', ['clean'], function () {
+gulp.task('default', function () {
 
     // define build tasks
     var tasks = [
+        'clean',
         'styles',
         'scripts',
         'images',
