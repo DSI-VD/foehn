@@ -2,9 +2,8 @@
 
 // modules
 var gulp = require('gulp');
-var runSequence = require('run-sequence');
 var plugins = require('gulp-load-plugins')({
-        pattern: ['gulp-*', 'gulp.*', 'del', 'autoprefixer', 'browser-sync', 'fabricator-assemble', 'webpack']
+        pattern: ['gulp-*', 'gulp.*', 'del', 'autoprefixer', 'browser-sync', 'fabricator-assemble', 'webpack', 'run-sequence']
 });
 
 // configuration
@@ -44,8 +43,8 @@ gulp.task('default', ['clean'], function () {
     ];
 
     // run build
-    runSequence(tasks, function () {
-        if (config.dev) {
+    plugins.runSequence(tasks, function () {
+        if (plugins.util.env.dev) {
             gulp.start('serve');
         }
     });

@@ -1,5 +1,5 @@
 {
-    dev: gutil.env.dev,
+    dev: plugins.util.env.dev,
     src: {
         scripts: {
             fabricator: './src/assets/fabricator/scripts/fabricator.js',
