@@ -3,7 +3,7 @@
  */
 module.exports = function (gulp, plugins) {
     return function () {
-        gulp.src(['dist/**/*.html'])
+        gulp.src(['src/**/*.html'])
             .pipe(plugins.htmllint({}, htmllintReporter));
     };
 
