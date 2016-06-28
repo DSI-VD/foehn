@@ -32,11 +32,10 @@ gulp.task('deploy', getTask('deploy'));
 
 
 // default build task
-gulp.task('default', function () {
+gulp.task('default', ['clean'], function () {
 
     // define build tasks
     var tasks = [
-        'clean',
         'styles',
         'scripts',
         'images',
