@@ -1,7 +1,6 @@
 'use strict';
 
 // modules
-var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var reload = browserSync.reload;
