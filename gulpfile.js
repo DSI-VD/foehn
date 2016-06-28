@@ -35,10 +35,10 @@ gulp.task('default', ['clean'], function () {
 
     // define build tasks
     var tasks = [
-        'styles',
-        'scripts',
         'images',
         'fonts',
+        'styles',
+        'scripts',
         'assemble'
     ];
 
