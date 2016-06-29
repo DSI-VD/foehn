@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Upgrade `babel-core`
+- Upgrade `babel-preset-stage-2`
 - Upgrade `del`
 - Upgrade `postcss-extend`
 - Upgrade `postcss-mixins`
