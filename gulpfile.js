@@ -93,7 +93,9 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
     var processors = [
         require('postcss-import'),
         require('postcss-mixins'),
-        require('postcss-advanced-variables'),
+        require('postcss-each'),
+        require('postcss-for'),
+        require('postcss-simple-vars'),
         require('postcss-custom-media'),
         require('postcss-custom-properties'),
         require('postcss-media-minmax'),

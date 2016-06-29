@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Upgrade `postcss-mixins`
+- Replace `postcss-advanced-variables` with `postcss-each`, `postcss-for`and `postcss-simple-vars`
 - Update CSS linting rules
 
 ## [0.6.0]
