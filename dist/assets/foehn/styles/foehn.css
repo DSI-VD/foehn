@@ -1884,7 +1884,7 @@ hr {
     .vd-layout__item--2-2 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: 99.99%;
+        width: calc(99.99% * 2/2 - 0rem);
     }
 
     .vd-layout__item--2-2:nth-child(1n) {
@@ -2016,7 +2016,7 @@ hr {
     .vd-layout__item--3-3 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: 99.99%;
+        width: calc(99.99% * 3/3 - 0rem);
     }
 
     .vd-layout__item--3-3:nth-child(1n) {
@@ -2148,7 +2148,7 @@ hr {
     .vd-layout__item--4-4 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: 99.99%;
+        width: calc(99.99% * 4/4 - 0rem);
     }
 
     .vd-layout__item--4-4:nth-child(1n) {
@@ -2280,7 +2280,7 @@ hr {
     .vd-layout__item--5-5 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: 99.99%;
+        width: calc(99.99% * 5/5 - 0rem);
     }
 
     .vd-layout__item--5-5:nth-child(1n) {
@@ -2325,7 +2325,7 @@ hr {
         .vd-layout__item--palm--2-2 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 2/2 - 0rem);
         }
 
         .vd-layout__item--palm--2-2:nth-child(1n) {
@@ -2457,7 +2457,7 @@ hr {
         .vd-layout__item--palm--3-3 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 3/3 - 0rem);
         }
 
         .vd-layout__item--palm--3-3:nth-child(1n) {
@@ -2589,7 +2589,7 @@ hr {
         .vd-layout__item--palm--4-4 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 4/4 - 0rem);
         }
 
         .vd-layout__item--palm--4-4:nth-child(1n) {
@@ -2721,7 +2721,7 @@ hr {
         .vd-layout__item--palm--5-5 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 5/5 - 0rem);
         }
 
         .vd-layout__item--palm--5-5:nth-child(1n) {
@@ -2767,7 +2767,7 @@ hr {
         .vd-layout__item--lap--2-2 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 2/2 - 0rem);
         }
 
         .vd-layout__item--lap--2-2:nth-child(1n) {
@@ -2899,7 +2899,7 @@ hr {
         .vd-layout__item--lap--3-3 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 3/3 - 0rem);
         }
 
         .vd-layout__item--lap--3-3:nth-child(1n) {
@@ -3031,7 +3031,7 @@ hr {
         .vd-layout__item--lap--4-4 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 4/4 - 0rem);
         }
 
         .vd-layout__item--lap--4-4:nth-child(1n) {
@@ -3163,7 +3163,7 @@ hr {
         .vd-layout__item--lap--5-5 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 5/5 - 0rem);
         }
 
         .vd-layout__item--lap--5-5:nth-child(1n) {
@@ -3209,7 +3209,7 @@ hr {
         .vd-layout__item--lap-and-up--2-2 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 2/2 - 0rem);
         }
 
         .vd-layout__item--lap-and-up--2-2:nth-child(1n) {
@@ -3341,7 +3341,7 @@ hr {
         .vd-layout__item--lap-and-up--3-3 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 3/3 - 0rem);
         }
 
         .vd-layout__item--lap-and-up--3-3:nth-child(1n) {
@@ -3473,7 +3473,7 @@ hr {
         .vd-layout__item--lap-and-up--4-4 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 4/4 - 0rem);
         }
 
         .vd-layout__item--lap-and-up--4-4:nth-child(1n) {
@@ -3605,7 +3605,7 @@ hr {
         .vd-layout__item--lap-and-up--5-5 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 5/5 - 0rem);
         }
 
         .vd-layout__item--lap-and-up--5-5:nth-child(1n) {
@@ -3651,7 +3651,7 @@ hr {
         .vd-layout__item--portable--2-2 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 2/2 - 0rem);
         }
 
         .vd-layout__item--portable--2-2:nth-child(1n) {
@@ -3783,7 +3783,7 @@ hr {
         .vd-layout__item--portable--3-3 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 3/3 - 0rem);
         }
 
         .vd-layout__item--portable--3-3:nth-child(1n) {
@@ -3915,7 +3915,7 @@ hr {
         .vd-layout__item--portable--4-4 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 4/4 - 0rem);
         }
 
         .vd-layout__item--portable--4-4:nth-child(1n) {
@@ -4047,7 +4047,7 @@ hr {
         .vd-layout__item--portable--5-5 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 5/5 - 0rem);
         }
 
         .vd-layout__item--portable--5-5:nth-child(1n) {
@@ -4093,7 +4093,7 @@ hr {
         .vd-layout__item--desk--2-2 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 2/2 - 0rem);
         }
 
         .vd-layout__item--desk--2-2:nth-child(1n) {
@@ -4225,7 +4225,7 @@ hr {
         .vd-layout__item--desk--3-3 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 3/3 - 0rem);
         }
 
         .vd-layout__item--desk--3-3:nth-child(1n) {
@@ -4357,7 +4357,7 @@ hr {
         .vd-layout__item--desk--4-4 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 4/4 - 0rem);
         }
 
         .vd-layout__item--desk--4-4:nth-child(1n) {
@@ -4489,7 +4489,7 @@ hr {
         .vd-layout__item--desk--5-5 {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-            width: 99.99%;
+            width: calc(99.99% * 5/5 - 0rem);
         }
 
         .vd-layout__item--desk--5-5:nth-child(1n) {
@@ -4527,7 +4527,7 @@ hr {
 @if 2 < 2 {
     .vd-layout__item--move--2-2 {
         position: relative;
-        left: calc(99.99% * 2/2 - 0 + 1rem);
+        left: calc(99.99% * 2/2 - 0rem + 1rem);
     }
 
     .vd-layout__item--move---2-2 {
@@ -4599,7 +4599,7 @@ hr {
 @if 3 < 3 {
     .vd-layout__item--move--3-3 {
         position: relative;
-        left: calc(99.99% * 3/3 - 0 + 1rem);
+        left: calc(99.99% * 3/3 - 0rem + 1rem);
     }
 
     .vd-layout__item--move---3-3 {
@@ -4671,7 +4671,7 @@ hr {
 @if 4 < 4 {
     .vd-layout__item--move--4-4 {
         position: relative;
-        left: calc(99.99% * 4/4 - 0 + 1rem);
+        left: calc(99.99% * 4/4 - 0rem + 1rem);
     }
 
     .vd-layout__item--move---4-4 {
@@ -4743,7 +4743,7 @@ hr {
 @if 5 < 5 {
     .vd-layout__item--move--5-5 {
         position: relative;
-        left: calc(99.99% * 5/5 - 0 + 1rem);
+        left: calc(99.99% * 5/5 - 0rem + 1rem);
     }
 
     .vd-layout__item--move---5-5 {
@@ -4768,7 +4768,7 @@ hr {
     @if 2 < 2 {
         .vd-layout__item--palm--move--2-2 {
             position: relative;
-            left: calc(99.99% * 2/2 - 0 + 1rem);
+            left: calc(99.99% * 2/2 - 0rem + 1rem);
         }
 
         .vd-layout__item--palm--move---2-2 {
@@ -4840,7 +4840,7 @@ hr {
     @if 3 < 3 {
         .vd-layout__item--palm--move--3-3 {
             position: relative;
-            left: calc(99.99% * 3/3 - 0 + 1rem);
+            left: calc(99.99% * 3/3 - 0rem + 1rem);
         }
 
         .vd-layout__item--palm--move---3-3 {
@@ -4912,7 +4912,7 @@ hr {
     @if 4 < 4 {
         .vd-layout__item--palm--move--4-4 {
             position: relative;
-            left: calc(99.99% * 4/4 - 0 + 1rem);
+            left: calc(99.99% * 4/4 - 0rem + 1rem);
         }
 
         .vd-layout__item--palm--move---4-4 {
@@ -4984,7 +4984,7 @@ hr {
     @if 5 < 5 {
         .vd-layout__item--palm--move--5-5 {
             position: relative;
-            left: calc(99.99% * 5/5 - 0 + 1rem);
+            left: calc(99.99% * 5/5 - 0rem + 1rem);
         }
 
         .vd-layout__item--palm--move---5-5 {
@@ -5010,7 +5010,7 @@ hr {
     @if 2 < 2 {
         .vd-layout__item--lap--move--2-2 {
             position: relative;
-            left: calc(99.99% * 2/2 - 0 + 1rem);
+            left: calc(99.99% * 2/2 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap--move---2-2 {
@@ -5082,7 +5082,7 @@ hr {
     @if 3 < 3 {
         .vd-layout__item--lap--move--3-3 {
             position: relative;
-            left: calc(99.99% * 3/3 - 0 + 1rem);
+            left: calc(99.99% * 3/3 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap--move---3-3 {
@@ -5154,7 +5154,7 @@ hr {
     @if 4 < 4 {
         .vd-layout__item--lap--move--4-4 {
             position: relative;
-            left: calc(99.99% * 4/4 - 0 + 1rem);
+            left: calc(99.99% * 4/4 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap--move---4-4 {
@@ -5226,7 +5226,7 @@ hr {
     @if 5 < 5 {
         .vd-layout__item--lap--move--5-5 {
             position: relative;
-            left: calc(99.99% * 5/5 - 0 + 1rem);
+            left: calc(99.99% * 5/5 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap--move---5-5 {
@@ -5252,7 +5252,7 @@ hr {
     @if 2 < 2 {
         .vd-layout__item--lap-and-up--move--2-2 {
             position: relative;
-            left: calc(99.99% * 2/2 - 0 + 1rem);
+            left: calc(99.99% * 2/2 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap-and-up--move---2-2 {
@@ -5324,7 +5324,7 @@ hr {
     @if 3 < 3 {
         .vd-layout__item--lap-and-up--move--3-3 {
             position: relative;
-            left: calc(99.99% * 3/3 - 0 + 1rem);
+            left: calc(99.99% * 3/3 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap-and-up--move---3-3 {
@@ -5396,7 +5396,7 @@ hr {
     @if 4 < 4 {
         .vd-layout__item--lap-and-up--move--4-4 {
             position: relative;
-            left: calc(99.99% * 4/4 - 0 + 1rem);
+            left: calc(99.99% * 4/4 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap-and-up--move---4-4 {
@@ -5468,7 +5468,7 @@ hr {
     @if 5 < 5 {
         .vd-layout__item--lap-and-up--move--5-5 {
             position: relative;
-            left: calc(99.99% * 5/5 - 0 + 1rem);
+            left: calc(99.99% * 5/5 - 0rem + 1rem);
         }
 
         .vd-layout__item--lap-and-up--move---5-5 {
@@ -5494,7 +5494,7 @@ hr {
     @if 2 < 2 {
         .vd-layout__item--portable--move--2-2 {
             position: relative;
-            left: calc(99.99% * 2/2 - 0 + 1rem);
+            left: calc(99.99% * 2/2 - 0rem + 1rem);
         }
 
         .vd-layout__item--portable--move---2-2 {
@@ -5566,7 +5566,7 @@ hr {
     @if 3 < 3 {
         .vd-layout__item--portable--move--3-3 {
             position: relative;
-            left: calc(99.99% * 3/3 - 0 + 1rem);
+            left: calc(99.99% * 3/3 - 0rem + 1rem);
         }
 
         .vd-layout__item--portable--move---3-3 {
@@ -5638,7 +5638,7 @@ hr {
     @if 4 < 4 {
         .vd-layout__item--portable--move--4-4 {
             position: relative;
-            left: calc(99.99% * 4/4 - 0 + 1rem);
+            left: calc(99.99% * 4/4 - 0rem + 1rem);
         }
 
         .vd-layout__item--portable--move---4-4 {
@@ -5710,7 +5710,7 @@ hr {
     @if 5 < 5 {
         .vd-layout__item--portable--move--5-5 {
             position: relative;
-            left: calc(99.99% * 5/5 - 0 + 1rem);
+            left: calc(99.99% * 5/5 - 0rem + 1rem);
         }
 
         .vd-layout__item--portable--move---5-5 {
@@ -5736,7 +5736,7 @@ hr {
     @if 2 < 2 {
         .vd-layout__item--desk--move--2-2 {
             position: relative;
-            left: calc(99.99% * 2/2 - 0 + 1rem);
+            left: calc(99.99% * 2/2 - 0rem + 1rem);
         }
 
         .vd-layout__item--desk--move---2-2 {
@@ -5808,7 +5808,7 @@ hr {
     @if 3 < 3 {
         .vd-layout__item--desk--move--3-3 {
             position: relative;
-            left: calc(99.99% * 3/3 - 0 + 1rem);
+            left: calc(99.99% * 3/3 - 0rem + 1rem);
         }
 
         .vd-layout__item--desk--move---3-3 {
@@ -5880,7 +5880,7 @@ hr {
     @if 4 < 4 {
         .vd-layout__item--desk--move--4-4 {
             position: relative;
-            left: calc(99.99% * 4/4 - 0 + 1rem);
+            left: calc(99.99% * 4/4 - 0rem + 1rem);
         }
 
         .vd-layout__item--desk--move---4-4 {
@@ -5952,7 +5952,7 @@ hr {
     @if 5 < 5 {
         .vd-layout__item--desk--move--5-5 {
             position: relative;
-            left: calc(99.99% * 5/5 - 0 + 1rem);
+            left: calc(99.99% * 5/5 - 0rem + 1rem);
         }
 
         .vd-layout__item--desk--move---5-5 {
