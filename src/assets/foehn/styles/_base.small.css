@@ -22,7 +22,7 @@
     $enhance-font-family: var(--enhance-small-font-family) {
 
     /**
-     * $(class)
+     * <<$(class)>>
      *
      * 1. Use webfont only when it's loaded to avoid FOIT
      */
