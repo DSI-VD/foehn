@@ -68,7 +68,7 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-custom-selectors": "^3.0.0",
     "postcss-each": "^0.9.3",
-    "postcss-extend": "^1.0.1",
+    "postcss-extend": "^1.0.4",
     "postcss-for": "^2.0.3",
     "postcss-hidden": "^1.0.7",
     "postcss-import": "^8.1.0",
