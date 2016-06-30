@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Lint script with `eslint`
 - Upgrade `run-sequqnce`
 - Upgrade `normalize.css`
 - Upgrade `fabricator-assemble`
