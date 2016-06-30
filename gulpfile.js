@@ -15,6 +15,7 @@ var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
+var gulpStylelint = require('gulp-stylelint');
 var classPrfx = require('postcss-class-prefix');
 var htmllint = require('gulp-htmllint');
 var webpack = require('webpack');
@@ -77,9 +78,6 @@ gulp.task('styles:fabricator', function () {
 });
 
 gulp.task('lint-styles', function lintCssTask() {
-  const gulp = require('gulp');
-  const gulpStylelint = require('gulp-stylelint');
-
   return gulp
     .src('src/**/*.css')
     .pipe(gulpStylelint({
@@ -143,8 +141,10 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
 gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
 
 
+require('./gulp-task/lint-scripts');
+
 // scripts
-gulp.task('scripts', function (done) {
+gulp.task('scripts', ['lint-scripts'], function (done) {
     webpackCompiler.run(function (error, result) {
         if (error) {
             gutil.log(gutil.colors.red(error));
