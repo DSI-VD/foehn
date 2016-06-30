@@ -140,7 +140,7 @@ gulp.task('styles:foehn', ['lint-styles'], function () {
 gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
 
 
-require('./gulp-task/lint-scripts');
+require('./gulp-task/lint-scripts')();
 
 // scripts
 gulp.task('scripts', ['lint-scripts'], function (done) {
