@@ -22,7 +22,6 @@ var ghPages = require('gulp-gh-pages');
 
 // configuration
 var config = {
-    dev: gutil.env.dev,
     src: {
         scripts: {
             fabricator: './src/assets/fabricator/scripts/fabricator.js',
@@ -37,7 +36,8 @@ var config = {
         views: 'src/foehn/views/*.html'
     },
     dest: 'dist',
-    browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR']
+    browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR'],
+    tasks: './gulp-task/'
 };
 
 
@@ -65,7 +65,7 @@ gulp.task('styles:fabricator', function () {
         // We always want PostCSS to run
         .pipe( postcss(processors) )
         // If we are in dev, do not minify
-        .pipe( gulpif(!config.dev, nano()) )
+        .pipe( gulpif(!gutil.env.dev, nano()) )
         // Rename the CSS file
         .pipe(rename('f.css'))
         // Write the sourcemaps
@@ -73,7 +73,7 @@ gulp.task('styles:fabricator', function () {
         // Set the destination of the CSS files
         .pipe(gulp.dest(config.dest + '/assets/fabricator/styles'))
         // If we are in dev, reload the browser
-        .pipe(gulpif(config.dev, reload({stream:true})));
+        .pipe(gulpif(gutil.env.dev, reload({stream:true})));
 });
 
 gulp.task('lint-styles', function lintCssTask() {
@@ -120,7 +120,7 @@ gulp.task('styles:foehn', ['lint-styles'], function () {
     ];
     return gulp.src(config.src.styles.foehn)
         // If we are in dev, start sourcemaps
-        .pipe(gulpif(config.dev, sourcemaps.init()))
+        .pipe(gulpif(gutil.env.dev, sourcemaps.init()))
         // We always want PostCSS to run
         .pipe( postcss(processors) )
         // Set the destination for the CSS file
@@ -134,13 +134,13 @@ gulp.task('styles:foehn', ['lint-styles'], function () {
         // Set the destination for the CSS file
         .pipe( gulp.dest(config.dest + '/assets/foehn/styles') )
         // If we are in dev, reload the browser
-        .pipe( gulpif(config.dev, reload({stream:true})) );
+        .pipe( gulpif(gutil.env.dev, reload({stream:true})) );
 });
 
 gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
 
 
-require('./gulp-task/lint-scripts')();
+require(config.tasks + 'lint-scripts')();
 
 // scripts
 gulp.task('scripts', ['lint-scripts'], function (done) {
@@ -196,7 +196,7 @@ function htmllintReporter(filepath, issues) {
 // assemble
 gulp.task('assemble', ['lint-html'], function (done) {
     assemble({
-        logErrors: config.dev,
+        logErrors: gutil.env.dev,
         dest: config.dest
     });
     done();
@@ -274,7 +274,7 @@ gulp.task('default', ['clean'], function () {
 
     // run build
     runSequence(tasks, function () {
-        if (config.dev) {
+        if (gutil.env.dev) {
             gulp.start('serve');
         }
     });
