@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Upgrade `normalize.css`
 - Upgrade `fabricator-assemble`
 - Upgrade `babel-core`
 - Upgrade `babel-preset-stage-2`
