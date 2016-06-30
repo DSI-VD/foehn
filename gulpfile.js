@@ -21,24 +21,7 @@ var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
 
 // configuration
-var config = {
-    src: {
-        scripts: {
-            fabricator: './src/assets/fabricator/scripts/fabricator.js',
-            foehn: './src/assets/foehn/scripts/foehn.js'
-        },
-        styles: {
-            fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-            foehn: 'src/assets/foehn/styles/foehn.css'
-        },
-        images: 'src/assets/foehn/images/**/*',
-        fonts: 'src/assets/foehn/fonts/**/*',
-        views: 'src/foehn/views/*.html'
-    },
-    dest: 'dist',
-    browsers: ['last 2 version', '> 5% in CH', 'IE >= 11', 'Firefox >= 38', 'Firefox ESR'],
-    tasks: './gulp-task/'
-};
+var config = require('./gulp-config.json');
 
 
 // webpack
