@@ -16,7 +16,6 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var gulpStylelint = require('gulp-stylelint');
-var classPrfx = require('postcss-class-prefix');
 var htmllint = require('gulp-htmllint');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
@@ -49,7 +48,7 @@ var webpackCompiler = webpack(webpackConfig);
 
 // clean
 gulp.task('clean', function () {
-	return del([config.dest]);
+    return del([config.dest]);
 });
 
 
@@ -57,7 +56,7 @@ gulp.task('clean', function () {
 gulp.task('styles:fabricator', function () {
     var processors = [
         require('autoprefixer')({browsers: config.browsers})
-    ]
+    ];
     gulp.src(config.src.styles.fabricator)
         // Start sourcemaps
         .pipe(sourcemaps.init())
@@ -78,16 +77,16 @@ gulp.task('styles:fabricator', function () {
 });
 
 gulp.task('lint-styles', function lintCssTask() {
-  return gulp
-    .src('src/**/*.css')
-    .pipe(gulpStylelint({
-      reporters: [
-        {formatter: 'string', console: true}
-      ]
-    }));
+    return gulp
+        .src('src/**/*.css')
+        .pipe(gulpStylelint({
+            reporters: [
+                {formatter: 'string', console: true}
+            ]
+        }));
 });
 
-gulp.task('styles:foehn', ["lint-styles"], function () {
+gulp.task('styles:foehn', ['lint-styles'], function () {
     var processors = [
         require('postcss-import'),
         require('postcss-mixins'),
@@ -118,7 +117,7 @@ gulp.task('styles:foehn', ["lint-styles"], function () {
             ]
         }),
         require('perfectionist')
-    ]
+    ];
     return gulp.src(config.src.styles.foehn)
         // If we are in dev, start sourcemaps
         .pipe(gulpif(config.dev, sourcemaps.init()))
@@ -195,7 +194,7 @@ function htmllintReporter(filepath, issues) {
 }
 
 // assemble
-gulp.task('assemble', ["lint-html"], function (done) {
+gulp.task('assemble', ['lint-html'], function (done) {
     assemble({
         logErrors: config.dev,
         dest: config.dest
@@ -256,8 +255,8 @@ gulp.task('serve', function () {
 
 
 gulp.task('deploy', function() {
-  return gulp.src(config.dest + '/**/*')
-    .pipe(ghPages());
+    return gulp.src(config.dest + '/**/*')
+        .pipe(ghPages());
 });
 
 
