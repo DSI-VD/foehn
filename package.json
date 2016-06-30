@@ -80,7 +80,7 @@
     "postcss-selector-matches": "^2.0.1",
     "postcss-selector-not": "^2.0.0",
     "postcss-simple-vars": "^3.0.0",
-    "run-sequence": "^1.0.2",
+    "run-sequence": "^1.2.2",
     "script-loader": "^0.7.0",
     "webfontloader": "^1.6.20",
     "webpack": "^1.12.1"
