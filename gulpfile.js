@@ -24,6 +24,7 @@ require(config.tasks + 'clean')();         // $ gulp clean
 require(config.tasks + 'styles')();        // $ gulp styles
 require(config.tasks + 'lint-scripts')();  // $ gulp lint-scripts
 require(config.tasks + 'images')();        // $ gulp images, $ gulp favicon
+require(config.tasks + 'fonts')();         // $ gulp fonts
 
 // scripts
 gulp.task('scripts', ['lint-scripts'], function (done) {
@@ -39,13 +40,6 @@ gulp.task('scripts', ['lint-scripts'], function (done) {
         }
         done();
     });
-});
-
-
-// fonts
-gulp.task('fonts', function () {
-    return gulp.src(config.src.fonts)
-        .pipe(gulp.dest(config.dest + '/assets/foehn/fonts'));
 });
 
 // lint HTML
