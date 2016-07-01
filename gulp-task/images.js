@@ -10,9 +10,4 @@ module.exports = function() {
             .pipe(imagemin())
             .pipe(gulp.dest(config.dest + '/assets/foehn/images'));
     });
-
-    gulp.task('favicon', function () {
-        return gulp.src('./src/favicon.ico')
-            .pipe(gulp.dest(config.dest));
-    });
 };
