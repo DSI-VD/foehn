@@ -1,7 +1,6 @@
 'use strict';
 
 // modules
-var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
@@ -25,6 +24,7 @@ require(config.tasks + 'images')();        // $ gulp images, $ gulp favicon
 require(config.tasks + 'fonts')();         // $ gulp fonts
 require(config.tasks + 'lint-html')();     // $ gulp lint-html
 require(config.tasks + 'lint-html')();     // $ gulp deploy
+require(config.tasks + 'assemble')();      // $ gulp assemble
 
 // scripts
 gulp.task('scripts', ['lint-scripts'], function (done) {
@@ -41,16 +41,6 @@ gulp.task('scripts', ['lint-scripts'], function (done) {
         done();
     });
 });
-
-// assemble
-gulp.task('assemble', ['lint-html'], function (done) {
-    assemble({
-        logErrors: gutil.env.dev,
-        dest: config.dest
-    });
-    done();
-});
-
 
 // server
 gulp.task('serve', function () {
