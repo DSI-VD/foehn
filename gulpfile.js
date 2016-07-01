@@ -5,7 +5,6 @@ var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var imagemin = require('gulp-imagemin');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var htmllint = require('gulp-htmllint');
@@ -24,6 +23,7 @@ var webpackCompiler = webpack(webpackConfig);
 require(config.tasks + 'clean')();         // $ gulp clean
 require(config.tasks + 'styles')();        // $ gulp styles
 require(config.tasks + 'lint-scripts')();  // $ gulp lint-scripts
+require(config.tasks + 'images')();        // $ gulp images, $ gulp favicon
 
 // scripts
 gulp.task('scripts', ['lint-scripts'], function (done) {
@@ -39,19 +39,6 @@ gulp.task('scripts', ['lint-scripts'], function (done) {
         }
         done();
     });
-});
-
-
-// images
-gulp.task('images', ['favicon'], function () {
-    return gulp.src(config.src.images)
-        .pipe(imagemin())
-        .pipe(gulp.dest(config.dest + '/assets/foehn/images'));
-});
-
-gulp.task('favicon', function () {
-    return gulp.src('./src/favicon.ico')
-        .pipe(gulp.dest(config.dest));
 });
 
 
