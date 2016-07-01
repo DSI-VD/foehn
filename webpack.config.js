@@ -1,5 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
+var path = require('path'),
+    gutil = require('gulp-util'),
+    webpack = require('webpack');
 
 module.exports = function(fabricatorConfig) {
 
@@ -28,7 +29,7 @@ module.exports = function(fabricatorConfig) {
         cache: {}
     };
 
-    if (!fabricatorConfig.dev) {
+    if (!gutil.env.dev) {
         config.plugins.push(
             new webpack.optimize.UglifyJsPlugin()
         );
