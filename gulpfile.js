@@ -19,6 +19,7 @@ require(config.tasks + 'clean')();         // $ gulp clean
 require(config.tasks + 'styles')();        // $ gulp styles
 require(config.tasks + 'lint-scripts')();  // $ gulp lint-scripts
 require(config.tasks + 'scripts')();       // $ gulp scripts ['lint-scripts']
+require(config.tasks + 'favicon')();        // $ gulp favicon
 require(config.tasks + 'images')();        // $ gulp images ['favicon']
 require(config.tasks + 'fonts')();         // $ gulp fonts
 require(config.tasks + 'lint-html')();     // $ gulp lint-html
