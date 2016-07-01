@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 module.exports = function() {
     gulp.task('lint-scripts', function () {
-        return gulp.src(['src/assets/foehn/**/*.js', './gulpfile.js', config.tasks + '**/*.js', '!node_modules/**'])
+        return gulp.src(['src/assets/foehn/**/*.js', './*.js', config.tasks + '**/*.js', '!node_modules/**'])
             .pipe(eslint())
             .pipe(eslint.format())
             .pipe(eslint.failAfterError());

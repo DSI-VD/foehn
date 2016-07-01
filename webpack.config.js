@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = function(fabricatorConfig) {
 
-    "use strict";
+    'use strict';
 
     var config = {
         entry: {
@@ -19,8 +19,8 @@ module.exports = function(fabricatorConfig) {
                 {
                     test: /\.js$/,
                     exclude: /(node_modules|prism\.js)/,
-					loaders: ['babel'],
-					presets: ['es2015', 'stage-2']
+                    loaders: ['babel'],
+                    presets: ['es2015', 'stage-2']
                 }
             ]
         },
