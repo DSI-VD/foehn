@@ -6,7 +6,6 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
-var webpack = require('webpack');
 
 // configuration
 var config = require('./gulp-config.json');
@@ -14,33 +13,17 @@ var config = require('./gulp-config.json');
 
 // webpack
 var webpackConfig = require('./webpack.config')(config);
-var webpackCompiler = webpack(webpackConfig);
 
 
 require(config.tasks + 'clean')();         // $ gulp clean
 require(config.tasks + 'styles')();        // $ gulp styles
 require(config.tasks + 'lint-scripts')();  // $ gulp lint-scripts
-require(config.tasks + 'images')();        // $ gulp images, $ gulp favicon
+require(config.tasks + 'scripts')();       // $ gulp scripts ['lint-scripts']
+require(config.tasks + 'images')();        // $ gulp images ['favicon']
 require(config.tasks + 'fonts')();         // $ gulp fonts
 require(config.tasks + 'lint-html')();     // $ gulp lint-html
 require(config.tasks + 'lint-html')();     // $ gulp deploy
 require(config.tasks + 'assemble')();      // $ gulp assemble
-
-// scripts
-gulp.task('scripts', ['lint-scripts'], function (done) {
-    webpackCompiler.run(function (error, result) {
-        if (error) {
-            gutil.log(gutil.colors.red(error));
-        }
-        result = result.toJson();
-        if (result.errors.length) {
-            result.errors.forEach(function (error) {
-                gutil.log(gutil.colors.red(error));
-            });
-        }
-        done();
-    });
-});
 
 // server
 gulp.task('serve', function () {
