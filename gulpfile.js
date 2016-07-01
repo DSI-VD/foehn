@@ -8,7 +8,6 @@ var gutil = require('gulp-util');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var webpack = require('webpack');
-var ghPages = require('gulp-gh-pages');
 
 // configuration
 var config = require('./gulp-config.json');
@@ -25,6 +24,7 @@ require(config.tasks + 'lint-scripts')();  // $ gulp lint-scripts
 require(config.tasks + 'images')();        // $ gulp images, $ gulp favicon
 require(config.tasks + 'fonts')();         // $ gulp fonts
 require(config.tasks + 'lint-html')();     // $ gulp lint-html
+require(config.tasks + 'lint-html')();     // $ gulp deploy
 
 // scripts
 gulp.task('scripts', ['lint-scripts'], function (done) {
@@ -100,12 +100,6 @@ gulp.task('serve', function () {
     gulp.task('fonts:watch', ['fonts'], reload);
     gulp.watch(config.src.fonts, ['fonts:watch']);
 
-});
-
-
-gulp.task('deploy', function() {
-    return gulp.src(config.dest + '/**/*')
-        .pipe(ghPages());
 });
 
 
