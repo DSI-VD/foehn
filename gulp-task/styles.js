@@ -80,8 +80,8 @@ module.exports = function() {
             require('perfectionist')
         ];
         return gulp.src(config.src.styles.foehn)
-            // If we are in dev, start sourcemaps
-            .pipe(gulpif(gutil.env.dev, sourcemaps.init()))
+            // Start sourcemaps
+            .pipe(sourcemaps.init())
             // We always want PostCSS to run
             .pipe( postcss(processors) )
             // Set the destination for the CSS file
