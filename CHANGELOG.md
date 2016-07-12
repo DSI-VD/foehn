@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Refactor gulp tasks
 - Lint script with `eslint`
+- Upgrade `postcss-calc`
 - Upgrade `run-sequqnce`
 - Upgrade `normalize.css`
 - Upgrade `fabricator-assemble`
