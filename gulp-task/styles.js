@@ -84,8 +84,6 @@ module.exports = function() {
             .pipe(sourcemaps.init())
             // We always want PostCSS to run
             .pipe( postcss(processors) )
-            // Write sourcemaps
-            .pipe(sourcemaps.write())
             // Set the destination for the CSS file
             .pipe( gulp.dest(config.dest + '/assets/foehn/styles') )
             // Minify the styles
