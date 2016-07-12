@@ -91,7 +91,7 @@ module.exports = function() {
             // Write sourcemaps
             .pipe( sourcemaps.write() )
             // Rename minified styles file
-            .pipe(rename({ extname: '.min.css' }))
+            .pipe(rename({ suffix: '.min' }))
             // Set the destination for the CSS file
             .pipe( gulp.dest(config.dest + '/assets/foehn/styles') )
             // If we are in dev, reload the browser
