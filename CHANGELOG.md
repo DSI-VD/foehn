@@ -5,6 +5,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Add `.vd-layout-[viewport]--row` to set flex direction to row
+- Add `.vd-layout-[viewport]--column` to set flex direction to column
+
+### Changed
+
+- refactor `.vd-layout` styles
+- refactor Media Blocks molecule html
+
 ## [0.6.1]
 
 ### Changed

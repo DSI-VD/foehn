@@ -1780,78 +1780,129 @@ hr {
         flex-flow: row wrap;
 }
 
+/* Set direction to column */
+
 .vd-layout--column {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
+
+/* Set flex direction to column for `--palm` viewport */
 
 @media screen and (max-width: 44.9375em) {
     .vd-layout--palm--column {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     }
 }
+
+/* Set flex direction to column for `--lap` viewport */
 
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
     .vd-layout--lap--column {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     }
 }
+
+/* Set flex direction to column for `--lap-and-up` viewport */
 
 @media screen and (min-width: 45em) {
     .vd-layout--lap-and-up--column {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     }
 }
+
+/* Set flex direction to column for `--portable` viewport */
 
 @media screen and (max-width: 63.9375em) {
     .vd-layout--portable--column {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     }
 }
 
+/* Set flex direction to column for `--desk` viewport */
+
 @media screen and (min-width: 64em) {
     .vd-layout--desk--column {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+}
+
+/* Set flex direction to row for `--palm` viewport */
+
+@media screen and (max-width: 44.9375em) {
+    .vd-layout--palm--row {
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
+
+/* Set flex direction to row for `--lap` viewport */
+
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+    .vd-layout--lap--row {
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
+
+/* Set flex direction to row for `--lap-and-up` viewport */
+
+@media screen and (min-width: 45em) {
+    .vd-layout--lap-and-up--row {
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
+
+/* Set flex direction to row for `--portable` viewport */
+
+@media screen and (max-width: 63.9375em) {
+    .vd-layout--portable--row {
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
+
+/* Set flex direction to row for `--desk` viewport */
+
+@media screen and (min-width: 64em) {
+    .vd-layout--desk--row {
+        -ms-flex-direction: row;
+            flex-direction: row;
     }
 }
 
 /**
- * Flex items
+ * Layout items
  */
 
-/* Micro layout */
+/* Layout extensible diemension */
 
 .vd-layout__item--flex-1 {
     -ms-flex: 1;
         flex: 1;
 }
 
+/* Layout extensible diemension */
+
 .vd-layout__item--flex-2 {
     -ms-flex: 2;
         flex: 2;
 }
 
+/* Layout extensible diemension */
+
 .vd-layout__item--flex-3 {
     -ms-flex: 3;
         flex: 3;
 }
+
+/* Place the item first */
 
 .vd-layout__item--order-first {
     -ms-flex-order: -1;
