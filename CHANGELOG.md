@@ -9,6 +9,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Refactor gulp tasks
 - Lint script with `eslint`
+- Upgrade `eslint`
+- Upgrade `eslint-config-standard`
+- Upgrade `eslint-plugin-standard`
+- Upgrade `gulp-eslint`
 - Upgrade `gulp-htmlhint`
 - Upgrade `lost`
 - Upgrade `webfontloader`
