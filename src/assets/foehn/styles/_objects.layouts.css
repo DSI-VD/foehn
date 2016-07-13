@@ -97,40 +97,32 @@
 }
 
 /**
- * Move
+ * Move items
  */
-@for $cycle from 2 to 5 {
-    @for $fraction from 1 to 5 {
-        @if $fraction < $cycle {
+@for $fraction from 1 to 12 {
 
-            .layout__item--move--$(fraction)-$(cycle) {
-                lost-move: $fraction/$cycle;
-            }
-
-            .layout__item--move---$(fraction)-$(cycle) {
-                lost-move: -$fraction/$cycle;
-            }
-
-        }
+    .layout__item--move--$(fraction)-12 {
+        lost-move: $fraction/12;
     }
+
+    .layout__item--move---$(fraction)-12 {
+        lost-move: -$fraction/12;
+    }
+
 }
 
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
     @media ($(query)) {
-        @for $cycle from 2 to 5 {
-            @for $fraction from 1 to 5 {
-                @if $fraction < $cycle {
+        @for $fraction from 1 to 12 {
 
-                    .layout__item$(query)--move--$(fraction)-$(cycle) {
-                        lost-move: $fraction/$cycle;
-                    }
-
-                    .layout__item$(query)--move---$(fraction)-$(cycle) {
-                        lost-move: -$fraction/$cycle;
-                    }
-
-                }
+            .layout__item$(query)--move--$(fraction)-12 {
+                lost-move: $fraction/12;
             }
+
+            .layout__item$(query)--move---$(fraction)-12 {
+                lost-move: -$fraction/12;
+            }
+
         }
     }
 }
