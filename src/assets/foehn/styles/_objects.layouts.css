@@ -67,7 +67,36 @@
     order: -1;
 }
 
-/* Grid */
+/**
+ *  Items with fixed width
+ */
+
+@for $fraction from 1 to 12 {
+
+    /* Item $(fraction)/12 width */
+    .layout__item--$(fraction)-12 {
+        lost-column: $fraction/12 flex;
+    }
+
+}
+
+/**
+ * Items with fixed width depending of the viewport
+ */
+@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
+    @media ($(query)) {
+        @for $fraction from 1 to 12 {
+
+            /* Item $(fraction)/12 width for $(query) viewport */
+            .layout__item$(query)--$(fraction)-12 {
+                lost-column: $fraction/12 flex;
+            }
+
+        }
+    }
+}
+
+
 @for $cycle from 2 to 5 {
     @for $fraction from 1 to 5 {
         @if $fraction < $cycle {
