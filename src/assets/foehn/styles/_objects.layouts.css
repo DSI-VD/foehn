@@ -21,34 +21,48 @@
     lost-flex-container: row;
 }
 
+/* Set direction to column */
 .layout--column {
-    lost-flex-container: column;
+    flex-direction: column;
 }
 
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
+
+    /* Set flex direction to column for `$(query)` viewport */
     @media ($(query)) {
 
         .layout$(query)--column {
-            lost-flex-container: column;
+            flex-direction: column;
         }
 
     }
 }
 
+@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
+
+    /* Set flex direction to row for `$(query)` viewport */
+    @media ($(query)) {
+
+        .layout$(query)--row {
+            flex-direction: row;
+        }
+
+    }
+}
 
 /**
- * Flex items
+ * Layout items
  */
-
-/* Micro layout */
 @for $flex-grow from 1 to 3 {
 
+    /* Layout extensible diemension */
     .layout__item--flex-$(flex-grow) {
         flex: $flex-grow;
     }
 
 }
 
+/* Place the item first */
 .layout__item--order-first {
     order: -1;
 }
@@ -61,9 +75,9 @@
             .layout__item--$(fraction)-$(cycle) {
                 lost-column: $fraction/$cycle flex;
             }
+
         }
     }
-
 }
 
 @each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
@@ -86,7 +100,6 @@
 /**
  * Move
  */
-
 @for $cycle from 2 to 5 {
     @for $fraction from 1 to 5 {
         @if $fraction < $cycle {
