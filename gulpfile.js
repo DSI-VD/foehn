@@ -23,7 +23,7 @@ require(config.tasks + 'favicon')();        // $ gulp favicon
 require(config.tasks + 'images')();        // $ gulp images ['favicon']
 require(config.tasks + 'fonts')();         // $ gulp fonts
 require(config.tasks + 'lint-html')();     // $ gulp lint-html
-require(config.tasks + 'lint-html')();     // $ gulp deploy
+require(config.tasks + 'deploy')();        // $ gulp deploy
 require(config.tasks + 'assemble')();      // $ gulp assemble
 
 // server
