@@ -52,12 +52,24 @@
 
 /**
  * Layout items
+ *
+ * 1. Add gutter on the right of all elements
+ * 2. Last element of the row hase no gutter on the right
  */
 @for $flex-grow from 1 to 3 {
 
     /* Layout extensible diemension */
     .layout__item--flex-$(flex-grow) {
         flex: $flex-grow;
+
+        &:nth-child(1n) {
+            margin-right: var(--layout-gutter); /* [1] */
+            margin-left: 0; /* [1] */
+        }
+
+        &:last-child {
+            margin-right: 0; /* [2] */
+        }
     }
 
 }

@@ -1879,6 +1879,9 @@ hr {
 
 /**
  * Layout items
+ *
+ * 1. Add gutter on the right of all elements
+ * 2. Last element of the row hase no gutter on the right
  */
 
 /* Layout extensible diemension */
@@ -1888,6 +1891,16 @@ hr {
         flex: 1;
 }
 
+.vd-layout__item--flex-1:nth-child(1n) {
+    margin-right: 13.5px;
+    margin-right: 0.84375rem; /* [1] */
+    margin-left: 0; /* [1] */
+}
+
+.vd-layout__item--flex-1:last-child {
+    margin-right: 0; /* [2] */
+}
+
 /* Layout extensible diemension */
 
 .vd-layout__item--flex-2 {
@@ -1895,11 +1908,31 @@ hr {
         flex: 2;
 }
 
+.vd-layout__item--flex-2:nth-child(1n) {
+    margin-right: 13.5px;
+    margin-right: 0.84375rem; /* [1] */
+    margin-left: 0; /* [1] */
+}
+
+.vd-layout__item--flex-2:last-child {
+    margin-right: 0; /* [2] */
+}
+
 /* Layout extensible diemension */
 
 .vd-layout__item--flex-3 {
     -ms-flex: 3;
         flex: 3;
+}
+
+.vd-layout__item--flex-3:nth-child(1n) {
+    margin-right: 13.5px;
+    margin-right: 0.84375rem; /* [1] */
+    margin-left: 0; /* [1] */
+}
+
+.vd-layout__item--flex-3:last-child {
+    margin-right: 0; /* [2] */
 }
 
 /* Place the item first */
