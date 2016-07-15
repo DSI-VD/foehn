@@ -15,11 +15,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - refactor `.vd-layout` styles
 - refactor Media Blocks molecule html
 - Grid is now based on fractions
+- Layout itms adapt automatically depending of the viewport.
 
 ### Removed
 
 - Remove 12 columns based grid
 - Remove Expo objects
+- Remove viewport specific layout classes
 
 ## [0.6.1]
 
