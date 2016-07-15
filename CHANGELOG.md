@@ -9,11 +9,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add `.vd-layout-[viewport]--row` to set flex direction to row
 - Add `.vd-layout-[viewport]--column` to set flex direction to column
+- Add column layout `.layout--half`, `.layout--third` and `.layout--third` to replace expos
 
 ### Changed
 
 - refactor `.vd-layout` styles
 - refactor Media Blocks molecule html
+- Grid is now based on fractions
+
+### Removed
+
+- Remove 12 columns based grid
 
 ## [0.6.1]
 
