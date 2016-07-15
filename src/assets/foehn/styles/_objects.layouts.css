@@ -83,81 +83,68 @@
  *  Items with fixed width
  */
 
-.layout__item--1-1 {
+/* Default items size (on palm) */
+.layout__item--1-1,
+.layout__item--1-2,
+.layout__item--1-3,
+.layout__item--2-3,
+.layout__item--1-4,
+.layout__item--3-4 {
     lost-column: 1/1 flex;
 }
 
-.layout__item--1-2 {
+.layout__item--1-6,
+.layout__item--5-6,
+.layout__item--1-12 {
     lost-column: 1/2 flex;
 }
 
-.layout__item--1-3 {
-    lost-column: 1/3 flex;
+/* Items size on lap and up */
+@media (--lap-and-up) {
+
+    .layout__item--1-2,
+    .layout__item--1-4,
+    .layout__item--3-4 {
+        lost-column: 1/2 flex;
+    }
+
+    .layout__item--1-3,
+    .layout__item--1-6 {
+        lost-column: 1/3 flex;
+    }
+
+    .layout__item--2-3,
+    .layout__item--5-6 {
+        lost-column: 2/3 flex;
+    }
+
+    .layout__item--1-12 {
+        lost-column: 1/4 flex;
+    }
+
 }
 
-.layout__item--2-3 {
-    lost-column: 2/3 flex;
-}
+/* Items size on desk and up */
+@media (--desk) {
 
-.layout__item--1-4 {
-    lost-column: 1/4 flex;
-}
+    .layout__item--1-4 {
+        lost-column: 1/4 flex;
+    }
 
-.layout__item--3-4 {
-    lost-column: 3/4 flex;
-}
+    .layout__item--3-4 {
+        lost-column: 3/4 flex;
+    }
 
-.layout__item--1-6 {
-    lost-column: 1/6 flex;
-}
+    .layout__item--1-6 {
+        lost-column: 1/6 flex;
+    }
 
-.layout__item--5-6 {
-    lost-column: 5/6 flex;
-}
+    .layout__item--5-6 {
+        lost-column: 5/6 flex;
+    }
 
-.layout__item--1-12 {
-    lost-column: 1/12 flex;
-}
-
-@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
-    @media ($(query)) {
-
-        .layout__item$(query)--1-1 {
-            lost-column: 1/1 flex;
-        }
-
-        .layout__item$(query)--1-2 {
-            lost-column: 1/2 flex;
-        }
-
-        .layout__item$(query)--1-3 {
-            lost-column: 1/3 flex;
-        }
-
-        .layout__item$(query)--2-3 {
-            lost-column: 2/3 flex;
-        }
-
-        .layout__item$(query)--1-4 {
-            lost-column: 1/4 flex;
-        }
-
-        .layout__item$(query)--3-4 {
-            lost-column: 3/4 flex;
-        }
-
-        .layout__item$(query)--1-6 {
-            lost-column: 1/6 flex;
-        }
-
-        .layout__item$(query)--5-6 {
-            lost-column: 5/6 flex;
-        }
-
-        .layout__item$(query)--1-12 {
-            lost-column: 1/12 flex;
-        }
-
+    .layout__item--1-12 {
+        lost-column: 1/12 flex;
     }
 }
 
