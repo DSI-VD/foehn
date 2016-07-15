@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 
 - Remove 12 columns based grid
+- Remove Expo objects
 
 ## [0.6.1]
 
