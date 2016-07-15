@@ -1877,20 +1877,6 @@ hr {
 }
 
 /**
- * Add visual identifiquation for grid documentation
- *
- * **Don't use this in production**
- */
-
-.vd-layout--demo, .vd-layout--demo *:not(input):not(textarea):not(select) {
-    text-align: center;
-    background-color: #000000;
-    background-color: rgba(0, 0, 0, .1);
-    margin: 16px auto;
-    margin: 1rem auto;
-}
-
-/**
  * Layout items
  *
  * 1. Add gutter on the right of all elements
