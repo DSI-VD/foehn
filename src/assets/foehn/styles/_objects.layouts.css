@@ -115,7 +115,7 @@
 
     .layout__item--2-3,
     .layout__item--5-6 {
-        lost-column: 2/3 flex;
+        lost-column: 2/3 2 flex;
     }
 
     .layout__item--1-12 {
@@ -132,7 +132,7 @@
     }
 
     .layout__item--3-4 {
-        lost-column: 3/4 flex;
+        lost-column: 3/4 2 flex;
     }
 
     .layout__item--1-6 {
@@ -140,7 +140,7 @@
     }
 
     .layout__item--5-6 {
-        lost-column: 5/6 flex;
+        lost-column: 5/6 2 flex;
     }
 
     .layout__item--1-12 {
