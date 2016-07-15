@@ -51,39 +51,6 @@
 }
 
 /**
- * Cycles
- */
-.layout--half > div {
-    lost-column: 1/2 2;
-}
-
-.layout--third > div {
-    lost-column: 1/3 3;
-}
-
-.layout--quarter > div {
-    lost-column: 1/4 4;
-}
-
-@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
-    @media ($(query)) {
-
-        .layout$(query)--half > div {
-            lost-column: 1/2 2;
-        }
-
-        .layout$(query)--third > div {
-            lost-column: 1/3 3;
-        }
-
-        .layout$(query)--quarter > div {
-            lost-column: 1/4 4;
-        }
-
-    }
-}
-
-/**
  * Layout items
  *
  * 1. Add gutter on the right of all elements

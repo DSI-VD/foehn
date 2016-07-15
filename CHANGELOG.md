@@ -9,7 +9,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add `.vd-layout-[viewport]--row` to set flex direction to row
 - Add `.vd-layout-[viewport]--column` to set flex direction to column
-- Add column layout `.layout--half`, `.layout--third` and `.layout--third` to replace expos
 
 ### Changed
 
