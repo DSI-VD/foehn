@@ -1934,11 +1934,47 @@ hr {
     margin-right: 0; /* [2] */
 }
 
-/* Place the item first */
+/**
+* Flex item ordering
+*
+* 1. Put item as the last one
+*/
 
-.vd-layout__item--order-first {
-    -ms-flex-order: -1;
-    order: -1;
+@media screen and (min-width: 45em) {
+    .vd-layout__item--lap-and-up--order-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .vd-layout__item--lap-and-up--order-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .vd-layout__item--lap-and-up--order-3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .vd-layout__item--lap-and-up--order-4 {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+
+    .vd-layout__item--lap-and-up--order-5 {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+
+    .vd-layout__item--lap-and-up--order-6 {
+        -ms-flex-order: 6;
+        order: 6;
+    }
+
+    .vd-layout__item--lap-and-up--order-last {
+        -ms-flex-order: 99;
+        order: 99; /* [1] */
+    }
 }
 
 /**
@@ -2002,85 +2038,100 @@ hr {
 /* Items size on lap and up */
 
 @media screen and (min-width: 45em) {
-    .vd-layout__item--1-2, .vd-layout__item--1-4, .vd-layout__item--3-4 {
+    .vd-layout__item--1-2, .vd-layout__item--1-4, .vd-layout__item--3-4,
+    .vd-layout__item--lap-and-up--1-2 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
         width: calc(99.9% * 1/2 - 0.5rem);
     }
 
     .vd-layout__item--1-2:nth-child(1n), .vd-layout__item--1-4:nth-child(1n),
-    .vd-layout__item--3-4:nth-child(1n) {
+    .vd-layout__item--3-4:nth-child(1n),
+    .vd-layout__item--lap-and-up--1-2:nth-child(1n) {
         margin-right: 1rem;
         margin-left: 0;
     }
 
     .vd-layout__item--1-2:last-child, .vd-layout__item--1-4:last-child,
-    .vd-layout__item--3-4:last-child {
+    .vd-layout__item--3-4:last-child,
+    .vd-layout__item--lap-and-up--1-2:last-child {
         margin-right: 0;
     }
 
     .vd-layout__item--1-2:nth-child(2n), .vd-layout__item--1-4:nth-child(2n),
-    .vd-layout__item--3-4:nth-child(2n) {
+    .vd-layout__item--3-4:nth-child(2n),
+    .vd-layout__item--lap-and-up--1-2:nth-child(2n) {
         margin-right: 0;
         margin-left: auto;
     }
 
-    .vd-layout__item--1-3, .vd-layout__item--1-6 {
+    .vd-layout__item--1-3, .vd-layout__item--1-6,
+    .vd-layout__item--lap-and-up--1-3 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
         width: calc(99.9% * 1/3 - 0.6666666666666667rem);
     }
 
-    .vd-layout__item--1-3:nth-child(1n), .vd-layout__item--1-6:nth-child(1n) {
+    .vd-layout__item--1-3:nth-child(1n), .vd-layout__item--1-6:nth-child(1n),
+    .vd-layout__item--lap-and-up--1-3:nth-child(1n) {
         margin-right: 1rem;
         margin-left: 0;
     }
 
-    .vd-layout__item--1-3:last-child, .vd-layout__item--1-6:last-child {
+    .vd-layout__item--1-3:last-child, .vd-layout__item--1-6:last-child,
+    .vd-layout__item--lap-and-up--1-3:last-child {
         margin-right: 0;
     }
 
-    .vd-layout__item--1-3:nth-child(3n), .vd-layout__item--1-6:nth-child(3n) {
+    .vd-layout__item--1-3:nth-child(3n), .vd-layout__item--1-6:nth-child(3n),
+    .vd-layout__item--lap-and-up--1-3:nth-child(3n) {
         margin-right: 0;
         margin-left: auto;
     }
 
-    .vd-layout__item--2-3, .vd-layout__item--5-6 {
+    .vd-layout__item--2-3, .vd-layout__item--5-6,
+    .vd-layout__item--lap-and-up--2-3 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
         width: calc(99.9% * 2/3 - 0.33333333333333337rem);
     }
 
-    .vd-layout__item--2-3:nth-child(1n), .vd-layout__item--5-6:nth-child(1n) {
+    .vd-layout__item--2-3:nth-child(1n), .vd-layout__item--5-6:nth-child(1n),
+    .vd-layout__item--lap-and-up--2-3:nth-child(1n) {
         margin-right: 1rem;
         margin-left: 0;
     }
 
-    .vd-layout__item--2-3:last-child, .vd-layout__item--5-6:last-child {
+    .vd-layout__item--2-3:last-child, .vd-layout__item--5-6:last-child,
+    .vd-layout__item--lap-and-up--2-3:last-child {
         margin-right: 0;
     }
 
-    .vd-layout__item--2-3:nth-child(2n), .vd-layout__item--5-6:nth-child(2n) {
+    .vd-layout__item--2-3:nth-child(2n), .vd-layout__item--5-6:nth-child(2n),
+    .vd-layout__item--lap-and-up--2-3:nth-child(2n) {
         margin-right: 0;
         margin-left: auto;
     }
 
-    .vd-layout__item--1-12 {
+    .vd-layout__item--1-12, .vd-layout__item--lap-and-up--1-4 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
         width: calc(99.9% * 1/4 - 0.75rem);
     }
 
-    .vd-layout__item--1-12:nth-child(1n) {
+    .vd-layout__item--1-12:nth-child(1n),
+    .vd-layout__item--lap-and-up--1-4:nth-child(1n) {
         margin-right: 1rem;
         margin-left: 0;
     }
 
-    .vd-layout__item--1-12:last-child {
+    .vd-layout__item--1-12:last-child,
+    .vd-layout__item--lap-and-up--1-4:last-child {
         margin-right: 0;
     }
 
-    .vd-layout__item--1-12:nth-child(4n) {
+    .vd-layout__item--1-12:nth-child(4n),
+    .vd-layout__item--lap-and-up--1-4:nth-child(4n) {
         margin-right: 0;
         margin-left: auto;
     }
@@ -4088,4 +4139,46 @@ hr {
 .vd-u-pv0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+}
+
+/* ------------------------------------ *\
+    #SPACING
+\* ------------------------------------ */
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding
+ * top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+/**
+ * Margin helper classes.
+ *
+ * Add margins.
+ */
+
+@media screen and (min-width: 45em) {
+    .vd-u-gr--lap-and-up {
+        margin-right: 0.84375rem !important;
+    }
+
+    .vd-u-gl--lap-and-up {
+        margin-left: 0.84375rem !important;
+    }
+}
+
+/**
+ * Remove margin
+ */
+
+@media screen and (min-width: 45em) {
+    .vd-u-gr0--lap-and-up {
+        margin-right: 0 !important;
+    }
+
+    .vd-u-gl0--lap-and-up {
+        margin-left: 0 !important;
+    }
 }
