@@ -9,6 +9,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add `.vd-layout-[viewport]--row` to set flex direction to row
 - Add `.vd-layout-[viewport]--column` to set flex direction to column
+- Add domaine-section organism
+- Add a theme page with real content
 
 ### Changed
 
@@ -16,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - refactor Media Blocks molecule html
 - Grid is now based on fractions
 - Layout itms adapt automatically depending of the viewport.
+- Template theme use only placeholder
 
 ### Removed
 
