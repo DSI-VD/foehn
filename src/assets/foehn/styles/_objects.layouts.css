@@ -74,9 +74,23 @@
 
 }
 
-/* Place the item first */
-.layout__item--order-first {
-    order: -1;
+/**
+* Flex item ordering
+*
+* 1. Put item as the last one
+*/
+@media (--lap-and-up) {
+    @for $i from 1 to 6 {
+
+        .layout__item--lap-and-up--order-$i {
+            order: $(i);
+        }
+
+    }
+
+    .layout__item--lap-and-up--order-last {
+        order: 99; /* [1] */
+    }
 }
 
 /**
