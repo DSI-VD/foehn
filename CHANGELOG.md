@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Grid is now based on fractions
 - Layout itms adapt automatically depending of the viewport.
 - Template theme use only placeholder
+- Refactor media block HTML
 
 ### Removed
 
