@@ -1,0 +1,53 @@
+/* ------------------------------------ *\
+    #SPACING
+\* ------------------------------------ */
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding
+ * top/right/bottom/left/horizontal/vertical less/more/none
+ */
+:root {
+    --layout-trumps-gutter: var(--layout-gutter);
+}
+
+
+
+
+
+/**
+ * Margin helper classes.
+ *
+ * Add margins.
+ */
+@media (--lap-and-up) {
+
+    .u-gr--lap-and-up {
+        margin-right: var(--layout-trumps-gutter) !important;
+    }
+
+    .u-gl--lap-and-up {
+        margin-left: var(--layout-trumps-gutter) !important;
+    }
+
+}
+
+
+
+
+/**
+ * Remove margin
+ */
+@media (--lap-and-up) {
+
+    .u-gr0--lap-and-up {
+        margin-right: 0 !important;
+    }
+
+    .u-gl0--lap-and-up {
+        margin-left: 0 !important;
+    }
+
+}
