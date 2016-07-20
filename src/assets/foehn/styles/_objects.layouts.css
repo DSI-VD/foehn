@@ -10,8 +10,10 @@
  * The layout is based on lost framework
  * https://github.com/corysimmons/lost
  */
-
 @lost gutter 1rem;
+
+
+
 
 
 /**
@@ -21,34 +23,9 @@
     lost-flex-container: row;
 }
 
-/* Set direction to column */
-.layout--column {
-    flex-direction: column;
-}
 
-@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
 
-    /* Set flex direction to column for `$(query)` viewport */
-    @media ($(query)) {
 
-        .layout$(query)--column {
-            flex-direction: column;
-        }
-
-    }
-}
-
-@each $query in (--palm, --lap, --lap-and-up, --portable, --desk) {
-
-    /* Set flex direction to row for `$(query)` viewport */
-    @media ($(query)) {
-
-        .layout$(query)--row {
-            flex-direction: row;
-        }
-
-    }
-}
 
 /**
  * Layout items
@@ -74,6 +51,10 @@
 
 }
 
+
+
+
+
 /**
 * Flex item ordering
 *
@@ -92,6 +73,10 @@
         order: 99; /* [1] */
     }
 }
+
+
+
+
 
 /**
  *  Items with fixed width
@@ -165,6 +150,10 @@
         lost-column: 1/12 flex;
     }
 }
+
+
+
+
 
 /**
  * Move items
