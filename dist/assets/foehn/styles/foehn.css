@@ -1843,6 +1843,41 @@ hr {
 * 1. Put item as the last one
 */
 
+.vd-layout__item--order-1 {
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.vd-layout__item--order-2 {
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.vd-layout__item--order-3 {
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+.vd-layout__item--order-4 {
+    -ms-flex-order: 4;
+    order: 4;
+}
+
+.vd-layout__item--order-5 {
+    -ms-flex-order: 5;
+    order: 5;
+}
+
+.vd-layout__item--order-6 {
+    -ms-flex-order: 6;
+    order: 6;
+}
+
+.vd-layout__item--order-last {
+    -ms-flex-order: 99;
+    order: 99; /* [1] */
+}
+
 @media screen and (min-width: 45em) {
     .vd-layout__item--lap-and-up--order-1 {
         -ms-flex-order: 1;
@@ -4060,6 +4095,16 @@ hr {
  * Add gutter.
  */
 
+.vd-u-gr {
+    margin-right: 13.5px !important;
+    margin-right: 0.84375rem !important;
+}
+
+.vd-u-gl {
+    margin-left: 13.5px !important;
+    margin-left: 0.84375rem !important;
+}
+
 @media screen and (min-width: 45em) {
     .vd-u-gr--lap-and-up {
         margin-right: 0.84375rem !important;
@@ -4073,6 +4118,14 @@ hr {
 /**
  * Remove gutter
  */
+
+.vd-u-gr0 {
+    margin-right: 0 !important;
+}
+
+.vd-u-gl0 {
+    margin-left: 0 !important;
+}
 
 @media screen and (min-width: 45em) {
     .vd-u-gr0--lap-and-up {

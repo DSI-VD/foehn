@@ -20,6 +20,14 @@
  *
  * Add gutter.
  */
+.u-gr {
+    margin-right: var(--layout-trumps-gutter) !important;
+}
+
+.u-gl {
+    margin-left: var(--layout-trumps-gutter) !important;
+}
+
 @media (--lap-and-up) {
 
     .u-gr--lap-and-up {
@@ -38,6 +46,14 @@
 /**
  * Remove gutter
  */
+.u-gr0 {
+    margin-right: 0 !important;
+}
+
+.u-gl0 {
+    margin-left: 0 !important;
+}
+
 @media (--lap-and-up) {
 
     .u-gr0--lap-and-up {
