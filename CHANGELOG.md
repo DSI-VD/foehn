@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `.vd-layout-[viewport]--column` to set flex direction to column
 - Add domaine-section organism
 - Add a theme page with real content
+- Add gutter helpers `.vd-u-g*` for `.vd-layout__item`
 
 ### Changed
 
@@ -20,12 +21,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Layout itms adapt automatically depending of the viewport.
 - Template theme use only placeholder
 - Refactor media block HTML
+- Break header organim in smaller organims
 
 ### Removed
 
 - Remove 12 columns based grid
 - Remove Expo objects
 - Remove viewport specific layout classes
+- Remove `vd-layout--column`
 
 ## [0.6.1]
 
