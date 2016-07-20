@@ -60,6 +60,18 @@
 *
 * 1. Put item as the last one
 */
+@for $i from 1 to 6 {
+
+    .layout__item--order-$i {
+        order: $(i);
+    }
+
+}
+
+.layout__item--order-last {
+    order: 99; /* [1] */
+}
+
 @media (--lap-and-up) {
     @for $i from 1 to 6 {
 

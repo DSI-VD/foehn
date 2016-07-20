@@ -1,0 +1,15 @@
+---
+notes: |
+    You can change order of items by using `vd-layout__item--order-*`.
+    Be carefull then. You will have to take car of the gutter by using some
+    of the following classes:
+    - `vd-u-gl`: add gutter on the left
+    - `vd-u-gr`: add gutter on the right
+    - `vd-u-grl0`: remove gutter on the left
+    - `vd-u-gr0`: remove gutter on the right
+---
+<div class="vd-layout vd-layout--demo">
+    <div class="vd-layout__item--1-3 vd-layout__item--order-2">1</div>
+    <div class="vd-layout__item--1-3 vd-layout__item--order-3 vd-u-gr0">2</div>
+    <div class="vd-layout__item--1-3 vd-layout__item--order-1 vd-u-gl0 vd-u-gr">3</div>
+</div>
