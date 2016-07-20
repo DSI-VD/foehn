@@ -3,11 +3,9 @@
 \* ------------------------------------ */
 
 /**
- * Margin and padding helper classes. Use these to tweak layout on a micro
- * level.
- *
- * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding
- * top/right/bottom/left/horizontal/vertical less/more/none
+ * Gutter helper classes for layout. Use these to tweak layout on a micro
+ * level. It can be usefull if the layout items use more than 100% of the
+ * width and wrap on the following line
  */
 :root {
     --layout-trumps-gutter: var(--layout-gutter);
@@ -18,9 +16,9 @@
 
 
 /**
- * Margin helper classes.
+ * Gutter helper classes.
  *
- * Add margins.
+ * Add gutter.
  */
 @media (--lap-and-up) {
 
@@ -38,7 +36,7 @@
 
 
 /**
- * Remove margin
+ * Remove gutter
  */
 @media (--lap-and-up) {
 
