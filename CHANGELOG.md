@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Refactor event-block HTML
 - refactor `.vd-layout` styles
 - refactor Media Blocks molecule html
 - Grid is now based on fractions
