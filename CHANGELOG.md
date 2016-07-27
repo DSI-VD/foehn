@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add social organims
 - Add contact organism
 - Add `.vd-layout-[viewport]--row` to set flex direction to row
 - Add `.vd-layout-[viewport]--column` to set flex direction to column
