@@ -1,0 +1,9 @@
+---
+notes: |
+    Breadcrumb only show the last element on mobile.
+---
+<ul class="vd-list-inline vd-breadcrumb">
+{{#iterate 5}}
+    <li><a href="#">Level {{@index}}</a></li>
+{{/iterate}}
+</ul>

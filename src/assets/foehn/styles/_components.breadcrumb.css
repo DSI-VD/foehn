@@ -1,0 +1,22 @@
+/* ------------------------------------ *\
+    #BREADCRUMP
+\* ------------------------------------ */
+
+/**
+ * Breadcrumb
+ *
+ * 1. Only show the last element on mobile
+ */
+.breadcrumb {
+    @media (--palm) {
+
+        > li:not(:last-child) {
+            display: hidden; /* [1] */
+        }
+
+    }
+
+    > li::before {
+        content: "< ";
+    }
+}
