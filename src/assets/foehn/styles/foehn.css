@@ -54,6 +54,7 @@
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
  * Alerts...............Styles for alerts.
+ * Breadcrumb ..........Styles for alerts.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -159,6 +160,7 @@
 @import "_components.strong.css";
 @import "_components.quotes.css";
 @import "_components.alerts.css";
+@import "_components.breadcrumb.css";
 
 
 

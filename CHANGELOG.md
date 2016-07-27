@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add breadcrumb molecule
 - Add pagination molecule
 - Add social organims
 - Add contact organism

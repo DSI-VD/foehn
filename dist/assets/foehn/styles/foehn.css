@@ -54,6 +54,7 @@
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
  * Alerts...............Styles for alerts.
+ * Breadcrumb ..........Styles for alerts.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -3370,6 +3371,40 @@ hr {
 .vd-alert__body {
     padding-left: 54px;
     padding-left: 3.375rem; /* [2] */
+}
+
+/* ------------------------------------ *\
+    #BREADCRUMP
+\* ------------------------------------ */
+
+/**
+ * Breadcrumb
+ *
+ * 1. Only show the last element on mobile
+ */
+
+.vd-breadcrumb > li::before {
+    content: "< ";
+}
+
+@media screen and (max-width: 44.9375em) {
+    .vd-breadcrumb > li:not(:last-child) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0); /* [1] */
+    }
+
+    .vd-breadcrumb > li:not(:last-child).vd-focusable:active,
+    .vd-breadcrumb > li:not(:last-child).vd-focusable:focus {
+        display: table;
+        position: static;
+        clear: both;
+    }
 }
 
 /**
