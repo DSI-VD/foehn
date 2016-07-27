@@ -33,6 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove Expo objects
 - Remove viewport specific layout classes
 - Remove `vd-layout--column`
+- Remove unused alerts
 
 ## [0.6.1]
 

@@ -3362,35 +3362,14 @@ hr {
     background-size: 1.6875rem 1.6875rem; /* [1] */
     background-position: 27px 27px;
     background-position: 1.6875rem 1.6875rem; /* [1] */
+    background-image: url("../images/warning.svg");
+    background-color: #dce4ef;
+    background-color: rgba(220, 228, 239, 1);
 }
 
 .vd-alert__body {
     padding-left: 54px;
     padding-left: 3.375rem; /* [2] */
-}
-
-.vd-alert--success {
-    background-image: url("../images/success.svg");
-    background-color: #e7f3e4;
-    background-color: rgba(231, 243, 228, 1);
-}
-
-.vd-alert--warning {
-    background-image: url("../images/warning.svg");
-    background-color: #fff0d2;
-    background-color: rgba(255, 240, 210, 1);
-}
-
-.vd-alert--error {
-    background-image: url("../images/error.svg");
-    background-color: #fadfde;
-    background-color: rgba(250, 223, 222, 1);
-}
-
-.vd-alert--info {
-    background-image: url("../images/info.svg");
-    background-color: #dce4ef;
-    background-color: rgba(220, 228, 239, 1);
 }
 
 /**
