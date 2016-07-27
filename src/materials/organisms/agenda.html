@@ -1,7 +1,8 @@
-<div class="vd-container">
+<section class="vd-container">
     <h2>Agenda</h2>
-    {{> blocks.event-blocks}}
-    {{> blocks.event-blocks}}
-    {{> blocks.event-blocks}}
-    {{> blocks.event-blocks}}
-</div>
+    <div class="vd-layout">
+        {{#iterate 3}}
+        {{> blocks.event-blocks styleModifier='vd-layout__item--1-3'}}
+        {{/iterate}}
+    </div>
+</section>
