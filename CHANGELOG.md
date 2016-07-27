@@ -18,8 +18,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 - Refactor event-block HTML
-- refactor `.vd-layout` styles
-- refactor Media Blocks molecule html
+- Refactor `.vd-layout` styles
+- Refactor Media Blocks molecule html
 - Grid is now based on fractions
 - Layout itms adapt automatically depending of the viewport.
 - Template theme use only placeholder
