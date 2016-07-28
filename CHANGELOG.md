@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add news page
+- Add page title with image organism and `.vd-page-title--image` styles
 - Add breadcrumb molecule
 - Add pagination molecule
 - Add social organims
@@ -19,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Page title organism is in a `<header>`
 - Refactor event-block HTML
 - Refactor `.vd-layout` styles
 - Refactor Media Blocks molecule html

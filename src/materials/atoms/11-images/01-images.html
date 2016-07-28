@@ -6,7 +6,7 @@ notes: |
     Do not use the `sizes`/`srcset` attribute for art direction.
 ---
 
-<img src="{{placeholders.images.landscape-4x3.src.800w}}"
+<img{{#if modifier}} class="{{styleModifier}}"{{/if}} src="{{placeholders.images.landscape-4x3.src.800w}}"
     sizes="100w"
     srcset="{{placeholders.images.landscape-4x3.src.360w}} 360w,
         {{placeholders.images.landscape-4x3.src.540w}} 540w,
