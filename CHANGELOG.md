@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add lede paragraph atom
 - Add news related links organism
 - Add related news organism
 - Add news page
