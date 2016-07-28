@@ -34,7 +34,7 @@
     "npm": ">=2.0.0"
   },
   "devDependencies": {
-    "@alienlebarge/stylelint-config": "^1.2.1",
+    "@alienlebarge/stylelint-config": "^1.2.2",
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.10.4",
     "babel-loader": "^6",
