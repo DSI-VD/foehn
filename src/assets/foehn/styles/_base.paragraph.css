@@ -5,3 +5,17 @@
 p {
     @mixin font-bodytext;
 }
+
+
+
+/**
+ * The `.lede` class is used to make the introductory text (usually a paragraph)
+ * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+ */
+:root {
+    --lede-size: 1.26;
+}
+
+.lede {
+    font-size: calc( 1rem * var(--lede-size) );
+}
