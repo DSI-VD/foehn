@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add related news organism
 - Add news page
 - Add page title with image organism and `.vd-page-title--image` styles
 - Add breadcrumb molecule
