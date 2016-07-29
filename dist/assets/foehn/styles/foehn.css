@@ -3109,6 +3109,13 @@ hr {
     color: rgba(255, 255, 255, 1);
 }
 
+.vd-box--info {
+    background-color: #93bda2;
+    background-color: rgba(147, 189, 162, 1);
+    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
+}
+
 /* ------------------------------------ *\
     #BACKGROUNDS
 \* ------------------------------------ */

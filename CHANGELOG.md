@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add box info molecule
 - Add box transaction molecule
 - Add secondary navigation molecule
 - Add lede paragraph atom
@@ -38,6 +39,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Remove alert molecule
 - Remove 12 columns based grid
 - Remove Expo objects
 - Remove viewport specific layout classes
