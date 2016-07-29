@@ -1,11 +1,30 @@
-{{> global.header}}
+{{> global.header }}
 
-{{> page-title title='Thèmes'}}
+{{> navigation.breadcrumb }}
 
-{{> topics-list}}
+{{> page-title title='Enfance et jeunesse'}}
 
-{{#iterate 11}}
-{{> domaine-section }}
-{{/iterate}}
+<div class="vd-layout">
+    <div class="vd-layout__item--2-3">
 
-{{> global.footer}}
+        {{> boxes.default }}
+
+        <section>
+            <h2>Dans ce thème</h2>
+
+            <ul class="vd-list-bare">
+                <li><a href="#">Compétence en fonction du domicile du débiteur</a></li>
+                <li><a href="#">Extraits des registres</a></li>
+                <li><a href="#">Déroulement des procédures</a></li>
+                <li><a href="#">Disposition légales</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <div class="vd-layout__item--1-3">
+        {{> contact }}
+    </div>
+</div>
+
+{{> global.footer }}
