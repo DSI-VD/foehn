@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add a theme template
 - Add box info molecule
 - Add box transaction molecule
 - Add secondary navigation molecule
