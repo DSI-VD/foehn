@@ -2,16 +2,31 @@
     #BOX
 \* ------------------------------------ */
 
-/**
- * Default box UI.
- */
 :root {
-    --box-border-color: var(--color-base);
     --box-margin-bottom: var(--base-spacing-unit);
+
+    --box-default-background-color: var(--color-gray-light);
+    --box-transaction-background-color: var(--color-primary-alt-darkest);
+    --box-transaction-text-color: var(--color-white);
 }
 
+/**
+ * Default box UI
+ */
 .box--default {
+    background-color: var(--box-default-background-color);
+    margin-bottom: var(--box-margin-bottom);
+}
+
+/**
+ * Transaction confiration UI
+ */
+.box--transaction {
+    text-align: center;
+    background-color: var(--box-transaction-background-color);
     margin-bottom: var(--box-margin-bottom);
 
-    outline: 1px solid var(--box-border-color);
+    * {
+        color: var(--box-transaction-text-color);
+    }
 }

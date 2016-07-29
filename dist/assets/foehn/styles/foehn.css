@@ -3082,14 +3082,31 @@ hr {
 \* ------------------------------------ */
 
 /**
- * Default box UI.
+ * Default box UI
  */
 
 .vd-box--default {
+    background-color: #aeb0b5;
+    background-color: rgba(174, 176, 181, 1);
     margin-bottom: 27px;
     margin-bottom: 1.6875rem;
-    outline: 1px solid #000000;
-    outline: 1px solid rgba(0, 0, 0, .8);
+}
+
+/**
+ * Transaction confiration UI
+ */
+
+.vd-box--transaction {
+    text-align: center;
+    background-color: #006a9b;
+    background-color: rgba(0, 106, 155, 1);
+    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
+}
+
+.vd-box--transaction * {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
 }
 
 /* ------------------------------------ *\

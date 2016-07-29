@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add box transaction molecule
 - Add secondary navigation molecule
 - Add lede paragraph atom
 - Add news related links organism
