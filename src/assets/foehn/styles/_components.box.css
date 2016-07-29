@@ -8,6 +8,8 @@
     --box-default-background-color: var(--color-gray-light);
     --box-transaction-background-color: var(--color-primary-alt-darkest);
     --box-transaction-text-color: var(--color-white);
+
+    --box-info-background-color: var(--color-green-lighter);
 }
 
 /**
@@ -29,4 +31,9 @@
     * {
         color: var(--box-transaction-text-color);
     }
+}
+
+.box--info {
+    background-color: var(--box-info-background-color);
+    margin-bottom: var(--box-margin-bottom);
 }
