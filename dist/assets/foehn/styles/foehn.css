@@ -53,8 +53,7 @@
  * Small................Small text styles.
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
- * Alerts...............Styles for alerts.
- * Breadcrumb ..........Styles for alerts.
+ * Breadcrumb ..........Styles for breadcrumb.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -3378,34 +3377,6 @@ hr {
 /**
  * Blockquote class
  */
-
-/* ------------------------------------ *\
-    #ALERTS
-\* ------------------------------------ */
-
-/**
- * Alerts
- *
- * Alerts are build to work with the `.box` class.
- *
- * 1. Icon settings
- * 2. Add padding between icon and content
- */
-
-.vd-alert {
-    background-repeat: no-repeat; /* [1] */
-    background-size: 1.6875rem 1.6875rem; /* [1] */
-    background-position: 27px 27px;
-    background-position: 1.6875rem 1.6875rem; /* [1] */
-    background-image: url("../images/warning.svg");
-    background-color: #dce4ef;
-    background-color: rgba(220, 228, 239, 1);
-}
-
-.vd-alert__body {
-    padding-left: 54px;
-    padding-left: 3.375rem; /* [2] */
-}
 
 /* ------------------------------------ *\
     #PAGE-TITLE
