@@ -27,6 +27,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Rename box default molecule
 - Page title organism is in a `<header>`
 - Refactor event-block HTML
 - Refactor `.vd-layout` styles
