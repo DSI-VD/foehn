@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add people block molecule
 - Add avatar image atom
 - Add a list-news page
 - Add mega menu organism
