@@ -54,6 +54,7 @@
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
  * Breadcrumb ..........Styles for breadcrumb.
+ * Images ..............APlly styles on images.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -3471,6 +3472,18 @@ hr {
         position: static;
         clear: both;
     }
+}
+
+/* ------------------------------------ *\
+    #IMAGES
+\* ------------------------------------ */
+
+/**
+ * Perfect circle
+ */
+
+.vd-image-circle {
+    border-radius: 50%;
 }
 
 /**
