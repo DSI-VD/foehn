@@ -26,6 +26,9 @@ images:
       2x: "http://placehold.it/3600x6400?text=3600x6400+(2x)"
       3x: "http://placehold.it/5400x9600?text=5400x9600+(3x)"
     alt: "16x9 portrait image"
+  avatar:
+    src: "https://api.adorable.io/avatars/125/vd.ch.png"
+    alt: "avatar image"
   social:
     src: "http://placehold.it/75x75?text=75x75"
     alt: "social logo"
