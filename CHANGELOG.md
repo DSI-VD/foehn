@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add list-abbreviation style
 - Add circle image in image shape atom
 - Add people block molecule
 - Add avatar image atom

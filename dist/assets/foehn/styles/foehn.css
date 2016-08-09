@@ -55,6 +55,7 @@
  * Quotes...............Stlyles for quotes.
  * Breadcrumb ..........Styles for breadcrumb.
  * Images ..............Images shapes.
+ * List-abbreviations...List with displayed abbreviation title.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -3484,6 +3485,37 @@ hr {
 
 .vd-image-circle {
     border-radius: 50%;
+}
+
+/* ------------------------------------ *\
+    #LIST-ABBREVIATIONS
+\* ------------------------------------ */
+
+.vd-list-abbreviations abbr {
+    font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+    font-kerning: normal;
+    font-variant-caps: normal;
+}
+
+.vd-list-abbreviations abbr[title] {
+    text-decoration: none;
+}
+
+.vd-list-abbreviations abbr::after {
+    font-variant-ligatures: common-ligatures, contextual;
+    font-variant-numeric: oldstyle-nums, proportional-nums;
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+    font-kerning: normal;
+    display: block;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-variant-caps: initial;
+    color: #aeb0b5;
+    color: rgba(174, 176, 181, 1);
+    text-transform: none;
+    /* stylelint-disable function-whitespace-after */
+    content: attr(title); /* [2] *//* stylelint-enable function-whitespace-after */
 }
 
 /**
