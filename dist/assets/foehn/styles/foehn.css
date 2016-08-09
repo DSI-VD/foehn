@@ -1440,8 +1440,12 @@ cite, q {
 \* ------------------------------------ */
 
 /**
- * Mor readable `<abbr>`
- * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ * Better `<abbr>`
+ *
+ * 1. Make `<abbr>` more readable.
+ *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ * 2. Display title attribute value if the device's primary input does not
+ *    have hover
  */
 
 abbr {
@@ -1450,7 +1454,14 @@ abbr {
     font-variant-caps: all-small-caps;
     font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
     font-kerning: normal;
-    text-transform: uppercase; /* [1] */
+    text-transform: uppercase; /* [1] *//* [1] */
+}
+
+@media (hover: none) {
+    abbr::after {
+        font-size: 0.79365rem; /* [2] *//* stylelint-disable function-whitespace-after */
+        content: " ("attr(title)")"; /* [2] *//* stylelint-enable function-whitespace-after */
+    }
 }
 
 /* ------------------------------------ *\
