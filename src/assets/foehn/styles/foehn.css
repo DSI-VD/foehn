@@ -54,6 +54,7 @@
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
  * Breadcrumb ..........Styles for breadcrumb.
+ * Images ..............APlly styles on images.
  *
  * TRUMPS
  * Clearfix.............Text helpers.
@@ -160,6 +161,7 @@
 @import "_components.quotes.css";
 @import "_components.page-title.css";
 @import "_components.breadcrumb.css";
+@import "_components.images.css";
 
 
 
