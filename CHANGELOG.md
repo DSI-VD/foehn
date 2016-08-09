@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add organisation section organism
+- Add organisation-list molecule
 - Add list-abbreviation style
 - Add circle image in image shape atom
 - Add people block molecule
