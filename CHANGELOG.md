@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add text-center class
 - Add organisation template
 - Add list-prestation organism
 - Add projects organim
