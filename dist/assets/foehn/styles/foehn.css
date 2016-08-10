@@ -61,6 +61,7 @@
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
  * Colors...............Text colors.
+ * Text utilities.......Center texts..
  * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  * Spacing..............Utilities to work with spaces.
@@ -3835,6 +3836,18 @@ hr {
                  "Helvetica Neue",
                  "Lucida Grande",
                  sans-serif; /* [1] */
+}
+
+/* ------------------------------------ *\
+//    #TEXT-UTILITIES
+\* ------------------------------------ */
+
+/**
+ * Center text
+ */
+
+.vd-text-center {
+    text-align: center;
 }
 
 /* ------------------------------------ *\
