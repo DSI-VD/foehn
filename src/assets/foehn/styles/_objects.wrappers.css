@@ -8,6 +8,9 @@
  * 1. Center horizontaly
  */
 .container {
+
+    max-width: 64rem;
+
     margin-right: auto; /* [1] */
     margin-left: auto; /* [1] */
 

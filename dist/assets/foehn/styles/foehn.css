@@ -1557,6 +1557,8 @@ hr {
  */
 
 .vd-container {
+    max-width: 1024px;
+    max-width: 64rem;
     margin-right: auto; /* [1] */
     margin-left: auto; /* [1] */
     padding-right: 6.75px;
