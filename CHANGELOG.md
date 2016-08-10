@@ -36,6 +36,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Remove vd-container class on last-news organism
 - Rename box default molecule
 - Page title organism is in a `<header>`
 - Refactor event-block HTML
