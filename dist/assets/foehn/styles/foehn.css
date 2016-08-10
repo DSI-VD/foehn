@@ -1667,7 +1667,7 @@ hr {
  * Use fonts only when loaded
  */
 
-.wf-active .vd-button {
+.wf-active [class^="vd-button"] {
     font-family: "MetaWeb",
                  -apple-system,
                  ".SFNSText-Regular",
