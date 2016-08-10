@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add .vd-layout__item--lap-and-up--3-4 class
 - Add text-center class
 - Add organisation template
 - Add list-prestation organism
@@ -54,6 +55,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Template theme use only placeholder
 - Refactor media block HTML
 - Break header organim in smaller organims
+
+### Fix
+
+- Fix mega menu column width on lap-and-up viewport
 
 ### Removed
 
