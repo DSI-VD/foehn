@@ -2,7 +2,7 @@
 
 {{> global.mega-menu }}
 
-{{> page-title title='Ordre judiciaire vaudois'}}
+{{> page-title title='Direction générale de l\'environnement (DGE)'}}
 
 <div class="vd-layout">
 
@@ -19,44 +19,17 @@
 
         {{> last-news}}
 
-        <section>
+        {{> sections.projects }}
 
-            <h2>Projets</h2>
-
-            {{> blocks.media-blocks }}
-
-            <ul>
-                <li><a href="">Lorem ipsum.</a></li>
-                <li><a href="">Sint, beatae.</a></li>
-                <li><a href="">Natus, ratione!</a></li>
-                <li><a href="">Blanditiis, cupiditate.</a></li>
-                <li><a href="">Voluptate, provident!</a></li>
-                <li><a href="">Reiciendis, doloribus.</a></li>
-                <li><a href="">Magnam, necessitatibus.</a></li>
-            </ul>
-
-        </section>
+        {{> sections.organisation }}
 
         <section>
 
-            <h2>Organisation</h2>
+            <h2>Resonsabilités</h2>
 
-            {{> images.images }}
+            {{> paragraphs.paragraph }}
 
-            <h3>Cornelius Neet</h3>
-            <p>Directeur général de l'environnement</p>
-
-            <p class="vd-gamma">
-                <a href="#">Biographie</a>
-            </p>
-
-            <ul>
-                <li><a href="#"><abbr title="Direction de l'énergie">DIREN</abbr></a></li>
-                <li><a href="#"><abbr title="Direction de l'environnement industriel, urbain et rural">DIREV</abbr></a></li>
-                <li><a href="#"><abbr title="Direction des ressources et du patrimoine naturels">DIRNA</abbr></a></li>
-                <li><a href="#">Support administratif</a></li>
-                <li><a href="#">Support stratégique</a></li>
-            </ul>
+            <p><a href="#" class="vd-button">Bases légales</a></p>
 
         </section>
 
@@ -66,17 +39,7 @@
 
         {{> contact }}
 
-        <section class="vd-box vd-box--default">
-
-            <h2>Préstations</h2>
-
-            <ul>
-                <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                <li><a href="">Odio vel, ad unde quisquam.</a></li>
-                <li><a href="">Aspernatur minus, nam nulla iste!</a></li>
-            </ul>
-
-        </section>
+        {{> list-prestations }}
 
         <section>
 
@@ -105,23 +68,6 @@
         </section>
 
     </div>
-</div>
-<div class="vd-container">
-
-</div>
-
-{{> boxes-list}}
-
-<div class="vd-container">
-    <h2>Bases légales</h2>
-
-    {{> lists.unorderd}}
-</div>
-
-<div class="vd-container">
-    <h2>Contact</h2>
-
-    {{> text.address}}
 </div>
 
 {{> global.footer}}
