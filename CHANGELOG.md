@@ -41,6 +41,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Refactor how .vd-container is used in materials
 - Media block columns are set to 1/3 - 2/3
 - Remove vd-container class on last-news organism
 - Rename box default molecule
