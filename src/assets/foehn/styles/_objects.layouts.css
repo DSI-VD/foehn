@@ -137,6 +137,10 @@
         lost-column: 1/4 flex;
     }
 
+    .layout__item--lap-and-up--3-4 {
+        lost-column: 3/4 flex;
+    }
+
 }
 
 /* Items size on desk and up */
