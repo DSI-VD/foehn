@@ -2099,6 +2099,26 @@ hr {
         margin-right: 0;
         margin-left: auto;
     }
+
+    .vd-layout__item--lap-and-up--3-4 {
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        width: calc(99.9% * 3/4 - 0.25rem);
+    }
+
+    .vd-layout__item--lap-and-up--3-4:nth-child(1n) {
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+
+    .vd-layout__item--lap-and-up--3-4:last-child {
+        margin-right: 0;
+    }
+
+    .vd-layout__item--lap-and-up--3-4:nth-child(4n) {
+        margin-right: 0;
+        margin-left: auto;
+    }
 }
 
 /* Items size on desk and up */
