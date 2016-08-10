@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add list-prestation organism
 - Add projects organim
 - Add media-block-big molecule
 - Add organisation section organism
