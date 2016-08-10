@@ -55,6 +55,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Remove box lit organism
 - Remove alert molecule
 - Remove 12 columns based grid
 - Remove Expo objects
