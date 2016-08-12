@@ -47,6 +47,7 @@
  *
  * COMPONENTS
  * Navbar...............Top bar.
+ * Header...............Header components styles.
  * Inline texts.........Fraction, Small-caps, etc.
  * Boxes................Boxes styles.
  * Backgrounds..........Change backgrounds color
@@ -155,6 +156,7 @@
  */
 
 @import "_components.navbar.css";
+@import "_components.header.css";
 @import "_components.inline-texts.css";
 @import "_components.box.css";
 @import "_components.backgrounds.css";
