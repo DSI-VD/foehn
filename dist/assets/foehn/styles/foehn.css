@@ -3128,7 +3128,11 @@ hr {
  * Header primary links
  *
  * 1. Button are buttons only on palm.
+<<<<<<< d3f7cd229c0f09526ebee4e85fee9cdb36108fe1
  * 2. Use enhanced fonts only when loaded
+=======
+ * 2. Use enhanced fonts only when loaded.
+>>>>>>> style for the header
  */
 
 @media screen and (max-width: 44.9375em) {
