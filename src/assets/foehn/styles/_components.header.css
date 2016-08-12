@@ -1,0 +1,43 @@
+/* ------------------------------------ *\
+    #HEADER
+\* ------------------------------------ */
+
+
+/**
+ * Set the colors of the header.
+ */
+.header {
+    background-color: var(--color-base);
+
+    &,
+    a,
+    a:hover {
+        color: var(--color-white);
+    }
+
+}
+
+/**
+ * Header primary links
+ *
+ * 1. Button are buttons only on palm.
+ * 2. Use enhanced fonts only when loaded.
+ */
+
+@media (--palm) {
+
+    .header-button {
+        @mixin button; /* [1] */
+        @mixin button--block; /* [1] */
+
+        &--secondary {
+            @mixin button--secondary;
+        }
+
+    }
+
+    .wf-active .header-button {
+        font-family: var(--enhance-heading-font-family); /* [2] */
+    }
+
+}

@@ -32,7 +32,8 @@
  * 8. Hover state color
  * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
-.button {
+
+@define-mixin button {
     display: inline-block; /* [1] */
 
     font: inherit; /* [2] */
@@ -88,6 +89,9 @@
 
 }
 
+.button {
+    @mixin button;
+}
 
 
 
@@ -147,7 +151,7 @@
     --button-background-color-secondary-active: var(--color-secondary-darkest);
 }
 
-.button--secondary {
+@define-mixin button--secondary {
     @mixin button,
         var(--color-white),
         var(--button-background-color-secondary),
@@ -155,6 +159,10 @@
         var(--button-background-color-secondary-hover),
         var(--button-text-color-secondary-active),
         var(--button-background-color-secondary-active);
+}
+
+.button--secondary {
+    @mixin button--secondary;
 }
 
 
@@ -168,7 +176,7 @@
     --button-background-color-transparent-active: inherit;
 }
 
-.button--transparent {
+@define-mixin button--transparent {
     @mixin button,
         inherit,
         var(--button-background-color-transparent),
@@ -176,6 +184,10 @@
         var(--button-background-color-transparent-hover),
         var(--button-text-color-transparent-active),
         var(--button-background-color-transparent-active);
+}
+
+.button--transparent {
+    @mixin button--transparent;
 }
 
 
@@ -211,7 +223,11 @@
  * Size variation
  */
 
-.button--block {
+@define-mixin button--block {
     display: block;
     width: 100%;
+}
+
+.button--block {
+    @mixin button--block;
 }
