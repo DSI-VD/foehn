@@ -1667,7 +1667,7 @@ hr {
  * Use fonts only when loaded
  */
 
-.wf-active [class^="vd-button"] {
+.wf-active .vd-button {
     font-family: "MetaWeb",
                  -apple-system,
                  ".SFNSText-Regular",
@@ -3057,12 +3057,29 @@ hr {
     #NAVBAR
 \* ------------------------------------ */
 
+/**
+ * Navbar
+ *
+ * If the navbare use list, be sure to remove list styles. Use a classe like
+ * `.list-bare`.
+ *
+ * 1. Only the first element is align on the left
+ * 2. Size of the logo. It's the same size of a button.
+ */
+
 .vd-navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.vd-navbar > :nth-child(1) {
+    margin-right: auto; /* [1] */
 }
 
 .vd-navbar__logo source, .vd-navbar__logo img {
-    height: 54px;
-    height: 3.375rem;
+    height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem); /* [2] */
 }
 
 /* ------------------------------------ *\

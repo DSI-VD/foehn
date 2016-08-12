@@ -2,13 +2,36 @@
     #NAVBAR
 \* ------------------------------------ */
 
+
+/**
+ * Navbar
+ *
+ * If the navbare use list, be sure to remove list styles. Use a classe like
+ * `.list-bare`.
+ *
+ * 1. Only the first element is align on the left
+ * 2. Size of the logo. It's the same size of a button.
+ */
 .navbar {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    > :nth-child(1) {
+        margin-right: auto; /* [1] */
+    }
 
     &__logo {
 
         source,
         img {
-            height: calc(var(--base-spacing-unit) * 2);
+            height: calc(
+                var(--button-padding)
+                + var(--button-border-width)
+                + 1rem
+                + var(--button-border-width)
+                + var(--button-padding)
+                ); /* [2] */
         }
 
     }
