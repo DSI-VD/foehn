@@ -1609,6 +1609,7 @@ hr {
  * 6. Fixes odd inner spacing in IE7.
  * 7. Force all button-styled elements to appear clickable.
  * 8. Hover state color
+ * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
 
 .vd-button {
@@ -1654,20 +1655,16 @@ hr {
     box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
 }
 
-/**
- * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
- */
-
 .vd-button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+    border: 0; /* [9] */
+    padding: 0; /* [9] */
 }
 
 /**
  * Use fonts only when loaded
  */
 
-.wf-active .vd-button {
+.wf-active [class^="vd-button"] {
     font-family: "MetaWeb",
                  -apple-system,
                  ".SFNSText-Regular",

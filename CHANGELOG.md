@@ -42,6 +42,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Refactor .vd-button styles
 - Rename global.navigation-* materials in global.header-*
 - Positionning the logo and site-title in the navbar
 - Use flexbox to style the navbar

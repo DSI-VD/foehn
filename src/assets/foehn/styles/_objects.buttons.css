@@ -30,6 +30,7 @@
  * 6. Fixes odd inner spacing in IE7.
  * 7. Force all button-styled elements to appear clickable.
  * 8. Hover state color
+ * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
 .button {
     display: inline-block; /* [1] */
@@ -80,18 +81,11 @@
         box-shadow: 0 0 3px var(--color-focus), 0 0 7px var(--color-focus);
     }
 
-}
+    &::-moz-focus-inner {
+        border: 0; /* [9] */
+        padding: 0; /* [9] */
+    }
 
-
-
-
-
-/**
- * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
- */
-.button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
 }
 
 
@@ -101,7 +95,7 @@
 /**
  * Use fonts only when loaded
  */
-.wf-active .button {
+.wf-active [class^="vd-button"] {
     font-family: var(--enhance-heading-font-family);
 }
 
