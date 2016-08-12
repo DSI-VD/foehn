@@ -79,6 +79,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Hide legend and label in search bar
 - Refactor gulp tasks
 - Lint script with `eslint`
 - Upgrade `eslint`
