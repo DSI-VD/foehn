@@ -10,7 +10,8 @@
  * `.list-bare`.
  *
  * 1. Only the first element is align on the left
- * 2. Size of the logo. It's the same size of a button.
+ * 2. Size of the logo. On palm, it's the same size of a button .
+ * 3. positionning the text aside of the logo
  */
 .navbar {
 
@@ -21,18 +22,35 @@
         margin-right: auto; /* [1] */
     }
 
-    &__logo {
+}
 
-        source,
-        img {
-            height: calc(
-                var(--button-padding)
-                + var(--button-border-width)
-                + 1rem
-                + var(--button-border-width)
-                + var(--button-padding)
-                ); /* [2] */
+.navbar__logo {
+    @media (--lap-and-up) {
+        display: flex; /* [3] */
+    }
+
+    source,
+    img {
+        height: calc(
+            var(--button-padding)
+            + var(--button-border-width)
+            + 1rem
+            + var(--button-border-width)
+            + var(--button-padding)
+            ); /* [2] */
+
+        @media (--lap-and-up) {
+            height: 4rem; /* [2] */
         }
+    }
+
+}
+
+.navbar__site-title {
+    @media (--lap-and-up) {
+
+        display: flex; /* [3] */
+        flex-direction: column; /* [3] */
 
     }
 

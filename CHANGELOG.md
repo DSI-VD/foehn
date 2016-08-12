@@ -42,6 +42,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Positionning the logo and site-title in the navbar
 - Use flexbox to style the navbar
 - Refactor how .vd-container is used in materials
 - Media block columns are set to 1/3 - 2/3

@@ -3064,7 +3064,8 @@ hr {
  * `.list-bare`.
  *
  * 1. Only the first element is align on the left
- * 2. Size of the logo. It's the same size of a button.
+ * 2. Size of the logo. On palm, it's the same size of a button .
+ * 3. positionning the text aside of the logo
  */
 
 .vd-navbar {
@@ -3080,6 +3081,31 @@ hr {
 
 .vd-navbar__logo source, .vd-navbar__logo img {
     height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem); /* [2] */
+}
+
+@media screen and (min-width: 45em) {
+    .vd-navbar__logo {
+        display: -ms-flexbox;
+        display: flex; /* [3] */
+    }
+}
+
+@media screen and (min-width: 45em) {
+    .vd-navbar__logo source, .vd-navbar__logo img {
+        height: 4rem; /* [2] */
+    }
+}
+
+.vd-navbar__site-title {
+}
+
+@media screen and (min-width: 45em) {
+    .vd-navbar__site-title {
+        display: -ms-flexbox;
+        display: flex; /* [3] */
+        -ms-flex-direction: column;
+            flex-direction: column; /* [3] */
+    }
 }
 
 /* ------------------------------------ *\
