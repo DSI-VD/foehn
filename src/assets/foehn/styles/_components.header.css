@@ -6,13 +6,29 @@
 /**
  * Set the colors of the header.
  */
+<<<<<<< d3f7cd229c0f09526ebee4e85fee9cdb36108fe1
 .header {
     background-color: var(--color-base);
+=======
+
+:root {
+    --header-background-color: var(--color-base);
+    --header-color: var(--color-white);
+}
+
+.header {
+
+    background-color: var(--header-background-color);
+>>>>>>> style for the header
 
     &,
     a,
     a:hover {
+<<<<<<< d3f7cd229c0f09526ebee4e85fee9cdb36108fe1
         color: var(--color-white);
+=======
+        color: var(--header-color);
+>>>>>>> style for the header
     }
 
 }
