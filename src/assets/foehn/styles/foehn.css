@@ -138,7 +138,6 @@
  */
 
 @import "objects/_objects.wrappers.css";
-@import "objects/_objects.buttons.css";
 @import "objects/_objects.list-bare.css";
 @import "objects/_objects.list-inline.css";
 @import "objects/_objects.layouts.css";
@@ -155,6 +154,7 @@
 
 @import "components/_components.navbar.css";
 @import "components/_components.header.css";
+@import "components/_components.buttons.css";
 @import "components/_components.inline-texts.css";
 @import "components/_components.box.css";
 @import "components/_components.backgrounds.css";
