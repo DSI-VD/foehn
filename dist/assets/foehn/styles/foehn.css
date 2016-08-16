@@ -1,3 +1,5 @@
+@import "_components.header.css";
+
 /**
  * CONTENTS
  *
@@ -47,6 +49,7 @@
  *
  * COMPONENTS
  * Navbar...............Top bar.
+ * Header...............Header components styles.
  * Inline texts.........Fraction, Small-caps, etc.
  * Boxes................Boxes styles.
  * Backgrounds..........Change backgrounds color
@@ -1609,6 +1612,7 @@ hr {
  * 6. Fixes odd inner spacing in IE7.
  * 7. Force all button-styled elements to appear clickable.
  * 8. Hover state color
+ * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
 
 .vd-button {
@@ -1654,20 +1658,16 @@ hr {
     box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
 }
 
-/**
- * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
- */
-
 .vd-button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+    border: 0; /* [9] */
+    padding: 0; /* [9] */
 }
 
 /**
  * Use fonts only when loaded
  */
 
-.wf-active .vd-button {
+.wf-active [class^="vd-button"] {
     font-family: "MetaWeb",
                  -apple-system,
                  ".SFNSText-Regular",
@@ -3057,12 +3057,55 @@ hr {
     #NAVBAR
 \* ------------------------------------ */
 
+/**
+ * Navbar
+ *
+ * If the navbare use list, be sure to remove list styles. Use a classe like
+ * `.list-bare`.
+ *
+ * 1. Only the first element is align on the left
+ * 2. Size of the logo. On palm, it's the same size of a button .
+ * 3. positionning the text aside of the logo
+ */
+
 .vd-navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.vd-navbar > :nth-child(1) {
+    margin-right: auto; /* [1] */
 }
 
 .vd-navbar__logo source, .vd-navbar__logo img {
-    height: 54px;
-    height: 3.375rem;
+    height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem); /* [2] */
+}
+
+@media screen and (min-width: 45em) {
+    .vd-navbar__logo {
+        display: -ms-flexbox;
+        display: flex; /* [3] */
+    }
+}
+
+@media screen and (min-width: 45em) {
+    .vd-navbar__logo source, .vd-navbar__logo img {
+        height: 4rem; /* [2] */
+    }
+}
+
+.vd-navbar__site-title {
+}
+
+@media screen and (min-width: 45em) {
+    .vd-navbar__site-title {
+        display: -ms-flexbox;
+        display: flex; /* [3] */
+        -ms-flex-direction: column;
+            flex-direction: column; /* [3] */
+    }
 }
 
 /* ------------------------------------ *\
@@ -3538,7 +3581,9 @@ hr {
     color: rgba(174, 176, 181, 1);
     text-transform: none;
     /* stylelint-disable function-whitespace-after */
-    content: attr(title); /* [2] *//* stylelint-enable function-whitespace-after */
+    content: attr(title); /* [2] */
+
+    /* stylelint-enable function-whitespace-after */
 }
 
 /**
