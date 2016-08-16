@@ -17,7 +17,7 @@
  * 1. So we can apply the `.box` class to naturally-inline elements.
  * 2. Clearfix
  */
-.box {
+.o-box {
     display: block; /* [1] */
 
     padding: var(--box-padding);
