@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-box--* in vd-c-box--*
 - Renamed the class vd-box in vd-o-box
 - Add vd-list-inline__item class for vd-list-inline item
 - Rename class vd-container in vd-wrapper
