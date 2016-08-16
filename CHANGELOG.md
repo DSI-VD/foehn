@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-list-bare in vd-o-list-bare
 - Renamed the class vd-layout in vd-o-layout
 - Renamed the class vd-box--* in vd-c-box--*
 - Renamed the class vd-box in vd-o-box
