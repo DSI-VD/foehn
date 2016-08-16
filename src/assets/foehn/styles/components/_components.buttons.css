@@ -89,7 +89,7 @@
 
 }
 
-.button {
+.c-button {
     @mixin button;
 }
 
@@ -99,7 +99,7 @@
 /**
  * Use fonts only when loaded
  */
-.wf-active [class^="vd-button"] {
+.wf-active [class^="vd-c-button"] {
     font-family: var(--enhance-heading-font-family);
 }
 
@@ -161,7 +161,7 @@
         var(--button-background-color-secondary-active);
 }
 
-.button--secondary {
+.c-button--secondary {
     @mixin button--secondary;
 }
 
@@ -186,7 +186,7 @@
         var(--button-background-color-transparent-active);
 }
 
-.button--transparent {
+.c-button--transparent {
     @mixin button--transparent;
 }
 
@@ -197,7 +197,7 @@
     --button-background-color-disabled: var(--color-gray-light);
 }
 
-.button--disabled,
+.c-button--disabled,
 [type="submit"][disabled] {
 
     &,
@@ -228,6 +228,6 @@
     width: 100%;
 }
 
-.button--block {
+.c-button--block {
     @mixin button--block;
 }

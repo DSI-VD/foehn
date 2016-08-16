@@ -2958,12 +2958,12 @@ hr {
  * Set the colors of the header.
  */
 
-.vd-header {
+.vd-c-header {
     background-color: #000000;
     background-color: rgba(0, 0, 0, .8);
 }
 
-.vd-header, .vd-header a, .vd-header a:hover {
+.vd-c-header, .vd-c-header a, .vd-c-header a:hover {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
 }
@@ -2976,7 +2976,7 @@ hr {
  */
 
 @media screen and (max-width: 44.9375em) {
-    .vd-header-button {
+    .vd-c-header-button {
         display: inline-block; /* [1] */
         font: inherit; /* [2] */
         font-weight: 700;
@@ -2996,60 +2996,62 @@ hr {
         /* [1] */
     }
 
-    .vd-header-button, .vd-header-button:hover, .vd-header-button.is-hover,
-    .vd-header-button:active, .vd-header-button.is-active,
-    .vd-header-button:focus
-    .vd-header-button.is-focus {
+    .vd-c-header-button, .vd-c-header-button:hover, .vd-c-header-button.is-hover,
+    .vd-c-header-button:active, .vd-c-header-button.is-active,
+    .vd-c-header-button:focus
+    .vd-c-header-button.is-focus {
         color: #000000;
         color: rgba(0, 0, 0, .8);
         text-decoration: none; /* [3] */
     }
 
-    .vd-header-button:hover, .vd-header-button.is-hover {
+    .vd-c-header-button:hover, .vd-c-header-button.is-hover {
         color: #000000;
         color: rgba(0, 0, 0, .8);
         background-color: #00a5d4;
         background-color: rgba(0, 165, 212, 1); /* [8] */
     }
 
-    .vd-header-button:active, .vd-header-button.is-active {
+    .vd-c-header-button:active, .vd-c-header-button.is-active {
         color: #ffffff;
         color: rgba(255, 255, 255, 1);
         background-color: #006a9b;
         background-color: rgba(0, 106, 155, 1); /* [8] */
     }
 
-    .vd-header-button:focus, .vd-header-button.is-focus {
+    .vd-c-header-button:focus, .vd-c-header-button.is-focus {
         box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
     }
 
-    .vd-header-button::-moz-focus-inner {
+    .vd-c-header-button::-moz-focus-inner {
         border: 0; /* [9] */
         padding: 0; /* [9] */
     }
 
-    .vd-header-button--secondary {
+    .vd-c-header-button--secondary {
         color: #ffffff;
         color: rgba(255, 255, 255, 1);
         background-color: #d0404c;
         background-color: rgba(208, 64, 76, 1);
     }
 
-    .vd-header-button--secondary:hover, .vd-header-button--secondary.is-hover {
+    .vd-c-header-button--secondary:hover,
+    .vd-c-header-button--secondary.is-hover {
         color: #000000;
         color: rgba(0, 0, 0, .8);
         background-color: #cf1d1d;
         background-color: rgba(207, 29, 29, 1);
     }
 
-    .vd-header-button--secondary:active, .vd-header-button--secondary.is-active {
+    .vd-c-header-button--secondary:active,
+    .vd-c-header-button--secondary.is-active {
         color: #ffffff;
         color: rgba(255, 255, 255, 1);
         background-color: #9a1919;
         background-color: rgba(154, 25, 25, 1);
     }
 
-    .wf-active .vd-header-button {
+    .wf-active .vd-c-header-button {
         font-family: "MetaWeb",
                      -apple-system,
                      ".SFNSText-Regular",
@@ -3080,7 +3082,7 @@ hr {
  * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
 
-.vd-button {
+.vd-c-button {
     display: inline-block; /* [1] */
     font: inherit; /* [2] */
     font-weight: 700;
@@ -3097,33 +3099,33 @@ hr {
     cursor: pointer; /* [7] */
 }
 
-.vd-button, .vd-button:hover, .vd-button.is-hover, .vd-button:active,
-.vd-button.is-active, .vd-button:focus
-    .vd-button.is-focus {
+.vd-c-button, .vd-c-button:hover, .vd-c-button.is-hover, .vd-c-button:active,
+.vd-c-button.is-active, .vd-c-button:focus
+    .vd-c-button.is-focus {
     color: #000000;
     color: rgba(0, 0, 0, .8);
     text-decoration: none; /* [3] */
 }
 
-.vd-button:hover, .vd-button.is-hover {
+.vd-c-button:hover, .vd-c-button.is-hover {
     color: #000000;
     color: rgba(0, 0, 0, .8);
     background-color: #00a5d4;
     background-color: rgba(0, 165, 212, 1); /* [8] */
 }
 
-.vd-button:active, .vd-button.is-active {
+.vd-c-button:active, .vd-c-button.is-active {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
     background-color: #006a9b;
     background-color: rgba(0, 106, 155, 1); /* [8] */
 }
 
-.vd-button:focus, .vd-button.is-focus {
+.vd-c-button:focus, .vd-c-button.is-focus {
     box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
 }
 
-.vd-button::-moz-focus-inner {
+.vd-c-button::-moz-focus-inner {
     border: 0; /* [9] */
     padding: 0; /* [9] */
 }
@@ -3132,7 +3134,7 @@ hr {
  * Use fonts only when loaded
  */
 
-.wf-active [class^="vd-button"] {
+.wf-active [class^="vd-c-button"] {
     font-family: "MetaWeb",
                  -apple-system,
                  ".SFNSText-Regular",
@@ -3152,21 +3154,21 @@ hr {
 
 /* Button secondary */
 
-.vd-button--secondary {
+.vd-c-button--secondary {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
     background-color: #d0404c;
     background-color: rgba(208, 64, 76, 1);
 }
 
-.vd-button--secondary:hover, .vd-button--secondary.is-hover {
+.vd-c-button--secondary:hover, .vd-c-button--secondary.is-hover {
     color: #000000;
     color: rgba(0, 0, 0, .8);
     background-color: #cf1d1d;
     background-color: rgba(207, 29, 29, 1);
 }
 
-.vd-button--secondary:active, .vd-button--secondary.is-active {
+.vd-c-button--secondary:active, .vd-c-button--secondary.is-active {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
     background-color: #9a1919;
@@ -3175,30 +3177,30 @@ hr {
 
 /* Button transparent */
 
-.vd-button--transparent {
+.vd-c-button--transparent {
     color: inherit;
     background-color: inherit;
 }
 
-.vd-button--transparent:hover, .vd-button--transparent.is-hover {
+.vd-c-button--transparent:hover, .vd-c-button--transparent.is-hover {
     color: inherit;
     background-color: inherit;
 }
 
-.vd-button--transparent:active, .vd-button--transparent.is-active {
+.vd-c-button--transparent:active, .vd-c-button--transparent.is-active {
     color: inherit;
     background-color: inherit;
 }
 
 /* Button disabled */
 
-.vd-button--disabled, [type="submit"][disabled] {
+.vd-c-button--disabled, [type="submit"][disabled] {
 }
 
-.vd-button--disabled, .vd-button--disabled:hover, .vd-button--disabled:focus,
-.vd-button--disabled:active, [type="submit"][disabled],
-[type="submit"][disabled]:hover, [type="submit"][disabled]:focus,
-[type="submit"][disabled]:active {
+.vd-c-button--disabled, .vd-c-button--disabled:hover,
+.vd-c-button--disabled:focus, .vd-c-button--disabled:active,
+[type="submit"][disabled], [type="submit"][disabled]:hover,
+[type="submit"][disabled]:focus, [type="submit"][disabled]:active {
     color: inherit;
     background-color: #aeb0b5;
     background-color: rgba(174, 176, 181, 1);
@@ -3211,7 +3213,7 @@ hr {
  * Size variation
  */
 
-.vd-button--block {
+.vd-c-button--block {
     display: block;
     width: 100%;
 }
