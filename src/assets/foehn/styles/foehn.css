@@ -76,11 +76,11 @@
  * SETINGS
  */
 
-@import "_settings.defaults.css";
-@import "_settings.colors.css";
-@import "_settings.fontface.css";
-@import "_settings.responsive.css";
-@import "_settings.animations.css";
+@import "settings/_settings.defaults.css";
+@import "settings/_settings.colors.css";
+@import "settings/_settings.fontface.css";
+@import "settings/_settings.responsive.css";
+@import "settings/_settings.animations.css";
 
 
 
@@ -90,7 +90,7 @@
  * TOOLS
  */
 
-@import "_tools.mixins.css";
+@import "tools/_tools.mixins.css";
 
 
 
@@ -101,9 +101,9 @@
  */
 
 @import "normalize.css";
-@import "_generic.reset.css";
-@import "_generic.box-sizing.css";
-@import "_generic.shared.css";
+@import "generic/_generic.reset.css";
+@import "generic/_generic.box-sizing.css";
+@import "generic/_generic.shared.css";
 
 
 
@@ -113,23 +113,23 @@
  * BASE
  */
 
-@import "_base.page.css";
-@import "_base.headings.css";
-@import "_base.paragraph.css";
-@import "_base.small.css";
-@import "_base.strong.css";
-@import "_base.forms.css";
-@import "_base.subs.css";
-@import "_base.lists.css";
-@import "_base.anchors.css";
-@import "_base.images.css";
-@import "_base.tables.css";
-@import "_base.figures.css";
-@import "_base.quotes.css";
-@import "_base.abbreviation.css";
-@import "_base.code.css";
-@import "_base.horizontale-rules.css";
-@import "_base.selections.css";
+@import "elements/_elements.page.css";
+@import "elements/_elements.headings.css";
+@import "elements/_elements.paragraph.css";
+@import "elements/_elements.small.css";
+@import "elements/_elements.strong.css";
+@import "elements/_elements.forms.css";
+@import "elements/_elements.subs.css";
+@import "elements/_elements.lists.css";
+@import "elements/_elements.anchors.css";
+@import "elements/_elements.images.css";
+@import "elements/_elements.tables.css";
+@import "elements/_elements.figures.css";
+@import "elements/_elements.quotes.css";
+@import "elements/_elements.abbreviation.css";
+@import "elements/_elements.code.css";
+@import "elements/_elements.horizontale-rules.css";
+@import "elements/_elements.selections.css";
 
 
 
@@ -139,13 +139,13 @@
  * OBJECTS
  */
 
-@import "_objects.wrappers.css";
-@import "_objects.buttons.css";
-@import "_objects.list-bare.css";
-@import "_objects.list-inline.css";
-@import "_objects.layouts.css";
-@import "_objects.box.css";
-@import "_objects.tables.css";
+@import "objects/_objects.wrappers.css";
+@import "objects/_objects.buttons.css";
+@import "objects/_objects.list-bare.css";
+@import "objects/_objects.list-inline.css";
+@import "objects/_objects.layouts.css";
+@import "objects/_objects.box.css";
+@import "objects/_objects.tables.css";
 
 
 
@@ -155,18 +155,18 @@
  * COMPONENTS
  */
 
-@import "_components.navbar.css";
-@import "_components.header.css";
-@import "_components.inline-texts.css";
-@import "_components.box.css";
-@import "_components.backgrounds.css";
-@import "_components.small.css";
-@import "_components.strong.css";
-@import "_components.quotes.css";
-@import "_components.page-title.css";
-@import "_components.breadcrumb.css";
-@import "_components.images.css";
-@import "_components.list-abbreviations.css";
+@import "components/_components.navbar.css";
+@import "components/_components.header.css";
+@import "components/_components.inline-texts.css";
+@import "components/_components.box.css";
+@import "components/_components.backgrounds.css";
+@import "components/_components.small.css";
+@import "components/_components.strong.css";
+@import "components/_components.quotes.css";
+@import "components/_components.page-title.css";
+@import "components/_components.breadcrumb.css";
+@import "components/_components.images.css";
+@import "components/_components.list-abbreviations.css";
 
 
 
@@ -176,12 +176,12 @@
  * TRUMPS
  */
 
-@import "_trumps.clearfix.css";
-@import "_trumps.headings.css";
-@import "_trumps.colors.css";
-@import "_trumps.fonts.css";
-@import "_trumps.text-utilities.css";
-@import "_trumps.utilities.css";
-@import "_trumps.utilities-responsive.css";
-@import "_trumps.spacing.css";
-@import "_trumps.layout.css";
+@import "trumps/_trumps.clearfix.css";
+@import "trumps/_trumps.headings.css";
+@import "trumps/_trumps.colors.css";
+@import "trumps/_trumps.fonts.css";
+@import "trumps/_trumps.text-utilities.css";
+@import "trumps/_trumps.utilities.css";
+@import "trumps/_trumps.utilities-responsive.css";
+@import "trumps/_trumps.spacing.css";
+@import "trumps/_trumps.layout.css";
