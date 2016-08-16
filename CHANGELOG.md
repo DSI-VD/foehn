@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-breadcrumb in vd-c-breadcrumb
 - Renamed the class vd-background in vd-c-background
 - Renamed the class vd-table in vd-o-table
 - Renamed the class vd-list-inline in vd-o-list-inline
