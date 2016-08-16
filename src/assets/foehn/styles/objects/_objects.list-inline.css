@@ -5,7 +5,7 @@
 /**
  * The list-inline object simply displays a list of items in one line.
  */
-.list-inline {
+.o-list-inline {
     margin-left: 0;
     list-style: none;
 
