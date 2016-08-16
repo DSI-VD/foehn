@@ -5,6 +5,6 @@
 /**
  * Blockquote class
  */
-.blockquote {
+.c-blockquote {
     @extend blockquote;
 }
