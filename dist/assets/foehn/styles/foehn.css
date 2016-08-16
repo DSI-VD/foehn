@@ -2815,17 +2815,17 @@ hr {
  * 2. Clearfix
  */
 
-.vd-box {
+.vd-o-box {
     display: block; /* [1] */
     padding: 27px;
     padding: 1.6875rem;
 }
 
-.vd-box > :last-child {
+.vd-o-box > :last-child {
     margin-bottom: 0;
 }
 
-.vd-box::after {
+.vd-o-box::after {
     display: block !important;
     clear: both !important;
     content: "" !important;
