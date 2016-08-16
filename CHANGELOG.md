@@ -43,6 +43,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-fraction in vd-c-fraction
+- Renamed the class vd-footnote in vd-c-footnote
+- Renamed the class vd-small-caps in vd-c-small-caps
 - Renamed the class vd-image-circle in vd-c-image-circle
 - Renamed the class vd-header in vd-c-header
 - Renamed the class vd-button in vd-c-button
