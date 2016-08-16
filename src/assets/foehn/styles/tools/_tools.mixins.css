@@ -63,3 +63,18 @@
     font-kerning: normal;
     text-transform: uppercase; /* [1] */
 }
+
+
+
+
+
+/**
+ * OpenType feature for data
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+@define-mixin font-data {
+    font-variant-ligatures: common-ligatures, contextual;
+    font-variant-numeric: lining-nums, tabular-nums;
+    font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+    font-kerning: normal;
+}

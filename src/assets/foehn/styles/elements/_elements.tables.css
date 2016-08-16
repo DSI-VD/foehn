@@ -3,13 +3,18 @@
 \* ------------------------------------ */
 
 /**
+ * 1. Ensure tables fill up as much space as possible.
+ */
+
+table {
+    width: 100%; /* [1] */
+}
+
+/**
  * Enable OpenType features to make more readable data
  * More info here:
  * http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 td {
-    font-variant-ligatures: common-ligatures, contextual;
-    font-variant-numeric: lining-nums, tabular-nums;
-    font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
-    font-kerning: normal;
+    @mixin font-data;
 }
