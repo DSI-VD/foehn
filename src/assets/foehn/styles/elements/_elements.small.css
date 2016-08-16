@@ -7,7 +7,7 @@
  */
 
 :root{
-    --small-font-size: calc( 1rem / 1.26 );
+    --small-font-size: var(--global-small-font-size);
     --small-font-family: var(--global-font-family);
     --enhance-small-font-family: var(--enhance-global-font-family);
 }
