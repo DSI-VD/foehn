@@ -22,12 +22,7 @@
 
     padding: var(--box-padding);
 
-    &::after { /* [2] */
-        display: table;
-
-        clear: both;
-        content: "";
-    }
+    @mixin clearfix;
 
     > :last-child {
         margin-bottom: 0;

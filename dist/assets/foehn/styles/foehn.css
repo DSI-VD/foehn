@@ -8,6 +8,7 @@
  *
  * TOOLS
  * Mixins...............Useful mixins.
+ * Clearfix.............Micro clearfix mixin.
  *
  * GENERIC
  * Normalize.css........A level playing field.
@@ -234,6 +235,19 @@
  *
  * 1. Safari iOs doesn't support `font-feature` so we use `text-transform` to
  *    make the texte uppercase. http://caniuse.com/#search=font-feature
+ */
+
+/* ------------------------------------ *\
+    #CLEARFIX
+\* ------------------------------------ */
+
+/**
+ * Mixin to drop micro clearfix into a selector. Further reading:
+ * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
+ *
+ * .usage {
+ *     @mixin clearfix;
+ * }
  */
 
 /**
@@ -2976,10 +2990,9 @@ hr {
 }
 
 .vd-box::after {
-    /* [2] */
-    display: table;
-    clear: both;
-    content: "";
+    display: block !important;
+    clear: both !important;
+    content: "" !important;
 }
 
 /* ------------------------------------ *\
@@ -3698,19 +3711,18 @@ hr {
 \* ------------------------------------ */
 
 /**
- * Micro clearfix, as per:
- * css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
- * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
- * over and over in your markup.
+ * Micro clearfix. Further reading:
+ * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
+ *
  */
 
 .vd-clearfix {
 }
 
 .vd-clearfix::after {
-    display: table;
-    clear: both;
-    content: "";
+    display: block !important;
+    clear: both !important;
+    content: "" !important;
 }
 
 /* ------------------------------------ *\
