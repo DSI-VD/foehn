@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Rename class vd-container in vd-wrapper
 - Refactor .vd-button styles with mixins
 - Rename global.navigation-* materials in global.header-*
 - Positionning the logo and site-title in the navbar
