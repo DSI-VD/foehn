@@ -1761,9 +1761,7 @@ hr {
  */
 
 .vd-list-bare {
-    margin: 0 0 27px;
-    margin: 0 0 1.6875rem;
-    padding: 0;
+    margin-left: 0;
     list-style: none;
 }
 
