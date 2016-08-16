@@ -237,6 +237,11 @@
  *    make the texte uppercase. http://caniuse.com/#search=font-feature
  */
 
+/**
+ * OpenType feature for data
+ * see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+
 /* ------------------------------------ *\
     #CLEARFIX
 \* ------------------------------------ */
@@ -1365,6 +1370,14 @@ img[height] {
 /* ------------------------------------ *\
     #TABLES
 \* ------------------------------------ */
+
+/**
+ * 1. Ensure tables fill up as much space as possible.
+ */
+
+table {
+    width: 100%; /* [1] */
+}
 
 /**
  * Enable OpenType features to make more readable data
