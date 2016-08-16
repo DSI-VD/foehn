@@ -3495,12 +3495,12 @@ hr {
  */
 
 /**
-     * .small
+     * .c-small
      *
      * 1. Use webfont only when it's loaded to avoid FOIT
      */
 
-.vd-small {
+.vd-c-small {
     font-size: 12.698px;
     font-size: 0.79365rem;
     font-family: "Palatino Linotype",
@@ -3522,7 +3522,7 @@ hr {
                  serif;
 }
 
-.wf-active .vd-small {
+.wf-active .vd-c-small {
     font-family: "MetaSerifWeb",
                  "Palatino Linotype",
                  Palatino,
