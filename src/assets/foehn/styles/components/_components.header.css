@@ -12,7 +12,7 @@
     --header-color: var(--color-white);
 }
 
-.header {
+.c-header {
 
     background-color: var(--header-background-color);
 
@@ -33,7 +33,7 @@
 
 @media (--palm) {
 
-    .header-button {
+    .c-header-button {
         @mixin button; /* [1] */
         @mixin button--block; /* [1] */
 
@@ -43,7 +43,7 @@
 
     }
 
-    .wf-active .header-button {
+    .wf-active .c-header-button {
         font-family: var(--enhance-heading-font-family); /* [2] */
     }
 
