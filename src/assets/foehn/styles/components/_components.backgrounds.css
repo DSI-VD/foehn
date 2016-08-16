@@ -10,7 +10,7 @@
  * 1. Remove margin bottom of the last child to avoid double bottom space
  *    (padding + margin)
  */
-.background {
+.c-background {
 
     padding-top: var(--global-spacing-unit);
     padding-bottom: var(--global-spacing-unit);
@@ -19,7 +19,7 @@
         margin-bottom: 0;
     }
 
-    & + :not(.background) {
+    & + :not(.c-background) {
         margin-top: var(--global-spacing-unit);
     }
 }
@@ -55,7 +55,7 @@
     blue-lightest,
     focus,
     visited {
-    .background--$(color) {
+    .c-background--$(color) {
         background-color: var(--color-$(color));
     }
 }

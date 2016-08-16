@@ -3313,173 +3313,173 @@ hr {
  *    (padding + margin)
  */
 
-.vd-background {
+.vd-c-background {
     padding-top: 27px;
     padding-top: 1.6875rem;
     padding-bottom: 27px;
     padding-bottom: 1.6875rem;
 }
 
-.vd-background > :last-child {
+.vd-c-background > :last-child {
     margin-bottom: 0;
 }
 
-.vd-background + :not(.vd-background) {
+.vd-c-background + :not(.vd-c-background) {
     margin-top: 27px;
     margin-top: 1.6875rem;
 }
 
-.vd-background--primary {
+.vd-c-background--primary {
     background-color: #4a873f;
     background-color: rgba(74, 135, 63, 1);
 }
 
-.vd-background--primary {
+.vd-c-background--primary {
     background-color: #4a873f;
     background-color: rgba(74, 135, 63, 1);
 }
 
-.vd-background--base {
+.vd-c-background--base {
     background-color: #000000;
     background-color: rgba(0, 0, 0, .8);
 }
 
-.vd-background--gray-dark {
+.vd-c-background--gray-dark {
     background-color: #323a45;
     background-color: rgba(50, 58, 69, 1);
 }
 
-.vd-background--gray-light {
+.vd-c-background--gray-light {
     background-color: #aeb0b5;
     background-color: rgba(174, 176, 181, 1);
 }
 
-.vd-background--gray-lighter {
+.vd-c-background--gray-lighter {
     background-color: #d6d7d9;
     background-color: rgba(214, 215, 217, 1);
 }
 
-.vd-background--white {
+.vd-c-background--white {
     background-color: #ffffff;
     background-color: rgba(255, 255, 255, 1);
 }
 
-.vd-background--primary-alt {
+.vd-c-background--primary-alt {
     background-color: #3e9ff0;
     background-color: rgba(62, 159, 240, 1);
 }
 
-.vd-background--primary-alt-darkest {
+.vd-c-background--primary-alt-darkest {
     background-color: #006a9b;
     background-color: rgba(0, 106, 155, 1);
 }
 
-.vd-background--primary-alt-dark {
+.vd-c-background--primary-alt-dark {
     background-color: #00a5d4;
     background-color: rgba(0, 165, 212, 1);
 }
 
-.vd-background--primary-alt-light {
+.vd-c-background--primary-alt-light {
     background-color: #99daf2;
     background-color: rgba(153, 218, 242, 1);
 }
 
-.vd-background--primary-alt-lightest {
+.vd-c-background--primary-alt-lightest {
     background-color: #e0f3f8;
     background-color: rgba(224, 243, 248, 1);
 }
 
-.vd-background--secondary {
+.vd-c-background--secondary {
     background-color: #d0404c;
     background-color: rgba(208, 64, 76, 1);
 }
 
-.vd-background--secondary-darkest {
+.vd-c-background--secondary-darkest {
     background-color: #9a1919;
     background-color: rgba(154, 25, 25, 1);
 }
 
-.vd-background--secondary-dark {
+.vd-c-background--secondary-dark {
     background-color: #cf1d1d;
     background-color: rgba(207, 29, 29, 1);
 }
 
-.vd-background--secondary-lighter {
+.vd-c-background--secondary-lighter {
     background-color: #e79593;
     background-color: rgba(231, 149, 147, 1);
 }
 
-.vd-background--secondary-lightest {
+.vd-c-background--secondary-lightest {
     background-color: #fadfde;
     background-color: rgba(250, 223, 222, 1);
 }
 
-.vd-background--gold {
+.vd-c-background--gold {
     background-color: #feb71a;
     background-color: rgba(254, 183, 26, 1);
 }
 
-.vd-background--gold-light {
+.vd-c-background--gold-light {
     background-color: #fac540;
     background-color: rgba(250, 197, 64, 1);
 }
 
-.vd-background--gold-lighter {
+.vd-c-background--gold-lighter {
     background-color: #fbd87f;
     background-color: rgba(251, 216, 127, 1);
 }
 
-.vd-background--gold-lightest {
+.vd-c-background--gold-lightest {
     background-color: #fff0d2;
     background-color: rgba(255, 240, 210, 1);
 }
 
-.vd-background--green {
+.vd-c-background--green {
     background-color: #298240;
     background-color: rgba(41, 130, 64, 1);
 }
 
-.vd-background--green-light {
+.vd-c-background--green-light {
     background-color: #45a264;
     background-color: rgba(69, 162, 100, 1);
 }
 
-.vd-background--green-lighter {
+.vd-c-background--green-lighter {
     background-color: #93bda2;
     background-color: rgba(147, 189, 162, 1);
 }
 
-.vd-background--green-lightest {
+.vd-c-background--green-lightest {
     background-color: #e7f3e4;
     background-color: rgba(231, 243, 228, 1);
 }
 
-.vd-background--blue {
+.vd-c-background--blue {
     background-color: #1e5693;
     background-color: rgba(30, 86, 147, 1);
 }
 
-.vd-background--blue-light {
+.vd-c-background--blue-light {
     background-color: #4675aa;
     background-color: rgba(70, 117, 170, 1);
 }
 
-.vd-background--blue-lighter {
+.vd-c-background--blue-lighter {
     background-color: #8aa7ca;
     background-color: rgba(138, 167, 202, 1);
 }
 
-.vd-background--blue-lightest {
+.vd-c-background--blue-lightest {
     background-color: #dce4ef;
     background-color: rgba(220, 228, 239, 1);
 }
 
-.vd-background--focus {
+.vd-c-background--focus {
     background-color: #3a95cf;
     background-color: rgba(58, 149, 207, 1);
 }
 
-.vd-background--visited {
+.vd-c-background--visited {
     background-color: #4d3492;
     background-color: rgba(77, 52, 146, 1);
 }
