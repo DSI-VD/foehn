@@ -25,7 +25,7 @@
  * 1. Allow the table to scroll horizontally
  * 2. Reset scroll horizontally for mobile
  */
-.table {
+.o-table {
     display: block; /* [1] */
     width: 100%;
 
@@ -59,7 +59,7 @@
 /**
  * Add borders only to `table`’s rows.
  */
-.table--borderless {
+.o-table--borderless {
 
     &,
     th,

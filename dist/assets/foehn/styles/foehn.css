@@ -2842,7 +2842,7 @@ hr {
  * 2. Reset scroll horizontally for mobile
  */
 
-.vd-table {
+.vd-o-table {
     display: block; /* [1] */
     width: 100%;
     border-collapse: collapse;
@@ -2851,12 +2851,12 @@ hr {
 
 /* [1] */
 
-.vd-table thead, .vd-table tfoot {
+.vd-o-table thead, .vd-o-table tfoot {
     background-color: #aeb0b5;
     background-color: rgba(174, 176, 181, 1);
 }
 
-.vd-table th, .vd-table td {
+.vd-o-table th, .vd-o-table td {
     border: 1px solid #000000;
     border: 1px solid rgba(0, 0, 0, .8);
     padding: 6.75px;
@@ -2864,7 +2864,7 @@ hr {
 }
 
 @media screen and (min-width: 45em) {
-    .vd-table {
+    .vd-o-table {
         display: table; /* [2] */
         overflow-x: visible; /* [2] */
     }
@@ -2874,12 +2874,12 @@ hr {
  * Add borders only to `table`’s rows.
  */
 
-.vd-table--borderless, .vd-table--borderless th, .vd-table--borderless td {
+.vd-o-table--borderless, .vd-o-table--borderless th, .vd-o-table--borderless td {
     border: 0 solid #000000;
     border: 0 solid rgba(0, 0, 0, .8);
 }
 
-.vd-table--borderless thead, .vd-table--borderless tfoot {
+.vd-o-table--borderless thead, .vd-o-table--borderless tfoot {
     background-color: transparent;
 }
 
