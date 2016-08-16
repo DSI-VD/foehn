@@ -2,14 +2,20 @@
     #WRAPPERS
 \* ------------------------------------ */
 
+:root {
+    --wrapper-width: 64rem; /* 1024px */
+    --wrapper-padding: var(--global-spacing-unit--tiny);
+}
+
 /**
  * Container
  *
  * 1. Center horizontaly
  */
-.container {
 
-    max-width: 64rem;
+.wrapper {
+
+    max-width: var(--wrapper-width);
 
     margin-right: auto; /* [1] */
     margin-left: auto; /* [1] */
@@ -29,7 +35,7 @@
  *
  * Get out of the container
  */
-.container--offset {
+.wrapper--offset {
     margin-right: -var(--global-spacing-unit--tiny);
     margin-left: -var(--global-spacing-unit--tiny);
 

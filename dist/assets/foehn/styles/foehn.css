@@ -1549,13 +1549,17 @@ hr {
     #WRAPPERS
 \* ------------------------------------ */
 
+:root {
+    /* 1024px */
+}
+
 /**
  * Container
  *
  * 1. Center horizontaly
  */
 
-.vd-container {
+.vd-wrapper {
     max-width: 1024px;
     max-width: 64rem;
     margin-right: auto; /* [1] */
@@ -1567,7 +1571,7 @@ hr {
 }
 
 @media screen and (min-width: 45em) {
-    .vd-container {
+    .vd-wrapper {
         padding-right: 1.6875rem;
         padding-left: 1.6875rem;
     }
@@ -1579,7 +1583,7 @@ hr {
  * Get out of the container
  */
 
-.vd-container--offset {
+.vd-wrapper--offset {
     margin-right: -6.75px;
     margin-right: -0.42188rem;
     margin-left: -6.75px;
@@ -1587,7 +1591,7 @@ hr {
 }
 
 @media screen and (min-width: 45em) {
-    .vd-container--offset {
+    .vd-wrapper--offset {
         margin-right: -1.6875rem;
         margin-left: -1.6875rem;
     }
