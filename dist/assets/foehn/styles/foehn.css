@@ -3551,11 +3551,11 @@ hr {
  * Strong text
  */
 
-.vd-strong {
+.vd-c-strong {
     font-weight: bold;
 }
 
-.wf-active .vd-strong {
+.wf-active .vd-c-strong {
     font-weight: 700;
 }
 
