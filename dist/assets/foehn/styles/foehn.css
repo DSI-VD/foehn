@@ -1774,12 +1774,11 @@ hr {
  */
 
 .vd-list-inline {
-    margin: 0;
-    padding: 0;
+    margin-left: 0;
     list-style: none;
 }
 
-.vd-list-inline > li {
+.vd-list-inline__item {
     display: inline-block;
 }
 
