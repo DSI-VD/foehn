@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Add vd-list-inline__item class for vd-list-inline item
 - Rename class vd-container in vd-wrapper
 - Refactor .vd-button styles with mixins
 - Rename global.navigation-* materials in global.header-*
@@ -68,6 +69,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Remove auto styling for vd-list-inline childrens
 - Remove box lit organism
 - Remove alert molecule
 - Remove 12 columns based grid
