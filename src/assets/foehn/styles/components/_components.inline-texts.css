@@ -9,7 +9,7 @@
  * More info here:
  * http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
-.fraction {
+.c-fraction {
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: diagonal-fractions;
     font-feature-settings: "kern", "liga", "clig", "calt", "frac";
@@ -27,7 +27,7 @@
  * More info here:
  * http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
-.footnote {
+.c-footnote {
     @mixin font-sub;
 }
 
@@ -38,6 +38,6 @@
 /**
  * Small caps
  */
-.small-caps {
+.c-small-caps {
     @mixin font-small-caps;
 }
