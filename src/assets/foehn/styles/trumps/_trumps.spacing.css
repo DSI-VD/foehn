@@ -10,8 +10,8 @@
  * top/right/bottom/left/horizontal/vertical less/more/none
  */
 :root {
-    --margin: var(--base-spacing-unit);
-    --padding: var(--base-spacing-unit);
+    --margin: var(--global-spacing-unit);
+    --padding: var(--global-spacing-unit);
 }
 
 

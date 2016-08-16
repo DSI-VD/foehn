@@ -6,7 +6,7 @@
  * The list-block object creates blocky list items out of a `ul` or `ol`.
  */
 :root {
-    --list-block-padding: var(--base-spacing-unit);
+    --list-block-padding: var(--global-spacing-unit);
 }
 
 .list-block {

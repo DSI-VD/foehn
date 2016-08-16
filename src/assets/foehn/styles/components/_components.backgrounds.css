@@ -12,15 +12,15 @@
  */
 .background {
 
-    padding-top: var(--base-spacing-unit);
-    padding-bottom: var(--base-spacing-unit);
+    padding-top: var(--global-spacing-unit);
+    padding-bottom: var(--global-spacing-unit);
 
     > :last-child {
         margin-bottom: 0;
     }
 
     & + :not(.background) {
-        margin-top: var(--base-spacing-unit);
+        margin-top: var(--global-spacing-unit);
     }
 }
 

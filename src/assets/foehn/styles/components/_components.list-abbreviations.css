@@ -15,7 +15,7 @@
         &::after {
             @mixin font-bodytext;
             display: block;
-            font-size: var(--base-font-size);
+            font-size: var(--global-font-size);
             font-variant-caps: initial;
             color: var(--color-gray-light);
             text-transform: none;

@@ -24,7 +24,7 @@ table,
 fieldset,
 figure,
 pre {
-    margin-bottom: var(--base-spacing-unit);
+    margin-bottom: var(--global-spacing-unit);
 }
 
 
@@ -38,5 +38,5 @@ pre {
 ul,
 ol,
 dd {
-    margin-left: calc(2 * var(--base-spacing-unit));
+    margin-left: calc(2 * var(--global-spacing-unit));
 }
