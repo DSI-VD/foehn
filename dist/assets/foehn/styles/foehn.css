@@ -1294,10 +1294,6 @@ sub {
  * 1. Without it, if there's buttons in the list, they would be collapsed.
  */
 
-li > ul, li > ol {
-    margin-bottom: 0;
-}
-
 li {
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: oldstyle-nums, proportional-nums;
