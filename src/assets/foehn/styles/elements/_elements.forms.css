@@ -239,7 +239,7 @@
  */
 
 :root {
-    --label-font-weight: var(--base-font-weight-bold);
+    --label-font-weight: var(--global-font-weight-bold);
 }
 
 .form label {
@@ -247,5 +247,5 @@
 }
 
 .wf-metaserifweb-n7-active .form label {
-    font-weight: var(--enhance-base-font-weight-bold); /* [1] */
+    font-weight: var(--enhance-global-font-weight-bold); /* [1] */
 }

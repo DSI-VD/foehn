@@ -8,8 +8,8 @@
 
 :root{
     --small-font-size: calc( 1rem / 1.26 );
-    --small-font-family: var(--base-font-family);
-    --enhance-small-font-family: var(--enhance-base-font-family);
+    --small-font-family: var(--global-font-family);
+    --enhance-small-font-family: var(--enhance-global-font-family);
 }
 
 

@@ -24,13 +24,13 @@ html {
     -moz-osx-font-smoothing: grayscale; /* [2] */
     -webkit-font-smoothing: antialiased; /* [2] */
     font-size: var(--global-font-size); /* [3] */
-    font-weight: var(--base-font-weight);
-    font-family: var(--base-font-family);
+    font-weight: var(--global-font-weight);
+    font-family: var(--global-font-family);
     font-variant-ligatures: common-ligatures, contextual; /* [3] */
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [3] */
     font-kerning: normal; /* [3] */
     line-height: var(--global-line-height); /* [2] */
-    color: var(--base-text-color);
+    color: var(--global-text-color);
     text-size-adjust: 100%; /* [5] */
     text-rendering: optimizeLegibility;
 
@@ -38,7 +38,7 @@ html {
     overflow-y: scroll; /* [6] */
 
     &.wf-metaserifweb-n4-active {
-        font-weight: var(--enhance-base-font-weight-regular); /* [7] */
-        font-family: var(--enhance-base-font-family); /* [7] */
+        font-weight: var(--enhance-global-font-weight-regular); /* [7] */
+        font-family: var(--enhance-global-font-family); /* [7] */
     }
 }

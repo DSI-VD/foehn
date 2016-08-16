@@ -10,5 +10,5 @@
 }
 
 .wf-active .strong {
-    font-weight: var(--enhance-base-font-weight-bold);
+    font-weight: var(--enhance-global-font-weight-bold);
 }

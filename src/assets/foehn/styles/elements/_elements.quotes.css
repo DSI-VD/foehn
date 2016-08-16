@@ -3,7 +3,7 @@
 \* ------------------------------------ */
 
 :root {
-    --blockquote-text-color: var(--base-text-color);
+    --blockquote-text-color: var(--global-text-color);
     --blockquote-left-margin: var(--global-spacing-unit--large);
     --blockquote-border-width: calc(var(--global-spacing-unit--tiny) / 2);
     --blockquote-border-color: var(--blockquote-text-color);
