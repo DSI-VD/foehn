@@ -8,8 +8,8 @@
 :root {
 
     /* Base font */
-    --base-text-color: var(--color-base);
-    --base-font-family: "Palatino Linotype",
+    --global-text-color: var(--color-base);
+    --global-font-family: "Palatino Linotype",
         Palatino,
         Palladio,
         "URW Palladio L",
@@ -26,13 +26,13 @@
         "Century Schoolbook L",
         Georgia,
         serif;
-    --base-font-weight: 400;
-    --base-font-weight-bold: 700;
+    --global-font-weight: 400;
+    --global-font-weight-bold: 700;
 
     /* Enhance base font */
-    --enhance-base-font-family: "MetaSerifWeb", var(--base-font-family);
-    --enhance-base-font-weight-regular: 500;
-    --enhance-base-font-weight-bold: 700;
+    --enhance-global-font-family: "MetaSerifWeb", var(--global-font-family);
+    --enhance-global-font-weight-regular: 500;
+    --enhance-global-font-weight-bold: 700;
 
     /* Heading font */
     --heading-font-family: -apple-system,
