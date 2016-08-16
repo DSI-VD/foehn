@@ -7,7 +7,7 @@
  *
  * 1. Only show the last element on mobile
  */
-.breadcrumb {
+.c-breadcrumb {
     @media (--palm) {
 
         > li:not(:last-child) {

@@ -3625,12 +3625,12 @@ hr {
  * 1. Only show the last element on mobile
  */
 
-.vd-breadcrumb > li::before {
+.vd-c-breadcrumb > li::before {
     content: "< ";
 }
 
 @media screen and (max-width: 44.9375em) {
-    .vd-breadcrumb > li:not(:last-child) {
+    .vd-c-breadcrumb > li:not(:last-child) {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -3641,8 +3641,8 @@ hr {
         clip: rect(0 0 0 0); /* [1] */
     }
 
-    .vd-breadcrumb > li:not(:last-child).vd-focusable:active,
-    .vd-breadcrumb > li:not(:last-child).vd-focusable:focus {
+    .vd-c-breadcrumb > li:not(:last-child).vd-focusable:active,
+    .vd-c-breadcrumb > li:not(:last-child).vd-focusable:focus {
         display: table;
         position: static;
         clear: both;
