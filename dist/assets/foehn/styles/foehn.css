@@ -3271,7 +3271,7 @@ hr {
  * Default box UI
  */
 
-.vd-box--default {
+.vd-c-box--default {
     background-color: #aeb0b5;
     background-color: rgba(174, 176, 181, 1);
     margin-bottom: 27px;
@@ -3282,7 +3282,7 @@ hr {
  * Transaction confiration UI
  */
 
-.vd-box--transaction {
+.vd-c-box--transaction {
     text-align: center;
     background-color: #006a9b;
     background-color: rgba(0, 106, 155, 1);
@@ -3290,12 +3290,12 @@ hr {
     margin-bottom: 1.6875rem;
 }
 
-.vd-box--transaction * {
+.vd-c-box--transaction * {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
 }
 
-.vd-box--info {
+.vd-c-box--info {
     background-color: #93bda2;
     background-color: rgba(147, 189, 162, 1);
     margin-bottom: 27px;

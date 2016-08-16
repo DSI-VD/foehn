@@ -15,7 +15,7 @@
 /**
  * Default box UI
  */
-.box--default {
+.c-box--default {
     background-color: var(--box-default-background-color);
     margin-bottom: var(--box-margin-bottom);
 }
@@ -23,7 +23,7 @@
 /**
  * Transaction confiration UI
  */
-.box--transaction {
+.c-box--transaction {
     text-align: center;
     background-color: var(--box-transaction-background-color);
     margin-bottom: var(--box-margin-bottom);
@@ -33,7 +33,7 @@
     }
 }
 
-.box--info {
+.c-box--info {
     background-color: var(--box-info-background-color);
     margin-bottom: var(--box-margin-bottom);
 }
