@@ -7,7 +7,7 @@
  * lists.
  */
 .list-bare {
-    margin: 0 0 var(--base-spacing-unit);
+    margin: 0 0 var(--global-spacing-unit);
     padding: 0;
     list-style: none;
 }

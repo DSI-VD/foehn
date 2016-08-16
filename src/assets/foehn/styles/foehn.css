@@ -2,11 +2,9 @@
  * CONTENTS
  *
  * SETTINGS
- * Defaults.............Globally-available variables and config.
- * Colors...............All colors a defined here.
+ * Global...............Project-wide variables and settings.
  * Fontface.............Set the font to use.
  * Responsive...........Breakpoint.
- * Animations...........Animation definition.
  *
  * TOOLS
  * Mixins...............Useful mixins.
@@ -76,11 +74,9 @@
  * SETINGS
  */
 
-@import "settings/_settings.defaults.css";
-@import "settings/_settings.colors.css";
+@import "settings/_settings.global.css";
 @import "settings/_settings.fontface.css";
 @import "settings/_settings.responsive.css";
-@import "settings/_settings.animations.css";
 
 
 

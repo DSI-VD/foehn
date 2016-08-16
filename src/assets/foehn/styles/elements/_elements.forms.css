@@ -9,9 +9,9 @@
     --form-border-style: solid;
     --form-border-radius: 0;
 
-    --form-checkbox-border-radius: calc(var(--base-spacing-unit) / 6);
+    --form-checkbox-border-radius: calc(var(--global-spacing-unit) / 6);
     --form-checkbox-background-image-size: var(--small-font-size);
-    --form-checkbox-margin: calc( var(--base-spacing-unit) / 4);
+    --form-checkbox-margin: calc( var(--global-spacing-unit) / 4);
 
     --form-font-size: inherit;
     --form-placeholder-color: var(--color-gray-light);
@@ -21,7 +21,7 @@
 
     --form-color-checked: var(--color-primary-alt);
 
-    --form-height: var(--base-spacing-unit);
+    --form-height: var(--global-spacing-unit);
     --input-margin: 1px;
 }
 

@@ -12,11 +12,11 @@
     --button-background-active: var(--color-primary-alt-darkest);
     --button-color-active: var(--color-white);
 
-    --button-padding: calc(var(--base-spacing-unit) / 2);
+    --button-padding: calc(var(--global-spacing-unit) / 2);
     --button-border-width: 1px;
     --button-border-style: none;
     --button-border-color: var(--color-base);
-    --button-border-radius: calc(var(--base-spacing-unit) / 8);
+    --button-border-radius: calc(var(--global-spacing-unit) / 8);
 }
 
 /**

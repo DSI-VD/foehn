@@ -3,7 +3,7 @@
 \* ------------------------------------ */
 
 :root {
-    --layout-gutter: var(--base-spacing-unit--small);
+    --layout-gutter: var(--global-spacing-unit--small);
 }
 
 /**

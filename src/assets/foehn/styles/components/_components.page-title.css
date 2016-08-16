@@ -21,8 +21,8 @@
 
         &__over-text {
             position: absolute; /* [2] */
-            top: var(--base-spacing-unit);
-            padding-left: var(--base-spacing-unit);
+            top: var(--global-spacing-unit);
+            padding-left: var(--global-spacing-unit);
         }
 
         &__figure {

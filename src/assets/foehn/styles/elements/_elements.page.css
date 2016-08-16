@@ -23,13 +23,13 @@ html {
 
     -moz-osx-font-smoothing: grayscale; /* [2] */
     -webkit-font-smoothing: antialiased; /* [2] */
-    font-size: var(--base-font-size); /* [3] */
+    font-size: var(--global-font-size); /* [3] */
     font-weight: var(--base-font-weight);
     font-family: var(--base-font-family);
     font-variant-ligatures: common-ligatures, contextual; /* [3] */
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [3] */
     font-kerning: normal; /* [3] */
-    line-height: var(--base-line-height); /* [2] */
+    line-height: var(--global-line-height); /* [2] */
     color: var(--base-text-color);
     text-size-adjust: 100%; /* [5] */
     text-rendering: optimizeLegibility;

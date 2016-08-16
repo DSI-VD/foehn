@@ -6,12 +6,13 @@
     --link-color: var(--color-base);
     --link-hover-color: var(--color-focus);
     --link-visited-color: var(--color-visited);
+    --link-color-transition: var(--transition);
 }
 
 a {
     color: var(--link-color);
 
-    transition: var(--transition-color);
+    transition: var(--transition);
 }
 
 a:hover,
@@ -19,13 +20,13 @@ a:focus,
 a:active {
     color: var(--link-hover-color);
 
-    transition: var(--transition-color);
+    transition: var(--transition);
 }
 
 a:visited {
     color: var(--link-visited-color);
 
-    transition: var(--transition-color);
+    transition: var(--transition);
 }
 
 
@@ -43,5 +44,5 @@ a:visited {
 .silent-link {
     text-decoration: none;
 
-    transition: var(--transition-color);
+    transition: var(--transition);
 }

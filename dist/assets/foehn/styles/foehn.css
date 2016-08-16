@@ -2,11 +2,9 @@
  * CONTENTS
  *
  * SETTINGS
- * Defaults.............Globally-available variables and config.
- * Colors...............All colors a defined here.
+ * Global...............Project-wide variables and settings.
  * Fontface.............Set the font to use.
  * Responsive...........Breakpoint.
- * Animations...........Animation definition.
  *
  * TOOLS
  * Mixins...............Useful mixins.
@@ -73,24 +71,37 @@
  */
 
 /* ------------------------------------ *\
-    #DEFAULTS
+    #GLOBAL
 \* ------------------------------------ */
 
-/* High-level base settings. */
-
-/*
- * These variables are framework variables, sourced from variables defined
- * above. Feel free to use these variables throughout your project, but do not
- * modify or reassign them.
+/**
+ *  The global settings file contains any project-wide variables; things that
+ *  need to be made available to the entire codebase.
  */
 
-/* ------------------------------------ *\
-    #COLORS
-\* ------------------------------------ */
+/**
+ * Typography
+ */
+
+/**
+ * Colors
+ */
 
 :root {
     /* Primary color *//* Secondary colors *//* Tertiary colors *//* Special state */
 }
+
+/**
+ * Animation
+ */
+
+/**
+ * Spacing
+ *
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
+ */
 
 /* ------------------------------------ *\
     #FONTFACE
@@ -205,10 +216,6 @@
  * If we have included this file, set a variable to tell the rest of the
  * framework that we have some responsive settings.
  */
-
-/* ------------------------------------ *\
-    #ANIMATIONS
-\* ------------------------------------ */
 
 /**
  * TOOLS
@@ -1317,19 +1324,19 @@ li {
 a {
     color: #000000;
     color: rgba(0, 0, 0, .8);
-    transition: color .1s ease;
+    transition: .3333s;
 }
 
 a:hover, a:focus, a:active {
     color: #3a95cf;
     color: rgba(58, 149, 207, 1);
-    transition: color .1s ease;
+    transition: .3333s;
 }
 
 a:visited {
     color: #4d3492;
     color: rgba(77, 52, 146, 1);
-    transition: color .1s ease;
+    transition: .3333s;
 }
 
 /* ------------------------------------ *\
@@ -1342,7 +1349,7 @@ a:visited {
 
 .vd-silent-link {
     text-decoration: none;
-    transition: color .1s ease;
+    transition: .3333s;
 }
 
 /* ------------------------------------ *\

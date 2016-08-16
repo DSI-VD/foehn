@@ -1,7 +1,27 @@
 /* ------------------------------------ *\
-    #COLORS
+    #GLOBAL
 \* ------------------------------------ */
 
+/**
+ *  The global settings file contains any project-wide variables; things that
+ *  need to be made available to the entire codebase.
+ */
+
+/**
+ * Typography
+ */
+:root {
+    --global-font-size: 1.125rem;
+    --global-line-height: 1.5;
+}
+
+
+
+
+
+/**
+ * Colors
+ */
 :root {
 
     /* Primary color */
@@ -41,4 +61,36 @@
     /* Special state */
     --color-focus: rgba(58, 149, 207, 1);
     --color-visited: rgba(77, 52, 146, 1);
+}
+
+
+
+
+
+/**
+ * Animation
+ */
+:root {
+    --transition: .3333s;
+}
+
+
+
+
+
+/**
+ * Spacing
+ *
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
+ */
+:root {
+    --global-spacing-unit: calc(
+        var(--global-line-height) * var(--global-font-size)
+        );
+    --global-spacing-unit--tiny: calc(var(--global-spacing-unit) * .25);
+    --global-spacing-unit--small: calc(var(--global-spacing-unit) * .5);
+    --global-spacing-unit--large: calc(var(--global-spacing-unit) * 2);
+    --global-spacing-unit--huge: calc(var(--global-spacing-unit) * 4);
 }

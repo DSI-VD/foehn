@@ -6,7 +6,7 @@
  * The box object simply boxes off content.
  */
 :root {
-    --box-padding: var(--base-spacing-unit);
+    --box-padding: var(--global-spacing-unit);
 }
 
 

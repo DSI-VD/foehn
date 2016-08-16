@@ -3,7 +3,7 @@
 \* ------------------------------------ */
 
 :root {
-    --box-margin-bottom: var(--base-spacing-unit);
+    --box-margin-bottom: var(--global-spacing-unit);
 
     --box-default-background-color: var(--color-gray-light);
     --box-transaction-background-color: var(--color-primary-alt-darkest);

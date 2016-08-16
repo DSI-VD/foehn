@@ -14,5 +14,5 @@ li > ol {
 
 li {
     @mixin font-bodytext;
-    margin-bottom: var(--base-spacing-unit--tiny); /* [1] */
+    margin-bottom: var(--global-spacing-unit--tiny); /* [1] */
 }
