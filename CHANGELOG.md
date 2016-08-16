@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-list-abbreviations in vd-c-list-abbreviations
 - Renamed the class vd-fraction in vd-c-fraction
 - Renamed the class vd-footnote in vd-c-footnote
 - Renamed the class vd-small-caps in vd-c-small-caps

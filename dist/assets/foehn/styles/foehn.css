@@ -3667,18 +3667,18 @@ hr {
     #LIST-ABBREVIATIONS
 \* ------------------------------------ */
 
-.vd-list-abbreviations abbr {
+.vd-c-list-abbreviations abbr {
     font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
     font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
     font-kerning: normal;
     font-variant-caps: normal;
 }
 
-.vd-list-abbreviations abbr[title] {
+.vd-c-list-abbreviations abbr[title] {
     text-decoration: none;
 }
 
-.vd-list-abbreviations abbr::after {
+.vd-c-list-abbreviations abbr::after {
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: oldstyle-nums, proportional-nums;
     font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";

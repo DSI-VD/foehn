@@ -2,7 +2,7 @@
     #LIST-ABBREVIATIONS
 \* ------------------------------------ */
 
-.list-abbreviations {
+.c-list-abbreviations {
 
     abbr {
         @mixin font-headings;
