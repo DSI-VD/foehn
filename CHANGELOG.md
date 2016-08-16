@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-strong in vd-c-strong
 - Renamed the class vd-small in vd-c-small
 - Renamed the class vd-blockquote in vd-c-blockquote
 - Renamed the class vd-page-title in vd-c-page-title

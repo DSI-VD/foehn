@@ -5,10 +5,10 @@
 /**
  * Strong text
  */
-.strong {
+.c-strong {
     font-weight: bold;
 }
 
-.wf-active .strong {
+.wf-active .c-strong {
     font-weight: var(--enhance-global-font-weight-bold);
 }
