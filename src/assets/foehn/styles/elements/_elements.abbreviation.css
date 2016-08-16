@@ -12,7 +12,7 @@
  */
 
 :root{
-    --abbr-font-size: calc( 1rem / 1.26 );
+    --abbr-font-size: var(--global-small-font-size);
 }
 
 abbr {

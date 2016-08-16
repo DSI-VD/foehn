@@ -13,6 +13,7 @@
 :root {
     --global-font-size: 1.125rem;
     --global-line-height: 1.5;
+    --global-small-font-size: calc( 1rem / 1.26 );
 }
 
 
