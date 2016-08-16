@@ -740,25 +740,21 @@ dd, ol, ul {
  * High-, page-level styling.
  *
  * 1. Ensure the page always fills at least the entire height of the viewport.
- * 2. Fonts on OSX will look more consistent with other systems that do not
- *    render text using sub-pixel anti-aliasing.
- * 3. Set the default `font-size` and `line-height` for the entire project,
+ * 2. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in rems, the `line-height` is calculated to exist unitlessly.
- * 4. OpenType fetaures
- * 5. Prevent certain mobile browsers from automatically zooming fonts.
- * 6. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ * 3. Set the standards opentype features for a more readable text.
+ *    See http://practice.typekit.com/lesson/caring-about-opentype-features/
+ * 4. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
- * 7. Use webfont only when it's loaded to avoid FOIT
+ * 5. Use webfont only when it's loaded to avoid FOIT
  */
 
 html {
     min-height: 100%; /* [1] */
-    -moz-osx-font-smoothing: grayscale; /* [2] */
-    -webkit-font-smoothing: antialiased; /* [2] */
     font-size: 18px;
-    font-size: 1.125rem; /* [3] */
+    font-size: 1.125rem; /* [2] */
     font-weight: 400;
     font-family: "Palatino Linotype",
                  Palatino,
@@ -780,20 +776,15 @@ html {
     font-variant-ligatures: common-ligatures, contextual; /* [3] */
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [3] */
     font-kerning: normal; /* [3] */
-    line-height: 1.5; /* [2] */
+    line-height: 1.5; /* [1] */
     color: #000000;
     color: rgba(0, 0, 0, .8);
-    -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%; /* [5] */
     text-rendering: optimizeLegibility;
-    background-color: #ffffff;
-    background-color: rgba(255, 255, 255, 1);
-    overflow-y: scroll; /* [6] */
+    overflow-y: scroll; /* [4] */
 }
 
 html.wf-metaserifweb-n4-active {
-    font-weight: 500; /* [7] */
+    font-weight: 500; /* [5] */
     font-family: "MetaSerifWeb",
                  "Palatino Linotype",
                  Palatino,
@@ -811,7 +802,7 @@ html.wf-metaserifweb-n4-active {
                  "Century Schoolbook",
                  "Century Schoolbook L",
                  Georgia,
-                 serif; /* [7] */
+                 serif; /* [5] */
 }
 
 /* ------------------------------------ *\
