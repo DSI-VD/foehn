@@ -14,7 +14,7 @@
 
 @media (--lap-and-up) { /* [1] */
 
-    .page-title--image {
+    .c-page-title--image {
 
         position: relative; /* [2] */
         color: var(--color-white);
