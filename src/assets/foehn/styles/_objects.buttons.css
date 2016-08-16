@@ -30,8 +30,10 @@
  * 6. Fixes odd inner spacing in IE7.
  * 7. Force all button-styled elements to appear clickable.
  * 8. Hover state color
+ * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
-.button {
+
+@define-mixin button {
     display: inline-block; /* [1] */
 
     font: inherit; /* [2] */
@@ -80,20 +82,16 @@
         box-shadow: 0 0 3px var(--color-focus), 0 0 7px var(--color-focus);
     }
 
+    &::-moz-focus-inner {
+        border: 0; /* [9] */
+        padding: 0; /* [9] */
+    }
+
 }
 
-
-
-
-
-/**
- * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
- */
-.button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+.button {
+    @mixin button;
 }
-
 
 
 
@@ -101,7 +99,7 @@
 /**
  * Use fonts only when loaded
  */
-.wf-active .button {
+.wf-active [class^="vd-button"] {
     font-family: var(--enhance-heading-font-family);
 }
 
@@ -153,7 +151,7 @@
     --button-background-color-secondary-active: var(--color-secondary-darkest);
 }
 
-.button--secondary {
+@define-mixin button--secondary {
     @mixin button,
         var(--color-white),
         var(--button-background-color-secondary),
@@ -161,6 +159,10 @@
         var(--button-background-color-secondary-hover),
         var(--button-text-color-secondary-active),
         var(--button-background-color-secondary-active);
+}
+
+.button--secondary {
+    @mixin button--secondary;
 }
 
 
@@ -174,7 +176,7 @@
     --button-background-color-transparent-active: inherit;
 }
 
-.button--transparent {
+@define-mixin button--transparent {
     @mixin button,
         inherit,
         var(--button-background-color-transparent),
@@ -182,6 +184,10 @@
         var(--button-background-color-transparent-hover),
         var(--button-text-color-transparent-active),
         var(--button-background-color-transparent-active);
+}
+
+.button--transparent {
+    @mixin button--transparent;
 }
 
 
@@ -217,7 +223,11 @@
  * Size variation
  */
 
-.button--block {
+@define-mixin button--block {
     display: block;
     width: 100%;
+}
+
+.button--block {
+    @mixin button--block;
 }
