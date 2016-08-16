@@ -254,6 +254,25 @@
  * GENERIC
  */
 
+/* ------------------------------------ *\
+    #BOX-SIZING
+\* ------------------------------------ */
+
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -687,32 +706,6 @@ u, ins {
 ins {
     border-bottom: 1px solid;
 }
-
-/* ------------------------------------ *\
-    #BOX-SIZING
-\* ------------------------------------ */
-
-/**
- * Set the global `box-sizing` state to `border-box`.
- *
- * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
- * paulirish.com/2012/box-sizing-border-box-ftw
- */
-
-html {
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-/**
- * If we have included this file, set a variable to tell the rest of the
- * framework that global `box-sizing: border-box` has been set.
- *
- * TODO: see if the following variable is usefull.
- */
 
 /* ------------------------------------ *\
     #SHARED
