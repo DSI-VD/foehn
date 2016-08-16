@@ -73,6 +73,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Remove vd-list-block class
 - Remove auto styling for vd-list-inline childrens
 - Remove box lit organism
 - Remove alert molecule
