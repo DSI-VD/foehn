@@ -19,7 +19,7 @@
 /**
  * Layout
  */
-.layout {
+.o-layout {
     lost-flex-container: row;
 }
 
@@ -36,7 +36,7 @@
 @for $flex-grow from 1 to 3 {
 
     /* Layout extensible diemension */
-    .layout__item--flex-$(flex-grow) {
+    .o-layout__item--flex-$(flex-grow) {
         flex: $flex-grow;
 
         &:nth-child(1n) {
@@ -62,26 +62,26 @@
 */
 @for $i from 1 to 6 {
 
-    .layout__item--order-$i {
+    .o-layout__item--order-$i {
         order: $(i);
     }
 
 }
 
-.layout__item--order-last {
+.o-layout__item--order-last {
     order: 99; /* [1] */
 }
 
 @media (--lap-and-up) {
     @for $i from 1 to 6 {
 
-        .layout__item--lap-and-up--order-$i {
+        .o-layout__item--lap-and-up--order-$i {
             order: $(i);
         }
 
     }
 
-    .layout__item--lap-and-up--order-last {
+    .o-layout__item--lap-and-up--order-last {
         order: 99; /* [1] */
     }
 }
@@ -95,49 +95,49 @@
  */
 
 /* Default items size (on palm) */
-.layout__item--1-1,
-.layout__item--1-2,
-.layout__item--1-3,
-.layout__item--2-3,
-.layout__item--1-4,
-.layout__item--3-4 {
+.o-layout__item--1-1,
+.o-layout__item--1-2,
+.o-layout__item--1-3,
+.o-layout__item--2-3,
+.o-layout__item--1-4,
+.o-layout__item--3-4 {
     lost-column: 1/1 flex;
 }
 
-.layout__item--1-6,
-.layout__item--5-6,
-.layout__item--1-12 {
+.o-layout__item--1-6,
+.o-layout__item--5-6,
+.o-layout__item--1-12 {
     lost-column: 1/2 flex;
 }
 
 /* Items size on lap and up */
 @media (--lap-and-up) {
 
-    .layout__item--1-2,
-    .layout__item--1-4,
-    .layout__item--3-4,
-    .layout__item--lap-and-up--1-2 {
+    .o-layout__item--1-2,
+    .o-layout__item--1-4,
+    .o-layout__item--3-4,
+    .o-layout__item--lap-and-up--1-2 {
         lost-column: 1/2 flex;
     }
 
-    .layout__item--1-3,
-    .layout__item--1-6,
-    .layout__item--lap-and-up--1-3 {
+    .o-layout__item--1-3,
+    .o-layout__item--1-6,
+    .o-layout__item--lap-and-up--1-3 {
         lost-column: 1/3 flex;
     }
 
-    .layout__item--2-3,
-    .layout__item--5-6,
-    .layout__item--lap-and-up--2-3 {
+    .o-layout__item--2-3,
+    .o-layout__item--5-6,
+    .o-layout__item--lap-and-up--2-3 {
         lost-column: 2/3 2 flex;
     }
 
-    .layout__item--1-12,
-    .layout__item--lap-and-up--1-4 {
+    .o-layout__item--1-12,
+    .o-layout__item--lap-and-up--1-4 {
         lost-column: 1/4 flex;
     }
 
-    .layout__item--lap-and-up--3-4 {
+    .o-layout__item--lap-and-up--3-4 {
         lost-column: 3/4 flex;
     }
 
@@ -146,23 +146,23 @@
 /* Items size on desk and up */
 @media (--desk) {
 
-    .layout__item--1-4 {
+    .o-layout__item--1-4 {
         lost-column: 1/4 flex;
     }
 
-    .layout__item--3-4 {
+    .o-layout__item--3-4 {
         lost-column: 3/4 2 flex;
     }
 
-    .layout__item--1-6 {
+    .o-layout__item--1-6 {
         lost-column: 1/6 flex;
     }
 
-    .layout__item--5-6 {
+    .o-layout__item--5-6 {
         lost-column: 5/6 2 flex;
     }
 
-    .layout__item--1-12 {
+    .o-layout__item--1-12 {
         lost-column: 1/12 flex;
     }
 }
@@ -176,11 +176,11 @@
  */
 @for $fraction from 1 to 12 {
 
-    .layout__item--move--$(fraction)-12 {
+    .o-layout__item--move--$(fraction)-12 {
         lost-move: $fraction/12;
     }
 
-    .layout__item--move---$(fraction)-12 {
+    .o-layout__item--move---$(fraction)-12 {
         lost-move: -$fraction/12;
     }
 
@@ -190,11 +190,11 @@
     @media ($(query)) {
         @for $fraction from 1 to 12 {
 
-            .layout__item$(query)--move--$(fraction)-12 {
+            .o-layout__item$(query)--move--$(fraction)-12 {
                 lost-move: $fraction/12;
             }
 
-            .layout__item$(query)--move---$(fraction)-12 {
+            .o-layout__item$(query)--move---$(fraction)-12 {
                 lost-move: -$fraction/12;
             }
 
