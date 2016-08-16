@@ -2910,39 +2910,39 @@ hr {
  * 3. positionning the text aside of the logo
  */
 
-.vd-navbar {
+.vd-c-navbar {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
 
-.vd-navbar > :nth-child(1) {
+.vd-c-navbar > :nth-child(1) {
     margin-right: auto; /* [1] */
 }
 
-.vd-navbar__logo source, .vd-navbar__logo img {
+.vd-c-navbar__logo source, .vd-c-navbar__logo img {
     height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem); /* [2] */
 }
 
 @media screen and (min-width: 45em) {
-    .vd-navbar__logo {
+    .vd-c-navbar__logo {
         display: -ms-flexbox;
         display: flex; /* [3] */
     }
 }
 
 @media screen and (min-width: 45em) {
-    .vd-navbar__logo source, .vd-navbar__logo img {
+    .vd-c-navbar__logo source, .vd-c-navbar__logo img {
         height: 4rem; /* [2] */
     }
 }
 
-.vd-navbar__site-title {
+.vd-c-navbar__site-title {
 }
 
 @media screen and (min-width: 45em) {
-    .vd-navbar__site-title {
+    .vd-c-navbar__site-title {
         display: -ms-flexbox;
         display: flex; /* [3] */
         -ms-flex-direction: column;
@@ -3584,23 +3584,23 @@ hr {
 @media screen and (min-width: 45em) {
     /* [1] */
 
-    .vd-page-title--image {
+    .vd-c-page-title--image {
         position: relative; /* [2] */
         color: #ffffff;
         color: rgba(255, 255, 255, 1);
     }
 
-    .vd-page-title--image__over-text {
+    .vd-c-page-title--image__over-text {
         position: absolute; /* [2] */
         top: 1.6875rem;
         padding-left: 1.6875rem;
     }
 
-    .vd-page-title--image__figure {
+    .vd-c-page-title--image__figure {
         position: relative; /* [3] */
     }
 
-    .vd-page-title--image__figure::after {
+    .vd-c-page-title--image__figure::after {
         position: absolute; /* [3] */
         top: 0; /* [3] */
         left: 0; /* [3] */
@@ -3611,7 +3611,7 @@ hr {
         content: "\A";
     }
 
-    .vd-page-title--image__image {
+    .vd-c-page-title--image__image {
         width: 100%;
         vertical-align: top; /* [4] */
     }
