@@ -682,7 +682,7 @@ textarea {
  */
 
 body, h1, h2, h3, h4, h5, h6, blockquote, p, pre, dl, dd, ol, ul, figure, hr,
-fieldset, legend, .vd-blockquote {
+fieldset, legend, .vd-c-blockquote {
     margin: 0;
     padding: 0;
 }
@@ -719,7 +719,7 @@ table {
 
 address, h1, h2, h3, h4, h5, h6, blockquote, p, pre
 dl, ol, ul, figure, hr,
-table, fieldset, .vd-blockquote {
+table, fieldset, .vd-c-blockquote {
     margin-bottom: 27px;
     margin-bottom: 1.6875rem;
 }
@@ -1415,7 +1415,7 @@ figure {
  * 1. Unicode for En dash and Space.
  */
 
-blockquote, .vd-blockquote {
+blockquote, .vd-c-blockquote {
     font-style: italic;
     border-left: 3.375px rgba(0, 0, 0, .8) solid;
     border-left: 0.21094rem rgba(0, 0, 0, .8) solid;
@@ -1425,7 +1425,7 @@ blockquote, .vd-blockquote {
     padding-left: 1.6875rem;
 }
 
-blockquote cite::before, .vd-blockquote cite::before {
+blockquote cite::before, .vd-c-blockquote cite::before {
     content: "\2013\0020"; /* [1] */
 }
 
