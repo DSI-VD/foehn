@@ -1,5 +1,3 @@
-@import "_components.header.css";
-
 /**
  * CONTENTS
  *
@@ -3109,6 +3107,118 @@ hr {
 }
 
 /* ------------------------------------ *\
+    #HEADER
+\* ------------------------------------ */
+
+/**
+ * Set the colors of the header.
+ */
+
+.vd-header {
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.vd-header, .vd-header a, .vd-header a:hover {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+}
+
+/**
+ * Header primary links
+ *
+ * 1. Button are buttons only on palm.
+ * 2. Use enhanced fonts only when loaded.
+ */
+
+@media screen and (max-width: 44.9375em) {
+    .vd-header-button {
+        display: inline-block; /* [1] */
+        font: inherit; /* [2] */
+        font-weight: 700;
+        text-align: center; /* [3] */
+        background-color: #3e9ff0;
+        background-color: rgba(62, 159, 240, 1);
+        border: 1px none #000000;
+        border: 1px none rgba(0, 0, 0, .8);
+        border-radius: 0.21094rem;
+        margin: 0; /* [3] */
+        padding: calc(0.84375rem - 1px) calc(0.84375rem * 2 - 1px); /* [4] */
+        vertical-align: middle; /* [5] */
+        overflow: visible; /* [6] */
+        cursor: pointer; /* [7] *//* [1] */
+        display: block;
+        width: 100%;
+        /* [1] */
+    }
+
+    .vd-header-button, .vd-header-button:hover, .vd-header-button.is-hover,
+    .vd-header-button:active, .vd-header-button.is-active,
+    .vd-header-button:focus
+    .vd-header-button.is-focus {
+        color: #000000;
+        color: rgba(0, 0, 0, .8);
+        text-decoration: none; /* [3] */
+    }
+
+    .vd-header-button:hover, .vd-header-button.is-hover {
+        color: #000000;
+        color: rgba(0, 0, 0, .8);
+        background-color: #00a5d4;
+        background-color: rgba(0, 165, 212, 1); /* [8] */
+    }
+
+    .vd-header-button:active, .vd-header-button.is-active {
+        color: #ffffff;
+        color: rgba(255, 255, 255, 1);
+        background-color: #006a9b;
+        background-color: rgba(0, 106, 155, 1); /* [8] */
+    }
+
+    .vd-header-button:focus, .vd-header-button.is-focus {
+        box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
+    }
+
+    .vd-header-button::-moz-focus-inner {
+        border: 0; /* [9] */
+        padding: 0; /* [9] */
+    }
+
+    .vd-header-button--secondary {
+        color: #ffffff;
+        color: rgba(255, 255, 255, 1);
+        background-color: #d0404c;
+        background-color: rgba(208, 64, 76, 1);
+    }
+
+    .vd-header-button--secondary:hover, .vd-header-button--secondary.is-hover {
+        color: #000000;
+        color: rgba(0, 0, 0, .8);
+        background-color: #cf1d1d;
+        background-color: rgba(207, 29, 29, 1);
+    }
+
+    .vd-header-button--secondary:active, .vd-header-button--secondary.is-active {
+        color: #ffffff;
+        color: rgba(255, 255, 255, 1);
+        background-color: #9a1919;
+        background-color: rgba(154, 25, 25, 1);
+    }
+
+    .wf-active .vd-header-button {
+        font-family: "MetaWeb",
+                     -apple-system,
+                     ".SFNSText-Regular",
+                     "San Francisco",
+                     "Roboto",
+                     "Segoe UI",
+                     "Helvetica Neue",
+                     "Lucida Grande",
+                     sans-serif; /* [2] */
+    }
+}
+
+/* ------------------------------------ *\
     #INLINE TEXTS
 \* ------------------------------------ */
 
@@ -3581,9 +3691,7 @@ hr {
     color: rgba(174, 176, 181, 1);
     text-transform: none;
     /* stylelint-disable function-whitespace-after */
-    content: attr(title); /* [2] */
-
-    /* stylelint-enable function-whitespace-after */
+    content: attr(title); /* [2] *//* stylelint-enable function-whitespace-after */
 }
 
 /**
