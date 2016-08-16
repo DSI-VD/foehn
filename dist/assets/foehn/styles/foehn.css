@@ -1619,12 +1619,12 @@ hr {
  * The list-inline object simply displays a list of items in one line.
  */
 
-.vd-list-inline {
+.vd-o-list-inline {
     margin-left: 0;
     list-style: none;
 }
 
-.vd-list-inline__item {
+.vd-o-list-inline__item {
     display: inline-block;
 }
 
