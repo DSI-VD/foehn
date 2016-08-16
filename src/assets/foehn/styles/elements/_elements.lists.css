@@ -7,10 +7,6 @@
  *
  * 1. Without it, if there's buttons in the list, they would be collapsed.
  */
-li > ul,
-li > ol {
-    margin-bottom: 0;
-}
 
 li {
     @mixin font-bodytext;
