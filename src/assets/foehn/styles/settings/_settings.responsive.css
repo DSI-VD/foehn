@@ -5,8 +5,7 @@
 /**
  * Hold our breakpoint aliases and conditions in a list.
  *
- * These can be invoked later on via the `media-query()` mixin found in
- * `_tools.responsive`.
+ * These can be invoked later on via `@media (--palm) {...}`
  */
 
 @custom-media --palm screen and (max-width: 44.9375em);
