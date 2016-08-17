@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-beta in vd-u-h2
 - Renamed the class vd-alpha in vd-u-h1
 - Renamed the class vd-font-heading in vd-u-font-heading
 - Renamed the class vd-color in vd-u-color
