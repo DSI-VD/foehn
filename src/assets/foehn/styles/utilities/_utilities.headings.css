@@ -25,13 +25,13 @@
     line-height: var(--heading-line-height-2);
 }
 
-.gamma {
+.u-h3 {
     font-size: var(--heading-size-3);
     font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-3);
 }
 
-.delta {
+.u-h4 {
     font-size: var(--heading-size-4);
     font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-4);
@@ -51,8 +51,8 @@
 
 .u-h1,
 .u-h2,
-.gamma,
-.delta,
+.u-h3,
+.u-h4,
 .epsilon,
 .zeta {
     font-family: var(--heading-font-family);
@@ -64,8 +64,8 @@
 
     .u-h1,
     .u-h2,
-    .gamma,
-    .delta,
+    .u-h3,
+    .u-h4,
     .epsilon,
     .zeta  {
         font-family: var(--enhance-heading-font-family); /* [1] */
@@ -73,8 +73,8 @@
 
     .u-h1,
     .u-h2,
-    .gamma,
-    .delta,
+    .u-h3,
+    .u-h4,
     .epsilon  {
         font-weight: var(--enhance-heading-font-weight-bold);
     }
