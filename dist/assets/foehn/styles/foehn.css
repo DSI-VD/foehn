@@ -37,7 +37,6 @@
  *
  * OBJECTS
  * Wrappers.............Wrapping and constraining elements.
- * Buttons..............Buttons.
  * List-bare............Remove list style.
  * List-inline..........Displays a list as one horizontal row.
  * Layouts..............Grid system.
@@ -45,6 +44,7 @@
  * Tables...............Tables.
  *
  * COMPONENTS
+ * Buttons..............Buttons.
  * Navbar...............Top bar.
  * Header...............Header components styles.
  * Inline texts.........Fraction, Small-caps, etc.
@@ -2896,6 +2896,160 @@ hr {
  */
 
 /* ------------------------------------ *\
+    #BUTTONS
+\* ------------------------------------ */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Make buttons inherit font styles (often necessary when styling `input`s
+ *    as buttons).
+ * 3. Reset/normalize some styles.
+ * 4. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ * 5. Line different sized buttons up a little nicer.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Force all button-styled elements to appear clickable.
+ * 8. Hover state color
+ * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+ */
+
+.vd-c-button {
+    display: inline-block; /* [1] */
+    font: inherit; /* [2] */
+    font-weight: 700;
+    text-align: center; /* [3] */
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1);
+    border: 1px none #000000;
+    border: 1px none rgba(0, 0, 0, .8);
+    border-radius: 0.21094rem;
+    margin: 0; /* [3] */
+    padding: calc(0.84375rem - 1px) calc(0.84375rem * 2 - 1px); /* [4] */
+    vertical-align: middle; /* [5] */
+    overflow: visible; /* [6] */
+    cursor: pointer; /* [7] */
+}
+
+.vd-c-button, .vd-c-button:hover, .vd-c-button.is-hover, .vd-c-button:active,
+.vd-c-button.is-active, .vd-c-button:focus
+    .vd-c-button.is-focus {
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none; /* [3] */
+}
+
+.vd-c-button:hover, .vd-c-button.is-hover {
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
+    background-color: #00a5d4;
+    background-color: rgba(0, 165, 212, 1); /* [8] */
+}
+
+.vd-c-button:active, .vd-c-button.is-active {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    background-color: #006a9b;
+    background-color: rgba(0, 106, 155, 1); /* [8] */
+}
+
+.vd-c-button:focus, .vd-c-button.is-focus {
+    box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
+}
+
+.vd-c-button::-moz-focus-inner {
+    border: 0; /* [9] */
+    padding: 0; /* [9] */
+}
+
+/**
+ * Use fonts only when loaded
+ */
+
+.wf-active [class^="vd-c-button"] {
+    font-family: "MetaWeb",
+                 -apple-system,
+                 ".SFNSText-Regular",
+                 "San Francisco",
+                 "Roboto",
+                 "Segoe UI",
+                 "Helvetica Neue",
+                 "Lucida Grande",
+                 sans-serif;
+}
+
+/**
+ * State buttons
+ *
+ * Color variations
+ */
+
+/* Button secondary */
+
+.vd-c-button--secondary {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    background-color: #d0404c;
+    background-color: rgba(208, 64, 76, 1);
+}
+
+.vd-c-button--secondary:hover, .vd-c-button--secondary.is-hover {
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
+    background-color: #cf1d1d;
+    background-color: rgba(207, 29, 29, 1);
+}
+
+.vd-c-button--secondary:active, .vd-c-button--secondary.is-active {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    background-color: #9a1919;
+    background-color: rgba(154, 25, 25, 1);
+}
+
+/* Button transparent */
+
+.vd-c-button--transparent {
+    color: inherit;
+    background-color: inherit;
+}
+
+.vd-c-button--transparent:hover, .vd-c-button--transparent.is-hover {
+    color: inherit;
+    background-color: inherit;
+}
+
+.vd-c-button--transparent:active, .vd-c-button--transparent.is-active {
+    color: inherit;
+    background-color: inherit;
+}
+
+/* Button disabled */
+
+.vd-c-button--disabled, [type="submit"][disabled] {
+}
+
+.vd-c-button--disabled, .vd-c-button--disabled:hover,
+.vd-c-button--disabled:focus, .vd-c-button--disabled:active,
+[type="submit"][disabled], [type="submit"][disabled]:hover,
+[type="submit"][disabled]:focus, [type="submit"][disabled]:active {
+    color: inherit;
+    background-color: #aeb0b5;
+    background-color: rgba(174, 176, 181, 1);
+    cursor: not-allowed;
+}
+
+/**
+ * Size of buttons
+ *
+ * Size variation
+ */
+
+.vd-c-button--block {
+    display: block;
+    width: 100%;
+}
+
+/* ------------------------------------ *\
     #NAVBAR
 \* ------------------------------------ */
 
@@ -3062,160 +3216,6 @@ hr {
                      "Lucida Grande",
                      sans-serif; /* [2] */
     }
-}
-
-/* ------------------------------------ *\
-    #BUTTONS
-\* ------------------------------------ */
-
-/**
- * 1. Allow us to style box model properties.
- * 2. Make buttons inherit font styles (often necessary when styling `input`s
- *    as buttons).
- * 3. Reset/normalize some styles.
- * 4. Subtract the border size from the padding value so that buttons do not
- *    grow larger as we add borders.
- * 5. Line different sized buttons up a little nicer.
- * 6. Fixes odd inner spacing in IE7.
- * 7. Force all button-styled elements to appear clickable.
- * 8. Hover state color
- * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
- */
-
-.vd-c-button {
-    display: inline-block; /* [1] */
-    font: inherit; /* [2] */
-    font-weight: 700;
-    text-align: center; /* [3] */
-    background-color: #3e9ff0;
-    background-color: rgba(62, 159, 240, 1);
-    border: 1px none #000000;
-    border: 1px none rgba(0, 0, 0, .8);
-    border-radius: 0.21094rem;
-    margin: 0; /* [3] */
-    padding: calc(0.84375rem - 1px) calc(0.84375rem * 2 - 1px); /* [4] */
-    vertical-align: middle; /* [5] */
-    overflow: visible; /* [6] */
-    cursor: pointer; /* [7] */
-}
-
-.vd-c-button, .vd-c-button:hover, .vd-c-button.is-hover, .vd-c-button:active,
-.vd-c-button.is-active, .vd-c-button:focus
-    .vd-c-button.is-focus {
-    color: #000000;
-    color: rgba(0, 0, 0, .8);
-    text-decoration: none; /* [3] */
-}
-
-.vd-c-button:hover, .vd-c-button.is-hover {
-    color: #000000;
-    color: rgba(0, 0, 0, .8);
-    background-color: #00a5d4;
-    background-color: rgba(0, 165, 212, 1); /* [8] */
-}
-
-.vd-c-button:active, .vd-c-button.is-active {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-    background-color: #006a9b;
-    background-color: rgba(0, 106, 155, 1); /* [8] */
-}
-
-.vd-c-button:focus, .vd-c-button.is-focus {
-    box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
-}
-
-.vd-c-button::-moz-focus-inner {
-    border: 0; /* [9] */
-    padding: 0; /* [9] */
-}
-
-/**
- * Use fonts only when loaded
- */
-
-.wf-active [class^="vd-c-button"] {
-    font-family: "MetaWeb",
-                 -apple-system,
-                 ".SFNSText-Regular",
-                 "San Francisco",
-                 "Roboto",
-                 "Segoe UI",
-                 "Helvetica Neue",
-                 "Lucida Grande",
-                 sans-serif;
-}
-
-/**
- * State buttons
- *
- * Color variations
- */
-
-/* Button secondary */
-
-.vd-c-button--secondary {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-    background-color: #d0404c;
-    background-color: rgba(208, 64, 76, 1);
-}
-
-.vd-c-button--secondary:hover, .vd-c-button--secondary.is-hover {
-    color: #000000;
-    color: rgba(0, 0, 0, .8);
-    background-color: #cf1d1d;
-    background-color: rgba(207, 29, 29, 1);
-}
-
-.vd-c-button--secondary:active, .vd-c-button--secondary.is-active {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-    background-color: #9a1919;
-    background-color: rgba(154, 25, 25, 1);
-}
-
-/* Button transparent */
-
-.vd-c-button--transparent {
-    color: inherit;
-    background-color: inherit;
-}
-
-.vd-c-button--transparent:hover, .vd-c-button--transparent.is-hover {
-    color: inherit;
-    background-color: inherit;
-}
-
-.vd-c-button--transparent:active, .vd-c-button--transparent.is-active {
-    color: inherit;
-    background-color: inherit;
-}
-
-/* Button disabled */
-
-.vd-c-button--disabled, [type="submit"][disabled] {
-}
-
-.vd-c-button--disabled, .vd-c-button--disabled:hover,
-.vd-c-button--disabled:focus, .vd-c-button--disabled:active,
-[type="submit"][disabled], [type="submit"][disabled]:hover,
-[type="submit"][disabled]:focus, [type="submit"][disabled]:active {
-    color: inherit;
-    background-color: #aeb0b5;
-    background-color: rgba(174, 176, 181, 1);
-    cursor: not-allowed;
-}
-
-/**
- * Size of buttons
- *
- * Size variation
- */
-
-.vd-c-button--block {
-    display: block;
-    width: 100%;
 }
 
 /* ------------------------------------ *\
