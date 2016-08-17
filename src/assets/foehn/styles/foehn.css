@@ -37,7 +37,6 @@
  *
  * OBJECTS
  * Wrappers.............Wrapping and constraining elements.
- * Buttons..............Buttons.
  * List-bare............Remove list style.
  * List-inline..........Displays a list as one horizontal row.
  * Layouts..............Grid system.
@@ -45,6 +44,7 @@
  * Tables...............Tables.
  *
  * COMPONENTS
+ * Buttons..............Buttons.
  * Navbar...............Top bar.
  * Header...............Header components styles.
  * Inline texts.........Fraction, Small-caps, etc.
@@ -152,9 +152,9 @@
  * COMPONENTS
  */
 
+@import "components/_components.buttons.css";
 @import "components/_components.navbar.css";
 @import "components/_components.header.css";
-@import "components/_components.buttons.css";
 @import "components/_components.inline-texts.css";
 @import "components/_components.box.css";
 @import "components/_components.backgrounds.css";
