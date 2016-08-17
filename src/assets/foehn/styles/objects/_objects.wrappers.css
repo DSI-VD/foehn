@@ -13,7 +13,7 @@
  * 1. Center horizontaly
  */
 
-.wrapper {
+.o-wrapper {
 
     max-width: var(--wrapper-width);
 
@@ -35,7 +35,7 @@
  *
  * Get out of the container
  */
-.wrapper--offset {
+.o-wrapper--offset {
     margin-right: -var(--global-spacing-unit--tiny);
     margin-left: -var(--global-spacing-unit--tiny);
 
