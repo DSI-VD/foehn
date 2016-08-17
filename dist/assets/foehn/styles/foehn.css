@@ -3722,18 +3722,18 @@ hr {
 \* ------------------------------------ */
 
 /**
- * Headings 1–6’s corresponding Greek-alphabet abstract classes for double-
+ * Headings 1–6’s corresponding Greek-u-h1bet abstract classes for double-
  * stranded heading hierarchy:
  * csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
  *
  * Use these helper classes to cause other elements to adopt the styling of the
  * respective heading, e.g.:
  *
-   <h2 class="alpha">Lorem ipsum</h2>
+   <h2 class="u-h1">Lorem ipsum</h2>
  *
  */
 
-.vd-alpha {
+.vd-u-h1 {
     font-size: 32.006px;
     font-size: 2.00038rem;
     font-weight: bold;
@@ -3775,7 +3775,7 @@ hr {
     line-height: 1.5;
 }
 
-.vd-alpha, .vd-beta, .vd-gamma, .vd-delta, .vd-epsilon, .vd-zeta {
+.vd-u-h1, .vd-beta, .vd-gamma, .vd-delta, .vd-epsilon, .vd-zeta {
     font-family: -apple-system,
                  ".SFNSText-Regular",
                  "San Francisco",
@@ -3789,7 +3789,7 @@ hr {
     font-kerning: normal;
 }
 
-.wf-metaweb-n7-active .vd-alpha, .wf-metaweb-n7-active .vd-beta,
+.wf-metaweb-n7-active .vd-u-h1, .wf-metaweb-n7-active .vd-beta,
 .wf-metaweb-n7-active .vd-gamma, .wf-metaweb-n7-active .vd-delta,
 .wf-metaweb-n7-active .vd-epsilon, .wf-metaweb-n7-active .vd-zeta {
     font-family: "MetaWeb",
@@ -3803,7 +3803,7 @@ hr {
                  sans-serif; /* [1] */
 }
 
-.wf-metaweb-n7-active .vd-alpha, .wf-metaweb-n7-active .vd-beta,
+.wf-metaweb-n7-active .vd-u-h1, .wf-metaweb-n7-active .vd-beta,
 .wf-metaweb-n7-active .vd-gamma, .wf-metaweb-n7-active .vd-delta,
 .wf-metaweb-n7-active .vd-epsilon {
     font-weight: 700;
