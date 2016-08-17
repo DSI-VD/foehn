@@ -6,11 +6,11 @@
  * Use these helper classes to cause other elements to adopt the heading
  * fonts., e.g.:
  *
- *    <p class="vd-font-heading">Lorem ipsum</h2>
+ *    <p class="vd-u-font-heading">Lorem ipsum</h2>
  *
  * 1. Apply enhanced font only if it is loaded
  */
-.font-heading {
+.u-font-heading {
     font-family: var(--heading-font-family);
 
     @mixin font-headings;
@@ -18,7 +18,7 @@
 
 .wf-metaweb-n4-active {
 
-    .font-heading  {
+    .u-font-heading  {
         font-family: var(--enhance-heading-font-family); /* [1] */
     }
 
