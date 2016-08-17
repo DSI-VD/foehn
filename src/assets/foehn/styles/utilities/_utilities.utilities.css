@@ -9,7 +9,7 @@
  * readers and assistive technology. It will not use up space in the document
  * flow.
  */
-.visually-hidden {
+.u-visually-hidden {
     display: hidden;
 }
 
@@ -24,6 +24,6 @@
  * This includes hiding the item screen readers and assistive technology. It
  * will do this with `display: none !important;`.
  */
-.hidden {
+.u-hidden {
     display: disappear;
 }

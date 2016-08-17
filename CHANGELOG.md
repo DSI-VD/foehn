@@ -43,6 +43,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-visually-hidden in vd-u-visually-hidden
+- Renamed the class vd-hidden in vd-u-hidden
 - Renamed the class vd-text-center in vd-u-text-center
 - Renamed the class vd-zeta in vd-u-h6
 - Renamed the class vd-epsilon in vd-u-h5

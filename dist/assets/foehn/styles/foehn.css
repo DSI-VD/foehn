@@ -4033,7 +4033,7 @@ hr {
  * flow.
  */
 
-.vd-visually-hidden {
+.vd-u-visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -4044,7 +4044,8 @@ hr {
     clip: rect(0 0 0 0);
 }
 
-.vd-visually-hidden.vd-focusable:active, .vd-visually-hidden.vd-focusable:focus {
+.vd-u-visually-hidden.vd-focusable:active,
+.vd-u-visually-hidden.vd-focusable:focus {
     display: table;
     position: static;
     clear: both;
@@ -4058,7 +4059,7 @@ hr {
  * will do this with `display: none !important;`.
  */
 
-.vd-hidden {
+.vd-u-hidden {
     display: none !important;
     visibility: hidden;
 }
@@ -4076,7 +4077,7 @@ hr {
  */
 
 @media screen and (max-width: 44.9375em) {
-    .vd-visually-hidden\@palm {
+    .vd-u-visually-hidden\@palm {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -4087,8 +4088,8 @@ hr {
         clip: rect(0 0 0 0);
     }
 
-    .vd-visually-hidden\@palm.vd-focusable:active,
-    .vd-visually-hidden\@palm.vd-focusable:focus {
+    .vd-u-visually-hidden\@palm.vd-focusable:active,
+    .vd-u-visually-hidden\@palm.vd-focusable:focus {
         display: table;
         position: static;
         clear: both;
@@ -4096,7 +4097,7 @@ hr {
 }
 
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
-    .vd-visually-hidden\@lap {
+    .vd-u-visually-hidden\@lap {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -4107,8 +4108,8 @@ hr {
         clip: rect(0 0 0 0);
     }
 
-    .vd-visually-hidden\@lap.vd-focusable:active,
-    .vd-visually-hidden\@lap.vd-focusable:focus {
+    .vd-u-visually-hidden\@lap.vd-focusable:active,
+    .vd-u-visually-hidden\@lap.vd-focusable:focus {
         display: table;
         position: static;
         clear: both;
@@ -4116,7 +4117,7 @@ hr {
 }
 
 @media screen and (min-width: 45em) {
-    .vd-visually-hidden\@lap-and-up {
+    .vd-u-visually-hidden\@lap-and-up {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -4127,8 +4128,8 @@ hr {
         clip: rect(0 0 0 0);
     }
 
-    .vd-visually-hidden\@lap-and-up.vd-focusable:active,
-    .vd-visually-hidden\@lap-and-up.vd-focusable:focus {
+    .vd-u-visually-hidden\@lap-and-up.vd-focusable:active,
+    .vd-u-visually-hidden\@lap-and-up.vd-focusable:focus {
         display: table;
         position: static;
         clear: both;
@@ -4136,7 +4137,7 @@ hr {
 }
 
 @media screen and (max-width: 63.9375em) {
-    .vd-visually-hidden\@portable {
+    .vd-u-visually-hidden\@portable {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -4147,8 +4148,8 @@ hr {
         clip: rect(0 0 0 0);
     }
 
-    .vd-visually-hidden\@portable.vd-focusable:active,
-    .vd-visually-hidden\@portable.vd-focusable:focus {
+    .vd-u-visually-hidden\@portable.vd-focusable:active,
+    .vd-u-visually-hidden\@portable.vd-focusable:focus {
         display: table;
         position: static;
         clear: both;
@@ -4156,7 +4157,7 @@ hr {
 }
 
 @media screen and (min-width: 64em) {
-    .vd-visually-hidden\@desk {
+    .vd-u-visually-hidden\@desk {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -4167,8 +4168,8 @@ hr {
         clip: rect(0 0 0 0);
     }
 
-    .vd-visually-hidden\@desk.vd-focusable:active,
-    .vd-visually-hidden\@desk.vd-focusable:focus {
+    .vd-u-visually-hidden\@desk.vd-focusable:active,
+    .vd-u-visually-hidden\@desk.vd-focusable:focus {
         display: table;
         position: static;
         clear: both;
@@ -4184,35 +4185,35 @@ hr {
  */
 
 @media screen and (max-width: 44.9375em) {
-    .vd-hidden\@palm {
+    .vd-u-hidden\@palm {
         display: none !important;
         visibility: hidden;
     }
 }
 
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
-    .vd-hidden\@lap {
+    .vd-u-hidden\@lap {
         display: none !important;
         visibility: hidden;
     }
 }
 
 @media screen and (min-width: 45em) {
-    .vd-hidden\@lap-and-up {
+    .vd-u-hidden\@lap-and-up {
         display: none !important;
         visibility: hidden;
     }
 }
 
 @media screen and (max-width: 63.9375em) {
-    .vd-hidden\@portable {
+    .vd-u-hidden\@portable {
         display: none !important;
         visibility: hidden;
     }
 }
 
 @media screen and (min-width: 64em) {
-    .vd-hidden\@desk {
+    .vd-u-hidden\@desk {
         display: none !important;
         visibility: hidden;
     }
