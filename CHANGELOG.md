@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-color in vd-u-color
 - Renamed the class vd-clearfix in vd-u-clearfix
 - Renamed trumps css files utilities
 - Renamed the class vd-wrapper in vd-o-wrapper
