@@ -3708,10 +3708,10 @@ hr {
  *
  */
 
-.vd-clearfix {
+.vd-u-clearfix {
 }
 
-.vd-clearfix::after {
+.vd-u-clearfix::after {
     display: block !important;
     clear: both !important;
     content: "" !important;

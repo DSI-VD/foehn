@@ -7,6 +7,6 @@
  * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
  *
  */
-.clearfix {
+.u-clearfix {
     @mixin clearfix;
 }
