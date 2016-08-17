@@ -3981,12 +3981,12 @@ hr {
  * Use these helper classes to cause other elements to adopt the heading
  * fonts., e.g.:
  *
- *    <p class="vd-font-heading">Lorem ipsum</h2>
+ *    <p class="vd-u-font-heading">Lorem ipsum</h2>
  *
  * 1. Apply enhanced font only if it is loaded
  */
 
-.vd-font-heading {
+.vd-u-font-heading {
     font-family: -apple-system,
                  ".SFNSText-Regular",
                  "San Francisco",
@@ -4000,7 +4000,7 @@ hr {
     font-kerning: normal;
 }
 
-.wf-metaweb-n4-active .vd-font-heading {
+.wf-metaweb-n4-active .vd-u-font-heading {
     font-family: "MetaWeb",
                  -apple-system,
                  ".SFNSText-Regular",

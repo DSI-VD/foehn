@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-font-heading in vd-u-font-heading
 - Renamed the class vd-color in vd-u-color
 - Renamed the class vd-clearfix in vd-u-clearfix
 - Renamed trumps css files utilities
