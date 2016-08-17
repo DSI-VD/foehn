@@ -30,11 +30,11 @@
 
 @media (--lap-and-up) {
 
-    .u-gr--lap-and-up {
+    .u-gr\@lap-and-up {
         margin-right: var(--layout-trumps-gutter) !important;
     }
 
-    .u-gl--lap-and-up {
+    .u-gl\@lap-and-up {
         margin-left: var(--layout-trumps-gutter) !important;
     }
 
@@ -56,11 +56,11 @@
 
 @media (--lap-and-up) {
 
-    .u-gr0--lap-and-up {
+    .u-gr0\@lap-and-up {
         margin-right: 0 !important;
     }
 
-    .u-gl0--lap-and-up {
+    .u-gl0\@lap-and-up {
         margin-left: 0 !important;
     }
 
