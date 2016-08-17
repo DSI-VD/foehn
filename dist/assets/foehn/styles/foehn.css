@@ -3722,14 +3722,11 @@ hr {
 \* ------------------------------------ */
 
 /**
- * Headings 1–6’s corresponding Greek-u-h1bet abstract classes for double-
- * stranded heading hierarchy:
- * csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ * Redefine all of our basic heading styles against utility classes so as to
+ * allow for double stranded heading hierarchy, e.g. we semantically need an H2,
+ * but we want it to be sized like an H1:
  *
- * Use these helper classes to cause other elements to adopt the styling of the
- * respective heading, e.g.:
- *
-   <h2 class="u-h1">Lorem ipsum</h2>
+ *   <h2 class="u-h1"></h2>
  *
  */
 
