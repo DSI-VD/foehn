@@ -1,0 +1,12 @@
+/* ------------------------------------ *\
+    #CLEARFIX
+\* ------------------------------------ */
+
+/**
+ * Micro clearfix. Further reading:
+ * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
+ *
+ */
+.clearfix {
+    @mixin clearfix;
+}

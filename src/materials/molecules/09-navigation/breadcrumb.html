@@ -2,13 +2,13 @@
 notes: |
     Breadcrumb only show the last element on mobile.
 ---
-<nav class="vd-container">
+<nav class="vd-wrapper">
 
     <h2 class="vd-visually-hidden">Breadcrumb</h2>
 
-    <ul class="vd-list-inline vd-breadcrumb">
+    <ul class="vd-o-list-inline vd-c-breadcrumb">
     {{#iterate 5}}
-        <li><a href="#">Level {{@index}}</a></li>
+        <li class="vd-o-list-inline__item"><a href="#">Level {{@index}}</a></li>
     {{/iterate}}
     </ul>
 

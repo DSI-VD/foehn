@@ -1,0 +1,20 @@
+/* ------------------------------------ *\
+    #TABLES
+\* ------------------------------------ */
+
+/**
+ * 1. Ensure tables fill up as much space as possible.
+ */
+
+table {
+    width: 100%; /* [1] */
+}
+
+/**
+ * Enable OpenType features to make more readable data
+ * More info here:
+ * http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+td {
+    @mixin font-data;
+}

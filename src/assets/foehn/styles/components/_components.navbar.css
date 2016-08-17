@@ -1,0 +1,57 @@
+/* ------------------------------------ *\
+    #NAVBAR
+\* ------------------------------------ */
+
+
+/**
+ * Navbar
+ *
+ * If the navbare use list, be sure to remove list styles. Use a classe like
+ * `.o-list-bare`.
+ *
+ * 1. Only the first element is align on the left
+ * 2. Size of the logo. On palm, it's the same size of a button .
+ * 3. positionning the text aside of the logo
+ */
+.c-navbar {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    > :nth-child(1) {
+        margin-right: auto; /* [1] */
+    }
+
+}
+
+.c-navbar__logo {
+    @media (--lap-and-up) {
+        display: flex; /* [3] */
+    }
+
+    source,
+    img {
+        height: calc(
+            var(--button-padding)
+            + var(--button-border-width)
+            + 1rem
+            + var(--button-border-width)
+            + var(--button-padding)
+            ); /* [2] */
+
+        @media (--lap-and-up) {
+            height: 4rem; /* [2] */
+        }
+    }
+
+}
+
+.c-navbar__site-title {
+    @media (--lap-and-up) {
+
+        display: flex; /* [3] */
+        flex-direction: column; /* [3] */
+
+    }
+
+}

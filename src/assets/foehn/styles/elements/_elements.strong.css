@@ -1,0 +1,21 @@
+/* ------------------------------------ *\
+    #STRONG
+\* ------------------------------------ */
+
+/**
+ * Strong
+ */
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Strong weight
+ *
+ * 1. Enhance webfont use 700 for strong text.
+ */
+.wf-active b,
+.wf-active strong {
+    font-weight: var(--enhance-global-font-weight-bold);
+}
