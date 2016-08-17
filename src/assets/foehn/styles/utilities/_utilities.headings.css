@@ -43,7 +43,7 @@
     line-height: var(--heading-line-height-5);
 }
 
-.zeta {
+.u-h6 {
     font-size: var(--heading-size-6);
     font-weight: var(--heading-font-weight-regular);
     line-height: var(--heading-line-height-6);
@@ -54,7 +54,7 @@
 .u-h3,
 .u-h4,
 .u-h5,
-.zeta {
+.u-h6 {
     font-family: var(--heading-font-family);
 
     @mixin font-headings;
@@ -67,7 +67,7 @@
     .u-h3,
     .u-h4,
     .u-h5,
-    .zeta  {
+    .u-h6  {
         font-family: var(--enhance-heading-font-family); /* [1] */
     }
 
@@ -79,7 +79,7 @@
         font-weight: var(--enhance-heading-font-weight-bold);
     }
 
-    .zeta {
+    .u-h6 {
         font-weight: var(--enhance-heading-font-weight-regular);
     }
 }
