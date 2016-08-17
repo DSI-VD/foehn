@@ -19,7 +19,7 @@
     line-height: var(--heading-line-height-1);
 }
 
-.beta {
+.u-h2 {
     font-size: var(--heading-size-2);
     font-weight: var(--heading-font-weight-bold);
     line-height: var(--heading-line-height-2);
@@ -50,7 +50,7 @@
 }
 
 .u-h1,
-.beta,
+.u-h2,
 .gamma,
 .delta,
 .epsilon,
@@ -63,7 +63,7 @@
 .wf-metaweb-n7-active {
 
     .u-h1,
-    .beta,
+    .u-h2,
     .gamma,
     .delta,
     .epsilon,
@@ -72,7 +72,7 @@
     }
 
     .u-h1,
-    .beta,
+    .u-h2,
     .gamma,
     .delta,
     .epsilon  {
