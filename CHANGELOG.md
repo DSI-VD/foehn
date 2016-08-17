@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-epsilon in vd-u-h5
 - Renamed the class vd-delta in vd-u-h4
 - Renamed the class vd-gamma in vd-u-h3
 - Renamed the class vd-beta in vd-u-h2

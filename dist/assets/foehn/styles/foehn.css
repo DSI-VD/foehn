@@ -3761,7 +3761,7 @@ hr {
     line-height: 1.5;
 }
 
-.vd-epsilon {
+.vd-u-h5 {
     font-size: 12.698px;
     font-size: 0.79365rem;
     font-weight: bold;
@@ -3775,7 +3775,7 @@ hr {
     line-height: 1.5;
 }
 
-.vd-u-h1, .vd-u-h2, .vd-u-h3, .vd-u-h4, .vd-epsilon, .vd-zeta {
+.vd-u-h1, .vd-u-h2, .vd-u-h3, .vd-u-h4, .vd-u-h5, .vd-zeta {
     font-family: -apple-system,
                  ".SFNSText-Regular",
                  "San Francisco",
@@ -3791,7 +3791,7 @@ hr {
 
 .wf-metaweb-n7-active .vd-u-h1, .wf-metaweb-n7-active .vd-u-h2,
 .wf-metaweb-n7-active .vd-u-h3, .wf-metaweb-n7-active .vd-u-h4,
-.wf-metaweb-n7-active .vd-epsilon, .wf-metaweb-n7-active .vd-zeta {
+.wf-metaweb-n7-active .vd-u-h5, .wf-metaweb-n7-active .vd-zeta {
     font-family: "MetaWeb",
                  -apple-system,
                  ".SFNSText-Regular",
@@ -3805,7 +3805,7 @@ hr {
 
 .wf-metaweb-n7-active .vd-u-h1, .wf-metaweb-n7-active .vd-u-h2,
 .wf-metaweb-n7-active .vd-u-h3, .wf-metaweb-n7-active .vd-u-h4,
-.wf-metaweb-n7-active .vd-epsilon {
+.wf-metaweb-n7-active .vd-u-h5 {
     font-weight: 700;
 }
 
