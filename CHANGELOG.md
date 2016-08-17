@@ -10,15 +10,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Add style for the header
-- Add .vd-layout__item--lap-and-up--3-4 class
-- Add text-center class
+- Add `.vd-layout__item--lap-and-up--3-4` class
+- Add `text-center` class
 - Add organisation template
 - Add list-prestation organism
 - Add projects organim
 - Add media-block-big molecule
 - Add organisation section organism
 - Add organisation-list molecule
-- Add list-abbreviation style
+- Add `list-abbreviation` style
 - Add circle image in image shape atom
 - Add people block molecule
 - Add avatar image atom
@@ -33,7 +33,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add related news organism
 - Add news page
 - Add page title with image organism and `.vd-page-title--image` styles
-- Add breadcrumb molecule
 - Add pagination molecule
 - Add social organims
 - Add contact organism
@@ -45,50 +44,50 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- Renamed the class vd-visually-hidden in vd-u-visually-hidden
-- Renamed the class vd-hidden in vd-u-hidden
-- Renamed the class vd-text-center in vd-u-text-center
-- Renamed the class vd-zeta in vd-u-h6
-- Renamed the class vd-epsilon in vd-u-h5
-- Renamed the class vd-delta in vd-u-h4
-- Renamed the class vd-gamma in vd-u-h3
-- Renamed the class vd-beta in vd-u-h2
-- Renamed the class vd-alpha in vd-u-h1
-- Renamed the class vd-font-heading in vd-u-font-heading
-- Renamed the class vd-color in vd-u-color
-- Renamed the class vd-clearfix in vd-u-clearfix
+- Renamed the class `vd-visually-hidden` in `vd-u-visually-hidden`
+- Renamed the class `vd-hidden` in `vd-u-hidden`
+- Renamed the class `vd-text-center` in `vd-u-text-center`
+- Renamed the class `vd-zeta` in `vd-u-h6`
+- Renamed the class `vd-epsilon` in `vd-u-h5`
+- Renamed the class `vd-delta` in `vd-u-h4`
+- Renamed the class `vd-gamma` in `vd-u-h3`
+- Renamed the class `vd-beta` in `vd-u-h2`
+- Renamed the class `vd-alpha` in `vd-u-h1`
+- Renamed the class `vd-font-heading` in `vd-u-font-heading`
+- Renamed the class `vd-color` in `vd-u-color`
+- Renamed the class `vd-clearfix` in `vd-u-clearfix`
 - Renamed trumps css files utilities
-- Renamed the class vd-wrapper in vd-o-wrapper
+- Renamed the class `vd-wrapper` in `vd-o-wrapper`
 - Use BEMIT naming convention for responsive suffixes: `.vd-<Block>--<Modifier>@<breakpoint>` instead of `.vd-<Block>--<breakpoint>--<Modifier>`
-- Renamed the class vd-strong in vd-c-strong
-- Renamed the class vd-small in vd-c-small
-- Renamed the class vd-blockquote in vd-c-blockquote
-- Renamed the class vd-page-title in vd-c-page-title
-- Renamed the class vd-navbar in vd-c-navbar
-- Renamed the class vd-list-abbreviations in vd-c-list-abbreviations
-- Renamed the class vd-fraction in vd-c-fraction
-- Renamed the class vd-footnote in vd-c-footnote
-- Renamed the class vd-small-caps in vd-c-small-caps
-- Renamed the class vd-image-circle in vd-c-image-circle
-- Renamed the class vd-header in vd-c-header
-- Renamed the class vd-button in vd-c-button
-- Renamed the class vd-breadcrumb in vd-c-breadcrumb
-- Renamed the class vd-background in vd-c-background
-- Renamed the class vd-table in vd-o-table
-- Renamed the class vd-list-inline in vd-o-list-inline
-- Renamed the class vd-list-bare in vd-o-list-bare
-- Renamed the class vd-layout in vd-o-layout
-- Renamed the class vd-box--* in vd-c-box--*
-- Renamed the class vd-box in vd-o-box
-- Add vd-list-inline__item class for vd-list-inline item
-- Rename class vd-container in vd-wrapper
-- Refactor .vd-button styles with mixins
-- Rename global.navigation-* materials in global.header-*
+- Renamed the class `vd-strong` in `vd-c-strong`
+- Renamed the class `vd-small` in `vd-c-small`
+- Renamed the class `vd-blockquote` in `vd-c-blockquote`
+- Renamed the class `vd-page-title` in `vd-c-page-title`
+- Renamed the class `vd-navbar` in `vd-c-navbar`
+- Renamed the class `vd-list-abbreviations` in `vd-c-list-abbreviations`
+- Renamed the class `vd-fraction` in `vd-c-fraction`
+- Renamed the class `vd-footnote` in `vd-c-footnote`
+- Renamed the class `vd-small-caps` in `vd-c-small-caps`
+- Renamed the class `vd-image-circle` in `vd-c-image-circle`
+- Renamed the class `vd-header` in `vd-c-header`
+- Renamed the class `vd-button` in `vd-c-button`
+- Renamed the class `vd-breadcrumb` in `vd-c-breadcrumb`
+- Renamed the class `vd-background` in `vd-c-background`
+- Renamed the class `vd-table` in `vd-o-table`
+- Renamed the class `vd-list-inline` in `vd-o-list-inline`
+- Renamed the class `vd-list-bare` in `vd-o-list-bare`
+- Renamed the class `vd-layout` in `vd-o-layout`
+- Renamed the class `vd-box--*` in `vd-c-box--*`
+- Renamed the class `vd-box` in `vd-o-box`
+- Add `vd-list-inline__item` class for `vd-list-inline item`
+- Rename class `vd-container` in `vd-wrapper`
+- Refactor `.vd-button` styles with mixins
+- Rename `global.navigation-*` materials in `global.header-*`
 - Positionning the logo and site-title in the navbar
 - Use flexbox to style the navbar
-- Refactor how .vd-container is used in materials
+- Refactor how `.vd-container` is used in materials
 - Media block columns are set to 1/3 - 2/3
-- Remove vd-container class on last-news organism
+- Remove `vd-container` class on last-news organism
 - Rename box default molecule
 - Page title organism is in a `<header>`
 - Refactor event-block HTML
@@ -106,8 +105,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
-- Remove vd-list-block class
-- Remove auto styling for vd-list-inline childrens
+- Remove `vd-list-block` class
+- Remove auto styling for `vd-list-inline` childrens
 - Remove box lit organism
 - Remove alert molecule
 - Remove 12 columns based grid
