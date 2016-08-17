@@ -1,0 +1,14 @@
+/* ------------------------------------ *\
+    #STRONG
+\* ------------------------------------ */
+
+/**
+ * Strong text
+ */
+.c-strong {
+    font-weight: bold;
+}
+
+.wf-active .c-strong {
+    font-weight: var(--enhance-global-font-weight-bold);
+}

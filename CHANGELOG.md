@@ -43,6 +43,28 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed the class vd-strong in vd-c-strong
+- Renamed the class vd-small in vd-c-small
+- Renamed the class vd-blockquote in vd-c-blockquote
+- Renamed the class vd-page-title in vd-c-page-title
+- Renamed the class vd-navbar in vd-c-navbar
+- Renamed the class vd-list-abbreviations in vd-c-list-abbreviations
+- Renamed the class vd-fraction in vd-c-fraction
+- Renamed the class vd-footnote in vd-c-footnote
+- Renamed the class vd-small-caps in vd-c-small-caps
+- Renamed the class vd-image-circle in vd-c-image-circle
+- Renamed the class vd-header in vd-c-header
+- Renamed the class vd-button in vd-c-button
+- Renamed the class vd-breadcrumb in vd-c-breadcrumb
+- Renamed the class vd-background in vd-c-background
+- Renamed the class vd-table in vd-o-table
+- Renamed the class vd-list-inline in vd-o-list-inline
+- Renamed the class vd-list-bare in vd-o-list-bare
+- Renamed the class vd-layout in vd-o-layout
+- Renamed the class vd-box--* in vd-c-box--*
+- Renamed the class vd-box in vd-o-box
+- Add vd-list-inline__item class for vd-list-inline item
+- Rename class vd-container in vd-wrapper
 - Refactor .vd-button styles with mixins
 - Rename global.navigation-* materials in global.header-*
 - Positionning the logo and site-title in the navbar
@@ -67,6 +89,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Remove vd-list-block class
+- Remove auto styling for vd-list-inline childrens
 - Remove box lit organism
 - Remove alert molecule
 - Remove 12 columns based grid

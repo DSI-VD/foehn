@@ -1,0 +1,33 @@
+/* ------------------------------------ *\
+    #ABBREVIATION
+\* ------------------------------------ */
+
+/**
+ * Better `<abbr>`
+ *
+ * 1. Make `<abbr>` more readable.
+ *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ * 2. Display title attribute value if the device's primary input does not
+ *    have hover
+ */
+
+:root{
+    --abbr-font-size: var(--global-small-font-size);
+}
+
+abbr {
+    @mixin font-small-caps; /* [1] */
+}
+
+@media (hover: none) {
+
+    abbr::after {
+        font-size: var(--abbr-font-size); /* [2] */
+
+        /* stylelint-disable function-whitespace-after */
+        content: " ("attr(title)")"; /* [2] */
+
+        /* stylelint-enable function-whitespace-after */
+    }
+
+}

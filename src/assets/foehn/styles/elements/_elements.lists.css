@@ -1,0 +1,14 @@
+/* ------------------------------------ *\
+    #LISTS
+\* ------------------------------------ */
+
+/**
+ * Remove extra vertical spacing when nesting lists.
+ *
+ * 1. Without it, if there's buttons in the list, they would be collapsed.
+ */
+
+li {
+    @mixin font-bodytext;
+    margin-bottom: var(--global-spacing-unit--tiny); /* [1] */
+}
