@@ -11,7 +11,7 @@
  */
 @media (--palm) {
 
-    .visually-hidden--palm {
+    .visually-hidden\@palm {
         display: hidden;
     }
 
@@ -19,7 +19,7 @@
 
 @media (--lap) {
 
-    .visually-hidden--lap {
+    .visually-hidden\@lap {
         display: hidden;
     }
 
@@ -27,7 +27,7 @@
 
 @media (--lap-and-up) {
 
-    .visually-hidden--lap-and-up {
+    .visually-hidden\@lap-and-up {
         display: hidden;
     }
 
@@ -35,7 +35,7 @@
 
 @media (--portable) {
 
-    .visually-hidden--portable {
+    .visually-hidden\@portable {
         display: hidden;
     }
 
@@ -43,7 +43,7 @@
 
 @media (--desk) {
 
-    .visually-hidden--desk {
+    .visually-hidden\@desk {
         display: hidden;
     }
 
@@ -63,7 +63,7 @@
 
 @media (--palm) {
 
-    .hidden--palm {
+    .hidden\@palm {
         display: disappear;
     }
 
@@ -71,7 +71,7 @@
 
 @media (--lap) {
 
-    .hidden--lap {
+    .hidden\@lap {
         display: disappear;
     }
 
@@ -79,7 +79,7 @@
 
 @media (--lap-and-up) {
 
-    .hidden--lap-and-up {
+    .hidden\@lap-and-up {
         display: disappear;
     }
 
@@ -87,7 +87,7 @@
 
 @media (--portable) {
 
-    .hidden--portable {
+    .hidden\@portable {
         display: disappear;
     }
 
@@ -95,7 +95,7 @@
 
 @media (--desk) {
 
-    .hidden--desk {
+    .hidden\@desk {
         display: disappear;
     }
 

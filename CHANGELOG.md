@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Use BEMIT naming convention for responsive suffixes: `.vd-<Block>--<Modifier>@<breakpoint>` instead of `.vd-<Block>--<breakpoint>--<Modifier>`
 - Renamed the class vd-strong in vd-c-strong
 - Renamed the class vd-small in vd-c-small
 - Renamed the class vd-blockquote in vd-c-blockquote
