@@ -57,7 +57,7 @@
  * Images ..............Images shapes.
  * List-abbreviations...List with displayed abbreviation title.
  *
- * TRUMPS
+ * UTILITIES
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
  * Colors...............Text colors.
@@ -171,15 +171,15 @@
 
 
 /**
- * TRUMPS
+ * UTILITIES
  */
 
-@import "trumps/_trumps.clearfix.css";
-@import "trumps/_trumps.headings.css";
-@import "trumps/_trumps.colors.css";
-@import "trumps/_trumps.fonts.css";
-@import "trumps/_trumps.text-utilities.css";
-@import "trumps/_trumps.utilities.css";
-@import "trumps/_trumps.utilities-responsive.css";
-@import "trumps/_trumps.spacing.css";
-@import "trumps/_trumps.layout.css";
+@import "utilities/_utilities.clearfix.css";
+@import "utilities/_utilities.headings.css";
+@import "utilities/_utilities.colors.css";
+@import "utilities/_utilities.fonts.css";
+@import "utilities/_utilities.text-utilities.css";
+@import "utilities/_utilities.utilities.css";
+@import "utilities/_utilities.utilities-responsive.css";
+@import "utilities/_utilities.spacing.css";
+@import "utilities/_utilities.layout.css";

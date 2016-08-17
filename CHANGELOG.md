@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Renamed trumps css files utilities
 - Renamed the class vd-wrapper in vd-o-wrapper
 - Use BEMIT naming convention for responsive suffixes: `.vd-<Block>--<Modifier>@<breakpoint>` instead of `.vd-<Block>--<breakpoint>--<Modifier>`
 - Renamed the class vd-strong in vd-c-strong
