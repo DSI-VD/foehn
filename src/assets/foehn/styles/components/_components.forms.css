@@ -5,6 +5,10 @@
 :root {
     --form-spacing: var(--global-spacing-unit);
     --form-active-color: var(--color-primary-alt);
+    --form-text-color: var(--color-base);
+    --form-background-color: var(--color-gray-light);
+    --form-page-background-color: var(--color-white);
+    --form-border-color: var(--color-gray-lighter)
 }
 
 /*
@@ -26,15 +30,15 @@
 .c-form-control {
     position: relative;
     display: inline-block;
+    color: var(--form-text-color);
     padding-left: var(--form-spacing);
-    color: #555;
     cursor: pointer;
 }
 
 .c-form-control input {
     position: absolute;
-    opacity: 0;
     z-index: -1; /* Put the input behind the label so it doesn't overlay text */
+    opacity: 0;
 }
 
 .c-form-control__indicator {
@@ -42,45 +46,45 @@
     top: .25rem;
     left: 0;
     display: block;
-    width:    1rem;
+    width: 1rem;
     height: 1rem;
-    line-height: 1rem;
     font-size: 65%;
-    color: #eee;
+    line-height: 1rem;
+    color: var(--form-background-color);
     text-align: center;
-    background-color: #eee;
+    background-color: var(--form-background-color);
     background-size: 50% 50%;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-user-select: none;
-         -moz-user-select: none;
-            -ms-user-select: none;
-                    user-select: none;
+    user-select: none;
 }
 
 /* Hover state */
+
 /* Uncomment if you need it, but be aware of the sticky iOS states.
 .c-form-control:hover .c-form-control__indicator {
-    color: #fff;
+    color: var(--form-page-background-color);
     background-color: #ccc;
 }
 */
 
 /* Focus */
 .c-form-control input:focus ~ .c-form-control__indicator {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem var(--form-active-color);
+    box-shadow:
+        0 0 0 .075rem var(--form-page-background-color),
+        0 0 0 .2rem var(--form-active-color);
 }
 
 /* Checked state */
 .c-form-control input:checked ~ .c-form-control__indicator {
-    color: #fff;
+    color: var(--form-page-background-color);
     background-color: var(--form-active-color);
 }
 
 /* Active */
 .c-form-control input:active ~ .c-form-control__indicator {
-    color: #fff;
-    background-color: #84c6ff;
+    color: var(--form-page-background-color);
+    background-color: var(--form-active-color);
 }
 
 /* Checkbox modifiers */
@@ -119,62 +123,65 @@
 .c-select {
     position: relative;
     display: inline-block;
-    color: #555;
+    color: var(--form-text-color);
 }
 
 .c-select select {
     display: inline-block;
     width: 100%;
-    margin: 0;
-    padding: .5rem 2.25rem .5rem 1rem;
     line-height: 1.5;
-    color: #555;
-    background-color: #eee;
+    color: var(--form-text-color);
+    background-color: var(--form-background-color);
     border: 0;
     border-radius: .25rem;
+    margin: 0;
+    padding: .5rem 2.25rem .5rem 1rem;
     cursor: pointer;
     outline: 0;
-    -webkit-appearance: none;
-         -moz-appearance: none;
-                    appearance: none;
+    appearance: none;
 }
+
 /* Undo the Firefox inner focus ring */
 .c-select select:focus:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #000;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 }
+
 /* Dropdown arrow */
-.c-select:after {
+.c-select::after {
     position: absolute;
     top: 50%;
     right: 1.25rem;
     display: inline-block;
-    content: "";
     width: 0;
     height: 0;
-    margin-top: -.15rem;
-    pointer-events: none;
     border-top: .35rem solid;
     border-right: .35rem solid transparent;
     border-bottom: .35rem solid transparent;
     border-left: .35rem solid transparent;
+    margin-top: -.15rem;
+    content: "";
+    pointer-events: none;
 }
 
 /* Hover state */
+
 /* Uncomment if you need it, but be aware of the sticky iOS states.
 .c-select select:hover {
-    background-color: #ddd;
+    background-color: var(--form-border-color);
 }
 */
 
 /* Focus */
 .c-select select:focus {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem var(--form-active-color);
+    box-shadow:
+        0 0 0 .075rem var(--form-page-background-color),
+        0 0 0 .2rem var(--form-active-color);
 }
 
 /* Active/open */
 .c-select select:active {
-    color: #fff;
+    color: var(--form-page-background-color);
     background-color: var(--form-active-color);
 }
 
@@ -184,48 +191,50 @@
 }
 
 /* Media query to target Firefox only */
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
+
     /* Firefox hack to hide the arrow */
     .c-select select {
-        text-indent: 0.01px;
-        text-overflow: '';
+        text-indent: .01px;
+        text-overflow: "";
         padding-right: 1rem;
     }
 
     /* <option> elements inherit styles from <select>, so reset them. */
     .c-select option {
-        background-color: #fff;
+        background-color: var(--form-page-background-color);
     }
 }
 
 /* IE9 hack to hide the arrow */
-@media screen and (min-width:0\0) {
+@media screen and (min-width: 0\0) {
+
     .c-select select {
         z-index: 1;
         padding: .5rem var(--form-spacing) .5rem 1rem;
     }
 
-    .c-select:after {
+    .c-select::after {
         z-index: 5;
     }
 
-    .c-select:before {
+    .c-select::before {
         position: absolute;
         top: 0;
         right: 1rem;
         bottom: 0;
         z-index: 2;
-        content: "";
         display: block;
         width: var(--form-spacing);
-        background-color: #eee;
+        background-color: var(--form-background-color);
+        content: "";
     }
 
     .c-select select:hover,
     .c-select select:focus,
     .c-select select:active {
-        color: #555;
-        background-color: #eee;
+        color: var(--form-text-color);
+        background-color: var(--form-background-color);
     }
 }
 
@@ -238,8 +247,8 @@
 .file {
     position: relative;
     display: inline-block;
-    cursor: pointer;
     height: 2.5rem;
+    cursor: pointer;
 }
 
 .file input {
@@ -256,87 +265,90 @@
     left: 0;
     z-index: 5;
     height: 2.5rem;
-    padding: .5rem 1rem;
     line-height: 1.5;
-    color: #555;
-    background-color: #fff;
-    border: .075rem solid #ddd;
+    color: var(--form-text-color);
+    background-color: var(--form-page-background-color);
+    border: .075rem solid var(--form-border-color);
     border-radius: .25rem;
-    box-shadow: inset 0 .2rem .4rem rgba(0,0,0,.05);
-    -webkit-user-select: none;
-         -moz-user-select: none;
-            -ms-user-select: none;
-                    user-select: none;
+    padding: .5rem 1rem;
+    box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
+    user-select: none;
 }
 
-.file--custom:after {
+.file--custom::after {
     content: "Choose file...";
 }
 
-.file--custom:before {
+.file--custom::before {
     position: absolute;
     top: -.075rem;
     right: -.075rem;
     bottom: -.075rem;
     z-index: 6;
     display: block;
-    content: "Browse";
     height: 2.5rem;
-    padding: .5rem 1rem;
     line-height: 1.5;
-    color: #555;
-    background-color: #eee;
-    border: .075rem solid #ddd;
+    color: var(--form-text-color);
+    background-color: var(--form-background-color);
+    border: .075rem solid var(--form-border-color);
     border-radius: 0 .25rem .25rem 0;
+    padding: .5rem 1rem;
+    content: "Browse";
 }
 
 /* Focus */
 .file input:focus ~ .file--custom {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem var(--form-active-color);
+    box-shadow:
+        0 0 0 .075rem var(--form-page-background-color),
+        0 0 0 .2rem var(--form-active-color);
 }
 
 
 
 /*
  * Progress
+ *
+ * 1. IE10 uses `color` to set the bar background-color
+ * 2. Remove Firefox and Opera border
+ * 3. Reset the default appearance
  */
 
 .c-progress {
     display: inline-block;
     height: 1rem;
-}
 
-.c-progress[value] {
-    /* Reset the default appearance */
-    -webkit-appearance: none;
-         -moz-appearance: none;
-                    appearance: none;
-    /* Remove Firefox and Opera border */
-    border: 0;
-    /* IE10 uses `color` to set the bar background-color */
-    color: var(--form-active-color);
-}
 
-.c-progress[value]::-webkit-progress-bar {
-    background-color: #eee;
-    border-radius: .2rem;
-}
+    &[value] {
+        color: var(--form-active-color); /* [1] */
+        border: 0; /* [2] */
+        appearance: none; /* [3] */
 
-.c-progress[value]::-webkit-progress-value {
-    background-color: var(--form-active-color);
-    border-top-left-radius: .2rem;
-    border-bottom-left-radius: .2rem;
-}
 
-.c-progress[value="100"]::-webkit-progress-value {
-    border-top-right-radius: .2rem;
-    border-bottom-right-radius: .2rem;
+        &::-webkit-progress-bar {
+            background-color: var(--form-background-color);
+            border-radius: .2rem;
+        }
+
+        &::-webkit-progress-value {
+            background-color: var(--form-active-color);
+            border-top-left-radius: .2rem;
+            border-bottom-left-radius: .2rem;
+        }
+
+    }
+
+    &[value="100"]::-webkit-progress-value {
+        border-top-right-radius: .2rem;
+        border-bottom-right-radius: .2rem;
+    }
+
 }
 
 /* Firefox styles must be entirely separate or it busts Webkit styles. */
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
+
     .c-progress[value] {
-        background-color: #eee;
+        background-color: var(--form-background-color);
         border-radius: .2rem;
     }
 
@@ -353,10 +365,10 @@
 }
 
 /* IE9 hacks to accompany custom markup. We don't need to scope this via media queries, but I feel better doing it anyway. */
-@media screen and (min-width:0\0) {
+@media screen and (min-width: 0\0) {
 
     .c-progress {
-        background-color: #eee;
+        background-color: var(--form-background-color);
         border-radius: .2rem;
     }
 

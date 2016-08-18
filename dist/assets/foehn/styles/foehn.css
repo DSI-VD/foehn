@@ -2816,16 +2816,17 @@ hr {
 .vd-c-form-control {
     position: relative;
     display: inline-block;
-    padding-left: 24px;
-    padding-left: 1.5rem;
-    color: #555;
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
+    padding-left: 27px;
+    padding-left: 1.6875rem;
     cursor: pointer;
 }
 
 .vd-c-form-control input {
     position: absolute;
-    opacity: 0;
     z-index: -1; /* Put the input behind the label so it doesn't overlay text */
+    opacity: 0;
 }
 
 .vd-c-form-control__indicator {
@@ -2838,9 +2839,9 @@ hr {
     width: 1rem;
     height: 16px;
     height: 1rem;
+    font-size: 65%;
     line-height: 16px;
     line-height: 1rem;
-    font-size: 65%;
     color: #eee;
     text-align: center;
     background-color: #eee;
@@ -2865,14 +2866,15 @@ hr {
 /* Focus */
 
 .vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem rgba(62, 159, 240, 1);
 }
 
 /* Checked state */
 
 .vd-c-form-control input:checked ~ .vd-c-form-control__indicator {
     color: #fff;
-    background-color: #0074d9;
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1);
 }
 
 /* Active */
@@ -2919,20 +2921,22 @@ hr {
 .vd-c-select {
     position: relative;
     display: inline-block;
-    color: #555;
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
 }
 
 .vd-c-select select {
     display: inline-block;
     width: 100%;
-    margin: 0;
-    padding: 8px 36px 8px 16px;
-    padding: .5rem 2.25rem .5rem 1rem;
     line-height: 1.5;
-    color: #555;
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
     background-color: #eee;
     border: 0;
     border-radius: .25rem;
+    margin: 0;
+    padding: 8px 36px 8px 16px;
+    padding: .5rem 2.25rem .5rem 1rem;
     cursor: pointer;
     outline: 0;
     -webkit-appearance: none;
@@ -2949,18 +2953,14 @@ hr {
 
 /* Dropdown arrow */
 
-.vd-c-select:after {
+.vd-c-select::after {
     position: absolute;
     top: 50%;
     right: 20px;
     right: 1.25rem;
     display: inline-block;
-    content: "";
     width: 0;
     height: 0;
-    margin-top: -2.4px;
-    margin-top: -.15rem;
-    pointer-events: none;
     border-top: 5.6px solid;
     border-top: .35rem solid;
     border-right: 5.6px solid transparent;
@@ -2969,6 +2969,10 @@ hr {
     border-bottom: .35rem solid transparent;
     border-left: 5.6px solid transparent;
     border-left: .35rem solid transparent;
+    margin-top: -2.4px;
+    margin-top: -.15rem;
+    content: "";
+    pointer-events: none;
 }
 
 /* Hover state */
@@ -2982,14 +2986,15 @@ hr {
 /* Focus */
 
 .vd-c-select select:focus {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem rgba(62, 159, 240, 1);
 }
 
 /* Active/open */
 
 .vd-c-select select:active {
     color: #fff;
-    background-color: #0074d9;
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1);
 }
 
 /* Hide the arrow in IE10 and up */
@@ -3000,12 +3005,12 @@ hr {
 
 /* Media query to target Firefox only */
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
     /* Firefox hack to hide the arrow */
 
     .vd-c-select select {
-        text-indent: 0.01px;
-        text-overflow: '';
+        text-indent: .01px;
+        text-overflow: "";
         padding-right: 1rem;
     }/* <option> elements inherit styles from <select>, so reset them. */
 
@@ -3016,31 +3021,32 @@ hr {
 
 /* IE9 hack to hide the arrow */
 
-@media screen and (min-width:0\0) {
+@media screen and (min-width: 0\0) {
     .vd-c-select select {
         z-index: 1;
-        padding: .5rem 1.5rem .5rem 1rem;
+        padding: .5rem 1.6875rem .5rem 1rem;
     }
 
-    .vd-c-select:after {
+    .vd-c-select::after {
         z-index: 5;
     }
 
-    .vd-c-select:before {
+    .vd-c-select::before {
         position: absolute;
         top: 0;
         right: 1rem;
         bottom: 0;
         z-index: 2;
-        content: "";
         display: block;
-        width: 1.5rem;
+        width: 1.6875rem;
         background-color: #eee;
+        content: "";
     }
 
     .vd-c-select select:hover, .vd-c-select select:focus,
     .vd-c-select select:active {
-        color: #555;
+        color: #000000;
+        color: rgba(0, 0, 0, .8);
         background-color: #eee;
     }
 }
@@ -3052,9 +3058,9 @@ hr {
 .vd-file {
     position: relative;
     display: inline-block;
-    cursor: pointer;
     height: 40px;
     height: 2.5rem;
+    cursor: pointer;
 }
 
 .vd-file input {
@@ -3073,14 +3079,15 @@ hr {
     z-index: 5;
     height: 40px;
     height: 2.5rem;
-    padding: 8px 16px;
-    padding: .5rem 1rem;
     line-height: 1.5;
-    color: #555;
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
     background-color: #fff;
     border: 1.2px solid #ddd;
     border: .075rem solid #ddd;
     border-radius: .25rem;
+    padding: 8px 16px;
+    padding: .5rem 1rem;
     box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -3088,11 +3095,11 @@ hr {
             user-select: none;
 }
 
-.vd-file--custom:after {
+.vd-file--custom::after {
     content: "Choose file...";
 }
 
-.vd-file--custom:before {
+.vd-file--custom::before {
     position: absolute;
     top: -1.2px;
     top: -.075rem;
@@ -3102,27 +3109,32 @@ hr {
     bottom: -.075rem;
     z-index: 6;
     display: block;
-    content: "Browse";
     height: 40px;
     height: 2.5rem;
-    padding: 8px 16px;
-    padding: .5rem 1rem;
     line-height: 1.5;
-    color: #555;
+    color: #000000;
+    color: rgba(0, 0, 0, .8);
     background-color: #eee;
     border: 1.2px solid #ddd;
     border: .075rem solid #ddd;
     border-radius: 0 .25rem .25rem 0;
+    padding: 8px 16px;
+    padding: .5rem 1rem;
+    content: "Browse";
 }
 
 /* Focus */
 
 .vd-file input:focus ~ .vd-file--custom {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem rgba(62, 159, 240, 1);
 }
 
 /*
  * Progress
+ *
+ * 1. IE10 uses `color` to set the bar background-color
+ * 2. Remove Firefox and Opera border
+ * 3. Reset the default appearance
  */
 
 .vd-c-progress {
@@ -3132,14 +3144,12 @@ hr {
 }
 
 .vd-c-progress[value] {
-    /* Reset the default appearance */
+    color: #3e9ff0;
+    color: rgba(62, 159, 240, 1); /* [1] */
+    border: 0; /* [2] */
     -webkit-appearance: none;
        -moz-appearance: none;
-            appearance: none;
-    /* Remove Firefox and Opera border */
-    border: 0;
-    /* IE10 uses `color` to set the bar background-color */
-    color: #0074d9;
+            appearance: none; /* [3] */
 }
 
 .vd-c-progress[value]::-webkit-progress-bar {
@@ -3148,7 +3158,8 @@ hr {
 }
 
 .vd-c-progress[value]::-webkit-progress-value {
-    background-color: #0074d9;
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1);
     border-top-left-radius: 3.2px;
     border-top-left-radius: .2rem;
     border-bottom-left-radius: 3.2px;
@@ -3164,14 +3175,15 @@ hr {
 
 /* Firefox styles must be entirely separate or it busts Webkit styles. */
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
     .vd-c-progress[value] {
         background-color: #eee;
         border-radius: .2rem;
     }
 
     .vd-c-progress[value]::-moz-progress-bar {
-        background-color: #0074d9;
+        background-color: #3e9ff0;
+        background-color: rgba(62, 159, 240, 1);
         border-top-left-radius: .2rem;
         border-bottom-left-radius: .2rem;
     }
@@ -3184,7 +3196,7 @@ hr {
 
 /* IE9 hacks to accompany custom markup. We don't need to scope this via media queries, but I feel better doing it anyway. */
 
-@media screen and (min-width:0\0) {
+@media screen and (min-width: 0\0) {
     .vd-c-progress {
         background-color: #eee;
         border-radius: .2rem;
@@ -3194,7 +3206,8 @@ hr {
         display: inline-block;
         height: 1rem;
         text-indent: -999rem; /* Simulate hiding of value as in native `<progress>` */
-        background-color: #0074d9;
+        background-color: #3e9ff0;
+        background-color: rgba(62, 159, 240, 1);
         border-top-left-radius: .2rem;
         border-bottom-left-radius: .2rem;
     }
