@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Add clearfix in `.o-wrapper`
+
 ## [0.7.0]
 
 ### Added
