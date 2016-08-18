@@ -2842,9 +2842,11 @@ hr {
     font-size: 65%;
     line-height: 16px;
     line-height: 1rem;
-    color: #eee;
+    color: #d6d7d9;
+    color: rgba(214, 215, 217, 1);
     text-align: center;
-    background-color: #eee;
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
     background-size: 50% 50%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2858,7 +2860,7 @@ hr {
 
 /* Uncomment if you need it, but be aware of the sticky iOS states.
 .c-form-control:hover .c-form-control__indicator {
-    color: #fff;
+    color: var(--form-page-background-color);
     background-color: #ccc;
 }
 */
@@ -2866,13 +2868,14 @@ hr {
 /* Focus */
 
 .vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem rgba(62, 159, 240, 1);
+    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1);
 }
 
 /* Checked state */
 
 .vd-c-form-control input:checked ~ .vd-c-form-control__indicator {
-    color: #fff;
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
     background-color: #3e9ff0;
     background-color: rgba(62, 159, 240, 1);
 }
@@ -2880,8 +2883,10 @@ hr {
 /* Active */
 
 .vd-c-form-control input:active ~ .vd-c-form-control__indicator {
-    color: #fff;
-    background-color: #84c6ff;
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1);
 }
 
 /* Checkbox modifiers */
@@ -2891,7 +2896,9 @@ hr {
 }
 
 .vd-c-checkbox input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
+    /* stylelint-enable function-url-quotes */
 }
 
 /* Radio modifiers */
@@ -2901,17 +2908,23 @@ hr {
 }
 
 .vd-c-radio input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
+    /* stylelint-enable function-url-quotes */
 }
 
 /* Alternately, use another character */
 
 .vd-c-form-control-x input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjQsMEwwLDEuNGwwLjcsMC43bDEuOCwxLjhMMC43LDUuN0wwLDYuNGwxLjQsMS40bDAuNy0wLjdsMS44LTEuOGwxLjgsMS44bDAuNywwLjdsMS40LTEuNEw3LjEsNS43DQoJTDUuMywzLjlsMS44LTEuOGwwLjctMC43TDYuNCwwTDUuNywwLjdMMy45LDIuNUwyLjEsMC43QzIuMSwwLjcsMS40LDAsMS40LDB6Ii8+DQo8L3N2Zz4NCg==);
+    /* stylelint-enable function-url-quotes */
 }
 
 .vd-c-form-control-dash input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDN2Mmg4VjNIMHoiLz4NCjwvc3ZnPg0K);
+    /* stylelint-enable function-url-quotes */
 }
 
 /*
@@ -2931,7 +2944,8 @@ hr {
     line-height: 1.5;
     color: #000000;
     color: rgba(0, 0, 0, .8);
-    background-color: #eee;
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
     border: 0;
     border-radius: .25rem;
     margin: 0;
@@ -2948,7 +2962,7 @@ hr {
 
 .vd-c-select select:focus:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #000;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 }
 
 /* Dropdown arrow */
@@ -2979,20 +2993,21 @@ hr {
 
 /* Uncomment if you need it, but be aware of the sticky iOS states.
 .c-select select:hover {
-    background-color: #ddd;
+    background-color: var(--form-border-color);
 }
 */
 
 /* Focus */
 
 .vd-c-select select:focus {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem rgba(62, 159, 240, 1);
+    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1);
 }
 
 /* Active/open */
 
 .vd-c-select select:active {
-    color: #fff;
+    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
     background-color: #3e9ff0;
     background-color: rgba(62, 159, 240, 1);
 }
@@ -3015,7 +3030,8 @@ hr {
     }/* <option> elements inherit styles from <select>, so reset them. */
 
     .vd-c-select option {
-        background-color: #fff;
+        background-color: #ffffff;
+        background-color: rgba(255, 255, 255, 1);
     }
 }
 
@@ -3039,7 +3055,8 @@ hr {
         z-index: 2;
         display: block;
         width: 1.6875rem;
-        background-color: #eee;
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
         content: "";
     }
 
@@ -3047,7 +3064,8 @@ hr {
     .vd-c-select select:active {
         color: #000000;
         color: rgba(0, 0, 0, .8);
-        background-color: #eee;
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
     }
 }
 
@@ -3082,9 +3100,11 @@ hr {
     line-height: 1.5;
     color: #000000;
     color: rgba(0, 0, 0, .8);
-    background-color: #fff;
-    border: 1.2px solid #ddd;
-    border: .075rem solid #ddd;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1.2px solid #aeb0b5;
+    border: 1.2px solid rgba(174, 176, 181, 1);
+    border: .075rem solid rgba(174, 176, 181, 1);
     border-radius: .25rem;
     padding: 8px 16px;
     padding: .5rem 1rem;
@@ -3114,9 +3134,11 @@ hr {
     line-height: 1.5;
     color: #000000;
     color: rgba(0, 0, 0, .8);
-    background-color: #eee;
-    border: 1.2px solid #ddd;
-    border: .075rem solid #ddd;
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
+    border: 1.2px solid #aeb0b5;
+    border: 1.2px solid rgba(174, 176, 181, 1);
+    border: .075rem solid rgba(174, 176, 181, 1);
     border-radius: 0 .25rem .25rem 0;
     padding: 8px 16px;
     padding: .5rem 1rem;
@@ -3126,7 +3148,7 @@ hr {
 /* Focus */
 
 .vd-file input:focus ~ .vd-file--custom {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem rgba(62, 159, 240, 1);
+    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1);
 }
 
 /*
@@ -3153,7 +3175,8 @@ hr {
 }
 
 .vd-c-progress[value]::-webkit-progress-bar {
-    background-color: #eee;
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
     border-radius: .2rem;
 }
 
@@ -3177,7 +3200,8 @@ hr {
 
 @-moz-document url-prefix("") {
     .vd-c-progress[value] {
-        background-color: #eee;
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
         border-radius: .2rem;
     }
 
@@ -3194,18 +3218,21 @@ hr {
     }
 }
 
-/* IE9 hacks to accompany custom markup. We don't need to scope this via media queries, but I feel better doing it anyway. */
+/* IE9 hacks to accompany custom markup. We don't need to scope this via media
+ queries, but I feel better doing it anyway. */
 
 @media screen and (min-width: 0\0) {
     .vd-c-progress {
-        background-color: #eee;
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
         border-radius: .2rem;
     }
 
     .vd-c-progress-bar {
         display: inline-block;
         height: 1rem;
-        text-indent: -999rem; /* Simulate hiding of value as in native `<progress>` */
+        text-indent: -999rem; /* Simulate hiding of value as in native
+        `<progress>` */
         background-color: #3e9ff0;
         background-color: rgba(62, 159, 240, 1);
         border-top-left-radius: .2rem;
