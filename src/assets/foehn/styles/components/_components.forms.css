@@ -29,11 +29,13 @@
     color: #555;
     cursor: pointer;
 }
+
 .c-form-control input {
     position: absolute;
     opacity: 0;
     z-index: -1; /* Put the input behind the label so it doesn't overlay text */
 }
+
 .c-form-control__indicator {
     position: absolute;
     top: .25rem;
@@ -84,6 +86,7 @@
 .c-checkbox .c-form-control__indicator {
     border-radius: .25rem;
 }
+
 .c-checkbox input:checked ~ .c-form-control__indicator {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
 }
@@ -92,6 +95,7 @@
 .c-radio .c-form-control__indicator {
     border-radius: 50%;
 }
+
 .c-radio input:checked ~ .c-form-control__indicator {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
 }
@@ -100,6 +104,7 @@
 .c-form-control-x input:checked ~ .c-form-control__indicator {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjQsMEwwLDEuNGwwLjcsMC43bDEuOCwxLjhMMC43LDUuN0wwLDYuNGwxLjQsMS40bDAuNy0wLjdsMS44LTEuOGwxLjgsMS44bDAuNywwLjdsMS40LTEuNEw3LjEsNS43DQoJTDUuMywzLjlsMS44LTEuOGwwLjctMC43TDYuNCwwTDUuNywwLjdMMy45LDIuNUwyLjEsMC43QzIuMSwwLjcsMS40LDAsMS40LDB6Ii8+DQo8L3N2Zz4NCg==);
 }
+
 .c-form-control-dash input:checked ~ .c-form-control__indicator {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDN2Mmg4VjNIMHoiLz4NCjwvc3ZnPg0K)
 }
@@ -115,6 +120,7 @@
     display: inline-block;
     color: #555;
 }
+
 .c-select select {
     display: inline-block;
     width: 100%;
@@ -197,9 +203,11 @@
         z-index: 1;
         padding: .5rem var(--form-spacing) .5rem 1rem;
     }
+
     .c-select:after {
         z-index: 5;
     }
+
     .c-select:before {
         position: absolute;
         top: 0;
@@ -211,6 +219,7 @@
         width: var(--form-spacing);
         background-color: #eee;
     }
+
     .c-select select:hover,
     .c-select select:focus,
     .c-select select:active {
@@ -231,12 +240,14 @@
     cursor: pointer;
     height: 2.5rem;
 }
+
 .file input {
     min-width: 14rem;
     margin: 0;
     filter: alpha(opacity=0);
     opacity: 0;
 }
+
 .file--custom {
     position: absolute;
     top: 0;
@@ -256,9 +267,11 @@
             -ms-user-select: none;
                     user-select: none;
 }
+
 .file--custom:after {
     content: "Choose file...";
 }
+
 .file--custom:before {
     position: absolute;
     top: -.075rem;
@@ -291,6 +304,7 @@
     display: inline-block;
     height: 1rem;
 }
+
 .c-progress[value] {
     /* Reset the default appearance */
     -webkit-appearance: none;
@@ -301,15 +315,18 @@
     /* IE10 uses `color` to set the bar background-color */
     color: #0074d9;
 }
+
 .c-progress[value]::-webkit-progress-bar {
     background-color: #eee;
     border-radius: .2rem;
 }
+
 .c-progress[value]::-webkit-progress-value {
     background-color: #0074d9;
     border-top-left-radius: .2rem;
     border-bottom-left-radius: .2rem;
 }
+
 .c-progress[value="100"]::-webkit-progress-value {
     border-top-right-radius: .2rem;
     border-bottom-right-radius: .2rem;
@@ -321,11 +338,13 @@
         background-color: #eee;
         border-radius: .2rem;
     }
+
     .c-progress[value]::-moz-progress-bar {
         background-color: #0074d9;
         border-top-left-radius: .2rem;
         border-bottom-left-radius: .2rem;
     }
+
     .c-progress[value="100"]::-moz-progress-bar {
         border-top-right-radius: .2rem;
         border-bottom-right-radius: .2rem;
@@ -334,10 +353,12 @@
 
 /* IE9 hacks to accompany custom markup. We don't need to scope this via media queries, but I feel better doing it anyway. */
 @media screen and (min-width:0\0) {
+
     .c-progress {
         background-color: #eee;
         border-radius: .2rem;
     }
+
     .c-progress-bar {
         display: inline-block;
         height: 1rem;
@@ -346,6 +367,7 @@
         border-top-left-radius: .2rem;
         border-bottom-left-radius: .2rem;
     }
+
     .c-progress[width="100%"] {
         border-top-right-radius: .2rem;
         border-bottom-right-radius: .2rem;
@@ -360,10 +382,12 @@
 .c-form-controls--stacked {
     margin: 1rem 0;
 }
+
 .c-form-controls--stacked .c-form-control,
 .c-form-controls--stacked .c-progress {
     display: block;
 }
+
 .c-form-controls--stacked .c-form-control + .c-form-control,
 .c-form-controls--stacked .c-progress + .c-progress {
     margin-top: .5rem;
@@ -372,10 +396,12 @@
 .c-form-controls--inline {
     margin: 1rem 0;
 }
+
 .c-form-controls--inline .c-form-control {
     display: inline-block;
     height: 1rem;
 }
+
 .c-form-controls--inline .c-form-control + .c-form-control {
     margin-left: 1rem;
 }
