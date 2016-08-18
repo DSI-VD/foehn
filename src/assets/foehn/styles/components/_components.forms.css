@@ -4,6 +4,7 @@
 
 :root {
     --form-spacing: var(--global-spacing-unit);
+    --form-active-color: var(--color-primary-alt);
 }
 
 /*
@@ -67,13 +68,13 @@
 
 /* Focus */
 .c-form-control input:focus ~ .c-form-control__indicator {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem var(--form-active-color);
 }
 
 /* Checked state */
 .c-form-control input:checked ~ .c-form-control__indicator {
     color: #fff;
-    background-color: #0074d9;
+    background-color: var(--form-active-color);
 }
 
 /* Active */
@@ -168,13 +169,13 @@
 
 /* Focus */
 .c-select select:focus {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem var(--form-active-color);
 }
 
 /* Active/open */
 .c-select select:active {
     color: #fff;
-    background-color: #0074d9;
+    background-color: var(--form-active-color);
 }
 
 /* Hide the arrow in IE10 and up */
@@ -291,7 +292,7 @@
 
 /* Focus */
 .file input:focus ~ .file--custom {
-    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem var(--form-active-color);
 }
 
 
@@ -313,7 +314,7 @@
     /* Remove Firefox and Opera border */
     border: 0;
     /* IE10 uses `color` to set the bar background-color */
-    color: #0074d9;
+    color: var(--form-active-color);
 }
 
 .c-progress[value]::-webkit-progress-bar {
@@ -322,7 +323,7 @@
 }
 
 .c-progress[value]::-webkit-progress-value {
-    background-color: #0074d9;
+    background-color: var(--form-active-color);
     border-top-left-radius: .2rem;
     border-bottom-left-radius: .2rem;
 }
@@ -340,7 +341,7 @@
     }
 
     .c-progress[value]::-moz-progress-bar {
-        background-color: #0074d9;
+        background-color: var(--form-active-color);
         border-top-left-radius: .2rem;
         border-bottom-left-radius: .2rem;
     }
@@ -363,7 +364,7 @@
         display: inline-block;
         height: 1rem;
         text-indent: -999rem; /* Simulate hiding of value as in native `<progress>` */
-        background-color: #0074d9;
+        background-color: var(--form-active-color);
         border-top-left-radius: .2rem;
         border-bottom-left-radius: .2rem;
     }
