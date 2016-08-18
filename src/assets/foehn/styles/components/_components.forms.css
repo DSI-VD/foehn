@@ -152,7 +152,7 @@
     border: 0;
     border-radius: var(--form-border-radius);
     margin: 0;
-    padding: .5rem 2var(--form-border-radius) .5rem 1rem;
+    padding: .5rem 2.25rem .5rem 1rem;
     cursor: pointer;
     outline: 0;
     appearance: none;
