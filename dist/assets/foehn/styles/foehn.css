@@ -1570,6 +1570,12 @@ hr {
     padding-left: 0.42188rem;
 }
 
+.vd-o-wrapper::after {
+    display: block !important;
+    clear: both !important;
+    content: "" !important;
+}
+
 @media screen and (min-width: 45em) {
     .vd-o-wrapper {
         padding-right: 1.6875rem;
