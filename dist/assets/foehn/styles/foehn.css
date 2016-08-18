@@ -22,7 +22,6 @@
  * Paragraph............P style.
  * Small................Small text.
  * Strong...............Strong text.
- * Forms................Forms, input and buttons.
  * Subs.................Subscript element style.
  * Lists................UL, OL & DL styles.
  * Anchors..............Links styles.
@@ -45,6 +44,7 @@
  *
  * COMPONENTS
  * Buttons..............Buttons.
+ * Forms................Forms, input and buttons.
  * Navbar...............Top bar.
  * Header...............Header components styles.
  * Inline texts.........Fraction, Small-caps, etc.
@@ -1000,266 +1000,6 @@ b, strong {
 
 .wf-active b, .wf-active strong {
     font-weight: 700;
-}
-
-/* ------------------------------------ *\
-    #FORMS
-\* ------------------------------------ */
-
-/**
- * Shared styles
- *
- * 1. Overrid browser style. Even if the `border-radius` is `0` it has to be
- *    to properly override the styles
- * 2. Define the min-height of forms.
- * 3. Placeholder
- * 4. Override content-box in Normalize
- * 5. Focus state
- */
-
-.vd-form input, .vd-form textarea, .vd-form select {
-    display: block;
-    width: 100%;
-    font-size: inherit;
-    background-color: #ffffff;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid #000000;
-    border: 1px solid rgba(0, 0, 0, .8);
-    border-radius: 0; /* [1] */
-    padding: 5.5px;
-    padding: 0.34375rem; /* [2] */
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none; /* [1] */
-}
-
-.vd-form input::-webkit-input-placeholder,
-.vd-form textarea::-webkit-input-placeholder,
-.vd-form select::-webkit-input-placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input::-moz-placeholder, .vd-form textarea::-moz-placeholder,
-.vd-form select::-moz-placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input:-ms-input-placeholder, .vd-form textarea:-ms-input-placeholder,
-.vd-form select:-ms-input-placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input::placeholder, .vd-form textarea::placeholder,
-.vd-form select::placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input[disabled], .vd-form input:disabled, .vd-form input[readonly],
-.vd-form textarea[disabled], .vd-form textarea:disabled,
-.vd-form textarea[readonly], .vd-form select[disabled], .vd-form select:disabled,
-.vd-form select[readonly] {
-    background-color: #aeb0b5;
-    background-color: rgba(174, 176, 181, 1);
-    cursor: not-allowed;
-}
-
-.vd-form input[disabled], .vd-form input[disabled]::-webkit-input-placeholder,
-.vd-form input:disabled, .vd-form input:disabled::-webkit-input-placeholder,
-.vd-form input[readonly], .vd-form input[readonly]::-webkit-input-placeholder,
-.vd-form textarea[disabled],
-.vd-form textarea[disabled]::-webkit-input-placeholder,
-.vd-form textarea:disabled,
-.vd-form textarea:disabled::-webkit-input-placeholder,
-.vd-form textarea[readonly],
-.vd-form textarea[readonly]::-webkit-input-placeholder,
-.vd-form select[disabled], .vd-form select[disabled]::-webkit-input-placeholder,
-.vd-form select:disabled, .vd-form select:disabled::-webkit-input-placeholder,
-.vd-form select[readonly], .vd-form select[readonly]::-webkit-input-placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input[disabled], .vd-form input[disabled]::-moz-placeholder,
-.vd-form input:disabled, .vd-form input:disabled::-moz-placeholder,
-.vd-form input[readonly], .vd-form input[readonly]::-moz-placeholder,
-.vd-form textarea[disabled], .vd-form textarea[disabled]::-moz-placeholder,
-.vd-form textarea:disabled, .vd-form textarea:disabled::-moz-placeholder,
-.vd-form textarea[readonly], .vd-form textarea[readonly]::-moz-placeholder,
-.vd-form select[disabled], .vd-form select[disabled]::-moz-placeholder,
-.vd-form select:disabled, .vd-form select:disabled::-moz-placeholder,
-.vd-form select[readonly], .vd-form select[readonly]::-moz-placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input[disabled], .vd-form input[disabled]:-ms-input-placeholder,
-.vd-form input:disabled, .vd-form input:disabled:-ms-input-placeholder,
-.vd-form input[readonly], .vd-form input[readonly]:-ms-input-placeholder,
-.vd-form textarea[disabled], .vd-form textarea[disabled]:-ms-input-placeholder,
-.vd-form textarea:disabled, .vd-form textarea:disabled:-ms-input-placeholder,
-.vd-form textarea[readonly], .vd-form textarea[readonly]:-ms-input-placeholder,
-.vd-form select[disabled], .vd-form select[disabled]:-ms-input-placeholder,
-.vd-form select:disabled, .vd-form select:disabled:-ms-input-placeholder,
-.vd-form select[readonly], .vd-form select[readonly]:-ms-input-placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input[disabled], .vd-form input[disabled]::placeholder,
-.vd-form input:disabled, .vd-form input:disabled::placeholder,
-.vd-form input[readonly], .vd-form input[readonly]::placeholder,
-.vd-form textarea[disabled], .vd-form textarea[disabled]::placeholder,
-.vd-form textarea:disabled, .vd-form textarea:disabled::placeholder,
-.vd-form textarea[readonly], .vd-form textarea[readonly]::placeholder,
-.vd-form select[disabled], .vd-form select[disabled]::placeholder,
-.vd-form select:disabled, .vd-form select:disabled::placeholder,
-.vd-form select[readonly], .vd-form select[readonly]::placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input:focus, .vd-form textarea:focus, .vd-form select:focus {
-    box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1); /* [5] */
-}
-
-.vd-form input {
-    width: 100%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-.vd-form input[type="search"] {
-    box-sizing: border-box; /* [4] */
-}
-
-/**
- * Checkbox and radio button
- *
- * Shared properties between checkboxes and radio buttons
- *
- * 1. Hide default checkbox and radio button
- */
-
-.vd-form input[type="checkbox"], .vd-form input[type="radio"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-}
-
-.vd-form input[type="checkbox"].vd-focusable:active,
-.vd-form input[type="checkbox"].vd-focusable:focus,
-.vd-form input[type="radio"].vd-focusable:active,
-.vd-form input[type="radio"].vd-focusable:focus {
-    display: table;
-    position: static;
-    clear: both;
-}
-
-/* [1] */
-
-.vd-form input[type="checkbox"] + label, .vd-form input[type="radio"] + label {
-    cursor: pointer;
-}
-
-.vd-form input[type="checkbox"] + label::before,
-.vd-form input[type="radio"] + label::before {
-    display: inline-block;
-    width: 16px;
-    width: 1rem;
-    height: 16px;
-    height: 1rem;
-    background: #ffffff;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 0.28125rem;
-    margin-right: 6.75px;
-    margin-right: 0.42188rem;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .8);
-    content: "\a0";
-    vertical-align: -1.6px;
-    vertical-align: -.1rem;
-}
-
-.vd-form input[type="checkbox"]:checked + label::before,
-.vd-form input[type="radio"]:checked + label::before {
-    background-color: #3e9ff0;
-    background-color: rgba(62, 159, 240, 1);
-    background-size: 0.79365rem;
-    box-shadow: 0 0 0 1px rgba(62, 159, 240, 1);
-}
-
-/**
- * Checkbox
- */
-
-.vd-form input[type="checkbox"] + label {
-}
-
-.vd-form input[type="checkbox"] + label::before {
-    background-image: url("../images/checkmark.svg");
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-/**
-     * Radio button
-     *
-     * 1. Make the button round.
-     * 2. Add a border around the button when checked.
-     */
-
-.vd-form input[type="radio"] + label::before {
-    border-radius: 100%; /* [1] */
-}
-
-.vd-form input[type="radio"]:checked + label::before {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 1), 0 0 0 4px rgba(62, 159, 240, 1); /* [2] */
-}
-
-/**
- * Select Menu
- *
- * 1. Arrow down icon
- */
-
-.vd-form select {
-    background-position: right 5.5px center;
-    background-position: right 0.34375rem center; /* [1] */
-    background-repeat: no-repeat; /* [1] */
-    background-image: url("../images/arrow_down.svg"); /* [1] */
-    background-size: 1rem; /* [1] */
-}
-
-/**
- * Fieldset
- */
-
-.vd-form fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-/**
- * Labels
- *
- * 1. Apply enhance font weight when the webfont is loaded
- */
-
-.vd-form label {
-    font-weight: 700;
-}
-
-.wf-metaserifweb-n7-active .vd-form label {
-    font-weight: 700; /* [1] */
 }
 
 /* ------------------------------------ *\
@@ -3053,6 +2793,452 @@ hr {
 .vd-c-button--block {
     display: block;
     width: 100%;
+}
+
+/* ------------------------------------ *\
+    #FORMS
+\* ------------------------------------ */
+
+/*
+ * WTF, forms?
+ * Released under MIT and copyright 2014 Mark Otto.
+ * http://wtfforms.com
+ *
+ * Embedded icons from Open Iconic.
+ * Released under MIT and copyright 2014 Waybury.
+ * http://useiconic.com/open
+ */
+
+/*
+ * Checkboxes and radios
+ */
+
+.vd-c-form-control {
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+    padding-left: 1.5rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.vd-c-form-control input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; /* Put the input behind the label so it doesn't overlay text */
+}
+
+.vd-c-form-control__indicator {
+    position: absolute;
+    top: 4px;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 16px;
+    width: 1rem;
+    height: 16px;
+    height: 1rem;
+    line-height: 16px;
+    line-height: 1rem;
+    font-size: 65%;
+    color: #eee;
+    text-align: center;
+    background-color: #eee;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+/* Hover state */
+
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.c-form-control:hover .c-form-control__indicator {
+    color: #fff;
+    background-color: #ccc;
+}
+*/
+
+/* Focus */
+
+.vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+
+/* Checked state */
+
+.vd-c-form-control input:checked ~ .vd-c-form-control__indicator {
+    color: #fff;
+    background-color: #0074d9;
+}
+
+/* Active */
+
+.vd-c-form-control input:active ~ .vd-c-form-control__indicator {
+    color: #fff;
+    background-color: #84c6ff;
+}
+
+/* Checkbox modifiers */
+
+.vd-c-checkbox .vd-c-form-control__indicator {
+    border-radius: .25rem;
+}
+
+.vd-c-checkbox input:checked ~ .vd-c-form-control__indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
+}
+
+/* Radio modifiers */
+
+.vd-c-radio .vd-c-form-control__indicator {
+    border-radius: 50%;
+}
+
+.vd-c-radio input:checked ~ .vd-c-form-control__indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
+}
+
+/* Alternately, use another character */
+
+.vd-c-form-control-x input:checked ~ .vd-c-form-control__indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjQsMEwwLDEuNGwwLjcsMC43bDEuOCwxLjhMMC43LDUuN0wwLDYuNGwxLjQsMS40bDAuNy0wLjdsMS44LTEuOGwxLjgsMS44bDAuNywwLjdsMS40LTEuNEw3LjEsNS43DQoJTDUuMywzLjlsMS44LTEuOGwwLjctMC43TDYuNCwwTDUuNywwLjdMMy45LDIuNUwyLjEsMC43QzIuMSwwLjcsMS40LDAsMS40LDB6Ii8+DQo8L3N2Zz4NCg==);
+}
+
+.vd-c-form-control-dash input:checked ~ .vd-c-form-control__indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDN2Mmg4VjNIMHoiLz4NCjwvc3ZnPg0K);
+}
+
+/*
+ * Select
+ */
+
+.vd-c-select {
+    position: relative;
+    display: inline-block;
+    color: #555;
+}
+
+.vd-c-select select {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 8px 36px 8px 16px;
+    padding: .5rem 2.25rem .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #eee;
+    border: 0;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* Undo the Firefox inner focus ring */
+
+.vd-c-select select:focus:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+/* Dropdown arrow */
+
+.vd-c-select:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    right: 1.25rem;
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top: -2.4px;
+    margin-top: -.15rem;
+    pointer-events: none;
+    border-top: 5.6px solid;
+    border-top: .35rem solid;
+    border-right: 5.6px solid transparent;
+    border-right: .35rem solid transparent;
+    border-bottom: 5.6px solid transparent;
+    border-bottom: .35rem solid transparent;
+    border-left: 5.6px solid transparent;
+    border-left: .35rem solid transparent;
+}
+
+/* Hover state */
+
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.c-select select:hover {
+    background-color: #ddd;
+}
+*/
+
+/* Focus */
+
+.vd-c-select select:focus {
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+
+/* Active/open */
+
+.vd-c-select select:active {
+    color: #fff;
+    background-color: #0074d9;
+}
+
+/* Hide the arrow in IE10 and up */
+
+.vd-c-select select::-ms-expand {
+    display: none;
+}
+
+/* Media query to target Firefox only */
+
+@-moz-document url-prefix() {
+    /* Firefox hack to hide the arrow */
+
+    .vd-c-select select {
+        text-indent: 0.01px;
+        text-overflow: '';
+        padding-right: 1rem;
+    }/* <option> elements inherit styles from <select>, so reset them. */
+
+    .vd-c-select option {
+        background-color: #fff;
+    }
+}
+
+/* IE9 hack to hide the arrow */
+
+@media screen and (min-width:0\0) {
+    .vd-c-select select {
+        z-index: 1;
+        padding: .5rem 1.5rem .5rem 1rem;
+    }
+
+    .vd-c-select:after {
+        z-index: 5;
+    }
+
+    .vd-c-select:before {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        bottom: 0;
+        z-index: 2;
+        content: "";
+        display: block;
+        width: 1.5rem;
+        background-color: #eee;
+    }
+
+    .vd-c-select select:hover, .vd-c-select select:focus,
+    .vd-c-select select:active {
+        color: #555;
+        background-color: #eee;
+    }
+}
+
+/*
+ * File
+ */
+
+.vd-file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+    height: 2.5rem;
+}
+
+.vd-file input {
+    min-width: 224px;
+    min-width: 14rem;
+    margin: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.vd-file--custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 40px;
+    height: 2.5rem;
+    padding: 8px 16px;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    border: 1.2px solid #ddd;
+    border: .075rem solid #ddd;
+    border-radius: .25rem;
+    box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.vd-file--custom:after {
+    content: "Choose file...";
+}
+
+.vd-file--custom:before {
+    position: absolute;
+    top: -1.2px;
+    top: -.075rem;
+    right: -1.2px;
+    right: -.075rem;
+    bottom: -1.2px;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    content: "Browse";
+    height: 40px;
+    height: 2.5rem;
+    padding: 8px 16px;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #eee;
+    border: 1.2px solid #ddd;
+    border: .075rem solid #ddd;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+/* Focus */
+
+.vd-file input:focus ~ .vd-file--custom {
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+
+/*
+ * Progress
+ */
+
+.vd-c-progress {
+    display: inline-block;
+    height: 16px;
+    height: 1rem;
+}
+
+.vd-c-progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    /* Remove Firefox and Opera border */
+    border: 0;
+    /* IE10 uses `color` to set the bar background-color */
+    color: #0074d9;
+}
+
+.vd-c-progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: .2rem;
+}
+
+.vd-c-progress[value]::-webkit-progress-value {
+    background-color: #0074d9;
+    border-top-left-radius: 3.2px;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: 3.2px;
+    border-bottom-left-radius: .2rem;
+}
+
+.vd-c-progress[value="100"]::-webkit-progress-value {
+    border-top-right-radius: 3.2px;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: 3.2px;
+    border-bottom-right-radius: .2rem;
+}
+
+/* Firefox styles must be entirely separate or it busts Webkit styles. */
+
+@-moz-document url-prefix() {
+    .vd-c-progress[value] {
+        background-color: #eee;
+        border-radius: .2rem;
+    }
+
+    .vd-c-progress[value]::-moz-progress-bar {
+        background-color: #0074d9;
+        border-top-left-radius: .2rem;
+        border-bottom-left-radius: .2rem;
+    }
+
+    .vd-c-progress[value="100"]::-moz-progress-bar {
+        border-top-right-radius: .2rem;
+        border-bottom-right-radius: .2rem;
+    }
+}
+
+/* IE9 hacks to accompany custom markup. We don't need to scope this via media queries, but I feel better doing it anyway. */
+
+@media screen and (min-width:0\0) {
+    .vd-c-progress {
+        background-color: #eee;
+        border-radius: .2rem;
+    }
+
+    .vd-c-progress-bar {
+        display: inline-block;
+        height: 1rem;
+        text-indent: -999rem; /* Simulate hiding of value as in native `<progress>` */
+        background-color: #0074d9;
+        border-top-left-radius: .2rem;
+        border-bottom-left-radius: .2rem;
+    }
+
+    .vd-c-progress[width="100%"] {
+        border-top-right-radius: .2rem;
+        border-bottom-right-radius: .2rem;
+    }
+}
+
+/*
+ * Control layouts
+ */
+
+.vd-c-form-controls--stacked {
+    margin: 16px 0;
+    margin: 1rem 0;
+}
+
+.vd-c-form-controls--stacked .vd-c-form-control,
+.vd-c-form-controls--stacked .vd-c-progress {
+    display: block;
+}
+
+.vd-c-form-controls--stacked .vd-c-form-control + .vd-c-form-control,
+.vd-c-form-controls--stacked .vd-c-progress + .vd-c-progress {
+    margin-top: 8px;
+    margin-top: .5rem;
+}
+
+.vd-c-form-controls--inline {
+    margin: 16px 0;
+    margin: 1rem 0;
+}
+
+.vd-c-form-controls--inline .vd-c-form-control {
+    display: inline-block;
+    height: 16px;
+    height: 1rem;
+}
+
+.vd-c-form-controls--inline .vd-c-form-control + .vd-c-form-control {
+    margin-left: 16px;
+    margin-left: 1rem;
 }
 
 /* ------------------------------------ *\

@@ -22,7 +22,6 @@
  * Paragraph............P style.
  * Small................Small text.
  * Strong...............Strong text.
- * Forms................Forms, input and buttons.
  * Subs.................Subscript element style.
  * Lists................UL, OL & DL styles.
  * Anchors..............Links styles.
@@ -45,6 +44,7 @@
  *
  * COMPONENTS
  * Buttons..............Buttons.
+ * Forms................Forms, input and buttons.
  * Navbar...............Top bar.
  * Header...............Header components styles.
  * Inline texts.........Fraction, Small-caps, etc.
@@ -116,7 +116,6 @@
 @import "elements/_elements.paragraph.css";
 @import "elements/_elements.small.css";
 @import "elements/_elements.strong.css";
-@import "elements/_elements.forms.css";
 @import "elements/_elements.subs.css";
 @import "elements/_elements.lists.css";
 @import "elements/_elements.anchors.css";
@@ -153,6 +152,7 @@
  */
 
 @import "components/_components.buttons.css";
+@import "components/_components.forms.css";
 @import "components/_components.navbar.css";
 @import "components/_components.header.css";
 @import "components/_components.inline-texts.css";
