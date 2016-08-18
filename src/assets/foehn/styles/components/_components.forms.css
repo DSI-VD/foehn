@@ -9,6 +9,7 @@
     --form-background-color: var(--color-gray-lighter);
     --form-page-background-color: var(--color-white);
     --form-border-color: var(--color-gray-light);
+    --form-border-radius: .25rem;
 }
 
 /*
@@ -43,7 +44,7 @@
 
 .c-form-control__indicator {
     position: absolute;
-    top: .25rem;
+    top: var(--form-border-radius);
     left: 0;
     display: block;
     width: 1rem;
@@ -89,7 +90,7 @@
 
 /* Checkbox modifiers */
 .c-checkbox .c-form-control__indicator {
-    border-radius: .25rem;
+    border-radius: var(--form-border-radius);
 }
 
 .c-checkbox input:checked ~ .c-form-control__indicator {
@@ -149,9 +150,9 @@
     color: var(--form-text-color);
     background-color: var(--form-background-color);
     border: 0;
-    border-radius: .25rem;
+    border-radius: var(--form-border-radius);
     margin: 0;
-    padding: .5rem 2.25rem .5rem 1rem;
+    padding: .5rem 2var(--form-border-radius) .5rem 1rem;
     cursor: pointer;
     outline: 0;
     appearance: none;
@@ -167,7 +168,7 @@
 .c-select::after {
     position: absolute;
     top: 50%;
-    right: 1.25rem;
+    right: 1var(--form-border-radius);
     display: inline-block;
     width: 0;
     height: 0;
@@ -285,7 +286,7 @@
     color: var(--form-text-color);
     background-color: var(--form-page-background-color);
     border: .075rem solid var(--form-border-color);
-    border-radius: .25rem;
+    border-radius: var(--form-border-radius);
     padding: .5rem 1rem;
     box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
     user-select: none;
@@ -307,7 +308,7 @@
     color: var(--form-text-color);
     background-color: var(--form-background-color);
     border: .075rem solid var(--form-border-color);
-    border-radius: 0 .25rem .25rem 0;
+    border-radius: 0 var(--form-border-radius) var(--form-border-radius) 0;
     padding: .5rem 1rem;
     content: "Browse";
 }
