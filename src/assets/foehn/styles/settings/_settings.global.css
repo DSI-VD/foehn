@@ -89,7 +89,7 @@
 :root {
     --global-spacing-unit: calc(
         var(--global-line-height) * var(--global-font-size)
-        );
+    );
     --global-spacing-unit--tiny: calc(var(--global-spacing-unit) * .25);
     --global-spacing-unit--small: calc(var(--global-spacing-unit) * .5);
     --global-spacing-unit--large: calc(var(--global-spacing-unit) * 2);

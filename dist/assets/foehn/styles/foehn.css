@@ -113,7 +113,7 @@
  */
 
 :root {
-    /* Base font *//* Enhance base font *//* Heading font *//* Enhance heading font */
+    /* Base font *//* Enhance base font *//* Heading font *//* Enhance heading font *//* Monospaced font */
 }
 
 /**
@@ -825,6 +825,10 @@ html.wf-metaserifweb-n4-active {
  *
  * 1. Use webfont only when it's loaded to avoid FOIT
  */
+
+:root {
+    /* h1 *//* h2 *//* h3 *//* h4 *//* h5 *//* h6 */
+}
 
 h1 {
     font-size: 32.006px;
@@ -2647,6 +2651,10 @@ hr {
     #BUTTONS
 \* ------------------------------------ */
 
+:root {
+    /* Colors *//* Hover *//* Active *//* UI  */
+}
+
 /**
  * 1. Allow us to style box model properties.
  * 2. Make buttons inherit font styles (often necessary when styling `input`s
@@ -3508,6 +3516,10 @@ hr {
 /* ------------------------------------ *\
     #BOX
 \* ------------------------------------ */
+
+:root {
+    /* UI *//* Colors *//* Info colors */
+}
 
 /**
  * Default box UI

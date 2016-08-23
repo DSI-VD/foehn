@@ -19,7 +19,6 @@
  */
 .o-box {
     display: block; /* [1] */
-
     padding: var(--box-padding);
 
     @mixin clearfix;

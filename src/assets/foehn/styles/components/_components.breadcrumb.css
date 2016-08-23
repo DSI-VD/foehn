@@ -13,7 +13,6 @@
         > li:not(:last-child) {
             display: hidden; /* [1] */
         }
-
     }
 
     > li::before {

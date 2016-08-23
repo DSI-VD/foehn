@@ -15,7 +15,6 @@
 @media (--lap-and-up) { /* [1] */
 
     .c-page-title--image {
-
         position: relative; /* [2] */
         color: var(--color-white);
 
@@ -38,7 +37,7 @@
                     linear-gradient(
                         rgba(0, 0, 0, .75),
                         rgba(0, 0, 0, 0)
-                        );
+                    );
                 content: "\A";
             }
         }
@@ -47,7 +46,5 @@
             width: 100%;
             vertical-align: top; /* [4] */
         }
-
     }
-
 }

@@ -12,7 +12,6 @@
 
 hr {
     height: 1px;
-
     background: var(--hr-color);
     border: 0;
 }

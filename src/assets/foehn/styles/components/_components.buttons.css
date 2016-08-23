@@ -3,15 +3,20 @@
 \* ------------------------------------ */
 
 :root {
+
+    /* Colors */
     --button-background: var(--color-primary-alt);
     --button-color: var(--color-base);
 
+    /* Hover */
     --button-background-hover: var(--color-primary-alt-dark);
     --button-color-hover: var(--button-color);
 
+    /* Active */
     --button-background-active: var(--color-primary-alt-darkest);
     --button-color-active: var(--color-white);
 
+    /* UI  */
     --button-padding: calc(var(--global-spacing-unit) / 2);
     --button-border-width: 1px;
     --button-border-style: none;
@@ -35,11 +40,9 @@
 
 @define-mixin button {
     display: inline-block; /* [1] */
-
     font: inherit; /* [2] */
     font-weight: 700;
     text-align: center; /* [3] */
-
     background-color: var(--button-background);
     border: var(--button-border-width)
         var(--button-border-style)
@@ -66,14 +69,12 @@
     &:hover,
     &.is-hover {
         color: var(--button-color-hover);
-
         background-color: var(--button-background-hover); /* [8] */
     }
 
     &:active,
     &.is-active {
         color: var(--button-color-active);
-
         background-color: var(--button-background-active); /* [8] */
     }
 
@@ -86,7 +87,6 @@
         border: 0; /* [9] */
         padding: 0; /* [9] */
     }
-
 }
 
 .c-button {
@@ -120,22 +120,18 @@
     $background-color-hover,
     $text-color-active,
     $backgroundcolor-active {
-
     color: $text-color;
-
     background-color: $background-color;
 
     &:hover,
     &.is-hover {
         color: $text-color-hover;
-
         background-color: $background-color-hover;
     }
 
     &:active,
     &.is-active {
         color: $text-color-active;
-
         background-color: $backgroundcolor-active;
     }
 }
@@ -205,12 +201,9 @@
     &:focus,
     &:active {
         color: var(--button-text-color-disabled);
-
         background-color: var(--button-background-color-disabled);
-
         cursor: not-allowed;
     }
-
 }
 
 

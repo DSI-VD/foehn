@@ -15,12 +15,9 @@
 
 .o-wrapper {
     @mixin clearfix;
-
     max-width: var(--wrapper-width);
-
     margin-right: auto; /* [1] */
     margin-left: auto; /* [1] */
-
     padding-right: var(--global-spacing-unit--tiny);
     padding-left: var(--global-spacing-unit--tiny);
 
@@ -28,7 +25,6 @@
         padding-right: var(--global-spacing-unit);
         padding-left: var(--global-spacing-unit);
     }
-
 }
 
 /**

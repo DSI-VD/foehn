@@ -14,11 +14,9 @@ pre {
     font-size: var(--monospaced-font-size);
     font-family: var(--monospaced-font-family);
     letter-spacing: normal;
-
     white-space: pre;
     word-spacing: normal;
     tab-size: 4;
-
     cursor: text;
 }
 

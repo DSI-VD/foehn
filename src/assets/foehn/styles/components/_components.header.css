@@ -13,7 +13,6 @@
 }
 
 .c-header {
-
     background-color: var(--header-background-color);
 
     &,
@@ -21,7 +20,6 @@
     a:hover {
         color: var(--header-color);
     }
-
 }
 
 /**
@@ -40,11 +38,9 @@
         &--secondary {
             @mixin button--secondary;
         }
-
     }
 
     .wf-active .c-header-button {
         font-family: var(--enhance-heading-font-family); /* [2] */
     }
-
 }

@@ -51,13 +51,13 @@
     --enhance-heading-font-weight-regular: 400;
     --enhance-heading-font-weight-bold: 700;
 
+    /* Monospaced font */
     --monospaced-font-family: Consolas,
         "Liberation Mono",
         Menlo,
         Courier,
         monospace;
     --monospaced-font-size: .8rem;
-
 }
 
 
@@ -73,7 +73,6 @@
     font-weight: normal; /* or 400 */
     font-style: normal;
     font-family: MetaSerifWeb;
-
     src: url("../fonts/MetaSerifWeb-Book.woff") format("woff");
 }
 
@@ -82,7 +81,6 @@
     font-weight: normal; /* or 400 */
     font-style: italic;
     font-family: MetaSerifWeb;
-
     src: url("../fonts/MetaSerifWeb-BookItalic.woff") format("woff");
 }
 
@@ -91,7 +89,6 @@
     font-weight: bold; /* or 700 */
     font-style: normal;
     font-family: MetaSerifWeb;
-
     src: url("../fonts/MetaSerifWeb-Bold.woff") format("woff");
 }
 
@@ -100,7 +97,6 @@
     font-weight: bold;
     font-style: italic;
     font-family: MetaSerifWeb;
-
     src: url("../fonts/MetaSerifWeb-BoldItalic.woff") format("woff");
 }
 
@@ -114,7 +110,6 @@
     font-weight: normal; /* or 400 */
     font-style: normal;
     font-family: MetaWeb;
-
     src: url("../fonts/MetaWeb-CondBook.woff") format("woff");
 }
 
@@ -123,7 +118,6 @@
     font-weight: normal; /* or 400 */
     font-style: italic;
     font-family: MetaWeb;
-
     src: url("../fonts/MetaWeb-CondBookItalic.woff") format("woff");
 }
 
@@ -132,7 +126,6 @@
     font-weight: bold; /* or 700 */
     font-style: normal;
     font-family: MetaWeb;
-
     src: url("../fonts/MetaWeb-CondBold.woff") format("woff");
 }
 
@@ -141,6 +134,5 @@
     font-weight: bold; /* or 700 */
     font-style: italic;
     font-family: MetaWeb;
-
     src: url("../fonts/MetaWeb-CondBoldItalic.woff") format("woff");
 }
