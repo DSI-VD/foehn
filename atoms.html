@@ -2380,16 +2380,62 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<div class="vd-form">
-	<input id="checkbox" type="checkbox" name="checkbox" value="value" checked="">
-	<label for="checkbox">Sojourner Truth</label>
-</div>
+	<label class="vd-c-form-control vd-c-checkbox">
+    <input type="checkbox">
+    <span class="vd-c-form-control__indicator"></span>
+    Check this custom checkbox
+</label>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;vd-form&quot;&gt;
-	&lt;input id&#x3D;&quot;checkbox&quot; type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;checkbox&quot; value&#x3D;&quot;value&quot; checked&#x3D;&quot;&quot;&gt;
-	&lt;label for&#x3D;&quot;checkbox&quot;&gt;Sojourner Truth&lt;/label&gt;
-&lt;/div&gt;</code></pre>
+	<pre><code class="language-markup">&lt;label class&#x3D;&quot;vd-c-form-control vd-c-checkbox&quot;&gt;
+    &lt;input type&#x3D;&quot;checkbox&quot;&gt;
+    &lt;span class&#x3D;&quot;vd-c-form-control__indicator&quot;&gt;&lt;/span&gt;
+    Check this custom checkbox
+&lt;/label&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="15-forms.progress">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Progress</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<form action="" class="vd-c-form-controls--stacked">
+	<progress class="vd-c-progress" value="25" max="100">
+        25%
+    </progress>
+	<progress class="vd-c-progress" value="50" max="100">
+        50%
+    </progress>
+	<progress class="vd-c-progress" value="75" max="100">
+        75%
+    </progress>
+	<progress class="vd-c-progress" value="100" max="100">
+        100
+    </progress>
+</form>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot; class&#x3D;&quot;vd-c-form-controls--stacked&quot;&gt;
+	&lt;progress class&#x3D;&quot;vd-c-progress&quot; value&#x3D;&quot;25&quot; max&#x3D;&quot;100&quot;&gt;
+        25%
+    &lt;/progress&gt;
+	&lt;progress class&#x3D;&quot;vd-c-progress&quot; value&#x3D;&quot;50&quot; max&#x3D;&quot;100&quot;&gt;
+        50%
+    &lt;/progress&gt;
+	&lt;progress class&#x3D;&quot;vd-c-progress&quot; value&#x3D;&quot;75&quot; max&#x3D;&quot;100&quot;&gt;
+        75%
+    &lt;/progress&gt;
+	&lt;progress class&#x3D;&quot;vd-c-progress&quot; value&#x3D;&quot;100&quot; max&#x3D;&quot;100&quot;&gt;
+        100
+    &lt;/progress&gt;
+&lt;/form&gt;</code></pre>
 </div>
 
 		</div>
@@ -2404,16 +2450,32 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<div class="vd-form">
-	<input id="henri-guisan" type="radio" name="personality" value="guisan">
-	<label for="henri-guisan">Henri Guisan</label>
-</div>
+	<form action="" class="vd-c-form-controls--stacked">
+	<label class="vd-c-form-control vd-c-radio">
+        <input id="radio1" name="radio" type="radio">
+        <span class="vd-c-form-control__indicator"></span>
+        Toggle this custom radio
+    </label>
+	<label class="vd-c-form-control vd-c-radio">
+        <input id="radio2" name="radio" type="radio">
+        <span class="vd-c-form-control__indicator"></span>
+        Or toggle this other custom radio
+    </label>
+</form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;vd-form&quot;&gt;
-	&lt;input id&#x3D;&quot;henri-guisan&quot; type&#x3D;&quot;radio&quot; name&#x3D;&quot;personality&quot; value&#x3D;&quot;guisan&quot;&gt;
-	&lt;label for&#x3D;&quot;henri-guisan&quot;&gt;Henri Guisan&lt;/label&gt;
-&lt;/div&gt;</code></pre>
+	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot; class&#x3D;&quot;vd-c-form-controls--stacked&quot;&gt;
+	&lt;label class&#x3D;&quot;vd-c-form-control vd-c-radio&quot;&gt;
+        &lt;input id&#x3D;&quot;radio1&quot; name&#x3D;&quot;radio&quot; type&#x3D;&quot;radio&quot;&gt;
+        &lt;span class&#x3D;&quot;vd-c-form-control__indicator&quot;&gt;&lt;/span&gt;
+        Toggle this custom radio
+    &lt;/label&gt;
+	&lt;label class&#x3D;&quot;vd-c-form-control vd-c-radio&quot;&gt;
+        &lt;input id&#x3D;&quot;radio2&quot; name&#x3D;&quot;radio&quot; type&#x3D;&quot;radio&quot;&gt;
+        &lt;span class&#x3D;&quot;vd-c-form-control__indicator&quot;&gt;&lt;/span&gt;
+        Or toggle this other custom radio
+    &lt;/label&gt;
+&lt;/form&gt;</code></pre>
 </div>
 
 		</div>
@@ -2428,24 +2490,24 @@ control over which image resource is loaded at each de- sign breakpoint.</p>
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<form class="vd-form">
-	<label for="options">Dropdown label</label>
-	<select name="options" id="options">
-        <option value="value1">Option A</option>
-        <option value="value2">Option B</option>
-        <option value="value3">Option C</option>
-    </select>
-</form>
+	<div class="vd-c-select">
+	<select aria-label="Select menu example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;form class&#x3D;&quot;vd-form&quot;&gt;
-	&lt;label for&#x3D;&quot;options&quot;&gt;Dropdown label&lt;/label&gt;
-	&lt;select name&#x3D;&quot;options&quot; id&#x3D;&quot;options&quot;&gt;
-        &lt;option value&#x3D;&quot;value1&quot;&gt;Option A&lt;/option&gt;
-        &lt;option value&#x3D;&quot;value2&quot;&gt;Option B&lt;/option&gt;
-        &lt;option value&#x3D;&quot;value3&quot;&gt;Option C&lt;/option&gt;
-    &lt;/select&gt;
-&lt;/form&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;vd-c-select&quot;&gt;
+	&lt;select aria-label&#x3D;&quot;Select menu example&quot;&gt;
+    &lt;option selected&gt;Open this select menu&lt;/option&gt;
+    &lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 		</div>

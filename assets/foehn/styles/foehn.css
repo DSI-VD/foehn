@@ -22,7 +22,6 @@
  * Paragraph............P style.
  * Small................Small text.
  * Strong...............Strong text.
- * Forms................Forms, input and buttons.
  * Subs.................Subscript element style.
  * Lists................UL, OL & DL styles.
  * Anchors..............Links styles.
@@ -45,6 +44,7 @@
  *
  * COMPONENTS
  * Buttons..............Buttons.
+ * Forms................Forms, input and buttons.
  * Navbar...............Top bar.
  * Header...............Header components styles.
  * Inline texts.........Fraction, Small-caps, etc.
@@ -113,7 +113,7 @@
  */
 
 :root {
-    /* Base font *//* Enhance base font *//* Heading font *//* Enhance heading font */
+    /* Base font *//* Enhance base font *//* Heading font *//* Enhance heading font *//* Monospaced font */
 }
 
 /**
@@ -782,11 +782,13 @@ html {
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [3] */
     font-kerning: normal; /* [3] */
     line-height: 1.5; /* [1] */
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     text-rendering: optimizeLegibility;
-    overflow-y: scroll; /* [4] */
+    overflow-y: scroll;
 }
+
+/* [4] */
 
 html.wf-metaserifweb-n4-active {
     font-weight: 500; /* [5] */
@@ -823,6 +825,10 @@ html.wf-metaserifweb-n4-active {
  *
  * 1. Use webfont only when it's loaded to avoid FOIT
  */
+
+:root {
+    /* h1 *//* h2 *//* h3 *//* h4 *//* h5 *//* h6 */
+}
 
 h1 {
     font-size: 32.006px;
@@ -1003,266 +1009,6 @@ b, strong {
 }
 
 /* ------------------------------------ *\
-    #FORMS
-\* ------------------------------------ */
-
-/**
- * Shared styles
- *
- * 1. Overrid browser style. Even if the `border-radius` is `0` it has to be
- *    to properly override the styles
- * 2. Define the min-height of forms.
- * 3. Placeholder
- * 4. Override content-box in Normalize
- * 5. Focus state
- */
-
-.vd-form input, .vd-form textarea, .vd-form select {
-    display: block;
-    width: 100%;
-    font-size: inherit;
-    background-color: #ffffff;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid #000000;
-    border: 1px solid rgba(0, 0, 0, .8);
-    border-radius: 0; /* [1] */
-    padding: 5.5px;
-    padding: 0.34375rem; /* [2] */
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none; /* [1] */
-}
-
-.vd-form input::-webkit-input-placeholder,
-.vd-form textarea::-webkit-input-placeholder,
-.vd-form select::-webkit-input-placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input::-moz-placeholder, .vd-form textarea::-moz-placeholder,
-.vd-form select::-moz-placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input:-ms-input-placeholder, .vd-form textarea:-ms-input-placeholder,
-.vd-form select:-ms-input-placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input::placeholder, .vd-form textarea::placeholder,
-.vd-form select::placeholder {
-    color: #aeb0b5;
-    color: rgba(174, 176, 181, 1); /* [3] */
-}
-
-.vd-form input[disabled], .vd-form input:disabled, .vd-form input[readonly],
-.vd-form textarea[disabled], .vd-form textarea:disabled,
-.vd-form textarea[readonly], .vd-form select[disabled], .vd-form select:disabled,
-.vd-form select[readonly] {
-    background-color: #aeb0b5;
-    background-color: rgba(174, 176, 181, 1);
-    cursor: not-allowed;
-}
-
-.vd-form input[disabled], .vd-form input[disabled]::-webkit-input-placeholder,
-.vd-form input:disabled, .vd-form input:disabled::-webkit-input-placeholder,
-.vd-form input[readonly], .vd-form input[readonly]::-webkit-input-placeholder,
-.vd-form textarea[disabled],
-.vd-form textarea[disabled]::-webkit-input-placeholder,
-.vd-form textarea:disabled,
-.vd-form textarea:disabled::-webkit-input-placeholder,
-.vd-form textarea[readonly],
-.vd-form textarea[readonly]::-webkit-input-placeholder,
-.vd-form select[disabled], .vd-form select[disabled]::-webkit-input-placeholder,
-.vd-form select:disabled, .vd-form select:disabled::-webkit-input-placeholder,
-.vd-form select[readonly], .vd-form select[readonly]::-webkit-input-placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input[disabled], .vd-form input[disabled]::-moz-placeholder,
-.vd-form input:disabled, .vd-form input:disabled::-moz-placeholder,
-.vd-form input[readonly], .vd-form input[readonly]::-moz-placeholder,
-.vd-form textarea[disabled], .vd-form textarea[disabled]::-moz-placeholder,
-.vd-form textarea:disabled, .vd-form textarea:disabled::-moz-placeholder,
-.vd-form textarea[readonly], .vd-form textarea[readonly]::-moz-placeholder,
-.vd-form select[disabled], .vd-form select[disabled]::-moz-placeholder,
-.vd-form select:disabled, .vd-form select:disabled::-moz-placeholder,
-.vd-form select[readonly], .vd-form select[readonly]::-moz-placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input[disabled], .vd-form input[disabled]:-ms-input-placeholder,
-.vd-form input:disabled, .vd-form input:disabled:-ms-input-placeholder,
-.vd-form input[readonly], .vd-form input[readonly]:-ms-input-placeholder,
-.vd-form textarea[disabled], .vd-form textarea[disabled]:-ms-input-placeholder,
-.vd-form textarea:disabled, .vd-form textarea:disabled:-ms-input-placeholder,
-.vd-form textarea[readonly], .vd-form textarea[readonly]:-ms-input-placeholder,
-.vd-form select[disabled], .vd-form select[disabled]:-ms-input-placeholder,
-.vd-form select:disabled, .vd-form select:disabled:-ms-input-placeholder,
-.vd-form select[readonly], .vd-form select[readonly]:-ms-input-placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input[disabled], .vd-form input[disabled]::placeholder,
-.vd-form input:disabled, .vd-form input:disabled::placeholder,
-.vd-form input[readonly], .vd-form input[readonly]::placeholder,
-.vd-form textarea[disabled], .vd-form textarea[disabled]::placeholder,
-.vd-form textarea:disabled, .vd-form textarea:disabled::placeholder,
-.vd-form textarea[readonly], .vd-form textarea[readonly]::placeholder,
-.vd-form select[disabled], .vd-form select[disabled]::placeholder,
-.vd-form select:disabled, .vd-form select:disabled::placeholder,
-.vd-form select[readonly], .vd-form select[readonly]::placeholder {
-    color: #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.vd-form input:focus, .vd-form textarea:focus, .vd-form select:focus {
-    box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1); /* [5] */
-}
-
-.vd-form input {
-    width: 100%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-.vd-form input[type="search"] {
-    box-sizing: border-box; /* [4] */
-}
-
-/**
- * Checkbox and radio button
- *
- * Shared properties between checkboxes and radio buttons
- *
- * 1. Hide default checkbox and radio button
- */
-
-.vd-form input[type="checkbox"], .vd-form input[type="radio"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-}
-
-.vd-form input[type="checkbox"].vd-focusable:active,
-.vd-form input[type="checkbox"].vd-focusable:focus,
-.vd-form input[type="radio"].vd-focusable:active,
-.vd-form input[type="radio"].vd-focusable:focus {
-    display: table;
-    position: static;
-    clear: both;
-}
-
-/* [1] */
-
-.vd-form input[type="checkbox"] + label, .vd-form input[type="radio"] + label {
-    cursor: pointer;
-}
-
-.vd-form input[type="checkbox"] + label::before,
-.vd-form input[type="radio"] + label::before {
-    display: inline-block;
-    width: 16px;
-    width: 1rem;
-    height: 16px;
-    height: 1rem;
-    background: #ffffff;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 0.28125rem;
-    margin-right: 6.75px;
-    margin-right: 0.42188rem;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .8);
-    content: "\a0";
-    vertical-align: -1.6px;
-    vertical-align: -.1rem;
-}
-
-.vd-form input[type="checkbox"]:checked + label::before,
-.vd-form input[type="radio"]:checked + label::before {
-    background-color: #3e9ff0;
-    background-color: rgba(62, 159, 240, 1);
-    background-size: 0.79365rem;
-    box-shadow: 0 0 0 1px rgba(62, 159, 240, 1);
-}
-
-/**
- * Checkbox
- */
-
-.vd-form input[type="checkbox"] + label {
-}
-
-.vd-form input[type="checkbox"] + label::before {
-    background-image: url("../images/checkmark.svg");
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-/**
-     * Radio button
-     *
-     * 1. Make the button round.
-     * 2. Add a border around the button when checked.
-     */
-
-.vd-form input[type="radio"] + label::before {
-    border-radius: 100%; /* [1] */
-}
-
-.vd-form input[type="radio"]:checked + label::before {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 1), 0 0 0 4px rgba(62, 159, 240, 1); /* [2] */
-}
-
-/**
- * Select Menu
- *
- * 1. Arrow down icon
- */
-
-.vd-form select {
-    background-position: right 5.5px center;
-    background-position: right 0.34375rem center; /* [1] */
-    background-repeat: no-repeat; /* [1] */
-    background-image: url("../images/arrow_down.svg"); /* [1] */
-    background-size: 1rem; /* [1] */
-}
-
-/**
- * Fieldset
- */
-
-.vd-form fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-/**
- * Labels
- *
- * 1. Apply enhance font weight when the webfont is loaded
- */
-
-.vd-form label {
-    font-weight: 700;
-}
-
-.wf-metaserifweb-n7-active .vd-form label {
-    font-weight: 700; /* [1] */
-}
-
-/* ------------------------------------ *\
     #SUBS
 \* ------------------------------------ */
 
@@ -1308,7 +1054,7 @@ li {
 \* ------------------------------------ */
 
 a {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     transition: .3333s;
 }
@@ -1417,8 +1163,8 @@ figure {
 
 blockquote, .vd-c-blockquote {
     font-style: italic;
-    border-left: 3.375px rgba(0, 0, 0, .8) solid;
-    border-left: 0.21094rem rgba(0, 0, 0, .8) solid;
+    border-left: 3.375px rgba(0, 0, 0, 0.8) solid;
+    border-left: 0.21094rem rgba(0, 0, 0, 0.8) solid;
     margin-left: 27px;
     margin-left: 1.6875rem;
     padding-left: 27px;
@@ -1568,6 +1314,12 @@ hr {
     padding-right: 0.42188rem;
     padding-left: 6.75px;
     padding-left: 0.42188rem;
+}
+
+.vd-o-wrapper::after {
+    display: block !important;
+    clear: both !important;
+    content: "" !important;
 }
 
 @media screen and (min-width: 45em) {
@@ -1876,7 +1628,7 @@ hr {
     .vd-o-layout__item--1-3\@lap-and-up {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 1/3 - 0.6666666666666667rem);
+        width: calc(99.9% * 1/3 - 0.666666666666667rem);
     }
 
     .vd-o-layout__item--1-3:nth-child(1n), .vd-o-layout__item--1-6:nth-child(1n),
@@ -1900,7 +1652,7 @@ hr {
     .vd-o-layout__item--2-3\@lap-and-up {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 2/3 - 0.33333333333333337rem);
+        width: calc(99.9% * 2/3 - 0.333333333333333rem);
     }
 
     .vd-o-layout__item--2-3:nth-child(1n), .vd-o-layout__item--5-6:nth-child(1n),
@@ -2010,7 +1762,7 @@ hr {
     .vd-o-layout__item--1-6 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 1/6 - 0.8333333333333334rem);
+        width: calc(99.9% * 1/6 - 0.833333333333333rem);
     }
 
     .vd-o-layout__item--1-6:nth-child(1n) {
@@ -2030,7 +1782,7 @@ hr {
     .vd-o-layout__item--5-6 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 5/6 - 0.16666666666666663rem);
+        width: calc(99.9% * 5/6 - 0.166666666666667rem);
     }
 
     .vd-o-layout__item--5-6:nth-child(1n) {
@@ -2050,7 +1802,7 @@ hr {
     .vd-o-layout__item--1-12 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 1/12 - 0.9166666666666666rem);
+        width: calc(99.9% * 1/12 - 0.916666666666667rem);
     }
 
     .vd-o-layout__item--1-12:nth-child(1n) {
@@ -2074,22 +1826,22 @@ hr {
 
 .vd-o-layout__item--move--1-12 {
     position: relative;
-    left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+    left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---1-12 {
     position: relative;
-    left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+    left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--2-12 {
     position: relative;
-    left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+    left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---2-12 {
     position: relative;
-    left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+    left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--3-12 {
@@ -2104,22 +1856,22 @@ hr {
 
 .vd-o-layout__item--move--4-12 {
     position: relative;
-    left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+    left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---4-12 {
     position: relative;
-    left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+    left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--5-12 {
     position: relative;
-    left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+    left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---5-12 {
     position: relative;
-    left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+    left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--6-12 {
@@ -2134,22 +1886,22 @@ hr {
 
 .vd-o-layout__item--move--7-12 {
     position: relative;
-    left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+    left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---7-12 {
     position: relative;
-    left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+    left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--8-12 {
     position: relative;
-    left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+    left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---8-12 {
     position: relative;
-    left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+    left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--9-12 {
@@ -2164,22 +1916,22 @@ hr {
 
 .vd-o-layout__item--move--10-12 {
     position: relative;
-    left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+    left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---10-12 {
     position: relative;
-    left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+    left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--11-12 {
     position: relative;
-    left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+    left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---11-12 {
     position: relative;
-    left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+    left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--12-12 {
@@ -2195,22 +1947,22 @@ hr {
 @media screen and (max-width: 44.9375em) {
     .vd-o-layout__item--move--1-12\@palm {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@palm {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@palm {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@palm {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@palm {
@@ -2225,22 +1977,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@palm {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@palm {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@palm {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@palm {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@palm {
@@ -2255,22 +2007,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@palm {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@palm {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@palm {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@palm {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@palm {
@@ -2285,22 +2037,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@palm {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@palm {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@palm {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@palm {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@palm {
@@ -2317,22 +2069,22 @@ hr {
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
     .vd-o-layout__item--move--1-12\@lap {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@lap {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@lap {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@lap {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@lap {
@@ -2347,22 +2099,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@lap {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@lap {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@lap {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@lap {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@lap {
@@ -2377,22 +2129,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@lap {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@lap {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@lap {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@lap {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@lap {
@@ -2407,22 +2159,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@lap {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@lap {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@lap {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@lap {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@lap {
@@ -2439,22 +2191,22 @@ hr {
 @media screen and (min-width: 45em) {
     .vd-o-layout__item--move--1-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@lap-and-up {
@@ -2469,22 +2221,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@lap-and-up {
@@ -2499,22 +2251,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@lap-and-up {
@@ -2529,22 +2281,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@lap-and-up {
@@ -2561,22 +2313,22 @@ hr {
 @media screen and (max-width: 63.9375em) {
     .vd-o-layout__item--move--1-12\@portable {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@portable {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@portable {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@portable {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@portable {
@@ -2591,22 +2343,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@portable {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@portable {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@portable {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@portable {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@portable {
@@ -2621,22 +2373,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@portable {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@portable {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@portable {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@portable {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@portable {
@@ -2651,22 +2403,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@portable {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@portable {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@portable {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@portable {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@portable {
@@ -2683,22 +2435,22 @@ hr {
 @media screen and (min-width: 64em) {
     .vd-o-layout__item--move--1-12\@desk {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@desk {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@desk {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@desk {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@desk {
@@ -2713,22 +2465,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@desk {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@desk {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@desk {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@desk {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@desk {
@@ -2743,22 +2495,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@desk {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@desk {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@desk {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@desk {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@desk {
@@ -2773,22 +2525,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@desk {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@desk {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@desk {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@desk {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@desk {
@@ -2821,14 +2573,14 @@ hr {
     padding: 1.6875rem;
 }
 
-.vd-o-box > :last-child {
-    margin-bottom: 0;
-}
-
 .vd-o-box::after {
     display: block !important;
     clear: both !important;
     content: "" !important;
+}
+
+.vd-o-box > :last-child {
+    margin-bottom: 0;
 }
 
 /* ------------------------------------ *\
@@ -2899,6 +2651,10 @@ hr {
     #BUTTONS
 \* ------------------------------------ */
 
+:root {
+    /* Colors *//* Hover *//* Active *//* UI  */
+}
+
 /**
  * 1. Allow us to style box model properties.
  * 2. Make buttons inherit font styles (often necessary when styling `input`s
@@ -2927,26 +2683,28 @@ hr {
     padding: calc(0.84375rem - 1px) calc(0.84375rem * 2 - 1px); /* [4] */
     vertical-align: middle; /* [5] */
     overflow: visible; /* [6] */
-    cursor: pointer; /* [7] */
+    cursor: pointer;
 }
+
+/* [7] */
 
 .vd-c-button, .vd-c-button:hover, .vd-c-button.is-hover, .vd-c-button:active,
 .vd-c-button.is-active, .vd-c-button:focus
     .vd-c-button.is-focus {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     text-decoration: none; /* [3] */
 }
 
 .vd-c-button:hover, .vd-c-button.is-hover {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     background-color: #00a5d4;
     background-color: rgba(0, 165, 212, 1); /* [8] */
 }
 
 .vd-c-button:active, .vd-c-button.is-active {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
     background-color: #006a9b;
     background-color: rgba(0, 106, 155, 1); /* [8] */
@@ -2986,21 +2744,21 @@ hr {
 /* Button secondary */
 
 .vd-c-button--secondary {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
     background-color: #d0404c;
     background-color: rgba(208, 64, 76, 1);
 }
 
 .vd-c-button--secondary:hover, .vd-c-button--secondary.is-hover {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     background-color: #cf1d1d;
     background-color: rgba(207, 29, 29, 1);
 }
 
 .vd-c-button--secondary:active, .vd-c-button--secondary.is-active {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
     background-color: #9a1919;
     background-color: rgba(154, 25, 25, 1);
@@ -3025,9 +2783,6 @@ hr {
 
 /* Button disabled */
 
-.vd-c-button--disabled, [type="submit"][disabled] {
-}
-
 .vd-c-button--disabled, .vd-c-button--disabled:hover,
 .vd-c-button--disabled:focus, .vd-c-button--disabled:active,
 [type="submit"][disabled], [type="submit"][disabled]:hover,
@@ -3047,6 +2802,500 @@ hr {
 .vd-c-button--block {
     display: block;
     width: 100%;
+}
+
+/* ------------------------------------ *\
+    #FORMS
+\* ------------------------------------ */
+
+/*
+ * WTF, forms?
+ * Released under MIT and copyright 2014 Mark Otto.
+ * http://wtfforms.com
+ *
+ * Embedded icons from Open Iconic.
+ * Released under MIT and copyright 2014 Waybury.
+ * http://useiconic.com/open
+ */
+
+/*
+ * Checkboxes and radios
+ *
+ * 1. Put the input behind the label so it doesn't overlay text
+ */
+
+.vd-c-form-control {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    color: rgba(0, 0, 0, .8);
+    padding-left: 27px;
+    padding-left: 1.6875rem;
+    cursor: pointer;
+}
+
+.vd-c-form-control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.vd-c-form-control__indicator {
+    position: absolute;
+    top: 4px;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 16px;
+    width: 1rem;
+    height: 16px;
+    height: 1rem;
+    font-size: 65%;
+    line-height: 16px;
+    line-height: 1rem;
+    color: #d6d7d9;
+    color: rgba(214, 215, 217, 1);
+    text-align: center;
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+/* Hover state */
+
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.c-form-control:hover .c-form-control__indicator {
+    color: var(--form-page-background-color);
+    background-color: #ccc;
+}
+*/
+
+/**
+ * States
+ *
+ * 1. Focus
+ * 2. Checked
+ * 3. Active
+ */
+
+.vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
+    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1); /* [1] */
+}
+
+.vd-c-form-control input:checked ~ .vd-c-form-control__indicator {
+    color: #fff;
+    color: rgba(255, 255, 255, 1); /* [2] */
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1); /* [2] */
+}
+
+.vd-c-form-control input:active ~ .vd-c-form-control__indicator {
+    color: #fff;
+    color: rgba(255, 255, 255, 1); /* [3] */
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1); /* [3] */
+}
+
+/* Checkbox modifiers */
+
+.vd-c-checkbox .vd-c-form-control__indicator {
+    border-radius: .25rem;
+}
+
+.vd-c-checkbox input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
+    /* stylelint-enable function-url-quotes */
+}
+
+/* Radio modifiers */
+
+.vd-c-radio .vd-c-form-control__indicator {
+    border-radius: 50%;
+}
+
+.vd-c-radio input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
+    /* stylelint-enable function-url-quotes */
+}
+
+/* Alternately, use another character */
+
+.vd-c-form-control-x input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjQsMEwwLDEuNGwwLjcsMC43bDEuOCwxLjhMMC43LDUuN0wwLDYuNGwxLjQsMS40bDAuNy0wLjdsMS44LTEuOGwxLjgsMS44bDAuNywwLjdsMS40LTEuNEw3LjEsNS43DQoJTDUuMywzLjlsMS44LTEuOGwwLjctMC43TDYuNCwwTDUuNywwLjdMMy45LDIuNUwyLjEsMC43QzIuMSwwLjcsMS40LDAsMS40LDB6Ii8+DQo8L3N2Zz4NCg==);
+    /* stylelint-enable function-url-quotes */
+}
+
+.vd-c-form-control-dash input:checked ~ .vd-c-form-control__indicator {
+    /* stylelint-disable function-url-quotes */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDN2Mmg4VjNIMHoiLz4NCjwvc3ZnPg0K);
+    /* stylelint-enable function-url-quotes */
+}
+
+/*
+ * Select
+ *
+ * 1. Undo the Firefox inner focus ring
+ * 2. Dropdown arrow
+ */
+
+.vd-c-select {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    color: rgba(0, 0, 0, .8);
+}
+
+.vd-c-select select {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.5;
+    color: #000;
+    color: rgba(0, 0, 0, .8);
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
+    border: 0;
+    border-radius: .25rem;
+    margin: 0;
+    padding: 8px 36px 8px 16px;
+    padding: .5rem 2.25rem .5rem 1rem;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.vd-c-select select:focus:-moz-focusring {
+    color: transparent; /* [1] */
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1); /* [1] */
+}
+
+.vd-c-select::after {
+    /* [2] */
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    right: 1.25rem;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5.6px solid;
+    border-top: .35rem solid;
+    border-right: 5.6px solid transparent;
+    border-right: .35rem solid transparent;
+    border-bottom: 5.6px solid transparent;
+    border-bottom: .35rem solid transparent;
+    border-left: 5.6px solid transparent;
+    border-left: .35rem solid transparent;
+    margin-top: -2.4px;
+    margin-top: -.15rem;
+    content: "";
+    pointer-events: none;
+}
+
+/* Hover state */
+
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.c-select select:hover {
+    background-color: var(--form-border-color);
+}
+*/
+
+/**
+ * States
+ *
+ * 1. Focus
+ * 2. Active/open
+ * 3. Hide the arrow in IE10 and up
+ */
+
+.vd-c-select select:focus {
+    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1); /* [1] */
+}
+
+.vd-c-select select:active {
+    color: #fff;
+    color: rgba(255, 255, 255, 1); /* [2] */
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1); /* [2] */
+}
+
+.vd-c-select select::-ms-expand {
+    display: none; /* [3] */
+}
+
+/* Media query to target Firefox only */
+
+@-moz-document url-prefix("") {
+    /* Firefox hack to hide the arrow */
+
+    .vd-c-select select {
+        text-indent: .01px;
+        text-overflow: "";
+        padding-right: 1rem;
+    }/* <option> elements inherit styles from <select>, so reset them. */
+
+    .vd-c-select option {
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+/* IE9 hack to hide the arrow */
+
+@media screen and (min-width: 0\0) {
+    .vd-c-select select {
+        z-index: 1;
+        padding: .5rem 1.6875rem 0.5rem 1rem;
+    }
+
+    .vd-c-select::after {
+        z-index: 5;
+    }
+
+    .vd-c-select::before {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        bottom: 0;
+        z-index: 2;
+        display: block;
+        width: 1.6875rem;
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
+        content: "";
+    }
+
+    .vd-c-select select:hover, .vd-c-select select:focus,
+    .vd-c-select select:active {
+        color: #000;
+        color: rgba(0, 0, 0, .8);
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
+    }
+}
+
+/*
+ * File
+ */
+
+.vd-file {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.vd-file input {
+    min-width: 224px;
+    min-width: 14rem;
+    margin: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.vd-file--custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 40px;
+    height: 2.5rem;
+    line-height: 1.5;
+    color: #000;
+    color: rgba(0, 0, 0, .8);
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1.2px solid #aeb0b5;
+    border: 1.2px solid rgba(174, 176, 181, 1);
+    border: .075rem solid rgba(174, 176, 181, 1);
+    border-radius: .25rem;
+    padding: 8px 16px;
+    padding: .5rem 1rem;
+    box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.vd-file--custom::after {
+    content: "Choose file...";
+}
+
+.vd-file--custom::before {
+    position: absolute;
+    top: -1.2px;
+    top: -.075rem;
+    right: -1.2px;
+    right: -.075rem;
+    bottom: -1.2px;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    height: 40px;
+    height: 2.5rem;
+    line-height: 1.5;
+    color: #000;
+    color: rgba(0, 0, 0, .8);
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
+    border: 1.2px solid #aeb0b5;
+    border: 1.2px solid rgba(174, 176, 181, 1);
+    border: .075rem solid rgba(174, 176, 181, 1);
+    border-radius: 0 .25rem .25rem 0;
+    padding: 8px 16px;
+    padding: .5rem 1rem;
+    content: "Browse";
+}
+
+/* Focus */
+
+.vd-file input:focus ~ .vd-file--custom {
+    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1);
+}
+
+/*
+ * Progress
+ *
+ * 1. IE10 uses `color` to set the bar background-color
+ * 2. Remove Firefox and Opera border
+ * 3. Reset the default appearance
+ */
+
+.vd-c-progress {
+    display: inline-block;
+    height: 16px;
+    height: 1rem;
+}
+
+.vd-c-progress[value] {
+    color: #3e9ff0;
+    color: rgba(62, 159, 240, 1); /* [1] */
+    border: 0; /* [2] */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* [3] */
+
+.vd-c-progress[value]::-webkit-progress-bar {
+    background-color: #d6d7d9;
+    background-color: rgba(214, 215, 217, 1);
+    border-radius: .2rem;
+}
+
+.vd-c-progress[value]::-webkit-progress-value {
+    background-color: #3e9ff0;
+    background-color: rgba(62, 159, 240, 1);
+    border-top-left-radius: 3.2px;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: 3.2px;
+    border-bottom-left-radius: .2rem;
+}
+
+.vd-c-progress[value="100"]::-webkit-progress-value {
+    border-top-right-radius: 3.2px;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: 3.2px;
+    border-bottom-right-radius: .2rem;
+}
+
+/* Firefox styles must be entirely separate or it busts Webkit styles. */
+
+@-moz-document url-prefix("") {
+    .vd-c-progress[value] {
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
+        border-radius: .2rem;
+    }
+
+    .vd-c-progress[value]::-moz-progress-bar {
+        background-color: #3e9ff0;
+        background-color: rgba(62, 159, 240, 1);
+        border-top-left-radius: .2rem;
+        border-bottom-left-radius: .2rem;
+    }
+
+    .vd-c-progress[value="100"]::-moz-progress-bar {
+        border-top-right-radius: .2rem;
+        border-bottom-right-radius: .2rem;
+    }
+}
+
+/* IE9 hacks to accompany custom markup. We don't need to scope this via media
+ queries, but I feel better doing it anyway. */
+
+@media screen and (min-width: 0\0) {
+    .vd-c-progress {
+        background-color: #d6d7d9;
+        background-color: rgba(214, 215, 217, 1);
+        border-radius: .2rem;
+    }
+
+    .vd-c-progress-bar {
+        display: inline-block;
+        height: 1rem;
+        text-indent: -999rem; /* Simulate hiding of value as in native
+        `<progress>` */
+        background-color: #3e9ff0;
+        background-color: rgba(62, 159, 240, 1);
+        border-top-left-radius: .2rem;
+        border-bottom-left-radius: .2rem;
+    }
+
+    .vd-c-progress[width="100%"] {
+        border-top-right-radius: .2rem;
+        border-bottom-right-radius: .2rem;
+    }
+}
+
+/*
+ * Control layouts
+ */
+
+.vd-c-form-controls--stacked {
+    margin: 16px 0;
+    margin: 1rem 0;
+}
+
+.vd-c-form-controls--stacked .vd-c-form-control,
+.vd-c-form-controls--stacked .vd-c-progress {
+    display: block;
+}
+
+.vd-c-form-controls--stacked .vd-c-form-control + .vd-c-form-control,
+.vd-c-form-controls--stacked .vd-c-progress + .vd-c-progress {
+    margin-top: 8px;
+    margin-top: .5rem;
+}
+
+.vd-c-form-controls--inline {
+    margin: 16px 0;
+    margin: 1rem 0;
+}
+
+.vd-c-form-controls--inline .vd-c-form-control {
+    display: inline-block;
+    height: 16px;
+    height: 1rem;
+}
+
+.vd-c-form-controls--inline .vd-c-form-control + .vd-c-form-control {
+    margin-left: 16px;
+    margin-left: 1rem;
 }
 
 /* ------------------------------------ *\
@@ -3075,10 +3324,6 @@ hr {
     margin-right: auto; /* [1] */
 }
 
-.vd-c-navbar__logo source, .vd-c-navbar__logo img {
-    height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem); /* [2] */
-}
-
 @media screen and (min-width: 45em) {
     .vd-c-navbar__logo {
         display: -ms-flexbox;
@@ -3086,13 +3331,16 @@ hr {
     }
 }
 
+.vd-c-navbar__logo source, .vd-c-navbar__logo img {
+    height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem);
+}
+
+/* [2] */
+
 @media screen and (min-width: 45em) {
     .vd-c-navbar__logo source, .vd-c-navbar__logo img {
         height: 4rem; /* [2] */
     }
-}
-
-.vd-c-navbar__site-title {
 }
 
 @media screen and (min-width: 45em) {
@@ -3113,12 +3361,12 @@ hr {
  */
 
 .vd-c-header {
-    background-color: #000000;
+    background-color: #000;
     background-color: rgba(0, 0, 0, .8);
 }
 
 .vd-c-header, .vd-c-header a, .vd-c-header a:hover {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -3144,30 +3392,30 @@ hr {
         padding: calc(0.84375rem - 1px) calc(0.84375rem * 2 - 1px); /* [4] */
         vertical-align: middle; /* [5] */
         overflow: visible; /* [6] */
-        cursor: pointer; /* [7] *//* [1] */
+        cursor: pointer;
+        /* [1] */
         display: block;
         width: 100%;
-        /* [1] */
-    }
+    }/* [7] */
 
     .vd-c-header-button, .vd-c-header-button:hover, .vd-c-header-button.is-hover,
     .vd-c-header-button:active, .vd-c-header-button.is-active,
     .vd-c-header-button:focus
     .vd-c-header-button.is-focus {
-        color: #000000;
+        color: #000;
         color: rgba(0, 0, 0, .8);
         text-decoration: none; /* [3] */
     }
 
     .vd-c-header-button:hover, .vd-c-header-button.is-hover {
-        color: #000000;
+        color: #000;
         color: rgba(0, 0, 0, .8);
         background-color: #00a5d4;
         background-color: rgba(0, 165, 212, 1); /* [8] */
     }
 
     .vd-c-header-button:active, .vd-c-header-button.is-active {
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
         background-color: #006a9b;
         background-color: rgba(0, 106, 155, 1); /* [8] */
@@ -3180,10 +3428,10 @@ hr {
     .vd-c-header-button::-moz-focus-inner {
         border: 0; /* [9] */
         padding: 0; /* [9] */
-    }
+    }/* [1] */
 
     .vd-c-header-button--secondary {
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
         background-color: #d0404c;
         background-color: rgba(208, 64, 76, 1);
@@ -3191,7 +3439,7 @@ hr {
 
     .vd-c-header-button--secondary:hover,
     .vd-c-header-button--secondary.is-hover {
-        color: #000000;
+        color: #000;
         color: rgba(0, 0, 0, .8);
         background-color: #cf1d1d;
         background-color: rgba(207, 29, 29, 1);
@@ -3199,7 +3447,7 @@ hr {
 
     .vd-c-header-button--secondary:active,
     .vd-c-header-button--secondary.is-active {
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
         background-color: #9a1919;
         background-color: rgba(154, 25, 25, 1);
@@ -3269,6 +3517,10 @@ hr {
     #BOX
 \* ------------------------------------ */
 
+:root {
+    /* UI *//* Colors *//* Info colors */
+}
+
 /**
  * Default box UI
  */
@@ -3293,7 +3545,7 @@ hr {
 }
 
 .vd-c-box--transaction * {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -3342,7 +3594,7 @@ hr {
 }
 
 .vd-c-background--base {
-    background-color: #000000;
+    background-color: #000;
     background-color: rgba(0, 0, 0, .8);
 }
 
@@ -3362,7 +3614,7 @@ hr {
 }
 
 .vd-c-background--white {
-    background-color: #ffffff;
+    background-color: #fff;
     background-color: rgba(255, 255, 255, 1);
 }
 
@@ -3586,7 +3838,7 @@ hr {
 
     .vd-c-page-title--image {
         position: relative; /* [2] */
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
     }
 
@@ -3597,8 +3849,8 @@ hr {
     }
 
     .vd-c-page-title--image__figure {
-        position: relative; /* [3] */
-    }
+        position: relative;
+    }/* [3] */
 
     .vd-c-page-title--image__figure::after {
         position: absolute; /* [3] */
@@ -3627,10 +3879,6 @@ hr {
  * 1. Only show the last element on mobile
  */
 
-.vd-c-breadcrumb > li::before {
-    content: "< ";
-}
-
 @media screen and (max-width: 44.9375em) {
     .vd-c-breadcrumb > li:not(:last-child) {
         position: absolute;
@@ -3649,6 +3897,10 @@ hr {
         position: static;
         clear: both;
     }
+}
+
+.vd-c-breadcrumb > li::before {
+    content: "< ";
 }
 
 /* ------------------------------------ *\
@@ -3707,9 +3959,6 @@ hr {
  * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
  *
  */
-
-.vd-u-clearfix {
-}
 
 .vd-u-clearfix::after {
     display: block !important;
@@ -3826,7 +4075,7 @@ hr {
 }
 
 .vd-u-color-text--base {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
 }
 
@@ -3846,7 +4095,7 @@ hr {
 }
 
 .vd-u-color-text--white {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
 }
 
