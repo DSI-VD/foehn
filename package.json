@@ -79,7 +79,6 @@
     "postcss-media-minmax": "^2.1.0",
     "postcss-mixins": "^5.0.0",
     "postcss-nested": "^1.0.0",
-    "postcss-nesting": "^2.0.6",
     "postcss-property-lookup": "^1.1.4",
     "postcss-selector-matches": "^2.0.1",
     "postcss-selector-not": "^2.0.0",

@@ -785,8 +785,10 @@ html {
     color: #000000;
     color: rgba(0, 0, 0, .8);
     text-rendering: optimizeLegibility;
-    overflow-y: scroll; /* [4] */
+    overflow-y: scroll;
 }
+
+/* [4] */
 
 html.wf-metaserifweb-n4-active {
     font-weight: 500; /* [5] */
@@ -2567,14 +2569,14 @@ hr {
     padding: 1.6875rem;
 }
 
-.vd-o-box > :last-child {
-    margin-bottom: 0;
-}
-
 .vd-o-box::after {
     display: block !important;
     clear: both !important;
     content: "" !important;
+}
+
+.vd-o-box > :last-child {
+    margin-bottom: 0;
 }
 
 /* ------------------------------------ *\
@@ -2673,8 +2675,10 @@ hr {
     padding: calc(0.84375rem - 1px) calc(0.84375rem * 2 - 1px); /* [4] */
     vertical-align: middle; /* [5] */
     overflow: visible; /* [6] */
-    cursor: pointer; /* [7] */
+    cursor: pointer;
 }
+
+/* [7] */
 
 .vd-c-button, .vd-c-button:hover, .vd-c-button.is-hover, .vd-c-button:active,
 .vd-c-button.is-active, .vd-c-button:focus
@@ -2770,9 +2774,6 @@ hr {
 }
 
 /* Button disabled */
-
-.vd-c-button--disabled, [type="submit"][disabled] {
-}
 
 .vd-c-button--disabled, .vd-c-button--disabled:hover,
 .vd-c-button--disabled:focus, .vd-c-button--disabled:active,
@@ -2874,9 +2875,6 @@ hr {
  * 2. Checked
  * 3. Active
  */
-
-.vd-c-form-control input {
-}
 
 .vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
     box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1); /* [1] */
@@ -3178,8 +3176,10 @@ hr {
     border: 0; /* [2] */
     -webkit-appearance: none;
        -moz-appearance: none;
-            appearance: none; /* [3] */
+            appearance: none;
 }
+
+/* [3] */
 
 .vd-c-progress[value]::-webkit-progress-bar {
     background-color: #d6d7d9;
@@ -3314,10 +3314,6 @@ hr {
     margin-right: auto; /* [1] */
 }
 
-.vd-c-navbar__logo source, .vd-c-navbar__logo img {
-    height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem); /* [2] */
-}
-
 @media screen and (min-width: 45em) {
     .vd-c-navbar__logo {
         display: -ms-flexbox;
@@ -3325,13 +3321,16 @@ hr {
     }
 }
 
+.vd-c-navbar__logo source, .vd-c-navbar__logo img {
+    height: calc(0.84375rem + 1px + 1rem + 1px + 0.84375rem);
+}
+
+/* [2] */
+
 @media screen and (min-width: 45em) {
     .vd-c-navbar__logo source, .vd-c-navbar__logo img {
         height: 4rem; /* [2] */
     }
-}
-
-.vd-c-navbar__site-title {
 }
 
 @media screen and (min-width: 45em) {
@@ -3383,11 +3382,11 @@ hr {
         padding: calc(0.84375rem - 1px) calc(0.84375rem * 2 - 1px); /* [4] */
         vertical-align: middle; /* [5] */
         overflow: visible; /* [6] */
-        cursor: pointer; /* [7] *//* [1] */
+        cursor: pointer;
+        /* [1] */
         display: block;
         width: 100%;
-        /* [1] */
-    }
+    }/* [7] */
 
     .vd-c-header-button, .vd-c-header-button:hover, .vd-c-header-button.is-hover,
     .vd-c-header-button:active, .vd-c-header-button.is-active,
@@ -3419,7 +3418,7 @@ hr {
     .vd-c-header-button::-moz-focus-inner {
         border: 0; /* [9] */
         padding: 0; /* [9] */
-    }
+    }/* [1] */
 
     .vd-c-header-button--secondary {
         color: #ffffff;
@@ -3836,8 +3835,8 @@ hr {
     }
 
     .vd-c-page-title--image__figure {
-        position: relative; /* [3] */
-    }
+        position: relative;
+    }/* [3] */
 
     .vd-c-page-title--image__figure::after {
         position: absolute; /* [3] */
@@ -3866,10 +3865,6 @@ hr {
  * 1. Only show the last element on mobile
  */
 
-.vd-c-breadcrumb > li::before {
-    content: "< ";
-}
-
 @media screen and (max-width: 44.9375em) {
     .vd-c-breadcrumb > li:not(:last-child) {
         position: absolute;
@@ -3888,6 +3883,10 @@ hr {
         position: static;
         clear: both;
     }
+}
+
+.vd-c-breadcrumb > li::before {
+    content: "< ";
 }
 
 /* ------------------------------------ *\
@@ -3946,9 +3945,6 @@ hr {
  * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
  *
  */
-
-.vd-u-clearfix {
-}
 
 .vd-u-clearfix::after {
     display: block !important;
