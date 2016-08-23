@@ -2811,6 +2811,8 @@ hr {
 
 /*
  * Checkboxes and radios
+ *
+ * 1. Put the input behind the label so it doesn't overlay text
  */
 
 .vd-c-form-control {
@@ -2825,7 +2827,7 @@ hr {
 
 .vd-c-form-control input {
     position: absolute;
-    z-index: -1; /* Put the input behind the label so it doesn't overlay text */
+    z-index: -1;
     opacity: 0;
 }
 
@@ -2865,28 +2867,33 @@ hr {
 }
 */
 
-/* Focus */
+/**
+ * States
+ *
+ * 1. Focus
+ * 2. Checked
+ * 3. Active
+ */
 
-.vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
-    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1);
+.vd-c-form-control input {
 }
 
-/* Checked state */
+.vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
+    box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1), 0 0 0 .2rem rgba(62, 159, 240, 1); /* [1] */
+}
 
 .vd-c-form-control input:checked ~ .vd-c-form-control__indicator {
     color: #ffffff;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1); /* [2] */
     background-color: #3e9ff0;
-    background-color: rgba(62, 159, 240, 1);
+    background-color: rgba(62, 159, 240, 1); /* [2] */
 }
-
-/* Active */
 
 .vd-c-form-control input:active ~ .vd-c-form-control__indicator {
     color: #ffffff;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1); /* [3] */
     background-color: #3e9ff0;
-    background-color: rgba(62, 159, 240, 1);
+    background-color: rgba(62, 159, 240, 1); /* [3] */
 }
 
 /* Checkbox modifiers */

@@ -26,6 +26,8 @@
 
 /*
  * Checkboxes and radios
+ *
+ * 1. Put the input behind the label so it doesn't overlay text
  */
 
 .c-form-control {
@@ -34,30 +36,31 @@
     color: var(--form-text-color);
     padding-left: var(--form-spacing);
     cursor: pointer;
-}
 
-.c-form-control input {
-    position: absolute;
-    z-index: -1; /* Put the input behind the label so it doesn't overlay text */
-    opacity: 0;
-}
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
 
-.c-form-control__indicator {
-    position: absolute;
-    top: var(--form-border-radius);
-    left: 0;
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    font-size: 65%;
-    line-height: 1rem;
-    color: var(--form-background-color);
-    text-align: center;
-    background-color: var(--form-background-color);
-    background-size: 50% 50%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    user-select: none;
+    &__indicator {
+        position: absolute;
+        top: var(--form-border-radius);
+        left: 0;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        font-size: 65%;
+        line-height: 1rem;
+        color: var(--form-background-color);
+        text-align: center;
+        background-color: var(--form-background-color);
+        background-size: 50% 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        user-select: none;
+    }
+
 }
 
 /* Hover state */
@@ -69,24 +72,34 @@
 }
 */
 
-/* Focus */
-.c-form-control input:focus ~ .c-form-control__indicator {
-    box-shadow:
-        0 0 0 .075rem var(--form-page-background-color),
-        0 0 0 .2rem var(--form-active-color);
+/**
+ * States
+ *
+ * 1. Focus
+ * 2. Checked
+ * 3. Active
+ */
+.c-form-control input {
+
+    &:focus ~ .c-form-control__indicator {
+        box-shadow:
+            0 0 0 .075rem var(--form-page-background-color),
+            0 0 0 .2rem var(--form-active-color); /* [1] */
+    }
+
+    &:checked ~ .c-form-control__indicator {
+        color: var(--form-page-background-color); /* [2] */
+        background-color: var(--form-active-color); /* [2] */
+    }
+
+    &:active ~ .c-form-control__indicator {
+        color: var(--form-page-background-color); /* [3] */
+        background-color: var(--form-active-color); /* [3] */
+    }
+
 }
 
-/* Checked state */
-.c-form-control input:checked ~ .c-form-control__indicator {
-    color: var(--form-page-background-color);
-    background-color: var(--form-active-color);
-}
 
-/* Active */
-.c-form-control input:active ~ .c-form-control__indicator {
-    color: var(--form-page-background-color);
-    background-color: var(--form-active-color);
-}
 
 /* Checkbox modifiers */
 .c-checkbox .c-form-control__indicator {
