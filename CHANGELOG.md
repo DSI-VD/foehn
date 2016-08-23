@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Forms style use based on (WTF, forms ?](http://wtfforms.com/)
 - Add clearfix in `.o-wrapper`
 
 ## [0.7.0]
