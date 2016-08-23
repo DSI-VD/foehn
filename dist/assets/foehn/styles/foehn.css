@@ -782,7 +782,7 @@ html {
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [3] */
     font-kerning: normal; /* [3] */
     line-height: 1.5; /* [1] */
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     text-rendering: optimizeLegibility;
     overflow-y: scroll;
@@ -1050,7 +1050,7 @@ li {
 \* ------------------------------------ */
 
 a {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     transition: .3333s;
 }
@@ -1159,8 +1159,8 @@ figure {
 
 blockquote, .vd-c-blockquote {
     font-style: italic;
-    border-left: 3.375px rgba(0, 0, 0, .8) solid;
-    border-left: 0.21094rem rgba(0, 0, 0, .8) solid;
+    border-left: 3.375px rgba(0, 0, 0, 0.8) solid;
+    border-left: 0.21094rem rgba(0, 0, 0, 0.8) solid;
     margin-left: 27px;
     margin-left: 1.6875rem;
     padding-left: 27px;
@@ -1624,7 +1624,7 @@ hr {
     .vd-o-layout__item--1-3\@lap-and-up {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 1/3 - 0.6666666666666667rem);
+        width: calc(99.9% * 1/3 - 0.666666666666667rem);
     }
 
     .vd-o-layout__item--1-3:nth-child(1n), .vd-o-layout__item--1-6:nth-child(1n),
@@ -1648,7 +1648,7 @@ hr {
     .vd-o-layout__item--2-3\@lap-and-up {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 2/3 - 0.33333333333333337rem);
+        width: calc(99.9% * 2/3 - 0.333333333333333rem);
     }
 
     .vd-o-layout__item--2-3:nth-child(1n), .vd-o-layout__item--5-6:nth-child(1n),
@@ -1758,7 +1758,7 @@ hr {
     .vd-o-layout__item--1-6 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 1/6 - 0.8333333333333334rem);
+        width: calc(99.9% * 1/6 - 0.833333333333333rem);
     }
 
     .vd-o-layout__item--1-6:nth-child(1n) {
@@ -1778,7 +1778,7 @@ hr {
     .vd-o-layout__item--5-6 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 5/6 - 0.16666666666666663rem);
+        width: calc(99.9% * 5/6 - 0.166666666666667rem);
     }
 
     .vd-o-layout__item--5-6:nth-child(1n) {
@@ -1798,7 +1798,7 @@ hr {
     .vd-o-layout__item--1-12 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-        width: calc(99.9% * 1/12 - 0.9166666666666666rem);
+        width: calc(99.9% * 1/12 - 0.916666666666667rem);
     }
 
     .vd-o-layout__item--1-12:nth-child(1n) {
@@ -1822,22 +1822,22 @@ hr {
 
 .vd-o-layout__item--move--1-12 {
     position: relative;
-    left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+    left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---1-12 {
     position: relative;
-    left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+    left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--2-12 {
     position: relative;
-    left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+    left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---2-12 {
     position: relative;
-    left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+    left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--3-12 {
@@ -1852,22 +1852,22 @@ hr {
 
 .vd-o-layout__item--move--4-12 {
     position: relative;
-    left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+    left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---4-12 {
     position: relative;
-    left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+    left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--5-12 {
     position: relative;
-    left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+    left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---5-12 {
     position: relative;
-    left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+    left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--6-12 {
@@ -1882,22 +1882,22 @@ hr {
 
 .vd-o-layout__item--move--7-12 {
     position: relative;
-    left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+    left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---7-12 {
     position: relative;
-    left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+    left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--8-12 {
     position: relative;
-    left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+    left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---8-12 {
     position: relative;
-    left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+    left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--9-12 {
@@ -1912,22 +1912,22 @@ hr {
 
 .vd-o-layout__item--move--10-12 {
     position: relative;
-    left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+    left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move---10-12 {
     position: relative;
-    left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+    left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move--11-12 {
     position: relative;
-    left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+    left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
 }
 
 .vd-o-layout__item--move---11-12 {
     position: relative;
-    left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+    left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
 }
 
 .vd-o-layout__item--move--12-12 {
@@ -1943,22 +1943,22 @@ hr {
 @media screen and (max-width: 44.9375em) {
     .vd-o-layout__item--move--1-12\@palm {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@palm {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@palm {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@palm {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@palm {
@@ -1973,22 +1973,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@palm {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@palm {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@palm {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@palm {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@palm {
@@ -2003,22 +2003,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@palm {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@palm {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@palm {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@palm {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@palm {
@@ -2033,22 +2033,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@palm {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@palm {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@palm {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@palm {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@palm {
@@ -2065,22 +2065,22 @@ hr {
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
     .vd-o-layout__item--move--1-12\@lap {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@lap {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@lap {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@lap {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@lap {
@@ -2095,22 +2095,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@lap {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@lap {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@lap {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@lap {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@lap {
@@ -2125,22 +2125,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@lap {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@lap {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@lap {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@lap {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@lap {
@@ -2155,22 +2155,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@lap {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@lap {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@lap {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@lap {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@lap {
@@ -2187,22 +2187,22 @@ hr {
 @media screen and (min-width: 45em) {
     .vd-o-layout__item--move--1-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@lap-and-up {
@@ -2217,22 +2217,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@lap-and-up {
@@ -2247,22 +2247,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@lap-and-up {
@@ -2277,22 +2277,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@lap-and-up {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@lap-and-up {
@@ -2309,22 +2309,22 @@ hr {
 @media screen and (max-width: 63.9375em) {
     .vd-o-layout__item--move--1-12\@portable {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@portable {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@portable {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@portable {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@portable {
@@ -2339,22 +2339,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@portable {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@portable {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@portable {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@portable {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@portable {
@@ -2369,22 +2369,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@portable {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@portable {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@portable {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@portable {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@portable {
@@ -2399,22 +2399,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@portable {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@portable {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@portable {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@portable {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@portable {
@@ -2431,22 +2431,22 @@ hr {
 @media screen and (min-width: 64em) {
     .vd-o-layout__item--move--1-12\@desk {
         position: relative;
-        left: calc(99.9% * 1/12 - 0.9166666666666666rem + 1rem);
+        left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---1-12\@desk {
         position: relative;
-        left: calc(99.9% * -1/12 - 1.0833333333333333rem + 1rem);
+        left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--2-12\@desk {
         position: relative;
-        left: calc(99.9% * 2/12 - 0.8333333333333334rem + 1rem);
+        left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---2-12\@desk {
         position: relative;
-        left: calc(99.9% * -2/12 - 1.1666666666666667rem + 1rem);
+        left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--3-12\@desk {
@@ -2461,22 +2461,22 @@ hr {
 
     .vd-o-layout__item--move--4-12\@desk {
         position: relative;
-        left: calc(99.9% * 4/12 - 0.6666666666666667rem + 1rem);
+        left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---4-12\@desk {
         position: relative;
-        left: calc(99.9% * -4/12 - 1.3333333333333333rem + 1rem);
+        left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--5-12\@desk {
         position: relative;
-        left: calc(99.9% * 5/12 - 0.5833333333333333rem + 1rem);
+        left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---5-12\@desk {
         position: relative;
-        left: calc(99.9% * -5/12 - 1.4166666666666667rem + 1rem);
+        left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--6-12\@desk {
@@ -2491,22 +2491,22 @@ hr {
 
     .vd-o-layout__item--move--7-12\@desk {
         position: relative;
-        left: calc(99.9% * 7/12 - 0.41666666666666663rem + 1rem);
+        left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---7-12\@desk {
         position: relative;
-        left: calc(99.9% * -7/12 - 1.5833333333333335rem + 1rem);
+        left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--8-12\@desk {
         position: relative;
-        left: calc(99.9% * 8/12 - 0.33333333333333337rem + 1rem);
+        left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---8-12\@desk {
         position: relative;
-        left: calc(99.9% * -8/12 - 1.6666666666666665rem + 1rem);
+        left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--9-12\@desk {
@@ -2521,22 +2521,22 @@ hr {
 
     .vd-o-layout__item--move--10-12\@desk {
         position: relative;
-        left: calc(99.9% * 10/12 - 0.16666666666666663rem + 1rem);
+        left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move---10-12\@desk {
         position: relative;
-        left: calc(99.9% * -10/12 - 1.8333333333333335rem + 1rem);
+        left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move--11-12\@desk {
         position: relative;
-        left: calc(99.9% * 11/12 - 0.08333333333333337rem + 1rem);
+        left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
     .vd-o-layout__item--move---11-12\@desk {
         position: relative;
-        left: calc(99.9% * -11/12 - 1.9166666666666665rem + 1rem);
+        left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
     .vd-o-layout__item--move--12-12\@desk {
@@ -2683,20 +2683,20 @@ hr {
 .vd-c-button, .vd-c-button:hover, .vd-c-button.is-hover, .vd-c-button:active,
 .vd-c-button.is-active, .vd-c-button:focus
     .vd-c-button.is-focus {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     text-decoration: none; /* [3] */
 }
 
 .vd-c-button:hover, .vd-c-button.is-hover {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     background-color: #00a5d4;
     background-color: rgba(0, 165, 212, 1); /* [8] */
 }
 
 .vd-c-button:active, .vd-c-button.is-active {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
     background-color: #006a9b;
     background-color: rgba(0, 106, 155, 1); /* [8] */
@@ -2736,21 +2736,21 @@ hr {
 /* Button secondary */
 
 .vd-c-button--secondary {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
     background-color: #d0404c;
     background-color: rgba(208, 64, 76, 1);
 }
 
 .vd-c-button--secondary:hover, .vd-c-button--secondary.is-hover {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     background-color: #cf1d1d;
     background-color: rgba(207, 29, 29, 1);
 }
 
 .vd-c-button--secondary:active, .vd-c-button--secondary.is-active {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
     background-color: #9a1919;
     background-color: rgba(154, 25, 25, 1);
@@ -2819,7 +2819,7 @@ hr {
 .vd-c-form-control {
     position: relative;
     display: inline-block;
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     padding-left: 27px;
     padding-left: 1.6875rem;
@@ -2881,14 +2881,14 @@ hr {
 }
 
 .vd-c-form-control input:checked ~ .vd-c-form-control__indicator {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1); /* [2] */
     background-color: #3e9ff0;
     background-color: rgba(62, 159, 240, 1); /* [2] */
 }
 
 .vd-c-form-control input:active ~ .vd-c-form-control__indicator {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1); /* [3] */
     background-color: #3e9ff0;
     background-color: rgba(62, 159, 240, 1); /* [3] */
@@ -2942,7 +2942,7 @@ hr {
 .vd-c-select {
     position: relative;
     display: inline-block;
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
 }
 
@@ -2950,7 +2950,7 @@ hr {
     display: inline-block;
     width: 100%;
     line-height: 1.5;
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     background-color: #d6d7d9;
     background-color: rgba(214, 215, 217, 1);
@@ -3015,7 +3015,7 @@ hr {
 }
 
 .vd-c-select select:active {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1); /* [2] */
     background-color: #3e9ff0;
     background-color: rgba(62, 159, 240, 1); /* [2] */
@@ -3037,7 +3037,7 @@ hr {
     }/* <option> elements inherit styles from <select>, so reset them. */
 
     .vd-c-select option {
-        background-color: #ffffff;
+        background-color: #fff;
         background-color: rgba(255, 255, 255, 1);
     }
 }
@@ -3047,7 +3047,7 @@ hr {
 @media screen and (min-width: 0\0) {
     .vd-c-select select {
         z-index: 1;
-        padding: .5rem 1.6875rem .5rem 1rem;
+        padding: .5rem 1.6875rem 0.5rem 1rem;
     }
 
     .vd-c-select::after {
@@ -3069,7 +3069,7 @@ hr {
 
     .vd-c-select select:hover, .vd-c-select select:focus,
     .vd-c-select select:active {
-        color: #000000;
+        color: #000;
         color: rgba(0, 0, 0, .8);
         background-color: #d6d7d9;
         background-color: rgba(214, 215, 217, 1);
@@ -3105,9 +3105,9 @@ hr {
     height: 40px;
     height: 2.5rem;
     line-height: 1.5;
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
-    background-color: #ffffff;
+    background-color: #fff;
     background-color: rgba(255, 255, 255, 1);
     border: 1.2px solid #aeb0b5;
     border: 1.2px solid rgba(174, 176, 181, 1);
@@ -3139,7 +3139,7 @@ hr {
     height: 40px;
     height: 2.5rem;
     line-height: 1.5;
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
     background-color: #d6d7d9;
     background-color: rgba(214, 215, 217, 1);
@@ -3353,12 +3353,12 @@ hr {
  */
 
 .vd-c-header {
-    background-color: #000000;
+    background-color: #000;
     background-color: rgba(0, 0, 0, .8);
 }
 
 .vd-c-header, .vd-c-header a, .vd-c-header a:hover {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -3394,20 +3394,20 @@ hr {
     .vd-c-header-button:active, .vd-c-header-button.is-active,
     .vd-c-header-button:focus
     .vd-c-header-button.is-focus {
-        color: #000000;
+        color: #000;
         color: rgba(0, 0, 0, .8);
         text-decoration: none; /* [3] */
     }
 
     .vd-c-header-button:hover, .vd-c-header-button.is-hover {
-        color: #000000;
+        color: #000;
         color: rgba(0, 0, 0, .8);
         background-color: #00a5d4;
         background-color: rgba(0, 165, 212, 1); /* [8] */
     }
 
     .vd-c-header-button:active, .vd-c-header-button.is-active {
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
         background-color: #006a9b;
         background-color: rgba(0, 106, 155, 1); /* [8] */
@@ -3423,7 +3423,7 @@ hr {
     }/* [1] */
 
     .vd-c-header-button--secondary {
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
         background-color: #d0404c;
         background-color: rgba(208, 64, 76, 1);
@@ -3431,7 +3431,7 @@ hr {
 
     .vd-c-header-button--secondary:hover,
     .vd-c-header-button--secondary.is-hover {
-        color: #000000;
+        color: #000;
         color: rgba(0, 0, 0, .8);
         background-color: #cf1d1d;
         background-color: rgba(207, 29, 29, 1);
@@ -3439,7 +3439,7 @@ hr {
 
     .vd-c-header-button--secondary:active,
     .vd-c-header-button--secondary.is-active {
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
         background-color: #9a1919;
         background-color: rgba(154, 25, 25, 1);
@@ -3533,7 +3533,7 @@ hr {
 }
 
 .vd-c-box--transaction * {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -3582,7 +3582,7 @@ hr {
 }
 
 .vd-c-background--base {
-    background-color: #000000;
+    background-color: #000;
     background-color: rgba(0, 0, 0, .8);
 }
 
@@ -3602,7 +3602,7 @@ hr {
 }
 
 .vd-c-background--white {
-    background-color: #ffffff;
+    background-color: #fff;
     background-color: rgba(255, 255, 255, 1);
 }
 
@@ -3826,7 +3826,7 @@ hr {
 
     .vd-c-page-title--image {
         position: relative; /* [2] */
-        color: #ffffff;
+        color: #fff;
         color: rgba(255, 255, 255, 1);
     }
 
@@ -4063,7 +4063,7 @@ hr {
 }
 
 .vd-u-color-text--base {
-    color: #000000;
+    color: #000;
     color: rgba(0, 0, 0, .8);
 }
 
@@ -4083,7 +4083,7 @@ hr {
 }
 
 .vd-u-color-text--white {
-    color: #ffffff;
+    color: #fff;
     color: rgba(255, 255, 255, 1);
 }
 
