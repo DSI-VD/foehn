@@ -18,7 +18,6 @@
  */
 html {
     min-height: 100%; /* [1] */
-
     font-size: var(--global-font-size); /* [2] */
     font-weight: var(--global-font-weight);
     font-family: var(--global-font-family);
@@ -26,10 +25,8 @@ html {
     font-feature-settings: "kern", "liga", "clig", "calt"; /* [3] */
     font-kerning: normal; /* [3] */
     line-height: var(--global-line-height); /* [1] */
-
     color: var(--global-text-color);
     text-rendering: optimizeLegibility;
-
     overflow-y: scroll; /* [4] */
 
     &.wf-metaserifweb-n4-active {

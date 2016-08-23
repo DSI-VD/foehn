@@ -7,11 +7,9 @@
     --table-border-width: 1px;
     --table-border-style: solid;
     --table-border-color: var(--global-text-color);
-
     --table-padding: calc(var(--global-spacing-unit) / 4);
     --table-padding--cosy: calc(var(--global-spacing-unit) / 2);
     --table-padding--comfy: calc(var(--global-spacing-unit));
-
     --table-background-color: var(--color-gray-light);
 }
 
@@ -28,7 +26,6 @@
 .o-table {
     display: block; /* [1] */
     width: 100%;
-
     border-collapse: collapse;
     overflow-x: auto; /* [1] */
 
@@ -47,7 +44,6 @@
 
     @media (--lap-and-up) {
         display: table; /* [2] */
-
         overflow-x: visible; /* [2] */
     }
 }
@@ -71,7 +67,6 @@
     tfoot {
         background-color: transparent;
     }
-
 }
 
 .table--borderless {

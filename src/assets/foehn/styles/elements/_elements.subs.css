@@ -13,6 +13,5 @@ sub {
 
 .wf-active sub {
     bottom: 0; /* [1] */
-
     font-size: 100%; /* [1] */
 }

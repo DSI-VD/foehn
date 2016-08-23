@@ -14,7 +14,6 @@
     .u-visually-hidden\@palm {
         display: hidden;
     }
-
 }
 
 @media (--lap) {
@@ -22,7 +21,6 @@
     .u-visually-hidden\@lap {
         display: hidden;
     }
-
 }
 
 @media (--lap-and-up) {
@@ -30,7 +28,6 @@
     .u-visually-hidden\@lap-and-up {
         display: hidden;
     }
-
 }
 
 @media (--portable) {
@@ -38,7 +35,6 @@
     .u-visually-hidden\@portable {
         display: hidden;
     }
-
 }
 
 @media (--desk) {
@@ -46,7 +42,6 @@
     .u-visually-hidden\@desk {
         display: hidden;
     }
-
 }
 
 
@@ -66,7 +61,6 @@
     .u-hidden\@palm {
         display: disappear;
     }
-
 }
 
 @media (--lap) {
@@ -74,7 +68,6 @@
     .u-hidden\@lap {
         display: disappear;
     }
-
 }
 
 @media (--lap-and-up) {
@@ -82,7 +75,6 @@
     .u-hidden\@lap-and-up {
         display: disappear;
     }
-
 }
 
 @media (--portable) {
@@ -90,7 +82,6 @@
     .u-hidden\@portable {
         display: disappear;
     }
-
 }
 
 @media (--desk) {
@@ -98,5 +89,4 @@
     .u-hidden\@desk {
         display: disappear;
     }
-
 }

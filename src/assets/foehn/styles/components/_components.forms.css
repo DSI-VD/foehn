@@ -60,7 +60,6 @@
         background-repeat: no-repeat;
         user-select: none;
     }
-
 }
 
 /* Hover state */
@@ -96,7 +95,6 @@
         color: var(--form-page-background-color); /* [3] */
         background-color: var(--form-active-color); /* [3] */
     }
-
 }
 
 
@@ -176,7 +174,6 @@
             color: transparent; /* [1] */
             text-shadow: 0 0 0 rgba(0, 0, 0, 1); /* [1] */
         }
-
     }
 
     &::after { /* [2] */
@@ -194,7 +191,6 @@
         content: "";
         pointer-events: none;
     }
-
 }
 
 
@@ -232,7 +228,6 @@
     &::-ms-expand {
         display: none; /* [3] */
     }
-
 }
 
 /* Media query to target Firefox only */
@@ -341,9 +336,7 @@
             padding: .5rem 1rem;
             content: "Browse";
         }
-
     }
-
 }
 
 
@@ -387,14 +380,12 @@
             border-top-left-radius: .2rem;
             border-bottom-left-radius: .2rem;
         }
-
     }
 
     &[value="100"]::-webkit-progress-value {
         border-top-right-radius: .2rem;
         border-bottom-right-radius: .2rem;
     }
-
 }
 
 /* Firefox styles must be entirely separate or it busts Webkit styles. */
@@ -461,7 +452,6 @@
         .c-progress + .c-progress {
             margin-top: .5rem;
         }
-
     }
 
     &--inline {
@@ -474,9 +464,6 @@
             + .c-form-control {
                 margin-left: 1rem;
             }
-
         }
-
     }
-
 }

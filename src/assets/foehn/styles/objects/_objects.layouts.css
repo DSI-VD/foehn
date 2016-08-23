@@ -48,7 +48,6 @@
             margin-right: 0; /* [2] */
         }
     }
-
 }
 
 
@@ -65,7 +64,6 @@
     .o-layout__item--order-$i {
         order: $(i);
     }
-
 }
 
 .o-layout__item--order-last {
@@ -78,7 +76,6 @@
         .o-layout__item--lap-and-up--order-$i {
             order: $(i);
         }
-
     }
 
     .o-layout__item--order-last\@lap-and-up {
@@ -140,7 +137,6 @@
     .o-layout__item--3-4\@lap-and-up {
         lost-column: 3/4 flex;
     }
-
 }
 
 /* Items size on desk and up */
@@ -183,7 +179,6 @@
     .o-layout__item--move---$(fraction)-12 {
         lost-move: -$fraction/12;
     }
-
 }
 
 @each $query, $breakpoint in (--palm, --lap, --lap-and-up, --portable, --desk),
@@ -198,7 +193,6 @@
             .o-layout__item--move---$(fraction)-12\@$(breakpoint) {
                 lost-move: -$fraction/12;
             }
-
         }
     }
 }
