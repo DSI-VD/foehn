@@ -58,7 +58,6 @@ module.exports = function() {
             require('postcss-custom-properties'),
             require('postcss-media-minmax'),
             require('postcss-color-function'),
-            require('postcss-nesting'),
             require('postcss-nested'),
             require('postcss-custom-selectors'),
             require('postcss-property-lookup'),
