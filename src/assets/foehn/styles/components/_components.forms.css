@@ -148,51 +148,57 @@
 
 /*
  * Select
+ *
+ * 1. Undo the Firefox inner focus ring
+ * 2. Dropdown arrow
  */
 
 .c-select {
     position: relative;
     display: inline-block;
     color: var(--form-text-color);
+
+    select {
+        display: inline-block;
+        width: 100%;
+        line-height: 1.5;
+        color: var(--form-text-color);
+        background-color: var(--form-background-color);
+        border: 0;
+        border-radius: var(--form-border-radius);
+        margin: 0;
+        padding: .5rem 2.25rem .5rem 1rem;
+        cursor: pointer;
+        outline: 0;
+        appearance: none;
+
+        &:focus:-moz-focusring {
+            color: transparent; /* [1] */
+            text-shadow: 0 0 0 rgba(0, 0, 0, 1); /* [1] */
+        }
+
+    }
+
+    &::after { /* [2] */
+        position: absolute;
+        top: 50%;
+        right: 1var(--form-border-radius);
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: .35rem solid;
+        border-right: .35rem solid transparent;
+        border-bottom: .35rem solid transparent;
+        border-left: .35rem solid transparent;
+        margin-top: -.15rem;
+        content: "";
+        pointer-events: none;
+    }
+
 }
 
-.c-select select {
-    display: inline-block;
-    width: 100%;
-    line-height: 1.5;
-    color: var(--form-text-color);
-    background-color: var(--form-background-color);
-    border: 0;
-    border-radius: var(--form-border-radius);
-    margin: 0;
-    padding: .5rem 2.25rem .5rem 1rem;
-    cursor: pointer;
-    outline: 0;
-    appearance: none;
-}
 
-/* Undo the Firefox inner focus ring */
-.c-select select:focus:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
-}
 
-/* Dropdown arrow */
-.c-select::after {
-    position: absolute;
-    top: 50%;
-    right: 1var(--form-border-radius);
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: .35rem solid;
-    border-right: .35rem solid transparent;
-    border-bottom: .35rem solid transparent;
-    border-left: .35rem solid transparent;
-    margin-top: -.15rem;
-    content: "";
-    pointer-events: none;
-}
 
 /* Hover state */
 
@@ -202,22 +208,31 @@
 }
 */
 
-/* Focus */
-.c-select select:focus {
-    box-shadow:
-        0 0 0 .075rem var(--form-page-background-color),
-        0 0 0 .2rem var(--form-active-color);
-}
+/**
+ * States
+ *
+ * 1. Focus
+ * 2. Active/open
+ * 3. Hide the arrow in IE10 and up
+ */
 
-/* Active/open */
-.c-select select:active {
-    color: var(--form-page-background-color);
-    background-color: var(--form-active-color);
-}
+.c-select select {
 
-/* Hide the arrow in IE10 and up */
-.c-select select::-ms-expand {
-    display: none;
+    &:focus {
+        box-shadow:
+            0 0 0 .075rem var(--form-page-background-color),
+            0 0 0 .2rem var(--form-active-color); /* [1] */
+    }
+
+    &:active {
+        color: var(--form-page-background-color); /* [2] */
+        background-color: var(--form-active-color); /* [2] */
+    }
+
+    &::-ms-expand {
+        display: none; /* [3] */
+    }
+
 }
 
 /* Media query to target Firefox only */
@@ -279,52 +294,60 @@
     display: inline-block;
     height: 2.5rem;
     cursor: pointer;
+
+    input {
+        min-width: 14rem;
+        margin: 0;
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
+
+    &--custom {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        height: 2.5rem;
+        line-height: 1.5;
+        color: var(--form-text-color);
+        background-color: var(--form-page-background-color);
+        border: .075rem solid var(--form-border-color);
+        border-radius: var(--form-border-radius);
+        padding: .5rem 1rem;
+        box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
+        user-select: none;
+
+        &::after {
+            content: "Choose file...";
+        }
+
+        &::before {
+            position: absolute;
+            top: -.075rem;
+            right: -.075rem;
+            bottom: -.075rem;
+            z-index: 6;
+            display: block;
+            height: 2.5rem;
+            line-height: 1.5;
+            color: var(--form-text-color);
+            background-color: var(--form-background-color);
+            border: .075rem solid var(--form-border-color);
+            border-radius:
+                0 var(--form-border-radius)
+                var(--form-border-radius)
+                0;
+            padding: .5rem 1rem;
+            content: "Browse";
+        }
+
+    }
+
 }
 
-.file input {
-    min-width: 14rem;
-    margin: 0;
-    filter: alpha(opacity=0);
-    opacity: 0;
-}
 
-.file--custom {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 5;
-    height: 2.5rem;
-    line-height: 1.5;
-    color: var(--form-text-color);
-    background-color: var(--form-page-background-color);
-    border: .075rem solid var(--form-border-color);
-    border-radius: var(--form-border-radius);
-    padding: .5rem 1rem;
-    box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
-    user-select: none;
-}
 
-.file--custom::after {
-    content: "Choose file...";
-}
-
-.file--custom::before {
-    position: absolute;
-    top: -.075rem;
-    right: -.075rem;
-    bottom: -.075rem;
-    z-index: 6;
-    display: block;
-    height: 2.5rem;
-    line-height: 1.5;
-    color: var(--form-text-color);
-    background-color: var(--form-background-color);
-    border: .075rem solid var(--form-border-color);
-    border-radius: 0 var(--form-border-radius) var(--form-border-radius) 0;
-    padding: .5rem 1rem;
-    content: "Browse";
-}
 
 /* Focus */
 .file input:focus ~ .file--custom {
@@ -424,29 +447,36 @@
  * Control layouts
  */
 
-.c-form-controls--stacked {
-    margin: 1rem 0;
-}
+.c-form-controls {
 
-.c-form-controls--stacked .c-form-control,
-.c-form-controls--stacked .c-progress {
-    display: block;
-}
+    &--stacked {
+        margin: 1rem 0;
 
-.c-form-controls--stacked .c-form-control + .c-form-control,
-.c-form-controls--stacked .c-progress + .c-progress {
-    margin-top: .5rem;
-}
+        .c-form-control,
+        .c-progress {
+            display: block;
+        }
 
-.c-form-controls--inline {
-    margin: 1rem 0;
-}
+        .c-form-control + .c-form-control,
+        .c-progress + .c-progress {
+            margin-top: .5rem;
+        }
 
-.c-form-controls--inline .c-form-control {
-    display: inline-block;
-    height: 1rem;
-}
+    }
 
-.c-form-controls--inline .c-form-control + .c-form-control {
-    margin-left: 1rem;
+    &--inline {
+        margin: 1rem 0;
+
+        .c-form-control {
+            display: inline-block;
+            height: 1rem;
+
+            + .c-form-control {
+                margin-left: 1rem;
+            }
+
+        }
+
+    }
+
 }
