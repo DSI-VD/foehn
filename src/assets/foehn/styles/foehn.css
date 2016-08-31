@@ -65,6 +65,7 @@
  * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  * Spacing..............Utilities to work with spaces.
+ * Print................Toggling content for print..
  */
 
 
@@ -183,3 +184,4 @@
 @import "utilities/_utilities.utilities-responsive.css";
 @import "utilities/_utilities.spacing.css";
 @import "utilities/_utilities.layout.css";
+@import "utilities/_utilities.print.css";

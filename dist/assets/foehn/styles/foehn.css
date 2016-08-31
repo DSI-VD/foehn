@@ -65,6 +65,7 @@
  * Utilities............Responsive headings styles for texts.
  * Responsive utilities.Hide and show content depending on viewport.
  * Spacing..............Utilities to work with spaces.
+ * Print................Toggling content for print..
  */
 
 /**
@@ -4693,5 +4694,20 @@ hr {
 
     .vd-u-gl0\@lap-and-up {
         margin-left: 0 !important;
+    }
+}
+
+/* ------------------------------------ *\
+//    #PRINT
+\* ------------------------------------ */
+
+/**
+ * Toggle content for print.
+ */
+
+@media print {
+    .vd-u-hidden\@print {
+        display: none !important;
+        visibility: hidden;
     }
 }
