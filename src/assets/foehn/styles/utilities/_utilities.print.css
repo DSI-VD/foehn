@@ -1,0 +1,13 @@
+/* ------------------------------------ *\
+//    #PRINT
+\* ------------------------------------ */
+
+/**
+ * Toggle content for print.
+ */
+@media (--print){
+
+    .u-hidden\@print {
+        display: disappear;
+    }
+}

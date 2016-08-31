@@ -15,3 +15,4 @@
 @custom-media --desk screen and (min-width: 64em);
 @custom-media --retina (min-resolution: 192dpi),
     (min-resolution: 2dppx);
+@custom-media --print print;
