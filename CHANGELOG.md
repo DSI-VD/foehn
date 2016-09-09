@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Change color palette
+
 ### Added
 
 - Add `.vd-u-hidden@print` class to hide content on print documents

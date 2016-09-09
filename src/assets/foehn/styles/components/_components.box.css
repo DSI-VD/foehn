@@ -9,11 +9,11 @@
 
     /* Colors */
     --box-default-background-color: var(--color-gray-light);
-    --box-transaction-background-color: var(--color-primary-alt-darkest);
+    --box-transaction-background-color: var(--color-primary-alt);
     --box-transaction-text-color: var(--color-white);
 
     /* Info colors */
-    --box-info-background-color: var(--color-green-lighter);
+    --box-info-background-color: var(--color-gray-lightest);
 }
 
 /**
