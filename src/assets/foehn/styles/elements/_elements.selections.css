@@ -9,7 +9,7 @@
  */
 
 :root {
-    --color-selection: var(--color-blue-lighter);
+    --color-selection: var(--color-focus);
 }
 
 ::selection {

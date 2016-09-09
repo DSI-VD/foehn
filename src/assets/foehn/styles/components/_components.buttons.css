@@ -5,16 +5,16 @@
 :root {
 
     /* Colors */
-    --button-background: var(--color-primary-alt);
-    --button-color: var(--color-base);
+    --button-background: var(--color-primary);
+    --button-color: var(--color-white);
 
     /* Hover */
-    --button-background-hover: var(--color-primary-alt-dark);
+    --button-background-hover: var(--color-black);
     --button-color-hover: var(--button-color);
 
     /* Active */
-    --button-background-active: var(--color-primary-alt-darkest);
-    --button-color-active: var(--color-white);
+    --button-background-active: var(--color-base);
+    --button-color-active: var(--button-color);
 
     /* UI  */
     --button-padding: calc(var(--global-spacing-unit) / 2);
@@ -140,16 +140,16 @@
 /* Button secondary */
 :root {
     --button-text-color-secondary: var(--button-color);
-    --button-background-color-secondary: var(--color-secondary);
+    --button-background-color-secondary: var(--color-gray-light);
     --button-text-color-secondary-hover: var(--button-color);
-    --button-background-color-secondary-hover: var(--color-secondary-dark);
+    --button-background-color-secondary-hover: var(--button-background-hover);
     --button-text-color-secondary-active: var(--color-white);
-    --button-background-color-secondary-active: var(--color-secondary-darkest);
+    --button-background-color-secondary-active: var(--color-base);
 }
 
 @define-mixin button--secondary {
     @mixin button,
-        var(--color-white),
+        var(--button-text-color-secondary),
         var(--button-background-color-secondary),
         var(--button-text-color-secondary-hover),
         var(--button-background-color-secondary-hover),
