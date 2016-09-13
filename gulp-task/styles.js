@@ -76,8 +76,7 @@ module.exports = function() {
                     /wf-/, // ignore webfontloader classes
                     /is-/
                 ]
-            }),
-            require('perfectionist')
+            })
         ];
         return gulp.src(config.src.styles.foehn)
             // Start sourcemaps
