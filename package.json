@@ -76,7 +76,7 @@
     "postcss-extend": "^1.0.4",
     "postcss-for": "^2.0.3",
     "postcss-hidden": "^1.0.7",
-    "postcss-import": "^8.1.0",
+    "postcss-import": "^8.1.2",
     "postcss-media-minmax": "^2.1.0",
     "postcss-mixins": "^5.0.0",
     "postcss-nested": "^1.0.0",
