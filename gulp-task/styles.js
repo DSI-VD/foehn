@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
-    config = require('../gulp-config.json');
+    config = require('../gulp-config.json'),
+    debug = require('postcss-debug').createDebugger();
 
 module.exports = function() {
     gulp.task('styles:fabricator', function () {
@@ -82,7 +83,7 @@ module.exports = function() {
             // Start sourcemaps
             .pipe(sourcemaps.init())
             // We always want PostCSS to run
-            .pipe( postcss(processors) )
+            .pipe( postcss( debug(processors) ) )
             // Set the destination for the CSS file
             .pipe( gulp.dest(config.dest + '/assets/foehn/styles') )
             // Minify the styles
@@ -98,4 +99,9 @@ module.exports = function() {
     });
 
     gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
+
+    gulp.task('styles:debug', ['styles:foehn'], function () {
+        // 3rd change: open the web inspector
+        debug.inspect();
+    });
 };
