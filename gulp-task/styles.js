@@ -99,6 +99,7 @@ module.exports = function() {
 
     gulp.task('styles', ['styles:fabricator', 'styles:foehn']);
 
+    // Debug PostCSS workflow
     gulp.task('styles:debug', ['styles:foehn'], function () {
         // 3rd change: open the web inspector
         debug.inspect();
