@@ -68,50 +68,26 @@
  * Print................Toggling content for print..
  */
 
-
-
-
-
 /**
  * SETINGS
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #GLOBAL
 \* ------------------------------------ */
-
-
-
-
 
 /**
  *  The global settings file contains any project-wide variables; things that
  *  need to be made available to the entire codebase.
  */
 
-
-
-
-
 /**
  * Typography
  */
 
-
-
-
-
 /**
  * Colors
  */
-
-
-
-
 
 :root {
 
@@ -122,17 +98,9 @@
     /* Special state */
 }
 
-
-
-
-
 /**
  * Animation
  */
-
-
-
-
 
 /**
  * Spacing
@@ -142,25 +110,13 @@
  * modify or reassign them.
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #FONTFACE
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Variables
  */
-
-
-
-
 
 :root {
 
@@ -175,23 +131,11 @@
     /* Monospaced font */
 }
 
-
-
-
-
 /**
  * Meta Serif
  */
 
-
-
-
-
 /* Normal normal */
-
-
-
-
 
 @font-face {
     font-weight: normal; /* or 400 */
@@ -200,15 +144,7 @@
     src: url("../fonts/MetaSerifWeb-Book.woff") format("woff");
 }
 
-
-
-
-
 /* Normal italic */
-
-
-
-
 
 @font-face {
     font-weight: normal; /* or 400 */
@@ -217,15 +153,7 @@
     src: url("../fonts/MetaSerifWeb-BookItalic.woff") format("woff");
 }
 
-
-
-
-
 /* Bold normal */
-
-
-
-
 
 @font-face {
     font-weight: bold; /* or 700 */
@@ -234,15 +162,7 @@
     src: url("../fonts/MetaSerifWeb-Bold.woff") format("woff");
 }
 
-
-
-
-
 /* Bold itlaic */
-
-
-
-
 
 @font-face {
     font-weight: bold;
@@ -251,23 +171,11 @@
     src: url("../fonts/MetaSerifWeb-BoldItalic.woff") format("woff");
 }
 
-
-
-
-
 /**
  * Meta Web Condensed
  */
 
-
-
-
-
 /* Normal normal */
-
-
-
-
 
 @font-face {
     font-weight: normal; /* or 400 */
@@ -276,15 +184,7 @@
     src: url("../fonts/MetaWeb-CondBook.woff") format("woff");
 }
 
-
-
-
-
 /* Normal italic */
-
-
-
-
 
 @font-face {
     font-weight: normal; /* or 400 */
@@ -293,15 +193,7 @@
     src: url("../fonts/MetaWeb-CondBookItalic.woff") format("woff");
 }
 
-
-
-
-
 /* Bold normal */
-
-
-
-
 
 @font-face {
     font-weight: bold; /* or 700 */
@@ -310,15 +202,7 @@
     src: url("../fonts/MetaWeb-CondBold.woff") format("woff");
 }
 
-
-
-
-
 /* Bold itlaic */
-
-
-
-
 
 @font-face {
     font-weight: bold; /* or 700 */
@@ -327,17 +211,9 @@
     src: url("../fonts/MetaWeb-CondBoldItalic.woff") format("woff");
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SETTINGS-RESPONSIVE
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Hold our breakpoint aliases and conditions in a list.
@@ -345,52 +221,28 @@
  * These can be invoked later on via `@media (--palm) {...}`
  */
 
-
-
-
-
 /**
  * TOOLS
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #MIXINS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Mor readable bodytext
  * see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 
-
-
-
-
 /**
  * Mor readable headings
  * see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 
-
-
-
-
 /**
  * More readable sub text
  * see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
-
-
-
-
 
 /**
  * OpenType feature for small caps
@@ -400,26 +252,14 @@
  *    make the texte uppercase. http://caniuse.com/#search=font-feature
  */
 
-
-
-
-
 /**
  * OpenType feature for data
  * see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #CLEARFIX
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Mixin to drop micro clearfix into a selector. Further reading:
@@ -430,25 +270,13 @@
  * }
  */
 
-
-
-
-
 /**
  * GENERIC
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #BOX-SIZING
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Set the global `box-sizing` state to `border-box`.
@@ -457,41 +285,21 @@
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 
-
-
-
-
 html {
     box-sizing: border-box;
 }
-
-
-
-
 
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
-
-
-
-
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-
-
-
-
 
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-
-
-
-
 
 html {
   font-family: sans-serif; /* 1 */
@@ -500,32 +308,16 @@ html {
   -webkit-text-size-adjust: 100%; /* 3 */
 }
 
-
-
-
-
 /**
  * Remove the margin in all browsers (opinionated).
  */
-
-
-
-
 
 body {
   margin: 0;
 }
 
-
-
-
-
 /* HTML5 display definitions
    ========================================================================== */
-
-
-
-
 
 /**
  * Add the correct display in IE 9-.
@@ -533,141 +325,73 @@ body {
  * 2. Add the correct display in IE.
  */
 
-
-
-
-
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary { /* 1 */
   display: block;
 }
-
-
-
-
 
 /**
  * Add the correct display in IE 9-.
  */
 
-
-
-
-
 audio, canvas, progress, video {
   display: inline-block;
 }
 
-
-
-
-
 /**
  * Add the correct display in iOS 4-7.
  */
-
-
-
-
 
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-
-
-
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
-
-
-
-
 progress {
   vertical-align: baseline;
 }
-
-
-
-
 
 /**
  * Add the correct display in IE 10-.
  * 1. Add the correct display in IE.
  */
 
-
-
-
-
 template, [hidden] {
   display: none;
 }
 
-
-
-
-
 /* Links
    ========================================================================== */
-
-
-
-
 
 /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 
-
-
-
-
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
 }
-
-
-
-
 
 /**
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
 
-
-
-
-
 a:active, a:hover {
   outline-width: 0;
 }
 
-
-
-
-
 /* Text-level semantics
    ========================================================================== */
-
-
-
-
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-
-
-
-
 
 abbr[title] {
   border-bottom: none; /* 1 */
@@ -675,117 +399,61 @@ abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
 
-
-
-
-
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-
-
-
-
 
 b, strong {
   font-weight: inherit;
 }
 
-
-
-
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-
-
-
-
 
 b, strong {
   font-weight: bolder;
 }
 
-
-
-
-
 /**
  * Add the correct font style in Android 4.3-.
  */
 
-
-
-
-
 dfn {
   font-style: italic;
 }
-
-
-
-
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-
-
-
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-
-
-
-
 /**
  * Add the correct background and color in IE 9-.
  */
-
-
-
-
 
 mark {
   background-color: #ff0;
   color: #000;
 }
 
-
-
-
-
 /**
  * Add the correct font size in all browsers.
  */
-
-
-
-
 
 small {
   font-size: 80%;
 }
 
-
-
-
-
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-
-
-
-
 
 sub, sup {
   font-size: 75%;
@@ -794,114 +462,58 @@ sub, sup {
   vertical-align: baseline;
 }
 
-
-
-
-
 sub {
   bottom: -0.25em;
 }
-
-
-
-
 
 sup {
   top: -0.5em;
 }
 
-
-
-
-
 /* Embedded content
    ========================================================================== */
-
-
-
-
 
 /**
  * Remove the border on images inside links in IE 10-.
  */
 
-
-
-
-
 img {
   border-style: none;
 }
-
-
-
-
 
 /**
  * Hide the overflow in IE.
  */
 
-
-
-
-
 svg:not(:root) {
   overflow: hidden;
 }
 
-
-
-
-
 /* Grouping content
    ========================================================================== */
-
-
-
-
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-
-
-
-
 code, kbd, pre, samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
-
-
-
-
 /**
  * Add the correct margin in IE 8.
  */
-
-
-
-
 
 figure {
   margin: 1em 40px;
 }
 
-
-
-
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-
-
-
-
 
 hr {
   box-sizing: content-box; /* 1 */
@@ -909,84 +521,44 @@ hr {
   overflow: visible; /* 2 */
 }
 
-
-
-
-
 /* Forms
    ========================================================================== */
-
-
-
-
 
 /**
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
 
-
-
-
-
 button, input, optgroup, select, textarea {
   font: inherit; /* 1 */
   margin: 0; /* 2 */
 }
 
-
-
-
-
 /**
  * Restore the font weight unset by the previous rule.
  */
 
-
-
-
-
 optgroup {
   font-weight: bold;
 }
-
-
-
-
 
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
 
-
-
-
-
 button, input { /* 1 */
   overflow: visible;
 }
-
-
-
-
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-
-
-
-
 button, select { /* 1 */
   text-transform: none;
 }
-
-
-
-
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -994,58 +566,30 @@ button, select { /* 1 */
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 
-
-
-
-
 button, html [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button; /* 2 */
 }
 
-
-
-
-
 /**
  * Remove the inner border and padding in Firefox.
  */
-
-
-
-
 
 button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-
-
-
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
-
-
-
-
 
 button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-
-
-
-
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-
-
-
-
 
 fieldset {
   border: 1px solid #c0c0c0;
@@ -1053,20 +597,12 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
 }
 
-
-
-
-
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-
-
-
-
 
 legend {
   box-sizing: border-box; /* 1 */
@@ -1077,211 +613,111 @@ legend {
   white-space: normal; /* 1 */
 }
 
-
-
-
-
 /**
  * Remove the default vertical scrollbar in IE.
  */
 
-
-
-
-
 textarea {
   overflow: auto;
 }
-
-
-
-
 
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
 
-
-
-
-
 [type="checkbox"], [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
-
-
-
-
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-
-
-
-
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
-
-
-
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
 
-
-
-
-
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
-
-
-
-
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
-
-
-
-
 
 [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-
-
-
-
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
-
-
-
-
 
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
 
-
-
-
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-
-
-
-
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #RESET
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * A very simple reset that sits on top of Normalize.css.
  */
-
-
-
-
 
 body, h1, h2, h3, h4, h5, h6, blockquote, p, pre, dl, dd, ol, ul, figure, hr, fieldset, legend, .vd-c-blockquote {
     margin: 0;
     padding: 0;
 }
 
-
-
-
-
 /**
  * Remove trailing margins from nested lists.
  */
-
-
-
-
 
 li > ol, li > ul {
     margin-bottom: 0;
 }
 
-
-
-
-
 /**
  * Remove default table spacing.
  */
-
-
-
-
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SHARED
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Shared declarations for certain elements.
  */
 
-
-
-
-
 /**
  * Always declare margins in the same direction:
  * csswizardry.com/2012/06/single-direction-margin-declarations
  */
-
-
-
-
 
 address, h1, h2, h3, h4, h5, h6, blockquote, p, pre
 dl, ol, ul, figure, hr, table, fieldset, .vd-c-blockquote {
@@ -1289,42 +725,22 @@ dl, ol, ul, figure, hr, table, fieldset, .vd-c-blockquote {
     margin-bottom: 1.6875rem;
 }
 
-
-
-
-
 /**
  * Consistent indentation for lists.
  */
-
-
-
-
 
 dd, ol, ul {
     margin-left: 54px;
     margin-left: 3.375rem;
 }
 
-
-
-
-
 /**
  * ELEMENTS
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #PAGE
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * High-, page-level styling.
@@ -1340,10 +756,6 @@ dd, ol, ul {
  *    scrollbars naturally.
  * 5. Use webfont only when it's loaded to avoid FOIT
  */
-
-
-
-
 
 html {
     min-height: 100%; /* [1] */
@@ -1377,15 +789,7 @@ html {
     overflow-y: scroll;
 }
 
-
-
-
-
 /* [4] */
-
-
-
-
 
 html.wf-metaserifweb-n4-active {
     font-weight: 500;/* [5] */
@@ -1408,17 +812,9 @@ html.wf-metaserifweb-n4-active {
         serif;/* [5] */
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #HEADINGS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Headings 1–6.
@@ -1429,10 +825,6 @@ html.wf-metaserifweb-n4-active {
  *
  * 1. Use webfont only when it's loaded to avoid FOIT
  */
-
-
-
-
 
 :root {
 
@@ -1449,20 +841,12 @@ html.wf-metaserifweb-n4-active {
     /* h6 */
 }
 
-
-
-
-
 h1 {
     font-size: 32.006px;
     font-size: 2.00038rem;
     font-weight: bold;
     line-height: 1.19048;
 }
-
-
-
-
 
 h2 {
     font-size: 25.401px;
@@ -1471,20 +855,12 @@ h2 {
     line-height: 1.19048;
 }
 
-
-
-
-
 h3 {
     font-size: 20.16px;
     font-size: 1.26rem;
     font-weight: bold;
     line-height: 1.19048;
 }
-
-
-
-
 
 h4 {
     font-size: 16px;
@@ -1493,10 +869,6 @@ h4 {
     line-height: 1.5;
 }
 
-
-
-
-
 h5 {
     font-size: 12.698px;
     font-size: 0.79365rem;
@@ -1504,20 +876,12 @@ h5 {
     line-height: 1.5;
 }
 
-
-
-
-
 h6 {
     font-size: 12.698px;
     font-size: 0.79365rem;
     font-weight: normal;
     line-height: 1.5;
 }
-
-
-
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system,
@@ -1537,10 +901,6 @@ h1, h2, h3, h4, h5, h6 {
     font-kerning: normal;
 }
 
-
-
-
-
 .wf-metaweb-n7-active h1, .wf-metaweb-n7-active h2, .wf-metaweb-n7-active h3, .wf-metaweb-n7-active h4, .wf-metaweb-n7-active h5, .wf-metaweb-n7-active h6 {
     font-family: "MetaWeb", -apple-system,
         ".SFNSText-Regular",
@@ -1552,33 +912,17 @@ h1, h2, h3, h4, h5, h6 {
         sans-serif;/* [1] */
 }
 
-
-
-
-
 .wf-metaweb-n7-active h1, .wf-metaweb-n7-active h2, .wf-metaweb-n7-active h3, .wf-metaweb-n7-active h4, .wf-metaweb-n7-active h5 {
     font-weight: 700;
 }
-
-
-
-
 
 .wf-metaweb-n7-active h6 {
     font-weight: 400;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #PARAGRAPH
 \* ------------------------------------ */
-
-
-
-
 
 p {
     font-variant-ligatures: common-ligatures, contextual;
@@ -1587,53 +931,29 @@ p {
     font-kerning: normal;
 }
 
-
-
-
-
 /**
  * The `.lede` class is used to make the introductory text (usually a paragraph)
  * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
  */
-
-
-
-
 
 .vd-lede {
     font-size: 20.16px;
     font-size: 1.26rem;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SMALL
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Small text
  */
-
-
-
-
 
 /**
      * small
      *
      * 1. Use webfont only when it's loaded to avoid FOIT
      */
-
-
-
-
 
 small {
     font-size: 12.698px;
@@ -1657,10 +977,6 @@ small {
         serif;
 }
 
-
-
-
-
 .wf-active small {
     font-family: "MetaSerifWeb", "Palatino Linotype",
         Palatino,
@@ -1681,33 +997,17 @@ small {
         serif;/* [1] */
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #STRONG
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Strong
  */
 
-
-
-
-
 b, strong {
     font-weight: bold;
 }
-
-
-
-
 
 /**
  * Strong weight
@@ -1715,35 +1015,19 @@ b, strong {
  * 1. Enhance webfont use 700 for strong text.
  */
 
-
-
-
-
 .wf-active b, .wf-active strong {
     font-weight: 700;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SUBS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Subscript Element
  *
  * 1. Override normalize.css if font with subscript features is loaded.
  */
-
-
-
-
 
 sub {
     font-variant-ligatures: common-ligatures, contextual;
@@ -1752,36 +1036,20 @@ sub {
     font-kerning: normal;
 }
 
-
-
-
-
 .wf-active sub {
     bottom: 0; /* [1] */
     font-size: 100%; /* [1] */
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #LISTS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Remove extra vertical spacing when nesting lists.
  *
  * 1. Without it, if there's buttons in the list, they would be collapsed.
  */
-
-
-
-
 
 li {
     font-variant-ligatures: common-ligatures, contextual;
@@ -1792,17 +1060,9 @@ li {
     margin-bottom: 0.42188rem; /* [1] */
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #LINK
 \* ------------------------------------ */
-
-
-
-
 
 a {
     color: #536571;
@@ -1810,19 +1070,11 @@ a {
     transition: .3333s;
 }
 
-
-
-
-
 a:hover, a:focus, a:active {
     color: #3a95cf;
     color: rgba(58, 149, 207, 1);
     transition: .3333s;
 }
-
-
-
-
 
 a:visited {
     color: #4d3492;
@@ -1830,42 +1082,22 @@ a:visited {
     transition: .3333s;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SILENT-LINK
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Link without visual modification.
  */
-
-
-
-
 
 .vd-silent-link {
     text-decoration: none;
     transition: .3333s;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #IMAGES
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * 1. Fluid images for responsive purposes.
@@ -1875,70 +1107,38 @@ a:visited {
  *    using `display: block;`.
  */
 
-
-
-
-
 img {
     max-width: 100%; /* [1] */
     font-style: italic; /* [2] */
     vertical-align: middle; /* [3] */
 }
 
-
-
-
-
 /**
  * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
  *    not make the image fluid.
  */
 
-
-
-
-
 img[width], img[height] {  /* [1] */
     max-width: none;
 }
-
-
-
-
 
 /* ------------------------------------ *\
     #TABLES
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * 1. Ensure tables fill up as much space as possible.
  */
 
-
-
-
-
 table {
     width: 100%; /* [1] */
 }
-
-
-
-
 
 /**
  * Enable OpenType features to make more readable data
  * More info here:
  * http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
-
-
-
-
 
 td {
     font-variant-ligatures: common-ligatures, contextual;
@@ -1947,52 +1147,28 @@ td {
     font-kerning: normal;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #FIGURES
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Reset default margins.
  */
-
-
-
-
 
 figure {
     margin-right: 0;
     margin-left: 0;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #QUOTES
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Blockquote
  *
  * 1. Unicode for En dash and Space.
  */
-
-
-
-
 
 blockquote, .vd-c-blockquote {
     font-style: italic;
@@ -2004,41 +1180,21 @@ blockquote, .vd-c-blockquote {
     padding-left: 1.6875rem;
 }
 
-
-
-
-
 blockquote cite::before, .vd-c-blockquote cite::before {
     content: "\2013\0020"; /* [1] */
 }
-
-
-
-
 
 /**
  * Inline quotations and source citations
  */
 
-
-
-
-
 cite, q {
     font-style: italic;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #ABBREVIATION
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Better `<abbr>`
@@ -2048,10 +1204,6 @@ cite, q {
  * 2. Display title attribute value if the device's primary input does not
  *    have hover
  */
-
-
-
-
 
 abbr {
     font-variant-ligatures: common-ligatures, contextual;
@@ -2063,10 +1215,6 @@ abbr {
     text-transform: uppercase;
     /* [1] */ /* [1] */
 }
-
-
-
-
 
 @media (hover: none) {
 
@@ -2080,25 +1228,13 @@ abbr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #CODE
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Code, preformated text and other robotic styles
  */
-
-
-
-
 
 code, pre {
     font-size: 12.8px;
@@ -2116,10 +1252,6 @@ code, pre {
     cursor: text;
 }
 
-
-
-
-
 /**
  * Inline computer text style
  *
@@ -2127,26 +1259,14 @@ code, pre {
  *    overlay.
  */
 
-
-
-
-
 code {
     background: #aab6bd;
     background: rgba(170, 182, 189, 1);
 }
 
-
-
-
-
 pre > code {
     background: none; /* [1] */
 }
-
-
-
-
 
 tt, code, kbd, samp {
     font-family: Consolas,
@@ -2156,25 +1276,13 @@ tt, code, kbd, samp {
         monospace;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #HORIZONTALE RULES
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Horizontale rules
  */
-
-
-
-
 
 hr {
     height: 1px;
@@ -2183,17 +1291,9 @@ hr {
     border: 0;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SELECTIONS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Selections color
@@ -2201,60 +1301,32 @@ hr {
  * Overrides browser-level or system-level text highlight color.
  */
 
-
-
-
-
 ::-moz-selection {
     background: #3a95cf;
     background: rgba(58, 149, 207, 1);
 }
-
-
-
-
 
 ::selection {
     background: #3a95cf;
     background: rgba(58, 149, 207, 1);
 }
 
-
-
-
-
 /**
  * OBJECTS
  */
-
-
-
-
 
 /* ------------------------------------ *\
     #WRAPPERS
 \* ------------------------------------ */
 
-
-
-
-
 :root { /* 1024px */
 }
-
-
-
-
 
 /**
  * Container
  *
  * 1. Center horizontaly
  */
-
-
-
-
 
 .vd-o-wrapper {
     max-width: 1024px;
@@ -2267,25 +1339,13 @@ hr {
     padding-left: 0.42188rem;
 }
 
-
-
-
-
 .vd-o-wrapper::after {
     display: block !important;
     clear: both !important;
     content: "" !important;
 }
 
-
-
-
-
 @media screen and (min-width: 45em) {
-
-
-
-
 
     .vd-o-wrapper {
         padding-right: 1.6875rem;
@@ -2293,19 +1353,11 @@ hr {
     }
 }
 
-
-
-
-
 /**
  * Container offset
  *
  * Get out of the container
  */
-
-
-
-
 
 .vd-o-wrapper--offset {
     margin-right: -6.75px;
@@ -2314,15 +1366,7 @@ hr {
     margin-left: -0.42188rem;
 }
 
-
-
-
-
 @media screen and (min-width: 45em) {
-
-
-
-
 
     .vd-o-wrapper--offset {
         margin-right: -1.6875rem;
@@ -2330,93 +1374,49 @@ hr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #LIST-BARE
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * The o-list-bare object simply removes any indents and bullet points from
  * lists.
  */
 
-
-
-
-
 .vd-o-list-bare {
     margin-left: 0;
     list-style: none;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #LIST-INLINE
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * The list-inline object simply displays a list of items in one line.
  */
-
-
-
-
 
 .vd-o-list-inline {
     margin-left: 0;
     list-style: none;
 }
 
-
-
-
-
 .vd-o-list-inline__item {
     display: inline-block;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #LAYOUT
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * The layout is based on lost framework
  * https://github.com/corysimmons/lost
  */
 
-
-
-
-
 /**
  * Layout
  */
-
-
-
-
 
 .vd-o-layout {
     display: -ms-flexbox;
@@ -2425,10 +1425,6 @@ hr {
         flex-flow: row wrap;
 }
 
-
-
-
-
 /**
  * Layout items
  *
@@ -2436,24 +1432,12 @@ hr {
  * 2. Last element of the row hase no gutter on the right
  */
 
-
-
-
-
 /* Layout extensible diemension */
-
-
-
-
 
 .vd-o-layout__item--flex-1 {
     -ms-flex: 1;
         flex: 1;
 }
-
-
-
-
 
 .vd-o-layout__item--flex-1:nth-child(1n) {
     margin-right: 13.5px;
@@ -2461,32 +1445,16 @@ hr {
     margin-left: 0;/* [1] */
 }
 
-
-
-
-
 .vd-o-layout__item--flex-1:last-child {
     margin-right: 0;/* [2] */
 }
 
-
-
-
-
 /* Layout extensible diemension */
-
-
-
-
 
 .vd-o-layout__item--flex-2 {
     -ms-flex: 2;
         flex: 2;
 }
-
-
-
-
 
 .vd-o-layout__item--flex-2:nth-child(1n) {
     margin-right: 13.5px;
@@ -2494,32 +1462,16 @@ hr {
     margin-left: 0;/* [1] */
 }
 
-
-
-
-
 .vd-o-layout__item--flex-2:last-child {
     margin-right: 0;/* [2] */
 }
 
-
-
-
-
 /* Layout extensible diemension */
-
-
-
-
 
 .vd-o-layout__item--flex-3 {
     -ms-flex: 3;
         flex: 3;
 }
-
-
-
-
 
 .vd-o-layout__item--flex-3:nth-child(1n) {
     margin-right: 13.5px;
@@ -2527,17 +1479,9 @@ hr {
     margin-left: 0;/* [1] */
 }
 
-
-
-
-
 .vd-o-layout__item--flex-3:last-child {
     margin-right: 0;/* [2] */
 }
-
-
-
-
 
 /**
 * Flex item ordering
@@ -2545,72 +1489,40 @@ hr {
 * 1. Put item as the last one
 */
 
-
-
-
-
 .vd-o-layout__item--order-1 {
     -ms-flex-order: 1;
         order: 1;
 }
-
-
-
-
 
 .vd-o-layout__item--order-2 {
     -ms-flex-order: 2;
         order: 2;
 }
 
-
-
-
-
 .vd-o-layout__item--order-3 {
     -ms-flex-order: 3;
         order: 3;
 }
-
-
-
-
 
 .vd-o-layout__item--order-4 {
     -ms-flex-order: 4;
         order: 4;
 }
 
-
-
-
-
 .vd-o-layout__item--order-5 {
     -ms-flex-order: 5;
         order: 5;
 }
-
-
-
-
 
 .vd-o-layout__item--order-6 {
     -ms-flex-order: 6;
         order: 6;
 }
 
-
-
-
-
 .vd-o-layout__item--order-last {
     -ms-flex-order: 99;
         order: 99; /* [1] */
 }
-
-
-
-
 
 @media screen and (min-width: 45em) {
     .vd-o-layout__item--lap-and-up--order-1 {
@@ -2644,23 +1556,11 @@ hr {
     }
 }
 
-
-
-
-
 /**
  *  Items with fixed width
  */
 
-
-
-
-
 /* Default items size (on palm) */
-
-
-
-
 
 .vd-o-layout__item--1-1, .vd-o-layout__item--1-2, .vd-o-layout__item--1-3, .vd-o-layout__item--2-3, .vd-o-layout__item--1-4, .vd-o-layout__item--3-4 {
     -ms-flex: 0 0 auto;
@@ -2668,36 +1568,20 @@ hr {
     width: calc(99.9% * 1/1 - 0rem);
 }
 
-
-
-
-
 .vd-o-layout__item--1-1:nth-child(1n), .vd-o-layout__item--1-2:nth-child(1n), .vd-o-layout__item--1-3:nth-child(1n), .vd-o-layout__item--2-3:nth-child(1n), .vd-o-layout__item--1-4:nth-child(1n), .vd-o-layout__item--3-4:nth-child(1n) {
     margin-right: 16px;
     margin-right: 1rem;
     margin-left: 0;
 }
 
-
-
-
-
 .vd-o-layout__item--1-1:last-child, .vd-o-layout__item--1-2:last-child, .vd-o-layout__item--1-3:last-child, .vd-o-layout__item--2-3:last-child, .vd-o-layout__item--1-4:last-child, .vd-o-layout__item--3-4:last-child {
     margin-right: 0;
 }
-
-
-
-
 
 .vd-o-layout__item--1-1:nth-child(1n), .vd-o-layout__item--1-2:nth-child(1n), .vd-o-layout__item--1-3:nth-child(1n), .vd-o-layout__item--2-3:nth-child(1n), .vd-o-layout__item--1-4:nth-child(1n), .vd-o-layout__item--3-4:nth-child(1n) {
     margin-right: 0;
     margin-left: auto;
 }
-
-
-
-
 
 .vd-o-layout__item--1-6, .vd-o-layout__item--5-6, .vd-o-layout__item--1-12 {
     -ms-flex: 0 0 auto;
@@ -2705,42 +1589,22 @@ hr {
     width: calc(99.9% * 1/2 - 0.5rem);
 }
 
-
-
-
-
 .vd-o-layout__item--1-6:nth-child(1n), .vd-o-layout__item--5-6:nth-child(1n), .vd-o-layout__item--1-12:nth-child(1n) {
     margin-right: 16px;
     margin-right: 1rem;
     margin-left: 0;
 }
 
-
-
-
-
 .vd-o-layout__item--1-6:last-child, .vd-o-layout__item--5-6:last-child, .vd-o-layout__item--1-12:last-child {
     margin-right: 0;
 }
-
-
-
-
 
 .vd-o-layout__item--1-6:nth-child(2n), .vd-o-layout__item--5-6:nth-child(2n), .vd-o-layout__item--1-12:nth-child(2n) {
     margin-right: 0;
     margin-left: auto;
 }
 
-
-
-
-
 /* Items size on lap and up */
-
-
-
-
 
 @media screen and (min-width: 45em) {
 
@@ -2845,15 +1709,7 @@ hr {
     }
 }
 
-
-
-
-
 /* Items size on desk and up */
-
-
-
-
 
 @media screen and (min-width: 64em) {
 
@@ -2958,446 +1814,246 @@ hr {
     }
 }
 
-
-
-
-
 /**
  * Move items
  */
-
-
-
-
 
 .vd-o-layout__item--move--1-12 {
     position: relative;
     left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---1-12 {
     position: relative;
     left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--2-12 {
     position: relative;
     left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---2-12 {
     position: relative;
     left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--3-12 {
     position: relative;
     left: calc(99.9% * 3/12 - 0.75rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---3-12 {
     position: relative;
     left: calc(99.9% * -3/12 - 1.25rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--4-12 {
     position: relative;
     left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---4-12 {
     position: relative;
     left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--5-12 {
     position: relative;
     left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---5-12 {
     position: relative;
     left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--6-12 {
     position: relative;
     left: calc(99.9% * 6/12 - 0.5rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---6-12 {
     position: relative;
     left: calc(99.9% * -6/12 - 1.5rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--7-12 {
     position: relative;
     left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---7-12 {
     position: relative;
     left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--8-12 {
     position: relative;
     left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---8-12 {
     position: relative;
     left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--9-12 {
     position: relative;
     left: calc(99.9% * 9/12 - 0.25rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---9-12 {
     position: relative;
     left: calc(99.9% * -9/12 - 1.75rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--10-12 {
     position: relative;
     left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---10-12 {
     position: relative;
     left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--11-12 {
     position: relative;
     left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---11-12 {
     position: relative;
     left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
 }
-
-
-
-
 
 .vd-o-layout__item--move--12-12 {
     position: relative;
     left: calc(99.9% * 12/12 - 0rem + 1rem);
 }
 
-
-
-
-
 .vd-o-layout__item--move---12-12 {
     position: relative;
     left: calc(99.9% * -12/12 - 2rem + 1rem);
 }
 
-
-
-
-
 @media screen and (max-width: 44.9375em) {
-
-
-
-
 
     .vd-o-layout__item--move--1-12\@palm {
         position: relative;
         left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---1-12\@palm {
         position: relative;
         left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--2-12\@palm {
         position: relative;
         left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---2-12\@palm {
         position: relative;
         left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--3-12\@palm {
         position: relative;
         left: calc(99.9% * 3/12 - 0.75rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---3-12\@palm {
         position: relative;
         left: calc(99.9% * -3/12 - 1.25rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--4-12\@palm {
         position: relative;
         left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---4-12\@palm {
         position: relative;
         left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--5-12\@palm {
         position: relative;
         left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---5-12\@palm {
         position: relative;
         left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--6-12\@palm {
         position: relative;
         left: calc(99.9% * 6/12 - 0.5rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---6-12\@palm {
         position: relative;
         left: calc(99.9% * -6/12 - 1.5rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--7-12\@palm {
         position: relative;
         left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---7-12\@palm {
         position: relative;
         left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--8-12\@palm {
         position: relative;
         left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---8-12\@palm {
         position: relative;
         left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--9-12\@palm {
         position: relative;
         left: calc(99.9% * 9/12 - 0.25rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---9-12\@palm {
         position: relative;
         left: calc(99.9% * -9/12 - 1.75rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--10-12\@palm {
         position: relative;
         left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---10-12\@palm {
         position: relative;
         left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--11-12\@palm {
         position: relative;
         left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---11-12\@palm {
         position: relative;
         left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move--12-12\@palm {
         position: relative;
         left: calc(99.9% * 12/12 - 0rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move---12-12\@palm {
         position: relative;
@@ -3405,222 +2061,122 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
-
-
-
-
 
     .vd-o-layout__item--move--1-12\@lap {
         position: relative;
         left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---1-12\@lap {
         position: relative;
         left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--2-12\@lap {
         position: relative;
         left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---2-12\@lap {
         position: relative;
         left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--3-12\@lap {
         position: relative;
         left: calc(99.9% * 3/12 - 0.75rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---3-12\@lap {
         position: relative;
         left: calc(99.9% * -3/12 - 1.25rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--4-12\@lap {
         position: relative;
         left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---4-12\@lap {
         position: relative;
         left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--5-12\@lap {
         position: relative;
         left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---5-12\@lap {
         position: relative;
         left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--6-12\@lap {
         position: relative;
         left: calc(99.9% * 6/12 - 0.5rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---6-12\@lap {
         position: relative;
         left: calc(99.9% * -6/12 - 1.5rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--7-12\@lap {
         position: relative;
         left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---7-12\@lap {
         position: relative;
         left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--8-12\@lap {
         position: relative;
         left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---8-12\@lap {
         position: relative;
         left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--9-12\@lap {
         position: relative;
         left: calc(99.9% * 9/12 - 0.25rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---9-12\@lap {
         position: relative;
         left: calc(99.9% * -9/12 - 1.75rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--10-12\@lap {
         position: relative;
         left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---10-12\@lap {
         position: relative;
         left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--11-12\@lap {
         position: relative;
         left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---11-12\@lap {
         position: relative;
         left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move--12-12\@lap {
         position: relative;
         left: calc(99.9% * 12/12 - 0rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move---12-12\@lap {
         position: relative;
@@ -3628,222 +2184,122 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (min-width: 45em) {
-
-
-
-
 
     .vd-o-layout__item--move--1-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---1-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--2-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---2-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--3-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 3/12 - 0.75rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---3-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -3/12 - 1.25rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--4-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---4-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--5-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---5-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--6-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 6/12 - 0.5rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---6-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -6/12 - 1.5rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--7-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---7-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--8-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---8-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--9-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 9/12 - 0.25rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---9-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -9/12 - 1.75rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--10-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---10-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--11-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---11-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move--12-12\@lap-and-up {
         position: relative;
         left: calc(99.9% * 12/12 - 0rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move---12-12\@lap-and-up {
         position: relative;
@@ -3851,222 +2307,122 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (max-width: 63.9375em) {
-
-
-
-
 
     .vd-o-layout__item--move--1-12\@portable {
         position: relative;
         left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---1-12\@portable {
         position: relative;
         left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--2-12\@portable {
         position: relative;
         left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---2-12\@portable {
         position: relative;
         left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--3-12\@portable {
         position: relative;
         left: calc(99.9% * 3/12 - 0.75rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---3-12\@portable {
         position: relative;
         left: calc(99.9% * -3/12 - 1.25rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--4-12\@portable {
         position: relative;
         left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---4-12\@portable {
         position: relative;
         left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--5-12\@portable {
         position: relative;
         left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---5-12\@portable {
         position: relative;
         left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--6-12\@portable {
         position: relative;
         left: calc(99.9% * 6/12 - 0.5rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---6-12\@portable {
         position: relative;
         left: calc(99.9% * -6/12 - 1.5rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--7-12\@portable {
         position: relative;
         left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---7-12\@portable {
         position: relative;
         left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--8-12\@portable {
         position: relative;
         left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---8-12\@portable {
         position: relative;
         left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--9-12\@portable {
         position: relative;
         left: calc(99.9% * 9/12 - 0.25rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---9-12\@portable {
         position: relative;
         left: calc(99.9% * -9/12 - 1.75rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--10-12\@portable {
         position: relative;
         left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---10-12\@portable {
         position: relative;
         left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--11-12\@portable {
         position: relative;
         left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---11-12\@portable {
         position: relative;
         left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move--12-12\@portable {
         position: relative;
         left: calc(99.9% * 12/12 - 0rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move---12-12\@portable {
         position: relative;
@@ -4074,222 +2430,122 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (min-width: 64em) {
-
-
-
-
 
     .vd-o-layout__item--move--1-12\@desk {
         position: relative;
         left: calc(99.9% * 1/12 - 0.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---1-12\@desk {
         position: relative;
         left: calc(99.9% * -1/12 - 1.083333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--2-12\@desk {
         position: relative;
         left: calc(99.9% * 2/12 - 0.833333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---2-12\@desk {
         position: relative;
         left: calc(99.9% * -2/12 - 1.166666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--3-12\@desk {
         position: relative;
         left: calc(99.9% * 3/12 - 0.75rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---3-12\@desk {
         position: relative;
         left: calc(99.9% * -3/12 - 1.25rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--4-12\@desk {
         position: relative;
         left: calc(99.9% * 4/12 - 0.666666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---4-12\@desk {
         position: relative;
         left: calc(99.9% * -4/12 - 1.333333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--5-12\@desk {
         position: relative;
         left: calc(99.9% * 5/12 - 0.583333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---5-12\@desk {
         position: relative;
         left: calc(99.9% * -5/12 - 1.416666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--6-12\@desk {
         position: relative;
         left: calc(99.9% * 6/12 - 0.5rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---6-12\@desk {
         position: relative;
         left: calc(99.9% * -6/12 - 1.5rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--7-12\@desk {
         position: relative;
         left: calc(99.9% * 7/12 - 0.416666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---7-12\@desk {
         position: relative;
         left: calc(99.9% * -7/12 - 1.583333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--8-12\@desk {
         position: relative;
         left: calc(99.9% * 8/12 - 0.333333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---8-12\@desk {
         position: relative;
         left: calc(99.9% * -8/12 - 1.666666666666667rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--9-12\@desk {
         position: relative;
         left: calc(99.9% * 9/12 - 0.25rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---9-12\@desk {
         position: relative;
         left: calc(99.9% * -9/12 - 1.75rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--10-12\@desk {
         position: relative;
         left: calc(99.9% * 10/12 - 0.166666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---10-12\@desk {
         position: relative;
         left: calc(99.9% * -10/12 - 1.833333333333333rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move--11-12\@desk {
         position: relative;
         left: calc(99.9% * 11/12 - 0.083333333333333rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move---11-12\@desk {
         position: relative;
         left: calc(99.9% * -11/12 - 1.916666666666667rem + 1rem);
     }
 
-
-
-
-
     .vd-o-layout__item--move--12-12\@desk {
         position: relative;
         left: calc(99.9% * 12/12 - 0rem + 1rem);
     }
-
-
-
-
 
     .vd-o-layout__item--move---12-12\@desk {
         position: relative;
@@ -4297,34 +2553,18 @@ hr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #BOX
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * The box object simply boxes off content.
  */
 
-
-
-
-
 /**
  * 1. So we can apply the `.box` class to naturally-inline elements.
  * 2. Clearfix
  */
-
-
-
-
 
 .vd-o-box {
     display: block; /* [1] */
@@ -4332,35 +2572,19 @@ hr {
     padding: 1.6875rem;
 }
 
-
-
-
-
 .vd-o-box::after {
     display: block !important;
     clear: both !important;
     content: "" !important;
 }
 
-
-
-
-
 .vd-o-box > :last-child {
     margin-bottom: 0;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #TABLES
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Table default layout
@@ -4369,10 +2593,6 @@ hr {
  * 2. Reset scroll horizontally for mobile
  */
 
-
-
-
-
 .vd-o-table {
     display: block; /* [1] */
     width: 100%;
@@ -4380,24 +2600,12 @@ hr {
     overflow-x: auto;
 }
 
-
-
-
-
 /* [1] */
-
-
-
-
 
 .vd-o-table thead, .vd-o-table tfoot {
     background-color: #697983;
     background-color: rgba(105, 121, 131, 1);
 }
-
-
-
-
 
 .vd-o-table th, .vd-o-table td {
     border: 1px
@@ -4410,15 +2618,7 @@ hr {
     padding: 0.42188rem;
 }
 
-
-
-
-
 @media screen and (min-width: 45em) {
-
-
-
-
 
     .vd-o-table {
         display: table;/* [2] */
@@ -4426,66 +2626,34 @@ hr {
     }
 }
 
-
-
-
-
 /**
  * Add borders only to `table`’s rows.
  */
-
-
-
-
 
 .vd-o-table--borderless, .vd-o-table--borderless th, .vd-o-table--borderless td {
     border: 0 solid #536571;
     border: 0 solid rgba(83, 101, 113, 1);
 }
 
-
-
-
-
 .vd-o-table--borderless thead, .vd-o-table--borderless tfoot {
     background-color: transparent;
 }
-
-
-
-
 
 .vd-table--borderless {
     border-top-width: 1px;
 }
 
-
-
-
-
 .vd-table--borderless th, .vd-table--borderless td {
     border-bottom-width: 1px;
 }
-
-
-
-
 
 /**
  * COMPONENTS
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #BUTTONS
 \* ------------------------------------ */
-
-
-
-
 
 :root {
 
@@ -4497,10 +2665,6 @@ hr {
 
     /* UI  */
 }
-
-
-
-
 
 /**
  * 1. Allow us to style box model properties.
@@ -4515,10 +2679,6 @@ hr {
  * 8. Hover state color
  * 9. Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
-
-
-
-
 
 .vd-c-button {
     display: inline-block;
@@ -4548,15 +2708,7 @@ hr {
     cursor: pointer;
 }
 
-
-
-
-
 /* [7] */
-
-
-
-
 
 .vd-c-button, .vd-c-button:hover, .vd-c-button.is-hover, .vd-c-button:active, .vd-c-button.is-active, .vd-c-button:focus
     .vd-c-button.is-focus {
@@ -4565,20 +2717,12 @@ hr {
     text-decoration: none;/* [3] */
 }
 
-
-
-
-
 .vd-c-button:hover, .vd-c-button.is-hover {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
     background-color: #000000;
     background-color: rgba(0, 0, 0, 1);/* [8] */
 }
-
-
-
-
 
 .vd-c-button:active, .vd-c-button.is-active {
     color: #ffffff;
@@ -4587,34 +2731,18 @@ hr {
     background-color: rgba(83, 101, 113, 1);/* [8] */
 }
 
-
-
-
-
 .vd-c-button:focus, .vd-c-button.is-focus {
     box-shadow: 0 0 3px rgba(58, 149, 207, 1), 0 0 7px rgba(58, 149, 207, 1);
 }
-
-
-
-
 
 .vd-c-button::-moz-focus-inner {
     border: 0;/* [9] */
     padding: 0;/* [9] */
 }
 
-
-
-
-
 /**
  * Use fonts only when loaded
  */
-
-
-
-
 
 .wf-active [class^="vd-c-button"] {
     font-family: "MetaWeb", -apple-system,
@@ -4627,25 +2755,13 @@ hr {
         sans-serif;
 }
 
-
-
-
-
 /**
  * State buttons
  *
  * Color variations
  */
 
-
-
-
-
 /* Button secondary */
-
-
-
-
 
 .vd-c-button--secondary {
     color: #ffffff;
@@ -4654,20 +2770,12 @@ hr {
     background-color: rgba(105, 121, 131, 1);
 }
 
-
-
-
-
 .vd-c-button--secondary:hover, .vd-c-button--secondary.is-hover {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
     background-color: #000000;
     background-color: rgba(0, 0, 0, 1);
 }
-
-
-
-
 
 .vd-c-button--secondary:active, .vd-c-button--secondary.is-active {
     color: #ffffff;
@@ -4676,48 +2784,24 @@ hr {
     background-color: rgba(83, 101, 113, 1);
 }
 
-
-
-
-
 /* Button transparent */
-
-
-
-
 
 .vd-c-button--transparent {
     color: inherit;
     background-color: inherit;
 }
 
-
-
-
-
 .vd-c-button--transparent:hover, .vd-c-button--transparent.is-hover {
     color: inherit;
     background-color: inherit;
 }
-
-
-
-
 
 .vd-c-button--transparent:active, .vd-c-button--transparent.is-active {
     color: inherit;
     background-color: inherit;
 }
 
-
-
-
-
 /* Button disabled */
-
-
-
-
 
 .vd-c-button--disabled, .vd-c-button--disabled:hover, .vd-c-button--disabled:focus, .vd-c-button--disabled:active, [type="submit"][disabled], [type="submit"][disabled]:hover, [type="submit"][disabled]:focus, [type="submit"][disabled]:active {
     color: inherit;
@@ -4726,36 +2810,20 @@ hr {
     cursor: not-allowed;
 }
 
-
-
-
-
 /**
  * Size of buttons
  *
  * Size variation
  */
 
-
-
-
-
 .vd-c-button--block {
     display: block;
     width: 100%;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #FORMS
 \* ------------------------------------ */
-
-
-
-
 
 /*
  * WTF, forms?
@@ -4767,19 +2835,11 @@ hr {
  * http://useiconic.com/open
  */
 
-
-
-
-
 /*
  * Checkboxes and radios
  *
  * 1. Put the input behind the label so it doesn't overlay text
  */
-
-
-
-
 
 .vd-c-form-control {
     position: relative;
@@ -4791,19 +2851,11 @@ hr {
     cursor: pointer;
 }
 
-
-
-
-
 .vd-c-form-control input {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
-
-
-
-
 
 .vd-c-form-control__indicator {
     position: absolute;
@@ -4832,15 +2884,7 @@ hr {
             user-select: none;
 }
 
-
-
-
-
 /* Hover state */
-
-
-
-
 
 /* Uncomment if you need it, but be aware of the sticky iOS states.
 .c-form-control:hover .c-form-control__indicator {
@@ -4848,10 +2892,6 @@ hr {
     background-color: #ccc;
 }
 */
-
-
-
-
 
 /**
  * States
@@ -4861,18 +2901,10 @@ hr {
  * 3. Active
  */
 
-
-
-
-
 .vd-c-form-control input:focus ~ .vd-c-form-control__indicator {
     box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1),
             0 0 0 .2rem rgba(153, 0, 255, 1);/* [1] */
 }
-
-
-
-
 
 .vd-c-form-control input:checked ~ .vd-c-form-control__indicator {
     color: #ffffff;
@@ -4881,10 +2913,6 @@ hr {
     background-color: rgba(153, 0, 255, 1);/* [2] */
 }
 
-
-
-
-
 .vd-c-form-control input:active ~ .vd-c-form-control__indicator {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);/* [3] */
@@ -4892,23 +2920,11 @@ hr {
     background-color: rgba(153, 0, 255, 1);/* [3] */
 }
 
-
-
-
-
 /* Checkbox modifiers */
-
-
-
-
 
 .vd-c-checkbox .vd-c-form-control__indicator {
     border-radius: .25rem;
 }
-
-
-
-
 
 .vd-c-checkbox input:checked ~ .vd-c-form-control__indicator {
 
@@ -4918,23 +2934,11 @@ hr {
     /* stylelint-enable function-url-quotes */
 }
 
-
-
-
-
 /* Radio modifiers */
-
-
-
-
 
 .vd-c-radio .vd-c-form-control__indicator {
     border-radius: 50%;
 }
-
-
-
-
 
 .vd-c-radio input:checked ~ .vd-c-form-control__indicator {
 
@@ -4944,15 +2948,7 @@ hr {
     /* stylelint-enable function-url-quotes */
 }
 
-
-
-
-
 /* Alternately, use another character */
-
-
-
-
 
 .vd-c-form-control-x input:checked ~ .vd-c-form-control__indicator {
 
@@ -4962,10 +2958,6 @@ hr {
     /* stylelint-enable function-url-quotes */
 }
 
-
-
-
-
 .vd-c-form-control-dash input:checked ~ .vd-c-form-control__indicator {
 
     /* stylelint-disable function-url-quotes */
@@ -4974,10 +2966,6 @@ hr {
     /* stylelint-enable function-url-quotes */
 }
 
-
-
-
-
 /*
  * Select
  *
@@ -4985,20 +2973,12 @@ hr {
  * 2. Dropdown arrow
  */
 
-
-
-
-
 .vd-c-select {
     position: relative;
     display: inline-block;
     color: #536571;
     color: rgba(83, 101, 113, 1);
 }
-
-
-
-
 
 .vd-c-select select {
     display: inline-block;
@@ -5020,18 +3000,10 @@ hr {
             appearance: none;
 }
 
-
-
-
-
 .vd-c-select select:focus:-moz-focusring {
     color: transparent;/* [1] */
     text-shadow: 0 0 0 rgba(0, 0, 0, 1);/* [1] */
 }
-
-
-
-
 
 .vd-c-select::after {/* [2] */
     position: absolute;
@@ -5055,25 +3027,13 @@ hr {
     pointer-events: none;
 }
 
-
-
-
-
 /* Hover state */
-
-
-
-
 
 /* Uncomment if you need it, but be aware of the sticky iOS states.
 .c-select select:hover {
     background-color: var(--form-border-color);
 }
 */
-
-
-
-
 
 /**
  * States
@@ -5083,18 +3043,10 @@ hr {
  * 3. Hide the arrow in IE10 and up
  */
 
-
-
-
-
 .vd-c-select select:focus {
     box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1),
             0 0 0 .2rem rgba(153, 0, 255, 1);/* [1] */
 }
-
-
-
-
 
 .vd-c-select select:active {
     color: #ffffff;
@@ -5103,23 +3055,11 @@ hr {
     background-color: rgba(153, 0, 255, 1);/* [2] */
 }
 
-
-
-
-
 .vd-c-select select::-ms-expand {
     display: none;/* [3] */
 }
 
-
-
-
-
 /* Media query to target Firefox only */
-
-
-
-
 
 @-moz-document url-prefix("") {
 
@@ -5137,15 +3077,7 @@ hr {
     }
 }
 
-
-
-
-
 /* IE9 hack to hide the arrow */
-
-
-
-
 
 @media screen and (min-width: 0\0) {
 
@@ -5179,17 +3111,9 @@ hr {
     }
 }
 
-
-
-
-
 /*
  * File
  */
-
-
-
-
 
 .vd-file {
     position: relative;
@@ -5199,10 +3123,6 @@ hr {
     cursor: pointer;
 }
 
-
-
-
-
 .vd-file input {
     min-width: 224px;
     min-width: 14rem;
@@ -5210,10 +3130,6 @@ hr {
     filter: alpha(opacity=0);
     opacity: 0;
 }
-
-
-
-
 
 .vd-file--custom {
     position: absolute;
@@ -5241,17 +3157,9 @@ hr {
             user-select: none;
 }
 
-
-
-
-
 .vd-file--custom::after {
     content: "Choose file...";
 }
-
-
-
-
 
 .vd-file--custom::before {
     position: absolute;
@@ -5281,24 +3189,12 @@ hr {
     content: "Browse";
 }
 
-
-
-
-
 /* Focus */
-
-
-
-
 
 .vd-file input:focus ~ .vd-file--custom {
     box-shadow: 0 0 0 .075rem rgba(255, 255, 255, 1),
         0 0 0 .2rem rgba(153, 0, 255, 1);
 }
-
-
-
-
 
 /*
  * Progress
@@ -5308,19 +3204,11 @@ hr {
  * 3. Reset the default appearance
  */
 
-
-
-
-
 .vd-c-progress {
     display: inline-block;
     height: 16px;
     height: 1rem;
 }
-
-
-
-
 
 .vd-c-progress[value] {
     color: #9900ff;
@@ -5331,25 +3219,13 @@ hr {
             appearance: none;
 }
 
-
-
-
-
 /* [3] */
-
-
-
-
 
 .vd-c-progress[value]::-webkit-progress-bar {
     background-color: #aab6bd;
     background-color: rgba(170, 182, 189, 1);
     border-radius: .2rem;
 }
-
-
-
-
 
 .vd-c-progress[value]::-webkit-progress-value {
     background-color: #9900ff;
@@ -5360,10 +3236,6 @@ hr {
     border-bottom-left-radius: .2rem;
 }
 
-
-
-
-
 .vd-c-progress[value="100"]::-webkit-progress-value {
     border-top-right-radius: 3.2px;
     border-top-right-radius: .2rem;
@@ -5371,15 +3243,7 @@ hr {
     border-bottom-right-radius: .2rem;
 }
 
-
-
-
-
 /* Firefox styles must be entirely separate or it busts Webkit styles. */
-
-
-
-
 
 @-moz-document url-prefix("") {
 
@@ -5402,16 +3266,8 @@ hr {
     }
 }
 
-
-
-
-
 /* IE9 hacks to accompany custom markup. We don't need to scope this via media
  queries, but I feel better doing it anyway. */
-
-
-
-
 
 @media screen and (min-width: 0\0) {
 
@@ -5438,52 +3294,28 @@ hr {
     }
 }
 
-
-
-
-
 /*
  * Control layouts
  */
-
-
-
-
 
 .vd-c-form-controls--stacked {
     margin: 16px 0;
     margin: 1rem 0;
 }
 
-
-
-
-
 .vd-c-form-controls--stacked .vd-c-form-control, .vd-c-form-controls--stacked .vd-c-progress {
     display: block;
 }
-
-
-
-
 
 .vd-c-form-controls--stacked .vd-c-form-control + .vd-c-form-control, .vd-c-form-controls--stacked .vd-c-progress + .vd-c-progress {
     margin-top: 8px;
     margin-top: .5rem;
 }
 
-
-
-
-
 .vd-c-form-controls--inline {
     margin: 16px 0;
     margin: 1rem 0;
 }
-
-
-
-
 
 .vd-c-form-controls--inline .vd-c-form-control {
     display: inline-block;
@@ -5491,26 +3323,14 @@ hr {
     height: 1rem;
 }
 
-
-
-
-
 .vd-c-form-controls--inline .vd-c-form-control + .vd-c-form-control {
     margin-left: 16px;
     margin-left: 1rem;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #NAVBAR
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Navbar
@@ -5523,10 +3343,6 @@ hr {
  * 3. positionning the text aside of the logo
  */
 
-
-
-
-
 .vd-c-navbar {
     display: -ms-flexbox;
     display: flex;
@@ -5534,23 +3350,11 @@ hr {
         flex-wrap: wrap;
 }
 
-
-
-
-
 .vd-c-navbar > :nth-child(1) {
     margin-right: auto;/* [1] */
 }
 
-
-
-
-
 @media screen and (min-width: 45em) {
-
-
-
-
 
     .vd-c-navbar__logo {
         display: -ms-flexbox;
@@ -5558,44 +3362,20 @@ hr {
     }
 }
 
-
-
-
-
 .vd-c-navbar__logo source, .vd-c-navbar__logo img {
     height: calc(             0.84375rem             + 1px             + 1rem             + 1px             + 0.84375rem         );
 }
 
-
-
-
-
 /* [2] */
 
-
-
-
-
 @media screen and (min-width: 45em) {
-
-
-
-
 
     .vd-c-navbar__logo source, .vd-c-navbar__logo img {
         height: 4rem;/* [2] */
     }
 }
 
-
-
-
-
 @media screen and (min-width: 45em) {
-
-
-
-
 
     .vd-c-navbar__site-title {
         display: -ms-flexbox;
@@ -5605,43 +3385,23 @@ hr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #HEADER
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Set the colors of the header.
  */
-
-
-
-
 
 .vd-c-header {
     background-color: #536571;
     background-color: rgba(83, 101, 113, 1);
 }
 
-
-
-
-
 .vd-c-header, .vd-c-header a, .vd-c-header a:hover {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
 }
-
-
-
-
 
 /**
  * Header primary links
@@ -5649,10 +3409,6 @@ hr {
  * 1. Button are buttons only on palm.
  * 2. Use enhanced fonts only when loaded.
  */
-
-
-
-
 
 @media screen and (max-width: 44.9375em) {
 
@@ -5753,17 +3509,9 @@ hr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #INLINE TEXTS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Fractions
@@ -5773,20 +3521,12 @@ hr {
  * http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 
-
-
-
-
 .vd-c-fraction {
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: diagonal-fractions;
     font-feature-settings: "kern", "liga", "clig", "calt", "frac";
     font-kerning: normal;
 }
-
-
-
-
 
 /**
  * Footnotes
@@ -5796,10 +3536,6 @@ hr {
  * http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 
-
-
-
-
 .vd-c-footnote {
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-position: sub;
@@ -5807,17 +3543,9 @@ hr {
     font-kerning: normal;
 }
 
-
-
-
-
 /**
  * Small caps
  */
-
-
-
-
 
 .vd-c-small-caps {
     font-variant-ligatures: common-ligatures, contextual;
@@ -5830,17 +3558,9 @@ hr {
     /* [1] */
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #BOX
 \* ------------------------------------ */
-
-
-
-
 
 :root {
 
@@ -5851,17 +3571,9 @@ hr {
     /* Info colors */
 }
 
-
-
-
-
 /**
  * Default box UI
  */
-
-
-
-
 
 .vd-c-box--default {
     background-color: #697983;
@@ -5870,17 +3582,9 @@ hr {
     margin-bottom: 1.6875rem;
 }
 
-
-
-
-
 /**
  * Transaction confiration UI
  */
-
-
-
-
 
 .vd-c-box--transaction {
     text-align: center;
@@ -5890,18 +3594,10 @@ hr {
     margin-bottom: 1.6875rem;
 }
 
-
-
-
-
 .vd-c-box--transaction * {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
 }
-
-
-
-
 
 .vd-c-box--info {
     background-color: #dce3e8;
@@ -5910,17 +3606,9 @@ hr {
     margin-bottom: 1.6875rem;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #BACKGROUNDS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Add vertical space on items that have a background color.
@@ -5929,10 +3617,6 @@ hr {
  *    (padding + margin)
  */
 
-
-
-
-
 .vd-c-background {
     padding-top: 27px;
     padding-top: 1.6875rem;
@@ -5940,196 +3624,108 @@ hr {
     padding-bottom: 1.6875rem;
 }
 
-
-
-
-
 .vd-c-background > :last-child {
     margin-bottom: 0;
 }
-
-
-
-
 
 .vd-c-background + :not(.vd-c-background) {
     margin-top: 27px;
     margin-top: 1.6875rem;
 }
 
-
-
-
-
 .vd-c-background--primary {
     background-color: #02851a;
     background-color: rgba(2, 133, 26, 1);
 }
-
-
-
-
 
 .vd-c-background--base {
     background-color: #536571;
     background-color: rgba(83, 101, 113, 1);
 }
 
-
-
-
-
 .vd-c-background--gray-dark {
     background-color: #273c46;
     background-color: rgba(39, 60, 70, 1);
 }
-
-
-
-
 
 .vd-c-background--gray-light {
     background-color: #697983;
     background-color: rgba(105, 121, 131, 1);
 }
 
-
-
-
-
 .vd-c-background--gray-lighter {
     background-color: #aab6bd;
     background-color: rgba(170, 182, 189, 1);
 }
-
-
-
-
 
 .vd-c-background--gray-lightest {
     background-color: #dce3e8;
     background-color: rgba(220, 227, 232, 1);
 }
 
-
-
-
-
 .vd-c-background--primary {
     background-color: #02851a;
     background-color: rgba(2, 133, 26, 1);
 }
-
-
-
-
 
 .vd-c-background--primary-dark {
     background-color: #1e5e02;
     background-color: rgba(30, 94, 2, 1);
 }
 
-
-
-
-
 .vd-c-background--primary-light {
     background-color: #40d940;
     background-color: rgba(64, 217, 64, 1);
 }
-
-
-
-
 
 .vd-c-background--primary-lighter {
     background-color: #99ff33;
     background-color: rgba(153, 255, 51, 1);
 }
 
-
-
-
-
 .vd-c-background--primary-lightest {
     background-color: #ccff99;
     background-color: rgba(204, 255, 153, 1);
 }
-
-
-
-
 
 .vd-c-background--white {
     background-color: #ffffff;
     background-color: rgba(255, 255, 255, 1);
 }
 
-
-
-
-
 .vd-c-background--black {
     background-color: #000000;
     background-color: rgba(0, 0, 0, 1);
 }
-
-
-
-
 
 .vd-c-background--primary-alt {
     background-color: #9900ff;
     background-color: rgba(153, 0, 255, 1);
 }
 
-
-
-
-
 .vd-c-background--focus {
     background-color: #3a95cf;
     background-color: rgba(58, 149, 207, 1);
 }
-
-
-
-
 
 .vd-c-background--visited {
     background-color: #4d3492;
     background-color: rgba(77, 52, 146, 1);
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SMALL
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Small text
  */
-
-
-
-
 
 /**
      * .c-small
      *
      * 1. Use webfont only when it's loaded to avoid FOIT
      */
-
-
-
-
 
 .vd-c-small {
     font-size: 12.698px;
@@ -6153,10 +3749,6 @@ hr {
         serif;
 }
 
-
-
-
-
 .wf-active .vd-c-small {
     font-family: "MetaSerifWeb", "Palatino Linotype",
         Palatino,
@@ -6177,65 +3769,33 @@ hr {
         serif;/* [1] */
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #STRONG
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Strong text
  */
 
-
-
-
-
 .vd-c-strong {
     font-weight: bold;
 }
-
-
-
-
 
 .wf-active .vd-c-strong {
     font-weight: 700;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #QUOTES
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Blockquote class
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #PAGE-TITLE
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Put title/text over an image
@@ -6246,10 +3806,6 @@ hr {
  * 3. Position the overlay over the image
  * 4. Avoid a problem of overlaping at the bottom of the image
  */
-
-
-
-
 
 @media screen and (min-width: 45em) { /* [1] */
 
@@ -6295,17 +3851,9 @@ hr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #BREADCRUMP
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Breadcrumb
@@ -6313,15 +3861,7 @@ hr {
  * 1. Only show the last element on mobile
  */
 
-
-
-
-
 @media screen and (max-width: 44.9375em) {
-
-
-
-
 
     .vd-c-breadcrumb > li:not(:last-child) {
         position: absolute;
@@ -6334,10 +3874,6 @@ hr {
         clip: rect(0 0 0 0);/* [1] */
     }
 
-
-
-
-
     .vd-c-breadcrumb > li:not(:last-child).vd-focusable:active,.vd-c-breadcrumb > li:not(:last-child).vd-focusable:focus {
         display: table;
         position: static;
@@ -6345,49 +3881,25 @@ hr {
     }
 }
 
-
-
-
-
 .vd-c-breadcrumb > li::before {
     content: "< ";
 }
-
-
-
-
 
 /* ------------------------------------ *\
     #IMAGES
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Perfect circle
  */
-
-
-
-
 
 .vd-c-image-circle {
     border-radius: 50%;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #LIST-ABBREVIATIONS
 \* ------------------------------------ */
-
-
-
-
 
 .vd-c-list-abbreviations abbr {
     font-variant-ligatures: common-ligatures, contextual,
@@ -6397,17 +3909,9 @@ hr {
     font-variant-caps: normal;
 }
 
-
-
-
-
 .vd-c-list-abbreviations abbr[title] {
     text-decoration: none;
 }
-
-
-
-
 
 .vd-c-list-abbreviations abbr::after {
     font-variant-ligatures: common-ligatures, contextual;
@@ -6424,25 +3928,13 @@ hr {
     content: attr(title);/* [2] *//* stylelint-enable function-whitespace-after */
 }
 
-
-
-
-
 /**
  * UTILITIES
  */
 
-
-
-
-
 /* ------------------------------------ *\
     #CLEARFIX
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Micro clearfix. Further reading:
@@ -6450,27 +3942,15 @@ hr {
  *
  */
 
-
-
-
-
 .vd-u-clearfix::after {
     display: block !important;
     clear: both !important;
     content: "" !important;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #HEADINGS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Redefine all of our basic heading styles against utility classes so as to
@@ -6481,20 +3961,12 @@ hr {
  *
  */
 
-
-
-
-
 .vd-u-h1 {
     font-size: 32.006px;
     font-size: 2.00038rem;
     font-weight: bold;
     line-height: 1.19048;
 }
-
-
-
-
 
 .vd-u-h2 {
     font-size: 25.401px;
@@ -6503,20 +3975,12 @@ hr {
     line-height: 1.19048;
 }
 
-
-
-
-
 .vd-u-h3 {
     font-size: 20.16px;
     font-size: 1.26rem;
     font-weight: bold;
     line-height: 1.19048;
 }
-
-
-
-
 
 .vd-u-h4 {
     font-size: 16px;
@@ -6525,10 +3989,6 @@ hr {
     line-height: 1.5;
 }
 
-
-
-
-
 .vd-u-h5 {
     font-size: 12.698px;
     font-size: 0.79365rem;
@@ -6536,20 +3996,12 @@ hr {
     line-height: 1.5;
 }
 
-
-
-
-
 .vd-u-h6 {
     font-size: 12.698px;
     font-size: 0.79365rem;
     font-weight: normal;
     line-height: 1.5;
 }
-
-
-
-
 
 .vd-u-h1, .vd-u-h2, .vd-u-h3, .vd-u-h4, .vd-u-h5, .vd-u-h6 {
     font-family: -apple-system,
@@ -6569,10 +4021,6 @@ hr {
     font-kerning: normal;
 }
 
-
-
-
-
 .wf-metaweb-n7-active .vd-u-h1, .wf-metaweb-n7-active .vd-u-h2, .wf-metaweb-n7-active .vd-u-h3, .wf-metaweb-n7-active .vd-u-h4, .wf-metaweb-n7-active .vd-u-h5, .wf-metaweb-n7-active .vd-u-h6  {
     font-family: "MetaWeb", -apple-system,
         ".SFNSText-Regular",
@@ -6584,33 +4032,17 @@ hr {
         sans-serif;/* [1] */
 }
 
-
-
-
-
 .wf-metaweb-n7-active .vd-u-h1, .wf-metaweb-n7-active .vd-u-h2, .wf-metaweb-n7-active .vd-u-h3, .wf-metaweb-n7-active .vd-u-h4, .wf-metaweb-n7-active .vd-u-h5  {
     font-weight: 700;
 }
-
-
-
-
 
 .wf-metaweb-n7-active .vd-u-h6 {
     font-weight: 400;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #COLORS
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Set text color
@@ -6618,161 +4050,89 @@ hr {
  * Be sure that the contrast meet the standard of accessibility.
  */
 
-
-
-
-
 .vd-u-color-text--primary {
     color: #02851a;
     color: rgba(2, 133, 26, 1);
 }
-
-
-
-
 
 .vd-u-color-text--base {
     color: #536571;
     color: rgba(83, 101, 113, 1);
 }
 
-
-
-
-
 .vd-u-color-text--gray-dark {
     color: #273c46;
     color: rgba(39, 60, 70, 1);
 }
-
-
-
-
 
 .vd-u-color-text--gray-light {
     color: #697983;
     color: rgba(105, 121, 131, 1);
 }
 
-
-
-
-
 .vd-u-color-text--gray-lighter {
     color: #aab6bd;
     color: rgba(170, 182, 189, 1);
 }
-
-
-
-
 
 .vd-u-color-text--gray-lightest {
     color: #dce3e8;
     color: rgba(220, 227, 232, 1);
 }
 
-
-
-
-
 .vd-u-color-text--primary {
     color: #02851a;
     color: rgba(2, 133, 26, 1);
 }
-
-
-
-
 
 .vd-u-color-text--primary-dark {
     color: #1e5e02;
     color: rgba(30, 94, 2, 1);
 }
 
-
-
-
-
 .vd-u-color-text--primary-light {
     color: #40d940;
     color: rgba(64, 217, 64, 1);
 }
-
-
-
-
 
 .vd-u-color-text--primary-lighter {
     color: #99ff33;
     color: rgba(153, 255, 51, 1);
 }
 
-
-
-
-
 .vd-u-color-text--primary-lightest {
     color: #ccff99;
     color: rgba(204, 255, 153, 1);
 }
-
-
-
-
 
 .vd-u-color-text--white {
     color: #ffffff;
     color: rgba(255, 255, 255, 1);
 }
 
-
-
-
-
 .vd-u-color-text--black {
     color: #000000;
     color: rgba(0, 0, 0, 1);
 }
-
-
-
-
 
 .vd-u-color-text--primary-alt {
     color: #9900ff;
     color: rgba(153, 0, 255, 1);
 }
 
-
-
-
-
 .vd-u-color-text--focus {
     color: #3a95cf;
     color: rgba(58, 149, 207, 1);
 }
-
-
-
-
 
 .vd-u-color-text--visited {
     color: #4d3492;
     color: rgba(77, 52, 146, 1);
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #FONT
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Use these helper classes to cause other elements to adopt the heading
@@ -6782,10 +4142,6 @@ hr {
  *
  * 1. Apply enhanced font only if it is loaded
  */
-
-
-
-
 
 .vd-u-font-heading {
     font-family: -apple-system,
@@ -6805,10 +4161,6 @@ hr {
     font-kerning: normal;
 }
 
-
-
-
-
 .wf-metaweb-n4-active .vd-u-font-heading  {
     font-family: "MetaWeb", -apple-system,
         ".SFNSText-Regular",
@@ -6820,41 +4172,21 @@ hr {
         sans-serif;/* [1] */
 }
 
-
-
-
-
 /* ------------------------------------ *\
 //    #TEXT-UTILITIES
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Center text
  */
 
-
-
-
-
 .vd-u-text-center {
     text-align: center;
 }
 
-
-
-
-
 /* ------------------------------------ *\
 //    #UTILITIES
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Visually hide content.
@@ -6863,10 +4195,6 @@ hr {
  * readers and assistive technology. It will not use up space in the document
  * flow.
  */
-
-
-
-
 
 .vd-u-visually-hidden {
     position: absolute;
@@ -6879,19 +4207,11 @@ hr {
     clip: rect(0 0 0 0);
 }
 
-
-
-
-
 .vd-u-visually-hidden.vd-focusable:active,.vd-u-visually-hidden.vd-focusable:focus {
     display: table;
     position: static;
     clear: both;
 }
-
-
-
-
 
 /**
  * Hide content
@@ -6901,26 +4221,14 @@ hr {
  * will do this with `display: none !important;`.
  */
 
-
-
-
-
 .vd-u-hidden {
     display: none !important;
     visibility: hidden;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #RESPONSIVE-UTILITIES
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Visually hide content depending on viewports.
@@ -6929,10 +4237,6 @@ hr {
   * readers and assistive technology. It will not use up space in the document
   * flow.
  */
-
-
-
-
 
 @media screen and (max-width: 44.9375em) {
 
@@ -6954,10 +4258,6 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
 
     .vd-u-visually-hidden\@lap {
@@ -6977,10 +4277,6 @@ hr {
         clear: both;
     }
 }
-
-
-
-
 
 @media screen and (min-width: 45em) {
 
@@ -7002,10 +4298,6 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (max-width: 63.9375em) {
 
     .vd-u-visually-hidden\@portable {
@@ -7025,10 +4317,6 @@ hr {
         clear: both;
     }
 }
-
-
-
-
 
 @media screen and (min-width: 64em) {
 
@@ -7050,10 +4338,6 @@ hr {
     }
 }
 
-
-
-
-
 /**
  * Hide content depending of the viewport
  *
@@ -7061,10 +4345,6 @@ hr {
  * This includes hiding the item screen readers and assistive technology. It
  * will do this with `display: none !important;`.
  */
-
-
-
-
 
 @media screen and (max-width: 44.9375em) {
 
@@ -7074,10 +4354,6 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
 
     .vd-u-hidden\@lap {
@@ -7085,10 +4361,6 @@ hr {
         visibility: hidden;
     }
 }
-
-
-
-
 
 @media screen and (min-width: 45em) {
 
@@ -7098,10 +4370,6 @@ hr {
     }
 }
 
-
-
-
-
 @media screen and (max-width: 63.9375em) {
 
     .vd-u-hidden\@portable {
@@ -7109,10 +4377,6 @@ hr {
         visibility: hidden;
     }
 }
-
-
-
-
 
 @media screen and (min-width: 64em) {
 
@@ -7122,17 +4386,9 @@ hr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SPACING
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Margin and padding helper classes. Use these to tweak layout on a micro
@@ -7142,64 +4398,36 @@ hr {
  * top/right/bottom/left/horizontal/vertical less/more/none
  */
 
-
-
-
-
 /**
  * Margin helper classes.
  *
  * Add margins.
  */
 
-
-
-
-
 .vd-u-m {
     margin: 27px;
     margin: 1.6875rem;
 }
-
-
-
-
 
 .vd-u-mt {
     margin-top: 27px;
     margin-top: 1.6875rem;
 }
 
-
-
-
-
 .vd-u-mr {
     margin-right: 27px;
     margin-right: 1.6875rem;
 }
-
-
-
-
 
 .vd-u-mb {
     margin-bottom: 27px;
     margin-bottom: 1.6875rem;
 }
 
-
-
-
-
 .vd-u-ml {
     margin-left: 27px;
     margin-left: 1.6875rem;
 }
-
-
-
-
 
 .vd-u-mh {
     margin-right: 27px;
@@ -7208,10 +4436,6 @@ hr {
     margin-left: 1.6875rem;
 }
 
-
-
-
-
 .vd-u-mv {
     margin-top: 27px;
     margin-top: 1.6875rem;
@@ -7219,75 +4443,39 @@ hr {
     margin-bottom: 1.6875rem;
 }
 
-
-
-
-
 /**
  * Remove margins.
  */
-
-
-
-
 
 .vd-u-m0 {
     margin: 0 !important;
 }
 
-
-
-
-
 .vd-u-mt0 {
     margin-top: 0 !important;
 }
-
-
-
-
 
 .vd-u-mr0 {
     margin-right: 0 !important;
 }
 
-
-
-
-
 .vd-u-mb0 {
     margin-bottom: 0 !important;
 }
 
-
-
-
-
 .vd-u-ml0 {
     margin-left: 0 !important;
 }
-
-
-
-
 
 .vd-u-mh0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
 }
 
-
-
-
-
 .vd-u-mv0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
-
-
-
-
 
 /**
  * Padding helper classes.
@@ -7295,54 +4483,30 @@ hr {
  * Add paddings.
  */
 
-
-
-
-
 .vd-u-p {
     padding: 27px !important;
     padding: 1.6875rem !important;
 }
-
-
-
-
 
 .vd-u-pt {
     padding-top: 27px !important;
     padding-top: 1.6875rem !important;
 }
 
-
-
-
-
 .vd-u-pr {
     padding-right: 27px !important;
     padding-right: 1.6875rem !important;
 }
-
-
-
-
 
 .vd-u-pb {
     padding-bottom: 27px !important;
     padding-bottom: 1.6875rem !important;
 }
 
-
-
-
-
 .vd-u-pl {
     padding-left: 27px !important;
     padding-left: 1.6875rem !important;
 }
-
-
-
-
 
 .vd-u-ph {
     padding-right: 27px !important;
@@ -7351,10 +4515,6 @@ hr {
     padding-left: 1.6875rem !important;
 }
 
-
-
-
-
 .vd-u-pv {
     padding-top: 27px !important;
     padding-top: 1.6875rem !important;
@@ -7362,83 +4522,43 @@ hr {
     padding-bottom: 1.6875rem !important;
 }
 
-
-
-
-
 /**
  * Remove paddings.
  */
-
-
-
-
 
 .vd-u-p0 {
     padding: 0 !important;
 }
 
-
-
-
-
 .vd-u-pt0 {
     padding-top: 0 !important;
 }
-
-
-
-
 
 .vd-u-pr0 {
     padding-right: 0 !important;
 }
 
-
-
-
-
 .vd-u-pb0 {
     padding-bottom: 0 !important;
 }
 
-
-
-
-
 .vd-u-pl0 {
     padding-left: 0 !important;
 }
-
-
-
-
 
 .vd-u-ph0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
 
-
-
-
-
 .vd-u-pv0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 
-
-
-
-
 /* ------------------------------------ *\
     #SPACING
 \* ------------------------------------ */
-
-
-
-
 
 /**
  * Gutter helper classes for layout. Use these to tweak layout on a micro
@@ -7446,37 +4566,21 @@ hr {
  * width and wrap on the following line
  */
 
-
-
-
-
 /**
  * Gutter helper classes.
  *
  * Add gutter.
  */
 
-
-
-
-
 .vd-u-gr {
     margin-right: 13.5px !important;
     margin-right: 0.84375rem !important;
 }
 
-
-
-
-
 .vd-u-gl {
     margin-left: 13.5px !important;
     margin-left: 0.84375rem !important;
 }
-
-
-
-
 
 @media screen and (min-width: 45em) {
 
@@ -7489,33 +4593,17 @@ hr {
     }
 }
 
-
-
-
-
 /**
  * Remove gutter
  */
-
-
-
-
 
 .vd-u-gr0 {
     margin-right: 0 !important;
 }
 
-
-
-
-
 .vd-u-gl0 {
     margin-left: 0 !important;
 }
-
-
-
-
 
 @media screen and (min-width: 45em) {
 
@@ -7528,25 +4616,13 @@ hr {
     }
 }
 
-
-
-
-
 /* ------------------------------------ *\
 //    #PRINT
 \* ------------------------------------ */
 
-
-
-
-
 /**
  * Toggle content for print.
  */
-
-
-
-
 
 @media print{
 
