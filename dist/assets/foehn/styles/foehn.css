@@ -3083,7 +3083,7 @@ hr {
 
     .vd-c-select select {
         z-index: 1;
-        padding: .5rem 1.6875rem 0.5rem 1rem;
+        padding: .5rem 1.6875rem .5rem 1rem;
     }
 
     .vd-c-select::after {
