@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add basic footer structure
 - Add `.vd-u-hidden@print` class to hide content on print documents
 
 ## [0.8.0]
