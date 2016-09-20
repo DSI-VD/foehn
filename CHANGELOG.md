@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- `.vd-c-small` is replaced by `.vd-u-small`.
+- `.vd-u-small` use font-family of the parent.
 - Use inline list for social organism
 - Change color palette
 

@@ -50,7 +50,6 @@
  * Inline texts.........Fraction, Small-caps, etc.
  * Boxes................Boxes styles.
  * Backgrounds..........Change backgrounds color
- * Small................Small text styles.
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
  * Breadcrumb ..........Styles for breadcrumb.
@@ -60,6 +59,7 @@
  * UTILITIES
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
+ * Small................Small text styles.
  * Colors...............Text colors.
  * Text utilities.......Center texts..
  * Utilities............Responsive headings styles for texts.
@@ -958,43 +958,6 @@ p {
 small {
     font-size: 12.698px;
     font-size: 0.79365rem;
-    font-family: "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;
-}
-
-.wf-active small {
-    font-family: "MetaSerifWeb", "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;/* [1] */
 }
 
 /* ------------------------------------ *\
@@ -3714,62 +3677,6 @@ hr {
 }
 
 /* ------------------------------------ *\
-    #SMALL
-\* ------------------------------------ */
-
-/**
- * Small text
- */
-
-/**
-     * .c-small
-     *
-     * 1. Use webfont only when it's loaded to avoid FOIT
-     */
-
-.vd-c-small {
-    font-size: 12.698px;
-    font-size: 0.79365rem;
-    font-family: "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;
-}
-
-.wf-active .vd-c-small {
-    font-family: "MetaSerifWeb", "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;/* [1] */
-}
-
-/* ------------------------------------ *\
     #STRONG
 \* ------------------------------------ */
 
@@ -4038,6 +3945,25 @@ hr {
 
 .wf-metaweb-n7-active .vd-u-h6 {
     font-weight: 400;
+}
+
+/* ------------------------------------ *\
+    #SMALL
+\* ------------------------------------ */
+
+/**
+ * Small text
+ */
+
+/**
+     * .u-small
+     *
+     * 1. Use webfont only when it's loaded to avoid FOIT
+     */
+
+.vd-u-small {
+    font-size: 12.698px;
+    font-size: 0.79365rem;
 }
 
 /* ------------------------------------ *\

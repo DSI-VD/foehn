@@ -17,9 +17,7 @@
 
 
 @define-mixin small $class,
-    $font-size: var(--small-font-size),
-    $font-family: var(--small-font-family),
-    $enhance-font-family: var(--enhance-small-font-family) {
+    $font-size: var(--small-font-size) {
 
     /**
      * <<$(class)>>
@@ -28,11 +26,6 @@
      */
     $(class) {
         font-size: $font-size;
-        font-family: $font-family;
-    }
-
-    .wf-active $(class) {
-        font-family: $enhance-font-family; /* [1] */
     }
 }
 
