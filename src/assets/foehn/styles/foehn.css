@@ -50,7 +50,6 @@
  * Inline texts.........Fraction, Small-caps, etc.
  * Boxes................Boxes styles.
  * Backgrounds..........Change backgrounds color
- * Small................Small text styles.
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
  * Breadcrumb ..........Styles for breadcrumb.
@@ -60,6 +59,7 @@
  * UTILITIES
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
+ * Small................Small text styles.
  * Colors...............Text colors.
  * Text utilities.......Center texts..
  * Utilities............Responsive headings styles for texts.
@@ -155,7 +155,6 @@
 @import "components/_components.inline-texts.css";
 @import "components/_components.box.css";
 @import "components/_components.backgrounds.css";
-@import "components/_components.small.css";
 @import "components/_components.strong.css";
 @import "components/_components.quotes.css";
 @import "components/_components.page-title.css";
@@ -173,6 +172,7 @@
 
 @import "utilities/_utilities.clearfix.css";
 @import "utilities/_utilities.headings.css";
+@import "utilities/_utilities.small.css";
 @import "utilities/_utilities.colors.css";
 @import "utilities/_utilities.fonts.css";
 @import "utilities/_utilities.text-utilities.css";
