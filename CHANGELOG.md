@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Use inline list for social organism
 - Change color palette
 
 ### Added
