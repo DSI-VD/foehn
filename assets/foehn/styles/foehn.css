@@ -50,7 +50,6 @@
  * Inline texts.........Fraction, Small-caps, etc.
  * Boxes................Boxes styles.
  * Backgrounds..........Change backgrounds color
- * Small................Small text styles.
  * Strong...............Strong text styles.
  * Quotes...............Stlyles for quotes.
  * Breadcrumb ..........Styles for breadcrumb.
@@ -60,6 +59,7 @@
  * UTILITIES
  * Clearfix.............Text helpers.
  * Headings.............Headings styles for texts.
+ * Small................Small text styles.
  * Colors...............Text colors.
  * Text utilities.......Center texts..
  * Utilities............Responsive headings styles for texts.
@@ -209,6 +209,198 @@
     font-style: italic;
     font-family: MetaWeb;
     src: url("../fonts/MetaWeb-CondBoldItalic.woff") format("woff");
+}
+
+/**
+ * Produkt
+ */
+
+/* Normal normal */
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: Produkt;
+    src: url("../fonts/Produkt-Regular-Web.eot") format("eot"),
+        url("../fonts/Produkt-Regular-Web.woff2") format("woff2"),
+        url("../fonts/Produkt-Regular-Web.woff") format("woff");
+}
+
+/* Normal italic */
+
+@font-face {
+    font-weight: normal;
+    font-style: italic;
+    font-family: Produkt;
+    src: url("../fonts/Produkt-RegularItalic-Web.eot") format("eot"),
+        url("../fonts/Produkt-RegularItalic-Web.woff2") format("woff2"),
+        url("../fonts/Produkt-RegularItalic-Web.woff") format("woff");
+}
+
+/* Bold normal */
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: Produkt;
+    src: url("../fonts/Produkt-Bold-Web.eot") format("eot"),
+        url("../fonts/Produkt-Bold-Web.woff2") format("woff2"),
+        url("../fonts/Produkt-Bold-Web.woff") format("woff");
+}
+
+/* Bold italic */
+
+@font-face {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Produkt;
+    src: url("../fonts/Produkt-BoldItalic-Web.eot") format("eot"),
+        url("../fonts/Produkt-BoldItalic-Web.woff2") format("woff2"),
+        url("../fonts/Produkt-BoldItalic-Web.woff") format("woff");
+}
+
+/**
+ * Museo
+ */
+
+/* Normal normal */
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: MuseoSansCnd;
+    src: url("../fonts/MuseoSansCnd-300-webfont.eot") format("eot"),
+        url("../fonts/MuseoSansCnd-300-webfont.woff2") format("woff2"),
+        url("../fonts/MuseoSansCnd-300-webfont.woff") format("woff");
+}
+
+/* Normal italic */
+
+@font-face {
+    font-weight: normal;
+    font-style: italic;
+    font-family: MuseoSansCnd;
+    src: url("../fonts/MuseoSansCnd-300-Italic-webfont.eot") format("eot"),
+        url("../fonts/MuseoSansCnd-300-Italic-webfont.woff2") format("woff2"),
+        url("../fonts/MuseoSansCnd-300-Italic-webfont.woff") format("woff");
+}
+
+/* Bold normal */
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: MuseoSansCnd;
+    src: url("../fonts/MuseoSansCnd-700-webfont.eot") format("eot"),
+        url("../fonts/MuseoSansCnd-700-webfont.woff2") format("woff2"),
+        url("../fonts/MuseoSansCnd-700-webfont.woff") format("woff");
+}
+
+/* Bold italic */
+
+@font-face {
+    font-weight: bold;
+    font-style: italic;
+    font-family: MuseoSansCnd;
+    src: url("../fonts/MuseoSansCnd-700-Italic-webfont.eot") format("eot"),
+        url("../fonts/MuseoSansCnd-700-Italic-webfont.woff2") format("woff2"),
+        url("../fonts/MuseoSansCnd-700-Italic-webfont.woff") format("woff");
+}
+
+/**
+ * Calluna
+ */
+
+/* Normal normal */
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: Calluna;
+    src: url("../fonts/Calluna-Regular-webfont.eot") format("eot"),
+        url("../fonts/Calluna-Regular-webfont.woff2") format("woff2"),
+        url("../fonts/Calluna-Regular-webfont.woff") format("woff");
+}
+
+/* Normal italic */
+
+@font-face {
+    font-weight: normal;
+    font-style: italic;
+    font-family: Calluna;
+    src: url("../fonts/Calluna-It-webfont.eot") format("eot"),
+        url("../fonts/Calluna-It-webfont.woff2") format("woff2"),
+        url("../fonts/Calluna-It-webfont.woff") format("woff");
+}
+
+/* Bold normal */
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: Calluna;
+    src: url("../fonts/Calluna-Bold-webfont.eot") format("eot"),
+        url("../fonts/Calluna-Bold-webfont.woff2") format("woff2"),
+        url("../fonts/Calluna-Bold-webfont.woff") format("woff");
+}
+
+/* Bold italic */
+
+@font-face {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Calluna;
+    src: url("../fonts/Calluna-BoldIt-webfont.eot") format("eot"),
+        url("../fonts/Calluna-BoldIt-webfont.woff2") format("woff2"),
+        url("../fonts/Calluna-BoldIt-webfont.woff") format("woff");
+}
+
+/**
+ * Graphik
+ */
+
+/* Normal normal */
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: Graphik;
+    src: url("../fonts/Graphik-Regular-Web.eot") format("eot"),
+        url("../fonts/Graphik-Regular-Web.woff2") format("woff2"),
+        url("../fonts/Graphik-Regular-Web.woff") format("woff");
+}
+
+/* Normal italic */
+
+@font-face {
+    font-weight: normal;
+    font-style: italic;
+    font-family: Graphik;
+    src: url("../fonts/Graphik-RegularItalic-Web.eot") format("eot"),
+        url("../fonts/Graphik-RegularItalic-Web.woff2") format("woff2"),
+        url("../fonts/Graphik-RegularItalic-Web.woff") format("woff");
+}
+
+/* Bold normal */
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: Graphik;
+    src: url("../fonts/Graphik-Bold-Web.eot") format("eot"),
+        url("../fonts/Graphik-Bold-Web.woff2") format("woff2"),
+        url("../fonts/Graphik-Bold-Web.woff") format("woff");
+}
+
+/* Bold italic */
+
+@font-face {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Graphik;
+    src: url("../fonts/Graphik-BoldItalic-Web.eot") format("eot"),
+        url("../fonts/Graphik-BoldItalic-Web.woff2") format("woff2"),
+        url("../fonts/Graphik-BoldItalic-Web.woff") format("woff");
 }
 
 /* ------------------------------------ *\
@@ -958,43 +1150,6 @@ p {
 small {
     font-size: 12.698px;
     font-size: 0.79365rem;
-    font-family: "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;
-}
-
-.wf-active small {
-    font-family: "MetaSerifWeb", "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;/* [1] */
 }
 
 /* ------------------------------------ *\
@@ -3083,7 +3238,7 @@ hr {
 
     .vd-c-select select {
         z-index: 1;
-        padding: .5rem 1.6875rem 0.5rem 1rem;
+        padding: .5rem 1.6875rem .5rem 1rem;
     }
 
     .vd-c-select::after {
@@ -3714,62 +3869,6 @@ hr {
 }
 
 /* ------------------------------------ *\
-    #SMALL
-\* ------------------------------------ */
-
-/**
- * Small text
- */
-
-/**
-     * .c-small
-     *
-     * 1. Use webfont only when it's loaded to avoid FOIT
-     */
-
-.vd-c-small {
-    font-size: 12.698px;
-    font-size: 0.79365rem;
-    font-family: "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;
-}
-
-.wf-active .vd-c-small {
-    font-family: "MetaSerifWeb", "Palatino Linotype",
-        Palatino,
-        Palladio,
-        "URW Palladio L",
-        "Book Antiqua",
-        Baskerville,
-        "Bookman Old Style",
-        "Bitstream Charter",
-        "Nimbus Roman No9 L",
-        Garamond,
-        "Apple Garamond",
-        "ITC Garamond Narrow",
-        "New Century Schoolbook",
-        "Century Schoolbook",
-        "Century Schoolbook L",
-        Georgia,
-        serif;/* [1] */
-}
-
-/* ------------------------------------ *\
     #STRONG
 \* ------------------------------------ */
 
@@ -4038,6 +4137,25 @@ hr {
 
 .wf-metaweb-n7-active .vd-u-h6 {
     font-weight: 400;
+}
+
+/* ------------------------------------ *\
+    #SMALL
+\* ------------------------------------ */
+
+/**
+ * Small text
+ */
+
+/**
+     * .u-small
+     *
+     * 1. Use webfont only when it's loaded to avoid FOIT
+     */
+
+.vd-u-small {
+    font-size: 12.698px;
+    font-size: 0.79365rem;
 }
 
 /* ------------------------------------ *\
@@ -4630,4 +4748,20 @@ hr {
         display: none !important;
         visibility: hidden;
     }
+}
+
+html.wf-active .u-produkt-graphik {
+    font-family: Graphik !important;
+}
+
+html.wf-active .u-produkt-graphik h1, html.wf-active .u-produkt-graphik h2, html.wf-active .u-produkt-graphik h3, html.wf-active .u-produkt-graphik h4, html.wf-active .u-produkt-graphik h5, html.wf-active .u-produkt-graphik h6, html.wf-active .u-produkt-graphik .u-h1, html.wf-active .u-produkt-graphik .u-h2, html.wf-active .u-produkt-graphik .u-h3, html.wf-active .u-produkt-graphik .u-h4, html.wf-active .u-produkt-graphik .u-h5, html.wf-active .u-produkt-graphik .u-h6, html.wf-active .u-produkt-graphik .vd-c-button {
+    font-family: Produkt !important;
+}
+
+html.wf-active .u-museo-calluna {
+    font-family: Calluna !important;
+}
+
+html.wf-active .u-museo-calluna h1, html.wf-active .u-museo-calluna h2, html.wf-active .u-museo-calluna h3, html.wf-active .u-museo-calluna h4, html.wf-active .u-museo-calluna h5, html.wf-active .u-museo-calluna h6, html.wf-active .u-museo-calluna .u-h1, html.wf-active .u-museo-calluna .u-h2, html.wf-active .u-museo-calluna .u-h3, html.wf-active .u-museo-calluna .u-h4, html.wf-active .u-museo-calluna .u-h5, html.wf-active .u-museo-calluna .u-h6, html.wf-active .u-museo-calluna .vd-c-button {
+    font-family: MuseoSansCnd !important;
 }
