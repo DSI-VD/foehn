@@ -4750,11 +4750,11 @@ hr {
     }
 }
 
-html.wf-active .u-produkt-graphik {
+html.wf-active .u-produkt-graphik, html.wf-active .u-produkt-graphik .vd-c-button {
     font-family: Graphik !important;
 }
 
-html.wf-active .u-produkt-graphik h1, html.wf-active .u-produkt-graphik h2, html.wf-active .u-produkt-graphik h3, html.wf-active .u-produkt-graphik h4, html.wf-active .u-produkt-graphik h5, html.wf-active .u-produkt-graphik h6, html.wf-active .u-produkt-graphik .u-h1, html.wf-active .u-produkt-graphik .u-h2, html.wf-active .u-produkt-graphik .u-h3, html.wf-active .u-produkt-graphik .u-h4, html.wf-active .u-produkt-graphik .u-h5, html.wf-active .u-produkt-graphik .u-h6, html.wf-active .u-produkt-graphik .vd-c-button {
+html.wf-active .u-produkt-graphik h1, html.wf-active .u-produkt-graphik h2, html.wf-active .u-produkt-graphik h3, html.wf-active .u-produkt-graphik h4, html.wf-active .u-produkt-graphik h5, html.wf-active .u-produkt-graphik h6, html.wf-active .u-produkt-graphik .u-h1, html.wf-active .u-produkt-graphik .u-h2, html.wf-active .u-produkt-graphik .u-h3, html.wf-active .u-produkt-graphik .u-h4, html.wf-active .u-produkt-graphik .u-h5, html.wf-active .u-produkt-graphik .u-h6 {
     font-family: Produkt !important;
 }
 
