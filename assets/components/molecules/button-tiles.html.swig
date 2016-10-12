@@ -1,0 +1,13 @@
+---
+title: Button Tiles
+name: button-tiles
+collection: molecules
+notes: |
+  This is a custom VD component.
+---
+<div class="vd-btn-tiles">
+  <a href="#0" class="btn">Organigramme</a>
+  <a href="#0" class="btn active">Conseil d'État</a>
+  <a href="#0" class="btn">Grand Conseil</a>
+  <a href="#0" class="btn">Ordre Judiciaire</a>
+</div>
