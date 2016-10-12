@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+.vd-btn-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2px;
+
+  .btn {
+    flex: 1 0 calc(50% - 4px);
+    margin: 2px;
+    background: $pattern-dotted-green rgba($vd-green-dark-2, 0);
+    color: $black;
+    text-align: left;
+    transition: background-color 0.2s;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($vd-green-dark-2, 0.05);
+    }
+
+    &:active { background-color: rgba($vd-green-dark-2, 0.15); }
+
+    &.active {
+      background: $vd-green-dark-2;
+      color: $white;
+    }
+  }
+}

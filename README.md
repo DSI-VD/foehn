@@ -15,11 +15,11 @@ If you don't like the [usual issues view](https://github.com/DSI-VD/foehn/issues
 
 ## Build tools
 
-[Fabricator](http://fbrctr.github.io/) is used to build fœhn.
+[Toolbox](http://frontend.github.io/toolbox/) and [Bootstrap 4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
 
 ## Quick Start
 
-The following script let you build, watch and serve the code.
+The following script lets you build, watch and serve the code.
 
 ```shell
 $ git clone https://github.com/vdch/foehn.git
