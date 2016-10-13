@@ -1,0 +1,6 @@
+@charset 'UTF-8';
+
+// SVG Icons to use in background-images
+@mixin vd-background-image-icon($path, $fill-color, $viewbox-x: 41, $viewbox-y: 41) {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 #{$viewbox-x} #{$viewbox-y}'%3E%3Cpath fill='#{$fill-color}' d='#{$path}'/%3E%3C/svg%3E");
+}

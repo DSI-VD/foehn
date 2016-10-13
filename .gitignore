@@ -1,12 +1,12 @@
 node_modules
 .sass-cache
-npm-debug.*
+*.DS_Store
 .publish
-.DS_Store
+.env
 
-# Include only foehn files
-dist/*
-!dist/assets/
+/dist
+build/
+/styleguide
 
-dist/assets/*
-!dist/assets/foehn/
+tests/regression/compare
+tests/regression/temp

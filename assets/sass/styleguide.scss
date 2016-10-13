@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+@import 'main-variables';
+@import 'styleguide-variables';
+@import 'bootstrap-variables';
+@import '../../node_modules/toolbox-utils/styleguide/styles/mixins';
+@import '../../node_modules/toolbox-utils/styleguide/styles/code';
+@import '../../node_modules/toolbox-utils/styleguide/styles/controls';
+@import '../../node_modules/toolbox-utils/styleguide/styles/item';
+@import '../../node_modules/toolbox-utils/styleguide/styles/layout';
+@import '../../node_modules/toolbox-utils/styleguide/styles/menu';
+
+.styleguide-header-container {
+  background: $pattern-dotted-green;
+
+  svg use {
+    fill: $black;
+  }
+}
+
+.styleguide-menu {
+  a {
+    padding: 0 1em;
+
+    &:hover {
+      background: darken($menu-bg, 25%);
+    }
+  }
+
+  span.styleguide-menu-heading {
+    padding-left: 1rem;
+  }
+
+  .styleguide-menu-heading {
+    margin-bottom: 0.5em;
+    padding-left: 1rem;
+    border-bottom: 1px solid darken($menu-bg, 25%);
+  }
+
+  a.styleguide-menu-heading {
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+// For the colors page
+.bg-gray-dark { background: $gray-dark !important; }
+.bg-gray { background: $gray !important; }
+.bg-gray-light { background: $gray-light !important; }
+.bg-gray-lighter { background: $gray-lighter !important; }
+.bg-gray-lightest { background: $gray-lightest !important; }

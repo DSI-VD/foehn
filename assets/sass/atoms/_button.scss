@@ -1,0 +1,82 @@
+@charset 'UTF-8';
+
+.btn {
+  padding-top: $btn-padding-y * 1.1;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-sm {
+  padding-top: $btn-padding-y-sm * 2;
+  font-size: $font-size-base * 0.8;
+}
+
+// Buttons with icons
+//
+// Prefixed with vd-, add the class to button to add a chevron icon
+.vd-btn-chevron-t,
+.vd-btn-chevron-r,
+.vd-btn-chevron-b {
+  position: relative;
+  padding-right: $spacer * 1.5;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $spacer * 1.5;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+.vd-btn-chevron-t {
+  &.btn-secondary:after,
+  &.btn-success:after { @include vd-background-image-icon($vd-chevron-top, $white); }
+  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+}
+
+.vd-btn-chevron-r {
+  &.btn-secondary:after,
+  &.btn-success:after { @include vd-background-image-icon($vd-chevron-right, $white); }
+  &:after { @include vd-background-image-icon($vd-chevron-right, $vd-green); }
+}
+
+.vd-btn-chevron-b {
+  &.btn-secondary:after,
+  &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
+  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+}
+
+.vd-btn-chevron-l {
+  position: relative;
+  padding-left: $spacer * 1.5;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $spacer * 1.5;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    pointer-events: none;
+    user-select: none;
+
+    @include vd-background-image-icon($vd-chevron-left, $vd-green);
+  }
+
+  &.btn-secondary:before,
+  &.btn-success:before {
+    @include vd-background-image-icon($vd-chevron-left, $white);
+  }
+}
