@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+.breadcrumb {
+  overflow: hidden;
+  font-size: $font-size-base * 0.9;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  > li {
+    display: inline;
+  }
+
+  @include media-breakpoint-down(xs) {
+    li:not(:nth-last-child(-n+2)) { display: none; }
+    li:nth-last-child(2):before { content: none; }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb-item { float: none; }
