@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+// we don't apply this rule only to the <p> tag, to avoid issues
+// with non-<p> tags
+// https://github.com/DSI-VD/foehn/issues/235
+.vd-content {
+  max-width: $vd-content-max-width;
+}
