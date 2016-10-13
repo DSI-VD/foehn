@@ -772,10 +772,10 @@ $figure-caption-font-size: 90% !default;
 
 $breadcrumb-padding-y:          .75rem !default;
 $breadcrumb-padding-x:          0 !default;
-$breadcrumb-item-padding:       .5rem !default;
+$breadcrumb-item-padding:       .25rem !default;
 
 $breadcrumb-bg:                 transparent !default;
-$breadcrumb-divider-color:      $black !default;
+$breadcrumb-divider-color:      $link-color !default;
 $breadcrumb-active-color:       $black !default;
 $breadcrumb-divider:            ">" !default;
 
