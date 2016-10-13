@@ -3,6 +3,7 @@ title: Headings
 name: Headings
 collection: atoms
 notes: |
+  The **Section Title** is obtained with the `.vd-section-title` class.
 ---
 <h1>Heading 1</h1>
 <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
