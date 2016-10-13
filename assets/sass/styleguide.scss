@@ -20,24 +20,26 @@
 
 .styleguide-menu {
   a {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 1em;
 
     &:hover {
-      background: darken($vd-green-darker, 5%);
-      color: $white;
+      background: darken($menu-bg, 25%);
     }
+  }
+
+  span.styleguide-menu-heading {
+    padding-left: 1rem;
   }
 
   .styleguide-menu-heading {
     margin-bottom: 0.5em;
-    border-bottom: 1px solid darken($vd-green-darker, 5%);
+    padding-left: 1rem;
+    border-bottom: 1px solid darken($menu-bg, 25%);
   }
 
   a.styleguide-menu-heading {
     &:hover {
       background: none;
-      color: $white;
     }
   }
 }
