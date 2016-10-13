@@ -2,6 +2,7 @@
 
 @import 'main-variables';
 @import 'styleguide-variables';
+@import 'bootstrap-variables';
 @import '../../node_modules/toolbox-utils/styleguide/styles/mixins';
 @import '../../node_modules/toolbox-utils/styleguide/styles/code';
 @import '../../node_modules/toolbox-utils/styleguide/styles/controls';
@@ -40,3 +41,10 @@
     }
   }
 }
+
+// For the colors page
+.bg-gray-dark { background: $gray-dark !important; }
+.bg-gray { background: $gray !important; }
+.bg-gray-light { background: $gray-light !important; }
+.bg-gray-lighter { background: $gray-lighter !important; }
+.bg-gray-lightest { background: $gray-lightest !important; }
