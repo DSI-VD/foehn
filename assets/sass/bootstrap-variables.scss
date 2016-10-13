@@ -112,7 +112,7 @@ $body-color: $gray-dark !default;
 // Style anchor elements.
 
 $link-color:            $vd-green-dark !default;
-$link-decoration:       none !default;
+$link-decoration:       underline !default;
 $link-hover-color:      darken($link-color, 10%) !default;
 $link-hover-decoration: underline !default;
 
