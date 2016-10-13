@@ -60,7 +60,7 @@ $brand-inverse:             $vd-gray-darker !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-flex:               false !default;
-$enable-rounded:            true !default;
+$enable-rounded:            false !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
 $enable-transitions:        true !default;
@@ -204,8 +204,8 @@ $text-muted: darken($vd-gray-lighter-2, 20%) !default;
 
 $abbr-border-color: $gray-light !default;
 
-$blockquote-small-color:  $gray !default;
-$blockquote-font-size:    ($font-size-base * 1.25) !default;
+$blockquote-small-color:  $white !default;
+$blockquote-font-size:    ($font-size-base * 1) !default;
 $blockquote-border-color: $vd-gray-dark !default;
 $blockquote-border-width: 0 !default;
 
@@ -229,9 +229,9 @@ $list-inline-padding: 5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          0 !default;
-$border-radius-lg:       0 !default;
-$border-radius-sm:       0 !default;
+$border-radius:          4px !default;
+$border-radius-lg:       10px !default;
+$border-radius-sm:       2px !default;
 
 $component-active-color: $white !default;
 $component-active-bg:    $brand-primary !default;
