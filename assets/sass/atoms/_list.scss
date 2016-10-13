@@ -7,3 +7,17 @@ ul {
     margin-bottom: $spacer-y;
   }
 }
+
+// square bullet list
+.vd-list-links {
+  list-style-type: square;
+  color: $black;
+
+  li {
+    margin-bottom: 0;
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
