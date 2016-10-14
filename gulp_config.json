@@ -20,7 +20,7 @@
       "node_modules/bootstrap/js/dist/util.js"
     ],
     "fonts": [
-      "assets/fonts/*"
+      "assets/fonts/**/*"
     ],
     "polyfills": [
       "node_modules/html5shiv/dist/html5shiv.js",
