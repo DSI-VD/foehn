@@ -6,6 +6,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+a.btn {
+  text-decoration: none;
+}
+
 .btn-sm {
   padding-top: $btn-padding-y-sm * 2;
   font-size: $font-size-base * 0.8;

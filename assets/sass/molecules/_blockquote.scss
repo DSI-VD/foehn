@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+
+.blockquote {
+  position: relative;
+  padding: ($spacer * 1.45) ($spacer * 1.8);
+  background: $brand-inverse;
+  border-radius: 10px;
+  line-height: 1.3;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 40px;
+    width: 41px;
+    height: 18px;
+
+    @include media-breakpoint-up(sm) { right: 80px; }
+    @include vd-background-image-icon($vd-blockquote-pointer, $brand-inverse, 41, 18);
+  }
+
+  p {
+    font-style: italic;
+    font-family: $headings-font-family;
+    color: $vd-green-light;
+  }
+
+  img {
+    position: absolute;
+    right: -50px;
+    bottom: $spacer * 0.8;
+    width: 80px;
+    height: auto;
+
+    @include media-breakpoint-up(sm) {
+      right: -75px;
+      width: 120px;
+    }
+  }
+}
+
+.vd-blockquote-media {
+  margin-right: $spacer * 2.8;
+  padding-right: $spacer * 2;
+
+  @include media-breakpoint-up(sm) {
+    margin-right: $spacer * 5;
+    margin-left: $spacer;
+    padding-right: $spacer * 4.5;
+  }
+}
+
+.blockquote-footer {
+  font-size: $font-size-base;
+}
