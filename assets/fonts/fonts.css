@@ -1,21 +1,10 @@
 @font-face {
   font-family: 'Graphik';
-  src: url('Graphik-MediumItalic-Web.eot');
-  src: url('Graphik-MediumItalic-Web.eot?#iefix') format('embedded-opentype'),
-       url('Graphik-MediumItalic-Web.woff2') format('woff2'),
-       url('Graphik-MediumItalic-Web.woff') format('woff');
-  font-weight:  600;
-  font-style:   italic;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'Graphik';
   src: url('Graphik-Medium-Web.eot');
   src: url('Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
        url('Graphik-Medium-Web.woff2') format('woff2'),
        url('Graphik-Medium-Web.woff') format('woff');
-  font-weight:  600;
+  font-weight:  500;
   font-style:   normal;
   font-stretch: normal;
 }
@@ -66,22 +55,22 @@
 
 @font-face {
   font-family: 'Produkt';
-  src: url('Produkt-BoldItalic-Web.eot');
-  src: url('Produkt-BoldItalic-Web.eot?#iefix') format('embedded-opentype'),
-       url('Produkt-BoldItalic-Web.woff2') format('woff2'),
-       url('Produkt-BoldItalic-Web.woff') format('woff');
-  font-weight:  700;
-  font-style:   italic;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'Produkt';
   src: url('Produkt-Bold-Web.eot');
   src: url('Produkt-Bold-Web.eot?#iefix') format('embedded-opentype'),
        url('Produkt-Bold-Web.woff2') format('woff2'),
        url('Produkt-Bold-Web.woff') format('woff');
   font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Produkt';
+  src: url('Produkt-Medium-Web.eot');
+  src: url('Produkt-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('Produkt-Medium-Web.woff2') format('woff2'),
+       url('Produkt-Medium-Web.woff') format('woff');
+  font-weight:  500;
   font-style:   normal;
   font-stretch: normal;
 }
