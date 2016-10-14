@@ -40,6 +40,13 @@
   }
 }
 
+.blockquote-reverse {
+  &:after {
+    right: auto;
+    left: 40px;
+  }
+}
+
 .vd-blockquote-media {
   margin-right: $spacer * 2.8;
   padding-right: $spacer * 2;
