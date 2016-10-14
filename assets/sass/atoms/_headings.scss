@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+h1,
+.h1 {
+  font-weight: 700;
+}
+
 .vd-section-title {
   font-family: $font-family-base;
   font-size: $font-size-base * 1.1;
