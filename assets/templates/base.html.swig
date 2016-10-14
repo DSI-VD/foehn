@@ -63,7 +63,7 @@
     <script>
       WebFont.load({
         custom: {
-          families: ['Graphik:n6,i6,n4,i4', 'Produkt:n3,i3,n7,i7'],
+          families: ['Graphik:n5,n4,i4', 'Produkt:n3,i3,n7,n5'],
           urls: ['{{data.path}}build/fonts/fonts.css']
         }
       });
