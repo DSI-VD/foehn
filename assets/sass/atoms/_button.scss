@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 .btn {
+  white-space: normal;
   padding-top: $btn-padding-y * 1.1;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
