@@ -16,6 +16,16 @@ a.btn {
   font-size: $font-size-base * 0.8;
 }
 
+.btn-block {
+  display: flex;
+  justify-content: center;
+
+  .fa {
+    align-self: center;
+    padding-left: $spacer;
+  }
+}
+
 // Buttons with icons
 //
 // Prefixed with vd-, add the class to button to add a chevron icon
