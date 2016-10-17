@@ -1,5 +1,6 @@
 ---
 title: Colors
+name: colors
 collection: docs
 styleguide: true
 ---

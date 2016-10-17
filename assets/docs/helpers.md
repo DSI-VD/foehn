@@ -1,5 +1,6 @@
 ---
 title: Helpers
+name: helpers
 collection: docs
 styleguide: true
 ---
