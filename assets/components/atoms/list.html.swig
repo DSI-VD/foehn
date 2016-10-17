@@ -2,6 +2,7 @@
 title: List
 name: List
 collection: atoms
+bootstrap: http://v4-alpha.getbootstrap.com/content/reboot/#lists
 notes: |
   Add the `.vd-list-links` class to display square bullets and bold text.
 ---
