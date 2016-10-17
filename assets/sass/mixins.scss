@@ -4,3 +4,9 @@
 @mixin vd-background-image-icon($path, $fill-color, $viewbox-x: 41, $viewbox-y: 41) {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 #{$viewbox-x} #{$viewbox-y}'%3E%3Cpath fill='#{$fill-color}' d='#{$path}'/%3E%3C/svg%3E");
 }
+
+@mixin vd-pattern-dotted($code, $viewbox-x: 4, $viewbox-y: 4) {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 #{$viewbox-x} #{$viewbox-y}'%3E#{$code}%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: #{$viewbox-x}px #{$viewbox-y}px;
+}
