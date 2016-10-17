@@ -15,6 +15,23 @@
   margin-bottom: 1em;
 }
 
+.styleguide-item-heading a {
+  position: relative;
+  color: $black;
+  text-decoration: none;
+
+  &:after {
+    content: '\F0C1';
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: calc(100% + 5px);
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+
+  &:hover:after { display: inline; }
+}
+
 .styleguide-item-group {
   margin: 0;
 }
@@ -41,7 +58,10 @@
 .styleguide-item-code {
   margin-top: 0;
 
-  pre[class*='language-'] { margin: 0; }
+  pre[class*='language-'] {
+    margin-top: 0.2em;
+    padding: 0.5em;
+  }
 }
 
 .styleguide-header-container {
