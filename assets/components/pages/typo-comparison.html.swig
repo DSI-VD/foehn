@@ -61,9 +61,7 @@ layout: page-compare.html.swig
           <li><a href="#0">voir sur la carte</a></li>
         </ul>
 
-        <p class="m-t-2">
-          <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
-        </p>
+        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r m-t-2">Contacter l'office</a>
 
         <h2 class="m-t-3 vd-section-title">Autres prestations liées</h2>
         <ul class="vd-list-links">
