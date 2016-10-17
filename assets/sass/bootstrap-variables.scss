@@ -209,8 +209,8 @@ $blockquote-font-size:    ($font-size-base * 1) !default;
 $blockquote-border-color: $vd-gray-dark !default;
 $blockquote-border-width: 0 !default;
 
-$hr-border-color: $vd-gray-lighter-2 !default;
-$hr-border-width: $border-width !default;
+$hr-border-color: $brand-primary !default;
+$hr-border-width: 1px !default;
 
 $mark-padding: .2em !default;
 
