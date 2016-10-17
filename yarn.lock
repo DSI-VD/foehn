@@ -6561,9 +6561,11 @@ to-function@^2.0.5:
   dependencies:
     component-props "*"
 
-toolbox-utils@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/toolbox-utils/-/toolbox-utils-0.0.2.tgz#b8d19f1e96720105b21696099fb942ed1540a6e9"
+toolbox-utils:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/toolbox-utils/-/toolbox-utils-0.0.3.tgz#67626059d397a8d433d1531610d9d35cb82f0641"
+  dependencies:
+    prismjs "^1.5.1"
 
 tough-cookie@~2.2.0:
   version "2.2.2"

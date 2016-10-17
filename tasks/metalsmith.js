@@ -97,14 +97,8 @@ export const metalsmithDocs = () => {
         },
         define({
           data: metadatas
-        }),layouts(config.metalsmith.plugins.layouts),
-        function(files, metalsmith, done){
-          // Clean dirty front-matter comment
-          for (let file in files) {
-            files[file].contents = new Buffer(files[file].contents.toString().replace(/---[\s\S]*?---/g, ''));
-          }
-          done();
-        },
+        }),
+        layouts(config.metalsmith.plugins.layouts),
         permalinks(config.metalsmith.plugins.permalinks)
       ]
     }))

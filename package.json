@@ -44,6 +44,7 @@
     "respond.js": "^1.4.2",
     "slug": "^0.9.1",
     "swig": "^1.4.2",
+    "toolbox-utils": "^0.0.3",
     "webpack": "2.1.0-beta.22",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
