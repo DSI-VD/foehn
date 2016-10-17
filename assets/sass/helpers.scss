@@ -2,5 +2,13 @@
 
 // Background Helpers
 .vd-bg-pattern-gray {
-  background: $pattern-dotted-gray;
+  @include vd-pattern-dotted($pattern-dotted-gray);
+}
+
+.vd-bg-pattern-green {
+  border-top: 1px dotted $vd-green-light;
+  border-bottom: 1px dotted $vd-green-light;
+  color: $black;
+
+  @include vd-pattern-dotted($pattern-dotted-green);
 }
