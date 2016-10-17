@@ -1,5 +1,6 @@
 ---
 title: Buttons
+name: buttons
 collection: docs
 styleguide: true
 ---

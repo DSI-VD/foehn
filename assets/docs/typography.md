@@ -1,5 +1,6 @@
 ---
 title: Typography
+name: typography
 collection: docs
 styleguide: true
 ---
