@@ -1,10 +1,14 @@
 @charset 'UTF-8';
 
 .nav-primary {
-  padding: $spacer 0;
   border-top: 1px dotted $vd-green;
 
   @include vd-pattern-dotted($pattern-dotted-green);
+
+  .container {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
 }
 
 .nav-primary-content {
@@ -33,7 +37,8 @@
     color: $body-color;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
 
     span,
