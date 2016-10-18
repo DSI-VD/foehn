@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  border: 0;
+
+  .nav-item {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  .nav-link {
+    position: relative;
+    background: $gray;
+    border: 0;
+    font-size: $font-size-base * 0.8;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background: darken($gray, 10%);
+    }
+
+    &.active {
+      padding: 0.6em 1em 0.4em;
+      background: $vd-green-dark;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 7px);
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid $vd-green-dark;
+      }
+
+      &:hover,
+      &:focus {
+        background: $vd-green-darker;
+        &:after { border-top-color: $vd-green-darker; }
+      }
+    }
+  }
+}
