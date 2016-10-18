@@ -504,20 +504,20 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
 
 $nav-item-margin:               .2rem !default;
 $nav-item-inline-spacer:        1.2rem !default;
-$nav-link-padding:              .2em 0.5em !default;
+$nav-link-padding:              0.2em 0.5em 0.1em !default;
 $nav-link-hover-bg:             $gray-lighter !default;
 $nav-disabled-link-color:       $gray-light !default;
 $nav-disabled-link-hover-color: $gray-light !default;
 $nav-disabled-link-hover-bg:    transparent !default;
 
-$nav-tabs-border-color:                       $black !default;
+$nav-tabs-border-color:                       transparent !default;
 $nav-tabs-border-width:                       1px !default;
 $nav-tabs-border-radius:                      $border-radius !default;
-$nav-tabs-link-hover-border-color:            $gray-lighter !default;
-$nav-tabs-active-link-hover-color:            $black !default;
+$nav-tabs-link-hover-border-color:            transparent !default;
+$nav-tabs-active-link-hover-color:            $white !default;
 $nav-tabs-active-link-hover-bg:               $white !default;
-$nav-tabs-active-link-hover-border-color:     $black !default;
-$nav-tabs-justified-link-border-color:        $black !default;
+$nav-tabs-active-link-hover-border-color:     transparent !default;
+$nav-tabs-justified-link-border-color:        transparent !default;
 $nav-tabs-justified-active-link-border-color: $body-bg !default;
 
 $nav-pills-border-radius:     $border-radius !default;
