@@ -4,8 +4,9 @@ name: nav-primary
 collection: molecules
 notes: |
 ---
+<button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container" aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
 <div class="nav-primary">
-  <div class="container">
+  <div class="container collapse" id="nav-primary-container">
     <div class="container-fluid nav-primary-content">
       <div class="row">
         <div class="col-md-8">
