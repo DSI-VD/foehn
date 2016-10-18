@@ -57,23 +57,28 @@
       "collections": {
         "atoms": {
           "sortBy": "title",
-          "reverse": false
+          "reverse": false,
+          "refer": false
         },
         "molecules": {
           "sortBy": "title",
-          "reverse": false
+          "reverse": false,
+          "refer": false
         },
         "organisms": {
           "sortBy": "title",
-          "reverse": false
+          "reverse": false,
+          "refer": false
         },
         "pages": {
           "sortBy": "title",
-          "reverse": false
+          "reverse": false,
+          "refer": false
         },
         "docs": {
           "sortBy": "title",
-          "reverse": false
+          "reverse": false,
+          "refer": false
         }
       },
       "layouts": {
