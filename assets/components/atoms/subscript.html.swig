@@ -1,0 +1,11 @@
+---
+title: Subscript
+name: Subscript
+collection: atoms
+bootstrap:
+notes: |
+  - This element should be used for typographical reasons only, i.e. changing the position of the text changing its meaning like in mathematical (like t<sub>2</sub>) or chemical formulas (like H<sub>2</sub>O).
+  - This element must not be used for styling purpose like the styling of the product name Latex.
+---
+
+Subscript for things like H<sub>2</sub>O
