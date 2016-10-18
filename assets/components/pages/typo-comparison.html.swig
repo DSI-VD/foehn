@@ -9,9 +9,9 @@ layout: page-compare.html.swig
   <div class="container">
     <div class="m-y-3">
       <div class="btn-group" role="group" aria-label="Switch Fonts">
-        <button type="button" class="btn btn-secondary" data-font-class="">Graphik</button>
+        <button type="button" class="btn btn-secondary" data-font-class="">Graphik + Produkt</button>
         <button type="button" class="btn btn-secondary" data-font-class="text-meta">Meta</button>
-        <button type="button" class="btn btn-secondary"data-font-class="text-other">Other?</button>
+        <button type="button" class="btn btn-secondary"data-font-class="text-museo-calluna">Museo + Calluna</button>
       </div>
     </div>
   </div>
