@@ -2,4 +2,8 @@
 
 .vd-highlight {
   padding: ($spacer * 2.5) 0;
+  border-top: 1px dotted $vd-green-light;
+  border-bottom: 1px dotted $vd-green-light;
+
+  @extend .vd-bg-pattern-green-bright;
 }

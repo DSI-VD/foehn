@@ -1,4 +1,5 @@
 {% macro default(type, content) %}
+{% set path = '../../components/' + type + 's/' + content.name + '.html.swig' %}
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   {% if content.bootstrap %}
     <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="{{ content.bootstrap }}"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
@@ -13,13 +14,13 @@
 <div class="styleguide-item-preview"{% if content.background %} style="background: {{ content.background }};"{% endif %}>
     {% if content.wrapper %}
       <div class="{{ content.wrapper }}">
-        {{content.contents|raw}}
+        {% include path %}
       </div>
     {% else %}
-      {{content.contents|raw}}
+      {% include path %}
     {% endif %}
   </div>
   <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
-    <pre><code class="language-markup">{{content.contents|raw}}</code></pre>
+    <pre><code class="language-markup">{% include path %}</code></pre>
   </div>
 {% endmacro %}

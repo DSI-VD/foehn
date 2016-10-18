@@ -68,7 +68,7 @@
 .styleguide-header-container {
   @include vd-pattern-dotted($pattern-dotted-green);
   background-color: $white;
-  border-bottom: 1px dotted $vd-green-light;
+  border-bottom: 1px dotted $vd-green;
 
   svg use {
     fill: $black;
