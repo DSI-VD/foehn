@@ -21,6 +21,10 @@
     </li>
 
     <li>
+      <a href="{{data.path}}inlinetext/" class="styleguide-menu-heading">Typography</a>
+    </li>
+
+    <li>
       <a href="{{data.path}}atoms/" class="styleguide-menu-heading">Atoms</a>
       <ul>
         {% for atom in collections.atoms %}

@@ -1,7 +1,7 @@
 ---
 title: Link
 name: Link
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

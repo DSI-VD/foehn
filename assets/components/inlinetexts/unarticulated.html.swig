@@ -1,7 +1,7 @@
 ---
 title: Unarticulated
 name: Unarticulated
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

@@ -1,7 +1,7 @@
 ---
 title: Keyboard input
 name: Keyboard-input
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

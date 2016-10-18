@@ -1,7 +1,7 @@
 ---
 title: Strike
 name: Strike
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

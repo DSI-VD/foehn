@@ -1,7 +1,7 @@
 ---
 title: Atoms
 name: atoms
-order: 1
+order: 2
 layout: atoms.html.swig
 styleguide: true
 ---

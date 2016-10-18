@@ -1,7 +1,7 @@
 ---
 title: Definition
 name: Definition
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

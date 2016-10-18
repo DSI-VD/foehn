@@ -1,7 +1,7 @@
 ---
 title: Quotation
 name: Quotation
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

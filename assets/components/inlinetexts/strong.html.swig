@@ -1,7 +1,7 @@
 ---
 title: Strong
 name: Strong
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

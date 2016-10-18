@@ -1,7 +1,7 @@
 ---
 title: Inserted
 name: Inserted
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

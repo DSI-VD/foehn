@@ -1,7 +1,7 @@
 ---
 title: Variable
 name: Variable
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

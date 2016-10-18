@@ -1,7 +1,7 @@
 ---
 title: Mark
 name: Mark
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

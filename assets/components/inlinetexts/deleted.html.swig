@@ -1,7 +1,7 @@
 ---
 title: Deleted
 name: Deleted
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

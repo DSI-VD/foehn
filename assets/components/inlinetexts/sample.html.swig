@@ -1,7 +1,7 @@
 ---
 title: Sample
 name: Sample
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---
