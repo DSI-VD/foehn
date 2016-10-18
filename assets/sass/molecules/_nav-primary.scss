@@ -6,13 +6,10 @@
   @include vd-pattern-dotted($pattern-dotted-green);
 
   .container {
-    padding-top: $spacer;
-    padding-bottom: $spacer;
+    margin-top: ($spacer * 1.5);
+    margin-bottom: ($spacer * 1.5);
+    background: $white;
   }
-}
-
-.nav-primary-content {
-  background: $white;
 }
 
 .nav-primary-item {
