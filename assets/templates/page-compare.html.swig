@@ -69,11 +69,15 @@
           families: [
             'Graphik:n6,i6,n4,i4',
             'Produkt:n3,i3,n7,i7',
-            'MetaSerifWeb:n4,i4,n7,i7',
-            'MetaWeb:n4,i4,n7,i7'
+            'Meta Serif:n4,i4,n7,i7',
+            'Meta:n4,i4,n7,i7',
+            'Museo:n7,i7,n3,i3',
+            'Calluna:n6,i6,i3,n3'
           ],
           urls: [
             '{{data.path}}build/fonts/fonts.css',
+            '{{data.path}}build/fonts/Museo/museo.css',
+            '{{data.path}}build/fonts/Calluna/calluna.css',
             '{{data.path}}build/fonts/Meta/meta.css'
           ]
         }
