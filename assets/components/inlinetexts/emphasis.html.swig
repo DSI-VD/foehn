@@ -1,7 +1,7 @@
 ---
 title: Emphasis
 name: Emphasis
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

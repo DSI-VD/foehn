@@ -1,7 +1,7 @@
 ---
 title: Superscript
 name: Superscript
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

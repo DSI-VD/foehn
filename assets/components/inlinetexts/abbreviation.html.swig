@@ -1,7 +1,7 @@
 ---
 title: Abbreviation
 name: abbreviation
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

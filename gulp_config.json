@@ -55,6 +55,11 @@
         }]
       },
       "collections": {
+        "inlinetext": {
+          "sortBy": "title",
+          "reverse": false,
+          "refer": false
+        },
         "atoms": {
           "sortBy": "title",
           "reverse": false,

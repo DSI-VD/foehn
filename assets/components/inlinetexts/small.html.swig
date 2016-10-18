@@ -1,7 +1,7 @@
 ---
 title: Small
 name: Small
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---

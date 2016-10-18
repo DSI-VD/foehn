@@ -1,7 +1,7 @@
 ---
 title: B
 name: b
-collection: atoms
+collection: inlinetext
 bootstrap:
 notes: |
 ---
