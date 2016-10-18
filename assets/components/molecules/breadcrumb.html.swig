@@ -2,6 +2,7 @@
 title: Breadcrumb
 name: Breadcrumb
 collection: molecules
+bootstrap: http://v4-alpha.getbootstrap.com/components/breadcrumb/#content
 notes: |
 ---
 <ol class="breadcrumb">

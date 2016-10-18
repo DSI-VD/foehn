@@ -34,7 +34,10 @@
         </div>
     {% endif %}
 
-    {% block content %}{% endblock %}
+    {% set path = '../components/pages/' + name + '.html.swig' %}
+    <div id="page-wrapper">
+      {{ contents|raw }}
+    </div>
 
     {% if styleguide %}
       </div>
@@ -63,8 +66,16 @@
     <script>
       WebFont.load({
         custom: {
-          families: ['Graphik:n5,n4,i4', 'Produkt:n3,i3,n7,n5'],
-          urls: ['{{data.path}}build/fonts/fonts.css']
+          families: [
+            'Graphik:n6,i6,n4,i4',
+            'Produkt:n3,i3,n7,i7',
+            'MetaSerifWeb:n4,i4,n7,i7',
+            'MetaWeb:n4,i4,n7,i7'
+          ],
+          urls: [
+            '{{data.path}}build/fonts/fonts.css',
+            '{{data.path}}build/fonts/Meta/meta.css'
+          ]
         }
       });
     </script>

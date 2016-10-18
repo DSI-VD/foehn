@@ -2,6 +2,7 @@
 title: Blockquote
 name: Blockquote
 collection: molecules
+bootstrap: http://v4-alpha.getbootstrap.com/content/typography/#blockquotes
 notes: |
   If you want to add a media, add the `.vd-blockquote-media` class to the `blockquote` element.
 ---

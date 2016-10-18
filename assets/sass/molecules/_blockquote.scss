@@ -2,6 +2,7 @@
 
 .blockquote {
   position: relative;
+  margin: ($spacer * 1.5) 0;
   padding: ($spacer * 1.45) ($spacer * 1.8);
   background: $brand-inverse;
   border-radius: 10px;
@@ -37,6 +38,13 @@
       right: -75px;
       width: 120px;
     }
+  }
+}
+
+.blockquote-reverse {
+  &:after {
+    right: auto;
+    left: 40px;
   }
 }
 

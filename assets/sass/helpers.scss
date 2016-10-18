@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+// Background Helpers
+.vd-bg-pattern-gray {
+  @include vd-pattern-dotted($pattern-dotted-gray);
+}
+
+.vd-bg-pattern-green-bright {
+  color: $black;
+
+  @include vd-pattern-dotted($pattern-dotted-green-bright);
+}
+
+.vd-bg-pattern-green {
+  color: $black;
+
+  @include vd-pattern-dotted($pattern-dotted-green);
+}
