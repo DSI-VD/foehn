@@ -62,4 +62,5 @@
 
 .text-meta p {
   font-family: 'Meta Serif' !important;
+  color: rgba(0, 0, 0, 0.8);
 }
