@@ -10,8 +10,10 @@ ul {
 
 // square bullet list
 .vd-list-links {
+  padding-left: $spacer;
   list-style-type: square;
   color: $black;
+  font-size: $font-size-base * 0.9;
 
   li {
     margin-bottom: 0;
@@ -19,5 +21,6 @@ ul {
 
   a {
     font-weight: 600;
+    text-decoration: none;
   }
 }
