@@ -2,6 +2,8 @@
 title: Headings
 name: Headings
 collection: atoms
+wrapper: col-md-6
+bootstrap: http://v4-alpha.getbootstrap.com/content/typography/#headings
 notes: |
   The **Section Title** is obtained with the `.vd-section-title` class.
 ---

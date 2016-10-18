@@ -12,6 +12,7 @@ import path from 'path';
 import markdown from 'metalsmith-markdown';
 import permalinks from 'metalsmith-permalinks';
 import layouts from 'metalsmith-layouts';
+import inplace from 'metalsmith-in-place';
 import define from 'metalsmith-define';
 import collections from 'metalsmith-collections';
 
@@ -78,6 +79,7 @@ export const metalsmithDocs = () => {
     .pipe($.plumber({errorHandler: errorAlert}))
     .pipe($.metalsmith({
       use: [
+        inplace(config.metalsmith.plugins.metalsmithinplace),
         markdown({ langPrefix: 'language-' }),
         collections(config.metalsmith.plugins.collections),
         function(files, metalsmith, done){
@@ -97,7 +99,8 @@ export const metalsmithDocs = () => {
         },
         define({
           data: metadatas
-        }),layouts(config.metalsmith.plugins.layouts),
+        }),
+        layouts(config.metalsmith.plugins.layouts),
         function(files, metalsmith, done){
           // Clean dirty front-matter comment
           for (let file in files) {

@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 .btn {
+  white-space: normal;
   padding-top: $btn-padding-y * 1.1;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -13,6 +14,16 @@ a.btn {
 .btn-sm {
   padding-top: $btn-padding-y-sm * 2;
   font-size: $font-size-base * 0.8;
+}
+
+.btn-block {
+  display: flex;
+  justify-content: center;
+
+  .fa {
+    align-self: center;
+    padding-left: $spacer;
+  }
 }
 
 // Buttons with icons

@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 @import 'main-variables';
+@import 'mixins';
 @import 'styleguide-variables';
 @import 'bootstrap-variables';
 @import '../../node_modules/toolbox-utils/styleguide/styles/mixins';
@@ -10,8 +11,64 @@
 @import '../../node_modules/toolbox-utils/styleguide/styles/layout';
 @import '../../node_modules/toolbox-utils/styleguide/styles/menu';
 
+.styleguide-item-heading-group {
+  margin-bottom: 1em;
+}
+
+.styleguide-item-heading a {
+  position: relative;
+  color: $black;
+  text-decoration: none;
+
+  &:after {
+    content: '\F0C1';
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: calc(100% + 5px);
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+
+  &:hover:after { display: inline; }
+}
+
+.styleguide-item-group {
+  margin: 0;
+}
+
+.styleguide-description {
+  padding: ($spacer * 0.75) $spacer;
+  background: $gray-lightest;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.styleguide-item-preview {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+
+  .styleguide-item-hidden + & {
+    border-radius: 0.2em;
+  }
+}
+
+.styleguide-item-code {
+  margin-top: 0;
+
+  pre[class*='language-'] {
+    margin-top: 0.2em;
+    padding: 1em 1.5em;
+    font-size: 0.8em;
+  }
+}
+
 .styleguide-header-container {
-  background: $pattern-dotted-green;
+  @include vd-pattern-dotted($pattern-dotted-green);
+  background-color: $white;
+  border-bottom: 1px dotted $vd-green;
 
   svg use {
     fill: $black;
