@@ -94,3 +94,7 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+.breadcrumb .breadcrumb-item {
+  font-family: 'Meta' !important;
+}
