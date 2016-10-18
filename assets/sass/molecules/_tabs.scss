@@ -25,8 +25,8 @@
     }
 
     &.active {
-      background: $vd-green-dark;
       padding: 0.6em 1em 0.4em;
+      background: $vd-green-dark;
 
       &:after {
         content: '';
@@ -38,7 +38,6 @@
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
         border-top: 7px solid $vd-green-dark;
-
       }
 
       &:hover,
@@ -47,6 +46,5 @@
         &:after { border-top-color: $vd-green-darker; }
       }
     }
-
   }
 }

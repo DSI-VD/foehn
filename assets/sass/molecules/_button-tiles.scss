@@ -3,22 +3,30 @@
 .vd-btn-tiles {
   display: flex;
   flex-wrap: wrap;
-  margin: -2px;
+  margin: ($spacer / -2);
 
   .btn {
-    flex: 1 0 calc(50% - 4px);
-    margin: 2px;
-    background: $pattern-dotted-green rgba($vd-green-dark-2, 0);
+    flex: 1 0 calc(25% - #{$spacer});
+    position: relative;
+    margin: ($spacer / 2);
     color: $black;
-    text-align: left;
     transition: background-color 0.2s;
+    white-space: nowrap;
+    box-shadow: 2px 2px 0 0 $black;
+
+    @include vd-pattern-dotted($pattern-dotted-green);
 
     &:hover,
     &:focus {
-      background-color: rgba($vd-green-dark-2, 0.05);
+      background-color: rgba($vd-green-dark-2, 0.15);
     }
 
-    &:active { background-color: rgba($vd-green-dark-2, 0.15); }
+    &:active {
+      background-color: rgba($vd-green-dark-2, 0.20);
+      top: 2px;
+      left: 2px;
+      box-shadow: 0 0 0 0 $black;
+    }
 
     &.active {
       background: $vd-green-dark-2;

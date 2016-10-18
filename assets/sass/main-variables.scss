@@ -56,6 +56,7 @@ $vd-gradient:               linear-gradient(to right, $vd-green 0%, #008772 33%,
 // Patterns
 //
 // All the patterns used as background
+// Must be used with the `@ include vd-pattern-dotted($code, $viewbox-x: 4, $viewbox-y: 4)` mixin
 $pattern-dotted-gray: "%3Crect fill="#{$vd-gray-lighter-2}" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill="#{$vd-gray-lighter-2}" x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
 $pattern-dotted-green-bright: "%3Crect fill="#{$vd-green-light}" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill="#{$vd-green-light}" x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
 $pattern-dotted-green: "%3Crect fill="#{$vd-green}" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill="#{$vd-green}" x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
