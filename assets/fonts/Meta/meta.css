@@ -76,6 +76,21 @@
   font-kerning: normal;
 }
 
+.text-meta h1,
+.text-meta .h1 {
+  font-size: 2.2rem;
+}
+
+.text-meta h2,
+.text-meta .h2 {
+  font-size: 1.8rem;
+}
+
+.text-meta h3,
+.text-meta .h3 {
+  font-size: 1.5rem;
+}
+
 .text-meta p,
 .text-meta ul,
 .text-meta li {
