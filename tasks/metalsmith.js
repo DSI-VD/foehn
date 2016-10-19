@@ -84,7 +84,7 @@ export const metalsmithDocs = () => {
         collections(config.metalsmith.plugins.collections),
         function(files, metalsmith, done){
           for (let file in files) {
-            if (files[file].collection == 'atoms' || files[file].collection == 'molecules' || files[file].collection == 'organisms') {
+            if (files[file].collection == 'atoms' || files[file].collection == 'molecules' || files[file].collection == 'organisms' || files[file].collection == 'inlinetext') {
               delete files[file];
             }
             if (path.extname(file) === '.json') {
