@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+.social-icon {
+  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: $black;
+  border-radius: 100%;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: $link-hover-color;
+    text-decoration: none;
+    color: $white;
+  }
+}
