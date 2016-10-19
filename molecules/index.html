@@ -101,6 +101,10 @@
     </li>
 
     <li>
+      <a href="/inlinetext/" class="styleguide-menu-heading">Typography</a>
+    </li>
+
+    <li>
       <a href="/atoms/" class="styleguide-menu-heading">Atoms</a>
       <ul>
         
@@ -140,19 +144,31 @@
           </li>
         
           <li>
-            <a href="/molecules/#molecule2">Breadcrumb</a>
+            <a href="/molecules/#molecule2">Blockquote Media</a>
           </li>
         
           <li>
-            <a href="/molecules/#molecule3">Button Tiles</a>
+            <a href="/molecules/#molecule3">Breadcrumb</a>
           </li>
         
           <li>
-            <a href="/molecules/#molecule4">Nav</a>
+            <a href="/molecules/#molecule4">Button Tiles</a>
           </li>
         
           <li>
-            <a href="/molecules/#molecule5">Nav Primary</a>
+            <a href="/molecules/#molecule5">Nav</a>
+          </li>
+        
+          <li>
+            <a href="/molecules/#molecule6">Nav Primary</a>
+          </li>
+        
+          <li>
+            <a href="/molecules/#molecule7">Social Icons</a>
+          </li>
+        
+          <li>
+            <a href="/molecules/#molecule8">Tabs</a>
           </li>
         
       </ul>
@@ -211,6 +227,51 @@
     <h3 class="styleguide-item-heading"><a href="#molecule1">Blockquote</a></h3>
     
   <div class="styleguide-item-controls">
+    
+    <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="code" title="Toggle Code">
+      <svg>
+        <use xlink:href="#styleguide-icon-code" />
+      </svg>
+    </span>
+  </div>
+
+  </div>
+
+<div class="styleguide-description clearfix" data-styleguide-toggle="notes">
+  
+    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="http://v4-alpha.getbootstrap.com/content/typography/#blockquotes"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+  
+
+  
+</div>
+<div class="styleguide-item-preview">
+    
+      
+<blockquote class="blockquote">
+  <p>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.</p>
+  <footer class="blockquote-footer">Pascal Broulis, Conseil d'État de Vaud</footer>
+</blockquote>
+
+    
+  </div>
+  <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
+    <pre><code class="language-markup">
+<blockquote class="blockquote">
+  <p>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.</p>
+  <footer class="blockquote-footer">Pascal Broulis, Conseil d'État de Vaud</footer>
+</blockquote>
+</code></pre>
+  </div>
+
+</div>
+
+    
+      
+<div class="styleguide-item-group" id="molecule2">
+  <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
+    <h3 class="styleguide-item-heading"><a href="#molecule2">Blockquote Media</a></h3>
+    
+  <div class="styleguide-item-controls">
     <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="notes" title="Toggle Notes">
       <svg>
         <use xlink:href="#styleguide-icon-notes" />
@@ -262,9 +323,9 @@
 
     
       
-<div class="styleguide-item-group" id="molecule2">
+<div class="styleguide-item-group" id="molecule3">
   <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
-    <h3 class="styleguide-item-heading"><a href="#molecule2">Breadcrumb</a></h3>
+    <h3 class="styleguide-item-heading"><a href="#molecule3">Breadcrumb</a></h3>
     
   <div class="styleguide-item-controls">
     
@@ -309,9 +370,9 @@
 
     
       
-<div class="styleguide-item-group" id="molecule3">
+<div class="styleguide-item-group" id="molecule4">
   <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
-    <h3 class="styleguide-item-heading"><a href="#molecule3">Button Tiles</a></h3>
+    <h3 class="styleguide-item-heading"><a href="#molecule4">Button Tiles</a></h3>
     
   <div class="styleguide-item-controls">
     <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="notes" title="Toggle Notes">
@@ -365,9 +426,9 @@
 
     
       
-<div class="styleguide-item-group" id="molecule4">
+<div class="styleguide-item-group" id="molecule5">
   <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
-    <h3 class="styleguide-item-heading"><a href="#molecule4">Nav</a></h3>
+    <h3 class="styleguide-item-heading"><a href="#molecule5">Nav</a></h3>
     
   <div class="styleguide-item-controls">
     <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="notes" title="Toggle Notes">
@@ -391,7 +452,7 @@
 
   
     <div class="styleguide-item-notes">
-    <p>Use a <code>&lt;ul&gt;</code> list to obtain a navigation that is not inline.</p>
+    <p>Use a <code>&lt;ul&gt;</code> list to obtain a bare navigation that is not inline.</p>
 
     </div>
   
@@ -423,9 +484,9 @@
 
     
       
-<div class="styleguide-item-group" id="molecule5">
+<div class="styleguide-item-group" id="molecule6">
   <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
-    <h3 class="styleguide-item-heading"><a href="#molecule5">Nav Primary</a></h3>
+    <h3 class="styleguide-item-heading"><a href="#molecule6">Nav Primary</a></h3>
     
   <div class="styleguide-item-controls">
     
@@ -446,8 +507,11 @@
 <div class="styleguide-item-preview">
     
       
-<div class="nav-primary">
-  <div class="container">
+<div class="container">
+  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container" aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+</div>
+<div class="nav-primary clearfix">
+  <div class="container collapse" id="nav-primary-container">
     <div class="container-fluid nav-primary-content">
       <div class="row">
         <div class="col-md-8">
@@ -541,8 +605,11 @@
   </div>
   <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
     <pre><code class="language-markup">
-<div class="nav-primary">
-  <div class="container">
+<div class="container">
+  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container" aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+</div>
+<div class="nav-primary clearfix">
+  <div class="container collapse" id="nav-primary-container">
     <div class="container-fluid nav-primary-content">
       <div class="row">
         <div class="col-md-8">
@@ -637,6 +704,149 @@
 </div>
 
     
+      
+<div class="styleguide-item-group" id="molecule7">
+  <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
+    <h3 class="styleguide-item-heading"><a href="#molecule7">Social Icons</a></h3>
+    
+  <div class="styleguide-item-controls">
+    <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="notes" title="Toggle Notes">
+      <svg>
+        <use xlink:href="#styleguide-icon-notes" />
+      </svg>
+    </span>
+    <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="code" title="Toggle Code">
+      <svg>
+        <use xlink:href="#styleguide-icon-code" />
+      </svg>
+    </span>
+  </div>
+
+  </div>
+
+<div class="styleguide-description clearfix" data-styleguide-toggle="notes">
+  
+
+  
+    <div class="styleguide-item-notes">
+    <p>You can use all the <a href="http://fontawesome.io/icons/">Fontawesome icons</a> in these icons.</p>
+
+    </div>
+  
+</div>
+<div class="styleguide-item-preview">
+    
+      
+<ul class="list-inline social-icons">
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Facebook" aria-label="Like us on Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Twitter" aria-label="Like us on Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Youtube" aria-label="Like us on Youtube"><span class="fa fa-youtube-play" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Instagram" aria-label="Like us on Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Mail" aria-label="Send us a Mail"><span class="fa fa-envelope" aria-hidden="true"></span></a>
+  </li>
+</ul>
+
+    
+  </div>
+  <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
+    <pre><code class="language-markup">
+<ul class="list-inline social-icons">
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Facebook" aria-label="Like us on Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Twitter" aria-label="Like us on Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Youtube" aria-label="Like us on Youtube"><span class="fa fa-youtube-play" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Instagram" aria-label="Like us on Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="social-icon" href="#0" title="Mail" aria-label="Send us a Mail"><span class="fa fa-envelope" aria-hidden="true"></span></a>
+  </li>
+</ul>
+</code></pre>
+  </div>
+
+</div>
+
+    
+      
+<div class="styleguide-item-group" id="molecule8">
+  <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
+    <h3 class="styleguide-item-heading"><a href="#molecule8">Tabs</a></h3>
+    
+  <div class="styleguide-item-controls">
+    
+    <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="code" title="Toggle Code">
+      <svg>
+        <use xlink:href="#styleguide-icon-code" />
+      </svg>
+    </span>
+  </div>
+
+  </div>
+
+<div class="styleguide-description clearfix" data-styleguide-toggle="notes">
+  
+    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="http://v4-alpha.getbootstrap.com/components/navs/#tabs"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+  
+
+  
+</div>
+<div class="styleguide-item-preview">
+    
+      
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+
+    
+  </div>
+  <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
+    <pre><code class="language-markup">
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</code></pre>
+  </div>
+
+</div>
+
+    
   
 
   </div>
@@ -646,9 +856,9 @@
       </div>
     
 
-    <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="/build/js/vendors.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
     <script src="/vendors.bundle.js"></script>
     <script src="/app.bundle.js"></script>
 
