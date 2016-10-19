@@ -1,7 +1,7 @@
 ---
 title: Molecules
 name: molecules
-order: 2
+order: 3
 layout: molecules.html.swig
 styleguide: true
 ---

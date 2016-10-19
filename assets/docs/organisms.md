@@ -1,7 +1,7 @@
 ---
 title: Organisms
 name: organisms
-order: 3
+order: 4
 layout: organisms.html.swig
 styleguide: true
 ---
