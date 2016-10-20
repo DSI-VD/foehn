@@ -10,3 +10,4 @@ build/
 
 tests/regression/compare
 tests/regression/temp
+npm-debug.log
