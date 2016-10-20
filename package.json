@@ -2,14 +2,14 @@
   "name": "foehn",
   "version": "0.0.0",
   "main": "index.html",
+  "license": "MIT",
   "browserify-shim": {
     "jquery": "global:jQuery"
   },
   "scripts": {
-    "install": "npm shrinkwrap --dev",
-    "start": "gulp serve",
-    "build": "npm install && gulp build --production",
-    "deploy": "npm install && gulp && gulp deploy"
+    "start": "./node_modules/.bin/gulp serve",
+    "build": "yarn && ./node_modules/.bin/gulp build",
+    "deploy": "yarn && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
   },
   "engines": {
     "node": "6.7.0",
@@ -45,7 +45,6 @@
     "respond.js": "^1.4.2",
     "slug": "^0.9.1",
     "swig": "^1.4.2",
-    "toolbox-utils": "^0.0.3",
     "webpack": "2.1.0-beta.22",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
@@ -89,7 +88,7 @@
     "prismjs": "^1.5.1",
     "stylelint": "^7.3.0",
     "stylelint-config-standard": "^13.0.2",
-    "toolbox-utils": "^0.0.2",
+    "toolbox-utils": "^0.0.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "webpack-module-hot-accept": "^1.0.4",

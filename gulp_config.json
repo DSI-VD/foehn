@@ -45,7 +45,7 @@
   "metalsmith": {
     "assets": "node_modules/toolbox-utils/styleguide/",
     "dist": "styleguide/",
-    "url": "https://user.github.io/repo/",
+    "url": "https://dsi-vd.github.io/foehn/",
     "plugins": {
       "permalinks": {
         "pattern": ":title",
