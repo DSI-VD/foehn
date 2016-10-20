@@ -29,7 +29,8 @@ The following script lets you build, watch and serve the code.
 ```shell
 $ git clone https://github.com/vdch/foehn.git
 $ cd foehn
-$ npm start
+$ yarn
+$ ./node_modules/.bin/gulp serve
 ```
 
 ### Build
@@ -39,7 +40,16 @@ If you only want to build the code.
 ```shell
 $ git clone https://github.com/vdch/foehn.git
 $ cd foehn
-$ npm run build
+$ yarn
+$ /node_modules/.bin/gulp build
+```
+
+### Deploy the styleguide
+
+We deploy the styleguide to a `gh-pages` branch on Github. To do this, a simple command:
+
+```shell
+$ ./node_modules/.bin/gulp deploy --ghpages
 ```
 
 ## Versioning

@@ -19,7 +19,7 @@ import { icons, iconsTask } from './tasks/icons';
 import { favicons, faviconsTask } from './tasks/favicons';
 import { clean, cleanTask } from './tasks/clean';
 import { single, singleTask } from './tasks/single';
-import { deploy, deployTask } from './tasks/deploy';
+import { deploy } from './tasks/deploy';
 import { serve } from './tasks/server';
 
 
@@ -40,8 +40,14 @@ gulp.task('init', function() {
 /**
 * Task to build assets on production server
 */
-const build = gulp.series(clean, vendors, single, styles, scripts, img, icons);
+const build = gulp.series(clean, gulp.parallel(vendors, single, styles, scripts, img, icons));
 gulp.task('build', build);
+
+/**
+ * Task to deploy ghpages
+ */
+const deployTask = gulp.series(clean, gulp.parallel(vendors, single, styles, scripts, img, icons), require('./tasks/metalsmith').metalsmith, deploy);
+gulp.task('deploy', deployTask);
 
 /**
  * Default task
@@ -69,9 +75,9 @@ gulp.task('default', () => defaultFunc(res => res(), false));
 /**
 * Serve task
 */
-const serveTask = gulp.task('serve', () => defaultFunc(res => res(), true));
+gulp.task('serve', () => defaultFunc(res => res(), true));
 
 /**
  * Metalsmith task
  */
-const metalsmithTask = gulp.task('metalsmith', yargs.argv.production ? inprod : require('./tasks/metalsmith').metalsmith);
+gulp.task('metalsmith', yargs.argv.production ? inprod : require('./tasks/metalsmith').metalsmith);
