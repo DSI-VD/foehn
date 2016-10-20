@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+figure {
+  figcaption {
+    margin-top: ($spacer / 2);
+    font-size: $font-size-sm;
+    color: $gray;
+  }
+}
