@@ -1,1 +1,18 @@
 @charset 'UTF-8';
+
+.vd-teaser {
+  img {
+    @include media-breakpoint-up(sm) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.vd-teaser-title {
+  margin-bottom: ($spacer * 2);
+}
+
+.vd-teaser-meta {
+  font-size: $font-size-sm * 0.9;
+  text-decoration: none;
+}
