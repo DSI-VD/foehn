@@ -7,7 +7,7 @@ notes: |
 <article class="vd-teaser">
   <div class="text-sm-center m-b-2">
     <h3 class="vd-teaser-title"><a href="#0">Lorem ipsum dolor sit amet</a></h3>
-    <a href="#0">
+    <a class="vd-teaser-img" href="#0">
       {# make it a macro when Toolbox is less f***ed up. ANGRY #}
       <picture>
         {% for breakpoint in data.breakpoints %}
