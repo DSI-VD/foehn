@@ -17,6 +17,11 @@ If you don't like the [usual issues view](https://github.com/DSI-VD/foehn/issues
 
 [Toolbox](http://frontend.github.io/toolbox/) and [Bootstrap 4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
 
+```shell
+$ npm install
+$ ./node_modules/.bin/gulp serve
+```
+
 ## Quick Start
 
 The following script lets you build, watch and serve the code.
