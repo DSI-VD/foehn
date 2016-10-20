@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+.content {
+  .vd-img-left {
+    float: left;
+    max-width: 50%;
+    margin: ($spacer / 2.5) $spacer-y $spacer-x 0;
+  }
+
+  .vd-img-right {
+    float: right;
+    max-width: 50%;
+    margin: ($spacer / 2.5) 0 $spacer-x $spacer-y;
+  }
+
+  .vd-img-center {
+    display: block;
+    max-width: 100%;
+    margin: ($spacer / 2.5) auto $spacer-y;
+  }
+}
