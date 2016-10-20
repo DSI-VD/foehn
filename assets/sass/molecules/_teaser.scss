@@ -1,10 +1,10 @@
 @charset 'UTF-8';
 
-.vd-teaser {
-  img {
-    @include media-breakpoint-up(sm) {
-      margin: 0 auto;
-    }
+.vd-teaser-img {
+  display: inline-block;
+
+  @include media-breakpoint-up(sm) {
+    margin: 0 auto;
   }
 }
 

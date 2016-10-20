@@ -4,7 +4,7 @@ name: figure
 collection: molecules
 notes: |
 ---
-<figure>
-  <img class="img-fluid" src="http://placehold.it/400x300" alt="Figure">
-  <figcaption>Ceci est une légende</figcaption>
+<figure class="figure">
+  <img class="img-fluid figure-img" src="http://placehold.it/400x300" alt="Figure">
+  <figcaption class="figure-caption">Ceci est une légende</figcaption>
 </figure>

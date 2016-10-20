@@ -14,8 +14,8 @@
   }
 
   .vd-img-center {
-    display: block;
-    max-width: 100%;
     margin: ($spacer / 2.5) auto $spacer-y;
+
+    @include img-fluid();
   }
 }
