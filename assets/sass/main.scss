@@ -8,6 +8,8 @@
 
 
 // atoms:
+@import 'atoms/image-circle';
+@import 'atoms/content-image';
 @import 'atoms/hr';
 @import 'atoms/highlight';
 @import 'atoms/list';
@@ -16,6 +18,8 @@
 @import 'atoms/button';
 
 // molecules:
+@import 'molecules/figure';
+@import 'molecules/teaser';
 @import 'molecules/social-icons';
 @import 'molecules/tabs';
 @import 'molecules/nav';
