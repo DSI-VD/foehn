@@ -4,8 +4,8 @@ name: typography
 collection: docs
 styleguide: true
 ---
-<div class="bs-docs-section m-t-3">
-  <div class="m-t-3"></div>
+<div class="bs-docs-section mt-3">
+  <div class="mt-3"></div>
 
   <!-- Headings -->
 
@@ -17,7 +17,7 @@ styleguide: true
       <h1 class="display-4">Display 4</h1>
     </div>
   </div>
-  <hr class="m-y-3">
+  <hr class="my-3">
   <div class="row">
   <div class="col-lg-6">
     <div class="bs-component">
@@ -40,7 +40,7 @@ styleguide: true
       <p>This is <a href="#0">a link</a> inside a paragraph.</p>
     </div>
   </div>
-  <hr class="m-y-3">
+  <hr class="my-3">
   <div class="row">
     <div class="col-lg-6">
       <div class="bs-component">
