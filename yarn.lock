@@ -6605,7 +6605,7 @@ to-function@^2.0.5:
   dependencies:
     component-props "*"
 
-toolbox-utils@^0.0.4:
+toolbox-utils:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/toolbox-utils/-/toolbox-utils-0.0.4.tgz#b9f74e355633db34d46cd669cc206da220ecdec5"
   dependencies:
