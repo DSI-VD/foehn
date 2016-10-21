@@ -45,7 +45,16 @@
   padding: ($spacer * 0.75) $spacer;
   background: $gray-lightest;
 
-  p:last-child {
+  p {
+    margin-bottom: $spacer * 0.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul li {
+    list-style-type: disc;
     margin-bottom: 0;
   }
 }
