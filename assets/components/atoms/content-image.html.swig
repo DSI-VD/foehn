@@ -3,6 +3,10 @@ title: Content Image
 name: content-image
 collection: atoms
 notes: |
+  You can use the following images to align the image:
+  - `vd-img-center`: The image is centered above the text.
+  - `vd-img-left`: the image is to the left of the text.
+  - `vd-img-right`: the image is to the right of the text.
 ---
 <div class="content">
   <img class="vd-img-center" src="http://placehold.it/600x400" alt="Image in content">
