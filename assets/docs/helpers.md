@@ -8,7 +8,7 @@ styleguide: true
 
 `.vd-bg-pattern-green`
 
-<div class="vd-highlight vd-bg-pattern-green m-b-3">
+<div class="vd-highlight vd-bg-pattern-green mb-3">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
