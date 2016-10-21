@@ -2,6 +2,7 @@
 title: Figure
 name: figure
 collection: molecules
+bootstrap: http://v4-alpha.getbootstrap.com/content/figures/#content
 notes: |
 ---
 <figure class="figure">
