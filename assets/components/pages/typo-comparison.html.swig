@@ -5,13 +5,29 @@ collection: pages
 styleguide: false
 layout: page-compare.html.swig
 ---
+<!-- CSS in the HTML :(
+     kittens will die -->
+<style>
+.presbyopia {
+  color: transparent !important;
+  text-shadow: 0 0 2px rgba(0,0,0,0.85) !important;
+}
+</style>
+
 <div id="typo-switch">
   <div class="container">
     <div class="my-3">
       <div class="btn-group" role="group" aria-label="Switch Fonts">
-        <button type="button" class="btn btn-secondary" data-font-class="">Graphik + Produkt</button>
-        <button type="button" class="btn btn-secondary" data-font-class="text-meta">Meta</button>
-        <button type="button" class="btn btn-secondary"data-font-class="text-museo-calluna">Museo + Calluna</button>
+        <button type="button" class="btn btn-secondary" data-font-class="">1. Graphik + Produkt</button>
+        <button type="button" class="btn btn-secondary" data-font-class="presbyopia">+ presbyopia</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Switch Fonts">
+        <button type="button" class="btn btn-secondary" data-font-class="text-meta">2. Meta</button>
+        <button type="button" class="btn btn-secondary" data-font-class="text-meta presbyopia">+ presbyopia</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Switch Fonts">
+        <button type="button" class="btn btn-secondary"data-font-class="text-museo-calluna">3. Museo + Calluna</button>
+        <button type="button" class="btn btn-secondary"data-font-class="text-museo-calluna presbyopia">+ presbyopia</button>
       </div>
     </div>
   </div>

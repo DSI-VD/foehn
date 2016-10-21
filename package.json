@@ -2,14 +2,14 @@
   "name": "foehn",
   "version": "0.0.0",
   "main": "index.html",
+  "license": "MIT",
   "browserify-shim": {
     "jquery": "global:jQuery"
   },
   "scripts": {
-    "install": "npm shrinkwrap --dev",
-    "start": "gulp serve",
-    "build": "npm install && gulp build --production",
-    "deploy": "npm install && gulp && gulp deploy"
+    "start": "./node_modules/.bin/gulp serve",
+    "build": "yarn && ./node_modules/.bin/gulp build",
+    "deploy": "yarn && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
   },
   "engines": {
     "node": "6.7.0",

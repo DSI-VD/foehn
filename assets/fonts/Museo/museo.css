@@ -46,11 +46,65 @@
     font-style: italic;
 }
 
-.text-museo-calluna, .text-museo-calluna h1, .text-museo-calluna h2, .text-museo-calluna h3, .text-museo-calluna h4, .text-museo-calluna h5, .text-museo-calluna h6, .text-museo-calluna .h1, .text-museo-calluna .h2, .text-museo-calluna .h3, .text-museo-calluna .h4, .text-museo-calluna .h5, .text-museo-calluna .h6 {
+.text-museo-calluna h1,
+.text-museo-calluna h2,
+.text-museo-calluna h3,
+.text-museo-calluna h4,
+.text-museo-calluna h5,
+.text-museo-calluna h6,
+.text-museo-calluna .h1,
+.text-museo-calluna .h2,
+.text-museo-calluna .h3,
+.text-museo-calluna .h4,
+.text-museo-calluna .h5,
+.text-museo-calluna .h6 {
+  font-family: 'Museo' !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+  font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+  font-kerning: normal;
+}
+
+.text-meta h1,
+.text-meta .h1 {
+  font-size: 2.2rem;
+}
+
+.text-meta h2,
+.text-meta .h2 {
+  font-size: 1.8rem;
+}
+
+.text-meta h3,
+.text-meta .h3 {
+  font-size: 1.5rem;
+}
+
+.text-museo-calluna p,
+.text-meta ul,
+.text-meta li {
+  font-family: 'Calluna' !important;
+  font-size: 20px;
+  font-weight: 400;
+  font-variant-ligatures: common-ligatures, contextual;
+  font-variant-numeric: oldstyle-nums, proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+  font-kerning: normal;
+}
+
+.text-museo-calluna .vd-list-links a {
+  font-family: 'Calluna' !important;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.text-museo-calluna .breadcrumb .breadcrumb-item {
   font-family: 'Museo' !important;
 }
 
-.text-museo-calluna p {
-  font-family: 'Calluna' !important;
-  color: rgba(0, 0, 0, 0.8);
+.text-museo-calluna .btn {
+  font-family: 'Museo' !important;
+  font-weight: 600;
+  font-size: 1rem;
 }
