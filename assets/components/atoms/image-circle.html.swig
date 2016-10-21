@@ -2,8 +2,8 @@
 title: Circle Image
 name: image-circle
 collection: atoms
-bootstrap: http://v4-alpha.getbootstrap.com/content/images/#image-thumbnails
+bootstrap: http://v4-alpha.getbootstrap.com/utilities/borders/#border-radius
 notes: |
-  This class is actually not documented on Bootstrap, but it's 100% Bootstrap, along with `.img-rounded` and `img-thumbnail`
+  You can use the `.rounded`, `.rounded-circle` and all `.rounded-[top,right,bottom,left]` classes on any element.
 ---
-<img class="img-circle" src="http://placehold.it/300x300" alt="Circle image">
+<img class="rounded-circle" src="http://placehold.it/300x300" alt="Circle image">

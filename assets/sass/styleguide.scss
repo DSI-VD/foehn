@@ -11,7 +11,8 @@
 @import '../../node_modules/toolbox-utils/styleguide/styles/layout';
 @import '../../node_modules/toolbox-utils/styleguide/styles/menu';
 
-.styleguide-page-container {
+.styleguide-page-container,
+.styleguide-item-notes {
   max-width: none;
 }
 
@@ -44,7 +45,16 @@
   padding: ($spacer * 0.75) $spacer;
   background: $gray-lightest;
 
-  p:last-child {
+  p {
+    margin-bottom: $spacer * 0.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul li {
+    list-style-type: disc;
     margin-bottom: 0;
   }
 }
