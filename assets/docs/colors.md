@@ -27,7 +27,7 @@ styleguide: true
     <p class="card-text">$brand-inverse</p>
   </div>
 </div>
-<h2 class="m-t-3">Bootstrap Grays</h2>
+<h2 class="mt-3">Bootstrap Grays</h2>
 <div class="card-deck">
   <div class="card card-block card-inverse bg-gray-dark">
     <p class="card-text">$gray-dark</p>
