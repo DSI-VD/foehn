@@ -11,6 +11,10 @@
 @import '../../node_modules/toolbox-utils/styleguide/styles/layout';
 @import '../../node_modules/toolbox-utils/styleguide/styles/menu';
 
+.styleguide-page-container {
+  max-width: none;
+}
+
 .styleguide-item-heading-group {
   margin-bottom: 1em;
 }
