@@ -3,7 +3,7 @@ title: Content Image
 name: content-image
 collection: atoms
 notes: |
-  You can use the following images to align the image:
+  You can use the following classes to align the image:
   - `vd-img-center`: The image is centered above the text.
   - `vd-img-left`: the image is to the left of the text.
   - `vd-img-right`: the image is to the right of the text.
