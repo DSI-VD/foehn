@@ -12,15 +12,15 @@ styleguide: true
 <!-- Navbar
 ================================================== -->
 <div class="bs-docs-section clearfix">
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <hr>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
         <h1 id="navbar">Navbar</h1>
       </div>
-      <div class="m-a-3"></div>
+      <div class="m-3"></div>
       <div class="bs-component">
         <nav class="navbar navbar-light bg-faded">
           <a class="navbar-brand" href="#0">Navbar</a>
@@ -38,13 +38,13 @@ styleguide: true
               <a class="nav-link" href="#0">About</a>
             </li>
           </ul>
-          <form class="form-inline pull-xs-right">
+          <form class="form-inline float-xs-right">
             <input class="form-control" type="text" placeholder="Search">
             <button class="btn btn-success text-uppercase" type="submit">Search</button>
           </form>
         </nav>
       </div><!-- /example -->
-      <div class="m-a-3"></div>
+      <div class="m-3"></div>
       <div class="bs-component">
         <nav class="navbar navbar-dark bg-inverse">
           <a class="navbar-brand" href="#0">Navbar</a>
@@ -62,7 +62,7 @@ styleguide: true
               <a class="nav-link" href="#0">About</a>
             </li>
           </ul>
-          <form class="form-inline pull-xs-right">
+          <form class="form-inline float-xs-right">
             <input class="form-control" type="text" placeholder="Search">
             <button class="btn btn-success text-uppercase" type="submit">Search</button>
           </form>
@@ -75,9 +75,9 @@ styleguide: true
 <!-- Buttons
 ================================================== -->
 <div class="bs-docs-section">
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <hr>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="page-header">
     <div class="row">
       <div class="col-lg-12">
@@ -85,7 +85,7 @@ styleguide: true
       </div>
     </div>
   </div>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="row">
     <div class="col-lg-7">
       <p>Normal buttons:</p>
@@ -200,7 +200,7 @@ styleguide: true
           </div>
         </div>
       </div>
-      <div class="m-a-1"></div>
+      <div class="m-1"></div>
       <p class="bs-component">
         <a href="#0" class="btn btn-secondary btn-lg text-uppercase">Large button</a>
         <a href="#0" class="btn btn-secondary text-uppercase">Default button</a>
@@ -260,9 +260,9 @@ styleguide: true
 <!-- Typography
 ================================================== -->
 <div class="bs-docs-section">
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <hr>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
@@ -270,7 +270,7 @@ styleguide: true
       </div>
     </div>
   </div>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <!-- Headings -->
   <div class="row">
     <div class="col-lg-6">
@@ -288,7 +288,7 @@ styleguide: true
       <p><u>This line of text will render as underlined</u></p>
     </div>
   </div>
-  <hr class="m-y-2">
+  <hr class="my-2">
   <div class="row">
     <div class="col-lg-4">
       <div class="bs-component">
@@ -351,15 +351,15 @@ styleguide: true
 <!-- Tables
 ================================================== -->
 <div class="bs-docs-section">
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <hr>
   <div class="row">
-    <div class="m-a-3"></div>
+    <div class="m-3"></div>
     <div class="col-lg-12">
       <div class="page-header">
         <h1 id="tables">Tables</h1>
       </div>
-      <div class="m-a-3"></div>
+      <div class="m-3"></div>
       <div class="bs-component">
         <table class="table table-striped table-hover ">
           <thead class="thead-inverse">
@@ -423,7 +423,7 @@ styleguide: true
 ================================================== -->
 <div class="bs-docs-section">
   <hr>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
@@ -431,7 +431,7 @@ styleguide: true
       </div>
     </div>
   </div>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="row">
     <div class="col-lg-6">
       <div class="bs-component">
@@ -558,15 +558,15 @@ styleguide: true
 </div>
 <!-- Navs
 ================================================== -->
-<div class="m-a-3"></div>
+<div class="m-3"></div>
 <hr>
-<div class="m-a-3"></div>
+<div class="m-3"></div>
 <div class="bs-docs-section">
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
         <h1 id="navs">Navs</h1>
-        <div class="m-a-3"></div>
+        <div class="m-3"></div>
       </div>
     </div>
   </div>
@@ -579,7 +579,7 @@ styleguide: true
           <li class="nav-item">
             <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item">m-x-auto
             <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
           </li>
           <li class="nav-item dropdown">
@@ -593,7 +593,7 @@ styleguide: true
             </li>
         </ul>
         <!-- Tab panes -->
-        <div class="tab-content m-t-1">
+        <div class="tab-content mt-1">
           <div class="tab-pane active" id="home" role="tabpanel">
             <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
           </div>
@@ -628,7 +628,7 @@ styleguide: true
             </li>
         </ul>
         <!-- Tab panes -->
-        <div class="tab-content m-t-1">
+        <div class="tab-content mt-1">
           <div class="tab-pane active" id="home-purple" role="tabpanel">
             <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
           </div>
@@ -700,7 +700,7 @@ styleguide: true
     </div>
   </div>
   <div class="row">
-    <div class="m-a-3"></div>
+    <div class="m-3"></div>
     <div class="col-lg-6">
       <h2 id="pagination">Pagination</h2>
       <div class="bs-component">
@@ -789,15 +789,15 @@ styleguide: true
 
 <!-- Indicators
 ================================================== -->
-<div class="m-a-3"></div>
+<div class="m-3"></div>
 <hr>
-<div class="m-a-3"></div>
+<div class="m-3"></div>
 <div class="bs-docs-section">
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
         <h1 id="indicators">Indicators</h1>
-        <div class="m-a-3"></div>
+        <div class="m-3"></div>
       </div>
     </div>
   </div>
@@ -810,7 +810,7 @@ styleguide: true
             <span aria-hidden="true">&times;</span>
           </button>
           <h4 class="alert-heading">Warning!</h4>
-          <p class="m-b-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#0" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+          <p class="mb-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#0" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
         </div>
       </div>
     </div>
@@ -873,15 +873,15 @@ styleguide: true
 </div>
 <!-- Progress bars
 ================================================== -->
-<div class="m-a-3"></div>
+<div class="m-3"></div>
 <hr>
-<div class="m-a-3"></div>
+<div class="m-3"></div>
 <div class="bs-docs-section">
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
         <h1 id="progress-bars">Progress bars</h1>
-        <div class="m-a-3"></div>
+        <div class="m-3"></div>
       </div>
       <h3 id="progress-basic">Basic</h3>
       <div class="bs-component">
@@ -917,20 +917,20 @@ styleguide: true
 <!-- Containers
 ================================================== -->
 <div class="bs-docs-section">
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <hr>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
         <h1 id="containers">Containers</h1>
-        <div class="m-a-3"></div>
+        <div class="m-3"></div>
       </div>
       <div class="bs-component">
         <div class="jumbotron">
           <h1 class="display-3">Hello, world!</h1>
           <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="m-y-2">
+          <hr class="my-2">
           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
           <p class="lead">
             <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Learn more</a>
@@ -949,15 +949,15 @@ styleguide: true
       <div class="bs-component">
         <ul class="list-group">
           <li class="list-group-item">
-            <span class="tag tag-pill tag-primary pull-xs-right">14</span>
+            <span class="tag tag-pill tag-primary float-xs-right">14</span>
             Cras justo odio
           </li>
           <li class="list-group-item">
-            <span class="tag tag-pill tag-primary pull-xs-right">2</span>
+            <span class="tag tag-pill tag-primary float-xs-right">2</span>
             Dapibus ac facilisis in
           </li>
           <li class="list-group-item">
-            <span class="tag tag-pill tag-primary pull-xs-right">1</span>
+            <span class="tag tag-pill tag-primary float-xs-right">1</span>
             Morbi leo risus
           </li>
         </ul>
@@ -980,15 +980,15 @@ styleguide: true
       <div class="bs-component">
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
-            <h5 class="list-group-item-heading m-b-1">List group item heading</h5>
+            <h5 class="list-group-item-heading mb-1">List group item heading</h5>
             <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
           </a>
           <a href="#0" class="list-group-item list-group-item-action">
-            <h5 class="list-group-item-heading m-b-1">List group item heading</h5>
+            <h5 class="list-group-item-heading mb-1">List group item heading</h5>
             <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
           </a>
           <a href="#0" class="list-group-item list-group-item-action">
-            <h5 class="list-group-item-heading m-b-1">List group item heading</h5>
+            <h5 class="list-group-item-heading mb-1">List group item heading</h5>
             <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
           </a>
         </div>
@@ -1075,14 +1075,14 @@ styleguide: true
 <!-- Dialogs
 ================================================== -->
 <div class="bs-docs-section">
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <hr>
-  <div class="m-a-3"></div>
+  <div class="m-3"></div>
   <div class="row">
     <div class="col-lg-12">
       <div class="page-header">
         <h1 id="dialogs">Dialogs</h1>
-        <div class="m-a-3"></div>
+        <div class="m-3"></div>
       </div>
     </div>
   </div>
@@ -1131,7 +1131,7 @@ styleguide: true
           Popover on left
         </button>
       </div>
-      <h2 class="m-t-2">Tooltips</h2>
+      <h2 class="mt-2">Tooltips</h2>
       <div class="bs-component">
         <button type="button" class="btn btn-secondary text-uppercase" data-toggle="tooltip" data-placement="left" title data-original-title="Tooltip on left">Left</button>
         <button type="button" class="btn btn-secondary text-uppercase" data-toggle="tooltip" data-placement="top" title data-original-title="Tooltip on top">Top</button>
@@ -1141,7 +1141,7 @@ styleguide: true
     </div>
   </div>
 </div>
-<footer class="m-t-3">
+<footer class="mt-3">
   <div class="row">
     <div class="col-lg-12 text-muted">
       <p>Made by <a href="http://antistatique.net">Antistatique</a>. Inspired by the Bootstrap 3 components page from <a href="http://bootswatch.com" target="_blank">bootswatch.com</a>.</p>
