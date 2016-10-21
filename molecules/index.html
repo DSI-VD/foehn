@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -87,6 +87,10 @@
         
           <li>
             <a href="https://dsi-vd.github.io/foehn/colors">Colors</a>
+          </li>
+        
+          <li>
+            <a href="https://dsi-vd.github.io/foehn/grid">Grid</a>
           </li>
         
           <li>
@@ -255,7 +259,7 @@
 
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   
-    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="http://v4-alpha.getbootstrap.com/content/typography/#blockquotes"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="http://v4-alpha.getbootstrap.com/content/typography/#blockquotes"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
   
 
   
@@ -304,7 +308,7 @@
 
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   
-    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="http://v4-alpha.getbootstrap.com/content/typography/#blockquotes"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="http://v4-alpha.getbootstrap.com/content/typography/#blockquotes"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
   
 
   
@@ -356,7 +360,7 @@
 
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   
-    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="http://v4-alpha.getbootstrap.com/components/breadcrumb/#content"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="http://v4-alpha.getbootstrap.com/components/breadcrumb/#content"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
   
 
   
@@ -459,6 +463,8 @@
 
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   
+    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="http://v4-alpha.getbootstrap.com/content/figures/#content"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+  
 
   
 </div>
@@ -506,7 +512,7 @@
 
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   
-    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="http://v4-alpha.getbootstrap.com/components/navs/#base-nav"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="http://v4-alpha.getbootstrap.com/components/navs/#base-nav"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
   
 
   
@@ -548,7 +554,11 @@
     <h3 class="styleguide-item-heading"><a href="#molecule7">Nav Primary</a></h3>
     
   <div class="styleguide-item-controls">
-    
+    <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="notes" title="Toggle Notes">
+      <svg>
+        <use xlink:href="#styleguide-icon-notes" />
+      </svg>
+    </span>
     <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="code" title="Toggle Code">
       <svg>
         <use xlink:href="#styleguide-icon-code" />
@@ -562,98 +572,107 @@
   
 
   
+    <div class="styleguide-item-notes">
+    <p><code>.vd-nav-primary</code> navigation</p>
+
+    </div>
+  
 </div>
 <div class="styleguide-item-preview">
     
       
-<div class="container">
-  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container" aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
-</div>
-<div class="nav-primary clearfix">
-  <div class="container collapse" id="nav-primary-container">
-    <div class="container-fluid nav-primary-content">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-4">
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+<div class="vd-nav-primary">
+  <div class="vd-nav-primary-toggle">
+    <div class="container">
+      <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+    </div>
+  </div>
+  <div class="collapse clearfix" id="nav-primary-container">
+    <div class="vd-nav-primary-content">
+      <div class="container">
+        <div class="row">
+          <nav class="col-md-8" role="navigation">
+            <div class="row">
+              <div class="col-md-4">
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-                  </div><div class="col-md-4">
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
+                    </div><div class="col-md-4">
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
+                    </div><div class="col-md-4">
+                  
                 
-                  </div><div class="col-md-4">
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
+                    </div><div class="col-md-4">
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
-                
-                  </div><div class="col-md-4">
-                
-              
+              </div>
             </div>
+          </nav>
+          <div class="col-md-4">
+            <h2 class="vd-section-title my-3">Les plus visités</h2>
+            <ul class="vd-list-links">
+              <li><a href="#0">Extrait du registre du commerce</a></li>
+              <li><a href="#0">Inscription au chômage</a></li>
+              <li><a href="#0">Formulaire indemnisation</a></li>
+              <li><a href="#0">Formulaire indemnisation</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="col-md-4">
-          <h2 class="vd-section-title m-y-3">Les plus visités</h2>
-          <ul class="vd-list-links">
-            <li><a href="#0">Extrait du registre du commerce</a></li>
-            <li><a href="#0">Inscription au chômage</a></li>
-            <li><a href="#0">Formulaire indemnisation</a></li>
-            <li><a href="#0">Formulaire indemnisation</a></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -664,94 +683,98 @@
   </div>
   <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
     <pre><code class="language-markup">
-<div class="container">
-  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container" aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
-</div>
-<div class="nav-primary clearfix">
-  <div class="container collapse" id="nav-primary-container">
-    <div class="container-fluid nav-primary-content">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-4">
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+<div class="vd-nav-primary">
+  <div class="vd-nav-primary-toggle">
+    <div class="container">
+      <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+    </div>
+  </div>
+  <div class="collapse clearfix" id="nav-primary-container">
+    <div class="vd-nav-primary-content">
+      <div class="container">
+        <div class="row">
+          <nav class="col-md-8" role="navigation">
+            <div class="row">
+              <div class="col-md-4">
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-                  </div><div class="col-md-4">
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
+                    </div><div class="col-md-4">
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
+                    </div><div class="col-md-4">
+                  
                 
-                  </div><div class="col-md-4">
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
+                  <a href="#0" class="vd-nav-primary-item">
+                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
+                  </a>
+                  
+                    </div><div class="col-md-4">
+                  
                 
-              
-                <a href="#0" class="nav-primary-item">
-                  <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                </a>
-                
-                  </div><div class="col-md-4">
-                
-              
+              </div>
             </div>
+          </nav>
+          <div class="col-md-4">
+            <h2 class="vd-section-title my-3">Les plus visités</h2>
+            <ul class="vd-list-links">
+              <li><a href="#0">Extrait du registre du commerce</a></li>
+              <li><a href="#0">Inscription au chômage</a></li>
+              <li><a href="#0">Formulaire indemnisation</a></li>
+              <li><a href="#0">Formulaire indemnisation</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="col-md-4">
-          <h2 class="vd-section-title m-y-3">Les plus visités</h2>
-          <ul class="vd-list-links">
-            <li><a href="#0">Extrait du registre du commerce</a></li>
-            <li><a href="#0">Inscription au chômage</a></li>
-            <li><a href="#0">Formulaire indemnisation</a></li>
-            <li><a href="#0">Formulaire indemnisation</a></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -859,7 +882,7 @@
 
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   
-    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="http://v4-alpha.getbootstrap.com/components/navs/#tabs"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="http://v4-alpha.getbootstrap.com/components/navs/#tabs"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
   
 
   
@@ -931,7 +954,7 @@
     
       
 <article class="vd-teaser">
-  <div class="text-sm-center m-b-2">
+  <div class="text-sm-center mb-2">
     <h3 class="vd-teaser-title"><a href="#0">Lorem ipsum dolor sit amet</a></h3>
     <a class="vd-teaser-img" href="#0">
       
@@ -963,7 +986,7 @@
   <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
     <pre><code class="language-markup">
 <article class="vd-teaser">
-  <div class="text-sm-center m-b-2">
+  <div class="text-sm-center mb-2">
     <h3 class="vd-teaser-title"><a href="#0">Lorem ipsum dolor sit amet</a></h3>
     <a class="vd-teaser-img" href="#0">
       

@@ -357,6 +357,9 @@ body {
           -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
 
+.styleguide-page-container {
+  max-width: none; }
+
 .styleguide-item-heading-group {
   margin-bottom: 1em; }
 
@@ -421,6 +424,11 @@ body {
 
 .styleguide-menu a.styleguide-menu-heading:hover {
   background: none; }
+
+.styleguide-example [class*="col-"] {
+  padding: 1rem;
+  background: #dce3e8;
+  border: 1px solid #697983; }
 
 .bg-gray-dark {
   background: #080808 !important; }
