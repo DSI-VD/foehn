@@ -435,148 +435,124 @@ styleguide: true
   <div class="row">
     <div class="col-lg-6">
       <div class="bs-component">
-        <form class="form-horizontal">
+        <form class="form">
           <fieldset>
             <legend>Legend</legend>
-            <div class="form-group row">
-              <label for="inputEmail" class="col-xs-2 col-form-label">Email</label>
-              <div class="col-xs-10">
-                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-              </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
             </div>
-            <div class="form-group row">
-              <label for="inputPassword" class="col-xs-2 col-form-label">Password</label>
-              <div class="col-xs-10">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                <div class="form-check">
-                  <label class="form-check-label custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Check this custom checkbox</span>
-                  </label>
-                </div>
-              </div>
+            <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
             </div>
-            <div class="form-group row">
-              <label for="textArea" class="col-xs-2 col-form-label">Textarea</label>
-              <div class="col-xs-10">
-                <textarea class="form-control" rows="3" id="textArea" aria-describedby="textareaHelp"></textarea>
-                <small id="textareaHelp" class="form-text text-muted">A longer block of help text that breaks onto a new line and may extend beyond one line.</small>
-              </div>
+            <div class="form-group">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Check this custom checkbox</span>
+              </label>
             </div>
-            <div class="form-group row">
-              <label class="col-xs-2 col-form-label">Radios</label>
-              <div class="col-xs-10">
-                <div class="form-group">
-                  <label class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Option one is this and that&mdash;be sure to include why it's great</span>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Option two can be something else and selecting it will deselect option one</span>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Option three is disabled</span>
-                  </label>
-                </div>
-              </div>
+            <div class="form-group">
+              <label for="textArea">Textarea</label>
+              <textarea class="form-control" rows="3" id="textArea" aria-describedby="textareaHelp"></textarea>
+              <small id="textareaHelp" class="form-text text-muted">A longer block of help text that breaks onto a new line and may extend beyond one line.</small>
             </div>
-            <div class="form-group row">
-              <label for="select" class="col-xs-2 col-form-label">Selects</label>
-              <div class="col-xs-10">
-                <select class="form-control custom-select" id="select">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-                <br>
-                <br>
-                <select multiple class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="file" class="col-xs-2 col-form-label">File upload</label>
-              <div class="col-xs-10">
-                <label class="custom-file">
-                  <input type="file" id="file" class="custom-file-input">
-                  <span class="custom-file-control"></span>
+            <div class="form-group">
+              <div class="custom-controls-stacked">
+                <label class="custom-control custom-radio">
+                  <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Toggle this custom radio</span>
+                </label>
+                <label class="custom-control custom-radio">
+                  <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Or toggle this other custom radio</span>
                 </label>
               </div>
             </div>
-            <div class="form-group row">
-              <div class="col-xs-10 offset-xs-2">
-                <button type="reset" class="btn btn-secondary text-uppercase">Cancel</button>
-                <button type="submit" class="btn btn-primary text-uppercase">Submit</button>
-              </div>
+            <div class="form-group">
+              <label for="select">Selects</label>
+              <select class="form-control custom-select" id="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <br>
+              <br>
+              <select multiple class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="file">File upload</label>
+              <label class="custom-file">
+                <input type="file" id="file" class="custom-file-input">
+                <span class="custom-file-control"></span>
+              </label>
+            </div>
+            <div class="form-group">
+              <button type="reset" class="btn btn-secondary text-uppercase">Cancel</button>
+              <button type="submit" class="btn btn-primary text-uppercase">Submit</button>
             </div>
           </fieldset>
         </form>
       </div>
     </div>
-    <div class="col-lg-4 offset-lg-1">
-        <form class="bs-component">
-          <div class="form-group">
-            <label class="control-label" for="disabledInput">Disabled input</label>
-            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+    <div class="col-lg-5 offset-lg-1">
+      <form class="bs-component">
+        <div class="form-group">
+          <label class="control-label" for="disabledInput">Disabled input</label>
+          <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+        </div>
+        <div class="form-group has-success">
+          <label class="col-form-label" for="inputSuccess1">Input with success</label>
+          <input type="text" class="form-control form-control-success" id="inputSuccess1">
+          <div class="form-control-feedback">Success! You've done it.</div>
+          <small class="form-text text-muted">Example help text that remains unchanged.</small>
+        </div>
+        <div class="form-group has-warning">
+          <label class="col-form-label" for="inputWarning1">Input with warning</label>
+          <input type="text" class="form-control form-control-warning" id="inputWarning1">
+          <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+          <small class="form-text text-muted">Example help text that remains unchanged.</small>
+        </div>
+        <div class="form-group has-danger">
+          <label class="col-form-label" for="inputDanger1">Input with danger</label>
+          <input type="text" class="form-control form-control-danger" id="inputDanger1">
+          <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+          <small class="form-text text-muted">Example help text that remains unchanged.</small>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="inputLarge">Large input</label>
+          <input class="form-control form-control-lg" type="text" id="inputLarge">
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="inputDefault">Default input</label>
+          <input type="text" class="form-control" id="inputDefault">
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="inputSmall">Small input</label>
+          <input class="form-control form-control-sm" type="text" id="inputSmall">
+        </div>
+        <div class="form-group">
+          <label class="control-label">Input addons</label>
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary text-uppercase" type="button">Button</button>
+            </span>
           </div>
-          <div class="form-group has-success">
-            <label class="col-form-label" for="inputSuccess1">Input with success</label>
-            <input type="text" class="form-control form-control-success" id="inputSuccess1">
-            <div class="form-control-feedback">Success! You've done it.</div>
-            <small class="form-text text-muted">Example help text that remains unchanged.</small>
-          </div>
-          <div class="form-group has-warning">
-            <label class="col-form-label" for="inputWarning1">Input with warning</label>
-            <input type="text" class="form-control form-control-warning" id="inputWarning1">
-            <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
-            <small class="form-text text-muted">Example help text that remains unchanged.</small>
-          </div>
-          <div class="form-group has-danger">
-            <label class="col-form-label" for="inputDanger1">Input with danger</label>
-            <input type="text" class="form-control form-control-danger" id="inputDanger1">
-            <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-            <small class="form-text text-muted">Example help text that remains unchanged.</small>
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="inputLarge">Large input</label>
-            <input class="form-control form-control-lg" type="text" id="inputLarge">
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="inputDefault">Default input</label>
-            <input type="text" class="form-control" id="inputDefault">
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="inputSmall">Small input</label>
-            <input class="form-control form-control-sm" type="text" id="inputSmall">
-          </div>
-          <div class="form-group">
-            <label class="control-label">Input addons</label>
-            <div class="input-group">
-              <span class="input-group-addon">$</span>
-              <input type="text" class="form-control">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary text-uppercase" type="button">Button</button>
-              </span>
-            </div>
-          </div>
-        </form>
+        </div>
+      </form>
     </div>
   </div>
 </div>
