@@ -113,3 +113,8 @@
 .text-meta .breadcrumb .breadcrumb-item {
   font-family: 'Meta' !important;
 }
+
+.text-meta .btn {
+  font-family: 'Meta' !important;
+  font-weight: 600;
+}

@@ -103,3 +103,8 @@
 .text-museo-calluna .breadcrumb .breadcrumb-item {
   font-family: 'Museo' !important;
 }
+
+.text-museo-calluna .btn {
+  font-family: 'Museo' !important;
+  font-weight: 600;
+}
