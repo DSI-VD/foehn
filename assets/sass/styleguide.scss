@@ -105,6 +105,14 @@
   }
 }
 
+.styleguide-example {
+  [class*="col-"] {
+    padding: $spacer;
+    background: $gray-lighter;
+    border: 1px solid $gray;
+  }
+}
+
 // For the colors page
 .bg-gray-dark { background: $gray-dark !important; }
 .bg-gray { background: $gray !important; }
