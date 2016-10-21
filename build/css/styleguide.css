@@ -357,7 +357,8 @@ body {
           -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
 
-.styleguide-page-container {
+.styleguide-page-container,
+.styleguide-item-notes {
   max-width: none; }
 
 .styleguide-item-heading-group {
@@ -383,7 +384,12 @@ body {
 .styleguide-description {
   padding: 0.75rem 1rem;
   background: #e0eaf0; }
-  .styleguide-description p:last-child {
+  .styleguide-description p {
+    margin-bottom: 0.5rem; }
+    .styleguide-description p:last-child {
+      margin-bottom: 0; }
+  .styleguide-description ul li {
+    list-style-type: disc;
     margin-bottom: 0; }
 
 .styleguide-item-preview {
