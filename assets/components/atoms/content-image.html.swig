@@ -3,6 +3,7 @@ title: Content Image
 name: content-image
 collection: atoms
 notes: |
+  Use `.vd-image-center` or `.vd-image-left` or `.vd-image-right` to align an image **inside a `.content` wrapper**.
 ---
 <div class="content">
   <img class="vd-img-center" src="http://placehold.it/600x400" alt="Image in content">
