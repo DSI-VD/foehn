@@ -63,5 +63,7 @@ export const stylesLint = () => {
 };
 export const stylesLintTask = gulp.task('styles:lint', stylesLint);
 
-export const styles = gulp.series(stylesLint, stylesBuild);
+const inprod = done => done();
+
+export const styles = gulp.series(yargs.argv.production ? inprod : stylesLint, stylesBuild);
 export const stylesTask = gulp.task('styles', styles);
