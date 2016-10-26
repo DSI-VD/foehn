@@ -13,6 +13,25 @@
       @extend .vd-btn-cross;
     }
   }
+
+  // Specific hover effects
+  &.btn-primary:not([class*="chevron"]):not([data-toggle="collapse"]) {
+    @extend .hover-sweep-to-right;
+    &:hover { background: $btn-primary-bg; }
+    &:before { background: darken($btn-primary-bg, 10%); }
+  }
+
+  &.btn-secondary:not([class*="chevron"]):not([data-toggle="collapse"]) {
+    @extend .hover-sweep-to-right;
+    &:hover { background: $btn-secondary-bg; }
+    &:before { background: darken($btn-secondary-bg, 10%); }
+  }
+
+  &.btn-success:not([class*="chevron"]):not([data-toggle="collapse"]) {
+    @extend .hover-sweep-to-right;
+    &:hover { background: $btn-success-bg; }
+    &:before { background: darken($btn-success-bg, 5%); }
+  }
 }
 
 a.btn {
@@ -43,7 +62,7 @@ a.btn {
   position: relative;
   padding-right: $spacer * 1.5;
 
-  &:after {
+  &:before {
     content: '';
     display: inline-block;
     position: absolute;
@@ -60,24 +79,32 @@ a.btn {
 }
 
 .vd-btn-chevron-t {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-top, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+  @extend .hover-icon-float;
+
+  &.btn-secondary:before,
+  &.btn-success:before { @include vd-background-image-icon($vd-chevron-top, $white); }
+  &:before { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
 }
 
 .vd-btn-chevron-r {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-right, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-right, $vd-green); }
+  @extend .hover-icon-forward;
+
+  &.btn-secondary:before,
+  &.btn-success:before { @include vd-background-image-icon($vd-chevron-right, $white); }
+  &:before { @include vd-background-image-icon($vd-chevron-right, $vd-green); }
 }
 
 .vd-btn-chevron-b {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+  @extend .hover-icon-sink;
+
+  &.btn-secondary:before,
+  &.btn-success:before { @include vd-background-image-icon($vd-chevron-bottom, $white); }
+  &:before { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
 }
 
 .vd-btn-chevron-l {
+  @extend .hover-icon-back;
+
   position: relative;
   padding-left: $spacer * 1.5;
 
@@ -109,7 +136,7 @@ a.btn {
  */
 .vd-btn-cross {
   &.btn-secondary:before,
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-cross, $white); }
-  &:after { @include vd-background-image-icon($vd-cross, $vd-green); }
+  &.btn-secondary:before,
+  &.btn-success:before { @include vd-background-image-icon($vd-cross, $white); }
+  &:before { @include vd-background-image-icon($vd-cross, $vd-green); }
 }
