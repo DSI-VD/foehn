@@ -20,6 +20,9 @@
 
     &:focus {
       @extend .hover-ripple-out;
+
+      outline: none;
+      box-shadow: none;
       &:before { animation-duration: $slowDuration; }
     }
     &:hover { transition: background 0s $mediumDuration; }
