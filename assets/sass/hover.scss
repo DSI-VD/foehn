@@ -32,6 +32,14 @@
   }
 }
 
+@import '../../node_modules/hover.css/scss/effects/border-transitions/outline-out';
+
+@if $includeClasses {
+  .#{$nameSpace}-outline-out {
+    @include outline-out();
+  }
+}
+
 @import '../../node_modules/hover.css/scss/effects/icons/icon-float';
 
 @if $includeClasses {
