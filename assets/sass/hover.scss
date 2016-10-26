@@ -24,6 +24,14 @@
   }
 }
 
+@import '../../node_modules/hover.css/scss/effects/border-transitions/ripple-out';
+
+@if $includeClasses {
+  .#{$nameSpace}-ripple-out {
+    @include ripple-out();
+  }
+}
+
 @import '../../node_modules/hover.css/scss/effects/icons/icon-float';
 
 @if $includeClasses {

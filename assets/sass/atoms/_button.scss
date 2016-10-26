@@ -15,22 +15,38 @@
   }
 
   // Specific hover effects
-  &.btn-primary:not([class*="chevron"]):not([data-toggle="collapse"]) {
+  &:not([class*="chevron"]):not([data-toggle="collapse"]) {
     @extend .hover-sweep-to-right;
-    &:hover { background: $btn-primary-bg; }
+
+    &:focus {
+      @extend .hover-ripple-out;
+      &:before { animation-duration: $slowDuration; }
+    }
+    &:hover { transition: background 0s $mediumDuration; }
+  }
+
+  &.btn-primary:not([class*="chevron"]):not([data-toggle="collapse"]) {
+    &:hover,
+    &:focus,
+    &:active,
     &:before { background: darken($btn-primary-bg, 10%); }
+    &:focus:before { border-color: darken($btn-primary-bg, 10%); }
   }
 
   &.btn-secondary:not([class*="chevron"]):not([data-toggle="collapse"]) {
-    @extend .hover-sweep-to-right;
-    &:hover { background: $btn-secondary-bg; }
+    &:hover,
+    &:focus,
+    &:active,
     &:before { background: darken($btn-secondary-bg, 10%); }
+    &:focus:before { border-color: darken($btn-secondary-bg, 10%); }
   }
 
   &.btn-success:not([class*="chevron"]):not([data-toggle="collapse"]) {
-    @extend .hover-sweep-to-right;
-    &:hover { background: $btn-success-bg; }
-    &:before { background: darken($btn-success-bg, 5%); }
+    &:hover,
+    &:focus,
+    &:active,
+    &:before { background: darken($btn-success-bg, 10%); }
+    &:focus:before { border-color: darken($btn-success-bg, 10%); }
   }
 }
 
@@ -84,6 +100,7 @@ a.btn {
   &.btn-secondary:before,
   &.btn-success:before { @include vd-background-image-icon($vd-chevron-top, $white); }
   &:before { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+  &:active { transform: translateY(-0.4em); }
 }
 
 .vd-btn-chevron-r {
@@ -92,6 +109,7 @@ a.btn {
   &.btn-secondary:before,
   &.btn-success:before { @include vd-background-image-icon($vd-chevron-right, $white); }
   &:before { @include vd-background-image-icon($vd-chevron-right, $vd-green); }
+  &:active { transform: translateX(0.4em); }
 }
 
 .vd-btn-chevron-b {
@@ -100,6 +118,7 @@ a.btn {
   &.btn-secondary:before,
   &.btn-success:before { @include vd-background-image-icon($vd-chevron-bottom, $white); }
   &:before { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+  &:active { transform: translateY(0.4em); }
 }
 
 .vd-btn-chevron-l {
@@ -107,6 +126,8 @@ a.btn {
 
   position: relative;
   padding-left: $spacer * 1.5;
+
+  &:active { transform: translateX(-0.4em); }
 
   &:before {
     content: '';
