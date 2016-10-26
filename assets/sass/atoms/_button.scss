@@ -15,7 +15,7 @@
   }
 
   // Specific hover effects
-  &:not([class*="chevron"]):not([data-toggle="collapse"]) {
+  &[class*="btn-"]:not([class*="chevron"]):not([data-toggle="collapse"]) {
     @extend .hover-sweep-to-right;
 
     &:focus {
