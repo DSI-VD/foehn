@@ -1,6 +1,6 @@
 {
   "name": "@antistatique/foehn",
-  "version": "0.9.0-rc.5",
+  "version": "0.9.0-rc.6",
   "author": "DSI VD <info.dsi@vd.ch>",
   "repository": "DSI-VD/foehn",
   "main": "index.html",
@@ -49,8 +49,7 @@
     "swig": "^1.4.2",
     "webpack": "2.1.0-beta.22",
     "webpack-dev-middleware": "^1.8.3",
-    "webpack-hot-middleware": "^2.12.2",
-    "yargs": "^5.0.0"
+    "webpack-hot-middleware": "^2.12.2"
   },
   "devDependencies": {
     "async": "^2.0.1",
