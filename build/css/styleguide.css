@@ -82,7 +82,7 @@ pre[class*='language-'] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  background: rgba(2, 109, 2, 0.1); }
+  background: #d3ead3; }
   .styleguide-controls:after {
     clear: both; }
   .styleguide-controls:before, .styleguide-controls:after {
@@ -290,7 +290,7 @@ body {
   left: 0;
   width: 250px;
   height: 100%;
-  background-color: rgba(2, 139, 2, 0.1);
+  background-color: #e8f4e8;
   -webkit-transform: translate(-100%, 0);
       -ms-transform: translate(-100%, 0);
           transform: translate(-100%, 0);
@@ -418,7 +418,8 @@ body {
 .styleguide-menu a {
   padding: 0 1em; }
   .styleguide-menu a:hover {
-    background: rgba(0, 13, 0, 0.1); }
+    background: #cce7cc;
+    color: #000; }
 
 .styleguide-menu span.styleguide-menu-heading {
   padding-left: 1rem; }
@@ -426,7 +427,7 @@ body {
 .styleguide-menu .styleguide-menu-heading {
   margin-bottom: 0.5em;
   padding-left: 1rem;
-  border-bottom: 1px solid rgba(0, 13, 0, 0.1); }
+  border-bottom: 1px solid #92cb92; }
 
 .styleguide-menu a.styleguide-menu-heading:hover {
   background: none; }
