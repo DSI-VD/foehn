@@ -6,8 +6,10 @@
 @import 'bootstrap';
 @import 'helpers';
 
+@import "layout";
 
 // atoms:
+@import 'atoms/separator';
 @import 'atoms/image-circle';
 @import 'atoms/content-image';
 @import 'atoms/hr';
@@ -18,6 +20,8 @@
 @import 'atoms/button';
 
 // molecules:
+@import 'molecules/footer';
+@import 'molecules/list-icon';
 @import 'molecules/table';
 @import 'molecules/figure';
 @import 'molecules/teaser';

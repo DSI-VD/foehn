@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+.vd-separator {
+  height: 4px;
+  background-repeat: repeat-x;
+  border: none;
+}
+
+.vd-separator-gray-bars {
+  height: 5px;
+  background-image: url('../svg/bars_gray.svg');
+}
+
+.vd-separator-wide { max-width: none; }
+.vd-separator-green-pattern { background-image: url('../svg/pattern_squares_green.svg'); }
+.vd-separator-gray-pattern { background-image: url('../svg/pattern_squares_gray.svg'); }
