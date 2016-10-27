@@ -94,7 +94,8 @@
     padding: 0 1em;
 
     &:hover {
-      background: darken($menu-bg, 25%);
+      background: darken($menu-bg, 8%);
+      color: $menu-fg;
     }
   }
 
