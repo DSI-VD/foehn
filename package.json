@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp serve",
-    "build": "yarn && ./node_modules/.bin/gulp build",
+    "build": "yarn && gulp build",
     "deploy": "yarn && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
   },
   "engines": {
