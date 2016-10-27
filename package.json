@@ -1,6 +1,6 @@
 {
   "name": "@antistatique/foehn",
-  "version": "0.9.0-rc.4",
+  "version": "0.9.0-rc.5",
   "author": "DSI VD <info.dsi@vd.ch>",
   "repository": "DSI-VD/foehn",
   "main": "index.html",
@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp serve",
-    "build": "gulp build",
+    "build": "npm install && gulp build --production",
     "deploy": "yarn && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
   },
   "engines": {
