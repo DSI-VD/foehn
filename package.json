@@ -1,6 +1,6 @@
 {
   "name": "@antistatique/foehn",
-  "version": "0.9.0",
+  "version": "0.9.0-rc.1",
   "author": "DSI VD <info.dsi@vd.ch>",
   "repository": "DSI-VD/foehn",
   "main": "index.html",
