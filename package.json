@@ -1,6 +1,8 @@
 {
-  "name": "foehn",
-  "version": "0.0.0",
+  "name": "@antistatique/foehn",
+  "version": "0.0.1",
+  "author": "DSI VD <info.dsi@vd.ch>",
+  "repository": "DSI-VD/foehn",
   "main": "index.html",
   "license": "MIT",
   "browserify-shim": {
@@ -8,7 +10,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp serve",
-    "build": "yarn && ./node_modules/.bin/gulp build",
+    "build": "npm install && ./node_modules/.bin/gulp build",
     "deploy": "yarn && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
   },
   "engines": {
