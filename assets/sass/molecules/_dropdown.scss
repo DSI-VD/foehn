@@ -5,20 +5,24 @@
     .dropdown-label {
       text-align: right;
     }
+
     .dropdown-menu {
       right: 0;
       left: auto;
     }
   }
+
   &.vd-dropdown-left {
     .dropdown-label {
       text-align: left;
     }
+
     .dropdown-menu {
-      left: 0;
       right: auto;
+      left: 0;
     }
   }
+
   &.vd-dropdown-center {
     .dropdown-label {
       text-align: center;
@@ -29,16 +33,17 @@
     .dropdown-chevron {
       background: $vd-purple;
       color: $white;
-
     }
+
     .dropdown-label {
       color: $vd-purple;
     }
   }
 
   .dropdown-chevron {
+    padding: 0.6em 0.3em 0.05em;
     font-size: 30px;
-    padding:0.6em 0.3em 0.05em;
+
     .icons {
       margin: 0;
     }
@@ -50,6 +55,5 @@
     .title {
       text-transform: uppercase;
     }
-
   }
 }
