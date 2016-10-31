@@ -5,7 +5,7 @@ collection: molecules
 bootstrap: http://v4-alpha.getbootstrap.com/components/navs/#tabs
 notes: |
 ---
-<ul class="nav nav-tabs">
+<ul class="nav vd-nav-tabs-secure">
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
   </li>
