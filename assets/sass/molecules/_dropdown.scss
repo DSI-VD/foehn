@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+.vd-dropdown {
+  &.vd-dropdown-right {
+    .btn {
+      text-align: right;
+    }
+  }
+
+  &.vd-dropdown-purple {
+    .dropdown-chevron {
+      background: $vd-purple;
+      color: $white;
+      font-size: 30px;
+      padding:0.6em 0.3em 0.05em;
+      .icons {
+        margin: 0;
+      }
+    }
+    .dropdown-label {
+      color: $vd-purple;
+    }
+  }
+
+  .dropdown-label {
+    text-transform: none;
+
+    .title {
+      text-transform: uppercase;
+    }
+  }
+}
