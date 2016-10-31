@@ -3,9 +3,15 @@ title: Dropdown
 name: Dropdown
 collection: molecules
 notes: |
-  ##### Usage : `dropdown`
+  You can use the following classes to align the button / submenu:
+  - `vd-dropdown-center`: The dropdown text and dropdown box is centered.
+  - `vd-dropdown-left`: the dropdown text and dropdown box is left aligned.
+  - `vd-dropdown-right`: the dropdown text and dropdown box is right aligned.
+
+  You can use the following classes to style the element
+  - `vd-dropdown-purple`: The box text and button are purple.
 ---
-<div class="vd-dropdown vd-dropdown-right vd-dropdown-purple btn-group">
+<div class="vd-dropdown vd-dropdown-left vd-dropdown-purple btn-group">
   <a data-toggle="dropdown" class="btn dropdown-label">
       <span class="title">Pierre Dupond</span><br>
       <span>Commune de Belmont-sur-Lausanne</span>
@@ -14,7 +20,7 @@ notes: |
     <i class="icons icons-chevron-bottom"></i>
     <span class="sr-only">Toggle Dropdown</span>
   </a>
-  <div class="dropdown-menu dropdown-menu-right">
+  <div class="dropdown-menu">
     <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
