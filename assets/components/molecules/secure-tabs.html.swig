@@ -1,5 +1,5 @@
 ---
-title: Secure Tabs
+title: Tabs Secure
 name: secure-tabs
 collection: molecules
 notes: |
