@@ -5,6 +5,7 @@
 @import 'mixins';
 @import 'bootstrap';
 @import 'helpers';
+@import 'icons';
 
 @import "layout";
 
@@ -20,6 +21,7 @@
 @import 'atoms/button';
 
 // molecules:
+@import 'molecules/dropdown';
 @import 'molecules/footer';
 @import 'molecules/list-icon';
 @import 'molecules/table';
