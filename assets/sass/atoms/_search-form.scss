@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+.search-form {
+  border-top: 4px solid $black;
+  border-bottom: 4px solid $black;
+
+  .form-control {
+    border: 0;
+    outline: 0;
+  }
+
+  .btn {
+    background: $vd-green;
+    color: $white;
+
+    &:hover {
+      background: darken($vd-green, 10%);
+    }
+  }
+}
