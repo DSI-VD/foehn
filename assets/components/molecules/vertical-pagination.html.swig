@@ -4,8 +4,6 @@ name: Vertical-pagination
 collection: molecules
 notes: |
   ##### Usage : `vertical-pagination`
-  ##### Options :
-  - **option** - Type
 ---
 <nav aria-label="Page navigation">
   <ul class="vertical-pagination">
