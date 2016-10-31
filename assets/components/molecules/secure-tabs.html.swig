@@ -10,16 +10,16 @@ notes: |
     <div class="fa fa-lock fa-lg" aria-hidden="true"></div>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link active" href="#">Accueil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Prestations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Demandes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link disabled" href="#" aria-disabled="true">Documents</a>
       </li>
     </ul>
   </div>
