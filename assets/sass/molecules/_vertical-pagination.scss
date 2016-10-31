@@ -1,19 +1,19 @@
 @charset 'UTF-8';
 
 .vertical-pagination {
+  display: table;
   list-style: none;
   padding: 0;
-  display: table;
 
-  li{
+  li {
     display: table-row;
 
     &.success {
       .bullet {
         background: $vd-success;
-
       }
     }
+
     &.warning {
       .bullet {
         background: $vd-warning;
@@ -24,38 +24,42 @@
       .bullet {
         background: $black;
       }
+
+      .title {
+        font-weight: 700;
+      }
     }
 
     &.disabled {
       .title {
         color: $gray;
-        text-decoration: none;
       }
     }
 
     .bullet {
       display: inline-block;
-      height: 20px;
-      line-height: 20px;
       width: 20px;
+      height: 20px;
       background: $vd-gray;
       border-radius: 50%;
+      font-size: 10px;
+      line-height: 20px;
+      font-weight: 700;
       color: $white;
       text-align: center;
       vertical-align: middle;
-      font-size: 10px;
-      font-weight: 700;
       -webkit-font-smoothing: antialiased;
     }
+
     .title {
       padding-left: 1em;
       color: $black;
+      text-decoration: none;
     }
 
     div {
       display: table-cell;
       padding-bottom: 0.7em;
-
     }
   }
 }
