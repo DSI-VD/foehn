@@ -1,0 +1,24 @@
+---
+title: Dropdown
+name: Dropdown
+collection: molecules
+notes: |
+  ##### Usage : `dropdown`
+---
+<div class="vd-dropdown vd-dropdown-right vd-dropdown-purple btn-group">
+  <a data-toggle="dropdown" class="btn dropdown-label">
+      <span class="title">Pierre Dupond</span><br>
+      <span>Commune de Belmont-sur-Lausanne</span>
+  </a>
+  <a class="btn dropdown-toggle-split dropdown-chevron" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="icons icons-chevron-bottom"></i>
+    <span class="sr-only">Toggle Dropdown</span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
