@@ -5,7 +5,7 @@ collection: molecules
 notes: |
   Wrap your nav component in a `.vd-bg-pattern-purple` div and obtain tabs for the secure area of the website.
 ---
-<div class="vd-bg-pattern-purple">
+<div class="vd-bg-pattern-purple" role="tablist">
   <div class="container vd-nav-tabs-secure">
     <div class="fa fa-lock fa-lg" aria-hidden="true"></div>
     <ul class="nav">
