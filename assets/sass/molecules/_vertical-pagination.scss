@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+.vertical-pagination {
+  list-style: none;
+  padding: 0;
+  display: table;
+
+  li{
+    display: table-row;
+
+    &.success {
+      .bullet {
+        background: $vd-success;
+
+      }
+    }
+    &.warning {
+      .bullet {
+        background: $vd-warning;
+      }
+    }
+
+    &.current {
+      .bullet {
+        background: $black;
+      }
+    }
+
+    &.disabled {
+      .title {
+        color: $gray;
+        text-decoration: none;
+      }
+    }
+
+    .bullet {
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      width: 20px;
+      background: $vd-gray;
+      border-radius: 50%;
+      color: $white;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 10px;
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+    }
+    .title {
+      padding-left: 1em;
+      color: $black;
+    }
+
+    div {
+      display: table-cell;
+      padding-bottom: 0.7em;
+
+    }
+  }
+}
