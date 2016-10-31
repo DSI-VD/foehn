@@ -19,5 +19,7 @@
 
 // Spacing helpers
 .vd-offset-top {
-  margin-top: ($spacer * -2.1);
+  @include media-breakpoint-up(md) {
+    margin-top: ($spacer * -2.1);
+  }
 }
