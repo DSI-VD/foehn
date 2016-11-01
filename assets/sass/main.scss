@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 // init:
-@import 'mixins';
 @import 'main-variables';
+@import 'mixins';
 @import 'bootstrap';
 @import 'helpers';
 
@@ -22,6 +22,7 @@
 
 // molecules:
 @import 'molecules/secure-tabs';
+@import 'molecules/nav-side';
 @import 'molecules/footer';
 @import 'molecules/list-icon';
 @import 'molecules/table';
