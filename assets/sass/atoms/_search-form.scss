@@ -6,9 +6,17 @@
 
   .form-control {
     padding-left: 0;
+    border-color: transparent;
     font-style: italic;
-    border: 0;
-    outline: 0;
+    transition:
+      padding 0.11s ease-in,
+      border 0.11s;
+
+    &:focus {
+      padding-left: $input-padding-y;
+      border: 2px solid $vd-green;
+      box-shadow: none;
+    }
   }
 
   .btn {
