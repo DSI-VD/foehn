@@ -407,7 +407,7 @@ body {
     font-size: 0.8em; }
 
 .styleguide-header-container {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Crect fill=\"#40d940\" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill=\"#40d940\" x='2' y='2' width='1' height='1'%3E %3C/rect%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 4 4' preserveAspectRatio='xMidYMid meet'%3E%3Crect fill=\"#40d940\" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill=\"#40d940\" x='2' y='2' width='1' height='1'%3E %3C/rect%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 4px 4px;
   background-color: #fff;
