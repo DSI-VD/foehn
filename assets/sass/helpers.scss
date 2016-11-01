@@ -16,3 +16,7 @@
 
   @include vd-pattern-dotted($pattern-dotted-green);
 }
+
+.vd-bg-pattern-purple {
+  background: $pattern-striped-purple;
+}
