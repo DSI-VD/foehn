@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+.vd-list-boxed {
+  .nav-link {
+    display: inline;
+    padding: ($spacer / 5);
+    background: $body-bg;
+    color: $body-color;
+    text-decoration: none;
+    transition: background 0.2s;
+
+    &:hover,
+    &:focus {
+      background: lighten($link-color, 65%);
+    }
+
+    &:active {
+      background: lighten($link-color, 55%);
+    }
+  }
+}
