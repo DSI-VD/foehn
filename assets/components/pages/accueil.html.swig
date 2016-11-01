@@ -40,14 +40,51 @@ layout: page.html.swig
 
     <div class="col-md-4">
 
-    <section>
+    <section class="mb-3">
       <h2 class="vd-section-title">Twitter</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit est aliquam, dolorem distinctio expedita id. Veniam repellendus saepe facilis quos at corporis, vero quis cupiditate culpa quia labore odio qui expedita fugit, non natus fugiat et repudiandae voluptas vel explicabo enim facere? Quos officia ipsum suscipit? Alias eum provident qui assumenda recusandae tenetur temporibus inventore nisi, nulla voluptatibus sint consequuntur perferendis sapiente odio totam, facere est voluptatum quas possimus, vel! Mollitia nesciunt suscipit saepe, ratione deleniti, inventore explicabo recusandae a ab est officiis molestias excepturi fugit laboriosam in vitae. Dolores quis quo impedit voluptatem ipsum perspiciatis quisquam, minima assumenda ex laborum quasi, a, facere velit fugit voluptatibus itaque consequuntur, eius dolore deleniti illum sapiente qui reiciendis eaque fugiat hic? Vero, et ullam cumque repellendus architecto! Molestiae, cupiditate.</p>
+
+      <article>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, numquam consequatur!</p>
+        <p><a href="#">plus d'info</a></p>
+      </article>
+      <hr>
+
+      <article>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, numquam consequatur!</p>
+        <p><a href="#">plus d'info</a></p>
+      </article>
+      <hr>
+
+      <article>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, numquam consequatur!</p>
+        <p><a href="#">plus d'info</a></p>
+      </article>
+      <hr>
     </section>
 
     <section>
       <h2 class="vd-section-title">Agenda / événements</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui placeat sapiente dolore, unde soluta aut natus. Dolore sunt non ab molestiae debitis consequuntur asperiores, mollitia vel sint aut cupiditate, magnam, voluptas nesciunt sequi necessitatibus. Iste qui veritatis vero, animi sint magnam? Maxime mollitia ullam reiciendis ratione recusandae fugit cupiditate et voluptatibus aliquam corporis nulla rem dignissimos odit, unde expedita minima temporibus quasi. Reprehenderit, amet, veritatis. Eaque ea nam sint neque, laboriosam optio expedita, architecto impedit perspiciatis aliquid odit eligendi, aliquam numquam alias et commodi velit rerum natus modi unde minus dolor delectus atque ratione non! Rerum animi illum laudantium! Ipsam eligendi beatae architecto ad temporibus placeat molestias, numquam, magnam iste, dolore, vel earum. At ratione dolor qui saepe, eveniet, officiis culpa incidunt sequi error a voluptatem, quos minima?</p>
+
+      <article>
+        <h3><span class="tag tag-default">3</span> mars 2017</h3>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam quam iusto.</p>
+        <p><a href="#">plus d'info</a></p>
+      </article>
+      <hr>
+
+      <article>
+        <h3><span class="tag tag-default">3</span> mars 2017</h3>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam quam iusto.</p>
+        <p><a href="#">plus d'info</a></p>
+      </article>
+      <hr>
+
+      <article>
+        <h3><span class="tag tag-default">3</span> mars 2017</h3>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam quam iusto.</p>
+        <p><a href="#">plus d'info</a></p>
+      </article>
+      <hr>
     </section>
 
     </div><!-- /.col-md-4 -->
