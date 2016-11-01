@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+.vd-nav-side {
+  position: relative;
+  padding: $spacer ($spacer / 2);
+  background: $body-bg;
+  border-left: 1px solid $vd-green-dark;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 10px;
+    border-bottom: 1px solid $vd-green-dark;
+  }
+
+  .nav-item {
+    margin-bottom: ($spacer-y / 2);
+    font-size: $font-size-base * 1.1;
+
+    ul {
+      margin-top: ($spacer-y / 2);
+      list-style-type: none;
+    }
+  }
+
+  .nav-link {
+    color: $body-color;
+
+    @include vd-smart-underline();
+
+    &:hover {
+      color: $link-color;
+    }
+
+    &.active {
+      background-image: none;
+      color: $link-color;
+    }
+  }
+}

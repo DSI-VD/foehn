@@ -1,18 +1,21 @@
 @charset 'UTF-8';
 
-.nav-primary {
-  border-top: 1px dotted $vd-green;
+.vd-nav-primary-toggle {
+  border-bottom: 1px dotted $vd-green;
+}
+
+.vd-nav-primary-content {
+  padding-top: ($spacer * 1.5);
+  padding-bottom: ($spacer * 1.5);
 
   @include vd-pattern-dotted($pattern-dotted-green);
 
   .container {
-    margin-top: ($spacer * 1.5);
-    margin-bottom: ($spacer * 1.5);
     background: $white;
   }
 }
 
-.nav-primary-item {
+.vd-nav-primary-item {
   display: block;
   margin: $spacer 0;
   font-size: $font-size-base * 1.75;
