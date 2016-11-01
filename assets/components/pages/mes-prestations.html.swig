@@ -1,6 +1,6 @@
 ---
-title: Mes prestations
-name: mes-prestation
+title: prestations2
+name: prestations2
 collection: pages
 styleguide: false
 layout: page.html.swig
@@ -13,7 +13,7 @@ layout: page.html.swig
 </div>
 
 <div class="container">
-  <div class="row m-t-3">
+  <div class="row mt-3">
     <div class="col-md-8">
       <h2 id="curent">Demandes en cours</h2>
 
@@ -79,7 +79,7 @@ layout: page.html.swig
         </div>
       </div>
 
-      <h2 id="todo" class="m-t-3">Demandes à traiter</h2>
+      <h2 id="todo" class="mt-3">Demandes à traiter</h2>
 
       <div id="accordion" role="tablist" aria-multiselectable="true" class="m-t-1">
         <div class="card">
@@ -143,7 +143,7 @@ layout: page.html.swig
         </div>
       </div>
 
-      <h2 id="all" class="m-t-3">Toutes les demandes</h2>
+      <h2 id="all" class="mt-3">Historique</h2>
 
       <div id="accordion" role="tablist" aria-multiselectable="true" class="m-t-1">
         <div class="card">
@@ -218,7 +218,7 @@ layout: page.html.swig
   </div><!-- /.row -->
 </div>
 
-<footer class="footer bg-inverse p-y-3 m-t-3">
+<footer class="footer bg-inverse p-y-3 mt-3">
   <div class="container">
     <p>footer here</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum nihil, dicta dolor nemo modi hic ut corporis. Vel dignissimos nam suscipit ratione quam ad omnis, natus doloribus veniam maiores.</p>
