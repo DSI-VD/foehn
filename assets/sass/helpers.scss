@@ -16,3 +16,10 @@
 
   @include vd-pattern-dotted($pattern-dotted-green);
 }
+
+// Spacing helpers
+.vd-offset-top {
+  @include media-breakpoint-up(md) {
+    margin-top: ($spacer * -2.1);
+  }
+}

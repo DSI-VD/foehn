@@ -10,6 +10,8 @@
 
 // atoms:
 @import 'atoms/search-form';
+@import 'atoms/list-boxed';
+@import 'atoms/vd-icon-title';
 @import 'atoms/separator';
 @import 'atoms/image-circle';
 @import 'atoms/content-image';
@@ -21,6 +23,8 @@
 @import 'atoms/button';
 
 // molecules:
+@import 'molecules/secure-tabs';
+@import 'molecules/nav-side';
 @import 'molecules/footer';
 @import 'molecules/list-icon';
 @import 'molecules/table';
