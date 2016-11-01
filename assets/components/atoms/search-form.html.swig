@@ -1,12 +1,12 @@
 ---
 title: Search Form
-name: Search-form
+name: search-form
 collection: atoms
 notes: |
-  The main search form, to use in the header.
+  The main search form, the one we use in the header. `.vd-search-form`
 ---
 
-<form class="input-group search-form" action="#">
+<form class="input-group vd-search-form" action="#">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form" type="text" class="form-control" placeholder="Rechercher" aria-describedby="search-form-label">
   <span class="input-group-btn">
