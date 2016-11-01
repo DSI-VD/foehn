@@ -5,13 +5,29 @@ collection: pages
 styleguide: false
 layout: page-compare.html.swig
 ---
+<!-- CSS in the HTML :(
+     kittens will die -->
+<style>
+.presbyopia {
+  color: transparent !important;
+  text-shadow: 0 0 2px rgba(0,0,0,0.85) !important;
+}
+</style>
+
 <div id="typo-switch">
   <div class="container">
-    <div class="m-y-3">
+    <div class="my-3">
       <div class="btn-group" role="group" aria-label="Switch Fonts">
-        <button type="button" class="btn btn-secondary" data-font-class="">Graphik + Produkt</button>
-        <button type="button" class="btn btn-secondary" data-font-class="text-meta">Meta</button>
-        <button type="button" class="btn btn-secondary"data-font-class="text-museo-calluna">Museo + Calluna</button>
+        <button type="button" class="btn btn-secondary" data-font-class="">1. Graphik + Produkt</button>
+        <button type="button" class="btn btn-secondary" data-font-class="presbyopia">+ presbyopia</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Switch Fonts">
+        <button type="button" class="btn btn-secondary" data-font-class="text-meta">2. Meta</button>
+        <button type="button" class="btn btn-secondary" data-font-class="text-meta presbyopia">+ presbyopia</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Switch Fonts">
+        <button type="button" class="btn btn-secondary"data-font-class="text-museo-calluna">3. Museo + Calluna</button>
+        <button type="button" class="btn btn-secondary"data-font-class="text-museo-calluna presbyopia">+ presbyopia</button>
       </div>
     </div>
   </div>
@@ -23,13 +39,13 @@ layout: page-compare.html.swig
           <h1>Réforme de la protection civile</h1>
         </div>
         <div class="col-sm-4">
-          <button type="button" class="btn btn-success btn-block vd-btn-chevron-r m-t-2">Commander un extrait du registre des poursuites</button>
+          <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="row m-t-3">
+    <div class="row mt-3">
       <div class="col-sm-8 col-lg-7">
         <h2>Vers une organisation simplifiée pour plus d’efficience</h2>
 
@@ -61,9 +77,9 @@ layout: page-compare.html.swig
           <li><a href="#0">voir sur la carte</a></li>
         </ul>
 
-        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r m-t-2">Contacter l'office</a>
+        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r mt-2">Contacter l'office</a>
 
-        <h2 class="m-t-3 vd-section-title">Autres prestations liées</h2>
+        <h2 class="mt-3 vd-section-title">Autres prestations liées</h2>
         <ul class="vd-list-links">
           <li><a href="#0">Lien 1</a></li>
           <li><a href="#0">Lien 2</a></li>
@@ -74,7 +90,7 @@ layout: page-compare.html.swig
   </div>
 </div>
 
-<footer class="footer bg-inverse p-y-3 m-t-3">
+<footer class="footer">
   <div class="container">
     <p>footer here</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum nihil, dicta dolor nemo modi hic ut corporis. Vel dignissimos nam suscipit ratione quam ad omnis, natus doloribus veniam maiores.</p>

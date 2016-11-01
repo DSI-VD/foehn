@@ -11,6 +11,11 @@
 @import '../../node_modules/toolbox-utils/styleguide/styles/layout';
 @import '../../node_modules/toolbox-utils/styleguide/styles/menu';
 
+.styleguide-page-container,
+.styleguide-item-notes {
+  max-width: none;
+}
+
 .styleguide-item-heading-group {
   margin-bottom: 1em;
 }
@@ -40,7 +45,16 @@
   padding: ($spacer * 0.75) $spacer;
   background: $gray-lightest;
 
-  p:last-child {
+  p {
+    margin-bottom: $spacer * 0.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul li {
+    list-style-type: disc;
     margin-bottom: 0;
   }
 }
@@ -67,6 +81,7 @@
 
 .styleguide-header-container {
   @include vd-pattern-dotted($pattern-dotted-green);
+
   background-color: $white;
   border-bottom: 1px dotted $vd-green;
 
@@ -80,7 +95,8 @@
     padding: 0 1em;
 
     &:hover {
-      background: darken($menu-bg, 25%);
+      background: darken($menu-bg, 8%);
+      color: $menu-fg;
     }
   }
 
@@ -98,6 +114,14 @@
     &:hover {
       background: none;
     }
+  }
+}
+
+.styleguide-example {
+  [class*="col-"] {
+    padding: $spacer;
+    background: $gray-lighter;
+    border: 1px solid $gray;
   }
 }
 

@@ -2,7 +2,7 @@
 {% set path = '../../components/' + type + 's/' + content.name + '.html.swig' %}
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   {% if content.bootstrap %}
-    <a class="btn btn-secondary btn-sm pull-xs-right m-l-1" href="{{ content.bootstrap }}"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="{{ content.bootstrap }}"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
   {% endif %}
 
   {% if content.notes %}

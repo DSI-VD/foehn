@@ -22,10 +22,10 @@
     }
 
     &:active {
-      background-color: rgba($vd-green-dark-2, 0.20);
       top: 2px;
       left: 2px;
       box-shadow: 0 0 0 0 $black;
+      background-color: rgba($vd-green-dark-2, 0.2);
     }
 
     &.active {
