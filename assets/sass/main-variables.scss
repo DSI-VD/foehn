@@ -57,9 +57,12 @@ $vd-gradient:               linear-gradient(to right, $vd-green 0%, #008772 33%,
 //
 // All the patterns used as background
 // Must be used with the `@ include vd-pattern-dotted($code, $viewbox-x: 4, $viewbox-y: 4)` mixin
-$pattern-dotted-gray: "%3Crect fill="#{$vd-gray-lighter-2}" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill="#{$vd-gray-lighter-2}" x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
-$pattern-dotted-green-bright: "%3Crect fill="#{$vd-green-light}" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill="#{$vd-green-light}" x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
-$pattern-dotted-green: "%3Crect fill="#{$vd-green}" x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill="#{$vd-green}" x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
+$pattern-gray-color: str-replace(#{$vd-gray-lighter-2}, '#', '%23');
+$pattern-dotted-gray: "%3Crect fill='#{$pattern-gray-color}' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='#{$pattern-gray-color}' x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
+$pattern-green-color: str-replace(#{$vd-green-light}, '#', '%23');
+$pattern-dotted-green-bright: "%3Crect fill='#{$pattern-green-color}' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='#{$pattern-green-color}' x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
+$pattern-dotted-green-color: str-replace(#{$vd-green}, '#', '%23');
+$pattern-dotted-green: "%3Crect fill='#{$pattern-dotted-green-color}' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='#{$pattern-dotted-green-color}' x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
 $pattern-striped-green: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQYV2N0uOnw/4D6AUYGKAAzkAXhMjBBuABMJQAINg5d+/nFCQAAAABJRU5ErkJggg==') repeat;
 $pattern-striped-purple: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQYV2Oc7/T/f+I+RkYGKAAzkAXhMjBBuABMJQAPvw7kq0kywQAAAABJRU5ErkJggg==') repeat;
 $pattern-striped-black: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkYGD4z8DAwMgABTAGXBAuA1OJLADS9B8AguEEBFr1tu0AAAAASUVORK5CYII=') repeat;
