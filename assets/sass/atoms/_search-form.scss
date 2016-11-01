@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+.vd-search-form {
+  border-top: 4px solid $black;
+  border-bottom: 4px solid $black;
+
+  .form-control {
+    padding-left: 0;
+    border-color: transparent;
+    font-style: italic;
+    transition:
+      padding 0.11s ease-in,
+      border 0.11s;
+
+    &:focus {
+      padding-left: $input-padding-y;
+      border: 2px solid $vd-green;
+      box-shadow: none;
+    }
+  }
+
+  .btn {
+    background: $vd-green;
+    color: $white;
+
+    &:hover {
+      background: darken($vd-green, 10%);
+    }
+  }
+}
