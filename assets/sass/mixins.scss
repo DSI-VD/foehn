@@ -28,3 +28,12 @@
   background-repeat: repeat;
   background-size: #{$viewbox-x}px #{$viewbox-y}px;
 }
+
+@mixin vd-smart-underline($color: $gray-lightest, $background: $body-bg, $size: 8px, $position: 0.6em) {
+  display: inline;
+  background-image: linear-gradient($background 50%, $color 50%);
+  background-size: 1px $size;
+  background-repeat: repeat-x;
+  background-position: 0 $position;
+  text-decoration: none;
+}

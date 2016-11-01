@@ -17,6 +17,9 @@
   @include vd-pattern-dotted($pattern-dotted-green);
 }
 
-.vd-bg-pattern-purple {
-  background: $pattern-striped-purple;
+// Spacing helpers
+.vd-offset-top {
+  @include media-breakpoint-up(md) {
+    margin-top: ($spacer * -2.1);
+  }
 }
