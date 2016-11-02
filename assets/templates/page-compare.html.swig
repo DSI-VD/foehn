@@ -36,7 +36,7 @@
 
     {% set path = '../components/pages/' + name + '.html.swig' %}
     <div id="page-wrapper">
-      {{ contents|raw }}
+      {% include path %}
     </div>
 
     {% if styleguide %}
