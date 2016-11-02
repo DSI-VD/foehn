@@ -14,34 +14,3 @@
     background: $white;
   }
 }
-
-.vd-nav-primary-item {
-  display: block;
-  margin: $spacer 0;
-  font-size: $font-size-base * 1.75;
-  line-height: 1.1;
-  font-weight: 300;
-  text-decoration: none;
-
-  span {
-    display: block;
-    font-family: $headings-font-family;
-    color: $black;
-  }
-
-  small {
-    display: block;
-    font-size: 0.45em;
-    line-height: 1.7;
-    font-weight: 300;
-    color: $body-color;
-  }
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-
-    span,
-    small { color: $link-hover-color; }
-  }
-}
