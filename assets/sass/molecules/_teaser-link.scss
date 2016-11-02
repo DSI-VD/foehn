@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+.vd-teaser-link {
+  display: block;
+  padding-top: ($spacer / 1.5);
+  padding-bottom: ($spacer / 1.5);
+  border: 1px solid rgba($gray-lighter, 0);
+  font-size: $font-size-base * 1.75;
+  line-height: 1.1;
+  font-weight: 300;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+
+  .vd-teaser-link-title {
+    display: block;
+    font-family: $headings-font-family;
+    color: $black;
+  }
+
+  .vd-teaser-link-text {
+    display: block;
+    margin-bottom: 0;
+    font-size: 0.45em;
+    line-height: 1.7;
+    font-weight: 300;
+    color: $body-color;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    border-color: rgba($gray-lighter, 1);
+
+    .vd-teaser-link-title,
+    .vd-teaser-link-text { color: $link-hover-color; }
+  }
+}
