@@ -1,13 +1,13 @@
 ---
 title: Economie
-name: economie
+name: theme-economie
 collection: pages
 styleguide: false
 layout: page.html.swig
 ---
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "assets/components/molecules/breadcrumb.html.swig" %}
+        {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Economie</h1>
   </div>
 </div>
@@ -18,7 +18,7 @@ layout: page.html.swig
     <div class="col-md-8">
       <h2>3 prestations</h2>
       <div class="vd-bg-pattern-green p-1">
-        {% include "assets/components/atoms/list-boxed.html.swig" %}
+        {% include "../atoms/list-boxed.html.swig" %}
       </div>
 
     </div>

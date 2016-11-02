@@ -7,7 +7,7 @@ layout: page.html.swig
 ---
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "assets/components/molecules/breadcrumb.html.swig" %}
+        {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Lutte contre la pénurie de logement</h1>
   </div>
 </div>

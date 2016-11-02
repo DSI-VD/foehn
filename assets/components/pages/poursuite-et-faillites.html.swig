@@ -1,13 +1,13 @@
 ---
 title: Poursuites et faillites
-name: poursuites-et-faillites
+name: poursuite-et-faillites
 collection: pages
 styleguide: false
 layout: page.html.swig
 ---
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "assets/components/molecules/breadcrumb.html.swig" %}
+        {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Poursuites et faillites</h1>
   </div>
 </div>

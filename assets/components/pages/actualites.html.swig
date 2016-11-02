@@ -7,7 +7,7 @@ layout: page.html.swig
 ---
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "assets/components/molecules/breadcrumb.html.swig" %}
+        {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Actualités</h1>
   </div>
 </div>
@@ -31,7 +31,7 @@ layout: page.html.swig
 
     {% for x, y in newsCountAsArray %}
     <div class="col-md-6">
-    {% include "assets/components/molecules/teaser.html.swig" %}
+    {% include "../molecules/teaser.html.swig" %}
     </div>
     {% endfor %}
 
