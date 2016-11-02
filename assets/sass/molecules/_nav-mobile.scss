@@ -4,6 +4,7 @@
   display: flex;
   position: relative;
 
+  @include media-breakpoint-up(md) { display: none; }
   @include clearfix();
 
   .dropdown-toggle {
