@@ -17,16 +17,9 @@ notes: |
         <div class="row">
           <nav class="col-md-8" role="navigation">
             <div class="row">
-              <div class="col-md-4">
-                {% for item in data.nav_primary.menu %}
-                  <a href="#0" class="vd-nav-primary-item">
-                    <span>Culture</span> <small>Aides et soutiens, Musées cantonaux, Patrimoine, Cinéma, Passculture, Bibliothèque cantonale et universitaire, …</small>
-                  </a>
-                  {% if loop.index % 4 == 0 %}
-                    </div><div class="col-md-4">
-                  {% endif %}
-                {% endfor %}
-              </div>
+              {% for domain, themes in data.domains.topics %}
+                {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: domain, teaser_link_classes: 'col-md-4', teaser_link_text: themes|join(', ')} only %}
+              {% endfor %}
             </div>
           </nav>
           <div class="col-md-4">
