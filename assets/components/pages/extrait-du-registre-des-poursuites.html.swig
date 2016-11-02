@@ -13,14 +13,14 @@ layout: page.html.swig
         <h1>Extrait du registre des poursuites</h1>
       </div>
       <div class="col-sm-4">
-        <button type="button" class="btn btn-success btn-block vd-btn-chevron-r m-t-2">Commander un extrait du registre des poursuites</button>
+        <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
       </div>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row m-t-3">
+  <div class="row mt-3">
 
     <div class="col-md-8">
       <p>Toute personne (privé ou société) peut obtenir, en tout temps, un extrait du registre des poursuites la concernant, sur présentation de ses documents d'identité.</p>
@@ -42,7 +42,7 @@ layout: page.html.swig
       </ul>
 
       <!-- Tab panes -->
-      <div class="tab-content m-t-1">
+      <div class="tab-content mt-1">
         <div class="tab-pane active" id="enligne" role="tabpanel">
           <p>Pour commander un extrait du registre des poursuites en ligne, nous vous prions de prendre connaissance des conditions suivantes :</p>
           <ul>
@@ -77,7 +77,40 @@ layout: page.html.swig
         </div>
       </div>
 
+      <div class="vd-highlight p-1">
+        <h2>Recomandation à l'usager</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Documents obligatoires</h3>
+            <ol>
+              <li>Passeport</li>
+              <li>n° AVS</li>
+            </ol>
+          </div>
+
+          <div class="col-md-6">
+            <h3>Cout de traitment</h3>
+            <p>
+              25 CHF
+            </p>
+
+            <h3>Délai moyen de traitement</h3>
+            <p>
+              3 semaines
+            </p>
+          </div>
+
+        </div>
+
+        <h3>Information complémentaires</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, itaque vel accusamus?</p>
+      </div>
+
+      <p>
+        <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
+      </p>
     </div>
+
 
     <div class="col-md-4">
       <h2>Office des poursuites de Lausanne</h2>
@@ -87,10 +120,11 @@ layout: page.html.swig
         <li><a href="#0">info.spi@vd.ch</a></li>
         <li><a href="#0">voir sur la carte</a></li>
       </ul>
+      <p>
+        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
+      </p>
 
-      <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r m-t-2">Contacter l'office</a>
-
-      <h2 class="m-t-3 vd-section-title">Autres prestations liées</h2>
+      <h2 class="vd-section-title">Autres prestations liées</h2>
       <ul class="vd-list-links">
         <li><a href="#0">Lien 1</a></li>
         <li><a href="#0">Lien 2</a></li>
@@ -101,7 +135,7 @@ layout: page.html.swig
   </div>
 </div>
 
-<footer class="footer bg-inverse p-y-3 m-t-3">
+<footer class="footer bg-inverse p-y-3 mt-3">
   <div class="container">
     <p>footer here</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum nihil, dicta dolor nemo modi hic ut corporis. Vel dignissimos nam suscipit ratione quam ad omnis, natus doloribus veniam maiores.</p>
