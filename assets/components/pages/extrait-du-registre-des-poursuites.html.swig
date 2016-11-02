@@ -1,6 +1,6 @@
 ---
-title: Prestation
-name: prestation
+title: Extrait du registre des poursuites
+name: extrait-du-registre-des-poursuites
 collection: pages
 styleguide: false
 layout: page.html.swig
