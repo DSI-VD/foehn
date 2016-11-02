@@ -18,21 +18,58 @@ layout: page.html.swig
       <section>
         <h2 class="vd-section-title">Actualités</h2>
 
-        {% include "assets/components/molecules/teaser.html.swig" %}
-
-        {% set newsCount = 4 %}
-        {% set newsCountAsArray = Array(newsCount) %}
-
-        {% for x, y in newsCountAsArray %}
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Lorem ipsum dolor sit amet</a></h3>
+          <div class="text-sm-center mb-2">
+            <h3 class="vd-teaser-title"><a href="#0">La Journée Oser tous les métiers élargit son offre</a></h3>
+            <a class="vd-teaser-img" href="#0">
+              {# make it a macro when Toolbox is less f***ed up. ANGRY #}
+              <picture>
+                <img style="max-width:320px;" class="img-fluid" src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" alt="article image" />
+              </picture>
+            </a>
+          </div>
           <div class="vd-teaser-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p>
             <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
           </div>
           <hr>
         </article>
-        {% endfor %}
+
+        <article class="vd-teaser">
+          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Attribution de la bourse arts plastiques 2016</a></h3>
+          <div class="vd-teaser-content">
+            <p>La bourse cantonale des arts plastiques pour l’année 2016, d’une valeur de 20'000 francs, a été attribuée à Gilles Furtwängler, né en 1982 à Lausanne. Depuis dix ans, l'artiste a développé une pratique dont le matériau de base est le texte – tour à tour poétique, rythmé, absurde ou tendre, il se joue de la banalité des mots du quotidien et met à jour leur potentiel inexploré.</p>
+            <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+          </div>
+          <hr>
+        </article>
+
+        <article class="vd-teaser">
+          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Remise des prix du concours CinéCivic 2016</a></h3>
+          <div class="vd-teaser-content">
+            <p>Fiona Prieur, Marco Labagnara, Luca Moessner ont été récompensés lors de la cérémonie de remise des  prix CinéCivic 2016, le 31 octobre à Genève.</p>
+            <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+          </div>
+          <hr>
+        </article>
+
+        <article class="vd-teaser">
+          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">5e Conférence nationale sur le fédéralisme</a></h3>
+          <div class="vd-teaser-content">
+            <p>La cinquième Conférence nationale sur le fédéralisme se tiendra les 26 et 27 octobre 2017, à Montreux.</p>
+            <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+          </div>
+          <hr>
+        </article>
+
+        <article class="vd-teaser">
+          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Anglicans et catholiques ont déposé une demande de reconnaissance</a></h3>
+          <div class="vd-teaser-content">
+            <p>Les deux communautés ont signé la déclaration liminaire d’engagement, en vue d’une reconnaissance en tant qu’institution d’intérêt public.</p>
+            <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+          </div>
+          <hr>
+        </article>
 
       </section>
 
@@ -66,15 +103,15 @@ layout: page.html.swig
       <h2 class="vd-section-title">Agenda / événements</h2>
 
       <article>
-        <h3><span class="tag tag-default">3</span> mars 2017</h3>
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam quam iusto.</p>
+        <h3>Vaccination contre la grippe en pharmacie</h3>
+        <p class="mb-0">On peut se vacciner contre la grippe dans différentes pharmacies du canton.</p>
         <p><a href="#">plus d'info</a></p>
       </article>
       <hr>
 
       <article>
-        <h3><span class="tag tag-default">3</span> mars 2017</h3>
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam quam iusto.</p>
+        <h3>Bourse de compagnonnage théâtrale</h3>
+        <p class="mb-0">L’Etat de Vaud et la Ville de Lausanne mettent au concours la 8e bourse de compagnonnage théâtral.</p>
         <p><a href="#">plus d'info</a></p>
       </article>
       <hr>
