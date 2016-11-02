@@ -6,6 +6,8 @@ styleguide: false
 layout: page.html.swig
 ---
 
+{% include "../organisms/header.html.swig" %}
+
 <div class="container">
   <h1 class="sr-only">Site officiel de l'&Eacute;tat de Vaud</h1>
 </div><!-- container -->

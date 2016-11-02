@@ -5,6 +5,9 @@ collection: pages
 styleguide: false
 layout: page.html.swig
 ---
+
+{% include "../organisms/header.html.swig" %}
+
 <div class="vd-bg-pattern-gray">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
