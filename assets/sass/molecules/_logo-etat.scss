@@ -4,10 +4,11 @@
   display: flex;
   width: 100%;
   max-width: 315px;
+  margin-bottom: $spacer;
 }
 
 .vd-logo-canton {
-  width: 22%;
+  width: 12%;
 
   img {
     display: block;
@@ -18,8 +19,12 @@
 
 .vd-logo-etat {
   width: 68%;
-  margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
 
   img {
     display: block;
