@@ -6,6 +6,8 @@ styleguide: false
 layout: page.html.swig
 ---
 
+{% include "../organisms/header.html.swig" %}
+
 <div class="container">
 
   <section class="row">
