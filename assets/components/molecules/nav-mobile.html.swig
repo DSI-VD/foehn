@@ -30,6 +30,11 @@ notes: |
           <span class="fa fa-lock fa-lg" aria-hidden="true"></span>
           <a class="nav-link btn btn-primary btn-sm vd-btn-chevron-r" href="#0">Accéder à l'espace sécurisé</a>
         </li>
+      </ul>
+    </div>
+    <div class="dropdown-item">
+      <p><small>Découvrir</small></p>
+      <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="#0">International</a>
         </li>
