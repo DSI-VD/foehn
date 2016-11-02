@@ -1,15 +1,16 @@
 @charset 'UTF-8';
 
 .vd-nav-mobile {
+  display: flex;
   position: relative;
 
   @include clearfix();
 
   .dropdown-toggle {
     display: flex;
-    float: right;
     justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
     text-transform: lowercase;
     text-decoration: none;
     border-top-left-radius: $border-radius-lg;
@@ -61,6 +62,7 @@
 
   .vd-nav-item-secure {
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
