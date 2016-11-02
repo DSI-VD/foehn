@@ -8,7 +8,7 @@ layout: page.html.swig
 
 {% include "../organisms/header.html.swig" %}
 
-<div class="vd-bg-pattern-gray">
+<div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Lutte contre la pénurie de logement</h1>
