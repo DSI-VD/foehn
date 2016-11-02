@@ -8,6 +8,7 @@ notes: |
   <div class="container">
     <div class="row">
       <div class="col-xs-12 text-sm-right">
+
         {# nav #}
         <nav class="nav nav-inline hidden-sm-down mb-1">
           <a class="nav-link active" href="#0">Autorités</a>
@@ -18,7 +19,7 @@ notes: |
         </nav>
 
         {# nav mobile #}
-        <div class="vd-nav-mobile dropdown">
+        <div class="vd-nav-mobile dropdown hidden-md-up">
           <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
           <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
@@ -79,8 +80,14 @@ notes: |
           </nav>
         </div>
 
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+
         {# logo-etat #}
-        <div class="vd-logo">
+        <div class="vd-logo mb-2">
           <div class="vd-logo-canton">
             <img src="../build/svg/logo/logo.svg" alt="Canton de Vaud" />
           </div>
@@ -89,18 +96,23 @@ notes: |
             <img src="../build/svg/ETATVAUD.svg" alt="État de Vaud" aria-labelledby="vd-logo-etat-title" />
           </div>
         </div>
+
+      </div>
+      <div class="col-md-5 offset-md-2">
+
+        {# search form #}
+        <form class="input-group vd-search-form my-2" action="#">
+          <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
+          <input id="search-form" type="text" class="form-control" placeholder="Rechercher" aria-describedby="search-form-label">
+          <span class="input-group-btn">
+            <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </form>
+
+
       </div>
     </div>
   </div>
-
-  {# search form #}
-  <form class="input-group vd-search-form" action="#">
-    <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
-    <input id="search-form" type="text" class="form-control" placeholder="Rechercher" aria-describedby="search-form-label">
-    <span class="input-group-btn">
-      <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-    </span>
-  </form>
 
   {# nav primary #}
   <div class="vd-nav-primary">
