@@ -35,7 +35,7 @@ layout: page-compare.html.swig
     <div class="container">
       <div class="row">
         <div class="col-sm-8">
-          {% include "assets/components/molecules/breadcrumb.html.swig" %}
+          {% include "../molecules/breadcrumb.html.swig" %}
           <h1>Réforme de la protection civile</h1>
         </div>
         <div class="col-sm-4">
