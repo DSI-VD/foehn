@@ -1,6 +1,6 @@
 ---
-title: prestations2
-name: prestations2
+title: Mes demandes
+name: mes-demandes
 collection: pages
 styleguide: false
 layout: page.html.swig
