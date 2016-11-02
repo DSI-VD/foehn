@@ -3,9 +3,9 @@ title: Nav Mobile
 name: nav-mobile
 collection: molecules
 notes: |
-  The mobile navigation, hidden on desktop
+  The mobile navigation, hidden on desktop with `.hidden-md-down`.
 ---
-<div class="vd-nav-mobile dropdown open">
+<div class="vd-nav-mobile dropdown">
   <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
