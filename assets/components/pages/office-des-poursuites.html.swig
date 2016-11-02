@@ -7,7 +7,7 @@ layout: page.html.swig
 ---
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "assets/components/molecules/breadcrumb.html.swig" %}
+        {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Office des poursuites</h1>
   </div>
 </div>
@@ -27,7 +27,7 @@ layout: page.html.swig
       <section>
         <h2 class="vd-section-title">Actualités</h2>
 
-        {% include "assets/components/molecules/teaser.html.swig" %}
+        {% include "../molecules/teaser.html.swig" %}
 
         {% set newsCount = 4 %}
         {% set newsCountAsArray = Array(newsCount) %}

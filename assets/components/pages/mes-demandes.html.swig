@@ -7,7 +7,7 @@ layout: page.html.swig
 ---
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "assets/components/molecules/breadcrumb.html.swig" %}
+        {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Mes demandes</h1>
   </div>
 </div>
