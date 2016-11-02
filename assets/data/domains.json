@@ -1,0 +1,133 @@
+{
+  "topics": {
+    "Culture": [
+      "Aides et soutiens",
+      "Ecole-Musée",
+      "Bibliothèque cantonale et universitaire",
+      "Musées cantonaux",
+      "Patrimoine vaudois",
+      "Passculture",
+      "Formations artistiques",
+      "Cinéma",
+      "Assises de la culture"
+    ],
+    "Economie": [
+      "Entreprises",
+      "Marchés publics",
+      "Emploi - Chômage",
+      "Développement économique",
+      "Tourisme",
+      "Agriculture",
+      "Protection consommateur",
+      "Poursuites et faillites",
+      "Registre du commerce",
+      "Police du commerce"
+    ],
+    "Environnement": [
+      "Développement durable",
+      "Faune et nature",
+      "Forêts",
+      "Air",
+      "Sols",
+      "Eaux",
+      "Energie",
+      "Bruit",
+      "Rayonnement",
+      "Produits chimiques",
+      "Déchets",
+      "Sites pollués"
+    ],
+    "Etat, Droit, Finance": [
+      "Lois / Constitution",
+      "Votations et élections",
+      "Justice",
+      "Médiations",
+      "Protection des données et transparence",
+      "Curatelles et tutelles",
+      "Égalité",
+      "Impôts",
+      "Finances publiques",
+      "Affaires extérieures",
+      "Personnel de l'État",
+      "Statistiques"
+    ],
+    "Formation": [
+      "Avant l'Ecole",
+      "Scolarité obligatoire",
+      "Gymnase",
+      "Apprentissage",
+      "Enseignement supérieur",
+      "Orientation",
+      "Bourses",
+      "Pédagogie spécialisée",
+      "Santé à l'école",
+      "Jours fériés et vacances scolaires",
+      "Schooling",
+      "Espace enseignant"
+    ],
+    "Mobilité": [
+      "Mobilité et planification",
+      "Mobilité douce",
+      "Promotion des mobilités durables",
+      "Routes",
+      "Transports publics",
+      "Automobile",
+      "Navigation"
+    ],
+    "Santé": [
+      "Actualités",
+      "Système de santé",
+      "Organisation",
+      "Lutte contre les maladies",
+      "Prévention",
+      "Dépendances",
+      "Professionnels"
+    ],
+    "Social": [
+      "Informations sociales",
+      "Prestations, assurances et soutien",
+      "Vivre à domicile",
+      "EMS",
+      "Handicaps",
+      "Dettes et surendettement",
+      "Aide aux victimes et auteur-e-s de violences",
+      "Bénévolat"
+    ],
+    "Vie privée": [
+      "Familles",
+      "Enfance et jeunesse",
+      "Logement",
+      "Contrôle des habitants",
+      "Etat civil",
+      "Documents d'identité",
+      "Population étrangère",
+      "Religions",
+      "Animaux",
+      "Sport",
+      "Violence domestiqu"
+    ],
+    "Sécurité": [
+      "Prévention",
+      "Protection de la population",
+      "Police",
+      "Pompiers",
+      "Armée",
+      "Protection civile",
+      "Pénitentiaire",
+      "Catastrophe",
+      "Service civil"
+    ],
+    "Territoire": [
+      "Aménagement",
+      "Améliorations foncières",
+      "Opérations foncières",
+      "Géologie",
+      "Dangers Naturels",
+      "Informations sur le territoire",
+      "Construction",
+      "Registre foncier",
+      "Districts / Préfectures",
+      "Communes"
+    ]
+  }
+}
