@@ -1,5 +1,11 @@
 @charset 'UTF-8';
 
+.vd-nav-primary {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
 .vd-nav-primary-toggle {
   border-bottom: 1px dotted $vd-green;
 }
