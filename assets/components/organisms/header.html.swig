@@ -18,7 +18,7 @@ notes: |
         </nav>
 
         {# nav mobile #}
-        <div class="vd-nav-mobile dropdown open">
+        <div class="vd-nav-mobile dropdown">
           <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
           <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
@@ -78,19 +78,18 @@ notes: |
             </div>
           </nav>
         </div>
+
+        {# logo-etat #}
+        <div class="vd-logo">
+          <div class="vd-logo-canton">
+            <img src="../build/svg/logo/logo.svg" alt="Canton de Vaud" />
+          </div>
+          <div class="vd-logo-etat">
+            <span id="vd-logo-etat-title">Site officiel<span class="sr-only"> de l'État de Vaud</span></span>
+            <img src="../build/svg/ETATVAUD.svg" alt="État de Vaud" aria-labelledby="vd-logo-etat-title" />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-
-  {# logo-etat #}
-  <div class="vd-logo">
-    <div class="vd-logo-canton">
-      <img src="../build/svg/logo/logo.svg" alt="Canton de Vaud" />
-    </div>
-    <div class="vd-logo-etat">
-      <span id="vd-logo-etat-title">Site officiel<span class="sr-only"> de l'État de Vaud</span></span>
-      <img src="../build/svg/ETATVAUD.svg" alt="État de Vaud" aria-labelledby="vd-logo-etat-title" />
     </div>
   </div>
 
