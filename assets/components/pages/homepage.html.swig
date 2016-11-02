@@ -5,4 +5,4 @@ collection: pages
 styleguide: false
 layout: page.html.swig
 ---
-{% include "assets/components/organisms/header.html.swig" %}
+{% include "../organisms/header.html.swig" %}

@@ -44,6 +44,10 @@
 .styleguide-description {
   padding: ($spacer * 0.75) $spacer;
   background: $gray-lightest;
+  border: 1px solid darken($gray-lightest, 4%);
+  border-bottom: 0;
+  border-top-right-radius: 0.2em;
+  border-top-left-radius: 0.2em;
 
   p {
     margin-bottom: $spacer * 0.5;
@@ -75,6 +79,7 @@
   pre[class*='language-'] {
     margin-top: 0.2em;
     padding: 1em 1.5em;
+    border: 1px solid #e3e3e3;
     font-size: 0.8em;
   }
 }
