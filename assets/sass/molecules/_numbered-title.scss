@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+.vd-numbered-title {
+  .tag {
+    position: relative;
+    top: -2px;
+    width: 2em;
+    height: 2em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border-radius: $tag-pill-border-radius;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: 300;
+  }
+}
