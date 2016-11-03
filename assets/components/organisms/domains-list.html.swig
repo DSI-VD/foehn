@@ -6,9 +6,9 @@ wrapper: container
 notes: |
 ---
 {% for domain, themes in data.domains.topics %}
-<div class="row">
+<div class="row mt-3">
   <div class="col-md-4">
-    <h2>{{ domain }}</h2>
+    <h2 id="{{ domain }}">{{ domain }}</h2>
     <p>
       <span class="fa fa-arrow-up" aria-hidden="true"></span> <a href="#">Tous les thèmes</a>
     </p>
