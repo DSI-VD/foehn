@@ -49,7 +49,71 @@ layout: page.html.swig
     <li><a href="#">Ouest Lausannois</a></li>
   </ul>
 
-  <hr class="vd-separator-gray-bars">
+  <hr class="vd-separator vd-separator-gray-bars">
+
+  <ul>
+    <li><span class="h3">DTE</span><br>Direction générale de l'environnement
+      <ul>
+        <li><span class="h3">DGE</span><br>Direction générale de l'environnement
+          <ul>
+            <li><span class="h3">DIREN</span><br>Direction de l'énergie</li>
+            <li><span class="h3">DIREV</span><br>Direction de l'environnement industriel, urbain et rural</li>
+            <li><span class="h3">DIRNA</span><br>Direction des ressources et du patrimoine naturels</li>
+          </ul>
+        </li>
+        <li><span class="h3">SAN</span><br>Service des automobiles et de la navigation</li>
+        <li><span class="h3">Jura-nord-vaudois</span></li>
+        <li><span class="h3">Lausanne</span></li>
+        <li><span class="h3">Lavaux-Oron</span></li>
+        <li><span class="h3">Morges</span></li>
+        <li><span class="h3">Nyon</span></li>
+        <li><span class="h3">Ouest Lausannois</span></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>
+    <span class="h3">DFJC</span> <br>Département de la fomration, de la jeunesse et de la culture
+  </p>
+
+  <p>
+    <span class="h3">DIS</span> <br>Département des institutions et de la sécurité
+  </p>
+
+  <p>
+    <span class="h3">DSAS</span> <br>Département de la santé et de l'action social
+  </p>
+
+  <p>
+    <span class="h3">DECS</span> <br>Département de l'économie et du sport
+  </p>
+
+  <p>
+    <span class="h3">DIRH</span> <br>Département des finances et des relations extérieurs
+  </p>
+
+  <hr class="vd-separator vd-separator-gray-bars">
+
+  <h3>Ministère public</h3>
+  <ul>
+    <li><a href="#">Division contrôle affaire spéciales mineurs</a></li>
+    <li><a href="#">Division affaires économiques</a></li>
+    <li><a href="#">MPs Lausanne</a></li>
+    <li><a href="#">MPs Est Vaudois</a></li>
+    <li><a href="#">MPs Nord Vaudois</a></li>
+  </ul>
+
+  <hr class="vd-separator vd-separator-gray-bars">
+
+  <h3>Les autres entités</h3>
+  <ul>
+    <li><a href="#">Ministère public</a></li>
+    <li><a href="#">Tribunal neutre</a></li>
+    <li><a href="#">Contrôle cantonal des finances</a></li>
+    <li><a href="#">Cour des comptes</a></li>
+    <li><a href="#">Groupe Impact</a></li>
+    <li><a href="#">Médiation administrative</a></li>
+  </ul>
 
 </div>
 
