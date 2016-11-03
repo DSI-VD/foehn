@@ -1,6 +1,6 @@
 ---
 title: Recherche Poursuites et faillites
-name: recherche-poursuite-et-faillites
+name: recherche-poursuites-et-faillites
 collection: pages
 styleguide: false
 layout: page.html.swig
