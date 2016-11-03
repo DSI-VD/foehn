@@ -151,9 +151,4 @@ layout: page.html.swig
   </section>
 </div>
 
-<footer class="footer bg-inverse mt-3">
-  <div class="container">
-    <p>footer here</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum nihil, dicta dolor nemo modi hic ut corporis. Vel dignissimos nam suscipit ratione quam ad omnis, natus doloribus veniam maiores.</p>
-  </div>
-</footer>
+{% include "../organisms/footer.html.swig" %}
