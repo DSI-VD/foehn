@@ -11,5 +11,5 @@ notes: |
   <a class="nav-link" href="#">Annuaire</a>
   <a class="nav-link" href="#">Agenda</a>
   <a class="nav-link" href="#">Contact</a>
-  <a class="nav-link" href="#">Espace Sécurisé</a>
+  <a class="nav-link" href="../mes-demandes">Espace Sécurisé</a>
 </nav>
