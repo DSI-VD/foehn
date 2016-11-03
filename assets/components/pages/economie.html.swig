@@ -1,6 +1,6 @@
 ---
 title: Economie
-name: theme-economie
+name: economie
 collection: pages
 styleguide: false
 layout: page.html.swig
