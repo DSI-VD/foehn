@@ -11,22 +11,34 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Lutte contre la pénurie de logement</h1>
+        <h1>La Journée Oser tous les métiers élargit son offre</h1>
   </div>
 </div>
 
 <div class="container">
   <figure>
-    <img src="http://www.vd.ch/uploads/_processed_/8/2/csm_logements-modernes_dec4e5b311.jpg" class="img-fluid" alt="Responsive image">
+    <img src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" class="img-fluid" alt="Responsive image">
+    <figcaption><p>La #jom permet de découvrir des secteurs professionnels traditionnellement associés au sexe opposé.</p></figcaption>
   </figure>
 
   <p class="lead">
-    Le Conseil d'Etat propose une série d'amendements à ce dossier, à la suite du renvoi du « paquet logement » par le Grand Conseil, en janvier. Le contre-projet direct est supprimé, au profit d'un contre-projet indirect, formellement indépendant de l'initiative populaire de l'ASLOCA-Vaud.
+    Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.
   </p>
   <p>
-    Ce contre-projet indirect reprend la plupart des innovations sur lesquelles le Grand Conseil s'est déjà prononcé, en y incluant les amendements élaborés en commission et en cadrant davantage le droit de préemption de l'Etat.
+    Explorer de nouveaux univers professionnels au-delà des secteurs traditionnellement féminins ou masculins, c'est ce que proposera la Journée Oser tous les métiers le jeudi 10 novembre prochain. Les filles accompagneront un homme dans sa journée de travail, et les garçons une femme. En plus de cette mise en situation professionnelle, les écoliers auront la possibilité de participer aux ateliers organisés par le BEFH.
+  </p>
+  <p>
+    Avec 625 places disponibles, ces ateliers permettront aux filles de découvrir les métiers d’ingénieure, d’informaticienne ou de s’initier à la vie politique au Parlement des filles.
+  </p>
+  <p>
+    <a href="http://www.bicweb.vd.ch/frame.aspx?pPage=/communique.aspx?pObjectID=601487">Communiqué du 1er novembre 2016</a>
   </p>
 
+</div>
+
+<div class="container">
+  <h3>Partager cette actualité</h3>
+  {% include "../molecules/social-icons.html.swig" %}
 </div>
 
 {% include "../organisms/footer.html.swig" %}
