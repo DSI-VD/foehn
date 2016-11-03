@@ -10,9 +10,7 @@ layout: page.html.swig
 
 {% include "../molecules/secure-tabs.html.swig" %}
 
-<div class="container">
-  <div class="row mt-3">
-    <div class="col-md-8">
+<div class="container mt-3">
 
       <p>
         <a href="#" class="btn btn-primary">Nouvelle demande</a>
@@ -83,10 +81,6 @@ layout: page.html.swig
 
     </div><!-- ./.col-md-8 -->
 
-    <div class="col-md-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit impedit molestias ipsam?</p>
-    </div>
-  </div><!-- /.row -->
 </div>
 
 {% include "../organisms/footer.html.swig" %}

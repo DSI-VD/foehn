@@ -10,16 +10,14 @@ layout: page.html.swig
 
 {% include "../molecules/secure-tabs.html.swig" %}
 
-<div class="container">
-  <div class="row mt-3">
-    <div class="col-md-8">
+<div class="container mt-1">
 
       <form>
         <div class="form-group">
           <div class="form-group">
           <label for="exampleSelect1">Trier par</label>
           <select class="form-control" id="exampleSelect1">
-            <option>Date - plus récent</option>
+            <option>Tous les thèmes</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>
@@ -29,14 +27,63 @@ layout: page.html.swig
         </div>
       </form>
 
-      <h2>Documents</h2>
+      <article class="row">
+        <div class="col-xs-8 push-xs-4">
+          <p class="mb-0">11.12.2017</p>
+          <h3>Permis de circulation</h3>
+        </div>
+        <div class="col-xs-4 pull-xs-8">
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-download" aria-hidden="true"></span></a>
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-info-circle" aria-hidden="true"></span></a>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="col-xs-8 push-xs-4">
+          <p class="mb-0">11.12.2017</p>
+          <h3>Permis de circulation</h3>
+        </div>
+        <div class="col-xs-4 pull-xs-8">
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-download" aria-hidden="true"></span></a>
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-info-circle" aria-hidden="true"></span></a>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="col-xs-8 push-xs-4">
+          <p class="mb-0">11.12.2017</p>
+          <h3>Permis de circulation</h3>
+        </div>
+        <div class="col-xs-4 pull-xs-8">
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-download" aria-hidden="true"></span></a>
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-info-circle" aria-hidden="true"></span></a>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="col-xs-8 push-xs-4">
+          <p class="mb-0">11.12.2017</p>
+          <h3>Permis de circulation</h3>
+        </div>
+        <div class="col-xs-4 pull-xs-8">
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-download" aria-hidden="true"></span></a>
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-info-circle" aria-hidden="true"></span></a>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="col-xs-8 push-xs-4">
+          <p class="mb-0">11.12.2017</p>
+          <h3>Permis de circulation</h3>
+        </div>
+        <div class="col-xs-4 pull-xs-8">
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-download" aria-hidden="true"></span></a>
+          <a href="#" class="btn btn-primary btn-sm"><span class="fa fa-info-circle" aria-hidden="true"></span></a>
+        </div>
+      </article>
 
     </div><!-- ./.col-md-8 -->
 
-    <div class="col-md-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit impedit molestias ipsam?</p>
-    </div>
-  </div><!-- /.row -->
 </div>
 
 {% include "../organisms/footer.html.swig" %}
