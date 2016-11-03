@@ -41,7 +41,7 @@ layout: page.html.swig
         </p>
 
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="#" class="btn btn-primary">Trouver l’office des poursuites compétent</a></li>
+          <li class="list-inline-item"><a href="../recherche-office-poursuites" class="btn btn-primary">Trouver l’office des poursuites compétent</a></li>
           <li class="list-inline-item"><a href="#" class="btn btn-primary">Trouver l’office des faillites compétent</a></li>
         </ul>
       </section>
