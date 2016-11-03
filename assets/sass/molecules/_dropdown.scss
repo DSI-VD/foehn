@@ -38,6 +38,10 @@
     .dropdown-label {
       color: $vd-purple;
     }
+
+    .dropdown-item {
+      color: $vd-purple;
+    }
   }
 
   .dropdown-chevron {
@@ -55,5 +59,9 @@
     .title {
       text-transform: uppercase;
     }
+  }
+
+  .dropdown-item {
+    text-decoration: none;
   }
 }
