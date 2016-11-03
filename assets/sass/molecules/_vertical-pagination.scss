@@ -1,12 +1,11 @@
 @charset 'UTF-8';
 
 .vertical-pagination {
-  display: table;
   list-style: none;
   padding: 0;
 
   li {
-    display: table-row;
+    margin: 0 0 0.3em;
 
     &.success {
       .bullet {
@@ -27,12 +26,17 @@
 
       .title {
         font-weight: 700;
+        color: $black;
       }
     }
 
     &.disabled {
+      .bullet {
+        background: lighten($black, 75%);
+      }
+
       .title {
-        color: $gray;
+        color: lighten($black, 75%);
       }
     }
 
@@ -53,13 +57,9 @@
 
     .title {
       padding-left: 1em;
-      color: $black;
+      font-size: 16px;
+      color: lighten($black, 50%);
       text-decoration: none;
-    }
-
-    div {
-      display: table-cell;
-      padding-bottom: 0.7em;
     }
   }
 }
