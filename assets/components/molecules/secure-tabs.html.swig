@@ -10,16 +10,16 @@ notes: |
     <div class="fa fa-lock fa-lg" aria-hidden="true"></div>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Accueil</a>
+        <a class="nav-link active" href="../espace-securise">Accueil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Prestations</a>
+        <a class="nav-link" href="../demandes">Demandes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Demandes</a>
+        <a class="nav-link" href="../demandes-a-traiter">Demandes à traiter</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" aria-disabled="true">Documents</a>
+        <a class="nav-link" href="../documents">Documents</a>
       </li>
     </ul>
   </div>
