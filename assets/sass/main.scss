@@ -23,12 +23,13 @@
 @import 'atoms/button';
 
 // molecules:
+@import 'molecules/teaser-small';
+@import 'molecules/numbered-title';
 @import 'molecules/teaser-link';
 @import 'molecules/nav-mobile';
 @import 'molecules/logo-etat';
 @import 'molecules/secure-tabs';
 @import 'molecules/nav-side';
-@import 'molecules/footer';
 @import 'molecules/list-icon';
 @import 'molecules/table';
 @import 'molecules/figure';
@@ -42,6 +43,7 @@
 @import 'molecules/button-tiles';
 
 // organisms:
+@import 'organisms/footer';
 @import 'organisms/header';
 
 // pages:
