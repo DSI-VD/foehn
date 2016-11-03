@@ -1,0 +1,7 @@
+@charset 'UTF-8';
+
+.vd-teaser-small {
+  margin: $spacer 0 ($spacer * 3);
+  padding-bottom: ($spacer / 2);
+  border-bottom: 1px solid $vd-green-darker;
+}
