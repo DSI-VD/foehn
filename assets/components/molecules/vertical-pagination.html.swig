@@ -3,7 +3,8 @@ title: Vertical pagination
 name: Vertical-pagination
 collection: molecules
 notes: |
-  ##### Usage : `vertical-pagination`
+  You can apply the following class to the list element to style it:
+  `.success`, `.warning`, `.current`, `.disabled`
 ---
 <nav aria-label="Page navigation">
   <ul class="vertical-pagination">
