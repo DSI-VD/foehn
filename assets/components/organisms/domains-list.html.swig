@@ -6,7 +6,7 @@ wrapper: container
 notes: |
 ---
 {% for domain, themes in data.domains.topics %}
-<div class="row">
+<div class="row mt-3">
   <div class="col-md-4">
     <h2>{{ domain }}</h2>
     <p>
