@@ -9,11 +9,11 @@ notes: |
 <nav aria-label="Page navigation">
   <ul class="vd-vertical-pagination">
     <li class="vd-page-item success">
-        <span class="vd-page-item-bullet"><i aria-hidden="true" class="fa fa-check"></i></span>
+        <span class="vd-page-item-bullet"><span aria-hidden="true" class="fa fa-check"></span></span>
         <a class="vd-page-item-title" href="">Données du demandeur</a>
     </li>
     <li class="vd-page-item warning">
-        <span class="vd-page-item-bullet"><i aria-hidden="true" class="fa fa-question"></i></span>
+        <span class="vd-page-item-bullet"><span aria-hidden="true" class="fa fa-question"></span></span>
         <a class="vd-page-item-title" href="">Identité de l'enfant</a>
     </li>
     <li class="vd-page-item current">
