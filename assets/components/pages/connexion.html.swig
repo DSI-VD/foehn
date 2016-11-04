@@ -6,12 +6,15 @@ styleguide: false
 layout: page.html.swig
 ---
 
-{% include "../organisms/header.html.swig" %}
+<header>
+  <p>
+    header light à incorporer
+  </p>
+</header>
 
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
-    {% include "../molecules/breadcrumb.html.swig" %}
-    <h1>Extrait du registre des poursuites</h1>
+    <h1>Connexion</h1>
   </div>
 </div>
 
@@ -51,4 +54,6 @@ layout: page.html.swig
   </div>
 </div>
 
-{% include "../organisms/footer.html.swig" %}
+<footer>
+  <p>Footer light à incorporer</p>
+</footer>

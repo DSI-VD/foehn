@@ -25,7 +25,7 @@ notes: |
           <div class="col-md-4">
             <h2 class="vd-section-title my-3">Les plus visités</h2>
             <ul class="vd-list-links">
-              <li><a href="#0">Extrait du registre du commerce</a></li>
+              <li><a href="../extrait-du-registre-des-poursuites">Extrait du registre des poursuites</a></li>
               <li><a href="#0">Inscription au chômage</a></li>
               <li><a href="#0">Formulaire indemnisation</a></li>
               <li><a href="#0">Formulaire indemnisation</a></li>
