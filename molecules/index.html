@@ -1067,7 +1067,13 @@
 
   
     <div class="styleguide-item-notes">
-    <p><code>.vd-nav-primary</code> navigation</p>
+    <p><code>.vd-nav-primary</code> navigation.</p>
+<p>To have the navigation open on load:</p>
+<ul>
+<li>Remove the <code>.collapsed</code> class on the toggle button</li>
+<li>Set the <code>aria-expanded</code> attribute to <code>true</code></li>
+<li>Add the <code>.in</code> class to the collapsible elemment <br>→ <code>&lt;div class=&quot;collapse in clearfix&quot; id=&quot;nav-primary-container&quot;&gt;</code></li>
+</ul>
 
     </div>
   
@@ -1077,7 +1083,7 @@
       <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+      <button type="button" class="btn btn-primary btn-sm collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
     </div>
   </div>
   <div class="collapse clearfix" id="nav-primary-container">
@@ -1176,7 +1182,7 @@
     <pre><code class="language-markup"><div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+      <button type="button" class="btn btn-primary btn-sm collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
     </div>
   </div>
   <div class="collapse clearfix" id="nav-primary-container">
