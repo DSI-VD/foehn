@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+.footer {
+  padding: ($spacer * 3) 0;
+  background-image: url(../svg/bars_black.svg);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: auto 21px;
+  background-color: $brand-inverse;
+  color: $white;
+
+  .nav {
+    margin-bottom: ($spacer * 3);
+  }
+
+  .nav-link {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.footer-logo-container {
+  display: flex;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.footer-logo {
+  max-width: $spacer * 3;
+  margin-left: auto;
+}

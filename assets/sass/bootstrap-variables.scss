@@ -61,7 +61,7 @@ $brand-inverse:             $vd-gray-darker !default;
 
 $enable-flex:               true !default;
 $enable-rounded:            false !default;
-$enable-shadows:            false !default;
+$enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
@@ -323,18 +323,18 @@ $input-line-height:              1.25 !default;
 $input-bg:                       $white !default;
 $input-bg-disabled:              $gray-lighter !default;
 
-$input-color:                    $gray !default;
+$input-color:                    $gray-dark !default;
 $input-border-color:             $black !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
-$input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
+$input-box-shadow:               none !default;
 
 $input-border-radius:            $border-radius !default;
 $input-border-radius-lg:         $border-radius-lg !default;
 $input-border-radius-sm:         $border-radius-sm !default;
 
 $input-bg-focus:                 $input-bg;
-$input-border-focus:             $vd-info !default;
-$input-box-shadow-focus:         rgba($vd-info,.6) !default;
+$input-border-focus:             $vd-focus !default;
+$input-box-shadow-focus:         0 0 3px 0 rgba($vd-info,.6) !default;
 $input-color-focus:              $input-color;
 
 $input-color-placeholder:        #999 !default;
@@ -373,10 +373,10 @@ $custom-control-checked-indicator-color:      $white !default;
 $custom-control-checked-indicator-bg:         $white !default;
 $custom-control-checked-indicator-box-shadow: none !default;
 
-$custom-control-focus-indicator-box-shadow: 0 0 0 .075rem $white, 0 0 0 .2rem #0074d9 !default;
+$custom-control-focus-indicator-box-shadow: 0 0 0 .075rem $white, 0 0 0 .2rem $vd-focus !default;
 
 $custom-control-active-indicator-color:      $white !default;
-$custom-control-active-indicator-bg:         #84c6ff !default;
+$custom-control-active-indicator-bg:         $vd-focus !default;
 $custom-control-active-indicator-box-shadow: none !default;
 
 $custom-checkbox-radius: 4px !default;
@@ -453,8 +453,8 @@ $form-icon-danger: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
 // Dropdown menu container and contents.
 
 $dropdown-min-width:             160px !default;
-$dropdown-padding-y:             5px !default;
-$dropdown-margin-top:            2px !default;
+$dropdown-padding-y:             0 !default;
+$dropdown-margin-top:            0 !default;
 $dropdown-bg:                    $white !default;
 $dropdown-border-color:          rgba(0,0,0,.15) !default;
 $dropdown-border-width:          $border-width !default;
@@ -665,7 +665,7 @@ $tag-padding-y:             .25em !default;
 $tag-pill-padding-x:        .6em !default;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
-$tag-pill-border-radius:    10rem !default;
+$tag-pill-border-radius:    20rem !default;
 
 // Modals
 

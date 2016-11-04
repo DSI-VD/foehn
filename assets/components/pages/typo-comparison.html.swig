@@ -31,11 +31,11 @@ layout: page-compare.html.swig
       </div>
     </div>
   </div>
-  <div class="vd-bg-pattern-gray">
+  <div class="vd-bg-pattern-gray py-1">
     <div class="container">
       <div class="row">
         <div class="col-sm-8">
-          {% include "assets/components/molecules/breadcrumb.html.swig" %}
+          {% include "../molecules/breadcrumb.html.swig" %}
           <h1>Réforme de la protection civile</h1>
         </div>
         <div class="col-sm-4">
@@ -90,12 +90,7 @@ layout: page-compare.html.swig
   </div>
 </div>
 
-<footer class="footer">
-  <div class="container">
-    <p>footer here</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum nihil, dicta dolor nemo modi hic ut corporis. Vel dignissimos nam suscipit ratione quam ad omnis, natus doloribus veniam maiores.</p>
-  </div>
-</footer>
+{% include "../organisms/footer.html.swig" %}
 
 <script type="text/javascript">
   window.onload = function () {
