@@ -28,11 +28,11 @@ layout: page.html.swig
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
         <p>
-          <button type="submit" class="btn btn-primary">Connexion</button>
+          <button type="submit" class="btn btn-primary btn-sm vd-btn-chevron-r">Connexion</button>
         </p>
       </form>
       <p>
-        <a href="#">Mot de passe oublié ?</a>
+        <a href="../espace-securise">Mot de passe oublié ?</a>
       </p>
     </div>
 

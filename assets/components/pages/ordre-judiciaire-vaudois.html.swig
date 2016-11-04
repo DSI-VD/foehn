@@ -103,6 +103,18 @@ layout: page.html.swig
 
     <div class="col-md-4">
       <h2 class="vd-section-title">Contact</h2>
+      <ul class="vd-list-links">
+        <li><a href="#">Tribunal cantonnal</a></li>
+        <li><a href="#">Tribunal de mineurs</a></li>
+        <li><a href="#">Tribunal des baux</a></li>
+        <li><a href="../office-des-poursuites">Poursuites</a></li>
+        <li><a href="../office-des-faillites">Faillittes</a></li>
+        <li><a href="#">Registre du commerce</a></li>
+        <li><a href="#">Eum, iste perspiciatis. Voluptatibus.</a></li>
+        <li><a href="#">Libero quo, asperiores autem.</a></li>
+        <li><a href="#">Dicta laborum harum reiciendis.</a></li>
+        <li><a href="#">Labore, dicta, nulla. Cumque.</a></li>
+      </ul>
       <p>
         Vous trouverez les coordonnées des offices judiciaires sur leurs pages internet respectives
       </p>

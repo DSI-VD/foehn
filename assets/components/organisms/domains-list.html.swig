@@ -15,9 +15,9 @@ notes: |
     <h3>Accès direct</h3>
     <div class="vd-bg-pattern-green p-1">
       <ul class="nav vd-list-boxed">
-        <li class="nav-item"><a href="#" class="nav-link">Prestation 1</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Prestation 2</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Prestation 3</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
       </ul>
     </div>
   </div><!-- /.col-md-4 -->

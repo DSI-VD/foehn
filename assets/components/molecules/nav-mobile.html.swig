@@ -10,7 +10,7 @@ notes: |
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
     <div class="dropdown-item pt-2 pb-1 text-xs-center">
-      <a class="btn btn-primary btn-sm vd-btn-chevron-r" href="#">Tous les thèmes</a>
+      <a class="btn btn-primary btn-sm vd-btn-chevron-r" href="../domaines">Tous les thèmes</a>
     </div>
     <div class="dropdown-item px-0 pb-0">
       <ul class="nav">
@@ -28,7 +28,7 @@ notes: |
         </li>
         <li class="nav-item vd-nav-item-secure">
           <span class="fa fa-lock fa-lg" aria-hidden="true"></span>
-          <a class="nav-link btn btn-primary btn-sm vd-btn-chevron-r" href="#0">Accéder à l'espace sécurisé</a>
+          <a class="nav-link btn btn-primary btn-sm vd-btn-chevron-r" href="../connexion">Accéder à l'espace sécurisé</a>
         </li>
       </ul>
     </div>

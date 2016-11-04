@@ -10,15 +10,8 @@ layout: page.html.swig
 
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Autorites</h1>
-      </div>
-      <div class="col-sm-4">
-        <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
-      </div>
-    </div>
+    {% include "../molecules/breadcrumb.html.swig" %}
+    <h1>Autorites</h1>
   </div>
 </div>
 
@@ -26,10 +19,10 @@ layout: page.html.swig
   <ul>
     <li class="h3"><a href="#">Grand Conseil</a></li>
     <li class="h3"><a href="#">Conseil d'Etat</a></li>
-    <li class="h3"><a href="#">Ordre judiciaires</a></li>
+    <li class="h3"><a href="../ordre-judiciaire-vaudois">Ordre judiciaires</a></li>
   </ul>
 
-  <hr class="vd-separator-gray-bars">
+  <hr class="vd-separator vd-separator-gray-bars">
 
   <h3>Chancelelerie d'Etat</h3>
   <ul>

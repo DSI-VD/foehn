@@ -178,9 +178,6 @@ layout: page.html.swig
       <p>
         Vous ne trouvez pas votre information ?<br>Comment puis-je vous aider ?
       </p>
-      <p>
-        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contact</a>
-      </p>
 
       <p>
         Trouver une prestation

@@ -13,7 +13,7 @@ layout: page.html.swig
 <div class="container mt-3">
 
       <p>
-        <a href="#" class="btn btn-primary">Nouvelle demande</a>
+        <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-r">Nouvelle demande</a>
       </p>
 
       <form>
@@ -32,6 +32,12 @@ layout: page.html.swig
       </form>
 
       <h2>Toutes les demandes</h2>
+
+      <article>
+        <p class="text-muted mb-0">21.05.2016</p>
+        <h3><a href="#">Aides et soutien aux activités culturelles et à la création artistique</a></h3>
+        <p>Commande en cours</p>
+      </article>
 
       <article>
         <p class="text-muted mb-0">21.05.2016</p>
@@ -76,7 +82,7 @@ layout: page.html.swig
       </article>
 
       <p>
-        <a href="#" class="btn btn-primary">Nouvelle demande</a>
+        <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-r">Nouvelle demande</a>
       </p>
 
     </div><!-- ./.col-md-8 -->
