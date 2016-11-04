@@ -8,7 +8,19 @@ layout: page.html.swig
 
 {% include "../organisms/header.html.swig" %}
 
-{% include "../molecules/secure-tabs.html.swig" %}
+<div class="vd-bg-pattern-gray py-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1 class="vd-icon-title"><span class="fa fa-arrow-down" aria-hidden="true"></span> Commander un extrait du registre des poursuites</h1>
+      </div>
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-primary btn-block"><span class="fa fa-floppy-o" aria-hidden="true"></span> Sauvegarder</button>
+        <button type="button" class="btn btn-primary btn-block"><span class="fa fa-times" aria-hidden="true"></span> Annuler la demande</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="container mt-3">
 
@@ -82,9 +94,9 @@ layout: page.html.swig
 
         <div class="row">
           <div class="col-md-6 push-md-6">
-            <p>
-              <a href="#" class="btn btn-primary">Suivant</a>
-            </p>
+            <p><a href="#" class="btn btn-primary">Suivant</a></p>
+            <p><button type="button" class="btn btn-primary btn-blockx"><span class="fa fa-floppy-o" aria-hidden="true"></span> Sauvegarder</button></p>
+            <p><button type="button" class="btn btn-primary btn-blocks"><span class="fa fa-times" aria-hidden="true"></span> Annuler la demande</button></p>
           </div>
         </div>
       </form>
