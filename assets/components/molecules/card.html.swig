@@ -8,7 +8,7 @@ notes: |
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <img class="img-fluid rounded-circle" src="https://randomuser.me/api/portraits/women/66.jpg" alt="Card image cap">
+        <img class="img-fluid rounded-circle" src="https://placehold.it/150x150" alt="Card image cap">
       </div>
       <div class="col-sm-8">
         <div class="card-block vd-card-block">
