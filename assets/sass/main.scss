@@ -5,6 +5,7 @@
 @import 'mixins';
 @import 'bootstrap';
 @import 'helpers';
+@import 'icons';
 
 @import "layout";
 
@@ -25,6 +26,8 @@
 // molecules:
 @import 'molecules/teaser-small';
 @import 'molecules/numbered-title';
+@import 'molecules/dropdown';
+@import 'molecules/footer';
 @import 'molecules/teaser-link';
 @import 'molecules/nav-mobile';
 @import 'molecules/logo-etat';
