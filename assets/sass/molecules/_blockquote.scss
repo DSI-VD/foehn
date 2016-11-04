@@ -18,6 +18,7 @@
     height: 18px;
 
     @include media-breakpoint-up(sm) { right: 80px; }
+
     @include vd-background-image-icon($vd-blockquote-pointer, $brand-inverse, 41, 18);
   }
 

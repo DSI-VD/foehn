@@ -5,10 +5,14 @@
 @import 'mixins';
 @import 'bootstrap';
 @import 'helpers';
+@import 'icons';
 
 @import "layout";
 
 // atoms:
+@import 'atoms/search-form';
+@import 'atoms/list-boxed';
+@import 'atoms/vd-icon-title';
 @import 'atoms/separator';
 @import 'atoms/image-circle';
 @import 'atoms/content-image';
@@ -22,6 +26,14 @@
 // molecules:
 @import 'molecules/pagination-vertical';
 @import 'molecules/footer';
+@import 'molecules/teaser-small';
+@import 'molecules/numbered-title';
+@import 'molecules/dropdown';
+@import 'molecules/teaser-link';
+@import 'molecules/nav-mobile';
+@import 'molecules/logo-etat';
+@import 'molecules/secure-tabs';
+@import 'molecules/nav-side';
 @import 'molecules/list-icon';
 @import 'molecules/table';
 @import 'molecules/figure';
@@ -35,6 +47,9 @@
 @import 'molecules/button-tiles';
 
 // organisms:
+@import 'organisms/footer';
+@import 'organisms/header';
 
 // pages:
+@import 'pages/homepage';
 @import 'pages/test-typo';

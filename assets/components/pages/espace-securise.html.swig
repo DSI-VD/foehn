@@ -1,0 +1,49 @@
+---
+title: Espace securise
+name: espace-securise
+collection: pages
+styleguide: false
+layout: page.html.swig
+---
+
+{% include "../organisms/header.html.swig" %}
+
+{% include "../molecules/secure-tabs.html.swig" %}
+
+<div class="container">
+  <div class="row mt-3 mb-3">
+
+    <div class="col-md-8">
+      <h2>Accueil</h2>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="tag tag-default tag-pill float-xs-right">14</span>
+          <a href="#">Demandes en cours</a>
+        </li>
+        <li class="list-group-item">
+          <span class="tag tag-default tag-pill float-xs-right">2</span>
+          <a href="#">Demandes à traiter</a>
+        </li>
+        <li class="list-group-item">
+          <span class="tag tag-default tag-pill float-xs-right">1</span>
+          <a href="#">DToutes les demandes</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="col-md-4">
+      <h2>Favoris</h2>
+      <ul class="vd-list-links">
+        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+        <li><a href="#">Excepturi, deleniti repellendus recusandae?</a></li>
+        <li><a href="#">Culpa alias, odio praesentium.</a></li>
+        <li><a href="#">Voluptatibus obcaecati, error ex!</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+{% include "../organisms/footer.html.swig" %}

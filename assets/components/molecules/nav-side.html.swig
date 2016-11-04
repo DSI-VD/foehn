@@ -1,0 +1,37 @@
+---
+title: Nav Side
+name: nav-side
+collection: molecules
+background: '#f6f6f6'
+notes: |
+---
+<nav>
+  <ul class="nav vd-nav-side">
+    <li class="nav-item">
+      <a class="nav-link active" href="#0">Poussières fines</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#0">Ozone</a>
+      <ul>
+        <li class="nav-item">
+          <a href="#0" class="nav-link">Qu'est-ce que l'ozone?</a>
+        </li>
+        <li class="nav-item">
+          <a href="#0" class="nav-link">Comment améliorer l'air?</a>
+        </li>
+        <li class="nav-item">
+          <a href="#0" class="nav-link">En cas de canicule</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#0">Les composés organiques</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#0">Ammoniac</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#0">Qualité de l'air</a>
+    </li>
+  </ul>
+</nav>
