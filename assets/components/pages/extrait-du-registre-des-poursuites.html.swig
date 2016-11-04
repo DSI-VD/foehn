@@ -16,7 +16,7 @@ layout: page.html.swig
         <h1>Extrait du registre des poursuites</h1>
       </div>
       <div class="col-sm-4">
-        <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
+        <a href="../connexion" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
       </div>
     </div>
   </div>

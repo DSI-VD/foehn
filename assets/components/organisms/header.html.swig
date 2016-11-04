@@ -17,14 +17,14 @@ notes: |
     </div>
     <div class="row">
       <div class="col-md-5">
-
+        <a href="../accueil" style="color: currentColor; text-decoration: none;">
         {% include "../molecules/logo-etat.html.swig" %}
-
+        </a>
       </div>
       <div class="col-md-5 offset-md-2">
 
         {# search form (to include once the PR is merged) #}
-        <form class="input-group vd-search-form my-2" action="#">
+        <form class="input-group vd-search-form my-2" action="../recherche-poursuites-et-faillites">
           <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
           <input id="search-form" type="text" class="form-control" placeholder="Rechercher" aria-describedby="search-form-label">
           <span class="input-group-btn">

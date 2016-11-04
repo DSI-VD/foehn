@@ -19,7 +19,7 @@ layout: page.html.swig
   <div class="row mt-3">
 
     <div class="col-md-8">
-      <form>
+      <form action="../formulaire-prestation">
         <div class="form-group">
           <label for="exampleInputEmail1">Identifiant</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

@@ -186,7 +186,7 @@ layout: page.html.swig
         Trouver une prestation
       </p>
       <p>
-        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">tous les thèmes</a>
+        <a href="../domaines" class="btn btn-primary btn-sm vd-btn-chevron-r">tous les thèmes</a>
       </p>
     </div>
 
