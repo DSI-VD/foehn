@@ -3,9 +3,6 @@ title: card
 name: Card
 collection: molecules
 notes: |
-  ##### Usage : `card`
-  ##### Options :
-  - **option** - Type
 ---
 <div class="vd-card">
   <div class="container">
