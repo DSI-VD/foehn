@@ -248,7 +248,10 @@ layout: page.html.swig
       <hr>
 
       <article>
-        <h3><span class="tag tag-default">3</span> mars 2017</h3>
+        <h3 class="vd-numbered-title">
+          <a href="#0"><span class="tag tag-primary">12</span></a>
+          <a href="#0">Novembre 2016</a>
+        </h3>
         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam quam iusto.</p>
         <p><a href="#">plus d'info</a></p>
       </article>
