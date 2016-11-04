@@ -19,7 +19,7 @@ layout: page.html.swig
       <ul class="list-group">
         <li class="list-group-item">
           <span class="tag tag-default tag-pill float-xs-right">14</span>
-          <a href="#">Demandes en cours</a>
+          <a href="../demandes">Demandes en cours</a>
         </li>
         <li class="list-group-item">
           <span class="tag tag-default tag-pill float-xs-right">2</span>
