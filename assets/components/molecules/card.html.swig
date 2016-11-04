@@ -12,11 +12,11 @@ notes: |
       </div>
       <div class="col-sm-8">
         <div class="card-block vd-card-block">
-          <h5 class="card-title vd-card-title">Card title</h5>
-          <p class="card-text vd-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title vd-card-title">Cornelis Neet</h5>
+          <p class="card-text vd-card-text">Directrice générale</p>
           <ul class="vd-list-links">
             <li>
-              <a href="#">Go somewhere</a>
+              <a href="#">Biographie</a>
             </li>
           </ul>
         </div>
