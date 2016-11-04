@@ -6,11 +6,7 @@ styleguide: false
 layout: page.html.swig
 ---
 
-<header>
-  <p>
-    header light à incorporer
-  </p>
-</header>
+{% include "../organisms/header.html.swig" %}
 
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
