@@ -3,12 +3,17 @@ title: Nav Primary
 name: nav-primary
 collection: molecules
 notes: |
-  `.vd-nav-primary` navigation
+  `.vd-nav-primary` navigation.
+
+  To have the navigation open on load:
+  - Remove the `.collapsed` class on the toggle button
+  - Set the `aria-expanded` attribute to `true`
+  - Add the `.in` class to the collapsible elemment <br>→ `<div class="collapse in clearfix" id="nav-primary-container">`
 ---
 <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+      <button type="button" class="btn btn-primary btn-sm collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
     </div>
   </div>
   <div class="collapse clearfix" id="nav-primary-container">
