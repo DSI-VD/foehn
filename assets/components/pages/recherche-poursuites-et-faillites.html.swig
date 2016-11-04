@@ -16,7 +16,7 @@ layout: page.html.swig
       <div class="vd-bg-pattern-green p-1 mb-1">
         <ul class="nav vd-list-boxed">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Extrait du registre des poursuite</a>
+            <a class="nav-link active" href="../extrait-du-registre-des-poursuites">Extrait du registre des poursuite</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Extrait des registres sur un tiers</a>
@@ -27,42 +27,42 @@ layout: page.html.swig
       <h2>110 autres résultats</h2>
 
       <article>
-        <h3><a href="#">Poursuites</a></h3>
+        <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>
         <p>
           Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
         </p>
       </article>
 
       <article>
-        <h3><a href="#">Poursuites pénales</a></h3>
+        <h3><a href="../poursuites-et-faillites">Poursuites pénales</a></h3>
         <p>
           Poursuites pénales Comment ... wwww.vd.ch/poursuites-penales
         </p>
       </article>
 
       <article>
-        <h3><a href="#">Cours des poursuites et faillites</a></h3>
+        <h3><a href="../poursuites-et-faillites">Cours des poursuites et faillites</a></h3>
         <p>
           Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
         </p>
       </article>
 
       <article>
-        <h3><a href="#">Poursuites</a></h3>
+        <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>
         <p>
           Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
         </p>
       </article>
 
       <article>
-        <h3><a href="#">Poursuites</a></h3>
+        <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>
         <p>
           Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
         </p>
       </article>
 
       <article>
-        <h3><a href="#">Poursuites pénales</a></h3>
+        <h3><a href="../poursuites-et-faillites">Poursuites pénales</a></h3>
         <p>
           Poursuites pénales Comment ... wwww.vd.ch/poursuites-penales
         </p>
@@ -91,7 +91,7 @@ layout: page.html.swig
         Trouver une prestation
       </p>
       <p>
-        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">tous les thèmes</a>
+        <a href="../domaines" class="btn btn-primary btn-sm vd-btn-chevron-r">tous les thèmes</a>
       </p>
     </div>
 

@@ -23,10 +23,10 @@ layout: page.html.swig
       <div class="vd-bg-pattern-green p-1 mb-1">
         <ul class="nav vd-list-boxed">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Obtenir un extrait du registre des poursuites pour soi-même</a>
+            <a class="nav-link active" href="../extrait-du-registre-des-poursuites">Obtenir un extrait du registre des poursuites pour soi-même</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Obtenir un extrait du registre des faillites pour soi-même</a>
+            <a class="nav-link" href="../extrait-du-registre-des-poursuites/">Obtenir un extrait du registre des faillites pour soi-même</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Obtenir un extrait des registres des poursuites sur un tiers</a>
@@ -60,7 +60,7 @@ layout: page.html.swig
         <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="#0">en savoir plus sur l'autorité</a></li>
       </ul>
       <p>
-        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
+        <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
       </p>
 
       <h2>Office des faillites</h2>
