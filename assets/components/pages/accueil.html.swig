@@ -283,8 +283,8 @@ layout: page.html.swig
 
     </div><!-- /.col-md-4 -->
 
-  </div><!--- /.row -->
-</div><!--- /.container -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
 
 <hr class="vd-separator vd-separator-gray-bars vd-separator-wide mt-3 mb-3">
 
@@ -304,6 +304,6 @@ layout: page.html.swig
     </p>
 
   </section>
-</div><!-- /.container -->
+</div>
 
 {% include "../organisms/footer.html.swig" %}
