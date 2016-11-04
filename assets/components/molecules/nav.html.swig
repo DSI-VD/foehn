@@ -7,7 +7,7 @@ notes: |
   Use a `<ul>` list to obtain a bare navigation that is not inline.
 ---
 <nav class="nav nav-inline hidden-sm-down">
-  <a class="nav-link active" href="#">Autorités</a>
+  <a class="nav-link active" href="../autorites">Autorités</a>
   <a class="nav-link" href="#">Annuaire</a>
   <a class="nav-link" href="#">Agenda</a>
   <a class="nav-link" href="#">Contact</a>

@@ -147,8 +147,12 @@ offices des poursuites et des faillites</h3>
     </div>
 
     <div class="col-md-4">
-      <h2>Contact</h2>
+      <h2 class="vd-section-title">Contact</h2>
       <p>Tous les offices des poursuites du canton</p>
+
+      <p>
+        <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contact</a>
+      </p>
 
       <h2 class="vd-section-title">Autres prestations liées</h2>
       <ul class="vd-list-links">
