@@ -5,6 +5,6 @@ collection: molecules
 notes: |
 ---
 
-<div class="fixed-bottom hidden-md-up hidden-xxs-down">
+<div class="vd-fixed-bottom hidden-md-up hidden-xxs-down">
   <a href="#" class="btn btn-primary btn-block">Commander un extrait en ligne</a>
 </div>
