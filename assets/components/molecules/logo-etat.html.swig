@@ -6,7 +6,7 @@ notes: |
   This is the logo for the État de Vaud
 ---
 <div class="vd-logo">
-  <div class="vd-logo-canton">
+  <div class="vd-logo-canton mr-2">
     <img src="../build/svg/logo/logo.svg" alt="Canton de Vaud" />
   </div>
   <div class="vd-logo-etat">
