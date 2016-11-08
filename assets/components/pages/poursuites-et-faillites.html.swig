@@ -4,6 +4,16 @@ name: poursuites-et-faillites
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: 'Économie'
+    href: '../domaines/#economie'
+  -
+    name: ' '
+    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}
@@ -57,7 +67,7 @@ layout: page.html.swig
       <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
 
       <ul class="vd-list-icons">
-        <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="#0">en savoir plus sur l'autorité</a></li>
+        <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="../office-des-poursuites/">en savoir plus sur l'autorité</a></li>
       </ul>
       <p>
         <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
@@ -67,7 +77,7 @@ layout: page.html.swig
       <p>L'office des poursuites a pour mission principale d'administrer et de liquider les faillites prononcées par le président du tribunal d'arrondissement. Il y a quatre offices des faillites sur le canton.</p>
 
       <ul class="vd-list-icons">
-        <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="#0">en savoir plus sur l'autorité</a></li>
+        <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="../office-des-faillites/">en savoir plus sur l'autorité</a></li>
       </ul>
       <p>
         <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
