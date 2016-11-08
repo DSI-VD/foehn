@@ -169,8 +169,8 @@ offices des poursuites et des faillites</h3>
 
       <h2 class="vd-section-title">Autres prestations liées</h2>
       <ul class="vd-list-links">
-        <li><a href="#">Obtenir un extrait du registre des poursuites pour soi-même</a></li>
-        <li><a href="#">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
+        <li><a href="../extrait-du-registre-des-poursuites/">Obtenir un extrait du registre des poursuites pour soi-même</a></li>
+        <li><a href="../extrait-du-registre-des-poursuites/">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
       </ul>
     </div>
 

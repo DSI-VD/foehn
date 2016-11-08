@@ -47,7 +47,7 @@ breadcrumb:
         </ul>
       </div>
 
-      <h2>Dans ce thème</h2>
+      <h2 class="vd-section-title vd-ratio-space-top">Dans ce thème</h2>
       <ul class="vd-list-links">
         <li><a href="#">Trouver l’office des poursuites ou des faillites compétent  selon le lieu de domicile du débiteur </a></li>
         <li><a href="#">Consulter le site des ventes et enchères des offices des poursuites et des faillites</a></li>
@@ -73,7 +73,7 @@ breadcrumb:
         <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
       </p>
 
-      <h2>Office des faillites</h2>
+      <h2 class="vd-ratio-space-top">Office des faillites</h2>
       <p>L'office des poursuites a pour mission principale d'administrer et de liquider les faillites prononcées par le président du tribunal d'arrondissement. Il y a quatre offices des faillites sur le canton.</p>
 
       <ul class="vd-list-icons">

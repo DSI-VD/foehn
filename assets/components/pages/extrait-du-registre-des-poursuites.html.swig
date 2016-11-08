@@ -130,18 +130,17 @@ breadcrumb:
 
 
     <div class="col-md-4">
-      <h2>Office des poursuites de Lausanne</h2>
-      <p>Avenue de Longemalle 1 <br>1020 Renens</p>
+    <h2>Office des poursuites</h2>
+    <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
 
-      <ul class="vd-list-links">
-        <li><a href="#0">info.spi@vd.ch</a></li>
-        <li><a href="#0">voir sur la carte</a></li>
-      </ul>
-      <p>
-        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
-      </p>
+    <ul class="vd-list-icons">
+      <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="../office-des-poursuites/">en savoir plus sur l'autorité</a></li>
+    </ul>
+    <p>
+      <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
+    </p>
 
-      <h2 class="vd-section-title">Autres prestations liées</h2>
+      <h2 class="vd-section-title vd-ratio-space-top ">Autres prestations liées</h2>
       <ul class="vd-list-links">
         <li><a href="#0">Lien 1</a></li>
         <li><a href="#0">Lien 2</a></li>

@@ -23,11 +23,13 @@ breadcrumb:
 </div>
 
 <div class="container">
-  <ul>
-    <li class="h3"><a href="#">Grand Conseil</a></li>
-    <li class="h3"><a href="#">Conseil d'Etat</a></li>
-    <li class="h3"><a href="../ordre-judiciaire-vaudois">Ordre judiciaires</a></li>
-  </ul>
+
+  <div class="vd-btn-tiles mb-1 vd-ratio-space-top">
+    <a href="#" class="btn">Conseil d'État</a>
+    <a href="#" class="btn">Grand Conseil</a>
+    <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
+  </div>
+
 
   <hr class="vd-separator vd-separator-gray-bars">
 
@@ -51,7 +53,7 @@ breadcrumb:
 
   <hr class="vd-separator vd-separator-gray-bars">
 
-  <ul>
+  <!--ul>
     <li><span class="h3">DTE</span><br>Direction générale de l'environnement
       <ul>
         <li><span class="h3">DGE</span><br>Direction générale de l'environnement
@@ -70,10 +72,14 @@ breadcrumb:
         <li><span class="h3">Ouest Lausannois</span></li>
       </ul>
     </li>
-  </ul>
+  </ul -->
+  <p>
+    <span class="h3">DTE</span> <br>Direction générale de l'environnement
+  </p>
+
 
   <p>
-    <span class="h3">DFJC</span> <br>Département de la fomration, de la jeunesse et de la culture
+    <span class="h3">DFJC</span> <br>Département de la formation, de la jeunesse et de la culture
   </p>
 
   <p>
@@ -107,7 +113,6 @@ breadcrumb:
 
   <h3>Les autres entités</h3>
   <ul>
-    <li><a href="#">Ministère public</a></li>
     <li><a href="#">Tribunal neutre</a></li>
     <li><a href="#">Contrôle cantonal des finances</a></li>
     <li><a href="#">Cour des comptes</a></li>
