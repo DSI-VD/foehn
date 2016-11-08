@@ -170,7 +170,7 @@ layout: page.html.swig
       <a href="#" class="btn">Organigramme</a>
       <a href="#" class="btn">Conseil d'État</a>
       <a href="#" class="btn">Grand Conseil</a>
-      <a href="#" class="btn">Ordre Judiciaire</a>
+      <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
     </div>
 
     <p>
