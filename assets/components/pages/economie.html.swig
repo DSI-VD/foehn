@@ -4,6 +4,16 @@ name: economie
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: 'Domaines'
+    href: '../domaines/'
+  -
+    name: ' '
+    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

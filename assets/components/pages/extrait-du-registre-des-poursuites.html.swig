@@ -4,6 +4,20 @@ name: extrait-du-registre-des-poursuites
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: 'Économie'
+    href: '../domaines/#economie'
+  -
+      name: 'Poursuites et faillites'
+      href: '../poursuites-et-faillites'
+  -
+    name: ' '
+    href: '#'
+
 ---
 
 {% include "../organisms/header.html.swig" %}
@@ -110,7 +124,7 @@ layout: page.html.swig
       </div>
 
       <p>
-        <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
+        <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
       </p>
     </div>
 

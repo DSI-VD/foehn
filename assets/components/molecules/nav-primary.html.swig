@@ -13,17 +13,17 @@ notes: |
 <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="btn btn-primary btn-sm collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
+      <button type="button" class="btn btn-primary btn-sm {% if primary_opened %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if primary_opened %}true{% else %}false{% endif %}">Tous les thèmes</button>
     </div>
   </div>
-  <div class="collapse clearfix" id="nav-primary-container">
+  <div class="collapse {% if primary_opened %}in {% endif %}clearfix" id="nav-primary-container">
     <div class="vd-nav-primary-content">
       <div class="container">
         <div class="row">
           <nav class="col-md-8" role="navigation">
             <div class="row">
-              {% for domain, themes in data.domains.topics %}
-                {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: domain, teaser_link_classes: 'col-md-4', teaser_link_text: themes|join(', ')} only %}
+              {% for domain_id, domain in data.domains.topics %}
+                {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: domain.name, teaser_link_href: "../domaines/#"+domain_id, teaser_link_classes: 'col-md-4', teaser_link_text: domain.description} only %}
               {% endfor %}
             </div>
           </nav>
