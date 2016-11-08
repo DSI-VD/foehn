@@ -100,27 +100,28 @@ breadcrumb:
           <div class="col-md-6">
             <h3>Documents obligatoires</h3>
             <ol>
-              <li>Passeport</li>
-              <li>n° AVS</li>
+              <li>Pièce d’identité ou permis de séjour pour les personnes étrangères</li>
+              <li>Copie du registre du commerce pour les entreprises</li>
             </ol>
+
+            <h3>Prix</h3>
+            <ul>
+              <li>17.-</li>
+              <li>En cas d’envoi par poste, rajouter 1.-</li>
+            </ul>
           </div>
 
           <div class="col-md-6">
-            <h3>Cout de traitment</h3>
-            <p>
-              25 CHF
-            </p>
 
-            <h3>Délai moyen de traitement</h3>
-            <p>
-              3 semaines
-            </p>
+
+            <h3>Réception de l’extrait</h3>
+            <ul>
+              <li>En cas de commande par courrier ou en ligne comptez trois jours ouvrables</li>
+              <li>En cas de commande au guichet, l’extrait est délivré de suite</li>
+            </ul>
           </div>
 
         </div>
-
-        <h3>Information complémentaires</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, itaque vel accusamus?</p>
       </div>
 
       <p>
@@ -140,11 +141,16 @@ breadcrumb:
       <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
     </p>
 
-      <h2 class="vd-section-title vd-ratio-space-top ">Autres prestations liées</h2>
+      <h2 class="vd-section-title vd-ratio-space-top ">Prestations en relation</h2>
       <ul class="vd-list-links">
-        <li><a href="#0">Lien 1</a></li>
-        <li><a href="#0">Lien 2</a></li>
-        <li><a href="#0">Lien 3</a></li>
+        <li><a href="#0">Obtenir un extrait du registre des faillites pour soi-même</a></li>
+        <li><a href="#0">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
+        <li><a href="#0">Obtenir un extrait des registres des faillites sur un tiers</a></li>
+      </ul>
+
+      <h2 class="vd-section-title vd-ratio-space-top ">Publication</h2>
+      <ul class="vd-list-icons">
+        <li><span class="fa fa-file-pdf-o" aria-hidden="true"></span><a href="www.vd.ch/fileadmin/user_upload/themes/economie_emploi/poursuites_faillites/D%C3%A9pliants/depliant-commande-extrait-registre-poursuites.pdf">Commander un extrait du registre des poursuites pour soi-même</a></li>
       </ul>
     </div>
 

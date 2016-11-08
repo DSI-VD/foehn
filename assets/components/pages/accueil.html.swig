@@ -174,7 +174,7 @@ layout: page.html.swig
     </div>
 
     <p>
-      <a href="#" class="btn btn-primary vd-btn-chevron-r">Toutes les autorités</a>
+      <a href="../autorites/" class="btn btn-primary vd-btn-chevron-r">Toutes les autorités</a>
     </p>
 
   </section>
