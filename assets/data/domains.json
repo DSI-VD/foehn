@@ -13,7 +13,7 @@
         "Cinéma",
         "Assises de la culture"
       ],
-      "description":"Aides et soutiens, Musées cantonaux, ..."
+      "description":"Aides et soutiens, Musées cantonaux…"
     },
     "economie": {
       "name":"Economie",
@@ -29,7 +29,7 @@
         "Registre du commerce",
         "Police du commerce"
       ],
-      "description":"Poursuites et faillites, Registre du commerce, ..."
+      "description":"Poursuites et faillites, Registre du commerce…"
     },
     "environnement": {
       "name":"Environnement",
@@ -47,7 +47,7 @@
       "Déchets",
       "Sites pollués"
     ],
-    "description":"Faune et nature, Energie, ..."
+    "description":"Faune et nature, Energie…"
     },
     "etat_droit_finance": {
       "name":"Etat, Droit, Finance",
@@ -65,7 +65,7 @@
         "Personnel de l'État",
         "Statistiques"
       ],
-      "description":"Impôts, rémunérations, fiscalité, ..."
+      "description":"Impôts, rémunérations, fiscalité…"
     },
     "formation": {
       "name":"Formation",
@@ -83,7 +83,7 @@
         "Schooling",
         "Espace enseignant"
       ],
-      "description":"Jours fériés et vacances scolaires, ..."
+      "description":"Jours fériés et vacances scolaires…"
     },
     "mobilité": {
       "name":"Mobilité",
@@ -96,7 +96,7 @@
         "Automobile",
         "Navigation"
       ],
-      "description":"Automobile, Navigation, ..."
+      "description":"Automobile, Navigation…"
     },
     "santé": {
       "name":"Santé",
@@ -109,7 +109,7 @@
         "Dépendances",
         "Professionnels"
       ],
-      "description":"Prévention, Professionnels, ..."
+      "description":"Prévention, Professionnels…"
     },
     "social": {
       "name":"Social",
@@ -123,7 +123,7 @@
         "Aide aux victimes et auteur-e-s de violences",
         "Bénévolat"
       ],
-      "description":"Aide aux victimes et auteur-e-s de violences, ..."
+      "description":"Aide aux victimes et auteur-e-s de violences…"
     },
     "vie_privee": {
       "name":"Vie privée",
@@ -140,7 +140,7 @@
         "Sport",
         "Violence domestique"
       ],
-      "description":"Documents d'identité, ..."
+      "description":"Documents d'identité…"
     },
     "securite": {
       "name":"Sécurité",
@@ -155,7 +155,7 @@
         "Catastrophe",
         "Service civil"
       ],
-      "description":"Police, contrôle, casiers judiciaire, ..."
+      "description":"Police, contrôle, casiers judiciaire…"
     },
     "territoire": {
       "name":"Territoire",
@@ -171,7 +171,7 @@
         "Districts / Préfectures",
         "Communes"
       ],
-      "description":"Informations sur le territoire, Registre foncier, ..."
+      "description":"Informations sur le territoire, Registre foncier…"
     }
   }
 }
