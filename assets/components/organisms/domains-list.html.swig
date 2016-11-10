@@ -12,7 +12,7 @@ notes: |
     <p>
       <span class="fa fa-arrow-up" aria-hidden="true"></span> <a href="#">Tous les thèmes</a>
     </p>
-    <h3>Accès direct</h3>
+    <h5>Accès direct</h5>
     <div class="vd-bg-pattern-green p-1">
       <ul class="nav vd-list-boxed">
         <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
