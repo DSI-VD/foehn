@@ -27,10 +27,10 @@ breadcrumb:
     <div class="row">
       <div class="col-sm-8">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Extrait du registre des poursuites</h1>
+        <h1>Extrait du registre des poursuites pour soi-même</h1>
       </div>
       <div class="col-sm-4">
-        <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
+        <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander</a>
       </div>
     </div>
   </div>
@@ -40,15 +40,17 @@ breadcrumb:
   <div class="row mt-3">
 
     <div class="col-md-8">
-      <p>Toute personne (privé ou société) peut obtenir, en tout temps, un extrait du registre des poursuites la concernant, sur présentation de ses documents d'identité.</p>
-      <ul>
-        <li>Si vous n'avez pas de poursuite à votre encontre, l'extrait du registre consiste en une attestation de non poursuite (attestation de solvabilité).</li>
-        <li>Si vous faites l'objet de poursuites ou avez fait l'objet de poursuites durant les cinq dernières années, l'extrait du registre consiste en une liste des poursuites.</li>
-      </ul>
+      <p>Toute personne ou société peut obtenir, en tout temps, un extrait du registre des poursuites.</p>
+        <ul>
+          <li>Cet extrait énumère la liste des poursuites à votre encontre ces 5 dernières années.</li>
+          <li>Ou atteste que vous n'avez eu aucune poursuite durant cette période.</li>
+          <li>Ce document peut servir d'attestation de solvabilité.</li>
+        </ul>
 
+      <h3 class="vd-ratio-space-top">Pour obtenir l'extrait</h3>
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#enligne" role="tab">Commander en ligne</a>
+          <a class="nav-link active" data-toggle="tab" href="#enligne" role="tab">En ligne</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#guichet" role="tab">Au guichet</a>
@@ -95,16 +97,16 @@ breadcrumb:
       </div>
 
       <div class="vd-highlight p-1">
-        <h2>Recomandation à l'usager</h2>
+        <h2>Recomandations à l'usager</h2>
         <div class="row">
           <div class="col-md-6">
-            <h3>Documents obligatoires</h3>
+            <h5>Documents obligatoires</h5>
             <ol>
               <li>Pièce d’identité ou permis de séjour pour les personnes étrangères</li>
               <li>Copie du registre du commerce pour les entreprises</li>
             </ol>
 
-            <h3>Prix</h3>
+            <h5>Prix</h5>
             <ul>
               <li>17.-</li>
               <li>En cas d’envoi par poste, rajouter 1.-</li>
@@ -114,7 +116,7 @@ breadcrumb:
           <div class="col-md-6">
 
 
-            <h3>Réception de l’extrait</h3>
+            <h5>Réception de l’extrait</h5>
             <ul>
               <li>En cas de commande par courrier ou en ligne comptez trois jours ouvrables</li>
               <li>En cas de commande au guichet, l’extrait est délivré de suite</li>
@@ -131,7 +133,7 @@ breadcrumb:
 
 
     <div class="col-md-4">
-    <h2>Office des poursuites</h2>
+    <h4>Office des poursuites</h4>
     <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
 
     <ul class="vd-list-icons">
