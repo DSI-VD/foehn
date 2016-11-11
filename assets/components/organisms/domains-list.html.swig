@@ -33,6 +33,6 @@ notes: |
 
 </div><!-- /.row -->
 {% if ! loop.last %}
-<hr class="vd-separator vd-separator-green-pattern vd-separator-wide vd-ratio-space-top">
+<hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-3">
 {% endif %}
 {% endfor %}

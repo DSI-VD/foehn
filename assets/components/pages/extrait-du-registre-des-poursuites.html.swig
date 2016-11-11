@@ -47,7 +47,7 @@ breadcrumb:
           <li>Ce document peut servir d'attestation de solvabilité.</li>
         </ul>
 
-      <h3 class="vd-ratio-space-top">Pour obtenir l'extrait</h3>
+      <h3 class="mt-3">Pour obtenir l'extrait</h3>
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#enligne" role="tab">En ligne</a>
@@ -143,14 +143,14 @@ breadcrumb:
       <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
     </p>
 
-      <h2 class="vd-section-title vd-ratio-space-top ">Prestations en relation</h2>
+      <h2 class="vd-section-title mt-3 ">Prestations en relation</h2>
       <ul class="vd-list-links">
         <li><a href="#0">Obtenir un extrait du registre des faillites pour soi-même</a></li>
         <li><a href="#0">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
         <li><a href="#0">Obtenir un extrait des registres des faillites sur un tiers</a></li>
       </ul>
 
-      <h2 class="vd-section-title vd-ratio-space-top ">Publication</h2>
+      <h2 class="vd-section-title mt-3 ">Publication</h2>
       <ul class="vd-list-icons">
         <li><span class="fa fa-file-pdf-o" aria-hidden="true"></span><a href="www.vd.ch/fileadmin/user_upload/themes/economie_emploi/poursuites_faillites/D%C3%A9pliants/depliant-commande-extrait-registre-poursuites.pdf">Commander un extrait du registre des poursuites pour soi-même</a></li>
       </ul>
