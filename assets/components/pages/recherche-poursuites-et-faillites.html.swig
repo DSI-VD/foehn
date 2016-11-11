@@ -24,7 +24,7 @@ layout: page.html.swig
         </ul>
       </div>
 
-      <h2 class="vd-ratio-space-top">110 autres résultats</h2>
+      <h2 class="mt-3">110 autres résultats</h2>
 
       <article>
         <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>

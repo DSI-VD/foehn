@@ -24,7 +24,7 @@ breadcrumb:
 
 <div class="container">
 
-  <div class="vd-btn-tiles mb-1 vd-ratio-space-top">
+  <div class="vd-btn-tiles mb-1 mt-3">
     <a href="#" class="btn">Conseil d'État</a>
     <a href="#" class="btn">Grand Conseil</a>
     <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>

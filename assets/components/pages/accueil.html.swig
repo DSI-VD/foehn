@@ -120,7 +120,7 @@ layout: page.html.swig
       </section>
 
       <section>
-        <h2 class="vd-section-title vd-ratio-space-top">Agenda / événements</h2>
+        <h2 class="vd-section-title mt-3">Agenda / événements</h2>
 
         <article>
           <h3>Vaccination contre la grippe en pharmacie</h3>
