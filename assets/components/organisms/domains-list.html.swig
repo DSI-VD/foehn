@@ -12,22 +12,22 @@ notes: |
     <p>
       <span class="fa fa-arrow-up" aria-hidden="true"></span> <a href="#">Tous les thèmes</a>
     </p>
-    <h3>Accès direct</h3>
-    <div class="vd-bg-pattern-green p-1">
+    <h3 id="acces-direct-{{ domain }}">Accès direct <span class="sr-only">{{ domain }}</span></h3>
+    <nav class="vd-bg-pattern-green p-1" aria-labelledby="acces-direct-{{ domain }}">
       <ul class="nav vd-list-boxed">
         <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
       </ul>
-    </div>
+    </nav>
   </div><!-- /.col-md-4 -->
 
   <div class="col-md-8">
-    <div class="row">
+    <nav class="row" aria-labelledby="{{ domain }}">
       {% for theme in themes %}
         {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: theme, teaser_link_classes: 'col-md-6'} only %}
       {% endfor %}
-    </div><!-- /.row -->
+    </nav><!-- /.row -->
   </div><!-- /.col-md-8 -->
 
 </div><!-- /.row -->
