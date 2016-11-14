@@ -5,12 +5,17 @@
   top: -1000px;
 
   li {
-    a:focus {
+    a {
       display: block;
       position: fixed;
-      top: 25px;
+      top: 0;
       left: 25px;
       z-index: $zindex-modal;
+      transform: translateY(-100%);
+    }
+    a:focus {
+      top: 25px;
+      transform: translateY(0%);
     }
   }
 }
