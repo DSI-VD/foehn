@@ -4,37 +4,40 @@
  * Logo of the site web
  *
  * 1. Make the logo and text be side by side
- * 2. Image have to be under the text
- * 3. Add the green blocks underline
+ * 2. Add the green blocks underline
  */
 .vd-logo {
-
   display: flex; /* [1] */
+  margin-bottom: $spacer;
 
-  &__logo {
-    width: 2em;
+  @include plain-hover-focus {
+    color: $body-color;
+    text-decoration: none;
+  }
+}
+
+.vd-logo-img {
+  width: 1.5em;
+
+  @include media-breakpoint-up(md) { width: 2em; }
+}
+
+.vd-logo-title {
+  margin-top: $spacer * 0.5;
+
+  @include media-breakpoint-up(md) { margin-top: $spacer; }
+
+  > img {
+    width: 10em;
   }
 
-  &__title {
-
-  margin-top: $spacer;
-
-    > span {
-      display: block; /* [2] */
-    }
-
-    > img {
-      width: 10em;
-    }
-
-    /* add the green underline */
-    &:after {
-      content: ''; /* [3] */
-      display: block; /* [3] */
-      width: 10em; /* [3] */
-      height: 4px; /* [3] */
-      background-image: url('../svg/pattern_squares_green.svg'); /* [3] */
-    }
+  /* add the green underline */
+  &:after {
+    content: ''; /* [2] */
+    display: block; /* [2] */
+    width: 100%; /* [2] */
+    height: 4px; /* [2] */
+    margin-top: 2px;
+    background-image: url('../svg/pattern_squares_green.svg'); /* [2] */
   }
-
 }
