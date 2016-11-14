@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
-@import 'main-variables';
 @import 'mixins';
+@import 'main-variables';
 @import 'styleguide-variables';
 @import 'bootstrap-variables';
 @import '../../node_modules/toolbox-utils/styleguide/styles/mixins';
@@ -136,3 +136,7 @@
 .bg-gray-light { background: $gray-light !important; }
 .bg-gray-lighter { background: $gray-lighter !important; }
 .bg-gray-lightest { background: $gray-lightest !important; }
+
+// helper type classes
+.text-produkt { font-family: $headings-font-family; }
+.text-graphik { font-family: $font-family-base; }
