@@ -22,7 +22,10 @@ notes: |
       <li>
         <a class="btn btn-primary" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
       </li>
-      <li>Acc&egrave;s au champ recherche</li>
+      <li>
+        <a class="btn btn-primary" accesskey="5" href="#" title="[Alt+5] Champ de recherche">Acc&egrave;s au champ recherche</a>
+      </li>
+      <li></li>
       <li>
         <a class="btn btn-primary" accesskey="6" href="#" title="[Alt+6] Acc&amp;egrave;s à l'index th&amp;eacute;matique">Thèmes</a>
       </li>
