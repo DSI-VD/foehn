@@ -24,47 +24,47 @@ layout: page.html.swig
         </ul>
       </div>
 
-      <h2>110 autres résultats</h2>
+      <h2 class="mt-3">110 autres résultats</h2>
 
       <article>
         <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>
         <p>
-          Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
+          Poursuites en cas de non  … dues par voie de poursuites, avec tous les  … Dès que des poursuites ont été engagées,  …
         </p>
       </article>
 
       <article>
         <h3><a href="../poursuites-et-faillites">Poursuites pénales</a></h3>
         <p>
-          Poursuites pénales Comment ... wwww.vd.ch/poursuites-penales
+          Poursuites pénales Comment  … wwww.vd.ch/poursuites-penales
         </p>
       </article>
 
       <article>
-        <h3><a href="../poursuites-et-faillites">Cours des poursuites et faillites</a></h3>
+        <h3><a href="../office-des-poursuites/">Offices des poursuites</a></h3>
         <p>
-          Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
-        </p>
-      </article>
-
-      <article>
-        <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>
-        <p>
-          Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
+          Le Canton de Vaud compte dix offices des poursuites, un par district. Le siège de chaque office est en principe au chef-lieu du district«…»
         </p>
       </article>
 
       <article>
         <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>
         <p>
-          Poursuites en cas de non ... dues par voie de poursuites, avec tous les ... Dès que des poursuites ont été engagées, ...
+          Poursuites en cas de non  … dues par voie de poursuites, avec tous les  … Dès que des poursuites ont été engagées,  …
+        </p>
+      </article>
+
+      <article>
+        <h3><a href="../poursuites-et-faillites">Poursuites</a></h3>
+        <p>
+          Poursuites en cas de non  … dues par voie de poursuites, avec tous les  … Dès que des poursuites ont été engagées,  …
         </p>
       </article>
 
       <article>
         <h3><a href="../poursuites-et-faillites">Poursuites pénales</a></h3>
         <p>
-          Poursuites pénales Comment ... wwww.vd.ch/poursuites-penales
+          Poursuites pénales Comment  … wwww.vd.ch/poursuites-penales
         </p>
       </article>
 
