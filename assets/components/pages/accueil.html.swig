@@ -18,7 +18,7 @@ layout: page.html.swig
 
     <div class="col-md-8">
 
-      <section>
+      <main id="main">
         <h2 class="vd-section-title">Actualités</h2>
 
         <article class="vd-teaser">
@@ -85,7 +85,7 @@ layout: page.html.swig
           <hr>
         </article>
 
-      </section>
+      </main>
 
     </div><!-- /.col-md-8 -->
 
