@@ -20,7 +20,7 @@ notes: |
     <div class="vd-nav-primary-content">
       <div class="container">
         <div class="row">
-          <nav class="col-md-8" role="navigation">
+          <nav class="col-md-8" id="nav-primary" role="navigation" aria-label="Navigation par thèmes">
             <div class="row">
               {% for domain, themes in data.domains.topics %}
                 {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: domain, teaser_link_classes: 'col-md-4', teaser_link_text: themes|join(', ')} only %}
