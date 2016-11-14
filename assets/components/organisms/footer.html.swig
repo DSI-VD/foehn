@@ -9,7 +9,7 @@ notes: |
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-10">
-        <div class="row">
+        <nav class="row">
           <div class="col-md-4">
             <ul class="nav">
               <li class="nav-item">
@@ -65,7 +65,7 @@ notes: |
               </li>
             </ul>
           </div>
-        </div>
+        </nav>
       </div>
       <div class="col-lg-1 col-md-2 footer-logo-container">
         <div class="footer-logo">
