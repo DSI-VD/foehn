@@ -4,6 +4,19 @@ name: office-des-poursuites
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: 'Autorités'
+    href: '../autorites/'
+  -
+    name: 'Ordre Judiciaire Vaudois'
+    href: '../ordre-judiciaire-vaudois/'
+  -
+    name: ' '
+    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}
@@ -156,8 +169,8 @@ offices des poursuites et des faillites</h3>
 
       <h2 class="vd-section-title">Autres prestations liées</h2>
       <ul class="vd-list-links">
-        <li><a href="#">Obtenir un extrait du registre des poursuites pour soi-même</a></li>
-        <li><a href="#">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
+        <li><a href="../extrait-du-registre-des-poursuites/">Obtenir un extrait du registre des poursuites pour soi-même</a></li>
+        <li><a href="../extrait-du-registre-des-poursuites/">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
       </ul>
     </div>
 
