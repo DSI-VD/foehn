@@ -8,10 +8,10 @@ notes: |
   In case of dark background, use the class `.card-inverse` to display a nice bright  text.
 ---
 
-<div class="card vd-teaser-card vd-card-lightgray">
+<a href="#" class="card vd-teaser-card vd-card-lightgray">
   <img class="card-img-top w-100" src="http://placehold.it/700x200" alt="Card image cap">
   <div class="card-block">
     <h4 class="card-title mb-0">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
-</div>
+</a>

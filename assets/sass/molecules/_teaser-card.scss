@@ -28,6 +28,10 @@
   }
 }
 
+a.vd-teaser-card {
+  text-decoration: none;
+}
+
 .vd-card-lightgray {
   @include card-variant($vd-gray-lightest, $vd-gray-lightest);
 }
