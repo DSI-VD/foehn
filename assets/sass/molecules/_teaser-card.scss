@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+.vd-teaser-card {
+  position: relative;
+  // padding-bottom: 1em;
+  border: 0;
+  // 👺 Proof of concept of the nice angled layout and dog ear effect
+  // clip-path: polygon(0 0, 76% 0, 100% 7%, 100% 96%, 4% 100%);
+
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 24%;
+  //   height: 30%;
+  //   background: inherit;
+  //   clip-path: polygon(0 0, 100% 23%, 70% 100%);
+  // }
+
+  .card-title {
+    text-align: center;
+    font-family: $font-family-base;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+}
+
+.vd-card-lightgray {
+  @include card-variant($vd-gray-lightest, $vd-gray-lightest);
+}
+
+.vd-card-darkgray {
+  @include card-variant($vd-gray-darker, $vd-gray-darker);
+}
+
+.vd-card-black {
+  @include card-variant($black, $black);
+}
