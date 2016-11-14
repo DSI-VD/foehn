@@ -6,8 +6,8 @@ bootstrap: http://v4-alpha.getbootstrap.com/components/navs/#base-nav
 notes: |
   Use a `<ul>` list to obtain a bare navigation that is not inline.
 ---
-<nav class="nav nav-inline hidden-sm-down">
-  <a class="nav-link active" href="../autorites">Autorités</a>
+<nav class="nav nav-inline hidden-sm-down" aria-label="sous-navigation">
+  <a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a>
   <a class="nav-link" href="#">Annuaire</a>
   <a class="nav-link" href="#">Agenda</a>
   <a class="nav-link" href="#">Contact</a>
