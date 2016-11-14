@@ -5,6 +5,8 @@ collection: pages
 styleguide: false
 layout: page.html.swig
 ---
+{% include "../molecules/access-nav.html.swig" %}
+
 <header class="header">
   <div class="container">
     <div class="row">
