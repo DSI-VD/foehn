@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+.vd-access-nav {
+  position: absolute;
+  top: -1000px;
+
+  li {
+    a:focus {
+      display: block;
+      position: fixed;
+      top: 25px;
+      left: 25px;
+      z-index: $zindex-modal;
+    }
+  }
+}
