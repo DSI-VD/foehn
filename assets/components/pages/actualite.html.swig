@@ -4,6 +4,16 @@ name: actualite
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: 'Actualités'
+    href: '../actualites/'
+  -
+    name: ' '
+    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

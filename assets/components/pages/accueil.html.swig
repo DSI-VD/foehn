@@ -5,8 +5,7 @@ collection: pages
 styleguide: false
 layout: page.html.swig
 ---
-
-{% include "../organisms/header.html.swig" %}
+{% include "../organisms/header.html.swig" with {'primary_opened': true}   %}
 
 <div class="container mt-3">
   <h1 class="sr-only">Site officiel de l'&Eacute;tat de Vaud</h1>
@@ -120,7 +119,7 @@ layout: page.html.swig
       </section>
 
       <section>
-        <h2 class="vd-section-title">Agenda / événements</h2>
+        <h2 class="vd-section-title mt-3">Agenda / événements</h2>
 
         <article>
           <h3>Vaccination contre la grippe en pharmacie</h3>
@@ -170,11 +169,11 @@ layout: page.html.swig
       <a href="#" class="btn">Organigramme</a>
       <a href="#" class="btn">Conseil d'État</a>
       <a href="#" class="btn">Grand Conseil</a>
-      <a href="#" class="btn">Ordre Judiciaire</a>
+      <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
     </div>
 
     <p>
-      <a href="#" class="btn btn-primary vd-btn-chevron-r">Toutes les autorités</a>
+      <a href="../autorites/" class="btn btn-primary vd-btn-chevron-r">Toutes les autorités</a>
     </p>
 
   </section>

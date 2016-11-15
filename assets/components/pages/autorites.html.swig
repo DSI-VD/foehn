@@ -4,6 +4,13 @@ name: autorites
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: ' '
+    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}
@@ -18,11 +25,11 @@ layout: page.html.swig
 <main class="container" id="main">
   <h1 class="sr-only">Autorites</h1>
 
-  <ul>
-    <li class="h3"><a href="#">Grand Conseil</a></li>
-    <li class="h3"><a href="#">Conseil d'Etat</a></li>
-    <li class="h3"><a href="../ordre-judiciaire-vaudois">Ordre judiciaires</a></li>
-  </ul>
+  <div class="vd-btn-tiles mb-1 mt-3">
+    <a href="#" class="btn">Conseil d'État</a>
+    <a href="#" class="btn">Grand Conseil</a>
+    <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
+  </div>
 
   <hr class="vd-separator vd-separator-gray-bars">
 
@@ -46,7 +53,7 @@ layout: page.html.swig
 
   <hr class="vd-separator vd-separator-gray-bars">
 
-  <ul>
+  <!--ul>
     <li><span class="h3">DTE</span><br>Direction générale de l'environnement
       <ul>
         <li><span class="h3">DGE</span><br>Direction générale de l'environnement
@@ -65,10 +72,14 @@ layout: page.html.swig
         <li><span class="h3">Ouest Lausannois</span></li>
       </ul>
     </li>
-  </ul>
+  </ul -->
+  <p>
+    <span class="h3">DTE</span> <br>Direction générale de l'environnement
+  </p>
+
 
   <p>
-    <span class="h3">DFJC</span> <br>Département de la fomration, de la jeunesse et de la culture
+    <span class="h3">DFJC</span> <br>Département de la formation, de la jeunesse et de la culture
   </p>
 
   <p>
@@ -102,7 +113,6 @@ layout: page.html.swig
 
   <h3>Les autres entités</h3>
   <ul>
-    <li><a href="#">Ministère public</a></li>
     <li><a href="#">Tribunal neutre</a></li>
     <li><a href="#">Contrôle cantonal des finances</a></li>
     <li><a href="#">Cour des comptes</a></li>

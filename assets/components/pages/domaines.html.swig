@@ -6,7 +6,7 @@ styleguide: false
 layout: page.html.swig
 ---
 
-{% include "../organisms/header.html.swig" %}
+{% include "../organisms/header.html.swig" with {'primary_opened': true}   %}
 
 <main class="container" id="main">
 
@@ -15,3 +15,5 @@ layout: page.html.swig
 </main>
 
 {% include "../organisms/footer.html.swig" %}
+
+</script>
