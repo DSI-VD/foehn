@@ -1,6 +1,6 @@
 ---
-title: fixed-bottom-container
-name: Fixed-bottom-container
+title: Fixed bottom container
+name: fixed-bottom-container
 collection: molecules
 notes: |
   Custom class `.vd-fixed-bottom` to stick a container fixed to the bottom of the page.
