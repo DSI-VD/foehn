@@ -4,6 +4,38 @@ name: typography
 collection: docs
 styleguide: true
 ---
+
+## Fonts used
+
+<br>
+<p class="text-graphik" style="font-weight: 400;">Graphik Light - normal 400</p>
+<p class="text-graphik" style="font-weight: 400; font-style: italic;">Graphik LightItalic - italic 400</p>
+<p class="text-graphik" style="font-weight: 500;">Graphik Regular - normal 500</p>
+<br>
+<p class="text-produkt" style="font-weight: 300;">Produkt Light - normal 300</p>
+<p class="text-produkt" style="font-weight: 300; font-style: italic;">Produkt LightItalic  - italic 300</p>
+<p class="text-produkt" style="font-weight: 500;">Produkt Medium - normal 500</p>
+<p class="text-produkt" style="font-weight: 700;">Produkt Bold - normal 700</p>
+
+<hr class="my-3">
+
+## [Webfont Loader](https://github.com/typekit/webfontloader) code
+
+Insert this code in your base template, to invoke all the needed fonts. 
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+WebFont.load({
+  custom: {
+    families: ['Graphik:n4,i4,n5', 'Produkt:n3,i3,n5,n7'],
+    urls: ['{{data.path}}build/fonts/fonts.css']
+  }
+});
+</script>
+```
+  
+<hr class="my-3">
 <div class="bs-docs-section mt-3">
   <div class="mt-3"></div>
 

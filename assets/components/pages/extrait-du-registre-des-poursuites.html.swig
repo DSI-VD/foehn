@@ -47,15 +47,6 @@ breadcrumb:
         <li>Si vous faites l'objet de poursuites ou avez fait l'objet de poursuites durant les cinq dernières années, l'extrait du registre consiste en une liste des poursuites.</li>
       </ul>
 
-    <main class="col-md-8" id="main">
-      <h1 class="sr-only">Extrait du registre des poursuites</h1>
-      <p>Toute personne ou société peut obtenir, en tout temps, un extrait du registre des poursuites.</p>
-        <ul>
-          <li>Cet extrait énumère la liste des poursuites à votre encontre ces 5 dernières années.</li>
-          <li>Ou atteste que vous n'avez eu aucune poursuite durant cette période.</li>
-          <li>Ce document peut servir d'attestation de solvabilité.</li>
-        </ul>
-
       <h3 class="mt-3">Pour obtenir l'extrait</h3>
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
@@ -135,7 +126,13 @@ breadcrumb:
         </div>
       </div>
 
-      <p>
+      <div class="vd-fixed-bottom hidden-md-up hidden-xxs-down">
+        <p>
+          <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
+        </p>
+      </div>
+
+      <p class="hidden-md-down">
         <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
       </p>
     </main>

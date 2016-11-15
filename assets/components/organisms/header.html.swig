@@ -18,9 +18,7 @@ notes: |
     </div>
     <div class="row">
       <div class="col-md-5">
-        <a href="../accueil" style="color: currentColor; text-decoration: none;">
         {% include "../molecules/logo-etat.html.swig" %}
-        </a>
       </div>
       <div class="col-md-5 offset-md-2">
         {% include "../atoms/search-form.html.swig" %}
