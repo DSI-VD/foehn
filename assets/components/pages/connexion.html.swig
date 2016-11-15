@@ -10,11 +10,12 @@ layout: page.html.swig
 
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
-    <h1>Connexion</h1>
+    <h1 aria-hidden="true">Connexion</h1>
   </div>
 </div>
 
-<div class="container">
+<main class="container" id="main">
+  <h1 class="sr-only">Connexion</h1>
   <div class="row mt-3">
 
     <div class="col-md-8">
@@ -48,7 +49,7 @@ layout: page.html.swig
     </div>
 
   </div>
-</div>
+</main>
 
 <footer>
   <p>Footer light à incorporer</p>

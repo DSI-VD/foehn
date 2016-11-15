@@ -11,15 +11,15 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Office des poursuites</h1>
+        <h1 aria-hidden="true">Office des poursuites</h1>
   </div>
 </div>
 
 <div class="container">
   <div class="row mt-3">
 
-    <div class="col-md-8">
-
+    <main class="col-md-8" id="main">
+      <h1 class="sr-only">Office des poursuites</h1>
       <section>
         <h2 class="sr-only">Présentations</h2>
         <p>Les offices des poursuites et des faillites sont chargés de l'application, dans le canton, de <a href="http://www.admin.ch/ch/f/rs/c281_1.html">la loi fédérale du 11 avril 1889 sur la poursuite pour dettes et la faillite</a>.</p>
@@ -144,7 +144,7 @@ offices des poursuites et des faillites</h3>
         </ul>
       </section>
 
-    </div>
+    </main>
 
     <div class="col-md-4">
       <h2 class="vd-section-title">Contact</h2>

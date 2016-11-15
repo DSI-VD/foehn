@@ -11,7 +11,7 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Actualités</h1>
+        <h1 aria-hidden="true">Actualités</h1>
   </div>
 </div>
 
@@ -25,7 +25,8 @@ layout: page.html.swig
   </form>
 </div>
 
-<div class="container">
+<main class="container" id="main">
+  <h1 class="sr-only">Actualités</h1>
 
   <div class="row">
 
@@ -169,6 +170,6 @@ layout: page.html.swig
       </ul>
     </nav>
 
-</div>
+</main>
 
 {% include "../organisms/footer.html.swig" %}

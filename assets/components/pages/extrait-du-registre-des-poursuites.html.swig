@@ -13,7 +13,7 @@ layout: page.html.swig
     <div class="row">
       <div class="col-sm-8">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Extrait du registre des poursuites</h1>
+        <h1 aria-hidden="true">Extrait du registre des poursuites</h1>
       </div>
       <div class="col-sm-4">
         <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
@@ -25,7 +25,8 @@ layout: page.html.swig
 <div class="container">
   <div class="row mt-3">
 
-    <div class="col-md-8">
+    <main class="col-md-8" id="main">
+      <h1 class="sr-only">Extrait du registre des poursuites</h1>
       <p>Toute personne (privé ou société) peut obtenir, en tout temps, un extrait du registre des poursuites la concernant, sur présentation de ses documents d'identité.</p>
       <ul>
         <li>Si vous n'avez pas de poursuite à votre encontre, l'extrait du registre consiste en une attestation de non poursuite (attestation de solvabilité).</li>
@@ -112,7 +113,7 @@ layout: page.html.swig
       <p>
         <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
       </p>
-    </div>
+    </main>
 
 
     <div class="col-md-4">

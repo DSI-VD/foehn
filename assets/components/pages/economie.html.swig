@@ -11,11 +11,12 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Economie</h1>
+        <h1 aria-hidden="true">Economie</h1>
   </div>
 </div>
 
-<div class="container">
+<main class="container">
+  <h1 class="sr-only">Economie</h1>
   <div class="row mt-3">
 
     <div class="col-md-8">
@@ -46,6 +47,6 @@ layout: page.html.swig
     </div>
 
   </div>
-</div>
+</main>
 
 {% include "../organisms/footer.html.swig" %}

@@ -11,15 +11,15 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Office des faillites</h1>
+        <h1 aria-hidden="true">Office des faillites</h1>
   </div>
 </div>
 
 <div class="container">
   <div class="row mt-3">
 
-    <div class="col-md-8">
-
+    <main class="col-md-8" id="main">
+      <h1 class="sr-only">Office des faillites</h1>
       <section>
         <h2 class="sr-only">Présentations</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae id quidem assumenda reprehenderit ea enim suscipit, consequatur quam impedit aut atque repudiandae tempore minus velit ullam hic, ipsa fuga expedita? Dolorum explicabo corporis placeat assumenda. Illo facilis iure, asperiores dolor earum vel? Voluptatem nobis quasi, necessitatibus dicta molestias perferendis a est itaque tempore eveniet, facilis quisquam impedit officia temporibus perspiciatis rem libero expedita unde commodi recusandae nulla voluptas corrupti! Inventore in quasi omnis itaque rem perspiciatis doloremque aliquid expedita tempora, quibusdam facilis ipsa nam assumenda magnam molestias cupiditate vero laborum odio natus facere! Consectetur cum id ipsum quidem, eligendi quis possimus in itaque nostrum eos? Accusantium repudiandae impedit repellendus tempora consequatur nemo libero voluptates, minima sint repellat dolor tenetur, vel voluptas natus possimus suscipit voluptatum, culpa provident fugiat soluta quos assumenda deleniti rem? Vero omnis eligendi eum nihil quaerat possimus doloremque, modi inventore corporis, laudantium alias delectus ipsum ipsam sit temporibus voluptatem necessitatibus illo suscipit beatae atque adipisci qui veritatis! Excepturi ipsa tempore, qui aliquam animi et. Quasi fugit delectus odio in dolor dignissimos aut nulla rem, excepturi expedita culpa vitae doloremque, id et exercitationem ex voluptatem ipsam fuga corrupti. Eius, ut animi. Magni sunt provident illo quibusdam, unde, maxime!</p>
@@ -73,7 +73,7 @@ layout: page.html.swig
 
       </section>
 
-    </div>
+    </main>
 
     <div class="col-md-4">
       <h2>Tribuanl cantonal</h2>

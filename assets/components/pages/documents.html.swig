@@ -10,7 +10,7 @@ layout: page.html.swig
 
 {% include "../molecules/secure-tabs.html.swig" %}
 
-<div class="container mt-1">
+<main class="container mt-1" id="main">
 
       <form>
         <div class="form-group">
@@ -82,7 +82,7 @@ layout: page.html.swig
         </div>
       </article>
 
-    </div><!-- ./.col-md-8 -->
+    </main><!-- ./.col-md-8 -->
 
 </div>
 

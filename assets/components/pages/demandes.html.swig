@@ -10,7 +10,7 @@ layout: page.html.swig
 
 {% include "../molecules/secure-tabs.html.swig" %}
 
-<div class="container mt-3">
+<main class="container mt-3" id="main">
 
       <p>
         <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-r">Nouvelle demande</a>
@@ -31,7 +31,7 @@ layout: page.html.swig
         </div>
       </form>
 
-      <h2>Toutes les demandes</h2>
+      <h1 class="h2">Toutes les demandes</h1>
 
       <article>
         <p class="text-muted mb-0">21.05.2016</p>
@@ -85,7 +85,7 @@ layout: page.html.swig
         <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-r">Nouvelle demande</a>
       </p>
 
-    </div><!-- ./.col-md-8 -->
+    </main><!-- ./.col-md-8 -->
 
 </div>
 

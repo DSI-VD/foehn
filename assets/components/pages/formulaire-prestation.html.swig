@@ -8,6 +8,8 @@ layout: page.html.swig
 
 {% include "../organisms/header.html.swig" %}
 
+<main id="main">
+
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
     <div class="row">
@@ -108,4 +110,5 @@ layout: page.html.swig
 
 </div>
 
+</main>
 {% include "../organisms/footer.html.swig" %}

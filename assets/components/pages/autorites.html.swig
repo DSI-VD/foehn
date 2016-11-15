@@ -11,11 +11,13 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
     {% include "../molecules/breadcrumb.html.swig" %}
-    <h1>Autorites</h1>
+    <h1 aria-hidden="true">Autorites</h1>
   </div>
 </div>
 
-<div class="container">
+<main class="container" id="main">
+  <h1 class="sr-only">Autorites</h1>
+
   <ul>
     <li class="h3"><a href="#">Grand Conseil</a></li>
     <li class="h3"><a href="#">Conseil d'Etat</a></li>
@@ -108,6 +110,6 @@ layout: page.html.swig
     <li><a href="#">Médiation administrative</a></li>
   </ul>
 
-</div>
+</main>
 
 {% include "../organisms/footer.html.swig" %}

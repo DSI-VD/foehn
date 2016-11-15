@@ -11,14 +11,15 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>La Journée Oser tous les métiers élargit son offre</h1>
+        <h1 aria-hidden="true">La Journée Oser tous les métiers élargit son offre</h1>
   </div>
 </div>
 
-<div class="container">
-  <figure>
-    <img src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" class="img-fluid" alt="Responsive image">
-    <figcaption><p>La #jom permet de découvrir des secteurs professionnels traditionnellement associés au sexe opposé.</p></figcaption>
+<main class="container" id="main">
+  <h1 class="sr-only">La Journée Oser tous les métiers élargit son offre</h1>
+  <figure class="figure">
+    <img src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" class="img-fluid figure-img" alt="Description de l'image">
+    <figcaption class="figure-caption">La #jom permet de découvrir des secteurs professionnels traditionnellement associés au sexe opposé.</figcaption>
   </figure>
 
   <p class="lead">
@@ -34,7 +35,7 @@ layout: page.html.swig
     <a href="http://www.bicweb.vd.ch/frame.aspx?pPage=/communique.aspx?pObjectID=601487">Communiqué du 1er novembre 2016</a>
   </p>
 
-</div>
+</main>
 
 <div class="container">
   <h3>Partager cette actualité</h3>

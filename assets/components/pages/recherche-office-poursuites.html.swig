@@ -11,7 +11,7 @@ layout: page.html.swig
 <div class="container">
   <div class="row mt-3">
 
-    <div class="col-md-8">
+    <main class="col-md-8" id="main">
 
       <form class="mt-1 mb-3">
         <div class="form-group">
@@ -172,7 +172,7 @@ layout: page.html.swig
         <li><span class="fa fa-map-marker" aria-hidden="true"></span> <a href="#">Voir sur la carte</a></li>
       </ul>
 
-    </div>
+    </main>
 
     <div class="col-md-4">
       <p>
