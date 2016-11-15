@@ -18,7 +18,8 @@ layout: page.html.swig
 <div class="container">
   <div class="row mt-3">
 
-    <div class="col-md-8">
+    <main class="col-md-8" id="main">
+      <h1>Poursuites et faillites</h1>
       <h2>3 prestations</h2>
       <div class="vd-bg-pattern-green p-1 mb-1">
         <ul class="nav vd-list-boxed">

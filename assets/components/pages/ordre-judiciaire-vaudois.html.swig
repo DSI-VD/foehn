@@ -11,7 +11,7 @@ layout: page.html.swig
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Ordre judiciaire vaudois (OJV)</h1>
+        <h1 aria-hidden="true">Ordre judiciaire vaudois (OJV)</h1>
   </div>
 </div>
 
@@ -20,7 +20,8 @@ layout: page.html.swig
 
     <div class="col-md-8">
 
-      <section>
+      <main id="main">
+        <h1 class="sr-only">Ordre judiciaire vaudois (OJV)</h1>
         <h2 class="sr-only">Présentations</h2>
         <p>Le Tribunal cantonal, assisté par le Secrétariat général de l'ordre judiciaire, dirige l'Ordre judiciaire.</p>
         <p>Organiquement, cette direction est composée comme suit :</p>
@@ -30,9 +31,9 @@ layout: page.html.swig
           <li>un <strong>Secrétariat général</strong>, qui assume la direction administrative de l'ordre judiciaire.</li>
         </ul>
         <p>En outre, la direction de chacun des 33 offices que compte l'Ordre judiciaire et la responsabilité de leur fonctionnement sont assurées par un chef d'office.</p>
-      </section>
+      </main>
 
-      <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
+      <hr class="vd-separator vd-separator-gray-bars vd-separator-wide my-3">
 
       <section>
         <h2 class="vd-section-title">Actualités</h2>

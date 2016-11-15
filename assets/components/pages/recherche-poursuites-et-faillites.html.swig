@@ -11,7 +11,7 @@ layout: page.html.swig
 <div class="container">
   <div class="row mt-3">
 
-    <div class="col-md-8">
+    <main class="col-md-8" id="main">
       <h2>2 prestations</h2>
       <div class="vd-bg-pattern-green p-1 mb-1">
         <ul class="nav vd-list-boxed">
@@ -77,7 +77,7 @@ layout: page.html.swig
         </ul>
       </nav>
 
-    </div>
+    </main>
 
     <div class="col-md-4">
       <p>

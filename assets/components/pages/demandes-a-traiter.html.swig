@@ -10,7 +10,7 @@ layout: page.html.swig
 
 {% include "../molecules/secure-tabs.html.swig" %}
 
-<div class="container mt-3">
+<main class="container mt-3" id="main">
 
       <form>
         <div class="form-group">
@@ -27,7 +27,7 @@ layout: page.html.swig
         </div>
       </form>
 
-      <h2>Demandes à traiter</h2>
+      <h1 class="h2">Demandes à traiter</h1>
 
       <article class="card card-block card-inverse card-info">
         <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
@@ -59,7 +59,7 @@ layout: page.html.swig
         <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
       </article>
 
-    </div><!-- ./.col-md-8 -->
+    </main><!-- ./.col-md-8 -->
 
 </div>
 

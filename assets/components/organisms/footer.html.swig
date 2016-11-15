@@ -9,7 +9,7 @@ notes: |
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-10">
-        <nav class="row">
+        <nav class="row" aria-label="pied de page">
           <div class="col-md-4">
             <ul class="nav">
               <li class="nav-item">

@@ -10,7 +10,7 @@ layout: page.html.swig
 
 {% include "../molecules/secure-tabs.html.swig" %}
 
-<div class="container">
+<main class="container" id="main">
   <div class="row mt-3 mb-3">
 
     <div class="col-md-8">
@@ -44,6 +44,6 @@ layout: page.html.swig
     </div>
 
   </div>
-</div>
+</main>
 
 {% include "../organisms/footer.html.swig" %}

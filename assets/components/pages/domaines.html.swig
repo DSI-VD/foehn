@@ -8,10 +8,10 @@ layout: page.html.swig
 
 {% include "../organisms/header.html.swig" %}
 
-<div class="container">
+<main class="container" id="main">
 
   {% include "../organisms/domains-list.html.swig" %}
 
-</div>
+</main>
 
 {% include "../organisms/footer.html.swig" %}
