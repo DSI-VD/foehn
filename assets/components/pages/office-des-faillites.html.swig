@@ -4,6 +4,19 @@ name: office-des-faillites
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: 'Autorités'
+    href: '../autorites/'
+  -
+    name: 'Ordre Judiciaire Vaudois'
+    href: '../ordre-judiciaire-vaudois/'
+  -
+    name: ' '
+    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

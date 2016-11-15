@@ -4,6 +4,20 @@ name: extrait-du-registre-des-poursuites
 collection: pages
 styleguide: false
 layout: page.html.swig
+breadcrumb:
+  -
+    name: 'vd.ch'
+    href: '../accueil/'
+  -
+    name: 'Économie'
+    href: '../domaines/#economie'
+  -
+      name: 'Poursuites et faillites'
+      href: '../poursuites-et-faillites'
+  -
+    name: ' '
+    href: '#'
+
 ---
 
 {% include "../organisms/header.html.swig" %}
@@ -13,10 +27,10 @@ layout: page.html.swig
     <div class="row">
       <div class="col-sm-8">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Extrait du registre des poursuites</h1>
+        <h1>Extrait du registre des poursuites pour soi-même</h1>
       </div>
       <div class="col-sm-4">
-        <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
+        <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander</a>
       </div>
     </div>
   </div>
@@ -26,15 +40,17 @@ layout: page.html.swig
   <div class="row mt-3">
 
     <div class="col-md-8">
-      <p>Toute personne (privé ou société) peut obtenir, en tout temps, un extrait du registre des poursuites la concernant, sur présentation de ses documents d'identité.</p>
-      <ul>
-        <li>Si vous n'avez pas de poursuite à votre encontre, l'extrait du registre consiste en une attestation de non poursuite (attestation de solvabilité).</li>
-        <li>Si vous faites l'objet de poursuites ou avez fait l'objet de poursuites durant les cinq dernières années, l'extrait du registre consiste en une liste des poursuites.</li>
-      </ul>
+      <p>Toute personne ou société peut obtenir, en tout temps, un extrait du registre des poursuites.</p>
+        <ul>
+          <li>Cet extrait énumère la liste des poursuites à votre encontre ces 5 dernières années.</li>
+          <li>Ou atteste que vous n'avez eu aucune poursuite durant cette période.</li>
+          <li>Ce document peut servir d'attestation de solvabilité.</li>
+        </ul>
 
+      <h3 class="mt-3">Pour obtenir l'extrait</h3>
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#enligne" role="tab">Commander en ligne</a>
+          <a class="nav-link active" data-toggle="tab" href="#enligne" role="tab">En ligne</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#guichet" role="tab">Au guichet</a>
@@ -81,57 +97,69 @@ layout: page.html.swig
       </div>
 
       <div class="vd-highlight p-1">
-        <h2>Recomandation à l'usager</h2>
+        <h2>Recomandations à l'usager</h2>
         <div class="row">
           <div class="col-md-6">
-            <h3>Documents obligatoires</h3>
+            <h5>Documents obligatoires</h5>
             <ol>
-              <li>Passeport</li>
-              <li>n° AVS</li>
+              <li>Pièce d’identité ou permis de séjour pour les personnes étrangères</li>
+              <li>Copie du registre du commerce pour les entreprises</li>
             </ol>
+
+            <h5>Prix</h5>
+            <ul>
+              <li>17.-</li>
+              <li>En cas d’envoi par poste, rajouter 1.-</li>
+            </ul>
           </div>
 
           <div class="col-md-6">
-            <h3>Cout de traitment</h3>
-            <p>
-              25 CHF
-            </p>
 
-            <h3>Délai moyen de traitement</h3>
-            <p>
-              3 semaines
-            </p>
+
+            <h5>Réception de l’extrait</h5>
+            <ul>
+              <li>En cas de commande par courrier ou en ligne comptez trois jours ouvrables</li>
+              <li>En cas de commande au guichet, l’extrait est délivré de suite</li>
+            </ul>
           </div>
 
         </div>
-
-        <h3>Information complémentaires</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, itaque vel accusamus?</p>
       </div>
 
-      <p>
-        <button type="button" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</button>
+      <div class="vd-fixed-bottom hidden-md-up hidden-xxs-down">
+        <p>
+          <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
+        </p>
+      </div>
+
+      <p class="hidden-md-down">
+        <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
       </p>
+
     </div>
 
 
     <div class="col-md-4">
-      <h2>Office des poursuites de Lausanne</h2>
-      <p>Avenue de Longemalle 1 <br>1020 Renens</p>
+    <h4>Office des poursuites</h4>
+    <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
 
+    <ul class="vd-list-icons">
+      <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="../office-des-poursuites/">en savoir plus sur l'autorité</a></li>
+    </ul>
+    <p>
+      <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
+    </p>
+
+      <h2 class="vd-section-title mt-3 ">Prestations en relation</h2>
       <ul class="vd-list-links">
-        <li><a href="#0">info.spi@vd.ch</a></li>
-        <li><a href="#0">voir sur la carte</a></li>
+        <li><a href="#0">Obtenir un extrait du registre des faillites pour soi-même</a></li>
+        <li><a href="#0">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
+        <li><a href="#0">Obtenir un extrait des registres des faillites sur un tiers</a></li>
       </ul>
-      <p>
-        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
-      </p>
 
-      <h2 class="vd-section-title">Autres prestations liées</h2>
-      <ul class="vd-list-links">
-        <li><a href="#0">Lien 1</a></li>
-        <li><a href="#0">Lien 2</a></li>
-        <li><a href="#0">Lien 3</a></li>
+      <h2 class="vd-section-title mt-3 ">Publication</h2>
+      <ul class="vd-list-icons">
+        <li><span class="fa fa-file-pdf-o" aria-hidden="true"></span><a href="www.vd.ch/fileadmin/user_upload/themes/economie_emploi/poursuites_faillites/D%C3%A9pliants/depliant-commande-extrait-registre-poursuites.pdf">Commander un extrait du registre des poursuites pour soi-même</a></li>
       </ul>
     </div>
 

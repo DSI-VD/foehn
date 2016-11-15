@@ -26,9 +26,11 @@
 
 // molecules:
 @import 'molecules/teaser-card';
+@import 'molecules/fixed-bottom-container';
 @import 'molecules/pagination-vertical';
 @import 'molecules/teaser-small';
 @import 'molecules/card';
+@import 'molecules/teaser-alternate';
 @import 'molecules/footer';
 @import 'molecules/numbered-title';
 @import 'molecules/dropdown';
@@ -55,4 +57,3 @@
 
 // pages:
 @import 'pages/homepage';
-@import 'pages/test-typo';
