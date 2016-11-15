@@ -15,7 +15,7 @@ layout: page.html.swig
 
       <form class="mt-1 mb-3">
         <div class="form-group">
-          <label class="srs-only" for="exampleInputAmount">Recherche l'office en focntion de votre numéro postal</label>
+          <label class="srs-only" for="exampleInputAmount">Recherche l'office en fonction de votre numéro postal</label>
           <input type="text" class="form-control" id="exampleInputAmount" placeholder="Numéro postal">
         </div>
         <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span> Rechercher</button>
