@@ -35,13 +35,13 @@ breadcrumb:
 
   <div class="row">
     <div class="col-md-4">
-      <h2>Chancelelerie d'Etat</h2>
+      <h2>Chancellerie d'Etat</h2>
     </div>
     <div class="col-md-8">
-      <ul class="h3">
+      <ul class="h3 vd-list-bare">
         <li><a href="#">BIC</a></li>
-        <li><a href="">Préfectures</a>
-          <ul>
+        <li><a href="#">Préfectures</a>
+          <ul class="vd-list-bare pl-1">
             <li><a href="#">Broye-Vully</a></li>
             <li><a href="#">Gros-de-Vaud</a></li>
             <li><a href="#">Jura-nord-vaudois</a></li>
@@ -84,29 +84,31 @@ breadcrumb:
       <h2>Départements</h2>
     </div>
     <div class="col-md-8">
-      <p>
-        <span class="h3">DTE</span> <br>Direction générale de l'environnement
-      </p>
+      <ul class="vd-list-bare">
+        <li>
+          <span class="h3"><a href="#">DTE</a></span> <br>Direction générale de l'environnement
+        </li>
 
-      <p>
-        <span class="h3">DFJC</span> <br>Département de la formation, de la jeunesse et de la culture
-      </p>
+        <li>
+          <span class="h3"><a href="#">DFJC</a></span> <br>Département de la formation, de la jeunesse et de la culture
+        </li>
 
-      <p>
-        <span class="h3">DIS</span> <br>Département des institutions et de la sécurité
-      </p>
+        <li>
+          <span class="h3"><a href="#">DIS</a></span> <br>Département des institutions et de la sécurité
+        </li>
 
-      <p>
-        <span class="h3">DSAS</span> <br>Département de la santé et de l'action social
-      </p>
+        <li>
+          <span class="h3"><a href="#">DSAS</a></span> <br>Département de la santé et de l'action social
+        </li>
 
-      <p>
-        <span class="h3">DECS</span> <br>Département de l'économie et du sport
-      </p>
+        <li>
+          <span class="h3"><a href="#">DECS</a></span> <br>Département de l'économie et du sport
+        </li>
 
-      <p>
-        <span class="h3">DIRH</span> <br>Département des finances et des relations extérieurs
-      </p>
+        <li>
+          <span class="h3"><a href="#">DIRH</a></span> <br>Département des finances et des relations extérieurs
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -118,7 +120,7 @@ breadcrumb:
       <h2>Ministère public</h2>
     </div>
     <div class="col-md-8">
-      <ul class="h3">
+      <ul class="h3 vd-list-bare">
         <li><a href="#">Division contrôle affaire spéciales mineurs</a></li>
         <li><a href="#">Division affaires économiques</a></li>
         <li><a href="#">MPs Lausanne</a></li>
@@ -135,7 +137,7 @@ breadcrumb:
       <h2>Les autres entités</h2>
     </div>
     <div class="col-md-8">
-      <ul class="h3">
+      <ul class="h3 vd-list-bare">
         <li><a href="#">Tribunal neutre</a></li>
         <li><a href="#">Contrôle cantonal des finances</a></li>
         <li><a href="#">Cour des comptes</a></li>
