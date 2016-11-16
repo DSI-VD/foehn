@@ -20,11 +20,11 @@
 @mixin vd-background-image-icon($path, $fill-color, $viewbox-x: 41, $viewbox-y: 41) {
   $color: str-replace(#{$fill-color}, '#', '%23');
 
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 #{$viewbox-x} #{$viewbox-y}' preserveAspectRatio='xMidYMid meet'%3E%3Cpath fill='#{$color}' d='#{$path}'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27100%25%27%20height%3D%27100%25%27%20viewBox%3D%270%200%20#{$viewbox-x}%20#{$viewbox-y}%27%20preserveAspectRatio%3D%27xMidYMid%20meet%27%3E%3Cpath%20fill%3D%27#{$color}%27%20d%3D%27#{$path}%27%2F%3E%3C%2Fsvg%3E");
 }
 
 @mixin vd-pattern-dotted($code, $viewbox-x: 4, $viewbox-y: 4) {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 #{$viewbox-x} #{$viewbox-y}' preserveAspectRatio='xMidYMid meet'%3E#{$code}%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27100%25%27%20height%3D%27100%25%27%20viewBox%3D%270%200%20#{$viewbox-x}%20#{$viewbox-y}%27%20preserveAspectRatio%3D%27xMidYMid%20meet%27%3E#{$code}%3C%2Fsvg%3E");
   background-repeat: repeat;
   background-size: #{$viewbox-x}px #{$viewbox-y}px;
 }
