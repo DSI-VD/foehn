@@ -412,7 +412,7 @@ body {
     font-size: 0.8em; }
 
 .styleguide-header-container {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 4 4' preserveAspectRatio='xMidYMid meet'%3E%3Crect fill='str-replace(#40d940, \"#\", \"%23\")' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='str-replace(#40d940, \"#\", \"%23\")' x='2' y='2' width='1' height='1'%3E %3C/rect%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27100%25%27%20height%3D%27100%25%27%20viewBox%3D%270%200%204%204%27%20preserveAspectRatio%3D%27xMidYMid%20meet%27%3E%3Crect fill='%2340d940' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='%2340d940' x='2' y='2' width='1' height='1'%3E %3C/rect%3E%3C%2Fsvg%3E");
   background-repeat: repeat;
   background-size: 4px 4px;
   background-color: #fff;
@@ -456,3 +456,9 @@ body {
 
 .bg-gray-lightest {
   background: #e0eaf0 !important; }
+
+.text-produkt {
+  font-family: "Produkt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.text-graphik {
+  font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
