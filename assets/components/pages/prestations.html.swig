@@ -1,6 +1,6 @@
 ---
-title: Demandes a traiter
-name: demandes-a-traiter
+title: Préstations
+name: prestations
 collection: pages
 styleguide: false
 layout: page.html.swig
@@ -19,7 +19,7 @@ layout: page.html.swig
         <a class="nav-link" href="../demandes">Demandes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="../demandes-a-traiter">Demandes à traiter</a>
+        <a class="nav-link active" href="../prestations">Préstations</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../documents">Documents</a>
@@ -45,7 +45,7 @@ layout: page.html.swig
         </div>
       </form>
 
-      <h1 class="h2">Demandes à traiter</h1>
+      <h1 class="h2">Préstations</h1>
 
       <article class="card card-block card-inverse card-info">
         <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>

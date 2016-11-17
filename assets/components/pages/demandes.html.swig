@@ -19,7 +19,7 @@ layout: page.html.swig
         <a class="nav-link active" href="../demandes">Demandes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../demandes-a-traiter">Demandes à traiter</a>
+        <a class="nav-link" href="../prestations">Préstations</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../documents">Documents</a>

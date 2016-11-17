@@ -23,7 +23,7 @@ layout: page.html.swig
         </li>
         <li class="list-group-item">
           <span class="tag tag-default tag-pill float-xs-right">2</span>
-          <a href="#">Demandes à traiter</a>
+          <a href="#">Préstations</a>
         </li>
         <li class="list-group-item">
           <span class="tag tag-default tag-pill float-xs-right">1</span>
