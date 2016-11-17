@@ -45,7 +45,7 @@ layout: page.html.swig
         </div>
       </form>
 
-      <h1 class="h2">Préstations</h1>
+      <h1 class="h2">Mes préstations</h1>
 
       <article class="card card-block card-inverse card-info">
         <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
