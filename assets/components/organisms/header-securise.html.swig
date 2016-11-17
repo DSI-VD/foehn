@@ -1,6 +1,6 @@
 ---
-title: Header
-name: header
+title: Header sécurisé
+name: header-securise
 collection: organisms
 notes: |
 ---
@@ -16,13 +16,6 @@ notes: |
       </div>
 
     </div>
-    <div class="row">
-      <div class="col-md-5">
-        {% include "../molecules/logo-etat.html.swig" %}
-      </div>
-      <div class="col-md-5 offset-md-2">
-        {% include "../atoms/search-form.html.swig" %}
-      </div>
-    </div>
+    {% include "../molecules/logo-etat.html.swig" %}
   </div>
 </header>
