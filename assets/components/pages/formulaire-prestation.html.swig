@@ -27,11 +27,6 @@ layout: page.html.swig
 <div class="container mt-3">
 
   <div class="row">
-    <div class="col-md-4">
-      <h3>Question 1 de 2</h3>
-
-      {% include "../molecules/pagination-vertical.html.swig" %}
-    </div>
     <div class="col-md-8">
 
       <form>
@@ -105,6 +100,11 @@ layout: page.html.swig
         </div>
       </form>
 
+    </div>
+    <div class="col-md-4">
+      <h3>Question 1 de 2</h3>
+
+      {% include "../molecules/pagination-vertical.html.swig" %}
     </div>
   </div>
 
