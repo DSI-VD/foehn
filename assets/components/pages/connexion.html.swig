@@ -6,7 +6,7 @@ styleguide: false
 layout: page.html.swig
 ---
 
-{% include "../organisms/header.html.swig" %}
+{% include "../organisms/header-securise.html.swig" %}
 
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
