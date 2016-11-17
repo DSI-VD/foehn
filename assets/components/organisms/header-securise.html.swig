@@ -25,7 +25,4 @@ notes: |
       </div>
     </div>
   </div>
-
-  {% include "../molecules/nav-primary.html.swig" %}
-
 </header>
