@@ -64,7 +64,7 @@ breadcrumb:
       </form>
 
       <article>
-        <a class="vd-teaser-link" href="#">
+        <a class="vd-teaser-link" href="../communiques-presse-detail">
           <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur. (surtitre)</p>
           <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet. (titre)</h3>
           <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016 (date de publication)</p>
@@ -73,7 +73,7 @@ breadcrumb:
       </article>
 
       <article>
-        <a class="vd-teaser-link" href="#">
+        <a class="vd-teaser-link" href="../communiques-presse-detail">
           <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
           <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
           <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
@@ -82,7 +82,7 @@ breadcrumb:
       </article>
 
       <article>
-        <a class="vd-teaser-link" href="#">
+        <a class="vd-teaser-link" href="../communiques-presse-detail">
           <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
           <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
           <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
@@ -91,7 +91,7 @@ breadcrumb:
       </article>
 
       <article>
-        <a class="vd-teaser-link" href="#">
+        <a class="vd-teaser-link" href="../communiques-presse-detail">
           <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
           <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
           <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
@@ -100,7 +100,7 @@ breadcrumb:
       </article>
 
       <article>
-        <a class="vd-teaser-link" href="#">
+        <a class="vd-teaser-link" href="../communiques-presse-detail">
           <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
           <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
           <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
