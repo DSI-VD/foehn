@@ -18,12 +18,11 @@ breadcrumb:
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
-        <h1 aria-hidden="true">Communiqués de presse</h1>
+        <h1>Communiqués de presse</h1>
   </div>
 </div>
 
 <main class="container">
-  <h1 class="sr-only">Economie</h1>
   <div class="row mt-3">
 
     <div class="col-md-8">
