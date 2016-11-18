@@ -102,4 +102,4 @@ layout: page.html.swig
 </div>
 
 </main>
-{% include "../organisms/footer.html.swig" %}
+{% include "../organisms/footer-securise.html.swig" %}
