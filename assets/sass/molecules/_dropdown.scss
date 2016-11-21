@@ -1,6 +1,8 @@
 @charset 'UTF-8';
 
 .vd-dropdown {
+  display: table;
+
   &.vd-dropdown-right {
     .dropdown-label {
       text-align: right;
@@ -45,16 +47,24 @@
   }
 
   .dropdown-chevron {
-    padding: 0.6em 0.3em 0.05em;
+    display: block;
+    display: flex;
+    height: 100%;
+    padding: 15px 15px 10px;
     font-size: 30px;
 
     .icons {
-      margin: 0;
+      margin: auto;
     }
   }
 
   .dropdown-label {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: $spacer/2 15px;
     text-transform: none;
+    text-decoration: none;
 
     .title {
       text-transform: uppercase;
