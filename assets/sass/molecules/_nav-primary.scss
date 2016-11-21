@@ -20,3 +20,10 @@
     background: $white;
   }
 }
+
+.vd-nav-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  .clearfix[class*=hidden] { width: 0; }
+}

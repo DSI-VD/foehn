@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{data.path}}build/css/vendors.min.css">
     <link rel="stylesheet" href="{{data.path}}build/css/main.css">
 
-    <!--[if lt IE 9]>
+    <!--[if lte IE 9]>
       <script src="{{data.path}}build/js/polyfills.min.js"></script>
     <![endif]-->
   </head>

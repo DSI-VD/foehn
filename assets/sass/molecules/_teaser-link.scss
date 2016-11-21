@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 .vd-teaser-link {
-  display: block;
+  display: inline-block;
   padding-top: ($spacer / 1.5);
   padding-bottom: ($spacer / 1.5);
   border: 1px solid rgba($gray-lighter, 0);

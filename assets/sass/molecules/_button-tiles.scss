@@ -1,12 +1,16 @@
 @charset 'UTF-8';
 
 .vd-btn-tiles {
+  display: block;
   display: flex;
   flex-wrap: wrap;
   margin: ($spacer / -2);
 
   .btn {
-    flex: 1 0 calc(25% - #{$spacer});
+    display: inline-flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: calc(25% - $spacer);
     position: relative;
     margin: ($spacer / 2);
     color: $black;
@@ -16,8 +20,7 @@
 
     @include vd-pattern-dotted($pattern-dotted-green);
 
-    &:hover,
-    &:focus {
+    @include hover-focus-active {
       background-color: rgba($vd-green-dark-2, 0.15);
     }
 
@@ -25,7 +28,6 @@
       top: 2px;
       left: 2px;
       box-shadow: 0 0 0 0 $black;
-      background-color: rgba($vd-green-dark-2, 0.2);
     }
 
     &.active {
