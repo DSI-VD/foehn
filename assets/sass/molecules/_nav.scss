@@ -1,1 +1,12 @@
 @charset 'UTF-8';
+
+.nav-inline {
+  .nav-link {
+    padding-top: ($spacer / 2);
+    vertical-align: top;
+  }
+
+  .dropdown-container {
+    padding-top: 0;
+  }
+}

@@ -9,7 +9,9 @@ notes: |
   <div class="container">
     <nav class="nav nav-inline text-xxs-right" aria-label="sous-navigation">
       <a class="nav-link" href="#">Contact</a>
-      {% include "../molecules/dropdown.html.swig" %}
+      <div class="nav-link dropdown-container">
+        {% include "../molecules/dropdown.html.swig" %}
+      </div>
     </nav>
     {% include "../molecules/logo-etat.html.swig" %}
   </div>
