@@ -7,6 +7,7 @@
   margin: ($spacer / -2);
 
   .btn {
+    display: inline-block;
     display: inline-flex;
     flex-grow: 1;
     flex-shrink: 0;
