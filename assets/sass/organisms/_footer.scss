@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 .footer {
+  margin-top: $spacer * 3;
   padding: ($spacer * 3) 0;
   background-image: url(../svg/bars_black.svg);
   background-repeat: repeat-x;
@@ -22,6 +23,10 @@
     }
   }
 
+  .container {
+    position: relative;
+  }
+
 }
 
 .footer-logo-container {
@@ -33,4 +38,10 @@
 .footer-logo {
   max-width: $spacer * 3;
   margin-left: auto;
+}
+
+.footer-btn-backtotop {
+  position: absolute;
+  top: ($spacer * -5);
+  right: 0;
 }
