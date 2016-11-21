@@ -43,5 +43,5 @@
 .footer-btn-backtotop {
   position: absolute;
   top: ($spacer * -5);
-  right: 0;
+  right: $grid-gutter-width-base * 0.5;
 }
