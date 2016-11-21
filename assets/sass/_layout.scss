@@ -9,3 +9,9 @@ body {
   background-size: auto 5px;
   border-bottom: 23px solid $vd-green;
 }
+
+// enable flex on some rows. Must be the first child of `.row` -> to avoid
+// issues with Safari and pseudo-elements
+.flex-row {
+  display: flex;
+}
