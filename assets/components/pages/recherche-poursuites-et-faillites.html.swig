@@ -68,7 +68,7 @@ layout: page.html.swig
         </p>
       </article>
 
-      <nav class="text-xs-center mt-3">
+      <nav class="text-xxs-center mt-3">
         <p class="mb-0">
           Page 1 de 10
         </p>

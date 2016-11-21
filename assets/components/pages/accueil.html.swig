@@ -21,7 +21,7 @@ layout: page.html.swig
         <h2 class="vd-section-title">Actualités</h2>
 
         <article class="vd-teaser">
-          <div class="text-sm-center mb-2">
+          <div class="text-xxs-center mb-2">
             <h3 class="vd-teaser-title">
               <a href="../actualite">La Journée Oser tous les métiers élargit son offre</a>
             </h3>
@@ -40,7 +40,7 @@ layout: page.html.swig
         </article>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2">
+          <h3 class="vd-teaser-title text-xxs-center mb-2">
             <a href="../actualite">Attribution de la bourse arts plastiques 2016</a>
           </h3>
           <div class="vd-teaser-content">
@@ -52,7 +52,7 @@ layout: page.html.swig
         </article>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2">
+          <h3 class="vd-teaser-title text-xxs-center mb-2">
             <a href="../actualite">Remise des prix du concours CinéCivic 2016</a>
           </h3>
           <div class="vd-teaser-content">
@@ -63,7 +63,7 @@ layout: page.html.swig
         </article>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2">
+          <h3 class="vd-teaser-title text-xxs-center mb-2">
             <a href="../actualite">5e Conférence nationale sur le fédéralisme</a>
           </h3>
           <div class="vd-teaser-content">
@@ -74,7 +74,7 @@ layout: page.html.swig
         </article>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2">
+          <h3 class="vd-teaser-title text-xxs-center mb-2">
             <a href="../actualite">Anglicans et catholiques ont déposé une demande de reconnaissance</a>
           </h3>
           <div class="vd-teaser-content">
