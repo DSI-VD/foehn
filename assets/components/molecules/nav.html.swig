@@ -8,9 +8,11 @@ notes: |
 ---
 <nav class="nav nav-inline hidden-sm-down">
   <h2 class="sr-only">Sous-navigation</h2>
-  <a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a>
-  <a class="nav-link" href="#">Annuaire</a>
-  <a class="nav-link" href="#">Agenda</a>
-  <a class="nav-link" href="#">Contact</a>
-  <a class="nav-link" href="../connexion">Espace Sécurisé</a>
+  <ul>
+    <li class="nav-item"><a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Annuaire</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="../connexion">Espace Sécurisé</a></li>
+  </ul>
 </nav>
