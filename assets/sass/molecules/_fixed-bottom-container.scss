@@ -2,8 +2,40 @@
 
 .vd-fixed-bottom {
   position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   z-index: $zindex-navbar-sticky;
+}
+
+@each $bp in map-keys($grid-breakpoints) {
+  .vd-fixed-bottom-#{$bp}-only {
+    @include media-breakpoint-only($bp) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: $zindex-navbar-sticky;
+    }
+  }
+
+  .vd-fixed-bottom-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: $zindex-navbar-sticky;
+    }
+  }
+
+  .vd-fixed-bottom-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: $zindex-navbar-sticky;
+    }
+  }
 }
