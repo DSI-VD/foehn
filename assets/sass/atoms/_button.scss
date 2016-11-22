@@ -62,7 +62,7 @@ a.btn {
 .vd-btn-chevron-t {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-top, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+  &:after { @include vd-background-image-icon($vd-chevron-top, $vd-green); }
 }
 
 .vd-btn-chevron-r {
