@@ -3,7 +3,7 @@ title: Nav Primary
 name: nav-primary
 collection: molecules
 notes: |
-  `.vd-nav-primary` navigation.
+  `.vd-nav-primary` navigation. **Make sure you add a `<div class="clearfix hidden-sm-down"></div>` every three (3) items, to avoid issues with IE.**
 
   To have the navigation open on load:
   - Remove the `.collapsed` class on the toggle button
@@ -22,9 +22,14 @@ notes: |
         <div class="row">
           <nav class="col-md-8" id="nav-primary" role="navigation" aria-label="Navigation par thèmes">
             <div class="row">
+              <div class="vd-nav-flex">
               {% for domain_id, domain in data.domains.topics %}
                 {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: domain.name, teaser_link_href: "../domaines/#"+domain_id, teaser_link_classes: 'col-md-4', teaser_link_text: domain.description} only %}
+                {% if loop.index % 3 == 0 %}
+                  <div class="clearfix hidden-sm-down"></div>
+                {% endif %}
               {% endfor %}
+              </div>
             </div>
           </nav>
           <div class="col-md-4">
