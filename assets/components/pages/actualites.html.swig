@@ -38,7 +38,7 @@ breadcrumb:
   <div class="row">
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">La Journée Oser tous les métiers élargit son offre</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -54,7 +54,7 @@ breadcrumb:
     </article>
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">Attribution de la bourse arts plastiques 2016</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -70,7 +70,7 @@ breadcrumb:
     </article>
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">Remise des prix du concours CinéCivic 2016</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -86,7 +86,7 @@ breadcrumb:
     </article>
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">5e Conférence nationale sur le fédéralisme</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -102,7 +102,7 @@ breadcrumb:
     </article>
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">Anglicans et catholiques ont déposé une demande de reconnaissance</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -118,7 +118,7 @@ breadcrumb:
     </article>
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">Lorem ipsum dolor sit amet</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -134,7 +134,7 @@ breadcrumb:
     </article>
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">Lorem ipsum dolor sit amet</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -150,7 +150,7 @@ breadcrumb:
     </article>
 
     <article class="vd-teaser col-md-6">
-      <div class="text-sm-center mb-2">
+      <div class="text-xxs-center mb-2">
         <h3 class="vd-teaser-title"><a href="../actualite">Lorem ipsum dolor sit amet</a></h3>
         <a class="vd-teaser-img" href="../actualite">
           <picture>
@@ -168,7 +168,7 @@ breadcrumb:
 
   </div>
 
-    <nav class="text-xs-center mt-3">
+    <nav class="text-xxs-center mt-3">
       <p class="mb-0">
         Page 1 de 10
       </p>

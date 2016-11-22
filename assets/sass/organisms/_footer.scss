@@ -1,12 +1,14 @@
 @charset 'UTF-8';
 
 .footer {
+  margin-top: $spacer * 3;
   padding: ($spacer * 3) 0;
   background-image: url(../svg/bars_black.svg);
   background-repeat: repeat-x;
   background-position: center bottom;
   background-size: auto 21px;
   background-color: $brand-inverse;
+  border-bottom: 23px solid $vd-green;
   color: $white;
 
   .nav {
@@ -22,6 +24,9 @@
     }
   }
 
+  .container {
+    position: relative;
+  }
 }
 
 .footer-logo-container {
@@ -34,4 +39,10 @@
   width: 100%;
   max-width: $spacer * 3;
   margin-left: auto;
+}
+
+.footer-btn-backtotop {
+  position: absolute;
+  top: ($spacer * -5);
+  right: $grid-gutter-width-base * 0.5;
 }

@@ -9,7 +9,7 @@ notes: |
   <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
-    <div class="dropdown-item pt-2 pb-1 text-xs-center">
+    <div class="dropdown-item pt-2 pb-1 text-xxs-center">
       <a class="btn btn-primary btn-sm vd-btn-chevron-r" href="../domaines">Tous les thèmes</a>
     </div>
     <div class="dropdown-item px-0 pb-0">
@@ -47,7 +47,7 @@ notes: |
       </ul>
     </div>
     <div class="dropdown-item bg-inverse">
-      <p class="text-white text-xs-center mt-1">
+      <p class="text-white text-xxs-center mt-1">
         <small>Suivre vd.ch sur les réseaux sociaux</small>
       </p>
 
