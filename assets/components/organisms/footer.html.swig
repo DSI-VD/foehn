@@ -9,6 +9,7 @@ notes: |
   <div class="container">
     <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
     <div class="row">
+      <div class="flex-row">
       <div class="col-lg-11 col-md-10">
         <nav class="row" aria-label="pied de page">
           <div class="col-md-4">
@@ -73,6 +74,7 @@ notes: |
           <img class="img-fluid" src="../build/svg/logo/logo--white.svg" alt="Canton de Vaud">
         </div>
       </div>
+    </div>
     </div>
   </div>
 </footer>
