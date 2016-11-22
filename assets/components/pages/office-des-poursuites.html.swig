@@ -65,7 +65,7 @@ breadcrumb:
         <h2 class="vd-section-title">Actualités</h2>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Nomination à l'Office des poursuites du district du Jura - Nord vaudois</a></h3>
+          <h3 class="vd-teaser-title text-xxs-center mb-2"><a href="#0">Nomination à l'Office des poursuites du district du Jura - Nord vaudois</a></h3>
           <div class="vd-teaser-content">
             <p>Le Secrétaire général a nommé Mme Catherine DESPONT en qualité de substitut du préposé de l'Office des poursuites du district du Jura - Nord vaudois.</p>
             <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
@@ -74,7 +74,7 @@ breadcrumb:
         </article>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Nomination à l'Office des poursuites du district de Lavaux - Oron</a></h3>
+          <h3 class="vd-teaser-title text-xxs-center mb-2"><a href="#0">Nomination à l'Office des poursuites du district de Lavaux - Oron</a></h3>
           <div class="vd-teaser-content">
             <p>La Cour administrative a nommé M. Olivier HENNEBERGER en qualité de préposé de l'Office des poursuites du district de Lavaux - Oron.</p>
             <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
@@ -83,7 +83,7 @@ breadcrumb:
         </article>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Nomination à l'Office des poursuites du district de Morges</a></h3>
+          <h3 class="vd-teaser-title text-xxs-center mb-2"><a href="#0">Nomination à l'Office des poursuites du district de Morges</a></h3>
           <div class="vd-teaser-content">
             <p>Le Secrétaire général a nommé Mme Claire-Lise PELLET en qualité de substitut ad hoc du préposé à l'Office des poursuites du district de Morges.</p>
             <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
@@ -92,7 +92,7 @@ breadcrumb:
         </article>
 
         <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-sm-center mb-2"><a href="#0">Nomination à l'Office des faillites de l'arrondissement de La Côte</a></h3>
+          <h3 class="vd-teaser-title text-xxs-center mb-2"><a href="#0">Nomination à l'Office des faillites de l'arrondissement de La Côte</a></h3>
           <div class="vd-teaser-content">
             <p>Le Secrétaire général a nommé  Mme Florence FREYMOND FREY en qualité de substitut du préposé à l'Office des faillites de l'arrondissement de La Côte.</p>
             <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
