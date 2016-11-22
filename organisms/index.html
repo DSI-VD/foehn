@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://dsi-vd.github.io/foehn/build/css/vendors.min.css">
     <link rel="stylesheet" href="https://dsi-vd.github.io/foehn/build/css/main.css">
 
-    <!--[if lt IE 9]>
+    <!--[if lte IE 9]>
       <script src="https://dsi-vd.github.io/foehn/build/js/polyfills.min.js"></script>
     <![endif]-->
   </head>
@@ -166,6 +166,10 @@
         
           <li>
             <a href="https://dsi-vd.github.io/foehn/atoms/#atom13">Separator</a>
+          </li>
+        
+          <li>
+            <a href="https://dsi-vd.github.io/foehn/atoms/#atom14">tag</a>
           </li>
         
       </ul>
@@ -2378,7 +2382,9 @@
     
       <footer class="footer">
   <div class="container">
+    <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
     <div class="row">
+      <div class="flex-row">
       <div class="col-lg-11 col-md-10">
         <nav class="row" aria-label="pied de page">
           <div class="col-md-4">
@@ -2444,6 +2450,7 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
 </footer>
 
@@ -2452,7 +2459,9 @@
   <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
     <pre><code class="language-markup"><footer class="footer">
   <div class="container">
+    <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
     <div class="row">
+      <div class="flex-row">
       <div class="col-lg-11 col-md-10">
         <nav class="row" aria-label="pied de page">
           <div class="col-md-4">
@@ -2517,6 +2526,7 @@
           <img class="img-fluid" src="../build/svg/logo/logo--white.svg" alt="Canton de Vaud">
         </div>
       </div>
+    </div>
     </div>
   </div>
 </footer>
@@ -2560,6 +2570,7 @@
     
       <footer class="footer">
   <div class="container">
+    <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
     <div class="row">
       <nav aria-label="pied de page" class="col-lg-11 col-md-10">
         <ul class="nav">
@@ -2588,6 +2599,7 @@
   <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
     <pre><code class="language-markup"><footer class="footer">
   <div class="container">
+    <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
     <div class="row">
       <nav aria-label="pied de page" class="col-lg-11 col-md-10">
         <ul class="nav">
@@ -2674,19 +2686,22 @@
     <div class="row">
       <div class="col-xs-12 text-sm-right">
 
-        <nav class="nav nav-inline hidden-sm-down" aria-label="sous-navigation">
-  <a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a>
-  <a class="nav-link" href="#">Annuaire</a>
-  <a class="nav-link" href="#">Agenda</a>
-  <a class="nav-link" href="#">Contact</a>
-  <a class="nav-link" href="../connexion">Espace Sécurisé</a>
+        <nav class="nav nav-inline hidden-sm-down">
+  <h2 class="sr-only">Sous-navigation</h2>
+  <ul>
+    <li class="nav-item"><a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Annuaire</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="../connexion">Espace Sécurisé</a></li>
+  </ul>
 </nav>
 
         <div class="vd-nav-mobile dropdown">
   <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
-    <div class="dropdown-item pt-2 pb-1 text-xs-center">
+    <div class="dropdown-item pt-2 pb-1 text-xxs-center">
       <a class="btn btn-primary btn-sm vd-btn-chevron-r" href="../domaines">Tous les thèmes</a>
     </div>
     <div class="dropdown-item px-0 pb-0">
@@ -2724,7 +2739,7 @@
       </ul>
     </div>
     <div class="dropdown-item bg-inverse">
-      <p class="text-white text-xs-center mt-1">
+      <p class="text-white text-xxs-center mt-1">
         <small>Suivre vd.ch sur les réseaux sociaux</small>
       </p>
 
@@ -2776,73 +2791,92 @@
         <div class="row">
           <nav class="col-md-8" id="nav-primary" role="navigation" aria-label="Navigation par thèmes">
             <div class="row">
+              <div class="vd-nav-flex">
               
                 <a href="../domaines/#culture" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Culture</h5>
   <p class="vd-teaser-link-text">Aides et soutiens, Musées cantonaux…</p>
 </a>
 
+                
               
                 <a href="../domaines/#economie" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Economie</h5>
   <p class="vd-teaser-link-text">Poursuites et faillites, Registre du commerce…</p>
 </a>
 
+                
               
                 <a href="../domaines/#environnement" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Environnement</h5>
   <p class="vd-teaser-link-text">Faune et nature, Energie…</p>
 </a>
 
+                
+                  <div class="clearfix hidden-sm-down"></div>
+                
               
                 <a href="../domaines/#etat_droit_finance" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Etat, Droit, Finance</h5>
   <p class="vd-teaser-link-text">Impôts, rémunérations, fiscalité…</p>
 </a>
 
+                
               
                 <a href="../domaines/#formation" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Formation</h5>
   <p class="vd-teaser-link-text">Jours fériés et vacances scolaires…</p>
 </a>
 
+                
               
                 <a href="../domaines/#mobilité" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Mobilité</h5>
   <p class="vd-teaser-link-text">Automobile, Navigation…</p>
 </a>
 
+                
+                  <div class="clearfix hidden-sm-down"></div>
+                
               
                 <a href="../domaines/#santé" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Santé</h5>
   <p class="vd-teaser-link-text">Prévention, Professionnels…</p>
 </a>
 
+                
               
                 <a href="../domaines/#social" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Social</h5>
   <p class="vd-teaser-link-text">Aide aux victimes et auteur-e-s de violences…</p>
 </a>
 
+                
               
                 <a href="../domaines/#vie_privee" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Vie privée</h5>
   <p class="vd-teaser-link-text">Documents d&#39;identité…</p>
 </a>
 
+                
+                  <div class="clearfix hidden-sm-down"></div>
+                
               
                 <a href="../domaines/#securite" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Sécurité</h5>
   <p class="vd-teaser-link-text">Police, contrôle, casiers judiciaire…</p>
 </a>
 
+                
               
                 <a href="../domaines/#territoire" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Territoire</h5>
   <p class="vd-teaser-link-text">Informations sur le territoire, Registre foncier…</p>
 </a>
 
+                
               
+              </div>
             </div>
           </nav>
           <div class="col-md-4">
@@ -2901,19 +2935,22 @@
     <div class="row">
       <div class="col-xs-12 text-sm-right">
 
-        <nav class="nav nav-inline hidden-sm-down" aria-label="sous-navigation">
-  <a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a>
-  <a class="nav-link" href="#">Annuaire</a>
-  <a class="nav-link" href="#">Agenda</a>
-  <a class="nav-link" href="#">Contact</a>
-  <a class="nav-link" href="../connexion">Espace Sécurisé</a>
+        <nav class="nav nav-inline hidden-sm-down">
+  <h2 class="sr-only">Sous-navigation</h2>
+  <ul>
+    <li class="nav-item"><a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Annuaire</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="../connexion">Espace Sécurisé</a></li>
+  </ul>
 </nav>
 
         <div class="vd-nav-mobile dropdown">
   <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
-    <div class="dropdown-item pt-2 pb-1 text-xs-center">
+    <div class="dropdown-item pt-2 pb-1 text-xxs-center">
       <a class="btn btn-primary btn-sm vd-btn-chevron-r" href="../domaines">Tous les thèmes</a>
     </div>
     <div class="dropdown-item px-0 pb-0">
@@ -2951,7 +2988,7 @@
       </ul>
     </div>
     <div class="dropdown-item bg-inverse">
-      <p class="text-white text-xs-center mt-1">
+      <p class="text-white text-xxs-center mt-1">
         <small>Suivre vd.ch sur les réseaux sociaux</small>
       </p>
 
@@ -3003,73 +3040,92 @@
         <div class="row">
           <nav class="col-md-8" id="nav-primary" role="navigation" aria-label="Navigation par thèmes">
             <div class="row">
+              <div class="vd-nav-flex">
               
                 <a href="../domaines/#culture" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Culture</h5>
   <p class="vd-teaser-link-text">Aides et soutiens, Musées cantonaux…</p>
 </a>
 
+                
               
                 <a href="../domaines/#economie" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Economie</h5>
   <p class="vd-teaser-link-text">Poursuites et faillites, Registre du commerce…</p>
 </a>
 
+                
               
                 <a href="../domaines/#environnement" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Environnement</h5>
   <p class="vd-teaser-link-text">Faune et nature, Energie…</p>
 </a>
 
+                
+                  <div class="clearfix hidden-sm-down"></div>
+                
               
                 <a href="../domaines/#etat_droit_finance" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Etat, Droit, Finance</h5>
   <p class="vd-teaser-link-text">Impôts, rémunérations, fiscalité…</p>
 </a>
 
+                
               
                 <a href="../domaines/#formation" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Formation</h5>
   <p class="vd-teaser-link-text">Jours fériés et vacances scolaires…</p>
 </a>
 
+                
               
                 <a href="../domaines/#mobilité" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Mobilité</h5>
   <p class="vd-teaser-link-text">Automobile, Navigation…</p>
 </a>
 
+                
+                  <div class="clearfix hidden-sm-down"></div>
+                
               
                 <a href="../domaines/#santé" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Santé</h5>
   <p class="vd-teaser-link-text">Prévention, Professionnels…</p>
 </a>
 
+                
               
                 <a href="../domaines/#social" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Social</h5>
   <p class="vd-teaser-link-text">Aide aux victimes et auteur-e-s de violences…</p>
 </a>
 
+                
               
                 <a href="../domaines/#vie_privee" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Vie privée</h5>
   <p class="vd-teaser-link-text">Documents d&#39;identité…</p>
 </a>
 
+                
+                  <div class="clearfix hidden-sm-down"></div>
+                
               
                 <a href="../domaines/#securite" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Sécurité</h5>
   <p class="vd-teaser-link-text">Police, contrôle, casiers judiciaire…</p>
 </a>
 
+                
               
                 <a href="../domaines/#territoire" class="vd-teaser-link col-md-4">
   <h5 class="vd-teaser-link-title">Territoire</h5>
   <p class="vd-teaser-link-text">Informations sur le territoire, Registre foncier…</p>
 </a>
 
+                
               
+              </div>
             </div>
           </nav>
           <div class="col-md-4">

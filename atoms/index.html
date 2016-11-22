@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://dsi-vd.github.io/foehn/build/css/vendors.min.css">
     <link rel="stylesheet" href="https://dsi-vd.github.io/foehn/build/css/main.css">
 
-    <!--[if lt IE 9]>
+    <!--[if lte IE 9]>
       <script src="https://dsi-vd.github.io/foehn/build/js/polyfills.min.js"></script>
     <![endif]-->
   </head>
@@ -166,6 +166,10 @@
         
           <li>
             <a href="https://dsi-vd.github.io/foehn/atoms/#atom13">Separator</a>
+          </li>
+        
+          <li>
+            <a href="https://dsi-vd.github.io/foehn/atoms/#atom14">tag</a>
           </li>
         
       </ul>
@@ -869,7 +873,8 @@
 
   
     <div class="styleguide-item-notes">
-    <p>Add the <code>.vd-list-links</code> class to display square bullets and bold text.</p>
+    <p>Add the <code>.vd-list-links</code> class to display square bullets links and bold text.</p>
+<p>To print an unstyled list, use the <a href="http://v4-alpha.getbootstrap.com/content/typography/#unstyled">Bootstrap class</a> <code>.list-unstyled</code>.</p>
 
     </div>
   
@@ -889,6 +894,14 @@
   <li>Text in vd-list-links</li>
 </ul>
 
+<ul class="list-unstyled">
+  <li>Unstyled element in unstyled list</li>
+  <li>Lorem ipsum dolor sit amet, consectetur</li>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+</ul>
+
     
   </div>
   <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
@@ -903,6 +916,14 @@
 <ul class="vd-list-links">
   <li><a href="#0">Link in vd-list-links</a></li>
   <li>Text in vd-list-links</li>
+</ul>
+
+<ul class="list-unstyled">
+  <li>Unstyled element in unstyled list</li>
+  <li>Lorem ipsum dolor sit amet, consectetur</li>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
 </ul>
 </code></pre>
   </div>
@@ -1124,6 +1145,57 @@
     <pre><code class="language-markup"><hr class="vd-separator vd-separator-green-pattern vd-separator-wide">
 <hr class="vd-separator vd-separator-gray-pattern">
 <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
+</code></pre>
+  </div>
+
+</div>
+
+    
+      
+<div class="styleguide-item-group" id="atom14">
+  <div class="styleguide-item-heading-group" data-styleguide-toggle="labels">
+    <h3 class="styleguide-item-heading"><a href="#atom14">tag</a></h3>
+    
+  <div class="styleguide-item-controls">
+    <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="notes" title="Toggle Notes">
+      <svg>
+        <use xlink:href="#styleguide-icon-notes" />
+      </svg>
+    </span>
+    <span class="styleguide-control styleguide-icon" data-styleguide-toggle-control="code" title="Toggle Code">
+      <svg>
+        <use xlink:href="#styleguide-icon-code" />
+      </svg>
+    </span>
+  </div>
+
+  </div>
+
+<div class="styleguide-description clearfix" data-styleguide-toggle="notes">
+  
+
+  
+    <div class="styleguide-item-notes">
+    <ul>
+<li>You can use the class: <code>.tag-pill</code> to make it rounded.</li>
+<li>The coloring classes (<code>.tag-default</code>, <code>.tag-primary</code>, ...) are also available.</li>
+</ul>
+
+    </div>
+  
+</div>
+<div class="styleguide-item-preview">
+    
+      <span class="tag tag-default">14</span>
+<span class="tag tag-primary tag-pill">Tags</span>
+<span class="tag tag-danger tag-pill">KO</span>
+
+    
+  </div>
+  <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
+    <pre><code class="language-markup"><span class="tag tag-default">14</span>
+<span class="tag tag-primary tag-pill">Tags</span>
+<span class="tag tag-danger tag-pill">KO</span>
 </code></pre>
   </div>
 
