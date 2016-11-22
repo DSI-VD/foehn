@@ -38,10 +38,10 @@ breadcrumb:
       <h2>Chancellerie d'Etat</h2>
     </div>
     <div class="col-md-8">
-      <ul class="h3 vd-list-bare">
+      <ul class="h3 list-unstyled">
         <li><a href="#">BIC</a></li>
         <li><a href="#">Préfectures</a>
-          <ul class="vd-list-bare pl-1">
+          <ul class="list-unstyled pl-1">
             <li><a href="#">Broye-Vully</a></li>
             <li><a href="#">Gros-de-Vaud</a></li>
             <li><a href="#">Jura-nord-vaudois</a></li>
@@ -84,7 +84,7 @@ breadcrumb:
       <h2>Départements</h2>
     </div>
     <div class="col-md-8">
-      <ul class="vd-list-bare">
+      <ul class="list-unstyled">
         <li>
           <span class="h3"><a href="#">DTE</a></span> <br>Direction générale de l'environnement
         </li>
@@ -120,7 +120,7 @@ breadcrumb:
       <h2>Ministère public</h2>
     </div>
     <div class="col-md-8">
-      <ul class="h3 vd-list-bare">
+      <ul class="h3 list-unstyled">
         <li><a href="#">Division contrôle affaire spéciales mineurs</a></li>
         <li><a href="#">Division affaires économiques</a></li>
         <li><a href="#">MPs Lausanne</a></li>
@@ -137,7 +137,7 @@ breadcrumb:
       <h2>Les autres entités</h2>
     </div>
     <div class="col-md-8">
-      <ul class="h3 vd-list-bare">
+      <ul class="h3 list-unstyled">
         <li><a href="#">Tribunal neutre</a></li>
         <li><a href="#">Contrôle cantonal des finances</a></li>
         <li><a href="#">Cour des comptes</a></li>
