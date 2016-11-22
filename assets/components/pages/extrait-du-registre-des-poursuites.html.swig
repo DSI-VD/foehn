@@ -126,15 +126,9 @@ breadcrumb:
         </div>
       </div>
 
-      <div class="vd-fixed-bottom hidden-md-up hidden-xxs-down">
-        <p>
-          <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
-        </p>
-      </div>
-
-      <p class="hidden-md-down">
+      <div class="vd-fixed-bottom-xs-only vd-fixed-bottom-sm-only">
         <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
-      </p>
+      </div>
     </main>
 
 
