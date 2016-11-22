@@ -16,6 +16,12 @@
   @include vd-make-fixed-bottom-container();
 }
 
+/**
+ * Let's create some classes for this fixed-container
+ * - .vd-fixed-bottom-BREAKPOINT-only
+ * - .vd-fixed-bottom-BREAKPOINT-up
+ * - .vd-fixed-bottom-BREAKPOINT-down
+ */
 @each $bp in map-keys($grid-breakpoints) {
   .vd-fixed-bottom-#{$bp}-only {
     @include media-breakpoint-only($bp) {
