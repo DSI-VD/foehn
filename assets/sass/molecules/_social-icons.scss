@@ -1,6 +1,8 @@
 @charset 'UTF-8';
 
 .vd-social-icon {
+  @extend .hover-outline-out;
+
   display: inline-block;
   display: inline-flex;
   justify-content: center;
@@ -18,5 +20,18 @@
     background: $link-hover-color;
     text-decoration: none;
     color: $white;
+
+    &:before {
+      border-width: 2px;
+      top: -3px;
+      right: -3px;
+      bottom: -3px;
+      left: -3px;
+    }
+  }
+
+  &:before {
+    border-radius: 100%;
+    border-width: 0;
   }
 }

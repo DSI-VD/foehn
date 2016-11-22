@@ -1,0 +1,73 @@
+/*
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+
+@import 'hover-variables';
+@import '../../node_modules/hover.css/scss/mixins';
+@import '../../node_modules/hover.css/scss/hacks';
+
+/* Used effects */
+@import '../../node_modules/hover.css/scss/effects/background-transitions/sweep-to-right';
+
+@if $includeClasses {
+  .#{$nameSpace}-sweep-to-right {
+    @include sweep-to-right();
+  }
+}
+
+@import '../../node_modules/hover.css/scss/effects/border-transitions/ripple-out';
+
+@if $includeClasses {
+  .#{$nameSpace}-ripple-out {
+    @include ripple-out();
+  }
+}
+
+@import '../../node_modules/hover.css/scss/effects/border-transitions/outline-out';
+
+@if $includeClasses {
+  .#{$nameSpace}-outline-out {
+    @include outline-out();
+  }
+}
+
+@import '../../node_modules/hover.css/scss/effects/icons/icon-float';
+
+@if $includeClasses {
+  .#{$nameSpace}-icon-float {
+    @include icon-float();
+  }
+}
+
+@import '../../node_modules/hover.css/scss/effects/icons/icon-sink';
+
+@if $includeClasses {
+  .#{$nameSpace}-icon-sink {
+    @include icon-sink();
+  }
+}
+
+@import '../../node_modules/hover.css/scss/effects/icons/icon-forward';
+
+@if $includeClasses {
+  .#{$nameSpace}-icon-forward {
+    @include icon-forward();
+  }
+}
+
+@import '../../node_modules/hover.css/scss/effects/icons/icon-back';
+
+@if $includeClasses {
+  .#{$nameSpace}-icon-back {
+    @include icon-back();
+  }
+}
