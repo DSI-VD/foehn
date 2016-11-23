@@ -3,7 +3,8 @@ title: Logo Etat
 name: logo-etat
 collection: molecules
 notes: |
-  This is the logo for the État de Vaud
+  This is the logo for the État de Vaud. This logo is only used on the homepage.
+  Elsewhere, use the alternate logo.
 ---
 <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-img">
