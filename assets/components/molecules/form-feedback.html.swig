@@ -10,7 +10,7 @@ notes: |
   <input class="form-control form-control-danger" type="text" id="mail" name="mail" value="" required aria-required="true" aria-describedby="mailHelp" aria-invalid="true">
 
   <div id="mailHelp">
-    <div class="form-control-feedback">Merci de renseigner votre courriel.</div>
+    <div class="form-control-feedback">Merci de renseigner votre "courriel".</div>
   <small class="form-text text-muted">Votre courriel ne sera pas communiqué à des organismes tiers.</small>
   </div>
 </div>
