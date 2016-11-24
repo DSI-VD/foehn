@@ -1,6 +1,6 @@
 ---
 title: Template 2 colonnes
-name: template-2-col
+name: template-2-colonnes
 collection: pages
 styleguide: false
 layout: page.html.swig
