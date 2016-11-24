@@ -7,7 +7,7 @@ notes: |
 ---
 
 <form>
-  <p>Les champs obligatoire sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
+  <p>Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
 
   <div class="form-group">
     <label for="firstname">Prénom</label> <strong><abbr title="required">*</abbr></strong>
@@ -22,7 +22,7 @@ notes: |
   <div class="form-group">
     <label for="mail">Courriel</label> <strong><abbr title="required">*</abbr></strong>
     <input class="form-control" type="text" id="mail" name="mail" value="" required aria-required="true" aria-describedby="mailHelp">
-    <small id="mailHelp" class="form-text text-muted">Votre courriel ne sera pas communiqué à des organismes tiers.</small>
+    <small id="mailHelp" class="form-text text-muted">Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.</small>
   </div>
 
   <div class="form-group">
