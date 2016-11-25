@@ -51,6 +51,4 @@ layout: page.html.swig
   </div>
 </main>
 
-<footer>
-  <p>Footer light à incorporer</p>
-</footer>
+{% include "../organisms/footer-securise.html.swig" %}
