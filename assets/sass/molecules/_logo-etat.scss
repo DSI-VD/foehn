@@ -20,26 +20,26 @@
 }
 
 .vd-logo-img {
-  width: 1.5em; /* [2] */
+  width: 1.5rem; /* [2] */
 
   @include media-breakpoint-up(md) {
-    width: 2em; /* [2] */
+    width: 2rem; /* [2] */
   }
 }
 
 .vd-logo-title {
   margin-top: $spacer * 0.5;
-  margin-left: $spacer * 1.5;
+  margin-left: $spacer * 3;
 
   @include media-breakpoint-up(md) {
     margin-top: $spacer;
   }
 
   &:first-child {
-    margin-left: 3em; /* [3] */
+    margin-left: 1.5rem + $spacer * 3; /* [3] */
 
     @include media-breakpoint-up(md) {
-      margin-left: 3.5em; /* [3] */
+      margin-left: 2rem + $spacer * 3; /* [3] */
     }
   }
 
