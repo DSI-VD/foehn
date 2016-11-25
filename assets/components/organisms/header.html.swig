@@ -18,7 +18,11 @@ notes: |
     </div>
     <div class="row">
       <div class="col-md-5">
+        {% if logo_alternate %}
+        {% include "../molecules/logo-etat-alternate.html.swig" %}
+        {% else %}
         {% include "../molecules/logo-etat.html.swig" %}
+        {% endif %}
       </div>
       <div class="col-md-5 offset-md-2">
         {% include "../atoms/search-form.html.swig" %}
