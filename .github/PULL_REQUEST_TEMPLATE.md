@@ -27,3 +27,4 @@
 - [ ] I have updated the documentation accordingly.
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.
+- [ ] I added this change in [CHANGELOG.md](https://github.com/DSI-VD/foehn/blob/master/CHANGELOG.md)
