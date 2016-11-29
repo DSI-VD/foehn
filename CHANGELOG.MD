@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.1]
+
+### Fixed
+
+- Fix Changelog location
+
 ## [1.0.0]
 
 ### Changed
@@ -421,7 +427,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/DSI-VD/foehn/compare/v1.0.0...c.1.0.1
 [1.0.0]: https://github.com/DSI-VD/foehn/compare/v0.9.0...v1.0.0
 [0.9.0]: https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0
