@@ -90,46 +90,12 @@ layout: page.html.swig
 
     <div class="col-md-4">
 
-      <section class="mb-3">
-
+      <section class="mb-3 hidden-sm-down">
         {% include "../organisms/twitter-feed.html.swig"  %}
-
       </section>
 
       <section>
-        <h2 class="vd-section-title mt-3">Agenda / événements</h2>
-
-        <article>
-          <h3>Vaccination contre la grippe en pharmacie</h3>
-          <p class="mb-0">On peut se vacciner contre la grippe dans différentes pharmacies du canton.</p>
-          <p>
-            <a href="#">plus d'info</a>
-          </p>
-        </article>
-        <hr>
-
-        <article>
-          <h3>Bourse de compagnonnage théâtrale</h3>
-          <p class="mb-0">L’Etat de Vaud et la Ville de Lausanne mettent au concours la 8e bourse de compagnonnage théâtral.</p>
-          <p>
-            <a href="#">plus d'info</a>
-          </p>
-        </article>
-        <hr>
-
-        <article>
-          <h3 class="vd-numbered-title">
-            <a href="#0">
-              <span class="tag tag-primary">12</span>
-            </a>
-            <a href="#0">Novembre 2016</a>
-          </h3>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam quam iusto.</p>
-          <p>
-            <a href="#">plus d'info</a>
-          </p>
-        </article>
-        <hr>
+        {% include "../organisms/agenda.html.swig"  %}
       </section>
 
     </div><!-- /.col-md-4 -->
