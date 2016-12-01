@@ -91,31 +91,9 @@ layout: page.html.swig
     <div class="col-md-4">
 
       <section class="mb-3">
-        <h2 class="vd-section-title">Twitter</h2>
 
-        <article>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, numquam consequatur!</p>
-          <p>
-            <a href="#">plus d'info</a>
-          </p>
-        </article>
-        <hr>
+        {% include "../organisms/twitter-feed.html.swig"  %}
 
-        <article>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, numquam consequatur!</p>
-          <p>
-            <a href="#">plus d'info</a>
-          </p>
-        </article>
-        <hr>
-
-        <article>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, numquam consequatur!</p>
-          <p>
-            <a href="#">plus d'info</a>
-          </p>
-        </article>
-        <hr>
       </section>
 
       <section>
