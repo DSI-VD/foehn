@@ -1,0 +1,10 @@
+---
+title: Form input
+name: form-input
+collection: molecules
+notes: |
+---
+<div class="form-group">
+  <label for="testInput">Label</label>
+  <input class="form-control" type="text" id="testInput" name="firstname" value="">
+</div>
