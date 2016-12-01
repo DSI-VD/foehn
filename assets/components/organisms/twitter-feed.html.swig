@@ -5,6 +5,7 @@ collection: organisms
 wrapper: container
 notes: |
 ---
+<section class="hidden-sm-down">
 
 <h2 class="vd-section-title">Twitter</h2>
 
@@ -34,3 +35,4 @@ notes: |
 </article>
 
 <hr>
+</section>
