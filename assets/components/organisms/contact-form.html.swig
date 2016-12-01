@@ -7,23 +7,22 @@ notes: |
 ---
 
 <form>
+  <p>Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
 
   <div class="form-group">
-    <label for="firstname">Prénom</label>
-    <input class="form-control" type="text" id="firstname" name="firstname" value="" required aria-describedby="firstnameHelp">
-    <small id="firstnameHelp" class="form-text text-muted">Ce champs est obligatoire.</small>
+    <label for="firstname">Prénom</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="firstname" name="firstname" value="" required aria-required="true">
   </div>
 
   <div class="form-group">
-    <label for="lastname">Nom</label>
-    <input class="form-control" type="text" id="lastname" name="lastname" value="" required aria-describedby="lastnameHelp">
-    <small id="lastnameHelp" class="form-text text-muted">Ce champs est obligatoire.</small>
+    <label for="lastname">Nom</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="lastname" name="lastname" value="" required aria-required="true">
   </div>
 
   <div class="form-group">
-    <label for="mail">Courriel</label>
-    <input class="form-control" type="text" id="mail" name="mail" value="" required aria-describedby="mailHelp">
-    <small id="mailHelp" class="form-text text-muted">Ce champs est obligatoire.</small>
+    <label for="mail">Courriel</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="mail" name="mail" value="" required aria-required="true" aria-describedby="mailHelp">
+    <small id="mailHelp" class="form-text text-muted">Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.</small>
   </div>
 
   <div class="form-group">
@@ -32,15 +31,13 @@ notes: |
   </div>
 
   <div class="form-group">
-    <label for="subject">Sujet</label>
-    <input class="form-control" type="text" id="subject" name="subject" value="" required aria-describedby="subjectHelp">
-    <small id="subjectHelp" class="form-text text-muted">Ce champs est obligatoire.</small>
+    <label for="subject">Sujet</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="subject" name="subject" value="" required aria-required="true">
   </div>
 
   <div class="form-group">
-    <label for="message">Message</label>
-    <textarea class="form-control" id="message" name="message" rows="8" cols="40" required aria-describedby="messageHelp"></textarea>
-    <small id="messageHelp" class="form-text text-muted">Ce champs est obligatoire.</small>
+    <label for="message">Message</label> <strong><abbr title="required">*</abbr></strong>
+    <textarea class="form-control" id="message" name="message" rows="8" cols="40" required aria-required="true"></textarea>
   </div>
 
   <div class="form-group">
