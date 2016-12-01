@@ -7,7 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- Twitter feed show only one item
+- Twitter feed show two items
+- Twitter feed use `.vd-teaser-small` class
 
 ### Added
 
