@@ -5,8 +5,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Twitter feed show only one item
+
 ### Added
 
+- Add Images atom
+- Add Image responsive atom
+- Add Twitter feed organism
 - Add Form feedback molecule
 - Add Form help text molecule
 - Add Form input molecule
