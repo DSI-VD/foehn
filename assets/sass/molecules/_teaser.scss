@@ -2,6 +2,7 @@
 
 .vd-teaser-img {
   display: inline-block;
+  max-width: 50%;
 
   @include media-breakpoint-up(sm) {
     margin: 0 auto;
