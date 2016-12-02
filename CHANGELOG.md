@@ -23,6 +23,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add Form input required molecule
 - Add Contact form organism
 
+### Fixed
+
+- Fix container max-width on mobile
+
 ## [1.0.2]
 
 ### Fixed
