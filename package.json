@@ -10,8 +10,8 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp serve",
-    "build": "npm install && gulp build --production",
-    "deploy": "npm install && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
+    "build": "yarn install && gulp build --production",
+    "deploy": "yarn install && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
   },
   "engines": {
     "node": "6.7.0",
