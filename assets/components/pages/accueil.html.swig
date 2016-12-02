@@ -28,7 +28,7 @@ layout: page.html.swig
             <a class="vd-teaser-img" href="../actualite">
               {# make it a macro when Toolbox is less f***ed up. ANGRY #}
               <picture>
-                <img style="max-width:320px;" class="img-fluid" src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" alt="article image"/>
+                <img class="img-fluid" src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" alt="article image"/>
               </picture>
             </a>
           </div>

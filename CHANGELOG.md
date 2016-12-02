@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Twitter feed show two items
 - Twitter feed use `.vd-teaser-small` class
 - Agenda feed use `.vd-teaser-small` class
+- `.vd-teaser-image` set the max-width to `50%``
 
 ### Added
 
