@@ -9,9 +9,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Twitter feed show two items
 - Twitter feed use `.vd-teaser-small` class
+- Agenda feed use `.vd-teaser-small` class
 
 ### Added
 
+- Add Agenda feeds organims
 - Add Images atom
 - Add Image responsive atom
 - Add Twitter feed organism
