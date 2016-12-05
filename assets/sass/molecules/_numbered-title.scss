@@ -15,13 +15,9 @@
   }
 
   a {
-    color: $body-color;
-    text-decoration: none;
+    @extend %link-black;
 
     &:hover {
-      color: $link-hover-color;
-      text-decoration: underline;
-
       .tag { background: $link-hover-color; }
     }
   }
