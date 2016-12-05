@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Twitter feed use `.vd-teaser-small` class
 - Agenda feed use `.vd-teaser-small` class
 - `.vd-teaser-image` set the max-width to `50%`
+- Change sidebar to `<aside class="small"></aside>` tag #444
 
 ### Added
 
@@ -23,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add Form input molecule
 - Add Form input required molecule
 - Add Contact form organism
+- Add Layout documentation about sidebar and main area #444
 
 ### Fixed
 
