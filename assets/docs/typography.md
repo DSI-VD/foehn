@@ -10,7 +10,7 @@ styleguide: true
 <br>
 <p class="text-graphik" style="font-weight: 400;">Graphik Light - normal 400</p>
 <p class="text-graphik" style="font-weight: 400; font-style: italic;">Graphik LightItalic - italic 400</p>
-<p class="text-graphik" style="font-weight: 500;">Graphik Regular - normal 500</p>
+<p class="text-graphik" style="font-weight: 500;">Graphik Medium - normal 500</p>
 <br>
 <p class="text-produkt" style="font-weight: 300;">Produkt Light - normal 300</p>
 <p class="text-produkt" style="font-weight: 300; font-style: italic;">Produkt LightItalic  - italic 300</p>
@@ -21,7 +21,7 @@ styleguide: true
 
 ## [Webfont Loader](https://github.com/typekit/webfontloader) code
 
-Insert this code in your base template, to invoke all the needed fonts. 
+Insert this code in your base template, to invoke all the needed fonts.
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
@@ -34,7 +34,7 @@ WebFont.load({
 });
 </script>
 ```
-  
+
 <hr class="my-3">
 <div class="bs-docs-section mt-3">
   <div class="mt-3"></div>
