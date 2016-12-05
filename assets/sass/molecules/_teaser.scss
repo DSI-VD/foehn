@@ -11,7 +11,10 @@
 
 .vd-teaser-title {
   margin-bottom: ($spacer * 2);
+}
 
+.vd-teaser-content,
+.vd-teaser-title {
   a {
     @extend %link-black;
   }
