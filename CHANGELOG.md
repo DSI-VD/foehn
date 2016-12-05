@@ -27,6 +27,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 - Fix container max-width on mobile
+- Fix search form height #459
 
 ## [1.0.2]
 
