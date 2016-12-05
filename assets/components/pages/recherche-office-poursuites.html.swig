@@ -174,7 +174,7 @@ layout: page.html.swig
 
     </main>
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
       <p>
         Vous ne trouvez pas votre information ?<br>Comment puis-je vous aider ?
       </p>
@@ -185,7 +185,7 @@ layout: page.html.swig
       <p>
         <a href="../domaines" class="btn btn-primary btn-sm vd-btn-chevron-r">tous les thèmes</a>
       </p>
-    </div>
+    </aside>
 
   </div>
 </div>

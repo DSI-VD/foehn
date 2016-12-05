@@ -132,7 +132,7 @@ offices des poursuites et des faillites</h3>
         <h2 class="vd-section-title">Organisation</h2>
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 small">
             <img src="http://placehold.it/150x150" class="rounded-circle">
           </div>
           <div class="col-md-8">
