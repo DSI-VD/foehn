@@ -11,6 +11,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Twitter feed use `.vd-teaser-small` class
 - Agenda feed use `.vd-teaser-small` class
 - `.vd-teaser-image` set the max-width to `50%`
+- Moved `.vd-teaser-meta` out of `.vd-teaser-content` #473
+- Wrapped a link around the content of `.vd-teaser-content` #473
+- Set styles for links everywhere in teaser component #473 #474
 
 ### Added
 
