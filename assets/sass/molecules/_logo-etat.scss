@@ -17,9 +17,21 @@
 }
 
 .vd-logo-img {
-  width: 1.5em;
+  position: relative;
+  width: 2em;
+  margin-right: 0.5em;
 
-  @include media-breakpoint-up(md) { width: 2em; }
+  @include media-breakpoint-up(md) { margin-right: 1.5rem; }
+
+  img {
+    position: absolute;
+    bottom: -0.2em;
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      bottom: 0;
+    }
+  }
 }
 
 .vd-logo-title {
