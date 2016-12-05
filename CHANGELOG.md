@@ -27,6 +27,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 - Fix container max-width on mobile
+- Changed Graphik font name in doc #426
 
 ## [1.0.2]
 
