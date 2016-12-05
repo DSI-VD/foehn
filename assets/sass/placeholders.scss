@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+%link-black {
+  color: $body-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
