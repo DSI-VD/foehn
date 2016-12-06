@@ -3,27 +3,51 @@ title: Fœhn - VD.ch
 styleguide: true
 permalink: false
 ---
-  <p><strong>This styleguide has been designed to serve the purpose of the website vd.ch.</strong></p>
-  <h2>What is a styleguide ?</h2>
-  <p>
-    According to wikipedia, a styleguide is: <br>
-    <em> A set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. (It is often called a style sheet, though that term has other meanings.) A style guide establishes and enforces style to improve communication.</em>
-  </p>
-  <h2>Framework</h2>
-  <p>This styleguide is extensively based on the framework Bootstrap version 4 using the preprocessor SASS. Further information can be fetched on <a href="https://v4-alpha.getbootstrap.com/">the official documentation</a></p>
-  <h2>Content & hierarchy</h2>
-  <p>All the components are organized accordingly to the <a href="http://atomicdesign.bradfrost.com/">atomic design</a> philosophy by Brad Frost.<br>
+**This styleguide has been designed to serve the purpose of the website vd.ch.**
+
+## What is a styleguide ?
+
+According to wikipedia, a styleguide is:<br>
+*A set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. (It is often called a style sheet, though that term has other meanings.) A style guide establishes and enforces style to improve communication.*
+
+## Framework
+
+This styleguide is extensively based on the framework Bootstrap version 4 using the preprocessor SASS. Further information can be fetched on [the official documentation](https://v4-alpha.getbootstrap.com/)
+
+## Content & hierarchy
+
+All the components are organized accordingly to the [atomic design](http://atomicdesign.bradfrost.com/) philosophy by Brad Frost.<br>
   You can navigate through all theses components with the help of the left side navigation bar.
-  </p>
-  <p>Additionaly, a few example pages are designed to give an overview of all these elements integrated together</p>
-  <h2>Usage</h2>
-  <p>Each component are listed with a quick documentation box and an example of the displayed element with his source code. It should give you all the infos to apply this design guideline to any web tools you seek to develop</p>
-  <p>More technical infos (to use or contribute to the styleguide) are referenced on the README file of the repo <a href="https://github.com/DSI-VD/foehn">FOEHN</a></p>
-  <h2>Getting started</h2>
 
-  <h3>How to include</h3>
+Additionaly, a few example pages are designed to give an overview of all these elements integrated together
 
-  <p class="mt-1">Put this in your `<head/>` tag:</p>
+## Usage
+
+Each component are listed with a quick documentation box and an example of the displayed element with his source code. It should give you all the infos to apply this design guideline to any web tools you seek to develop
+
+More technical infos (to use or contribute to the styleguide) are referenced on the README file of the repo [FOEHN](https://github.com/DSI-VD/foehn)
+
+## Getting started
+
+
+### Install as node dependency
+
+With Yarn:
+
+```bash
+$ yarn add https://github.com/DSI-VD/foehn
+```
+
+or NPM:
+
+```bash
+# test
+$ npm install https://github.com/DSI-VD/foehn
+```
+
+### How to include
+
+Put this in your `<head/>` tag:
 
 ```html
 <!-- load all stylesheets -->
@@ -36,7 +60,7 @@ permalink: false
 <![endif]-->
 ```
 
-  <p class="mt-1">Put this just before the closing `</body>` tag:</p>
+Put this just before the closing `</body>` tag:
 
 ```html
 <!-- load all the javascript files (jQuery needed for Bootstrap, TetherJS needed for the Tooltip Bootstrap plugin) -->
@@ -57,13 +81,3 @@ permalink: false
   });
 </script>
 ```
-
-  <h3>Install with yarn</h3>
-  <pre>
-    <code>$ yarn add https://github.com/DSI-VD/foehn</code>
-  </pre>
-
-  <h3>Install with npm</h3>
-  <pre>
-    <code>$ npm install https://github.com/DSI-VD/foehn</code>
-  </pre>
