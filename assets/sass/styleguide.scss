@@ -71,6 +71,50 @@
   .styleguide-item-hidden + & {
     border-radius: 0.2em;
   }
+
+  .styleguide-tab-pane & {
+    border-top: 0;
+  }
+}
+
+.styleguide-tabs.nav {
+  padding: 0 $spacer;
+  background: $gray-lightest;
+  border-left: 1px solid darken($gray-lightest, 4%);
+  border-right: 1px solid darken($gray-lightest, 4%);
+
+  &.nav-tabs {
+    display: block;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    padding: 0.6em 1em 0.4em;
+
+    &.active {
+      background: $white;
+      color: $link-color;
+
+      &:after { content: none; }
+
+      &:hover,
+      &:focus {
+        background: $white;
+        color: $link-color;
+      }
+    }
+  }
+
+  .styleguide-description.styleguide-item-hidden + & {
+    border-top: 1px solid darken($gray-lightest, 4%);
+    border-top-right-radius: 0.2em;
+    border-top-left-radius: 0.2em;
+  }
 }
 
 .styleguide-item-code {

@@ -2,10 +2,15 @@
 title: Blockquote
 name: Blockquote
 collection: molecules
+variants:
+  media: With a portrait image
 bootstrap: http://v4-alpha.getbootstrap.com/content/typography/#blockquotes
 notes: |
 ---
-<blockquote class="blockquote">
+<blockquote class="blockquote {% if variant == 'media' %}vd-blockquote-media{% endif %}">
+  {%- if variant == 'media' %}
+    <img class="img-fluid rounded rounded-circle" src="http://placehold.it/120x120" alt="Portrait de l'auteur de la quote">
+  {% endif -%}
   <p>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.</p>
   <footer class="blockquote-footer">Pascal Broulis, Conseil d'État de Vaud</footer>
 </blockquote>
