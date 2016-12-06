@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix logo width (to avoid it being full width flex)
+
 ## [0.11.0]
 
 ### Changed
