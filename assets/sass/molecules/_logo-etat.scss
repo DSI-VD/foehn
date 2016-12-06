@@ -4,7 +4,10 @@
  * Logo of the site web
  *
  * 1. Make the logo and text be side by side
- * 2. Add the green blocks underline
+ * 2. Width of the logo
+ * 3. If there's no coat of arms, add the margin needed for the logo to stay in
+ *    position
+ * 4. Add the green blocks underline
  */
 .vd-logo {
   display: flex; /* [1] */
@@ -17,15 +20,28 @@
 }
 
 .vd-logo-img {
-  width: 1.5em;
+  width: 1.5rem; /* [2] */
 
-  @include media-breakpoint-up(md) { width: 2em; }
+  @include media-breakpoint-up(md) {
+    width: 2rem; /* [2] */
+  }
 }
 
 .vd-logo-title {
   margin-top: $spacer * 0.5;
+  margin-left: $spacer * 3;
 
-  @include media-breakpoint-up(md) { margin-top: $spacer; }
+  @include media-breakpoint-up(md) {
+    margin-top: $spacer;
+  }
+
+  &:first-child {
+    margin-left: 1.5rem + $spacer * 3; /* [3] */
+
+    @include media-breakpoint-up(md) {
+      margin-left: 2rem + $spacer * 3; /* [3] */
+    }
+  }
 
   > img {
     width: 10em;
@@ -34,11 +50,11 @@
 
   /* add the green underline */
   &:after {
-    content: ''; /* [2] */
-    display: block; /* [2] */
-    width: 100%; /* [2] */
-    height: 4px; /* [2] */
-    margin-top: 2px;
-    background-image: url('../svg/pattern_squares_green.svg'); /* [2] */
+    content: ''; /* [4] */
+    display: block; /* [4] */
+    width: 100%; /* [4] */
+    height: 4px; /* [4] */
+    margin-top: 2px; /* [4] */
+    background-image: url('../svg/pattern_squares_green.svg'); /* [4] */
   }
 }
