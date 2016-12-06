@@ -5,7 +5,7 @@ collection: pages
 styleguide: false
 layout: page.html.swig
 ---
-{% include "../organisms/header.html.swig" with {'primary_opened': true}   %}
+{% include "../organisms/header.html.swig" with {'primary_opened': true, 'logo_alternate': true}   %}
 
 <div class="container mt-3">
   <h1 class="sr-only">Site officiel de l'&Eacute;tat de Vaud</h1>
