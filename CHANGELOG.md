@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.11.0]
+
 ### Changed
 
 - Twitter feed show two items
@@ -462,7 +464,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.10.2...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.11.0...HEAD
+[0.11.0]: https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0
 [0.10.2]: https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2
 [0.10.1]: https://github.com/DSI-VD/foehn/compare/v0.10.0...c.0.10.1
 [0.10.0]: https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0
