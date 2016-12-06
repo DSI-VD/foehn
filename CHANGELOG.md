@@ -16,6 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change sidebar to `<aside class="small"></aside>` tag #444
 - Change logo margin #419
 - Implement a bigger gutter-width (90px) #476
+- Implement logo with coat off arms only on mobile #458
 
 ### Added
 
