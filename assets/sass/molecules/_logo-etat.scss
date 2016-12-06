@@ -10,7 +10,8 @@
  * 4. Add the green blocks underline
  */
 .vd-logo {
-  display: flex; /* [1] */
+  display: inline-block;
+  display: inline-flex; /* [1] */
   margin-bottom: $spacer;
 
   @include plain-hover-focus {
