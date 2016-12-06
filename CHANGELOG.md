@@ -5,12 +5,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.11.0]
+
 ### Changed
 
 - Twitter feed show two items
 - Twitter feed use `.vd-teaser-small` class
 - Agenda feed use `.vd-teaser-small` class
 - `.vd-teaser-image` set the max-width to `50%`
+- Change sidebar to `<aside class="small"></aside>` tag #444
+- Change logo margin #419
+- Implement a bigger gutter-width (90px) #476
 
 ### Added
 
@@ -23,25 +28,28 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add Form input molecule
 - Add Form input required molecule
 - Add Contact form organism
+- Add Layout documentation about sidebar and main area #444
 
 ### Fixed
 
 - Fix container max-width on mobile
+- Changed Graphik font name in doc #426
+- Fix search form height #459
 - Fix headings font-sizes #462
 
-## [1.0.2]
+## [0.10.2]
 
 ### Fixed
 
 - Fix Changelog file extension
 
-## [1.0.1]
+## [0.10.1]
 
 ### Fixed
 
 - Fix Changelog location
 
-## [1.0.0]
+## [0.10.0]
 
 ### Changed
 
@@ -457,10 +465,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.2...HEAD
-[1.0.2]: https://github.com/DSI-VD/foehn/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/DSI-VD/foehn/compare/v1.0.0...c.1.0.1
-[1.0.0]: https://github.com/DSI-VD/foehn/compare/v0.9.0...v1.0.0
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.11.0...HEAD
+[0.11.0]: https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0
+[0.10.2]: https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2
+[0.10.1]: https://github.com/DSI-VD/foehn/compare/v0.10.0...c.0.10.1
+[0.10.0]: https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/DSI-VD/foehn/compare/v0.6.1...v0.7.0

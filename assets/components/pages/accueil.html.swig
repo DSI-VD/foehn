@@ -5,7 +5,7 @@ collection: pages
 styleguide: false
 layout: page.html.swig
 ---
-{% include "../organisms/header.html.swig" with {'primary_opened': true}   %}
+{% include "../organisms/header.html.swig" with {'primary_opened': true, 'logo_alternate': true}   %}
 
 <div class="container mt-3">
   <h1 class="sr-only">Site officiel de l'&Eacute;tat de Vaud</h1>
@@ -88,7 +88,7 @@ layout: page.html.swig
 
     </div><!-- /.col-md-8 -->
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
 
       <section class="mb-3 hidden-sm-down">
         {% include "../organisms/twitter-feed.html.swig"  %}
@@ -98,7 +98,7 @@ layout: page.html.swig
         {% include "../organisms/agenda.html.swig"  %}
       </section>
 
-    </div><!-- /.col-md-4 -->
+    </aside><!-- /.col-md-4 -->
 
   </div><!-- /.row -->
 </div><!-- /.container -->

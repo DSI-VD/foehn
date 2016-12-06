@@ -10,7 +10,7 @@ styleguide: true
 <br>
 <p class="text-graphik" style="font-weight: 400;">Graphik Light - normal 400</p>
 <p class="text-graphik" style="font-weight: 400; font-style: italic;">Graphik LightItalic - italic 400</p>
-<p class="text-graphik" style="font-weight: 500;">Graphik Regular - normal 500</p>
+<p class="text-graphik" style="font-weight: 500;">Graphik Medium - normal 500</p>
 <br>
 <p class="text-produkt" style="font-weight: 300;">Produkt Light - normal 300</p>
 <p class="text-produkt" style="font-weight: 300; font-style: italic;">Produkt LightItalic  - italic 300</p>

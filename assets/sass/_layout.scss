@@ -5,3 +5,13 @@
 .flex-row {
   display: flex;
 }
+
+// override the .container class from Bootstrap to enable responsive gutter
+.container {
+  @each $breakpoint, $gutter in $grid-gutter-widths {
+    @include media-breakpoint-up($breakpoint) {
+      padding-left: ($gutter / 2);
+      padding-right: ($gutter / 2);
+    }
+  }
+}
