@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## Added
+
+- Add new Update Time atom #447
+
 ## [0.11.0]
 
 ### Changed
