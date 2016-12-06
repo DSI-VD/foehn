@@ -20,4 +20,29 @@ permalink: false
   <h2>Usage</h2>
   <p>Each component are listed with a quick documentation box and an example of the displayed element with his source code. It should give you all the infos to apply this design guideline to any web tools you seek to develop</p>
   <p>More technical infos (to use or contribute to the styleguide) are referenced on the README file of the repo <a href="https://github.com/DSI-VD/foehn">FOEHN</a></p>
+  <h2>Getting started</h2>
+
+  <h3>Files to include</h3>
+  <pre>
+    <code>
+      &lt;link rel="stylesheet" href="/build/css/vendors.min.css"&gt;
+      &lt;link rel="stylesheet" href="/build/css/main.css"&gt;
+      &lt;!--[if lte IE 9]&gt;
+      &lt;script src="/build/js/polyfills.min.js"&gt;&lt;/script&gt;
+      &lt;![endif]--&gt;
+      &lt;link rel="stylesheet" href="/build/fonts/fonts.css" media="all"&gt;
+
+      &lt;script src="/build/js/vendors.min.js"&gt;&lt;/script&gt;
+    </code>
+  </pre>
+
+  <h3>Install with yarn</h3>
+  <pre>
+    <code>$ yarn add https://github.com/DSI-VD/foehn</code>
+  </pre>
+
+  <h3>Install with npm</h3>
+  <pre>
+    <code>$ npm install https://github.com/DSI-VD/foehn</code>
+  </pre>
 </div>
