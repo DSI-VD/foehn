@@ -88,7 +88,7 @@ layout: page.html.swig
 
     </div><!-- /.col-md-8 -->
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
 
       <section class="mb-3 hidden-sm-down">
         {% include "../organisms/twitter-feed.html.swig"  %}
@@ -98,7 +98,7 @@ layout: page.html.swig
         {% include "../organisms/agenda.html.swig"  %}
       </section>
 
-    </div><!-- /.col-md-4 -->
+    </aside><!-- /.col-md-4 -->
 
   </div><!-- /.row -->
 </div><!-- /.container -->
