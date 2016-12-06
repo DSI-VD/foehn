@@ -157,6 +157,10 @@ breadcrumb:
     </aside>
 
   </div>
+
+  {% include "../atoms/update-time.html.swig" %}
 </div>
+
+
 
 {% include "../organisms/footer.html.swig" %}
