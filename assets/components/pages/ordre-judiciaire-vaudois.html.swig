@@ -112,7 +112,7 @@ breadcrumb:
 
     </div>
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
       <h2 class="vd-section-title">Contact</h2>
 
       <p>
@@ -138,7 +138,7 @@ breadcrumb:
         Accéditation des médias
       </p>
 
-    </div>
+    </aside>
   </div>
 </div>
 

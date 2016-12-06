@@ -37,7 +37,7 @@ breadcrumb:
 
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 small">
       <h2>Office des poursuites de Lausanne</h2>
       <p>Avenue de Longemalle 1 <br>1020 Renens</p>
 
