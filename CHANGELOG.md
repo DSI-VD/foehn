@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Move back to top button in domain list
+- Change style of back to top button in domain list
+
 ## [0.11.0]
 
 ### Changed
