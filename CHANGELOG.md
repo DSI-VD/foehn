@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Agenda feed use `.vd-teaser-small` class
 - `.vd-teaser-image` set the max-width to `50%`
 - Change sidebar to `<aside class="small"></aside>` tag #444
+- Change logo margin #419 
 
 ### Added
 
