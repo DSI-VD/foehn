@@ -6,9 +6,10 @@
  * 1. Make the logo and text be side by side
  * 2. Width of the logo
  * 3. If there's no coat of arms, add the margin needed for the logo to stay in
- *    position
+ *    position (width of logo + its margin)
  * 4. Add the green blocks underline
  */
+
 .vd-logo {
   display: flex; /* [1] */
   margin-bottom: $spacer;
@@ -20,26 +21,36 @@
 }
 
 .vd-logo-img {
-  width: 1.5rem; /* [2] */
+  position: relative;
+  width: 2em; /* [2] */
+  margin-right: 0.5em;
 
-  @include media-breakpoint-up(md) {
-    width: 2rem; /* [2] */
+  @include media-breakpoint-up(md) { margin-right: 1.5em; }
+
+  img {
+    position: absolute;
+    bottom: -0.2em;
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      bottom: 0;
+    }
   }
 }
 
 .vd-logo-title {
   margin-top: $spacer * 0.5;
-  margin-left: $spacer * 3;
 
   @include media-breakpoint-up(md) {
     margin-top: $spacer;
+    margin-bottom: $spacer * 2;
   }
 
   &:first-child {
-    margin-left: 1.5rem + $spacer * 3; /* [3] */
+    margin-left: 2em + 0.5em; /* [3] */
 
     @include media-breakpoint-up(md) {
-      margin-left: 2rem + $spacer * 3; /* [3] */
+      margin-left: 2em + 1.5em; /* [3] */
     }
   }
 
