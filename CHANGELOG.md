@@ -16,6 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Add new Blockquote style and make it the default one #487
+- Add new Update Time atom #447
 
 ### Fixed
 
