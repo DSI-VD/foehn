@@ -4,7 +4,8 @@ name: Teaser
 collection: molecules
 notes: |
 ---
-<article class="vd-teaser">
+
+<article class="vd-teaser{% if teaser_wrapper %} {{ teaser_wrapper }}{% else %}{% endif %}">
   <div class="text-xxs-center mb-2">
     <h3 class="vd-teaser-title"><a href="#0">Lorem ipsum dolor sit amet</a></h3>
     <a class="vd-teaser-img" href="#0">
@@ -19,7 +20,7 @@ notes: |
   </div>
   <div class="vd-teaser-content">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+    <a href="#0" class="vd-teaser-meta">14.06.2016</a>
   </div>
   <hr>
 </article>
