@@ -73,17 +73,6 @@ layout: page.html.swig
           <hr>
         </article>
 
-        <article class="vd-teaser">
-          <h3 class="vd-teaser-title text-xxs-center mb-2">
-            <a href="../actualite">Anglicans et catholiques ont déposé une demande de reconnaissance</a>
-          </h3>
-          <div class="vd-teaser-content">
-            <p>Les deux communautés ont signé la déclaration liminaire d’engagement, en vue d’une reconnaissance en tant qu’institution d’intérêt public.</p>
-            <a href="../actualite" class="vd-teaser-meta">14.06.2016</a>
-          </div>
-          <hr>
-        </article>
-
       </main>
 
     </div><!-- /.col-md-8 -->
