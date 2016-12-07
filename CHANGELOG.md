@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change style of back to top button in domain list
 - Visually hide headings "Accès direct" in domain page
 - Change list style of "Accès direct" in domain page
+- Nav use a smaller font size
 
 ### Added
 
