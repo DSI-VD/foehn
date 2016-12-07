@@ -25,6 +25,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add new Blockquote style and make it the default one #487
 - Add new Update Time atom #447
+- Add "Toutes l'actualitées" button on homepage
+- Add "Tous les communiqués" button on homepage
+- Add "Toutes les décisions du conseil d'état" button on homepage
 
 ### Fixed
 
