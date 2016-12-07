@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change margin of "Les plus visités" in primary nav
 - Footer use a smaller font
 - Update news metatdata info
+- Homepage show 4 news
 
 ### Added
 
