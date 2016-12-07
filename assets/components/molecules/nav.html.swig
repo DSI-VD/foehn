@@ -13,6 +13,6 @@ notes: |
     <li class="nav-item"><a class="nav-link" href="#">Annuaire</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    <li class="nav-item"><a class="nav-link" href="../connexion">Espace Sécurisé</a></li>
+    <li class="nav-item"><span class="fa fa-lock" aria-hidden="true"></span> <a class="nav-link" href="../connexion">Mon compte</a></li>
   </ul>
 </nav>

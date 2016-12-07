@@ -13,6 +13,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Visually hide headings "Accès direct" in domain page
 - Change list style of "Accès direct" in domain page
 - Nav use a smaller font size
+- Rename "Espace securisé" link in nav to "Mon compte"
+- Add a locker to "Mon compte"
 
 ### Added
 
