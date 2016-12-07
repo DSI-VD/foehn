@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 - Modify the existing Blockquotes to `.vd-blockquote-bubble` and `.vd-blockquote-bubble-media` classes #487
+- Move back to top button in domain list
+- Change style of back to top button in domain list
+- Visually hide headings "Accès direct" in domain page
+- Change list style of "Accès direct" in domain page
 
 ### Added
 
