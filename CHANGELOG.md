@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Footer use a smaller font
 - Update news metatdata info
 - Homepage show 4 news
+- "Toutes les autorités" button on homepage is smaller
 
 ### Added
 
