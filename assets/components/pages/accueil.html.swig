@@ -73,6 +73,12 @@ layout: page.html.swig
           <hr>
         </article>
 
+        <ul class="list-unstyled">
+          <li><a href="#" class="btn btn-primary vd-btn-chevron-r btn-sm">Toutes l'actualitées</a></li>
+          <li><a href="#" class="btn btn-secondary vd-btn-chevron-r btn-sm">Tous les communiqués</a></li>
+          <li><a href="#" class="btn btn-secondary vd-btn-chevron-r btn-sm">Décisions du conseil d'état</a></li>
+        </ul>
+
       </main>
 
     </div><!-- /.col-md-8 -->
