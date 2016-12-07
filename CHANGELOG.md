@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Nav use a smaller font size
 - Rename "Espace securisé" link in nav to "Mon compte"
 - Add a locker to "Mon compte"
+- Change margin of "Les plus visités" in primary nav
 
 ### Added
 
