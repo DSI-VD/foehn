@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix figure-caption size and look #429
+
 ## [0.11.0]
 
 ### Changed
