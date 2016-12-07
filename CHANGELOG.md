@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 - Fix figure-caption size and look #429
+- Fix logo width (to avoid it being full width flex)
 
 ## [0.11.0]
 
