@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a locker to "Mon compte"
 - Change margin of "Les plus visités" in primary nav
 - Footer use a smaller font
+- Update news metatdata info
 
 ### Added
 
