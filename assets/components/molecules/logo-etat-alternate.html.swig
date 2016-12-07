@@ -7,7 +7,8 @@ notes: |
 ---
 <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-img">
-    <img src="../build/svg/logo/logo.svg" class="img-fluid" alt="Logo du canton de Vaud" />
+    <img src="../build/svg/logo/logo.svg" class="img-fluid hidden-sm-down" alt="Logo du canton de Vaud" />
+    <img src="../build/svg/logo/logo-square.svg" class="img-fluid hidden-md-up" aria-hidden="true" alt="Logo du canton de Vaud" />
   </div>
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
