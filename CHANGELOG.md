@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Added
 
 - Add a `.container-small`
+- Add publication date on news
 
 ### Fix
 
