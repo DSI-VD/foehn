@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.12.0]
+
 ### Changed
 
 - Modify the existing Blockquotes to `.vd-blockquote-bubble` and `.vd-blockquote-bubble-media` classes #487
@@ -497,7 +499,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.11.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/DSI-VD/foehn/compare/v0.11.0...0.12.0
 [0.11.0]: https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0
 [0.10.2]: https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2
 [0.10.1]: https://github.com/DSI-VD/foehn/compare/v0.10.0...c.0.10.1
