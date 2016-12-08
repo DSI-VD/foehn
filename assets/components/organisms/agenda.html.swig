@@ -29,7 +29,3 @@ notes: |
   <p class="mb-0">On peut se vacciner contre la grippe dans différentes pharmacies du canton.</p>
   <p><a href="#">plus d'info</a></p>
 </article>
-
-<p>
-  <a class="btn btn-primary vd-btn-chevron-r btn-sm" href="#">Tout l'agenda</a>
-</p>
