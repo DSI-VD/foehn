@@ -15,11 +15,9 @@ notes: |
 
 <article class="vd-teaser-small mb-1">
   {% include "../molecules/numbered-title.html.swig" %}
-  <div class="row">
-    <figure class="col-sm-6">
-      {% include "../atoms/image-responsive.html.swig"  %}
-    </figure>
-  </div>
+  <figure class="vd-teaser-small-img">
+    {% include "../atoms/image-responsive.html.swig"  %}
+  </figure>
   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   <p><a href="#">plus d'info</a></p>
 </article>
