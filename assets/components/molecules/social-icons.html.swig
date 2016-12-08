@@ -5,6 +5,8 @@ collection: molecules
 notes: |
   You can use all the [Fontawesome icons](http://fontawesome.io/icons/) in these icons.
 ---
+<h2 class="{% if social_icons_header_hidden %}sr-only{% else %}vd-section-title{% endif %}">Partager</h2>
+
 <ul class="list-inline vd-social-icons">
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#0" title="Mail" aria-label="Send us a Mail"><span class="fa fa-envelope" aria-hidden="true"></span></a>
