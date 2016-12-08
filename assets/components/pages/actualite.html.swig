@@ -28,7 +28,7 @@ breadcrumb:
 
   <p class="lead">Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p>
 
-  <div class="text-xxs-center">
+  <div class="text-xxs-center mt-2">
     {% include "../molecules/social-icons.html.swig" %}
   </div>
 
