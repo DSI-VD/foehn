@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+
+- Fix teaser image size
+
 ## [0.12.0]
 
 ### Changed
