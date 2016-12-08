@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Changed
 
 - News detail use `.container-small` class to reduce the width of the page
+- Change social icons platforms
 
 ## Added
 
