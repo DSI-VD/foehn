@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Homepage show 4 news
 - "Toutes les autorités" button on homepage is smaller
 - "Actualites" are shown in row on "Actualités" pages
+- Pagination use inline-list instead of grid
 
 ### Added
 
