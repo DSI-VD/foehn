@@ -22,7 +22,7 @@ breadcrumb:
       {% include "../molecules/breadcrumb.html.swig" %}
 </div>
 
-<main class="container" id="main">
+<main class="container container-small" id="main">
   <h1 class="text-xxs-center">La Journée Oser tous les métiers élargit son offre</h1>
 
   <p class="lead">Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p>

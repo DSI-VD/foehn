@@ -5,6 +5,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## Changed
+
+- News detail use `.container-small` class to reduce the width of the page
+
+## Added
+
+- Add a `.container-small`
+
 ### Fix
 
 - Fix teaser image size
