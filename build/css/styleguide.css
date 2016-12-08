@@ -402,6 +402,34 @@ body {
   border-top-left-radius: 0; }
   .styleguide-item-hidden + .styleguide-item-preview {
     border-radius: 0.2em; }
+  .styleguide-tab-pane .styleguide-item-preview {
+    border-top: 0; }
+
+.styleguide-tabs.nav {
+  padding: 0 1rem;
+  background: #e0eaf0;
+  border-left: 1px solid #d2e1e9;
+  border-right: 1px solid #d2e1e9; }
+  .styleguide-tabs.nav.nav-tabs {
+    display: block; }
+  .styleguide-tabs.nav .nav-item {
+    display: inline-block;
+    margin-bottom: 0; }
+  .styleguide-tabs.nav .nav-link {
+    margin-right: 0;
+    padding: 0.6em 1em 0.4em; }
+    .styleguide-tabs.nav .nav-link.active {
+      background: #fff;
+      color: #02851a; }
+      .styleguide-tabs.nav .nav-link.active:after {
+        content: none; }
+      .styleguide-tabs.nav .nav-link.active:hover, .styleguide-tabs.nav .nav-link.active:focus {
+        background: #fff;
+        color: #02851a; }
+  .styleguide-description.styleguide-item-hidden + .styleguide-tabs.nav {
+    border-top: 1px solid #d2e1e9;
+    border-top-right-radius: 0.2em;
+    border-top-left-radius: 0.2em; }
 
 .styleguide-item-code {
   margin-top: 0; }
