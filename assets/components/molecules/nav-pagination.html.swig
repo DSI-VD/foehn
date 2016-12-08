@@ -8,8 +8,8 @@ notes: |
 ---
 <nav>
   <h3 class="sr-only">Pagination</h2>
-  <ul class="list-inline row">
-    <li class="col-xxs-6 text-xxs-right"><a href="#" class="btn btn-primary">Précédent</a></li>
-    <li class="col-xxs-6 text-xxs-left"><a href="#" class="btn btn-primary">Suivant</a></li>
+  <ul class="list-inline row text-xxs-center">
+    <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm vd-btn-chevron-l">Précédent</a></li>
+    <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm vd-btn-chevron-r">Suivant</a></li>
   </ul>
 </nav>
