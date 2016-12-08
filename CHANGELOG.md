@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - "Toutes les autorités" button on homepage is smaller
 - "Actualites" are shown in row on "Actualités" pages
 - Pagination use inline-list instead of grid
+- Remove "Tout l'agenda" button on Accueil
 
 ### Added
 
