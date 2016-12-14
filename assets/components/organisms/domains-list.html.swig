@@ -32,7 +32,7 @@ notes: |
   <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-t">Tous les thèmes</a>
 </p>
 {% if ! loop.last %}
-<hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-3">
+<hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-2">
 </div>
 {% endif %}
 {% endfor %}
