@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- All grid layout use `.vd-nav-flex` class
+
 ### Fix
 
 - Fix teaser image size

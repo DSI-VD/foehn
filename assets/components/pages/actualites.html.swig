@@ -39,13 +39,11 @@ breadcrumb:
   {% set newsCountAsArray = Array(newsCount) %}
 
   <div class="row">
-  {% for x, y in newsCountAsArray %}
-    {% include "../molecules/teaser.html.swig" with {teaser_wrapper: 'col-md-6'} %}
-    {% if loop.index % 2 == 0 %}
-  </div>
-  <div class="row">
-    {% endif %}
-  {% endfor %}
+    <div class="vd-nav-flex">
+      {% for x, y in newsCountAsArray %}
+        {% include "../molecules/teaser.html.swig" with {teaser_wrapper: 'col-md-6'} %}
+      {% endfor %}
+    </div>
   </div>
 
   {% include "../molecules/nav-pagination.html.swig" %}
