@@ -22,9 +22,11 @@ notes: |
 
   <div class="col-md-8">
     <div class="row" aria-labelledby="{{ domain }}">
-      {% for theme in domain.themes %}
-        {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: theme, teaser_link_classes: 'col-md-6', teaser_link_text:'Qui officia deserunt mollit anim id est laborum.' , teaser_link_href: '../poursuites-et-faillites'} only %}
-      {% endfor %}
+      <div class="vd-nav-flex">
+        {% for theme in domain.themes %}
+          {% include "../molecules/teaser-link.html.swig" with {teaser_link_name: theme, teaser_link_classes: 'col-md-6', teaser_link_text:'Qui officia deserunt mollit anim id est laborum.' , teaser_link_href: '../poursuites-et-faillites'} only %}
+        {% endfor %}
+      </div>
     </div><!-- /.row -->
   </div><!-- /.col-md-8 -->
 </div><!-- /.row -->
