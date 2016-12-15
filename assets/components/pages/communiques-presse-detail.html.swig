@@ -57,6 +57,9 @@ breadcrumb:
         <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
         <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
         <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
       </ul>
 
       <h3 class="h5">Renseignements</h3>
