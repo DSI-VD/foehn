@@ -87,7 +87,9 @@ breadcrumb:
         <li><a href="#0">voir sur la carte</a></li>
       </ul>
 
-      <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r mt-2">Contacter l'office</a>
+      <p>
+        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
+      </p>
 
       <p>Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
       <ul class="vd-list-links">
@@ -97,7 +99,7 @@ breadcrumb:
       </ul>
 
       <p>
-        <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">Abonnement</a>
+        <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">S'abonner au <abbr title="Communiqués de presse">CP</abbr></a>
       </p>
     </aside>
 
