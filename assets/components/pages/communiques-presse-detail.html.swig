@@ -52,6 +52,14 @@ breadcrumb:
         Le SSCM devient ainsi le premier service public de ce segment de prestations à être certifié ISO 9001 :2015. </p>
       <p>Lausanne, le 17 novembre 2016</p>
 
+      <h2 class="sr-only">Partnaires</h2>
+      <ul class="list-inline">
+        <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+      </ul>
+
       <h3>Renseignements</h3>
       <p>DIS, Denis Froidevaux, chef de service, Service de la sécurité civile et militaire, 021 316 51 00</p>
       <p>En savoir plus :www.vd.ch/sscm <br>
