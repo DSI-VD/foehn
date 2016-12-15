@@ -5,7 +5,7 @@ collection: molecules
 notes: |
   You can use all the [Fontawesome icons](http://fontawesome.io/icons/) in these icons.
 ---
-<h2 class="{% if social_icons_header_hidden %}sr-only{% else %}vd-section-title{% endif %}">Partager</h2>
+<h2 class="{% if social_icons_header_hidden %}sr-only{% else %}vd-section-title mb-1{% endif %}">Partager</h2>
 
 <ul class="list-inline vd-social-icons">
   <li class="list-inline-item">
