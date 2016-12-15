@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Refactor `.vd-teaser-img` style
 - Fix style of lead
 - Fix teaser image size
 - Fix teaser-small image size
