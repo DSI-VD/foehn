@@ -29,7 +29,7 @@ breadcrumb:
         <p class="small font-weight-bold">Lausanne, le 1er juillet 2016</p>
 
         <p class="text-uppercase mb-0">Axes forts de transports publics</p>
-        <h1 class="h2 px-3 py-2">Le Service de la sécurité civile et militaire est certifié</h1>
+        <h1 class="h2 px-3 py-2 vd-bg-pattern-grey">Le Service de la sécurité civile et militaire est certifié</h1>
       </header>
 
       <p class="lead">Au terme d'une démarche initiée courant 2014, le Service de la sécurité civile et militaire (SSCM) a officiellement obtenu la certification à la norme internationale ISO 9001:2015 de son système de management de la qualité. L'obtention de ce certificat s'inscrit dans une volonté d'amélioration continue, orientée citoyens et dynamique pour gagner en efficacité et accroître la satisfaction vis-à-vis des prestations fournies.</p>
@@ -49,7 +49,7 @@ breadcrumb:
         L'obtention de cette certification répond à trois objectifs reposant sur les trois valeurs défendues par le SSCM : la solidarité, la crédibilité et la loyauté. Ainsi, la première valeur se traduit dans la volonté de renforcer les liens entre les collaboratrices et collaborateurs et les différentes divisions du service. La crédibilité quant à elle s'exprime des processus mis en place dans le cadre de la certification et de la capitalisation des apprentissages. Enfin, la loyauté – envers les institutions et le contribuable de façon plus générale – se retrouve dans la recherche de l'efficience du service et de l'utilisation adaptée des ressources qui lui sont attribuées. Cette certification constitue une étape importante dans la démarche qualité du SSCM qui doit rester orientée client afin de garantir la satisfaction des citoyens et parties intéressées.<br>
         Le SSCM devient ainsi le premier service public de ce segment de prestations à être certifié ISO 9001 :2015. </p>
 
-      <p class="text-xs-right">Bureau d'information et de communication de l'Etat de Vaud</p>
+      <p class="text-xs-right mb-3">Bureau d'information et de communication de l'Etat de Vaud</p>
 
       <h2 class="sr-only">Partnaires</h2>
       <ul class="list-inline">
