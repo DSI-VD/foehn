@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+/**
+ * A simple teaser with invisible links (what an idea !) and some custom
+ * padding here and there
+ */
 .vd-teaser-alternate-2 {
   a {
     color: currentColor;
@@ -10,6 +14,10 @@
   padding-left: $spacer * 3;
   padding-right: $spacer * 3;
 }
+
+/**
+ * A list that add some background on odd elements
+ */
 
 .vd-teaser-alternate-2-list {
   .vd-teaser-alternate-2:nth-of-type(odd){
