@@ -15,11 +15,8 @@ breadcrumb:
 
 {% include "../organisms/header.html.swig" %}
 
-<div class="vd-bg-pattern-gray py-1">
-  <div class="container">
-        {% include "../molecules/breadcrumb.html.swig" %}
-        <h1>Communiqués de presse</h1>
-  </div>
+<div class="container py-1">
+  {% include "../molecules/breadcrumb.html.swig" %}
 </div>
 
 <main class="container">
