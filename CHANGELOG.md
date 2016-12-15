@@ -13,11 +13,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Added
 
+- Add a lead atom
 - Add a `.container-small`
 - Add publication date on news
 
 ### Fix
 
+- Fix style of lead
 - Fix teaser image size
 - Fix teaser-small image size
 
