@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+.vd-teaser-alternate-2 {
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  padding-top: $spacer;
+  padding-left: $spacer * 3;
+  padding-right: $spacer * 3;
+}
+
+.vd-teaser-alternate-2-list {
+  .vd-teaser-alternate-2:nth-of-type(odd){
+    background-color: $vd-gray-lightest;
+    border-bottom: 1px solid $vd-gray-lighter;
+  }
+  margin-bottom: $spacer;
+}

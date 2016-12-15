@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Added
 
+- Add a teaser-alternate-2 molecule
 - Add Communiqué de presse détail page
 - Add a lead atom
 - Add a `.container-small`
