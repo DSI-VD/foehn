@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-%icons {
+.icons:before {
   display: inline-block;
   font-family: "icons";
   font-style: normal;
@@ -17,10 +17,6 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icons:before {
-  @extend %icons;
 }
 
 .icons-lg {
@@ -37,16 +33,8 @@
   text-align: center;
 }
 
-// Variables with the unicode character
-$icons-chevron-bottom: "\EA01";
-$icons-chevron-left: "\EA02";
-$icons-chevron-right: "\EA03";
-$icons-chevron-top: "\EA04";
-$icons-cross: "\EA05";
-
-
-.icons-chevron-bottom:before { content: $icons-chevron-bottom; }
-.icons-chevron-left:before { content: $icons-chevron-left; }
-.icons-chevron-right:before { content: $icons-chevron-right; }
-.icons-chevron-top:before { content: $icons-chevron-top; }
-.icons-cross:before { content: $icons-cross; }
+.icons-chevron-bottom:before { content: "\EA01" }
+.icons-chevron-left:before { content: "\EA02" }
+.icons-chevron-right:before { content: "\EA03" }
+.icons-chevron-top:before { content: "\EA04" }
+.icons-cross:before { content: "\EA05" }
