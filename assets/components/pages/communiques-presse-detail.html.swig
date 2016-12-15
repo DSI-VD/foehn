@@ -48,7 +48,7 @@ breadcrumb:
       <p><a href="#">A télécharger</a></p>
     </div>
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
       <h2>Bureau d'information et de communication</h2>
       <p>Rue de la barre 2 <br>1014 Lausanne</p>
 
@@ -69,7 +69,7 @@ breadcrumb:
       <p>
         <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">Abonnement</a>
       </p>
-    </div>
+    </aside>
 
   </div>
 </main>

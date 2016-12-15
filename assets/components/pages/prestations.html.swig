@@ -6,7 +6,7 @@ styleguide: false
 layout: page.html.swig
 ---
 
-{% include "../organisms/header.html.swig" %}
+{% include "../organisms/header-securise.html.swig" %}
 
 <div class="vd-bg-pattern-purple" role="tablist">
   <div class="container vd-nav-tabs-secure">

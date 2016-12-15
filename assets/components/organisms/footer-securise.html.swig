@@ -7,7 +7,8 @@ notes: |
 ---
 <footer class="footer">
   <div class="container">
-    <div class="row">
+    <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <div class="row small">
       <nav aria-label="pied de page" class="col-lg-11 col-md-10">
         <ul class="nav">
           <li class="nav-item">

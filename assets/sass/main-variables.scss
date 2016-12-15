@@ -59,11 +59,11 @@ $vd-gradient:               linear-gradient(to right, $vd-green 0%, #008772 33%,
 // All the patterns used as background
 // Must be used with the `@ include vd-pattern-dotted($code, $viewbox-x: 4, $viewbox-y: 4)` mixin
 $pattern-gray-color: str-replace(#{$vd-gray-lighter-2}, '#', '%23');
-$pattern-dotted-gray: "%3Crect fill='#{$pattern-gray-color}' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='#{$pattern-gray-color}' x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
+$pattern-dotted-gray: "%3Crect%20fill%3D%27#{$pattern-gray-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-gray-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
 $pattern-green-color: str-replace(#{$vd-green-light}, '#', '%23');
-$pattern-dotted-green-bright: "%3Crect fill='#{$pattern-green-color}' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='#{$pattern-green-color}' x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
+$pattern-dotted-green-bright: "%3Crect%20fill%3D%27#{$pattern-green-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-green-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
 $pattern-dotted-green-color: str-replace(#{$vd-green}, '#', '%23');
-$pattern-dotted-green: "%3Crect fill='#{$pattern-dotted-green-color}' x='0' y='0' width='1' height='1'%3E %3C/rect%3E%3Crect fill='#{$pattern-dotted-green-color}' x='2' y='2' width='1' height='1'%3E %3C/rect%3E";
+$pattern-dotted-green: "%3Crect%20fill%3D%27#{$pattern-dotted-green-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-dotted-green-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
 
 
 // base64 backgrounds, to set as `background: $pattern-striped-green;`

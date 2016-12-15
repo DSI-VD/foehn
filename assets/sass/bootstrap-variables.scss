@@ -124,7 +124,7 @@ $link-hover-decoration: underline !default;
 
 $grid-breakpoints: (
   xxs: 0,
-  xs: 312,
+  xs: 312px,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -138,6 +138,7 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
+  xs: 410px,
   sm: 540px,
   md: 720px,
   lg: 960px,
@@ -151,11 +152,12 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:               12 !default;
-$grid-gutter-width-base:     30px !default;
+$grid-gutter-width-base:     90px !default;
 $grid-gutter-widths: (
-  xs: $grid-gutter-width-base,
-  sm: $grid-gutter-width-base,
-  md: $grid-gutter-width-base,
+  xxs: ($grid-gutter-width-base / 3),
+  xs: ($grid-gutter-width-base / 3),
+  sm: ($grid-gutter-width-base / 3),
+  md: ($grid-gutter-width-base / 3),
   lg: $grid-gutter-width-base,
   xl: $grid-gutter-width-base
 ) !default;
@@ -211,7 +213,7 @@ $text-muted: darken($vd-gray-lighter-2, 20%) !default;
 
 $abbr-border-color: $gray-light !default;
 
-$blockquote-small-color:  $white !default;
+$blockquote-small-color:  $gray !default;
 $blockquote-font-size:    ($font-size-base * 1) !default;
 $blockquote-border-color: $vd-gray-dark !default;
 $blockquote-border-width: 0 !default;
@@ -776,7 +778,7 @@ $thumbnail-box-shadow:        0 1px 2px rgba(0,0,0,.075) !default;
 
 // Figures
 
-$figure-caption-font-size: 90% !default;
+$figure-caption-font-size: 80% !default;
 
 
 // Breadcrumbs

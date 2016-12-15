@@ -1,6 +1,22 @@
 @charset 'UTF-8';
 
+.figure-img {
+  margin-bottom: 0;
+}
+
 .figure-caption {
   font-style: italic;
   color: $gray;
+}
+
+.vd-figure-credits {
+  display: block;
+  font-size: 80%;
+  font-weight: 500;
+  font-style: normal;
+  color: $body-color;
+
+  &:before {
+    content: '/\0000a0';
+  }
 }

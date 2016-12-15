@@ -10,6 +10,7 @@
 @import "layout";
 
 // atoms:
+@import 'atoms/tag';
 @import 'atoms/search-form';
 @import 'atoms/image-effect';
 @import 'atoms/list-boxed';
@@ -21,8 +22,10 @@
 @import 'atoms/highlight';
 @import 'atoms/list';
 @import 'atoms/paragraph';
+@import 'atoms/lead';
 @import 'atoms/headings';
 @import 'atoms/button';
+@import 'atoms/update-time';
 
 // molecules:
 @import 'molecules/access-nav';
@@ -32,7 +35,6 @@
 @import 'molecules/teaser-small';
 @import 'molecules/card';
 @import 'molecules/teaser-alternate';
-@import 'molecules/footer';
 @import 'molecules/numbered-title';
 @import 'molecules/dropdown';
 @import 'molecules/teaser-link';

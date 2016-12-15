@@ -63,7 +63,7 @@ breadcrumb:
 
     </div>
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
       <h2>Office des poursuites</h2>
       <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
 
@@ -83,7 +83,7 @@ breadcrumb:
       <p>
         <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
       </p>
-    </div>
+    </aside>
 
   </div>
 </div>

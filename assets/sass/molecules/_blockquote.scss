@@ -2,11 +2,52 @@
 
 .blockquote {
   position: relative;
+  padding-left: $spacer * 4;
+  font-size: $font-size-lg;
+  color: $gray;
+
+  &:before {
+    content: "“";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $font-family-serif;
+    font-size: 3rem;
+    line-height: 1.3;
+    font-weight: 700;
+    color: $link-color;
+  }
+
+  p:last-of-type {
+    margin-bottom: $spacer-y * 0.4;
+  }
+}
+
+.blockquote-footer {
+  &:before {
+    content: none;
+  }
+}
+
+.blockquote-reverse {
+  &:after {
+    right: auto;
+    left: 40px;
+  }
+}
+
+.vd-blockquote-bubble {
+  position: relative;
   margin: ($spacer * 1.5) 0;
   padding: ($spacer * 1.45) ($spacer * 1.8);
   background: $brand-inverse;
   border-radius: 10px;
+  font-size: $font-size-base;
   line-height: 1.3;
+
+  &:before {
+    content: none;
+  }
 
   &:after {
     content: '';
@@ -40,16 +81,14 @@
       width: 120px;
     }
   }
-}
 
-.blockquote-reverse {
-  &:after {
-    right: auto;
-    left: 40px;
+  .blockquote-footer {
+    font-size: $font-size-base;
+    color: $white;
   }
 }
 
-.vd-blockquote-media {
+.vd-blockquote-bubble-media {
   margin-right: $spacer * 2.8;
   padding-right: $spacer * 2;
 
@@ -58,8 +97,4 @@
     margin-left: $spacer;
     padding-right: $spacer * 4.5;
   }
-}
-
-.blockquote-footer {
-  font-size: $font-size-base;
 }

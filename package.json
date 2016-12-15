@@ -1,6 +1,6 @@
 {
   "name": "foehn",
-  "version": "0.9.0",
+  "version": "0.12.0",
   "author": "DSI VD <info.dsi@vd.ch>",
   "repository": "DSI-VD/foehn",
   "main": "index.html",
@@ -10,8 +10,8 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp serve",
-    "build": "npm install && gulp build --production",
-    "deploy": "npm install && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
+    "build": "yarn install && gulp build --production",
+    "deploy": "yarn install && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
   },
   "engines": {
     "node": "6.7.0",
@@ -90,7 +90,7 @@
     "prismjs": "^1.5.1",
     "stylelint": "^7.3.0",
     "stylelint-config-standard": "^13.0.2",
-    "toolbox-utils": "^0.0.4",
+    "toolbox-utils": "^0.0.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "webpack-module-hot-accept": "^1.0.4",
