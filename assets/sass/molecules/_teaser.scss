@@ -4,13 +4,13 @@
   display: inline-block;
   max-width: 100%;
 
+  margin: 0 auto;
+
   @include media-breakpoint-up(md) {
-    max-width: 40%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
-  @include media-breakpoint-up(sm) {
-    margin: 0 auto;
-  }
 }
 
 .vd-teaser-title {
