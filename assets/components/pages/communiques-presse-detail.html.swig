@@ -42,14 +42,14 @@ breadcrumb:
         A l'interne, le déploiement de cette démarche a permis d'établir une charte qualité pour le SSCM, fondée sur une vision guidant les actions et orientations stratégiques du service. Une approche processus améliorant les interfaces entre les divisions du service en a découlé. L'amélioration continue est un élément capital de cette démarche et de la norme ISO 9001:2015 visant à répondre aux attentes des différentes parties intéressées et accroître leur satisfaction avec un dynamisme permanent.<br>
         L'obtention de cette certification répond à trois objectifs reposant sur les trois valeurs défendues par le SSCM : la solidarité, la crédibilité et la loyauté. Ainsi, la première valeur se traduit dans la volonté de renforcer les liens entre les collaboratrices et collaborateurs et les différentes divisions du service. La crédibilité quant à elle s'exprime des processus mis en place dans le cadre de la certification et de la capitalisation des apprentissages. Enfin, la loyauté – envers les institutions et le contribuable de façon plus générale – se retrouve dans la recherche de l'efficience du service et de l'utilisation adaptée des ressources qui lui sont attribuées. Cette certification constitue une étape importante dans la démarche qualité du SSCM qui doit rester orientée client afin de garantir la satisfaction des citoyens et parties intéressées.<br>
         Le SSCM devient ainsi le premier service public de ce segment de prestations à être certifié ISO 9001 :2015. </p>
-      <p>Lausanne, le 17 novembre 2016</p>
 
       <h2 class="h3">Sous-titre</h2>
       <p>L'audit externe mené fin juin dernier par un organe indépendant a permis au SSCM d'obtenir la certification ISO 9001 :2015. Il conclut que le SSCM est une organisation sur la « voie apprenante » avec une volonté claire du management de mettre en avant, de respecter et de valoriser les compétences de chacun, dans la perspective d'une gestion moderne et efficiente d'un service public. Le SSCM est désormais dans un cycle de certification impliquant de réussir les audits de suivi annuels. <br>
         A l'interne, le déploiement de cette démarche a permis d'établir une charte qualité pour le SSCM, fondée sur une vision guidant les actions et orientations stratégiques du service. Une approche processus améliorant les interfaces entre les divisions du service en a découlé. L'amélioration continue est un élément capital de cette démarche et de la norme ISO 9001:2015 visant à répondre aux attentes des différentes parties intéressées et accroître leur satisfaction avec un dynamisme permanent.<br>
         L'obtention de cette certification répond à trois objectifs reposant sur les trois valeurs défendues par le SSCM : la solidarité, la crédibilité et la loyauté. Ainsi, la première valeur se traduit dans la volonté de renforcer les liens entre les collaboratrices et collaborateurs et les différentes divisions du service. La crédibilité quant à elle s'exprime des processus mis en place dans le cadre de la certification et de la capitalisation des apprentissages. Enfin, la loyauté – envers les institutions et le contribuable de façon plus générale – se retrouve dans la recherche de l'efficience du service et de l'utilisation adaptée des ressources qui lui sont attribuées. Cette certification constitue une étape importante dans la démarche qualité du SSCM qui doit rester orientée client afin de garantir la satisfaction des citoyens et parties intéressées.<br>
         Le SSCM devient ainsi le premier service public de ce segment de prestations à être certifié ISO 9001 :2015. </p>
-      <p>Lausanne, le 17 novembre 2016</p>
+
+      <p class="text-xs-right">Bureau d'information et de communication de l'Etat de Vaud</p>
 
       <h2 class="sr-only">Partnaires</h2>
       <ul class="list-inline">
@@ -59,12 +59,20 @@ breadcrumb:
         <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
       </ul>
 
-      <h3>Renseignements</h3>
-      <p>DIS, Denis Froidevaux, chef de service, Service de la sécurité civile et militaire, 021 316 51 00</p>
-      <p>En savoir plus :www.vd.ch/sscm <br>
-        www.iso.org/iso/fr/iso_9000 </p>
+      <h3 class="h5">Renseignements</h3>
+      <ul class="list-unstyled">
+        <li class="mb-0">DIRH, Nuria Gorrite, conseillère d'Etat, 021 316 70 01</li>
+        <li class="mb-0">Lausanne, Olivier Français, Municipal des travaux, 021 316 70 01</li>
+        <li class="mb-0">Renens, Marianne Hugenin, syndique, 079 316 70 01</li>
+      </ul>
 
-      <p><a href="#">A télécharger</a></p>
+      <h2 class="sr-only">Téléchargement(s)</h2>
+      <ul class="list-unstyled">
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Version intégrale au format PDF</a></li>
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">EMPD 294 - réalisation du tramway Lausanne-Renens</a></li>
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Lorem ipsum dolor sit amet</a></li>
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Consectetur adipisicing elit</a></li>
+      </ul>
     </div>
 
     <aside class="col-md-4 small">
