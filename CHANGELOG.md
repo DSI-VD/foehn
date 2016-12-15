@@ -7,14 +7,24 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Changed
 
+- News detail use `.container-small` class to reduce the width of the page
+- Change social icons platforms
+- Add header to social icons list
+
+## Added
+
+- Add a lead atom
+- Add a `.container-small`
+- Add publication date on news
+- Add `vd-text-green` helper
 - Use news-latest organims on homepage
-
-### Added
-
 - Add a news-latest organims
+
 
 ### Fix
 
+- Refactor `.vd-teaser-img` style
+- Fix style of lead
 - Fix teaser image size
 - Fix teaser-small image size
 - Fix margin of the `hr` in domain list to `.mt-2`
