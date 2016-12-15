@@ -4,7 +4,9 @@
   display: inline-block;
   max-width: 100%;
 
-  margin: 0 auto;
+  margin-right: auto;
+  margin-bottom: $spacer;
+  margin-left: auto;
 
   @include media-breakpoint-up(md) {
     margin-left: 25%;
