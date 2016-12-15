@@ -5,6 +5,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## Changed
+
+- Use news-latest organims on homepage
+
+### Added
+
+- Add a news-latest organims
+
 ### Fix
 
 - Fix teaser image size
