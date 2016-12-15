@@ -32,7 +32,7 @@ breadcrumb:
     {% include "../molecules/social-icons.html.swig" %}
   </div>
 
-  <figure class="figure">
+  <figure class="figure vd-teaser-img">
     <img src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" class="img-fluid figure-img" alt="Description de l'image">
     <figcaption class="figure-caption">La #jom permet de découvrir des secteurs professionnels traditionnellement associés au sexe opposé. <div class="strong"></div></figcaption>
   </figure>
