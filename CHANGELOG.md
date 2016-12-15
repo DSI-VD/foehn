@@ -16,6 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a lead atom
 - Add a `.container-small`
 - Add publication date on news
+- Add `vd-text-green` helper
 
 ### Fix
 
