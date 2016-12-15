@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - News detail use `.container-small` class to reduce the width of the page
 - Change social icons platforms
 - Add header to social icons list
+- Add class `.mt-1` on social icons title
 
 ## Added
 
