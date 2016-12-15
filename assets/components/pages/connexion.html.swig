@@ -6,7 +6,7 @@ styleguide: false
 layout: page.html.swig
 ---
 
-{% include "../organisms/header.html.swig" %}
+{% include "../organisms/header-securise.html.swig" %}
 
 <div class="vd-bg-pattern-gray py-1">
   <div class="container">
@@ -51,6 +51,4 @@ layout: page.html.swig
   </div>
 </main>
 
-<footer>
-  <p>Footer light à incorporer</p>
-</footer>
+{% include "../organisms/footer-securise.html.swig" %}

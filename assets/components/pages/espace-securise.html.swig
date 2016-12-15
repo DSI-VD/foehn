@@ -6,7 +6,7 @@ styleguide: false
 layout: page.html.swig
 ---
 
-{% include "../organisms/header.html.swig" %}
+{% include "../organisms/header-securise.html.swig" %}
 
 {% include "../molecules/secure-tabs.html.swig" %}
 
@@ -33,7 +33,7 @@ layout: page.html.swig
     </div>
 
 
-    <div class="col-md-4">
+    <div class="col-md-4 small">
       <h2>Favoris</h2>
       <ul class="vd-list-links">
         <li><a href="#">Lorem ipsum dolor sit.</a></li>

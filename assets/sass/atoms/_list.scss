@@ -1,14 +1,28 @@
 @charset 'UTF-8';
 
+/**
+ * List
+ *
+ * 1. Add margin between list elements
+ * 2. For lists inside another list, add margin between a list and her parent
+ *    list element.
+ */
+
 ul {
   list-style-type: circle;
 
   li {
-    margin-bottom: $spacer-y;
+    margin-bottom: $spacer-y; /* [1] */
   }
 }
 
-// square bullet list
+li > ul {
+  margin-top: $spacer-y; /* [2] */
+}
+
+/**
+ * square bullet list
+ */
 .vd-list-links {
   padding-left: $spacer;
   list-style-type: square;

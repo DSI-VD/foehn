@@ -1,9 +1,43 @@
 @charset 'UTF-8';
 
-.vd-fixed-bottom {
+/**
+ * This local mixin will print out all needed classes
+ * (you can't extend a placeholder in a media query, sadly)
+ */
+@mixin vd-make-fixed-bottom-container() {
   position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   z-index: $zindex-navbar-sticky;
+}
+
+.vd-fixed-bottom {
+  @include vd-make-fixed-bottom-container();
+}
+
+/**
+ * Let's create some classes for this fixed-container
+ * - .vd-fixed-bottom-BREAKPOINT-only
+ * - .vd-fixed-bottom-BREAKPOINT-up
+ * - .vd-fixed-bottom-BREAKPOINT-down
+ */
+@each $bp in map-keys($grid-breakpoints) {
+  .vd-fixed-bottom-#{$bp}-only {
+    @include media-breakpoint-only($bp) {
+      @include vd-make-fixed-bottom-container();
+    }
+  }
+
+  .vd-fixed-bottom-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      @include vd-make-fixed-bottom-container();
+    }
+  }
+
+  .vd-fixed-bottom-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      @include vd-make-fixed-bottom-container();
+    }
+  }
 }

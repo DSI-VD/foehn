@@ -1,11 +1,23 @@
 @charset 'UTF-8';
 
-// Add a magnificent pattern at the top of all pages
-body {
-  padding-top: 5px;
-  background-image: url(../svg/long_pattern_squares_green.svg);
-  background-repeat: repeat-x;
-  background-position: center top;
-  background-size: auto 5px;
-  border-bottom: 23px solid $vd-green;
+// enable flex on some rows. Must be the first child of `.row` -> to avoid
+// issues with Safari and pseudo-elements
+.flex-row {
+  display: flex;
+}
+
+// override the .container class from Bootstrap to enable responsive gutter
+.container {
+  @each $breakpoint, $gutter in $grid-gutter-widths {
+    @include media-breakpoint-up($breakpoint) {
+      padding-left: ($gutter / 2);
+      padding-right: ($gutter / 2);
+    }
+  }
+}
+
+.container-small {
+  @include media-breakpoint-up(md) {
+    width: 768px;
+  }
 }

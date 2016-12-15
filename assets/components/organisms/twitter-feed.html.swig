@@ -1,0 +1,25 @@
+---
+title: Twitter Feed
+name: twitter-feed
+collection: organisms
+wrapper: container
+notes: |
+---
+<h2 class="vd-section-title">Twitter</h2>
+
+<article class="vd-teaser-small mb-1">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p><a href="#">plus d'info</a></p>
+  <figure class="vd-teaser-small-img">
+    {% include "../atoms/image-responsive.html.swig"  %}
+  </figure>
+</article>
+
+<article class="vd-teaser-small mb-1">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p><a href="#">plus d'info</a></p>
+</article>
+
+<p>
+  <a class="btn btn-primary vd-btn-chevron-r btn-sm" href="#">Nous suivre</a>
+</p>

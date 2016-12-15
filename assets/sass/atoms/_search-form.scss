@@ -1,10 +1,16 @@
 @charset 'UTF-8';
 
 .vd-search-form {
+  display: flex;
+  float: right;
   border-top: 4px solid $black;
   border-bottom: 4px solid $black;
 
   .form-control {
+    flex: 1;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 0;
     border-color: transparent;
     font-style: italic;
@@ -19,7 +25,12 @@
     }
   }
 
+  .input-group-btn {
+    width: auto;
+  }
+
   .btn {
+    padding: 0.2rem 0.5rem;
     background: $vd-green;
     color: $white;
 

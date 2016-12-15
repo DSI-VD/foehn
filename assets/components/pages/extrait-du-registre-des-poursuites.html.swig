@@ -126,19 +126,13 @@ breadcrumb:
         </div>
       </div>
 
-      <div class="vd-fixed-bottom hidden-md-up hidden-xxs-down">
-        <p>
-          <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
-        </p>
-      </div>
-
-      <p class="hidden-md-down">
+      <div class="vd-fixed-bottom-xs-only vd-fixed-bottom-sm-only">
         <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
-      </p>
+      </div>
     </main>
 
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
     <h4>Office des poursuites</h4>
     <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
 
@@ -160,9 +154,13 @@ breadcrumb:
       <ul class="vd-list-icons">
         <li><span class="fa fa-file-pdf-o" aria-hidden="true"></span><a href="www.vd.ch/fileadmin/user_upload/themes/economie_emploi/poursuites_faillites/D%C3%A9pliants/depliant-commande-extrait-registre-poursuites.pdf">Commander un extrait du registre des poursuites pour soi-même</a></li>
       </ul>
-    </div>
+    </aside>
 
   </div>
+
+  {% include "../atoms/update-time.html.swig" %}
 </div>
+
+
 
 {% include "../organisms/footer.html.swig" %}
