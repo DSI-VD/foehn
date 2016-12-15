@@ -17,6 +17,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a `.container-small`
 - Add publication date on news
 - Add `vd-text-green` helper
+- Use news-latest organims on homepage
+- Add a news-latest organims
+
 
 ### Fix
 
@@ -24,6 +27,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix style of lead
 - Fix teaser image size
 - Fix teaser-small image size
+- Fix margin of the `hr` in domain list to `.mt-2`
 
 ## [0.12.0]
 

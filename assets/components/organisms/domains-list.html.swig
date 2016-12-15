@@ -10,7 +10,7 @@ notes: |
 <div class="row mt-3">
   <div class="col-md-4">
     <h2 id="{{ domain_id }}">{{ domain.name }}</h2>
-    <h3 id="acces-direct-{{ domain }}" class="sr-only">Accès direct {{ domain }}</h3>
+    <h3 id="acces-direct-{{ domain }}" class="sr-only">Les plus visités</h3>
     <nav class="p-1" aria-labelledby="acces-direct-{{ domain }}">
       <ul class="vd-list-links">
         <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
@@ -32,7 +32,7 @@ notes: |
   <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-t">Tous les thèmes</a>
 </p>
 {% if ! loop.last %}
-<hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-3">
+<hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-2">
 </div>
 {% endif %}
 {% endfor %}
