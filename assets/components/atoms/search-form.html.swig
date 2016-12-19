@@ -12,7 +12,7 @@ notes: |
 {% if variant == 'regular' %}
 <h3>Rechercher dans les actualités</h3>
 {% endif -%}
-<form class="input-group my-2 {% if variant == 'regular' %}vd-search-form-regular{% else %}vd-search-form{% endif %}" action="#">
+<form class="input-group {% if variant == 'regular' %}vd-search-form-regular{% else %}my-2 vd-search-form{% endif %}" action="#">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form" type="text" class="form-control" placeholder="Rechercher" aria-describedby="search-form-label">
   <span class="input-group-btn">
