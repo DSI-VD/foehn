@@ -10,6 +10,8 @@ notes: |
   - `.vd-separator-gray-bars` - separator with the gray oblique bars
   - `.vd-separator-wide` - removes the `max-width` limit
 ---
+<hr>
+<hr class="vd-hr-black">
 <hr class="vd-separator vd-separator-green-pattern vd-separator-wide">
 <hr class="vd-separator vd-separator-gray-pattern">
 <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
