@@ -5,3 +5,11 @@
   padding-bottom: ($spacer / 2);
   border-bottom: 1px solid $vd-green-darker;
 }
+
+.vd-teaser-small-img {
+  max-width: 100%;
+
+  @include media-breakpoint-up(md) {
+    max-width: 40%;
+  }
+}

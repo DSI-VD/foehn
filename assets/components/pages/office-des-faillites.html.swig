@@ -88,7 +88,7 @@ breadcrumb:
 
     </main>
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
       <h2>Tribuanl cantonal</h2>
       <p>Route du Signal 8 <br>1018 Lausanne</p>
 
@@ -114,7 +114,7 @@ breadcrumb:
         <li><a href="#0">Lien 2</a></li>
         <li><a href="#0">Lien 3</a></li>
       </ul>
-    </div>
+    </aside>
 
   </div>
 </div>

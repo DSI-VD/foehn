@@ -33,7 +33,7 @@ notes: |
             </div>
           </nav>
           <div class="col-md-4">
-            <h2 class="vd-section-title my-3">Les plus visités</h2>
+            <h2 class="vd-section-title mt-3 mb-1">Les plus visités</h2>
             <ul class="vd-list-links">
               <li><a href="#0">Inscription au chômage</a></li>
               <li><a href="#0">Formulaire d'indemnisation</a></li>
