@@ -1,0 +1,8 @@
+---
+title: Lead
+name: lead
+collection: atoms
+notes: |
+  Use `.lead` for introduction text.
+---
+<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.</p>

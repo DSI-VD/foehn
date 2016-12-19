@@ -3,13 +3,13 @@
 .vd-teaser-img {
   display: inline-block;
   max-width: 100%;
+  margin-right: auto;
+  margin-bottom: $spacer;
+  margin-left: auto;
 
   @include media-breakpoint-up(md) {
-    max-width: 40%;
-  }
-
-  @include media-breakpoint-up(sm) {
-    margin: 0 auto;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
