@@ -4,7 +4,12 @@ name: footer
 collection: organisms
 notes: |
   The footer, as seen on all pages at the bottom. =)
+
+  Add `.mt-3` to add some space before the footer.
 ---
+<div class="container">
+  {% include "../molecules/social-icons.html.swig" with { social_icons_in_footer: true, social_icons_header_hidden: true } %}
+</div>
 <footer class="footer">
   <div class="container">
     <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
