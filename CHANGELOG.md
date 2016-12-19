@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `vd-text-green` helper
 - Use news-latest organims on homepage
 - Add a news-latest organims
+- Add the social links above footer
 
 
 ### Fix
