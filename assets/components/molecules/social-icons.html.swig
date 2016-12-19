@@ -4,6 +4,8 @@ name: social-icons
 collection: molecules
 notes: |
   You can use all the [Fontawesome icons](http://fontawesome.io/icons/) in these icons.
+
+  Add `.float-xs-right` to the print icon to have it float to the right.
 ---
 <h2 class="{% if social_icons_header_hidden %}sr-only{% else %}vd-section-title mb-1{% endif %}">Partager</h2>
 
@@ -22,5 +24,8 @@ notes: |
   </li>
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#0" title="WhatsApp" aria-label="Like us on WhatsApp"><span class="fa fa-whatsapp" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item{% if float_print_icon %} float-xs-right{% endif %}">
+    <a class="vd-social-icon" href="#0" title="Print" aria-label="Print the current page"><span class="fa fa-print" aria-hidden="true"></span></a>
   </li>
 </ul>
