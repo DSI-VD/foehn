@@ -63,59 +63,21 @@ breadcrumb:
         <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span> Rechercher</button>
       </form>
 
-      <article>
-        <a class="vd-teaser-link" href="../communiques-presse-detail">
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur. (surtitre)</p>
-          <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet. (titre)</h3>
-          <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016 (date de publication)</p>
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet incidunt nisi, nihil? (chapeau)</p>
-        </a>
-      </article>
+      <div class="vd-teaser-alternate-2-list">
+        {% set newsCount = 10 %}
+        {% set newsCountAsArray = Array(newsCount) %}
 
-      <article>
-        <a class="vd-teaser-link" href="../communiques-presse-detail">
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
-          <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
-          <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet incidunt nisi, nihil?</p>
-        </a>
-      </article>
-
-      <article>
-        <a class="vd-teaser-link" href="../communiques-presse-detail">
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
-          <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
-          <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet incidunt nisi, nihil?</p>
-        </a>
-      </article>
-
-      <article>
-        <a class="vd-teaser-link" href="../communiques-presse-detail">
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
-          <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
-          <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet incidunt nisi, nihil?</p>
-        </a>
-      </article>
-
-      <article>
-        <a class="vd-teaser-link" href="../communiques-presse-detail">
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur.</p>
-          <h3 class="vd-teaser-link-title">Lorem ipsum dolor sit amet.</h3>
-          <p class="vd-teaser-link-text text-muted">publié le 1 juillet 2016</p>
-          <p class="vd-teaser-link-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet incidunt nisi, nihil?</p>
-        </a>
-      </article>
-
+        {% for x, y in newsCountAsArray %}
+          {% include "../molecules/teaser-alternate-2.html.swig"  %}
+        {% endfor %}
+      </div>
       <div class="text-xxs-center">
-
-      {% include "../molecules/nav-pagination.html.swig" %}
+        {% include "../molecules/nav-pagination.html.swig" %}
+      </div>
 
     </div>
-    </div>
 
-    <div class="col-md-4">
+    <aside class="col-md-4 small">
       <h2>Bureau d'information et de communication</h2>
       <p>Rue de la barre 2 <br>1014 Lausanne</p>
 
@@ -137,7 +99,7 @@ breadcrumb:
         <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">Abonnement</a>
       </p>
 
-    </div>
+    </aside>
 
   </div>
 </main>

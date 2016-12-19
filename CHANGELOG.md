@@ -5,6 +5,69 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## Changed
+
+- News detail use `.container-small` class to reduce the width of the page
+- Change social icons platforms
+- Add header to social icons list
+- Add class `.mt-1` on social icons title
+
+## Added
+
+- Add a teaser-alternate-2 molecule
+- Add Communiqué de presse détail page
+- Add a lead atom
+- Add a `.container-small`
+- Add publication date on news
+- Add `vd-text-green` helper
+- Use news-latest organims on homepage
+- Add a news-latest organims
+
+
+### Fix
+
+- Refactor `.vd-teaser-img` style
+- Fix style of lead
+- Fix teaser image size
+- Fix teaser-small image size
+- Fix margin of the `hr` in domain list to `.mt-2`
+
+## [0.12.0]
+
+### Changed
+
+- Modify the existing Blockquotes to `.vd-blockquote-bubble` and `.vd-blockquote-bubble-media` classes #487
+- Move back to top button in domain list
+- Change style of back to top button in domain list
+- Visually hide headings "Accès direct" in domain page
+- Change list style of "Accès direct" in domain page
+- Nav use a smaller font size
+- Rename "Espace securisé" link in nav to "Mon compte"
+- Add a locker to "Mon compte"
+- Change margin of "Les plus visités" in primary nav
+- Footer use a smaller font
+- Update news metatdata info
+- Homepage show 4 news
+- "Toutes les autorités" button on homepage is smaller
+- "Actualites" are shown in row on "Actualités" pages
+- Pagination use inline-list instead of grid
+- Remove "Tout l'agenda" button on Accueil
+
+### Added
+
+- Add new Blockquote style and make it the default one #487
+- Add new Update Time atom #447
+- Add "Toutes l'actualitées" button on homepage
+- Add "Tous les communiqués" button on homepage
+- Add "Toutes les décisions du conseil d'état" button on homepage
+
+### Fixed
+
+- Fix figure-caption size and look #429
+- Fix logo width (to avoid it being full width flex)
+
+## [0.11.0]
+
 ### Changed
 
 - Twitter feed show two items
@@ -14,6 +77,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Moved `.vd-teaser-meta` out of `.vd-teaser-content` #473
 - Wrapped a link around the content of `.vd-teaser-content` #473
 - Set styles for links everywhere in teaser component #473 #474
+- Change sidebar to `<aside class="small"></aside>` tag #444
+- Change logo margin #419
+- Implement a bigger gutter-width (90px) #476
+- Implement logo with coat off arms only on mobile #458
 
 ### Added
 
@@ -26,24 +93,27 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add Form input molecule
 - Add Form input required molecule
 - Add Contact form organism
+- Add Layout documentation about sidebar and main area #444
 
 ### Fixed
 
 - Fix container max-width on mobile
+- Changed Graphik font name in doc #426
+- Fix search form height #459
 
-## [1.0.2]
+## [0.10.2]
 
 ### Fixed
 
 - Fix Changelog file extension
 
-## [1.0.1]
+## [0.10.1]
 
 ### Fixed
 
 - Fix Changelog location
 
-## [1.0.0]
+## [0.10.0]
 
 ### Changed
 
@@ -459,10 +529,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.2...HEAD
-[1.0.2]: https://github.com/DSI-VD/foehn/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/DSI-VD/foehn/compare/v1.0.0...c.1.0.1
-[1.0.0]: https://github.com/DSI-VD/foehn/compare/v0.9.0...v1.0.0
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/DSI-VD/foehn/compare/v0.11.0...0.12.0
+[0.11.0]: https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0
+[0.10.2]: https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2
+[0.10.1]: https://github.com/DSI-VD/foehn/compare/v0.10.0...c.0.10.1
+[0.10.0]: https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/DSI-VD/foehn/compare/v0.6.1...v0.7.0
