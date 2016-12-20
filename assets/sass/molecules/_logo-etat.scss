@@ -11,6 +11,7 @@
  */
 
 .vd-logo {
+  position: relative;
   display: inline-block;
   display: inline-flex; /* [1] */
   margin-bottom: $spacer;
@@ -24,9 +25,14 @@
 .vd-logo-img {
   position: relative;
   width: 2em; /* [2] */
-  margin-right: 0.5em;
+  margin-right: 0.25em;
+  margin-left: -2em - 0.5em; /* [3] */
 
-  @include media-breakpoint-up(md) { margin-right: 1.5em; }
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    margin-right: 1.5em;
+    margin-left: -2em - 0.65em; /* [3] */
+  }
 
   img {
     position: absolute;
@@ -45,14 +51,6 @@
   @include media-breakpoint-up(md) {
     margin-top: $spacer;
     margin-bottom: $spacer * 2;
-  }
-
-  &:first-child {
-    margin-left: 2em + 0.5em; /* [3] */
-
-    @include media-breakpoint-up(md) {
-      margin-left: 2em + 1.5em; /* [3] */
-    }
   }
 
   > img {
