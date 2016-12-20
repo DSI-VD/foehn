@@ -23,6 +23,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Use news-latest organims on homepage
 - Add a news-latest organims
 - Add news category inside image figure component
+- Add a new `.vd-search-form-regular` component
+- Add a new `.vd-bg-pattern-bars-gray` helper class for search area
 
 
 ### Fix
