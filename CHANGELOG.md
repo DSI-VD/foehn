@@ -26,6 +26,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a new `.vd-search-form-regular` component
 - Add a new `.vd-bg-pattern-bars-gray` helper class for search area
 - Add the social links above footer
+- Add a simple black `<hr>` with `.vd-hr-black`
 
 
 ### Fix
