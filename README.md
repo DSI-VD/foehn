@@ -18,8 +18,7 @@ If you don't like the [usual issues view](https://github.com/DSI-VD/foehn/issues
 [Toolbox](http://frontend.github.io/toolbox/) and [Bootstrap 4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
 
 ```shell
-$ yarn install
-$ ./node_modules/.bin/gulp serve
+$ npm start
 ```
 
 ## Quick Start
@@ -29,8 +28,7 @@ The following script lets you build, watch and serve the code.
 ```shell
 $ git clone https://github.com/vdch/foehn.git
 $ cd foehn
-$ yarn
-$ ./node_modules/.bin/gulp serve
+$ npm start
 ```
 
 ### Build
@@ -40,8 +38,7 @@ If you only want to build the code.
 ```shell
 $ git clone https://github.com/vdch/foehn.git
 $ cd foehn
-$ yarn
-$ /node_modules/.bin/gulp build
+$ npm run build
 ```
 
 ### Deploy the styleguide
@@ -49,7 +46,7 @@ $ /node_modules/.bin/gulp build
 We deploy the styleguide to a `gh-pages` branch on Github. To do this, a simple command:
 
 ```shell
-$ ./node_modules/.bin/gulp deploy --ghpages
+$ npm run deploy
 ```
 
 ## Versioning
