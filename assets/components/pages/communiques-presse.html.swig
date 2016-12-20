@@ -97,7 +97,7 @@ breadcrumb:
 
       <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r mt-2">Contacter l'office</a>
 
-      <p>Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
+      <p class="mt-3">Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
       <ul class="vd-list-links">
         <li><a href="#">communiqués de la Police cantonale</a></li>
         <li><a href="#">communiqués du Centre hospitalier universitaire vaudois (CHUV)</a></li>
