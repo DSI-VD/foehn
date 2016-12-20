@@ -68,7 +68,7 @@ breadcrumb:
         {% set newsCountAsArray = Array(newsCount) %}
 
         {% for x, y in newsCountAsArray %}
-          {% include "../molecules/teaser-alternate-2.html.swig"  %}
+          {% include "../molecules/teaser-alternate.html.swig" with { variant: 'alt_2' } %}
         {% endfor %}
       </div>
       <div class="text-xxs-center">
