@@ -11,7 +11,7 @@
   "scripts": {
     "start": "yarn && ./node_modules/.bin/gulp serve",
     "build": "yarn && gulp build --production",
-    "deploy": "yarn && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy"
+    "deploy": "yarn && ./node_modules/.bin/gulp && ./node_modules/.bin/gulp deploy --ghpages"
   },
   "engines": {
     "node": "6.7.0",
