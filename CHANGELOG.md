@@ -29,6 +29,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a simple black `<hr>` with `.vd-hr-black`
 - Add form-checkbox molecule
 - Add form-radio molecule
+- Add form-textarea molecule
 
 
 ### Fix
