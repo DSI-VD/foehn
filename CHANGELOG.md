@@ -31,6 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add form-radio molecule
 - Add form-textarea molecule
 - Add form-fieldset molecule
+- Add form-select molecule
 
 
 ### Fix
