@@ -64,11 +64,14 @@ $pattern-green-color: str-replace(#{$vd-green-light}, '#', '%23');
 $pattern-dotted-green-bright: "%3Crect%20fill%3D%27#{$pattern-green-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-green-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
 $pattern-dotted-green-color: str-replace(#{$vd-green}, '#', '%23');
 $pattern-dotted-green: "%3Crect%20fill%3D%27#{$pattern-dotted-green-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-dotted-green-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
+$pattern-bars-gray-02-color: str-replace(#{$vd-gray-lighter-2}, '#', '%23');
+$pattern-bars-gray-02: "%3Cpolygon fill=%22#{$pattern-bars-gray-02-color}%22 points=%220,4 0.5306,4 0,3.4694 	%22/>%3Cpolygon fill=%22#{$pattern-bars-gray-02-color}%22 points=%220,0 0,0.5299 3.4701,4 4,4 4,3.4694 0.5306,0%22/>%3Cpolygon fill=%22#{$pattern-bars-gray-02-color}%22 points=%224,0 3.4701,0 4,0.5299%22/>";
+$pattern-bars-purple-color: str-replace(#{$vd-purple}, '#', '%23');
+$pattern-bars-purple: "%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%220,4 0.5306,4 0,3.4694 	%22/>%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%220,0 0,0.5299 3.4701,4 4,4 4,3.4694 0.5306,0%22/>%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%224,0 3.4701,0 4,0.5299%22/>";
 
 
 // base64 backgrounds, to set as `background: $pattern-striped-green;`
 $pattern-striped-green: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQYV2N0uOnw/4D6AUYGKAAzkAXhMjBBuABMJQAINg5d+/nFCQAAAABJRU5ErkJggg==') repeat;
-$pattern-striped-purple: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQYV2Oc7/T/f+I+RkYGKAAzkAXhMjBBuABMJQAPvw7kq0kywQAAAABJRU5ErkJggg==') repeat;
 $pattern-striped-black: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkYGD4z8DAwMgABTAGXBAuA1OJLADS9B8AguEEBFr1tu0AAAAASUVORK5CYII=') repeat;
 $pattern-striped-thick-gray: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAL0lEQVQYV2NkQAKHL975D+MywhjIgrb6KoxgCXRBkBgjNkEUCZB2ZGPBOtAFQQoAprweVPxIkvYAAAAASUVORK5CYII=') repeat;
 

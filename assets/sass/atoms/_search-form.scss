@@ -39,3 +39,16 @@
     }
   }
 }
+
+.vd-search-form-regular {
+  .btn {
+    background: $vd-green;
+    border-color: $vd-green;
+    color: $white;
+
+    &:hover {
+      background: darken($vd-green, 10%);
+      border-color: darken($vd-green, 10%);
+    }
+  }
+}

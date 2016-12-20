@@ -14,6 +14,8 @@
   .vd-teaser-link-title {
     display: block;
     font-family: $headings-font-family;
+    font-size: $font-size-h2;
+    font-weight: 300;
     color: $black;
   }
 
@@ -23,7 +25,7 @@
     font-size: 0.45em;
     line-height: 1.7;
     font-weight: 300;
-    color: $body-color;
+    color: $gray;
   }
 
   &:hover,
