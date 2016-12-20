@@ -34,6 +34,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add form-fieldset molecule
 - Add form-select molecule
 - Add form-submit molecule
+- Add index-menu molecule
 
 
 ### Fix
