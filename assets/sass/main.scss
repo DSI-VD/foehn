@@ -4,6 +4,7 @@
 @import 'mixins';
 @import 'main-variables';
 @import 'bootstrap';
+@import 'placeholders';
 @import 'helpers';
 @import 'icons';
 
@@ -26,6 +27,7 @@
 @import 'atoms/headings';
 @import 'atoms/button';
 @import 'atoms/update-time';
+@import 'atoms/input-group';
 
 // molecules:
 @import 'molecules/access-nav';
