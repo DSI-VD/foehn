@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change social icons platforms
 - Add header to social icons list
 - Add class `.mt-1` on social icons title
+- Revert to using flex grid of Bootstrap 4
 
 ## Added
 
@@ -30,6 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix teaser image size
 - Fix teaser-small image size
 - Fix margin of the `hr` in domain list to `.mt-2`
+- Fix navs grid after flex grid revert
 
 ## [0.12.0]
 
