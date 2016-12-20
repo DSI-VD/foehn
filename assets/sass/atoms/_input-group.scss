@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+.input-group-btn {
+  > .btn {
+    padding: ($btn-padding-y * 0.8) $btn-padding-x;
+    box-shadow: none;
+  }
+}
