@@ -30,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add form-checkbox molecule
 - Add form-radio molecule
 - Add form-textarea molecule
+- Add form-fieldset molecule
 
 
 ### Fix
