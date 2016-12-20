@@ -45,6 +45,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix teaser-small image size
 - Fix margin of the `hr` in domain list to `.mt-2`
 - Fix the fonts in primary navigation
+- Fix `vd-teaser-img` size on IE
 
 ## [0.12.0]
 
