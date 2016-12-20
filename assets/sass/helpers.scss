@@ -28,7 +28,15 @@
   }
 }
 
-// colors helpers
+// text helpers
 .vd-text-green {
   color: $vd-green-dark;
+}
+
+.vd-text-gray {
+  color: $gray;
+}
+
+.vd-text-thin {
+  font-weight: 300;
 }
