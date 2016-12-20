@@ -36,6 +36,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add form-select molecule
 - Add form-submit molecule
 - Add index-menu molecule
+- Add a start of responsive typography
 
 ### Fix
 
@@ -48,6 +49,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix the fonts in primary navigation
 - Fix navs grid after flex grid revert
 - Fix `vd-teaser-img` size on IE
+- Fix the mobile navigation #460
 
 ## [0.12.0]
 
