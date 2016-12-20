@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
 .footer {
-  margin-top: $spacer * 3;
   padding: ($spacer * 3) 0;
   background-image: url(../svg/bars_black.svg);
   background-repeat: repeat-x;
@@ -43,6 +42,6 @@
 
 .footer-btn-backtotop {
   position: absolute;
-  top: ($spacer * -5);
+  top: ($spacer * -4.7);
   right: $grid-gutter-width-base * 0.5;
 }
