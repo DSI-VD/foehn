@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add the social links above footer
 - Add a simple black `<hr>` with `.vd-hr-black`
 - Add form-checkbox molecule
+- Add form-radio molecule
 
 
 ### Fix
