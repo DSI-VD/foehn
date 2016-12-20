@@ -38,7 +38,7 @@ breadcrumb:
         <div class="col-md-7">
           <fieldset>
             <div class="row">
-              <div class="col-sm">
+              <div class="col-lg mb-1">
                 <p class="h2">Publié du</p>
                 <div class="form-inline">
                   <input id="date-form-day" class="form-control" type="text" pattern="[0-9]{2}" name="name" size="2" placeholder="JJ" value="">
@@ -48,7 +48,7 @@ breadcrumb:
                   <input id="date-form-year" class="form-control" type="text" pattern="[0-9]{4}" name="name" size="4" placeholder="AAAA" value="">
                 </div>
               </div>
-              <div class="col-sm">
+              <div class="col-lg mb-1">
                 <p class="h2"><span class="sr-only">Publié jusqu'</span>au</p>
                 <div class="form-inline">
                   <input id="date-form-day" class="form-control" type="text" pattern="[0-9]{2}" name="name" size="2" placeholder="JJ" value="">
