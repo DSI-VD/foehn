@@ -5,13 +5,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## Changed
-
+### Changed
+- All grid layout use `.vd-nav-flex` class
 - News detail use `.container-small` class to reduce the width of the page
 - Change social icons platforms
 - Add header to social icons list
 - Add class `.mt-1` on social icons title
 - Change Communiqué de presse title style
+- Revert to using flex grid of Bootstrap 4
 - Remove `<hr>` from vd-teaser component and replace with CSS #521
 
 ## Added
@@ -37,7 +38,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add form-submit molecule
 - Add index-menu molecule
 
-
 ### Fix
 
 - Refactor `.vd-teaser-img` style
@@ -45,7 +45,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix teaser image size
 - Fix teaser-small image size
 - Fix margin of the `hr` in domain list to `.mt-2`
+- Set the logo coat of arms outside the container #503
 - Fix the fonts in primary navigation
+- Fix navs grid after flex grid revert
+- Fix `vd-teaser-img` size on IE
 
 ## [0.12.0]
 
