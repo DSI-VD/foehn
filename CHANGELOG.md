@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change social icons platforms
 - Add header to social icons list
 - Add class `.mt-1` on social icons title
+- Change Communiqué de presse title style
 
 ## Added
 
@@ -22,6 +23,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `vd-text-green` helper
 - Use news-latest organims on homepage
 - Add a news-latest organims
+- Add news category inside image figure component
+- Add a new `.vd-search-form-regular` component
+- Add a new `.vd-bg-pattern-bars-gray` helper class for search area
+- Add the social links above footer
+- Add a simple black `<hr>` with `.vd-hr-black`
+- Add form-checkbox molecule
+- Add form-radio molecule
+- Add form-textarea molecule
+- Add form-fieldset molecule
+- Add form-select molecule
+- Add form-submit molecule
 
 
 ### Fix
@@ -32,6 +44,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix teaser-small image size
 - Fix margin of the `hr` in domain list to `.mt-2`
 - Set the logo coat of arms outside the container #503
+- Fix the fonts in primary navigation
 
 ## [0.12.0]
 
@@ -75,6 +88,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Twitter feed use `.vd-teaser-small` class
 - Agenda feed use `.vd-teaser-small` class
 - `.vd-teaser-image` set the max-width to `50%`
+- Moved `.vd-teaser-meta` out of `.vd-teaser-content` #473
+- Wrapped a link around the content of `.vd-teaser-content` #473
+- Set styles for links everywhere in teaser component #473 #474
 - Change sidebar to `<aside class="small"></aside>` tag #444
 - Change logo margin #419
 - Implement a bigger gutter-width (90px) #476

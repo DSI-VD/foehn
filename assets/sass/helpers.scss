@@ -18,7 +18,11 @@
 }
 
 .vd-bg-pattern-purple {
-  background: $pattern-striped-purple;
+  @include vd-pattern-dotted($pattern-bars-purple);
+}
+
+.vd-bg-pattern-bars-gray {
+  @include vd-pattern-dotted($pattern-bars-gray-02);
 }
 
 // Spacing helpers
@@ -28,7 +32,15 @@
   }
 }
 
-// colors helpers
+// text helpers
 .vd-text-green {
   color: $vd-green-dark;
+}
+
+.vd-text-gray {
+  color: $gray;
+}
+
+.vd-text-thin {
+  font-weight: 300;
 }
