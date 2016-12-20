@@ -3,7 +3,7 @@ title: Nav Primary
 name: nav-primary
 collection: molecules
 notes: |
-  `.vd-nav-primary` navigation. **Make sure you add a `<div class="clearfix hidden-sm-down"></div>` every three (3) items, to avoid issues with IE.**
+  `.vd-nav-primary` navigation.
 
   To have the navigation open on load:
   - Remove the `.collapsed` class on the toggle button
