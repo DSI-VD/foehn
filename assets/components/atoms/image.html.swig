@@ -20,15 +20,15 @@ notes: |
   - `vd-img-left`: the image is to the left of the text.
   - `vd-img-right`: the image is to the right of the text.
 ---
-{% if not variant %}
+{% if not variant -%}
 <img src="https://source.unsplash.com/random/400x200" alt="Image">
-{% elseif variant == 'fluid' %}
+{% elseif variant == 'fluid' -%}
 <img class="img-fluid" src="https://source.unsplash.com/random/400x200" alt="Responsive image">
-{% elseif variant == 'desaturated' %}
+{% elseif variant == 'desaturated' -%}
 <img class="img-desaturate" src="https://source.unsplash.com/random/400x200" alt="Desaturated image">
-{% elseif variant == 'rounded' %}
+{% elseif variant == 'rounded' -%}
 <img class="rounded-circle" src="https://source.unsplash.com/random/200x200" alt="Circle image">
-{% elseif variant == 'content' %}
+{% elseif variant == 'content' -%}
 <div class="content">
   <img class="vd-img-left" src="https://source.unsplash.com/random/400x200" alt="Image in content">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -36,4 +36,4 @@ notes: |
   <img class="vd-img-right" src="https://source.unsplash.com/random/400x200" alt="Image in content">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-{% endif %}
+{%- endif -%}
