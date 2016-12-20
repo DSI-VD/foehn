@@ -16,7 +16,7 @@ notes: |
 <article class="vd-teaser-small mb-1">
   {% include "../molecules/numbered-title.html.swig" %}
   <figure class="vd-teaser-small-img">
-    {% include "../atoms/image-responsive.html.swig"  %}
+    {% include "../atoms/image.html.swig" with { variant: 'fluid' } %}
   </figure>
   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   <p><a href="#">plus d'info</a></p>
