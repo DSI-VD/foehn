@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+/**
+ * Make the image small on desktop
+ *
+ * 1. Fix IE showing the image 100% width
+ */
 .vd-teaser-img {
   display: inline-block;
   max-width: 100%;
@@ -10,6 +15,7 @@
   @include media-breakpoint-up(md) {
     margin-left: 25%;
     margin-right: 25%;
+    max-width: 50%; /* [1] */
   }
 }
 
