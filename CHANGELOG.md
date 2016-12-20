@@ -44,8 +44,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix teaser image size
 - Fix teaser-small image size
 - Fix margin of the `hr` in domain list to `.mt-2`
+- Set the logo coat of arms outside the container #503
 - Fix the fonts in primary navigation
 - Fix navs grid after flex grid revert
+- Fix `vd-teaser-img` size on IE
 
 ## [0.12.0]
 
