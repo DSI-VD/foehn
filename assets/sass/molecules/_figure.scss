@@ -20,3 +20,20 @@
     content: '/\0000a0';
   }
 }
+
+.vd-figure-img-container {
+  position: relative;
+}
+
+.vd-figure-category {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: ($spacer / 4) 0 0 ($spacer / 3);
+  background: $white;
+  text-transform: uppercase;
+  font-size: $font-size-sm;
+  line-height: 0.8;
+  color: $gray;
+}
