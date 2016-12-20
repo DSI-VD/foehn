@@ -1,5 +1,24 @@
 @charset 'UTF-8';
 
+.vd-teaser {
+  margin-bottom: $spacer * 2;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid $vd-green-darker;
+
+    @include media-breakpoint-up(md) {
+      max-width: 350px;
+    }
+  }
+  &:last-of-type {
+    &:after { content: none; }
+  }
+}
+
 .vd-teaser-img {
   display: inline-block;
   max-width: 100%;
