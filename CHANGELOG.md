@@ -44,6 +44,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix teaser image size
 - Fix teaser-small image size
 - Fix margin of the `hr` in domain list to `.mt-2`
+- Set the logo coat of arms outside the container #503
 - Fix the fonts in primary navigation
 
 ## [0.12.0]
