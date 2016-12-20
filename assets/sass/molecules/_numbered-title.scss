@@ -1,6 +1,15 @@
 @charset 'UTF-8';
 
 .vd-numbered-title {
+  font-size: $font-size-h6;
+  text-decoration: none;
+
+  @extend %link-black;
+
+  &:hover {
+    text-decoration: none;
+  }
+
   .tag {
     position: relative;
     top: -2px;
@@ -12,13 +21,5 @@
     line-height: 1.5em;
     text-align: center;
     font-weight: 300;
-  }
-
-  a {
-    @extend %link-black;
-
-    &:hover {
-      .tag { background: $link-hover-color; }
-    }
   }
 }
