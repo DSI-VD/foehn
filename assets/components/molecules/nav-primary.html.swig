@@ -13,7 +13,18 @@ notes: |
 <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="btn btn-primary btn-sm {% if primary_opened %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if primary_opened %}true{% else %}false{% endif %}">Tous les thèmes</button>
+      <section class="hidden-md-up">
+        <h2 class="vd-section-title mt-1 mb-2">Les plus visités</h2>
+        <ul class="vd-list-links">
+          <li><a href="#0">Inscription au chômage</a></li>
+          <li><a href="#0">Formulaire d'indemnisation</a></li>
+          <li><a href="#0">Vaud Tax 2017</a></li>
+          <li><a href="#0">Vacances scolaires et jours fériés</a></li>
+        </ul>
+      </section>
+      <div class="text-xxs-center text-md-left">
+        <button type="button" class="btn btn-primary btn-sm {% if primary_opened %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if primary_opened %}true{% else %}false{% endif %}">Tous les thèmes</button>
+      </div>
     </div>
   </div>
   <div class="collapse {% if primary_opened %}in {% endif %}clearfix" id="nav-primary-container">
