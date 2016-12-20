@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add header to social icons list
 - Add class `.mt-1` on social icons title
 - Change Communiqué de presse title style
+- Grouped a lot of components together using the variant feature of Toolbox
 
 ## Added
 
