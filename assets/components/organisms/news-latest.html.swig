@@ -22,7 +22,6 @@ notes: |
     <a href="../actualite"><p>Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -34,7 +33,6 @@ notes: |
         à tour poétique, rythmé, absurde ou tendre, il se joue de la banalité des mots du quotidien et met à jour leur potentiel inexploré.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -45,7 +43,6 @@ notes: |
     <a href="../actualite"><p>Fiona Prieur, Marco Labagnara, Luca Moessner ont été récompensés lors de la cérémonie de remise des prix CinéCivic 2016, le 31 octobre à Genève.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -56,7 +53,6 @@ notes: |
     <a href="../actualite"><p>La cinquième Conférence nationale sur le fédéralisme se tiendra les 26 et 27 octobre 2017, à Montreux.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -67,7 +63,6 @@ notes: |
     <a href="../actualite"><p>Les deux communautés ont signé la déclaration liminaire d’engagement, en vue d’une reconnaissance en tant qu’institution d’intérêt public.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-  <hr>
 </article>
 
 {% if news_alternate_news_links %}

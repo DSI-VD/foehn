@@ -1,7 +1,0 @@
-@charset 'UTF-8';
-
-hr {
-  @include media-breakpoint-up(md) {
-    max-width: 350px; // this is pretty much a col-4 on a large viewport–
-  }
-}

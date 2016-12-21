@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+.img-desaturate {
+  filter: grayscale(100%);
+}
+
 .content {
   .vd-img-left {
     float: left;
@@ -14,6 +18,7 @@
   }
 
   .vd-img-center {
+    display: block;
     margin: ($spacer / 2.5) auto $spacer-y;
 
     @include img-fluid();
