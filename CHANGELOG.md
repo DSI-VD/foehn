@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add class `.mt-1` on social icons title
 - Change Communiqué de presse title style
 - Revert to using flex grid of Bootstrap 4
+- Setup the search form for communiques de presse #437
 
 ## Added
 
