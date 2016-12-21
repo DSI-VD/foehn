@@ -1,5 +1,11 @@
 @charset 'UTF-8';
 
+/**
+ * Simple teaser
+ *
+ * 1. Remove the bottom border on last element of lists
+ * 2. Remove the bottom border on last element of a 2 columns list
+ */
 .vd-teaser {
   margin-bottom: $spacer * 2;
 
@@ -16,8 +22,15 @@
       max-width: 350px;
     }
   }
+
   &:last-of-type {
-    &:after { content: none; }
+    &:after { content: none; } /* [1] */
+  }
+
+  @include media-breakpoint-up(md) {
+    &[class*="col-md-6"]:nth-last-of-type(-n+2) {
+      &:after { content: none; } /* [2] */
+    }
   }
 }
 
