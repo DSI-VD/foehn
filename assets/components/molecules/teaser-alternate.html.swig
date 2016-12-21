@@ -2,8 +2,11 @@
 title: teaser-alternate
 name: Teaser-alternate
 collection: molecules
+variants:
+  alt_2: Alternate 2
 notes: |
 ---
+{% if not variant -%}
 <article class="vd-teaser vd-teaser-alternate">
   <div class="container">
     <div class="row">
@@ -34,3 +37,15 @@ notes: |
       </div>
     </div>
   </article>
+{% elseif variant == 'alt_2' -%}
+<article class="vd-teaser-alternate-2">
+  <a href="../communiques-presse-detail">
+    <header>
+      <p class="small text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <h3>Lorem ipsum dolor sit amet. (titre)</h3>
+    </header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, expedita hic magnam sequi dolorum, quas repellendus ad, voluptatum sed fugiat aspernatur. Et, magni explicabo nesciunt.</p>
+    <p class="small">Publié le 1 juillet 2016 (date de publication)</p>
+  </a>
+</article>
+{%- endif -%}
