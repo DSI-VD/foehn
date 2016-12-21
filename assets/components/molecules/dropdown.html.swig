@@ -13,8 +13,8 @@ notes: |
 ---
 <div class="vd-dropdown vd-dropdown-left vd-dropdown-purple btn-group">
   <a data-toggle="dropdown" class="btn dropdown-label">
-      <span class="title">Pierre Dupond</span><br>
-      <span>Commune de Belmont-sur-Lausanne</span>
+    <span class="title">Pierre Dupond</span><br>
+    <span>Commune de Belmont-sur-Lausanne</span>
   </a>
   <a class="btn dropdown-toggle-split dropdown-chevron" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <i class="icons icons-chevron-bottom"></i>
