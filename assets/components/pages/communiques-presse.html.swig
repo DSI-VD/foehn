@@ -62,7 +62,7 @@ breadcrumb:
           </fieldset>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span> Rechercher</button>
+      <button type="submit" class="btn btn-primary vd-btn-chevron-r btn-sm">Rechercher</button>
     </form>
   </div>
 </div>
