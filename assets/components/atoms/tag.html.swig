@@ -1,6 +1,6 @@
 ---
-title: tag
-name: Tag
+title: Tag
+name: tag
 collection: atoms
 notes: |
   - You can use the class: `.tag-pill` to make it rounded.

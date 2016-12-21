@@ -6,5 +6,5 @@ notes: |
 ---
 <fieldset class="form-group">
   <legend>Radio buttons</legend>
-  {% include "../molecules/form-radio.html.swig" %}
+  {% include "../molecules/form-radio.html.swig" -%}
 </fieldset>
