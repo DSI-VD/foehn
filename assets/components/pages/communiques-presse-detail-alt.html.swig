@@ -36,10 +36,6 @@ breadcrumb:
           <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
           <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
           <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
-          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
-          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
-          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
-          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
         </ul>
 
         <p class="text-uppercase mb-0">Axes forts de transports publics</p>
