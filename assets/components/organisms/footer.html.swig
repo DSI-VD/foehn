@@ -76,7 +76,7 @@ notes: |
       </div>
       <div class="col-lg-1 col-md-2 footer-logo-container">
         <div class="footer-logo">
-          <img class="img-fluid" src="../build/svg/logo/logo--white.svg" alt="Canton de Vaud">
+          <img class="img-fluid" src="{{data.path}}build/svg/logo/logo--white.svg" alt="Canton de Vaud">
         </div>
       </div>
     </div>
