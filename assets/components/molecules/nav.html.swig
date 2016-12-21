@@ -4,11 +4,11 @@ name: Nav
 collection: molecules
 bootstrap: http://v4-alpha.getbootstrap.com/components/navs/#base-nav
 notes: |
-  Use a `<ul>` list to obtain a bare navigation that is not inline.
+  Regular navigation
 ---
-<nav class="nav nav-inline hidden-sm-down small">
+<nav>
   <h2 class="sr-only">Sous-navigation</h2>
-  <ul>
+  <ul class="nav nav-inline hidden-sm-down small">
     <li class="nav-item"><a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Annuaire</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>

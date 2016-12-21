@@ -19,7 +19,7 @@ notes: |
     <div class="row">
       <div class="col-md-5">
         {% if logo_alternate %}
-        {% include "../molecules/logo-etat-alternate.html.swig" %}
+        {% include "../molecules/logo-etat.html.swig" with { variant: 'alternate' } %}
         {% else %}
         {% include "../molecules/logo-etat.html.swig" %}
         {% endif %}
