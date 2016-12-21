@@ -12,7 +12,7 @@ notes: |
     <img class="img-fluid figure-img" src="http://placehold.it/400x300" alt="Figure">
     {%- if variant == 'category' %}
     <span class="vd-figure-category">Population</span>
-    {% endif -%}
+    {%- endif %}
   </div>
   <figcaption class="figure-caption">Ceci est une légende <span class="vd-figure-credits">Photo JACQUES ANDRÉ</span></figcaption>
 </figure>
