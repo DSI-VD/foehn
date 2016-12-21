@@ -45,6 +45,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix centering of pagination
 - Refactor `.vd-teaser-img` style
 - Fix style of lead
 - Fix teaser image size
