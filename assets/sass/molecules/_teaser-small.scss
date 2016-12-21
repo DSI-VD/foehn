@@ -1,9 +1,18 @@
 @charset 'UTF-8';
 
 .vd-teaser-small {
-  margin: $spacer 0 ($spacer * 3);
+  display: block;
+  margin: $spacer 0 ($spacer * 2);
   padding-bottom: ($spacer / 2);
   border-bottom: 1px solid $vd-green-darker;
+
+  @include plain-hover-focus {
+    text-decoration: none;
+  }
+
+  &:last-of-type {
+    border: none;
+  }
 }
 
 .vd-teaser-small-img {
@@ -12,4 +21,8 @@
   @include media-breakpoint-up(md) {
     max-width: 40%;
   }
+}
+
+.vd-teaser-small-content {
+  color: $body-color;
 }
