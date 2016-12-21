@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+
 - All grid layout use `.vd-nav-flex` class
 - News detail use `.container-small` class to reduce the width of the page
 - Change social icons platforms
@@ -14,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change Communiqué de presse title style
 - Grouped a lot of components together using the variant feature of Toolbox
 - Revert to using flex grid of Bootstrap 4
+- Use search-form component in actualites page #511
 - Wrapp the teaser-small component in a link #529
 - Remove `<hr>` from vd-teaser component and replace with CSS #521
 - Setup the search form for communiques de presse #437

@@ -22,17 +22,17 @@ breadcrumb:
   </div>
 </div>
 
-<div class="container">
-  <form class="form-inline mt-1 mb-3">
-    <div class="form-group">
-      <label class="sr-only" for="exampleInputAmount">Recherche</label>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Recherche">
+<div class="vd-bg-pattern-bars-gray clearfix mt-1 py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        {% include "../atoms/search-form.html.swig" with { variant: 'regular' } %}
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span><span class="sr-only">Rechercher</span></button>
-  </form>
+  </div>
 </div>
 
-<main class="container" id="main">
+<main class="container mt-2" id="main">
   <h1 class="sr-only">Actualités</h1>
 
   {% set newsCount = 10 %}
