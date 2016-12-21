@@ -63,9 +63,9 @@
     <div class="row">
       <div class="col-xs-12 text-sm-right">
 
-        <nav class="nav nav-inline hidden-sm-down small">
+        <nav>
   <h2 class="sr-only">Sous-navigation</h2>
-  <ul>
+  <ul class="nav nav-inline hidden-sm-down small">
     <li class="nav-item"><a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Annuaire</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
@@ -136,7 +136,7 @@
         <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
-    <img src="../build/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
+    <img src="https://dsi-vd.github.io/foehn/build/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
   </div>
 </a>
 
@@ -167,92 +167,73 @@
         <div class="row">
           <nav class="col-md-8" id="nav-primary" role="navigation" aria-label="Navigation par thèmes">
             <div class="row">
-              <div class="vd-nav-flex">
               
                 <a href="../domaines/#culture" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Culture</h5>
   <p class="vd-teaser-link-text">Aides et soutiens, Musées cantonaux…</p>
 </a>
 
-                
               
                 <a href="../domaines/#economie" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Economie</h5>
   <p class="vd-teaser-link-text">Poursuites et faillites, Registre du commerce…</p>
 </a>
 
-                
               
                 <a href="../domaines/#environnement" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Environnement</h5>
   <p class="vd-teaser-link-text">Faune et nature, Energie…</p>
 </a>
 
-                
-                  <div class="clearfix hidden-sm-down"></div>
-                
               
                 <a href="../domaines/#etat_droit_finance" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Etat, Droit, Finance</h5>
   <p class="vd-teaser-link-text">Impôts, rémunérations, fiscalité…</p>
 </a>
 
-                
               
                 <a href="../domaines/#formation" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Formation</h5>
   <p class="vd-teaser-link-text">Jours fériés et vacances scolaires…</p>
 </a>
 
-                
               
                 <a href="../domaines/#mobilité" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Mobilité</h5>
   <p class="vd-teaser-link-text">Automobile, Navigation…</p>
 </a>
 
-                
-                  <div class="clearfix hidden-sm-down"></div>
-                
               
                 <a href="../domaines/#santé" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Santé</h5>
   <p class="vd-teaser-link-text">Prévention, Professionnels…</p>
 </a>
 
-                
               
                 <a href="../domaines/#social" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Social</h5>
   <p class="vd-teaser-link-text">Aide aux victimes et auteur-e-s de violences…</p>
 </a>
 
-                
               
                 <a href="../domaines/#vie_privee" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Vie privée</h5>
   <p class="vd-teaser-link-text">Documents d&#39;identité…</p>
 </a>
 
-                
-                  <div class="clearfix hidden-sm-down"></div>
-                
               
                 <a href="../domaines/#securite" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Sécurité</h5>
   <p class="vd-teaser-link-text">Police, contrôle, casiers judiciaire…</p>
 </a>
 
-                
               
                 <a href="../domaines/#territoire" class="vd-teaser-link col-md-4">
 <h5 class="vd-teaser-link-title">Territoire</h5>
   <p class="vd-teaser-link-text">Informations sur le territoire, Registre foncier…</p>
 </a>
 
-                
               
-              </div>
             </div>
           </nav>
           <div class="col-md-4">
@@ -280,17 +261,10 @@
       <div class="col-sm-8">
         <nav aria-label="fil d'Ariane">
   <ol class="breadcrumb">
-  
-    
-      <li class="breadcrumb-item"><a href="../accueil/">vd.ch</a></li>
-    
-      <li class="breadcrumb-item"><a href="../domaines/#economie">Économie</a></li>
-    
-      <li class="breadcrumb-item"><a href="../poursuites-et-faillites">Poursuites et faillites</a></li>
-    
-      <li class="breadcrumb-item"><a href="#"> </a></li>
-    
-  
+    <li class="breadcrumb-item"><a href="../accueil/">vd.ch</a></li>
+    <li class="breadcrumb-item"><a href="../domaines/#economie">Économie</a></li>
+    <li class="breadcrumb-item"><a href="../poursuites-et-faillites">Poursuites et faillites</a></li>
+    <li class="breadcrumb-item"><a href="#"> </a></li>
     <li class="sr-only">Vous êtes ici: [titre de la page]</li>
   </ol>
 </nav>
@@ -528,7 +502,7 @@
       </div>
       <div class="col-lg-1 col-md-2 footer-logo-container">
         <div class="footer-logo">
-          <img class="img-fluid" src="../build/svg/logo/logo--white.svg" alt="Canton de Vaud">
+          <img class="img-fluid" src="https://dsi-vd.github.io/foehn/build/svg/logo/logo--white.svg" alt="Canton de Vaud">
         </div>
       </div>
     </div>
