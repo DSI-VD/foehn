@@ -80,9 +80,8 @@ breadcrumb:
           {% include "../molecules/teaser-alternate.html.swig" with { variant: 'alt_2' } %}
         {% endfor %}
       </div>
-      <div class="text-xxs-center">
-        {% include "../molecules/nav-pagination.html.swig" %}
-      </div>
+
+      {% include "../molecules/nav-pagination.html.swig" %}
 
     </div>
 
