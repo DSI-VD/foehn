@@ -29,15 +29,11 @@
 }
 
 .footer-logo-container {
-  display: flex;
-  margin-top: auto;
-  margin-left: auto;
+  align-self: flex-end;
 }
 
 .footer-logo {
-  width: 100%;
-  max-width: $spacer * 3;
-  margin-left: auto;
+  max-width: $spacer * 2;
 }
 
 .footer-btn-backtotop {

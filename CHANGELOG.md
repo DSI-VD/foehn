@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Change the columns in the footer to `xs` sizes
 - All grid layout use `.vd-nav-flex` class
 - News detail use `.container-small` class to reduce the width of the page
 - Change social icons platforms
@@ -46,6 +47,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix logo footer style
 - Fix centering of pagination
 - Refactor `.vd-teaser-img` style
 - Fix style of lead
