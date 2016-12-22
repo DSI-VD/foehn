@@ -10,10 +10,6 @@ notes: |
 {% set faqCount = 10 %}
 {% set faqCountAsArray = Array(faqCount) %}
 
-<div class="row">
-
-</div>
-
 <h3>Questions</h3>
 
 <ul class="vd-list-links">
