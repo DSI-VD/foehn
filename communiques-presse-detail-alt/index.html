@@ -27,7 +27,8 @@
     
   
   <div id="page-wrapper">
-    <header class="header" role="banner">
+    
+<header class="header" role="banner">
   <nav class="vd-access-nav" aria-label="menu accessibilité">
   <ul>
       <li>
@@ -130,15 +131,12 @@
       <div class="col-md-5">
         
         <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
-  <div class="vd-logo-img">
-    <img src="https://dsi-vd.github.io/foehn/build/svg/logo/logo.svg" class="img-fluid hidden-sm-down" alt="Logo du canton de Vaud" />
-    <img src="https://dsi-vd.github.io/foehn/build/svg/logo/logo-square.svg" class="img-fluid hidden-md-up" aria-hidden="true" alt="Logo du canton de Vaud" />
-  </div>
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
     <img src="https://dsi-vd.github.io/foehn/build/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
   </div>
 </a>
+
         
       </div>
       <div class="col-md-5 offset-md-2">
@@ -167,12 +165,12 @@
         </ul>
       </section>
       <div class="text-xxs-center text-md-left">
-        <button type="button" class="hidden-sm-down btn btn-primary btn-sm " data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="true">Tous les thèmes</button>
+        <button type="button" class="hidden-sm-down btn btn-primary btn-sm collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">Tous les thèmes</button>
         <a href="../domaines" class="hidden-md-up btn btn-primary btn-sm vd-btn-chevron-r">Tous les thèmes</a>
       </div>
     </div>
   </div>
-  <div class="hidden-sm-down collapse in clearfix" id="nav-primary-container">
+  <div class="hidden-sm-down collapse clearfix" id="nav-primary-container">
     <div class="vd-nav-primary-content">
       <div class="container">
         <div class="row">
@@ -266,185 +264,121 @@
 </header>
 
 
-<div class="container mt-3">
-  <h1 class="sr-only">Site officiel de l'&Eacute;tat de Vaud</h1>
-</div>
-<!-- container -->
+<div class="container py-1">
+  <nav aria-label="fil d'Ariane">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../accueil/">vd.ch</a></li>
+    <li class="breadcrumb-item"><a href="../communiques-presse/">Communiqués de presse</a></li>
+    <li class="breadcrumb-item"><a href="#"> </a></li>
+    <li class="sr-only">Vous êtes ici: [titre de la page]</li>
+  </ol>
+</nav>
 
-<div class="container">
-  <div class="row">
+</div>
+
+<main class="container">
+  <div class="row mt-3">
 
     <div class="col-md-8">
+      <header>
+        <p class="mb-0 small text-uppercase font-weight-bold">Nature du communiqué</p>
+        <p class="mb-0 small">&Eacute;metteur</p>
+        <p class="small font-weight-bold">Lausanne, le 1er juillet 2016</p>
 
-      <main id="main">
-        <h2 class="vd-section-title">Actualités</h2>
+        <h2 class="sr-only">Partnaires</h2>
+        <ul class="list-inline">
+          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        </ul>
 
-<article class="vd-teaser">
-  <div class="text-xxs-center mb-2">
-    <h3 class="vd-teaser-title">
-      <a href="../actualite">La Journée Oser tous les métiers élargit son offre</a>
-    </h3>
-    <a class="vd-teaser-img" href="../actualite">
-      
-      <picture>
-        <img class="img-fluid" src="http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg" alt="article image"/>
-      </picture>
-    </a>
-  </div>
-  <div class="vd-teaser-content">
-    <a href="../actualite"><p>Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p></a>
-  </div>
-  <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-</article>
+        <p class="text-uppercase mb-0">Axes forts de transports publics</p>
+        <h1 class="h2 px-3 py-2 mb-2 vd-bg-pattern-bars-gray">Le Service de la sécurité civile et militaire est certifié</h1>
+      </header>
 
-<article class="vd-teaser">
-  <h3 class="vd-teaser-title text-xxs-center mb-2">
-    <a href="../actualite">Attribution de la bourse arts plastiques 2016</a>
-  </h3>
-  <div class="vd-teaser-content">
-    <a href="../actualite"><p>La bourse cantonale des arts plastiques pour l’année 2016, d’une valeur de 20'000 francs, a été attribuée à Gilles Furtwängler, né en 1982 à Lausanne. Depuis dix ans, l'artiste a développé une pratique dont le matériau de base est le texte – tour
-        à tour poétique, rythmé, absurde ou tendre, il se joue de la banalité des mots du quotidien et met à jour leur potentiel inexploré.</p></a>
-  </div>
-  <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-</article>
+      <p class="lead">Au terme d'une démarche initiée courant 2014, le Service de la sécurité civile et militaire (SSCM) a officiellement obtenu la certification à la norme internationale ISO 9001:2015 de son système de management de la qualité. L'obtention de ce certificat s'inscrit dans une volonté d'amélioration continue, orientée citoyens et dynamique pour gagner en efficacité et accroître la satisfaction vis-à-vis des prestations fournies.</p>
 
-<article class="vd-teaser">
-  <h3 class="vd-teaser-title text-xxs-center mb-2">
-    <a href="../actualite">Remise des prix du concours CinéCivic 2016</a>
-  </h3>
-  <div class="vd-teaser-content">
-    <a href="../actualite"><p>Fiona Prieur, Marco Labagnara, Luca Moessner ont été récompensés lors de la cérémonie de remise des prix CinéCivic 2016, le 31 octobre à Genève.</p></a>
-  </div>
-  <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-</article>
+      <div class="text-xxs-center mt-2">
+        <h2 class="vd-section-title mb-1">Partager</h2>
 
-<article class="vd-teaser">
-  <h3 class="vd-teaser-title text-xxs-center mb-2">
-    <a href="../actualite">5e Conférence nationale sur le fédéralisme</a>
-  </h3>
-  <div class="vd-teaser-content">
-    <a href="../actualite"><p>La cinquième Conférence nationale sur le fédéralisme se tiendra les 26 et 27 octobre 2017, à Montreux.</p></a>
-  </div>
-  <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-</article>
-
-<article class="vd-teaser">
-  <h3 class="vd-teaser-title text-xxs-center mb-2">
-    <a href="../actualite">Anglicans et catholiques ont déposé une demande de reconnaissance</a>
-  </h3>
-  <div class="vd-teaser-content">
-    <a href="../actualite"><p>Les deux communautés ont signé la déclaration liminaire d’engagement, en vue d’une reconnaissance en tant qu’institution d’intérêt public.</p></a>
-  </div>
-  <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-</article>
-
-
-<h3 class="sr-only">Autres actualités</h3>
-<ul class="list-unstyled">
-  <li><a href="#" class="btn btn-primary vd-btn-chevron-r btn-sm">Toutes l'actualitées</a></li>
-  <li><a href="#" class="btn btn-secondary vd-btn-chevron-r btn-sm">Tous les communiqués</a></li>
-  <li><a href="#" class="btn btn-secondary vd-btn-chevron-r btn-sm">Décisions du conseil d'état</a></li>
+<ul class="list-inline vd-social-icons">
+  <li class="list-inline-item">
+    <a class="vd-social-icon" href="#0" title="Mail" aria-label="Send us a Mail"><span class="fa fa-envelope" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="vd-social-icon" href="#0" title="Twitter" aria-label="Like us on Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="vd-social-icon" href="#0" title="Facebook" aria-label="Like us on Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="vd-social-icon" href="#0" title="Linkedin" aria-label="Like us on Linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="vd-social-icon" href="#0" title="WhatsApp" aria-label="Like us on WhatsApp"><span class="fa fa-whatsapp" aria-hidden="true"></span></a>
+  </li>
+  <li class="list-inline-item">
+    <a class="vd-social-icon" href="#0" title="Print" aria-label="Print the current page"><span class="fa fa-print" aria-hidden="true"></span></a>
+  </li>
 </ul>
+      </div>
 
+      <p>L'audit externe mené fin juin dernier par un organe indépendant a permis au SSCM d'obtenir la certification ISO 9001 :2015. Il conclut que le SSCM est une organisation sur la « voie apprenante » avec une volonté claire du management de mettre en avant, de respecter et de valoriser les compétences de chacun, dans la perspective d'une gestion moderne et efficiente d'un service public. Le SSCM est désormais dans un cycle de certification impliquant de réussir les audits de suivi annuels. <br>
+        A l'interne, le déploiement de cette démarche a permis d'établir une charte qualité pour le SSCM, fondée sur une vision guidant les actions et orientations stratégiques du service. Une approche processus améliorant les interfaces entre les divisions du service en a découlé. L'amélioration continue est un élément capital de cette démarche et de la norme ISO 9001:2015 visant à répondre aux attentes des différentes parties intéressées et accroître leur satisfaction avec un dynamisme permanent.<br>
+        L'obtention de cette certification répond à trois objectifs reposant sur les trois valeurs défendues par le SSCM : la solidarité, la crédibilité et la loyauté. Ainsi, la première valeur se traduit dans la volonté de renforcer les liens entre les collaboratrices et collaborateurs et les différentes divisions du service. La crédibilité quant à elle s'exprime des processus mis en place dans le cadre de la certification et de la capitalisation des apprentissages. Enfin, la loyauté – envers les institutions et le contribuable de façon plus générale – se retrouve dans la recherche de l'efficience du service et de l'utilisation adaptée des ressources qui lui sont attribuées. Cette certification constitue une étape importante dans la démarche qualité du SSCM qui doit rester orientée client afin de garantir la satisfaction des citoyens et parties intéressées.<br>
+        Le SSCM devient ainsi le premier service public de ce segment de prestations à être certifié ISO 9001 :2015. </p>
 
-      </main>
+      <h2 class="h3">Sous-titre</h2>
+      <p>L'audit externe mené fin juin dernier par un organe indépendant a permis au SSCM d'obtenir la certification ISO 9001 :2015. Il conclut que le SSCM est une organisation sur la « voie apprenante » avec une volonté claire du management de mettre en avant, de respecter et de valoriser les compétences de chacun, dans la perspective d'une gestion moderne et efficiente d'un service public. Le SSCM est désormais dans un cycle de certification impliquant de réussir les audits de suivi annuels. <br>
+        A l'interne, le déploiement de cette démarche a permis d'établir une charte qualité pour le SSCM, fondée sur une vision guidant les actions et orientations stratégiques du service. Une approche processus améliorant les interfaces entre les divisions du service en a découlé. L'amélioration continue est un élément capital de cette démarche et de la norme ISO 9001:2015 visant à répondre aux attentes des différentes parties intéressées et accroître leur satisfaction avec un dynamisme permanent.<br>
+        L'obtention de cette certification répond à trois objectifs reposant sur les trois valeurs défendues par le SSCM : la solidarité, la crédibilité et la loyauté. Ainsi, la première valeur se traduit dans la volonté de renforcer les liens entre les collaboratrices et collaborateurs et les différentes divisions du service. La crédibilité quant à elle s'exprime des processus mis en place dans le cadre de la certification et de la capitalisation des apprentissages. Enfin, la loyauté – envers les institutions et le contribuable de façon plus générale – se retrouve dans la recherche de l'efficience du service et de l'utilisation adaptée des ressources qui lui sont attribuées. Cette certification constitue une étape importante dans la démarche qualité du SSCM qui doit rester orientée client afin de garantir la satisfaction des citoyens et parties intéressées.<br>
+        Le SSCM devient ainsi le premier service public de ce segment de prestations à être certifié ISO 9001 :2015. </p>
 
-    </div><!-- /.col-md-8 -->
+      <p class="text-xs-right mb-3">Bureau d'information et de communication de l'Etat de Vaud</p>
 
-    <aside class="col-md-4 small">
+      <h3 class="h5">Renseignements</h3>
+      <ul class="list-unstyled">
+        <li class="mb-0">DIRH, Nuria Gorrite, conseillère d'Etat, 021 316 70 01</li>
+        <li class="mb-0">Lausanne, Olivier Français, Municipal des travaux, 021 316 70 01</li>
+        <li class="mb-0">Renens, Marianne Hugenin, syndique, 079 316 70 01</li>
+      </ul>
 
-      <section class="mb-3 hidden-sm-down">
-        <h2 class="vd-section-title">Twitter</h2>
-
-<article class="vd-teaser-small mb-1">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <p><a href="#">plus d'info</a></p>
-  <figure class="vd-teaser-small-img">
-    <img class="img-fluid" src="https://source.unsplash.com/random/400x200" alt="Responsive image">
-
-  </figure>
-</article>
-
-<article class="vd-teaser-small mb-1">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <p><a href="#">plus d'info</a></p>
-</article>
-
-<p>
-  <a class="btn btn-primary vd-btn-chevron-r btn-sm" href="#">Nous suivre</a>
-</p>
-
-      </section>
-
-      <section>
-        <h2 class="vd-section-title mt-3">Agenda / événements</h2>
-
-<a class="vd-teaser-small" href=“#0”>
-  <h3>Title here</h3>
-  <p class="vd-numbered-title">
-    <span class="tag tag-primary">12</span>
-    <span>Novembre 2016</span>
-</p>
-
-  
-  <p class="vd-teaser-small-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</a>
-
-<a class="vd-teaser-small" href=“#0”>
-  <h3>Title here</h3>
-  <p class="vd-numbered-title">
-    <span class="tag tag-primary">12</span>
-    <span>Novembre 2016</span>
-</p>
-
-  
-  <figure class="vd-teaser-small-img">
-    
-<img src="https://source.unsplash.com/random/800x600" class="img-fluid" alt="Responsive image">
-
-  </figure>
-  
-  <p class="vd-teaser-small-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</a>
-
-<a class="vd-teaser-small" href=“#0”>
-  <h3>Title here</h3>
-  <p class="vd-numbered-title">
-    <span class="tag tag-primary">12</span>
-    <span>Novembre 2016</span>
-</p>
-
-  
-  <p class="vd-teaser-small-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</a>
-
-
-      </section>
-
-    </aside><!-- /.col-md-4 -->
-
-  </div><!-- /.row -->
-</div><!-- /.container -->
-
-<hr class="vd-separator vd-separator-gray-bars vd-separator-wide mt-3 mb-3">
-
-<div class="container">
-  <section>
-    <h2 class="vd-section-title">Autorités</h2>
-
-    <div class="vd-btn-tiles mb-1">
-      <a href="#" class="btn">Organigramme</a>
-      <a href="#" class="btn">Conseil d'État</a>
-      <a href="#" class="btn">Grand Conseil</a>
-      <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
+      <h2 class="sr-only">Téléchargement(s)</h2>
+      <ul class="list-unstyled">
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Version intégrale au format PDF</a></li>
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">EMPD 294 - réalisation du tramway Lausanne-Renens</a></li>
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Lorem ipsum dolor sit amet</a></li>
+        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Consectetur adipisicing elit</a></li>
+      </ul>
     </div>
 
-    <p>
-      <a href="../autorites/" class="btn btn-primary vd-btn-chevron-r btn-sm">Toutes les autorités</a>
-    </p>
+    <aside class="col-md-4 small">
+      <h2>Bureau d'information et de communication</h2>
+      <p>Rue de la barre 2 <br>1014 Lausanne</p>
 
-  </section>
-</div>
+      <ul class="vd-list-links">
+        <li><a href="#0">info.spi@vd.ch</a></li>
+        <li><a href="#0">voir sur la carte</a></li>
+      </ul>
+
+      <p>
+        <a href="#0" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
+      </p>
+
+      <p>Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
+      <ul class="vd-list-links">
+        <li><a href="#">communiqués de la Police cantonale</a></li>
+        <li><a href="#">communiqués du Centre hospitalier universitaire vaudois (CHUV)</a></li>
+        <li><a href="#">communiqués de l'Université de Lausanne</a></li>
+      </ul>
+
+      <p>
+        <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">S'abonner au <abbr title="Communiqués de presse">CP</abbr></a>
+      </p>
+    </aside>
+
+  </div>
+</main>
 
 <div class="container">
   <h2 class="sr-only">Partager</h2>
