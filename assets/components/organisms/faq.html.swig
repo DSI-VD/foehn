@@ -7,6 +7,10 @@ notes: |
 ---
 <h2>Foire aux questions</h2>
 
+<div class="vd-bg-pattern-bars-gray clearfix my-1 py-2 px-1">
+{% include "../atoms/search-form.html.swig" with { variant: 'regular' } %}
+</div>
+
 {% set faqCount = 10 %}
 {% set faqCountAsArray = Array(faqCount) %}
 
