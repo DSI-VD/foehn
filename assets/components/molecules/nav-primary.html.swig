@@ -23,11 +23,12 @@ notes: |
         </ul>
       </section>
       <div class="text-xxs-center text-md-left">
-        <button type="button" class="btn btn-primary btn-sm {% if primary_opened %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if primary_opened %}true{% else %}false{% endif %}">Tous les thèmes</button>
+        <button type="button" class="hidden-md-down btn btn-primary btn-sm {% if primary_opened %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if primary_opened %}true{% else %}false{% endif %}">Tous les thèmes</button>
+        <a href="../domaines" class="hidden-md-up btn btn-primary btn-sm vd-btn-chevron-r">Tous les thèmes</a>
       </div>
     </div>
   </div>
-  <div class="collapse {% if primary_opened %}in {% endif %}clearfix" id="nav-primary-container">
+  <div class="hidden-md-down collapse {% if primary_opened %}in {% endif %}clearfix" id="nav-primary-container">
     <div class="vd-nav-primary-content">
       <div class="container">
         <div class="row">
