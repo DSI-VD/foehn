@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Add FAQ item molecule
+- Add FAQ organism
+
 ## [0.13.0]
 
 ### Changed
