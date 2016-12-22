@@ -62,9 +62,9 @@
     <div class="row">
       <div class="col-xs-12 text-sm-right">
 
-        <nav>
+        <nav class="nav nav-inline hidden-sm-down small">
   <h2 class="sr-only">Sous-navigation</h2>
-  <ul class="nav nav-inline hidden-sm-down small">
+  <ul>
     <li class="nav-item"><a class="nav-link active" href="../autorites"><span class="sr-only">page active: </span>Autorités</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Annuaire</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
@@ -77,9 +77,6 @@
   <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
-    <div class="dropdown-item pt-2 pb-1 text-xxs-center">
-      <a class="btn btn-primary btn-sm vd-btn-chevron-r" href="../domaines">Tous les thèmes</a>
-    </div>
     <div class="dropdown-item px-0 pb-0">
       <ul class="nav">
         <li class="nav-item">
@@ -101,7 +98,7 @@
       </ul>
     </div>
     <div class="dropdown-item">
-      <p><small>Découvrir</small></p>
+      <p>Découvrir</p>
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="#0">International</a>
@@ -134,14 +131,15 @@
         
         <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-img">
-    <img src="https://dsi-vd.github.io/foehn/build/svg/logo/logo.svg" class="img-fluid hidden-sm-down" alt="Logo du canton de Vaud" />
-    <img src="https://dsi-vd.github.io/foehn/build/svg/logo/logo-square.svg" class="img-fluid hidden-md-up" aria-hidden="true" alt="Logo du canton de Vaud" />
+    <img src="../build/svg/logo/logo.svg" class="img-fluid hidden-sm-down" alt="Logo du canton de Vaud" />
+    <img src="../build/svg/logo/logo-square.svg" class="img-fluid hidden-md-up" aria-hidden="true" alt="Logo du canton de Vaud" />
   </div>
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
-    <img src="https://dsi-vd.github.io/foehn/build/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
+    <img src="../build/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
   </div>
 </a>
+
         
       </div>
       <div class="col-md-5 offset-md-2">
@@ -160,10 +158,22 @@
   <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="btn btn-primary btn-sm " data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="true">Tous les thèmes</button>
+      <section class="hidden-md-up">
+        <h2 class="vd-section-title mt-1 mb-2">Les plus visités</h2>
+        <ul class="vd-list-links">
+          <li><a href="#0">Inscription au chômage</a></li>
+          <li><a href="#0">Formulaire d'indemnisation</a></li>
+          <li><a href="#0">Vaud Tax 2017</a></li>
+          <li><a href="#0">Vacances scolaires et jours fériés</a></li>
+        </ul>
+      </section>
+      <div class="text-xxs-center text-md-left">
+        <button type="button" class="hidden-sm-down btn btn-primary btn-sm " data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="true">Tous les thèmes</button>
+        <a href="../domaines" class="hidden-md-up btn btn-primary btn-sm vd-btn-chevron-r">Tous les thèmes</a>
+      </div>
     </div>
   </div>
-  <div class="collapse in clearfix" id="nav-primary-container">
+  <div class="hidden-sm-down collapse in clearfix" id="nav-primary-container">
     <div class="vd-nav-primary-content">
       <div class="container">
         <div class="row">
@@ -286,6 +296,7 @@
     <a href="../actualite"><p>Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -297,6 +308,7 @@
         à tour poétique, rythmé, absurde ou tendre, il se joue de la banalité des mots du quotidien et met à jour leur potentiel inexploré.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -307,6 +319,7 @@
     <a href="../actualite"><p>Fiona Prieur, Marco Labagnara, Luca Moessner ont été récompensés lors de la cérémonie de remise des prix CinéCivic 2016, le 31 octobre à Genève.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -317,6 +330,7 @@
     <a href="../actualite"><p>La cinquième Conférence nationale sur le fédéralisme se tiendra les 26 et 27 octobre 2017, à Montreux.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+  <hr>
 </article>
 
 <article class="vd-teaser">
@@ -327,6 +341,7 @@
     <a href="../actualite"><p>Les deux communautés ont signé la déclaration liminaire d’engagement, en vue d’une reconnaissance en tant qu’institution d’intérêt public.</p></a>
   </div>
   <a href="../actualite" class="vd-teaser-meta">14.06.2016 :: 1M</a>
+  <hr>
 </article>
 
 
@@ -351,7 +366,8 @@
   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   <p><a href="#">plus d'info</a></p>
   <figure class="vd-teaser-small-img">
-    <img class="img-fluid" src="https://source.unsplash.com/random/400x200" alt="Responsive image">
+    
+<img src="https://source.unsplash.com/random/800x600" class="img-fluid" alt="Responsive image">
 
   </figure>
 </article>
@@ -370,45 +386,36 @@
       <section>
         <h2 class="vd-section-title mt-3">Agenda / événements</h2>
 
-<a class="vd-teaser-small" href=“#0”>
-  <h3>Title here</h3>
-  <p class="vd-numbered-title">
-    <span class="tag tag-primary">12</span>
-    <span>Novembre 2016</span>
-</p>
+<article class="vd-teaser-small mb-1">
+  <h4 class="vd-numbered-title">
+    <a href="#0"><span class="tag tag-primary">12</span></a>
+    <a href="#0">Novembre 2016</a>
+</h4>
 
-  
-  <p class="vd-teaser-small-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</a>
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p><a href="#">plus d'info</a></p>
+</article>
 
-<a class="vd-teaser-small" href=“#0”>
-  <h3>Title here</h3>
-  <p class="vd-numbered-title">
-    <span class="tag tag-primary">12</span>
-    <span>Novembre 2016</span>
-</p>
+<article class="vd-teaser-small mb-1">
+  <h4 class="vd-numbered-title">
+    <a href="#0"><span class="tag tag-primary">12</span></a>
+    <a href="#0">Novembre 2016</a>
+</h4>
 
-  
   <figure class="vd-teaser-small-img">
     
 <img src="https://source.unsplash.com/random/800x600" class="img-fluid" alt="Responsive image">
 
   </figure>
-  
-  <p class="vd-teaser-small-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</a>
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p><a href="#">plus d'info</a></p>
+</article>
 
-<a class="vd-teaser-small" href=“#0”>
-  <h3>Title here</h3>
-  <p class="vd-numbered-title">
-    <span class="tag tag-primary">12</span>
-    <span>Novembre 2016</span>
-</p>
-
-  
-  <p class="vd-teaser-small-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</a>
-
+<article class="vd-teaser-small mb-1">
+  <h3>Vaccination contre la grippe en pharmacie</h3>
+  <p class="mb-0">On peut se vacciner contre la grippe dans différentes pharmacies du canton.</p>
+  <p><a href="#">plus d'info</a></p>
+</article>
 
       </section>
 
@@ -533,7 +540,7 @@
       </div>
       <div class="col-lg-1 col-md-2 footer-logo-container">
         <div class="footer-logo">
-          <img class="img-fluid" src="https://dsi-vd.github.io/foehn/build/svg/logo/logo--white.svg" alt="Canton de Vaud">
+          <img class="img-fluid" src="../build/svg/logo/logo--white.svg" alt="Canton de Vaud">
         </div>
       </div>
     </div>
