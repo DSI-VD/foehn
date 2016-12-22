@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+
+- Fix columns in "Poursuites et faillites" page
+
 ## [0.13.0]
 
 ### Changed
