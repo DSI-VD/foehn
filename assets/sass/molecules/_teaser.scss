@@ -57,14 +57,8 @@
   margin-bottom: ($spacer * 2);
 }
 
-.vd-teaser-content,
-.vd-teaser-title {
-  a {
-    @extend %link-black;
-  }
-}
-
 .vd-teaser-meta {
   font-size: $font-size-sm * 0.9;
   text-decoration: none;
+  color: $link-color;
 }

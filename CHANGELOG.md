@@ -5,9 +5,22 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- The entire teaser molecule is clickable
+
+### Added
+
+- Add a `.vd-link-invisible` helper
+
 ### Fix
 
 - Fix columns in "Poursuites et faillites" page
+
+### Removed
+
+- Removed `.vd-teaser-content` class
+- Removed `.vd-teaser-title` class
 
 ## [0.13.0]
 
