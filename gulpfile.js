@@ -8,6 +8,12 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
+const rename = require('gulp-rename');
+
+const processors = [
+  require('autoprefixer'),
+  require('cssnano')
+];
 
 const paths = {
   build: __dirname + '/www',
@@ -85,11 +91,6 @@ function deploy() {
  * Styles
  */
 function styles() {
-  const processors = [
-    require('autoprefixer'),
-    require('cssnano')
-  ];
-
   return gulp.src(paths.src + '/assets/styles/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -112,6 +113,18 @@ function lintstyles() {
 };
 
 /**
+ * Style vendors
+ */
+ function stylesVendors() {
+   return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+     .pipe(sourcemaps.init())
+     .pipe(postcss(processors))
+     .pipe(sourcemaps.write('./'))
+     .pipe(rename('vendors.css'))
+     .pipe(gulp.dest(paths.dest + '/assets/styles/'));
+ }
+
+/**
  * Watch
  */
 function watch(done) {
@@ -122,7 +135,7 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles));
+const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
