@@ -115,14 +115,14 @@ function lintstyles() {
 /**
  * Style vendors
  */
- function stylesVendors() {
-   return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
-     .pipe(sourcemaps.init())
-     .pipe(postcss(processors))
-     .pipe(sourcemaps.write('./'))
-     .pipe(rename('vendors.css'))
-     .pipe(gulp.dest(paths.dest + '/assets/styles/'));
- }
+function stylesVendors() {
+ return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+   .pipe(sourcemaps.init())
+   .pipe(postcss(processors))
+   .pipe(rename('vendors.css'))
+   .pipe(sourcemaps.write('./'))
+   .pipe(gulp.dest(paths.dest + '/assets/styles/'));
+}
 
 /**
  * Watch
