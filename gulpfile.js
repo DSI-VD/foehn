@@ -136,6 +136,19 @@ function fonts() {
 }
 
 /**
+ * Scripts Vendors
+ */
+function scriptsVendors() {
+  return gulp.src([
+    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+  ])
+    .pipe(sourcemaps.init())
+    .pipe(rename('vendors.js'))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest(paths.dest + '/assets/scripts/'));
+}
+
+/**
  * Watch
  */
 function watch(done) {
@@ -146,7 +159,7 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts));
+const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
