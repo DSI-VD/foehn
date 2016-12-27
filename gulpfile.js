@@ -129,7 +129,7 @@ function stylesVendors() {
  */
 function fonts() {
   return gulp.src([
-    "assets/fonts/**/*",
+    paths.src + '/assets/fonts/**/*',
     "node_modules/font-awesome/fonts/**/*"
   ])
     .pipe(gulp.dest(paths.dest + '/assets/fonts/'));
