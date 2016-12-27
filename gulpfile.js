@@ -125,6 +125,17 @@ function stylesVendors() {
 }
 
 /**
+ * Fonts
+ */
+function fonts() {
+  return gulp.src([
+    "assets/fonts/**/*",
+    "node_modules/font-awesome/fonts/**/*"
+  ])
+    .pipe(gulp.dest(paths.dest + '/assets/fonts/'));
+}
+
+/**
  * Watch
  */
 function watch(done) {
@@ -135,7 +146,7 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors));
+const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
