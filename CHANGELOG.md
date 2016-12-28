@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add address service molecule
 - Add a `.vd-link-invisible` helper
 
 ### Fix
