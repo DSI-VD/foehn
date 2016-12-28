@@ -10,6 +10,7 @@ const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const iconfont = require('gulp-iconfont');
+const consolidate = require('gulp-consolidate');
 
 const processors = [
   require('autoprefixer'),
