@@ -9,6 +9,7 @@ const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
+const iconfont = require('gulp-iconfont');
 
 const processors = [
   require('autoprefixer'),
@@ -149,6 +150,33 @@ function scriptsVendors() {
 }
 
 /**
+ * Icons
+ */
+function icons() {
+  return gulp.src(paths.src + 'assets/icons/**/*.svg')
+    .pipe(iconfont({
+      fontName: 'icons',
+      appendCodepoints: true,
+      normalize:true,
+      fontHeight: 1001
+    }))
+    .on('glyphs', function(glyphs) {
+      gulp.src('node_modules/toolbox-utils/templates/_icons.scss')
+        .pipe(consolidate('lodash', {
+          glyphs: glyphs.map(function(glyph) {
+            return { name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0) };
+          }),
+          fontName: 'icons',
+          fontPath: '../fonts/',
+          className: 'icons'
+        }))
+        .pipe(rename('icons.scss'))
+        .pipe(gulp.dest(paths.src + 'assets/styles/'));
+    })
+    .pipe(gulp.dest(paths.dest + 'assets/fonts'));
+}
+
+/**
  * Watch
  */
 function watch(done) {
@@ -159,9 +187,10 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors));
+const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors, icons));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(build, deploy));
+gulp.task('test', gulp.series(icons));
