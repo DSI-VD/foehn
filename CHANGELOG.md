@@ -24,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Fix `vd-list-links` font weight
 - Fix columns in "Poursuites et faillites" page
+- Fix size of heading in domain list #505
 
 ### Removed
 
