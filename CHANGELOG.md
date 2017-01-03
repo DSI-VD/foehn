@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed `.vd-teaser-content` class
 - Removed `.vd-teaser-title` class
 - Removed `.vd-teaser-small-content` class
+- Removed polyfills from styleguide #566
 
 ## [0.13.0]
 
