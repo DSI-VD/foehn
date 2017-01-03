@@ -6,11 +6,7 @@
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
   <div class="float-xs-right">
     {% if content.status %}
-      {% set status = data.status.component[content.status] %}
-      <span class="tag tag-{{ status.color }} tag-pill styleguide-tag" data-toggle="tooltip" title="{{ status.description }}">{{ status.label }}
-      {% if status.icon %}
-        <span class="fa fa-{{ status.icon }} fa-lg" aria-hidden="true"></span>
-      {% endif %}</span>
+      {% include '../styleguide/status.html.swig' with { status: data.status.component[content.status] } %}
     {% endif %}
     {% if content.bootstrap %}
       <a class="btn btn-secondary btn-sm ml-1" href="{{ content.bootstrap }}"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
