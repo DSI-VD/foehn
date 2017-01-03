@@ -1,6 +1,6 @@
 ---
 title: Headings
-name: Headings
+name: headings
 collection: atoms
 wrapper: col-md-6
 bootstrap: http://v4-alpha.getbootstrap.com/content/typography/#headings

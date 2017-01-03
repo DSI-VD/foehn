@@ -1,6 +1,6 @@
 ---
 title: Image
-name: Image
+name: image
 collection: atoms
 variants:
   fluid: Responsive image

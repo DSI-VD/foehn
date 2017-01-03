@@ -1,6 +1,6 @@
 ---
 title: Citation
-name: Citation
+name: citation
 collection: inlinetext
 bootstrap:
 notes: |
