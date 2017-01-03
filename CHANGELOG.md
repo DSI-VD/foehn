@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Fix `vd-list-links` font weight
 - Fix columns in "Poursuites et faillites" page
+- Fix font weight and case in teaser alternate 2 #564
 - Fix white line in footer #563
 - Fix space between logo and lines in footer #561
 - Fix the spacing in the header #559
