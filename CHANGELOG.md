@@ -24,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Fix `vd-list-links` font weight
 - Fix columns in "Poursuites et faillites" page
+- Fix white line in footer #563
 
 ### Removed
 
