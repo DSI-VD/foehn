@@ -57,6 +57,11 @@
         }(jQuery));
       </script>
       <script src="{{data.path}}build/js/styleguide.min.js"></script>
+      <script>
+        (function($){
+          $('[data-toggle="tooltip"]').tooltip();
+        }(jQuery))
+      </script>
     {% endif %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
