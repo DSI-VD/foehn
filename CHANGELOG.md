@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix Toolbox URLs to components #568
 - Reduce size of section title in footer #562
 - Fix the logo size #558
+- Changed list style type to disc #432
 
 ### Added
 
