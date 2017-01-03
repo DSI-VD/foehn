@@ -24,12 +24,14 @@
     "draft": {
         "label": "Draft",
         "description": "Work in progress.",
-        "color": "danger"
+        "color": "warning",
+        "icon": "pencil"
     },
     "ready": {
         "label": "Ready",
         "description": "Ready for referencing.",
-        "color": "success"
+        "color": "success",
+        "icon": "check"
     }
   }
 }
