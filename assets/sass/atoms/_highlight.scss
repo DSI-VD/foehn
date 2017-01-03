@@ -1,9 +1,19 @@
 @charset 'UTF-8';
 
 .vd-highlight {
-  padding: ($spacer * 2.5) 0;
-  border-top: 1px dotted $vd-green-light;
-  border-bottom: 1px dotted $vd-green-light;
+  padding: ($spacer * 2) 0;
+  background: $brand-inverse;
+  color: $white;
 
-  @extend .vd-bg-pattern-green-bright;
+  /* stylelint-disable selector-list-comma-newline-after */
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    font-weight: 300;
+    color: $vd-green-lighter;
+  }
+  /* stylelint-enable */
 }
