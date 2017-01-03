@@ -11,9 +11,9 @@
  */
 
 .vd-logo {
-  position: relative;
   display: inline-block;
   display: inline-flex; /* [1] */
+  position: relative;
   margin-bottom: $spacer;
 
   @include plain-hover-focus {
@@ -49,7 +49,6 @@
   margin-top: $spacer * 0.5;
 
   @include media-breakpoint-up(md) {
-    margin-top: $spacer;
     margin-bottom: $spacer * 2;
   }
 
