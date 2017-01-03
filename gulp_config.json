@@ -15,10 +15,7 @@
       "assets/fonts/**/*",
       "node_modules/font-awesome/fonts/**/*"
     ],
-    "polyfills": [
-      "node_modules/html5shiv/dist/html5shiv.js",
-      "node_modules/respond.js/dest/respond.src.js"
-    ]
+    "polyfills": []
   },
   "images": [
     "assets/img/**/*"
