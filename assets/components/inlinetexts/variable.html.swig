@@ -1,6 +1,6 @@
 ---
 title: Variable
-name: Variable
+name: variable
 collection: inlinetext
 bootstrap:
 notes: |

@@ -1,6 +1,6 @@
 ---
 title: Teaser
-name: Teaser
+name: teaser
 collection: molecules
 notes: |
 ---

@@ -1,6 +1,6 @@
 ---
 title: Sample
-name: Sample
+name: sample
 collection: inlinetext
 bootstrap:
 notes: |

@@ -1,6 +1,6 @@
 ---
 title: Agenda
-name: Agenda
+name: agenda
 collection: organisms
 wrapper: container
 notes: |

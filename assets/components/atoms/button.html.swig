@@ -1,6 +1,6 @@
 ---
 title: Button
-name: Button
+name: button
 collection: atoms
 bootstrap: http://v4-alpha.getbootstrap.com/components/buttons/#content
 notes: |

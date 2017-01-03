@@ -1,6 +1,6 @@
 ---
 title: Pagination vertical
-name: Pagination-vertical
+name: pagination-vertical
 collection: molecules
 notes: |
   You can apply the following class to the list element to style it:

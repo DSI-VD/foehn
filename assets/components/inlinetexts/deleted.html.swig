@@ -1,6 +1,6 @@
 ---
 title: Deleted
-name: Deleted
+name: deleted
 collection: inlinetext
 bootstrap:
 notes: |
