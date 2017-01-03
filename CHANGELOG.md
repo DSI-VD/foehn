@@ -14,6 +14,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add FAQ item molecule
+- Add FAQ organism
 - Add example list molecule
 - Add a form example organims
 - Add teaser alternate 3 molecule
