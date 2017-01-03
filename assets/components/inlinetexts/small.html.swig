@@ -1,6 +1,6 @@
 ---
 title: Small
-name: Small
+name: small
 collection: inlinetext
 bootstrap:
 notes: |

@@ -1,6 +1,6 @@
 ---
 title: Strong
-name: Strong
+name: strong
 collection: inlinetext
 bootstrap:
 notes: |

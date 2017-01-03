@@ -1,6 +1,6 @@
 ---
-title: card
-name: Card
+title: Card
+name: card
 collection: molecules
 notes: |
 ---

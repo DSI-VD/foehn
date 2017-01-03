@@ -1,6 +1,6 @@
 ---
 title: Strike
-name: Strike
+name: strike
 collection: inlinetext
 bootstrap:
 notes: |

@@ -1,6 +1,6 @@
 ---
 title: I
-name: I
+name: i
 collection: inlinetext
 bootstrap:
 notes: |
