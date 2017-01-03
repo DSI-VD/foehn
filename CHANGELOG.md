@@ -158,6 +158,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix container max-width on mobile
 - Changed Graphik font name in doc #426
 - Fix search form height #459
+- Fix headings font-sizes #462
 
 ## [0.10.2]
 
