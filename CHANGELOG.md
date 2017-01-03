@@ -33,6 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed `.vd-teaser-title` class
 - Removed `.vd-teaser-small-content` class
 - Removed polyfills from styleguide #566
+- Removed Contact link from header-securise component #490
 
 ## [0.13.0]
 
