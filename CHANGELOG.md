@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - The entire teaser molecule is clickable
 - Refactor teaser-small molecule HTML
 - Fix Toolbox URLs to components #568
+- Reduce size of section title in footer #562
 - Fix the logo size #558
 
 ### Added
@@ -27,6 +28,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Fix `vd-list-links` font weight
 - Fix columns in "Poursuites et faillites" page
+- Fix white line in footer #563
+- Fix space between logo and lines in footer #561
 - Fix the spacing in the header #559
 
 ### Removed
