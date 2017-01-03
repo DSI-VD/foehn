@@ -1,6 +1,6 @@
 ---
-title: teaser-alternate
-name: Teaser-alternate
+title: Teaser Alternate
+name: teaser-alternate
 collection: molecules
 variants:
   alt_2: Alternate 2

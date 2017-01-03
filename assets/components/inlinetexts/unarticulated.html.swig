@@ -1,6 +1,6 @@
 ---
 title: Unarticulated
-name: Unarticulated
+name: unarticulated
 collection: inlinetext
 bootstrap:
 notes: |

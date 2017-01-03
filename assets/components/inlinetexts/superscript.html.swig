@@ -1,6 +1,6 @@
 ---
 title: Superscript
-name: Superscript
+name: superscript
 collection: inlinetext
 bootstrap:
 notes: |

@@ -1,6 +1,6 @@
 ---
 title: Keyboard input
-name: Keyboard-input
+name: keyboard-input
 collection: inlinetext
 bootstrap:
 notes: |

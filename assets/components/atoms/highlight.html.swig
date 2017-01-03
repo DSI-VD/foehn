@@ -1,6 +1,6 @@
 ---
 title: Highlight
-name: Highlight
+name: highlight
 collection: atoms
 notes: |
   `.vd-highlight`

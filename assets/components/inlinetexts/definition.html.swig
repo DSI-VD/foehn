@@ -1,6 +1,6 @@
 ---
 title: Definition
-name: Definition
+name: definition
 collection: inlinetext
 bootstrap:
 notes: |

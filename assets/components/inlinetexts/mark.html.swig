@@ -1,6 +1,6 @@
 ---
 title: Mark
-name: Mark
+name: mark
 collection: inlinetext
 bootstrap:
 notes: |

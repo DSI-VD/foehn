@@ -1,6 +1,6 @@
 ---
 title: Subscript
-name: Subscript
+name: subscript
 collection: inlinetext
 bootstrap:
 notes: |
