@@ -1,8 +1,8 @@
 ---
 title: Code
-name: Code
+name: code
 collection: inlinetext
-bootstrap: 
+bootstrap:
 notes: |
 ---
 

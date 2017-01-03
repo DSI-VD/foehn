@@ -1,6 +1,6 @@
 ---
 title: Quotation
-name: Quotation
+name: quotation
 collection: inlinetext
 bootstrap:
 notes: |

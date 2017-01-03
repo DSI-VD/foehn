@@ -61,7 +61,7 @@ breadcrumb:
         <li><a href="../office-des-faillites">En savoir plus sur les offices des poursuites, de faillites, les bases légales, etc.</a></li>
       </ul>
 
-    </div>
+    </main>
 
     <aside class="col-md-4 small">
       <h2>Office des poursuites</h2>

@@ -1,6 +1,6 @@
 ---
 title: Link
-name: Link
+name: link
 collection: inlinetext
 bootstrap:
 notes: |

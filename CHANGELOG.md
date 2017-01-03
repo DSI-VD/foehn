@@ -5,10 +5,34 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Bring back "Tous les thèmes" button in mobile menu
+- The entire teaser molecule is clickable
+- Refactor teaser-small molecule HTML
+- Fix Toolbox URLs to components #568
+
 ### Added
 
 - Add FAQ item molecule
 - Add FAQ organism
+- Add example list molecule
+- Add a form example organims
+- Add teaser alternate 3 molecule
+- Add address service molecule
+- Add a `.vd-link-invisible` helper
+
+### Fix
+
+- Fix `vd-list-links` font weight
+- Fix columns in "Poursuites et faillites" page
+
+### Removed
+
+- Removed `.vd-teaser-content` class
+- Removed `.vd-teaser-title` class
+- Removed `.vd-teaser-small-content` class
+- Removed polyfills from styleguide #566
 
 ## [0.13.0]
 

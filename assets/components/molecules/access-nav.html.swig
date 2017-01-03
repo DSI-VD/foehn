@@ -1,6 +1,6 @@
 ---
 title: access-nav
-name: Access-nav
+name: access-nav
 collection: molecules
 notes: |
   Add an accessible nav with link containing accesskey

@@ -1,6 +1,6 @@
 ---
 title: Breadcrumb
-name: Breadcrumb
+name: breadcrumb
 collection: molecules
 bootstrap: http://v4-alpha.getbootstrap.com/components/breadcrumb/#content
 notes: |

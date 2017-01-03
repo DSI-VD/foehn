@@ -42,12 +42,16 @@ export const fontsVendors = () => {
 /*
 * Polyfills Sources
 */
-export const polyfillsVendors = () => {
-  return gulp.src(config.vendors.polyfills)
+export const polyfillsVendors = (done) => {
+  if (config.vendors.polyfills.length > 0) {
+    return gulp.src(config.vendors.polyfills)
     .pipe($.concat('polyfills.min.js'))
     .pipe($.uglify())
     .pipe($.size({title: 'POLYFILLS', showFiles: true}))
     .pipe(gulp.dest(`${config.build}js`));
+  } else {
+    return done();
+  }
 };
 
 /*
