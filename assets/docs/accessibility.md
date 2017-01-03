@@ -31,3 +31,7 @@ All pages should contain:
 - `aria-hidden="true"` on all icons that are just here for decoration
 - `<span class="sr-only">Explanation</span>` for all elements that need explanation (icons, etc)
 - A clear indication of the current page in the **navbar** and in the **breadcrumb**
+
+## Browsers support
+
+The styleguide uses Bootstrap 4, which is supporting all recent browsers ([see documentation](http://v4-alpha.getbootstrap.com/getting-started/browsers-devices/#supported-browsers)). No polyfills are added for older browsers support.
