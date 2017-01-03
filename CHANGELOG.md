@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add teaser alternate 3 molecule
 - Add address service molecule
 - Add a `.vd-link-invisible` helper
+- Add the possibility to add a status in FrontMatter of components (`prototype`, `wip`, `ready`) and docs page (`draft`, `ready`) #565
 
 ### Fix
 
