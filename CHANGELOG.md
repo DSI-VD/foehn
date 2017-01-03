@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - The entire teaser molecule is clickable
 - Refactor teaser-small molecule HTML
+- Fix Toolbox URLs to components #568
 
 ### Added
 
