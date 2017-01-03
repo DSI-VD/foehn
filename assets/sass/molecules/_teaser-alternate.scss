@@ -20,9 +20,10 @@
  */
 
 .vd-teaser-alternate-2-list {
-  .vd-teaser-alternate-2:nth-of-type(odd){
+  .vd-teaser-alternate-2:nth-of-type(odd) {
     background-color: $vd-gray-lightest;
     border-bottom: 1px solid $vd-gray-lighter;
   }
+
   margin-bottom: $spacer;
 }
