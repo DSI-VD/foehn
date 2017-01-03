@@ -1,6 +1,6 @@
 ---
 title: Dropdown
-name: Dropdown
+name: dropdown
 collection: molecules
 notes: |
   You can use the following classes to align the button / submenu:

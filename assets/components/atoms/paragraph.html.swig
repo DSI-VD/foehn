@@ -1,6 +1,6 @@
 ---
 title: Paragraph
-name: Paragraph
+name: paragraph
 collection: atoms
 bootstrap: http://v4-alpha.getbootstrap.com/content/reboot/#headings-and-paragraphs
 notes: |

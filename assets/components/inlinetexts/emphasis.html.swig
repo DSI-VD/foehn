@@ -1,6 +1,6 @@
 ---
 title: Emphasis
-name: Emphasis
+name: emphasis
 collection: inlinetext
 bootstrap:
 notes: |

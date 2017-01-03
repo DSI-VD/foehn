@@ -1,6 +1,6 @@
 ---
 title: Blockquote
-name: Blockquote
+name: blockquote
 collection: molecules
 variants:
   bubble: Bubble
