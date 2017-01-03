@@ -26,7 +26,9 @@
       <div class="styleguide-container">
         <div class="styleguide-header-container"{% if heading_color %} style="background: {{heading_color}};"{% endif %}>
           {% include 'styleguide/control.bar.html.swig' %}
-          <h1>{{title}}</h1>
+          <h1>{{title}}{% if collection == 'docs' and status %}
+            {% include 'styleguide/status.html.swig' with { status: data.status.doc[status] } %}
+          {% endif %}</h1>
         </div>
     {% endif %}
 
@@ -53,6 +55,11 @@
         }(jQuery));
       </script>
       <script src="{{data.path}}build/js/styleguide.min.js"></script>
+      <script>
+        (function($){
+          $('[data-toggle="tooltip"]').tooltip();
+        }(jQuery))
+      </script>
     {% endif %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
