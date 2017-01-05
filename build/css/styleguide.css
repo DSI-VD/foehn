@@ -451,6 +451,10 @@ body {
   background: #dce3e8;
   border: 1px solid #697983; }
 
+.styleguide-tag.tag {
+  padding: 0.5em 0.8em;
+  font-size: 0.8rem; }
+
 .bg-gray-dark {
   background: #080808 !important; }
 
