@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Reduce size of section title in footer #562
 - Fix the logo size #558
 - Changed link color if it has `.h[1-6]` class #383
+- Changed list style type to disc #432
 
 ### Added
 
