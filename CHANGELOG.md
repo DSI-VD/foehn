@@ -11,20 +11,32 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - The entire teaser molecule is clickable
 - Refactor teaser-small molecule HTML
 - Fix Toolbox URLs to components #568
+- Changed Highlight component to its new style #453
+- Reduce size of section title in footer #562
+- Fix the logo size #558
+- Changed link color if it has `.h[1-6]` class #383
+- Changed list style type to disc #432
 
 ### Added
 
+- Add FAQ item molecule
+- Add FAQ organism
 - Add example list molecule
 - Add a form example organims
 - Add teaser alternate 3 molecule
 - Add address service molecule
 - Add a `.vd-link-invisible` helper
+- Add the possibility to add a status in FrontMatter of components (`prototype`, `wip`, `ready`) and docs page (`draft`, `ready`) #565
 
 ### Fix
 
 - Fix `vd-list-links` font weight
 - Fix columns in "Poursuites et faillites" page
 - Fix size of heading in domain list #505
+- Fix font weight and case in teaser alternate 2 #564
+- Fix white line in footer #563
+- Fix space between logo and lines in footer #561
+- Fix the spacing in the header #559
 
 ### Removed
 
@@ -32,6 +44,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed `.vd-teaser-title` class
 - Removed `.vd-teaser-small-content` class
 - Removed polyfills from styleguide #566
+- Removed Contact link from header-securise component #490
 
 ## [0.13.0]
 

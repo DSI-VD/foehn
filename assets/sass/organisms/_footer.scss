@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 
 .footer {
-  padding: ($spacer * 3) 0;
+  position: relative;
+  padding: ($spacer * 3) 0 ($spacer * 2);
   background-image: url(../svg/bars_black.svg);
   background-repeat: repeat-x;
   background-position: center bottom;
@@ -9,6 +10,16 @@
   background-color: $brand-inverse;
   border-bottom: 23px solid $vd-green;
   color: $white;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid $white;
+  }
 
   .nav {
     margin-bottom: ($spacer * 3);
@@ -25,6 +36,10 @@
 
   .container {
     position: relative;
+  }
+
+  .vd-section-title {
+    font-size: $font-size-base * 0.9;
   }
 }
 
