@@ -7,7 +7,7 @@ notes: |
 ---
 <address vocab="http://schema.org/" typeof="GovernmentOrganization">
   <h2 property="name">Nom du service</h2>
-  <p class="vd-section-title">Division</p>
+  <p class="vd-section-title mb-1">Division</p>
   <p property="location" typeof="PostalAddress">
     <span property="streetAddress">Route du Signal 8</span><br>
     <span property="postalCode">1018</span>
