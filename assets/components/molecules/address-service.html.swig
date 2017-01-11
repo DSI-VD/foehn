@@ -4,6 +4,8 @@ name: address-service
 collection: molecules
 notes: |
   Use the [https://schema.org/GovernmentOrganization](GovernmentOrganization) schema.
+
+  There is no button _Contacter le Service_ if a email link is present.
 ---
 <address vocab="http://schema.org/" typeof="GovernmentOrganization">
   <h2 property="name">Nom du service</h2>
