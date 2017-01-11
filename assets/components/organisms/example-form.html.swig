@@ -34,12 +34,12 @@ notes: |
 
   <div class="form-group">
     <label for="street-number"><abbr title="Numéro">No</abbr></label>
-    <input class="form-control" type="text" id="street-number" name="street-number" value="">
+    <input class="form-control" type="number" id="street-number" name="street-number" value="" pattern="[0-9]*">
   </div>
 
   <div class="form-group">
     <label for="postal-code"><abbr title="Numéro postal d'acheminement">NPA</abbr></label>
-    <input class="form-control" type="text" id="postal-code" name="postal-code" value="">
+    <input class="form-control" type="number" id="postal-code" name="postal-code" value="" pattern="[0-9]*">
   </div>
 
   <div class="form-group">
