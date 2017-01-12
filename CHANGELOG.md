@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- Use teaser molecule in news-latest organism #590 
+- Use teaser molecule in news-latest organism #590
 - WhatsApp social icon is only visible on tablet and smaller devices
 - Make horizontal padding smaller on Communiqué de presse titles
 - Make the padding of the title banner smaller #589
@@ -34,6 +34,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix dates forms not showing the numeric pad on mobile
 - Fix teaser on the homepage #590
 - Fix margin on "communiqué de presse detail" and "communiqué de presse detail - alternate"
 - Fix `vd-list-links` font weight
