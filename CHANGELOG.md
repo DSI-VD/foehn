@@ -36,6 +36,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix white line in footer #563
 - Fix space between logo and lines in footer #561
 - Fix the spacing in the header #559
+- Fix breadcrumb invisible on mobile #588
 
 ### Removed
 

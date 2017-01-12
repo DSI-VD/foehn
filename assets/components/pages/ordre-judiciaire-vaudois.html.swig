@@ -11,9 +11,6 @@ breadcrumb:
   -
     name: 'Autorités'
     href: '../autorites/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

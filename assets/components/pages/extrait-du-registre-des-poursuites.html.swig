@@ -14,9 +14,6 @@ breadcrumb:
   -
       name: 'Poursuites et faillites'
       href: '../poursuites-et-faillites'
-  -
-    name: ' '
-    href: '#'
 
 ---
 
