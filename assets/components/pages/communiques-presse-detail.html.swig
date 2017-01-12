@@ -29,7 +29,7 @@ breadcrumb:
         <p class="small font-weight-bold">Lausanne, le 1er juillet 2016</p>
 
         <p class="text-uppercase mb-0">Axes forts de transports publics</p>
-        <h1 class="h2 px-3 py-2 mb-2 vd-bg-pattern-bars-gray">Le Service de la sécurité civile et militaire est certifié</h1>
+        <h1 class="h2 px-2 py-2 mb-2 vd-bg-pattern-bars-gray">Le Service de la sécurité civile et militaire est certifié</h1>
       </header>
 
       <p class="lead">Au terme d'une démarche initiée courant 2014, le Service de la sécurité civile et militaire (SSCM) a officiellement obtenu la certification à la norme internationale ISO 9001:2015 de son système de management de la qualité. L'obtention de ce certificat s'inscrit dans une volonté d'amélioration continue, orientée citoyens et dynamique pour gagner en efficacité et accroître la satisfaction vis-à-vis des prestations fournies.</p>
