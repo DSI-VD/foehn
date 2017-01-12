@@ -8,7 +8,7 @@ layout: page.html.swig
 
 {% include "../organisms/header-securise.html.swig" %}
 
-<div class="vd-bg-pattern-gray py-1">
+<div class="vd-bg-pattern-gray">
   <div class="container">
     <h1 aria-hidden="true">Connexion</h1>
   </div>
