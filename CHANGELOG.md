@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Change wording of the "Back to top" button in domain list
 - Dates forms stay on the same line on mobile
 - Use teaser molecule in news-latest organism #590
 - WhatsApp social icon is only visible on tablet and smaller devices
