@@ -1083,24 +1083,57 @@ Keybord input: <kbd>Cmd</kbd>
 </div>
 
 
-
-
+  <ul class="styleguide-tabs nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#link-default" role="tab">Default</a>
+    </li>
   
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#heading" role="tab">With a heading class</a>
+    </li>
+  
+  </ul>
+
+
+
+  <div class="tab-content styleguide-tab-content">
+    <div class="styleguide-tab-pane tab-pane active" id="link-default">
+      
 <div class="styleguide-item-preview">
   
-    
-<a href="#">This is a text link</a>
+    <a href="#">This is a text link</a>
 
   
 </div>
 
-  
+      
 <div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
-  <pre><code class="language-markup">
-<a href="#">This is a text link</a>
+  <pre><code class="language-markup"><a href="#">This is a text link</a>
 </code></pre>
 </div>
 
+    </div>
+    
+      <div class="styleguide-tab-pane tab-pane" id="heading">
+        
+<div class="styleguide-item-preview">
+  
+    <a class="h2" href="#">This is a black .h2 link</a><br>
+<span class="h2"><a href="#">This is a normal .h2 link</a></span>
+
+  
+</div>
+
+        
+<div class="styleguide-item-code styleguide-item-hidden" data-styleguide-toggle="code">
+  <pre><code class="language-markup"><a class="h2" href="#">This is a black .h2 link</a><br>
+<span class="h2"><a href="#">This is a normal .h2 link</a></span>
+</code></pre>
+</div>
+
+      </div>
+    
+  </div>
 
 
 
