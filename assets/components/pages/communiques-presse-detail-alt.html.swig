@@ -20,7 +20,7 @@ breadcrumb:
 </div>
 
 <main class="container">
-  <div class="row mt-3">
+  <div class="row">
 
     <div class="col-md-8">
       <header>

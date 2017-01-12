@@ -30,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix margin on "communiqué de presse detail" and "communiqué de presse detail - alternate"
 - Fix `vd-list-links` font weight
 - Fix columns in "Poursuites et faillites" page
 - Fix font weight and case in teaser alternate 2 #564
