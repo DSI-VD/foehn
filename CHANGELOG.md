@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Make horizontal padding smaller on Communiqué de presse titles
 - Make the padding of the title banner smaller #589
 - Bring back "Tous les thèmes" button in mobile menu
 - The entire teaser molecule is clickable
