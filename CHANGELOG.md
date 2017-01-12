@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Dates forms stay on the same line on mobile
 - Use teaser molecule in news-latest organism #590
 - WhatsApp social icon is only visible on tablet and smaller devices
 - Make horizontal padding smaller on Communiqué de presse titles

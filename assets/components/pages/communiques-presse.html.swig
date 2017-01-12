@@ -38,21 +38,21 @@ breadcrumb:
               <div class="col-lg mb-1">
                 <p class="h5">Publié du</p>
                 <div class="form-inline">
-                  <input id="date-form-day" class="form-control" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
+                  <input id="date-form-day" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
                   <label for="date-form-month" class="sr-only">Mois</label>
-                  <input id="date-form-month" class="form-control" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
+                  <input id="date-form-month" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
                   <label for="date-form-year" class="sr-only">Année</label>
-                  <input id="date-form-year" class="form-control" type="number" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
+                  <input id="date-form-year" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
                 </div>
               </div>
               <div class="col-lg mb-1">
                 <p class="h5"><span class="sr-only">Publié jusqu'</span>au</p>
                 <div class="form-inline">
-                  <input id="date-form-day" class="form-control" type="text" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
+                  <input id="date-form-day" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
                   <label for="date-form-month" class="sr-only">Mois</label>
-                  <input id="date-form-month" class="form-control" type="text" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
+                  <input id="date-form-month" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
                   <label for="date-form-year" class="sr-only">Année</label>
-                  <input id="date-form-year" class="form-control" type="text" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
+                  <input id="date-form-year" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
                 </div>
               </div>
             </div>
