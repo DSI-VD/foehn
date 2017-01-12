@@ -24,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add "Communiqué de presse resluts" page
 - Add FAQ item molecule
 - Add FAQ organism
 - Add example list molecule
