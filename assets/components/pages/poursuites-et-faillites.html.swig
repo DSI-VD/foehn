@@ -11,9 +11,6 @@ breadcrumb:
   -
     name: 'Économie'
     href: '../domaines/#economie'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

@@ -8,9 +8,6 @@ breadcrumb:
   -
     name: 'vd.ch'
     href: '../accueil/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

@@ -11,9 +11,6 @@ breadcrumb:
   -
     name: 'Domaines'
     href: '../domaines/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

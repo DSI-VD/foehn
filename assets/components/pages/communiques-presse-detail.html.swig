@@ -11,9 +11,6 @@ breadcrumb:
   -
     name: 'Communiqués de presse'
     href: '../communiques-presse/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

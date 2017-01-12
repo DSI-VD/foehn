@@ -14,9 +14,6 @@ breadcrumb:
   -
     name: 'Ordre Judiciaire Vaudois'
     href: '../ordre-judiciaire-vaudois/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}

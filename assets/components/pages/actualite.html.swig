@@ -11,9 +11,6 @@ breadcrumb:
   -
     name: 'Actualités'
     href: '../actualites/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}
