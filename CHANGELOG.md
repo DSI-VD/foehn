@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Headings fonts use `em` instead of `rem`
 - Bring back "Tous les thèmes" button in mobile menu
 - The entire teaser molecule is clickable
 - Refactor teaser-small molecule HTML
