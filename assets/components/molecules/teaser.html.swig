@@ -2,6 +2,8 @@
 title: Teaser
 name: teaser
 collection: molecules
+variants:
+  no_image: Default Without image
 notes: |
   Image is not mandatory. You can remove the `<picture>` element.
 ---
@@ -9,8 +11,7 @@ notes: |
   <a href="../actualite" class="vd-link-invisible">
     <div class="text-xxs-center mb-2">
       <h3 class="mb-2">Lorem ipsum dolor sit amet</h3>
-      {% if remove_teaser_image %}
-      {% else -%}
+      {%- if variant == 'no_image' %}{% else %}
       <div class="vd-teaser-img">
         {# make it a macro when Toolbox is less f***ed up. ANGRY #}
         <picture>
