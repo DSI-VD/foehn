@@ -8,8 +8,8 @@ notes: |
   Used for example in the agenda list, with dates as title and a description
 ---
 {% if not variant -%}
-<article{% if teaser_wrapper %} class="{{ teaser_wrapper }}"{% else %}{% endif %}>
-  <a class="vd-teaser-small vd-link-invisible" href=“#”>
+<article class="vd-teaser-small{% if teaser_wrapper %} {{ teaser_wrapper }}{% else %}{% endif %}">
+  <a class="vd-link-invisible" href=“#”>
     <h3>Title here</h3>
     {% include "../molecules/numbered-title.html.swig" %}
     {% if teaser_small_image %}
