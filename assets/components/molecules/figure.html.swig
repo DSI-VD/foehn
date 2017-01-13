@@ -19,7 +19,9 @@ notes: |
       <span class="vd-figure-category">Population</span>
     {%- endif %}
   </div>
+  {% if figcaption == false %}
   <figcaption class="figure-caption">Ceci est une légende
     <span class="vd-figure-credits">Photo JACQUES ANDRÉ</span>
   </figcaption>
+  {% endif %}
 </figure>
