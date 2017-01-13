@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Default teaser molecule has an image
 - Change wording of the "Back to top" button in domain list
 - Dates forms stay on the same line on mobile
 - Use teaser molecule in news-latest organism #590

@@ -6,11 +6,11 @@ notes: |
 ---
 <h2 class="vd-section-title">Actualités</h2>
 
-{% include "../molecules/teaser.html.swig" with {'teaser_image': true} %}
 {% include "../molecules/teaser.html.swig" %}
-{% include "../molecules/teaser.html.swig" %}
-{% include "../molecules/teaser.html.swig" %}
-{% include "../molecules/teaser.html.swig" %}
+{% include "../molecules/teaser.html.swig" with {'remove_teaser_image' : true} %}
+{% include "../molecules/teaser.html.swig" with {'remove_teaser_image' : true} %}
+{% include "../molecules/teaser.html.swig" with {'remove_teaser_image' : true} %}
+{% include "../molecules/teaser.html.swig" with {'remove_teaser_image' : true} %}
 
 {% if news_alternate_news_links %}
 <h3 class="sr-only">Autres actualités</h3>

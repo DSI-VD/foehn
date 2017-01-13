@@ -3,12 +3,14 @@ title: Teaser
 name: teaser
 collection: molecules
 notes: |
+  Image is not mandatory. You can remove the `<picture>` element.
 ---
 <article class="vd-teaser{% if teaser_wrapper %} {{ teaser_wrapper }}{% else %}{% endif %}">
   <a href="../actualite" class="vd-link-invisible">
     <div class="text-xxs-center mb-2">
       <h3 class="mb-2">Lorem ipsum dolor sit amet</h3>
-      {% if teaser_image %}
+      {% if remove_teaser_image %}
+      {% else -%}
       <div class="vd-teaser-img">
         {# make it a macro when Toolbox is less f***ed up. ANGRY #}
         <picture>
