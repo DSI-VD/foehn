@@ -44,7 +44,7 @@ notes: |
   <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
 </article>
 {% elseif variant == 'col' -%}
-<article{% if teaser_wrapper %} class="{{ teaser_wrapper }}"{% else %}{% endif %}>
+<article class="vd-teaser-alternate{% if teaser_wrapper %} {{ teaser_wrapper }}{% else %}{% endif %}">
   <a href="../actualite" class="vd-link-invisible">
     <h3 class="mb-2">Lorem ipsum dolor sit amet</h3>
     {% include '../molecules/figure.html.swig' with {'variant' : 'category'} %}
