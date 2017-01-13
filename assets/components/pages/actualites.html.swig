@@ -37,7 +37,7 @@ breadcrumb:
 
   <div class="row">
     {% for x, y in newsCountAsArray %}
-      {% include "../molecules/teaser-alternate.html.swig" with {variant: 'col', teaser_wrapper: 'col-md-6'} %}
+      {% include "../molecules/teaser.html.swig" with {variant: 'left', teaser_wrapper: 'col-md-6'} %}
     {% endfor %}
   </div>
 

@@ -32,7 +32,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-- Add teaser-alternate-one-column molecule
+- Add teaser-left molecule
 - Add a teaser list organism
 - Add a one third - two third variant of teaser alternate
 - Add a condition to display figcaption in figure

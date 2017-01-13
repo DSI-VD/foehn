@@ -4,7 +4,6 @@ name: teaser-alternate
 collection: molecules
 variants:
   two_thirds_one_third: 66% - 33%
-  col: One column
 notes: |
 ---
 {% if not variant -%}
@@ -42,14 +41,5 @@ notes: |
     </div>
   </div>
   <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-</article>
-{% elseif variant == 'col' -%}
-<article class="vd-teaser-alternate{% if teaser_wrapper %} {{ teaser_wrapper }}{% else %}{% endif %}">
-  <a href="../actualite" class="vd-link-invisible">
-    <h3 class="mb-2">Lorem ipsum dolor sit amet</h3>
-    {% include '../molecules/figure.html.swig' with {'variant' : 'category'} %}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p class="vd-teaser-meta">14.06.2016</p>
-  </a>
 </article>
 {%- endif -%}
