@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Remove teaser alternate column push
 - Use variant for teaser without image
 - Default teaser molecule has an image
 - Change wording of the "Back to top" button in domain list
