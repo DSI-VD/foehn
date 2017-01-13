@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+/**
+ * A list that add some background on odd elements
+ */
+
+.vd-teaser-list-striped {
+  .vd-teaser-list-striped-item:nth-of-type(odd) {
+    background-color: $vd-gray-lightest;
+    border-bottom: 1px solid $vd-gray-lighter;
+  }
+
+  margin-bottom: $spacer;
+}
