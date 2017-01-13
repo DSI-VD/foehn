@@ -8,7 +8,7 @@ variants:
 notes: |
 ---
 {% if not variant -%}
-<article class="vd-teaser vd-teaser-alternate">
+<article class="vd-teaser-alternate">
   <h3 class="vd-teaser-title mb-1">
     <a href="#0">Lorem ipsum dolor sit amet</a>
   </h3>
@@ -24,10 +24,9 @@ notes: |
     </div>
   </div>
   <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-  <hr class="mt-3 mb-3 ml-0 mr-0 vd-separator vd-separator-gray-pattern">
 </article>
 {% elseif variant == 'two_thirds_one_third' -%}
-<article class="vd-teaser vd-teaser-alternate">
+<article class="vd-teaser-alternate">
   <h3 class="vd-teaser-title mb-1">
     <a href="#0">Lorem ipsum dolor sit amet</a>
   </h3>
@@ -43,7 +42,6 @@ notes: |
     </div>
   </div>
   <a href="#0" class="vd-teaser-meta">14.06.2016 :: 1M</a>
-  <hr class="mt-3 mb-3 ml-0 mr-0 vd-separator vd-separator-gray-pattern">
 </article>
 {% elseif variant == 'alt_2' -%}
 <article class="vd-teaser-alternate-2">
