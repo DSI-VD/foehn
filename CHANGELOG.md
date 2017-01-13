@@ -30,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add a condition to display figcaption in figure
 - Add category on teaser image
 - Add "Communiqué de presse results" page
 - Add FAQ item molecule
