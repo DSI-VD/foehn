@@ -4,7 +4,6 @@ name: teaser-alternate
 collection: molecules
 variants:
   alt_2: Alternate 2
-  alt_3: Alternate 3
 notes: |
 ---
 {% if not variant -%}
@@ -37,33 +36,4 @@ notes: |
     <p class="small font-weight-bold">Publié le 1 juillet 2016 (date de publication)</p>
   </a>
 </article>
-{% elseif variant == 'alt_3' -%}
-<article class="vd-teaser row">
-  <div class="col-md-8">
-    <h3 class="vd-teaser-title"><a href="#0">Lorem ipsum dolor sit amet</a></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maxime sit non quod quisquam, magni? Delectus minima eius tempora perferendis, itaque similique quis dolores in, minus deleniti, sequi quidem dignissimos.</p>
-    <dl class="row">
-      <dt class="col-sm-6">Prix</dt>
-      <dd class="col-sm-6"><abbr title="francs suisses">CHF</abbr> 300</dd>
-
-      <dt class="col-sm-6">Téléphone</dt>
-      <dd class="col-sm-6"><a href="tel:+41211234567">+41 21 123 45 67</a></dd>
-
-      <dt class="col-sm-6">Courriel</dt>
-      <dd class="col-sm-6"><a href="mailto:email@email.com">email@email.com</a></dd>
-
-    </dl>
-  </div>
-  <div class="col-md-4">
-    <a href="#0" class="img-fluid">
-      <picture class="img-fluid">
-        {% for breakpoint in data.breakpoints %}
-        <source {% if breakpoint.value > 0 %}media="(min-width: {{ breakpoint.value }}px)"{% endif %} srcset="http://placehold.it/{{ breakpoint.image_size.teaser[0] }}x{{ breakpoint.image_size.teaser[1] }} 1x, http://placehold.it/{{ breakpoint.image_size.teaser[0] * 2 }}x{{ breakpoint.image_size.teaser[1] * 2 }} 2x">
-        {% endfor %}
-        <img class="img-fluid" src="https://placehold.it/300x150" alt="article image" />
-      </picture>
-    </a>
-  </div>
-</article>
-<hr class="mt-3 mb-3 ml-0 mr-0 vd-separator vd-separator-gray-pattern">
 {%- endif -%}
