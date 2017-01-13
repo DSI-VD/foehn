@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Figure use the `<picture>` element
 - Use variant for teaser without image
 - Default teaser molecule has an image
 - Change wording of the "Back to top" button in domain list
@@ -27,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add category on teaser image
 - Add "Communiqué de presse results" page
 - Add FAQ item molecule
 - Add FAQ organism
