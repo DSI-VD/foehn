@@ -1,5 +1,17 @@
 @charset 'UTF-8';
 
+.vd-teaser-alternate {
+  &:after {
+    content: '';
+    display: block;
+    height: 4px;
+    max-width: 350px;
+    margin-top: 3 * $spacer;
+    margin-bottom: 3 * $spacer;
+    background-image: url('../svg/pattern_squares_gray.svg');
+  }
+}
+
 /**
  * A simple teaser with invisible links (what an idea !) and some custom
  * padding here and there

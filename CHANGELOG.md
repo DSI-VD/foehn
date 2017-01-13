@@ -58,6 +58,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Removed `<hr>` on teaer alternate
 - Removed teaser alternate 3 molecule
 - Removed `.vd-teaser-content` class
 - Removed `.vd-teaser-title` class
