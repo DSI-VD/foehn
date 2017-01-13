@@ -11,31 +11,3 @@
     background-image: url('../svg/pattern_squares_gray.svg');
   }
 }
-
-/**
- * A simple teaser with invisible links (what an idea !) and some custom
- * padding here and there
- */
-.vd-teaser-alternate-2 {
-  a {
-    color: currentColor;
-    text-decoration: none;
-  }
-
-  padding-top: $spacer;
-  padding-left: $spacer * 3;
-  padding-right: $spacer * 3;
-}
-
-/**
- * A list that add some background on odd elements
- */
-
-.vd-teaser-alternate-2-list {
-  .vd-teaser-alternate-2:nth-of-type(odd) {
-    background-color: $vd-gray-lightest;
-    border-bottom: 1px solid $vd-gray-lighter;
-  }
-
-  margin-bottom: $spacer;
-}

@@ -69,16 +69,7 @@ breadcrumb:
 
     <div class="col-md-8">
 
-      <div class="vd-teaser-alternate-2-list">
-        {% set newsCount = 10 %}
-        {% set newsCountAsArray = Array(newsCount) %}
-
-        {% for x, y in newsCountAsArray %}
-          {% include "../molecules/teaser-alternate.html.swig" with { variant: 'alt_2' } %}
-        {% endfor %}
-      </div>
-
-      {% include "../molecules/nav-pagination.html.swig" %}
+      {% include '../organisms/teaser-list.html.swig' %}
 
     </div>
 

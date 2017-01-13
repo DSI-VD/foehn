@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Use teaser-list in Communiqué de presse page
+- Move teaser-alternate-2 in teaser-small
 - Clean teaser alternate HTML #595
 - Remove teaser alternate column push #595
 - Figure use the `<picture>` element
@@ -30,6 +32,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add a teaser list organism
 - Add a one third - two third variant of teaser alternate
 - Add a condition to display figcaption in figure
 - Add category on teaser image
@@ -58,6 +61,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Removed `.vd-teaser-alternate-2` styles
+- Removed `.vd-teaser-alternate-2-list` styles
 - Removed `<hr>` on teaer alternate
 - Removed teaser alternate 3 molecule
 - Removed `.vd-teaser-content` class
