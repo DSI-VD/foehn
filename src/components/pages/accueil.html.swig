@@ -17,6 +17,18 @@ layout: page.html.swig
 
     <div class="col-md-8">
 
+      <section class="hidden-md-up">
+        <h2 class="vd-section-title mb-2">Les plus visités</h2>
+        <ul class="vd-list-links">
+          <li><a href="#0">Inscription au chômage</a></li>
+          <li><a href="#0">Formulaire d'indemnisation</a></li>
+          <li><a href="#0">Vaud Tax 2017</a></li>
+          <li><a href="#0">Vacances scolaires et jours fériés</a></li>
+        </ul>
+      </section>
+
+      <p class="hidden-md-up mb-2 text-xxs-center"><a href="../domaines" class="btn btn-primary btn-sm vd-btn-chevron-r">Tous les thèmes</a></p>
+
       <main id="main">
         {% include "../organisms/news-latest.html.swig" with {'news_alternate_news_links': true} %}
       </main>

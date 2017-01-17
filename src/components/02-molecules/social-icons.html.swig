@@ -26,7 +26,7 @@ notes: |
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#0" title="Linkedin" aria-label="Like us on Linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
   </li>
-  <li class="list-inline-item">
+  <li class="list-inline-item hidden-lg-up">
     <a class="vd-social-icon" href="#0" title="WhatsApp" aria-label="Like us on WhatsApp"><span class="fa fa-whatsapp" aria-hidden="true"></span></a>
   </li>
   <li class="list-inline-item{% if social_icons_in_footer %} float-xs-right{% endif %}">

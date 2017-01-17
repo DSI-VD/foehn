@@ -1,6 +1,6 @@
 ---
 title: List
-name: List
+name: list
 collection: atoms
 bootstrap: http://v4-alpha.getbootstrap.com/content/reboot/#lists
 variants:

@@ -9,7 +9,7 @@
  */
 
 ul {
-  list-style-type: circle;
+  list-style-type: disc;
 
   li {
     margin-bottom: $spacer-y; /* [1] */
@@ -34,7 +34,7 @@ li > ul {
   }
 
   a {
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
   }
 }

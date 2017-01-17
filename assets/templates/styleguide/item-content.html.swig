@@ -4,9 +4,14 @@
 {% set path = '../../components/' + type + 's/' + content.name + '.html.swig' %}
 
 <div class="styleguide-description clearfix" data-styleguide-toggle="notes">
-  {% if content.bootstrap %}
-    <a class="btn btn-secondary btn-sm float-xs-right ml-1" href="{{ content.bootstrap }}"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
-  {% endif %}
+  <div class="float-xs-right">
+    {% if content.status %}
+      {% include '../styleguide/status.html.swig' with { status: data.status.component[content.status] } %}
+    {% endif %}
+    {% if content.bootstrap %}
+      <a class="btn btn-secondary btn-sm ml-1" href="{{ content.bootstrap }}"><span class="fa fa-book" aria-hidden="true"></span> Bootstrap doc</a>
+    {% endif %}
+  </div>
 
   {% if content.notes %}
     <div class="styleguide-item-notes">

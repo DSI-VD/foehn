@@ -1,6 +1,6 @@
 ---
 title: Nav
-name: Nav
+name: nav
 collection: molecules
 bootstrap: http://v4-alpha.getbootstrap.com/components/navs/#base-nav
 notes: |

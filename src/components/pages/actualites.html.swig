@@ -8,14 +8,11 @@ breadcrumb:
   -
     name: 'vd.ch'
     href: '../accueil/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}
 
-<div class="vd-bg-pattern-gray py-1">
+<div class="vd-bg-pattern-gray">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
         <h1 aria-hidden="true">Actualités</h1>
@@ -40,7 +37,7 @@ breadcrumb:
 
   <div class="row">
     {% for x, y in newsCountAsArray %}
-      {% include "../molecules/teaser.html.swig" with {teaser_wrapper: 'col-md-6'} %}
+      {% include "../molecules/teaser.html.swig" with {variant: 'left', teaser_wrapper: 'col-md-6'} %}
     {% endfor %}
   </div>
 
