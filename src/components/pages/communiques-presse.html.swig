@@ -8,14 +8,11 @@ breadcrumb:
   -
     name: 'vd.ch'
     href: '../accueil/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}
 
-<div class="vd-bg-pattern-gray py-1">
+<div class="vd-bg-pattern-gray">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
         <h1>Communiqués de presse</h1>
@@ -28,7 +25,7 @@ breadcrumb:
       <div class="row">
         <div class="col-md-5">
           <fieldset>
-            <legend class="h2">Recherche<span class="sr-only">par mots clefs</span></legend>
+            <legend class="h5">Recherche<span class="sr-only">par mots clefs</span></legend>
             <div class="form-group">
               <label class="sr-only" for="exampleInputAmount">Recherche par mots clefs</label>
               <input type="text" class="form-control" id="exampleInputAmount" placeholder="Recherche">
@@ -39,23 +36,23 @@ breadcrumb:
           <fieldset>
             <div class="row">
               <div class="col-lg mb-1">
-                <p class="h2">Publié du</p>
+                <p class="h5">Publié du</p>
                 <div class="form-inline">
-                  <input id="date-form-day" class="form-control" type="text" pattern="[0-9]{2}" name="name" size="2" placeholder="JJ" value="">
+                  <input id="date-form-day" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
                   <label for="date-form-month" class="sr-only">Mois</label>
-                  <input id="date-form-month" class="form-control" type="text" pattern="[0-9]{2}" name="name" size="2" placeholder="MM" value="">
+                  <input id="date-form-month" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
                   <label for="date-form-year" class="sr-only">Année</label>
-                  <input id="date-form-year" class="form-control" type="text" pattern="[0-9]{4}" name="name" size="4" placeholder="AAAA" value="">
+                  <input id="date-form-year" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
                 </div>
               </div>
               <div class="col-lg mb-1">
-                <p class="h2"><span class="sr-only">Publié jusqu'</span>au</p>
+                <p class="h5"><span class="sr-only">Publié jusqu'</span>au</p>
                 <div class="form-inline">
-                  <input id="date-form-day" class="form-control" type="text" pattern="[0-9]{2}" name="name" size="2" placeholder="JJ" value="">
+                  <input id="date-form-day" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
                   <label for="date-form-month" class="sr-only">Mois</label>
-                  <input id="date-form-month" class="form-control" type="text" pattern="[0-9]{2}" name="name" size="2" placeholder="MM" value="">
+                  <input id="date-form-month" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
                   <label for="date-form-year" class="sr-only">Année</label>
-                  <input id="date-form-year" class="form-control" type="text" pattern="[0-9]{4}" name="name" size="4" placeholder="AAAA" value="">
+                  <input id="date-form-year" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
                 </div>
               </div>
             </div>
@@ -72,16 +69,7 @@ breadcrumb:
 
     <div class="col-md-8">
 
-      <div class="vd-teaser-alternate-2-list">
-        {% set newsCount = 10 %}
-        {% set newsCountAsArray = Array(newsCount) %}
-
-        {% for x, y in newsCountAsArray %}
-          {% include "../molecules/teaser-alternate.html.swig" with { variant: 'alt_2' } %}
-        {% endfor %}
-      </div>
-
-      {% include "../molecules/nav-pagination.html.swig" %}
+      {% include '../organisms/teaser-list.html.swig' %}
 
     </div>
 

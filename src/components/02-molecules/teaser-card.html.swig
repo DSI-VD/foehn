@@ -1,6 +1,6 @@
 ---
 title: Teaser Card
-name: Teaser-card
+name: teaser-card
 collection: molecules
 bootstrap: https://v4-alpha.getbootstrap.com/components/card/#background-variants
 notes: |

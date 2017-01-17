@@ -14,15 +14,12 @@ breadcrumb:
   -
       name: 'Poursuites et faillites'
       href: '../poursuites-et-faillites'
-  -
-    name: ' '
-    href: '#'
 
 ---
 
 {% include "../organisms/header.html.swig" %}
 
-<div class="vd-bg-pattern-gray py-1">
+<div class="vd-bg-pattern-gray">
   <div class="container">
     <div class="row">
       <div class="col-sm-8">

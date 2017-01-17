@@ -14,14 +14,11 @@ breadcrumb:
   -
     name: 'Ordre Judiciaire Vaudois'
     href: '../ordre-judiciaire-vaudois/'
-  -
-    name: ' '
-    href: '#'
 ---
 
 {% include "../organisms/header.html.swig" %}
 
-<div class="vd-bg-pattern-gray py-1">
+<div class="vd-bg-pattern-gray">
   <div class="container">
         {% include "../molecules/breadcrumb.html.swig" %}
         <h1 aria-hidden="true">Office des poursuites</h1>

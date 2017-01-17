@@ -1,0 +1,148 @@
+---
+title: Example list
+name: example-list
+collection: organisms
+wrapper: container
+notes: |
+---
+
+<form class="mb-2">
+  <legend>Recherche dans le registre des avocats</legend>
+
+  <div class="form-group">
+    <label for="name">Nom</label>
+    <input class="form-control" type="text" id="name" name="name" value="">
+  </div>
+
+  <div class="form-group">
+    <label for="category">Catégorie</label>
+    <select class="form-control" id="category">
+      <option value="">Toutes</option>
+      <option value="Avocat Union européenne">Avocat Union européenne</option>
+      <option value="Avocat stagiaire">Avocat stagiaire</option>
+      <option value="Avocat vaudois">Avocat vaudois</option>
+      <option value="Avocat-conseil">Avocat-conseil</option>
+    </select>
+  </div>
+    <div class="form-group">
+    <label for="municipality" id="municipality_label">Commune</label>
+    <datalist id="municipalities">
+      <select id="municipality" class="form-control">
+        <option value="">Toutes</option>
+        <option value="Aigle">Aigle</option>
+        <option value="Assens">Assens</option>
+        <option value="Belmont-Lausanne">Belmont-Lausanne</option>
+        <option value="Bex">Bex</option>
+        <option value="Bussigny">Bussigny</option>
+        <option value="Chamblon">Chamblon</option>
+        <option value="Chavannes-des-Bois">Chavannes-des-Bois</option>
+        <option value="Chesières">Chesières</option>
+        <option value="Château-d'Oex">Château-d'Oex</option>
+        <option value="Clarens">Clarens</option>
+        <option value="Corcelles-le-Jorat">Corcelles-le-Jorat</option>
+        <option value="Cossonay-Ville">Cossonay-Ville</option>
+        <option value="Crans-près-Céligny">Crans-près-Céligny</option>
+        <option value="Crissier">Crissier</option>
+        <option value="Cully">Cully</option>
+        <option value="Dully">Dully</option>
+        <option value="Epalinges">Epalinges</option>
+        <option value="Etoy">Etoy</option>
+        <option value="Genève">Genève</option>
+        <option value="Gland">Gland</option>
+        <option value="Jongny">Jongny</option>
+        <option value="Küsnacht ZH">Küsnacht ZH</option>
+        <option value="La Conversion">La Conversion</option>
+        <option value="La Croix (Lutry)">La Croix (Lutry)</option>
+        <option value="La Tour-de-Peilz">La Tour-de-Peilz</option>
+        <option value="Lausanne">Lausanne</option>
+        <option value="Locarno">Locarno</option>
+        <option value="Lucens">Lucens</option>
+        <option value="Lutry">Lutry</option>
+        <option value="Martigny">Martigny</option>
+        <option value="Mies">Mies</option>
+        <option value="Monthey">Monthey</option>
+        <option value="Montreux">Montreux</option>
+        <option value="Morges">Morges</option>
+        <option value="Moudon">Moudon</option>
+        <option value="Nyon">Nyon</option>
+        <option value="Oron-la-Ville">Oron-la-Ville</option>
+        <option value="Payerne">Payerne</option>
+        <option value="Prilly">Prilly</option>
+        <option value="Préverenges">Préverenges</option>
+        <option value="Pully">Pully</option>
+        <option value="Renens VD">Renens VD</option>
+        <option value="Rolle">Rolle</option>
+        <option value="Sion">Sion</option>
+        <option value="St-Légier-Chiésaz">St-Légier-Chiésaz</option>
+        <option value="St-Prex">St-Prex</option>
+        <option value="St-Sulpice VD">St-Sulpice VD</option>
+        <option value="Tannay">Tannay</option>
+        <option value="Vevey">Vevey</option>
+        <option value="Villars-sur-Ollon">Villars-sur-Ollon</option>
+        <option value="Villeneuve VD">Villeneuve VD</option>
+        <option value="Yens">Yens</option>
+        <option value="Yverdon-les-Bains">Yverdon-les-Bains</option>
+      </select>
+    </datalist>
+    <input id="municipality" name="municipality" list="municipalities" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary vd-btn-chevron-r btn-sm">Envoyer</button>
+  </div>
+
+</form>
+
+<h2 class="mb-1">Résultats</h2>
+
+{% set itemsCount = 10 %}
+{% set itemsCountAsArray = Array(itemsCount) %}
+{% for x, y in itemsCountAsArray %}
+
+<div vocab="http://schema.org/" typeof="Person">
+  <h3 property="name">Alain Alberini</h3>
+  <p class="h4" property="jobTitle">Avocat</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <p property="address" typeof="PostalAddress"><span property="streetAddress">Avenue des Mousquines 20</span><br>
+    Case postale <span property="postOfficeBoxNumber">805</span><br>
+    <span property="postalCode">1001</span> <span property="addressLocality">Lausanne</span></p>
+      <ul class="vd-list-icons">
+        <li>
+          <span class="fa fa-phone" aria-hidden="true"></span>
+          <span class="sr-only" title="Téléphone">Téléphone</span>
+          <a href="tel:+41211234567" property="telephone">+41 21 123 45 67</a>
+        </li>
+        <li>
+          <span class="fa fa-fax" aria-hidden="true"></span>
+            <span class="sr-only">Fax</span>
+            <span>+41 21 123 45 67</span>
+        </li>
+        <li>
+          <span class="fa fa-envelope" aria-hidden="true"></span>
+          <span class="sr-only">Courriel</span>
+          <a href="mailto:prenom.nom@email.com" property="email">prenom.nom@email.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <dl class="row">
+        <dt class="col-md-6">Titre</dt>
+        <dd class="col-md-6">Avocat vaudois</dd>
+
+        <dt class="col-md-6">Inscription au registre</dt>
+        <dd class="col-md-6">29.12.2016</dd>
+
+        <dt class="col-md-6">Assermentation</dt>
+        <dd class="col-md-6">29.12.2016</dd>
+      </dl>
+    </div>
+  </div>
+
+</div>
+
+<hr class="mt-3 mb-3 ml-0 mr-0 vd-separator vd-separator-gray-pattern">
+{% endfor %}
+
+{% include "../molecules/nav-pagination.html.swig" %}

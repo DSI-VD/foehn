@@ -29,7 +29,7 @@ notes: |
   </div><!-- /.col-md-8 -->
 </div><!-- /.row -->
 <p>
-  <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-t">Tous les thèmes</a>
+  <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-t">Haut</a>
 </p>
 {% if ! loop.last %}
 <hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-2">

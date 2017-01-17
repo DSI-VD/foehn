@@ -7,22 +7,72 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Use teaser-list in Communiqué de presse page
+- Move teaser-alternate-2 in teaser-small
+- Clean teaser alternate HTML #595
+- Remove teaser alternate column push #595
+- Figure use the `<picture>` element
+- Use variant for teaser without image
+- Default teaser molecule has an image
+- Change wording of the "Back to top" button in domain list
+- Dates forms stay on the same line on mobile
+- Use teaser molecule in news-latest organism #590
+- WhatsApp social icon is only visible on tablet and smaller devices
+- Make horizontal padding smaller on Communiqué de presse titles
+- Make the padding of the title banner smaller #589
+- Bring back "Tous les thèmes" button in mobile menu
 - The entire teaser molecule is clickable
 - Refactor teaser-small molecule HTML
+- Fix Toolbox URLs to components #568
+- Changed Highlight component to its new style #453
+- Reduce size of section title in footer #562
+- Fix the logo size #558
+- Changed link color if it has `.h[1-6]` class #383
+- Changed list style type to disc #432
 
 ### Added
 
+- Add content on "Accueil" page
+- Add teaser-left molecule
+- Add a teaser list organism
+- Add a one third - two third variant of teaser alternate
+- Add a condition to display figcaption in figure
+- Add category on teaser image
+- Add "Communiqué de presse results" page
+- Add FAQ item molecule
+- Add FAQ organism
+- Add example list molecule
+- Add a form example organims
+- Add teaser alternate 3 molecule
+- Add address service molecule
 - Add a `.vd-link-invisible` helper
+- Add the possibility to add a status in FrontMatter of components (`prototype`, `wip`, `ready`) and docs page (`draft`, `ready`) #565
 
 ### Fix
 
+- Fix dates forms not showing the numeric pad on mobile
+- Fix teaser on the homepage #590
+- Fix margin on "communiqué de presse detail" and "communiqué de presse detail - alternate"
+- Fix `vd-list-links` font weight
 - Fix columns in "Poursuites et faillites" page
+- Fix font weight and case in teaser alternate 2 #564
+- Fix white line in footer #563
+- Fix space between logo and lines in footer #561
+- Fix the spacing in the header #559
+- Fix breadcrumb invisible on mobile #588
 
 ### Removed
 
+- Removed content in nav-primary molecule
+- Removed `.vd-teaser-alternate-2` styles
+- Removed `.vd-teaser-alternate-2-list` styles
+- Removed `<hr>` on teaer alternate
+- Removed teaser alternate 3 molecule
 - Removed `.vd-teaser-content` class
 - Removed `.vd-teaser-title` class
 - Removed `.vd-teaser-small-content` class
+- Removed polyfills from styleguide #566
+- Removed Contact link from header-securise component #490
 
 ## [0.13.0]
 

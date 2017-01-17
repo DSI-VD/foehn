@@ -1,0 +1,28 @@
+/**
+ * Links
+ *
+ * 1. Disable links to phone on desktop
+ */
+@include media-breakpoint-up(md) {
+  a[href^="tel"]:link,
+  a[href^="tel"]:visited,
+  a[href^="tel"]:hover {
+    text-decoration: none; /* [1] */
+    color: currentColor; /* [1] */
+
+    pointer-events: none; /* [1] */
+    cursor: default; /* [1] */
+  }
+}
+
+// Links with a heading class should be black
+a {
+  &.h1,
+  &.h2,
+  &.h3,
+  &.h4,
+  &.h5,
+  &.h6 {
+    color: currentColor;
+  }
+}
