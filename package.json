@@ -54,9 +54,6 @@
     "postcss-reporter": "^1.4.1",
     "slug": "^0.9.1",
     "swig": "^1.4.2",
-    "webpack": "2.1.0-beta.22",
-    "webpack-dev-middleware": "^1.8.3",
-    "webpack-hot-middleware": "^2.12.2",
     "yargs": "^5.0.0"
   },
   "devDependencies": {
