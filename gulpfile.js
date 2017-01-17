@@ -12,6 +12,7 @@ const rename = require('gulp-rename');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
 const svgmin = require('gulp-svgmin');
+const imagemin = require('gulp-imagemin');
 
 const processors = [
   require('autoprefixer'),
@@ -188,6 +189,19 @@ function svg() {
 }
 
 /**
+ * Image
+ *
+ * FIXME: You have to add dependencies manually
+ * https://github.com/sindresorhus/gulp-imagemin/issues/232
+ * `$ yarn add imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo`
+ */
+function images() {
+  return gulp.src(paths.src + '/assets/img/**/*.*')
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.dest + '/assets/img'));
+}
+
+/**
  * Watch
  */
 function watch(done) {
@@ -198,10 +212,10 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors, icons, svg));
+const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors, icons, svg, images));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(build, deploy));
-gulp.task('test', gulp.series(svg));
+gulp.task('test', gulp.series(images));
