@@ -32,6 +32,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add content on "Accueil" page
 - Add teaser-left molecule
 - Add a teaser list organism
 - Add a one third - two third variant of teaser alternate
@@ -62,6 +63,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Removed content in nav-primary molecule
 - Removed `.vd-teaser-alternate-2` styles
 - Removed `.vd-teaser-alternate-2-list` styles
 - Removed `<hr>` on teaer alternate
