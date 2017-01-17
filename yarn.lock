@@ -3905,13 +3905,6 @@ gulp-svgicons2svgfont@^3.0.1:
     readable-stream "^2.0.2"
     svgicons2svgfont "^5.0.0"
 
-gulp-svgmin:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/gulp-svgmin/-/gulp-svgmin-1.2.3.tgz#88947b132e15b2de43d1dbccb30455319c5e50b5"
-  dependencies:
-    gulp-util "^3.0.4"
-    svgo "^0.7.0"
-
 gulp-ttf2eot@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/gulp-ttf2eot/-/gulp-ttf2eot-1.1.1.tgz#de9584a16c4ff4e3c5815b3d5eb1977ecc54d35c"

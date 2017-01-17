@@ -11,7 +11,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
-const svgmin = require('gulp-svgmin');
 const imagemin = require('gulp-imagemin');
 
 const processors = [
@@ -181,10 +180,14 @@ function icons() {
 
 /**
  * SVG
+ *
+ * FIXME: You have to add dependencies manually
+ * https://github.com/sindresorhus/gulp-imagemin/issues/232
+ * `$ yarn add imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo`
  */
 function svg() {
   return gulp.src(paths.src + '/assets/svg/**/*.svg')
-    .pipe(svgmin())
+    .pipe(imagemin())
     .pipe(gulp.dest(paths.dest + '/assets/svg'));
 }
 
