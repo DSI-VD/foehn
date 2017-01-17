@@ -105,15 +105,16 @@ function styles() {
 /**
  * Style linting
  */
-function lintstyles() {
-  return gulp.src(paths.src + '/**/*.scss')
-    .pipe(stylelint({
-      reporters: [{
-        formatter: 'string',
-        console: true
-      }]
-    }));
-};
+ function lintstyles() {
+   return gulp.src(paths.src + '/assets/styles/**/*.s+(a|c)ss')
+     .pipe(stylelint({
+       failAfterError: false,
+       reporters: [{
+         formatter: 'string',
+         console: true
+       }]
+     }));
+ };
 
 /**
  * Style vendors
@@ -209,13 +210,13 @@ function images() {
  */
 function watch(done) {
   serve();
-  gulp.watch(paths.src + '/**/*.css', styles);
+  gulp.watch(paths.src + '/**/*.scss', gulp.parallel(lintstyles, styles));
 };
 
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors, icons, svg, images));
+const compile = gulp.series(clean, gulp.parallel(styles, lintstyles, stylesVendors, fonts, scriptsVendors, icons, svg, images));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
