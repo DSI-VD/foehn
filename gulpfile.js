@@ -11,6 +11,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
+const svgmin = require('gulp-svgmin');
 
 const processors = [
   require('autoprefixer'),
@@ -178,6 +179,15 @@ function icons() {
 }
 
 /**
+ * SVG
+ */
+function svg() {
+  return gulp.src(paths.src + '/assets/svg/**/*.svg')
+    .pipe(svgmin())
+    .pipe(gulp.dest(paths.dest + '/assets/svg'));
+}
+
+/**
  * Watch
  */
 function watch(done) {
@@ -188,10 +198,10 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors, icons));
+const compile = gulp.series(clean, gulp.parallel(styles, stylesVendors, fonts, scriptsVendors, icons, svg));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(build, deploy));
-gulp.task('test', gulp.series(icons));
+gulp.task('test', gulp.series(svg));
