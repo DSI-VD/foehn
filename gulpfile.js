@@ -75,7 +75,7 @@ function build() {
  * Clean
  */
  function clean() {
-   return del(paths.dest + '/assets/');
+   return del([paths.dest, paths.build]);
  };
 
 /**
