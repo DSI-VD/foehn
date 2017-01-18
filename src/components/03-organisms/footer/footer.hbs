@@ -1,14 +1,5 @@
----
-title: Footer
-name: footer
-collection: organisms
-notes: |
-  The footer, as seen on all pages at the bottom. =)
-
-  Add `.mt-3` to add some space before the footer.
----
 <div class="container">
-  {% include "../molecules/social-icons.html.swig" with {social_icons_in_footer: true, social_icons_header_hidden: true} %}
+  {{> @social-icons--footer title='Partager' titleModifier='sr-only'}}
 </div>
 <footer class="footer">
   <div class="container">
@@ -75,7 +66,7 @@ notes: |
         </div>
         <div class="col-xs-2 footer-logo-container">
           <div class="footer-logo">
-            <img class="img-fluid" src="{{data.path}}build/svg/logo/logo--white.svg" alt="Canton de Vaud">
+            <img class="img-fluid" src="{{ path '/assets/svg/logo/logo--white.svg' }}" alt="Canton de Vaud">
           </div>
         </div>
     </div>
