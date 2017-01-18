@@ -1,0 +1,20 @@
+<article id="faq-{% if faq_id %}{{ faq_id }}{% else %}id{% endif %}">
+  <h4>{{ question }}</h4>
+  <p>{{ answer }}</p>
+  <footer>
+    <dl class="row small text-muted">
+      <dt class="col-sm-3">Categories</dt>
+      <dd class="col-sm-9">
+        <a href="#">Lorem ipsum</a>,
+        <a href="#">Dolor</a>,
+        <a href="#">Sit amet</a>
+      </dd>
+
+      <dt class="col-sm-3">Auteur</dt>
+      <dd class="col-sm-9">{{ author }}</dd>
+    </dl>
+    <p>
+      <a href="#" class="btn btn-secondary btn-sm vd-btn-chevron-t">Retour</a>
+    </p>
+  </footer>
+</article>
