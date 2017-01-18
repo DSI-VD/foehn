@@ -1,0 +1,19 @@
+<h2>Foire aux questions</h2>
+
+<div class="vd-bg-pattern-bars-gray clearfix my-1 py-2 px-1">
+  {{> @search-form--regular }}
+</div>
+
+<h3>Questions</h3>
+
+<ul class="vd-list-links">
+  {{#each faqs}}
+    <li><a href="faq-{{@index}}">{{ question }} ?</a></li>
+  {{/each}}
+</ul>
+
+<h3 class="sr-only">Réponses</h3>
+
+{{#each faqs}}
+  {{> @faq-item }}
+{{/each}}
