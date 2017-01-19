@@ -22,7 +22,7 @@
       <p class="hidden-md-up mb-2 text-xxs-center"><a href="../domaines" class="btn btn-primary btn-sm vd-btn-chevron-r">Tous les thèmes</a></p>
 
       <main id="main">
-        {% include "../organisms/news-latest.html.swig" with {'news_alternate_news_links': true} %}
+        {{render '@news-latest--homepage'}}
       </main>
 
     </div><!-- /.col-md-8 -->
@@ -30,11 +30,11 @@
     <aside class="col-md-4 small">
 
       <section class="mb-3 hidden-sm-down">
-        {% include "../organisms/twitter-feed.html.swig"  %}
+        {{> @twitter-feed }}
       </section>
 
       <section>
-        {% include "../organisms/agenda.html.swig"  %}
+        {{> @agenda }}
       </section>
 
     </aside><!-- /.col-md-4 -->
