@@ -1,12 +1,4 @@
----
-title: Demandes
-name: demandes
-collection: pages
-styleguide: false
-layout: page.html.swig
----
-
-{% include "../organisms/header-securise.html.swig" %}
+{{> @header--securise }}
 
 <div class="vd-bg-pattern-purple" role="tablist">
   <div class="container vd-nav-tabs-secure">
@@ -107,4 +99,4 @@ layout: page.html.swig
 
 </div>
 
-{% include "../organisms/footer-securise.html.swig" %}
+{{> @footer--securise }}

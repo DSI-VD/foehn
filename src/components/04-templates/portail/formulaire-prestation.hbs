@@ -1,12 +1,4 @@
----
-title: Formulaire prestation
-name: formulaire-prestation
-collection: pages
-styleguide: false
-layout: page.html.swig
----
-
-{% include "../organisms/header-securise.html.swig" %}
+{{> @header--securise }}
 
 <main id="main">
 
@@ -95,11 +87,11 @@ layout: page.html.swig
     <div class="col-md-4">
       <h3>Question 1 de 2</h3>
 
-      {% include "../molecules/pagination-vertical.html.swig" %}
+      {{> @pagination-vertical }}
     </div>
   </div>
 
 </div>
 
 </main>
-{% include "../organisms/footer-securise.html.swig" %}
+{{> @footer--securise }}

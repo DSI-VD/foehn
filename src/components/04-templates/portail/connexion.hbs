@@ -1,12 +1,4 @@
----
-title: Connexion
-name: connexion
-collection: pages
-styleguide: false
-layout: page.html.swig
----
-
-{% include "../organisms/header-securise.html.swig" %}
+{{> @header--securise }}
 
 <div class="vd-bg-pattern-gray">
   <div class="container">
@@ -51,4 +43,4 @@ layout: page.html.swig
   </div>
 </main>
 
-{% include "../organisms/footer-securise.html.swig" %}
+{{> @footer--securise }}
