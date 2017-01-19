@@ -17,6 +17,8 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /* Set the title of the project */
 fractal.set('project.title', 'Foehn');
 
+fractal.components.set('default.status', 'wip');
+
 /* Tell Fractal where the components will live */
 fractal.components.set('path', paths.src + '/components');
 
