@@ -1,20 +1,8 @@
----
-title: Communiques presse
-name: communiques-presse
-collection: pages
-styleguide: false
-layout: page.html.swig
-breadcrumb:
-  -
-    name: 'vd.ch'
-    href: '../accueil/'
----
-
-{% include "../organisms/header.html.swig" %}
+{{> @header }}
 
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "../molecules/breadcrumb.html.swig" %}
+        {{> @breadcrumb }}
         <h1>Communiqués de presse</h1>
   </div>
 </div>
@@ -69,7 +57,9 @@ breadcrumb:
 
     <div class="col-md-8">
 
-      {% include '../organisms/teaser-list.html.swig' %}
+      <h2 class="mb-3">Résultats de recherche</h2>
+
+      {{render '@teaser-list'}}
 
     </div>
 
@@ -100,4 +90,4 @@ breadcrumb:
   </div>
 </main>
 
-{% include "../organisms/footer.html.swig" %}
+{{> @footer }}
