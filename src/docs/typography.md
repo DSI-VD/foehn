@@ -1,10 +1,3 @@
----
-title: Typography
-name: typography
-collection: docs
-styleguide: true
----
-
 ## Fonts used
 
 <br>
