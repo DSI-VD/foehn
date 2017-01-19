@@ -1,0 +1,16 @@
+{
+    "context": {
+        "breadcrumb": {
+          "items": [{
+            "page": "vd.ch",
+            "url": "#"
+          },{
+            "page": "Autorités",
+            "url": "#"
+          },{
+            "page": "Ordre Judiciaire Vaudois",
+            "url": "#"
+          }]
+        }
+    }
+}

@@ -1,23 +1,8 @@
----
-title: Economie
-name: economie
-collection: pages
-styleguide: false
-layout: page.html.swig
-breadcrumb:
-  -
-    name: 'vd.ch'
-    href: '../accueil/'
-  -
-    name: 'Domaines'
-    href: '../domaines/'
----
-
-{% include "../organisms/header.html.swig" %}
+{{> @header }}
 
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "../molecules/breadcrumb.html.swig" %}
+        {{> @breadcrumb }}
         <h1 aria-hidden="true">Economie</h1>
   </div>
 </div>
@@ -29,7 +14,7 @@ breadcrumb:
     <div class="col-md-8">
       <h2>3 prestations</h2>
       <div class="vd-bg-pattern-green p-1">
-        {% include "../atoms/list-boxed.html.swig" %}
+        {{> @list-boxed }}
       </div>
 
     </div>
@@ -56,4 +41,4 @@ breadcrumb:
   </div>
 </main>
 
-{% include "../organisms/footer.html.swig" %}
+{{> @footer }}
