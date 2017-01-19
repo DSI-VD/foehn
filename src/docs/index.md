@@ -1,7 +1,5 @@
 ---
 title: Fœhn - VD.ch
-styleguide: true
-permalink: false
 ---
 **This styleguide has been designed to serve the purpose of the website vd.ch.**
 

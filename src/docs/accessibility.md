@@ -1,10 +1,3 @@
----
-title: Accessibility
-name: accessibility
-collection: docs
-styleguide: true
----
-
 Refer to [Bootstrap 4 documentation](http://v4-alpha.getbootstrap.com/getting-started/accessibility/) for precise information about how the framework should be used.
 
 ## Accessibility navigation

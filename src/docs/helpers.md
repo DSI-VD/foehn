@@ -1,10 +1,4 @@
----
-title: Helpers
-name: helpers
-collection: docs
-styleguide: true
----
-### Background Helpers
+## Background Helpers
 
 `.vd-bg-pattern-green`
 
@@ -66,7 +60,7 @@ styleguide: true
   </div>
 </div>
 
-### Spacing helpers
+## Spacing helpers
 
 To set an offset to the sidebar and make it overlap the gray title, use the `.vd-offset-top`.
 
