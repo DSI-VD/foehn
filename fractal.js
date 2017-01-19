@@ -8,7 +8,7 @@ const paths = {
 
 const mandelbrot = require('@frctl/mandelbrot')({
   lang: 'en',
-  skin: 'green'
+  skin: 'navy'
 });
 
 /* Create a new Fractal instance and export it for use elsewhere if required */
