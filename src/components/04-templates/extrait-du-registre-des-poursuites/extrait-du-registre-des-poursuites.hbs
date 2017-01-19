@@ -1,29 +1,10 @@
----
-title: Extrait du registre des poursuites
-name: extrait-du-registre-des-poursuites
-collection: pages
-styleguide: false
-layout: page.html.swig
-breadcrumb:
-  -
-    name: 'vd.ch'
-    href: '../accueil/'
-  -
-    name: 'Économie'
-    href: '../domaines/#economie'
-  -
-      name: 'Poursuites et faillites'
-      href: '../poursuites-et-faillites'
-
----
-
-{% include "../organisms/header.html.swig" %}
+{{> @header }}
 
 <div class="vd-bg-pattern-gray">
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
-        {% include "../molecules/breadcrumb.html.swig" %}
+        {{> @breadcrumb }}
         <h1 aria-hidden="true">Extrait du registre des poursuites pour soi-même</h1>
       </div>
       <div class="col-sm-4">
@@ -155,9 +136,7 @@ breadcrumb:
 
   </div>
 
-  {% include "../atoms/update-time.html.swig" %}
+  {{> @update-time }}
 </div>
 
-
-
-{% include "../organisms/footer.html.swig" %}
+{{> @footer }}
