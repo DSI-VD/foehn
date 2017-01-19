@@ -1,22 +1,7 @@
----
-title: Actualite
-name: actualite
-collection: pages
-styleguide: false
-layout: page.html.swig
-breadcrumb:
-  -
-    name: 'vd.ch'
-    href: '../accueil/'
-  -
-    name: 'Actualités'
-    href: '../actualites/'
----
-
-{% include "../organisms/header.html.swig" %}
+{{> @header  }}
 
 <div class="container py-1">
-      {% include "../molecules/breadcrumb.html.swig" %}
+      {{> @breadcrumb }}
 </div>
 
 <main class="container container-small" id="main">
@@ -26,7 +11,7 @@ breadcrumb:
   <p class="lead">Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p>
 
   <div class="text-xxs-center mt-2">
-    {% include "../molecules/social-icons.html.swig" %}
+    {{> @social-icons }}
   </div>
 
   <figure class="figure vd-teaser-img">
@@ -38,7 +23,7 @@ breadcrumb:
     Explorer de nouveaux univers professionnels au-delà des secteurs traditionnellement féminins ou masculins, c'est ce que proposera la Journée Oser tous les métiers le jeudi 10 novembre prochain. Les filles accompagneront un homme dans sa journée de travail, et les garçons une femme. En plus de cette mise en situation professionnelle, les écoliers auront la possibilité de participer aux ateliers organisés par le BEFH.
   </p>
 
-  {% include "../molecules/blockquote.html.swig" %}
+  {{> @blockquote }}
 
   <p>Avec 625 places disponibles, ces ateliers permettront aux filles de découvrir les métiers d’ingénieure, d’informaticienne ou de s’initier à la vie politique au Parlement des filles.</p>
   <ul class="vd-list-links">
@@ -47,4 +32,4 @@ breadcrumb:
 
 </main>
 
-{% include "../organisms/footer.html.swig" %}
+{{> @footer }}
