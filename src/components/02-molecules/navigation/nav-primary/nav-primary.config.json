@@ -3,6 +3,7 @@
     "context": {
       "wrapperClass": {
         "wrapperClass": "col-md-4"
-      }
+      },
+      "domains": "@domains-list"
     }
 }
