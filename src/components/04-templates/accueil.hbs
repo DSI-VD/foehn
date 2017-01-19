@@ -1,12 +1,4 @@
----
-title: Accueil
-name: accueil
-collection: pages
-styleguide: false
-layout: page.html.swig
----
-{% include "../organisms/header.html.swig" with {'primary_opened': true, 'logo_alternate': true}   %}
-
+{{render '@header--homepage' }}
 <div class="container mt-3">
   <h1 class="sr-only">Site officiel de l'&Eacute;tat de Vaud</h1>
 </div>
@@ -70,4 +62,4 @@ layout: page.html.swig
   </section>
 </div>
 
-{% include "../organisms/footer.html.swig" %}
+{{> @footer }}
