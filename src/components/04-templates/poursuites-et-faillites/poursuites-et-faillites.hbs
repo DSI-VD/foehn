@@ -1,23 +1,8 @@
----
-title: Poursuites et faillites
-name: poursuites-et-faillites
-collection: pages
-styleguide: false
-layout: page.html.swig
-breadcrumb:
-  -
-    name: 'vd.ch'
-    href: '../accueil/'
-  -
-    name: 'Économie'
-    href: '../domaines/#economie'
----
-
-{% include "../organisms/header.html.swig" %}
+{{> @header }}
 
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include "../molecules/breadcrumb.html.swig" %}
+        {{> @breadcrumb }}
         <h1>Poursuites et faillites</h1>
   </div>
 </div>
@@ -85,4 +70,4 @@ breadcrumb:
   </div>
 </div>
 
-{% include "../organisms/footer.html.swig" %}
+{{> @footer }}
