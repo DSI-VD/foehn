@@ -1,14 +1,6 @@
----
-title: Espace securise
-name: espace-securise
-collection: pages
-styleguide: false
-layout: page.html.swig
----
+{{> @header--securise }}
 
-{% include "../organisms/header-securise.html.swig" %}
-
-{% include "../molecules/secure-tabs.html.swig" %}
+{{> @secure-tabs }}
 
 <main class="container" id="main">
   <div class="row mt-3 mb-3">
@@ -46,4 +38,4 @@ layout: page.html.swig
   </div>
 </main>
 
-{% include "../organisms/footer-securise.html.swig" %}
+{{> @footer--securise }}
