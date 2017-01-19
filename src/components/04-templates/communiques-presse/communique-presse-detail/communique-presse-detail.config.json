@@ -1,0 +1,14 @@
+{
+    "context": {
+        "breadcrumb": {
+          "items": [{
+            "page": "vd.ch",
+            "url": "#"
+          },
+          {
+            "page": "Communiqués de presse",
+            "url": "#"
+            }]
+        }
+    }
+}
