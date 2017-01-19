@@ -1,20 +1,8 @@
----
-title: Autorites
-name: autorites
-collection: pages
-styleguide: false
-layout: page.html.swig
-breadcrumb:
-  -
-    name: 'vd.ch'
-    href: '../accueil/'
----
-
-{% include "../organisms/header.html.swig" %}
+{{> @header }}
 
 <div class="vd-bg-pattern-gray">
   <div class="container">
-    {% include "../molecules/breadcrumb.html.swig" %}
+    {{> @breadcrumb }}
     <h1 aria-hidden="true">Autorites</h1>
   </div>
 </div>
@@ -147,4 +135,4 @@ breadcrumb:
 
 </main>
 
-{% include "../organisms/footer.html.swig" %}
+{{> @footer }}
