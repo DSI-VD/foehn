@@ -1,0 +1,34 @@
+{{#each domains}}
+  <div>
+    <div class="row mt-3">
+
+      <div class="col-md-4">
+        <h2 id="{{ domain_id }}">{{ name }}</h2>
+        <h3 id="acces-direct-{{ domain }}" class="sr-only">Les plus visités</h3>
+        <nav class="p-1" aria-labelledby="acces-direct-{{ domain }}">
+          <ul class="vd-list-links">
+            <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.col-md-4 -->
+
+      <div class="col-md-8">
+        <div class="row" aria-labelledby="{{ domain }}">
+          {{#each themes}}
+            {{> @teaser-link styleModifier='col-md-6' name=this description='Lorem ipsum dolor sit amet, consectetur adipisicing elit.' }}
+          {{/each}}
+        </div><!-- /.row -->
+      </div><!-- /.col-md-8 -->
+
+    </div><!-- /.row -->
+    <p>
+      <a href="#" class="btn btn-primary btn-sm vd-btn-chevron-t">Haut</a>
+    </p>
+    {{#if @last}}
+    {{else}}
+    <hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-2">
+    {{/if}}
+  </div>
+{{/each}}
