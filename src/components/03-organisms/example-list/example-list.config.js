@@ -20,6 +20,7 @@ for (var i = 0; i < peopleCount; i++) {
 }
 
 module.exports = {
+   status: "ready",
    context: {
        peoples: peopleData // use our generated list of peoples as context data for our template.
    }

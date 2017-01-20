@@ -16,6 +16,7 @@ for (var i = 0; i < faqCount; i++) {
 }
 
 module.exports = {
+   status: "ready",
    context: {
        faqs: faqData
    }
