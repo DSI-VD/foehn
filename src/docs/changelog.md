@@ -1,6 +1,7 @@
 ---
 title: Change Log
 label: 'Change Log'
+status: ready
 ---
 
 All notable changes to this project will be documented in this file.
