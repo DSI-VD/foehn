@@ -9,6 +9,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- [Fractal](http://fractal.build/) is used to generate the frontend
+
 ## [0.14.0]
 
 ### Changed
