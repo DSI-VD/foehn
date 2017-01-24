@@ -106,7 +106,11 @@ function styles() {
  * Style linting
  */
  function lintstyles() {
-   return gulp.src(paths.src + '/assets/styles/**/*.s+(a|c)ss')
+   return gulp.src([
+       paths.src + '/assets/styles/**/*.s+(a|c)ss',
+       '!' + paths.src + '/assets/styles/icons.scss',
+       '!' + paths.src + '/assets/styles/bootstrap-variables.scss'
+       ])
      .pipe(stylelint({
        failAfterError: false,
        reporters: [{
