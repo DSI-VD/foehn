@@ -13,6 +13,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - [Fractal](http://fractal.build/) is used to generate the frontend
 
+### Added
+
+- Add a media-list organim
+
 ## [0.14.0]
 
 ### Changed
