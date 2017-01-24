@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add download-list organism
 - Add pages section for components
 - Add a button--secondary atom
 - Add a button--cta atom
