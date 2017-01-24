@@ -1,0 +1,17 @@
+{
+  "status": "ready",
+  "context": {
+    "list-icon": [
+      {
+        "item": "Lorem ipsum dolor sit.",
+        "icon": "fa-download",
+        "url": "#"
+      },
+      {
+        "item": "Facilis possimus culpa a!",
+        "icon": "fa-download",
+        "url": "#"
+      }
+    ]
+  }
+}
