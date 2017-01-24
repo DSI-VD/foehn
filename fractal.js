@@ -1,7 +1,7 @@
 'use strict';
 
 const paths = {
-  build: __dirname + '/www',
+  build: __dirname + '/dist',
   src: __dirname + '/src',
   static: __dirname + '/tmp'
 };

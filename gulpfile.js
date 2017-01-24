@@ -19,7 +19,7 @@ const processors = [
 ];
 
 const paths = {
-  build: __dirname + '/www',
+  build: __dirname + '/dist',
   dest: __dirname + '/tmp',
   src: __dirname + '/src'
 };
