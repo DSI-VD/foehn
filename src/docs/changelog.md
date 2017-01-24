@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- refactor lists
+- Refactor lists
 - Move some templates in pages components
 - [Fractal](http://fractal.build/) is used to generate the frontend
 
