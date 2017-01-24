@@ -22,8 +22,8 @@ $vd-gray-lighter-2:         #c3d1dc;
 
 $vd-green-darker:           #1e5e02;
 $vd-green:                  #40d940;
-$vd-green-light:            #99ff33;
-$vd-green-lighter:          #ccff99;
+$vd-green-light:            #9f3;
+$vd-green-lighter:          #cf9;
 
 $vd-purple-2:               #9f42ff;
 
@@ -31,7 +31,7 @@ $vd-purple-2:               #9f42ff;
 $vd-gray-dark:              #080808;
 $vd-gray:                   #697983;
 $vd-green-dark:             #02851a;
-$vd-purple:                 #9900ff;
+$vd-purple:                 #90f;
 
 // Button colors
 $white:                     #fff;
@@ -52,7 +52,7 @@ $vd-info:                   #82afcc;
 $vd-focus:                  #0074d9;
 
 // Gradient color
-$vd-gradient:               linear-gradient(to right, $vd-green 0%, #008772 33%, #008772 40%, #00cc66 100%);
+$vd-gradient:               linear-gradient(to right, $vd-green 0%, #008772 33%, #008772 40%, #0c6 100%);
 
 // Patterns
 //
@@ -69,7 +69,6 @@ $pattern-bars-gray-02: "%3Cpolygon fill=%22#{$pattern-bars-gray-02-color}%22 poi
 $pattern-bars-purple-color: str-replace(#{$vd-purple}, '#', '%23');
 $pattern-bars-purple: "%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%220,4 0.5306,4 0,3.4694 	%22/>%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%220,0 0,0.5299 3.4701,4 4,4 4,3.4694 0.5306,0%22/>%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%224,0 3.4701,0 4,0.5299%22/>";
 
-
 // base64 backgrounds, to set as `background: $pattern-striped-green;`
 $pattern-striped-green: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQYV2N0uOnw/4D6AUYGKAAzkAXhMjBBuABMJQAINg5d+/nFCQAAAABJRU5ErkJggg==') repeat;
 $pattern-striped-black: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkYGD4z8DAwMgABTAGXBAuA1OJLADS9B8AguEEBFr1tu0AAAAASUVORK5CYII=') repeat;
@@ -79,7 +78,6 @@ $pattern-striped-thick-gray: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA
 //
 // All typography related variables
 $vd-content-max-width: 50rem;
-
 
 // Icons
 //
