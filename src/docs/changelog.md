@@ -11,10 +11,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Move some templates in pages components
 - [Fractal](http://fractal.build/) is used to generate the frontend
 
 ### Added
 
+- Add pages section for components
 - Add a button--secondary atom
 - Add a button--cta atom
 - Add a media-list organim
