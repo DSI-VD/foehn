@@ -27,7 +27,6 @@ More technical infos (to use or contribute to the styleguide) are referenced on 
 
 ## Getting started
 
-
 ### Install as node dependency
 
 With Yarn:
