@@ -8,6 +8,9 @@ const paths = {
 
 const mandelbrot = require('@frctl/mandelbrot')({
   lang: 'en',
+  static: {
+    mount: 'fractal'
+  },
   skin: 'navy'
 });
 
