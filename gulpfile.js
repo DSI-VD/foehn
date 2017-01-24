@@ -222,7 +222,6 @@ function watch(done) {
  */
 const compile = gulp.series(clean, gulp.parallel(styles, lintstyles, stylesVendors, fonts, scriptsVendors, icons, svg, images));
 
-gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(build, deploy));
