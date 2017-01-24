@@ -1,0 +1,216 @@
+
+
+<header class="header" role="banner">
+  <nav class="vd-access-nav" aria-label="menu accessibilité">
+    <ul>
+        <li>
+          <a class="btn btn-primary" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
+        </li>
+        <li><a class="btn btn-primary" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a></li>
+        <li>
+          <a class="btn btn-primary" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
+        </li>
+      </ul>
+  </nav>
+  <div class="container">
+    <nav class="nav nav-inline text-xxs-right" aria-label="sous-navigation">
+      <div class="vd-dropdown vd-dropdown-left vd-dropdown-purple btn-group">
+        <a data-toggle="dropdown" class="btn dropdown-label">
+          <span class="title">Pierre Dupond</span><br>
+          <span>Commune de Belmont-sur-Lausanne</span>
+        </a>
+        <a class="btn dropdown-toggle-split dropdown-chevron" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="icons icons-chevron-bottom"></i>
+          <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </nav>
+    <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
+      <div class="vd-logo-title">
+        <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
+        <img src="../../assets/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
+      </div>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="vd-bg-pattern-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1 class="vd-icon-title"><span class="fa fa-arrow-down" aria-hidden="true"></span> Commander un extrait du registre des poursuites</h1>
+      </div>
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-primary btn-block"><span class="fa fa-floppy-o" aria-hidden="true"></span> Sauvegarder</button>
+        <button type="button" class="btn btn-primary btn-block"><span class="fa fa-times" aria-hidden="true"></span> Annuler la demande</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <form>
+        <div class="form-group">
+          <label for="nom">Nom (requis)</label>
+          <input type="text" class="form-control" id="nom" aria-describedby="emailHelp" placeholder="Demarty" required="1">
+        </div>
+
+        <div class="form-group">
+          <label for="prenom">Prénom (requis)</label>
+          <input type="text" class="form-control" id="prenom" aria-describedby="emailHelp" placeholder="Gilles">
+        </div>
+        <div class="form-group">
+          <label for="etablissement">Etablissment</label>
+          <input type="text" class="form-control" id="etablissement" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="fonction">Fonction</label>
+          <input type="text" class="form-control" id="fonction" aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleSelect1">Catégorie</label>
+          <select class="form-control" id="exampleSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="adresse">Adresse (requis)</label>
+          <input type="text" class="form-control" id="adresse" aria-describedby="emailHelp" required="1">
+        </div>
+        <div class="form-group">
+          <label for="email">Email (requis)</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required="1">
+          <small id="emailHelp" class="form-text text-muted">Si vous ne renseignez pas votre email, vous ne recevrez pas d'accusé de récéption</small>
+        </div>
+        <div class="form-group">
+          <label for="pays">Pays</label>
+          <input type="pays" class="form-control" id="email" aria-describedby="emailHelp">
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 push-md-6">
+            <p>
+              <a href="#" class="btn btn-primary">Suivant</a>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary btn-blockx">
+                <span class="fa fa-floppy-o" aria-hidden="true"></span>
+                Sauvegarder</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary btn-blocks">
+                <span class="fa fa-times" aria-hidden="true"></span>
+                Annuler la demande</button>
+            </p>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <div class="col-md-4">
+      <h3>Question 1 de 2</h3>
+
+      <nav aria-label="Page navigation">
+        <ul class="vd-vertical-pagination">
+          <li class="vd-page-item success">
+              <span class="vd-page-item-bullet"><span aria-hidden="true" class="fa fa-check"></span><span class="sr-only">(Complété avec succès)</span></span>
+              <a class="vd-page-item-title" href="#">Données du demandeur</a>
+          </li>
+          <li class="vd-page-item warning">
+              <span class="vd-page-item-bullet"><span aria-hidden="true" class="fa fa-question"></span><span class="sr-only">(Demande votre attention)</span></span>
+              <a class="vd-page-item-title" href="#">Identité de l'enfant</a>
+          </li>
+          <li class="vd-page-item active">
+              <span class="vd-page-item-bullet">3<span class="sr-only">(Élément courant)</span></span>
+              <a class="vd-page-item-title" href="#">Auteur du signalement</a>
+          </li>
+          <li class="vd-page-item">
+              <span class="vd-page-item-bullet">4</span>
+              <a class="vd-page-item-title" href="#">Données 4</a>
+          </li>
+          <li class="vd-page-item">
+              <span class="vd-page-item-bullet">5</span>
+              <a class="vd-page-item-title" href="#">Données 5</a>
+          </li>
+          <li class="vd-page-item disabled">
+            <span class="vd-page-item-bullet">6<span class="sr-only">(Désactivé)</span></span>
+            <span class="vd-page-item-title">Données 6</span>
+          </li>
+          <li class="vd-page-item">
+            <span class="vd-page-item-bullet">7</span>
+            <a class="vd-page-item-title" href="#">Données 7</a>
+          </li>
+          <li class="vd-page-item">
+            <span class="vd-page-item-bullet">12</span>
+            <a class="vd-page-item-title" href="#">Envoyer le formulaire</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <div class="row small">
+      <nav aria-label="pied de page" class="col-lg-11 col-md-10">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Espace sécurisé</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mentions légales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-lg-1 col-md-2 footer-logo-container">
+        <div class="footer-logo">
+          <img class="img-fluid" src="../../assets/svg/logo/logo--white.svg" alt="Canton de Vaud">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+

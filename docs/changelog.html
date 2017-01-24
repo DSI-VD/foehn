@@ -9,12 +9,12 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="_theme/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../_theme/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="_theme/css/navy.css?cachebust=1.0.7" type="text/css">
+<link rel="stylesheet" href="../_theme/css/navy.css?cachebust=1.0.7" type="text/css">
 
 
-<title>Fœhn - VD.ch | Foehn</title>
+<title>Change Log | Foehn</title>
 
 </head>
 <body>
@@ -37,7 +37,7 @@
 </svg>
 
     </button>
-    <a href="" class="Header-title" data-pjax>Foehn</a>
+    <a href="../.." class="Header-title" data-pjax>Foehn</a>
 </div>
 
     </div>
@@ -52,8 +52,14 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Fœhn - VD.ch</h1>
+        <h1 class="Document-title">Change Log</h1>
         
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
 
 
         
@@ -69,51 +75,624 @@
 
     
     
-    <p><strong>This styleguide has been designed to serve the purpose of the website vd.ch.</strong></p>
-<h2 id="what-is-a-styleguide-">What is a styleguide ?</h2>
-<p>According to wikipedia, a styleguide is:<br>
-<em>A set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. (It is often called a style sheet, though that term has other meanings.) A style guide establishes and enforces style to improve communication.</em></p>
-<h2 id="framework">Framework</h2>
-<p>This styleguide is extensively based on the framework Bootstrap version 4 using the preprocessor SASS. Further information can be fetched on <a href="https://v4-alpha.getbootstrap.com/">the official documentation</a></p>
-<h2 id="content-hierarchy">Content &amp; hierarchy</h2>
-<p>All the components are organized accordingly to the <a href="http://atomicdesign.bradfrost.com/">atomic design</a> philosophy by Brad Frost.<br>
-  You can navigate through all theses components with the help of the left side navigation bar.</p>
-<p>Additionaly, a few example pages are designed to give an overview of all these elements integrated together</p>
-<h2 id="usage">Usage</h2>
-<p>Each component are listed with a quick documentation box and an example of the displayed element with his source code. It should give you all the infos to apply this design guideline to any web tools you seek to develop</p>
-<p>More technical infos (to use or contribute to the styleguide) are referenced on the README file of the repo <a href="https://github.com/DSI-VD/foehn">FOEHN</a></p>
-<h2 id="getting-started">Getting started</h2>
-<h3 id="install-as-node-dependency">Install as node dependency</h3>
-<p>With Yarn:</p>
-<code class="lang-bash"><pre>$ yarn add https://github.com/DSI-VD/foehn</pre></code><p>or NPM:</p>
-<code class="lang-bash"><pre><span class="hljs-comment"># test</span>
-$ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include">How to include</h3>
-<p>Put this in your <code>&lt;head/&gt;</code> tag:</p>
-<code class="lang-html"><pre><span class="hljs-comment">&lt;!-- load all stylesheets --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/build/css/vendors.min.css"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/build/css/main.css"</span>&gt;</span>
+    <p>All notable changes to this project will be documented in this file.
+This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.14.0...HEAD">Unreleased</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><a href="http://fractal.build/">Fractal</a> is used to generate the frontend</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add a button–secondary atom</li>
+<li>Add a button–cta atom</li>
+<li>Add a media-list organim</li>
+</ul>
+<h2 id="-0-14-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.13.0...v0.14.0">0.14.0</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Use teaser-list in Communiqué de presse page</li>
+<li>Move teaser-alternate-2 in teaser-small</li>
+<li>Clean teaser alternate HTML #595</li>
+<li>Remove teaser alternate column push #595</li>
+<li>Figure use the <code>&lt;picture&gt;</code> element</li>
+<li>Use variant for teaser without image</li>
+<li>Default teaser molecule has an image</li>
+<li>Change wording of the “Back to top” button in domain list</li>
+<li>Dates forms stay on the same line on mobile</li>
+<li>Use teaser molecule in news-latest organism #590</li>
+<li>WhatsApp social icon is only visible on tablet and smaller devices</li>
+<li>Make horizontal padding smaller on Communiqué de presse titles</li>
+<li>Make the padding of the title banner smaller #589</li>
+<li>Bring back “Tous les thèmes” button in mobile menu</li>
+<li>The entire teaser molecule is clickable</li>
+<li>Refactor teaser-small molecule HTML</li>
+<li>Fix Toolbox URLs to components #568</li>
+<li>Changed Highlight component to its new style #453</li>
+<li>Reduce size of section title in footer #562</li>
+<li>Fix the logo size #558</li>
+<li>Changed link color if it has <code>.h[1-6]</code> class #383</li>
+<li>Changed list style type to disc #432</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add content on “Accueil” page</li>
+<li>Add teaser-left molecule</li>
+<li>Add a teaser list organism</li>
+<li>Add a one third - two third variant of teaser alternate</li>
+<li>Add a condition to display figcaption in figure</li>
+<li>Add category on teaser image</li>
+<li>Add “Communiqué de presse results” page</li>
+<li>Add FAQ item molecule</li>
+<li>Add FAQ organism</li>
+<li>Add example list molecule</li>
+<li>Add a form example organims</li>
+<li>Add teaser alternate 3 molecule</li>
+<li>Add address service molecule</li>
+<li>Add a <code>.vd-link-invisible</code> helper</li>
+<li>Add the possibility to add a status in FrontMatter of components (<code>prototype</code>, <code>wip</code>, <code>ready</code>) and docs page (<code>draft</code>, <code>ready</code>) #565</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix dates forms not showing the numeric pad on mobile</li>
+<li>Fix teaser on the homepage #590</li>
+<li>Fix margin on “communiqué de presse detail” and “communiqué de presse detail - alternate”</li>
+<li>Fix <code>vd-list-links</code> font weight</li>
+<li>Fix columns in “Poursuites et faillites” page</li>
+<li>Fix font weight and case in teaser alternate 2 #564</li>
+<li>Fix white line in footer #563</li>
+<li>Fix space between logo and lines in footer #561</li>
+<li>Fix the spacing in the header #559</li>
+<li>Fix breadcrumb invisible on mobile #588</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed content in nav-primary molecule</li>
+<li>Removed <code>.vd-teaser-alternate-2</code> styles</li>
+<li>Removed <code>.vd-teaser-alternate-2-list</code> styles</li>
+<li>Removed <code>&lt;hr&gt;</code> on teaer alternate</li>
+<li>Removed teaser alternate 3 molecule</li>
+<li>Removed <code>.vd-teaser-content</code> class</li>
+<li>Removed <code>.vd-teaser-title</code> class</li>
+<li>Removed <code>.vd-teaser-small-content</code> class</li>
+<li>Removed polyfills from styleguide #566</li>
+<li>Removed Contact link from header-securise component #490</li>
+</ul>
+<h2 id="-0-13-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.12.0...0.13.0">0.13.0</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Change the columns in the footer to <code>xs</code> sizes</li>
+<li>All grid layout use <code>.vd-nav-flex</code> class</li>
+<li>News detail use <code>.container-small</code> class to reduce the width of the page</li>
+<li>Change social icons platforms</li>
+<li>Add header to social icons list</li>
+<li>Add class <code>.mt-1</code> on social icons title</li>
+<li>Change Communiqué de presse title style</li>
+<li>Grouped a lot of components together using the variant feature of Toolbox</li>
+<li>Revert to using flex grid of Bootstrap 4</li>
+<li>Use search-form component in actualites page #511</li>
+<li>Wrapp the teaser-small component in a link #529</li>
+<li>Remove <code>&lt;hr&gt;</code> from vd-teaser component and replace with CSS #521</li>
+<li>Setup the search form for communiques de presse #437</li>
+</ul>
+<h2 id="added">Added</h2>
+<ul>
+<li>Add a page Communiqué de press détail alternate</li>
+<li>Add a teaser-alternate-2 molecule</li>
+<li>Add Communiqué de presse détail page</li>
+<li>Add a lead atom</li>
+<li>Add a <code>.container-small</code></li>
+<li>Add publication date on news</li>
+<li>Add <code>vd-text-green</code> helper</li>
+<li>Use news-latest organims on homepage</li>
+<li>Add a news-latest organims</li>
+<li>Add news category inside image figure component</li>
+<li>Add a new <code>.vd-search-form-regular</code> component</li>
+<li>Add a new <code>.vd-bg-pattern-bars-gray</code> helper class for search area</li>
+<li>Add the social links above footer</li>
+<li>Add a simple black <code>&lt;hr&gt;</code> with <code>.vd-hr-black</code></li>
+<li>Add form-checkbox molecule</li>
+<li>Add form-radio molecule</li>
+<li>Add form-textarea molecule</li>
+<li>Add form-fieldset molecule</li>
+<li>Add form-select molecule</li>
+<li>Add form-submit molecule</li>
+<li>Add index-menu molecule</li>
+<li>Add a start of responsive typography</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix logo footer style</li>
+<li>Fix centering of pagination</li>
+<li>Refactor <code>.vd-teaser-img</code> style</li>
+<li>Fix style of lead</li>
+<li>Fix teaser image size</li>
+<li>Fix teaser-small image size</li>
+<li>Fix margin of the <code>hr</code> in domain list to <code>.mt-2</code></li>
+<li>Set the logo coat of arms outside the container #503</li>
+<li>Fix the fonts in primary navigation</li>
+<li>Fix navs grid after flex grid revert</li>
+<li>Fix <code>vd-teaser-img</code> size on IE</li>
+<li>Fix the mobile navigation #460</li>
+</ul>
+<h2 id="-0-12-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.11.0...0.12.0">0.12.0</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Modify the existing Blockquotes to <code>.vd-blockquote-bubble</code> and <code>.vd-blockquote-bubble-media</code> classes #487</li>
+<li>Move back to top button in domain list</li>
+<li>Change style of back to top button in domain list</li>
+<li>Visually hide headings “Accès direct” in domain page</li>
+<li>Change list style of “Accès direct” in domain page</li>
+<li>Nav use a smaller font size</li>
+<li>Rename “Espace securisé” link in nav to “Mon compte”</li>
+<li>Add a locker to “Mon compte”</li>
+<li>Change margin of “Les plus visités” in primary nav</li>
+<li>Footer use a smaller font</li>
+<li>Update news metatdata info</li>
+<li>Homepage show 4 news</li>
+<li>“Toutes les autorités” button on homepage is smaller</li>
+<li>“Actualites” are shown in row on “Actualités” pages</li>
+<li>Pagination use inline-list instead of grid</li>
+<li>Remove “Tout l’agenda” button on Accueil</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add new Blockquote style and make it the default one #487</li>
+<li>Add new Update Time atom #447</li>
+<li>Add “Toutes l’actualitées” button on homepage</li>
+<li>Add “Tous les communiqués” button on homepage</li>
+<li>Add “Toutes les décisions du conseil d’état” button on homepage</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix figure-caption size and look #429</li>
+<li>Fix logo width (to avoid it being full width flex)</li>
+</ul>
+<h2 id="-0-11-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0">0.11.0</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Twitter feed show two items</li>
+<li>Twitter feed use <code>.vd-teaser-small</code> class</li>
+<li>Agenda feed use <code>.vd-teaser-small</code> class</li>
+<li><code>.vd-teaser-image</code> set the max-width to <code>50%</code></li>
+<li>Moved <code>.vd-teaser-meta</code> out of <code>.vd-teaser-content</code> #473</li>
+<li>Wrapped a link around the content of <code>.vd-teaser-content</code> #473</li>
+<li>Set styles for links everywhere in teaser component #473 #474</li>
+<li>Change sidebar to <code>&lt;aside class=&quot;small&quot;&gt;&lt;/aside&gt;</code> tag #444</li>
+<li>Change logo margin #419</li>
+<li>Implement a bigger gutter-width (90px) #476</li>
+<li>Implement logo with coat off arms only on mobile #458</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add Agenda feeds organims</li>
+<li>Add Images atom</li>
+<li>Add Image responsive atom</li>
+<li>Add Twitter feed organism</li>
+<li>Add Form feedback molecule</li>
+<li>Add Form help text molecule</li>
+<li>Add Form input molecule</li>
+<li>Add Form input required molecule</li>
+<li>Add Contact form organism</li>
+<li>Add Layout documentation about sidebar and main area #444</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix container max-width on mobile</li>
+<li>Changed Graphik font name in doc #426</li>
+<li>Fix search form height #459</li>
+</ul>
+<h2 id="-0-10-2-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2">0.10.2</a></h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix Changelog file extension</li>
+</ul>
+<h2 id="-0-10-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.0...c.0.10.1">0.10.1</a></h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix Changelog location</li>
+</ul>
+<h2 id="-0-10-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0">0.10.0</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Finetune all components</li>
+</ul>
+<h2 id="-0-9-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0">0.9.0</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>foehn is now based on bootstrap v4</li>
+<li>foehn use <a href="http://frontend.github.io/toolbox/">toolbox</a> for documentation</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add all basics components</li>
+</ul>
+<h2 id="-0-8-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0">0.8.0</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Forms style use based on (WTF, forms ?](<a href="http://wtfforms.com/">http://wtfforms.com/</a>)</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Refactor CSS</li>
+<li>Add clearfix in <code>.o-wrapper</code></li>
+</ul>
+<h2 id="-0-7-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.1...v0.7.0">0.7.0</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add style for the header</li>
+<li>Add <code>.vd-layout__item--lap-and-up--3-4</code> class</li>
+<li>Add <code>text-center</code> class</li>
+<li>Add organisation template</li>
+<li>Add list-prestation organism</li>
+<li>Add projects organim</li>
+<li>Add media-block-big molecule</li>
+<li>Add organisation section organism</li>
+<li>Add organisation-list molecule</li>
+<li>Add <code>list-abbreviation</code> style</li>
+<li>Add circle image in image shape atom</li>
+<li>Add people block molecule</li>
+<li>Add avatar image atom</li>
+<li>Add a list-news page</li>
+<li>Add mega menu organism</li>
+<li>Add a theme template</li>
+<li>Add box info molecule</li>
+<li>Add box transaction molecule</li>
+<li>Add secondary navigation molecule</li>
+<li>Add lede paragraph atom</li>
+<li>Add news related links organism</li>
+<li>Add related news organism</li>
+<li>Add news page</li>
+<li>Add page title with image organism and <code>.vd-page-title--image</code> styles</li>
+<li>Add pagination molecule</li>
+<li>Add social organims</li>
+<li>Add contact organism</li>
+<li>Add <code>.vd-layout-[viewport]--row</code> to set flex direction to row</li>
+<li>Add <code>.vd-layout-[viewport]--column</code> to set flex direction to column</li>
+<li>Add domaine-section organism</li>
+<li>Add a theme page with real content</li>
+<li>Add gutter helpers <code>.vd-u-g*</code> for <code>.vd-layout__item</code></li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Renamed the class <code>vd-visually-hidden</code> in <code>vd-u-visually-hidden</code></li>
+<li>Renamed the class <code>vd-hidden</code> in <code>vd-u-hidden</code></li>
+<li>Renamed the class <code>vd-text-center</code> in <code>vd-u-text-center</code></li>
+<li>Renamed the class <code>vd-zeta</code> in <code>vd-u-h6</code></li>
+<li>Renamed the class <code>vd-epsilon</code> in <code>vd-u-h5</code></li>
+<li>Renamed the class <code>vd-delta</code> in <code>vd-u-h4</code></li>
+<li>Renamed the class <code>vd-gamma</code> in <code>vd-u-h3</code></li>
+<li>Renamed the class <code>vd-beta</code> in <code>vd-u-h2</code></li>
+<li>Renamed the class <code>vd-alpha</code> in <code>vd-u-h1</code></li>
+<li>Renamed the class <code>vd-font-heading</code> in <code>vd-u-font-heading</code></li>
+<li>Renamed the class <code>vd-color</code> in <code>vd-u-color</code></li>
+<li>Renamed the class <code>vd-clearfix</code> in <code>vd-u-clearfix</code></li>
+<li>Renamed trumps css files utilities</li>
+<li>Renamed the class <code>vd-wrapper</code> in <code>vd-o-wrapper</code></li>
+<li>Use BEMIT naming convention for responsive suffixes: <code>.vd-&lt;Block&gt;--&lt;Modifier&gt;@&lt;breakpoint&gt;</code> instead of <code>.vd-&lt;Block&gt;--&lt;breakpoint&gt;--&lt;Modifier&gt;</code></li>
+<li>Renamed the class <code>vd-strong</code> in <code>vd-c-strong</code></li>
+<li>Renamed the class <code>vd-small</code> in <code>vd-c-small</code></li>
+<li>Renamed the class <code>vd-blockquote</code> in <code>vd-c-blockquote</code></li>
+<li>Renamed the class <code>vd-page-title</code> in <code>vd-c-page-title</code></li>
+<li>Renamed the class <code>vd-navbar</code> in <code>vd-c-navbar</code></li>
+<li>Renamed the class <code>vd-list-abbreviations</code> in <code>vd-c-list-abbreviations</code></li>
+<li>Renamed the class <code>vd-fraction</code> in <code>vd-c-fraction</code></li>
+<li>Renamed the class <code>vd-footnote</code> in <code>vd-c-footnote</code></li>
+<li>Renamed the class <code>vd-small-caps</code> in <code>vd-c-small-caps</code></li>
+<li>Renamed the class <code>vd-image-circle</code> in <code>vd-c-image-circle</code></li>
+<li>Renamed the class <code>vd-header</code> in <code>vd-c-header</code></li>
+<li>Renamed the class <code>vd-button</code> in <code>vd-c-button</code></li>
+<li>Renamed the class <code>vd-breadcrumb</code> in <code>vd-c-breadcrumb</code></li>
+<li>Renamed the class <code>vd-background</code> in <code>vd-c-background</code></li>
+<li>Renamed the class <code>vd-table</code> in <code>vd-o-table</code></li>
+<li>Renamed the class <code>vd-list-inline</code> in <code>vd-o-list-inline</code></li>
+<li>Renamed the class <code>vd-list-bare</code> in <code>vd-o-list-bare</code></li>
+<li>Renamed the class <code>vd-layout</code> in <code>vd-o-layout</code></li>
+<li>Renamed the class <code>vd-box--*</code> in <code>vd-c-box--*</code></li>
+<li>Renamed the class <code>vd-box</code> in <code>vd-o-box</code></li>
+<li>Add <code>vd-list-inline__item</code> class for <code>vd-list-inline item</code></li>
+<li>Rename class <code>vd-container</code> in <code>vd-wrapper</code></li>
+<li>Refactor <code>.vd-button</code> styles with mixins</li>
+<li>Rename <code>global.navigation-*</code> materials in <code>global.header-*</code></li>
+<li>Positionning the logo and site-title in the navbar</li>
+<li>Use flexbox to style the navbar</li>
+<li>Refactor how <code>.vd-container</code> is used in materials</li>
+<li>Media block columns are set to 1/3 - 2/3</li>
+<li>Remove <code>vd-container</code> class on last-news organism</li>
+<li>Rename box default molecule</li>
+<li>Page title organism is in a <code>&lt;header&gt;</code></li>
+<li>Refactor event-block HTML</li>
+<li>Refactor <code>.vd-layout</code> styles</li>
+<li>Refactor Media Blocks molecule html</li>
+<li>Grid is now based on fractions</li>
+<li>Layout itms adapt automatically depending of the viewport.</li>
+<li>Template theme use only placeholder</li>
+<li>Refactor media block HTML</li>
+<li>Break header organim in smaller organims</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix mega menu column width on lap-and-up viewport</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Remove <code>vd-list-block</code> class</li>
+<li>Remove auto styling for <code>vd-list-inline</code> childrens</li>
+<li>Remove box lit organism</li>
+<li>Remove alert molecule</li>
+<li>Remove 12 columns based grid</li>
+<li>Remove Expo objects</li>
+<li>Remove viewport specific layout classes</li>
+<li>Remove <code>vd-layout--column</code></li>
+<li>Remove unused alerts</li>
+</ul>
+<h2 id="-0-6-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.0...v0.6.1">0.6.1</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Hide legend and label in search bar</li>
+<li>Refactor gulp tasks</li>
+<li>Lint script with <code>eslint</code></li>
+<li>Upgrade <code>eslint</code></li>
+<li>Upgrade <code>eslint-config-standard</code></li>
+<li>Upgrade <code>eslint-plugin-standard</code></li>
+<li>Upgrade <code>gulp-eslint</code></li>
+<li>Upgrade <code>gulp-htmlhint</code></li>
+<li>Upgrade <code>lost</code></li>
+<li>Upgrade <code>webfontloader</code></li>
+<li>Upgrade <code>postcss-calc</code></li>
+<li>Upgrade <code>run-sequence</code></li>
+<li>Upgrade <code>normalize.css</code></li>
+<li>Upgrade <code>fabricator-assemble</code></li>
+<li>Upgrade <code>babel-core</code></li>
+<li>Upgrade <code>babel-preset-stage-2</code></li>
+<li>Upgrade <code>del</code></li>
+<li>Upgrade <code>postcss-extend</code></li>
+<li>Upgrade <code>postcss-mixins</code></li>
+<li>Replace <code>postcss-advanced-variables</code> with <code>postcss-each</code>, <code>postcss-for</code> and <code>postcss-simple-vars</code></li>
+<li>Update CSS linting rules</li>
+</ul>
+<h2 id="-0-6-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.5.0...v0.6.0">0.6.0</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add text accessibility documentation</li>
+<li>Add <code>.vd-color-text--*</code> classes to set text color</li>
+<li>Add <code>.vd-background-primary</code> class</li>
+<li>Add missing molcule for <code>.vd-background--gray-lighter</code></li>
+<li>Add <code>.vd-background--gray-lighter</code> class</li>
+<li>Add modifier on last-news organism</li>
+<li>Add the possibilie to add a modifier on headings atoms</li>
+<li>Add <code>.vd-background</code> class to add vertical spacing on items that have colored background</li>
+<li>Add an atom for fonts</li>
+<li>Add <code>.vd-font-heading</code> class</li>
+<li>Upgrade autoprefixer to 6.3.6</li>
+<li>Add a molecule for search results</li>
+<li>CSS linting support stylelint 6.3.3 rules</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>HTML in <code>dist/</code> instead of <code>src/</code> is linted</li>
+<li>Homepage view has been updated</li>
+<li>Homepage template has been updated</li>
+<li>refactor HTML of page-titles organim</li>
+<li>remove vertical spacing in media-blocks</li>
+<li>remove figcaption from media-block molecule</li>
+<li>3 news instead of 5 are shown in the <code>latest-news</code> organism</li>
+<li>Add margin at bottom of <code>.vd-list-bare</code></li>
+<li>Add margin at the bottom of list items</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix color variables names</li>
+<li>Fix <code>.vd-background</code> vertical spacing</li>
+<li>Fix missing <code>vd-*</code> prefix in Small Caps atom</li>
+<li>Fix missing <code>vd-*</code> prefix in Fraction atom</li>
+<li>Fix missing <code>vd-*</code> prefix in Footnote atom</li>
+</ul>
+<h2 id="-0-5-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.2...v0.5.0">0.5.0</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Provide a <code>/dist</code> folder with all foehn files</li>
+<li>Add a changelog</li>
+<li>Add a GitHub Template for Pull Request</li>
+<li>Add states class for button</li>
+<li>Add style for disabled button</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><code>.btn</code> object class is renamed <code>.buttton</code></li>
+<li>Update normalize.css to 4.1.1</li>
+<li>Refactor CSS</li>
+<li>Stylelint rules extends a shared configuration</li>
+<li>Update Stylelint</li>
+<li>Update Stylelint rules</li>
+<li>Move GitHub related files to <code>/.github</code></li>
+<li>Colors have moved in an atom</li>
+<li>Typography has been removed from the overview page. It was already documented in atoms</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix colors of active buttons</li>
+<li>Fix uncollapsed table cells</li>
+<li>Fix <code>foehn.css</code> table of content</li>
+</ul>
+<h2 id="-0-4-2-"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.1...v0.4.2">0.4.2</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add style for transparent buttons</li>
+<li>Add style for full width buttons</li>
+<li>Add style for background colors</li>
+<li>Add <code>.list-bare</code> class to remove standard list styles</li>
+<li>Add <code>.list-block</code> style for blocky list</li>
+<li>HTML is linted via <em>htmllint</em></li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><code>&lt;code&gt;</code> use a background color from the palette</li>
+<li><code>toolkit.*</code> files are renamed in <code>foehn.*</code></li>
+<li>The CSS is beautified at the end of the build</li>
+<li>Update <em>normalize.css</em></li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Font comparaison pages are removed</li>
+</ul>
+<h2 id="-0-4-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.0...v0.4.1">0.4.1</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Update building documetation</li>
+</ul>
+<h2 id="-0-4-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.1...v0.4.0">0.4.0</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Added styles for alert boxes</li>
+<li>Added styles for select menu</li>
+<li>Forms have a focus state</li>
+<li>All classes are prefixed with <code>vd-*</code></li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Improve button design and styles</li>
+<li>Improve styles of checkboxes</li>
+<li>Reorganize colors documentation</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix active state on button wasn’t working</li>
+</ul>
+<h2 id="-0-3-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.0...v0.3.1">0.3.1</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>More grays variations are added to the color palette</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Forms are more readable</li>
+</ul>
+<h2 id="-0-3-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.1...v0.3.0">0.3.0</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Color palette documentation and create CSS variables for colors</li>
+<li>Added basic styles for buttons</li>
+<li>Added CSS structure for buttons variations</li>
+<li>Added basic styles for forms</li>
+<li>Added styles for horizontal rules</li>
+<li>Added styles for tables and stripped tables</li>
+<li>Added styles for captions</li>
+<li>Added documentation about image and art direction</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Use responsive markup for images</li>
+<li>Use a variables for blockquote border</li>
+<li>Update fabricator</li>
+<li>Update Stylelint</li>
+<li>Set letter-spacing to 0 for <code>&lt;cite&gt;</code></li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed Typekit javascripts</li>
+<li>Removed <code>picturefill</code> polyfill</li>
+</ul>
+<h2 id="-0-2-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.0...v0.2.1">0.2.1</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Enforce properties order in CSS</li>
+<li>Set letter-spacing in blockquotes to 0</li>
+</ul>
+<h2 id="-0-2-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.1.0...v0.2.0">0.2.0</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>PostCSS is used to generate the stylesheets</li>
+<li><code>postcss-hidden</code> is used to create styles that hide things</li>
+<li>“Official green” is added in the color palette</li>
+<li>Suported browser are set in <code>gulpfile.js</code></li>
+<li>A basic layout/grid system is available</li>
+<li>Typographic styles are set.</li>
+<li>Webfontloader is used to load asynchronously fonts and avoid FOIT</li>
+<li>Use stylelint to lint CSS code and provide a consistant way to write styles</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed mixin that automaticaly generate classes base on breakpoints</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix <code>gulp-imagemin</code> was getting an EONET error.</li>
+<li>Fix alignment problems in IE11 with layouts items</li>
+<li>Fix nesting problems in IE with layouts items</li>
+</ul>
+<h2 id="0-1">0.1</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Atom: Headings</li>
+<li>Atom: Paragraph</li>
+<li>Atom: Abbreviation</li>
+<li>Atom: <code>&lt;b&gt;</code> element</li>
+<li>Atom: Citation</li>
+<li>Atom: Code</li>
+<li>Atom: Definition</li>
+<li>Atom: Deleted</li>
+<li>Atom: Emphasis</li>
+<li>Atom: <code>&lt;i&gt;</code> element</li>
+<li>Atom: Inserted</li>
+<li>Atom: Keyboard input</li>
+<li>Atom: Silent links</li>
+<li>Atom: Links</li>
+<li>Atom: Mark</li>
+<li>Atom: Quotation</li>
+<li>Atom: Sample</li>
+<li>Atom: Small</li>
+<li>Atom: Strike</li>
+<li>Atom: Strong</li>
+<li>Atom: Subscript</li>
+<li>Atom: Superscript</li>
+<li>Atom: Unarticluated</li>
+<li>Atom: Variable</li>
+<li>Atom: Time</li>
+<li>Atom: Lists</li>
+<li>Atom: Blockquote</li>
+<li>Atom: Preformated Text</li>
+<li>Atom: Horizontal rules</li>
+<li>Atom: Images</li>
+<li>Atom: Logo and square logo</li>
+<li>Atom: Figure caption</li>
+<li>Atom: Table</li>
+<li>Atom: Buttons</li>
+<li>Atom: Forms</li>
+<li>Atom: Checkbox</li>
+<li>Atom: Radio button</li>
+<li>Atom: Select menu</li>
+<li>Atom: Text fields</li>
+<li>Atom: Textarea</li>
+<li>Atom: Containers</li>
+<li>Atom: Visibility helpers</li>
+<li>Molecule: Address</li>
+<li>Molecule: Blockquote with citation</li>
+<li>Molecule: Lead</li>
+<li>Molecule: Figure with caption</li>
+<li>Molecule: Adaptive media block</li>
+<li>Molecule: Media Block</li>
+<li>Molecule: Search form</li>
+<li>Molecule: Box</li>
+<li>Molecule: Layout</li>
+<li>Molecule: Responsive layout</li>
+<li>Molecule: Expos</li>
+<li>Molecule: Responsive expos</li>
+<li>Organism: Header</li>
+<li>Organism: Footer</li>
+<li>Organims: List of boxes</li>
+<li>Organism: Last news</li>
+<li>Organism: List of news</li>
+<li>Template: Organisation page</li>
+<li>Added <code>picturefill</code>, a responsive image polyfill for <code>&lt;picture&gt;</code>, <code>srcset</code>, <code>sizes</code>, and more</li>
+<li>Use Google fonts for fallback</li>
+<li>Create data placeholder</li>
+<li>Import Normalize css</li>
+<li>Follow css guidelines</li>
+<li>Headings helpers</li>
+<li>Responsive typography</li>
+</ul>
 
-<span class="hljs-comment">&lt;!-- load polyfills for old IE --&gt;</span>
-<span class="hljs-comment">&lt;!--[if lte IE 9]&gt;
-&lt;script src="path/to/build/js/polyfills.min.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;</span></pre></code><p>Put this just before the closing <code>&lt;/body&gt;</code> tag:</p>
-<code class="lang-html"><pre><span class="hljs-comment">&lt;!-- load all the javascript files (jQuery needed for Bootstrap, TetherJS needed for the Tooltip Bootstrap plugin) --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//code.jquery.com/jquery-2.2.4.min.js"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/build/js/vendors.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/build/js/vendors.bundle.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/build/js/app.bundle.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- call all the fonts asynchronously --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"</span>&gt;</span><span class="undefined"> </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-  WebFont.load({
-    custom: {
-      families: [<span class="hljs-string">'Graphik:n5,n4,i4'</span>, <span class="hljs-string">'Produkt:n3,i3,n7,n5'</span>],
-      urls: [<span class="hljs-string">'path/to/build/fonts/fonts.css'</span>]
-    }
-  });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></code>
     
 
 
@@ -167,7 +746,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/button--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -191,7 +770,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button--cta" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/button--cta" data-pjax>
                 <span>Cta</span>
                 
 
@@ -215,7 +794,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button--secondary" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/button--secondary" data-pjax>
                 <span>Secondary</span>
                 
 
@@ -244,7 +823,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/headings" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/headings" data-pjax>
                 <span>Headings</span>
                 
 
@@ -268,7 +847,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/highlight" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/highlight" data-pjax>
                 <span>Highlight</span>
                 
 
@@ -303,7 +882,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -327,7 +906,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--center" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image--center" data-pjax>
                 <span>Center</span>
                 
 
@@ -351,7 +930,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--desaturate" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image--desaturate" data-pjax>
                 <span>Desaturate</span>
                 
 
@@ -375,7 +954,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--fluid" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image--fluid" data-pjax>
                 <span>Fluid</span>
                 
 
@@ -399,7 +978,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--left" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image--left" data-pjax>
                 <span>Left</span>
                 
 
@@ -423,7 +1002,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--right" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image--right" data-pjax>
                 <span>Right</span>
                 
 
@@ -447,7 +1026,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--rounded" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image--rounded" data-pjax>
                 <span>Rounded</span>
                 
 
@@ -476,7 +1055,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image-responsive" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/image-responsive" data-pjax>
                 <span>Image Responsive</span>
                 
 
@@ -511,7 +1090,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/abbreviation" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/abbreviation" data-pjax>
                 <span>Abbreviation</span>
                 
 
@@ -535,7 +1114,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/b" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/b" data-pjax>
                 <span>B</span>
                 
 
@@ -559,7 +1138,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/citation" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/citation" data-pjax>
                 <span>Citation</span>
                 
 
@@ -583,7 +1162,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/code" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/code" data-pjax>
                 <span>Code</span>
                 
 
@@ -607,7 +1186,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/definition" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/definition" data-pjax>
                 <span>Definition</span>
                 
 
@@ -631,7 +1210,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/deleted" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/deleted" data-pjax>
                 <span>Deleted</span>
                 
 
@@ -655,7 +1234,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/emphasis" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/emphasis" data-pjax>
                 <span>Emphasis</span>
                 
 
@@ -679,7 +1258,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/i" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/i" data-pjax>
                 <span>I</span>
                 
 
@@ -703,7 +1282,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/inserted" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/inserted" data-pjax>
                 <span>Inserted</span>
                 
 
@@ -727,7 +1306,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/keyboard-input" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/keyboard-input" data-pjax>
                 <span>Keyboard Input</span>
                 
 
@@ -751,7 +1330,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/link" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/link" data-pjax>
                 <span>Link</span>
                 
 
@@ -775,7 +1354,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/mark" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/mark" data-pjax>
                 <span>Mark</span>
                 
 
@@ -799,7 +1378,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/quotation" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/quotation" data-pjax>
                 <span>Quotation</span>
                 
 
@@ -823,7 +1402,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/sample" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/sample" data-pjax>
                 <span>Sample</span>
                 
 
@@ -847,7 +1426,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/small" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/small" data-pjax>
                 <span>Small</span>
                 
 
@@ -871,7 +1450,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/strike" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/strike" data-pjax>
                 <span>Strike</span>
                 
 
@@ -895,7 +1474,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/strong" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/strong" data-pjax>
                 <span>Strong</span>
                 
 
@@ -919,7 +1498,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/subscript" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/subscript" data-pjax>
                 <span>Subscript</span>
                 
 
@@ -943,7 +1522,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/superscript" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/superscript" data-pjax>
                 <span>Superscript</span>
                 
 
@@ -967,7 +1546,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/unarticulated" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/unarticulated" data-pjax>
                 <span>Unarticulated</span>
                 
 
@@ -991,7 +1570,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/variable" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/variable" data-pjax>
                 <span>Variable</span>
                 
 
@@ -1020,7 +1599,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/lead" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/lead" data-pjax>
                 <span>Lead</span>
                 
 
@@ -1055,7 +1634,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/list--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1079,7 +1658,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list--links" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/list--links" data-pjax>
                 <span>Links</span>
                 
 
@@ -1103,7 +1682,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list--unstyled" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/list--unstyled" data-pjax>
                 <span>Unstyled</span>
                 
 
@@ -1132,7 +1711,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list-boxed" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/list-boxed" data-pjax>
                 <span>List Boxed</span>
                 
 
@@ -1156,7 +1735,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/paragraph" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/paragraph" data-pjax>
                 <span>Paragraph</span>
                 
 
@@ -1191,7 +1770,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/search-form--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/search-form--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1215,7 +1794,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/search-form--regular" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/search-form--regular" data-pjax>
                 <span>Regular</span>
                 
 
@@ -1244,7 +1823,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/separator" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/separator" data-pjax>
                 <span>Separator</span>
                 
 
@@ -1268,7 +1847,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/tag" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/tag" data-pjax>
                 <span>Tag</span>
                 
 
@@ -1292,7 +1871,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/update-time" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/update-time" data-pjax>
                 <span>Update Time</span>
                 
 
@@ -1332,7 +1911,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/access-nav" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/access-nav" data-pjax>
                 <span>Access Nav</span>
                 
 
@@ -1356,7 +1935,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/address-service" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/address-service" data-pjax>
                 <span>Address Service</span>
                 
 
@@ -1391,7 +1970,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/blockquote--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/blockquote--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1415,7 +1994,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/blockquote--bubble" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/blockquote--bubble" data-pjax>
                 <span>Bubble</span>
                 
 
@@ -1439,7 +2018,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/blockquote--bubble-media" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/blockquote--bubble-media" data-pjax>
                 <span>Bubble Media</span>
                 
 
@@ -1468,7 +2047,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/breadcrumb" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/breadcrumb" data-pjax>
                 <span>Breadcrumb</span>
                 
 
@@ -1492,7 +2071,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button-tiles" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/button-tiles" data-pjax>
                 <span>Button Tiles</span>
                 
 
@@ -1516,7 +2095,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/card" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/card" data-pjax>
                 <span>Card</span>
                 
 
@@ -1540,7 +2119,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/dropdown" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/dropdown" data-pjax>
                 <span>Dropdown</span>
                 
 
@@ -1564,7 +2143,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/faq-item" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/faq-item" data-pjax>
                 <span>Faq Item</span>
                 
 
@@ -1599,7 +2178,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/figure--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/figure--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1623,7 +2202,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/figure--category" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/figure--category" data-pjax>
                 <span>Category</span>
                 
 
@@ -1652,7 +2231,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/fixed-bottom-container" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/fixed-bottom-container" data-pjax>
                 <span>Fixed Bottom Container</span>
                 
 
@@ -1687,7 +2266,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/checkbox" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/checkbox" data-pjax>
                 <span>Checkbox</span>
                 
 
@@ -1711,7 +2290,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/dates" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/dates" data-pjax>
                 <span>Dates</span>
                 
 
@@ -1735,7 +2314,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/feedback" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/feedback" data-pjax>
                 <span>Feedback</span>
                 
 
@@ -1759,7 +2338,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/fieldset" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/fieldset" data-pjax>
                 <span>Fieldset</span>
                 
 
@@ -1783,7 +2362,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/help-text" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/help-text" data-pjax>
                 <span>Help Text</span>
                 
 
@@ -1818,7 +2397,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/input--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/input--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1842,7 +2421,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/input--required" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/input--required" data-pjax>
                 <span>Required</span>
                 
 
@@ -1871,7 +2450,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/radio" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/radio" data-pjax>
                 <span>Radio</span>
                 
 
@@ -1895,7 +2474,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/select" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/select" data-pjax>
                 <span>Select</span>
                 
 
@@ -1919,7 +2498,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/submit" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/submit" data-pjax>
                 <span>Submit</span>
                 
 
@@ -1943,7 +2522,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/textarea" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/textarea" data-pjax>
                 <span>Textarea</span>
                 
 
@@ -1972,7 +2551,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list-icon" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/list-icon" data-pjax>
                 <span>List Icon</span>
                 
 
@@ -2007,7 +2586,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/logo-etat--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/logo-etat--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2031,7 +2610,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/logo-etat--alternate" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/logo-etat--alternate" data-pjax>
                 <span>Alternate</span>
                 
 
@@ -2071,7 +2650,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/index-menu" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/index-menu" data-pjax>
                 <span>Index Menu</span>
                 
 
@@ -2095,7 +2674,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/nav" data-pjax>
                 <span>Nav</span>
                 
 
@@ -2119,7 +2698,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav-mobile" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/nav-mobile" data-pjax>
                 <span>Nav Mobile</span>
                 
 
@@ -2143,7 +2722,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav-primary" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/nav-primary" data-pjax>
                 <span>Nav Primary</span>
                 
 
@@ -2167,7 +2746,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav-side" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/nav-side" data-pjax>
                 <span>Nav Side</span>
                 
 
@@ -2191,7 +2770,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/pagination" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/pagination" data-pjax>
                 <span>Pagination</span>
                 
 
@@ -2215,7 +2794,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/pagination-vertical" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/pagination-vertical" data-pjax>
                 <span>Pagination Vertical</span>
                 
 
@@ -2239,7 +2818,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/secure-tabs" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/secure-tabs" data-pjax>
                 <span>Secure Tabs</span>
                 
 
@@ -2268,7 +2847,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/numbered-title" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/numbered-title" data-pjax>
                 <span>Numbered Title</span>
                 
 
@@ -2303,7 +2882,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/social-icons--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/social-icons--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2327,7 +2906,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/social-icons--footer" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/social-icons--footer" data-pjax>
                 <span>Footer</span>
                 
 
@@ -2356,7 +2935,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/table" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/table" data-pjax>
                 <span>Table</span>
                 
 
@@ -2380,7 +2959,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/tabs" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/tabs" data-pjax>
                 <span>Tabs</span>
                 
 
@@ -2426,7 +3005,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2450,7 +3029,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser--left" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser--left" data-pjax>
                 <span>Left</span>
                 
 
@@ -2474,7 +3053,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser--media" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser--media" data-pjax>
                 <span>Media</span>
                 
 
@@ -2514,7 +3093,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-alternate--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-alternate--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2538,7 +3117,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-alternate--2-3_1-3" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-alternate--2-3_1-3" data-pjax>
                 <span>2 3 1 3</span>
                 
 
@@ -2567,7 +3146,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-card" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-card" data-pjax>
                 <span>Teaser Card</span>
                 
 
@@ -2591,7 +3170,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-link" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-link" data-pjax>
                 <span>Teaser Link</span>
                 
 
@@ -2626,7 +3205,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-small--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-small--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2650,7 +3229,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-small--alt" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-small--alt" data-pjax>
                 <span>Alt</span>
                 
 
@@ -2674,7 +3253,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-small--media" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-small--media" data-pjax>
                 <span>Media</span>
                 
 
@@ -2724,7 +3303,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/agenda" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/agenda" data-pjax>
                 <span>Agenda</span>
                 
 
@@ -2748,7 +3327,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/contact-form" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/contact-form" data-pjax>
                 <span>Contact Form</span>
                 
 
@@ -2772,7 +3351,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/domains-list" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/domains-list" data-pjax>
                 <span>Domains List</span>
                 
 
@@ -2796,7 +3375,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/example-form" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/example-form" data-pjax>
                 <span>Example Form</span>
                 
 
@@ -2820,7 +3399,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/example-list" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/example-list" data-pjax>
                 <span>Example List</span>
                 
 
@@ -2844,7 +3423,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/faq" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/faq" data-pjax>
                 <span>Faq</span>
                 
 
@@ -2879,7 +3458,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/footer--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/footer--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2903,7 +3482,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/footer--securise" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/footer--securise" data-pjax>
                 <span>Securise</span>
                 
 
@@ -2943,7 +3522,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/header--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/header--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2967,7 +3546,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/header--homepage" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/header--homepage" data-pjax>
                 <span>Homepage</span>
                 
 
@@ -2991,7 +3570,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/header--securise" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/header--securise" data-pjax>
                 <span>Securise</span>
                 
 
@@ -3031,7 +3610,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/media-list" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/media-list" data-pjax>
                 <span>Media List</span>
                 
 
@@ -3071,7 +3650,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/news-latest--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/news-latest--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -3095,7 +3674,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/news-latest--homepage" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/news-latest--homepage" data-pjax>
                 <span>Homepage</span>
                 
 
@@ -3124,7 +3703,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-list" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/teaser-list" data-pjax>
                 <span>Teaser List</span>
                 
 
@@ -3148,7 +3727,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/twitter-feed" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/twitter-feed" data-pjax>
                 <span>Twitter Feed</span>
                 
 
@@ -3188,7 +3767,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/accueil" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/accueil" data-pjax>
                 <span>Accueil</span>
                 
 
@@ -3212,7 +3791,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/actualite" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/actualite" data-pjax>
                 <span>Actualite</span>
                 
 
@@ -3236,7 +3815,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/actualites" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/actualites" data-pjax>
                 <span>Actualites</span>
                 
 
@@ -3260,7 +3839,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/autorites" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/autorites" data-pjax>
                 <span>Autorites</span>
                 
 
@@ -3317,7 +3896,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-detail--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/communiques-presse-detail--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -3341,7 +3920,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-detail--alternate" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/communiques-presse-detail--alternate" data-pjax>
                 <span>Alternate</span>
                 
 
@@ -3375,7 +3954,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-list" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/communiques-presse-list" data-pjax>
                 <span>Communiques Presse List</span>
                 
 
@@ -3399,7 +3978,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-results" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/communiques-presse-results" data-pjax>
                 <span>Communiques Presse Results</span>
                 
 
@@ -3428,7 +4007,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/domaines" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/domaines" data-pjax>
                 <span>Domaines</span>
                 
 
@@ -3452,7 +4031,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/economie" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/economie" data-pjax>
                 <span>Economie</span>
                 
 
@@ -3476,7 +4055,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/extrait-du-registre-des-poursuites" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/extrait-du-registre-des-poursuites" data-pjax>
                 <span>Extrait Du Registre Des Poursuites</span>
                 
 
@@ -3500,7 +4079,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/office-des-faillites" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/office-des-faillites" data-pjax>
                 <span>Office Des Faillites</span>
                 
 
@@ -3524,7 +4103,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/ordre-judiciaire-vaudois" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/ordre-judiciaire-vaudois" data-pjax>
                 <span>Ordre Judiciaire Vaudois</span>
                 
 
@@ -3559,7 +4138,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/connexion" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/connexion" data-pjax>
                 <span>Connexion</span>
                 
 
@@ -3583,7 +4162,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/demandes" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/demandes" data-pjax>
                 <span>Demandes</span>
                 
 
@@ -3607,7 +4186,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/documents" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/documents" data-pjax>
                 <span>Documents</span>
                 
 
@@ -3631,7 +4210,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/espace-securise" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/espace-securise" data-pjax>
                 <span>Espace Securise</span>
                 
 
@@ -3655,7 +4234,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/formulaire-prestation" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/formulaire-prestation" data-pjax>
                 <span>Formulaire Prestation</span>
                 
 
@@ -3679,7 +4258,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/prestations" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/prestations" data-pjax>
                 <span>Prestations</span>
                 
 
@@ -3708,7 +4287,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/poursuites-et-faillites" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/poursuites-et-faillites" data-pjax>
                 <span>Poursuites Et Faillites</span>
                 
 
@@ -3732,7 +4311,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/recherche-office-poursuites" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/recherche-office-poursuites" data-pjax>
                 <span>Recherche Office Poursuites</span>
                 
 
@@ -3767,7 +4346,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/template--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/template--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -3791,7 +4370,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/template--1-colonne" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/template--1-colonne" data-pjax>
                 <span>1 Colonne</span>
                 
 
@@ -3841,80 +4420,8 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/accessibility" data-pjax>
+            <a class="Tree-entityLink" href="accessibility" data-pjax>
                 <span>Accessibility</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/changelog" data-pjax>
-                <span>Change Log</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/grid" data-pjax>
-                <span>Grid</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/helpers" data-pjax>
-                <span>Helpers</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3938,6 +4445,78 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
+                <span>Change Log</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid" data-pjax>
+                <span>Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="helpers" data-pjax>
+                <span>Helpers</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../.." data-pjax>
                 <span>Overview</span>
                 
             </a>
@@ -3947,7 +4526,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/layout" data-pjax>
+            <a class="Tree-entityLink" href="layout" data-pjax>
                 <span>Layout</span>
                 
 
@@ -3971,7 +4550,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/typography" data-pjax>
+            <a class="Tree-entityLink" href="typography" data-pjax>
                 <span>Typography</span>
                 
 
@@ -4012,7 +4591,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
 
 
 
-<script src="_theme/js/mandelbrot.js?cachebust=1.0.7"></script>
+<script src="../_theme/js/mandelbrot.js?cachebust=1.0.7"></script>
 
 
 

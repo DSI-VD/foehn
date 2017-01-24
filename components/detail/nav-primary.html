@@ -9,12 +9,12 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="_theme/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../_theme/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="_theme/css/navy.css?cachebust=1.0.7" type="text/css">
+<link rel="stylesheet" href="../../_theme/css/navy.css?cachebust=1.0.7" type="text/css">
 
 
-<title>Fœhn - VD.ch | Foehn</title>
+<title>Nav Primary | Foehn</title>
 
 </head>
 <body>
@@ -37,7 +37,7 @@
 </svg>
 
     </button>
-    <a href="" class="Header-title" data-pjax>Foehn</a>
+    <a href="../../.." class="Header-title" data-pjax>Foehn</a>
 </div>
 
     </div>
@@ -48,80 +48,556 @@
             <div class="Frame-inner" id="pjax-container">
             
 
-<div class="Document">
-
-    <div class="Document-header">
-        
-        <h1 class="Document-title">Fœhn - VD.ch</h1>
-        
-
-
-        
-    </div>
-
-    <div class="Document-content">
-
-    
-
-<div class="Prose">
-
-
 
     
     
-    <p><strong>This styleguide has been designed to serve the purpose of the website vd.ch.</strong></p>
-<h2 id="what-is-a-styleguide-">What is a styleguide ?</h2>
-<p>According to wikipedia, a styleguide is:<br>
-<em>A set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. (It is often called a style sheet, though that term has other meanings.) A style guide establishes and enforces style to improve communication.</em></p>
-<h2 id="framework">Framework</h2>
-<p>This styleguide is extensively based on the framework Bootstrap version 4 using the preprocessor SASS. Further information can be fetched on <a href="https://v4-alpha.getbootstrap.com/">the official documentation</a></p>
-<h2 id="content-hierarchy">Content &amp; hierarchy</h2>
-<p>All the components are organized accordingly to the <a href="http://atomicdesign.bradfrost.com/">atomic design</a> philosophy by Brad Frost.<br>
-  You can navigate through all theses components with the help of the left side navigation bar.</p>
-<p>Additionaly, a few example pages are designed to give an overview of all these elements integrated together</p>
-<h2 id="usage">Usage</h2>
-<p>Each component are listed with a quick documentation box and an example of the displayed element with his source code. It should give you all the infos to apply this design guideline to any web tools you seek to develop</p>
-<p>More technical infos (to use or contribute to the styleguide) are referenced on the README file of the repo <a href="https://github.com/DSI-VD/foehn">FOEHN</a></p>
-<h2 id="getting-started">Getting started</h2>
-<h3 id="install-as-node-dependency">Install as node dependency</h3>
-<p>With Yarn:</p>
-<code class="lang-bash"><pre>$ yarn add https://github.com/DSI-VD/foehn</pre></code><p>or NPM:</p>
-<code class="lang-bash"><pre><span class="hljs-comment"># test</span>
-$ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include">How to include</h3>
-<p>Put this in your <code>&lt;head/&gt;</code> tag:</p>
-<code class="lang-html"><pre><span class="hljs-comment">&lt;!-- load all stylesheets --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/build/css/vendors.min.css"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/build/css/main.css"</span>&gt;</span>
 
-<span class="hljs-comment">&lt;!-- load polyfills for old IE --&gt;</span>
-<span class="hljs-comment">&lt;!--[if lte IE 9]&gt;
-&lt;script src="path/to/build/js/polyfills.min.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;</span></pre></code><p>Put this just before the closing <code>&lt;/body&gt;</code> tag:</p>
-<code class="lang-html"><pre><span class="hljs-comment">&lt;!-- load all the javascript files (jQuery needed for Bootstrap, TetherJS needed for the Tooltip Bootstrap plugin) --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//code.jquery.com/jquery-2.2.4.min.js"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/build/js/vendors.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/build/js/vendors.bundle.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/build/js/app.bundle.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<div class="Pen" data-behaviour="pen" id="pen-d07d333ea572ab7c5e226e1acb53a44f">
 
-<span class="hljs-comment">&lt;!-- call all the fonts asynchronously --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"</span>&gt;</span><span class="undefined"> </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-  WebFont.load({
-    custom: {
-      families: [<span class="hljs-string">'Graphik:n5,n4,i4'</span>, <span class="hljs-string">'Produkt:n3,i3,n7,n5'</span>],
-      urls: [<span class="hljs-string">'path/to/build/fonts/fonts.css'</span>]
-    }
-  });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></code>
     
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/nav-primary" title="Component preview">
+            Nav Primary
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
 
 
 </div>
 
 
-
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-d07d333ea572ab7c5e226e1acb53a44f">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/nav-primary"
+                sandbox="allow-same-origin allow-scripts"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
     </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-d07d333ea572ab7c5e226e1acb53a44f">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-d07d333ea572ab7c5e226e1acb53a44f-panel-html">
+                
+
+<svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+</svg>
+
+
+                <span>HTML</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-d07d333ea572ab7c5e226e1acb53a44f-panel-view">
+                
+
+<svg fill="#000000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+</svg>
+
+
+                <span>View</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-d07d333ea572ab7c5e226e1acb53a44f-panel-context">
+                
+
+<svg fill="#000000" height="19" viewBox="0 0 24 24" width="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0 0h24v24H0z" id="a"/>
+    </defs>
+    <clipPath id="b">
+        <use overflow="visible" xlink:href="#a"/>
+    </clipPath>
+    <path clip-path="url(#b)" d="M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z"/>
+</svg>
+
+
+                <span>Context</span>
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-d07d333ea572ab7c5e226e1acb53a44f-panel-info">
+                
+
+<svg fill="#000000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/>
+</svg>
+
+
+                <span>Info</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-d07d333ea572ab7c5e226e1acb53a44f-panel-notes">
+                
+
+<svg fill="#000000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+
+                <span>Notes</span>
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-d07d333ea572ab7c5e226e1acb53a44f-panel-html">
+    <code class="Code Code--lang-html">
+        
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-nav-primary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-nav-primary-toggle"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-xxs-center text-md-left"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidden-sm-down btn btn-primary btn-sm collapsed"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#nav-primary-container"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"nav-primary-container"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>Tous les thèmes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidden-sm-down collapse clearfix"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav-primary-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-nav-primary-content"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav-primary"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"navigation"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Navigation par thèmes"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Culture<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Aides et soutiens, Musées cantonaux…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Economie<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Poursuites et faillites, Registre du commerce…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Environnement<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Faune et nature, Energie…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Etat, Droit, Finance<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Impôts, rémunérations, fiscalité…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Formation<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Jours fériés et vacances scolaires…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Mobilité<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Automobile, Navigation…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Santé<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Prévention, Professionnels…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Social<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Aide aux victimes et auteur-e-s de violences…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Vie privée<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Documents d&amp;#x27;identité…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Sécurité<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Police, contrôle, casiers judiciaire…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link col-md-4"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-title"</span>&gt;</span>Territoire<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-link-text"</span>&gt;</span>Informations sur le territoire, Registre foncier…<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-section-title mt-3 mb-1"</span>&gt;</span>Les plus visités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-list-links"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Inscription au chômage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Formulaire d'indemnisation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Vaud Tax 2017<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Vacances scolaires et jours fériés<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d07d333ea572ab7c5e226e1acb53a44f-panel-view">
+    <code class="Code Code--lang-">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-nav-primary"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-nav-primary-toggle"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-xxs-center text-md-left"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidden-sm-down btn btn-primary btn-sm </span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> navOpen }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">collapsed</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#nav-primary-container"</span>  <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"nav-primary-container"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> navOpen }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">true</span></span></span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">false</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>Tous les thèmes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidden-sm-down collapse </span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> navOpen }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">in </span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">clearfix"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav-primary-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-nav-primary-content"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav-primary"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"navigation"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Navigation par thèmes"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+              </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> domains.domains}}</span><span class="xml">
+              </span><span class="hljs-template-variable">{{&gt; <a href="teaser-link">@teaser-link</a> styleModifier='col-md-4' }}</span><span class="xml">
+              </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-section-title mt-3 mb-1"</span>&gt;</span>Les plus visités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-list-links"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Inscription au chômage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Formulaire d'indemnisation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Vaud Tax 2017<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Vacances scolaires et jours fériés<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d07d333ea572ab7c5e226e1acb53a44f-panel-context">
+    
+    
+    <code class="Code Code--lang-json">
+        <pre>{
+  <span class="hljs-attr">"wrapperClass"</span>: {
+    <span class="hljs-attr">"wrapperClass"</span>: <span class="hljs-string">"col-md-4"</span>
+  },
+  <span class="hljs-attr">"domains"</span>: {
+    <span class="hljs-attr">"domains"</span>: {
+      <span class="hljs-attr">"culture"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Culture"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Aides et soutiens"</span>,
+          <span class="hljs-string">"Ecole-Musée"</span>,
+          <span class="hljs-string">"Bibliothèque cantonale et universitaire"</span>,
+          <span class="hljs-string">"Musées cantonaux"</span>,
+          <span class="hljs-string">"Patrimoine vaudois"</span>,
+          <span class="hljs-string">"Passculture"</span>,
+          <span class="hljs-string">"Formations artistiques"</span>,
+          <span class="hljs-string">"Cinéma"</span>,
+          <span class="hljs-string">"Assises de la culture"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Aides et soutiens, Musées cantonaux…"</span>
+      },
+      <span class="hljs-attr">"economie"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Economie"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Entreprises"</span>,
+          <span class="hljs-string">"Marchés publics"</span>,
+          <span class="hljs-string">"Emploi - Chômage"</span>,
+          <span class="hljs-string">"Développement économique"</span>,
+          <span class="hljs-string">"Tourisme"</span>,
+          <span class="hljs-string">"Agriculture"</span>,
+          <span class="hljs-string">"Protection consommateur"</span>,
+          <span class="hljs-string">"Poursuites et faillites"</span>,
+          <span class="hljs-string">"Registre du commerce"</span>,
+          <span class="hljs-string">"Police du commerce"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Poursuites et faillites, Registre du commerce…"</span>
+      },
+      <span class="hljs-attr">"environnement"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Environnement"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Développement durable"</span>,
+          <span class="hljs-string">"Faune et nature"</span>,
+          <span class="hljs-string">"Forêts"</span>,
+          <span class="hljs-string">"Air"</span>,
+          <span class="hljs-string">"Sols"</span>,
+          <span class="hljs-string">"Eaux"</span>,
+          <span class="hljs-string">"Energie"</span>,
+          <span class="hljs-string">"Bruit"</span>,
+          <span class="hljs-string">"Rayonnement"</span>,
+          <span class="hljs-string">"Produits chimiques"</span>,
+          <span class="hljs-string">"Déchets"</span>,
+          <span class="hljs-string">"Sites pollués"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Faune et nature, Energie…"</span>
+      },
+      <span class="hljs-attr">"etat_droit_finance"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Etat, Droit, Finance"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Lois / Constitution"</span>,
+          <span class="hljs-string">"Votations et élections"</span>,
+          <span class="hljs-string">"Justice"</span>,
+          <span class="hljs-string">"Médiations"</span>,
+          <span class="hljs-string">"Protection des données et transparence"</span>,
+          <span class="hljs-string">"Curatelles et tutelles"</span>,
+          <span class="hljs-string">"Égalité"</span>,
+          <span class="hljs-string">"Impôts"</span>,
+          <span class="hljs-string">"Finances publiques"</span>,
+          <span class="hljs-string">"Affaires extérieures"</span>,
+          <span class="hljs-string">"Personnel de l'État"</span>,
+          <span class="hljs-string">"Statistiques"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Impôts, rémunérations, fiscalité…"</span>
+      },
+      <span class="hljs-attr">"formation"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Formation"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Avant l'Ecole"</span>,
+          <span class="hljs-string">"Scolarité obligatoire"</span>,
+          <span class="hljs-string">"Gymnase"</span>,
+          <span class="hljs-string">"Apprentissage"</span>,
+          <span class="hljs-string">"Enseignement supérieur"</span>,
+          <span class="hljs-string">"Orientation"</span>,
+          <span class="hljs-string">"Bourses"</span>,
+          <span class="hljs-string">"Pédagogie spécialisée"</span>,
+          <span class="hljs-string">"Santé à l'école"</span>,
+          <span class="hljs-string">"Jours fériés et vacances scolaires"</span>,
+          <span class="hljs-string">"Schooling"</span>,
+          <span class="hljs-string">"Espace enseignant"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Jours fériés et vacances scolaires…"</span>
+      },
+      <span class="hljs-attr">"mobilité"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Mobilité"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Mobilité et planification"</span>,
+          <span class="hljs-string">"Mobilité douce"</span>,
+          <span class="hljs-string">"Promotion des mobilités durables"</span>,
+          <span class="hljs-string">"Routes"</span>,
+          <span class="hljs-string">"Transports publics"</span>,
+          <span class="hljs-string">"Automobile"</span>,
+          <span class="hljs-string">"Navigation"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Automobile, Navigation…"</span>
+      },
+      <span class="hljs-attr">"santé"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Santé"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Actualités"</span>,
+          <span class="hljs-string">"Système de santé"</span>,
+          <span class="hljs-string">"Organisation"</span>,
+          <span class="hljs-string">"Lutte contre les maladies"</span>,
+          <span class="hljs-string">"Prévention"</span>,
+          <span class="hljs-string">"Dépendances"</span>,
+          <span class="hljs-string">"Professionnels"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Prévention, Professionnels…"</span>
+      },
+      <span class="hljs-attr">"social"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Social"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Informations sociales"</span>,
+          <span class="hljs-string">"Prestations, assurances et soutien"</span>,
+          <span class="hljs-string">"Vivre à domicile"</span>,
+          <span class="hljs-string">"EMS"</span>,
+          <span class="hljs-string">"Handicaps"</span>,
+          <span class="hljs-string">"Dettes et surendettement"</span>,
+          <span class="hljs-string">"Aide aux victimes et auteur-e-s de violences"</span>,
+          <span class="hljs-string">"Bénévolat"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Aide aux victimes et auteur-e-s de violences…"</span>
+      },
+      <span class="hljs-attr">"vie_privee"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Vie privée"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Familles"</span>,
+          <span class="hljs-string">"Enfance et jeunesse"</span>,
+          <span class="hljs-string">"Logement"</span>,
+          <span class="hljs-string">"Contrôle des habitants"</span>,
+          <span class="hljs-string">"Etat civil"</span>,
+          <span class="hljs-string">"Documents d'identité"</span>,
+          <span class="hljs-string">"Population étrangère"</span>,
+          <span class="hljs-string">"Religions"</span>,
+          <span class="hljs-string">"Animaux"</span>,
+          <span class="hljs-string">"Sport"</span>,
+          <span class="hljs-string">"Violence domestique"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Documents d'identité…"</span>
+      },
+      <span class="hljs-attr">"securite"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Sécurité"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Prévention"</span>,
+          <span class="hljs-string">"Protection de la population"</span>,
+          <span class="hljs-string">"Police"</span>,
+          <span class="hljs-string">"Pompiers"</span>,
+          <span class="hljs-string">"Armée"</span>,
+          <span class="hljs-string">"Protection civile"</span>,
+          <span class="hljs-string">"Pénitentiaire"</span>,
+          <span class="hljs-string">"Catastrophe"</span>,
+          <span class="hljs-string">"Service civil"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Police, contrôle, casiers judiciaire…"</span>
+      },
+      <span class="hljs-attr">"territoire"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Territoire"</span>,
+        <span class="hljs-attr">"themes"</span>: [
+          <span class="hljs-string">"Aménagement"</span>,
+          <span class="hljs-string">"Améliorations foncières"</span>,
+          <span class="hljs-string">"Opérations foncières"</span>,
+          <span class="hljs-string">"Géologie"</span>,
+          <span class="hljs-string">"Dangers Naturels"</span>,
+          <span class="hljs-string">"Informations sur le territoire"</span>,
+          <span class="hljs-string">"Construction"</span>,
+          <span class="hljs-string">"Registre foncier"</span>,
+          <span class="hljs-string">"Districts / Préfectures"</span>,
+          <span class="hljs-string">"Communes"</span>
+        ],
+        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Informations sur le territoire, Registre foncier…"</span>
+      }
+    }
+  }
+}</pre>
+    </code>
+    
+</div>
+
+    
+    
+
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-d07d333ea572ab7c5e226e1acb53a44f-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@nav-primary</span>
+        </li>
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/nav-primary"><svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+ <span>With layout</span></a><br></li>
+                    <li><a data-no-pjax href="../render/nav-primary"><svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+ <span>Component only</span></a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">src/components/02-molecules/navigation/nav-primary/nav-primary.hbs</span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="teaser-link">@<span>teaser-link</span></a>
+            
+            </span>
+        </li class="Meta-item">
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="header">@<span>header</span></a>, 
+            
+                <a href="header--homepage">@<span>header--homepage</span></a>
+            
+            </span>
+        </li>
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-d07d333ea572ab7c5e226e1acb53a44f-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p>Used mainly to list organisms in primary nav.</p>
+
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
 
 </div>
 
@@ -167,7 +643,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button--default" data-pjax>
+            <a class="Tree-entityLink" href="button--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -191,7 +667,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button--cta" data-pjax>
+            <a class="Tree-entityLink" href="button--cta" data-pjax>
                 <span>Cta</span>
                 
 
@@ -215,7 +691,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button--secondary" data-pjax>
+            <a class="Tree-entityLink" href="button--secondary" data-pjax>
                 <span>Secondary</span>
                 
 
@@ -244,7 +720,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/headings" data-pjax>
+            <a class="Tree-entityLink" href="headings" data-pjax>
                 <span>Headings</span>
                 
 
@@ -268,7 +744,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/highlight" data-pjax>
+            <a class="Tree-entityLink" href="highlight" data-pjax>
                 <span>Highlight</span>
                 
 
@@ -303,7 +779,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--default" data-pjax>
+            <a class="Tree-entityLink" href="image--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -327,7 +803,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--center" data-pjax>
+            <a class="Tree-entityLink" href="image--center" data-pjax>
                 <span>Center</span>
                 
 
@@ -351,7 +827,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--desaturate" data-pjax>
+            <a class="Tree-entityLink" href="image--desaturate" data-pjax>
                 <span>Desaturate</span>
                 
 
@@ -375,7 +851,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--fluid" data-pjax>
+            <a class="Tree-entityLink" href="image--fluid" data-pjax>
                 <span>Fluid</span>
                 
 
@@ -399,7 +875,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--left" data-pjax>
+            <a class="Tree-entityLink" href="image--left" data-pjax>
                 <span>Left</span>
                 
 
@@ -423,7 +899,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--right" data-pjax>
+            <a class="Tree-entityLink" href="image--right" data-pjax>
                 <span>Right</span>
                 
 
@@ -447,7 +923,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image--rounded" data-pjax>
+            <a class="Tree-entityLink" href="image--rounded" data-pjax>
                 <span>Rounded</span>
                 
 
@@ -476,7 +952,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/image-responsive" data-pjax>
+            <a class="Tree-entityLink" href="image-responsive" data-pjax>
                 <span>Image Responsive</span>
                 
 
@@ -511,7 +987,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/abbreviation" data-pjax>
+            <a class="Tree-entityLink" href="abbreviation" data-pjax>
                 <span>Abbreviation</span>
                 
 
@@ -535,7 +1011,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/b" data-pjax>
+            <a class="Tree-entityLink" href="b" data-pjax>
                 <span>B</span>
                 
 
@@ -559,7 +1035,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/citation" data-pjax>
+            <a class="Tree-entityLink" href="citation" data-pjax>
                 <span>Citation</span>
                 
 
@@ -583,7 +1059,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/code" data-pjax>
+            <a class="Tree-entityLink" href="code" data-pjax>
                 <span>Code</span>
                 
 
@@ -607,7 +1083,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/definition" data-pjax>
+            <a class="Tree-entityLink" href="definition" data-pjax>
                 <span>Definition</span>
                 
 
@@ -631,7 +1107,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/deleted" data-pjax>
+            <a class="Tree-entityLink" href="deleted" data-pjax>
                 <span>Deleted</span>
                 
 
@@ -655,7 +1131,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/emphasis" data-pjax>
+            <a class="Tree-entityLink" href="emphasis" data-pjax>
                 <span>Emphasis</span>
                 
 
@@ -679,7 +1155,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/i" data-pjax>
+            <a class="Tree-entityLink" href="i" data-pjax>
                 <span>I</span>
                 
 
@@ -703,7 +1179,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/inserted" data-pjax>
+            <a class="Tree-entityLink" href="inserted" data-pjax>
                 <span>Inserted</span>
                 
 
@@ -727,7 +1203,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/keyboard-input" data-pjax>
+            <a class="Tree-entityLink" href="keyboard-input" data-pjax>
                 <span>Keyboard Input</span>
                 
 
@@ -751,7 +1227,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/link" data-pjax>
+            <a class="Tree-entityLink" href="link" data-pjax>
                 <span>Link</span>
                 
 
@@ -775,7 +1251,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/mark" data-pjax>
+            <a class="Tree-entityLink" href="mark" data-pjax>
                 <span>Mark</span>
                 
 
@@ -799,7 +1275,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/quotation" data-pjax>
+            <a class="Tree-entityLink" href="quotation" data-pjax>
                 <span>Quotation</span>
                 
 
@@ -823,7 +1299,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/sample" data-pjax>
+            <a class="Tree-entityLink" href="sample" data-pjax>
                 <span>Sample</span>
                 
 
@@ -847,7 +1323,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/small" data-pjax>
+            <a class="Tree-entityLink" href="small" data-pjax>
                 <span>Small</span>
                 
 
@@ -871,7 +1347,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/strike" data-pjax>
+            <a class="Tree-entityLink" href="strike" data-pjax>
                 <span>Strike</span>
                 
 
@@ -895,7 +1371,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/strong" data-pjax>
+            <a class="Tree-entityLink" href="strong" data-pjax>
                 <span>Strong</span>
                 
 
@@ -919,7 +1395,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/subscript" data-pjax>
+            <a class="Tree-entityLink" href="subscript" data-pjax>
                 <span>Subscript</span>
                 
 
@@ -943,7 +1419,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/superscript" data-pjax>
+            <a class="Tree-entityLink" href="superscript" data-pjax>
                 <span>Superscript</span>
                 
 
@@ -967,7 +1443,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/unarticulated" data-pjax>
+            <a class="Tree-entityLink" href="unarticulated" data-pjax>
                 <span>Unarticulated</span>
                 
 
@@ -991,7 +1467,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/variable" data-pjax>
+            <a class="Tree-entityLink" href="variable" data-pjax>
                 <span>Variable</span>
                 
 
@@ -1020,7 +1496,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/lead" data-pjax>
+            <a class="Tree-entityLink" href="lead" data-pjax>
                 <span>Lead</span>
                 
 
@@ -1055,7 +1531,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list--default" data-pjax>
+            <a class="Tree-entityLink" href="list--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1079,7 +1555,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list--links" data-pjax>
+            <a class="Tree-entityLink" href="list--links" data-pjax>
                 <span>Links</span>
                 
 
@@ -1103,7 +1579,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list--unstyled" data-pjax>
+            <a class="Tree-entityLink" href="list--unstyled" data-pjax>
                 <span>Unstyled</span>
                 
 
@@ -1132,7 +1608,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list-boxed" data-pjax>
+            <a class="Tree-entityLink" href="list-boxed" data-pjax>
                 <span>List Boxed</span>
                 
 
@@ -1156,7 +1632,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/paragraph" data-pjax>
+            <a class="Tree-entityLink" href="paragraph" data-pjax>
                 <span>Paragraph</span>
                 
 
@@ -1191,7 +1667,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/search-form--default" data-pjax>
+            <a class="Tree-entityLink" href="search-form--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1215,7 +1691,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/search-form--regular" data-pjax>
+            <a class="Tree-entityLink" href="search-form--regular" data-pjax>
                 <span>Regular</span>
                 
 
@@ -1244,7 +1720,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/separator" data-pjax>
+            <a class="Tree-entityLink" href="separator" data-pjax>
                 <span>Separator</span>
                 
 
@@ -1268,7 +1744,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/tag" data-pjax>
+            <a class="Tree-entityLink" href="tag" data-pjax>
                 <span>Tag</span>
                 
 
@@ -1292,7 +1768,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/update-time" data-pjax>
+            <a class="Tree-entityLink" href="update-time" data-pjax>
                 <span>Update Time</span>
                 
 
@@ -1332,7 +1808,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/access-nav" data-pjax>
+            <a class="Tree-entityLink" href="access-nav" data-pjax>
                 <span>Access Nav</span>
                 
 
@@ -1356,7 +1832,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/address-service" data-pjax>
+            <a class="Tree-entityLink" href="address-service" data-pjax>
                 <span>Address Service</span>
                 
 
@@ -1391,7 +1867,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/blockquote--default" data-pjax>
+            <a class="Tree-entityLink" href="blockquote--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1415,7 +1891,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/blockquote--bubble" data-pjax>
+            <a class="Tree-entityLink" href="blockquote--bubble" data-pjax>
                 <span>Bubble</span>
                 
 
@@ -1439,7 +1915,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/blockquote--bubble-media" data-pjax>
+            <a class="Tree-entityLink" href="blockquote--bubble-media" data-pjax>
                 <span>Bubble Media</span>
                 
 
@@ -1468,7 +1944,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/breadcrumb" data-pjax>
+            <a class="Tree-entityLink" href="breadcrumb" data-pjax>
                 <span>Breadcrumb</span>
                 
 
@@ -1492,7 +1968,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button-tiles" data-pjax>
+            <a class="Tree-entityLink" href="button-tiles" data-pjax>
                 <span>Button Tiles</span>
                 
 
@@ -1516,7 +1992,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/card" data-pjax>
+            <a class="Tree-entityLink" href="card" data-pjax>
                 <span>Card</span>
                 
 
@@ -1540,7 +2016,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/dropdown" data-pjax>
+            <a class="Tree-entityLink" href="dropdown" data-pjax>
                 <span>Dropdown</span>
                 
 
@@ -1564,7 +2040,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/faq-item" data-pjax>
+            <a class="Tree-entityLink" href="faq-item" data-pjax>
                 <span>Faq Item</span>
                 
 
@@ -1599,7 +2075,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/figure--default" data-pjax>
+            <a class="Tree-entityLink" href="figure--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1623,7 +2099,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/figure--category" data-pjax>
+            <a class="Tree-entityLink" href="figure--category" data-pjax>
                 <span>Category</span>
                 
 
@@ -1652,7 +2128,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/fixed-bottom-container" data-pjax>
+            <a class="Tree-entityLink" href="fixed-bottom-container" data-pjax>
                 <span>Fixed Bottom Container</span>
                 
 
@@ -1687,7 +2163,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/checkbox" data-pjax>
+            <a class="Tree-entityLink" href="checkbox" data-pjax>
                 <span>Checkbox</span>
                 
 
@@ -1711,7 +2187,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/dates" data-pjax>
+            <a class="Tree-entityLink" href="dates" data-pjax>
                 <span>Dates</span>
                 
 
@@ -1735,7 +2211,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/feedback" data-pjax>
+            <a class="Tree-entityLink" href="feedback" data-pjax>
                 <span>Feedback</span>
                 
 
@@ -1759,7 +2235,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/fieldset" data-pjax>
+            <a class="Tree-entityLink" href="fieldset" data-pjax>
                 <span>Fieldset</span>
                 
 
@@ -1783,7 +2259,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/help-text" data-pjax>
+            <a class="Tree-entityLink" href="help-text" data-pjax>
                 <span>Help Text</span>
                 
 
@@ -1818,7 +2294,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/input--default" data-pjax>
+            <a class="Tree-entityLink" href="input--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -1842,7 +2318,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/input--required" data-pjax>
+            <a class="Tree-entityLink" href="input--required" data-pjax>
                 <span>Required</span>
                 
 
@@ -1871,7 +2347,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/radio" data-pjax>
+            <a class="Tree-entityLink" href="radio" data-pjax>
                 <span>Radio</span>
                 
 
@@ -1895,7 +2371,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/select" data-pjax>
+            <a class="Tree-entityLink" href="select" data-pjax>
                 <span>Select</span>
                 
 
@@ -1919,7 +2395,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/submit" data-pjax>
+            <a class="Tree-entityLink" href="submit" data-pjax>
                 <span>Submit</span>
                 
 
@@ -1943,7 +2419,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/textarea" data-pjax>
+            <a class="Tree-entityLink" href="textarea" data-pjax>
                 <span>Textarea</span>
                 
 
@@ -1972,7 +2448,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/list-icon" data-pjax>
+            <a class="Tree-entityLink" href="list-icon" data-pjax>
                 <span>List Icon</span>
                 
 
@@ -2007,7 +2483,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/logo-etat--default" data-pjax>
+            <a class="Tree-entityLink" href="logo-etat--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2031,7 +2507,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/logo-etat--alternate" data-pjax>
+            <a class="Tree-entityLink" href="logo-etat--alternate" data-pjax>
                 <span>Alternate</span>
                 
 
@@ -2071,7 +2547,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/index-menu" data-pjax>
+            <a class="Tree-entityLink" href="index-menu" data-pjax>
                 <span>Index Menu</span>
                 
 
@@ -2095,7 +2571,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav" data-pjax>
+            <a class="Tree-entityLink" href="nav" data-pjax>
                 <span>Nav</span>
                 
 
@@ -2119,7 +2595,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav-mobile" data-pjax>
+            <a class="Tree-entityLink" href="nav-mobile" data-pjax>
                 <span>Nav Mobile</span>
                 
 
@@ -2142,8 +2618,8 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
     
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav-primary" data-pjax>
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Nav Primary</span>
                 
 
@@ -2167,7 +2643,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/nav-side" data-pjax>
+            <a class="Tree-entityLink" href="nav-side" data-pjax>
                 <span>Nav Side</span>
                 
 
@@ -2191,7 +2667,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/pagination" data-pjax>
+            <a class="Tree-entityLink" href="pagination" data-pjax>
                 <span>Pagination</span>
                 
 
@@ -2215,7 +2691,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/pagination-vertical" data-pjax>
+            <a class="Tree-entityLink" href="pagination-vertical" data-pjax>
                 <span>Pagination Vertical</span>
                 
 
@@ -2239,7 +2715,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/secure-tabs" data-pjax>
+            <a class="Tree-entityLink" href="secure-tabs" data-pjax>
                 <span>Secure Tabs</span>
                 
 
@@ -2268,7 +2744,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/numbered-title" data-pjax>
+            <a class="Tree-entityLink" href="numbered-title" data-pjax>
                 <span>Numbered Title</span>
                 
 
@@ -2303,7 +2779,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/social-icons--default" data-pjax>
+            <a class="Tree-entityLink" href="social-icons--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2327,7 +2803,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/social-icons--footer" data-pjax>
+            <a class="Tree-entityLink" href="social-icons--footer" data-pjax>
                 <span>Footer</span>
                 
 
@@ -2356,7 +2832,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/table" data-pjax>
+            <a class="Tree-entityLink" href="table" data-pjax>
                 <span>Table</span>
                 
 
@@ -2380,7 +2856,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/tabs" data-pjax>
+            <a class="Tree-entityLink" href="tabs" data-pjax>
                 <span>Tabs</span>
                 
 
@@ -2426,7 +2902,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser--default" data-pjax>
+            <a class="Tree-entityLink" href="teaser--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2450,7 +2926,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser--left" data-pjax>
+            <a class="Tree-entityLink" href="teaser--left" data-pjax>
                 <span>Left</span>
                 
 
@@ -2474,7 +2950,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser--media" data-pjax>
+            <a class="Tree-entityLink" href="teaser--media" data-pjax>
                 <span>Media</span>
                 
 
@@ -2514,7 +2990,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-alternate--default" data-pjax>
+            <a class="Tree-entityLink" href="teaser-alternate--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2538,7 +3014,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-alternate--2-3_1-3" data-pjax>
+            <a class="Tree-entityLink" href="teaser-alternate--2-3_1-3" data-pjax>
                 <span>2 3 1 3</span>
                 
 
@@ -2567,7 +3043,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-card" data-pjax>
+            <a class="Tree-entityLink" href="teaser-card" data-pjax>
                 <span>Teaser Card</span>
                 
 
@@ -2591,7 +3067,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-link" data-pjax>
+            <a class="Tree-entityLink" href="teaser-link" data-pjax>
                 <span>Teaser Link</span>
                 
 
@@ -2626,7 +3102,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-small--default" data-pjax>
+            <a class="Tree-entityLink" href="teaser-small--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2650,7 +3126,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-small--alt" data-pjax>
+            <a class="Tree-entityLink" href="teaser-small--alt" data-pjax>
                 <span>Alt</span>
                 
 
@@ -2674,7 +3150,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-small--media" data-pjax>
+            <a class="Tree-entityLink" href="teaser-small--media" data-pjax>
                 <span>Media</span>
                 
 
@@ -2724,7 +3200,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/agenda" data-pjax>
+            <a class="Tree-entityLink" href="agenda" data-pjax>
                 <span>Agenda</span>
                 
 
@@ -2748,7 +3224,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/contact-form" data-pjax>
+            <a class="Tree-entityLink" href="contact-form" data-pjax>
                 <span>Contact Form</span>
                 
 
@@ -2772,7 +3248,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/domains-list" data-pjax>
+            <a class="Tree-entityLink" href="domains-list" data-pjax>
                 <span>Domains List</span>
                 
 
@@ -2796,7 +3272,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/example-form" data-pjax>
+            <a class="Tree-entityLink" href="example-form" data-pjax>
                 <span>Example Form</span>
                 
 
@@ -2820,7 +3296,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/example-list" data-pjax>
+            <a class="Tree-entityLink" href="example-list" data-pjax>
                 <span>Example List</span>
                 
 
@@ -2844,7 +3320,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/faq" data-pjax>
+            <a class="Tree-entityLink" href="faq" data-pjax>
                 <span>Faq</span>
                 
 
@@ -2879,7 +3355,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/footer--default" data-pjax>
+            <a class="Tree-entityLink" href="footer--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2903,7 +3379,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/footer--securise" data-pjax>
+            <a class="Tree-entityLink" href="footer--securise" data-pjax>
                 <span>Securise</span>
                 
 
@@ -2943,7 +3419,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/header--default" data-pjax>
+            <a class="Tree-entityLink" href="header--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -2967,7 +3443,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/header--homepage" data-pjax>
+            <a class="Tree-entityLink" href="header--homepage" data-pjax>
                 <span>Homepage</span>
                 
 
@@ -2991,7 +3467,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/header--securise" data-pjax>
+            <a class="Tree-entityLink" href="header--securise" data-pjax>
                 <span>Securise</span>
                 
 
@@ -3031,7 +3507,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/media-list" data-pjax>
+            <a class="Tree-entityLink" href="media-list" data-pjax>
                 <span>Media List</span>
                 
 
@@ -3071,7 +3547,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/news-latest--default" data-pjax>
+            <a class="Tree-entityLink" href="news-latest--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -3095,7 +3571,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/news-latest--homepage" data-pjax>
+            <a class="Tree-entityLink" href="news-latest--homepage" data-pjax>
                 <span>Homepage</span>
                 
 
@@ -3124,7 +3600,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/teaser-list" data-pjax>
+            <a class="Tree-entityLink" href="teaser-list" data-pjax>
                 <span>Teaser List</span>
                 
 
@@ -3148,7 +3624,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/twitter-feed" data-pjax>
+            <a class="Tree-entityLink" href="twitter-feed" data-pjax>
                 <span>Twitter Feed</span>
                 
 
@@ -3188,7 +3664,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/accueil" data-pjax>
+            <a class="Tree-entityLink" href="accueil" data-pjax>
                 <span>Accueil</span>
                 
 
@@ -3212,7 +3688,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/actualite" data-pjax>
+            <a class="Tree-entityLink" href="actualite" data-pjax>
                 <span>Actualite</span>
                 
 
@@ -3236,7 +3712,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/actualites" data-pjax>
+            <a class="Tree-entityLink" href="actualites" data-pjax>
                 <span>Actualites</span>
                 
 
@@ -3260,7 +3736,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/autorites" data-pjax>
+            <a class="Tree-entityLink" href="autorites" data-pjax>
                 <span>Autorites</span>
                 
 
@@ -3317,7 +3793,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-detail--default" data-pjax>
+            <a class="Tree-entityLink" href="communiques-presse-detail--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -3341,7 +3817,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-detail--alternate" data-pjax>
+            <a class="Tree-entityLink" href="communiques-presse-detail--alternate" data-pjax>
                 <span>Alternate</span>
                 
 
@@ -3375,7 +3851,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-list" data-pjax>
+            <a class="Tree-entityLink" href="communiques-presse-list" data-pjax>
                 <span>Communiques Presse List</span>
                 
 
@@ -3399,7 +3875,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/communiques-presse-results" data-pjax>
+            <a class="Tree-entityLink" href="communiques-presse-results" data-pjax>
                 <span>Communiques Presse Results</span>
                 
 
@@ -3428,7 +3904,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/domaines" data-pjax>
+            <a class="Tree-entityLink" href="domaines" data-pjax>
                 <span>Domaines</span>
                 
 
@@ -3452,7 +3928,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/economie" data-pjax>
+            <a class="Tree-entityLink" href="economie" data-pjax>
                 <span>Economie</span>
                 
 
@@ -3476,7 +3952,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/extrait-du-registre-des-poursuites" data-pjax>
+            <a class="Tree-entityLink" href="extrait-du-registre-des-poursuites" data-pjax>
                 <span>Extrait Du Registre Des Poursuites</span>
                 
 
@@ -3500,7 +3976,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/office-des-faillites" data-pjax>
+            <a class="Tree-entityLink" href="office-des-faillites" data-pjax>
                 <span>Office Des Faillites</span>
                 
 
@@ -3524,7 +4000,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/ordre-judiciaire-vaudois" data-pjax>
+            <a class="Tree-entityLink" href="ordre-judiciaire-vaudois" data-pjax>
                 <span>Ordre Judiciaire Vaudois</span>
                 
 
@@ -3559,7 +4035,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/connexion" data-pjax>
+            <a class="Tree-entityLink" href="connexion" data-pjax>
                 <span>Connexion</span>
                 
 
@@ -3583,7 +4059,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/demandes" data-pjax>
+            <a class="Tree-entityLink" href="demandes" data-pjax>
                 <span>Demandes</span>
                 
 
@@ -3607,7 +4083,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/documents" data-pjax>
+            <a class="Tree-entityLink" href="documents" data-pjax>
                 <span>Documents</span>
                 
 
@@ -3631,7 +4107,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/espace-securise" data-pjax>
+            <a class="Tree-entityLink" href="espace-securise" data-pjax>
                 <span>Espace Securise</span>
                 
 
@@ -3655,7 +4131,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/formulaire-prestation" data-pjax>
+            <a class="Tree-entityLink" href="formulaire-prestation" data-pjax>
                 <span>Formulaire Prestation</span>
                 
 
@@ -3679,7 +4155,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/prestations" data-pjax>
+            <a class="Tree-entityLink" href="prestations" data-pjax>
                 <span>Prestations</span>
                 
 
@@ -3708,7 +4184,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/poursuites-et-faillites" data-pjax>
+            <a class="Tree-entityLink" href="poursuites-et-faillites" data-pjax>
                 <span>Poursuites Et Faillites</span>
                 
 
@@ -3732,7 +4208,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/recherche-office-poursuites" data-pjax>
+            <a class="Tree-entityLink" href="recherche-office-poursuites" data-pjax>
                 <span>Recherche Office Poursuites</span>
                 
 
@@ -3767,7 +4243,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/template--default" data-pjax>
+            <a class="Tree-entityLink" href="template--default" data-pjax>
                 <span>Default</span>
                 
 
@@ -3791,7 +4267,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/template--1-colonne" data-pjax>
+            <a class="Tree-entityLink" href="template--1-colonne" data-pjax>
                 <span>1 Colonne</span>
                 
 
@@ -3841,7 +4317,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/accessibility" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/accessibility" data-pjax>
                 <span>Accessibility</span>
                 
 
@@ -3865,7 +4341,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/changelog" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/changelog" data-pjax>
                 <span>Change Log</span>
                 
 
@@ -3889,7 +4365,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/grid" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/grid" data-pjax>
                 <span>Grid</span>
                 
 
@@ -3913,7 +4389,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/helpers" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/helpers" data-pjax>
                 <span>Helpers</span>
                 
 
@@ -3936,8 +4412,8 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
     
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../.." data-pjax>
                 <span>Overview</span>
                 
             </a>
@@ -3947,7 +4423,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/layout" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/layout" data-pjax>
                 <span>Layout</span>
                 
 
@@ -3971,7 +4447,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/typography" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/typography" data-pjax>
                 <span>Typography</span>
                 
 
@@ -4012,7 +4488,7 @@ $ npm install https://github.com/DSI-VD/foehn</pre></code><h3 id="how-to-include
 
 
 
-<script src="_theme/js/mandelbrot.js?cachebust=1.0.7"></script>
+<script src="../../_theme/js/mandelbrot.js?cachebust=1.0.7"></script>
 
 
 
