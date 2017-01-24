@@ -15,6 +15,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add a button--secondary atom
+- Add a button--cta atom
 - Add a media-list organim
 
 ## [0.14.0]
