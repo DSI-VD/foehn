@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add publish-time molecule
 - Add time atom
 - Add news template
 - Add download-list organism
