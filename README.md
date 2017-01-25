@@ -18,7 +18,7 @@ $ cd foehn
 $ npm start
 ```
 
-[Toolbox](http://frontend.github.io/toolbox/) and [Bootstrap 4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
+[Fractal](http://fractal.build/) and [Bootstrap 4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
 
 ### Build
 
