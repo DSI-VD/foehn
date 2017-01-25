@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Reduce signature text-size in communique-presse-detail
+- Reduce signature text-size in communique-presse-detail-alternate
 - Refactor lists
 - Move some templates in pages components
 - [Fractal](http://fractal.build/) is used to generate the frontend
