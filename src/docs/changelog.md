@@ -11,6 +11,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Update to Bootstrap 4 alpha 6
+  - Renamed `.tag`s to `.badge`
+  - Renamed `.*-xxs-*` to `*-*`
+  - Remove `.nav-inline` in nav component
+  - Refactor HTML of nav component
+  - Use `.show` instead of `.in` in nav-primary
+  - Remove `.text-sm-right` in headers components
 - Use striped rows on table
 - Reduce signature text-size in communique-presse-detail
 - Reduce signature text-size in communique-presse-detail-alternate
