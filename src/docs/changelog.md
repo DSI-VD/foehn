@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Use striped rows on table
 - Reduce signature text-size in communique-presse-detail
 - Reduce signature text-size in communique-presse-detail-alternate
 - Refactor lists
@@ -19,7 +20,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-- Add video-list organim
+- Add video-list organism
 - Add embed-container molecules
 - Add signature molecule
 - Add publish-time molecule
