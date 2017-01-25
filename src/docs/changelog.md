@@ -24,7 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add pages section for components
 - Add a button--secondary atom
 - Add a button--cta atom
-- Add a media-list organim
+- Add a media-list organism
 
 ## [0.14.0]
 
