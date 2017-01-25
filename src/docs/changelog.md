@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add video-list organim
 - Add embed-container molecules
 - Add signature molecule
 - Add publish-time molecule
