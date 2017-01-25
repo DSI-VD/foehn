@@ -1,0 +1,15 @@
+{
+  "status": "wip",
+  "context": {
+    "news": {
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor."
+    },
+    "list-links": [{
+      "item": "Communiqué du 1er novembre 2016",
+      "url": "http://nicolas.eu"
+    },{
+      "item": "Lorem ipsum dolor sit amet, consectetur",
+      "url": "http://nicolas.eu"
+    }]
+  }
+}
