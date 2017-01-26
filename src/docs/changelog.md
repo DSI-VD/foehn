@@ -39,6 +39,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a button--cta atom
 - Add a media-list organism
 
+### Fix
+
+- Fix size of submit button in contact-form
+
 ## [0.14.0]
 
 ### Changed
