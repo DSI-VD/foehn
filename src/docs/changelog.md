@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Add a button-tiles on accueil
 - Update to Bootstrap 4 alpha 6
   - Renamed `.tag`s to `.badge`
   - Renamed `.*-xxs-*` to `*-*`

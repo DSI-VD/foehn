@@ -48,12 +48,8 @@
   <section>
     <h2 class="vd-section-title">Autorités</h2>
 
-    <div class="vd-btn-tiles mb-1">
-      <a href="#" class="btn">Organigramme</a>
-      <a href="#" class="btn">Conseil d'État</a>
-      <a href="#" class="btn">Grand Conseil</a>
-      <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
-    </div>
+    {{> @button-tiles button-tiles=button-tiles-top }}
+    {{> @button-tiles button-tiles=button-tiles-bottom }}
 
     <p>
       <a href="../autorites/" class="btn btn-primary vd-btn-chevron-r btn-sm">Toutes les autorités</a>

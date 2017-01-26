@@ -1,0 +1,26 @@
+{
+    "status": "ready",
+    "context": {
+      "button-tiles-top": [
+        {
+          "item": "Grand Conseil",
+          "url": "#"
+        },{
+          "item": "Conseil d'État",
+          "url": "#"
+        },{
+          "item": "Ordre Judiciaire",
+          "url": "#"
+        }
+      ],
+      "button-tiles-bottom": [
+        {
+          "item": "Ordre Judiciaire",
+          "url": "#"
+        },{
+          "item": "Organigramme",
+          "url": "#"
+        }
+      ]
+    }
+}
