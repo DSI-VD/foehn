@@ -208,11 +208,10 @@
     <code class="Code Code--lang-html">
         
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Organigramme<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn active"</span>&gt;</span>Conseil d'État<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Grand Conseil<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Ordre Judiciaire<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles mb-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Button 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Button 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Button 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -221,11 +220,10 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-fac1745f3d4c1f34af31e5e17e94891e-panel-view">
     <code class="Code Code--lang-">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Organigramme<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn active"</span>&gt;</span>Conseil d'État<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Grand Conseil<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Ordre Judiciaire<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles mb-1"</span>&gt;</span>
+  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> button-tiles}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span></span><span class="hljs-template-variable">{{ item }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </span></pre>
     </code>
@@ -235,8 +233,23 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-fac1745f3d4c1f34af31e5e17e94891e-panel-context">
     
     
-    <code class="Code Code--lang-js">
-        <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+    <code class="Code Code--lang-json">
+        <pre>{
+  <span class="hljs-attr">"button-tiles"</span>: [
+    {
+      <span class="hljs-attr">"item"</span>: <span class="hljs-string">"Button 1"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    },
+    {
+      <span class="hljs-attr">"item"</span>: <span class="hljs-string">"Button 2"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    },
+    {
+      <span class="hljs-attr">"item"</span>: <span class="hljs-string">"Button 3"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    }
+  ]
+}</pre>
     </code>
     
 </div>
@@ -280,6 +293,15 @@
             <span class="Meta-value">src/components/02-molecules/button-tiles/button-tiles.hbs</span>
         </li>
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="accueil">@<span>accueil</span></a>
+            
+            </span>
+        </li>
         
     </ul>
 </div>
@@ -4048,7 +4070,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
