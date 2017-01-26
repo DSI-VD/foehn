@@ -1,6 +1,5 @@
-<div class="vd-btn-tiles">
-  <a href="#0" class="btn">Organigramme</a>
-  <a href="#0" class="btn active">Conseil d'État</a>
-  <a href="#0" class="btn">Grand Conseil</a>
-  <a href="#0" class="btn">Ordre Judiciaire</a>
+<div class="vd-btn-tiles mb-1">
+  {{#each button-tiles}}
+  <a href="{{ url }}" class="btn">{{ item }}</a>
+  {{/each}}
 </div>
