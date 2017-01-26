@@ -1,3 +1,17 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "button-tiles": [
+        {
+          "item": "Button 1",
+          "url": "#"
+        },{
+          "item": "Button 2",
+          "url": "#"
+        },{
+          "item": "Button 3",
+          "url": "#"
+        }
+      ]
+    }
 }
