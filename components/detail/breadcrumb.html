@@ -226,7 +226,7 @@
     <code class="Code Code--lang-">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"fil d'Ariane"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
-    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> breadcrumb.items}}</span><span class="xml">
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> items}}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ page }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Vous êtes ici: [titre de la page]<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -242,26 +242,24 @@
     
     <code class="Code Code--lang-json">
         <pre>{
-  <span class="hljs-attr">"breadcrumb"</span>: {
-    <span class="hljs-attr">"items"</span>: [
-      {
-        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 1"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-      },
-      {
-        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 2"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-      },
-      {
-        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 3"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-      },
-      {
-        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 4"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-      }
-    ]
-  }
+  <span class="hljs-attr">"items"</span>: [
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 1"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    },
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 2"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    },
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 3"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    },
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 4"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    }
+  ]
 }</pre>
     </code>
     
@@ -308,38 +306,20 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(15)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(6)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
-                <a href="actualites">@<span>actualites</span></a>, 
+                <a href="page-title-banner">@<span>page-title-banner</span></a>, 
+            
+                <a href="page-title-banner--prestation">@<span>page-title-banner--prestation</span></a>, 
             
                 <a href="news">@<span>news</span></a>, 
             
-                <a href="template">@<span>template</span></a>, 
-            
-                <a href="template--1-colonne">@<span>template--1-colonne</span></a>, 
-            
                 <a href="actualite">@<span>actualite</span></a>, 
-            
-                <a href="autorites">@<span>autorites</span></a>, 
             
                 <a href="communiques-presse-detail">@<span>communiques-presse-detail</span></a>, 
             
-                <a href="communiques-presse-detail--alternate">@<span>communiques-presse-detail--alternate</span></a>, 
-            
-                <a href="communiques-presse-list">@<span>communiques-presse-list</span></a>, 
-            
-                <a href="communiques-presse-results">@<span>communiques-presse-results</span></a>, 
-            
-                <a href="economie">@<span>economie</span></a>, 
-            
-                <a href="extrait-du-registre-des-poursuites">@<span>extrait-du-registre-des-poursuites</span></a>, 
-            
-                <a href="office-des-faillites">@<span>office-des-faillites</span></a>, 
-            
-                <a href="ordre-judiciaire-vaudois">@<span>ordre-judiciaire-vaudois</span></a>, 
-            
-                <a href="poursuites-et-faillites">@<span>poursuites-et-faillites</span></a>
+                <a href="communiques-presse-detail--alternate">@<span>communiques-presse-detail--alternate</span></a>
             
             </span>
         </li>
@@ -3526,6 +3506,70 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-page-title-banner">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Page Title Banner</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-title-banner--default" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-title-banner--prestation" data-pjax>
+                <span>Prestation</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
