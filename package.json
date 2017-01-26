@@ -28,10 +28,12 @@
     "font-awesome": "^4.6.3",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-consolidate": "^0.2.0",
+    "gulp-eslint": "^3.0.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-iconfont": "^8.0.1",
     "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
     "gulp-stylelint": "^3.7.0",
@@ -40,5 +42,11 @@
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
     "stylelint-config-standard": "^15.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
