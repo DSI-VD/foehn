@@ -1,18 +1,19 @@
 'use strict';
 
- const faker = require('faker'); // require the faker module
- const listItemCount = 10; // how many itmes we should generate data for
- const listItemData = [];
+const faker = require('faker'); // require the faker module
 
- for (var i = 0; i < listItemCount; i++) {
-     listItemData.push({
-         item: faker.lorem.sentence(), // generate a random data
-     });
- }
+const listItemCount = 10; // how many itmes we should generate data for
+const listItemData = [];
 
- module.exports = {
-    status: "ready",
+for (let i = 0; i < listItemCount; i += 1) {
+    listItemData.push({
+        item: faker.lorem.sentence(), // generate a random data
+    });
+}
+
+module.exports = {
+    status: 'ready',
     context: {
-        list: listItemData // use our generated list of members as context data for our template.
-    }
+        list: listItemData, // use our generated list of members as context data for our template.
+    },
 };
