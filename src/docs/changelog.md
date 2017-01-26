@@ -41,6 +41,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix contact-form use submit molecules
+- Fix example-form use submit molecules
 - Fix size of submit button in contact-form
 
 ## [0.14.0]
