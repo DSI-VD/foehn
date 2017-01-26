@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add page-title-banner organism
 - Add video-list organism
 - Add embed-container molecules
 - Add signature molecule

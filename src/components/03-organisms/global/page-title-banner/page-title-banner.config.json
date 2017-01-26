@@ -1,0 +1,10 @@
+{
+  "context": {
+    "pageTitle": "Page title",
+    "breadcrumb": "@breadcrumb",
+    "prestation": {
+      "label": "Commander",
+      "url": "#"
+    }
+  }
+}
