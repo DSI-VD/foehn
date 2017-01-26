@@ -1,20 +1,18 @@
 {
     "status": "ready",
     "context": {
-        "breadcrumb": {
-          "items": [{
-            "page": "level 1",
-            "url": "#"
-          },{
-            "page": "level 2",
-            "url": "#"
-          },{
-            "page": "level 3",
-            "url": "#"
-          },{
-            "page": "level 4",
-            "url": "#"
-          }]
-        }
+        "items": [{
+          "page": "level 1",
+          "url": "#"
+        },{
+          "page": "level 2",
+          "url": "#"
+        },{
+          "page": "level 3",
+          "url": "#"
+        },{
+          "page": "level 4",
+          "url": "#"
+        }]
     }
 }

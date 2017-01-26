@@ -1,0 +1,13 @@
+<div class="vd-bg-pattern-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        {{> @breadcrumb items=breadcrumb.items }}
+        <h1 aria-hidden="true">{{ pageTitle }}</h1>
+      </div>
+      <div class="col-sm-4">
+        <a href="{{ prestation.url }}" class="btn btn-success btn-block vd-btn-chevron-r mt-2">{{ prestation.label }}</a>
+      </div>
+    </div>
+  </div>
+</div>

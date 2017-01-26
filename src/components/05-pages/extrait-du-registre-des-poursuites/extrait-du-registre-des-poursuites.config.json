@@ -1,5 +1,10 @@
 {
     "context": {
+      "pageTitle": "Extrait du registre des poursuites pour soi-même",
+      "prestation": {
+        "label": "Commander",
+        "url": "#"
+      },
         "breadcrumb": {
           "items": [{
             "page": "vd.ch",
