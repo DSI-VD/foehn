@@ -1,3 +1,28 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "category": "Category",
+      "caption": {
+        "text": "Ceci est une légende",
+        "credit": "Crédit photo"
+      },
+      "image": {
+        "source": [
+          {
+            "media": "(min-width: 60em)",
+            "srset": "http://placehold.it/1600x1067/ACCBE8/ffffff?text=eXtra Large|1600x1067"
+          },
+          {
+            "media": "(min-width: 40em)",
+            "srset": "http://placehold.it/960x640/ACCBE8/ffffff?text=Large|960x640"
+          },
+          {
+            "media": "(min-width: 20em)",
+            "srset": "http://placehold.it/640x427/F1BF9F/ffffff?text=Medium|640x427"
+          }
+        ],
+        "src": "https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240",
+        "alt": "article image"
+      }
+    }
 }

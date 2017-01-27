@@ -10,6 +10,9 @@
     },{
       "item": "Lorem ipsum dolor sit amet, consectetur",
       "url": "http://nicolas.eu"
-    }]
+    }],
+    "medias": {
+      "image": "@figure"
+    }
   }
 }
