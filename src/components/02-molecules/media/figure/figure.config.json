@@ -21,8 +21,7 @@
             "srset": "http://placehold.it/640x427/F1BF9F/ffffff?text=Medium|640x427"
           }
         ],
-        "src": "https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240",
-        "alt": "article image"
+        "default": "@image-responsive"
       }
     }
 }
