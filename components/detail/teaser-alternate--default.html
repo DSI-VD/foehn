@@ -221,13 +221,14 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-img"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 60em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/1600x1067/ACCBE8/ffffff?text=eXtra Large|1600x1067"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 40em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/960x640/ACCBE8/ffffff?text=Large|960x640"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 20em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/640x427/F1BF9F/ffffff?text=Medium|640x427"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"figure"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 60em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/1600x1067/ACCBE8/ffffff?text&amp;#x3D;eXtra Large|1600x1067"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 40em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/960x640/ACCBE8/ffffff?text&amp;#x3D;Large|960x640"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 20em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/640x427/F1BF9F/ffffff?text&amp;#x3D;Medium|640x427"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.it/360x240/F1BF9F/ffffff?text&amp;#x3D;Default|360x240"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>Ceci est une légende <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-figure-credits"</span>&gt;</span>Photo JACQUES ANDRÉ<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -251,7 +252,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
-        </span><span class="hljs-template-variable">{{&gt; <a href="figure--default">@figure--default</a> }}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{render '<a href="figure--default">@figure--default</a>' }}</span><span class="xml">
       <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -710,7 +711,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
