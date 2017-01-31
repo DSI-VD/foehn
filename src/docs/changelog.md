@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Office-des-faillites page use project-list
 - Use time atom in teaser-alternate
 - Add a button-tiles on accueil
 - Update to Bootstrap 4 alpha 6
@@ -29,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add projects-list organism
 - Add page-title-banner organism
 - Add video-list organism
 - Add embed-container molecules
