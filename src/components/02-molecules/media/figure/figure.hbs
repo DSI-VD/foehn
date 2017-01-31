@@ -4,10 +4,10 @@
       {{#each image.source}}
       <source media="{{ media }}" srcset="{{ srset }}">
       {{/each}}
-      <img class="img-fluid" src="https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240" alt="figure">
+      {{> @image-responsive image.default }}
     </picture>
     {{else}}
-    <img class="img-fluid" src="https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240" alt="figure">
+    {{> @image-responsive image.default }}
     {{/if}}
   <figcaption class="figure-caption">Ceci est une légende <span class="vd-figure-credits">Photo JACQUES ANDRÉ</span></figcaption>
 </figure>

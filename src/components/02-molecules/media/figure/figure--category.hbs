@@ -5,10 +5,10 @@
       {{#each image.source}}
       <source media="{{ media }}" srcset="{{ srset }}">
       {{/each}}
-      <img class="img-fluid" src="{{ image.src }}" alt="{{ image.alt }}">
+      {{> @image-responsive image.default }}
     </picture>
     {{else}}
-    <img class="img-fluid" src="{{ image.src }}" alt="{{ image.alt }}">
+    {{> @image-responsive image.default }}
     {{/if}}
     <span class="vd-figure-category">{{ category }}</span>
   </div>
