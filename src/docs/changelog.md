@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Use Bootstrap `.embed-responsive` for embed-container molecule
 - Add margin bottom on faq-item molecule
 - Change wording for search-form
 - Office-des-faillites page use project-list
