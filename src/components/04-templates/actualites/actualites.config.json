@@ -1,11 +1,14 @@
 {
     "context": {
-      "pageTitle": "Actualités",
+        "pageTitle": "Actualités",
         "breadcrumb": {
-          "items": [{
-            "page": "vd.ch",
-            "url": "#"
-          }]
+            "items": [{
+                "page": "vd.ch",
+                "url": "#"
+            }]
+        },
+        "searchForm": {
+          "title": "Rechercher dans les actualités"
         }
     }
 }
