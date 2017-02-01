@@ -1,3 +1,7 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "title": "Rechercher dans les actualités",
+      "placeholder": "Rechercher"
+    }
 }

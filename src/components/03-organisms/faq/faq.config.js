@@ -19,7 +19,10 @@ for (let i = 0; i < faqCount; i += 1) {
 module.exports = {
     status: 'ready',
     context: {
-        titleModifier: "sr-only",
-        faqs: faqData
+        titleModifier: 'sr-only',
+        searchForm: {
+            title: 'Rechercher dans les questions',
+        },
+        faqs: faqData,
     },
 };

@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Change wording for search-form
 - Office-des-faillites page use project-list
 - Use time atom in teaser-alternate
 - Add a button-tiles on accueil
@@ -30,6 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add config for search-form atom
 - Add titleModifier in faq organism
 - Add projects-list organism
 - Add page-title-banner organism
