@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Embed-container molecule use Bootstrap responsive helpers
 - Use Bootstrap `.embed-responsive` for embed-container molecule
 - Add margin bottom on faq-item molecule
 - Change wording for search-form
