@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Rename actualites template news-list
+- Rename news template news-detail
 - Add update-time in footer--default
 - Print button is hidden on mobile devices
 - Embed-container molecule use Bootstrap responsive helpers
