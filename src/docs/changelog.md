@@ -58,6 +58,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix example-form use submit molecules
 - Fix size of submit button in contact-form
 
+### Removed
+
+- Remove social-icons--footer molecule
+
 ## [0.14.0]
 
 ### Changed
