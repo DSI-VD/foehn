@@ -19,6 +19,7 @@ for (let i = 0; i < faqCount; i += 1) {
 module.exports = {
     status: 'ready',
     context: {
-        faqs: faqData,
+        titleModifier: "sr-only",
+        faqs: faqData
     },
 };

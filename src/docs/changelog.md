@@ -30,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add titleModifier in faq organism
 - Add projects-list organism
 - Add page-title-banner organism
 - Add video-list organism
