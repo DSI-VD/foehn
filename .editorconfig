@@ -19,6 +19,9 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
+[*.js]
+indent_size = 4
+
 # PHP should follow the PSR-2 standard
 # https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 [*.php]
