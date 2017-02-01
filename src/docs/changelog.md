@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Add update-time in footer--default
 - Print button is hidden on mobile devices
 - Embed-container molecule use Bootstrap responsive helpers
 - Use Bootstrap `.embed-responsive` for embed-container molecule
