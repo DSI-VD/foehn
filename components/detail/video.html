@@ -153,8 +153,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-d5a888e6aa3cd6dd8fdc7482bb178b14-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-embed-container mb-1"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"560"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"315"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/ZDf5hRFwg6w"</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-16by9 mb-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/ZDf5hRFwg6w"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -163,8 +163,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d5a888e6aa3cd6dd8fdc7482bb178b14-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-embed-container mb-1"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"560"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"315"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/ZDf5hRFwg6w"</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-16by9 mb-1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ src }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -174,7 +174,9 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"src"</span>: <span class="hljs-string">"https://www.youtube.com/embed/ZDf5hRFwg6w"</span>
+}</pre>
             
         
     </code>
@@ -197,25 +199,6 @@
         
         
         
-        
-        <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
-            <span class="Meta-value Meta-value--linkList">
-            
-                <a href="video--default">
-                    <span>Default</span>
-                </a>, 
-            
-                <a href="video--dailymotion">
-                    <span>Dailymotion</span>
-                </a>, 
-            
-                <a href="video--vimeo">
-                    <span>Vimeo</span>
-                </a>
-            
-            </span>
-        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -256,7 +239,26 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-d5a888e6aa3cd6dd8fdc7482bb178b14-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <p>Aspect ratios can be customized with modifier classes.</p>
+<code class="lang-html"><pre><span class="hljs-comment">&lt;!-- 21:9 aspect ratio --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-21by9"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 16:9 aspect ratio --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-16by9"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 4:3 aspect ratio --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-4by3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 1:1 aspect ratio --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-1by1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code>
         
     </div>
 </div>
@@ -2035,21 +2037,10 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-video">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Video</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="video--default" data-pjax>
-                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2066,59 +2057,6 @@
 
 
             </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="video--dailymotion" data-pjax>
-                <span>Dailymotion</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="video--vimeo" data-pjax>
-                <span>Vimeo</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
