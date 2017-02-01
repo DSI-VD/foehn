@@ -63,6 +63,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Remove unnecessary `role=banner` on `<header>`
 - Remove social-icons--footer molecule
 
 ## [0.14.0]
