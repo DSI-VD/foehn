@@ -378,7 +378,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
-
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Domaines<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mt-3"</span>&gt;</span>
 
@@ -1247,7 +1247,7 @@
         <pre><span class="xml"></span><span class="hljs-template-variable">{{render '<a href="header--homepage">@header--homepage</a>' }}</span><span class="xml">
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
-
+  </span><span class="hljs-template-variable">{{&gt; <a href="page-title">@page-title</a> }}</span><span class="xml">
   </span><span class="hljs-template-variable">{{render '<a href="domains-list">@domains-list</a>' }}</span><span class="xml">
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
@@ -1261,7 +1261,9 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"pageTitle"</span>: <span class="hljs-string">"Domaines"</span>
+}</pre>
             
         
     </code>
@@ -1304,14 +1306,16 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/05-pages/domaines.hbs</span>
+            <span class="Meta-value">src/components/05-pages/domaines/domaines.hbs</span>
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(3)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="header--homepage">@<span>header--homepage</span></a>, 
+            
+                <a href="page-title">@<span>page-title</span></a>, 
             
                 <a href="domains-list">@<span>domains-list</span></a>, 
             
@@ -4416,6 +4420,30 @@
         
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-title" data-pjax>
+                <span>Page Title</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-page-title-banner">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Page Title Banner</span>
@@ -4771,30 +4799,6 @@
             
             
             
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="autority" data-pjax>
-                <span>Autority</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
     
         
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-news">

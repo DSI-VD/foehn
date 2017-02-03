@@ -388,6 +388,8 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-3"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptate nesciunt rerum repellendus, aut laboriosam dolore magni natus sapiente, blanditiis ab odit quae eius. Maxime cum deserunt, officiis dignissimos eos quae magni. Dicta modi
         est, consequuntur ullam magni nam, esse molestiae, eveniet corrupti id, ea. Quidem, inventore neque voluptates in. Veritatis, totam, illum quisquam natus esse saepe fuga! Voluptate animi voluptatibus fuga cumque architecto dolore iste dolores
         repellendus, quo aliquam mollitia nam totam nisi eius ipsa excepturi quas ad autem tenetur culpa dolor dolorem officiis accusamus, minima minus. Quo ullam suscipit incidunt tempora voluptate placeat voluptates reprehenderit dolores, neque praesentium?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -503,6 +505,8 @@
 </span><span class="hljs-template-variable">{{render '<a href="page-title-banner">@page-title-banner</a>' }}</span><span class="xml">
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-3"</span>&gt;</span>
+  </span><span class="hljs-template-variable">{{&gt; <a href="page-title">@page-title</a> }}</span><span class="xml">
+
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptate nesciunt rerum repellendus, aut laboriosam dolore magni natus sapiente, blanditiis ab odit quae eius. Maxime cum deserunt, officiis dignissimos eos quae magni. Dicta modi est, consequuntur ullam magni nam, esse molestiae, eveniet corrupti id, ea. Quidem, inventore neque voluptates in. Veritatis, totam, illum quisquam natus esse saepe fuga! Voluptate animi voluptatibus fuga cumque architecto dolore iste dolores repellendus, quo aliquam mollitia nam totam nisi eius ipsa excepturi quas ad autem tenetur culpa dolor dolorem officiis accusamus, minima minus. Quo ullam suscipit incidunt tempora voluptate placeat voluptates reprehenderit dolores, neque praesentium?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
 
@@ -515,7 +519,21 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"pageTitle"</span>: <span class="hljs-string">"Template"</span>,
+  <span class="hljs-attr">"breadcrumb"</span>: {
+    <span class="hljs-attr">"items"</span>: [
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Domaines"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      }
+    ]
+  }
+}</pre>
             
         
     </code>
@@ -575,12 +593,14 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(3)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="header">@<span>header</span></a>, 
             
                 <a href="page-title-banner">@<span>page-title-banner</span></a>, 
+            
+                <a href="page-title">@<span>page-title</span></a>, 
             
                 <a href="footer">@<span>footer</span></a>
             
@@ -3683,6 +3703,30 @@
         
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-title" data-pjax>
+                <span>Page Title</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-page-title-banner">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Page Title Banner</span>
@@ -4038,30 +4082,6 @@
             
             
             
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="autority" data-pjax>
-                <span>Autority</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
     
         
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-news">
