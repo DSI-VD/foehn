@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Add title on breadcrumb molecule
 - Rename actualites template news-list
 - Rename news template news-detail
 - Add update-time in footer--default
