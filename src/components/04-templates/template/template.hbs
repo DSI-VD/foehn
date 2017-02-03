@@ -1,13 +1,14 @@
 {{> @header }}
 
-{{render '@page-title-banner' }}
+{{> @page-title-banner }}
 
-<div class="container mt-3">
+<main id="main" class="container mt-3">
+  {{> @page-title }}
+
   <div class="row">
-
-    <main class="col-md-8" id="main">
+    <div class="col-md-8">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, excepturi? Soluta maiores dignissimos voluptatibus culpa inventore, dolore iure, quo ut neque nobis quis doloribus? Culpa consequatur molestiae modi harum autem ipsum numquam aspernatur magni rem? Dolorum nesciunt expedita repudiandae deleniti necessitatibus mollitia rem quaerat asperiores repellat, voluptas, accusantium culpa labore!</p>
-    </main>
+    </div>
 
     <aside class="col-md-4 small">
       <p>
@@ -16,6 +17,6 @@
     </aside>
 
   </div>
-</div>
+</main>
 
 {{> @footer }}

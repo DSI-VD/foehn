@@ -2,11 +2,12 @@
 
 {{> @page-title-banner--prestation }}
 
-<div class="container">
-  <div class="row mt-3">
+<main id="main" class="container mt-3">
+  {{> @page-title }}
 
-    <main class="col-md-8" id="main">
-      <h1 class="sr-only">Extrait du registre des poursuites</h1>
+  <div class="row">
+
+    <div class="col-md-8">
       <p>Toute personne (privé ou société) peut obtenir, en tout temps, un extrait du registre des poursuites la concernant, sur présentation de ses documents d'identité.</p>
       <ul>
         <li>Si vous n'avez pas de poursuite à votre encontre, l'extrait du registre consiste en une attestation de non poursuite (attestation de solvabilité).</li>
@@ -95,19 +96,19 @@
       <div class="vd-fixed-bottom-xs-only vd-fixed-bottom-sm-only">
         <a href="../formulaire-prestation" class="btn btn-success btn-block vd-btn-chevron-r mt-2">Commander un extrait du registre des poursuites</a>
       </div>
-    </main>
+    </div>
 
 
     <aside class="col-md-4 small">
-    <h4>Office des poursuites</h4>
-    <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
+      <h4>Office des poursuites</h4>
+      <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
 
-    <ul class="vd-list-icons">
-      <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="../office-des-poursuites/">en savoir plus sur l'autorité</a></li>
-    </ul>
-    <p>
-      <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
-    </p>
+      <ul class="vd-list-icons">
+        <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="../office-des-poursuites/">en savoir plus sur l'autorité</a></li>
+      </ul>
+      <p>
+        <a href="../recherche-office-poursuites" class="btn btn-primary btn-sm vd-btn-chevron-r">Contacter l'office</a>
+      </p>
 
       <h2 class="vd-section-title mt-3 ">Prestations en relation</h2>
       <ul class="vd-list-links">
@@ -125,6 +126,6 @@
   </div>
 
   {{> @update-time }}
-</div>
+</main>
 
 {{> @footer }}

@@ -1,10 +1,8 @@
 {{render '@header--homepage' }}
-<div class="container mt-3">
-  <h1 class="sr-only">Site officiel de l'&Eacute;tat de Vaud</h1>
-</div>
-<!-- container -->
 
-<div class="container">
+<main id="main" class="container mt-3">
+  {{> @page-title }}
+
   <div class="row">
 
     <div class="col-md-8">
@@ -21,9 +19,7 @@
 
       <p class="hidden-md-up mb-2 text-center"><a href="../domaines" class="btn btn-primary btn-sm vd-btn-chevron-r">Tous les thèmes</a></p>
 
-      <main id="main">
-        {{render '@news-latest--homepage'}}
-      </main>
+      {{render '@news-latest--homepage'}}
 
     </div><!-- /.col-md-8 -->
 
@@ -40,7 +36,7 @@
     </aside><!-- /.col-md-4 -->
 
   </div><!-- /.row -->
-</div><!-- /.container -->
+</main><!-- /.container -->
 
 <hr class="vd-separator vd-separator-gray-bars vd-separator-wide mt-3 mb-3">
 
