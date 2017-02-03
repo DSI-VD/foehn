@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Change `<main>`, `<aside>`, `<h1>` , etc. structure of templates ad pages
 - Add title on breadcrumb molecule
 - Rename actualites template news-list
 - Rename news template news-detail
@@ -39,6 +40,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add page-title organism
 - Add config for search-form atom
 - Add titleModifier in faq organism
 - Add projects-list organism

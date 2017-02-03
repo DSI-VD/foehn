@@ -1,6 +1,7 @@
 {
     "status": "ready",
     "context": {
+      "pageTitle": "Site officiel de l'État de Vaud",
       "button-tiles-top": [
         {
           "item": "Grand Conseil",
