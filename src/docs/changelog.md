@@ -70,6 +70,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove unnecessary `role=navigation` on `<nav>`
 - Remove unnecessary `role=banner` on `<header>`
 - Remove social-icons--footer molecule
+- Remove font-icons from project, use font-awesome instead #598
 
 ## [0.14.0]
 
