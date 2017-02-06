@@ -37,6 +37,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Refactor lists
 - Move some templates in pages components
 - [Fractal](http://fractal.build/) is used to generate the frontend
+- Update boostrap-variables to last Alpha 6 version
 
 ### Added
 
@@ -64,12 +65,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix contact-form use submit molecules
 - Fix example-form use submit molecules
 - Fix size of submit button in contact-form
+- Fix box-shadow of a11y navigation
 
 ### Removed
 
 - Remove unnecessary `role=navigation` on `<nav>`
 - Remove unnecessary `role=banner` on `<header>`
 - Remove social-icons--footer molecule
+- Remove unnecessary ignored files in gitignore and stylelintrc
 
 ## [0.14.0]
 
