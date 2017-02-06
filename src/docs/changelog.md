@@ -64,6 +64,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix contact-form use submit molecules
 - Fix example-form use submit molecules
 - Fix size of submit button in contact-form
+- Fix font-family in button element #608
 
 ### Removed
 
