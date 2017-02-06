@@ -357,9 +357,9 @@ $table-border-color:            $gray-lighter !default;
 $btn-padding-x:                  1rem !default;
 $btn-padding-y:                  0.5rem !default;
 $btn-line-height:                1.45 !default;
-$btn-font-weight:                $font-weight-normal !default;
+$btn-font-weight:                500 !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
-$btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
+$btn-focus-box-shadow:           0 0 0 2px rgba($vd-focus, .5) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
 
 $btn-primary-color:              $white !default;
