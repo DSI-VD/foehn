@@ -263,7 +263,7 @@ $font-size-h5: 1rem !default;
 $font-size-h6: 0.9rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   inherit !default;
+$headings-font-family:   'Produkt', $font-family-sans-serif !default;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
