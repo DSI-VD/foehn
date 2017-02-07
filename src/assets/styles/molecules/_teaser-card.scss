@@ -32,14 +32,38 @@ a.vd-teaser-card {
   text-decoration: none;
 }
 
+.vd-card-green {
+  @include card-variant($brand-primary, $brand-primary);
+
+  .card-title,
+  .card-text {
+    color: $white;
+  }
+}
+
 .vd-card-lightgray {
   @include card-variant($vd-gray-lightest, $vd-gray-lightest);
+
+  .card-title,
+  .card-text {
+    color: $vd-gray-dark;
+  }
 }
 
 .vd-card-darkgray {
   @include card-variant($vd-gray-darker, $vd-gray-darker);
+
+  .card-title,
+  .card-text {
+    color: $white;
+  }
 }
 
 .vd-card-black {
   @include card-variant($black, $black);
+
+  .card-title,
+  .card-text {
+    color: $white;
+  }
 }
