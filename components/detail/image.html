@@ -153,7 +153,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-37f74623b23c5192d44058b0f917a117-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://source.unsplash.com/random/400x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Image"</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://source.unsplash.com/random/400x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -161,7 +161,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-37f74623b23c5192d44058b0f917a117-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://source.unsplash.com/random/400x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Image"</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> </span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> styleModifier}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> </span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ src }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -170,7 +170,10 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"src"</span>: <span class="hljs-string">"https://source.unsplash.com/random/400x200"</span>,
+  <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Alternative text"</span>
+}</pre>
             
         
     </code>
@@ -195,15 +198,11 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(7)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="image--default">
                     <span>Default</span>
-                </a>, 
-            
-                <a href="image--center">
-                    <span>Center</span>
                 </a>, 
             
                 <a href="image--desaturate">
@@ -212,14 +211,6 @@
             
                 <a href="image--fluid">
                     <span>Fluid</span>
-                </a>, 
-            
-                <a href="image--left">
-                    <span>Left</span>
-                </a>, 
-            
-                <a href="image--right">
-                    <span>Right</span>
                 </a>, 
             
                 <a href="image--rounded">
@@ -271,12 +262,6 @@
         <p>You can use the class <code>.img-fluid</code> to make the image responsive.</p>
 <p>You can use the class <code>.img-desaturate</code> on any element to desaturate the colors.</p>
 <p>You can use the <code>.rounded</code>, <code>.rounded-circle</code> and all <code>.rounded-[top,right,bottom,left]</code> classes on any element.</p>
-<p>You can use the following classes to align the image inside of a <code>.content</code> container:</p>
-<ul>
-<li><code>vd-img-center</code>: The image is centered above the text.</li>
-<li><code>vd-img-left</code>: the image is to the left of the text.</li>
-<li><code>vd-img-right</code>: the image is to the right of the text.</li>
-</ul>
 
         
     </div>
@@ -482,30 +467,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="image--center" data-pjax>
-                <span>Center</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="image--desaturate" data-pjax>
                 <span>Desaturate</span>
                 
@@ -532,54 +493,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="image--fluid" data-pjax>
                 <span>Fluid</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="image--left" data-pjax>
-                <span>Left</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="image--right" data-pjax>
-                <span>Right</span>
                 
 
 <div class="Status Status--unlabelled">
