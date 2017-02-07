@@ -1,0 +1,14 @@
+{
+    "context": {
+        "pageTitle": "Theme name",
+        "breadcrumb": {
+          "items": [{
+            "page": "vd.ch",
+            "url": "#"
+          },{
+            "page": "Domaines",
+            "url": "#"
+            }]
+        }
+    }
+}
