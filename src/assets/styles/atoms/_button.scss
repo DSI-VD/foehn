@@ -1,5 +1,15 @@
 @charset 'UTF-8';
 
+// Override normalize.css – because setting the font-family on `body` is not
+// specific enough for those tags
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-base;
+}
+
 .btn {
   white-space: normal;
   padding-top: $btn-padding-y * 1.1;
