@@ -1,10 +1,8 @@
 {
   "ignoreFiles": [
-    "assets/sass/main.scss",
-    "assets/sass/main-variables.scss",
-    "assets/sass/bootstrap-variables.scss",
-    "assets/sass/bootstrap.scss",
-    "assets/sass/icons.scss"
+    "src/assets/styles/main.scss",
+    "src/assets/styles/main-variables.scss",
+    "src/assets/styles/bootstrap-variables.scss"
   ],
   "extends": "stylelint-config-standard",
   "rules": {
