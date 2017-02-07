@@ -70,6 +70,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix box-shadow of a11y navigation
 - Fix font-family in button element #608
 - Fix list-boxed elements in column mode #606
+- Fix search input button in IE #605
 
 ### Removed
 
