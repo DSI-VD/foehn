@@ -65,12 +65,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix example-form use submit molecules
 - Fix size of submit button in contact-form
 - Fix font-family in button element #608
+- Fix list-boxed elements in column mode #606
+
 
 ### Removed
 
 - Remove unnecessary `role=navigation` on `<nav>`
 - Remove unnecessary `role=banner` on `<header>`
 - Remove social-icons--footer molecule
+- Remove font-icons from project, use font-awesome instead #598
 
 ## [0.14.0]
 
