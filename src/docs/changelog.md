@@ -76,6 +76,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+- Remove image alignment styles
 - Remove unnecessary `role=navigation` on `<nav>`
 - Remove unnecessary `role=banner` on `<header>`
 - Remove social-icons--footer molecule

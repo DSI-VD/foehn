@@ -3,24 +3,3 @@
 .img-desaturate {
   filter: grayscale(100%);
 }
-
-.content {
-  .vd-img-left {
-    float: left;
-    max-width: 50%;
-    margin: ($spacer / 2.5) $spacer-y $spacer-x 0;
-  }
-
-  .vd-img-right {
-    float: right;
-    max-width: 50%;
-    margin: ($spacer / 2.5) 0 $spacer-x $spacer-y;
-  }
-
-  .vd-img-center {
-    display: block;
-    margin: ($spacer / 2.5) auto $spacer-y;
-
-    @include img-fluid();
-  }
-}
