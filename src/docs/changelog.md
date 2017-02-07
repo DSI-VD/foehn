@@ -61,6 +61,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix `.small` make headings smaller
 - Fix radio include in fieldset molecule
 - Fix footer columns
 - Fix contact-form use submit molecules

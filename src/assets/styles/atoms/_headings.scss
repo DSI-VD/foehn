@@ -5,10 +5,16 @@ h1,
   font-weight: 700;
 }
 
+
+/**
+ * vd-section-title is an alternative style for headings
+ *
+ * 1. Can be smaller if used with .small. See `_small.css`
+ */
 .vd-section-title {
   margin-bottom: $spacer * 2;
   font-family: $font-family-base;
-  font-size: $font-size-base * 1.1;
+  font-size: $font-size-base * 1.1; /* [1] */
   font-weight: 400;
   color: $body-color;
   text-transform: uppercase;
