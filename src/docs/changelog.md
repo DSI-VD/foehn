@@ -39,7 +39,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - [Fractal](http://fractal.build/) is used to generate the frontend
 - Update boostrap-variables to last Alpha 6 version
 - Reduce height of header search-form #607
-- Make input border light gray #427
+- Make input placeholder gray #427
 
 ### Added
 
