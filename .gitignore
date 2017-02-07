@@ -4,11 +4,7 @@ node_modules
 .publish
 .env
 
-/dist
-build/
-/styleguide
+dist/
 tmp/
 
-tests/regression/compare
-tests/regression/temp
 npm-debug.log

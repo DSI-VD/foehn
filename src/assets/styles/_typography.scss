@@ -2,6 +2,6 @@
 
 html {
   @include media-breakpoint-down(sm) {
-    font-size: $font-size-root * 0.8;
+    font-size: $font-size-base * 0.8;
   }
 }
