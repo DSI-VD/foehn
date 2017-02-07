@@ -1,3 +1,23 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "variants": [
+      {
+        "name": "light grey",
+        "context": {
+          "styleModifier": "vd-card-lightgray"
+        }
+      },
+      {
+        "name": "dark grey",
+        "context": {
+          "styleModifier": "vd-card-darkgray"
+        }
+      },
+      {
+        "name": "black",
+        "context": {
+          "styleModifier": "vd-card-black"
+        }
+      }
+    ]
 }
