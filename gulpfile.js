@@ -8,8 +8,6 @@ const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
-const iconfont = require('gulp-iconfont');
-const consolidate = require('gulp-consolidate');
 const imagemin = require('gulp-imagemin');
 const eslint = require('gulp-eslint');
 
@@ -108,7 +106,6 @@ function styles() {
 function lintstyles() {
     return gulp.src([
         `${paths.src}/assets/styles/**/*.s+(a|c)ss`,
-        `!${paths.src}/assets/styles/icons.scss`,
         `!${paths.src}/assets/styles/bootstrap-variables.scss`,
     ])
      .pipe(stylelint({
@@ -154,31 +151,6 @@ function scriptsVendors() {
     .pipe(rename('vendors.js'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
-}
-
-/**
- * Icons
- */
-function icons() {
-    return gulp.src(`${paths.src}assets/icons/**/*.svg`)
-    .pipe(iconfont({
-        fontName: 'icons',
-        appendCodepoints: true,
-        normalize: true,
-        fontHeight: 1001,
-    }))
-    .on('glyphs', (glyphs) => {
-        gulp.src('node_modules/toolbox-utils/templates/_icons.scss')
-        .pipe(consolidate('lodash', {
-            glyphs: glyphs.map(glyph => ({ name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0) })),
-            fontName: 'icons',
-            fontPath: '../fonts/',
-            className: 'icons',
-        }))
-        .pipe(rename('icons.scss'))
-        .pipe(gulp.dest(`${paths.src}assets/styles/`));
-    })
-    .pipe(gulp.dest(`${paths.dest}assets/fonts`));
 }
 
 /**
@@ -232,7 +204,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, lintstyles, stylesVendors, fonts, scriptsVendors, icons, svg, images, lintscripts));
+const compile = gulp.series(clean, gulp.parallel(styles, lintstyles, stylesVendors, fonts, scriptsVendors, svg, images, lintscripts));
 
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
