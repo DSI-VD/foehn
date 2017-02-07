@@ -2,8 +2,7 @@
   "ignoreFiles": [
     "src/assets/styles/main.scss",
     "src/assets/styles/main-variables.scss",
-    "src/assets/styles/bootstrap-variables.scss",
-    "src/assets/styles/icons.scss"
+    "src/assets/styles/bootstrap-variables.scss"
   ],
   "extends": "stylelint-config-standard",
   "rules": {
