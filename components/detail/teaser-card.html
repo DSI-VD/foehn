@@ -153,7 +153,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-f1e4c5a77542ed01571bae2048e2a314-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card vd-card-lightgray"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card vd-card-green"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-img-top w-100"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://placehold.it/700x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image cap"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-block"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title mb-0"</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
@@ -167,7 +167,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-f1e4c5a77542ed01571bae2048e2a314-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card vd-card-lightgray"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card </span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> styleModifier}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-variable">{{ <span class="hljs-builtin-name">else</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">vd-card-green</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-img-top w-100"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://placehold.it/700x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image cap"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-block"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title mb-0"</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
@@ -205,6 +205,29 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="teaser-card--default">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="teaser-card--light-grey">
+                    <span>Light Grey</span>
+                </a>, 
+            
+                <a href="teaser-card--dark-grey">
+                    <span>Dark Grey</span>
+                </a>, 
+            
+                <a href="teaser-card--black">
+                    <span>Black</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -2694,10 +2717,21 @@ In case of dark background, use the class <code>.card-inverse</code> to display 
         
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser-card">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Teaser Card</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser-card--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2714,6 +2748,83 @@ In case of dark background, use the class <code>.card-inverse</code> to display 
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser-card--light-grey" data-pjax>
+                <span>Light Grey</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser-card--dark-grey" data-pjax>
+                <span>Dark Grey</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser-card--black" data-pjax>
+                <span>Black</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
