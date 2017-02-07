@@ -415,7 +415,7 @@ $input-bg:                       $white !default;
 $input-bg-disabled:              $gray-lighter !default;
 
 $input-color:                    $gray-dark !default;
-$input-border-color:             $gray !default;
+$input-border-color:             lighten($gray, 10%) !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               none !default;
 
@@ -428,7 +428,7 @@ $input-border-focus:             $vd-focus !default;
 $input-box-shadow-focus:         0 0 3px 0 rgba($vd-info,.6) !default;
 $input-color-focus:              $input-color !default;
 
-$input-color-placeholder:        $vd-gray-lighter !default;
+$input-color-placeholder:        $gray !default;
 
 $input-padding-x-sm:             .5rem !default;
 $input-padding-y-sm:             .25rem !default;
