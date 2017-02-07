@@ -37,6 +37,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Refactor lists
 - Move some templates in pages components
 - [Fractal](http://fractal.build/) is used to generate the frontend
+- Move logo to the right on the homepage
 - Update boostrap-variables to last Alpha 6 version
 - Reduce height of header search-form #607
 
