@@ -4,7 +4,19 @@
     "address": {
         "street": "Avenue de Longemalle 1",
         "postal-code": "1020",
-        "location": "Renens"
+        "locality": "Renens"
+    },
+    "list-icon": [
+    {
+      "item": "service@vd.ch",
+      "icon": "fa-info-circle",
+      "url": "#"
+    },
+    {
+      "item": "voir sur la carte",
+      "icon": "fa-map-marker",
+      "url": "#"
     }
+  ]
   }
 }
