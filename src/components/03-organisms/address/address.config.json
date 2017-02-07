@@ -1,0 +1,10 @@
+{
+  "context": {
+    "name": "Service name",
+    "address": {
+        "street": "Avenue de Longemalle 1",
+        "postal-code": "1020",
+        "location": "Renens"
+    }
+  }
+}
