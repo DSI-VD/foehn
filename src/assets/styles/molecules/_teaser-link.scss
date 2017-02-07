@@ -1,7 +1,24 @@
 @charset 'UTF-8';
 
+/**
+ * 1. override Bootstrap column for the list item: we need it on the link
+ */
+
+.vd-teaser-links {
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: inline-flex;
+    margin: 0;
+    padding: 0; /* 1 */
+  }
+}
+
 .vd-teaser-link {
   display: inline-block;
+  width: 100%;
   padding-top: ($spacer / 1.5);
   padding-bottom: ($spacer / 1.5);
   border: 1px solid rgba($gray-lighter, 0);
@@ -10,6 +27,8 @@
   font-weight: 300;
   text-decoration: none;
   transition: border-color 0.2s ease;
+
+  @include make-gutters($grid-gutter-widths);
 
   .vd-teaser-link-title {
     display: block;

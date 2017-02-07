@@ -1,4 +1,6 @@
-<a href="{{#if url}}{{ url }}{{else}}#{{/if}}" class="vd-teaser-link{{#if styleModifier}} {{ styleModifier }}{{/if}}">
-  <h5 class="vd-teaser-link-title">{{ name }}</h5>
-  <p class="vd-teaser-link-text">{{ description }}</p>
-</a>
+<li class="vd-teaser-link-item{{#if styleModifier}} {{ styleModifier }}{{/if}}">
+  <a href="{{#if url}}{{ url }}{{else}}#{{/if}}" class="vd-teaser-link nav-link">
+    <p class="vd-teaser-link-title">{{ name }}</p>
+    <p class="vd-teaser-link-text">{{ description }}</p>
+  </a>
+</li>
