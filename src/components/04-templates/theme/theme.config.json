@@ -14,7 +14,8 @@
     },
     "variants": [
       {
-        "name": "search",
+        "name": "list",
+        "label": "List all prestations",
         "context": {
           "searchForm": {
             "title": "Rechercher dans les préstations"
