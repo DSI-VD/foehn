@@ -1,0 +1,23 @@
+<address class="mb-2" itemscope itemtype="http://schema.org/GovernmentOrganization">
+
+  <h2 itemprop="name">{{ name }}</h2>
+
+  {{#if division }}<h3 class="vd-section-title mb-1">{{ division }}</h3>{{/if}}
+  <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">{{ address.street }}</span> <br><span itemprop="postalCode">{{ address.postal-code }}</span> <span itemprop="addressLocality">{{ address.locality }}</span> <span class="sr-only" itemprop="addressCountry">Suisse</span></p>
+
+  <div itemscope itemtype="http://schema.org/GovernmentBuilding">
+  {{#if openingHours.title}}<h3>{{ openingHours.title }}<span class="sr-only"> du {{ name }}</span></h3>{{/if}}
+  {{#if openingHours.openingHours}}
+    {{#each openingHours.openingHours}}
+    <p itemprop="openingHours" content="{{ microdata }}">{{ text }}</p>
+    {{/each}}
+  {{/if}}
+  </div>
+
+  {{> @list-icon }}
+
+  <p>
+    {{> @button--default text='Contacter l\'office'}}
+  </p>
+
+</address>
