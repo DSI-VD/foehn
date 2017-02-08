@@ -9,28 +9,6 @@
             "page": "Domaines",
             "url": "#"
             }]
-        },
-        "otherPrestations": [
-          {
-            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "url": "#"
-          },
-          {
-            "item": "Duis aliquam urna eu quam accumsan pulvinar.",
-            "url": "#"
-          },
-          {
-            "item": "In non dolor nec ante fermentum volutpat.",
-            "url": "#"
-          },
-          {
-            "item": "Curabitur commodo enim a massa sollicitudin, eget facilisis diam finibus.",
-            "url": "#"
-          },
-          {
-            "item": "Donec blandit mauris posuere venenatis elementum.",
-            "url": "#"
-          }
-        ]
+        }
     }
 }
