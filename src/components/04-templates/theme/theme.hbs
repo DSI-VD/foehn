@@ -3,15 +3,7 @@
 {{> @page-title-banner }}
 
 {{#if searchForm}}
-<div class="vd-bg-pattern-bars-gray clearfix mt-1 py-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        {{> @search-form--regular searchForm }}
-      </div>
-    </div>
-  </div>
-</div>
+{{render '@search-banner--default' searchForm merge=true}}
 {{/if}}
 
 <main id="main" class="container mt-3">
