@@ -1,6 +1,7 @@
 {
   "context": {
     "name": "Service name",
+    "division": "division",
     "address": {
         "street": "Rue de la Barre 2",
         "postal-code": "1000",
