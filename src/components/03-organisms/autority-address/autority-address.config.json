@@ -17,26 +17,26 @@
       ]
     },
     "list-icon": [
-    {
-      "item": "+41 21 123 45 67",
-      "icon": "fa-phone",
-      "url": "tel:+41211234567"
-    },
-    {
-      "item": "+41 21 123 45 67",
-      "icon": "fa-fax",
-      "url": "tel:+41211234567"
-    },
-    {
-      "item": "service@vd.ch",
-      "icon": "fa-envelope",
-      "url": "mailto:service@vd.ch"
-    },
-    {
-      "item": "voir sur la carte",
-      "icon": "fa-map-marker",
-      "url": "#"
-    }
-  ]
+      {
+        "item": "+41 21 123 45 67",
+        "icon": "fa-phone",
+        "url": "tel:+41211234567"
+      },
+      {
+        "item": "+41 21 123 45 67",
+        "icon": "fa-fax",
+        "url": "tel:+41211234567"
+      },
+      {
+        "item": "service@vd.ch",
+        "icon": "fa-envelope",
+        "url": "mailto:service@vd.ch"
+      },
+      {
+        "item": "voir sur la carte",
+        "icon": "fa-map-marker",
+        "url": "#"
+      }
+    ]
   }
 }
