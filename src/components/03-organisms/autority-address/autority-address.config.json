@@ -1,0 +1,42 @@
+{
+  "context": {
+    "name": "Service name",
+    "division": "division",
+    "address": {
+        "street": "Rue de la Barre 2",
+        "postal-code": "1000",
+        "locality": "Lausanne"
+    },
+    "openingHours": {
+      "title": "Heures d'ouverture",
+      "openingHours": [
+        {
+          "text": "du lundi au vendredi de 8h00 à 11h30 et de 13h30 à 16h30",
+          "microdata": "Mo,Tu,We,Th,Fr 08:00-11:30,13:30-16:30"
+        }
+      ]
+    },
+    "list-icon": [
+    {
+      "item": "+41 21 123 45 67",
+      "icon": "fa-phone",
+      "url": "tel:+41211234567"
+    },
+    {
+      "item": "+41 21 123 45 67",
+      "icon": "fa-fax",
+      "url": "tel:+41211234567"
+    },
+    {
+      "item": "service@vd.ch",
+      "icon": "fa-envelope",
+      "url": "mailto:service@vd.ch"
+    },
+    {
+      "item": "voir sur la carte",
+      "icon": "fa-map-marker",
+      "url": "#"
+    }
+  ]
+  }
+}

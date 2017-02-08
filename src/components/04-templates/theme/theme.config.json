@@ -1,0 +1,142 @@
+{
+    "context": {
+        "pageTitle": "Theme name",
+        "breadcrumb": {
+          "items": [{
+            "page": "vd.ch",
+            "url": "#"
+          },{
+            "page": "Domaines",
+            "url": "#"
+            }]
+        },
+        "prestations": "@list-boxed"
+    },
+    "variants": [
+      {
+        "name": "list",
+        "label": "List all prestations",
+        "context": {
+          "searchForm": {
+            "title": "Rechercher dans les préstations"
+          },
+          "prestations": {
+            "list": [
+              {
+                "item": "Adipisci blanditiis quia aspernatur voluptas.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Sit laudantium ad magni ut consectetur ipsam.",
+                "url": "#"
+              },
+              {
+                "item": "Omnis est neque modi sit qui cumque atque voluptas.",
+                "url": "#"
+              },
+              {
+                "item": "Doloremque rerum voluptate.",
+                "url": "#"
+              },
+              {
+                "item": "Impedit provident esse voluptas nesciunt ipsum suscipit qui earum fuga.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Natus animi est mollitia.",
+                "url": "#"
+              },
+              {
+                "item": "Quidem accusamus et ipsum illo.",
+                "url": "#"
+              },
+              {
+                "item": "Non vel esse ex.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Qui ipsam magnam consectetur id itaque in.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Quia quis molestiae id.",
+                "url": "#"
+              },
+              {
+                "item": "Non vel esse ex.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Qui ipsam magnam consectetur id itaque in.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Adipisci blanditiis quia aspernatur voluptas.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Sit laudantium ad magni ut consectetur ipsam.",
+                "url": "#"
+              },
+              {
+                "item": "Omnis est neque modi sit qui cumque atque voluptas.",
+                "url": "#"
+              },
+              {
+                "item": "Doloremque rerum voluptate.",
+                "url": "#"
+              },
+              {
+                "item": "Impedit provident esse voluptas nesciunt ipsum suscipit qui earum fuga.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Natus animi est mollitia.",
+                "url": "#"
+              },
+              {
+                "item": "Quidem accusamus et ipsum illo.",
+                "url": "#"
+              },
+              {
+                "item": "Non vel esse ex.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Qui ipsam magnam consectetur id itaque in.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Quia quis molestiae id.",
+                "url": "#"
+              },
+              {
+                "item": "Non vel esse ex.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Qui ipsam magnam consectetur id itaque in.",
+                "url": "#",
+                "secure": true
+              },
+              {
+                "item": "Quia quis molestiae id",
+                "url": "#"
+              }
+            ]
+          }
+        }
+      }
+    ]
+}
