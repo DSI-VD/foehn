@@ -166,6 +166,13 @@
             ]
           }
         }
+      },
+      {
+        "name": "geo",
+        "label": "Geographic services",
+        "context": {
+          "sidebar": "geo"
+        }
       }
     ]
 }
