@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add `.table-responsive` on table
 - Add teaser card color variants
 - Add page-title organism
 - Add config for search-form atom
