@@ -12,8 +12,8 @@
 
       <h2>Dans ce thème</h2>
       <div class="vd-bg-pattern-green p-1 mb-1">
-        {{render '@list-boxed' }}
-        <p>{{> @button--default text="Voir tout" }}</p>
+        {{> @list-boxed prestations}}
+        {{#if searchForm}}{{else}}<p>{{> @button--default text="Voir tout" title="Afficher toutes les préstations" href="theme--search"}}</p>{{/if}}
       </div>
 
       <h2 class="sr-only">Sous-pages</h2>
