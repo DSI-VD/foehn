@@ -26,9 +26,12 @@
     </div>
 
     <aside class="col-md-4 small">
-
+      {{#if sidebar}}
+      {{render '@autority-info'}}
+      {{render '@autority-info'}}
+      {{else}}
       {{render '@autority-address'}}
-
+      {{/if}}
     </aside>
   </div>
 </main>

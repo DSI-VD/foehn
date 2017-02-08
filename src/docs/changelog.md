@@ -43,6 +43,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add theme template for geographic services
+- Add autority-info components
 - Add `.table-responsive` on table
 - Add search-banner organim
 - Add autority-address organism
