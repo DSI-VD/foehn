@@ -2,6 +2,18 @@
 
 {{> @page-title-banner }}
 
+{{#if searchForm}}
+<div class="vd-bg-pattern-bars-gray clearfix mt-1 py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {{> @search-form--regular searchForm }}
+      </div>
+    </div>
+  </div>
+</div>
+{{/if}}
+
 <main id="main" class="container mt-3">
 
   {{> @page-title }}
@@ -13,7 +25,7 @@
       <h2>Dans ce thème</h2>
       <div class="vd-bg-pattern-green p-1 mb-1">
         {{> @list-boxed prestations}}
-        {{#if searchForm}}{{else}}<p>{{> @button--default text="Voir tout" title="Afficher toutes les préstations" href="theme--search"}}</p>{{/if}}
+        {{#if searchForm}}{{else}}<p>{{> @button--default text="Voir tout" title="Afficher toutes les préstations" href="theme--list"}}</p>{{/if}}
       </div>
 
       <h2 class="sr-only">Sous-pages</h2>
