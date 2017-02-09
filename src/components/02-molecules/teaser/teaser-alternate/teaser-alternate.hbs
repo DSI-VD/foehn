@@ -1,6 +1,6 @@
 <article class="vd-teaser-alternate">
   <h3 class="vd-teaser-title mb-1">
-    <a href="{{ url }}">{{ title }}</a>
+    <a href="{{ url }}" class="vd-link-invisible">{{ title }}</a>
   </h3>
   <div class="row">
     <div class="col-md-6">
@@ -12,5 +12,5 @@
       </a>
     </div>
   </div>
-  <a href="{{ url }}" class="vd-teaser-meta">{{> @time }}</a>
+  <p><a href="{{ url }}" class="vd-teaser-meta">{{> @time }}</a>
 </article>
