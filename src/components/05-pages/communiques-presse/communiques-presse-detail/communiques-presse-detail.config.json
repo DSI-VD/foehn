@@ -1,15 +1,15 @@
 {
     "context": {
-        "breadcrumb": {
-          "items": [{
+        "breadcrumb": [
+          {
             "page": "vd.ch",
             "url": "#"
           },
           {
             "page": "Communiqués de presse",
             "url": "#"
-            }]
-        }
+          }
+        ]
     },
     "variants": [
       {

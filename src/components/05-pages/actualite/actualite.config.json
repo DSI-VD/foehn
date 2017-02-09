@@ -1,13 +1,13 @@
 {
     "context": {
-        "breadcrumb": {
-          "items": [{
+        "breadcrumb":  [
+          {
             "page": "vd.ch",
             "url": "#"
           },{
             "page": "Actualités",
             "url": "#"
-          }]
-        }
+          }
+        ]
     }
 }

@@ -9,6 +9,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+
+- Fix breadcrumb isn't display on certain templates and pages
+
 ## [0.15.0]
 
 ### Changed
