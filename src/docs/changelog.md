@@ -68,6 +68,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix update-time margin
 - Fix homepage button-tiles context
 - Fix radio include in fieldset molecule
 - Fix footer columns
