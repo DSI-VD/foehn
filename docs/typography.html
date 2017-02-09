@@ -76,115 +76,31 @@
     
     
     <h2 id="fonts-used">Fonts used</h2>
-<p><br></p>
-<p class="text-graphik" style="font-weight: 400;">Graphik Light - normal 400</p>
-<p class="text-graphik" style="font-weight: 400; font-style: italic;">Graphik LightItalic - italic 400</p>
-<p class="text-graphik" style="font-weight: 500;">Graphik Medium - normal 500</p>
-<br>
-<p class="text-produkt" style="font-weight: 300;">Produkt Light - normal 300</p>
-<p class="text-produkt" style="font-weight: 300; font-style: italic;">Produkt LightItalic  - italic 300</p>
-<p class="text-produkt" style="font-weight: 500;">Produkt Medium - normal 500</p>
-<p class="text-produkt" style="font-weight: 700;">Produkt Bold - normal 700</p>
-
+<ul>
+<li>Graphik Light - normal 400</li>
+<li>Graphik LightItalic - italic 400</li>
+<li><p>Graphik Medium - normal 500</p>
+</li>
+<li><p>Produkt Light - normal 300</p>
+</li>
+<li>Produkt LightItalic  - italic 300</li>
+<li>Produkt Medium - normal 500</li>
+<li>Produkt Bold - normal 700</li>
+</ul>
 <hr class="my-3">
 
 <h2 id="-webfont-loader-https-github-com-typekit-webfontloader-code"><a href="https://github.com/typekit/webfontloader">Webfont Loader</a> code</h2>
 <p>Insert this code in your base template, to invoke all the needed fonts.</p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Instead of using a CDN, you can host yourself the file --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
 WebFont.load({
   custom: {
     families: [<span class="hljs-string">'Graphik:n4,i4,n5'</span>, <span class="hljs-string">'Produkt:n3,i3,n5,n7'</span>],
-    urls: [<span class="hljs-string">'build/fonts/fonts.css'</span>]
+    urls: [<span class="hljs-string">'assets/fonts/fonts.css'</span>]
   }
 });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></code><p><hr class="my-3"></p>
-<div class="bs-docs-section mt-3">
-  <div class="mt-3"></div>
-
-  <!-- Headings -->
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="display-1">Display 1</h1>
-      <h1 class="display-2">Display 2</h1>
-      <h1 class="display-3">Display 3</h1>
-      <h1 class="display-4">Display 4</h1>
-    </div>
-  </div>
-  <hr class="my-3">
-  <div class="row">
-  <div class="col-lg-6">
-    <div class="bs-component">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    </div>
-  </div>
-    <div class="col-lg-6">
-      <h2>Inline text elements</h2>
-      <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-      <p><del>This line of text is meant to be treated as deleted text.</del></p>
-      <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-      <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-      <p><u>This line of text will render as underlined</u></p>
-      <p>This is <a href="#0">a link</a> inside a paragraph.</p>
-    </div>
-  </div>
-  <hr class="my-3">
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="bs-component">
-        <h2>Example body text</h2>
-        <p>Nullam quis risus eget <a href="#0">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-        <p><small>This line of text is meant to be treated as fine print.</small></p>
-        <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-        <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-        <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="bs-component">
-        <h2>Emphasis classes</h2>
-        <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-        <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Blockquotes -->
-  <div class="row">
-    <div class="col-lg-12">
-      <h2 id="type-blockquotes">Blockquotes</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="bs-component">
-        <blockquote class="blockquote">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="bs-component">
-        <blockquote class="blockquote blockquote-reverse">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</div>
-
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></code>
     
 
 
