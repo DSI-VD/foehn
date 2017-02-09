@@ -2,9 +2,9 @@
   "name": "foehn",
   "description": "Frontend pattern library for State of Vaud",
   "main": [
-    "/dist/assets/scripts/vendors.js",
-    "/dist/assets/styles/main.css",
-    "/dist/assets/styles/vendors.css"
+    "dist/assets/scripts/vendors.js",
+    "dist/assets/styles/main.css",
+    "dist/assets/styles/vendors.css"
   ],
   "authors": [
     "DSI VD <info.dsi@vd.ch>"
