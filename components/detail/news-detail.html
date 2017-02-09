@@ -377,6 +377,8 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>File d'Ariane<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>vd.ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"news-list"</span>&gt;</span>Actualites<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Vous êtes ici: [titre de la page]<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
@@ -676,7 +678,7 @@
         <pre><span class="xml"></span><span class="hljs-template-variable">{{&gt; <a href="header">@header</a>  }}</span><span class="xml">
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container py-1"</span>&gt;</span>
-      </span><span class="hljs-template-variable">{{&gt; <a href="breadcrumb">@breadcrumb</a> }}</span><span class="xml">
+      </span><span class="hljs-template-variable">{{&gt; <a href="breadcrumb">@breadcrumb</a> items=breadcrump }}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container container-small"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
@@ -716,6 +718,16 @@
   <span class="hljs-attr">"news"</span>: {
     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor."</span>
   },
+  <span class="hljs-attr">"breadcrump"</span>: [
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    },
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Actualites"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"news-list"</span>
+    }
+  ],
   <span class="hljs-attr">"list-links"</span>: [
     {
       <span class="hljs-attr">"item"</span>: <span class="hljs-string">"Communiqué du 1er novembre 2016"</span>,
