@@ -371,10 +371,12 @@
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container py-1"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container pt-1"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>File d'Ariane<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>vd.ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Communiqués de presse<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Vous êtes ici: [titre de la page]<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
@@ -606,9 +608,7 @@
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"></span><span class="hljs-template-variable">{{&gt; <a href="header">@header</a> }}</span><span class="xml">
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container py-1"</span>&gt;</span>
-  </span><span class="hljs-template-variable">{{&gt; <a href="breadcrumb">@breadcrumb</a> }}</span><span class="xml">
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span><span class="hljs-template-variable">{{&gt; <a href="page-title-banner--light">@page-title-banner--light</a>}}</span><span class="xml">
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
@@ -713,18 +713,16 @@
         
             
             <pre>{
-  <span class="hljs-attr">"breadcrumb"</span>: {
-    <span class="hljs-attr">"items"</span>: [
-      {
-        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-      },
-      {
-        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Communiqués de presse"</span>,
-        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-      }
-    ]
-  },
+  <span class="hljs-attr">"breadcrumb"</span>: [
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    },
+    {
+      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Communiqués de presse"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+    }
+  ],
   <span class="hljs-attr">"icons"</span>: <span class="hljs-string">"top"</span>
 }</pre>
             
@@ -791,7 +789,7 @@
             
                 <a href="header">@<span>header</span></a>, 
             
-                <a href="breadcrumb">@<span>breadcrumb</span></a>, 
+                <a href="page-title-banner--light">@<span>page-title-banner--light</span></a>, 
             
                 <a href="social-icons">@<span>social-icons</span></a>, 
             
@@ -3979,6 +3977,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="page-title-banner--default" data-pjax>
                 <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-title-banner--light" data-pjax>
+                <span>Light</span>
                 
 
 <div class="Status Status--unlabelled">
