@@ -9,6 +9,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## Changed
+
+- Link on header in teaser-alternate is black
+
 ### Added
 
 - Add page-title-banner--light organism
