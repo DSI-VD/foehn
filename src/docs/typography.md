@@ -6,7 +6,6 @@ status: draft
 - Graphik Light - normal 400
 - Graphik LightItalic - italic 400
 - Graphik Medium - normal 500
-
 - Produkt Light - normal 300
 - Produkt LightItalic  - italic 300
 - Produkt Medium - normal 500
