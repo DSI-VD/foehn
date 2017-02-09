@@ -1,6 +1,6 @@
 <div class="container">
-  {{render '@update-time'}}
-  {{> @social-icons title='Partager' titleModifier='sr-only'}}
+  {{#if updateTime }}{{render '@update-time'}}{{/if}}
+  {{> @social-icons title='Partager' titleModifier='sr-only' styleModifier='mt-2'}}
 </div>
 <footer class="footer">
   <div class="container">
