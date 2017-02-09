@@ -151,13 +151,14 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-8907977e247953778b0a4b42395668cb-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card vd-card-black"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card vd-card-black"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-img-top w-100"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://placehold.it/700x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image cap"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-block"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title mb-0"</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>En savoir plus<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -165,13 +166,14 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-8907977e247953778b0a4b42395668cb-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card </span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> styleModifier}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-variable">{{ <span class="hljs-builtin-name">else</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">vd-card-green</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card vd-teaser-card </span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> styleModifier}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-variable">{{ <span class="hljs-builtin-name">else</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">vd-card-lightgray</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-img-top w-100"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://placehold.it/700x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image cap"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-block"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title mb-0"</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>En savoir plus<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -212,8 +214,8 @@
                     <span>Default</span>
                 </a>, 
             
-                <a href="teaser-card--light-grey">
-                    <span>Light Grey</span>
+                <a href="teaser-card--green">
+                    <span>Green</span>
                 </a>, 
             
                 <a href="teaser-card--dark-grey">
@@ -2680,8 +2682,8 @@ In case of dark background, use the class <code>.card-inverse</code> to display 
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="teaser-card--light-grey" data-pjax>
-                <span>Light Grey</span>
+            <a class="Tree-entityLink" href="teaser-card--green" data-pjax>
+                <span>Green</span>
                 
 
 <div class="Status Status--unlabelled">
