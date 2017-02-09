@@ -1,6 +1,6 @@
 {
   "name": "foehn",
-  "version": "0.15.1",
+  "version": "0.15.2",
   "author": "DSI VD <info.dsi@vd.ch>",
   "repository": "git://git.etat-de-vaud.ch/typo3/foehn.git",
   "description": "Frontend pattern library for State of Vaud",
