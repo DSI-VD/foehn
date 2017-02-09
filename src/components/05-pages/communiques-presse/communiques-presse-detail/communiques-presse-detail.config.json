@@ -10,5 +10,13 @@
             "url": "#"
             }]
         }
-    }
+    },
+    "variants": [
+      {
+        "name": "alternate",
+        "context": {
+          "icons": "top"
+        }
+      }
+    ]
 }

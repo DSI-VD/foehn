@@ -13,6 +13,15 @@
         <p class="mb-0 small">&Eacute;metteur</p>
         <p class="small font-weight-bold">Lausanne, le 1er juillet 2016</p>
 
+        {{#if icons}}
+        <h2 class="sr-only">Partnaires</h2>
+        <ul class="list-inline">
+          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+          <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
+        </ul>
+        {{/if}}
+
         <p class="text-uppercase mb-0">Axes forts de transports publics</p>
         <h1 class="h2 px-2 py-2 mb-2 vd-bg-pattern-bars-gray">Le Service de la sécurité civile et militaire est certifié</h1>
       </header>
@@ -36,6 +45,7 @@
 
       {{> @signature }}
 
+      {{#unless icons}}
       <h2 class="sr-only">Partnaires</h2>
       <ul class="list-inline">
         <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
@@ -46,6 +56,7 @@
         <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
         <li class="list-inline-item"><span class="sr-only">Partenaire</span><img class="img-fluid" src="http://placehold.it/75x75" alt="logo du partenaire"></li>
       </ul>
+      {{/unless}}
 
       <h3 class="h5">Renseignements</h3>
       <ul class="list-unstyled">
@@ -54,13 +65,8 @@
         <li class="mb-0">Renens, Marianne Hugenin, syndique, 079 316 70 01</li>
       </ul>
 
-      <h2 class="sr-only">Téléchargement(s)</h2>
-      <ul class="list-unstyled">
-        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Version intégrale au format PDF</a></li>
-        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">EMPD 294 - réalisation du tramway Lausanne-Renens</a></li>
-        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Lorem ipsum dolor sit amet</a></li>
-        <li><span class="fa fa-download" aria-hidden="true"></span> <a href="#">Consectetur adipisicing elit</a></li>
-      </ul>
+      {{render '@download-list'}}
+
     </div>
 
     <aside class="col-md-4 small">
