@@ -3,8 +3,6 @@ node_modules
 *.DS_Store
 .publish
 .env
-
-dist/
 tmp/
 
 npm-debug.log
