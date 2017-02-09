@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Default teaser-card is the light grey one
 - Change `<main>`, `<aside>`, `<h1>` , etc. structure of templates ad pages
 - Add title on breadcrumb molecule
 - Rename actualites template news-list
@@ -68,6 +69,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix teaser-card links
 - Fix update-time margin
 - Fix homepage button-tiles context
 - Fix radio include in fieldset molecule
