@@ -1,18 +1,23 @@
 {
-    "status": "ready",
-    "context": {
-        "items": [{
-          "page": "level 1",
-          "url": "#"
-        },{
-          "page": "level 2",
-          "url": "#"
-        },{
-          "page": "level 3",
-          "url": "#"
-        },{
-          "page": "level 4",
-          "url": "#"
-        }]
-    }
+  "status": "ready",
+  "context": {
+    "items": [
+      {
+        "page": "level 1",
+        "url": "#"
+      },
+      {
+        "page": "level 2",
+        "url": "#"
+      },
+      {
+        "page": "level 3",
+        "url": "#"
+      },
+      {
+        "page": "level 4",
+        "url": "#"
+      }
+    ]
+  }
 }
