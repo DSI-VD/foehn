@@ -4,6 +4,16 @@
     "news": {
       "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor."
     },
+    "breadcrump": [
+      {
+        "page": "vd.ch",
+        "url": "#"
+      },
+      {
+        "page": "Actualites",
+        "url": "news-list"
+      }
+    ],
     "list-links": [{
       "item": "Communiqué du 1er novembre 2016",
       "url": "http://nicolas.eu"
