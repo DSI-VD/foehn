@@ -37,3 +37,12 @@ We deploy the styleguide to a `gh-pages` branch on Github. To do this, a simple 
 ```shell
 $ npm run deploy
 ```
+
+### New version
+
+To bump version use the following command:
+
+```
+$ npm run version
+```
+It will ask you the new version number.
