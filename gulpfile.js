@@ -71,6 +71,16 @@ function build() {
 }
 
 /**
+ * Clean Dest
+ *
+ * When developing, we do not clean dist/ folder to avoid nightmare of merge conflict.
+ * dist folder is clean and rebuild only before new version release.
+ */
+function cleanDest() {
+    return del(paths.dest);
+}
+
+/**
  * Clean
  */
 function clean() {
@@ -204,8 +214,8 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles, lintstyles, stylesVendors, fonts, scriptsVendors, svg, images, lintscripts));
+const compile = gulp.series(gulp.parallel(styles, lintstyles, stylesVendors, fonts, scriptsVendors, svg, images, lintscripts));
 
-gulp.task('build', gulp.series(compile, build));
-gulp.task('dev', gulp.series(compile, watch));
+gulp.task('build', gulp.series(clean, compile, build));
+gulp.task('dev', gulp.series(cleanDest, compile, watch));
 gulp.task('publish', gulp.series(build, deploy));
