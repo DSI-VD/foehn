@@ -32,38 +32,73 @@ a.vd-teaser-card {
   text-decoration: none;
 }
 
+/**
+ * Green
+ *
+ * 1. Make the text visible
+ */
 .vd-card-green {
-  @include card-variant($brand-primary, $brand-primary);
+  @include card-variant($vd-green-darker, $vd-green-darker);
 
   .card-title,
-  .card-text {
-    color: $white;
+  .card-text,
+  a {
+    color: $white; /* [1] */
+  }
+
+  a:hover {
+    color: $gray-light; /* [1] */
   }
 }
 
+/**
+ * Light gray
+ *
+ * 1. Make the text visible
+ */
 .vd-card-lightgray {
   @include card-variant($vd-gray-lightest, $vd-gray-lightest);
 
   .card-title,
   .card-text {
-    color: $vd-gray-dark;
+    color: $vd-gray-dark; /* [1] */
   }
 }
 
+/**
+ * Dark gray
+ *
+ * 1. Make the text visible
+ */
 .vd-card-darkgray {
   @include card-variant($vd-gray-darker, $vd-gray-darker);
 
   .card-title,
-  .card-text {
-    color: $white;
+  .card-text,
+  a {
+    color: $white; /* [1] */
+  }
+
+  a:hover {
+    color: $gray-light; /* [1] */
   }
 }
 
+/**
+ * Black
+ *
+ * 1. Make the text visible
+ */
 .vd-card-black {
   @include card-variant($black, $black);
 
   .card-title,
-  .card-text {
-    color: $white;
+  .card-text,
+  a {
+    color: $white; /* [1] */
+  }
+
+  a:hover {
+    color: $gray-light; /* [1] */
   }
 }

@@ -2,9 +2,9 @@
     "status": "ready",
     "variants": [
       {
-        "name": "light grey",
+        "name": "green",
         "context": {
-          "styleModifier": "vd-card-lightgray"
+          "styleModifier": "vd-card-green"
         }
       },
       {
