@@ -4,6 +4,24 @@
     "prestation": {
       "label": "Commander",
       "url": "#"
-    }
+    },
+    "breadcrumb": [
+      {
+        "page": "level 1",
+        "url": "#"
+      },
+      {
+        "page": "level 2",
+        "url": "#"
+      },
+      {
+        "page": "level 3",
+        "url": "#"
+      },
+      {
+        "page": "level 4",
+        "url": "#"
+      }
+    ]
   }
 }
