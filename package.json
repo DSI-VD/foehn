@@ -2,8 +2,10 @@
   "name": "foehn",
   "version": "0.14.0",
   "author": "DSI VD <info.dsi@vd.ch>",
-  "repository": "DSI-VD/foehn",
-  "main": "index.html",
+  "repository": "git://git.etat-de-vaud.ch/typo3/foehn.git",
+  "description": "Frontend pattern library for State of Vaud",
+  "keywords": "frontend, css, html, js, styleguide, pattern, library, design, standard",
+  "main": "dist/index.html",
   "license": "MIT",
   "browserify-shim": {
     "jquery": "global:jQuery"
@@ -11,7 +13,8 @@
   "scripts": {
     "start": "yarn && gulp dev",
     "build": "yarn && gulp build",
-    "deploy": "yarn && gulp publish"
+    "deploy": "yarn && gulp publish",
+    "version": "yarn && gulp build && git add . && git commit -m \"new version build\" && yarn version"
   },
   "engines": {
     "node": "6.7.0",

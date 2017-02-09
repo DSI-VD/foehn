@@ -1,0 +1,33 @@
+{
+  "name": "foehn",
+  "description": "Frontend pattern library for State of Vaud",
+  "main": [
+    "/dist/assets/scripts/vendors.js",
+    "/dist/assets/styles/main.css",
+    "/dist/assets/styles/vendors.css"
+  ],
+  "authors": [
+    "DSI VD <info.dsi@vd.ch>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "frontend",
+    "css",
+    "html",
+    "js",
+    "styleguide",
+    "pattern",
+    "library",
+    "design",
+    "standard"
+  ],
+  "homepage": "git://git.etat-de-vaud.ch/typo3/foehn.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
