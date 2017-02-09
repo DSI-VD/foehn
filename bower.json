@@ -29,5 +29,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "webfontloader": "^1.6.27"
+  }
 }
