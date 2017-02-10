@@ -1,3 +1,13 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "previous": {
+        "url": "#",
+        "text": "Précédent"
+      },
+      "next": {
+        "url": "#",
+        "text": "Suivant"
+      }
+    }
 }
