@@ -9,16 +9,22 @@
     <h2>{{ stepTitle }}</h2>
 
     {{#unless confirmation}}
+    <p aria-hidden="true">Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
+
     <form>
+
       <div class="form-group">
-        <label for="nom">Nom (requis)</label>
-        <input type="text" class="form-control" id="nom" aria-describedby="emailHelp" placeholder="Demarty" required="1">
+        <label for="testInput">Nom</label> <strong><abbr title="required" aria-hidden="true">*</abbr></strong>
+        <input class="form-control" type="text" id="testInput" name="firstname" value="" required aria-required="true">
       </div>
 
       <div class="form-group">
-        <label for="prenom">Prénom (requis)</label>
-        <input type="text" class="form-control" id="prenom" aria-describedby="emailHelp" placeholder="Gilles">
+        <label for="testInput">Prénom</label> <strong><abbr title="required" aria-hidden="true">*</abbr></strong>
+        <input class="form-control" type="text" id="testInput" name="firstname" value="" required aria-required="true">
       </div>
+
+      {{> @dates}}
+
       <div class="form-group">
         <label for="etablissement">Etablissment</label>
         <input type="text" class="form-control" id="etablissement" aria-describedby="emailHelp">
