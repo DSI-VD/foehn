@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Changed
 
+- Change margin of footer--securise
 - Update-time in footer--default is optional
 - Change columns in footer--securise
 - Change position of update-time in teaser-alternate
