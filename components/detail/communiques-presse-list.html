@@ -435,11 +435,14 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mt-3"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container  mt-3"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Communiqués de presse<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span>
 
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Liste des communiqués de presse<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-list-striped"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-list-striped-item px-1 pt-1"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
@@ -721,11 +724,14 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mt-3"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container  mt-3"</span>&gt;</span>
+  </span><span class="hljs-template-variable">{{&gt; <a href="page-title">@page-title</a> }}</span><span class="xml">
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span>
 
+      </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> results}}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>Résultats de recherche<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Liste des communiqués de presse<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
       </span><span class="hljs-template-variable">{{render '<a href="teaser-list">@teaser-list</a>'}}</span><span class="xml">
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -801,6 +807,21 @@
         
         
         <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="communiques-presse-list--default">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="communiques-presse-list--results">
+                    <span>Results</span>
+                </a>
+            
+            </span>
+        </li>
+        
+        <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
@@ -823,12 +844,14 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="header">@<span>header</span></a>, 
             
                 <a href="page-title-banner">@<span>page-title-banner</span></a>, 
+            
+                <a href="page-title">@<span>page-title</span></a>, 
             
                 <a href="teaser-list">@<span>teaser-list</span></a>, 
             
@@ -4955,7 +4978,7 @@
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="communiques-presse-detail--alternate" data-pjax>
-                <span>Alternate</span>
+                <span>Logo partenaires en-haut</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4981,10 +5004,21 @@
         
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-communiques-presse-list">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Communiques Presse List</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="communiques-presse-list--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5007,8 +5041,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="communiques-presse-results" data-pjax>
-                <span>Communiques Presse Results</span>
+            <a class="Tree-entityLink" href="communiques-presse-list--results" data-pjax>
+                <span>Results</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5025,6 +5059,11 @@
 
 
             </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
