@@ -8,13 +8,27 @@
         "name": "default",
         "label": "step 1",
         "context": {
-          "stepTitle": "Page 1 de 3 — Titre de l'étape"
+          "stepTitle": "Page 1 de 3 — Titre de l'étape",
+          "pagination": {
+            "previous": false,
+            "next": {
+              "url": "formulaire-prestation--step-2"
+            }
+          }
         }
       },
       {
         "name": "step 2",
         "context": {
-          "stepTitle": "Page 2 de 3 — Titre de l'étape"
+          "stepTitle": "Page 2 de 3 — Titre de l'étape",
+          "pagination": {
+            "previous": {
+              "url": "formulaire-prestation--default"
+            },
+            "next": {
+              "url": "formulaire-prestation--step-3"
+            }
+          }
         }
       },
       {
@@ -22,7 +36,14 @@
         "context": {
           "stepTitle": "Page 3 de 3 — Titre de l'étape",
           "button": {
-            "text": "Transmettre"
+            "text": "Transmettre",
+            "href": "formulaire-prestation--final"
+          },
+          "pagination": {
+            "previous": {
+              "url": "formulaire-prestation--step-2"
+            },
+            "next": false
           }
         }
       },
