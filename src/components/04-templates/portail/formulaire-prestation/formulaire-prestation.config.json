@@ -1,8 +1,26 @@
 {
     "status": "prototype",
     "context": {
-      "button": {
-        "text": "Transmettre"
+      "prestationTitle": "Commander un extrait du registre des poursuites"
+    },
+    "variants": [
+      {
+        "name": "default",
+        "label": "step 1"
+      },
+      {
+        "name": "step 2"
+      },
+      {
+        "name": "step 3",
+        "context": {
+          "button": {
+            "text": "Transmettre"
+          }
+        }
+      },
+      {
+        "name": "final"
       }
-    }
+    ]
 }
