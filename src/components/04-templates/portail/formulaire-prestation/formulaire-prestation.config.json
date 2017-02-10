@@ -1,3 +1,8 @@
 {
-    "status": "prototype"
+    "status": "prototype",
+    "context": {
+      "button": {
+        "text": "Transmettre"
+      }
+    }
 }

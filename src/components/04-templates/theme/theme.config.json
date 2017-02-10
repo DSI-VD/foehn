@@ -39,6 +39,11 @@
                 "url": "#"
               }
             ]
+        },
+        "button": {
+          "text": "Voir tout",
+          "title": "Afficher toutes les préstations",
+          "href": "theme--list"
         }
     },
     "variants": [
@@ -164,6 +169,11 @@
                 "url": "#"
               }
             ]
+          },
+          "button": {
+            "text": "Voir moins",
+            "title": "Afficher moins de prestations",
+            "href": "theme--default"
           }
         }
       },

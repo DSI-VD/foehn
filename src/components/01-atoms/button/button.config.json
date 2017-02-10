@@ -4,5 +4,26 @@
         "text": "Button",
         "href": "#",
         "title": "link to somewhere"
-    }
+    },
+    "variants": [
+      {
+        "name": "default",
+        "context": {
+          "class": "btn btn-primary btn-sm vd-btn-chevron-r"
+        }
+      },
+      {
+        "name": "cta",
+        "label": "Call to action",
+        "context": {
+          "class": "btn btn-success btn-block vd-btn-chevron-r"
+        }
+      },
+      {
+        "name": "secondary",
+        "context": {
+          "class": "btn btn-primary btn-sm btn-secondary vd-btn-chevron-r"
+        }
+      }
+    ]
 }
