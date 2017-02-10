@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add title on communique-presse-list
 - Add page-title-banner--light organism
 
 ### Fix
