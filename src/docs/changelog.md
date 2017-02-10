@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add alert molecule
 - Add page-title-banner--form-presta organism
 - Add button--form atom
 - Add update-time on extrait-du-registre-des-poursuites
