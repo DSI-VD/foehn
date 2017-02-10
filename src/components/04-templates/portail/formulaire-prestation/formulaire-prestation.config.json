@@ -1,19 +1,26 @@
 {
     "status": "prototype",
     "context": {
-      "prestationTitle": "Commander un extrait du registre des poursuites"
+      "pageTitle": "Commander un extrait du registre des poursuites"
     },
     "variants": [
       {
         "name": "default",
-        "label": "step 1"
+        "label": "step 1",
+        "context": {
+          "stepTitle": "Page 1 de 3 — Titre de l'étape"
+        }
       },
       {
-        "name": "step 2"
+        "name": "step 2",
+        "context": {
+          "stepTitle": "Page 2 de 3 — Titre de l'étape"
+        }
       },
       {
         "name": "step 3",
         "context": {
+          "stepTitle": "Page 3 de 3 — Titre de l'étape",
           "button": {
             "text": "Transmettre"
           }

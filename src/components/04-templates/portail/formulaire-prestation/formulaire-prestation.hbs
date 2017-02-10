@@ -2,15 +2,11 @@
 
 <main id="main">
 
-  <div class="vd-bg-pattern-gray pt-2">
-    <div class="container">
-      <h1>{{ prestationTitle }}</h1>
-    </div>
-  </div>
+  {{> @page-title-banner--form-presta }}
 
   <div class="container mt-3">
 
-    <h2>Page 1 de 3 &mdash; Titre de l'étape</h2>
+    <h2>{{ stepTitle }}</h2>
 
     <form>
       <div class="form-group">
