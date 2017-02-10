@@ -23,6 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 
 - Fix header--securise dropdown alignment
+- Fix unaccessibility of block-level links in teasers
 - Fix margin of page-title-banner--light organism
 - Fix margin of publish-time atom
 - Fix breadcrumb isn't display on certain templates and pages
