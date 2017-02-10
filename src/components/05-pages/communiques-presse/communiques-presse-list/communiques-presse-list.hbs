@@ -47,11 +47,14 @@
   </div>
 </div>
 
-<main class="container">
-  <div class="row mt-3">
+<main class="container  mt-3">
+  {{> @page-title }}
+
+  <div class="row">
 
     <div class="col-md-8">
 
+      {{#if results}}<h2 class="mb-3">Résultats de recherche</h2>{{else}}<h2 class="sr-only">Liste des communiqués de presse</h2>{{/if}}
       {{render '@teaser-list'}}
 
     </div>
