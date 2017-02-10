@@ -48,7 +48,13 @@
         }
       },
       {
-        "name": "final"
+        "name": "final",
+        "context": {
+          "confirmation": true,
+          "buttonBack": {
+            "text": "Aller à vd.ch"
+          }
+        }
       }
     ]
 }
