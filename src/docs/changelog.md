@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add update-time on extrait-du-registre-des-poursuites
 - Add title on communique-presse-list
 - Add page-title-banner--light organism
 
