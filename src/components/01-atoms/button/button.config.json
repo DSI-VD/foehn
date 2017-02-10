@@ -24,6 +24,13 @@
         "context": {
           "class": "btn btn-primary btn-sm btn-secondary vd-btn-chevron-r"
         }
+      },
+      {
+        "name": "form",
+        "context": {
+          "class": "btn btn-primary btn-sm vd-btn-chevron-r",
+          "text": "Transmettre"
+        }
       }
     ]
 }
