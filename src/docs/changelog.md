@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Changed
 
+- Hide to screen reader paragraph about mandatory fields in form
 - Change margin of footer--securise
 - Update-time in footer--default is optional
 - Change columns in footer--securise
