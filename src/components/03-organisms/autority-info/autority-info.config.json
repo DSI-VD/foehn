@@ -8,6 +8,9 @@
         "icon": "fa-info-circle",
         "url": "#"
       }
-    ]
+    ],
+    "button": {
+      "text": "Contacter l'office"
+    }
   }
 }

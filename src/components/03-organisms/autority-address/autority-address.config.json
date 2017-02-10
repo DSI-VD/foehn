@@ -37,6 +37,9 @@
         "icon": "fa-map-marker",
         "url": "#"
       }
-    ]
+    ],
+    "button": {
+      "text": "Contacter l'office"
+    }
   }
 }
