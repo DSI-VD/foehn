@@ -19,6 +19,10 @@
     white-space: nowrap;
     box-shadow: 2px 2px 0 0 $black;
 
+    @include media-breakpoint-up(sm) {
+      max-width: calc(33% - #{$spacer});
+    }
+
     @include vd-pattern-dotted($pattern-dotted-green);
 
     @include hover-focus-active {
