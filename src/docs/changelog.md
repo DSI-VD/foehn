@@ -13,6 +13,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Changed
 
+- Make primary nav a list
+- Make domain list a list
+- Renamed teaser-link in domain-item
 - Separate number of step and step title in formulaire-prestation
 - Hide to screen reader paragraph about mandatory fields in form
 - Change margin of footer--securise
