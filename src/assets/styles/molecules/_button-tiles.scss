@@ -11,7 +11,7 @@
     display: inline-flex;
     flex-grow: 1;
     flex-shrink: 0;
-    min-width: calc(25% - $spacer);
+    min-width: calc(25% - #{$spacer});
     position: relative;
     margin: ($spacer / 2);
     color: $black;
