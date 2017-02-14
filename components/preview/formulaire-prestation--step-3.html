@@ -89,18 +89,33 @@
 
   <div class="container mt-3">
 
-    <h2>Page 3 de 3 — Titre de l&#x27;étape</h2>
+    <h2>Titre de l&#x27;étape</h2>
+    <p class="h3">Page 3 de 3</p>
+
+    <p aria-hidden="true">Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
 
     <form>
+
       <div class="form-group">
-        <label for="nom">Nom (requis)</label>
-        <input type="text" class="form-control" id="nom" aria-describedby="emailHelp" placeholder="Demarty" required="1">
+        <label for="testInput">Nom</label> <strong><abbr title="required" aria-hidden="true">*</abbr></strong>
+        <input class="form-control" type="text" id="testInput" name="firstname" value="" required aria-required="true">
       </div>
 
       <div class="form-group">
-        <label for="prenom">Prénom (requis)</label>
-        <input type="text" class="form-control" id="prenom" aria-describedby="emailHelp" placeholder="Gilles">
+        <label for="testInput">Prénom</label> <strong><abbr title="required" aria-hidden="true">*</abbr></strong>
+        <input class="form-control" type="text" id="testInput" name="firstname" value="" required aria-required="true">
       </div>
+
+      <fieldset>
+        <legend>Date de naissance</legend>
+        <label for="date-form-day" class="sr-only">Jour</label>
+        <input id="date-form-day" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
+        <label for="date-form-month" class="sr-only">Mois</label>
+        <input id="date-form-month" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
+        <label for="date-form-year" class="sr-only">Année</label>
+        <input id="date-form-year" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1950" max="2017" name="name" size="4" placeholder="AAAA" value="">
+      </fieldset>
+
       <div class="form-group">
         <label for="etablissement">Etablissment</label>
         <input type="text" class="form-control" id="etablissement" aria-describedby="emailHelp">
