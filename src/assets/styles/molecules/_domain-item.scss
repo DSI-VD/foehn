@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+/**
+ * Teaser links
+ *
+ * 1. Override heading font-weight
+ */
+.vd-domain-item {
+  .vd-domain-item-title {
+    font-weight: 300; /* [1] */
+  }
+
+  .vd-domain-item-text {
+    color: $gray;
+  }
+}

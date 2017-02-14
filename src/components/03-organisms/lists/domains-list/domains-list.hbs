@@ -15,12 +15,12 @@
       </div><!-- /.col-md-4 -->
 
       <div class="col-md-8">
-        <div class="row" aria-labelledby="{{ domain }}">
+        <ul class="list-unstyled row" aria-labelledby="{{ domain }}">
           {{#each themes}}
-            {{> @teaser-link styleModifier='col-md-6' name=this description='Lorem ipsum dolor sit amet, consectetur adipisicing elit.' }}
+            {{> @domain-item styleModifier='mb-2 col-md-6' name=this description='Lorem ipsum dolor sit amet, consectetur adipisicing elit.' }}
           {{/each}}
         </div><!-- /.row -->
-      </div><!-- /.col-md-8 -->
+      </ul><!-- /.col-md-8 -->
 
     </div><!-- /.row -->
     <p>
