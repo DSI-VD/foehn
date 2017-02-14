@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Fix a11y of primary-nav
 - Make primary nav a list
 - Make domain list a list
 - Separate number of step and step title in formulaire-prestation
