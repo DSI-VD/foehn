@@ -15,7 +15,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Make primary nav a list
 - Make domain list a list
-- Renamed teaser-link in domain-item
 - Separate number of step and step title in formulaire-prestation
 - Hide to screen reader paragraph about mandatory fields in form
 - Change margin of footer--securise
@@ -26,6 +25,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add domain-item component
 - Add formulaire-prestation template variants
 - Add alert molecule
 - Add page-title-banner--form-presta organism
@@ -41,6 +41,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix margin of page-title-banner--light organism
 - Fix margin of publish-time atom
 - Fix breadcrumb isn't display on certain templates and pages
+
+### Removed
+
+- Removed teaser-link component
 
 ## [0.15.0]
 
