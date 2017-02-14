@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Changed
 
+- Separate number of step and step title in formulaire-prestation
 - Hide to screen reader paragraph about mandatory fields in form
 - Change margin of footer--securise
 - Update-time in footer--default is optional
