@@ -8,7 +8,8 @@
         "name": "default",
         "label": "step 1",
         "context": {
-          "stepTitle": "Page 1 de 3 — Titre de l'étape",
+          "stepNumber": "Page 1 de 3",
+          "stepTitle": "Titre de l'étape",
           "pagination": {
             "previous": false,
             "next": {
@@ -20,7 +21,8 @@
       {
         "name": "step 2",
         "context": {
-          "stepTitle": "Page 2 de 3 — Titre de l'étape",
+          "stepNumber": "Page 2 de 3",
+          "stepTitle": "Titre de l'étape",
           "pagination": {
             "previous": {
               "url": "formulaire-prestation--default"
@@ -34,7 +36,8 @@
       {
         "name": "step 3",
         "context": {
-          "stepTitle": "Page 3 de 3 — Titre de l'étape",
+          "stepNumber": "Page 3 de 3",
+          "stepTitle": "Titre de l'étape",
           "button": {
             "text": "Transmettre",
             "href": "formulaire-prestation--final"
