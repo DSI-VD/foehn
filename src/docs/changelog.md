@@ -21,6 +21,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add domain-item component
 
+### Fix
+
+- Fix a11y of social-icons
+
 ### Removed
 
 - Removed teaser-link component
