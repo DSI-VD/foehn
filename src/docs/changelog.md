@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 - Change dates molecule structure and styles
+- Put help-text before input
 - Use dates component in communique-presse-list
 - Button--cta is no more a block
 - Button are bigger
