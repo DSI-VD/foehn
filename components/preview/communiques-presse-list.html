@@ -284,7 +284,7 @@
   <div class="container">
     <form class="form">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-4">
           <fieldset>
             <legend class="h5">Recherche<span class="sr-only">par mots clefs</span></legend>
             <div class="form-group">
@@ -293,32 +293,33 @@
             </div>
           </fieldset>
         </div>
-        <div class="col-md-7">
-          <fieldset>
-            <div class="row">
-              <div class="col-lg mb-1">
-                <p class="h5">Publié du</p>
-                <div class="form-inline">
-                  <input id="date-form-day" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
-                  <label for="date-form-month" class="sr-only">Mois</label>
-                  <input id="date-form-month" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
-                  <label for="date-form-year" class="sr-only">Année</label>
-                  <input id="date-form-year" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
-                </div>
-              </div>
-              <div class="col-lg mb-1">
-                <p class="h5"><span class="sr-only">Publié jusqu'</span>au</p>
-                <div class="form-inline">
-                  <input id="date-form-day" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
-                  <label for="date-form-month" class="sr-only">Mois</label>
-                  <input id="date-form-month" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
-                  <label for="date-form-year" class="sr-only">Année</label>
-                  <input id="date-form-year" class="form-control vd-form-control-inline" type="text" pattern="[0-9]*" min="1980" max="2017" name="name" size="4" placeholder="AAAA" value="">
-                </div>
-              </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-xs-6 mb-1">
+              <fieldset>
+                <legend class="h5">Publié du</legend>
+                <label for="date-form-day" class="sr-only">Jour</label>
+                <input id="date-form-day" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
+                <label for="date-form-month" class="sr-only">Mois</label>
+                <input id="date-form-month" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
+                <label for="date-form-year" class="sr-only">Année</label>
+                <input id="date-form-year" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1950" max="2017" name="name" size="4" placeholder="AAAA" value="">
+              </fieldset>
             </div>
-          </fieldset>
+            <div class="col-xs-6 mb-1">
+              <fieldset>
+                <legend class="h5">au</legend>
+                <label for="date-form-day" class="sr-only">Jour</label>
+                <input id="date-form-day" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
+                <label for="date-form-month" class="sr-only">Mois</label>
+                <input id="date-form-month" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" placeholder="MM" value="">
+                <label for="date-form-year" class="sr-only">Année</label>
+                <input id="date-form-year" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1950" max="2017" name="name" size="4" placeholder="AAAA" value="">
+              </fieldset>
+            </div>
+          </div>
         </div>
+
       </div>
       <button type="submit" class="btn btn-primary vd-btn-chevron-r">Rechercher</button>
     </form>
