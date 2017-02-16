@@ -13,7 +13,7 @@
   "scripts": {
     "start": "yarn && gulp dev",
     "build": "yarn && gulp build",
-    "deploy": "yarn && gulp publish",
+    "deploy": "yarn && gulp publish && git clean -f -d && git checkout -- .",
     "version": "yarn && gulp build && git add . && git commit -m \"new version build\" && yarn version"
   },
   "engines": {
