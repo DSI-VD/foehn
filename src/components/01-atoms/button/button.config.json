@@ -16,7 +16,7 @@
         "name": "cta",
         "label": "Call to action",
         "context": {
-          "class": "btn btn-success btn-block vd-btn-chevron-r"
+          "class": "btn btn-success vd-btn-chevron-r"
         }
       },
       {
