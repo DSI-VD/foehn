@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add back link in communique-presse-detail
 - Add domain-item component
 
 ### Fix
