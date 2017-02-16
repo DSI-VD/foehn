@@ -1,5 +1,5 @@
 <fieldset>
-  <legend>Date de naissance</legend>
+  <legend{{#if legendModifier}} class="{{ legendModifier }}"{{/if}}>{{ legend }}</legend>
   <label for="date-form-day" class="sr-only">Jour</label>
   <input id="date-form-day" class="form-control vd-form-control-inline" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" placeholder="JJ" value="">
   <label for="date-form-month" class="sr-only">Mois</label>
