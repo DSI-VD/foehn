@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Button--cta is no more a block
 - Button are bigger
 - Fix a11y of primary-nav
 - Make primary nav a list
