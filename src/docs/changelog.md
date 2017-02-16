@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Change dates molecule structure and styles
 - Use dates component in communique-presse-list
 - Button--cta is no more a block
 - Button are bigger
@@ -22,12 +23,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add help text in dates molecule
 - Add dates config
 - Add back link in communique-presse-detail
 - Add domain-item component
 
 ### Fix
 
+- Fix dates molecule alignment on Firefox
 - Fix a11y of social-icons
 
 ### Removed

@@ -1,6 +1,7 @@
 {
     "status": "wip",
     "context": {
-      "legend": "Date de naissance"
+      "legend": "Quelle est votre date de naissance ?",
+      "helpText": "Par exemple, 23 7 1979"
     }
 }
