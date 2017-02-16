@@ -9,7 +9,7 @@
       {
         "name": "default",
         "context": {
-          "class": "btn btn-primary btn-sm vd-btn-chevron-r"
+          "class": "btn btn-primary  vd-btn-chevron-r"
         }
       },
       {
@@ -22,13 +22,13 @@
       {
         "name": "secondary",
         "context": {
-          "class": "btn btn-primary btn-sm btn-secondary vd-btn-chevron-r"
+          "class": "btn btn-primary  btn-secondary vd-btn-chevron-r"
         }
       },
       {
         "name": "form",
         "context": {
-          "class": "btn btn-primary btn-sm vd-btn-chevron-r",
+          "class": "btn btn-primary  vd-btn-chevron-r",
           "text": "Transmettre"
         }
       }
