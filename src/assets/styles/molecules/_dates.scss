@@ -1,6 +1,32 @@
 @charset 'UTF-8';
 
-.vd-form-control-inline {
-  display: inline-block;
-  width: auto;
+/**
+ * vd dates
+ *
+ * Date form
+ *
+ * 1. Remove browsers numeric controls
+ */
+.vd-dates-day,
+.vd-dates-month,
+.vd-dates-year {
+  float: left;
+
+  input {
+    /* stylelint-disable */
+    -moz-appearance: textfield; /* [1] */
+    webkit-appearance: none; /* [1] */
+    margin: 0; /* [1] */
+    /* stylelint-enable */
+  }
+}
+
+.vd-dates-day,
+.vd-dates-month {
+  width: $spacer * 3;
+  margin-right: $spacer;
+}
+
+.vd-dates-year {
+  width: $spacer * 4;
 }
