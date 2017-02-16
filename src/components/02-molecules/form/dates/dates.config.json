@@ -1,3 +1,6 @@
 {
-    "status": "wip"
+    "status": "wip",
+    "context": {
+      "legend": "Date de naissance"
+    }
 }
