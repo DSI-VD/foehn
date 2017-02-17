@@ -9,6 +9,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Add margin after nav-side
+
 ## [0.17.0]
 
 ### Changed
