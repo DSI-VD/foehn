@@ -416,18 +416,8 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-3"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, excepturi? Soluta maiores dignissimos voluptatibus culpa inventore, dolore iure, quo ut neque nobis quis doloribus? Culpa consequatur molestiae modi harum autem ipsum numquam
-                aspernatur magni rem? Dolorum nesciunt expedita repudiandae deleniti necessitatibus mollitia rem quaerat asperiores repellat, voluptas, accusantium culpa labore!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-        <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 small"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam corporis odio debitis ex vitae, qui. Harum quam quis voluptate atque. Architecto animi, sint. Numquam, doloribus reprehenderit. Repellendus, in a eaque libero delectus dolorem porro excepturi
-                voluptate quasi officia, ab esse.
-            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, excepturi? Soluta maiores dignissimos voluptatibus culpa inventore, dolore iure, quo ut neque nobis quis doloribus? Culpa consequatur molestiae modi harum autem ipsum numquam aspernatur
+        magni rem? Dolorum nesciunt expedita repudiandae deleniti necessitatibus mollitia rem quaerat asperiores repellat, voluptas, accusantium culpa labore!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
@@ -542,16 +532,29 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-3"</span>&gt;</span>
   </span><span class="hljs-template-variable">{{&gt; <a href="page-title">@page-title</a> }}</span><span class="xml">
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span>
+  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> aside}}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, excepturi? Soluta maiores dignissimos voluptatibus culpa inventore, dolore iure, quo ut neque nobis quis doloribus? Culpa consequatur molestiae modi harum autem ipsum numquam aspernatur magni rem? Dolorum nesciunt expedita repudiandae deleniti necessitatibus mollitia rem quaerat asperiores repellat, voluptas, accusantium culpa labore!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> aside}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
 
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> aside}}</span><span class="xml">
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> sidenav}}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+      </span><span class="hljs-template-variable">{{render '<a href="nav-side">@nav-side</a>'}}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam corporis odio debitis ex vitae, qui. Harum quam quis voluptate atque. Architecto animi, sint. Numquam, doloribus reprehenderit. Repellendus, in a eaque libero delectus dolorem porro excepturi voluptate quasi officia, ab esse.
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 small"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam corporis odio debitis ex vitae, qui. Harum quam quis voluptate atque. Architecto animi, sint. Numquam, doloribus reprehenderit. Repellendus, in a eaque libero delectus dolorem porro excepturi voluptate quasi officia, ab esse.
       <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
 
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
@@ -604,15 +607,19 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="template--default">
-                    <span>Default</span>
+                    <span>1 column</span>
                 </a>, 
             
-                <a href="template--1-colonne">
-                    <span>1 Colonne</span>
+                <a href="template--2-col">
+                    <span>2 columns</span>
+                </a>, 
+            
+                <a href="template--2-col-nav">
+                    <span>2 columns with side navigation</span>
                 </a>
             
             </span>
@@ -641,7 +648,7 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="header">@<span>header</span></a>, 
@@ -649,6 +656,8 @@
                 <a href="page-title-banner">@<span>page-title-banner</span></a>, 
             
                 <a href="page-title">@<span>page-title</span></a>, 
+            
+                <a href="nav-side">@<span>nav-side</span></a>, 
             
                 <a href="footer">@<span>footer</span></a>
             
@@ -4658,7 +4667,7 @@
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--default" data-pjax>
-                <span>Default</span>
+                <span>1 column</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4681,8 +4690,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="template--1-colonne" data-pjax>
-                <span>1 Colonne</span>
+            <a class="Tree-entityLink" href="template--2-col" data-pjax>
+                <span>2 columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="template--2-col-nav" data-pjax>
+                <span>2 columns with side navigation</span>
                 
 
 <div class="Status Status--unlabelled">
