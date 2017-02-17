@@ -1,30 +1,18 @@
 <nav>
   <ul class="nav flex-column vd-nav-side">
+    {{#each items}}
     <li class="nav-item">
-      <a class="nav-link active" href="#0">Poussières fines</a>
+      <a class="nav-link{{#if active}} active{{/if}}" href="{{ url }}"{{#if title}} title="{{title}}"{{/if}}>{{ name }}</a>
+      {{#if items}}
+        <ul>
+          {{#each items}}
+          <li class="nav-item">
+            <a class="nav-link{{#if active}} active{{/if}}" href="{{ url }}"{{#if title}} title="{{title}}"{{/if}}>{{ name }}</a>
+          </li>
+          {{/each}}
+        </ul>
+      {{/if}}
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#0">Ozone</a>
-      <ul>
-        <li class="nav-item">
-          <a href="#0" class="nav-link">Qu'est-ce que l'ozone?</a>
-        </li>
-        <li class="nav-item">
-          <a href="#0" class="nav-link">Comment améliorer l'air?</a>
-        </li>
-        <li class="nav-item">
-          <a href="#0" class="nav-link">En cas de canicule</a>
-        </li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#0">Les composés organiques</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#0">Ammoniac</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#0">Qualité de l'air</a>
-    </li>
+    {{/each}}
   </ul>
 </nav>
