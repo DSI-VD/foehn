@@ -9,6 +9,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.17.0]
+
 ### Changed
 
 - Use autority-address organism in communiques-presse-list page
@@ -781,7 +783,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.16.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.17.0...HEAD
+[0.17.0]: https://github.com/DSI-VD/foehn/compare/v0.16.0...v0.15.0
 [0.16.0]: https://github.com/DSI-VD/foehn/compare/v0.15.0...v0.16.0
 [0.15.0]: https://github.com/DSI-VD/foehn/compare/v0.14.0...v0.15.0
 [0.14.0]: https://github.com/DSI-VD/foehn/compare/v0.13.0...v0.14.0
