@@ -22,6 +22,14 @@
         "context": {
           "aside": true
         }
+      },
+      {
+        "name": "2 col nav",
+        "label": "2 columns with side navigation",
+        "context": {
+          "aside": true,
+          "sidenav": true
+        }
       }
     ]
 }
