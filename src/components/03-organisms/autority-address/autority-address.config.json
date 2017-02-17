@@ -39,7 +39,8 @@
       }
     ],
     "button": {
-      "text": "Contacter l'office"
+      "text": "Contacter",
+      "title": "Contacter l'office"
     }
   }
 }
