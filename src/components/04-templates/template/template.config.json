@@ -13,10 +13,12 @@
     },
     "variants": [
       {
+        "status": "ready",
         "name": "default",
         "label": "1 column"
       },
       {
+        "status": "ready",
         "name": "2 col",
         "label": "2 columns",
         "context": {
