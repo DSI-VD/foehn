@@ -9,7 +9,8 @@
             "page": "Communiqués de presse",
             "url": "#"
           }
-        ]
+        ],
+        "autorityAddress": "@communiques-presse-list.autorityAddress"
     },
     "variants": [
       {
