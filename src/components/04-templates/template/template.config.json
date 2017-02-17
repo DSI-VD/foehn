@@ -10,5 +10,18 @@
             "url": "#"
             }]
         }
-    }
+    },
+    "variants": [
+      {
+        "name": "default",
+        "label": "1 column"
+      },
+      {
+        "name": "2 col",
+        "label": "2 columns",
+        "context": {
+          "aside": true
+        }
+      }
+    ]
 }
