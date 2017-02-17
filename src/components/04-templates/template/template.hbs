@@ -5,16 +5,18 @@
 <main id="main" class="container mt-3">
   {{> @page-title }}
 
-  <div class="row">
-    <div class="col-md-8">
+  {{#if aside}}<div class="row">
+    <div class="col-md-8">{{/if}}
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, excepturi? Soluta maiores dignissimos voluptatibus culpa inventore, dolore iure, quo ut neque nobis quis doloribus? Culpa consequatur molestiae modi harum autem ipsum numquam aspernatur magni rem? Dolorum nesciunt expedita repudiandae deleniti necessitatibus mollitia rem quaerat asperiores repellat, voluptas, accusantium culpa labore!</p>
-    </div>
+    {{#if aside}}</div>{{/if}}
 
+    {{#if aside}}
     <aside class="col-md-4 small">
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam corporis odio debitis ex vitae, qui. Harum quam quis voluptate atque. Architecto animi, sint. Numquam, doloribus reprehenderit. Repellendus, in a eaque libero delectus dolorem porro excepturi voluptate quasi officia, ab esse.
       </p>
     </aside>
+    {{/if}}
 
   </div>
 </main>
