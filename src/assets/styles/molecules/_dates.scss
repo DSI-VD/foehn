@@ -5,7 +5,9 @@
  *
  * Date form
  *
- * 1. Remove browsers numeric controls
+ * 1. Remove controls from Firefox
+ * 2. Remove controls from Safari and Chrome
+ * 3. Removes leftover margin
  */
 .vd-dates-day,
 .vd-dates-month,
@@ -15,8 +17,12 @@
   input {
     /* stylelint-disable */
     -moz-appearance: textfield; /* [1] */
-    webkit-appearance: none; /* [1] */
-    margin: 0; /* [1] */
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none; /* [2] */
+      margin: 0; /* [2] */ /* [3] */
+    }
     /* stylelint-enable */
   }
 }
