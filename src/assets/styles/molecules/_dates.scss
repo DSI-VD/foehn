@@ -14,7 +14,7 @@
 .vd-dates-year {
   float: left;
 
-  input {
+  input[type="number"] {
     /* stylelint-disable */
     -moz-appearance: textfield; /* [1] */
 
