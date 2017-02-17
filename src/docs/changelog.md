@@ -33,6 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 
+- Fix nave-side flex-direction
 - Fix dates molecule alignment on Firefox
 - Fix a11y of social-icons
 
