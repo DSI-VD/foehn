@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Use autority-address organism in communiques-presse-list page
+- Use autority-address organism in communiques-presse-detail page
 - Change dates molecule structure and styles
 - Put help-text before input
 - Use dates component in communique-presse-list
