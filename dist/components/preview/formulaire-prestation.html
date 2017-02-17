@@ -89,18 +89,48 @@
 
   <div class="container mt-3">
 
-    <h2>Page 1 de 3 — Titre de l&#x27;étape</h2>
+    <h2>Titre de l&#x27;étape</h2>
+    <p class="h3">Page 1 de 3</p>
+
+    <p aria-hidden="true">Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
 
     <form>
+
       <div class="form-group">
-        <label for="nom">Nom (requis)</label>
-        <input type="text" class="form-control" id="nom" aria-describedby="emailHelp" placeholder="Demarty" required="1">
+        <label for="testInput">Nom</label> <strong><abbr title="required" aria-hidden="true">*</abbr></strong>
+        <input class="form-control" type="text" id="testInput" name="firstname" value="" required aria-required="true">
       </div>
 
       <div class="form-group">
-        <label for="prenom">Prénom (requis)</label>
-        <input type="text" class="form-control" id="prenom" aria-describedby="emailHelp" placeholder="Gilles">
+        <label for="testInput">Prénom</label> <strong><abbr title="required" aria-hidden="true">*</abbr></strong>
+        <input class="form-control" type="text" id="testInput" name="firstname" value="" required aria-required="true">
       </div>
+
+      <fieldset class="mb-1">
+
+  <legend>Quelle est votre date de naissance ?</legend>
+
+  <small id="dates-help" class="form-text text-muted">
+    Par exemple, 23 7 1979
+  </small>
+  <div class="vd-dates-day">
+    <label for="date-form-day">Jour</label>
+    <input id="date-form-day" class="form-control" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" value="" aria-describedby="dates-help">
+  </div>
+
+  <div class="vd-dates-month">
+    <label for="date-form-month">Mois</label>
+    <input id="date-form-month" class="form-control" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" value="">
+  </div>
+
+  <div class="vd-dates-year">
+    <label for="date-form-year">Année</label>
+    <input id="date-form-year" class="form-control" type="number" pattern="[0-9]*" min="1950" max="2017" name="name" size="4" value="">
+  </div>
+
+</fieldset>
+
+
       <div class="form-group">
         <label for="etablissement">Etablissment</label>
         <input type="text" class="form-control" id="etablissement" aria-describedby="emailHelp">
@@ -121,15 +151,18 @@
             <option>5</option>
           </select>
       </div>
+
       <div class="form-group">
         <label for="adresse">Adresse (requis)</label>
         <input type="text" class="form-control" id="adresse" aria-describedby="emailHelp" required="1">
       </div>
+
       <div class="form-group">
         <label for="email">Email (requis)</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required="1">
         <small id="emailHelp" class="form-text text-muted">Si vous ne renseignez pas votre email, vous ne recevrez pas d'accusé de récéption</small>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required="1">
       </div>
+
       <div class="form-group">
         <label for="pays">Pays</label>
         <input type="pays" class="form-control" id="email" aria-describedby="emailHelp">
@@ -184,7 +217,7 @@
   <h3 class="sr-only">Pagination</h2>
   <ul class="list-inline text-center">
     
-    <li class="list-inline-item"><a href="formulaire-prestation--step-2" class="btn btn-secondary btn-sm vd-btn-chevron-r">Suivant</a></li>
+    <li class="list-inline-item"><a href="formulaire-prestation--step-2" class="btn btn-secondary vd-btn-chevron-r">Suivant</a></li>
   </ul>
 </nav>
 
@@ -196,7 +229,7 @@
 </main>
 <footer class="footer mt-3">
   <div class="container">
-    <a href="#" class="footer-btn-backtotop btn btn-primary btn-sm vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <a href="#" class="footer-btn-backtotop btn btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
     <div class="row small">
       <nav aria-label="pied de page" class="col-xs-10">
         <ul class="nav flex-column">
