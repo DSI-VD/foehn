@@ -26,6 +26,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add template--2-col-nav template
 - Add help text in dates molecule
 - Add dates config
 - Add back link in communique-presse-detail

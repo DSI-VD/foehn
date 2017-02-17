@@ -11,11 +11,22 @@
     {{#if aside}}</div>{{/if}}
 
     {{#if aside}}
+    {{#if sidenav}}
+    <div class="col-md-4">
+      {{render '@nav-side'}}
+      <aside class="small">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam corporis odio debitis ex vitae, qui. Harum quam quis voluptate atque. Architecto animi, sint. Numquam, doloribus reprehenderit. Repellendus, in a eaque libero delectus dolorem porro excepturi voluptate quasi officia, ab esse.
+        </p>
+      </aside>
+    </div>
+    {{else}}
     <aside class="col-md-4 small">
       <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam corporis odio debitis ex vitae, qui. Harum quam quis voluptate atque. Architecto animi, sint. Numquam, doloribus reprehenderit. Repellendus, in a eaque libero delectus dolorem porro excepturi voluptate quasi officia, ab esse.
       </p>
     </aside>
+    {{/if}}
     {{/if}}
 
   </div>
