@@ -8,9 +8,9 @@
     </div>
     <div class="col-md-4">
       <a href="#">
-        {{> @figure--default media }}
+        {% render '@figure--default', media, true %}
       </a>
     </div>
   </div>
-  <a href="{{ url }}" class="vd-teaser-meta">{{> @time }}</a>
+  <a href="{{ url }}" class="vd-teaser-meta">{render '@time' %}</a>
 </article>
