@@ -1,18 +1,18 @@
 <nav class="mb-2">
   <ul class="nav flex-column vd-nav-side">
-    {{#each items}}
+    {% for item in items %}
     <li class="nav-item">
-      <a class="nav-link{{#if active}} active{{/if}}" href="{{ url }}"{{#if title}} title="{{title}}"{{/if}}>{{ name }}</a>
-      {{#if items}}
+      <a class="nav-link{% if item.active %} active{% endif %}" href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.name }}</a>
+      {% if item.items %}
         <ul>
-          {{#each items}}
+          {% for item in item.items %}
           <li class="nav-item">
-            <a class="nav-link{{#if active}} active{{/if}}" href="{{ url }}"{{#if title}} title="{{title}}"{{/if}}>{{ name }}</a>
+            <a class="nav-link{% if item.active %} active{% endif %}" href="{{ item.url }}"{% if title %} title="{{ item.title }}"{% endif %}>{{ item.name }}</a>
           </li>
-          {{/each}}
+          {% endfor %}
         </ul>
-      {{/if}}
+      {% endif %}
     </li>
-    {{/each}}
+    {% endfor %}
   </ul>
 </nav>
