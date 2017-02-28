@@ -1,4 +1,5 @@
 <div class="form-group">
-  <label for="testInput">Label{{#if required}} <span aria-hidden="true">(Requis)</span>{{/if}}</label>
-  <input class="form-control" type="text" id="testInput" name="testInput" value=""{{#if required}} required aria-required="true"{{/if}}>
+  <label for="{{ id }}">{{ label }}{{#if required}} <span aria-hidden="true">(Requis)</span>{{/if}}</label>
+  {{#if helpText}}<small id="{{ id }}Help" class="form-text text-muted">{{ helpText }}</small>{{/if}}
+  <input class="{{ class }}" type="{{ type }}" id="{{ id }}" name="{{ name }}" value="{{#if value}}{{ value }}{{/if}}"{{#if required}} required aria-required="true"{{/if}}{{#if helpText}} aria-describedby="{{ id }}Help"{{/if}}{{#if pattern}} pattern="{{ pattern }}"{{/if}}>
 </div>
