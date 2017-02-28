@@ -4,7 +4,7 @@
     "division": "division",
     "address": {
         "street": "Rue de la Barre 2",
-        "postal-code": "1000",
+        "postalCode": "1000",
         "locality": "Lausanne"
     },
     "openingHours": {
@@ -16,7 +16,7 @@
         }
       ]
     },
-    "list-icon": [
+    "listIcon": [
       {
         "item": "+41 21 123 45 67",
         "icon": "fa-phone",
