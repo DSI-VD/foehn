@@ -2,7 +2,7 @@
   "context": {
     "name": "Service name",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam libero aliquid enim dolores minus sint dolor nisi harum deleniti cumque aspernatur nihil, non obcaecati quae vero quisquam nostrum ab! Laudantium.",
-    "list-icon": [
+    "listIcon": [
       {
         "item": "Plus d'information",
         "icon": "fa-info-circle",
