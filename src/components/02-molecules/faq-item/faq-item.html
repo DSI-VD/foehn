@@ -1,4 +1,4 @@
-<article class="mb-2" id="faq-{{#if @index}}{{@index}}{{else}}id{{/if}}">
+<article class="mb-2" id="faq-{% if @index %}{{@index}}{% else %}id{% endif %}">
   <h4>{{ question }}</h4>
   <p>{{ answer }}</p>
   <footer>
