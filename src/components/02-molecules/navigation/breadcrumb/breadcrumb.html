@@ -1,9 +1,9 @@
 <nav>
   <h2 class="sr-only">File d'Ariane</h2>
   <ol class="breadcrumb">
-    {{#each breadcrumb}}
-    <li class="breadcrumb-item"><a href="{{ url }}">{{ page }}</a></li>
-    {{/each}}
+    {% for item in breadcrumb %}
+    <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.page }}</a></li>
+    {% endfor %}
     <li class="sr-only">Vous êtes ici: [titre de la page]</li>
   </ol>
 </nav>
