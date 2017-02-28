@@ -1,7 +1,7 @@
 <ul class="nav vd-list-boxed flex-column">
-  {{#each list}}
+  {% for item in list %}
   <li class="nav-item">
-    <a class="nav-link" href="{{ url }}">{{ item }}{{#if secure}} <span class="fa fa-lock" title="Cette prestation demande une identification"></span><span class="sr-only">(cette préstation demande un identification)</span>{{/if}}</a>
+    <a class="nav-link" href="{{ item.url }}">{{ item.item }}{% if item.secure %} <span class="fa fa-lock" title="Cette prestation demande une identification"></span><span class="sr-only">(cette préstation demande un identification)</span>{% endif %}</a>
   </li>
-  {{/each}}
+  {% endfor %}
 </ul>
