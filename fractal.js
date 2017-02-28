@@ -20,10 +20,11 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /* Set the title of the project */
 fractal.set('project.title', 'Foehn');
 
+// Components config
 fractal.components.set('default.status', 'wip');
-
-/* Tell Fractal where the components will live */
-fractal.components.set('path', `${paths.src}/components`);
+fractal.components.engine('@frctl/nunjucks'); // register the Nunjucks adapter for your components
+fractal.components.set('ext', '.nunj'); // look for files with a .nunj file extension
+fractal.components.set('path', `${paths.src}/components`); // tell Fractal where the components will live
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', `${paths.src}/docs`);
