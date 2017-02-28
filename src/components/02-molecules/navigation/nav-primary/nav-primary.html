@@ -2,20 +2,20 @@
   <div class="vd-nav-primary-toggle">
     <div class="container">
       <div class="text-center text-md-left">
-        <button type="button" class="hidden-sm-down btn btn-sm btn-primary {{#if navOpen }}{{else}}collapsed{{/if}}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{{#if navOpen }}true{{else}}false{{/if}}"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
+        <button type="button" class="hidden-sm-down btn btn-sm btn-primary {% if navOpen %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if navOpen %}true{% else %}false{% endif %}"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
       </div>
     </div>
   </div>
-  <div class="hidden-sm-down collapse {{#if navOpen }}show {{/if}}clearfix" id="nav-primary-container">
+  <div class="hidden-sm-down collapse {% if navOpen %}show {% endif %}clearfix" id="nav-primary-container">
     <div class="vd-nav-primary-content">
       <div class="container">
         <div class="row">
           <nav class="col-md-8" id="nav-primary">
             <h2 class="sr-only">Navigation par thèmes</h2>
             <ul class="list-unstyled mb-0 row">
-              {{#each domains.domains}}
-              {{> @domain-item styleModifier='py-1 mb-0 col-md-6 col-lg-4' }}
-              {{/each}}
+              {% for name, item in domains.domains %}
+              {% render '@domain-item', {name:item.name, styleModifier:'py-1 mb-0 col-md-6 col-lg-4', description:item.description}, true %}
+              {% endfor %}
             </ul>
           </nav>
           <div class="col-md-4">
