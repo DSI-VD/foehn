@@ -1,4 +1,4 @@
 <div class="form-group">
-  <label for="testInput">Label</label>
-  <input class="form-control" type="text" id="testInput" name="firstname" value="">
+  <label for="testInput">Label{{#if required}} <span aria-hidden="true">(Requis)</span>{{/if}}</label>
+  <input class="form-control" type="text" id="testInput" name="testInput" value=""{{#if required}} required aria-required="true"{{/if}}>
 </div>

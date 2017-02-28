@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Change input--required molecule structure
 - Add margin after nav-side
 
 ## [0.17.0]
