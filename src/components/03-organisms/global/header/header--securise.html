@@ -1,9 +1,9 @@
 <header class="header">
-  {{> @access-nav }}
+  {% include '@access-nav' %}
   <div class="container">
     <nav class="text-right" aria-label="sous-navigation">
-      {{> @dropdown }}
+      {% include '@dropdown' %}
     </nav>
-    {{> @logo-etat }}
+    {% include '@logo-etat' %}
   </div>
 </header>
