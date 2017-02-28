@@ -1,3 +1,11 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "variants": [
+      {
+        "name": "required",
+        "context": {
+          "required": true
+        }
+      }
+    ]
 }
