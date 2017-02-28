@@ -1,7 +1,7 @@
 <ul class="vd-list-icons">
-  {{#each list-icon}}
+  {% for item in listIcon %}
   <li>
-    <span class="fa {{ icon }}" aria-hidden="true"></span> <a href="{{ url }}">{{ item }}</a>
+    <span class="fa {{ item.icon }}" aria-hidden="true"></span> <a href="{{ item.url }}">{{ item.item }}</a>
   </li>
-  {{/each}}
+  {% endfor %}
 </ul>

@@ -1,7 +1,7 @@
 {
   "status": "ready",
   "context": {
-    "list-icon": [
+    "listIcon": [
       {
         "item": "info.spi@vd.ch",
         "icon": "fa-info-circle",

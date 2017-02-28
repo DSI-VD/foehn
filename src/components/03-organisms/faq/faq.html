@@ -1,19 +1,19 @@
-<h2{{#if titleModifier}} class="{{ titleModifier }}"{{/if}}>Foire aux questions</h2>
+<h2{% if titleModifier %} class="{{ titleModifier }}"{% endif %}>Foire aux questions</h2>
 
 <div class="vd-bg-pattern-bars-gray clearfix my-1 py-2 px-1">
-  {{> @search-form--regular searchForm }}
+  {% render '@search-form--regular', searchForm %}
 </div>
 
 <h3>Questions</h3>
 
 <ul class="vd-list-links">
-  {{#each faqs}}
-    <li><a href="#faq-{{@index}}">{{ question }} ?</a></li>
-  {{/each}}
+  {% for item in faqs %}
+    <li><a href="#faq-{{@index}}">{{ item.question }} ?</a></li>
+  {% endfor %}
 </ul>
 
 <h3 class="sr-only">Réponses</h3>
 
-{{#each faqs}}
-  {{> @faq-item }}
-{{/each}}
+{% for item in faqs %}
+  {% render '@faq-item', item %}
+{% endfor %}

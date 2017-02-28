@@ -1,15 +1,15 @@
-<figure class="figure{{#if styleModifier}} {{ styleModifier}}{{/if}}">
+<figure class="figure{% if styleModifier %} {{ styleModifier}}{% endif %}">
   <div class="vd-figure-img-container">
-    {{#if image.source}}
+    {% if image.source %}
     <picture class="figure-img">
-      {{#each image.source}}
-      <source media="{{ media }}" srcset="{{ srset }}">
-      {{/each}}
-      {{> @image-responsive image.default }}
+      {% for item in image.source %}
+      <source media="{{ item.media }}" srcset="{{ item.srset }}">
+      {% endfor %}
+      {% render '@image-responsive', image.default %}
     </picture>
-    {{else}}
-    {{> @image-responsive image.default }}
-    {{/if}}
+    {% else %}
+    {% render '@image-responsive', image.default %}
+    {% endif %}
     <span class="vd-figure-category">{{ category }}</span>
   </div>
   <figcaption class="figure-caption">{{ caption.text }}
