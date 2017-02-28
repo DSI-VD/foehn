@@ -2,8 +2,8 @@
 
 <p>{{ description }}</p>
 
-{{> @list-icon }}
+{% include '@list-icon' %}
 
 <p class="mb-2">
-  {{render '@button--default' button merge=true}}
+  {% render '@button--default', button, true %}
 </p>
