@@ -1,25 +1,25 @@
 <header class="header">
-  {{> @access-nav }}
+  {% include '@access-nav' %}
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
 
-        {{> @nav }}
-        {{> @nav-mobile }}
+        {% include '@nav' %}
+        {% include '@nav-mobile' %}
 
       </div>
 
     </div>
     <div class="row">
       <div class="col-md-5">
-        {{> @logo-etat--alternate }}
+        {% include '@logo-etat--alternate' %}
       </div>
       <div class="col-md-5 offset-md-2">
-        {{> @search-form }}
+        {% include '@search-form' %}
       </div>
     </div>
   </div>
 
-  {{> @nav-primary navOpen=true }}
+  {% render '@nav-primary',  {navOpen: true}, true %}
 
 </header>
