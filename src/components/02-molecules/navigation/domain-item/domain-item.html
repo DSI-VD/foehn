@@ -1,5 +1,5 @@
-<li class="vd-domain-item{{#if styleModifier}} {{ styleModifier }}{{/if}}">
-  <a href="{{#if url}}{{ url }}{{else}}#{{/if}}" class="vd-link-invisible">
+<li class="vd-domain-item{% if styleModifier %} {{ styleModifier }}{% endif %}">
+  <a href="{% if url %}{{ url }}{% else %}#{% endif %}" class="vd-link-invisible">
     <span class="vd-domain-item-title h2 d-block">{{ name }}</span>
     <small class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>{{ description }}<span class="sr-only">)</span></small>
   </a>
