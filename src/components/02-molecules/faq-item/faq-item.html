@@ -1,5 +1,5 @@
-<article class="mb-2" id="faq-{% if @index %}{{@index}}{% else %}id{% endif %}">
-  <h4>{{ question }}</h4>
+<article class="mb-2" id="faq-{{ question | truncate(3) }}">
+  <h4>{{ question }} {{ loop.index }} xx</h4>
   <p>{{ answer }}</p>
   <footer>
     <dl class="row small text-muted">
