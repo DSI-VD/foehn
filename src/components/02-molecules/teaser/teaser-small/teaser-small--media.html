@@ -1,8 +1,8 @@
-<article class="vd-teaser-small{{#if styleModifier}} {{ styleModifier }}{{/if}}">
+<article{% if styleModifier %} class="{{ styleModifier }}"{% endif %}>
   <h3><a class="vd-link-invisible" href=“#”>Title here</a></h3>
-  {{> @numbered-title }}
+  {% render '@numbered-title' %}
   <figure class="vd-teaser-small-img">
-    {{> @image-responsive }}
+    {% render '@image-responsive' %}
   </figure>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </article>
