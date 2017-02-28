@@ -1,11 +1,11 @@
-{{#each domains}}
+{% for name, item in domains %}
   <div>
     <div class="row mt-3">
 
       <div class="col-md-4">
-        <h2 id="{{ domain_id }}">{{ name }}</h2>
-        <h3 id="acces-direct-{{ domain }}" class="sr-only">Les plus visités</h3>
-        <nav class="p-1" aria-labelledby="acces-direct-{{ domain }}">
+        <h2 id="{{ name }}">{{ name | capitalize }}</h2>
+        <h3 id="acces-direct-{{ name }}" class="sr-only">Les plus visités</h3>
+        <nav class="p-1" aria-labelledby="acces-direct-{{ name }}">
           <ul class="vd-list-links">
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
@@ -15,20 +15,20 @@
       </div><!-- /.col-md-4 -->
 
       <div class="col-md-8">
-        <ul class="list-unstyled row" aria-labelledby="{{ domain }}">
-          {{#each themes}}
-            {{> @domain-item styleModifier='mb-2 col-md-6' name=this description='Lorem ipsum dolor sit amet, consectetur adipisicing elit.' }}
-          {{/each}}
-        </div><!-- /.row -->
-      </ul><!-- /.col-md-8 -->
+        <ul class="list-unstyled row" aria-labelledby="{{ name }}">
+          {% for item in item.themes %}
+          {% render '@domain-item', {styleModifier:'mb-2 col-md-6', name:item, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}, true %}
+          {% endfor %}
+        </ul><!-- /.col-md-8 -->
+      </div><!-- /.row -->
 
     </div><!-- /.row -->
     <p>
       <a href="#" class="btn btn-primary vd-btn-chevron-t">Haut</a>
     </p>
-    {{#if @last}}
-    {{else}}
+    {% if loop.last %}
+    {% else %}
     <hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-2">
-    {{/if}}
+    {% endif %}
   </div>
-{{/each}}
+{% endfor %}
