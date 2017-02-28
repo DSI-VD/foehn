@@ -1,10 +1,49 @@
 {
     "status": "ready",
+    "context": {
+      "label": "Label",
+      "id": "testInput",
+      "name": "testInput",
+      "type": "text",
+      "class": "form-control"
+    },
     "variants": [
       {
         "name": "required",
         "context": {
           "required": true
+        }
+      },
+      {
+        "name": "help-text",
+        "context": {
+          "helpText": "Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.",
+          "type": "email"
+        }
+      },
+      {
+        "name": "email",
+        "context": {
+          "label": "Courriel",
+          "id": "emailInput",
+          "type": "email"
+        }
+      },
+      {
+        "name": "password",
+        "context": {
+          "label": "Password",
+          "id": "passwordInput",
+          "type": "password"
+        }
+      },
+      {
+        "name": "file",
+        "context": {
+          "label": "Fichier",
+          "id": "fileInput",
+          "type": "file",
+          "class": "form-control-file"
         }
       }
     ]

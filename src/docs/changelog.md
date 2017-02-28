@@ -11,8 +11,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Help-text molecule is a variation of input molecule
 - Change input--required molecule structure
 - Add margin after nav-side
+
+### Added
+
+- Add email type in input molecule
+- Add password type in input molecule
+- Add file type in input molecule
 
 ## [0.17.0]
 
