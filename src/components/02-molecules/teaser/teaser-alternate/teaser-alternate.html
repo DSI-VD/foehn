@@ -5,11 +5,11 @@
   <div class="row">
     <div class="col-md-6">
       <p>{{ text }}</p>
-      <p><a href="{{ url }}" class="vd-teaser-meta">{{> @time }}</a></p>
+      <p><a href="{{ url }}" class="vd-teaser-meta">{render '@time' %}</a></p>
     </div>
     <div class="col-md-6">
       <a href="#">
-        {{> @figure--default media }}
+        {% render '@figure--default', media, true %}
       </a>
     </div>
   </div>
