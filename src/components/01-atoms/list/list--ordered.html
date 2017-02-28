@@ -1,5 +1,5 @@
 <ol>
-  {{#each list}}
-  <li>{{ item }}</li>
-  {{/each}}
+  {% for item in list %}
+  <li>{{ item.item }}</li>
+  {% endfor %}
 </ol>
