@@ -20,18 +20,11 @@
       {
         "status": "ready",
         "name": "2 col",
-        "label": "2 columns",
-        "context": {
-          "aside": true
-        }
+        "label": "2 columns"
       },
       {
         "name": "2 col nav",
-        "label": "2 columns with side navigation",
-        "context": {
-          "aside": true,
-          "sidenav": true
-        }
+        "label": "2 columns with side navigation"
       }
     ]
 }

@@ -1,0 +1,27 @@
+{% include '@header' %}
+
+{% include '@page-title-banner' %}
+
+<main id="main" class="container mt-3">
+  {% include '@page-title' %}
+
+  <div class="row">
+    <div class="col-md-8">
+      {% block main %}
+      {% include '@paragraph' %}
+      {% endblock %}
+    </div>
+
+    <div class="col-md-4">
+      {% render '@nav-side' %}
+      <aside class="small">
+        {% block aside %}
+        {% include '@paragraph' %}
+        {% endblock %}
+      </aside>
+    </div>
+
+  </div>
+</main>
+
+{% include '@footer' %}
