@@ -1,14 +1,14 @@
-{{> @header }}
+{% include '@header' %}
 
-{{> @page-title-banner }}
+{% include '@page-title-banner' %}
 
-{{#if searchForm}}
-{{render '@search-banner--default' searchForm merge=true}}
-{{/if}}
+{% if searchForm %}
+{% render '@search-banner--default', searchForm, true %}
+{% endif %}
 
 <main id="main" class="container mt-3">
 
-  {{> @page-title }}
+  {% include '@page-title' %}
 
   <div class="row">
 
@@ -16,26 +16,26 @@
 
       <h2>Dans ce thème</h2>
       <div class="vd-bg-pattern-green p-1 mb-1">
-        {{> @list-boxed prestations}}
+        {% render '@list-boxed', prestation %}
         <p>
-          {{render '@button--default' button merge=true}}
+          {% render '@button--default', button, true %}
         </p>
       </div>
 
       <h2 class="sr-only">Pages d'informations</h2>
-      {{render '@list-links'}}
+      {% render '@list-links' %}
 
     </div>
 
     <aside class="col-md-4 small">
-      {{#if sidebar}}
-      {{render '@autority-info'}}
-      {{render '@autority-info'}}
-      {{else}}
-      {{render '@autority-address'}}
-      {{/if}}
+      {% if sidebar %}
+      {% render '@autority-info' %}
+      {% render '@autority-info' %}
+      {% else %}
+      {% render '@autority-address' %}
+      {% endif %}
     </aside>
   </div>
 </main>
 
-{{> @footer }}
+{% include '@footer' %}
