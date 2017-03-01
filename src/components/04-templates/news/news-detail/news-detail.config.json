@@ -22,7 +22,9 @@
       "url": "http://nicolas.eu"
     }],
     "medias": {
-      "image": "@figure"
+      "image": {
+        "styleModifier": "vd-teaser-img"
+      }
     }
   }
 }
