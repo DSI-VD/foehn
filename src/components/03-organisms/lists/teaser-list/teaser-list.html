@@ -1,13 +1,6 @@
 <div class="vd-teaser-list-striped">
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
-  {{> @teaser-small--alt styleModifier='vd-teaser-list-striped-item px-1 pt-1'}}
+  {% for i in range(0, 10) %}
+  {% render '@teaser-small--alt', {styleModifier:'vd-teaser-list-striped-item px-1 pt-1'}, true %}
+  {% endfor %}
 </div>
-{{render '@pagination' }}
+{% render '@pagination' %}
