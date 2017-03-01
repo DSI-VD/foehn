@@ -11,12 +11,21 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Template engine is Nunjucks
 - Help-text molecule is a variation of input molecule
 - Change input--required molecule structure
 - Add margin after nav-side
 
 ### Added
 
+- Add template template--default
+- Add template template--2-col
+- Add template template--2-col-nav
+- Add template template--2-domains
+- Add template template--2-homepage
+- Add template template--2-news-detail
+- Add template template-communiques-press-detail
+- Add template template-communiques-press-list
 - Add email type in input molecule
 - Add password type in input molecule
 - Add file type in input molecule
