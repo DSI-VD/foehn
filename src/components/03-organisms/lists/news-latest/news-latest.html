@@ -1,9 +1,9 @@
 <h2 class="vd-section-title">Actualités</h2>
 
-{{render '@teaser--media' }}
-{{> @teaser }}
-{{> @teaser }}
-{{> @teaser }}
-{{> @teaser }}
+{% render '@teaser--media' %}
+
+{% for i in range(0, 4) %}
+{% include '@teaser' %}
+{% endfor %}
 
 <a href="#" class="btn btn-primary vd-btn-chevron-r">Toutes l'actualitées</a>
