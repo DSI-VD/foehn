@@ -1,95 +1,79 @@
-{{> @header }}
+{% extends '@template--2-col' %}
+{% block main %}
+<div>
+  <h2 class="sr-only">Présentations</h2>
+  <p>Le Tribunal cantonal, assisté par le Secrétariat général de l'ordre judiciaire, dirige l'Ordre judiciaire.</p>
+  <p>Organiquement, cette direction est composée comme suit :</p>
+  <ul>
+    <li>une <strong>Cour plénière</strong>, qui exerce la haute surveillance administrative de la justice </li>
+    <li>une <strong>Cour administrative</strong>, qui assume la direction générale de l'ordre judiciaire</li>
+    <li>un <strong>Secrétariat général</strong>, qui assume la direction administrative de l'ordre judiciaire.</li>
+  </ul>
+  <p>En outre, la direction de chacun des 33 offices que compte l'Ordre judiciaire et la responsabilité de leur fonctionnement sont assurées par un chef d'office.</p>
+</div>
 
-{{> @page-title-banner }}
+<hr class="vd-separator vd-separator-gray-bars vd-separator-wide my-3">
 
-<main id="main" class="container mt-3">
-  {{> @page-title }}
+<section>
+  {% render '@news-latest' %}
+</section>
 
-  <div class="row">
+<section>
+  <h2>Organisation</h2>
 
-    <div class="col-md-8">
+  <p>
+    Les différentes entités ci-dessous font partie de l’ordre judiciaire :
+  </p>
 
-      <div>
-        <h2 class="sr-only">Présentations</h2>
-        <p>Le Tribunal cantonal, assisté par le Secrétariat général de l'ordre judiciaire, dirige l'Ordre judiciaire.</p>
-        <p>Organiquement, cette direction est composée comme suit :</p>
-        <ul>
-          <li>une <strong>Cour plénière</strong>, qui exerce la haute surveillance administrative de la justice </li>
-          <li>une <strong>Cour administrative</strong>, qui assume la direction générale de l'ordre judiciaire</li>
-          <li>un <strong>Secrétariat général</strong>, qui assume la direction administrative de l'ordre judiciaire.</li>
-        </ul>
-        <p>En outre, la direction de chacun des 33 offices que compte l'Ordre judiciaire et la responsabilité de leur fonctionnement sont assurées par un chef d'office.</p>
-      </div>
+  <ul>
+    <li><a href="#">Direction</a></li>
+    <li><a href="#">Tribunal cantonal</a></li>
+    <li><a href="#">Tribunaux d'arrondissement</a></li>
+    <li><a href="#">Tribunaux de prud'hommes</a></li>
+    <li><a href="#">Chambre patrimoniale cantonale</a></li>
+    <li><a href="#">Tribunal des mineurs</a></li>
+    <li><a href="#">Tribunal des baux</a></li>
+    <li><a href="#">Mesures de contrainte / application des peines</a></li>
+    <li><a href="#">Justices de paix</a></li>
+    <li><a href="../office-des-poursuites">Poursuites</a></li>
+    <li><a href="../office-des-faillites">Faillites</a></li>
+    <li><a href="#">Registre du commerce</a></li>
+  </ul>
+</section>
 
-      <hr class="vd-separator vd-separator-gray-bars vd-separator-wide my-3">
+<section>
+  <h2>Acteurs de la justice</h2>
+  <ul>
+    <li><a href="#">Agents d'affaires brevetés</a></li>
+    <li><a href="#">Avocats</a></li>
+    <li><a href="#">Notaires</a></li>
+    <li><a href="#">Autres acteurs</a></li>
+  </ul>
+</section>
+{% endblock %}
+{% block aside %}
+<h2 class="vd-section-title">Contact</h2>
 
-      <section>
-        {{> @news-latest }}
-      </section>
+<p>
+  Vous trouverez les coordonnées des offices judiciaires sur leurs pages internet respectives
+</p>
 
-      <section>
-        <h2>Organisation</h2>
+<h2 class="vd-section-title">Autres prestations liées</h2>
+<ul class="vd-list-links">
+  <li><a href="#0">Obtenir un extrait du registre des poursuites pour soi-même</a></li>
+  <li><a href="#0">Obtenir un extrait du registre des faillites pour soi-même</a></li>
+  <li><a href="#0">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
+  <li><a href="#0">Obtenir un extrait des registres des faillites sur un tiers</a></li>
+</ul>
 
-        <p>
-          Les différentes entités ci-dessous font partie de l’ordre judiciaire :
-        </p>
+<h2 class="vd-section-title">Publications</h2>
+<ul>
+  <li><a href="#">Rapports annuels</a></li>
+  <li><a href="#">Brochures</a></li>
+</ul>
 
-        <ul>
-          <li><a href="#">Direction</a></li>
-          <li><a href="#">Tribunal cantonal</a></li>
-          <li><a href="#">Tribunaux d'arrondissement</a></li>
-          <li><a href="#">Tribunaux de prud'hommes</a></li>
-          <li><a href="#">Chambre patrimoniale cantonale</a></li>
-          <li><a href="#">Tribunal des mineurs</a></li>
-          <li><a href="#">Tribunal des baux</a></li>
-          <li><a href="#">Mesures de contrainte / application des peines</a></li>
-          <li><a href="#">Justices de paix</a></li>
-          <li><a href="../office-des-poursuites">Poursuites</a></li>
-          <li><a href="../office-des-faillites">Faillites</a></li>
-          <li><a href="#">Registre du commerce</a></li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Acteurs de la justice</h2>
-        <ul>
-          <li><a href="#">Agents d'affaires brevetés</a></li>
-          <li><a href="#">Avocats</a></li>
-          <li><a href="#">Notaires</a></li>
-          <li><a href="#">Autres acteurs</a></li>
-        </ul>
-      </section>
-
-    </div>
-
-    <aside class="col-md-4 small">
-      <h2 class="vd-section-title">Contact</h2>
-
-      <p>
-        Vous trouverez les coordonnées des offices judiciaires sur leurs pages internet respectives
-      </p>
-
-      <h2 class="vd-section-title">Autres prestations liées</h2>
-      <ul class="vd-list-links">
-        <li><a href="#0">Obtenir un extrait du registre des poursuites pour soi-même</a></li>
-        <li><a href="#0">Obtenir un extrait du registre des faillites pour soi-même</a></li>
-        <li><a href="#0">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
-        <li><a href="#0">Obtenir un extrait des registres des faillites sur un tiers</a></li>
-      </ul>
-
-      <h2 class="vd-section-title">Publications</h2>
-      <ul>
-        <li><a href="#">Rapports annuels</a></li>
-        <li><a href="#">Brochures</a></li>
-      </ul>
-
-      <h2 class="vd-section-title">Liens utiles</h2>
-      <p>
-        Accéditation des médias
-      </p>
-
-    </aside>
-  </div>
-</main>
-
-{{> @footer }}
+<h2 class="vd-section-title">Liens utiles</h2>
+<p>
+  Accéditation des médias
+</p>
+{% endblock %}
