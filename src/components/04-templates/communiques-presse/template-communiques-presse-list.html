@@ -1,6 +1,6 @@
-{{> @header }}
+{% include '@header' %}
 
-{{> @page-title-banner }}
+{% include '@page-title-banner' %}
 
 <div class="vd-bg-pattern-bars-gray py-1 mt-1">
   <div class="container">
@@ -18,10 +18,10 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-xs-6 mb-1">
-              {{> @dates legendModifier='h5' legend='Publié du' labelHidden=true}}
+              {% render '@dates', {'legendModifier': 'h5', 'legend': 'Publié du', 'labelHidden': true} %}
             </div>
             <div class="col-xs-6 mb-1">
-              {{> @dates legendModifier='h5' legend='au' labelHidden=true}}
+              {% render '@dates', {'legendModifier': 'h5', 'legend': 'au', labelHidden: true} %}
             </div>
           </div>
         </div>
@@ -32,21 +32,21 @@
   </div>
 </div>
 
-<main class="container  mt-3">
-  {{> @page-title }}
+<main class="container mt-3">
+  {% include '@page-title' %}
 
   <div class="row">
 
     <div class="col-md-8">
-
-      {{#if results}}<h2 class="mb-3">Résultats de recherche</h2>{{else}}<h2 class="sr-only">Liste des communiqués de presse</h2>{{/if}}
-      {{render '@teaser-list'}}
-
+      {% block main %}
+      {% if results %}<h2 class="mb-3">Résultats de recherche</h2>{% else %}<h2 class="sr-only">Liste des communiqués de presse</h2>{% endif %}
+      {% render '@teaser-list' %}
+      {% endblock %}
     </div>
 
     <aside class="col-md-4 small">
-
-      {{render '@autority-address' autorityAddress }}
+      {% block aside %}
+      {% render '@autority-address', autorityAddress %}
 
       <p class="mt-3">Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
       <ul class="vd-list-links">
@@ -58,10 +58,10 @@
       <p>
         <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">Abonnement</a>
       </p>
-
+      {% endblock %}
     </aside>
 
   </div>
 </main>
 
-{{> @footer }}
+{% include '@footer' %}
