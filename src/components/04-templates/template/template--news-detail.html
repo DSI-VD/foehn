@@ -3,7 +3,8 @@
 {% include '@page-title-banner--light' %}
 
 <main class="container container-small" id="main">
-  {% include '@page-title' %}
+  {% include '@publish-time' %}
+  <h1 class="text-center mb-3">{{ pageTitle }}</h1>
 
   {% block main %}
   {% include '@paragraph' %}
