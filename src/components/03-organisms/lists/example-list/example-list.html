@@ -87,16 +87,16 @@
 
 <h2 class="mb-1">Résultats</h2>
 
-{{#each peoples}}
+{% for people in peoples %}
 <div vocab="http://schema.org/" typeof="Person">
-  <h3 property="name">{{ name }}</h3>
-  <p class="h4" property="jobTitle">{{ jobType }}</p>
+  <h3 property="name">{{ people.name }}</h3>
+  <p class="h4" property="jobTitle">{{ people.jobType }}</p>
 
   <div class="row">
     <div class="col-md-6">
-      <p property="address" typeof="PostalAddress"><span property="streetAddress">{{ streetPrefix }} {{ street }} {{@index}}</span><br>
-    Case postale <span property="postOfficeBoxNumber">80{{@index}}</span><br>
-    <span property="postalCode">100{{@index}}</span> <span property="addressLocality">{{ city }}</span></p>
+      <p property="address" typeof="PostalAddress"><span property="streetAddress">{{ people.streetPrefix }} {{ street }} {{ loop.index }}</span><br>
+    Case postale <span property="postOfficeBoxNumber">80{{ loop.index }}</span><br>
+    <span property="postalCode">100{{ loop.index }}</span> <span property="addressLocality">{{ people.city }}</span></p>
       <ul class="vd-list-icons">
         <li>
           <span class="fa fa-phone" aria-hidden="true"></span>
@@ -111,14 +111,14 @@
         <li>
           <span class="fa fa-envelope" aria-hidden="true"></span>
           <span class="sr-only">Courriel</span>
-          <a href="mailto:{{ mail }}" property="email">{{ email }}</a>
+          <a href="mailto:{{ people.mail }}" property="email">{{ people.email }}</a>
         </li>
       </ul>
     </div>
     <div class="col-md-6">
       <dl class="row">
         <dt class="col-md-6">Titre</dt>
-        <dd class="col-md-6">{{ jobTitle }}</dd>
+        <dd class="col-md-6">{{ people.jobTitle }}</dd>
 
         <dt class="col-md-6">Inscription au registre</dt>
         <dd class="col-md-6">29.12.2016</dd>
@@ -132,6 +132,6 @@
 </div>
 
 <hr class="mt-3 mb-3 ml-0 mr-0 vd-separator vd-separator-gray-pattern">
-{{/each}}
+{% endfor %}
 
-{{render '@pagination' }}
+{% render '@pagination' %}
