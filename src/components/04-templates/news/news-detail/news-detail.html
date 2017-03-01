@@ -1,29 +1,29 @@
-{{> @header  }}
+{% include '@header' %}
 
-{{> @page-title-banner--light }}
+{% include '@page-title-banner--light' %}
 
 <main class="container container-small" id="main">
-  {{> @publish-time }}
+  {% include @publish-time %}
   <h1 class="text-center mb-3">{{ news.title }}</h1>
 
-  {{> @lead }}
+  {% include '@lead' %}
 
   <div class="text-center mt-2">
-    {{> @social-icons }}
+    {% include '@social-icons' %}
   </div>
 
-  {{> @figure--category medias.image styleModifier='vd-teaser-img' }}
+  {% render '@figure--category', medias.image, true}}
 
-  {{> @paragraph }}
-  {{> @blockquote }}
-  {{> @paragraph }}
+  {% include '@paragraph' %}
+  {% include '@blockquote' %}
+  {% include '@paragraph' %}
 
   <h2>Liens</h2>
-  {{> @list-links }}
-  {{render '@download-list'}}
-  {{render '@media-list'}}
-  {{render '@video-list'}}
+  {% include '@list-links' %}
+  {% render '@download-list' %}
+  {% render '@media-list' %}
+  {% render '@video-list' %}
 
 </main>
 
-{{> @footer }}
+{% include '@footer' %}
