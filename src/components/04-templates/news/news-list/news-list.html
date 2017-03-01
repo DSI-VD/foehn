@@ -1,27 +1,20 @@
-{{> @header  }}
+{% include '@header' %}
 
-{{> @page-title-banner }}
+{% include '@page-title-banner' %}
 
-{{render '@search-banner--half-width' }}
+{% render '@search-banner--half-width' %}
 
 <main class="container mt-2" id="main">
-  {{> @page-title }}
+  {% include '@page-title' %}
 
   <div class="row">
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
-    {{> @teaser--left styleModifier='col-md-6' }}
+    {% for i in range(0, 10) %}
+    {% render '@teaser--left', {styleModifier: 'col-md-6'}, true %}
+    {% endfor %}
   </div>
 
-  {{render '@pagination'}}
+  {% render '@pagination' %}
 
 </main>
 
-{{> @footer }}
+{% include '@footer' %}
