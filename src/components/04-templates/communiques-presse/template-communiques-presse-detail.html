@@ -1,0 +1,83 @@
+{% include '@header' %}
+
+{% include '@page-title-banner--light' %}
+
+<main class="container">
+  <div class="row">
+
+    <div class="col-md-8">
+      <header>
+        <p class="mb-0 small text-uppercase font-weight-bold">{{ pressRelease.nature }}</p>
+        <p class="mb-0 small">{{ pressRelease.sender }}</p>
+        <p class="small font-weight-bold">{{ pressRelease.date }}</p>
+
+        {% if icons %}
+        <h2 class="sr-only">Partnaires</h2>
+        <ul class="list-inline">
+          {% for partner in pressRelease.partners %}
+          <li class="list-inline-item"><span class="sr-only">{{ partner.name }}</span><img class="img-fluid" src="{{ partner.src }}" alt="{{ partner.alt }}"></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        <p class="text-uppercase mb-0">{{ pressRelease.preHeader }}</p>
+        <h1 class="h2 px-2 py-2 mb-2 vd-bg-pattern-bars-gray">{{ pageTitle }}</h1>
+      </header>
+
+      {% include '@lead' %}
+
+      <div class="text-center mt-2">
+        {% render '@social-icons' %}
+      </div>
+
+      {% block main %}
+      {% render '@paragraph' %}
+      {% endblock %}
+
+      {% render '@signature', pressRelease.signature, true %}
+
+      {% if not icons %}
+      <h2 class="sr-only">Partnaires</h2>
+      <ul class="list-inline">
+        {% for partner in pressRelease.partners %}
+        <li class="list-inline-item"><span class="sr-only">{{ partner.name }}</span><img class="img-fluid" src="{{ partner.src }}" alt="{{ partner.alt }}"></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <h3 class="h5">Renseignements</h3>
+      <ul class="list-unstyled">
+        <li class="mb-0">DIRH, Nuria Gorrite, conseillère d'Etat, 021 316 70 01</li>
+        <li class="mb-0">Lausanne, Olivier Français, Municipal des travaux, 021 316 70 01</li>
+        <li class="mb-0">Renens, Marianne Hugenin, syndique, 079 316 70 01</li>
+      </ul>
+
+      {% render '@download-list' %}
+
+    </div>
+
+    <aside class="col-md-4 small">
+
+      {% render '@autority-address', autorityAddress %}
+
+      <p>Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
+      <ul class="vd-list-links">
+        <li><a href="#">communiqués de la Police cantonale</a></li>
+        <li><a href="#">communiqués du Centre hospitalier universitaire vaudois (CHUV)</a></li>
+        <li><a href="#">communiqués de l'Université de Lausanne</a></li>
+      </ul>
+
+      <p>
+        <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">S'abonner au <abbr title="Communiqués de presse">CP</abbr></a>
+      </p>
+    </aside>
+
+  </div>
+
+  <nav>
+    <a href="#">Retour sur la liste des communiqués</a>
+  </nav>
+
+</main>
+
+{% include '@footer' %}
