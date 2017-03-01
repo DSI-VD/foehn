@@ -1,7 +1,7 @@
 {
     "status": "ready",
     "context": {
-      "buttonTiles": [
+      "items": [
         {
           "item": "Button 1",
           "url": "#"
