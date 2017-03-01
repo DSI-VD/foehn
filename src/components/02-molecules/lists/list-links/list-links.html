@@ -1,5 +1,5 @@
 <ul class="vd-list-links">
-  {{#each list-links}}
-  <li><a href="{{ url }}">{{ item }}</a></li>
-  {{/each}}
+  {% for item in listLinks %}
+  <li><a href="{{ url }}">{{ item.item }}</a></li>
+  {% endfor %}
 </ul>

@@ -15,6 +15,6 @@ for (let i = 0; i < listItemCount; i += 1) {
 module.exports = {
     status: 'ready',
     context: {
-        'list-links': listItemData, // use our generated list of members as context data for our template.
+        'listLinks': listItemData, // use our generated list of members as context data for our template.
     },
 };
