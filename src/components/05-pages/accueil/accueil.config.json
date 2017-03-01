@@ -2,26 +2,23 @@
     "status": "ready",
     "context": {
       "pageTitle": "Site officiel de l'État de Vaud",
-      "button-tiles-top": [
-        {
-          "item": "Grand Conseil",
-          "url": "#"
-        },{
-          "item": "Conseil d'État",
-          "url": "#"
-        },{
-          "item": "Ordre Judiciaire",
-          "url": "#"
-        }
-      ],
-      "button-tiles-bottom": [
-        {
-          "item": "Départements",
-          "url": "#"
-        },{
-          "item": "Organigramme",
-          "url": "#"
-        }
-      ]
+      "navOpen": true,
+      "buttonTilesTop":{
+        "items": [
+          {
+            "item": "Grand Conseil",
+            "url": "#"
+          },{
+            "item": "Conseil d'État",
+            "url": "#"
+          },{
+            "item": "Ordre Judiciaire",
+            "url": "#"
+          }
+        ]
+      },
+      "buttonTilesBottom": {
+        "items": [
+      }
     }
 }

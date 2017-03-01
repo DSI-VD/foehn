@@ -1,57 +1,41 @@
-{{render '@header--homepage' }}
-
-<main id="main" class="container mt-3">
-  {{> @page-title }}
-
-  <div class="row">
-
-    <div class="col-md-8">
-
-      <section class="hidden-md-up">
-        <h2 class="vd-section-title mb-2">Les plus visités</h2>
-        <ul class="vd-list-links">
-          <li><a href="#0">Inscription au chômage</a></li>
-          <li><a href="#0">Formulaire d'indemnisation</a></li>
-          <li><a href="#0">Vaud Tax 2017</a></li>
-          <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-        </ul>
-      </section>
-
-      <p class="hidden-md-up mb-2 text-center"><a href="../domaines" class="btn btn-primary vd-btn-chevron-r">Tous les thèmes</a></p>
-
-      {{render '@news-latest--homepage'}}
-
-    </div><!-- /.col-md-8 -->
-
-    <aside class="col-md-4 small">
-
-      <section class="mb-3 hidden-sm-down">
-        {{> @twitter-feed }}
-      </section>
-
-      <section>
-        {{> @agenda }}
-      </section>
-
-    </aside><!-- /.col-md-4 -->
-
-  </div><!-- /.row -->
-</main><!-- /.container -->
-
-<hr class="vd-separator vd-separator-gray-bars vd-separator-wide mt-3 mb-3">
-
-<div class="container">
-  <section>
-    <h2 class="vd-section-title">Autorités</h2>
-
-    {{> @button-tiles button-tiles=button-tiles-top }}
-    {{> @button-tiles button-tiles=button-tiles-bottom }}
-
-    <p>
-      <a href="../autorites/" class="btn btn-primary vd-btn-chevron-r">Toutes les autorités</a>
-    </p>
-
+{% extends '@template--homepage' %}
+{% block main %}
+  <section class="hidden-md-up">
+    <h2 class="vd-section-title mb-2">Les plus visités</h2>
+    <ul class="vd-list-links">
+      <li><a href="#0">Inscription au chômage</a></li>
+      <li><a href="#0">Formulaire d'indemnisation</a></li>
+      <li><a href="#0">Vaud Tax 2017</a></li>
+      <li><a href="#0">Vacances scolaires et jours fériés</a></li>
+    </ul>
   </section>
-</div>
 
-{{> @footer }}
+  <p class="hidden-md-up mb-2 text-center"><a href="../domaines" class="btn btn-primary vd-btn-chevron-r">Tous les thèmes</a></p>
+
+  {% render '@news-latest--homepage' %}
+
+{% endblock %}
+
+{% block aside %}
+  <section class="mb-3 hidden-sm-down">
+    {% include '@twitter-feed' %}
+  </section>
+
+  <section>
+    {% include '@agenda' %}
+  </section>
+{% endblock %}
+
+{% block contentSecondary %}
+<section>
+  <h2 class="vd-section-title">Autorités</h2>
+
+  {% render '@button-tiles', buttonTilesTop %}
+  {% render '@button-tiles', buttonTilesBottom %}
+
+  <p>
+    <a href="../autorites/" class="btn btn-primary vd-btn-chevron-r">Toutes les autorités</a>
+  </p>
+
+</section>
+{% endblock %}
