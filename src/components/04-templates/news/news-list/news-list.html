@@ -1,20 +1,8 @@
-{% include '@header' %}
-
-{% include '@page-title-banner' %}
-
-{% render '@search-banner--half-width' %}
-
-<main class="container mt-2" id="main">
-  {% include '@page-title' %}
-
+{% extends "@template--default" %}
+{% block main %}
   <div class="row">
     {% for i in range(0, 10) %}
     {% render '@teaser--left', {styleModifier: 'col-md-6'}, true %}
     {% endfor %}
   </div>
-
-  {% render '@pagination' %}
-
-</main>
-
-{% include '@footer' %}
+{% endblock %}
