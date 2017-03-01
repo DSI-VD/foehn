@@ -1,63 +1,32 @@
-{{> @header }}
+{% extends '@template--2-col' %}
+{% block main %}
+  <section>
+    <h2 class="sr-only">Présentations</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae id quidem assumenda reprehenderit ea enim suscipit, consequatur quam impedit aut atque repudiandae tempore minus velit ullam hic, ipsa fuga expedita? Dolorum explicabo corporis placeat assumenda. Illo facilis iure, asperiores dolor earum vel? Voluptatem nobis quasi, necessitatibus dicta molestias perferendis a est itaque tempore eveniet, facilis quisquam impedit officia temporibus perspiciatis rem libero expedita unde commodi recusandae nulla voluptas corrupti! Inventore in quasi omnis itaque rem perspiciatis doloremque aliquid expedita tempora, quibusdam facilis ipsa nam assumenda magnam molestias cupiditate vero laborum odio natus facere! Consectetur cum id ipsum quidem, eligendi quis possimus in itaque nostrum eos? Accusantium repudiandae impedit repellendus tempora consequatur nemo libero voluptates, minima sint repellat dolor tenetur, vel voluptas natus possimus suscipit voluptatum, culpa provident fugiat soluta quos assumenda deleniti rem? Vero omnis eligendi eum nihil quaerat possimus doloremque, modi inventore corporis, laudantium alias delectus ipsum ipsam sit temporibus voluptatem necessitatibus illo suscipit beatae atque adipisci qui veritatis! Excepturi ipsa tempore, qui aliquam animi et. Quasi fugit delectus odio in dolor dignissimos aut nulla rem, excepturi expedita culpa vitae doloremque, id et exercitationem ex voluptatem ipsam fuga corrupti. Eius, ut animi. Magni sunt provident illo quibusdam, unde, maxime!</p>
+  </section>
 
-{{> @page-title-banner }}
+  <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
 
-<main id="main" class="container mt-3">
-  {{> @page-title }}
+  <section>
 
-  <div class="row">
-    <div class="col-md-8">
-      <section>
-        <h2 class="sr-only">Présentations</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae id quidem assumenda reprehenderit ea enim suscipit, consequatur quam impedit aut atque repudiandae tempore minus velit ullam hic, ipsa fuga expedita? Dolorum explicabo corporis placeat assumenda. Illo facilis iure, asperiores dolor earum vel? Voluptatem nobis quasi, necessitatibus dicta molestias perferendis a est itaque tempore eveniet, facilis quisquam impedit officia temporibus perspiciatis rem libero expedita unde commodi recusandae nulla voluptas corrupti! Inventore in quasi omnis itaque rem perspiciatis doloremque aliquid expedita tempora, quibusdam facilis ipsa nam assumenda magnam molestias cupiditate vero laborum odio natus facere! Consectetur cum id ipsum quidem, eligendi quis possimus in itaque nostrum eos? Accusantium repudiandae impedit repellendus tempora consequatur nemo libero voluptates, minima sint repellat dolor tenetur, vel voluptas natus possimus suscipit voluptatum, culpa provident fugiat soluta quos assumenda deleniti rem? Vero omnis eligendi eum nihil quaerat possimus doloremque, modi inventore corporis, laudantium alias delectus ipsum ipsam sit temporibus voluptatem necessitatibus illo suscipit beatae atque adipisci qui veritatis! Excepturi ipsa tempore, qui aliquam animi et. Quasi fugit delectus odio in dolor dignissimos aut nulla rem, excepturi expedita culpa vitae doloremque, id et exercitationem ex voluptatem ipsam fuga corrupti. Eius, ut animi. Magni sunt provident illo quibusdam, unde, maxime!</p>
-      </section>
+    {% render '@news-latest' %}
 
-      <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
+  </section>
 
-      <section>
+  <section>
+    <h2 class="vd-section-title">Projets</h2>
 
-        {{> @news-latest }}
+    {% render '@projects-list' %}
 
-      </section>
+  </section>
+{% endblock %}
+{% block aside %}
+  {% render '@autority-address', autorityAddress %}
 
-      <section>
-        <h2 class="vd-section-title">Projets</h2>
-
-        {{render '@projects-list' }}
-
-      </section>
-
-    </div>
-
-    <aside class="col-md-4 small">
-      <h2>Tribuanl cantonal</h2>
-      <p>Route du Signal 8 <br>1018 Lausanne</p>
-
-      <h3>Heures d'ouverture</h3>
-      <p>
-        du lundi au vendredi de 8h00 à 11h30 et de 13h30 à 16h30
-      </p>
-
-      <ul class="vd-list-icons">
-        <li><span class="fa fa-phone" aria-hidden="true"></span> <a href="#">+41 21 123 45 67</a></li>
-        <li><span class="fa fa-fax" aria-hidden="true"></span> <a href="#">+41 21 123 45 67</a></li>
-        <li><span class="fa fa-envelope" aria-hidden="true"></span> <a href="#">info.ojv@vd.ch</a></li>
-        <li><span class="fa fa-map-marker" aria-hidden="true"></span> <a href="#">Voir sur la carte</a></li>
-      </ul>
-
-      <p>
-        <a href="#0" class="btn btn-primary vd-btn-chevron-r">Contacter l'office</a>
-      </p>
-
-      <h2 class="vd-section-title">Autres prestations liées</h2>
-      <ul class="vd-list-links">
-        <li><a href="#0">Lien 1</a></li>
-        <li><a href="#0">Lien 2</a></li>
-        <li><a href="#0">Lien 3</a></li>
-      </ul>
-    </aside>
-
-  </div>
-</main>
-
-{{> @footer }}
+  <h2 class="vd-section-title">Autres prestations liées</h2>
+  <ul class="vd-list-links">
+    <li><a href="#0">Lien 1</a></li>
+    <li><a href="#0">Lien 2</a></li>
+    <li><a href="#0">Lien 3</a></li>
+  </ul>
+{% endblock %}
