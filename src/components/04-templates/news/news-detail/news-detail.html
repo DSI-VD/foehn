@@ -1,9 +1,7 @@
-{% include '@header' %}
+{% extends '@template--news-detail' %}
+{% block main %}
 
-{% include '@page-title-banner--light' %}
-
-<main class="container container-small" id="main">
-  {% include @publish-time %}
+  {% include '@publish-time' %}
   <h1 class="text-center mb-3">{{ news.title }}</h1>
 
   {% include '@lead' %}
@@ -24,6 +22,4 @@
   {% render '@media-list' %}
   {% render '@video-list' %}
 
-</main>
-
-{% include '@footer' %}
+{% endblock %}

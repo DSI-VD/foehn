@@ -1,0 +1,14 @@
+{% include '@header' %}
+
+{% include '@page-title-banner--light' %}
+
+<main class="container container-small" id="main">
+  {% include '@page-title' %}
+
+  {% block main %}
+  {% include '@paragraph' %}
+  {% endblock %}
+
+</main>
+
+{% include '@footer' %}
