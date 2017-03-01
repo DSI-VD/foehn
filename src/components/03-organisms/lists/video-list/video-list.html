@@ -1,4 +1,4 @@
 <h2>Médias</h2>
-{{#each items}}
-{{> @video item }}
-{{/each}}
+{% for video in items %}
+{% render '@video', video, true %}
+{% endfor %}
