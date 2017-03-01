@@ -1,36 +1,30 @@
 {
-    "label": "Liste",
-    "context": {
-      "pageTitle": "Communiqués de presse",
-      "breadcrumb": {
-        "items": [{
-          "page": "vd.ch",
-          "url": "#"
-        }]
+  "label": "Liste",
+  "context": {
+    "pageTitle": "Communiqués de presse",
+    "breadcrumb": [{
+      "page": "vd.ch",
+      "url": "#"
+    }],
+    "autorityAddress": {
+      "name": "Bureau d'information et de communication",
+      "address": {
+        "street": "Rue de la Barre 2",
+        "postal-code": "1014",
+        "locality": "Lausanne"
       },
-      "autorityAddress": {
-        "name": "Bureau d'information et de communication",
-        "address": {
-            "street": "Rue de la Barre 2",
-            "postal-code": "1014",
-            "locality": "Lausanne"
-        },
-        "list-icon": [
-          {
-            "item": "voir sur la carte",
-            "icon": "fa-map-marker",
-            "url": "#"
-          }
-        ],
-        "button": "@autority-address.button"
-      }
-    },
-    "variants": [
-      {
-        "name": "Results",
-        "context": {
-          "results": true
-        }
-      }
-    ]
+      "list-icon": [{
+        "item": "voir sur la carte",
+        "icon": "fa-map-marker",
+        "url": "#"
+      }],
+      "button": "@autority-address.button"
+    }
+  },
+  "variants": [{
+    "name": "Results",
+    "context": {
+      "results": true
+    }
+  }]
 }
