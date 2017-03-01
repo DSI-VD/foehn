@@ -1,0 +1,30 @@
+{% render '@header--homepage' %}
+
+<main id="main" class="container mt-3">
+  {% include '@page-title' %}
+
+  <div class="row">
+    <div class="col-md-8">
+      {% block main %}
+      {% include '@paragraph' %}
+      {% endblock %}
+    </div>
+
+    <aside class="col-md-4">
+      {% block aside %}
+      {% include '@paragraph' %}
+      {% endblock %}
+    </aside>
+
+  </div>
+</main>
+
+<hr class="vd-separator vd-separator-gray-bars vd-separator-wide mt-3 mb-3">
+
+<div class="container">
+  {% block contentSecondary %}
+  {% include '@paragraph' %}
+  {% endblock %}
+</div>
+
+{% include '@footer' %}
