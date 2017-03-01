@@ -1,9 +1,7 @@
 {
   "status": "wip",
   "context": {
-    "news": {
-      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor."
-    },
+      "pageTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor.",
     "breadcrumb": [
       {
         "page": "vd.ch",
