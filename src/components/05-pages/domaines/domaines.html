@@ -1,9 +1,4 @@
-{{render '@header--homepage' }}
-
-<main class="container" id="main">
-  {{> @page-title }}
-  {{render '@domains-list' }}
-
-</main>
-
-{{> @footer }}
+{% extends '@template--domaines' %}
+{% block main %}
+  {% render '@domains-list' %}
+{% endblock %}

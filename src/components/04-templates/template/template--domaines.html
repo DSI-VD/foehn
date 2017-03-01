@@ -1,0 +1,12 @@
+{% render '@header--homepage' %}
+
+<main id="main" class="container mt-3">
+  {% include '@page-title' %}
+
+  {% block main %}
+  {% include '@paragraph' %}
+  {% endblock %}
+
+</main>
+
+{% include '@footer' %}
