@@ -1,15 +1,9 @@
-{{> @header  }}
-
-{{> @page-title-banner--light }}
-
-<main class="container container-small" id="main">
-  <p class="mt-2 text-center vd-text-green"><small>Publié le Publié le {{> @time }}</small></p>
-  <h1 class="text-center mb-3">La Journée Oser tous les métiers élargit son offre</h1>
-
+{% extends '@template--news-detail' %}
+{% block main %}
   <p class="lead">Cette année, deux nouveaux ateliers complètent l’offre de la traditionnelle Journée oser tous les métiers (#jom) du 10 novembre: « Métiers techniques» pour les filles et « Enseignant de classes 1 et 2P (enfantine) » pour les garçons.</p>
 
   <div class="text-center mt-2">
-    {{> @social-icons }}
+    {% include '@social-icons' %}
   </div>
 
   <figure class="figure vd-teaser-img">
@@ -21,13 +15,10 @@
     Explorer de nouveaux univers professionnels au-delà des secteurs traditionnellement féminins ou masculins, c'est ce que proposera la Journée Oser tous les métiers le jeudi 10 novembre prochain. Les filles accompagneront un homme dans sa journée de travail, et les garçons une femme. En plus de cette mise en situation professionnelle, les écoliers auront la possibilité de participer aux ateliers organisés par le BEFH.
   </p>
 
-  {{> @blockquote }}
+  {% include '@blockquote' %}
 
   <p>Avec 625 places disponibles, ces ateliers permettront aux filles de découvrir les métiers d’ingénieure, d’informaticienne ou de s’initier à la vie politique au Parlement des filles.</p>
   <ul class="vd-list-links">
     <li><a href="http://www.bicweb.vd.ch/frame.aspx?pPage=/communique.aspx?pObjectID=601487">Communiqué du 1er novembre 2016</a></li>
   </ul>
-
-</main>
-
-{{> @footer }}
+{% endblock %}
