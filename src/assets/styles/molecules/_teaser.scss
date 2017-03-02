@@ -7,6 +7,7 @@
  * 2. Remove the bottom border on last element of a 2 columns list
  */
 .vd-teaser {
+  position: relative;
   margin-bottom: $spacer * 2;
 
   &:after {
@@ -31,6 +32,18 @@
     &[class*="col-md-6"]:nth-last-of-type(-n+2) {
       &:after { content: none; } /* [2] */
     }
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .vd-link-invisible {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
