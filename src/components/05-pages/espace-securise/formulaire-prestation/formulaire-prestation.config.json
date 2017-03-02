@@ -1,28 +1,29 @@
 {
     "status": "prototype",
     "context": {
-      "pageTitle": "Commander un extrait du registre des poursuites"
+      "pageTitle": "Commander un extrait du registre des poursuites",
+      "stepTitle": "Titre de l'étape",
+      "stepNumber": "Etape 1 de X"
     },
     "variants": [
       {
         "name": "default",
-        "label": "step 1",
+        "label": "Step 1",
         "context": {
-          "stepNumber": "Page 1 de 3",
-          "stepTitle": "Titre de l'étape",
+          "stepNumber": "Etape 1 de 4",
           "pagination": {
             "previous": false,
             "next": {
-              "url": "formulaire-prestation--step-2"
+              "url": "formulaire-prestation--step-2",
+              "text": "Suivant"
             }
           }
         }
       },
       {
-        "name": "step 2",
+        "name": "Step 2",
         "context": {
-          "stepNumber": "Page 2 de 3",
-          "stepTitle": "Titre de l'étape",
+          "stepNumber": "Etape 2 de 4",
           "pagination": {
             "previous": {
               "url": "formulaire-prestation--default"
@@ -34,28 +35,17 @@
         }
       },
       {
-        "name": "step 3",
+        "name": "Step 3",
         "context": {
-          "stepNumber": "Page 3 de 3",
-          "stepTitle": "Titre de l'étape",
-          "button": {
-            "text": "Transmettre",
-            "href": "formulaire-prestation--final"
+          "stepNumber": "Etape 3 de 4",
+          "submit": {
+            "href": "formulaire-prestation-confirmation"
           },
           "pagination": {
             "previous": {
               "url": "formulaire-prestation--step-2"
             },
             "next": false
-          }
-        }
-      },
-      {
-        "name": "final",
-        "context": {
-          "confirmation": true,
-          "buttonBack": {
-            "text": "Aller à vd.ch"
           }
         }
       }

@@ -1,0 +1,18 @@
+{
+    "status": "prototype",
+    "context": {
+      "pageTitle": "Nom de la préstation",
+      "stepTitle": "Titre de l'étape",
+      "stepNumber": "Etape X sur Y",
+      "pagination": {
+        "previous": {
+          "url": "#",
+          "text": "Précédent"
+        },
+        "next": {
+          "url": "#",
+          "text": "Suivant"
+        }
+      }
+    }
+}
