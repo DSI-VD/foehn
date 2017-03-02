@@ -15,7 +15,7 @@ const mandelbrot = require('@frctl/mandelbrot')({
 });
 
 /* Create a new Fractal instance and export it for use elsewhere if required */
-const fractal = module.exports = require('@frctl/fractal').create();
+const fractal = require('@frctl/fractal').create();
 
 /* Set the title of the project */
 fractal.set('project.title', 'Foehn');
@@ -43,3 +43,6 @@ fractal.web.theme(mandelbrot);
 
 /* Tell Fractal what is the default preview */
 fractal.components.set('default.preview', '@preview');
+
+// Export config
+module.exports = fractal;
