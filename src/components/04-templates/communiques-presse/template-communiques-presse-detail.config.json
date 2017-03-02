@@ -46,7 +46,7 @@
         "text": "Bureau d information et de communication de l Etat de Vaud"
       }
     },
-    "autorityAddress": "@communiques-presse-list.autorityAddress"
+    "autorityAddress": "@template-communiques-presse-list.autorityAddress"
   },
   "variants": [{
     "name": "alternate",
