@@ -18,6 +18,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add template template-portal
+- Add template template-portal-form
 - Add template template--default
 - Add template template--2-col
 - Add template template--2-col-nav

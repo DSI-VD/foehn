@@ -1,0 +1,14 @@
+{% include '@header--securise' %}
+
+<main id="main">
+  {% include '@page-title-banner--form-presta' %}
+
+  <div class="container mt-3">
+    {% block main %}
+
+    {% render '@paragraph' %}
+
+    {% endblock %}
+  </div>
+</main>
+{% include '@footer--securise' %}

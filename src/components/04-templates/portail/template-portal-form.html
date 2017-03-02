@@ -1,0 +1,20 @@
+{% include '@header--securise' %}
+
+<main id="main">
+  {% include '@page-title-banner--form-presta' %}
+
+  <div class="container mt-3">
+    <h2>{{ stepTitle }}</h2>
+    <p class="h3">{{ stepNumber }}</p>
+
+        {% block main %}
+
+        {% render '@paragraph' %}
+
+        {% endblock %}
+
+    {% render '@pagination', pagination, true %}
+
+  </div>
+</main>
+{% include '@footer--securise' %}

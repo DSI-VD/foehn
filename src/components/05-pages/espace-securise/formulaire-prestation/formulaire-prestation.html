@@ -1,0 +1,39 @@
+{% extends '@template-portal-form' %}
+{% block main %}
+
+  <form action="#">
+
+    {% render '@input--default', {label: "Nom", required: true}, true %}
+
+    {% render '@input--default', {label: "Prénom", required: true}, true %}
+
+    {% render '@dates' %}
+
+    {% render '@input--default', {label: "Etablissement"}, true %}
+
+    {% render '@input--default', {label: "Fonction"}, true %}
+
+    {% render '@select', {label: "Catégorie"} %}
+
+    {% render '@input--default', {label: "Adresse", required: true}, true %}
+
+    {% render '@input--email', {required: true}, true %}
+
+    <fieldset>
+      <legend>Radio</legend>
+      {% render '@radio' %}
+    </fieldset>
+
+    <fieldset>
+      <legend>Checkbox</legend>
+      {% render '@checkbox' %}
+    </fieldset>
+
+    {% render '@textarea' %}
+
+    <p>
+      {% if submit %}{% render '@button--form', button, true %}{% endif %}
+    </p>
+
+  </form>
+{% endblock %}

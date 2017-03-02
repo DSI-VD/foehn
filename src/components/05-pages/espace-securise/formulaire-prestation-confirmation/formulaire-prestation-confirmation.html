@@ -1,0 +1,12 @@
+{% extends '@template-portal' %}
+{% block main %}
+  {% include '@alert' %}
+  <p>Nous vous avons envoyé un mail de confirmation.</p>
+  <ul>
+    <li>Le demandeur ne peut requérir la délivrance d'un extrai que pour lui-même, merci de signer le document envoyé</li>
+    <li>Une fois la confirmation reçue en retour, vous pourrez imprimer, remplir, signer, et envoyer le formulaire avec une photo ayant été prise dans les derniers 6 mois.</li>
+  </ul>
+  <p>
+    {% render '@button--default', {text:"Aller à vd.ch"}, true %}
+  </p>
+{% endblock %}
