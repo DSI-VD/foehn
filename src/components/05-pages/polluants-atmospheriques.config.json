@@ -23,6 +23,45 @@
           "url": "#"
         }
       ]
+    },
+    "navSide": {
+      "items": [
+        {
+          "name": "Poussières fines",
+          "url": "#"
+        },
+        {
+          "name": "Ozone",
+          "url": "#",
+          "items": [
+            {
+              "name": "Qu'est-ce que l'ozone",
+              "url": "#"
+            },
+            {
+              "name": "Comment améliorer l'air",
+              "url": "#",
+              "active": true
+            },
+            {
+              "name": "En cas de canicule",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "name": "Les composés organiques",
+          "url": "#"
+        },
+        {
+          "name": "Ammoniac",
+          "url": "#"
+        },
+        {
+          "name": "Qualité de l'air",
+          "url": "#"
+        }
+      ]
     }
   }
 }
