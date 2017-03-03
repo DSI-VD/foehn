@@ -1,0 +1,28 @@
+{
+  "context": {
+    "pageTitle": "Polluants atmosphériques",
+    "breadcrumb": [
+      {
+        "page": "vd.ch",
+        "url": "#"
+      },
+      {
+        "page": "Environnement",
+        "url": "#"
+      },
+      {
+        "page": "Air",
+        "url": "#"
+      }
+    ],
+    "download": {
+      "listIcon": [
+        {
+          "item": "Comment agir, fiche à télécharger",
+          "icon": "fa-download",
+          "url": "#"
+        }
+      ]
+    }
+  }
+}
