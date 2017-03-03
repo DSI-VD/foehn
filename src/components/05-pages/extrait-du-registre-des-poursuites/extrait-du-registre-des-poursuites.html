@@ -90,15 +90,7 @@
   </div>
 {% endblock %}
 {% block aside %}
-  <h4>Office des poursuites</h4>
-  <p>L'office des poursuites a pour mission d’activer les poursuites, depuis leur origine et jusqu’à la distribution des dividendes et la délivrance des actes de défaut de biens.Il y en a un office par district, généralement situé dans le chef-lieu.</p>
-
-  <ul class="vd-list-icons">
-    <li><span class="fa fa-info-circle" aria-hidden="true"></span> <a href="../office-des-poursuites/">en savoir plus sur l'autorité</a></li>
-  </ul>
-  <p>
-    <a href="../recherche-office-poursuites" class="btn btn-primary vd-btn-chevron-r">Contacter l'office</a>
-  </p>
+  {% render '@autority-address' %}
 
   <h2 class="vd-section-title mt-3 ">Prestations en relation</h2>
   <ul class="vd-list-links">
