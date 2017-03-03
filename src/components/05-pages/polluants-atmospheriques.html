@@ -1,0 +1,28 @@
+{% extends '@template--2-col-nav' %}
+{% block main %}
+
+  <h2 class="sr-only">Introduction</h2>
+  <p>L'ozone est un constituant naturel de l'atmosphère. Entre 10 et 50 km d’altitude, la couche d’ozone nous protège des rayons UV du soleil. Mais à la surface de la terre, une trop forte concentration de ce gaz a des effets nocifs, aussi bien pour les êtres vivants que pour la végétation. L’excès de «mauvais » ozone est dû aux activités humaines. Les transports motorisés, l’industrie et l’utilisation de solvants entraînent des rejets d’oxydes d’azote et de composés organiques volatils, lesquels se transforment en ozone sous l’effet d’un fort ensoleillement. C’est pourquoi les problèmes d’ozone apparaissent au printemps et en été.</p>
+
+  {% render '@download-list', download %}
+
+  <dl class="row">
+    <dt class="col-sm-3">Nom</dt>
+    <dd class="col-sm-9">Ozone</dd>
+
+    <dt class="col-sm-3">Surnom</dt>
+    <dd class="col-sm-9">O3</dd>
+
+    <dt class="col-sm-3">Origine</dt>
+    <dd class="col-sm-9">Mécanisme de formation complexe du à l'action du soleil et de la chaleur sur les oxydes d'azote et les composés organiques volatils.</dd>
+
+    <dt class="col-sm-3">Signe particulier</dt>
+    <dd class="col-sm-9">Polluant secondaire, est en excès au niveau du sol. À ne pas confondre avec la couche d'ozone.</dd>
+
+    <dt class="col-sm-3">Profession</dt>
+    <dd class="col-sm-9">Oxydant universel</dd>
+
+    <dt class="col-sm-3">Effets nocifs</dt>
+    <dd class="col-sm-9">Provoque des irritations oculaires et des altérations pulmonaires. Endommage également les végétaux.</dd>
+  </dl>
+{% endblock %}
