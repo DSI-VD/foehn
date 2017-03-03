@@ -6,6 +6,14 @@
     <li>Si vous faites l'objet de poursuites ou avez fait l'objet de poursuites durant les cinq dernières années, l'extrait du registre consiste en une liste des poursuites.</li>
   </ul>
 
+  <h2>Commencer</h2>
+  <ul class="list-unstyled">
+    <li>{% render '@button--default', {'href': '#', 'text': 'En ligne'}, true %}</li>
+    <li>{% render '@button--secondary', {'href': '#', 'text': 'Par courrier'}, true %}</li>
+    <li>{% render '@button--secondary', {'href': '#', 'text': 'Au guichet'}, true %}</li>
+    <li>{% render '@button--secondary', {'href': '#', 'text': 'Par téléphone'}, true %}</li>
+  </ul>
+
   <h3 class="mt-3">Pour obtenir l'extrait</h3>
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
