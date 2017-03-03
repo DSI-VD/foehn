@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- Add page polluants-atmospheriques
 - Add template template-presta
 - Add template template-presta-form
 - Add template template--default
