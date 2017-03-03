@@ -6,6 +6,7 @@
 
   {% render '@download-list', download %}
 
+  <h2 class="sr-only">Information sur l'ozone</h2>
   <dl class="row">
     <dt class="col-sm-3">Nom</dt>
     <dd class="col-sm-9">Ozone</dd>
@@ -25,4 +26,7 @@
     <dt class="col-sm-3">Effets nocifs</dt>
     <dd class="col-sm-9">Provoque des irritations oculaires et des altérations pulmonaires. Endommage également les végétaux.</dd>
   </dl>
+{% endblock %}
+{% block aside %}
+  {% render '@autority-address' %}
 {% endblock %}
