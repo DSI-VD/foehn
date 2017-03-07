@@ -1,1 +1,8 @@
 @charset 'UTF-8';
+
+.vd-tab-content {
+  border-right: $nav-tabs-border-width solid $nav-tabs-border-color;
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  padding-right: $spacer;
+  margin-bottom: $spacer;
+}
