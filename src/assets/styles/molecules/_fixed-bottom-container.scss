@@ -3,6 +3,8 @@
 /**
  * This local mixin will print out all needed classes
  * (you can't extend a placeholder in a media query, sadly)
+ *
+ * 1. Make button like a `.btn-block`
  */
 @mixin vd-make-fixed-bottom-container() {
   position: fixed;
@@ -10,6 +12,11 @@
   left: 0;
   width: 100%;
   z-index: $zindex-sticky;
+
+  .btn {
+    display: block;
+    width: 100%;
+  }
 }
 
 .vd-fixed-bottom {
