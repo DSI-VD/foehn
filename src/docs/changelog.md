@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Add atom list--no-bullet
+- Add style '.vd-list-no-bullet'
 
 ## [0.18.0]
 
