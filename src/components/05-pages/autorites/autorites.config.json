@@ -6,6 +6,164 @@
             "page": "vd.ch",
             "url": "#"
           }]
-        }
+        },
+        "autorities": [
+          {
+            "name": "Territoire et environnement",
+            "abbr": "DTE",
+            "autorities": [
+              {
+                "name": "Egalité femmes hommes",
+                "abbr": "BEFH"
+              },
+              {
+                "name": "Environnement",
+                "abbr": "DGE"
+              },
+              {
+                "name": "Automobiles et navigation",
+                "abbr": "SAN"
+              },
+              {
+                "name": "Consommation et affaires vétérinaires",
+                "abbr": "SCAV"
+              },
+              {
+                "name": "Développement territorial",
+                "abbr": "SDT"
+              }
+            ]
+          },
+          {
+            "name": "Formation, jeunesse, culture",
+            "abbr": "DFJC",
+            "autorities": [
+                {
+                  "name": "Enseignement obligatoire",
+                  "abbr": "DGEO"
+                },
+                {
+                  "name": "Enseignement postobligatoire",
+                  "abbr": "DGEP"
+                },
+                {
+                  "name": "Enseignement supérieur",
+                  "abbr": "DGES"
+                },
+                {
+                  "name": "Affaires culturelles",
+                  "abbr": "SERAC"
+                },
+                {
+                  "name": "Enseignement spécialisé et appui à la formation",
+                  "abbr": "SESAF"
+                },
+                {
+                  "name": "Protection de la jeunesse",
+                  "abbr": "SPI"
+                }
+              ]
+          },
+          {
+            "name": "Institutions et sécurité",
+            "abbr": "DIS",
+            "autorities": [
+              {
+                "name": "Curatelles et tutelles professionnelles",
+                "abbr": "OCTP"
+              },
+              {
+                "name": "Police cantonale",
+                "abbr": "POLCANT"
+              },
+              {
+                "name": "Communes et logement",
+                "abbr": "SCL"
+              },
+              {
+                "name": "Juridique et législatif",
+                "abbr": "SJL"
+              },
+              {
+                "name": "Pénitentiaire",
+                "abbr": "SPEN"
+              },
+              {
+                "name": "Sécurité civile et militaire",
+                "abbr": "SSCM"
+              }
+            ]
+          },
+          {
+            "name": "Santé et action sociale",
+            "abbr": "DSAS"
+          },
+          {
+            "name": "Economie et sport",
+            "abbr": "DECS"
+          },
+          {
+            "name": "Infrastructures et ressources humaines",
+            "abbr": "DIRH"
+          },
+          {
+            "name": "Finances et relations extérieures",
+            "abbr": "DFIRE"
+          }
+        ],
+        "autoritiesAlt": [
+          {
+            "name": "Chancellerie d'Etat",
+            "autorities": [
+              {
+                "name": "Bureau d'information et de communication"
+              },
+              {
+                "name": "Archives cantonales"
+              },
+              {
+                "name": "Médiation administrative"
+              },
+              {
+                "name": "Protection des données et transparence"
+              },
+              {
+                "name": "Groupe Impact"
+              }
+            ]
+          },
+          {
+            "name": "Contrôle cantonal des finaces"
+          },
+          {
+            "name": "Cour des comptes"
+          },
+          {
+            "name": "Groupe Impact"
+          },
+          {
+            "name": "Médiation administrative"
+          },
+          {
+            "name": "Ministère public",
+            "autorities": [
+              {
+                "name": "Procureur général"
+              },
+              {
+                "name": "Ministère public central"
+              },
+              {
+                "name": "Ministères publics d'arrondissement"
+              }
+            ]
+          },
+          {
+            "name": "Protection des données et transparence"
+          },
+          {
+            "name": "Tribunal neutre"
+          }
+        ]
     }
 }
