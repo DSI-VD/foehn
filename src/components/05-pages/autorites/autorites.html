@@ -8,6 +8,40 @@
 
 <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
 
+<h2>Départements</h2>
+
+<ul class="list-unstyled">
+{% for autority in autorities %}
+  <li>
+    <span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}
+    {% if autority.autorities %}
+    <ul class="list-unstyled">
+      {% for autority in autority.autorities %}
+      <li><a href="#" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<h2>Autres entités</h2>
+
+<ul>
+{% for autority in autoritiesAlt %}
+  <li>
+    {{ autority.name }}
+    {% if autority.autorities %}
+    <ul>
+      {% for autority in autority.autorities %}
+      <li>{{ autority.name }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
 <div class="row">
   <div class="col-md-4">
     <h2>Chancellerie d'Etat</h2>
