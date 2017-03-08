@@ -38,3 +38,10 @@ li > ul {
     text-decoration: none;
   }
 }
+
+/**
+ * remove bullet
+ */
+.vd-list-no-bullet {
+  list-style: none;
+}
