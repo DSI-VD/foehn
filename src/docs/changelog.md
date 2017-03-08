@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Add atom list--no-bullet
+
 ## [0.18.0]
 
 ### Changed
