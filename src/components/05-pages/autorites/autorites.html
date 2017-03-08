@@ -1,10 +1,8 @@
 {% extends '@template--default' %}
 {% block main %}
-<div class="vd-btn-tiles mb-1 mt-3">
-  <a href="#" class="btn">Conseil d'État</a>
-  <a href="#" class="btn">Grand Conseil</a>
-  <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
-</div>
+
+{% render '@button-tiles', buttonTilesTop %}
+{% render '@button-tiles', buttonTilesBottom %}
 
 <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
 

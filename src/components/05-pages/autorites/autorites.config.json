@@ -7,6 +7,31 @@
             "url": "#"
           }]
         },
+        "buttonTilesTop":{
+          "items": [
+            {
+              "item": "Grand Conseil",
+              "url": "#"
+            },{
+              "item": "Conseil d'État",
+              "url": "#"
+            },{
+              "item": "Ordre Judiciaire",
+              "url": "#"
+            }
+          ]
+        },
+        "buttonTilesBottom": {
+          "items": [
+            {
+              "item": "Départements",
+              "url": "#"
+            },{
+              "item": "Organigramme",
+              "url": "#"
+            }
+          ]
+        },
         "autorities": [
           {
             "name": "Territoire et environnement",
