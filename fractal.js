@@ -29,6 +29,7 @@ fractal.components.set('default.preview', '@preview'); // Tell Fractal what is t
 
 // Docs config
 fractal.docs.set('path', `${paths.src}/docs`); // tell Fractal where the documentation pages will live
+fractal.docs.engine('@frctl/nunjucks'); // use Nunjucks for docs
 
 // Web UI config
 fractal.web.theme(mandelbrot); // Tell fractal wich theme to use
