@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Make design of nav-side more obvious
+
 ### Added
 - Add atom list--no-bullet
 - Add style '.vd-list-no-bullet'
