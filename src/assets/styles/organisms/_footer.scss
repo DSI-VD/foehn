@@ -11,6 +11,10 @@
   border-bottom: 23px solid $vd-green;
   color: $white;
 
+  a:focus {
+    color: $body-color;
+  }
+
   &:after {
     content: '';
     display: block;
