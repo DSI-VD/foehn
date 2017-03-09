@@ -1,14 +1,14 @@
 {
     "context": {
         "pageTitle": "Poursuites et faillites",
-        "breadcrumb": {
-          "items": [{
+        "breadcrumb": [
+          {
             "page": "vd.ch",
             "url": "#"
           },{
             "page": "Économie",
             "url": "#"
-          }]
-        }
+          }
+        ]
     }
 }

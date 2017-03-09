@@ -13,6 +13,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add atom list--no-bullet
 - Add style '.vd-list-no-bullet'
 
+### Fixe
+- Fix missing breadcrumbs
+
 ## [0.18.0]
 
 ### Changed

@@ -6,8 +6,8 @@
         "label": "Commander",
         "url": "#"
       },
-        "breadcrumb": {
-          "items": [{
+        "breadcrumb": [
+          {
             "page": "vd.ch",
             "url": "#"
           },{
@@ -16,8 +16,8 @@
           },{
             "page": "Poursuites et faillites",
             "url": "#"
-          }]
-        },
+          }
+        ],
         "updateTime": true
     }
 }

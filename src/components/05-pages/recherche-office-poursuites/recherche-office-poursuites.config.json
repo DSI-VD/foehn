@@ -2,8 +2,8 @@
     "status": "prototype",
     "context": {
         "pageTitle": "Recherche d'un office des poursuites",
-        "breadcrumb": {
-          "items": [{
+        "breadcrumb": [
+          {
             "page": "vd.ch",
             "url": "#"
           },{
@@ -12,7 +12,7 @@
           },{
             "page": "Poursuites et faillites",
             "url": "#"
-          }]
-        }
+          }
+        ]
     }
 }

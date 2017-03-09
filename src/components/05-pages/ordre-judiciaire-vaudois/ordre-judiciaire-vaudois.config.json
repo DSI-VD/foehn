@@ -1,14 +1,15 @@
 {
     "context": {
         "pageTitle": "Ordre judiciaire vaudois (OJV)",
-        "breadcrumb": {
-          "items": [{
+        "breadcrumb": [
+          {
             "page": "vd.ch",
             "url": "#"
-          },{
+          },
+          {
             "page": "Autorités",
             "url": "#"
-          }]
-        }
+          }
+        ]
     }
 }
