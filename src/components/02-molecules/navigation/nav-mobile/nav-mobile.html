@@ -42,10 +42,29 @@
     </div>
     <div class="dropdown-item bg-inverse">
       <p class="text-white text-center mt-1">
-        <small>Suivre vd.ch sur les réseaux sociaux</small>
+        Suivre vd.ch sur les réseaux sociaux
       </p>
 
-      {% render '@social-icons' %}
+      <ul class="list-inline vd-social-icons{% if styleModifier %} {{ styleModifier }}{% endif %}">
+        <li class="list-inline-item">
+          <a class="vd-social-icon" href="#"><span class="fa fa-envelope" aria-hidden="true"><span class="sr-only">Envoyer par courriel</span></span></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="vd-social-icon" href="#"><span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Partager sur Twitter</span></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="vd-social-icon" href="#"><span class="fa fa-facebook" aria-hidden="true"></span><span class="sr-only">Partager sur Facebook</span></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="vd-social-icon" href="#"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
+        </li>
+        <li class="list-inline-item hidden-lg-up">
+          <a class="vd-social-icon" href="#"><span class="fa fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
+        </li>
+        <li class="list-inline-item hidden-md-down">
+          <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
+        </li>
+      </ul>
 
     </div>
   </nav>

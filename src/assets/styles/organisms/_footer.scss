@@ -26,6 +26,7 @@
   }
 
   .nav-link {
+    padding-left: 0;
     color: $white;
     text-decoration: none;
 
@@ -36,10 +37,6 @@
 
   .container {
     position: relative;
-  }
-
-  .vd-section-title {
-    font-size: $font-size-base * 0.9;
   }
 }
 
