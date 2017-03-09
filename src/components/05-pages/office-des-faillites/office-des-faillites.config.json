@@ -1,8 +1,8 @@
 {
   "context": {
     "pageTitle": "Office des faillites",
-    "breadcrumb": {
-      "items": [{
+    "breadcrumb": [
+      {
         "page": "vd.ch",
         "url": "#"
       }, {
@@ -11,8 +11,8 @@
       }, {
         "page": "Ordre Judiciaire Vaudois",
         "url": "#"
-      }]
-    },
+      }
+    ],
     "autorityAddress": {
       "name": "Tribunal cantonal",
       "address": {
