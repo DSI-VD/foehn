@@ -23,4 +23,8 @@
       list-style-type: none;
     }
   }
+
+  .nav-link.active {
+    color: $vd-gray-dark;
+  }
 }
