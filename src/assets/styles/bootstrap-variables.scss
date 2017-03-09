@@ -425,7 +425,7 @@ $input-border-radius-sm:         $border-radius-sm !default;
 
 $input-bg-focus:                 $input-bg !default;
 $input-border-focus:             $vd-focus !default;
-$input-box-shadow-focus:         0 0 3px 0 rgba($vd-info,.6) !default;
+$input-box-shadow-focus:         0 0 0 3px $vd-focus !default;
 $input-color-focus:              $input-color !default;
 
 $input-color-placeholder:        $vd-gray-lighter !default;

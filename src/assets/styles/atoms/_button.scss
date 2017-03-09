@@ -27,6 +27,10 @@ textarea {
       @extend .vd-btn-cross;
     }
   }
+
+  &:focus {
+    background-color: inherit;
+  }
 }
 
 a.btn {
