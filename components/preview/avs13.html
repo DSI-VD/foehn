@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Preview Layout</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../../assets/styles/vendors.css">
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+
+  </head>
+  <body>
+
+    <fieldset class="mb-1">
+
+  <legend>Votre numéro <abbr title="Numero AVS">AVS13</abbr></legend>
+
+  <small class="text-muted">Exemple de numéro AVS: 756.1234.5678.97</small>
+
+  <div class="vd-form-flex">
+
+    <div class="vd-form-flex__item vd-form-flex__item--3-char-width">
+      <div class="form-group">
+  <label for="inputAvs1" class="sr-only">Code du pays</label>
+  <small id="inputAvs1Help" class="form-text text-muted"><span class="sr-only">Saisir trois chiffres: </span><abbr title="Exemple">Ex.</abbr> 756</small>
+  <input class="form-control" type="number" id="inputAvs1" name="testInput" value="" aria-describedby="inputAvs1Help" pattern="[0-9]*" min="1" max="999" size="3">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      <div class="form-group">
+  <label for="inputAvs2" class="sr-only">Premiers chiffres aléatoires et anonymes</label>
+  <small id="inputAvs2Help" class="form-text text-muted"><span class="sr-only">Saisir quatres chiffres: <abbr title="Exemple">Ex.</abbr>: </span>1234</small>
+  <input class="form-control" type="number" id="inputAvs2" name="testInput" value="" aria-describedby="inputAvs2Help" pattern="[0-9]*" min="1" max="9999" size="4">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      <div class="form-group">
+  <label for="inputAvs3" class="sr-only">Deuxièmes chiffres aléatoires et anonymes</label>
+  <small id="inputAvs3Help" class="form-text text-muted"><span class="sr-only">Saisir quatres chiffres: <abbr title="Exemple">Ex.</abbr>: </span>5678</small>
+  <input class="form-control" type="number" id="inputAvs3" name="testInput" value="" aria-describedby="inputAvs3Help" pattern="[0-9]*" min="1" max="9999" size="4">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      <div class="form-group">
+  <label for="inputAvs1" class="sr-only">Chiffre aléatoire et anonyme et numéro de contrôle</label>
+  <small id="inputAvs1Help" class="form-text text-muted"><span class="sr-only">Saisir deux chiffres: <abbr title="Exemple">Ex.</abbr>: </span>97</small>
+  <input class="form-control" type="number" id="inputAvs1" name="testInput" value="" aria-describedby="inputAvs1Help" pattern="[0-9]*" min="1" max="99" size="2">
+</div>
+
+    </div>
+
+  </div>
+
+</fieldset>
+
+
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="../../assets/scripts/vendors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+      WebFont.load({
+        custom: {
+          families: ['Graphik:n5,n4,i4', 'Produkt:n3,i3,n7,n5'],
+          urls: ['../../assets/fonts/fonts.css']
+        }
+      });
+    </script>
+  </body>
+</html>
+

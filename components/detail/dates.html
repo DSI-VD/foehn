@@ -161,19 +161,35 @@
     Par exemple, 23 7 1979
   <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-dates-day"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"date-form-day"</span>&gt;</span>Jour<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"date-form-day"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"31"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"dates-help"</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex"</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-dates-month"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"date-form-month"</span>&gt;</span>Mois<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"date-form-month"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex__item vd-form-flex__item--2-char-width"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"inputDatesDay"</span>&gt;</span>Jour<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-dates-year"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"date-form-year"</span>&gt;</span>Année<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"date-form-year"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1950"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"2017"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"inputDatesDay"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"testInput"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"31"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"2"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex__item vd-form-flex__item--2-char-width"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"inputDatesMonth"</span>&gt;</span>Mois<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"inputDatesMonth"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"testInput"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"2"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex__item vd-form-flex__item--4-char-width"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"inputDatesYear"</span>&gt;</span>Année<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"inputDatesYear"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"testInput"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1950"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"2017"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"4"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></pre>
@@ -193,19 +209,21 @@
     {{ helpText }}
   <span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
   {% endif %}
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-dates-day"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"date-form-day"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">labelHidden</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>Jour<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"date-form-day"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"31"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">helpText</span> %} <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"dates-help"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">labelHidden</span> %} <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"JJ"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-dates-month"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"date-form-month"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">labelHidden</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>Mois<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"date-form-month"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">labelHidden</span> %} <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"MM"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex"</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-dates-year"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"date-form-year"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">labelHidden</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>Année<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"date-form-year"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1950"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"2017"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">labelHidden</span> %} <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"AAAA"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex__item vd-form-flex__item--2-char-width"</span>&gt;</span>
+      {% render '<a href="input--number">@input--number</a>', inputDay , true%}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex__item vd-form-flex__item--2-char-width"</span>&gt;</span>
+      {% render '<a href="input--number">@input--number</a>', inputMonth , true%}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex__item vd-form-flex__item--4-char-width"</span>&gt;</span>
+      {% render '<a href="input--number">@input--number</a>', inputYear , true%}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></pre>
@@ -219,7 +237,26 @@
             
             <pre>{
   <span class="hljs-attr">"legend"</span>: <span class="hljs-string">"Quelle est votre date de naissance ?"</span>,
-  <span class="hljs-attr">"helpText"</span>: <span class="hljs-string">"Par exemple, 23 7 1979"</span>
+  <span class="hljs-attr">"helpText"</span>: <span class="hljs-string">"Par exemple, 23 7 1979"</span>,
+  <span class="hljs-attr">"inputDay"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"inputDatesDay"</span>,
+    <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Jour"</span>,
+    <span class="hljs-attr">"max"</span>: <span class="hljs-string">"31"</span>,
+    <span class="hljs-attr">"size"</span>: <span class="hljs-string">"2"</span>
+  },
+  <span class="hljs-attr">"inputMonth"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"inputDatesMonth"</span>,
+    <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Mois"</span>,
+    <span class="hljs-attr">"max"</span>: <span class="hljs-string">"12"</span>,
+    <span class="hljs-attr">"size"</span>: <span class="hljs-string">"2"</span>
+  },
+  <span class="hljs-attr">"inputYear"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"inputDatesYear"</span>,
+    <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Année"</span>,
+    <span class="hljs-attr">"min"</span>: <span class="hljs-string">"1950"</span>,
+    <span class="hljs-attr">"max"</span>: <span class="hljs-string">"2017"</span>,
+    <span class="hljs-attr">"size"</span>: <span class="hljs-string">"4"</span>
+  }
 }</pre>
             
         
@@ -265,6 +302,15 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src/components/02-molecules/form/dates/dates.html</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="input--number">@<span>input--number</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
         <li class="Meta-item">
@@ -1654,6 +1700,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="avs13" data-pjax>
+                <span>Avs 13</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="checkbox" data-pjax>
                 <span>Checkbox</span>
                 
@@ -1835,6 +1905,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="input--email" data-pjax>
                 <span>Email</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input--number" data-pjax>
+                <span>Number</span>
                 
 
 <div class="Status Status--unlabelled">

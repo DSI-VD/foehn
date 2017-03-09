@@ -164,9 +164,9 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d1b78de6aa166fc60f402f1f1294d8e5-panel-view">
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"{{ id }}"</span>&gt;</span>{{ label }}{% if required %} <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>(Requis)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  {% if helpText %}small id="{{ id }}Help" class="form-text text-muted"&gt;{{ helpText }}<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>{% endif %}
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"{{ type }}"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"{{ name }}"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{% if value %}{{ value }}{% endif %}"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">required</span> %} <span class="hljs-attr">required</span> <span class="hljs-attr">aria-required</span>=<span class="hljs-string">"true"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">helpText</span> %} <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"{{ id }}Help"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">pattern</span> %} <span class="hljs-attr">pattern</span>=<span class="hljs-string">"{{ pattern }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"{{ id }}"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">labelHidden</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>{{ label }}{% if required %} <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>(Requis)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  {% if helpText %}<span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}Help"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text text-muted"</span>&gt;</span>{{ helpText }}<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>{% endif %}
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"{{ type }}"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"{{ name }}"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{% if value %}{{ value }}{% endif %}"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">required</span> %} <span class="hljs-attr">required</span> <span class="hljs-attr">aria-required</span>=<span class="hljs-string">"true"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">helpText</span> %} <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"{{ id }}Help"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">pattern</span> %} <span class="hljs-attr">pattern</span>=<span class="hljs-string">"{{ pattern }}"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">min</span> %} <span class="hljs-attr">min</span>=<span class="hljs-string">"{{ min }}"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">max</span> %} <span class="hljs-attr">max</span>=<span class="hljs-string">"{{ max }}"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">if</span> <span class="hljs-attr">size</span> %} <span class="hljs-attr">size</span>=<span class="hljs-string">"{{ size }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
 </div>
@@ -205,7 +205,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(6)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(7)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="input--default">
@@ -222,6 +222,10 @@
             
                 <a href="input--email">
                     <span>Email</span>
+                </a>, 
+            
+                <a href="input--number">
+                    <span>Number</span>
                 </a>, 
             
                 <a href="input--password">
@@ -1630,6 +1634,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="avs13" data-pjax>
+                <span>Avs 13</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="checkbox" data-pjax>
                 <span>Checkbox</span>
                 
@@ -1811,6 +1839,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="input--email" data-pjax>
                 <span>Email</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input--number" data-pjax>
+                <span>Number</span>
                 
 
 <div class="Status Status--unlabelled">
