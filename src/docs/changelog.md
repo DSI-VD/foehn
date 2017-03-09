@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Make design of nav-side more obvious
 
 ### Added
+- Add avs13 molecule
 - Add .form-flex style
 - Add input--number molecule
 - Add atom list--no-bullet

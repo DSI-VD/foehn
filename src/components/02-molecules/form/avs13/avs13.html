@@ -1,0 +1,27 @@
+<fieldset class="mb-1">
+
+  <legend>{{ legend }}</legend>
+
+  <small class="text-muted">{{ helpText }}</small>
+
+  <div class="vd-form-flex">
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      {% render '@input--number', input1 , true%}
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      {% render '@input--number', input2 , true%}
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      {% render '@input--number', input3 , true%}
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      {% render '@input--number', input4 , true%}
+    </div>
+
+  </div>
+
+</fieldset>
