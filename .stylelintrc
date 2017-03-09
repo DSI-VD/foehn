@@ -4,6 +4,9 @@
     "src/assets/styles/main-variables.scss",
     "src/assets/styles/bootstrap-variables.scss"
   ],
+  "plugins": [
+    "stylelint-order"
+  ],
   "extends": "stylelint-config-standard",
   "rules": {
     "at-rule-no-vendor-prefix": true,
@@ -12,7 +15,7 @@
     "selector-no-vendor-prefix": true,
     "value-no-vendor-prefix": true,
     "selector-pseudo-element-colon-notation": "single",
-    "declaration-block-properties-order": [
+    "order/declaration-block-properties-specified-order": [
       "content",
       "display",
       "flex",

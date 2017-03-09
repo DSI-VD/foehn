@@ -43,7 +43,8 @@
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
-    "stylelint-config-standard": "^16.0.0"
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.3.0"
   },
   "devDependencies": {
     "eslint": "^3.16.1",
