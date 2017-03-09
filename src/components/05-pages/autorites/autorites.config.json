@@ -1,12 +1,12 @@
 {
     "context": {
       "pageTitle": "Autorités",
-        "breadcrumb": {
-          "items": [{
+        "breadcrumb": [
+          {
             "page": "vd.ch",
             "url": "#"
-          }]
-        },
+          }
+        ],
         "buttonTilesTop":{
           "items": [
             {
