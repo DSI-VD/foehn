@@ -121,19 +121,119 @@
           },
           {
             "name": "Santé et action sociale",
-            "abbr": "DSAS"
+            "abbr": "DSAS",
+            "autorities": [
+              {
+                "name": "Hôpital universitaire vaudois",
+                "abbr": "CHUV"
+              },
+              {
+                "name": "Assurances sociales et hébergement",
+                "abbr": "SASH"
+              },
+              {
+                "name": "Prévoyance et aide sociales",
+                "abbr": "SPAS"
+              },
+              {
+                "name": "Santé publique",
+                "abbr": "SSP"
+              }
+            ]
           },
           {
             "name": "Economie et sport",
-            "abbr": "DECS"
+            "abbr": "DECS",
+            "autorities": [
+              {
+                "name": "Agriculture et viticulture",
+                "abbr": "SAVI"
+              },
+              {
+                "name": "Emploi",
+                "abbr": "SDE"
+              },
+              {
+                "name": "Education physique et sport",
+                "abbr": "SEPS"
+              },
+              {
+                "name": "Economie",
+                "abbr": "SPECO"
+              },
+              {
+                "name": "Population",
+                "abbr": "SPOP"
+              }
+            ]
           },
           {
             "name": "Infrastructures et ressources humaines",
-            "abbr": "DIRH"
+            "abbr": "DIRH",
+            "autorities": [
+              {
+                "name": "Autorisations de construction",
+                "abbr": "CAMAC"
+              },
+              {
+                "name": "Mobilité et routes",
+                "abbr": "DGMR"
+              },
+              {
+                "name": "Systèmes d'information",
+                "abbr": "DSI"
+              },
+              {
+                "name": "Accueil de jour des enfants",
+                "abbr": "OAJE"
+              },
+              {
+                "name": "Information sur le territoire",
+                "abbr": "OIT"
+              },
+              {
+                "name": "Personnel de l'Etat",
+                "abbr": "SPEV"
+              },
+              {
+                "name": "Conseil et appui en management et organisation",
+                "abbr": "UCA"
+              },
+              {
+                "name": "Développement durable",
+                "abbr": "UDD"
+              },
+              {
+                "name": "Unité des opérations foncières",
+                "abbr": "UOF"
+              }
+            ]
           },
           {
             "name": "Finances et relations extérieures",
-            "abbr": "DFIRE"
+            "abbr": "DFIRE",
+            "autorities": [
+              {
+                "name": "Direction générale de la fiscalité",
+                "abbr": "DGF"
+              },
+              {
+                "name": "Affaires extérieures",
+                "abbr": "OAE"
+              },
+              {
+                "name": "Statistique Vaud",
+                "abbr": "StatsVaud"
+              },
+              {
+                "name": "Analyse et gestion financières",
+                "abbr": "SAGEFI"
+              },
+              {
+                "name": "Immeubles, patrimoine et logistique",
+                "abbr": "SIPAL"
+              }
+            ]
           }
         ],
         "autoritiesAlt": [
