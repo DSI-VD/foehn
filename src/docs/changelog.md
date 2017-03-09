@@ -10,11 +10,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Use .vd-form-flex for dates molecule
 - Make design of nav-side more obvious
 
 ### Added
 - Add avs13 molecule
-- Add .form-flex style
+- Add .vd-form-flex style
 - Add input--number molecule
 - Add atom list--no-bullet
 - Add style '.vd-list-no-bullet'
