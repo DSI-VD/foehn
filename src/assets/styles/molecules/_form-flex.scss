@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+.vd-form-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  input[type="number"] {
+    /* stylelint-disable */
+    -moz-appearance: textfield; /* [1] */
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none; /* [2] */
+      margin: 0; /* [2] */ /* [3] */
+    }
+    /* stylelint-enable */
+  }
+}
+
+.vd-form-flex__item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin-right: $spacer;
+
+  &--2-char-width {
+    flex-basis: ($font-size-base * 1.5) + ($input-padding-x * 2);
+  }
+
+  &--3-char-width {
+    flex-basis: ($font-size-base * 2.4) + ($input-padding-x * 2);
+  }
+
+  &--4-char-width {
+    flex-basis: ($font-size-base * 3) + ($input-padding-x * 2);
+  }
+}
