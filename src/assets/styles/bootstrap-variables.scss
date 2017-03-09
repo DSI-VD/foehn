@@ -428,7 +428,7 @@ $input-border-focus:             $vd-focus !default;
 $input-box-shadow-focus:         0 0 3px 0 rgba($vd-info,.6) !default;
 $input-color-focus:              $input-color !default;
 
-$input-color-placeholder:        $vd-gray-lighter !default;
+$input-color-placeholder:        $vd-gray !default;
 
 $input-padding-x-sm:             .5rem !default;
 $input-padding-y-sm:             .25rem !default;
@@ -640,7 +640,7 @@ $nav-tabs-border-color:                       #ddd !default;
 $nav-tabs-border-width:                       $border-width !default;
 $nav-tabs-border-radius:                      $border-radius !default;
 $nav-tabs-link-hover-border-color:            $gray-lighter !default;
-$nav-tabs-active-link-hover-color:            $gray !default;
+$nav-tabs-active-link-hover-color:            $body-color !default;
 $nav-tabs-active-link-hover-bg:               $body-bg !default;
 $nav-tabs-active-link-hover-border-color:     #ddd !default;
 

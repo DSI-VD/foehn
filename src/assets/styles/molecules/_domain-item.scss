@@ -6,11 +6,21 @@
  * 1. Override heading font-weight
  */
 .vd-domain-item {
-  .vd-domain-item-title {
-    font-weight: 300; /* [1] */
-  }
+  a {
+    text-decoration: none;
 
-  .vd-domain-item-text {
-    color: $gray;
+    &:hover {
+      text-decoration: underline;
+    }
   }
+}
+
+.vd-domain-item-title {
+  margin-bottom: ($headings-margin-bottom / 2);
+  font-weight: 300; /* [1] */
+}
+
+.vd-domain-item-text {
+  display: block;
+  color: $gray;
 }

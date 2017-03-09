@@ -72,7 +72,7 @@ Put this just before the closing `</body>` tag:
 <script>
   WebFont.load({
     custom: {
-      families: ['Graphik:n5,n4,i4', 'Produkt:n3,i3,n7,n5'],
+      families: ['Graphik:n4,i4,n5', 'Produkt:n3,i3,n5,n7'],
       urls: ['path/to/build/fonts/fonts.css']
     }
   });

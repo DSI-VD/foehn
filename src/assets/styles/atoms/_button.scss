@@ -15,7 +15,17 @@ textarea {
   padding-top: $btn-padding-y * 1.1;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
+  cursor: pointer;
 
+<<<<<<< Updated upstream
+=======
+  &:focus {
+    @include box-shadow($btn-focus-box-shadow);
+
+    background-color: inherit;
+  }
+
+>>>>>>> Stashed changes
   &[data-toggle="collapse"] {
     @extend .vd-btn-chevron-b;
 

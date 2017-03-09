@@ -1,12 +1,14 @@
 @charset 'UTF-8';
 
 .vd-list-boxed {
+  display: block;
+
   .nav-link {
     display: inline;
-    padding: ($spacer / 5);
+    padding: ($spacer / 3);
     background: $body-bg;
     color: $body-color;
-    text-decoration: none;
+    text-decoration: underline;
     transition: background 0.2s;
 
     &:hover,
