@@ -33,22 +33,29 @@ a.vd-teaser-card {
 }
 
 /**
- * Green
+ * Placeholder for card content
  *
  * 1. Make the text visible
  */
-.vd-card-green {
-  @include card-variant($vd-green-darker, $vd-green-darker);
-
+%card-inside {
   .card-title,
   .card-text,
   a {
     color: $white; /* [1] */
-  }
 
-  a:hover {
-    color: $gray-light; /* [1] */
+    @include hover {
+      color: $gray-light; /* [1] */
+    }
   }
+}
+
+/**
+ * Green
+ */
+.vd-card-green {
+  @include card-variant($vd-green-darker, $vd-green-darker);
+
+  @extend %card-inside;
 }
 
 /**
@@ -67,38 +74,18 @@ a.vd-teaser-card {
 
 /**
  * Dark gray
- *
- * 1. Make the text visible
  */
 .vd-card-darkgray {
   @include card-variant($vd-gray-darker, $vd-gray-darker);
 
-  .card-title,
-  .card-text,
-  a {
-    color: $white; /* [1] */
-  }
-
-  a:hover {
-    color: $gray-light; /* [1] */
-  }
+  @extend %card-inside;
 }
 
 /**
  * Black
- *
- * 1. Make the text visible
  */
 .vd-card-black {
   @include card-variant($black, $black);
 
-  .card-title,
-  .card-text,
-  a {
-    color: $white; /* [1] */
-  }
-
-  a:hover {
-    color: $gray-light; /* [1] */
-  }
+  @extend %card-inside;
 }
