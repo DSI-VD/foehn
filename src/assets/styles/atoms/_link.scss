@@ -9,7 +9,6 @@
   a[href^="tel"]:hover {
     text-decoration: none; /* [1] */
     color: currentColor; /* [1] */
-
     pointer-events: none; /* [1] */
     cursor: default; /* [1] */
   }
