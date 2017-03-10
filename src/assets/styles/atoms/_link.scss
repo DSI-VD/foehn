@@ -28,9 +28,5 @@ a {
 
   &:focus {
     outline: 3px solid $vd-focus;
-
-    &:not(.btn) {
-      background-color: $vd-focus;
-    }
   }
 }

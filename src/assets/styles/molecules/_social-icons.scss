@@ -17,8 +17,7 @@
   text-align: center;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  @include hover-focus {
     background: $link-hover-color;
     text-decoration: none;
     color: $white;
