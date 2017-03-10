@@ -30,7 +30,7 @@
   display: inline-block;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   padding: ($spacer / 4) 0 0 ($spacer / 3);
   background: $white;
   text-transform: uppercase;
