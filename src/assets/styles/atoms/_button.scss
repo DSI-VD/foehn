@@ -17,15 +17,12 @@ textarea {
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
 
-<<<<<<< Updated upstream
-=======
   &:focus {
     @include box-shadow($btn-focus-box-shadow);
 
     background-color: inherit;
   }
 
->>>>>>> Stashed changes
   &[data-toggle="collapse"] {
     @extend .vd-btn-chevron-b;
 
