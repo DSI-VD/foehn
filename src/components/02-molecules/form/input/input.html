@@ -1,5 +1,5 @@
 <div class="form-group">
-  <label for="{{ id }}">{{ label }}{% if required %} <span aria-hidden="true">(Requis)</span>{% endif %}</label>
-  {% if helpText %}small id="{{ id }}Help" class="form-text text-muted">{{ helpText }}</small>{% endif %}
-  <input class="{{ class }}" type="{{ type }}" id="{{ id }}" name="{{ name }}" value="{% if value %}{{ value }}{% endif %}"{% if required %} required aria-required="true"{% endif %}{% if helpText %} aria-describedby="{{ id }}Help"{% endif %}{% if pattern %} pattern="{{ pattern }}"{% endif %}>
+  <label for="{{ id }}"{% if labelHidden %} class="sr-only"{% endif %}>{{ label }}{% if required %} <span aria-hidden="true">(Requis)</span>{% endif %}</label>
+  {% if helpText %}<small id="{{ id }}Help" class="form-text text-muted">{{ helpText }}</small>{% endif %}
+  <input class="{{ class }}" type="{{ type }}" id="{{ id }}" name="{{ name }}" value="{% if value %}{{ value }}{% endif %}"{% if required %} required aria-required="true"{% endif %}{% if helpText %} aria-describedby="{{ id }}Help"{% endif %}{% if pattern %} pattern="{{ pattern }}"{% endif %}{% if min %} min="{{ min }}"{% endif %}{% if max %} max="{{ max }}"{% endif %}{% if size %} size="{{ size }}"{% endif %}>
 </div>

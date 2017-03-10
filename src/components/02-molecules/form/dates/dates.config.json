@@ -2,6 +2,25 @@
     "status": "wip",
     "context": {
       "legend": "Quelle est votre date de naissance ?",
-      "helpText": "Par exemple, 23 7 1979"
+      "helpText": "Par exemple, 23 7 1979",
+      "inputDay": {
+        "id": "inputDatesDay",
+        "label": "Jour",
+        "max": "31",
+        "size": "2"
+      },
+      "inputMonth": {
+        "id": "inputDatesMonth",
+        "label": "Mois",
+        "max": "12",
+        "size": "2"
+      },
+      "inputYear": {
+        "id": "inputDatesYear",
+        "label": "Année",
+        "min": "1950",
+        "max": "2017",
+        "size": "4"
+      }
     }
 }

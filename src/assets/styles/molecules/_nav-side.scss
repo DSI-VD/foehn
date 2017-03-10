@@ -3,7 +3,6 @@
 .vd-nav-side {
   position: relative;
   padding: $spacer ($spacer / 2);
-  background: $body-bg;
   border-left: 1px solid $vd-green-dark;
 
   &:after {
@@ -18,7 +17,6 @@
 
   .nav-item {
     margin-bottom: ($spacer-y / 2);
-    font-size: $font-size-base * 1.1;
 
     ul {
       margin-top: ($spacer-y / 2);
@@ -26,18 +24,7 @@
     }
   }
 
-  .nav-link {
-    color: $body-color;
-
-    @include vd-smart-underline();
-
-    &:hover {
-      color: $link-color;
-    }
-
-    &.active {
-      background-image: none;
-      color: $link-color;
-    }
+  .nav-link.active {
+    color: $vd-gray-dark;
   }
 }

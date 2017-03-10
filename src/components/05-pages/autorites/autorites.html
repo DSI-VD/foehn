@@ -1,124 +1,50 @@
 {% extends '@template--default' %}
 {% block main %}
-<div class="vd-btn-tiles mb-1 mt-3">
-  <a href="#" class="btn">Conseil d'État</a>
-  <a href="#" class="btn">Grand Conseil</a>
-  <a href="../ordre-judiciaire-vaudois" class="btn">Ordre Judiciaire</a>
-</div>
 
-<hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
+<section class="mb-2">
+  <h2 class="sr-only">Toutes les autorités</h2>
 
-<div class="row">
-  <div class="col-md-4">
-    <h2>Chancellerie d'Etat</h2>
-  </div>
-  <div class="col-md-8">
-    <ul class="h4 list-unstyled">
-      <li><a href="#">BIC</a></li>
-      <li><a href="#">Préfectures</a>
-        <ul class="list-unstyled pl-1 h5">
-          <li><a href="#">Broye-Vully</a></li>
-          <li><a href="#">Gros-de-Vaud</a></li>
-          <li><a href="#">Jura-nord-vaudois</a></li>
-          <li><a href="#">Lausanne</a></li>
-          <li><a href="#">Lavaux-Oron</a></li>
-          <li><a href="#">Morges</a></li>
-          <li><a href="#">Nyon</a></li>
-          <li><a href="#">Ouest Lausannois</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
+  {% render '@button-tiles', buttonTilesTop %}
+  {% render '@button-tiles', buttonTilesBottom %}
+</section>
 
-<hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
+<section class="mb-2">
+  <h2 class="mb-2">Départements</h2>
 
-<!--ul>
-  <li><span class="h3">DTE</span><br>Direction générale de l'environnement
-    <ul>
-      <li><span class="h3">DGE</span><br>Direction générale de l'environnement
-        <ul>
-          <li><span class="h3">DIREN</span><br>Direction de l'énergie</li>
-          <li><span class="h3">DIREV</span><br>Direction de l'environnement industriel, urbain et rural</li>
-          <li><span class="h3">DIRNA</span><br>Direction des ressources et du patrimoine naturels</li>
-        </ul>
-      </li>
-      <li><span class="h3">SAN</span><br>Service des automobiles et de la navigation</li>
-      <li><span class="h3">Jura-nord-vaudois</span></li>
-      <li><span class="h3">Lausanne</span></li>
-      <li><span class="h3">Lavaux-Oron</span></li>
-      <li><span class="h3">Morges</span></li>
-      <li><span class="h3">Nyon</span></li>
-      <li><span class="h3">Ouest Lausannois</span></li>
-    </ul>
-  </li>
-</ul -->
+  <ul class="list-unstyled">
+  {% for autority in autorities %}
+    <li>
+      <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a>
+      {% if autority.autorities %}
+      <ul class="vd-list-no-bullet">
+        {% for autority in autority.autorities %}
+        <li><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</section>
 
-<div class="row">
-  <div class="col-md-4">
-    <h2>Départements</h2>
-  </div>
-  <div class="col-md-8">
-    <ul class="list-unstyled">
-      <li>
-        <span class="h4"><a href="#">DTE</a></span> <br>Direction générale de l'environnement
-      </li>
+<hr class="vd-separator vd-separator-green-pattern vd-separator-wide my-3">
 
-      <li>
-        <span class="h4"><a href="#">DFJC</a></span> <br>Département de la formation, de la jeunesse et de la culture
-      </li>
+<section class="mb-2">
+  <h2 class="mb-2">Autres entités</h2>
 
-      <li>
-        <span class="h4"><a href="#">DIS</a></span> <br>Département des institutions et de la sécurité
-      </li>
-
-      <li>
-        <span class="h4"><a href="#">DSAS</a></span> <br>Département de la santé et de l'action social
-      </li>
-
-      <li>
-        <span class="h4"><a href="#">DECS</a></span> <br>Département de l'économie et du sport
-      </li>
-
-      <li>
-        <span class="h4"><a href="#">DIRH</a></span> <br>Département des finances et des relations extérieurs
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-<hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
-
-<div class="row">
-  <div class="col-md-4">
-    <h2>Ministère public</h2>
-  </div>
-  <div class="col-md-8">
-    <ul class="h4 list-unstyled">
-      <li><a href="#">Division contrôle affaire spéciales mineurs</a></li>
-      <li><a href="#">Division affaires économiques</a></li>
-      <li><a href="#">MPs Lausanne</a></li>
-      <li><a href="#">MPs Est Vaudois</a></li>
-      <li><a href="#">MPs Nord Vaudois</a></li>
-    </ul>
-  </div>
-</div>
-
-<hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
-
-<div class="row">
-  <div class="col-md-4">
-    <h2>Les autres entités</h2>
-  </div>
-  <div class="col-md-8">
-    <ul class="h4 list-unstyled">
-      <li><a href="#">Tribunal neutre</a></li>
-      <li><a href="#">Contrôle cantonal des finances</a></li>
-      <li><a href="#">Cour des comptes</a></li>
-      <li><a href="#">Groupe Impact</a></li>
-      <li><a href="#">Médiation administrative</a></li>
-    </ul>
-  </div>
-</div>
+  <ul class="list-unstyled">
+  {% for autority in autoritiesAlt %}
+    <li>
+      <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a>
+      {% if autority.autorities %}
+      <ul class="vd-list-no-bullet">
+        {% for autority in autority.autorities %}
+        <li><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</section>
 {% endblock %}

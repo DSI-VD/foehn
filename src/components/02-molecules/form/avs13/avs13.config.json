@@ -1,0 +1,39 @@
+{
+  "status": "prototype",
+  "context": {
+    "legend": "Votre numéro <abbr title=\"Numero AVS\">AVS13</abbr>",
+    "helpText": "Exemple de numéro AVS: 756.1234.5678.97",
+    "input1": {
+      "id": "inputAvs1",
+      "label": "Code du pays",
+      "labelHidden": true,
+      "max": "999",
+      "size": "3",
+      "helpText": "<span class=\"sr-only\">Saisir trois chiffres: </span><abbr title=\"Exemple\">Ex.</abbr> 756"
+    },
+    "input2": {
+      "id": "inputAvs2",
+      "label": "Premiers chiffres aléatoires et anonymes",
+      "labelHidden": true,
+      "max": "9999",
+      "size": "4",
+      "helpText": "<span class=\"sr-only\">Saisir quatres chiffres: <abbr title=\"Exemple\">Ex.</abbr>: </span>1234"
+    },
+    "input3": {
+      "id": "inputAvs3",
+      "label": "Deuxièmes chiffres aléatoires et anonymes",
+      "labelHidden": true,
+      "max": "9999",
+      "size": "4",
+      "helpText": "<span class=\"sr-only\">Saisir quatres chiffres: <abbr title=\"Exemple\">Ex.</abbr>: </span>5678"
+    },
+    "input4": {
+      "id": "inputAvs1",
+      "label": "Chiffre aléatoire et anonyme et numéro de contrôle",
+      "labelHidden": true,
+      "max": "99",
+      "size": "2",
+      "helpText": "<span class=\"sr-only\">Saisir deux chiffres: <abbr title=\"Exemple\">Ex.</abbr>: </span>97"
+    }
+  }
+}

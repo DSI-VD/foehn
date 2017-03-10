@@ -7,19 +7,21 @@
     {{ helpText }}
   </small>
   {% endif %}
-  <div class="vd-dates-day">
-    <label for="date-form-day"{% if labelHidden %} class="sr-only"{% endif %}>Jour</label>
-    <input id="date-form-day" class="form-control" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" value=""{% if helpText %} aria-describedby="dates-help"{% endif %}{% if labelHidden %} placeholder="JJ"{% endif %}>
-  </div>
 
-  <div class="vd-dates-month">
-    <label for="date-form-month"{% if labelHidden %} class="sr-only"{% endif %}>Mois</label>
-    <input id="date-form-month" class="form-control" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" value=""{% if labelHidden %} placeholder="MM"{% endif %}>
-  </div>
+  <div class="vd-form-flex">
 
-  <div class="vd-dates-year">
-    <label for="date-form-year"{% if labelHidden %} class="sr-only"{% endif %}>Année</label>
-    <input id="date-form-year" class="form-control" type="number" pattern="[0-9]*" min="1950" max="2017" name="name" size="4" value=""{% if labelHidden %} placeholder="AAAA"{% endif %}>
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      {% render '@input--number', inputDay , true%}
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      {% render '@input--number', inputMonth , true%}
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      {% render '@input--number', inputYear , true%}
+    </div>
+
   </div>
 
 </fieldset>

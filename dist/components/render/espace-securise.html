@@ -1,143 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../fractal/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../fractal/css/navy.css?cachebust=1.1.0" type="text/css">
 
 
-<header class="header">
-  <nav class="vd-access-nav" aria-label="menu accessibilité">
-    <ul>
-        <li>
-          <a class="btn btn-primary" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
-        </li>
-        <li>
-          <a class="btn btn-primary" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
-        </li>
-        <li>
-          <a class="btn btn-primary" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
-        </li>
-        <li>
-          <a class="btn btn-primary" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
-        </li>
-        <li>
-          <a class="btn btn-primary" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
-        </li>
-        <li><a class="btn btn-primary" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a></li>
-        <li>
-          <a class="btn btn-primary" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
-        </li>
-        <li>
-          <a class="btn btn-primary" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
-        </li>
-        <li>
-          <a class="btn btn-primary" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
-        </li>
-      </ul>
-  </nav>
-  <div class="container">
-    <nav class="text-right" aria-label="sous-navigation">
-      <div class="vd-dropdown vd-dropdown-left vd-dropdown-purple btn-group">
-        <a data-toggle="dropdown" class="btn dropdown-label">
-          <span class="title">Pierre Dupond</span><br>
-          <span>Commune de Belmont-sur-Lausanne</span>
-        </a>
-        <a class="btn dropdown-toggle-split dropdown-chevron" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="fa fa-chevron-down"></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </div>
-    </nav>
-    <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
-      <div class="vd-logo-title">
-        <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
-        <img src="../../assets/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
-      </div>
-    </a>
-  </div>
-</header>
+<title>Error rendering component espace-securise | Foehn</title>
 
-<div class="vd-bg-pattern-purple" role="tablist">
-  <div class="container vd-nav-tabs-secure">
-    <div class="fa fa-lock fa-lg" aria-hidden="true"></div>
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="../espace-securise">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../demandes">Demandes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../prestations">Préstations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../documents">Documents</a>
-      </li>
-    </ul>
-  </div>
+</head>
+<body>
+
+
+
+<div class="Frame Frame--full" id="frame">
+
+
+<div class="Error Error--render">
+    <h4 class="Error-title">Error rendering component</h4>
+    <div class="Error-message Prose">
+        <p>(unknown path) [Line 3, Column 1]
+  unexpected token: &gt;</p>
+
+    </div>
+    
+    <code class="Error-stack">
+        <pre>Template render error: (unknown path) [Line 3, Column 1]
+  unexpected token: >
+    at Object.exports.prettifyError (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/lib.js:34:15)
+    at new_cls.render (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:469:27)
+    at new_cls.renderString (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:327:21)
+    at new_cls.tryCatcher (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/util.js:16:23)
+    at new_cls.ret [as renderStringAsync] (eval at makeNodePromisifiedEval (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at NunjucksAdapter.render (/Users/cedricaellen/Projects/foehn/node_modules/@frctl/nunjucks/src/adapter.js:103:28)
+    at ComponentSource._renderVariant (/Users/cedricaellen/Projects/foehn/node_modules/@frctl/fractal/src/api/components/source.js:207:30)
+    at _renderVariant.next (<anonymous>)
+    at onFulfilled (/Users/cedricaellen/Projects/foehn/node_modules/co/index.js:65:19)
+    at tryCatcher (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise._settlePromise (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise._settlePromise0 (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise._settlePromises (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/promise.js:691:18)
+    at Promise._fulfill (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/promise.js:636:18)
+    at Promise._resolveCallback (/Users/cedricaellen/Projects/foehn/node_modules/bluebird/js/release/promise.js:431:57)</pre>
+    </code>
+    
 </div>
 
-<main class="container" id="main">
-  <div class="row mt-3 mb-3">
 
-    <div class="col-md-8">
-      <h2>Accueil</h2>
-
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="tag tag-default tag-pill float-xs-right">14</span>
-          <a href="../demandes">Demandes en cours</a>
-        </li>
-        <li class="list-group-item">
-          <span class="tag tag-default tag-pill float-xs-right">2</span>
-          <a href="#">Préstations</a>
-        </li>
-        <li class="list-group-item">
-          <span class="tag tag-default tag-pill float-xs-right">1</span>
-          <a href="#">DToutes les demandes</a>
-        </li>
-      </ul>
-    </div>
+</div>
 
 
-    <div class="col-md-4 small">
-      <h2>Favoris</h2>
-      <ul class="vd-list-links">
-        <li><a href="#">Lorem ipsum dolor sit.</a></li>
-        <li><a href="#">Excepturi, deleniti repellendus recusandae?</a></li>
-        <li><a href="#">Culpa alias, odio praesentium.</a></li>
-        <li><a href="#">Voluptatibus obcaecati, error ex!</a></li>
-      </ul>
-    </div>
 
-  </div>
-</main>
 
-<footer class="footer mt-3">
-  <div class="container">
-    <a href="#" class="footer-btn-backtotop btn btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
-    <div class="row small">
-      <nav aria-label="pied de page" class="col-xs-10">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pourquoi créer un compte</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mentions légales</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="col-xs-2 footer-logo-container">
-        <div class="footer-logo">
-          <img class="img-fluid" src="../../assets/svg/logo/logo--white.svg" alt="Canton de Vaud">
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
 
+
+
+</body>
+</html>

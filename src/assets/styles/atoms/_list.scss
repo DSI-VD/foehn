@@ -37,3 +37,10 @@ li > ul {
     font-weight: 500;
   }
 }
+
+/**
+ * remove bullet
+ */
+.vd-list-no-bullet {
+  list-style: none;
+}

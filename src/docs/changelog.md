@@ -10,6 +10,23 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Dates molecule reference input--number
+- Use .vd-form-flex for dates molecule
+- Make design of nav-side more obvious
+
+### Added
+- Add avs13 molecule
+- Add .vd-form-flex style
+- Add input--number molecule
+- Add atom list--no-bullet
+- Add style '.vd-list-no-bullet'
+
+### Fixe
+- Fix missing breadcrumbs
+
+## [0.18.0]
+
+### Changed
 
 - Template engine is Nunjucks
 - Help-text molecule is a variation of input molecule
@@ -808,7 +825,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.17.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.18.0...HEAD
+[0.18.0]: https://github.com/DSI-VD/foehn/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/DSI-VD/foehn/compare/v0.16.0...v0.15.0
 [0.16.0]: https://github.com/DSI-VD/foehn/compare/v0.15.0...v0.16.0
 [0.15.0]: https://github.com/DSI-VD/foehn/compare/v0.14.0...v0.15.0
