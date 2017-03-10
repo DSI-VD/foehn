@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Dates molecule reference input--number
 - Use .vd-form-flex for dates molecule
 - Make design of nav-side more obvious
+- Clean up CSS
 
 ### Added
 - Add avs13 molecule
@@ -21,8 +22,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add atom list--no-bullet
 - Add style '.vd-list-no-bullet'
 
-### Fixe
+### Fixed
 - Fix missing breadcrumbs
+
+### Removed
+- Remove `.flex-row` class (was overriding a B4 class and was never used)
+- Remove legacy Toolbox styleguide assets
 
 ## [0.18.0]
 
