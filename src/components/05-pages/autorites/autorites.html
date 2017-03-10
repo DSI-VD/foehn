@@ -9,16 +9,22 @@
 </section>
 
 <section class="mb-2">
-  <h2 class="mb-2">Départements</h2>
+  <h2 class="mb-2" id="departements">Départements</h2>
 
-  <ul class="list-unstyled">
+  <ul class="list-unstyled" role="navigation" aria-describedby="departements">
   {% for autority in autorities %}
-    <li>
-      <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a>
+    <li class="mt-2">
+      <h3>
+        <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}">{{ autority.name }}{% if autority.abbr %}<small> &dash; <span class="sr-only">Abréviation: </span>{{ autority.abbr }}</small>{% endif %}</a>
+      </h3>
       {% if autority.autorities %}
       <ul class="vd-list-no-bullet">
         {% for autority in autority.autorities %}
-        <li><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
+        <li>
+          <p class="lead">
+            <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abréviation: </span>{{ autority.abbr }}</small>{% endif %}</a>
+          </p>
+        </li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -30,16 +36,22 @@
 <hr class="vd-separator vd-separator-green-pattern vd-separator-wide my-3">
 
 <section class="mb-2">
-  <h2 class="mb-2">Autres entités</h2>
+  <h2 class="mb-2" id="autres-entites">Autres entités</h2>
 
-  <ul class="list-unstyled">
+  <ul class="list-unstyled" role="navigation" aria-describedby="autres-entites">
   {% for autority in autoritiesAlt %}
     <li>
-      <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a>
+      <h3>
+        <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}">{{ autority.name }}{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a>
+      </h3>
       {% if autority.autorities %}
       <ul class="vd-list-no-bullet">
         {% for autority in autority.autorities %}
-        <li><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
+        <li>
+          <p class="lead">
+            <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}">{{ autority.name }}{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a>
+          </p>
+        </li>
         {% endfor %}
       </ul>
       {% endif %}
