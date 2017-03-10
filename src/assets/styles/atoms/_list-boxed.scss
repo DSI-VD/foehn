@@ -9,8 +9,7 @@
     text-decoration: none;
     transition: background 0.2s;
 
-    &:hover,
-    &:focus {
+    @include hover-focus {
       background: lighten($link-color, 65%);
     }
 

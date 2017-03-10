@@ -71,8 +71,7 @@
       color: $text-muted;
     }
 
-    &:hover,
-    &:focus {
+    @include hover-focus {
       background: rgba($body-bg, 0.9);
     }
 

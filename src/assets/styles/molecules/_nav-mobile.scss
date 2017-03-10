@@ -27,8 +27,7 @@
   }
 
   .dropdown-item {
-    &:focus,
-    &:hover {
+    @include hover-focus {
       background: none;
     }
 

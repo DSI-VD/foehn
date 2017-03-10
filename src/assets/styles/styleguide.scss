@@ -102,8 +102,7 @@
 
       &:after { content: none; }
 
-      &:hover,
-      &:focus {
+      @include hover-focus {
         background: $white;
         color: $link-color;
       }
