@@ -34,6 +34,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add password type in input molecule
 - Add file type in input molecule
 
+### Removed
+
+- wipe `.vd-link-invisible` from existence #244
+
 ## [0.17.0]
 
 ### Changed
