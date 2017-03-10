@@ -1,7 +1,8 @@
-<form class="input-group my-2 vd-search-form" action="#">
+<h2 class="sr-only" id="search-title">Rechercher une information sur le site</h2>
+<form class="input-group my-2 vd-search-form" action="#" aria-describedby="search-title">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form" type="text" class="form-control" {% if placeholder %}placeholder="{{ placeholder }}"{% endif %} aria-describedby="search-form-label">
   <span class="input-group-btn">
-<button class="btn" type="submit" aria-label="Rechercher"><i class="fa fa-search" aria-hidden="true"></i></button>
+    <button class="btn" type="submit" aria-label="Rechercher"><i class="fa fa-search" aria-hidden="true"></i></button>
   </span>
 </form>
