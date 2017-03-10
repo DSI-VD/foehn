@@ -1,11 +1,5 @@
 @charset 'UTF-8';
 
-// enable flex on some rows. Must be the first child of `.row` -> to avoid
-// issues with Safari and pseudo-elements
-.flex-row {
-  display: flex;
-}
-
 // override the .container class from Bootstrap to enable responsive gutter
 .container {
   @each $breakpoint, $gutter in $grid-gutter-widths {
