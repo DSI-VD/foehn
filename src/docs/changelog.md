@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Center pagination
 - Dates molecule reference input--number
 - Use .vd-form-flex for dates molecule
 - Make design of nav-side more obvious
