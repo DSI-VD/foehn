@@ -15,6 +15,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Help-text molecule is a variation of input molecule
 - Change input--required molecule structure
 - Add margin after nav-side
+- Update teasers components for better a11y
+- Update some wrong aria attributes
 
 ### Added
 
@@ -33,10 +35,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add email type in input molecule
 - Add password type in input molecule
 - Add file type in input molecule
+- Add proper and accessible focus effect for all links and buttons
 
 ### Removed
 
 - wipe `.vd-link-invisible` from existence #244
+- remove responsive typography
 
 ## [0.17.0]
 
