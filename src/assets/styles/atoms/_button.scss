@@ -18,6 +18,7 @@ textarea {
 
   &:focus {
     @include box-shadow($btn-focus-box-shadow);
+    @include vd-focus-effect;
 
     color: $btn-primary-color;
   }

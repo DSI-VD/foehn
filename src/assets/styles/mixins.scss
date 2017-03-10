@@ -37,3 +37,10 @@
   background-position: 0 $position;
   text-decoration: none;
 }
+
+//
+// A11Y
+//
+@mixin vd-focus-effect() {
+  outline: 3px solid $vd-focus;
+}

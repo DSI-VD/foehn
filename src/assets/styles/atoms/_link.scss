@@ -27,6 +27,6 @@ a {
   }
 
   &:focus {
-    outline: 3px solid $vd-focus;
+    @include vd-focus-effect;
   }
 }
