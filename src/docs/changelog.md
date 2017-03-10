@@ -32,6 +32,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Help-text molecule is a variation of input molecule
 - Change input--required molecule structure
 - Add margin after nav-side
+- Add stylelint-order npm dependency
 
 ### Added
 
