@@ -54,8 +54,6 @@
   .nav-link {
     width: 100%;
     margin-bottom: ($spacer / 3);
-
-    @extend %link-black;
   }
 
   .vd-nav-item-secure {
