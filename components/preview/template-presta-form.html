@@ -52,33 +52,50 @@
 </nav>
 
   <div class="container">
-    <nav class="text-right" aria-label="sous-navigation">
-      <div class="vd-dropdown vd-dropdown-left vd-dropdown-purple btn-group">
-  <a data-toggle="dropdown" class="btn dropdown-label">
-    <span class="title">Pierre Dupond</span><br>
-    <span>Commune de Belmont-sur-Lausanne</span>
-  </a>
-  <a class="btn dropdown-toggle-split dropdown-chevron" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="fa fa-chevron-down"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </a>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
+    <nav>
+  <h2 class="sr-only">Sous-navigation</h2>
+  <ul class="nav small justify-content-end">
+    
+    <li class="nav-item">
+      <a href="#" class="nav-link active"><span class="sr-only">page active: </span>Mon compte</a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="#" class="nav-link">Paramètres</a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="accueil" class="nav-link">Se déconnecter</a>
+    </li>
+    
+  </ul>
+</nav>
 
-    </nav>
-    <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
+
+    <div class="row">
+
+      <section class="col-sm-6 push-sm-6 text-right pr-2">
+        <h2 class="sr-only">Votre identité</h2>
+        <dl>
+          <dt class="sr-only">Nom et prénom</dt>
+          <dd class="font-weight-bold mb-0 small">Aellen Cédric</dd>
+
+          <dt class="sr-only">Nom du bénéficiaire</dt>
+          <dd class="mb-0 small text-muted">Commune de Servion</dd>
+        </dl>
+      </section>
+
+      <div class="col-sm-6 pull-sm-6">
+        <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
     <img src="../../assets/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
   </div>
 </a>
 
+      </div>
+
+    </div>
   </div>
 </header>
 
