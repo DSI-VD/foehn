@@ -39,7 +39,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.18.0]
 
 ### Changed
-
+- Change alert color
 - Template engine is Nunjucks
 - Help-text molecule is a variation of input molecule
 - Change input--required molecule structure
