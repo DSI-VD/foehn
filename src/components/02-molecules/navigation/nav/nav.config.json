@@ -22,7 +22,7 @@
         },
         {
           "name": "Mon compte",
-          "url": "#",
+          "url": "formulaire-prestation",
           "icon": "fa-lock"
         }
       ]
