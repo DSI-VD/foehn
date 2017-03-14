@@ -1,3 +1,30 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "styleModifier": "hidden-sm-down",
+      "items": [
+        {
+          "name": "Autorité",
+          "url": "#",
+          "active": true
+        },
+        {
+          "name": "Annuaire",
+          "url": "#"
+        },
+        {
+          "name": "Agenda",
+          "url": "#"
+        },
+        {
+          "name": "Contact",
+          "url": "#"
+        },
+        {
+          "name": "Mon compte",
+          "url": "#",
+          "icon": "fa-lock"
+        }
+      ]
+    }
 }
