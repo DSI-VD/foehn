@@ -25,6 +25,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add style '.vd-list-no-bullet'
 
 ### Fixed
+- Fix horizontal alignment of pagination
 - Fix missing breadcrumbs
 
 ### Removed
