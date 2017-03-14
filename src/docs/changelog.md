@@ -26,6 +26,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add style '.vd-list-no-bullet'
 
 ### Fixed
+- Fix missing pagination on news-list
 - Fix horizontal alignment of pagination
 - Fix missing breadcrumbs
 
