@@ -5,7 +5,6 @@
 @import 'main-variables';
 @import 'bootstrap-variables'; // override defaults bootstrap variables
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'placeholders';
 @import 'helpers';
 @import "layout";
 @import "typography";
@@ -59,6 +58,3 @@
 @import 'organisms/header';
 @import 'organisms/teaser-list';
 @import 'organisms/media-list';
-
-// pages:
-@import 'pages/homepage';
