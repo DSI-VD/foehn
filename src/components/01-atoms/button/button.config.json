@@ -28,7 +28,7 @@
       {
         "name": "form",
         "context": {
-          "class": "btn btn-primary vd-btn-chevron-r",
+          "class": "btn btn-success vd-btn-chevron-r",
           "text": "Transmettre"
         }
       }
