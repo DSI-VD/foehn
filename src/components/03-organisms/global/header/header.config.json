@@ -1,6 +1,22 @@
 {
-    "status": "ready",
-    "context": {
-      "domains": "@domains-list"
+  "status": "ready",
+  "context": {
+    "domains": "@domains-list",
+    "nav": {
+      "items": [{
+          "name": "Mon compte",
+          "url": "#",
+          "active": true
+        },
+        {
+          "name": "Paramètres",
+          "url": "#"
+        },
+        {
+          "name": "Se déconnecter",
+          "url": "accueil"
+        }
+      ]
     }
+  }
 }

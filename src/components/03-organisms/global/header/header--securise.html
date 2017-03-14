@@ -1,9 +1,25 @@
 <header class="header">
   {% include '@access-nav' %}
   <div class="container">
-    <nav class="text-right" aria-label="sous-navigation">
-      {% include '@dropdown' %}
-    </nav>
-    {% include '@logo-etat' %}
+    {% render '@nav', nav %}
+
+    <div class="row">
+
+      <section class="col-sm-6 push-sm-6 text-right pr-2">
+        <h2 class="sr-only">Votre identité</h2>
+        <dl>
+          <dt class="sr-only">Nom et prénom</dt>
+          <dd class="font-weight-bold mb-0 small">Aellen Cédric</dd>
+
+          <dt class="sr-only">Nom du bénéficiaire</dt>
+          <dd class="mb-0 small text-muted">Commune de Servion</dd>
+        </dl>
+      </section>
+
+      <div class="col-sm-6 pull-sm-6">
+        {% include '@logo-etat' %}
+      </div>
+
+    </div>
   </div>
 </header>
