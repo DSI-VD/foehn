@@ -158,6 +158,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled row mb-0"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 text-xs-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary vd-btn-chevron-l"</span>&gt;</span>Précédent<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 text-xs-left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary vd-btn-chevron-r"</span>&gt;</span>Suivant<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre>
         
@@ -171,7 +172,8 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Pagination<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled row mb-0"</span>&gt;</span>
     {% if previous %}<span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 text-xs-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ previous.url }}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary vd-btn-chevron-l"</span>&gt;</span>{{ previous.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>{% endif %}
-    {% if next %}<span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 text-xs-left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ next.url }}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary vd-btn-chevron-r"</span>&gt;</span>{{ next.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>{% endif %}
+    {% if next %}<span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6{% if not previous %} offset-xs-6{% endif %} text-xs-left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ next.url }}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary vd-btn-chevron-r"</span>&gt;</span>{{ next.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>{% endif %}
+    {% if submit %}<span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 text-xs-left"</span>&gt;</span>{% render '<a href="button--form">@button--form</a>' %}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>{% endif %}
   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre>
     </code>
@@ -237,9 +239,18 @@
             <span class="Meta-value">src/components/02-molecules/navigation/pagination/pagination.html</span>
         </li>
         
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="button--form">@<span>button--form</span></a>
+            
+            </span>
+        </li class="Meta-item">
+        
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(7)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="example-list">@<span>example-list</span></a>, 
@@ -248,7 +259,13 @@
             
                 <a href="news-list">@<span>news-list</span></a>, 
             
-                <a href="template-presta-form">@<span>template-presta-form</span></a>
+                <a href="template-presta-form">@<span>template-presta-form</span></a>, 
+            
+                <a href="formulaire-prestation">@<span>formulaire-prestation</span></a>, 
+            
+                <a href="formulaire-prestation--step-2">@<span>formulaire-prestation--step-2</span></a>, 
+            
+                <a href="formulaire-prestation--step-3">@<span>formulaire-prestation--step-3</span></a>
             
             </span>
         </li>

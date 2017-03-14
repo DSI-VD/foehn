@@ -226,7 +226,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span>
 
-                <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"#"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"formulaire-prestation-confirmation"</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"testInput"</span>&gt;</span>Nom <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>(Requis)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -372,19 +372,16 @@
                         <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleTextarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Pagination<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled row mb-0"</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 offset-xs-6 text-xs-left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"formulaire-prestation--step-2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary vd-btn-chevron-r"</span>&gt;</span>Suivant<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
 
                 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Pagination<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled row mb-0"</span>&gt;</span>
-
-                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-6 text-xs-left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"formulaire-prestation--step-2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary vd-btn-chevron-r"</span>&gt;</span>Suivant<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
 
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -425,7 +422,7 @@
         <pre>{% extends '<a href="template-presta-form">@template-presta-form</a>' %}
 {% block main %}
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"#"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"formulaire-prestation-confirmation"</span>&gt;</span>
 
     {% render '<a href="input--default">@input--default</a>', {label: "Nom", required: true}, true %}
 
@@ -455,9 +452,7 @@
 
     {% render '<a href="textarea">@textarea</a>' %}
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      {% if submit %}{% render '<a href="button--form">@button--form</a>', button, true %}{% endif %}
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    {% render '<a href="pagination">@pagination</a>', pagination, true %}
 
   <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
 {% endblock %}</pre>
@@ -563,7 +558,7 @@
             
                 <a href="textarea">@<span>textarea</span></a>, 
             
-                <a href="button--form">@<span>button--form</span></a>
+                <a href="pagination">@<span>pagination</span></a>
             
             </span>
         </li class="Meta-item">
