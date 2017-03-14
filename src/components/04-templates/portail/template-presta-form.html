@@ -6,15 +6,17 @@
   <div class="container mt-3">
     <h2>{{ stepTitle }}</h2>
     <p class="h3">{{ stepNumber }}</p>
+      <div class="row">
+        <div class="col-md-8">
+          {% block main %}
 
-        {% block main %}
+          {% render '@paragraph' %}
 
-        {% render '@paragraph' %}
+          {% endblock %}
 
-        {% endblock %}
-
-    {% render '@pagination', pagination, true %}
-
+          {% render '@pagination', pagination, true %}
+        </div>
+      </div>
   </div>
 </main>
 {% include '@footer--securise' %}
