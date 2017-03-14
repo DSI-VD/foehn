@@ -38,14 +38,14 @@
         "name": "Step 3",
         "context": {
           "stepNumber": "Etape 3 de 4",
-          "submit": {
-            "href": "formulaire-prestation-confirmation"
-          },
           "pagination": {
             "previous": {
               "url": "formulaire-prestation--step-2"
             },
-            "next": false
+            "next": false,
+            "submit": {
+              "href": "formulaire-prestation-confirmation"
+            }
           }
         }
       }
