@@ -11,10 +11,9 @@
           {% block main %}
 
           {% render '@paragraph' %}
+          {% render '@pagination', pagination, true %}
 
           {% endblock %}
-
-          {% render '@pagination', pagination, true %}
         </div>
       </div>
   </div>

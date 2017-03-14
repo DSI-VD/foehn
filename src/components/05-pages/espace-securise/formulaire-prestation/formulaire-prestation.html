@@ -1,7 +1,7 @@
 {% extends '@template-presta-form' %}
 {% block main %}
 
-  <form action="#">
+  <form action="formulaire-prestation-confirmation">
 
     {% render '@input--default', {label: "Nom", required: true}, true %}
 
@@ -31,9 +31,7 @@
 
     {% render '@textarea' %}
 
-    <p>
-      {% if submit %}{% render '@button--form', button, true %}{% endif %}
-    </p>
+    {% render '@pagination', pagination, true %}
 
   </form>
 {% endblock %}

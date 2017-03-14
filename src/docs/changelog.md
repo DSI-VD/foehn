@@ -20,6 +20,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Clean up CSS
 
 ### Added
+- Add the ability to have button--form in pagination
 - Add avs13 molecule
 - Add .vd-form-flex style
 - Add input--number molecule
