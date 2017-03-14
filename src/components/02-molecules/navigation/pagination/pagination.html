@@ -1,7 +1,7 @@
-<nav>
+<nav class="mb-1">
   <h3 class="sr-only">Pagination</h2>
   <ul class="list-unstyled row mb-0">
-    {% if previous %}<li class="col-xs-6 text-right"><a href="{{ previous.url }}" class="btn btn-secondary vd-btn-chevron-l">{{ previous.text }}</a></li>{% endif %}
-    {% if next %}<li class="col-xs-6 text-left"><a href="{{ next.url }}" class="btn btn-secondary vd-btn-chevron-r">{{ next.text }}</a></li>{% endif %}
+    {% if previous %}<li class="col-xs-6 text-xs-right"><a href="{{ previous.url }}" class="btn btn-secondary vd-btn-chevron-l">{{ previous.text }}</a></li>{% endif %}
+    {% if next %}<li class="col-xs-6 text-xs-left"><a href="{{ next.url }}" class="btn btn-secondary vd-btn-chevron-r">{{ next.text }}</a></li>{% endif %}
   </ul>
 </nav>
