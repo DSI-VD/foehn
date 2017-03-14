@@ -34,7 +34,7 @@
     background: $vd-green;
     color: $white;
 
-    &:hover {
+    @include hover {
       background: darken($vd-green, 10%);
     }
   }
@@ -46,7 +46,7 @@
     border-color: $vd-green;
     color: $white;
 
-    &:hover {
+    @include hover {
       background: darken($vd-green, 10%);
       border-color: darken($vd-green, 10%);
     }
