@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change link color in nav-side
 - Change connexion information on header-securise
 - Change button--form class
 - Change color of pagination buttons
