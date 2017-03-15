@@ -1,21 +1,8 @@
 <div class="form-group">
-  <label for="exampleSelect1">Example select</label>
-  <select class="form-control" id="exampleSelect1">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-  </select>
-</div>
-
-<div class="form-group">
-  <label for="exampleSelect2">Example multiple select</label>
-  <select multiple class="form-control" id="exampleSelect2">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
+  <label for="exampleSelect1">{{ label }}</label>
+  <select class="{{ class }}" id="{{ id }}"{% if multiple %} multiple{% endif %}>
+    {% for option in options %}
+    <option{% if option.value %} value="{{ option.value }}"{% endif %}{% if option.selected %} selected{% endif %}{% if option.disabled %} disabled{% endif %}>{{ option.name }}</option>
+    {% endfor %}
   </select>
 </div>

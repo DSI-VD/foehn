@@ -22,6 +22,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Clean up CSS
 
 ### Added
+- Add select--multiple component
+- Add select config
 - Add textarea config
 - Add configuration for nav
 - Add the ability to have button--form in pagination

@@ -1,3 +1,60 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "label": "Example select",
+      "id": "testSelect",
+      "name": "testInput",
+      "class": "form-control",
+      "options": [
+        {
+          "name": "Curabitur"
+        },
+        {
+          "name": "Maecenas vel"
+        },
+        {
+          "name": "Suspendisse maximus velit non lacus"
+        },
+        {
+          "name": "Sed maximus"
+        },
+        {
+          "name": "Aliquam cupiditate, vel!"
+        },
+        {
+          "name": "Nunc eget neque sit amet ipsum auctor laoreet"
+        }
+      ]
+    },
+    "variants": [
+      {
+        "name": "multitple",
+        "context": {
+          "label": "Example multiple select",
+          "multiple": true,
+          "options": [
+            {
+              "name": "Curabitur"
+            },
+            {
+              "name": "Maecenas vel",
+              "selected": true
+            },
+            {
+              "name": "Suspendisse maximus velit non lacus"
+            },
+            {
+              "name": "Sed maximus",
+              "selected": true
+            },
+            {
+              "name": "Aliquam cupiditate, vel!"
+            },
+            {
+              "name": "Nunc eget neque sit amet ipsum auctor laoreet"
+            }
+          ]
+        }
+      }
+    ]
 }
