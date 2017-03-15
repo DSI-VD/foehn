@@ -3,21 +3,23 @@
 
   <form action="formulaire-prestation-confirmation">
 
-    {% render '@input--default', {label: "Nom", required: true}, true %}
+    {% render '@input--default', {label: "Nom", id: "name", required: true}, true %}
 
-    {% render '@input--default', {label: "Prénom", required: true}, true %}
+    {% render '@input--default', {label: "Prénom", id: "firstname", required: true}, true %}
 
     {% render '@dates' %}
 
-    {% render '@input--default', {label: "Etablissement"}, true %}
+    {% render '@input--default', {label: "Etablissement", id: "institution"}, true %}
 
-    {% render '@input--default', {label: "Fonction"}, true %}
+    {% render '@input--default', {label: "Fonction", id: "function"}, true %}
 
-    {% render '@select', {label: "Catégorie"} %}
+    {% render '@select--default', {label: "Catégorie", id: "categorie"}, true %}
 
-    {% render '@input--default', {label: "Adresse", required: true}, true %}
+    {% render '@select--multitple', {label: "Catégorie 2", id: "categorie2"}, true %}
 
-    {% render '@input--email', {required: true}, true %}
+    {% render '@input--default', {label: "Adresse", id:"address", required: true}, true %}
+
+    {% render '@input--email', {id: "email", required: true}, true %}
 
     <fieldset>
       <legend>Radio</legend>
