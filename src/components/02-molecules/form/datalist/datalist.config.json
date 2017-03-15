@@ -1,0 +1,91 @@
+{
+  "status": "wip",
+  "context": {
+    "label": "Quel est votre canton d'origine",
+    "id": "testDataInput",
+    "class": "form-control",
+    "list": {
+      "id": "list",
+      "options": [
+        {
+          "name": "Appenzell Rhodes-Extérieures"
+        },
+        {
+          "name": "Appenzell Rhodes-Intérieures"
+        },
+        {
+          "name": "Argovie"
+        },
+        {
+          "name": "Bâle-Campagne"
+        },
+        {
+          "name": "Bâle-Ville"
+        },
+        {
+          "name": "Berne"
+        },
+        {
+          "name": "Fribourg"
+        },
+        {
+          "name": "Genève"
+        },
+        {
+          "name": "Glaris"
+        },
+        {
+          "name": "Grisons"
+        },
+        {
+          "name": "Jura"
+        },
+        {
+          "name": "Lucerne"
+        },
+        {
+          "name": "Neuchâtel"
+        },
+        {
+          "name": "Nidwald"
+        },
+        {
+          "name": "Obwald"
+        },
+        {
+          "name": "Saint-Gall"
+        },
+        {
+          "name": "Schaffhouse"
+        },
+        {
+          "name": "Schwyz"
+        },
+        {
+          "name": "Soleure"
+        },
+        {
+          "name": "Tessin"
+        },
+        {
+          "name": "Thurgovie"
+        },
+        {
+          "name": "Uri"
+        },
+        {
+          "name": "Valais"
+        },
+        {
+          "name": "Vaud"
+        },
+        {
+          "name": "Zoug"
+        },
+        {
+          "name": "Zurich"
+        }
+      ]
+    }
+  }
+}

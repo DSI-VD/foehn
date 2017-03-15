@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label for="{{ id }}" id="{{ id }}Label">{{ label }}</label>
+  <datalist id="{{ list.id }}">
+    <select class="form-control" name="{{ id }}" aria-labelledby="{{ id }}Label">
+      {% for option in list.options %}
+      <option>{{ option.name }}</option>
+      {% endfor %}
+    </select> <small class="form-text">If other, please specify</small>
+  </datalist>
+  <input id="{{ id }}" class="{{ class }}" name="state" list="{{ list.id }}">
+</div>

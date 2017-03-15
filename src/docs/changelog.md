@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Clean up CSS
 
 ### Added
+- Add datalist component
 - Add select--multiple component
 - Add select config
 - Add textarea config
