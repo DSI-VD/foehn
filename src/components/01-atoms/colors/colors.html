@@ -1,0 +1,15 @@
+<div class="row">
+  {% for color in primary %}
+  <div class="col-sm-3">
+    <div class="card mb-1">
+      <div class="card-img-top" style="background-color: {{ color.value }}; min-height: 10em;"></div>
+      <div class="card-block">
+        <h4 class="card-title">{{ color.name }}</h4>
+        <p class="card-text"><code>{{ color.value }}</code></p>
+      </div>
+    </div>
+    <!-- <div style="background-color: {{ color.value }};" class="pb-3">{{ color.name }}</div>
+    <code>{{ color.value }}</code> -->
+  </div>
+  {% endfor %}
+</div>
