@@ -1,91 +1,38 @@
 {
   "status": "wip",
   "context": {
-    "label": "Quel est votre canton d'origine",
+    "label": "Quel est votre fruit favoris",
     "id": "testDataInput",
     "class": "form-control",
     "list": {
       "id": "list",
       "options": [
         {
-          "name": "Appenzell Rhodes-Extérieures"
+          "name": "Abricot"
         },
         {
-          "name": "Appenzell Rhodes-Intérieures"
+          "name": "Ananas"
         },
         {
-          "name": "Argovie"
+          "name": "Citron"
         },
         {
-          "name": "Bâle-Campagne"
+          "name": "Fruit de la passion"
         },
         {
-          "name": "Bâle-Ville"
+          "name": "Grenade"
         },
         {
-          "name": "Berne"
+          "name": "Groseille"
         },
         {
-          "name": "Fribourg"
+          "name": "Kaki"
         },
         {
-          "name": "Genève"
-        },
-        {
-          "name": "Glaris"
-        },
-        {
-          "name": "Grisons"
-        },
-        {
-          "name": "Jura"
-        },
-        {
-          "name": "Lucerne"
-        },
-        {
-          "name": "Neuchâtel"
-        },
-        {
-          "name": "Nidwald"
-        },
-        {
-          "name": "Obwald"
-        },
-        {
-          "name": "Saint-Gall"
-        },
-        {
-          "name": "Schaffhouse"
-        },
-        {
-          "name": "Schwyz"
-        },
-        {
-          "name": "Soleure"
-        },
-        {
-          "name": "Tessin"
-        },
-        {
-          "name": "Thurgovie"
-        },
-        {
-          "name": "Uri"
-        },
-        {
-          "name": "Valais"
-        },
-        {
-          "name": "Vaud"
-        },
-        {
-          "name": "Zoug"
-        },
-        {
-          "name": "Zurich"
+          "name": "Kiwi"
         }
       ]
-    }
+    },
+    "fallbackLabel": "Merci de le spécifier s'il ne figure pas dans la liste"
   }
 }
