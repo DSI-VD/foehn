@@ -5,7 +5,7 @@
       {% for option in list.options %}
       <option>{{ option.name }}</option>
       {% endfor %}
-    </select> <small class="form-text">If other, please specify</small>
+    </select> <small id="{{ id }}fallbackLabel" class="form-text">{{ fallbackLabel }}</small>
   </datalist>
-  <input id="{{ id }}" class="{{ class }}" name="state" list="{{ list.id }}">
+  <input id="{{ id }}" class="{{ class }}" name="state" list="{{ list.id }}" aria-labelledby="{{ id }}fallbackLabel">
 </div>
