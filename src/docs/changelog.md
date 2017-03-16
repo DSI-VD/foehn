@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- news-latest is in a `<section>`
+- project-list is in a `<section>`
 - Change link color in nav-side
 - Change connexion information on header-securise
 - Change button--form class
