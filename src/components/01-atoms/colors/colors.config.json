@@ -1,0 +1,55 @@
+{
+  "status": "prototype",
+  "context": {
+    "primary": [
+      {
+        "name": "gray-light",
+        "value": "#aab6db"
+      },
+      {
+        "name": "gray-lighter",
+        "value": "#dce3e8"
+      },
+      {
+        "name": "gray-lighter-2",
+        "value": "#c3d1dc"
+      },
+      {
+        "name": "green-darker",
+        "value": "#1e5e02"
+      },
+      {
+        "name": "green",
+        "value": "#40d940"
+      },
+      {
+        "name": "green-light",
+        "value": "#9f3"
+      },
+      {
+        "name": "green-lighter",
+        "value": "#cf9"
+      },
+      {
+        "name": "purple-2",
+        "value": "#9f42ff"
+      },
+      {
+        "name": "gray-dark",
+        "value": "#080808"
+      },
+      {
+        "name": "gray",
+        "value": "#697983"
+      },
+      {
+        "name": "green-dark",
+        "value": "#02851a"
+      },
+      {
+        "name": "purple",
+        "value": "#90f"
+      }
+    ]
+  }
+}
