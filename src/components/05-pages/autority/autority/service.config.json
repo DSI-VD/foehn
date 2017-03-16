@@ -13,6 +13,32 @@
         "url": "#"
       }
     ],
+    "organisation": {
+      "links": {
+        "listLinks": [
+          {
+            "item": "Direction de l'énergie - DIREN",
+            "url": "#"
+          },
+          {
+            "item": "Direction de l'environnement industriel, urbain et rural - DIREV",
+            "url": "#"
+          },
+          {
+            "item": "Direction des ressources et du patrimoine - DIRNA",
+            "url": "#"
+          },
+          {
+            "item": "Support administratif",
+            "url": "#"
+          },
+          {
+            "item": "Support stratégique",
+            "url": "#"
+          }
+        ]
+      }
+    },
     "autorityAddress": {
       "name": "Direction générale de l'environnement",
       "address": {
