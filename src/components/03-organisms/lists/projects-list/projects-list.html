@@ -1,5 +1,7 @@
-<h2 class="vd-section-title">{{ title }}</h2>
-{% for project in projects %}
-{% render '@teaser-alternate', project, true %}
-{% endfor %}
-<a href="#" class="btn btn-primary vd-btn-chevron-r">Tous les projets</a>
+<section class="mb-1">
+  <h2 class="vd-section-title">{{ title }}</h2>
+  {% for project in projects %}
+  {% render '@teaser-alternate', project, true %}
+  {% endfor %}
+  <a href="#" class="btn btn-primary vd-btn-chevron-r">Tous les projets</a>
+</section>

@@ -7,18 +7,10 @@
 
   <hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
 
-  <section>
+  {% render '@news-latest' %}
 
-    {% render '@news-latest' %}
+  {% render '@projects-list' %}
 
-  </section>
-
-  <section>
-    <h2 class="vd-section-title">Projets</h2>
-
-    {% render '@projects-list' %}
-
-  </section>
 {% endblock %}
 {% block aside %}
   {% render '@autority-address', autorityAddress %}
