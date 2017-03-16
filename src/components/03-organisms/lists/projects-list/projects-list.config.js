@@ -14,8 +14,8 @@ for (let i = 0; i < listItemCount; i += 1) {
 }
 
 module.exports = {
-    title: 'Projets',
     context: {
+        title: 'Projets',
         projects: listItemData, // use our generated list of members as context data for our template.
     },
 };
