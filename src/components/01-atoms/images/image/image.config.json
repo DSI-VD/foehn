@@ -14,7 +14,7 @@
       {
         "name": "fluid",
         "context": {
-          "class": "img-fluid",
+          "class": "img-fluid"
         }
       },
       {
