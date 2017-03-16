@@ -1,3 +1,20 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "name": "Jean Villard",
+      "position": "Poète, chansonnier, comédien, écrivain et compositeur",
+      "links": {
+        "listLinks": [
+          {
+            "item": "Biographie",
+            "url": "#"
+          }
+        ]
+      },
+      "image": {
+        "src": "https://api.adorable.io/avatars/200/hello@vd.png",
+        "alt": "Alternative text",
+        "styleModifier": "img-fluid"
+      }
+    }
 }
