@@ -8,19 +8,19 @@
       {
         "name": "desaturate",
         "context": {
-          "styleModifier": "img-desaturate"
+          "class": "img-desaturate"
         }
       },
       {
         "name": "fluid",
         "context": {
-          "styleModifier": "img-fluid"
+          "class": "img-fluid",
         }
       },
       {
         "name": "rounded",
         "context": {
-          "styleModifier": "rounded-circle",
+          "class": "rounded-circle",
           "src": "https://source.unsplash.com/random/200x200"
         }
       }

@@ -1,1 +1,1 @@
-<img {% if styleModifier %}class="{{ styleModifier }}" {% endif %}src="{{ src }}" alt="{{ alt }}">
+<img {% if class %}class="{{ class }}{% if styleModifier %} {{ styleModifier }}{% endif %}" {% elif styleModifier %} class="{{ styleModifier }}"{% endif %}src="{{ src }}" alt="{{ alt }}">
