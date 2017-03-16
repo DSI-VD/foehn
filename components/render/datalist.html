@@ -1,64 +1,28 @@
 
 
 <div class="form-group">
-  <label for="testDataInput" id="testDataInputLabel">Quel est votre canton d'origine</label>
+  <label for="testDataInput" id="testDataInputLabel">Quel est votre fruit favoris</label>
   <datalist id="list">
     <select class="form-control" name="testDataInput" aria-labelledby="testDataInputLabel">
       
-      <option>Appenzell Rhodes-Extérieures</option>
+      <option>Abricot</option>
       
-      <option>Appenzell Rhodes-Intérieures</option>
+      <option>Ananas</option>
       
-      <option>Argovie</option>
+      <option>Citron</option>
       
-      <option>Bâle-Campagne</option>
+      <option>Fruit de la passion</option>
       
-      <option>Bâle-Ville</option>
+      <option>Grenade</option>
       
-      <option>Berne</option>
+      <option>Groseille</option>
       
-      <option>Fribourg</option>
+      <option>Kaki</option>
       
-      <option>Genève</option>
+      <option>Kiwi</option>
       
-      <option>Glaris</option>
-      
-      <option>Grisons</option>
-      
-      <option>Jura</option>
-      
-      <option>Lucerne</option>
-      
-      <option>Neuchâtel</option>
-      
-      <option>Nidwald</option>
-      
-      <option>Obwald</option>
-      
-      <option>Saint-Gall</option>
-      
-      <option>Schaffhouse</option>
-      
-      <option>Schwyz</option>
-      
-      <option>Soleure</option>
-      
-      <option>Tessin</option>
-      
-      <option>Thurgovie</option>
-      
-      <option>Uri</option>
-      
-      <option>Valais</option>
-      
-      <option>Vaud</option>
-      
-      <option>Zoug</option>
-      
-      <option>Zurich</option>
-      
-    </select> <small class="form-text">If other, please specify</small>
+    </select> <small id="testDataInputfallbackLabel" class="form-text">Merci de le spécifier s'il ne figure pas dans la liste</small>
   </datalist>
-  <input id="testDataInput" class="form-control" name="state" list="list">
+  <input id="testDataInput" class="form-control" name="state" list="list" aria-labelledby="testDataInputfallbackLabel">
 </div>
 
