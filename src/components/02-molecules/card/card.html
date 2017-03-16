@@ -1,18 +1,14 @@
-<div class="vd-card">
+<div class="vd-card mb-1">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <img class="img-fluid rounded-circle" src="https://placehold.it/150x150" alt="Card image cap">
+        {% render '@image--rounded', image, true %}
       </div>
       <div class="col-sm-8">
         <div class="card-block vd-card-block">
-          <h5 class="card-title vd-card-title">Cornelis Neet</h5>
-          <p class="card-text vd-card-text">Directrice générale</p>
-          <ul class="vd-list-links">
-            <li>
-              <a href="#">Biographie</a>
-            </li>
-          </ul>
+          <h5 class="card-title vd-card-title">{{ name }}</h5>
+          <p class="card-text vd-card-text">{{ position }}</p>
+          {% render '@list-links', links %}
         </div>
       </div>
     </div>
