@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- refactor page organisation
 - news-latest is in a `<section>`
 - project-list is in a `<section>`
 - Change link color in nav-side
