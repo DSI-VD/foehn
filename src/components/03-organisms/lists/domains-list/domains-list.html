@@ -28,7 +28,7 @@
     </p>
     {% if loop.last %}
     {% else %}
-    <hr class="vd-separator vd-separator-green-pattern vd-separator-wide mt-2">
+    {% render '@separator--green-pattern-wide', {styleModifier: "mt-2"}, true %}
     {% endif %}
   </div>
 {% endfor %}
