@@ -1,7 +1,7 @@
 {
   "status": "wip",
   "context": {
-    "label": "Quel est votre fruit favoris",
+    "label": "Quel est votre fruit favoris ?",
     "id": "testDataInput",
     "class": "form-control",
     "list": {
