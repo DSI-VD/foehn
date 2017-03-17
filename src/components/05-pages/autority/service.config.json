@@ -107,6 +107,38 @@
           "url": "#"
         }
       ]
+    },
+    "publications": {
+      "listLinks": [
+        {
+          "item": "Domaine de l'eau",
+          "url": "#"
+        },
+        {
+          "item": "Domaine des déchets",
+          "url": "#"
+        }
+      ]
+    },
+    "offres": {
+      "listLinks": [
+        {
+          "item": "Secrétaire de direction",
+          "url": "#"
+        },
+        {
+          "item": "Chargé de mission stratégiques",
+          "url": "#"
+        },
+        {
+          "item": "Ingénieur(e)",
+          "url": "#"
+        },
+        {
+          "item": "Technicien de laboratoire",
+          "url": "#"
+        }
+      ]
     }
   }
 }
