@@ -11,9 +11,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Add url on autority-address
-- refactor page organisation
-- news-latest is in a `<section>`
-- project-list is in a `<section>`
+- Refactor page organisation
+- News-latest is in a `<section>`
+- Project-list is in a `<section>`
 - Change link color in nav-side
 - Change connexion information on header-securise
 - Change button--form class
