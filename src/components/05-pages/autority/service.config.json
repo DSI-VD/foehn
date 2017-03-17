@@ -41,6 +41,7 @@
     },
     "autorityAddress": {
       "name": "Direction générale de l'environnement",
+      "url": "#",
       "address": {
         "street": "Place du Château 1",
         "postalCode": "1014",

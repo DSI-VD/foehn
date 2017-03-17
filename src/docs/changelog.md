@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add url on autority-address
 - refactor page organisation
 - news-latest is in a `<section>`
 - project-list is in a `<section>`
