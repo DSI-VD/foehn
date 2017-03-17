@@ -1,6 +1,7 @@
 {
   "context": {
     "name": "Service name",
+    "url": "#",
     "division": "division",
     "address": {
         "street": "Rue de la Barre 2",
