@@ -1,5 +1,1 @@
-<hr>
-<hr class="vd-hr-black">
-<hr class="vd-separator vd-separator-green-pattern vd-separator-wide">
-<hr class="vd-separator vd-separator-gray-pattern">
-<hr class="vd-separator vd-separator-gray-bars vd-separator-wide">
+<hr{% if class %} class="{{ class }}{% if styleModifier %} {{ styleModifier }}{% endif %}"{% elif styleModifier %} class="{{ styleModifier }}"{% endif %}>
