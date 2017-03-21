@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Blockquote use `<cite>` element instead of `<footer>` for references
+
 ## [0.19.0]
 
 ### Changed
