@@ -1,6 +1,6 @@
 {% extends '@template--2-col' %}
 {% block main %}
-  <section>
+  <section class="mb-3">
     <h2 class="sr-only">Présentations</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae id quidem assumenda reprehenderit ea enim suscipit, consequatur quam impedit aut atque repudiandae tempore minus velit ullam hic, ipsa fuga expedita? Dolorum explicabo corporis
       placeat assumenda. Illo facilis iure, asperiores dolor earum vel? Voluptatem nobis quasi, necessitatibus dicta molestias perferendis a est itaque tempore eveniet, facilis quisquam impedit officia temporibus perspiciatis rem libero expedita unde
@@ -11,37 +11,37 @@
       provident illo quibusdam, unde, maxime!</p>
   </section>
 
-  {% render '@separator--gray-bars-wide' %}
+  {% render '@separator--gray-bars-wide', {styleModifier: 'mb-3'}, true %}
 
   {% render '@news-latest' %}
 
   {% render '@projects-list' %}
 
-  <section class="mb-1">
+  <section class="mb-3">
     <h2 class="vd-section-title">Organisation</h2>
     {% render '@card' %}
     {% render '@list-links', organisation.links %}
     {% render '@button--default', {text:"Toutes les autorités"}, true %}
   </section>
 
-  <section class="mb-1">
+  <section class="mb-3">
     <h2 class="vd-section-title">Préstations</h2>
     {% render '@list-links',
     prestations %}
     {% render '@button--default', {text:"Toutes les préstations"}, true %}
   </section>
 
-  <section class="mb-1">
+  <section class="mb-3">
     <h2 class="vd-section-title">Liens utiles</h2>
     {% render '@list-links', liensUtiles %}
   </section>
 
-  <section class="mb-1">
+  <section class="mb-3">
     <h2 class="vd-section-title">Publications</h2>
     {% render '@list-links', publications %}
   </section>
 
-  <section class="mb-1">
+  <section class="mb-3">
     <h2 class="vd-section-title">Offres d'emploi</h2>
     {% render '@list-links', offres %}
   </section>
