@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Preview Layout</title>
+    <title>Step 1 | Foehn</title>
     <meta name="description" content="">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width">
@@ -52,33 +52,50 @@
 </nav>
 
   <div class="container">
-    <nav class="text-right" aria-label="sous-navigation">
-      <div class="vd-dropdown vd-dropdown-left vd-dropdown-purple btn-group">
-  <a data-toggle="dropdown" class="btn dropdown-label">
-    <span class="title">Pierre Dupond</span><br>
-    <span>Commune de Belmont-sur-Lausanne</span>
-  </a>
-  <a class="btn dropdown-toggle-split dropdown-chevron" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="fa fa-chevron-down"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </a>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
+    <nav>
+  <h2 class="sr-only">Sous-navigation</h2>
+  <ul class="nav small justify-content-end">
+    
+    <li class="nav-item">
+      <a href="#" class="nav-link active"><span class="sr-only">page active: </span>Mon compte</a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="#" class="nav-link">Paramètres</a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="accueil" class="nav-link">Se déconnecter</a>
+    </li>
+    
+  </ul>
+</nav>
 
-    </nav>
-    <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
+
+    <div class="row">
+
+      <section class="col-sm-6 push-sm-6 text-right pr-2">
+        <h2 class="sr-only">Votre identité</h2>
+        <dl>
+          <dt class="sr-only">Nom et prénom</dt>
+          <dd class="font-weight-bold mb-0 small">Aellen Cédric</dd>
+
+          <dt class="sr-only">Nom du bénéficiaire</dt>
+          <dd class="mb-0 small text-muted">Commune de Servion</dd>
+        </dl>
+      </section>
+
+      <div class="col-sm-6 pull-sm-6">
+        <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
     <img src="../../assets/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
   </div>
 </a>
 
+      </div>
+
+    </div>
   </div>
 </header>
 
@@ -94,22 +111,23 @@
   <div class="container mt-3">
     <h2>Titre de l'étape</h2>
     <p class="h3">Etape 1 de 4</p>
+      <div class="row">
+        <div class="col-md-8">
+          
 
-        
-
-  <form action="#">
+  <form action="formulaire-prestation-confirmation">
 
     <div class="form-group">
-  <label for="testInput">Nom <span aria-hidden="true">(Requis)</span></label>
+  <label for="name">Nom <span aria-hidden="true">(Requis)</span></label>
   
-  <input class="form-control" type="text" id="testInput" name="testInput" value="" required aria-required="true">
+  <input class="form-control" type="text" id="name" name="testInput" value="" required aria-required="true">
 </div>
 
 
     <div class="form-group">
-  <label for="testInput">Prénom <span aria-hidden="true">(Requis)</span></label>
+  <label for="firstname">Prénom <span aria-hidden="true">(Requis)</span></label>
   
-  <input class="form-control" type="text" id="testInput" name="testInput" value="" required aria-required="true">
+  <input class="form-control" type="text" id="firstname" name="testInput" value="" required aria-required="true">
 </div>
 
 
@@ -122,72 +140,133 @@
     Par exemple, 23 7 1979
   </small>
   
-  <div class="vd-dates-day">
-    <label for="date-form-day">Jour</label>
-    <input id="date-form-day" class="form-control" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" value="" aria-describedby="dates-help">
-  </div>
 
-  <div class="vd-dates-month">
-    <label for="date-form-month">Mois</label>
-    <input id="date-form-month" class="form-control" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" value="">
-  </div>
+  <div class="vd-form-flex">
 
-  <div class="vd-dates-year">
-    <label for="date-form-year">Année</label>
-    <input id="date-form-year" class="form-control" type="number" pattern="[0-9]*" min="1950" max="2017" name="name" size="4" value="">
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      <div class="form-group">
+  <label for="inputDatesDay">Jour</label>
+  
+  <input class="form-control" type="number" id="inputDatesDay" name="testInput" value="" pattern="[0-9]*" min="1" max="31" size="2">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      <div class="form-group">
+  <label for="inputDatesMonth">Mois</label>
+  
+  <input class="form-control" type="number" id="inputDatesMonth" name="testInput" value="" pattern="[0-9]*" min="1" max="12" size="2">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      <div class="form-group">
+  <label for="inputDatesYear">Année</label>
+  
+  <input class="form-control" type="number" id="inputDatesYear" name="testInput" value="" pattern="[0-9]*" min="1950" max="2017" size="4">
+</div>
+
+    </div>
+
   </div>
 
 </fieldset>
 
 
     <div class="form-group">
-  <label for="testInput">Etablissement</label>
+  <label for="institution">Etablissement</label>
   
-  <input class="form-control" type="text" id="testInput" name="testInput" value="">
+  <input class="form-control" type="text" id="institution" name="testInput" value="">
 </div>
 
 
     <div class="form-group">
-  <label for="testInput">Fonction</label>
+  <label for="function">Fonction</label>
   
-  <input class="form-control" type="text" id="testInput" name="testInput" value="">
+  <input class="form-control" type="text" id="function" name="testInput" value="">
 </div>
 
 
     <div class="form-group">
-  <label for="exampleSelect1">Example select</label>
-  <select class="form-control" id="exampleSelect1">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
+  <label for="exampleSelect1">Catégorie</label>
+  <select class="form-control" id="categorie">
+    
+    <option>Curabitur</option>
+    
+    <option>Maecenas vel</option>
+    
+    <option>Suspendisse maximus velit non lacus</option>
+    
+    <option>Sed maximus</option>
+    
+    <option>Aliquam cupiditate, vel!</option>
+    
+    <option>Nunc eget neque sit amet ipsum auctor laoreet</option>
+    
   </select>
 </div>
 
-<div class="form-group">
-  <label for="exampleSelect2">Example multiple select</label>
-  <select multiple class="form-control" id="exampleSelect2">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
+
+    <div class="form-group">
+  <label for="exampleSelect1">Catégorie 2</label>
+  <select class="form-control" id="categorie2" multiple>
+    
+    <option>Curabitur</option>
+    
+    <option selected>Maecenas vel</option>
+    
+    <option>Suspendisse maximus velit non lacus</option>
+    
+    <option selected>Sed maximus</option>
+    
+    <option>Aliquam cupiditate, vel!</option>
+    
+    <option>Nunc eget neque sit amet ipsum auctor laoreet</option>
+    
   </select>
 </div>
 
 
     <div class="form-group">
-  <label for="testInput">Adresse <span aria-hidden="true">(Requis)</span></label>
-  
-  <input class="form-control" type="text" id="testInput" name="testInput" value="" required aria-required="true">
+  <label for="testDataInput" id="testDataInputLabel">Quel est votre fruit favoris ?</label>
+  <datalist id="list">
+    <select class="form-control" name="testDataInput" aria-labelledby="testDataInputLabel">
+      
+      <option>Abricot</option>
+      
+      <option>Ananas</option>
+      
+      <option>Citron</option>
+      
+      <option>Fruit de la passion</option>
+      
+      <option>Grenade</option>
+      
+      <option>Groseille</option>
+      
+      <option>Kaki</option>
+      
+      <option>Kiwi</option>
+      
+    </select> <small id="testDataInputfallbackLabel" class="form-text">Merci de le spécifier s'il ne figure pas dans la liste</small>
+  </datalist>
+  <input id="testDataInput" class="form-control" name="state" list="list" aria-labelledby="testDataInputfallbackLabel">
 </div>
 
 
     <div class="form-group">
-  <label for="emailInput">Courriel <span aria-hidden="true">(Requis)</span></label>
+  <label for="address">Adresse <span aria-hidden="true">(Requis)</span></label>
   
-  <input class="form-control" type="email" id="emailInput" name="testInput" value="" required aria-required="true">
+  <input class="form-control" type="text" id="address" name="testInput" value="" required aria-required="true">
+</div>
+
+
+    <div class="form-group">
+  <label for="email">Courriel <span aria-hidden="true">(Requis)</span></label>
+  
+  <input class="form-control" type="email" id="email" name="testInput" value="" required aria-required="true">
 </div>
 
 
@@ -237,27 +316,25 @@
 </div>
 
 
-    <p>
-      
-    </p>
-
-  </form>
-
-
-    <nav>
+    <nav class="mb-1">
   <h3 class="sr-only">Pagination</h2>
-  <ul class="list-inline text-center">
+  <ul class="list-unstyled row mb-0">
     
-    <li class="list-inline-item"><a href="formulaire-prestation--step-2" class="btn btn-secondary vd-btn-chevron-r">Suivant</a></li>
+    <li class="col-xs-6 offset-xs-6 text-xs-left"><a href="formulaire-prestation--step-2" class="btn btn-primary vd-btn-chevron-r">Suivant</a></li>
+    
   </ul>
 </nav>
 
 
+  </form>
+
+        </div>
+      </div>
   </div>
 </main>
 <footer class="footer mt-3">
   <div class="container">
-    <a href="#" class="footer-btn-backtotop btn btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <a href="#" class="footer-btn-backtotop btn btn-sm btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
     <div class="row small">
       <nav aria-label="pied de page" class="col-xs-10">
         <ul class="nav flex-column">

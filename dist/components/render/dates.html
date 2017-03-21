@@ -9,19 +9,36 @@
     Par exemple, 23 7 1979
   </small>
   
-  <div class="vd-dates-day">
-    <label for="date-form-day">Jour</label>
-    <input id="date-form-day" class="form-control" type="number" pattern="[0-9]*" min="1" max="31" name="name" size="2" value="" aria-describedby="dates-help">
-  </div>
 
-  <div class="vd-dates-month">
-    <label for="date-form-month">Mois</label>
-    <input id="date-form-month" class="form-control" type="number" pattern="[0-9]*" min="1" max="12" name="name" size="2" value="">
-  </div>
+  <div class="vd-form-flex">
 
-  <div class="vd-dates-year">
-    <label for="date-form-year">Année</label>
-    <input id="date-form-year" class="form-control" type="number" pattern="[0-9]*" min="1950" max="2017" name="name" size="4" value="">
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      <div class="form-group">
+  <label for="inputDatesDay">Jour</label>
+  
+  <input class="form-control" type="number" id="inputDatesDay" name="testInput" value="" pattern="[0-9]*" min="1" max="31" size="2">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      <div class="form-group">
+  <label for="inputDatesMonth">Mois</label>
+  
+  <input class="form-control" type="number" id="inputDatesMonth" name="testInput" value="" pattern="[0-9]*" min="1" max="12" size="2">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      <div class="form-group">
+  <label for="inputDatesYear">Année</label>
+  
+  <input class="form-control" type="number" id="inputDatesYear" name="testInput" value="" pattern="[0-9]*" min="1950" max="2017" size="4">
+</div>
+
+    </div>
+
   </div>
 
 </fieldset>
