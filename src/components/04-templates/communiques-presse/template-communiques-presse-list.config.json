@@ -6,6 +6,11 @@
       "page": "vd.ch",
       "url": "#"
     }],
+    "search" : {
+      "id": "search",
+      "label": "Recherche par mots clefs",
+      "labelHidden": true
+    },
     "dates": {
       "from": {
         "legendModifier": "h5",
