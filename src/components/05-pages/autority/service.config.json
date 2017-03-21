@@ -96,18 +96,6 @@
         }
       ]
     },
-    "liensUtiles": {
-      "listLinks": [
-        {
-          "item": "Offres d'emplois",
-          "url": "#"
-        },
-        {
-          "item": "autres",
-          "url": "#"
-        }
-      ]
-    },
     "publications": {
       "listLinks": [
         {
