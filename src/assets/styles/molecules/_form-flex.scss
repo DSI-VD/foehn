@@ -17,6 +17,10 @@
   }
 }
 
+/**
+ * Set the width of a div containing an `<input>` with x chars (based on the
+ * width of an M).
+ */
 .vd-form-flex__item {
   flex-grow: 0;
   flex-shrink: 0;
@@ -24,14 +28,14 @@
   margin-right: $spacer;
 
   &--2-char-width {
-    flex-basis: ($font-size-base * 1.5) + ($input-padding-x * 2);
+    flex-basis: ($font-size-base * 1.8) + ($input-padding-x * 2);
   }
 
   &--3-char-width {
-    flex-basis: ($font-size-base * 2.4) + ($input-padding-x * 2);
+    flex-basis: ($font-size-base * 2.7) + ($input-padding-x * 2);
   }
 
   &--4-char-width {
-    flex-basis: ($font-size-base * 3) + ($input-padding-x * 2);
+    flex-basis: ($font-size-base * 3.6) + ($input-padding-x * 2);
   }
 }
