@@ -154,8 +154,10 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote"</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote-footer"</span>&gt;</span>Pascal Broulis, Conseil d'État de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote-footer"</span>&gt;</span>Pascal Broulis, Conseil d'État de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></pre>
         
     </code>
@@ -164,9 +166,10 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9a70a2a3689e5f1152241604b0bf91b5-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote{% if class %} {{ class }}{% endif %}"</span>&gt;</span>
+  {% if image %}{% render '<a href="image--rounded">@image--rounded</a>', image, true %}{% endif %}
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote-footer"</span>&gt;</span>Pascal Broulis, Conseil d'État de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+  {% render '<a href="citation">@citation</a>', {styleModifier: 'blockquote-footer', text:'Pascal Broulis, Conseil d\'État de Vaud'}, true %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></pre>
     </code>
 </div>
@@ -240,6 +243,17 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src/components/02-molecules/text/blockquote/blockquote.html</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="image--rounded">@<span>image--rounded</span></a>, 
+            
+                <a href="citation">@<span>citation</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
         <li class="Meta-item">

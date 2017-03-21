@@ -161,7 +161,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-f03d3ee8aa50a00175d0974279597917-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">cite</span>&gt;</span>This is a citation<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">cite{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>{{ text }}<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span></pre>
     </code>
 </div>
 
@@ -170,7 +170,9 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"This is a citation"</span>
+}</pre>
             
         
     </code>
@@ -216,6 +218,19 @@
             <span class="Meta-value">src/components/01-atoms/text/inlinetexts/citation.html</span>
         </li>
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(3)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="blockquote">@<span>blockquote</span></a>, 
+            
+                <a href="blockquote--bubble">@<span>blockquote--bubble</span></a>, 
+            
+                <a href="blockquote--bubble-media">@<span>blockquote--bubble-media</span></a>
+            
+            </span>
+        </li>
         
     </ul>
 </div>
