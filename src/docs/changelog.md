@@ -12,6 +12,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Blockquote use `<cite>` element instead of `<footer>` for references
 
+### Fix
+- Fix input width based on number of chars. Width is now based on the width of a `M` instead of a `9`.
+
 ## [0.19.0]
 
 ### Changed
