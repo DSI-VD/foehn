@@ -6,6 +6,42 @@
       "page": "vd.ch",
       "url": "#"
     }],
+    "dates": {
+      "from": {
+        "legendModifier": "h5",
+        "legend": "Publié du",
+        "helpText": false,
+        "inputDay": {
+          "labelHidden": true,
+          "placeholder": "JJ"
+        },
+        "inputMonth": {
+          "labelHidden": true,
+          "placeholder": "MM"
+        },
+        "inputYear": {
+          "labelHidden": true,
+          "placeholder": "YYYY"
+        }
+      },
+      "to": {
+        "legendModifier": "h5",
+        "legend": "au",
+        "helpText": false,
+        "inputDay": {
+          "labelHidden": true,
+          "placeholder": "JJ"
+        },
+        "inputMonth": {
+          "labelHidden": true,
+          "placeholder": "MM"
+        },
+        "inputYear": {
+          "labelHidden": true,
+          "placeholder": "YYYY"
+        }
+      }
+    },
     "autorityAddress": {
       "name": "Bureau d'information et de communication",
       "address": {
