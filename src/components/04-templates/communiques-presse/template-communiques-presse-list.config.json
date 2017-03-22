@@ -54,11 +54,13 @@
         "postal-code": "1014",
         "locality": "Lausanne"
       },
-      "list-icon": [{
-        "item": "voir sur la carte",
-        "icon": "fa-map-marker",
-        "url": "#"
-      }],
+      "listIcon": [
+        {
+          "item": "voir sur la carte",
+          "icon": "fa-map-marker",
+          "url": "#"
+        }
+      ],
       "button": "@autority-address.button"
     }
   },
