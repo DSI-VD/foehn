@@ -10,8 +10,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Use news-latest--media organim instead of project-list in service page
 - Blockquote use `<cite>` element instead of `<footer>` for references
 - teaser-small--alt use headings font
+
+## Added
+- Add news-latest--media organim
 
 ### Fix
 - Fix input width based on number of chars. Width is now based on the width of a `M` instead of a `9`.
