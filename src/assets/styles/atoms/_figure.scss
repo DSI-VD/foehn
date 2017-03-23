@@ -1,0 +1,11 @@
+/**
+ * Fix for Firefox ESR 45
+ *
+ * When using Figures in a grid, it doesn't fit the width of the container.
+ * More info here https://github.com/twbs/bootstrap/issues/21886
+ * and here http://issuetracker.etat-de-vaud.ch/outils/jira/browse/CCWEB-9700
+ */
+
+.figure {
+  display: block;
+}
