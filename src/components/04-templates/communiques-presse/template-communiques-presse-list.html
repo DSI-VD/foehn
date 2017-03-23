@@ -7,22 +7,18 @@
     <form class="form">
       <div class="row">
         <div class="col-md-4">
-          <fieldset>
-            <legend class="h5" aria-hidden="true">Recherche</legend>
             {% render '@input--default', search, true %}
-          </fieldset>
         </div>
         <div class="col-md-8 hidden-sm-down">
           <div class="row">
-            <div class="col-xs-6 mb-1">
+            <div class="col-6">
               {% render '@dates', dates.from, true %}
             </div>
-            <div class="col-xs-6 mb-1">
+            <div class="col-6">
               {% render '@dates', dates.to, true %}
             </div>
           </div>
         </div>
-
       </div>
       <button type="submit" class="btn btn-primary vd-btn-chevron-r">Rechercher</button>
     </form>

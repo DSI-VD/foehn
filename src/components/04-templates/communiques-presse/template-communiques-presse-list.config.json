@@ -8,8 +8,9 @@
     }],
     "search" : {
       "id": "search",
-      "label": "Rechercher les communiqués de presse",
-      "labelHidden": false
+      "label": "Rechercher<span class=\"sr-only\"> les communiqués de presse</span>",
+      "labelHidden": false,
+      "labelStyleModifier": "h5 d-block"
     },
     "dates": {
       "from": {
