@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Renamed teaser-list component in teaser-alt-list
 - Use news-latest--media organim instead of project-list in service page
 - Blockquote use `<cite>` element instead of `<footer>` for references
 - teaser-small--alt use headings font
