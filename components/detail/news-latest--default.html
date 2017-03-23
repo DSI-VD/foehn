@@ -225,7 +225,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-abf0bfb595b3dadbfc5a20506141f247-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">id</span> %} <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-section-title"</span>&gt;</span>Actualités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
   {% render '<a href="teaser--media">@teaser--media</a>' %}
