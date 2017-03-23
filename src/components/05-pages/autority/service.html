@@ -15,9 +15,9 @@
 
   {% render '@separator--gray-bars-wide', {styleModifier: 'mb-3'}, true %}
 
-  {% render '@news-latest' %}
+  {% render '@news-latest', {id: 'actualites'}, true %}
 
-  {% render '@projects-list', {title:'Projets et activités'}, true  %}
+  {% render '@projects-list', {title:'Projets et activités', id: 'projetsEtActivites'}, true  %}
 
   <section class="mb-3">
     <h2 class="vd-section-title" id="organisation">Organisation</h2>
