@@ -23,7 +23,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix input width based on number of chars. Width is now based on the width of a `M` instead of a `9`.
 
 ### Removed
-
+- Remove teaser-alternate--default component
+- Remove teaser-alternate--2-3_1-3 component
 - Remove projects-list component
 
 ## [0.19.0]
