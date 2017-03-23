@@ -1,3 +1,20 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "title": "Actualités"
+    },
+    "variants": [
+      {
+        "name": "homepage",
+        "context": {
+          "homepage": true
+        }
+      },
+      {
+        "name": "media",
+        "context": {
+          "media": true
+        }
+      }
+    ]
 }
