@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change HTML structure of search in template-communiques-presse-list--default
 - Change of meta information in teaser components and variants
 - Renamed news-latest component in teaser-list
 - Renamed teaser-list component in teaser-alt-list
