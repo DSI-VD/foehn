@@ -16,7 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Blockquote use `<cite>` element instead of `<footer>` for references
 - teaser-small--alt use headings font
 
-## Added
+### Added
 - Add news-latest--media organim
 
 ### Fix
