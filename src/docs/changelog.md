@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change of meta information in teaser components and variants
 - Renamed news-latest component in teaser-list
 - Renamed teaser-list component in teaser-alt-list
 - Use news-latest--media organim instead of project-list in service page
@@ -23,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix input width based on number of chars. Width is now based on the width of a `M` instead of a `9`.
 
 ### Removed
+- Remove `.vd-teaser-meta` class
 - Remove teaser-alternate--default component
 - Remove teaser-alternate--2-3_1-3 component
 - Remove projects-list component
