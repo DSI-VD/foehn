@@ -8,8 +8,8 @@
     }],
     "search" : {
       "id": "search",
-      "label": "Recherche par mots clefs",
-      "labelHidden": true
+      "label": "Rechercher les communiqués de presse",
+      "labelHidden": false
     },
     "dates": {
       "from": {
@@ -17,14 +17,17 @@
         "legend": "Publié du",
         "helpText": false,
         "inputDay": {
+          "id": "fromDatesDay",
           "labelHidden": true,
           "placeholder": "JJ"
         },
         "inputMonth": {
+          "id": "fromDatesMonth",
           "labelHidden": true,
           "placeholder": "MM"
         },
         "inputYear": {
+          "id": "fromDatesyear",
           "labelHidden": true,
           "placeholder": "YYYY"
         }
@@ -34,14 +37,17 @@
         "legend": "au",
         "helpText": false,
         "inputDay": {
+          "id": "toDatesDay",
           "labelHidden": true,
           "placeholder": "JJ"
         },
         "inputMonth": {
+          "id": "toDatesMonth",
           "labelHidden": true,
           "placeholder": "MM"
         },
         "inputYear": {
+          "id": "toDatesYear",
           "labelHidden": true,
           "placeholder": "YYYY"
         }
