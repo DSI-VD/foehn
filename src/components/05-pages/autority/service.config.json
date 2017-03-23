@@ -13,6 +13,39 @@
         "url": "#"
       }
     ],
+    "indexMenu": {
+      "styleModifier": "mb-3",
+      "listLinks": [
+        {
+          "item": "Actualités",
+          "url": "#actualites"
+        },
+        {
+          "item": "Projets et activités",
+          "url": "#projetsEtActivites"
+        },
+        {
+          "item": "Organisation",
+          "url": "#organisation"
+        },
+        {
+          "item": "Préstations",
+          "url": "#presentations"
+        },
+        {
+          "item": "Bases légales",
+          "url": "#basesLegales"
+        },
+        {
+          "item": "Publications",
+          "url": "#publication"
+        },
+        {
+          "item": "Offres d'emploi",
+          "url": "#offresDEmploi"
+        }
+      ]
+    },
     "organisation": {
       "links": {
         "listLinks": [

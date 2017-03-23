@@ -11,6 +11,8 @@
       provident illo quibusdam, unde, maxime!</p>
   </section>
 
+  {% render '@index-menu', indexMenu %}
+
   {% render '@separator--gray-bars-wide', {styleModifier: 'mb-3'}, true %}
 
   {% render '@news-latest' %}
@@ -18,29 +20,29 @@
   {% render '@projects-list', {title:'Projets et activités'}, true  %}
 
   <section class="mb-3">
-    <h2 class="vd-section-title">Organisation</h2>
+    <h2 class="vd-section-title" id="organisation">Organisation</h2>
     {% render '@card' %}
     {% render '@list-links', organisation.links %}
   </section>
 
   <section class="mb-3">
-    <h2 class="vd-section-title">Préstations</h2>
+    <h2 class="vd-section-title" id="prestations">Préstations</h2>
     {% render '@list-links',
     prestations %}
     {% render '@button--default', {text:"Toutes les préstations"}, true %}
   </section>
 
-  <section class="mb-3">
-    <h2 class="vd-section-title">Base légales</h2>
+  <section class="mb-3" id="baseslegales">
+    <h2 class="vd-section-title">Bases légales</h2>
     {% render '@list-links' %}
   </section>
 
-  <section class="mb-3">
+  <section class="mb-3" id="publications">
     <h2 class="vd-section-title">Publications</h2>
     {% render '@list-links', publications %}
   </section>
 
-  <section class="mb-3">
+  <section class="mb-3" id="offresdemplois">
     <h2 class="vd-section-title">Offres d'emploi</h2>
     {% render '@list-links', offres %}
   </section>

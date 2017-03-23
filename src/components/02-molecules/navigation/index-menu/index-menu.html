@@ -1,4 +1,4 @@
-<nav>
+<nav{% if styleModifier %} class="{{ styleModifier }}"{% endif %}>
   <h2>Sommaire</h2>
   {% include '@list-links' %}
 </nav>
