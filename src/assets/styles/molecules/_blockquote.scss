@@ -1,5 +1,6 @@
 @charset 'UTF-8';
 
+blockquote,
 .blockquote {
   position: relative;
   padding-left: $spacer * 4;
@@ -23,10 +24,20 @@
   }
 }
 
+blockquote cite,
 .blockquote-footer {
   &:before {
     content: none;
   }
+}
+
+/**
+ * Apply the bootstrap style on native tags
+ */
+blockquote cite {
+  display: block;
+  font-size: 80%; // back to default font-size
+  color: $blockquote-small-color;
 }
 
 .blockquote-reverse {
