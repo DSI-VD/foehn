@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change search form grid in template-communiques-presse-list template
 - Apply the bootstrap style on `blockquote` and `blockquote > cite`
 - Change HTML structure of search in template-communiques-presse-list--default
 - Change of meta information in teaser components and variants

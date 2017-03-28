@@ -2,14 +2,16 @@
 
 {% include '@page-title-banner' %}
 
-<div class="vd-bg-pattern-bars-gray py-1 mt-1">
+<div class="vd-bg-pattern-bars-g
+ay py-
+ mt-1">
   <div class="container">
     <form class="form">
       <div class="row">
-        <div class="col-md-4">
-            {% render '@input--default', search, true %}
+        <div class="col-lg-3 col-xl-4">
+          {% render '@input--default', search, true %}
         </div>
-        <div class="col-md-8 hidden-sm-down">
+        <div class="col-lg-9 col-xl-8 hidden-sm-down">
           <div class="row">
             <div class="col-6">
               {% render '@dates', dates.from, true %}
