@@ -18,6 +18,22 @@
             "url": "#"
           }
         ],
-        "updateTime": true
+        "updateTime": true,
+        "index": {
+          "listLinks": [
+            {
+              "item": "En ligne",
+              "url": "#1"
+            },
+            {
+              "item": "Au guichet",
+              "url": "#2"
+            },
+            {
+              "item": "Par courrier",
+              "url": "#3"
+            }
+          ]
+        }
     }
 }
