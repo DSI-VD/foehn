@@ -29,6 +29,10 @@
       background-color: rgba($vd-green-dark-2, 0.15);
     }
 
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow);
+    }
+
     &:active {
       top: 2px;
       left: 2px;
