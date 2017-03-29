@@ -24,4 +24,13 @@ a {
   &.h6 {
     color: currentColor;
   }
+
+  /**
+   * Focus style
+   */
+  &:focus {
+    background-color: $vd-focus;
+    outline: 3px solid $vd-focus;
+    color: $body-bg;
+  }
 }

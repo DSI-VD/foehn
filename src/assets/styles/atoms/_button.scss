@@ -16,6 +16,10 @@ textarea {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 
+  &:focus {
+    @include box-shadow($btn-focus-box-shadow);
+  }
+
   &[data-toggle="collapse"] {
     @extend .vd-btn-chevron-b;
 
