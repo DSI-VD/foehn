@@ -28,3 +28,9 @@
   background-repeat: repeat;
   background-size: #{$viewbox-x}px #{$viewbox-y}px;
 }
+
+@mixin vd-focus() {
+  background-color: $vd-focus;
+  outline: 3px solid $vd-focus;
+  color: $body-bg;
+}

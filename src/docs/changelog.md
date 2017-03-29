@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change nav-primary HTML to apply properly `:focus` style
 - Font size do not change on mobile
 - Change search form grid in template-communiques-presse-list template
 - Apply the bootstrap style on `blockquote` and `blockquote > cite`

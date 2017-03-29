@@ -9,8 +9,12 @@
   .vd-domain-item-title {
     font-weight: 300; /* [1] */
   }
+}
 
-  .vd-domain-item-text {
-    color: $gray;
-  }
+.vd-domain-item-text {
+  color: $gray;
+}
+
+:focus .vd-domain-item-text {
+  @include vd-focus;
 }
