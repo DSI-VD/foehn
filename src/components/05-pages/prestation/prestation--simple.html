@@ -16,8 +16,6 @@
   <section id="1" class="mb-3">
     <h2>En ligne</h2>
 
-    <h3>Marche à suivre</h3>
-
     <p>Pour commander un extrait du registre des poursuites en ligne, nous vous prions de prendre connaissance des conditions suivantes :</p>
     <ul>
       <li>Le demandeur ne peut requérir la délivrance d'un extrait que pour lui-même.</li>
@@ -28,28 +26,6 @@
       <li>La commande est traitée dans les trois jours ouvrables. L'extrait, qui comporte une signature originale, est envoyé par courrier A.</li>
       <li>Remarque: si vous ne remplissez pas les conditions mentionnées ci-dessus, l’extrait ne pourra pas être délivré. Vous en serez informé par courrier. Les frais ne seront pas remboursés.</li>
     </ul>
-
-    <h3>Recomandations à l'usager</h3>
-
-    <div class="vd-highlight">
-      <h4>Documents obligatoires</h4>
-      <ol>
-        <li>Pièce d’identité ou permis de séjour pour les personnes étrangères</li>
-        <li>Copie du registre du commerce pour les entreprises</li>
-      </ol>
-
-      <h4>Prix</h4>
-      <ul>
-        <li>17.-</li>
-        <li>En cas d’envoi par poste, rajouter 1.-</li>
-      </ul>
-
-      <h4>Réception de l’extrait</h4>
-      <ul>
-        <li>En cas de commande par courrier ou en ligne comptez trois jours ouvrables</li>
-        <li>En cas de commande au guichet, l’extrait est délivré de suite</li>
-      </ul>
-    </div>
 
     <p class="text-center mb-3">
       <a href="../formulaire-prestation" class="btn btn-success mt-2"><span class="fa fa-lock" aria-hidden="true"></span> Commencer</a>
@@ -80,19 +56,39 @@
     <p>Parallèlement à votre requête, vous devez verser la somme de CHF 18.00 (art. 12a OELP) sur le compte postal de l'office (le no de compte postal figure sur la page "contact" de l'office des poursuites compétent).</p>
     <p>Remarque: si vous ne remplissez pas les conditions mentionnées ci-dessus, l’extrait ne pourra pas être délivré. Vous en serez informé par courrier. Les frais ne seront pas remboursés.</p>
   </section>
+
+  <section class="mb-3">
+    <h2>Recomandations et informations</h2>
+      <div class="vd-highlight mb-1">
+      <h3>Documents obligatoires</h3>
+      <ol>
+        <li>Pièce d’identité ou permis de séjour pour les personnes étrangères</li>
+        <li>Copie du registre du commerce pour les entreprises</li>
+      </ol>
+
+      <h3>Prix</h3>
+      <ul>
+        <li>17.-</li>
+        <li>En cas d’envoi par poste, rajouter 1.-</li>
+      </ul>
+
+      <h3>Réception de l’extrait</h3>
+      <ul>
+        <li>En cas de commande par courrier ou en ligne comptez trois jours ouvrables</li>
+        <li>En cas de commande au guichet, l’extrait est délivré de suite</li>
+      </ul>
+    </div>
+
+    <h3>Références et textes légaux</h3>
+    {% render '@list-links' %}
+
+    <h3>Pages et formulaires en relation</h3>
+    {% render '@list-links' %}
+
+    <h3>Préstations en relation</h3>
+    {% render '@list-links' %}
+  </section>
 {% endblock %}
 {% block aside %}
   {% render '@autority-address' %}
-
-  <h2 class="vd-section-title mt-3 ">Prestations en relation</h2>
-  <ul class="vd-list-links">
-    <li><a href="#0">Obtenir un extrait du registre des faillites pour soi-même</a></li>
-    <li><a href="#0">Obtenir un extrait des registres des poursuites sur un tiers</a></li>
-    <li><a href="#0">Obtenir un extrait des registres des faillites sur un tiers</a></li>
-  </ul>
-
-  <h2 class="vd-section-title mt-3 ">Publication</h2>
-  <ul class="vd-list-icons">
-    <li><span class="fa fa-file-pdf-o" aria-hidden="true"></span><a href="www.vd.ch/fileadmin/user_upload/themes/economie_emploi/poursuites_faillites/D%C3%A9pliants/depliant-commande-extrait-registre-poursuites.pdf">Commander un extrait du registre des poursuites pour soi-même</a></li>
-  </ul>
 {% endblock %}

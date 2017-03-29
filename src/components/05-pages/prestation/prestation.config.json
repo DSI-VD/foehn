@@ -22,16 +22,20 @@
         "index": {
           "listLinks": [
             {
-              "item": "En ligne",
+              "item": "Obtenir la prestation en ligne",
               "url": "#1"
             },
             {
-              "item": "Au guichet",
+              "item": "Obtenir la prestation au guichet",
               "url": "#2"
             },
             {
-              "item": "Par courrier",
+              "item": "Obtenir la prestation par courrier",
               "url": "#3"
+            },
+            {
+              "item": "Recomandations et informations",
+              "url": "#4"
             }
           ]
         }
