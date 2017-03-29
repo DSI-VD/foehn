@@ -1,7 +1,0 @@
-@charset 'UTF-8';
-
-html {
-  @include media-breakpoint-down(sm) {
-    font-size: $font-size-base * 0.9;
-  }
-}
