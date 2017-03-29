@@ -90,5 +90,8 @@
   </section>
 {% endblock %}
 {% block aside %}
-  {% render '@autority-address' %}
+  <h2 class="sr-only">{{ contact.text }}</h2>
+  <p>
+    {% render '@button--default', contact, true %}
+  </p>
 {% endblock %}
