@@ -26,16 +26,10 @@ li > ul {
 .vd-list-links {
   padding-left: $spacer;
   list-style-type: square;
-  font-size: $font-size-base * 0.9;
   color: $black;
 
   li {
     margin-bottom: 0;
-  }
-
-  a {
-    font-weight: 500;
-    text-decoration: none;
   }
 }
 
