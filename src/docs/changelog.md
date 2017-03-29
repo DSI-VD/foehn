@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - teaser-small--alt use headings font
 
 ### Added
+- Add a variant of prestation page
 - Add news-latest--media organim
 
 ### Fix
