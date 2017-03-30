@@ -48,6 +48,10 @@
 .vd-link-invisible {
   color: currentColor;
   text-decoration: none;
+
+  &:hover {
+    color: currentColor;
+  }
 }
 
 .vd-font-familiy-headings {
