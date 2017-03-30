@@ -10,11 +10,18 @@ textarea {
   font-family: $font-family-base;
 }
 
+/**
+ * Button
+ */
 .btn {
   white-space: normal;
   padding-top: $btn-padding-y * 1.1;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:focus {
     @include box-shadow($btn-focus-box-shadow);
