@@ -20,7 +20,7 @@ a {
     @include vd-focus; /* [2] */
   }
 
-  &:visited {
+  &:visited:not(.btn) {
     color: $vd-gray; /* [3] */
   }
 
