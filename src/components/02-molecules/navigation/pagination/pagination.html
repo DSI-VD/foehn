@@ -1,8 +1,8 @@
-<nav class="mb-1">
+<nav>
   <h3 class="sr-only">Pagination</h2>
-  <ul class="list-unstyled row mb-0">
-    {% if previous %}<li class="col-xs-6 text-xs-right"><a href="{{ previous.url }}" class="btn btn-secondary vd-btn-chevron-l">{{ previous.text }}</a></li>{% endif %}
-    {% if next %}<li class="col-xs-6{% if not previous %} offset-xs-6{% endif %} text-xs-left"><a href="{{ next.url }}" class="btn btn-primary vd-btn-chevron-r">{{ next.text }}</a></li>{% endif %}
-    {% if submit %}<li class="col-xs-6 text-xs-left">{% render '@button--form' %}</li>{% endif %}
+  <ul class="list-unstyled d-flex justify-content-start flex-wrap mb-0">
+    {% if previous %}<li class="pr-1"><a href="{{ previous.url }}" class="btn btn-secondary vd-btn-chevron-l">{{ previous.text }}</a></li>{% endif %}
+    {% if next %}<li class="ml-auto"><a href="{{ next.url }}" class="btn btn-primary vd-btn-chevron-r">{{ next.text }}</a></li>{% endif %}
+    {% if submit %}<li class="ml-auto">{% render '@button--form' %}</li>{% endif %}
   </ul>
 </nav>
