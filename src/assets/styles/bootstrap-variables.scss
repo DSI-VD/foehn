@@ -185,7 +185,7 @@ $inverse-color: $gray-lighter !default;
 
 $link-color:            $vd-green-dark !default;
 $link-decoration:       none !default;
-$link-hover-color:      darken($link-color, 10%) !default;
+$link-hover-color:      $vd-green-dark !default;
 $link-hover-decoration: underline !default;
 
 

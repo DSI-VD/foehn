@@ -10,7 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Align pagination on the sides of the containers 
+- Change color and decoration of links
+- Align pagination on the sides of the containers
 - Change nav-primary HTML to apply properly `:focus` style
 - Font size do not change on mobile
 - Change search form grid in template-communiques-presse-list template
