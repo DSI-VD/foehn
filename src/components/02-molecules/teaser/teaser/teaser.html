@@ -1,4 +1,4 @@
-<article role="article" aria-label="{{ title }}">
+<article role="article" aria-label="{{ title }}" class="mb-3">
   <header>
     <h3><a class="vd-link-invisible" href="{{ url }}" title="Lire l'article: {{title}}">{{ title }}</a></h3>
 
@@ -18,9 +18,9 @@
       {% endif -%}
     </p>
   </header>
-
-
+  {% if media %}
   {% render '@figure', media, true %}
+  {% endif %}
   <p>
     {{ excerpt }}
   </p>
