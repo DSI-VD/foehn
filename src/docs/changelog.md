@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change presentation of prestation page
 - Change color and decoration of links
 - Align pagination on the sides of the containers
 - Change nav-primary HTML to apply properly `:focus` style
@@ -25,7 +26,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - teaser-small--alt use headings font
 
 ### Added
-- Add a variant of prestation page
 - Add news-latest--media organim
 
 ### Fix

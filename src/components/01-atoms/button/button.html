@@ -1,1 +1,1 @@
-<a href="{{ href }}" title="{{ title }}" class="{{ class }}">{{ text }}</a>
+<a href="{{ href }}" title="{{ title }}" class="{{ class }}">{% if icon %}<span class="fa {{ icon }}" aria-hidden="true"></span>  {% endif %}{{ text }}</a>
