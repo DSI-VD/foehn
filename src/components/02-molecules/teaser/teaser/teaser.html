@@ -1,5 +1,35 @@
-<article class="vd-teaser{% if styleModifier %} {{ styleModifier}}{% endif %}">
+{# <article class="vd-teaser{% if styleModifier %} {{ styleModifier}}{% endif %}">
   <h3 class="mb-2 text-center"><a href="actualite" class="vd-link-invisible">Lorem ipsum dolor sit amet</a></h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <p class="small"><span class="sr-only">Date de publication: </span>{% include '@time' %}</p>
+</article> #}
+
+<article role="article" aria-label="{{ title }}">
+  <header>
+    <h3><a class="vd-link-invisible" href="{{ url }}" title="Lire l'article: {{title}}">{{ title }}</a></h3>
+
+    <p class="small">
+      {% if authors -%}<span class="sr-only">Publié par </span>
+      {%- for author in authors -%}{% if author.url %}<a href="#" rel="author" title="Les articles de {{ author.name }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif -%}
+      {%- if loop.revindex == 2 %} et {% elseif loop.last %}{% else %}, {% endif %}
+      {%- endfor %},
+      {% endif -%}
+
+      <span class="sr-only">le </span>{%- render '@time', {"attributs": [{},{"name": "pubdate"}]}, true -%}
+
+      {%- if categories -%} — <span class="sr-only">Catégorie: </span>
+      {%- for category in categories -%}{% if category.url %}<a href="#" rel="category" title="Les articles de la categorie {{ category.name }}">{% endif %}{{ category.name }}{% if category.url %}</a>{% endif -%}
+      {%- if loop.revindex == 2 %} et {% elseif loop.last %}{% else %}, {% endif %}
+      {%- endfor %}
+      {% endif -%}
+    </p>
+  </header>
+
+  {% render '@figure' %}
+
+  <p>
+    {{ excerpt }}
+  </p>
+
 </article>
