@@ -153,7 +153,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-446b8bc57e8bc02b99ffa5b31f3db665-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2001-12-06T19:00"</span>&gt;</span>06.12.2016<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2017-03-31T13:05:23+00:00"</span>&gt;</span>31.03.2017<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -161,7 +161,9 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-446b8bc57e8bc02b99ffa5b31f3db665-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2001-12-06T19:00"</span>&gt;</span>06.12.2016<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">time{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">attributs</span> <span class="hljs-attr">-</span>%}
+  {% <span class="hljs-attr">for</span> <span class="hljs-attr">attribut</span> <span class="hljs-attr">in</span> <span class="hljs-attr">attributs</span> %} {{ <span class="hljs-attr">attribut.name</span> }}{% <span class="hljs-attr">if</span> <span class="hljs-attr">attribut.value</span> %}=<span class="hljs-string">"{{ attribut.value }}"</span>{% <span class="hljs-attr">endif</span> %}{% <span class="hljs-attr">endfor</span> <span class="hljs-attr">-</span>%}
+{%<span class="hljs-attr">-</span> <span class="hljs-attr">endif</span> %}&gt;</span>{{ text }}<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span></pre>
     </code>
 </div>
 
@@ -170,7 +172,15 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"31.03.2017"</span>,
+  <span class="hljs-attr">"attributs"</span>: [
+    {
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"datetime"</span>,
+      <span class="hljs-attr">"value"</span>: <span class="hljs-string">"2017-03-31T13:05:23+00:00"</span>
+    }
+  ]
+}</pre>
             
         
     </code>
