@@ -1,20 +1,9 @@
 <section class="mb-3"{% if id %} id="{{ id }}"{% endif %}>
   <h2 class="vd-section-title">{{ title }}</h2>
 
-  {% if media %}
-
-  {% for i in range(0, 5) %}
-  {% render '@teaser--media' %}
+  {% for teaser in teasers %}
+  {% render '@teaser--default', teaser, true %}
   {% endfor %}
-
-  {% else %}
-
-  {% render '@teaser--media' %}
-  {% for i in range(0, 4) %}
-  {% include '@teaser' %}
-  {% endfor %}
-
-  {% endif %}
 
   {% if homepage %}
   <h3 class="sr-only">Autres actualités</h3>
