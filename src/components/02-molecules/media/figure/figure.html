@@ -1,13 +1,15 @@
 <figure class="figure">
-    {% if image.source %}
+    {%- if image.source -%}
     <picture class="figure-img">
-      {% for item in image.source %}
+      {% for item in image.source -%}
       <source media="{{ item.media }}" srcset="{{ item.srset }}">
-      {% endfor %}
-      {% render '@image-responsive', image.default %}
+      {%- endfor %}
+      {% render '@image-responsive', image.default -%}
     </picture>
-    {% else %}
+    {%- else %}
     {% render '@image-responsive', image.default %}
     {% endif %}
-  <figcaption class="figure-caption">Ceci est une légende <span class="vd-figure-credits">Photo JACQUES ANDRÉ</span></figcaption>
+  {% if caption -%}
+  <figcaption class="figure-caption">{{ caption.text }}{% if caption.credit %}<span class="vd-figure-credits">{{ caption.credit }}</span>{% endif %}</figcaption>
+  {%- endif %}
 </figure>
