@@ -1,13 +1,61 @@
 {
     "status": "ready",
     "context": {
-      "title": "Actualités"
+      "title": "Actualités",
+      "teasers": [
+        {
+          "title": "Ut condimentum magna a ornare pulvinar",
+          "authors": false
+        },
+        {
+          "title": "Etiam vehicula ligula nec convallis fringilla",
+          "authors": false
+        },
+        {
+          "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
+          "authors": false
+        },
+        {
+          "title": "Duis lobortis arcu vel leo iaculis pretium",
+          "authors": false
+        },
+        {
+          "title": "Morbi fermentum libero at commodo gravida",
+          "authors": false
+        }
+      ]
     },
     "variants": [
       {
         "name": "homepage",
         "context": {
-          "homepage": true
+          "homepage": true,
+          "teasers": [
+            {
+              "title": "Ut condimentum magna a ornare pulvinar",
+              "authors": false
+            },
+            {
+              "title": "Etiam vehicula ligula nec convallis fringilla",
+              "authors": false,
+              "media": false
+            },
+            {
+              "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
+              "authors": false,
+              "media": false
+            },
+            {
+              "title": "Duis lobortis arcu vel leo iaculis pretium",
+              "authors": false,
+              "media": false
+            },
+            {
+              "title": "Morbi fermentum libero at commodo gravida",
+              "authors": false,
+              "media": false
+            }
+          ]
         }
       },
       {
