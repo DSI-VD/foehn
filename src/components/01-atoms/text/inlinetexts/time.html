@@ -1,1 +1,3 @@
-<time datetime="2001-12-06T19:00">06.12.2016</time>
+<time{% if attributs -%}
+  {% for attribut in attributs %} {{ attribut.name }}{% if attribut.value %}="{{ attribut.value }}"{% endif %}{% endfor -%}
+{%- endif %}>{{ text }}</time>
