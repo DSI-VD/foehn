@@ -13,16 +13,20 @@
               "image": {
                 "source": [
                   {
+                    "media": "(min-width: 60em)",
+                    "srset": "../../assets/img/picture-1600x1067.jpg"
+                  },
+                  {
                     "media": "(min-width: 40em)",
-                    "srset": "http://www.vd.ch/uploads/_processed_/8/f/csm_bilan-criminalite-2016-web_f54349ebd9.jpg"
+                    "srset": "../../assets/img/picture-960x640.jpg"
                   },
                   {
                     "media": "(min-width: 20em)",
-                    "srset": "http://www.vd.ch/uploads/_processed_/8/f/csm_bilan-criminalite-2016-web_d2282462bc.jpg"
+                    "srset": "../../assets/img/picture-640x427.jpg"
                   }
                 ],
                 "default": {
-                  "src": "http://www.vd.ch/uploads/_processed_/8/f/csm_bilan-criminalite-2016-web_d2282462bc.jpg",
+                  "src": "../../assets/img/picture-640x427.jpg",
                   "alt": "Alternative text"
                 }
               }
