@@ -154,20 +154,13 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure"</span>&gt;</span>
-
     <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-img"</span>&gt;</span>
-
         <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 60em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/1600x1067/ACCBE8/ffffff?text=eXtra Large|1600x1067"</span>&gt;</span>
-
         <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 40em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/960x640/ACCBE8/ffffff?text=Large|960x640"</span>&gt;</span>
-
         <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 20em)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://placehold.it/640x427/F1BF9F/ffffff?text=Medium|640x427"</span>&gt;</span>
-
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span>
-
     <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>Ceci est une légende <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-figure-credits"</span>&gt;</span>Photo JACQUES ANDRÉ<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>Ceci est une légende<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-figure-credits"</span>&gt;</span>Crédit photo<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></pre>
         
     </code>
@@ -177,17 +170,19 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-2bfd871cd92c5e75d00453b9ec7eeaad-panel-view">
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure"</span>&gt;</span>
-    {% if image.source %}
+    {%- if image.source -%}
     <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-img"</span>&gt;</span>
-      {% for item in image.source %}
+      {% for item in image.source -%}
       <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"{{ item.media }}"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"{{ item.srset }}"</span>&gt;</span>
-      {% endfor %}
-      {% render '<a href="image-responsive">@image-responsive</a>', image.default %}
+      {%- endfor %}
+      {% render '<a href="image-responsive">@image-responsive</a>', image.default -%}
     <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
-    {% else %}
+    {%- else %}
     {% render '<a href="image-responsive">@image-responsive</a>', image.default %}
     {% endif %}
-  <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>Ceci est une légende <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-figure-credits"</span>&gt;</span>Photo JACQUES ANDRÉ<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+  {% if caption -%}
+  <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>{{ caption.text }}{% if caption.credit %}<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-figure-credits"</span>&gt;</span>{{ caption.credit }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+  {%- endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></pre>
     </code>
 </div>
@@ -248,21 +243,6 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
-            <span class="Meta-value Meta-value--linkList">
-            
-                <a href="figure--default">
-                    <span>Default</span>
-                </a>, 
-            
-                <a href="figure--category">
-                    <span>Category</span>
-                </a>
-            
-            </span>
-        </li>
-        
-        <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
@@ -295,18 +275,12 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(5)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(2)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="teaser">@<span>teaser</span></a>, 
             
-                <a href="media-list">@<span>media-list</span></a>, 
-            
-                <a href="teaser--left">@<span>teaser--left</span></a>, 
-            
-                <a href="teaser--media">@<span>teaser--media</span></a>, 
-            
-                <a href="news-detail">@<span>news-detail</span></a>
+                <a href="media-list">@<span>media-list</span></a>
             
             </span>
         </li>
@@ -2446,21 +2420,10 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-figure">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Figure</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="figure--default" data-pjax>
-                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2477,35 +2440,6 @@
 
 
             </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="figure--category" data-pjax>
-                <span>Category</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -2966,21 +2900,10 @@
             
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser" data-pjax>
                 <span>Teaser</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="teaser--default" data-pjax>
-                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2997,59 +2920,6 @@
 
 
             </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="teaser--left" data-pjax>
-                <span>Left</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="teaser--media" data-pjax>
-                <span>Media</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -4096,30 +3966,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="teaser-list--homepage" data-pjax>
                 <span>Homepage</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="teaser-list--media" data-pjax>
-                <span>Media</span>
                 
 
 <div class="Status Status--unlabelled">

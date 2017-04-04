@@ -80,6 +80,9 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.19.0...HEAD">Unreleased</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
+<li>Service page use only teaser-list–default</li>
+<li>Use teaser–default component in news-list page</li>
+<li>Update layout and improve a11y of teaser–default</li>
 <li>Change presentation of prestation page</li>
 <li>Change color and decoration of links</li>
 <li>Align pagination on the sides of the containers</li>
@@ -106,6 +109,9 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 </ul>
 <h3 id="removed">Removed</h3>
 <ul>
+<li>Remove figure–caption component</li>
+<li>Remove teaser–left component</li>
+<li>Remove teaser–media component</li>
 <li>Remove <code>.vd-teaser-meta</code> class</li>
 <li>Remove teaser-alternate–default component</li>
 <li>Remove teaser-alternate–2-3_1-3 component</li>
@@ -3058,21 +3064,10 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-figure">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/figure" data-pjax>
                 <span>Figure</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/figure--default" data-pjax>
-                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3089,35 +3084,6 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 
 
             </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/figure--category" data-pjax>
-                <span>Category</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -3578,21 +3544,10 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
             
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/teaser" data-pjax>
                 <span>Teaser</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/teaser--default" data-pjax>
-                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3609,59 +3564,6 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 
 
             </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/teaser--left" data-pjax>
-                <span>Left</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/teaser--media" data-pjax>
-                <span>Media</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -4708,30 +4610,6 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/teaser-list--homepage" data-pjax>
                 <span>Homepage</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/teaser-list--media" data-pjax>
-                <span>Media</span>
                 
 
 <div class="Status Status--unlabelled">
