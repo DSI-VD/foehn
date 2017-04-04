@@ -184,11 +184,12 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
         WebFont.load({
             custom: {
-                families: [<span class="hljs-string">'Graphik:n5,n4,i4'</span>, <span class="hljs-string">'Produkt:n3,i3,n7,n5'</span>],
+                families: [<span class="hljs-string">'Graphik:n4,i4,n5'</span>, <span class="hljs-string">'Produkt:n3,i3,n5,n7'</span>],
                 urls: [<span class="hljs-string">'../../assets/fonts/fonts.css'</span>]
             }
         });
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
@@ -226,14 +227,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"{{ '/assets/scripts/vendors.js' | path }}"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-      WebFont.load({
-        custom: {
-          families: [<span class="hljs-string">'Graphik:n5,n4,i4'</span>, <span class="hljs-string">'Produkt:n3,i3,n7,n5'</span>],
-          urls: [<span class="hljs-string">'{{ '</span>/assets/fonts/fonts.css<span class="hljs-string">' | path }}'</span>]
-        }
-      });
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    {% render '<a href="webfont-loading">@webfont-loading</a>' %}
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
     </code>
@@ -289,6 +283,15 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src/components/_preview.html</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="webfont-loading">@<span>webfont-loading</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
     </ul>
