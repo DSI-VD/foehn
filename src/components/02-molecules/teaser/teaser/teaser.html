@@ -22,6 +22,6 @@
   {% render '@figure', media, true %}
   {% endif %}
   <p>
-    {{ excerpt }}
+    {{ excerpt | truncate(450) }}
   </p>
 </article>
