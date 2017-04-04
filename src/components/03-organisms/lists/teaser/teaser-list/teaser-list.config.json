@@ -57,12 +57,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "media",
-        "context": {
-          "media": true
-        }
       }
     ]
 }
