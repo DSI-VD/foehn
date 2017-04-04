@@ -46,6 +46,48 @@
         }
       ]
     },
+    "news": {
+      "id": "actualites",
+      "teasers": [
+        {
+          "authors": false
+        },
+        {
+          "authors": false
+        },
+        {
+          "authors": false
+        },
+        {
+          "authors": false
+        },
+        {
+          "authors": false
+        }
+      ]
+    },
+    "projects": {
+      "id": "projetsEtActivites",
+      "title": "Projets et activités",
+      "teasers": [
+        {
+          "authors": false,
+          "categories": false
+        },
+        {
+          "authors": false,
+          "categories": false
+        },
+        {
+          "authors": false,
+          "categories": false
+        },
+        {
+          "authors": false,
+          "categories": false
+        }
+      ]
+    },
     "organisation": {
       "links": {
         "listLinks": [
