@@ -32,6 +32,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add news-latest--media organim
 
 ### Fix
+- Fix loading order of fonts
 - List-links use the default font weight
 - Fix input width based on number of chars. Width is now based on the width of a `M` instead of a `9`.
 
