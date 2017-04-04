@@ -26,7 +26,7 @@
                   }
                 ],
                 "default": {
-                  "src": "../../assets/img/picture-640x427.jpg",
+                  "src": "../../assets/img/picture-320x214.jpg",
                   "alt": "Alternative text"
                 }
               }
