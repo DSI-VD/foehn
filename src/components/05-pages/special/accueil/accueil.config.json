@@ -3,6 +3,58 @@
     "context": {
       "pageTitle": "Site officiel de l'État de Vaud",
       "navOpen": true,
+      "news": {
+        "homepage": true,
+        "teasers": [
+          {
+            "title": "10’800 habitants supplémentaires et record de naturalisations en 2016",
+            "authors": false,
+            "media": {
+              "image": {
+                "source": [
+                  {
+                    "media": "(min-width: 40em)",
+                    "srset": "http://www.vd.ch/uploads/_processed_/8/f/csm_bilan-criminalite-2016-web_f54349ebd9.jpg"
+                  },
+                  {
+                    "media": "(min-width: 20em)",
+                    "srset": "http://www.vd.ch/uploads/_processed_/8/f/csm_bilan-criminalite-2016-web_d2282462bc.jpg"
+                  }
+                ],
+                "default": {
+                  "src": "http://www.vd.ch/uploads/_processed_/8/f/csm_bilan-criminalite-2016-web_d2282462bc.jpg",
+                  "alt": "Alternative text"
+                }
+              }
+            },
+            "excerpt": "La croissance démographique est restée soutenue en 2016 avec une hausse de 1,4%, légèrement inférieure à la moyenne des dix dernières années. Avec 7400 naturalisations, les acquisitions de la nationalité suisse atteignent un niveau record."
+          },
+          {
+            "title": "RER Vaud: achat de 14 nouvelles rames",
+            "authors": false,
+            "media": false,
+            "excerpt": "Pour faire face à la forte augmentation du nombre de voyageurs sur les lignes vaudoises, quatorze nouveaux trains viendront renforcer la capacité du RER Vaud à l’horizon 2020."
+          },
+          {
+            "title": "Renforcement du cadre réglementaire de la LEO",
+            "authors": false,
+            "media": false,
+            "excerpt": "Le Conseil d'Etat a adopté la modification partielle du règlement d'application de la loi sur l'enseignement obligatoire (LEO)."
+          },
+          {
+            "title": "14 avril: inauguration du Parlement vaudois",
+            "authors": false,
+            "media": false,
+            "excerpt": "Les Autorités vaudoises ont rendu public le programme de la journée d’inauguration officielle du nouveau Parlement cantonal qui se déroulera le 14 avril. Trois temps forts marqueront la matinée: une séance inaugurale du Grand Conseil réservée aux autorités, ..."
+          },
+          {
+            "title": "2016: un bilan positif en matière de criminalité",
+            "authors": false,
+            "media": false,
+            "excerpt": "Les autorités ont présenté un bilan positif en matière de criminalité sur le sol vaudois. Les infractions au Code pénal ont encore diminué de 6.5% par rapport à 2015. La tendance amorcée voici trois ans se poursuit, en baisse de plus d’un tiers depuis 2014."
+          }
+        ]
+      },
       "buttonTilesTop":{
         "items": [
           {
