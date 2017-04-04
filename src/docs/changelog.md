@@ -10,6 +10,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Service page use only teaser-list--default
+- Use teaser--default component in news-list page
+- Update layout and improve a11y of teaser--default
 - Change presentation of prestation page
 - Change color and decoration of links
 - Align pagination on the sides of the containers
@@ -33,6 +36,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix input width based on number of chars. Width is now based on the width of a `M` instead of a `9`.
 
 ### Removed
+- Remove figure--caption component
+- Remove teaser--left component
+- Remove teaser--media component
 - Remove `.vd-teaser-meta` class
 - Remove teaser-alternate--default component
 - Remove teaser-alternate--2-3_1-3 component
