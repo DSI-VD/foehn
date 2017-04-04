@@ -1,1 +1,3 @@
-Image is not mandatory. You can remove the `<picture>` element.
+- The publication date is the only mandatory meta information.
+- Media is not mandatory. You can remove the `<picture>` element.
+- The maximum recommended length of excerpt is 450 characters. After this length, the text must be cut and followed by three points.
