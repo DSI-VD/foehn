@@ -69,12 +69,5 @@ Put this just before the closing `</body>` tag:
 
 <!-- call all the fonts asynchronously -->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"> </script>
-<script>
-  WebFont.load({
-    custom: {
-      families: ['Graphik:n5,n4,i4', 'Produkt:n3,i3,n7,n5'],
-      urls: ['path/to/build/fonts/fonts.css']
-    }
-  });
-</script>
+{% view '@webfont-loading' %}
 ```
