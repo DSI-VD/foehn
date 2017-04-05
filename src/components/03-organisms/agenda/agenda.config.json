@@ -1,3 +1,28 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "title": "Agenda et événements",
+      "teasers": [
+        {
+          "title": "Ut condimentum magna a ornare pulvinar",
+          "authors": false,
+          "categories": false,
+          "media": false,
+          "readMore": false
+        },
+        {
+          "title": "Etiam vehicula ligula nec convallis fringilla",
+          "authors": false,
+          "categories": false,
+          "readMore": false
+        },
+        {
+          "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
+          "authors": false,
+          "categories": false,
+          "media": false,
+          "readMore": false
+        }
+      ]
+    }
 }
