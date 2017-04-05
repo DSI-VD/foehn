@@ -2,7 +2,7 @@
 {% block main %}
   <div class="row">
     {% for i in range(0, 10) %}
-    {% render '@teaser--default', {styleModifier: 'col-md-6'}, true %}
+    {% render '@teaser', {styleModifier: 'col-md-6'}, true %}
     {% endfor %}
   </div>
   {% render '@pagination' %}
