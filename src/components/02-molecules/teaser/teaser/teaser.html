@@ -21,10 +21,14 @@
   {% if media %}
   {% render '@figure', media, true %}
   {% endif %}
+  {% if excerpt %}
   <p>
     {{ excerpt | truncate(450) }}
   </p>
+  {% endif %}
+  {% if readMore %}
   <p>
-    <a href="{{ url }}" title="Lire la suite de l'article {{ title }}">Lire la suite</a>
+    <a href="{{ url }}" title="Lire la suite de l'article {{ title }}">{{ readMore }}</a>
   </p>
+  {% endif %}
 </article>
