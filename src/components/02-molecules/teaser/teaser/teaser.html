@@ -9,7 +9,7 @@
       {%- endfor %},
       {% endif -%}
 
-      <span class="sr-only">le </span>{%- render '@time', {"attributs": [{},{"name": "pubdate"}]}, true -%}
+      <span class="sr-only">le </span>{%- render '@time', date, true -%}
 
       {%- if categories -%} — <span class="sr-only">Catégorie: </span>
       {%- for category in categories -%}{% if category.url %}<a href="#" rel="category" title="Les articles de la categorie {{ category.name }}">{% endif %}{{ category.name }}{% if category.url %}</a>{% endif -%}

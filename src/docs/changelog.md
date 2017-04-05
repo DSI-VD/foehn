@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Agenda use default teaser
 - Service page use only teaser-list--default
 - Use teaser--default component in news-list page
 - Update layout and improve a11y of teaser--default
