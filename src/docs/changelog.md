@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Remove unused bower.json
 - Fix line breaks in inline SVG
 
 ## [0.20.0]
