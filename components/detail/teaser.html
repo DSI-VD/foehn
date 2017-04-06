@@ -178,9 +178,11 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi esse non autem blanditiis, facere, cumque, eligendi voluptatem moletias vero sint ad optio ab tempora quis, maiores sapiente iusto quia quam. Modi ducimus, cumque repellat, illum perferendis
         suscipit ad voluptatem veniam delectus qui reiciendis, quod impedit ab libero omnis? Consequatur atque nihil exercitationem est, amet maxime quia.
     <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Lire la suite de l'article Lorem ipsum dolor sit amet, consectetur adipisicing elit"</span>&gt;</span>Lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
         
     </code>
@@ -200,7 +202,7 @@
       {%- endfor %},
       {% endif -%}
 
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>le <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{%- render '<a href="time">@time</a>', {"attributs": [{},{"name": "pubdate"}]}, true -%}
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>{{ datePreText }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{%- render '<a href="time">@time</a>', date, true -%}
 
       {%- if categories -%} — <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Catégorie: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
       {%- for category in categories -%}{% if category.url %}<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"category"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Les articles de la categorie {{ category.name }}"</span>&gt;</span>{% endif %}{{ category.name }}{% if category.url %}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>{% endif -%}
@@ -212,12 +214,16 @@
   {% if media %}
   {% render '<a href="figure">@figure</a>', media, true %}
   {% endif %}
+  {% if excerpt %}
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
     {{ excerpt | truncate(450) }}
   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  {% endif %}
+  {% if readMore %}
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ url }}"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Lire la suite de l'article {{ title }}"</span>&gt;</span>Lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ url }}"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Lire la suite de l'article {{ title }}"</span>&gt;</span>{{ readMore }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  {% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
     </code>
 </div>
@@ -230,39 +236,6 @@
             <pre>{
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipisicing elit"</span>,
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
-  <span class="hljs-attr">"authors"</span>: [
-    {
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Clark Kent"</span>
-    },
-    {
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Bruce Wayne"</span>
-    },
-    {
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Cédric Aellen"</span>
-    },
-    {
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Cinzia Pfeiffer"</span>
-    }
-  ],
-  <span class="hljs-attr">"date"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"categories"</span>: [
-    {
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Accessibilité"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Agriculture"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Tourisme"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    }
-  ],
   <span class="hljs-attr">"media"</span>: {
     <span class="hljs-attr">"caption"</span>: <span class="hljs-literal">null</span>
   },
@@ -290,6 +263,21 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="teaser--default">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="teaser--event">
+                    <span>Event</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -326,8 +314,10 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(3)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
+            
+                <a href="agenda">@<span>agenda</span></a>, 
             
                 <a href="teaser-list">@<span>teaser-list</span></a>, 
             
@@ -2958,10 +2948,21 @@
             
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-teaser">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Teaser</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2978,6 +2979,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser--event" data-pjax>
+                <span>Event</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
