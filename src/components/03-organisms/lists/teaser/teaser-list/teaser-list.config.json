@@ -5,23 +5,28 @@
       "teasers": [
         {
           "title": "Ut condimentum magna a ornare pulvinar",
-          "authors": false
+          "authors": false,
+          "datePreText": "Publié le "
         },
         {
           "title": "Etiam vehicula ligula nec convallis fringilla",
-          "authors": false
+          "authors": false,
+          "datePreText": "Publié le "
         },
         {
           "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
-          "authors": false
+          "authors": false,
+          "datePreText": "Publié le "
         },
         {
           "title": "Duis lobortis arcu vel leo iaculis pretium",
-          "authors": false
+          "authors": false,
+          "datePreText": "Publié le "
         },
         {
           "title": "Morbi fermentum libero at commodo gravida",
-          "authors": false
+          "authors": false,
+          "datePreText": "Publié le "
         }
       ]
     },
@@ -33,26 +38,31 @@
           "teasers": [
             {
               "title": "Ut condimentum magna a ornare pulvinar",
-              "authors": false
+              "authors": false,
+              "datePreText": "Publié le "
             },
             {
               "title": "Etiam vehicula ligula nec convallis fringilla",
               "authors": false,
+              "datePreText": "Publié le ",
               "media": false
             },
             {
               "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
               "authors": false,
+              "datePreText": "Publié le ",
               "media": false
             },
             {
               "title": "Duis lobortis arcu vel leo iaculis pretium",
               "authors": false,
+              "datePreText": "Publié le ",
               "media": false
             },
             {
               "title": "Morbi fermentum libero at commodo gravida",
               "authors": false,
+              "datePreText": "Publié le ",
               "media": false
             }
           ]

@@ -3,54 +3,68 @@
     "context": {
       "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "url": "#",
-      "authors": [
-        {
-          "url": "#",
-          "name": "Clark Kent"
-        },
-        {
-          "url": "#",
-          "name": "Bruce Wayne"
-        },
-        {
-          "url": "#",
-          "name": "Cédric Aellen"
-        },
-        {
-          "url": "#",
-          "name": "Cinzia Pfeiffer"
-        }
-      ],
-      "date": {
-        "text": "31.03.2017",
-        "attributs": [
-          {
-            "name": "datetime",
-            "value": "2017-03-31T13:05:23+00:00"
-          },
-          {
-            "name": "pubdate"
-          }
-        ]
-      },
-      "categories": [
-        {
-          "name": "Accessibilité",
-          "url": "#"
-        },
-        {
-          "name": "Agriculture",
-          "url": "#"
-        },
-        {
-          "name": "Tourisme",
-          "url": "#"
-        }
-      ],
       "media": {
         "caption": false
       },
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi esse non autem blanditiis, facere, cumque, eligendi voluptatem moletias vero sint ad optio ab tempora quis, maiores sapiente iusto quia quam. Modi ducimus, cumque repellat, illum perferendis suscipit ad voluptatem veniam delectus qui reiciendis, quod impedit ab libero omnis? Consequatur atque nihil exercitationem est, amet maxime quia.",
-      "readMore": "Lire la suite"
-    }
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi esse non autem blanditiis, facere, cumque, eligendi voluptatem moletias vero sint ad optio ab tempora quis, maiores sapiente iusto quia quam. Modi ducimus, cumque repellat, illum perferendis suscipit ad voluptatem veniam delectus qui reiciendis, quod impedit ab libero omnis? Consequatur atque nihil exercitationem est, amet maxime quia."
+    },
+    "variants": [
+      {
+        "name": "default",
+        "context": {
+          "authors": [
+            {
+              "url": "#",
+              "name": "Clark Kent"
+            },
+            {
+              "url": "#",
+              "name": "Bruce Wayne"
+            },
+            {
+              "url": "#",
+              "name": "Cédric Aellen"
+            },
+            {
+              "url": "#",
+              "name": "Cinzia Pfeiffer"
+            }
+          ],
+          "datePreText": "le ",
+          "date": {
+            "text": "31.03.2017",
+            "attributs": [
+              {
+                "name": "datetime",
+                "value": "2017-03-31T13:05:23+00:00"
+              },
+              {
+                "name": "pubdate"
+              }
+            ]
+          },
+          "categories": [
+            {
+              "name": "Accessibilité",
+              "url": "#"
+            },
+            {
+              "name": "Agriculture",
+              "url": "#"
+            },
+            {
+              "name": "Tourisme",
+              "url": "#"
+            }
+          ],
+          "readMore": "Lire la suite"
+        }
+      },
+      {
+        "name": "event",
+        "context": {
+          "datePreText": "Date de l'événement: "
+        }
+      }
+    ]
 }

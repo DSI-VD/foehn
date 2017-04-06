@@ -1,5 +1,7 @@
-<h2 class="vd-section-title mt-3">Agenda / événements</h2>
+<section class="mb-3">
+  <h2 class="vd-section-title">{{ title }}</h2>
 
-{% render '@teaser-small--default' %}
-{% render '@teaser-small--media' %}
-{% render '@teaser-small--default' %}
+  {% for teaser in teasers %}
+  {% render '@teaser', teaser, true %}
+  {% endfor %}
+</section>
