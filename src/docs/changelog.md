@@ -9,6 +9,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.20.0]
+
 ### Changed
 - Agenda use default teaser
 - Service page use only teaser-list--default
@@ -889,7 +891,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.19.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.20.0...HEAD
+[0.20.0]: https://github.com/DSI-VD/foehn/compare/v0.19.0...0.20.0
 [0.19.0]: https://github.com/DSI-VD/foehn/compare/v0.18.0...v0.19.0
 [0.18.0]: https://github.com/DSI-VD/foehn/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/DSI-VD/foehn/compare/v0.16.0...v0.15.0
