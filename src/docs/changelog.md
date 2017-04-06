@@ -215,7 +215,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-- Add `bower.json
+- Add `bower.json`
 - Add theme template for geographic services
 - Add autority-info components
 - Add `.table-responsive` on table
