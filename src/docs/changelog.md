@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix line breaks in inline SVG
+
 ## [0.20.0]
 
 ### Changed
