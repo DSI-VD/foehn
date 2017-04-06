@@ -83,6 +83,55 @@
             "url": "#"
           }
         ]
+      },
+      "agenda": {
+        "title": "Agenda et événements",
+        "teasers": [
+          {
+            "title": "Elections cantonales",
+            "authors": false,
+            "categories": false,
+            "media": false,
+            "excerpt": "Le 30 avril 2017, les citoyens vaudois sont appelés à élire le Grand Conseil vaudois ainsi que le Conseil d'État (1er tour). Le deuxième tour de l'élection du Conseil d'État aura lieu le 21 mai 2017 (2e tour).",
+            "readMore": false
+          },
+          {
+            "title": "Athletissima",
+            "authors": false,
+            "categories": false,
+            "media": {
+              "image": {
+                "source": [
+                  {
+                    "media": "(min-width: 60em)",
+                    "srset": "../../assets/img/picture-1600x1067.jpg"
+                  },
+                  {
+                    "media": "(min-width: 40em)",
+                    "srset": "../../assets/img/picture-960x640.jpg"
+                  },
+                  {
+                    "media": "(min-width: 20em)",
+                    "srset": "../../assets/img/picture-640x427.jpg"
+                  }
+                ],
+                "default": {
+                  "src": "../../assets/img/picture-320x214.jpg",
+                  "alt": "Alternative text"
+                }
+              }
+            },
+            "excerpt": "L’édition 2017 se déroulera le jeudi 6 juillet au Stade de la Pontaise à Lausanne.",
+            "readMore": false
+          },
+          {
+            "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
+            "authors": false,
+            "categories": false,
+            "media": false,
+            "readMore": false
+          }
+        ]
       }
     }
 }
