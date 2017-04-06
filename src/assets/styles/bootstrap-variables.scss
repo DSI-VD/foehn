@@ -484,9 +484,7 @@ $custom-control-active-indicator-bg:         $vd-focus !default;
 $custom-control-active-indicator-box-shadow: none !default;
 
 $custom-checkbox-radius: 4px !default;
-$custom-checkbox-checked-icon: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.3 20.3'%3E%3Cpath fill='#{$custom-control-checked-indicator-color}' d='M16.5,0H3.8C1.7,0,0,1.7,0,3.8v12.7c0,2.1,1.7,3.8,3.8,3.8h12.7c2.1,0,3.8-1.7,3.8-3.8V3.8
- C20.3,1.7,18.6,0,16.5,0z M10.8,10.1l6.3-6.3v12.7L10.8,10.1z M10.1,9.4L3.8,3.1h12.7L10.1,9.4z M9.4,10.1l-6.3,6.3V3.8L9.4,10.1z
-  M10.1,10.8l6.3,6.3H3.8L10.1,10.8z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$custom-checkbox-checked-icon: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.3 20.3'%3E%3Cpath fill='#{$custom-control-checked-indicator-color}' d='M16.5,0H3.8C1.7,0,0,1.7,0,3.8v12.7c0,2.1,1.7,3.8,3.8,3.8h12.7c2.1,0,3.8-1.7,3.8-3.8V3.8 C20.3,1.7,18.6,0,16.5,0z M10.8,10.1l6.3-6.3v12.7L10.8,10.1z M10.1,9.4L3.8,3.1h12.7L10.1,9.4z M9.4,10.1l-6.3,6.3V3.8L9.4,10.1z M10.1,10.8l6.3,6.3H3.8L10.1,10.8z'/%3E%3C/svg%3E"), "#", "%23") !default;
 
 $custom-checkbox-indeterminate-bg: $brand-primary !default;
 $custom-checkbox-indeterminate-indicator-color: $custom-control-checked-indicator-color !default;
@@ -494,8 +492,7 @@ $custom-checkbox-indeterminate-icon: str-replace(url("data:image/svg+xml;charset
 $custom-checkbox-indeterminate-box-shadow: none !default;
 
 $custom-radio-radius: 50% !default;
-$custom-radio-checked-icon: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24.2 24.2'%3E%3Cpath d='M12.1,24.2C5.4,24.2,0,18.8,0,12.1S5.4,0,12.1,0s12.1,5.4,12.1,12.1S18.8,24.2,12.1,24.2z M12.1,2.9
-  C7,2.9,2.9,7,2.9,12.1s4.1,9.2,9.2,9.2s9.2-4.1,9.2-9.2S17.2,2.9,12.1,2.9z' fill='#{$custom-control-checked-indicator-color}' /%3E %3E%3Ccircle cx='12.1' cy='12.1' r='5.4' fill='#{$custom-control-checked-indicator-color}' /%3E  /%3E%3C/svg%3E"), "#", "%23") !default;
+$custom-radio-checked-icon: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24.2 24.2'%3E%3Cpath d='M12.1,24.2C5.4,24.2,0,18.8,0,12.1S5.4,0,12.1,0s12.1,5.4,12.1,12.1S18.8,24.2,12.1,24.2z M12.1,2.9 C7,2.9,2.9,7,2.9,12.1s4.1,9.2,9.2,9.2s9.2-4.1,9.2-9.2S17.2,2.9,12.1,2.9z' fill='#{$custom-control-checked-indicator-color}' /%3E %3E%3Ccircle cx='12.1' cy='12.1' r='5.4' fill='#{$custom-control-checked-indicator-color}' /%3E  /%3E%3C/svg%3E"), "#", "%23") !default;
 
 $custom-select-padding-x:          .75rem  !default;
 $custom-select-padding-y:          .375rem !default;
@@ -547,9 +544,7 @@ $custom-file-text: (
 
 // Form validation icons
 $form-icon-success-color: $brand-success !default;
-$form-icon-success: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'%3E%3Cpath fill='#{$form-icon-success-color}' d='M23,0C10.3,0,0,10.3,0,23s10.3,23,23,23s23-10.3,23-23S35.7,0,23,0z M36.5,17.4L22,32.1c-0.6,0.6-1.3,0.8-2,0.8
- c-0.7,0-1.5-0.3-2-0.8l-6.7-6.7c-0.8-0.8-0.8-2,0-2.8c0.8-0.8,2-0.8,2.8,0l5.9,5.9l13.7-13.8c0.8-0.8,2-0.8,2.8,0
- C37.2,15.4,37.2,16.7,36.5,17.4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$form-icon-success: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'%3E%3Cpath fill='#{$form-icon-success-color}' d='M23,0C10.3,0,0,10.3,0,23s10.3,23,23,23s23-10.3,23-23S35.7,0,23,0z M36.5,17.4L22,32.1c-0.6,0.6-1.3,0.8-2,0.8 c-0.7,0-1.5-0.3-2-0.8l-6.7-6.7c-0.8-0.8-0.8-2,0-2.8c0.8-0.8,2-0.8,2.8,0l5.9,5.9l13.7-13.8c0.8-0.8,2-0.8,2.8,0 C37.2,15.4,37.2,16.7,36.5,17.4z'/%3E%3C/svg%3E"), "#", "%23") !default;
 
 $form-icon-warning-color: $brand-warning !default;
 $form-icon-warning: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$form-icon-warning-color}' d='M4.4 5.324h-.8v-2.46h.8zm0 1.42h-.8V5.89h.8zM3.76.63L.04 7.075c-.115.2.016.425.26.426h7.397c.242 0 .372-.226.258-.426C6.726 4.924 5.47 2.79 4.253.63c-.113-.174-.39-.174-.494 0z'/%3E%3C/svg%3E"), "#", "%23") !default;
