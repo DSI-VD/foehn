@@ -34,12 +34,22 @@ With Yarn:
 ```bash
 $ yarn add https://github.com/DSI-VD/foehn
 ```
+or
+
+```bash
+$ yarn add git+ssh://git@git.etat-de-vaud.ch:typo3/foehn
+```
 
 or NPM:
 
 ```bash
-# test
 $ npm install https://github.com/DSI-VD/foehn
+```
+
+or
+
+```bash
+$ npm install git+ssh://git@git.etat-de-vaud.ch:typo3/foehn
 ```
 
 ### How to include
