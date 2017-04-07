@@ -22,6 +22,36 @@
         }
       },
       {
+        "name": "validation danger",
+        "context": {
+          "label": "Courriel",
+          "helpText": "Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.",
+          "validation": {
+            "class": "danger",
+            "text": "Veuillez saisir votre courriel"
+          },
+          "type": "email"
+        }
+      },
+      {
+        "name": "validation warning",
+        "context": {
+          "validation": {
+            "class": "warning",
+            "text": "Veuillez contrôler le nombre de caractères"
+          }
+        }
+      },
+      {
+        "name": "validation success",
+        "context": {
+          "validation": {
+            "class": "success",
+            "text": "Succès"
+          }
+        }
+      },
+      {
         "name": "email",
         "context": {
           "label": "Courriel",
