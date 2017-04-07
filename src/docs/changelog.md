@@ -22,6 +22,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add [input--validation-warning](../components/detail/input--validation-warning) molecule
 - Add [input--validation-success](../components/detail/input--validation-success) molecule
 
+### Fix
+- Fix padding in [header–securise](../components/detail/header--securise)
+
 ### Removed
 - Removed feedback molecule
 
