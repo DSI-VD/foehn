@@ -10,6 +10,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Add
+- Add [checkbox--validation-success](../components/detail/checkbox--validation-success) molecule
+- Add [checkbox--validation-warning](../components/detail/checkbox--validation-warning) molecule
+- Add [checkbox--validation-danger](../components/detail/checkbox--validation-danger) molecule
+- Add [checkbox--disabled](../components/detail/checkbox--disabled) molecule
 - Add [input--validation-danger](../components/detail/input--validation-danger) molecule
 - Add [input--validation-warning](../components/detail/input--validation-warning) molecule
 - Add [input--validation-success](../components/detail/input--validation-success) molecule

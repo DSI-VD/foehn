@@ -1,3 +1,84 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "checkboxes": [
+        {
+          "label": "Option one is this and that—be sure to include why it's great"
+        },
+        {
+          "label": "Option two is disabled",
+          "disabled": true
+        },
+        {
+          "label": "Checkbox with success",
+          "validation": {
+            "class": "success"
+          }
+        },
+        {
+          "label": "Checkbox with warning",
+          "validation": {
+            "class": "warning"
+          }
+        },
+        {
+          "label": "Checkbox with danger",
+          "validation": {
+            "class": "danger"
+          }
+        }
+      ]
+    },
+    "variants": [
+      {
+        "name": "validation success",
+        "context": {
+          "checkboxes": [
+            {
+              "label": "Checkbox with success",
+              "validation": {
+                "class": "success"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "validation warning",
+        "context": {
+          "checkboxes": [
+            {
+              "label": "Checkbox with warning",
+              "validation": {
+                "class": "warning"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "validation danger",
+        "context": {
+          "checkboxes": [
+            {
+              "label": "Checkbox with danger",
+              "validation": {
+                "class": "danger"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "disabled",
+        "context": {
+          "checkboxes": [
+            {
+              "label": "Option is disabled",
+              "disabled": true
+            }
+          ]
+        }
+      }
+    ]
 }
