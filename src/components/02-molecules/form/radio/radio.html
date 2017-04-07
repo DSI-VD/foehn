@@ -1,18 +1,8 @@
-<div class="form-check">
+{% for radio in radios %}
+<div class="form-check{% if radio.validation.class %} has-{{ radio.validation.class }}{% endif %}{% if radio.disabled %} disabled{% endif %}">
   <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-    Option one is this and that&mdash;be sure to include why it's great
+    <input class="form-check-input" type="radio" value="{{ radio.value }}"{% if radio.disabled %} disabled{% endif %}>
+    {{ radio.label }}
   </label>
 </div>
-<div class="form-check">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-    Option two can be something else and selecting it will deselect option one
-  </label>
-</div>
-<div class="form-check disabled">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-    Option three is disabled
-  </label>
-</div>
+{% endfor %}
