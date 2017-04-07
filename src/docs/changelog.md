@@ -14,6 +14,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add [input--validation-warning](../../components/detail/input--validation-warning) molecule
 - Add [input--validation-success](../../components/detail/input--validation-success) molecule
 
+### Removed
+- Removed feedback molecule
+
 ## [0.20.1]
 
 ### Fix
