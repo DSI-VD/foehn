@@ -6,26 +6,16 @@
           "label": "Option one is this and that—be sure to include why it's great"
         },
         {
-          "label": "Option two is disabled",
-          "disabled": true
+          "label": "Sed eu magna eget augue tincidunt semper"
         },
         {
-          "label": "Checkbox with success",
-          "validation": {
-            "class": "success"
-          }
+          "label": "Nulla eu velit iaculis, gravida arcu in, accumsan ligula"
         },
         {
-          "label": "Checkbox with warning",
-          "validation": {
-            "class": "warning"
-          }
+          "label": "Etiam viverra eros aliquam tincidunt varius"
         },
         {
-          "label": "Checkbox with danger",
-          "validation": {
-            "class": "danger"
-          }
+          "label": "Sed luctus sem id sollicitudin varius"
         }
       ]
     },
