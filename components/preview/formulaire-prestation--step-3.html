@@ -1,58 +1,404 @@
+
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-    window.frctl = {
-        env: 'static'
-    };
-    </script>
-    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../fractal/favicon.ico" type="image/ico">
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Step 3 | Foehn</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width">
 
-<link rel="stylesheet" href="../../fractal/css/navy.css?cachebust=1.1.0" type="text/css">
+    <link rel="stylesheet" href="../../assets/styles/vendors.css">
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+
+  </head>
+  <body>
+
+    <header class="header">
+  <nav class="vd-access-nav" aria-label="menu accessibilité">
+  <ul>
+      <li>
+        <a class="btn btn-primary" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
+      </li>
+      <li><a class="btn btn-primary" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a></li>
+      <li>
+        <a class="btn btn-primary" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
+      </li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <nav>
+  <h2 class="sr-only">Sous-navigation</h2>
+  <ul class="nav small justify-content-end">
+    
+    <li class="nav-item">
+      <a href="#" class="nav-link active"><span class="sr-only">page active: </span>Mon compte</a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="#" class="nav-link">Paramètres</a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="accueil" class="nav-link">Se déconnecter</a>
+    </li>
+    
+  </ul>
+</nav>
 
 
-<title>Error rendering component formulaire-prestation--step-3 | Foehn</title>
+    <div class="row">
 
-</head>
-<body>
+      <section class="col-sm-6 push-sm-6 text-right pr-2">
+        <h2 class="sr-only">Votre identité</h2>
+        <dl>
+          <dt class="sr-only">Nom et prénom</dt>
+          <dd class="font-weight-bold mb-0 small">Aellen Cédric</dd>
 
+          <dt class="sr-only">Nom du bénéficiaire</dt>
+          <dd class="mb-0 small text-muted">Commune de Servion</dd>
+        </dl>
+      </section>
 
+      <div class="col-sm-6 pull-sm-6">
+        <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
+  <div class="vd-logo-title">
+    <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
+    <img src="../../assets/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
+  </div>
+</a>
 
-<div class="Frame Frame--full" id="frame">
-
-
-<div class="Error Error--render">
-    <h4 class="Error-title">Error rendering component</h4>
-    <div class="Error-message Prose">
-        <p>(unknown path)
-  Error: Could not render component &#39;@checbox--default&#39; - component not found.</p>
+      </div>
 
     </div>
-    
-    <code class="Error-stack">
-        <pre>Template render error: (unknown path)
-  Error: Could not render component '@checbox--default' - component not found.
-    at Object.exports.prettifyError (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/lib.js:34:15)
-    at /Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:486:31
-    at eval (eval at _compile (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:565:24), <anonymous>:23:11)
-    at eval (eval at _compile (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:565:24), <anonymous>:76:12)
-    at entity.render.then.catch.err (/Users/cedricaellen/Projects/foehn/node_modules/@frctl/nunjucks/src/extensions/render.js:46:21)</pre>
-    </code>
-    
+  </div>
+</header>
+
+
+<main id="main">
+  <div class="vd-bg-pattern-gray pt-2">
+  <div class="container">
+    <h1>Commander un extrait du registre des poursuites</h1>
+  </div>
 </div>
 
 
+  <div class="container mt-3">
+    <h2>Titre de l'étape</h2>
+    <p class="h3">Etape 3 de 4</p>
+      <div class="row">
+        <div class="col-md-8">
+          
+
+  <form action="formulaire-prestation-confirmation">
+
+    <div class="form-group">
+  <label for="name">Nom <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="text" id="name" name="testInput" value="" required aria-required="true">
 </div>
 
 
+    <div class="form-group">
+  <label for="firstname">Prénom <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="text" id="firstname" name="testInput" value="" required aria-required="true">
+</div>
 
 
-<script src="../../fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
+    <fieldset class="mb-1">
+
+  <legend>Quelle est votre date de naissance ?</legend>
+
+  
+  <small id="dates-help" class="form-text text-muted">
+    Par exemple, 23 7 1979
+  </small>
+  
+
+  <div class="vd-form-flex">
+
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      <div class="form-group">
+  <label for="inputDatesDay">Jour</label><input class="form-control" type="number" id="inputDatesDay" name="testInput" value="" pattern="[0-9]*" min="1" max="31" size="2">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+      <div class="form-group">
+  <label for="inputDatesMonth">Mois</label><input class="form-control" type="number" id="inputDatesMonth" name="testInput" value="" pattern="[0-9]*" min="1" max="12" size="2">
+</div>
+
+    </div>
+
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+      <div class="form-group">
+  <label for="inputDatesYear">Année</label><input class="form-control" type="number" id="inputDatesYear" name="testInput" value="" pattern="[0-9]*" min="1950" max="2017" size="4">
+</div>
+
+    </div>
+
+  </div>
+
+</fieldset>
+
+
+    <div class="form-group">
+  <label for="institution">Etablissement</label><input class="form-control" type="text" id="institution" name="testInput" value="">
+</div>
+
+
+    <div class="form-group">
+  <label for="function">Fonction</label><input class="form-control" type="text" id="function" name="testInput" value="">
+</div>
+
+
+    <div class="form-group">
+  <label for="exampleSelect1">Catégorie</label>
+  <select class="form-control" id="categorie">
+    
+    <option>Curabitur</option>
+    
+    <option>Maecenas vel</option>
+    
+    <option>Suspendisse maximus velit non lacus</option>
+    
+    <option>Sed maximus</option>
+    
+    <option>Aliquam cupiditate, vel!</option>
+    
+    <option>Nunc eget neque sit amet ipsum auctor laoreet</option>
+    
+  </select>
+</div>
+
+
+    <div class="form-group">
+  <label for="exampleSelect1">Catégorie 2</label>
+  <select class="form-control" id="categorie2" multiple>
+    
+    <option>Curabitur</option>
+    
+    <option selected>Maecenas vel</option>
+    
+    <option>Suspendisse maximus velit non lacus</option>
+    
+    <option selected>Sed maximus</option>
+    
+    <option>Aliquam cupiditate, vel!</option>
+    
+    <option>Nunc eget neque sit amet ipsum auctor laoreet</option>
+    
+  </select>
+</div>
+
+
+    <div class="form-group">
+  <label for="testDataInput" id="testDataInputLabel">Quel est votre fruit favoris ?</label>
+  <datalist id="list">
+    <select class="form-control" name="testDataInput" aria-labelledby="testDataInputLabel">
+      
+      <option>Abricot</option>
+      
+      <option>Ananas</option>
+      
+      <option>Citron</option>
+      
+      <option>Fruit de la passion</option>
+      
+      <option>Grenade</option>
+      
+      <option>Groseille</option>
+      
+      <option>Kaki</option>
+      
+      <option>Kiwi</option>
+      
+    </select> <small id="testDataInputfallbackLabel" class="form-text">Merci de le spécifier s'il ne figure pas dans la liste</small>
+  </datalist>
+  <input id="testDataInput" class="form-control" name="state" list="list" aria-labelledby="testDataInputfallbackLabel">
+</div>
+
+
+    <div class="form-group">
+  <label for="address">Adresse <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="text" id="address" name="testInput" value="" required aria-required="true">
+</div>
+
+
+    <div class="form-group">
+  <label for="email">Courriel <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="email" id="email" name="testInput" value="" required aria-required="true">
+</div>
+
+
+    <fieldset>
+      <legend>Radio</legend>
+      
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" value="">
+    Option one is this and that—be sure to include why it's great
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" value="">
+    Sed eu magna eget augue tincidunt semper
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" value="">
+    Nulla eu velit iaculis, gravida arcu in, accumsan ligula
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" value="">
+    Etiam viverra eros aliquam tincidunt varius
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" value="">
+    Sed luctus sem id sollicitudin varius
+  </label>
+</div>
+
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Checkbox</legend>
+      
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Option one is this and that—be sure to include why it's great
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Sed eu magna eget augue tincidunt semper
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Nulla eu velit iaculis, gravida arcu in, accumsan ligula
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Etiam viverra eros aliquam tincidunt varius
+  </label>
+</div>
+
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Sed luctus sem id sollicitudin varius
+  </label>
+</div>
+
+
+    </fieldset>
+
+    <div class="form-group">
+  <label for="exampleTextarea">Example textarea</label>
+  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+</div>
+
+
+    <nav>
+  <h3 class="sr-only">Pagination</h3>
+  <ul class="list-unstyled d-flex justify-content-start flex-wrap mb-0">
+    <li class="pr-1"><a href="formulaire-prestation--step-2" class="btn btn-secondary vd-btn-chevron-l">Précédent</a></li>
+    
+    <li class="ml-auto"><submit class="btn btn-success vd-btn-chevron-r">Transmettre</submit>
+</li>
+  </ul>
+</nav>
+
+
+  </form>
+
+        </div>
+      </div>
+  </div>
+</main>
+<footer class="footer mt-3">
+  <div class="container">
+    <a href="#" class="footer-btn-backtotop btn btn-sm btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <div class="row small">
+      <nav aria-label="pied de page" class="col-xs-10">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pourquoi créer un compte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mentions légales</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-xs-2 footer-logo-container">
+        <div class="footer-logo">
+          <img class="img-fluid" src="../../assets/svg/logo/logo--white.svg" alt="Canton de Vaud">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
-</body>
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="../../assets/scripts/vendors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+  WebFont.load({
+    custom: {
+      families: ['Graphik:n4,i4,n5', 'Produkt:n3,i3,n5,n7'],
+      urls: ['../../assets/fonts/fonts.css']
+    }
+  });
+</script>
+
+  </body>
 </html>
+
