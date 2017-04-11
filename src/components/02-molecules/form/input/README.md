@@ -14,7 +14,7 @@ The only way to trigger the numerical keyboard on mobile is to use the following
 
 ![Numerical Keyboard](/components/raw/input/numerical-keyboard.png)
 
-# `autocomplete`
+# `autocomplete` attribute
 
 This attribute indicates whether the value of the control can be automatically completed by the browser. It may be a good practice to use this attribute with known data, such as a form where the user must enter his or her contact information.
 
