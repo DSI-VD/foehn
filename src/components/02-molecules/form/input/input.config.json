@@ -86,6 +86,14 @@
         }
       },
       {
+        "name": "date",
+        "context": {
+          "label": "Date",
+          "id": "date",
+          "type": "date"
+        }
+      },
+      {
         "name": "file",
         "context": {
           "label": "Fichier",
