@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Add
+- Add info about `autocomplete` attribute in [`input`](http://dsi-vd.github.io/foehn/components/detail/input--default)
 - Add [radio--validation-success](../components/detail/radio--validation-success) molecule
 - Add [radio--validation-warning](../components/detail/radio--validation-warning) molecule
 - Add [radio--validation-danger](../components/detail/radio--validation-danger) molecule

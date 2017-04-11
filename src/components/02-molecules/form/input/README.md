@@ -13,3 +13,31 @@ The only way to trigger the numerical keyboard on mobile is to use the following
 ```
 
 ![Numerical Keyboard](/components/raw/input/numerical-keyboard.png)
+
+# `autocomplete`
+
+This attribute indicates whether the value of the control can be automatically completed by the browser. It may be a good practice to use this attribute with known data, such as a form where the user must enter his or her contact information.
+
+More inforamtion in [Autofilling form controls: the autocomplete attribute](https://www.w3.org/TR/html5/forms.html#autofilling-form-controls:-the-autocomplete-attribute).
+
+```
+<form action="" autocomplete="on">
+  <label for="name">Nom</label>
+  <input id="name" type="text" autocomplete="name" />
+
+  <label for="email">Email</label>
+  <input id="email" type="email" autocomplete="email" />
+
+  <label for="phone">Téléphone</label>
+  <input id="phone" type="tel" autocomplete="tel" />
+
+  <label for="postal-code">NPA</label>
+  <input id="postal-code" type="text" autocomplete="postal-code" />
+
+  <label for="password">Password</label>
+  <input id="password" type="password" autocomplete="new-password" />
+
+  <input type="submit" />
+
+</form>
+```
