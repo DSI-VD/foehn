@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Add
+- Add [input--date](../components/detail/input--date) molecule
 - Add [input--disabled](../components/detail/input--disabled) molecule
 - Add info about `autocomplete` attribute in [`input`](../components/detail/input--default)
 - Add [radio--validation-success](../components/detail/radio--validation-success) molecule
