@@ -1,7 +1,7 @@
 {
     "status": "prototype",
     "context": {
-      "pageTitle": "Nom de la préstation",
+      "pageTitle": "Nom de la prestation",
       "stepTitle": "Titre de l'étape",
       "stepNumber": "Etape X sur Y",
       "pagination": {
