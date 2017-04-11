@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Use [button--submit](../components/detail/button--submit) in [pagination](../components/detail/pagination)
+
 ### Add
 - Add [input--date](../components/detail/input--date) molecule
 - Add [input--disabled](../components/detail/input--disabled) molecule
