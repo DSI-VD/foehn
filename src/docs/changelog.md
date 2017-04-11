@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Use [button--submit](../components/detail/button--submit) in [pagination](../components/detail/pagination)
 
 ### Add
+- Add [modal](../components/detail/modal) molecule
 - Add [input--date](../components/detail/input--date) molecule
 - Add [input--disabled](../components/detail/input--disabled) molecule
 - Add info about `autocomplete` attribute in [`input`](../components/detail/input--default)
