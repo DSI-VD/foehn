@@ -15,6 +15,12 @@
         }
       },
       {
+        "name": "disabled",
+        "context": {
+          "disabled": true
+        }
+      },
+      {
         "name": "help-text",
         "context": {
           "helpText": "Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.",
