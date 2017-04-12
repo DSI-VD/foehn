@@ -1,0 +1,10 @@
+<nav>
+  <h2 class="sr-only">{{ title }}</h2>
+  <ul class="nav nav-pills flex-column flex-sm-row flex-wrap vd-bg-gray-lightest">
+    {% for item in items -%}
+    <li class="flex-sm-fill text-sm-center mb-0">
+      <a class="nav-link p-1{% if item.active %} active{% endif %}" href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.text }}</a>
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>
