@@ -1,3 +1,6 @@
 {
-    "status": "prototype"
+    "status": "prototype",
+    "context": {
+      "pageTitle": "Espace sécurisé"
+    }
 }

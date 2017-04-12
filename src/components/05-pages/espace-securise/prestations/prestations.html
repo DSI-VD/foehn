@@ -1,26 +1,5 @@
-{% include '@header--securise' %}
-
-<div class="vd-bg-pattern-purple" role="tablist">
-  <div class="container vd-nav-tabs-secure">
-    <div class="fa fa-lock fa-lg" aria-hidden="true"></div>
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="../espace-securise">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../demandes">Demandes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="../prestations">Prestations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../documents">Documents</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<main class="container mt-3" id="main">
+{% extends '@template-presta' %}
+{% block main %}
 
       <form>
         <div class="form-group">
@@ -107,8 +86,4 @@
         <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
       </article>
 
-    </main><!-- ./.col-md-8 -->
-
-</div>
-
-{% include '@footer--securise' %}
+{% endblock %}
