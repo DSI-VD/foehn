@@ -1,25 +1,31 @@
 <header class="header">
   {% include '@access-nav' %}
   <div class="container">
-    {% render '@nav', nav %}
 
     <div class="row">
 
-      <section class="col-sm-6 push-sm-6 text-right pr-2">
-        <h2 class="sr-only">Votre identité</h2>
-        <dl>
-          <dt class="sr-only">Nom et prénom</dt>
-          <dd class="font-weight-bold mb-0 small">Aellen Cédric</dd>
-
-          <dt class="sr-only">Nom du bénéficiaire</dt>
-          <dd class="mb-0 small text-muted">Commune de Servion</dd>
-        </dl>
-      </section>
-
-      <div class="col-sm-6 pull-sm-6">
+      <div class="col-sm-5">
         {% include '@logo-etat' %}
       </div>
 
-    </div>
+      <section class="col-sm-7 pr-2">
+        <h2 class="sr-only">Votre identité</h2>
+        <div class="d-flex flex-column flex-md-row">
+          <dl class="mb-0 pr-md-1">
+            <dt class="sr-only">Nom et prénom</dt>
+            <dd class="font-weight-bold mb-0 small"><span class="fa fa-lock"></span> <a href="#" title="Gérer mon compte">{{ identity }}</a></dd>
+
+            <dt class="sr-only">Nom du bénéficiaire</dt>
+            <dd class="mb-0 small text-muted">{{ beneficiary }}</dd>
+          </dl>
+          <div class="ml-md-auto">
+            <p class="small">
+              <a href="#">Se déconnecter</a>
+            </p>
+          </div>
+        </div><!-- /.d-flex -->
+      </section>
+
+    </div><!-- /.row -->
   </div>
 </header>
