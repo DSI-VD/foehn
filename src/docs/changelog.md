@@ -10,6 +10,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- [connexion](../components/detail/connexion) page use [template-presta](../components/detail/template-presta) template
+- [demandes](../components/detail/demandes) page use [template-presta](../components/detail/template-presta) template
+- [documents](../components/detail/documents) page use [template-presta](../components/detail/template-presta) template
+- [espace-securise](../components/detail/espace-securise) page use [template-presta](../components/detail/template-presta) template
+- [prestations](../components/detail/prestations) page use [template-presta](../components/detail/template-presta) template
 - Use [button--submit](../components/detail/button--submit) in [pagination](../components/detail/pagination)
 
 ### Add

@@ -1,8 +1,5 @@
-{% include '@header--securise' %}
-
-{% include '@secure-tabs' %}
-
-<main class="container" id="main">
+{% extends '@template-presta' %}
+{% block main %}
   <div class="row mt-3 mb-3">
 
     <div class="col-md-8">
@@ -36,6 +33,4 @@
     </div>
 
   </div>
-</main>
-
-{% include '@footer--securise' %}
+{% endblock %}
