@@ -1,0 +1,68 @@
+{
+    "status": "prototype",
+    "context": {
+      "title": "Navigation de l'espace sécurisé",
+      "items": [
+            {
+                "text": "rerum aspernatur voluptas",
+                "title": "autem deleniti voluptate",
+                "url": "http://pauline.org",
+                "active": null
+            },
+            {
+                "text": "velit recusandae ducimus",
+                "title": "quis molestias perferendis",
+                "url": "http://julien.org",
+                "active": null
+            },
+            {
+                "text": "nobis sunt quas",
+                "title": "aut ducimus voluptatem",
+                "url": "https://laura.net",
+                "active": null
+            },
+            {
+                "text": "aut doloribus est",
+                "title": "maiores harum alias",
+                "url": "https://julien.fr",
+                "active": null
+            },
+            {
+                "text": "tempore alias eius",
+                "title": "et iure beatae",
+                "url": "http://nicolas.net",
+                "active": null
+            },
+            {
+                "text": "amet omnis neque",
+                "title": "aut voluptatem earum",
+                "url": "http://sarah.fr",
+                "active": null
+            },
+            {
+                "text": "in sed officiis",
+                "title": "fugit mollitia officiis",
+                "url": "https://mohamed.name",
+                "active": true
+            },
+            {
+                "text": "rem tenetur est",
+                "title": "nihil voluptatibus molestiae",
+                "url": "https://mael.name",
+                "active": null
+            },
+            {
+                "text": "reprehenderit beatae omnis",
+                "title": "eum repellat sequi",
+                "url": "https://valentin.eu",
+                "active": null
+            },
+            {
+                "text": "eum cum culpa",
+                "title": "magnam asperiores ullam",
+                "url": "https://zoe.com",
+                "active": null
+            }
+        ]
+    }
+}

@@ -25,6 +25,10 @@
   @include vd-pattern-dotted($pattern-bars-gray-02);
 }
 
+.vd-bg-gray-lightest {
+  background-color: $gray-lightest;
+}
+
 // Spacing helpers
 .vd-offset-top {
   @include media-breakpoint-up(md) {
