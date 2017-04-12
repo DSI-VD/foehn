@@ -52,40 +52,10 @@
 </nav>
 
   <div class="container">
-    <nav>
-  <h2 class="sr-only">Sous-navigation</h2>
-  <ul class="nav small justify-content-end">
-    
-    <li class="nav-item">
-      <a href="#" class="nav-link active"><span class="sr-only">page active: </span>Mon compte</a>
-    </li>
-    
-    <li class="nav-item">
-      <a href="#" class="nav-link">Paramètres</a>
-    </li>
-    
-    <li class="nav-item">
-      <a href="accueil" class="nav-link">Se déconnecter</a>
-    </li>
-    
-  </ul>
-</nav>
-
 
     <div class="row">
 
-      <section class="col-sm-6 push-sm-6 text-right pr-2">
-        <h2 class="sr-only">Votre identité</h2>
-        <dl>
-          <dt class="sr-only">Nom et prénom</dt>
-          <dd class="font-weight-bold mb-0 small">Aellen Cédric</dd>
-
-          <dt class="sr-only">Nom du bénéficiaire</dt>
-          <dd class="mb-0 small text-muted">Commune de Servion</dd>
-        </dl>
-      </section>
-
-      <div class="col-sm-6 pull-sm-6">
+      <div class="col-sm-5">
         <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
@@ -95,7 +65,25 @@
 
       </div>
 
-    </div>
+      <section class="col-sm-7 pr-2">
+        <h2 class="sr-only">Votre identité</h2>
+        <div class="d-flex flex-column flex-md-row">
+          <dl class="mb-0 pr-md-1">
+            <dt class="sr-only">Nom et prénom</dt>
+            <dd class="font-weight-bold mb-0 small"><span class="fa fa-lock"></span> <a href="#" title="Gérer mon compte">Jean Villars Gilles</a></dd>
+
+            <dt class="sr-only">Nom du bénéficiaire</dt>
+            <dd class="mb-0 small text-muted">Commune de Belmont-sur-Lausanne</dd>
+          </dl>
+          <div class="ml-md-auto">
+            <p class="small">
+              <a href="#">Se déconnecter</a>
+            </p>
+          </div>
+        </div><!-- /.d-flex -->
+      </section>
+
+    </div><!-- /.row -->
   </div>
 </header>
 
