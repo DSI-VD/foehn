@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change structure of [header-securise](../components/detail/connexion) organism
 - [connexion](../components/detail/connexion) page use [template-presta](../components/detail/template-presta) template
 - [demandes](../components/detail/demandes) page use [template-presta](../components/detail/template-presta) template
 - [documents](../components/detail/documents) page use [template-presta](../components/detail/template-presta) template
