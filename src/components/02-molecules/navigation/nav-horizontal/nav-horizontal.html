@@ -1,8 +1,9 @@
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded{% if styleModifier %} {{ styleModifier }}{% endif %}">
+  <h2 class="sr-only">{{ title }}</h2>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#"><span class="fa fa-lock"></span><span class="sr-only">{{ title }}</span></a>
+  <span class="navbar-brand fa fa-lock" aria-hidden="true"></span>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       {% for item in items -%}
