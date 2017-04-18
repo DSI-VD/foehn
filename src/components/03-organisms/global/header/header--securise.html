@@ -8,18 +8,18 @@
         {% include '@logo-etat' %}
       </div>
 
-      <section>
+      <section class="mt-1">
         <h2 class="sr-only">Votre identité</h2>
         <div class="d-flex flex-column">
           <dl class="mb-0">
             <dt class="sr-only">Nom et prénom</dt>
-            <dd class="font-weight-bold mb-0 small"><span class="fa fa-lock"></span> <a href="#" title="Gérer mon compte">{{ identity }}</a></dd>
+            <dd class="mb-0"><span class="fa fa-lock"></span> <a href="#" title="Gérer mon compte">{{ identity }}</a></dd>
 
             <dt class="sr-only">Nom du bénéficiaire</dt>
-            <dd class="mb-0 small text-muted">{{ beneficiary }}</dd>
+            <dd class="mb-0">{{ beneficiary }}</dd>
           </dl>
           <div>
-            <p class="small">
+            <p>
               <a href="#">Se déconnecter</a>
             </p>
           </div>
