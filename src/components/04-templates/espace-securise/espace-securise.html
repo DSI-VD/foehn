@@ -1,13 +1,13 @@
 {% render '@header--securise' %}
 
+{% if navigation %}
+<div class="container mb-3">
+  {% render '@nav-horizontal', navigation %}
+</div>
+{% endif %}
+
 <main id="main">
   {% include '@page-title-banner--form-presta' %}
-
-  {% if navigation %}
-  <div class="container mt-3">
-    {% render '@nav-horizontal', navigation %}
-  </div>
-  {% endif %}
 
   <div class="container mt-3">
     {% block main %}
