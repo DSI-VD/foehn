@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Renamed template-presta in [espace-securise](../components/detail/espace-securise)
+- Renamed template-presta-form in [espace-securise](../components/detail/espace-securise--form)
 - Change structure of [header-securise](../components/detail/connexion) organism
 - [connexion](../components/detail/connexion) page use [template-presta](../components/detail/template-presta) template
 - [demandes](../components/detail/demandes) page use [template-presta](../components/detail/template-presta) template

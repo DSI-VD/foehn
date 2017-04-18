@@ -3,6 +3,12 @@
 <main id="main">
   {% include '@page-title-banner--form-presta' %}
 
+  {% if navigation %}
+  <div class="container mt-3">
+    {% render '@nav-horizontal', navigation %}
+  </div>
+  {% endif %}
+
   <div class="container mt-3">
     {% block main %}
 
