@@ -20,8 +20,7 @@
   "scripts": {
     "start": "yarn && gulp dev",
     "build": "yarn && gulp build",
-    "deploy": "yarn && gulp publish",
-    "newVersion": "yarn && gulp build && git add . && git commit -m \"new version build\" && yarn version"
+    "deploy": "yarn && gulp publish"
   },
   "engines": {
     "node": ">=6.7.0",
