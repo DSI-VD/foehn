@@ -22,7 +22,7 @@ $ npm start
 
 ### Build
 
-If you only want to build the code.
+If you only want to build the code (the `dist/` folder).
 
 ```shell
 $ npm run build
