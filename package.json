@@ -7,6 +7,13 @@
   "keywords": "frontend, css, html, js, styleguide, pattern, library, design, standard",
   "main": "dist/index.html",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "http://nexus.etat-de-vaud.ch/repository/npm-vd/"
+  },
+  "repository": {
+    "type": "git",
+    "url":  "ssh://git@bitbucket.etat-de-vaud.ch/cybsdk/foehn.git"
+  }
   "browserify-shim": {
     "jquery": "global:jQuery"
   },
