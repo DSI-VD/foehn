@@ -1,10 +1,15 @@
-<nav class="mb-3">
-  <h2 class="sr-only">{{ title }}</h2>
-  <ul class="nav nav-pills flex-column flex-sm-row flex-wrap vd-bg-gray-lightest">
-    {% for item in items -%}
-    <li class="flex-sm-fill text-sm-center mb-0">
-      <a class="nav-link p-1{% if item.active %} active{% endif %}" href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.text }}</a>
-    </li>
-    {%- endfor %}
-  </ul>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><span class="fa fa-lock"></span><span class="sr-only">{{ title }}</span></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      {% for item in items -%}
+      <li class="nav-item mb-0 {% if item.active %} active{% endif %}">
+        <a class="nav-link" href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{% if item.active %}<span class="sr-only">(current)</span> {% endif %}{{ item.text }}</a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
 </nav>
