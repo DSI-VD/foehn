@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url":  "ssh://git@bitbucket.etat-de-vaud.ch/cybsdk/foehn.git"
-  }
+  },
   "browserify-shim": {
     "jquery": "global:jQuery"
   },
