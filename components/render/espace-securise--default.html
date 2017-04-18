@@ -33,9 +33,9 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="d-flex flex-column flex-sm-row">
 
-      <div class="col-sm-5">
+      <div class="mr-auto">
         <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <div class="vd-logo-title">
     <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
@@ -45,18 +45,18 @@
 
       </div>
 
-      <section class="col-sm-7 pr-2">
+      <section class="mt-1">
         <h2 class="sr-only">Votre identité</h2>
-        <div class="d-flex flex-column flex-md-row">
-          <dl class="mb-0 pr-md-1">
+        <div class="d-flex flex-column">
+          <dl class="mb-0">
             <dt class="sr-only">Nom et prénom</dt>
-            <dd class="font-weight-bold mb-0 small"><span class="fa fa-lock"></span> <a href="#" title="Gérer mon compte">Jean Villars Gilles</a></dd>
+            <dd class="mb-0"><span class="fa fa-lock"></span> <a href="#" title="Gérer mon compte">Jean Villars Gilles</a></dd>
 
             <dt class="sr-only">Nom du bénéficiaire</dt>
-            <dd class="mb-0 small text-muted">Commune de Belmont-sur-Lausanne</dd>
+            <dd class="mb-0">Commune de Belmont-sur-Lausanne</dd>
           </dl>
-          <div class="ml-md-auto">
-            <p class="small">
+          <div>
+            <p>
               <a href="#">Se déconnecter</a>
             </p>
           </div>
@@ -76,28 +76,41 @@
 </div>
 
 
+  
   <div class="container mt-3">
-    <h2>Titre de l'étape</h2>
-    <p class="h3">Etape X sur Y</p>
-      <div class="row">
-        <div class="col-md-8">
-          
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.</p>
-
-          <nav>
-  <h3 class="sr-only">Pagination</h3>
-  <ul class="list-unstyled d-flex justify-content-start flex-wrap mb-0">
-    <li class="pr-1"><a href="#" class="btn btn-secondary vd-btn-chevron-l">Précédent</a></li>
-    <li class="ml-auto"><a href="#" class="btn btn-primary vd-btn-chevron-r">Suivant</a></li>
-    
-  </ul>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <h2 class="sr-only">Navigation de l'espace sécurisé</h2>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <span class="navbar-brand fa fa-lock" aria-hidden="true"></span>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="http://pauline.org" title="autem deleniti voluptate">rerum aspernatur voluptas</a>
+      </li><li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="http://julien.org" title="quis molestias perferendis">velit recusandae ducimus</a>
+      </li><li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="https://laura.net" title="aut ducimus voluptatem">nobis sunt quas</a>
+      </li><li class="nav-item mb-lg-0  active">
+        <a class="nav-link" href="https://julien.fr" title="maiores harum alias"><span class="sr-only">(current)</span> aut doloribus est</a>
+      </li><li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="http://nicolas.net" title="et iure beatae">tempore alias eius</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
+  </div>
+  
 
-          
-        </div>
-      </div>
+  <div class="container mt-3">
+    
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.</p>
+
+
+    
   </div>
 </main>
 <footer class="footer mt-3">
