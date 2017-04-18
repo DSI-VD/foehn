@@ -250,6 +250,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Move logo to the right on the homepage
 - Update boostrap-variables to last Alpha 6 version
 - Reduce height of header search-form #607
+- Make input placeholder gray #427
 
 ### Added
 
