@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Simplify [page-title-banner--form-presta](../components/detail/page-title-banner--form-presta) organism HTML
 - Renamed template-presta in [espace-securise](../components/detail/espace-securise)
 - Renamed template-presta-form in [espace-securise](../components/detail/espace-securise--form)
 - Change structure of [header-securise](../components/detail/connexion) organism
