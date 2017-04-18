@@ -13,7 +13,7 @@ Upgrading? Please read our [CHANGELOG](https://github.com/DSI-VD/foehn/blob/mast
 The following script lets you build, watch and serve the code.
 
 ```shell
-$ git clone https://github.com/vdch/foehn.git
+$ git clone [path/of/the/repo/]foehn.git
 $ cd foehn
 $ npm start
 ```
@@ -25,8 +25,6 @@ $ npm start
 If you only want to build the code.
 
 ```shell
-$ git clone https://github.com/vdch/foehn.git
-$ cd foehn
 $ npm run build
 ```
 
@@ -43,6 +41,7 @@ $ npm run deploy
 To bump version use the following command:
 
 ```
-$ npm run version
+$ yarn version
 ```
+
 It will ask you the new version number.
