@@ -30,11 +30,13 @@ $ npm run build
 
 ### Deploy the styleguide
 
-We deploy the styleguide to a `gh-pages` branch on Github. To do this, a simple command:
+We deploy the styleguide to a `gh-pages` branch on Github. To do this, use the following command:
 
 ```shell
 $ npm run deploy
 ```
+
+The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 
 ### New version
 
