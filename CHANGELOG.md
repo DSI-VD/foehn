@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@checkbox` only contain one checkbox
 - Config navigation in `@prestationsa` page
 - Config navigation in `@documents` page
 - Config navigation in `@demandes` page
