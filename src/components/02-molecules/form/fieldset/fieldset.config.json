@@ -5,7 +5,8 @@
       "items": [
         {
           "label": "Cras sed ligula eu est cursus eleifend ut id turpis",
-          "name": "exampleRadio"
+          "name": "exampleRadio",
+          "checked": true
         },
         {
           "label": "Fusce feugiat quam vel tellus malesuada, sit amet maximus justo hendrerit",
