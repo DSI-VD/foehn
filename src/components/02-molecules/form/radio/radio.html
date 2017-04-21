@@ -1,6 +1,6 @@
 <div class="form-check{% if validation.class %} has-{{ validation.class }}{% endif %}{% if disabled %} disabled{% endif %}">
   <label class="form-check-label">
-    <input class="form-check-input" type="radio" value="{{ value }}"{% if name %} name="{{ name }}"{% endif %}{% if disabled %} disabled{% endif %}>
+    <input class="form-check-input" type="radio" value="{{ value }}"{% if name %} name="{{ name }}"{% endif %}{% if checked %} checked{% endif %}{% if disabled %} disabled{% endif %}>
     {{ label }}
   </label>
 </div>
