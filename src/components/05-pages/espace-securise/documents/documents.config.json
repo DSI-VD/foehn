@@ -1,6 +1,41 @@
 {
     "status": "prototype",
     "context": {
-      "pageTitle": "Documents"
+      "pageTitle": "Documents",
+      "navigation": {
+        "title": "@nav-horizontal.title",
+        "items": [
+          {
+            "text": "Accueil",
+            "title": null,
+            "url": "accueil-securise",
+            "active": null
+          },
+          {
+            "text": "Demandes",
+            "title": null,
+            "url": "demandes",
+            "active": null
+          },
+          {
+            "text": "Messages",
+            "title": null,
+            "url": "messages",
+            "active": null
+          },
+          {
+            "text": "Préstations",
+            "title": null,
+            "url": "prestations",
+            "active": null
+          },
+          {
+            "text": "Documents",
+            "title": null,
+            "url": "documents",
+            "active": true
+          }
+        ]
+      }
     }
 }

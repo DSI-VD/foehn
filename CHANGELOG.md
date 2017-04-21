@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Config navigation in `@prestationsa` page
+- Config navigation in `@documents` page
+- Config navigation in `@demandes` page
+- Config navigation in `@accueil-securise` page
+- Rename `espace-securise` page in `@accueil-securise`
 - Simplify `@page-title-banner--form-presta` organism HTML
 - Renamed template-presta in `@espace-securise`
 - Renamed template-presta-form in `@espace-securise`
