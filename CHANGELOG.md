@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@radio` only contain one radio button
 - `@checkbox` only contain one checkbox
 - Config navigation in `@prestationsa` page
 - Config navigation in `@documents` page
@@ -39,6 +40,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@input--validation-danger` molecule
 - Add `@input--validation-warning` molecule
 - Add `@input--validation-success` molecule
+
+## Fix
+- Fix missing `name` attribute config in `@radio`
 
 ### Removed
 - Removed feedback molecule
