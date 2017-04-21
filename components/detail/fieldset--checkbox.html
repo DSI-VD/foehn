@@ -209,7 +209,8 @@
   <span class="hljs-attr">"items"</span>: [
     {
       <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Cras sed ligula eu est cursus eleifend ut id turpis"</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"exampleRadio"</span>
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"exampleRadio"</span>,
+      <span class="hljs-attr">"checked"</span>: <span class="hljs-literal">true</span>
     },
     {
       <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Fusce feugiat quam vel tellus malesuada, sit amet maximus justo hendrerit"</span>,
@@ -301,27 +302,39 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-db5e43822f7e2189997b9fc7075b6e94-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p>Bearing in mind that <code>&lt;fieldset&gt;</code>s are pointless without <code>&lt;legend&gt;</code>s, you can use the following three rules of thumb to decide if a <code>&lt;fieldset&gt;</code> is appropriate.</p>
+        <h1 id="when-using-a-fieldset-">When using a <code>&lt;fieldset&gt;</code></h1>
+<p>Bearing in mind that <code>&lt;fieldset&gt;</code>s are pointless without <code>&lt;legend&gt;</code>s, you can use the following three rules of thumb to decide if a <code>&lt;fieldset&gt;</code> is appropriate.</p>
 <ol>
 <li>Is there more than one distinct set of fields in total, in the same form or context? <em>Yes?</em> Use <code>&lt;fieldset&gt;</code>s. <em>No?</em> Don’t use <code>&lt;fieldset&gt;</code>s.</li>
 <li>Does a set actually only have one field in it? Yes? You don’t need a <code>&lt;fieldset&gt;.</code> <em>No?</em> Use a <code>&lt;fieldset&gt;</code> if (1) applies.</li>
-<li>Can you think of a <legend> that would make sense or aid comprehension if used with each of the <code>&lt;fieldset&gt;</code>’s field labels? <em>Yes?</em> Use a <code>&lt;fieldset&gt;</code>. <em>No?</em> Don’t use a <code>&lt;fieldset&gt;</code>.</li>
+<li>Can you think of a <code>&lt;legend&gt;</code> that would make sense or aid comprehension if used with each of the <code>&lt;fieldset&gt;</code>’s field labels? <em>Yes?</em> Use a <code>&lt;fieldset&gt;</code>. <em>No?</em> Don’t use a <code>&lt;fieldset&gt;</code>.</li>
 </ol>
+<h1 id="how-screen-readers-read-legend-">How screen readers read <code>&lt;legend&gt;</code></h1>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"form"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sorter"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"get"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Sort by<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Sort by<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sort-method"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"most-recent"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"most-recent"</span> <span class="hljs-attr">checked</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"most-recent"</span>&gt;</span>most recent<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sort-method"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"popularity"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"popularity"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"popularity"</span>&gt;</span>popularity<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sort-method"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"price-low-high"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"price-low-high"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"price-low-high"</span>&gt;</span>price (low to high)<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sort-method"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"price-high-low"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"price-high-low"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"price-high-low"</span>&gt;</span>price (high to low)<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>sort<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></pre></code><p>The <code>&lt;form&gt;</code> contains a single <code>&lt;fieldset&gt;</code> which is used to group the radio options under the label “Sort by”, followed by a submit button. When a radio <input> is focused, the <code>&lt;legend&gt;</code> content is announced followed by the <code>&lt;input&gt;</code>’s <code>&lt;label&gt;</code>. To begin with, the first option (“most recent”) is checked. Standard behavior is that only this checked <code>&lt;input&gt;</code> is focusable by Tab. Focusing it would trigger the announcement of “Sort by most recent, selected, radio button, one of four.” “Sort by” is the group label; “most recent” is the element label; “selected” is the element state; “radio button” is the element role. The number four is the total number of radio buttons which share a common <code>name=&quot;sort-method</code>“.</p>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-check"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-check-label"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-check-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"most-recent"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sort-method"</span> <span class="hljs-attr">checked</span>&gt;</span>
+    most recent
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-check"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-check-label"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-check-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"popularity"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sort-method"</span>&gt;</span>
+    popularity
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">submit</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success vd-btn-chevron-r"</span>&gt;</span>Transmettre<span class="hljs-tag">&lt;/<span class="hljs-name">submit</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></pre></code><p>The <code>&lt;form&gt;</code> contains a single <code>&lt;fieldset&gt;</code> which is used to group the radio options under the label “Sort by”, followed by a submit button. When a radio <code>&lt;input&gt;</code> is focused, the <code>&lt;legend&gt;</code> content is announced followed by the <code>&lt;input&gt;</code>’s <code>&lt;label&gt;</code>. To begin with, the first option (“most recent”) is checked. Standard behavior is that only this checked <code>&lt;input&gt;</code> is focusable by Tab. Focusing it would trigger the announcement of “Sort by most recent, selected, radio button, one of four.” “Sort by” is the group label; “most recent” is the element label; “selected” is the element state; “radio button” is the element role. The number four is the total number of radio buttons which share a common <code>name=&quot;sort-method</code>“.</p>
 
         
     </div>
