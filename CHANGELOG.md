@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Use `@button--submit` in `@pagination`
 
 ### Add
+- Add `@fieldset--checkbox` molecule
 - Add `@nav-horizontal` molecule
 - Add `@modal` molecule
 - Add `@input--date` molecule

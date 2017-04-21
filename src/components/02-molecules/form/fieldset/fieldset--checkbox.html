@@ -1,0 +1,6 @@
+<fieldset class="form-group">
+  <legend>{{ legend }}</legend>
+  {% for item in items %}
+    {% render '@checkbox', item %}
+  {% endfor %}
+</fieldset>

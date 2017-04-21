@@ -1,3 +1,21 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "legend": "Legend",
+      "items": [
+        {
+          "label": "Cras sed ligula eu est cursus eleifend ut id turpis"
+        },
+        {
+          "label": "Fusce feugiat quam vel tellus malesuada, sit amet maximus justo hendrerit"
+        },
+        {
+          "label": "Aenean id est non dui porttitor euismod"
+        },
+        {
+          "label": "Phasellus dignissim metus quis blandit varius",
+          "disabled": true
+        }
+      ]
+    }
 }
