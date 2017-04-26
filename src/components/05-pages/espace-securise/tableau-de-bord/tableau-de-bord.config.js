@@ -92,21 +92,15 @@ module.exports = {
             title: '@nav-horizontal.title',
             items: [
                 {
-                    text: 'Accueil',
+                    text: 'Tableau de bord',
                     title: null,
-                    url: 'accueil-securise',
+                    url: 'tableau-de-bord',
                     active: true,
                 },
                 {
-                    text: 'Demandes',
+                    text: 'Historique',
                     title: null,
-                    url: 'demandes',
-                    active: null,
-                },
-                {
-                    text: 'Messages',
-                    title: null,
-                    url: 'messages',
+                    url: 'historique',
                     active: null,
                 },
                 {
@@ -119,6 +113,12 @@ module.exports = {
                     text: 'Documents',
                     title: null,
                     url: 'documents',
+                    active: null,
+                },
+                {
+                    text: 'Paramètres',
+                    title: null,
+                    url: 'parametres',
                     active: null,
                 },
             ],
