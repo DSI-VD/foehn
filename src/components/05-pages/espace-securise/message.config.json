@@ -2,7 +2,19 @@
   "context": {
     "title": "Avis de notification",
     "url": "#dasdsadasdas",
+    "type": "message",
     "ref": "HOX0AI-AJQ7K1",
     "text": "Sera conservé j'usqu'à ce que vous la supprimiez"
-  }
+  },
+  "variants": [
+    {
+      "name": "demande",
+      "handle": "yeah",
+      "context": {
+        "type": "demande",
+        "status": "En cours",
+        "text": "L'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions."
+      }
+    }
+  ]
 }
