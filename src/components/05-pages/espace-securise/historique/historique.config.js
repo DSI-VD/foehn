@@ -86,6 +86,7 @@ module.exports = {
             titleModifier: 'sr-only',
             options: {
                 legend: 'Rechercher les',
+                legendModifier: 'sr-only',
                 items: [
                     {
                         label: 'Demandes',
