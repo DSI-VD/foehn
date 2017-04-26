@@ -16,6 +16,7 @@ const messageItemData = [];
 messageItemData.push({
     title: 'Ceci est un message',
     url: '#',
+    type: 'message',
     ref: 'HOX0AI-AJQ7K1',
     text: 'Sera conservé j\'usqu\'à ce que vous la supprimiez',
 });
@@ -24,6 +25,7 @@ for (let i = 0; i < messageItemCount; i += 1) {
     messageItemData.push({
         title: faker.lorem.sentence(),
         url: faker.internet.url(),
+        type: 'message',
         ref: faker.internet.password(),
         text: faker.lorem.text(),
     });
@@ -39,7 +41,9 @@ const tachesATraiterItemData = [];
 tachesATraiterItemData.push({
     title: 'Demande de permis de construire',
     url: '#',
+    type: 'demande',
     ref: 'HOX0AI-AJQ7K1',
+    status: 'À traiter',
     text: 'L\'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions.',
 });
 
@@ -47,7 +51,9 @@ for (let i = 0; i < tachesATraiterItemCount; i += 1) {
     tachesATraiterItemData.push({
         title: faker.lorem.sentence(),
         url: faker.internet.url(),
+        type: 'demande',
         ref: faker.internet.password(),
+        status: 'À traiter',
         text: faker.lorem.text(),
     });
 }
@@ -61,8 +67,10 @@ const demandesItemData = [];
 demandesItemData.push({
     title: 'Demande de permis de construire',
     url: '#',
+    type: 'demande',
     ref: 'HOX0AI-AJQ7K1',
     text: 'L\'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions.',
+    status: 'En cours',
 });
 
 for (let i = 0; i < demandesItemCount; i += 1) {
@@ -77,6 +85,7 @@ for (let i = 0; i < demandesItemCount; i += 1) {
     demandesItemData.push({
         title: faker.lorem.sentence(),
         url: faker.internet.url(),
+        type: 'demande',
         ref: faker.internet.password(),
         text: faker.lorem.text(),
         status: demandeStatus,

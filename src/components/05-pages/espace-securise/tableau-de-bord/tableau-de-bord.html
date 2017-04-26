@@ -12,14 +12,14 @@
       <section class="mb-3">
         <h2 class="mb-1">Tâches à traiter</h2>
         {% for tache in tachesATraiter -%}
-        {% render '@demande', tache %}
+        {% render '@message', tache %}
         {%- endfor %}
       </section>
 
       <section class="mb-3">
         <h2 class="mb-1">Demandes</h2>
         {% for demande in demandes -%}
-        {% render '@demande', demande %}
+        {% render '@message', demande %}
         {%- endfor %}
       </section>
 
