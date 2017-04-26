@@ -1,7 +1,7 @@
 {
     "status": "prototype",
     "context": {
-      "pageTitle": "Demandes",
+      "pageTitle": "Historique",
       "navigation": {
         "title": "@nav-horizontal.title",
         "items": [
