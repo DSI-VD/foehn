@@ -7,6 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Rename `@demandes` in `@historique`
 - Rename `@acceuil-securise` in `@tableau-de-bord` and change content
 
+### Added
+- Add `@search-form--regular-option`component
+
 ## [0.21.0]
 
 ### Changed
