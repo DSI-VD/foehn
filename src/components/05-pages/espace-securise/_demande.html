@@ -1,0 +1,14 @@
+<article>
+  <h3 class="mb-0"><a href="{{ url }}">{{ title }}</a></h3>
+  <dl class="small text-muted mb-0 row">
+    <dt class="col-sm-5 mb-sm-0">Type</dt>
+    <dd class="col-sm-7 mb-sm-0">Demande</dd>
+    <dt class="col-sm-5 mb-sm-0">Référence de la demande</dt>
+    <dd class="col-sm-7 mb-sm-0"><samp>{{ ref }}</samp></dd>
+    {% if status %}
+    <dt class="col-sm-5 mb-sm-0">Status</dt>
+    <dd class="col-sm-7 mb-sm-0">{{ status }}</dd>
+    {% endif %}
+  </dl>
+  <p>{{ text }}</p>
+</article>
