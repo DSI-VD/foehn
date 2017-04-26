@@ -101,8 +101,8 @@ module.exports = {
                         name: 'filterSearch',
                         checked: false,
                     },
-                ]
-            }
+                ],
+            },
         },
         historique: historiqueItemData,
     },
