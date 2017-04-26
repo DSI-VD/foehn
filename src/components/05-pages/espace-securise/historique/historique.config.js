@@ -83,6 +83,7 @@ module.exports = {
         },
         search: {
             title: 'Rechercher dans l\'historique',
+            titleModifier: 'sr-only',
             options: {
                 legend: 'Rechercher les',
                 items: [
