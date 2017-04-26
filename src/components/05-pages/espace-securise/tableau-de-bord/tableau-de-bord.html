@@ -1,0 +1,70 @@
+{% extends '@espace-securise' %}
+{% block main %}
+  <div class="row">
+    <div class="col-md-8">
+      <section class="mb-3">
+        <h2 class="mb-1">Messages non lus</h2>
+        {% for i in range(0, 5) -%}
+        <article>
+          <h3 class="mb-0"><a href="#2321"><span class="fa fa-mail"></span>Avis de notification</a></h3>
+          <dl class="small text-muted mb-0 row">
+            <dt class="col-sm-5 mb-sm-0">Type</dt>
+            <dd class="col-sm-7 mb-sm-0">Message</dd>
+            <dt class="col-sm-5 mb-sm-0">Référence de la demande</dt>
+            <dd class="col-sm-7 mb-sm-0"><samp>HOX0AI-AJQ7K1</samp></dd>
+          </dl>
+          <p class="mb-0">Sera conservé j'usqu'à ce que vous la supprimiez</p>
+          <ul class="list-unstyled d-flex justify-content-start flex-wrap mb-0">
+            <li class="mr-1"><a href="#3242342">Télécharger</a></li>
+            <li class="mr-1"><a href="#32423423">Conserver</a></li>
+            <li class="ml-sm-auto"><a href="#2342342423">Supprimer</a></li>
+          </ul>
+        </article>
+        {%- endfor %}
+      </section>
+
+      <section class="mb-3">
+        <h2 class="mb-1">Tâches à traiter</h2>
+        {% for i in range(0, 5) -%}
+        <article>
+          <h3 class="mb-0"><a href="#143234234">Demande de permis de construire</a></h3>
+          <dl class="small text-muted mb-0 row">
+            <dt class="col-sm-5 mb-sm-0">Type</dt>
+            <dd class="col-sm-7 mb-sm-0">Demande</dd>
+            <dt class="col-sm-5 mb-sm-0">Référence de la demande</dt>
+            <dd class="col-sm-7 mb-sm-0"><samp>HOX0AI-AJQ7K1</samp></dd>
+          </dl>
+          <p>L'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions.</p>
+        </article>
+        {%- endfor %}
+      </section>
+
+      <section class="mb-3">
+        <h2 class="mb-1">Demandes</h2>
+        {% for i in range(0, 5) -%}
+        <article>
+          <h3 class="mb-0"><a href="#2131231">Demande de permis de construire</a></h3>
+          <dl class="small text-muted mb-0 row">
+            <dt class="col-sm-5 mb-sm-0">Type</dt>
+            <dd class="col-sm-7 mb-sm-0">Demande</dd>
+            <dt class="col-sm-5 mb-sm-0">Status</dt>
+            <dd class="col-sm-7 mb-sm-0">Brouillon</dd>
+            <dt class="col-sm-5 mb-sm-0">Référence de la demande</dt>
+            <dd class="col-sm-7 mb-sm-0"><samp>HOX0AI-AJQ7K1</samp></dd>
+          </dl>
+          <p>L'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions.</p>
+        </article>
+        {%- endfor %}
+      </section>
+
+    </div>
+
+    <div class="col-md-4">
+      <h2 class="mb-1">Préstation favorites</h2>
+      <ul>
+        <li><a href="#dsfsfs">Modification des impôts</a></li>
+        <li><a href="#dsfsfs">Voter en ligne</a></li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

@@ -1,7 +1,7 @@
 {
   "status": "prototype",
   "context": {
-    "pageTitle": "Espace sécurisé",
+    "pageTitle": "Tableau de bord",
     "navigation": {
       "title": "@nav-horizontal.title",
       "items": [
