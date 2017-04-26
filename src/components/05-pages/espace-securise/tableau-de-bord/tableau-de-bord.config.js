@@ -23,7 +23,7 @@ messageItemData.push({
 
 for (let i = 0; i < messageItemCount; i += 1) {
     messageItemData.push({
-        title: faker.lorem.sentence(),
+        title: faker.hacker.phrase(),
         url: faker.internet.url(),
         type: 'message',
         ref: faker.internet.password(),
@@ -49,7 +49,7 @@ tachesATraiterItemData.push({
 
 for (let i = 0; i < tachesATraiterItemCount; i += 1) {
     tachesATraiterItemData.push({
-        title: faker.lorem.sentence(),
+        title: faker.hacker.phrase(),
         url: faker.internet.url(),
         type: 'demande',
         ref: faker.internet.password(),
@@ -74,7 +74,6 @@ demandesItemData.push({
 });
 
 for (let i = 0; i < demandesItemCount; i += 1) {
-
     let demandeStatus = '';
     if (faker.random.boolean() === true) {
         demandeStatus = 'Brouillon';
@@ -83,7 +82,7 @@ for (let i = 0; i < demandesItemCount; i += 1) {
     }
 
     demandesItemData.push({
-        title: faker.lorem.sentence(),
+        title: faker.hacker.phrase(),
         url: faker.internet.url(),
         type: 'demande',
         ref: faker.internet.password(),
