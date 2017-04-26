@@ -15,11 +15,13 @@ const historiqueItemData = [];
 historiqueItemData.push({
     title: 'Demande de permis de construire',
     url: '#',
-    type: 'demande',
-    ref: 'HOX0AI-AJQ7K1',
+    meta: {
+        type: 'demande',
+        ref: 'HOX0AI-AJQ7K1',
+        status: 'En cours',
+        date: faker.random.number({ min: 1, max: 31 }) + '-' + 12 + '-' + '2016',
+    },
     text: 'L\'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions.',
-    status: 'En cours',
-    date: faker.random.number({ min: 1, max: 31 }) + '-' + 12 + '-' + '2016',
 });
 
 for (let i = 0; i < historiqueItemCount; i += 1) {
@@ -33,11 +35,13 @@ for (let i = 0; i < historiqueItemCount; i += 1) {
     historiqueItemData.push({
         title: faker.hacker.phrase(),
         url: faker.internet.url(),
-        type: 'demande',
-        ref: faker.internet.password(),
+        meta: {
+            type: 'demande',
+            ref: faker.internet.password(),
+            status: demandeStatus,
+            date: faker.random.number({ min: 1, max: 31 }) + '-' + (11 - i) + '-' + '2016',
+        },
         text: faker.lorem.text(),
-        status: demandeStatus,
-        date: faker.random.number({ min: 1, max: 31 }) + '-' + (11 - i) + '-' + '2016',
     });
 }
 
