@@ -1,6 +1,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+
+### Changed
+- Rename `@acceuil-securise` in `@tableau-de-bord` and change content
+
 ## [0.21.0]
 
 ### Changed
