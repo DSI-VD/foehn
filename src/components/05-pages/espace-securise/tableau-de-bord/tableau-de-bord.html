@@ -1,0 +1,36 @@
+{% extends '@espace-securise' %}
+{% block main %}
+  <div class="row">
+    <div class="col-md-8">
+      <section class="mb-3">
+        <h2 class="mb-1">Messages non lus</h2>
+        {% for message in messages -%}
+        {% render '@message--default', message %}
+        {%- endfor %}
+      </section>
+
+      <section class="mb-3">
+        <h2 class="mb-1">Tâches à traiter</h2>
+        {% for tache in tachesATraiter -%}
+        {% render '@message--task', tache %}
+        {%- endfor %}
+      </section>
+
+      <section class="mb-3">
+        <h2 class="mb-1">Demandes</h2>
+        {% for demande in demandes -%}
+        {% render '@message--request', demande %}
+        {%- endfor %}
+      </section>
+
+    </div>
+
+    <div class="col-md-4">
+      <h2 class="mb-1">Préstations favorites</h2>
+      <ul>
+        <li><a href="#dsfsfs">Modification des impôts</a></li>
+        <li><a href="#dsfsfs">Voter en ligne</a></li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

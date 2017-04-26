@@ -1,5 +1,5 @@
-<fieldset class="form-group">
-  <legend>{{ legend }}</legend>
+<fieldset class="form-group{% if styleModifier %} {{ styleModifier }}{% endif %}">
+  <legend{% if legendModifier %} class="{{ legendModifier }}"{% endif %}>{{ legend }}</legend>
   {% for item in items %}
     {% render '@checkbox', item %}
   {% endfor %}
