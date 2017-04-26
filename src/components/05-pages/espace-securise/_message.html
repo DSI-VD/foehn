@@ -4,18 +4,22 @@
     <dt class="col-sm-5 mb-sm-0">Type</dt>
     <dd class="col-sm-7 mb-sm-0">{{ type | capitalize }}</dd>
     <dt class="col-sm-5 mb-sm-0">Référence de la demande</dt>
-    <dd class="col-sm-7 mb-sm-0"><samp>{{ ref }}</samp></dd>
-    {% if type != "message" %}
+    <dd class="col-sm-7 mb-sm-0">{{ ref }}</dd>
+    {% if type != "message" -%}
     <dt class="col-sm-5 mb-sm-0">Status</dt>
-    <dd class="col-sm-7 mb-sm-0"><samp>{{ status }}</samp></dd>
-    {% endif %}
+    <dd class="col-sm-7 mb-sm-0">{{ status }}</dd>
+    {%- endif %}
+    {% if date -%}
+    <dt class="col-sm-5 mb-sm-0">Date</dt>
+    <dd class="col-sm-7 mb-sm-0">{{ date }}</dd>
+    {%- endif %}
   </dl>
   <p{% if type == "message" %} class="mb-0"{% endif %}>{{ text }}</p>
-  {% if type == "message" %}
+  {% if type == "message" -%}
   <ul class="list-unstyled d-flex justify-content-start flex-wrap mb-0">
     <li class="mr-1"><a href="#3242342">Télécharger</a></li>
     <li class="mr-1"><a href="#32423423">Conserver</a></li>
     <li class="ml-sm-auto"><a href="#2342342423">Supprimer</a></li>
   </ul>
-  {% endif %}
+  {%- endif -%}
 </article>
