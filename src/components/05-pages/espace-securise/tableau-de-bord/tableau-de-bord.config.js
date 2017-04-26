@@ -16,18 +16,22 @@ const messageItemData = [];
 messageItemData.push({
     title: 'Ceci est un message',
     url: '#',
-    type: 'message',
-    ref: 'HOX0AI-AJQ7K1',
     text: 'Sera conservé j\'usqu\'à ce que vous la supprimiez',
+    meta: {
+        date: '26-04-2017',
+    },
+    actions: '@message--default.actions',
 });
 
 for (let i = 0; i < messageItemCount; i += 1) {
     messageItemData.push({
         title: faker.hacker.phrase(),
         url: faker.internet.url(),
-        type: 'message',
-        ref: faker.internet.password(),
         text: faker.lorem.text(),
+        meta: {
+            date: '26-04-2017',
+        },
+        actions: '@message--default.actions',
     });
 }
 
@@ -41,9 +45,8 @@ const tachesATraiterItemData = [];
 tachesATraiterItemData.push({
     title: 'Demande de permis de construire',
     url: '#',
-    type: 'demande',
+    type: 'tâche',
     ref: 'HOX0AI-AJQ7K1',
-    status: 'À traiter',
     text: 'L\'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions.',
 });
 
@@ -51,10 +54,10 @@ for (let i = 0; i < tachesATraiterItemCount; i += 1) {
     tachesATraiterItemData.push({
         title: faker.hacker.phrase(),
         url: faker.internet.url(),
-        type: 'demande',
-        ref: faker.internet.password(),
-        status: 'À traiter',
-        text: faker.lorem.text(),
+        meta: {
+            ref: faker.internet.password(),
+            recipient: faker.name.findName(),
+        },
     });
 }
 /**
@@ -67,10 +70,13 @@ const demandesItemData = [];
 demandesItemData.push({
     title: 'Demande de permis de construire',
     url: '#',
-    type: 'demande',
-    ref: 'HOX0AI-AJQ7K1',
+    meta: {
+        ref: 'HOX0AI-AJQ7K1',
+        status: 'En cours',
+        date: '26-04-2017',
+    },
     text: 'L\'utilisateur Benoît Horisberger a initié une demande de permis de construire qui nécessite votre approbation. Veuillez cliquer sur la demande et suivre les instructions.',
-    status: 'En cours',
+    actions: '@message--request.actions',
 });
 
 for (let i = 0; i < demandesItemCount; i += 1) {
@@ -84,10 +90,13 @@ for (let i = 0; i < demandesItemCount; i += 1) {
     demandesItemData.push({
         title: faker.hacker.phrase(),
         url: faker.internet.url(),
-        type: 'demande',
-        ref: faker.internet.password(),
+        meta: {
+            ref: faker.internet.password(),
+            status: demandeStatus,
+            date: '26-04-2017',
+        },
         text: faker.lorem.text(),
-        status: demandeStatus,
+        actions: '@message--request.actions',
     });
 }
 
