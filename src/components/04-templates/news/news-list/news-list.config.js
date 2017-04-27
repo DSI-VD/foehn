@@ -50,4 +50,18 @@ module.exports = {
         ],
         teasers: teaserItemData,
     },
+    variants: [
+        {
+            name: 'projets',
+            context: {
+                pageTitle: 'Projets',
+                breadcrumb: [
+                    {
+                        page: 'vd.ch',
+                        url: '#',
+                    },
+                ],
+            },
+        },
+    ],
 };
