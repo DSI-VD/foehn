@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@news-list` has fake content
 - Rename `@demandes` in `@historique` and change content
 - Rename `@acceuil-securise` in `@tableau-de-bord` and change content
 
