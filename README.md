@@ -13,7 +13,7 @@ Upgrading? Please read our [CHANGELOG](https://github.com/DSI-VD/foehn/blob/mast
 The following script lets you build, watch and serve the code.
 
 ```shell
-$ git clone https://github.com/vdch/foehn.git
+$ git clone [path/of/the/repo/]foehn.git
 $ cd foehn
 $ npm start
 ```
@@ -22,27 +22,28 @@ $ npm start
 
 ### Build
 
-If you only want to build the code.
+If you only want to build the code (the `dist/` folder).
 
 ```shell
-$ git clone https://github.com/vdch/foehn.git
-$ cd foehn
 $ npm run build
 ```
 
 ### Deploy the styleguide
 
-We deploy the styleguide to a `gh-pages` branch on Github. To do this, a simple command:
+We deploy the styleguide to a `gh-pages` branch on Github. To do this, use the following command:
 
 ```shell
 $ npm run deploy
 ```
+
+The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 
 ### New version
 
 To bump version use the following command:
 
 ```
-$ npm run version
+$ yarn version
 ```
+
 It will ask you the new version number.

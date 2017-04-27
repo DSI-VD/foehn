@@ -8,6 +8,7 @@ const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
+const replace = require('gulp-replace');
 const imagemin = require('gulp-imagemin');
 const eslint = require('gulp-eslint');
 
@@ -95,6 +96,7 @@ function deploy() {
     return gulp.src(`${paths.build}/**/*`)
     .pipe(ghPages({
         force: true,
+        remoteUrl: 'https://github.com/DSI-VD/foehn.git',
     }));
 }
 
@@ -203,6 +205,20 @@ function lintscripts() {
 }
 
 /**
+ * Copy changelog in fractal
+ *
+ * Copy changelog and make links on components
+ * `@component` becomes [`@component`](url/the/component)
+ * Do not forget to put `src/docs/changelog.md` in `.gitignore`
+ */
+function copyChangelog() {
+    return gulp.src('CHANGELOG.md')
+    .pipe(replace(/`@(\S+)`/g, '[\`@$1\`](../components/detail/$1)'))
+    .pipe(rename('changelog.md'))
+    .pipe(gulp.dest(`${paths.src}/docs/`));
+}
+
+/**
  * Watch
  */
 function watch() {
@@ -214,7 +230,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(styles, lintstyles, stylesVendors, fonts, scriptsVendors, svg, images, lintscripts));
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, stylesVendors, fonts, scriptsVendors, svg, images, lintscripts));
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));

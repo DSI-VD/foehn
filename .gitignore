@@ -5,5 +5,9 @@ bower_components
 .publish
 .env
 tmp/
+dist/
+
+# changelog is ignored because it's copied from ./CHANGELOG.md
+src/docs/changelog.md
 
 npm-debug.log
