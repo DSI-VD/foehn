@@ -43,7 +43,7 @@
         },
         "button": {
           "text": "Voir tout",
-          "title": "Afficher toutes les préstations",
+          "title": "Afficher toutes les prestations",
           "href": "theme--list"
         }
     },
@@ -53,7 +53,7 @@
         "label": "List all prestations",
         "context": {
           "searchForm": {
-            "title": "Rechercher dans les préstations"
+            "title": "Rechercher dans les prestations"
           },
           "prestations": {
             "list": [

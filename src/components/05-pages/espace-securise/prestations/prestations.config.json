@@ -1,3 +1,41 @@
 {
-    "status": "prototype"
+    "status": "prototype",
+    "context": {
+      "pageTitle": "Prestations",
+      "navigation": {
+        "title": "@nav-horizontal.title",
+        "items": [
+          {
+            "text": "Tableau de bord",
+            "title": null,
+            "url": "tableau-de-bord",
+            "active": null
+          },
+          {
+            "text": "Historique",
+            "title": null,
+            "url": "historique",
+            "active": null
+          },
+          {
+            "text": "Préstations",
+            "title": null,
+            "url": "prestations",
+            "active": true
+          },
+          {
+            "text": "Documents",
+            "title": null,
+            "url": "documents",
+            "active": null
+          },
+          {
+            "text": "Paramètres",
+            "title": null,
+            "url": "parametre",
+            "active": null
+          }
+        ]
+      }
+    }
 }

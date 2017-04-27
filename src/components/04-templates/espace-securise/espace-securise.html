@@ -1,0 +1,20 @@
+{% render '@header--securise' %}
+
+{% if navigation %}
+<div class="container mb-2">
+  {% render '@nav-horizontal', navigation %}
+</div>
+{% endif %}
+
+<main id="main">
+  {% include '@page-title-banner--form-presta' %}
+
+  <div class="container">
+    {% block main %}
+
+    {% render '@paragraph' %}
+
+    {% endblock %}
+  </div>
+</main>
+{% include '@footer--securise' %}

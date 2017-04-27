@@ -2,6 +2,7 @@
     "status": "ready",
     "context": {
       "title": "Rechercher dans les actualités",
-      "placeholder": "Rechercher"
+      "placeholder": "Rechercher",
+      "options": "@fieldset--checkbox"
     }
 }

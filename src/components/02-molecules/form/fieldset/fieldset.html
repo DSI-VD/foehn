@@ -1,4 +1,6 @@
 <fieldset class="form-group">
-  <legend>Radio buttons</legend>
-  {% render '@radio' %}
+  <legend>{{ legend }}</legend>
+  {% for item in items %}
+    {% render '@radio', item %}
+  {% endfor %}
 </fieldset>

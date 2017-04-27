@@ -1,0 +1,11 @@
+{% extends '@espace-securise' %}
+{% block main %}
+
+{% render '@search-form--regular-options', search %}
+
+{% for item in historique -%}
+{% render '@message', item %}
+{%- endfor %}
+{% render '@pagination' %}
+
+{% endblock %}

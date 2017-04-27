@@ -1,3 +1,26 @@
 {
-    "status": "ready"
+    "status": "ready",
+    "context": {
+      "legend": "Legend",
+      "items": [
+        {
+          "label": "Cras sed ligula eu est cursus eleifend ut id turpis",
+          "name": "exampleRadio",
+          "checked": true
+        },
+        {
+          "label": "Fusce feugiat quam vel tellus malesuada, sit amet maximus justo hendrerit",
+          "name": "exampleRadio"
+        },
+        {
+          "label": "Aenean id est non dui porttitor euismod",
+          "name": "exampleRadio"
+        },
+        {
+          "label": "Phasellus dignissim metus quis blandit varius",
+          "name": "exampleRadio",
+          "disabled": true
+        }
+      ]
+    }
 }

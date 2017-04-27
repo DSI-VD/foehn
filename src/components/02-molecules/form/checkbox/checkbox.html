@@ -1,8 +1,6 @@
-{% for checkbox in checkboxes %}
-<div class="form-check{% if checkbox.validation.class %} has-{{ checkbox.validation.class }}{% endif %}{% if checkbox.disabled %} disabled{% endif %}">
+<div class="form-check{% if validation.class %} has-{{ validation.class }}{% endif %}{% if disabled %} disabled{% endif %}">
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" value="{{ checkbox.value }}"{% if checkbox.disabled %} disabled{% endif %}>
-    {{ checkbox.label }}
+    <input class="form-check-input" type="checkbox" value="{{ value }}"{% if checked %} checked{% endif %}{% if disabled %} disabled{% endif %}>
+    {{ label }}
   </label>
 </div>
-{% endfor %}

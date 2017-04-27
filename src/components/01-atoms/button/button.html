@@ -1,1 +1,6 @@
-<a href="{{ href }}" title="{{ title }}" class="{{ class }}">{% if icon %}<span class="fa {{ icon }}" aria-hidden="true"></span>  {% endif %}{{ text }}</a>
+<a href="{{ href }}" title="{{ title }}" class="{{ class }}"
+{% if attributes %}
+{% for attribute, value in attributes %}
+  {{ attribute }}="{{ value }}"
+{% endfor %}
+{% endif %}>{% if icon %}<span class="fa {{ icon }}" aria-hidden="true"></span>  {% endif %}{{ text }}</a>
