@@ -10,6 +10,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Add `@search-form--regular-option`component
 
+### Fix
+- Fix `@social-icons` has no title in `@news-detail`
+
 ## [0.21.0]
 
 ### Changed
