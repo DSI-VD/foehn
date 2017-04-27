@@ -1,8 +1,8 @@
 {% extends "@template--default" %}
 {% block main %}
   <div class="row">
-    {% for i in range(0, 10) %}
-    {% render '@teaser', {styleModifier: 'col-md-6'}, true %}
+    {% for teaser in teasers %}
+    {% render '@teaser', teaser, true %}
     {% endfor %}
   </div>
   {% render '@pagination' %}
