@@ -16,6 +16,7 @@ for (let i = 0; i < teaserItemCount; i += 1) {
         title: faker.hacker.phrase(),
         styleModifier: 'col-md-6',
         url: faker.internet.url(),
+        authors: null,
         media: {
             caption: null,
             image: {
