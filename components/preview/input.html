@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Default | Foehn</title>
+    <title>Input | Foehn</title>
     <meta name="description" content="">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width">
@@ -20,9 +20,77 @@
   </head>
   <body>
 
-    <div class="form-group">
+    <!-- Start: @input--default -->
+<div class="form-group">
   <label for="testInput">Label</label><input class="form-control" type="text" id="testInput" name="testInput" value="">
 </div>
+<!-- End: @input--default -->
+
+<!-- Start: @input--required -->
+<div class="form-group">
+  <label for="testInput">Label <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="text" id="testInput" name="testInput" value="" required aria-required="true">
+</div>
+<!-- End: @input--required -->
+
+<!-- Start: @input--disabled -->
+<div class="form-group">
+  <label for="testInput">Label</label><input class="form-control" type="text" id="testInput" name="testInput" value="" disabled>
+</div>
+<!-- End: @input--disabled -->
+
+<!-- Start: @input--help-text -->
+<div class="form-group">
+  <label for="testInput">Label</label><small id="testInputHelp" class="form-text text-muted">Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.</small><input class="form-control" type="email" id="testInput" name="testInput" value="" aria-describedby="testInputHelp">
+</div>
+<!-- End: @input--help-text -->
+
+<!-- Start: @input--validation-danger -->
+<div class="form-group has-danger">
+  <label for="testInput">Courriel</label><div class="form-control-feedback">Veuillez saisir votre courriel</div><small id="testInputHelp" class="form-text text-muted">Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.</small><input class="form-control form-control-danger" type="email" id="testInput" name="testInput" value="" aria-describedby="testInputHelp">
+</div>
+<!-- End: @input--validation-danger -->
+
+<!-- Start: @input--validation-warning -->
+<div class="form-group has-warning">
+  <label for="testInput">Label</label><div class="form-control-feedback">Veuillez contrôler le nombre de caractères</div><input class="form-control form-control-warning" type="text" id="testInput" name="testInput" value="">
+</div>
+<!-- End: @input--validation-warning -->
+
+<!-- Start: @input--validation-success -->
+<div class="form-group has-success">
+  <label for="testInput">Label</label><div class="form-control-feedback">Succès</div><input class="form-control form-control-success" type="text" id="testInput" name="testInput" value="">
+</div>
+<!-- End: @input--validation-success -->
+
+<!-- Start: @input--email -->
+<div class="form-group">
+  <label for="emailInput">Courriel</label><input class="form-control" type="email" id="emailInput" name="testInput" value="">
+</div>
+<!-- End: @input--email -->
+
+<!-- Start: @input--number -->
+<div class="form-group">
+  <label for="numberInput">Chiffre</label><input class="form-control" type="number" id="numberInput" name="testInput" value="" pattern="[0-9]*" min="1" max="99" size="2">
+</div>
+<!-- End: @input--number -->
+
+<!-- Start: @input--password -->
+<div class="form-group">
+  <label for="passwordInput">Password</label><input class="form-control" type="password" id="passwordInput" name="testInput" value="">
+</div>
+<!-- End: @input--password -->
+
+<!-- Start: @input--date -->
+<div class="form-group">
+  <label for="date">Date</label><input class="form-control" type="date" id="date" name="testInput" value="">
+</div>
+<!-- End: @input--date -->
+
+<!-- Start: @input--file -->
+<div class="form-group">
+  <label for="fileInput">Fichier</label><input class="form-control-file" type="file" id="fileInput" name="testInput" value="">
+</div>
+<!-- End: @input--file -->
 
 
 
