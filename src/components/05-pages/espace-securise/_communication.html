@@ -1,0 +1,25 @@
+<article>
+  <header>
+    <h3>{{ title }}</h3>
+    {% if meta %}
+    <dl class="small row">
+      {% if meta.dateOfReceipt %}
+      <dt class="col-4">Reçu le</dt>
+      <dd class="col-8">{{ meta.dateOfReceipt }}</dd>
+      {% endif %}
+      {% if meta.dateOfReading %}
+      <dt class="col-4">Lu le</dt>
+      <dd class="col-8">{{ meta.dateOfReading }}</dd>
+      {% endif %}
+    </dl>
+    {% endif %}
+  </header>
+  <p>{{ text | truncate(450) }}</p>
+  {% if actions %}
+  <footer>
+    <ul class="list-inline">
+      <li><a href="#">Quittancer</a></li>
+    </ul>
+  </footer>
+  {% endif %}
+</article>
