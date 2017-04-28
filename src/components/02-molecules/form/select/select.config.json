@@ -1,5 +1,6 @@
 {
     "status": "ready",
+    "collated": true,
     "context": {
       "label": "Example select",
       "id": "testSelect",
