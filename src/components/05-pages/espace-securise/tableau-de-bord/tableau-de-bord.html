@@ -2,6 +2,19 @@
 {% block main %}
   <div class="row">
     <div class="col-md-8">
+
+      <div class="alert alert-info" role="alert">
+        2 demandes et une communication requierent votre attention.
+      </div>
+
+      <section class="mb-3">
+        <h2 class="mb-1">Communication(s)</h2>
+
+        {% for communication in communications %}
+        {% render '@communication', communication, true %}
+        {% endfor %}
+      </section>
+
       <section class="mb-3">
         <h2 class="mb-1">Messages non lus</h2>
         {% for message in messages -%}
