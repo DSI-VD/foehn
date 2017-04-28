@@ -1,6 +1,6 @@
 {
     "status": "ready",
-    "collated": false,
+    "collated": true,
     "variants": [
       {
         "name": "black",
