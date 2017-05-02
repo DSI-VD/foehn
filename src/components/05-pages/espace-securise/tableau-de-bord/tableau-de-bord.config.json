@@ -57,7 +57,16 @@
             }
         ],
         "demandes": [
-            "@demande"
+            "@demande",
+            {
+              "title": "Organisation d'une manifestation",
+              "messages": [
+                {
+                  "title": "Fournir une copie de votre carte d'identité."
+                }
+              ],
+              "tasks": null
+            }
         ]
     }
 }
