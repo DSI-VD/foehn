@@ -63,10 +63,113 @@
             }
         },
         "historique": [
-            "@notification--message",
-            "@notification--demande",
-            "@notification--demande"
-
+          {
+            "title": "Message important",
+            "href": "#",
+            "meta": {
+              "type": "Communication",
+              "receiveDate": "17.02.2017",
+              "readDate": "18.01.2017"
+            },
+            "actions": {
+              "title": "Actions sur le message",
+              "actions": [
+                {
+                  "title": "Télécharger",
+                  "url": "#"
+                },
+                {
+                  "title": "Supprimer",
+                  "url": "#"
+                }
+              ]
+            },
+            "text": "En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension."
+          },
+          {
+            "title": "Demande de permis de construire",
+            "href": "#",
+            "meta": {
+              "type": "Demande",
+              "reference": "HOX0AI-AJQ7K1",
+              "date": "17.02.2017",
+              "status": "En cours",
+              "recipient": "Jean Villars Gilles"
+            },
+            "actions": {
+              "title": "Actions sur la demande",
+              "actions": [
+                {
+                  "title": "Démarrer une prestation sur ce modèle",
+                  "url": "#"
+                },
+                {
+                  "title": "Conserver",
+                  "url": "#"
+                },
+                {
+                  "title": "Supprimer",
+                  "url": "#"
+                }
+              ]
+            },
+            "messages": [
+              {
+                "title": "Bonjour, un nouveau processus lié à la demande de permis.",
+                "url": "#",
+                "date": "17.02.2017"
+              }
+            ],
+            "tasks": [
+              {
+                "title": "Valider l'autorisation de construire sur un terrain inexploiter.",
+                "url": "#",
+                "date": "17.02.2017"
+              }
+            ]
+          },
+          {
+            "title": "Demande de permis de construire",
+            "href": "#",
+            "meta": {
+              "type": "Demande",
+              "reference": "HOX0AI-AJQ7K1",
+              "date": "17.02.2017",
+              "status": "En cours",
+              "recipient": "Jean Villars Gilles"
+            },
+            "actions": {
+              "title": "Actions sur la demande",
+              "actions": [
+                {
+                  "title": "Démarrer une prestation sur ce modèle",
+                  "url": "#"
+                },
+                {
+                  "title": "Conserver",
+                  "url": "#"
+                },
+                {
+                  "title": "Supprimer",
+                  "url": "#"
+                }
+              ]
+            },
+            "messages": [
+              {
+                "title": "Bonjour, un nouveau processus lié à la demande de permis.",
+                "url": "#",
+                "date": "17.02.2017"
+              }
+            ],
+            "tasks": [
+              {
+                "title": "Valider l'autorisation de construire sur un terrain inexploiter.",
+                "url": "#",
+                "date": "17.02.2017"
+              }
+            ]
+          }
         ]
     }
 }
