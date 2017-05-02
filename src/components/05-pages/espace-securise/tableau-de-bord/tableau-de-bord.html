@@ -2,25 +2,25 @@
 {% block main %}
   <div class="row">
     <div class="col-md-8">
-      <section class="mb-3">
-        <h2 class="mb-1">Messages non lus</h2>
-        {% for message in messages -%}
-        {% render '@message--default', message %}
-        {%- endfor %}
+
+      <p>
+        <a href="#communications">Une communication</a> et <a href="#demandes">deux demandes</a> requierent votre attention.
+      </p>
+
+      <section class="mb-3" id="communications">
+        <h2 class="mb-1">Communication(s)</h2>
+
+        {%- for communication in communications -%}
+        {% render '@communication', communication, true -%}
+        {% endfor -%}
       </section>
 
-      <section class="mb-3">
-        <h2 class="mb-1">Tâches à traiter</h2>
-        {% for tache in tachesATraiter -%}
-        {% render '@message--task', tache %}
-        {%- endfor %}
-      </section>
-
-      <section class="mb-3">
+      <section class="mb-3" id="demandes">
         <h2 class="mb-1">Demandes</h2>
-        {% for demande in demandes -%}
-        {% render '@message--request', demande %}
-        {%- endfor %}
+
+        {%- for demande in demandes -%}
+        {% render '@demande', demande, true -%}
+        {% endfor -%}
       </section>
 
     </div>
