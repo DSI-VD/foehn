@@ -18,8 +18,11 @@
       <section class="mb-3" id="demandes">
         <h2 class="mb-1">Demandes</h2>
 
-        {% render '@demande' %}
-        {% render '@demande' %}
+        {% for demande in demandes %}
+        {% render '@demande', demande %}
+        {% endfor %}
+
+        {# {% render '@demande' %} #}
       </section>
 
     </div>
