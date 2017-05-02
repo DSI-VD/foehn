@@ -10,19 +10,17 @@
       <section class="mb-3" id="communications">
         <h2 class="mb-1">Communication(s)</h2>
 
-        {% for communication in communications %}
-        {% render '@communication', communication, true %}
-        {% endfor %}
+        {%- for communication in communications -%}
+        {% render '@communication', communication, true -%}
+        {% endfor -%}
       </section>
 
       <section class="mb-3" id="demandes">
         <h2 class="mb-1">Demandes</h2>
 
-        {% for demande in demandes %}
-        {% render '@demande', demande %}
-        {% endfor %}
-
-        {# {% render '@demande' %} #}
+        {%- for demande in demandes -%}
+        {% render '@demande', demande, true -%}
+        {% endfor -%}
       </section>
 
     </div>

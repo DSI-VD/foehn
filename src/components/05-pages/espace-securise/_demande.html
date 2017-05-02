@@ -2,44 +2,44 @@
   <div class="col-md-8">
     <header>
       <h3 class="mb-1"><a href="{{ url }}">{{ title }}</a></h3>
-      {% if meta %}
+      {%- if meta -%}
       <dl class="small row">
-        {% if meta.reference %}
+        {%- if meta.reference -%}
         <dt class="col-4">Référence</dt>
         <dd class="col-8"><samp>{{ meta.reference }}</samp></dd>
-        {% endif %}
-        {% if meta.date %}
+        {% endif -%}
+        {% if meta.date -%}
         <dt class="col-4">Date</dt>
         <dd class="col-8">{{ meta.date }}</dd>
-        {% endif %}
-        {% if meta.status %}
+        {% endif -%}
+        {% if meta.status -%}
         <dt class="col-4">Statut</dt>
         <dd class="col-8">{{ meta.status }}</dd>
-        {% endif %}
-        {% if meta.recipient %}
+        {% endif -%}
+        {% if meta.recipient -%}
         <dt class="col-4">Bénéficiaire</dt>
         <dd class="col-8">{{ meta.recipient }}</dd>
-        {% endif %}
+        {%- endif %}
       </dl>
-      {% endif %}
+      {%- endif -%}
     </header>
-    {% if tasks %}
+    {%- if tasks -%}
     <h4 class="mb-1">Tâches à traiter</h4>
     <ul>
-      {% for task in tasks %}
+      {%- for task in tasks -%}
       <li><a href="{{ task.url }}">{{ task.title }}</a> <small class="d-block">Reçu le {{ task.date }}</small></li>      {% endfor %}
     </ul>
-    {% endif %}
-    {% if messages %}
+    {%- endif -%}
+    {%- if messages -%}
     <h4 class="mb-1">Messages à traiter</h4>
     <ul>
-      {% for message in messages %}
+      {%- for message in messages -%}
       <li><a href="{{ message.url }}">{{ message.title }}</a> <small class="d-block">Reçu le {{ message.date }}</small></li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
-    {% endif %}
+    {%- endif -%}
   </div>
   <footer class="col-md-4">
-    {% render '@actions', actions %}
+    {% render '@actions', actions -%}
   </footer>
 </article>

@@ -2,24 +2,24 @@
   <div class="col-md-8">
     <header>
       <h3>{{ title }}</h3>
-      {% if meta %}
+      {%- if meta -%}
       <dl class="small row">
-        {% if meta.dateOfReceipt %}
+        {% if meta.dateOfReceipt -%}
         <dt class="col-4">Reçu le</dt>
         <dd class="col-8">{{ meta.dateOfReceipt }}</dd>
-        {% endif %}
-        {% if meta.dateOfReading %}
+        {% endif -%}
+        {% if meta.dateOfReading -%}
         <dt class="col-4">Lu le</dt>
         <dd class="col-8">{{ meta.dateOfReading }}</dd>
-        {% endif %}
+        {% endif -%}
       </dl>
-      {% endif %}
+      {%- endif -%}
     </header>
     <p>{{ text | truncate(450) }}</p>
   </div>
-  {% if actions %}
+  {%- if actions -%}
   <footer class="col-md-4">
-    {% render '@actions', actions %}
+    {% render '@actions', actions -%}
   </footer>
-  {% endif %}
+  {%- endif -%}
 </article>
