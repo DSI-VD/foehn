@@ -1,0 +1,11 @@
+{
+  "context": {
+    "title": "Actions sur la demande",
+    "actions": [
+      {
+        "title": "Démarrer une prestation sur ce modèle",
+        "url": "#"
+      }
+    ]
+  }
+}

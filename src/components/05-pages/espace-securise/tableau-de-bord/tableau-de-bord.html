@@ -3,11 +3,11 @@
   <div class="row">
     <div class="col-md-8">
 
-      <div class="alert alert-info" role="alert">
-        2 demandes et une communication requierent votre attention.
-      </div>
+      <p>
+        <a href="#communications">Une communication</a> et <a href="#demandes">deux demandes</a> requierent votre attention.
+      </p>
 
-      <section class="mb-3">
+      <section class="mb-3" id="communications">
         <h2 class="mb-1">Communication(s)</h2>
 
         {% for communication in communications %}
@@ -15,9 +15,11 @@
         {% endfor %}
       </section>
 
-      <section class="mb-3">
+      <section class="mb-3" id="demandes">
+        <h2 class="mb-1">Demandes</h2>
 
-
+        {% render '@demande' %}
+        {% render '@demande' %}
       </section>
 
     </div>

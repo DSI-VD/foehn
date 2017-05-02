@@ -1,0 +1,35 @@
+{
+  "context": {
+    "title": "Demande de permis de construire",
+    "href": "#",
+    "meta": {
+      "reference": "HOX0AI-AJQ7K1",
+      "date": "17.02.2017",
+      "status": "En cours",
+      "recipient": "Jean Villars Gilles"
+    },
+    "messages": [
+      {
+        "title": "Bonjour, un nouveau processus lié à la demande de permis.",
+        "url": "#",
+        "date": "17.02.2017"
+      }
+    ],
+    "tasks": [
+      {
+        "title": "Valider l'autorisation de construire sur un terrain inexploiter.",
+        "url": "#",
+        "date": "17.02.2017"
+      }
+    ],
+    "actions": {
+      "title": "Actions sur la demande",
+      "actions": [
+        {
+          "title": "Démarrer une prestation sur ce modèle",
+          "url": "#"
+        }
+      ]
+    }
+  }
+}
