@@ -1,0 +1,67 @@
+{
+    "status": "prototype",
+    "context": {
+        "pageTitle": "Historique",
+        "navigation": {
+            "title": "@nav-horizontal.title",
+            "items": [
+                {
+                    "text": "Tableau de bord",
+                    "title": null,
+                    "url": "tableau-de-bord",
+                    "active": null
+                },
+                {
+                    "text": "Historique",
+                    "title": null,
+                    "url": "historique",
+                    "active": true
+                },
+                {
+                    "text": "Préstations",
+                    "title": null,
+                    "url": "prestations",
+                    "active": null
+                },
+                {
+                    "text": "Documents",
+                    "title": null,
+                    "url": "documents",
+                    "active": null
+                },
+                {
+                    "text": "Paramètres",
+                    "title": null,
+                    "url": "parametres",
+                    "active": null
+                }
+            ]
+        },
+        "search": {
+            "title": "Rechercher dans l\"historique",
+            "titleModifier": "sr-only",
+            "options": {
+                "legend": "Rechercher les",
+                "legendModifier": "sr-only",
+                "items": [
+                    {
+                        "label": "Demandes",
+                        "name": "filterSearch",
+                        "checked": false
+                    },
+                    {
+                        "label": "Tâches",
+                        "name": "filterSearch",
+                        "checked": false
+                    },
+                    {
+                        "label": "Messages",
+                        "name": "filterSearch",
+                        "checked": false
+                    }
+                ]
+            }
+        },
+        "historique": "historiqueItemData"
+    }a
+}
