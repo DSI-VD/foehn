@@ -62,6 +62,12 @@
                 ]
             }
         },
-        "historique": "historiqueItemData"
-    }a
+        "historique": [
+            {
+                "title": "Message important",
+                "tasks": null,
+                "messages": null
+            }
+        ]
+    }
 }
