@@ -1,59 +1,262 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-    window.frctl = {
-        env: 'static'
-    };
-    </script>
-    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../fractal/favicon.ico" type="image/ico">
-
-<link rel="stylesheet" href="../../fractal/css/navy.css?cachebust=1.1.0" type="text/css">
 
 
-<title>Error rendering component historique | Foehn</title>
+<header class="header">
+  <nav class="vd-access-nav" aria-label="menu accessibilité">
+  <ul>
+      <li>
+        <a class="btn btn-primary" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
+      </li>
+      <li><a class="btn btn-primary" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a></li>
+      <li>
+        <a class="btn btn-primary" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
+      </li>
+      <li>
+        <a class="btn btn-primary" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
+      </li>
+    </ul>
+</nav>
 
-</head>
-<body>
+  <div class="container">
+
+    <div class="d-flex flex-column flex-sm-row">
+
+      <div class="mr-auto">
+        <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
+  <div class="vd-logo-title">
+    <div id="aria-vd-logo">Site officiel<span class="sr-only"> de l'État de Vaud</span></div>
+    <img src="../../assets/svg/ETATVAUD.svg" alt="État de Vaud" aria-hidden="true" />
+  </div>
+</a>
+
+      </div>
+
+      <section class="mt-1">
+        <h2 class="sr-only">Votre identité</h2>
+        <div class="d-flex flex-column">
+          <dl class="mb-0">
+            <dt class="sr-only">Nom et prénom</dt>
+            <dd class="mb-0"><span class="fa fa-lock"></span> <a href="#" title="Gérer mon compte">Jean Villars Gilles</a></dd>
+
+            <dt class="sr-only">Nom du bénéficiaire</dt>
+            <dd class="mb-0">Commune de Belmont-sur-Lausanne</dd>
+          </dl>
+          <div>
+            <p>
+              <a href="#">Se déconnecter</a>
+            </p>
+          </div>
+        </div><!-- /.d-flex -->
+      </section>
+
+    </div><!-- /.row -->
+  </div>
+</header>
 
 
 
-<div class="Frame Frame--full" id="frame">
+<div class="container mb-2">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <span class="navbar-brand hidden-lg-up">Menu</span>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="tableau-de-bord">Tableau de bord</a>
+      </li><li class="nav-item mb-lg-0  active">
+        <a class="nav-link" href="historique"><span class="sr-only">(current)</span> Historique</a>
+      </li><li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="prestations">Préstations</a>
+      </li><li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="documents">Documents</a>
+      </li><li class="nav-item mb-lg-0 ">
+        <a class="nav-link" href="parametres">Paramètres</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</div>
 
 
-<div class="Error Error--render">
-    <h4 class="Error-title">Error rendering component</h4>
-    <div class="Error-message Prose">
-        <p>(unknown path)
-  Error: Could not render component &#39;@message&#39; - component not found.</p>
+<main id="main">
+  <div class="container mb-2">
+  <h1>Historique</h1>
+</div>
 
+
+  <div class="container">
+    
+
+<h3 class="sr-only">Rechercher dans l"historique</h3>
+
+<form action="#">
+  <div class="input-group vd-search-form-regular mb-1">
+    <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
+    <input id="search-form" type="text" class="form-control"  aria-describedby="search-form-label">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="submit" aria-label="Rechercher"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </span>
+  </div>
+  <fieldset class="form-group">
+  <legend class="sr-only">Rechercher les</legend>
+  
+    <div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Demandes
+  </label>
+</div>
+
+  
+    <div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Tâches
+  </label>
+</div>
+
+  
+    <div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Messages
+  </label>
+</div>
+
+  
+</fieldset>
+
+</form>
+
+
+<h2 class="mb-1">Resultats</h2>
+<article class="mb-1 p-1 bg-faded">
+  <div class="row">
+    <div class="col-md-8">
+      <header>
+        <h3 class="mb-1"><a href="">Message important</a></h3><dl class="small row"><dt class="col-4">Type</dt>
+          <dd class="col-8">Communication</dd>
+          <dt class="col-4">Reçu le</dt>
+          <dd class="col-8">17.02.2017</dd>
+          <dt class="col-4">Lu le</dt>
+          <dd class="col-8">18.01.2017</dd>
+          
+        </dl></header>
+      
+      <p>En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension.</p>
+      </div>
+    <footer class="col-md-4">
+      <h4 class="sr-only">Actions sur le message</h4>
+<ul class="list-inline"><li><a href="#">Télécharger</a></li><li><a href="#">Supprimer</a></li></ul>
+</footer>
+  </div>
+</article>
+<article class="mb-1 p-1 bg-faded">
+  <div class="row">
+    <div class="col-md-8">
+      <header>
+        <h3 class="mb-1"><a href="">Demande de permis de construire</a></h3><dl class="small row"><dt class="col-4">Type</dt>
+          <dd class="col-8">Demande</dd>
+          <dt class="col-4">Référence</dt>
+          <dd class="col-8"><samp>HOX0AI-AJQ7K1</samp></dd>
+          <dt class="col-4">Date</dt>
+          <dd class="col-8">17.02.2017</dd>
+          <dt class="col-4">Statut</dt>
+          <dd class="col-8">En cours</dd>
+          <dt class="col-4">Bénéficiaire</dt>
+          <dd class="col-8">Jean Villars Gilles</dd>
+        </dl></header>
+      <h4 class="mb-1">Tâches à traiter</h4>
+      <ul><li><a href="#">Valider l'autorisation de construire sur un terrain inexploiter.</a> <small class="d-block">Reçu le 17.02.2017</small></li>      
+      </ul><h4 class="mb-1">Messages à traiter</h4>
+      <ul><li><a href="#">Bonjour, un nouveau processus lié à la demande de permis.</a> <small class="d-block">Reçu le 17.02.2017</small></li></ul></div>
+    <footer class="col-md-4">
+      <h4 class="sr-only">Actions sur la demande</h4>
+<ul class="list-inline"><li><a href="#">Démarrer une prestation sur ce modèle</a></li><li><a href="#">Conserver</a></li><li><a href="#">Supprimer</a></li></ul>
+</footer>
+  </div>
+</article>
+<article class="mb-1 p-1 bg-faded">
+  <div class="row">
+    <div class="col-md-8">
+      <header>
+        <h3 class="mb-1"><a href="">Demande de permis de construire</a></h3><dl class="small row"><dt class="col-4">Type</dt>
+          <dd class="col-8">Demande</dd>
+          <dt class="col-4">Référence</dt>
+          <dd class="col-8"><samp>HOX0AI-AJQ7K1</samp></dd>
+          <dt class="col-4">Date</dt>
+          <dd class="col-8">17.02.2017</dd>
+          <dt class="col-4">Statut</dt>
+          <dd class="col-8">En cours</dd>
+          <dt class="col-4">Bénéficiaire</dt>
+          <dd class="col-8">Jean Villars Gilles</dd>
+        </dl></header>
+      <h4 class="mb-1">Tâches à traiter</h4>
+      <ul><li><a href="#">Valider l'autorisation de construire sur un terrain inexploiter.</a> <small class="d-block">Reçu le 17.02.2017</small></li>      
+      </ul><h4 class="mb-1">Messages à traiter</h4>
+      <ul><li><a href="#">Bonjour, un nouveau processus lié à la demande de permis.</a> <small class="d-block">Reçu le 17.02.2017</small></li></ul></div>
+    <footer class="col-md-4">
+      <h4 class="sr-only">Actions sur la demande</h4>
+<ul class="list-inline"><li><a href="#">Démarrer une prestation sur ce modèle</a></li><li><a href="#">Conserver</a></li><li><a href="#">Supprimer</a></li></ul>
+</footer>
+  </div>
+</article>
+
+
+<nav>
+  <h3 class="sr-only">Pagination</h3>
+  <ul class="list-unstyled d-flex justify-content-start flex-wrap mb-0">
+    <li class="pr-1"><a href="#" class="btn btn-secondary vd-btn-chevron-l">Précédent</a></li>
+    <li class="ml-auto"><a href="#" class="btn btn-primary vd-btn-chevron-r">Suivant</a></li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</main>
+<footer class="footer mt-3">
+  <div class="container">
+    <a href="#" class="footer-btn-backtotop btn btn-sm btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <div class="row small">
+      <nav aria-label="pied de page" class="col-xs-10">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pourquoi créer un compte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mentions légales</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-xs-2 footer-logo-container">
+        <div class="footer-logo">
+          <img class="img-fluid" src="../../assets/svg/logo/logo--white.svg" alt="Canton de Vaud">
+        </div>
+      </div>
     </div>
-    
-    <code class="Error-stack">
-        <pre>Template render error: (unknown path)
-  Error: Could not render component '@message' - component not found.
-    at Object.exports.prettifyError (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/lib.js:34:15)
-    at /Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:486:31
-    at eval (eval at _compile (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:565:24), <anonymous>:31:12)
-    at eval (eval at _compile (/Users/cedricaellen/Projects/foehn/node_modules/nunjucks/src/environment.js:565:24), <anonymous>:36:11)
-    at entity.render.then.catch.err (/Users/cedricaellen/Projects/foehn/node_modules/@frctl/nunjucks/src/extensions/render.js:46:21)
-    at process._tickDomainCallback (internal/process/next_tick.js:135:7)</pre>
-    </code>
-    
-</div>
+  </div>
+</footer>
 
 
-</div>
-
-
-
-
-<script src="../../fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
-
-
-
-</body>
-</html>
