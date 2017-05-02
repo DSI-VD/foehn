@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change how information is displayed in `@tableau-de-bord`
 - Add `@separator--gray-bars-wide` in `@teaser-list`
 - Add `@separator--gray-bars-wide` in `@teaser-list--homepage`
 - `@news-list` has fake content
