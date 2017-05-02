@@ -11,7 +11,7 @@
         <h2 class="mb-1">Communication(s)</h2>
 
         {%- for communication in communications -%}
-        {% render '@communication', communication, true -%}
+        {% render '@notification--message', communication, true -%}
         {% endfor -%}
       </section>
 
@@ -19,7 +19,7 @@
         <h2 class="mb-1">Demandes</h2>
 
         {%- for demande in demandes -%}
-        {% render '@demande', demande, true -%}
+        {% render '@notification--demande', demande, true -%}
         {% endfor -%}
       </section>
 

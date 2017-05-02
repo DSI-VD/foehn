@@ -4,9 +4,10 @@
 {% render '@search-form--regular-options', search %}
 
 <h2 class="mb-1">Resultats</h2>
-{% for demande in historique -%}
-{% render '@demande', demande, true %}
+{% for item in historique -%}
+{% render '@notification', item %}
 {%- endfor %}
+
 {% render '@pagination' %}
 
 {% endblock %}

@@ -63,11 +63,10 @@
             }
         },
         "historique": [
-            {
-                "title": "Message important",
-                "tasks": null,
-                "messages": null
-            }
+            "@notification--message",
+            "@notification--demande",
+            "@notification--demande"
+
         ]
     }
 }
