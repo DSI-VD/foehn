@@ -1,25 +1,25 @@
-<article class="mb-1">
-  <header>
-    <h3>{{ title }}</h3>
-    {% if meta %}
-    <dl class="small row">
-      {% if meta.dateOfReceipt %}
-      <dt class="col-4">Reçu le</dt>
-      <dd class="col-8">{{ meta.dateOfReceipt }}</dd>
+<article class="mb-1 row">
+  <div class="col-md-8">
+    <header>
+      <h3>{{ title }}</h3>
+      {% if meta %}
+      <dl class="small row">
+        {% if meta.dateOfReceipt %}
+        <dt class="col-4">Reçu le</dt>
+        <dd class="col-8">{{ meta.dateOfReceipt }}</dd>
+        {% endif %}
+        {% if meta.dateOfReading %}
+        <dt class="col-4">Lu le</dt>
+        <dd class="col-8">{{ meta.dateOfReading }}</dd>
+        {% endif %}
+      </dl>
       {% endif %}
-      {% if meta.dateOfReading %}
-      <dt class="col-4">Lu le</dt>
-      <dd class="col-8">{{ meta.dateOfReading }}</dd>
-      {% endif %}
-    </dl>
-    {% endif %}
-  </header>
-  <p>{{ text | truncate(450) }}</p>
+    </header>
+    <p>{{ text | truncate(450) }}</p>
+  </div>
   {% if actions %}
-  <footer>
-    <ul class="list-inline">
-      <li><a href="#">Quittancer</a></li>
-    </ul>
+  <footer class="col-md-4">
+    {% render '@actions', actions %}
   </footer>
   {% endif %}
 </article>
