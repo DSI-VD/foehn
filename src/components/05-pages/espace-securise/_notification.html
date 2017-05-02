@@ -1,0 +1,62 @@
+<article class="mb-1 p-1 bg-faded">
+  <div class="row">
+    <div class="col-md-8">
+      <header>
+        <h3 class="mb-1"><a href="{{ url }}">{{ title }}</a></h3>
+        {%- if meta -%}
+        <dl class="small row">
+          {%- if meta.type -%}
+          <dt class="col-4">Type</dt>
+          <dd class="col-8">{{ meta.type }}</dd>
+          {% endif -%}
+          {%- if meta.reference -%}
+          <dt class="col-4">Référence</dt>
+          <dd class="col-8"><samp>{{ meta.reference }}</samp></dd>
+          {% endif -%}
+          {% if meta.date -%}
+          <dt class="col-4">Date</dt>
+          <dd class="col-8">{{ meta.date }}</dd>
+          {% endif -%}
+          {% if meta.receiveDate -%}
+          <dt class="col-4">Reçu le</dt>
+          <dd class="col-8">{{ meta.receiveDate }}</dd>
+          {% endif -%}
+          {% if meta.readDate -%}
+          <dt class="col-4">Lu le</dt>
+          <dd class="col-8">{{ meta.readDate }}</dd>
+          {% endif -%}
+          {% if meta.status -%}
+          <dt class="col-4">Statut</dt>
+          <dd class="col-8">{{ meta.status }}</dd>
+          {% endif -%}
+          {% if meta.recipient -%}
+          <dt class="col-4">Bénéficiaire</dt>
+          <dd class="col-8">{{ meta.recipient }}</dd>
+          {%- endif %}
+        </dl>
+        {%- endif -%}
+      </header>
+      {% if text %}
+      <p>{{ text }}</p>
+      {% endif %}
+      {%- if tasks -%}
+      <h4 class="mb-1">Tâches à traiter</h4>
+      <ul>
+        {%- for task in tasks -%}
+        <li><a href="{{ task.url }}">{{ task.title }}</a> <small class="d-block">Reçu le {{ task.date }}</small></li>      {% endfor %}
+      </ul>
+      {%- endif -%}
+      {%- if messages -%}
+      <h4 class="mb-1">Messages à traiter</h4>
+      <ul>
+        {%- for message in messages -%}
+        <li><a href="{{ message.url }}">{{ message.title }}</a> <small class="d-block">Reçu le {{ message.date }}</small></li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+    </div>
+    <footer class="col-md-4">
+      {% render '@actions', actions -%}
+    </footer>
+  </div>
+</article>
