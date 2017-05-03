@@ -58,3 +58,12 @@
   font-family: $headings-font-family;
   font-weight: $lead-font-weight;
 }
+
+/**
+ * Spacing
+ */
+.vd-w-md-75 {
+  @include media-breakpoint-up(md) {
+    width: 75% !important;
+  }
+}
