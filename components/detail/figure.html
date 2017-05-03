@@ -169,7 +169,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-2bfd871cd92c5e75d00453b9ec7eeaad-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>&gt;</span>
+  {% if url -%}<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ url }}"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">title</span> %} <span class="hljs-attr">title</span>=<span class="hljs-string">"{{ title }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>{% endif -%}
     {%- if image.source -%}
     <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-img"</span>&gt;</span>
       {% for item in image.source -%}
@@ -180,6 +181,7 @@
     {%- else %}
     {% render '<a href="image-responsive">@image-responsive</a>', image.default %}
     {% endif %}
+  {% if url -%}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>{% endif -%}
   {% if caption -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>{{ caption.text }}{% if caption.credit %}<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-figure-credits"</span>&gt;</span>{{ caption.credit }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
   {%- endif %}
@@ -275,12 +277,14 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="teaser">@<span>teaser</span></a>, 
             
                 <a href="teaser--event">@<span>teaser--event</span></a>, 
+            
+                <a href="teaser--small-media">@<span>teaser--small-media</span></a>, 
             
                 <a href="media-list">@<span>media-list</span></a>, 
             
@@ -2679,6 +2683,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="teaser--event" data-pjax>
                 <span>Event</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="teaser--small-media" data-pjax>
+                <span>Small Media</span>
                 
 
 <div class="Status Status--unlabelled">
