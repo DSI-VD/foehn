@@ -1,4 +1,4 @@
-<figure class="figure">
+<figure class="figure{% if styleModifier %} {{ styleModifier }}{% endif %}">
   {% if url -%}<a href="{{ url }}"{% if title %} title="{{ title }}"{% endif %}>{% endif -%}
     {%- if image.source -%}
     <picture class="figure-img">

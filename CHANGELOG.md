@@ -13,6 +13,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Rename `@acceuil-securise` in `@tableau-de-bord` and change content
 
 ### Added
+- Add `@teaser--small-media` component
+- Add `styleModifier` in `@figure`
 - Add `@news-list--projets` template
 - Add `@search-form--regular-option`component
 

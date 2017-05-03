@@ -66,6 +66,14 @@
         "context": {
           "datePreText": "Date de l'événement: "
         }
+      },
+      {
+        "name": "small-media",
+        "context": {
+          "media": {
+            "styleModifier": "vd-w-md-75"
+          }
+        }
       }
     ]
 }
