@@ -4,6 +4,7 @@
       "pageTitle": "Site officiel de l'État de Vaud",
       "navOpen": true,
       "news": {
+        "title": "Actualités",
         "homepage": true,
         "teasers": [
           {
