@@ -19,7 +19,8 @@
   "scripts": {
     "start": "yarn && gulp dev",
     "build": "yarn && gulp build",
-    "deploy": "yarn && gulp publish"
+    "deploy": "yarn && gulp publish",
+    "new-version": "yarn version && npm publish --tag latest"
   },
   "engines": {
     "node": ">=6.7.0",
