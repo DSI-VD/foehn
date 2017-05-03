@@ -3,6 +3,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.21.3]
+
+### Fix
+- Only upload the `dist/assets/` folder on the registry
+
 ## [0.21.2]
 
 ### Fix
@@ -965,7 +970,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.21.2...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.21.3...HEAD
+[0.21.3]: https://github.com/DSI-VD/foehn/compare/v0.21.2...v0.21.3
 [0.21.2]: https://github.com/DSI-VD/foehn/compare/v0.21.1...v0.21.2
 [0.21.1]: https://github.com/DSI-VD/foehn/compare/v0.21.0...v0.21.1
 [0.21.0]: https://github.com/DSI-VD/foehn/compare/v0.20.1...v0.21.0
