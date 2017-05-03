@@ -57,7 +57,7 @@
             }
         ],
         "demandes": [
-            "@demande",
+            "@notification--demande",
             {
               "title": "Organisation d'une manifestation",
               "messages": [
