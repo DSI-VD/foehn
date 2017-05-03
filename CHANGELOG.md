@@ -3,6 +3,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.21.2]
+
+### Fix
+- Fix npm script
+
 ## [0.21.1]
 
 ### Changed
@@ -960,22 +965,23 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.21.1...HEAD
-[0.21.1]: https://github.com/DSI-VD/foehn/compare/v0.21.0...0.21.1
-[0.21.0]: https://github.com/DSI-VD/foehn/compare/v0.20.1...0.21.0
-[0.20.1]: https://github.com/DSI-VD/foehn/compare/v0.20.0...0.20.1
-[0.20.0]: https://github.com/DSI-VD/foehn/compare/v0.19.0...0.20.0
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.21.2...HEAD
+[0.21.2]: https://github.com/DSI-VD/foehn/compare/v0.21.1...v0.21.2
+[0.21.1]: https://github.com/DSI-VD/foehn/compare/v0.21.0...v0.21.1
+[0.21.0]: https://github.com/DSI-VD/foehn/compare/v0.20.1...v0.21.0
+[0.20.1]: https://github.com/DSI-VD/foehn/compare/v0.20.0...v0.20.1
+[0.20.0]: https://github.com/DSI-VD/foehn/compare/v0.19.0...v0.20.0
 [0.19.0]: https://github.com/DSI-VD/foehn/compare/v0.18.0...v0.19.0
 [0.18.0]: https://github.com/DSI-VD/foehn/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/DSI-VD/foehn/compare/v0.16.0...v0.15.0
 [0.16.0]: https://github.com/DSI-VD/foehn/compare/v0.15.0...v0.16.0
 [0.15.0]: https://github.com/DSI-VD/foehn/compare/v0.14.0...v0.15.0
 [0.14.0]: https://github.com/DSI-VD/foehn/compare/v0.13.0...v0.14.0
-[0.13.0]: https://github.com/DSI-VD/foehn/compare/v0.12.0...0.13.0
-[0.12.0]: https://github.com/DSI-VD/foehn/compare/v0.11.0...0.12.0
+[0.13.0]: https://github.com/DSI-VD/foehn/compare/v0.12.0...v0.13.0
+[0.12.0]: https://github.com/DSI-VD/foehn/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0
 [0.10.2]: https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2
-[0.10.1]: https://github.com/DSI-VD/foehn/compare/v0.10.0...c.0.10.1
+[0.10.1]: https://github.com/DSI-VD/foehn/compare/v0.10.0...v0.10.1
 [0.10.0]: https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0
