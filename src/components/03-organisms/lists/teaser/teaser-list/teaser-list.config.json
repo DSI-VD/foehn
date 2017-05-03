@@ -39,7 +39,10 @@
             {
               "title": "Ut condimentum magna a ornare pulvinar",
               "authors": false,
-              "datePreText": "Publié le "
+              "datePreText": "Publié le ",
+              "media": {
+                "styleModifier": "vd-w-md-50"
+              }
             },
             {
               "title": "Etiam vehicula ligula nec convallis fringilla",

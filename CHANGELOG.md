@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@accueil` and `@teaser-list--homepage` use `@teaser--small-media` for the first image
 - Images can have a link in `@figure`
 - Change how information is displayed in `@tableau-de-bord`
 - Add `@separator--gray-bars-wide` in `@teaser-list`

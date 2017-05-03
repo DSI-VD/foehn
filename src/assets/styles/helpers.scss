@@ -62,8 +62,8 @@
 /**
  * Spacing
  */
-.vd-w-md-75 {
+.vd-w-md-50 {
   @include media-breakpoint-up(md) {
-    width: 75% !important;
+    width: 50% !important;
   }
 }
