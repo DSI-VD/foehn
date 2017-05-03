@@ -40,10 +40,9 @@ The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 
 ### New version
 
-To bump version use the following command:
+1. Update the `CHANGELOG.md` and commit the change.
+1. Bump the version and publish on the NPM registry by using the following command
 
 ```
-$ yarn version
+$ npm run new-version
 ```
-
-It will ask you the new version number.
