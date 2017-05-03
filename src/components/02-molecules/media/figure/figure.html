@@ -1,4 +1,5 @@
 <figure class="figure">
+  {% if url -%}<a href="{{ url }}"{% if title %} title="{{ title }}"{% endif %}>{% endif -%}
     {%- if image.source -%}
     <picture class="figure-img">
       {% for item in image.source -%}
@@ -9,6 +10,7 @@
     {%- else %}
     {% render '@image-responsive', image.default %}
     {% endif %}
+  {% if url -%}</a>{% endif -%}
   {% if caption -%}
   <figcaption class="figure-caption">{{ caption.text }}{% if caption.credit %}<span class="vd-figure-credits">{{ caption.credit }}</span>{% endif %}</figcaption>
   {%- endif %}
