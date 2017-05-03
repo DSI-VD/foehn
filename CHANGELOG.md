@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.21.1]
+
 ### Changed
 - `@accueil` and `@teaser-list--homepage` use `@teaser--small-media` for the first image
 - Images can have a link in `@figure`
@@ -958,7 +960,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.21.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.21.1...HEAD
+[0.21.1]: https://github.com/DSI-VD/foehn/compare/v0.21.0...0.21.1
 [0.21.0]: https://github.com/DSI-VD/foehn/compare/v0.20.1...0.21.0
 [0.20.1]: https://github.com/DSI-VD/foehn/compare/v0.20.0...0.20.1
 [0.20.0]: https://github.com/DSI-VD/foehn/compare/v0.19.0...0.20.0
