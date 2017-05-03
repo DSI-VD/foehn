@@ -71,7 +71,7 @@
         "name": "small-media",
         "context": {
           "media": {
-            "styleModifier": "vd-w-md-75"
+            "styleModifier": "vd-w-md-50"
           }
         }
       }
