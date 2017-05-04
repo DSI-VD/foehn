@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Add `@update-time` in `@service`
+
 ## [0.21.3]
 
 ### Fix
