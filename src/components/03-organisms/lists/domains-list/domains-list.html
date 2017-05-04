@@ -17,7 +17,7 @@
       <div class="col-md-8">
         <ul class="list-unstyled row" aria-labelledby="{{ name }}">
           {% for item in item.themes %}
-          {% render '@domain-item', {styleModifier:'mb-2 col-md-6', name:item, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}, true %}
+          {% render '@domain-item', {styleModifier:'mb-2 col-md-6', name:item.name, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}, true %}
           {% endfor %}
         </ul><!-- /.col-md-8 -->
       </div><!-- /.row -->
