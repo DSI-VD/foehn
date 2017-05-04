@@ -20,7 +20,7 @@ $ npm start
 
 [Fractal](http://fractal.build/) and [Bootstrap 4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
 
-### Build :construction_worker:
+### Build
 
 If you only want to build the code (the `dist/` folder).
 
@@ -28,7 +28,7 @@ If you only want to build the code (the `dist/` folder).
 $ npm run build
 ```
 
-### Deploy the styleguide :eyes:
+### Deploy the styleguide
 
 We deploy the styleguide to a `gh-pages` branch on Github. To do this, use the following command:
 
@@ -38,7 +38,7 @@ $ npm run deploy
 
 The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 
-### New version ship :sparkles:
+### New version ship
 
 1. Make sure, the `CHANGELOG.md` is up to date. If not, update it and commit the changes.
 1. Run the following command to create a new version of the package. (It also create the tag.)
@@ -47,7 +47,7 @@ The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 $ yarn version
 ```
 
-### Publish on the npm registry :arrow_heading_up:
+### Publish on the npm registry
 
 The following command will build the code and publish the latest version on the registry you have set in your [NPM config](https://docs.npmjs.com/cli/config).
 
