@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change margin in `@footer`
 - Add `@update-time` in `@service`
 - Remove `@separator--gray-bars-wide` in `@teaser-list--homepage`
 
