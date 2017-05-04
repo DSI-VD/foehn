@@ -35,5 +35,5 @@
 @mixin vd-focus() {
   background-color: $vd-focus;
   outline: 3px solid $vd-focus;
-  color: $body-bg;
+  color: currentColor;
 }
