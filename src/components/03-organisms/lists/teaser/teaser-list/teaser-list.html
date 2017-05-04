@@ -17,4 +17,4 @@
   {% endif %}
 </section>
 
-{% render '@separator--gray-bars-wide', { styleModifier: "mb-3" }, true %}
+{% if not homepage %}{% render '@separator--gray-bars-wide', { styleModifier: "mb-3" }, true %}{% endif %}

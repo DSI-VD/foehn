@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Add `@update-time` in `@service`
+- Remove `@separator--gray-bars-wide` in `@teaser-list--homepage`
 
 ## [0.21.3]
 
