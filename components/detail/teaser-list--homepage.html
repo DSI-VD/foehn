@@ -280,9 +280,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-separator vd-separator-gray-bars vd-separator-wide mb-3"</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -309,7 +307,7 @@
   {% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 
-{% render '<a href="separator--gray-bars-wide">@separator--gray-bars-wide</a>', { styleModifier: "mb-3" }, true %}</pre>
+{% if not homepage %}{% render '<a href="separator--gray-bars-wide">@separator--gray-bars-wide</a>', { styleModifier: "mb-3" }, true %}{% endif %}</pre>
     </code>
 </div>
 

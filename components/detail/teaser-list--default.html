@@ -347,7 +347,7 @@
   {% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 
-{% render '<a href="separator--gray-bars-wide">@separator--gray-bars-wide</a>', { styleModifier: "mb-3" }, true %}</pre>
+{% if not homepage %}{% render '<a href="separator--gray-bars-wide">@separator--gray-bars-wide</a>', { styleModifier: "mb-3" }, true %}{% endif %}</pre>
     </code>
 </div>
 
