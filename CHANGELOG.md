@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.21.3]
 
 ### Fix
+- Change color of `:focus` style
 - Only upload the `dist/assets/` folder on the registry
 
 ## [0.21.2]
