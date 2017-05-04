@@ -77,9 +77,22 @@
     
     <p>All notable changes to this project will be documented in this file.
 This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
-<h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.0...HEAD">Unreleased</a></h2>
+<h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.3...HEAD">Unreleased</a></h2>
+<h2 id="-0-21-3-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.2...v0.21.3">0.21.3</a></h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Only upload the <code>dist/assets/</code> folder on the registry</li>
+</ul>
+<h2 id="-0-21-2-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.1...v0.21.2">0.21.2</a></h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix npm script</li>
+</ul>
+<h2 id="-0-21-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.0...v0.21.1">0.21.1</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
+<li><a href="../components/detail/accueil"><code>@accueil</code></a> and <a href="../components/detail/teaser-list--homepage"><code>@teaser-list--homepage</code></a> use <a href="../components/detail/teaser--small-media"><code>@teaser--small-media</code></a> for the first image</li>
+<li>Images can have a link in <a href="../components/detail/figure"><code>@figure</code></a></li>
 <li>Change how information is displayed in <a href="../components/detail/tableau-de-bord"><code>@tableau-de-bord</code></a></li>
 <li>Add <a href="../components/detail/separator--gray-bars-wide"><code>@separator--gray-bars-wide</code></a> in <a href="../components/detail/teaser-list"><code>@teaser-list</code></a></li>
 <li>Add <a href="../components/detail/separator--gray-bars-wide"><code>@separator--gray-bars-wide</code></a> in <a href="../components/detail/teaser-list--homepage"><code>@teaser-list--homepage</code></a></li>
@@ -89,6 +102,8 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 </ul>
 <h3 id="added">Added</h3>
 <ul>
+<li>Add <a href="../components/detail/teaser--small-media"><code>@teaser--small-media</code></a> component</li>
+<li>Add <code>styleModifier</code> in <a href="../components/detail/figure"><code>@figure</code></a></li>
 <li>Add <a href="../components/detail/news-list--projets"><code>@news-list--projets</code></a> template</li>
 <li>Add <a href="../components/detail/search-form--regular-option"><code>@search-form--regular-option</code></a>component</li>
 </ul>
@@ -98,7 +113,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix missing <a href="../components/detail/lead"><code>@lead</code></a> in <a href="../components/detail/news-detail"><code>@news-detail</code></a></li>
 <li>Fix <a href="../components/detail/social-icons"><code>@social-icons</code></a> has no title in <a href="../components/detail/news-detail"><code>@news-detail</code></a></li>
 </ul>
-<h2 id="-0-21-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.1...0.21.0">0.21.0</a></h2>
+<h2 id="-0-21-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.1...v0.21.0">0.21.0</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li><a href="../components/detail/radio"><code>@radio</code></a> only contain one radio button</li>
@@ -147,13 +162,13 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Removed feedback molecule</li>
 </ul>
-<h2 id="-0-20-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.0...0.20.1">0.20.1</a></h2>
+<h2 id="-0-20-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.0...v0.20.1">0.20.1</a></h2>
 <h3 id="fix">Fix</h3>
 <ul>
 <li>Remove unused bower.json</li>
 <li>Fix line breaks in inline SVG</li>
 </ul>
-<h2 id="-0-20-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.19.0...0.20.0">0.20.0</a></h2>
+<h2 id="-0-20-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.19.0...v0.20.0">0.20.0</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Agenda use default teaser</li>
@@ -484,7 +499,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Removed polyfills from styleguide #566</li>
 <li>Removed Contact link from header-securise component #490</li>
 </ul>
-<h2 id="-0-13-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.12.0...0.13.0">0.13.0</a></h2>
+<h2 id="-0-13-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.12.0...v0.13.0">0.13.0</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Change the columns in the footer to <code>xs</code> sizes</li>
@@ -541,7 +556,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix <code>vd-teaser-img</code> size on IE</li>
 <li>Fix the mobile navigation #460</li>
 </ul>
-<h2 id="-0-12-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.11.0...0.12.0">0.12.0</a></h2>
+<h2 id="-0-12-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.11.0...v0.12.0">0.12.0</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Modify the existing Blockquotes to <code>.vd-blockquote-bubble</code> and <code>.vd-blockquote-bubble-media</code> classes #487</li>
@@ -613,7 +628,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Fix Changelog file extension</li>
 </ul>
-<h2 id="-0-10-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.0...c.0.10.1">0.10.1</a></h2>
+<h2 id="-0-10-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.0...v0.10.1">0.10.1</a></h2>
 <h3 id="fixed">Fixed</h3>
 <ul>
 <li>Fix Changelog location</li>
