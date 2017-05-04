@@ -1,11 +1,11 @@
-{% for name, item in domains %}
+{% for name, domain in domains %}
   <div>
     <div class="row mt-3">
 
       <div class="col-md-4">
-        <h2 id="{{ name }}">{{ name | capitalize }}</h2>
-        <h3 id="acces-direct-{{ name }}" class="sr-only">Les plus visités</h3>
-        <nav class="p-1" aria-labelledby="acces-direct-{{ name }}">
+        <h2 id="{{ domain.name | lower }}">{{ domain.name | capitalize }}</h2>
+        <h3 id="acces-direct-{{ domain.name | lower }}" class="sr-only">Les plus visités</h3>
+        <nav class="p-1" aria-labelledby="acces-direct-{{ domain.name | lower }}">
           <ul class="vd-list-links">
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
@@ -15,8 +15,8 @@
       </div><!-- /.col-md-4 -->
 
       <div class="col-md-8">
-        <ul class="list-unstyled row" aria-labelledby="{{ name }}">
-          {% for theme in item.themes %}
+        <ul class="list-unstyled row" aria-labelledby="{{ domain.name | lower }}">
+          {% for theme in domain.themes %}
           {% render '@domain-item', {styleModifier:'mb-2 col-md-6', name:theme.name}, true %}
           {% endfor %}
         </ul><!-- /.col-md-8 -->
