@@ -23,5 +23,17 @@
           "disabled": true
         }
       ]
-    }
+    },
+    "variants": [
+      {
+        "name": "error",
+        "context": {
+          "error": true,
+          "validation": {
+            "class": "danger",
+            "text": "Veuillez sélectionner une option"
+          }
+        }
+      }
+    ]
 }

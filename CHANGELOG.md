@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@update-time` in `@service`
 - Remove `@separator--gray-bars-wide` in `@teaser-list--homepage`
 
+### Added
+- Add `.vd-form-group-error` style for form elements
+- Add `@fieldset--error`
+
 ### Fix
 - Fix missing name in `@fieldset--checkbox`
 
