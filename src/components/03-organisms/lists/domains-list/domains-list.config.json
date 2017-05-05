@@ -1,8 +1,7 @@
 {
   "status": "ready",
   "context": {
-    "domains": {
-      "culture": {
+    "domains": [{
         "name": "Culture",
         "themes": [{
             "name": "Aides et soutiens"
@@ -34,7 +33,7 @@
         ],
         "description": "Aides et soutiens, Musées cantonaux…"
       },
-      "economie": {
+      {
         "name": "Economie",
         "themes": [{
             "name": "Entreprises"
@@ -69,7 +68,7 @@
         ],
         "description": "Poursuites et faillites, Registre du commerce…"
       },
-      "environnement": {
+      {
         "name": "Environnement",
         "themes": [{
             "name": "Développement durable"
@@ -110,7 +109,7 @@
         ],
         "description": "Faune et nature, Energie…"
       },
-      "etat_droit_finance": {
+      {
         "name": "Etat, Droit, Finance",
         "themes": [{
             "name": "Lois / Constitution"
@@ -151,7 +150,7 @@
         ],
         "description": "Impôts, rémunérations, fiscalité…"
       },
-      "formation": {
+      {
         "name": "Formation",
         "themes": [{
             "name": "Avant l'Ecole"
@@ -192,7 +191,7 @@
         ],
         "description": "Jours fériés et vacances scolaires…"
       },
-      "mobilité": {
+      {
         "name": "Mobilité",
         "themes": [{
             "name": "Mobilité et planification"
@@ -218,7 +217,7 @@
         ],
         "description": "Automobile, Navigation…"
       },
-      "santé": {
+      {
         "name": "Santé",
         "themes": [{
             "name": "Actualités"
@@ -244,7 +243,7 @@
         ],
         "description": "Prévention, Professionnels…"
       },
-      "social": {
+      {
         "name": "Social",
         "themes": [{
             "name": "Informations sociales"
@@ -273,7 +272,7 @@
         ],
         "description": "Aide aux victimes et auteur-e-s de violences…"
       },
-      "vie_privee": {
+      {
         "name": "Vie privée",
         "themes": [{
             "name": "Familles"
@@ -311,7 +310,7 @@
         ],
         "description": "Documents d'identité…"
       },
-      "securite": {
+      {
         "name": "Sécurité",
         "themes": [{
             "name": "Prévention"
@@ -343,7 +342,7 @@
         ],
         "description": "Police, contrôle, casiers judiciaire…"
       },
-      "territoire": {
+      {
         "name": "Territoire",
         "themes": [{
             "name": "Aménagement"
@@ -378,7 +377,7 @@
         ],
         "description": "Informations sur le territoire, Registre foncier…"
       }
-    }
+    ]
   }
 
 }
