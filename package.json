@@ -59,6 +59,6 @@
     "imagemin-svgo": "^5.2.0",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0",
-    "stylelint-order": "^0.4.3"
+    "stylelint-order": "^0.4.4"
   }
 }
