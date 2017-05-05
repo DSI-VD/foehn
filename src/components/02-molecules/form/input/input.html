@@ -1,4 +1,4 @@
-<div class="form-group{%if validation %} has-{{validation.class}}{% endif %}">
+<div class="form-group{%if validation %} has-{{validation.class}}{% if validation.class === 'danger' %} vd-form-group-error{% endif %}{% endif %}">
   <label for="{{ id }}"{% if labelHidden %} class="sr-only"{% endif %}{% if labelStyleModifier %} class="{{ labelStyleModifier }}"{% endif %}>{{ label }}{% if required %} <span aria-hidden="true">(Requis)</span>{% endif %}</label>
   {%- if validation.text %}<div class="form-control-feedback">{{ validation.text }}</div>{% endif -%}
   {%- if helpText %}<small id="{{ id }}Help" class="form-text text-muted">{{ helpText }}</small>{% endif -%}

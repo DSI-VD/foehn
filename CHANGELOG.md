@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change margin in `@footer`
 - Add `@update-time` in `@service`
 - Remove `@separator--gray-bars-wide` in `@teaser-list--homepage`
+- `@input--error` use `.vd-form-group-error` style
 
 ### Added
 - Add `.vd-form-group-error` style for form elements
