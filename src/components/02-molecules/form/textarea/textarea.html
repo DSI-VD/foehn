@@ -1,4 +1,5 @@
-<div class="form-group">
+<div class="form-group{% if validation.class === 'danger' %} vd-form-group-error{% endif %}">
   <label for="exampleTextarea">Example textarea</label>
+  {%- if validation.text %}<div class="text-{{ validation.class }}">{{ validation.text }}</div>{% endif -%}
   <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 </div>
