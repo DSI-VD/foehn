@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Add `.vd-form-group-error` style for form elements
 - Add `@fieldset--error`
+- Add `@textare--error`
 
 ### Fix
 - Fix missing name in `@fieldset--checkbox`
