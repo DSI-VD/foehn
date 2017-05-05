@@ -1,7 +1,6 @@
 {
     "status": "ready",
     "context": {
-        "url": "#",
         "name": "This is the title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     }
