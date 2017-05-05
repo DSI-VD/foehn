@@ -6,20 +6,20 @@
       "items": [
         {
           "label": "Cras sed ligula eu est cursus eleifend ut id turpis",
-          "name": "exampleRadio",
+          "name": "example",
           "checked": true
         },
         {
           "label": "Fusce feugiat quam vel tellus malesuada, sit amet maximus justo hendrerit",
-          "name": "exampleRadio"
+          "name": "example"
         },
         {
           "label": "Aenean id est non dui porttitor euismod",
-          "name": "exampleRadio"
+          "name": "example"
         },
         {
           "label": "Phasellus dignissim metus quis blandit varius",
-          "name": "exampleRadio",
+          "name": "example",
           "disabled": true
         }
       ]
