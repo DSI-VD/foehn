@@ -17,6 +17,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 - Fix missing name in `@fieldset--checkbox`
 
+### Removed
+- Remove `@checkbox--warning`
+- Remove `@radio--warning`
+- Remove `@input--validation-warning`
+
 ## [0.21.3]
 
 ### Fix
