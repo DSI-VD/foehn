@@ -15,6 +15,7 @@
     },
     {
       "name": "validation warning",
+      "hidden": true,
       "context": {
         "label": "Radio with warning",
         "validation": {
