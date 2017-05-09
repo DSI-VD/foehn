@@ -53,12 +53,20 @@ module.exports = {
     },
     variants: [
         {
-            name: 'projets',
+            name: 'activity',
             context: {
-                pageTitle: 'Projets',
+                pageTitle: 'Toutes les activités',
                 breadcrumb: [
                     {
                         page: 'vd.ch',
+                        url: '#',
+                    },
+                    {
+                        page: 'autorités',
+                        url: '#',
+                    },
+                    {
+                        page: 'Service des automobiles et de la navigation',
                         url: '#',
                     },
                 ],
