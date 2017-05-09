@@ -1,0 +1,19 @@
+{
+  "context": {
+    "text": "Heading 3"
+  },
+  "variants": [
+    {
+      "name": "Section title",
+      "context": {
+        "styleModifier": "vd-section-title"
+      }
+    },
+    {
+      "name": "arrow",
+      "context": {
+        "icon": "fa-arrow-down"
+      }
+    }
+  ]
+}
