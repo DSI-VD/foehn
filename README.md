@@ -44,7 +44,7 @@ The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 1. Run the following command to create a new version of the package. (It also create the tag.)
 
 ```shell
-$ yarn version
+$ npm run release-version
 ```
 
 ### Publish on the npm registry

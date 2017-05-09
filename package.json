@@ -20,6 +20,7 @@
     "start": "yarn && gulp dev",
     "build": "yarn && gulp build",
     "deploy": "yarn && gulp publish",
+    "release-version": "yarn version",
     "publish-version": "npm run build && npm publish --tag latest"
   },
   "engines": {
