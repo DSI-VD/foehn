@@ -1,7 +1,7 @@
-{% if validation.class === 'danger' %}<div class="vd-form-group-error">{% endif %}
+{% if validation.class === 'danger' %}<div class="vd-form-group-{{ validation.class }}">{% endif %}
 <fieldset class="form-group{% if styleModifier %} {{ styleModifier }}{% endif %}">
   <legend{% if legendModifier %} class="{{ legendModifier }}"{% endif %}>{{ legend }}</legend>
-  {%- if validation.text %}<div class="form-control-feedback text-{{validation.class}}">{{ validation.text }}</div>{% endif -%}
+  {%- if validation.text %}<div class="form-control-feedback text-{{ validation.class }}">{{ validation.text }}</div>{% endif -%}
   {% for item in items %}
     {% render '@radio', item %}
   {% endfor %}
