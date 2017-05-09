@@ -38,7 +38,7 @@ $ npm run deploy
 
 The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 
-### New version ship
+### New version
 
 1. Make sure, the `CHANGELOG.md` is up to date. If not, update it and commit the changes.
 1. Run the following command to create a new version of the package. (It also create the tag.)
@@ -52,7 +52,7 @@ $ yarn version
 The following command will build the code and publish the latest version on the registry you have set in your [NPM config](https://docs.npmjs.com/cli/config).
 
 ```shell
-$ npm run publish
+$ npm run publish-version
 ```
 
 If you need to publish a specific version, use `$ npm run build && npm publish --tag <tag>` to build the code and publish [a specific tag](https://docs.npmjs.com/cli/publish).
