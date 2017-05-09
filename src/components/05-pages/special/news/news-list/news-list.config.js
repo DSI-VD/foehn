@@ -53,7 +53,7 @@ module.exports = {
     },
     variants: [
         {
-            name: 'activity',
+            name: 'activities',
             context: {
                 pageTitle: 'Toutes les activités',
                 breadcrumb: [
