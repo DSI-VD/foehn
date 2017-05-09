@@ -42,6 +42,7 @@
       },
       {
         "name": "validation warning",
+        "hidden": true,
         "context": {
           "validation": {
             "class": "warning",

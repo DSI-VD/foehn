@@ -1,8 +1,20 @@
 {
     "status": "ready",
+    "collated": true,
     "context": {
       "label": "Example textarea",
       "id": "testTextarea",
       "name": "testTextarea"
-    }
+    },
+    "variants": [
+      {
+        "name": "danger",
+        "context": {
+          "validation": {
+            "class": "danger",
+            "text": "Veuillez saisir votre message"
+          }
+        }
+      }
+    ]
 }

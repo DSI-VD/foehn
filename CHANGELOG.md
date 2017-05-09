@@ -7,9 +7,20 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change margin in `@footer`
 - Add `@update-time` in `@service`
 - Remove `@separator--gray-bars-wide` in `@teaser-list--homepage`
+- `@input--error` use `.vd-form-group-danger` style
+
+### Added
+- Add `.vd-form-group-danger` style for form elements
+- Add `@fieldset--error`
+- Add `@textare--error`
 
 ### Fix
 - Fix missing name in `@fieldset--checkbox`
+
+### Removed
+- Remove `@checkbox--warning`
+- Remove `@radio--warning`
+- Remove `@input--validation-warning`
 
 ## [0.21.3]
 
