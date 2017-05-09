@@ -153,10 +153,22 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-f96f78920f2700009922ceaf8362737e-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+        
+            <pre><span class="hljs-comment">&lt;!-- Default --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleTextarea"</span>&gt;</span>Example textarea<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleTextarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+</pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Danger --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group vd-form-group-danger"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleTextarea"</span>&gt;</span>Example textarea<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleTextarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-danger"</span>&gt;</span>Veuillez saisir votre message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleTextarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+</pre>
+        
         
     </code>
 </div>
@@ -164,8 +176,9 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-f96f78920f2700009922ceaf8362737e-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group{% if validation.class === 'danger' %} vd-form-group-{{ validation.class }}{% endif %}"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleTextarea"</span>&gt;</span>Example textarea<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  {%- if validation.text %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-{{ validation.class }}"</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>{% endif -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleTextarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
@@ -175,13 +188,31 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-f96f78920f2700009922ceaf8362737e-panel-context">
     <code class="Code Code--lang-json">
         
-            
-            <pre>{
+        
+            <pre>
+<span class="hljs-comment">/* Default */</span>
+{
   <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Example textarea"</span>,
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"testTextarea"</span>,
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"testTextarea"</span>
-}</pre>
-            
+}
+
+</pre>
+        
+            <pre>
+<span class="hljs-comment">/* Danger */</span>
+{
+  <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Example textarea"</span>,
+  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"testTextarea"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"testTextarea"</span>,
+  <span class="hljs-attr">"validation"</span>: {
+    <span class="hljs-attr">"class"</span>: <span class="hljs-string">"danger"</span>,
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Veuillez saisir votre message"</span>
+  }
+}
+
+</pre>
+        
         
     </code>
 </div>
@@ -203,6 +234,21 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="textarea--default">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="textarea--danger">
+                    <span>Danger</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
