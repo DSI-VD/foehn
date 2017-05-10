@@ -1,4 +1,10 @@
-<div class="alert alert-info text-center" role="alert">
-  <p class="h2">Demande transmise</p>
-  <p>Votre numéro de référence<span class="sr-only">: </span><span class="h4 d-block mt-1">HDJS3E3</span></p>
-</div>
+{% if fixed %}<div class="container fixed-top">{% endif %}
+  <div class="alert alert-{{ type }}{% if dismiss %} alert-dismissible fade show{% endif %}{% if styleModifier %} {{ styleModifier }}{% endif %}" role="alert">
+    {% if dismiss -%}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {% endif -%}
+    {{ text }}
+  </div>
+{% if fixed %}</div>{% endif %}
