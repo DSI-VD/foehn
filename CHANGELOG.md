@@ -3,6 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- The `@alert` molecule has been renamed `@alert--default`
+
+### Added
+- Add `@alert--fixed` molecule
+
 ## [0.22.0]
 
 ### Changed
