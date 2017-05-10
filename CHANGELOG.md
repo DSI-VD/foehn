@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.23.0]
+
 ### Changed
 - The `@alert` molecule has been renamed `@alert--default`
 
@@ -998,7 +1000,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.22.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.23.0...HEAD
+[0.23.0]: https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/DSI-VD/foehn/compare/v0.21.3...v0.22.0
 [0.21.3]: https://github.com/DSI-VD/foehn/compare/v0.21.2...v0.21.3
 [0.21.2]: https://github.com/DSI-VD/foehn/compare/v0.21.1...v0.21.2
