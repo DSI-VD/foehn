@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
+- `@access-nav` molecule use `.fixed-top`
 
 ## [0.23.0]
 
