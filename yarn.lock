@@ -5572,7 +5572,7 @@ stylelint-config-standard@^16.0.0:
 
 stylelint-order@^0.4.4:
   version "0.4.4"
-  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/stylelint-order/-/stylelint-order-0.4.4.tgz#db7dfca0541b5062010c7e2e21e745791fc088ac"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-0.4.4.tgz#db7dfca0541b5062010c7e2e21e745791fc088ac"
   dependencies:
     lodash "^4.17.4"
     postcss "^5.2.16"
