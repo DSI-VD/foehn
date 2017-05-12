@@ -24,6 +24,9 @@ h6 {
   margin-bottom: 0.5em;
 }
 
+/**
+ * Make the headings smaller on desktop
+ */
 @include media-breakpoint-up(md) {
   .vd-text-md-small {
     .h1,
