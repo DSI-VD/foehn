@@ -1,41 +1,145 @@
 {
-    "status": "prototype",
-    "context": {
-      "pageTitle": "Prestations",
-      "navigation": {
-        "title": "@nav-horizontal.title",
+  "status": "prototype",
+  "context": {
+    "pageTitle": "Prestations",
+    "navigation": {
+      "title": "@nav-horizontal.title",
+      "items": [
+        {
+          "text": "Tableau de bord",
+          "title": null,
+          "url": "tableau-de-bord",
+          "active": null
+        },
+        {
+          "text": "Historique",
+          "title": null,
+          "url": "historique",
+          "active": null
+        },
+        {
+          "text": "Préstations",
+          "title": null,
+          "url": "prestations",
+          "active": true
+        },
+        {
+          "text": "Documents",
+          "title": null,
+          "url": "documents",
+          "active": null
+        },
+        {
+          "text": "Paramètres",
+          "title": null,
+          "url": "parametres",
+          "active": null
+        }
+      ]
+    },
+    "search": {
+      "title": "Filtrer par thème",
+      "titleModifier": "sr-only",
+      "options": {
+        "legend": "Filtrer par thème",
+        "legendModifier": "sr-only",
         "items": [
           {
-            "text": "Tableau de bord",
-            "title": null,
-            "url": "tableau-de-bord",
-            "active": null
+            "label": "Agriculture",
+            "name": "filterSearch",
+            "checked": false
           },
           {
-            "text": "Historique",
-            "title": null,
-            "url": "historique",
-            "active": null
+            "label": "Economie",
+            "name": "filterSearch",
+            "checked": false
           },
           {
-            "text": "Prestations",
-            "title": null,
-            "url": "prestations",
-            "active": true
-          },
-          {
-            "text": "Documents",
-            "title": null,
-            "url": "documents",
-            "active": null
-          },
-          {
-            "text": "Paramètres",
-            "title": null,
-            "url": "parametre",
-            "active": null
+            "label": "Santé",
+            "name": "filterSearch",
+            "checked": false
           }
         ]
       }
-    }
+    },
+    "prestation": [
+      {
+        "title": "Demande de permis de peche",
+        "href": "#",
+        "meta": {
+          "theme": "Agriculture",
+          "typeAcces": "libre d'accès"
+        },
+        "actions": [
+          {
+            "title": "Fiche descriptive",
+            "url": "#"
+          },
+          {
+            "title": "Ajouter au favoris",
+            "url": "#"
+          }
+        ],
+        "text": "Une demande de permis de peche doit etre effectuée auprès d'une autorité habilitée: kiosque, office de la gendarmerie. L'obtention d'un permis est nécessaire pour la peche au lac, en rivière sur tout le territoire Suisse à partir de 16 ans révolus."
+      },
+      {
+        "title": "Demande de permis de construire",
+        "href": "#",
+        "meta": {
+          "theme": "Immobilier",
+          "typeAcces": "Accès sécurisé"
+        },
+        "actions": [
+          {
+            "title": "Fiche descriptive",
+            "url": "#"
+          },
+          {
+            "title": "Demander l'accès à la prestation",
+            "url": "#"
+          }
+        ],
+        "text": "La demande de permis de construire doit etre accompagné des documents légaux nécessaire au lancement du processus administratif. Celle-ci est disponible pour toute personne majeur. Il est nécessaire que chaque demandeur soit munit d'une pièce d'identité."
+      },
+      {
+        "title": "Repas subventionné \"Cafetservice\"",
+        "href": "#",
+        "meta": {
+          "theme": "Santé",
+          "typeAcces": "Connexion nécessaire"
+        },
+        "actions": [
+          {
+            "title": "Fiche descriptive",
+            "url": "#"
+          },
+          {
+            "title": "Retirer des favoris",
+            "url": "#"
+          }
+        ],
+        "text": "L'Etat de Vaud met à disposition de ces collaborateurs une prestation \"Cafetservice\" pour les repas de midi. Le collaborateur choisis parmis une liste d'aliments et de menus à des prix préférentiels."
+      },
+      {
+        "title": "Zoo de Servion - Demande de visite scolaire",
+        "href": "#",
+        "meta": {
+          "theme": "Education",
+          "typeAcces": "Accès sécurisé"
+        },
+        "actions": [
+          {
+            "title": "Fiche descriptive",
+            "url": "#"
+          },
+          {
+            "title": "Retirer des favoris",
+            "url": "#"
+          }
+        ],
+        "text": "Le Zoo de Servion met à disposition son établissement dans le cadre de visites scolaires. Il est ainsi possible de réserver l'ensemble du parc pour des visites dont le nombre de participants atteind au minimum 40. La cafétéria est à disposition du groupe pour le repas de midi."
+      }
+
+    ]
+  }
 }

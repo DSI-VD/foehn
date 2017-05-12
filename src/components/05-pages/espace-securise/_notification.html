@@ -1,6 +1,6 @@
 <article class="mb-1 p-1 bg-faded">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <header>
         <h3 class="mb-1"><a href="{{ url }}">{{ title }}</a></h3>
         {%- if meta -%}
@@ -54,9 +54,10 @@
         {%- endfor -%}
       </ul>
       {%- endif -%}
+      <footer>
+        {% render '@actions', actions -%}
+      </footer>
     </div>
-    <footer class="col-md-4">
-      {% render '@actions', actions -%}
-    </footer>
+
   </div>
 </article>

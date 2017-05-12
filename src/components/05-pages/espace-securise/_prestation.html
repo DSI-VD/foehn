@@ -1,0 +1,33 @@
+<article class="mb-1 p-1 bg-faded">
+    <div class="row">
+        <div class="col-md-12">
+            <header>
+                <h3 class="mb-1"><a href="{{ url }}">{{ title }}</a></h3>
+                {%- if meta -%}
+                <dl class="small row">
+                    {%- if meta.theme -%}
+                    <dt class="col-4">Thème</dt>
+                    <dd class="col-8">{{ meta.theme }}</dd>
+                    {% endif -%}
+                    {%- if meta.typeAcces -%}
+                    <dt class="col-4">Type d'accès</dt>
+                    <dd class="col-8">{{ meta.typeAcces }}</dd>
+                    {% endif -%}
+                </dl>
+                {%- endif -%}
+            </header>
+            {% if text %}
+            <p>{{ text }}</p>
+            {% endif %}
+            <footer>
+                {%- if actions -%}
+                    {%- for action in actions -%}
+                        <div>
+                            <a href="{{ action.url }}">{{ action.title }}</a>
+                        </div>
+                    {% endfor %}
+                {%- endif -%}
+            </footer>
+        </div>
+    </div>
+</article>
