@@ -1,8 +1,64 @@
 @charset 'UTF-8';
 
-h1,
-.h1 {
+.h1,
+h1 {
   font-weight: 700;
+}
+
+/**
+ * Add margin around headings
+ */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+@include media-breakpoint-up(md) {
+  .vd-text-md-small {
+    .h1,
+    h1 {
+      font-size: $font-size-h1 * 0.8;
+    }
+
+    .h2,
+    h2 {
+      font-size: $font-size-h2 * 0.8;
+    }
+
+    .h3,
+    h3 {
+      font-size: $font-size-h3 * 0.8;
+    }
+
+    .h4,
+    h4 {
+      font-size: $font-size-h4 * 0.8;
+    }
+
+    .h5,
+    h5 {
+      font-size: $font-size-h5 * 0.8;
+    }
+
+    .h6,
+    h6 {
+      font-size: $font-size-h6 * 0.8;
+    }
+
+    font-size: $small-font-size;
+    font-weight: $font-weight-normal;
+  }
 }
 
 .vd-section-title {
@@ -11,5 +67,11 @@ h1,
   font-size: $font-size-base * 1.1;
   font-weight: 400;
   color: $body-color;
+  text-transform: uppercase;
+}
+
+.vd-heading-light {
+  font-family: $font-family-base;
+  font-weight: 400;
   text-transform: uppercase;
 }
