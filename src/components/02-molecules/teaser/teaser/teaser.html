@@ -1,4 +1,4 @@
-<article role="article" aria-label="{{ title }}" class="mb-3{% if styleModifier %} {{ styleModifier }}{% endif %}">
+<article role="article" aria-label="{{ title }}"{% if styleModifier %} class="{{ styleModifier }}{% endif %}">
   <header>
     <h3><a class="vd-link-invisible" href="{{ url }}" title="Lire l'article: {{title}}">{{ title }}</a></h3>
 
