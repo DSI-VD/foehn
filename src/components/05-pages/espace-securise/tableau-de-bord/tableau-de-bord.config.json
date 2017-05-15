@@ -40,9 +40,10 @@
         "communications": [
             {
               "title": "Message important !",
+              "url": "message-detail",
               "meta": {
-                "dateOfReceipt": "17.02.2017",
-                "dateOfReading": "18.02.2017"
+                "receiveDate": "16.03.2017",
+                "readDate": "26.02.2017"
               },
               "text": "En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension.",
               "actions": {
