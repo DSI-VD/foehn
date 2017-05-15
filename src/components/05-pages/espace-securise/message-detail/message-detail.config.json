@@ -1,0 +1,36 @@
+{
+    "status": "prototype",
+    "context": {
+        "pageTitle": "Détail du message",
+        "communication":{
+            "title": "Message important !",
+            "meta": {
+                "receiveDate": "17.02.2017",
+                "readDate": "18.02.2017",
+                "quittanceDate": "-"
+            },
+            "text": "En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension.",
+            "actions": {
+                "title": "Actions sur la communication",
+                "actions": [
+                    {
+                        "title": "Quittancer",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Télécharger",
+                        "url": "#"
+                    },
+                    {
+                        "title": "<< Retour",
+                        "url": "#"
+                    }
+                ]
+            },
+            "note": "Une fois quittancé, le message sera disponible jusqu'au ... Dans ce laps de temps, vous pourrez choisir de le conserver indéfiniment."
+        }
+
+    }
+}
+
+

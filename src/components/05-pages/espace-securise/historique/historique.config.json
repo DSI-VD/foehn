@@ -64,7 +64,8 @@
         },
         "historique": [
           {
-            "title": "Message important",
+            "title": "Message important !",
+            "url": "message-detail",
             "href": "#",
             "meta": {
               "type": "Communication",
@@ -93,7 +94,8 @@
               "type": "Demande",
               "reference": "HOX0AI-AJQ7K1",
               "date": "17.02.2017",
-              "status": "En cours",
+              "closeDate": "20.02.2017",
+              "status": "Clôturé",
               "recipient": "Jean Villars Gilles"
             },
             "actions": {
@@ -112,21 +114,7 @@
                   "url": "#"
                 }
               ]
-            },
-            "messages": [
-              {
-                "title": "Bonjour, un nouveau processus lié à la demande de permis.",
-                "url": "#",
-                "date": "17.02.2017"
-              }
-            ],
-            "tasks": [
-              {
-                "title": "Valider l'autorisation de construire sur un terrain inexploiter.",
-                "url": "#",
-                "date": "17.02.2017"
-              }
-            ]
+            }
           },
           {
             "title": "Demande de permis de construire",
@@ -135,7 +123,8 @@
               "type": "Demande",
               "reference": "HOX0AI-AJQ7K1",
               "date": "17.02.2017",
-              "status": "En cours",
+              "closeDate": "28.02.2017",
+              "status": "Clôturé",
               "recipient": "Jean Villars Gilles"
             },
             "actions": {
@@ -154,21 +143,7 @@
                   "url": "#"
                 }
               ]
-            },
-            "messages": [
-              {
-                "title": "Bonjour, un nouveau processus lié à la demande de permis.",
-                "url": "#",
-                "date": "17.02.2017"
-              }
-            ],
-            "tasks": [
-              {
-                "title": "Valider l'autorisation de construire sur un terrain inexploiter.",
-                "url": "#",
-                "date": "17.02.2017"
-              }
-            ]
+            }
           }
         ]
     }
