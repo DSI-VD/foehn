@@ -66,6 +66,7 @@
       {
         "title": "Demande de permis de peche",
         "href": "#",
+        "available": true,
         "meta": {
           "theme": "Agriculture",
           "typeAcces": "libre d'accès"
@@ -85,17 +86,14 @@
       {
         "title": "Demande de permis de construire",
         "href": "#",
+        "available": false,
         "meta": {
           "theme": "Immobilier",
-          "typeAcces": "Accès sécurisé"
+          "typeAcces": "Demander l'accès à la prestation"
         },
         "actions": [
           {
             "title": "Fiche descriptive",
-            "url": "#"
-          },
-          {
-            "title": "Demander l'accès à la prestation",
             "url": "#"
           }
         ],
@@ -104,6 +102,7 @@
       {
         "title": "Repas subventionné \"Cafetservice\"",
         "href": "#",
+        "available": true,
         "meta": {
           "theme": "Santé",
           "typeAcces": "Connexion nécessaire"
@@ -123,6 +122,7 @@
       {
         "title": "Zoo de Servion - Demande de visite scolaire",
         "href": "#",
+        "available": true,
         "meta": {
           "theme": "Education",
           "typeAcces": "Accès sécurisé"
