@@ -1,5 +1,5 @@
 <section{% if styleModifier %} class="{{ styleModifier }}"{% endif%}{% if id %} id="{{ id }}"{% endif %}>
-  <h2 class="vd-section-title">{{ title }}</h2>
+  <h2 class="vd-heading-light">{{ title }}</h2>
 
   {% for teaser in teasers %}
   {% render '@teaser', teaser, true %}
