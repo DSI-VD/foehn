@@ -25,6 +25,20 @@ h6 {
 }
 
 /**
+ * Remove margin-top on the first heading of a column to avoid horizontal
+ * alignment problems.
+ */
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    [class^="col-#{$breakpoint}"] {
+      > :first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/**
  * Make the headings smaller on desktop
  */
 @include media-breakpoint-up(md) {
