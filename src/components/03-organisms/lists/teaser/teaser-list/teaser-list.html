@@ -1,4 +1,4 @@
-<section class="mb-3"{% if id %} id="{{ id }}"{% endif %}>
+<section{% if styleModifier %} class="{{ styleModifier }}"{% endif%}{% if id %} id="{{ id }}"{% endif %}>
   <h2 class="vd-section-title">{{ title }}</h2>
 
   {% for teaser in teasers %}
