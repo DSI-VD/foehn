@@ -22,7 +22,7 @@ module.exports = {
         titleModifier: 'sr-only',
         searchForm: {
             title: 'Rechercher dans les questions',
-            titleModifier: 'mt-0'
+            titleModifier: 'mt-0',
         },
         faqs: faqData,
     },
