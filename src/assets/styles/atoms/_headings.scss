@@ -78,15 +78,9 @@ h6 {
   }
 }
 
-.vd-section-title {
-  margin-bottom: $spacer * 2;
-  font-family: $font-family-base;
-  font-size: $font-size-base * 1.1;
-  font-weight: 400;
-  color: $body-color;
-  text-transform: uppercase;
-}
-
+/**
+ * Light variant of headings
+ */
 .vd-heading-light {
   font-family: $font-family-base;
   font-weight: 400;

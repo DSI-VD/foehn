@@ -20,29 +20,29 @@
   {% render '@teaser-list', projects, true  %}
 
   <section>
-    <h2 class="vd-section-title" id="organisation">Organisation</h2>
+    <h2 class="vd-heading-light" id="organisation">Organisation</h2>
     {% render '@card' %}
     {% render '@list-links', organisation.links %}
   </section>
 
   <section>
-    <h2 class="vd-section-title" id="prestations">Prestations</h2>
+    <h2 class="vd-heading-light" id="prestations">Prestations</h2>
     {% render '@list-links', prestations %}
     {% render '@button--default', {text:"Toutes les prestations"}, true %}
   </section>
 
   <section id="baseslegales">
-    <h2 class="vd-section-title">Bases légales</h2>
+    <h2 class="vd-heading-light">Bases légales</h2>
     {% render '@list-links' %}
   </section>
 
   <section id="publications">
-    <h2 class="vd-section-title">Publications</h2>
+    <h2 class="vd-heading-light">Publications</h2>
     {% render '@list-links', publications %}
   </section>
 
   <section id="offresdemplois">
-    <h2 class="vd-section-title">Offres d'emploi</h2>
+    <h2 class="vd-heading-light">Offres d'emploi</h2>
     {% render '@list-links', offres %}
   </section>
 {% endblock %}
