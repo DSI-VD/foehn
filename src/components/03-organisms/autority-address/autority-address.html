@@ -1,6 +1,6 @@
 <address itemscope itemtype="http://schema.org/GovernmentOrganization">
 
-  <h2 itemprop="name">{% if url %}<a href="{{ url }}" title="Pages du service {{ name }}" itemprop="url">{% endif %}{{ name }}{% if url %}</a>{% endif %}</h2>
+  <h2 itemprop="name"{% if titleModifier %} class="{{ titleModifier }}"{% endif %}>{% if url %}<a href="{{ url }}" title="Pages du service {{ name }}" itemprop="url">{% endif %}{{ name }}{% if url %}</a>{% endif %}</h2>
 
   {% if division %}<h3 class="vd-section-title mb-1">{{ division }}</h3>{% endif %}
   <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">{{ address.street }}</span> <br><span itemprop="postalCode">{{ address.postalCode }}</span> <span itemprop="addressLocality">{{ address.locality }}</span> <span class="sr-only" itemprop="addressCountry">Suisse</span></p>

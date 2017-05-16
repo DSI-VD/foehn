@@ -116,6 +116,7 @@
     },
     "autorityAddress": {
       "name": "Direction générale de l'environnement",
+      "titleModifier": "mt-md-0",
       "url": "#",
       "address": {
         "street": "Place du Château 1",
