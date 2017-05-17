@@ -19,6 +19,18 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove custom margin bottom  in `@autority-address`
 - Remove custom margin bottom  in `@autority-info`
 - Remove margin top of `@search-form--regular` in `@faq`
+- Remove custom margin bottom in `@page-title-banner--form-presta`
+- Remove custom margin top in `@page-title-banner--prestation`
+- Remove custom margin top in `@page-title-banner`
+- Remove custom margin bottom in `@teaser-list`
+- Add margin top on `@separator--gray-bars-wide` in `@teaser-list`
+- Remove custom margin bottom in `@template-communiques-presse-detail`
+- Use `.vd-text-md-small` to make headings smaller in right column in `@template--2-col-nav`, `@template--2-col` and `@template--homepage`
+- Remove custom margin on `<section>` in `@service`
+- Remove margin top on `@autority-address` in `@service`
+- Remove margin top on `@alert--default` in `@formulaire-prestation-confirmation`
+- Remove margin top in `@notification`
+- Remove margin top on `@autority-address` in `@theme`
 
 ### Added
 - Add `@h1`
