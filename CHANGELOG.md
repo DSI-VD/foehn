@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.23.1]
+
 ### Changed
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
 - `@access-nav` molecule use `.fixed-top`
@@ -1004,7 +1006,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.23.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.23.1...HEAD
+[0.23.1]: https://github.com/DSI-VD/foehn/compare/v0.23.0...v0.23.1
 [0.23.0]: https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/DSI-VD/foehn/compare/v0.21.3...v0.22.0
 [0.21.3]: https://github.com/DSI-VD/foehn/compare/v0.21.2...v0.21.3
