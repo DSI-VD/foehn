@@ -4,9 +4,9 @@
   },
   "variants": [
     {
-      "name": "Section title",
+      "name": "light",
       "context": {
-        "styleModifier": "vd-section-title"
+        "styleModifier": "vd-heading-light"
       }
     },
     {
