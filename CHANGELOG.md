@@ -7,6 +7,26 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
 - `@access-nav` molecule use `.fixed-top`
 - Replace `.vd-section-title` by `.vd-heading-light`
+- Remove custom margin bottom  in `@faq-item`
+- Remove custom margin bottom  in `@avs13`
+- Remove custom margin bottom  in `@dates`
+- Remove custom margin bottom  in `@dates`
+- Set margin top to null in `@domain-item`
+- Remove custom margin bottom in `@teaser`
+- Change `.mb-0` class by `.mt-0` in `@teaser-card`
+- Remove useless `<div>` in `@highlight`
+- Remove custom margin bottom  in `@agenda`
+- Remove custom margin bottom  in `@autority-address`
+- Remove custom margin bottom  in `@autority-info`
+- Remove margin top of `@search-form--regular` in `@faq`
+
+### Added
+- Add `@h1`
+- Add `@h2`
+- Add `@h3`
+- Add `@h4`
+- Add `@h5`
+- Add `@h6`
 
 ## [0.23.0]
 
