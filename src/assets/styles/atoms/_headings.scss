@@ -29,11 +29,11 @@ h6 {
  * alignment problems.
  */
 @each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    [class^="col-#{$breakpoint}"] {
-      > :first-child {
-        margin-top: 0;
-      }
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  // Allow columns to stretch full width below their breakpoints
+  @for $i from 1 through $grid-columns {
+    .col#{$infix}-#{$i} > :first-child {
+      margin-top: 0;
     }
   }
 }
