@@ -6,7 +6,7 @@
     {
       "name": "light",
       "context": {
-        "styleModifier": "vd-heading-light"
+        "styleModifier": "vd-heading-light h4"
       }
     },
     {
