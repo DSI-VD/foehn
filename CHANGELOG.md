@@ -3,9 +3,21 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Add `demande-detail` files (.config and .html)
+- Add `message-detail` files (.config and .html)
+- Add `_demande-historique.html` template
+- Add `_prestation.html` template
+
 ### Changed
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
 - `@access-nav` molecule use `.fixed-top`
+- `historique.config.json` updated with new data
+- `prestations-config-json` updated, unnecessary attributes removed
+- `prestations.html` globaly changed to follow new chosen interface
+- attributes renamed in `tableau-de-bord.config.json` and values updated
+- `_notification.html` template updated with new elements
+- `notification.config.json` updated on `url` and `title` attributes.
 
 ## [0.23.0]
 
