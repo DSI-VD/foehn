@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `@notification` template updated with new elements
 - `notification.config.json` updated on `url` and `title` attributes.
 - Remove `.small` class on `@footer` and `@footer--securise`
+- Remove `.text-muted` class in `@footer`
 
 ### Added
 - Add `@demande-detail` files (.config and .html)
