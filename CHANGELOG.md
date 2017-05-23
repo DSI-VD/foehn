@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Fix `@breadcrumb` font size
+- Fix `@footer` margin
 
 ## [0.23.1]
 
