@@ -17,6 +17,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@demande-historique.html` template
 - Add `@prestation.html` template
 
+### Fix
+- Fix `@breadcrumb` font size
+
 ## [0.23.1]
 
 ### Changed
