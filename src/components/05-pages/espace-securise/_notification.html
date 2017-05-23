@@ -1,8 +1,10 @@
 <article class="mb-1 p-1 bg-faded">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <header>
-        <h3 class="mb-1"><a href="{{ url }}">{{ title }}</a></h3>
+        <h3 class="mb-1">
+            <a href="{{ url }}">{{ title }}</a>
+        </h3>
         {%- if meta -%}
         <dl class="small row">
           {%- if meta.type -%}
@@ -21,9 +23,17 @@
           <dt class="col-4">Reçu le</dt>
           <dd class="col-8">{{ meta.receiveDate }}</dd>
           {% endif -%}
+          {% if meta.closeDate -%}
+          <dt class="col-4">Clôturé le</dt>
+          <dd class="col-8">{{ meta.closeDate }}</dd>
+          {% endif -%}
           {% if meta.readDate -%}
           <dt class="col-4">Lu le</dt>
           <dd class="col-8">{{ meta.readDate }}</dd>
+          {% endif -%}
+          {% if meta.quittanceDate -%}
+          <dt class="col-4">Quittancé le</dt>
+          <dd class="col-8">{{ meta.quittanceDate }}</dd>
           {% endif -%}
           {% if meta.status -%}
           <dt class="col-4">Statut</dt>
@@ -39,6 +49,11 @@
       {% if text %}
       <p>{{ text }}</p>
       {% endif %}
+
+      {% if note %}
+      <p><small>{{ note }}</small></p>
+      {% endif %}
+
       {%- if tasks -%}
       <h4 class="mb-1">Tâches à traiter</h4>
       <ul>
@@ -54,9 +69,10 @@
         {%- endfor -%}
       </ul>
       {%- endif -%}
+      <footer>
+        {% render '@actions', actions -%}
+      </footer>
     </div>
-    <footer class="col-md-4">
-      {% render '@actions', actions -%}
-    </footer>
+
   </div>
 </article>
