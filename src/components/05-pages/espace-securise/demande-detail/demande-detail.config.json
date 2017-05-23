@@ -1,0 +1,87 @@
+{
+    "status": "prototype",
+    "context": {
+        "pageTitle": "Détail de la demande",
+        "navigation": {
+            "title": "@nav-horizontal.title",
+            "items": [
+                {
+                    "text": "Tableau de bord",
+                    "title": null,
+                    "url": "tableau-de-bord",
+                    "active": null
+                },
+                {
+                    "text": "Historique",
+                    "title": null,
+                    "url": "historique",
+                    "active": true
+                },
+                {
+                    "text": "Préstations",
+                    "title": null,
+                    "url": "prestations",
+                    "active": null
+                },
+                {
+                    "text": "Documents",
+                    "title": null,
+                    "url": "documents",
+                    "active": null
+                },
+                {
+                    "text": "Paramètres",
+                    "title": null,
+                    "url": "parametres",
+                    "active": null
+                }
+            ]
+        },
+        "demande": {
+            "title": "Demande de permis de construire",
+            "href": "#",
+            "meta": {
+                "type": "Demande",
+                "reference": "HOX0AI-AJQ7K1",
+                "date": "17.02.2017",
+                "closeDate": "20.02.2017",
+                "status": "clôturé",
+                "recipient": "Benoît Horisberger"
+            },
+            "actions": {
+                "title": "Actions sur la demande",
+                "actions": [
+                    {
+                        "title": "Démarrer une demande sur ce modèle",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Retour...",
+                        "url": "#"
+                    }
+                ]
+            },
+            "historique": [
+                {
+                    "title": "Demande de permis de construire",
+                    "meta": {
+                        "type": "Demande",
+                        "treatedDate": "17.02.2017",
+                        "treatedBy": "Benoît Horisberger"
+                    }
+                },
+                {
+                    "title": "Message no 1",
+                    "text": "Le message n'en est pas vraiement un, il s'agit de détourner l'attention !",
+                    "meta": {
+                        "type": "Message",
+                        "receiveDate": "01.02.2017",
+                        "readDate": "05.02.2017",
+                        "quittanceDate": "11.02.2017",
+                        "treatedBy": "Benoît Horisberger"
+                    }
+                }
+            ]
+        }
+    }
+}
