@@ -104,11 +104,11 @@
       </li><li class="nav-item mb-lg-0 ">
         <a class="nav-link" href="historique">Historique</a>
       </li><li class="nav-item mb-lg-0  active">
-        <a class="nav-link" href="prestations"><span class="sr-only">(current)</span> Prestations</a>
+        <a class="nav-link" href="prestations"><span class="sr-only">(current)</span> Préstations</a>
       </li><li class="nav-item mb-lg-0 ">
         <a class="nav-link" href="documents">Documents</a>
       </li><li class="nav-item mb-lg-0 ">
-        <a class="nav-link" href="parametre">Paramètres</a>
+        <a class="nav-link" href="parametres">Paramètres</a>
       </li>
     </ul>
   </div>
@@ -126,90 +126,174 @@
   <div class="container">
     
 
-      <form>
-        <div class="form-group">
-          <div class="form-group">
-          <label for="exampleSelect1">Trier par</label>
-          <select class="form-control" id="exampleSelect1">
-            <option>Date - plus récent</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
+<form action="formulaire-prestation-confirmation">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+  <label for="fastFilter">Filtre rapide</label><input class="form-control" type="text" id="fastFilter" name="testInput" value="">
+</div>
+
         </div>
+        <div class="col-md-4">
+            <div class="form-group">
+  <label for="exampleSelect1">Filtrer par thème</label>
+  <select class="form-control" id="themFilter">
+    
+    <option>Curabitur</option>
+    
+    <option>Maecenas vel</option>
+    
+    <option>Suspendisse maximus velit non lacus</option>
+    
+    <option>Sed maximus</option>
+    
+    <option>Aliquam cupiditate, vel!</option>
+    
+    <option>Nunc eget neque sit amet ipsum auctor laoreet</option>
+    
+  </select>
+</div>
+
         </div>
-      </form>
+    </div>
 
-      <h1 class="h2">Mes prestations</h1>
+</form>
 
-      <article class="card card-block card-inverse card-info">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre demande de permis de navigation a été traitée et le document vous a été transmis à votre adresse de livraison le xx.xx.xxxx</a></p>
-      </article>
 
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
+<article class="mb-1 p-1 bg-faded">
+    <div class="row">
+        <div class="col-md-12">
+            <header>
+                <h3 class="mb-1">
+                    
+                    <a href="">Demande de permis de peche</a>
+                        
+                    
+                    
+                </h3><dl class="small row"><dt class="col-4">Thème</dt>
+                    <dd class="col-8">Agriculture</dd>
+                    <dt class="col-4">Type d'accès</dt>
+                    <dd class="col-8">
+                        
+                        
+                        libre d'accès
+                        
+                    </dd>
+                    </dl></header>
+            
+            <p>Une demande de permis de peche doit etre effectuée auprès d'une autorité habilitée: kiosque, office de la gendarmerie. L'obtention d'un permis est nécessaire pour la peche au lac, en rivière sur tout le territoire Suisse à partir de 16 ans révolus.</p>
+            
+            <footer><div>
+                            <a href="#">Fiche descriptive</a>
+                        </div>
+                    <div>
+                            <a href="#">Ajouter au favoris</a>
+                        </div>
+                    </footer>
+        </div>
+    </div>
+</article>
+<article class="mb-1 p-1 bg-faded">
+    <div class="row">
+        <div class="col-md-12">
+            <header>
+                <h3 class="mb-1">
+                    
+                    
+                    Demande de permis de construire <span class="fa fa-lock" aria-hidden="true"></span>
+                    
+                </h3><dl class="small row"><dt class="col-4">Thème</dt>
+                    <dd class="col-8">Immobilier</dd>
+                    <dt class="col-4">Type d'accès</dt>
+                    <dd class="col-8">
+                        
+                        <a href="#">Demander l'accès à la prestation</a>
+                        
+                        
+                    </dd>
+                    </dl></header>
+            
+            <p>La demande de permis de construire doit etre accompagné des documents légaux nécessaire au lancement du processus administratif. Celle-ci est disponible pour toute personne majeur. Il est nécessaire que chaque demandeur soit munit d'une pièce d'identité.</p>
+            
+            <footer><div>
+                            <a href="#">Fiche descriptive</a>
+                        </div>
+                    </footer>
+        </div>
+    </div>
+</article>
+<article class="mb-1 p-1 bg-faded">
+    <div class="row">
+        <div class="col-md-12">
+            <header>
+                <h3 class="mb-1">
+                    
+                    <a href="">Repas subventionné "Cafetservice"</a>
+                        
+                         <span class="fa fa-unlock-alt" aria-hidden="true"></span>
+                        
+                    
+                    
+                </h3><dl class="small row"><dt class="col-4">Thème</dt>
+                    <dd class="col-8">Santé</dd>
+                    <dt class="col-4">Type d'accès</dt>
+                    <dd class="col-8">
+                        
+                        
+                        Connexion nécessaire
+                        
+                    </dd>
+                    </dl></header>
+            
+            <p>L'Etat de Vaud met à disposition de ces collaborateurs une prestation "Cafetservice" pour les repas de midi. Le collaborateur choisis parmis une liste d'aliments et de menus à des prix préférentiels.</p>
+            
+            <footer><div>
+                            <a href="#">Fiche descriptive</a>
+                        </div>
+                    <div>
+                            <a href="#">Retirer des favoris</a>
+                        </div>
+                    </footer>
+        </div>
+    </div>
+</article>
+<article class="mb-1 p-1 bg-faded">
+    <div class="row">
+        <div class="col-md-12">
+            <header>
+                <h3 class="mb-1">
+                    
+                    <a href="">Zoo de Servion - Demande de visite scolaire</a>
+                        
+                         <span class="fa fa-unlock-alt" aria-hidden="true"></span>
+                        
+                    
+                    
+                </h3><dl class="small row"><dt class="col-4">Thème</dt>
+                    <dd class="col-8">Education</dd>
+                    <dt class="col-4">Type d'accès</dt>
+                    <dd class="col-8">
+                        
+                        
+                        Accès sécurisé
+                        
+                    </dd>
+                    </dl></header>
+            
+            <p>Le Zoo de Servion met à disposition son établissement dans le cadre de visites scolaires. Il est ainsi possible de réserver l'ensemble du parc pour des visites dont le nombre de participants atteind au minimum 40. La cafétéria est à disposition du groupe pour le repas de midi.</p>
+            
+            <footer><div>
+                            <a href="#">Fiche descriptive</a>
+                        </div>
+                    <div>
+                            <a href="#">Retirer des favoris</a>
+                        </div>
+                    </footer>
+        </div>
+    </div>
+</article>
 
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
 
-      <h1 class="h2">Toutes les prestations</h1>
-
-      <h2>Culture</h2>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <h2>Éconmie</h2>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <h2>Environnement</h2>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
-
-      <article class="card card-block">
-        <p class="card-text text-muted text-xs-right small mb-0">21.05.2016</p>
-        <p class="card-text"><a href="#">Votre déclaration d'impôt de revenu sur la fortune pour la période fiscale 2015 a été reçu le ... et est en cours de traitement</a></p>
-      </article>
 
 
   </div>
