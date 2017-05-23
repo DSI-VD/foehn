@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - attributes renamed in `tableau-de-bord.config.json` and values updated
 - `@notification` template updated with new elements
 - `notification.config.json` updated on `url` and `title` attributes.
+- Remove `.small` class on `@footer` and `@footer--securise`
 
 ### Added
 - Add `@demande-detail` files (.config and .html)
