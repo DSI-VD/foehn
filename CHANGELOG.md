@@ -23,6 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@breadcrumb` font size
 - Fix `@footer` margin
 - Fix `@link` color
+- Fix link color and decoration in `@nav-side`
 
 ## [0.23.1]
 
