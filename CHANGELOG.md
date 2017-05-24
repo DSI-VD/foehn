@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove `@separator--gray-pattern` in `@example-list`
 - Remove the `.vd-separator-wide` class and make all separators full width
 - `historique.config.json` updated with new data
 - `prestations-config-json` updated, unnecessary attributes removed
@@ -28,6 +29,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 - Remove `@separator--default--black`
+- Remove `@separator--gray-pattern`
 
 ## [0.23.1]
 
