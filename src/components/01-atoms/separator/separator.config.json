@@ -3,12 +3,6 @@
     "collated": true,
     "variants": [
       {
-        "name": "black",
-        "context": {
-          "class": "vd-hr-black"
-        }
-      },
-      {
         "name": "green-pattern-wide",
         "context": {
           "class": "vd-separator vd-separator-green-pattern"

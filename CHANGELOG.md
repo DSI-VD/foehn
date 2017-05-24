@@ -26,6 +26,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@link` color
 - Fix link color and decoration in `@nav-side`
 
+### Removed
+- Remove `@separator--default--black`
+
 ## [0.23.1]
 
 ### Changed
