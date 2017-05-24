@@ -9,12 +9,6 @@
         }
       },
       {
-        "name": "gray-pattern",
-        "context": {
-          "class": "vd-separator vd-separator-gray-pattern"
-        }
-      },
-      {
         "name": "gray-bars-wide",
         "context": {
           "class": "vd-separator vd-separator-gray-bars"
