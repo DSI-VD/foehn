@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove the `.vd-separator-wide` class and make all separators full width
 - `historique.config.json` updated with new data
 - `prestations-config-json` updated, unnecessary attributes removed
 - `prestations.html` globaly changed to follow new chosen interface

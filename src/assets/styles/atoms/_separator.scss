@@ -1,11 +1,5 @@
 @charset 'UTF-8';
 
-hr {
-  @include media-breakpoint-up(md) {
-    max-width: 350px; // this is pretty much a col-4 on a large viewport–
-  }
-}
-
 .vd-separator {
   height: 4px;
   background-repeat: repeat-x;
@@ -18,6 +12,5 @@ hr {
 }
 
 .vd-hr-black { border-color: $black; }
-.vd-separator-wide { max-width: none; }
 .vd-separator-green-pattern { background-image: url('../svg/pattern_squares_green.svg'); }
 .vd-separator-gray-pattern { background-image: url('../svg/pattern_squares_gray.svg'); }
