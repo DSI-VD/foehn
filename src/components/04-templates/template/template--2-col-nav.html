@@ -6,13 +6,13 @@
   {% include '@page-title' %}
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 content-column">
       {% block main %}
       {% include '@paragraph' %}
       {% endblock %}
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 content-column">
       {% render '@nav-side', navSide %}
       <aside class="vd-text-md-small">
         {% block aside %}

@@ -27,6 +27,10 @@ h6 {
 /**
  * Remove margin-top on the first heading of a column to avoid horizontal
  * alignment problems.
+ *
+ * 1. If the column contain more than one level before the first heading,
+ *    use `.content-column` class. It's better than having this kind of rule
+ *    https://twitter.com/alienlebarge/status/864834956551434245
  */
 @each $breakpoint in map-keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -36,6 +40,10 @@ h6 {
       margin-top: 0;
     }
   }
+}
+
+.content-column > :first-child > :first-child {
+  margin-top: 0; /* [1] */
 }
 
 /**
