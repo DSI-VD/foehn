@@ -78,6 +78,10 @@
     <p>All notable changes to this project will be documented in this file.
 This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
 <h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.24.0...HEAD">Unreleased</a></h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix <a href="../components/detail/separator--default"><code>@separator--default</code></a> color</li>
+</ul>
 <h2 id="-0-24-0-2017-05-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.23.1...v0.24.0">0.24.0</a> - 2017-05-30</h2>
 <h3 id="changed">Changed</h3>
 <ul>
@@ -116,6 +120,41 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.sr-only</code> and <code>.sr-only-focusable</code> to hide navigation and make it focusable</li>
 <li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.fixed-top</code></li>
+<li>Replace <code>.vd-section-title</code> by <code>.vd-heading-light</code></li>
+<li>Add <code>.h4</code> class to all <code>.vd-heading-light</code> headings</li>
+<li>Remove custom margin bottom  in <a href="../components/detail/faq-item"><code>@faq-item</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/avs13"><code>@avs13</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/dates"><code>@dates</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/dates"><code>@dates</code></a></li>
+<li>Set margin top to null in <a href="../components/detail/domain-item"><code>@domain-item</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/teaser"><code>@teaser</code></a></li>
+<li>Change <code>.mb-0</code> class by <code>.mt-0</code> in <a href="../components/detail/teaser-card"><code>@teaser-card</code></a></li>
+<li>Remove useless <code>&lt;div&gt;</code> in <a href="../components/detail/highlight"><code>@highlight</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/autority-address"><code>@autority-address</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/autority-info"><code>@autority-info</code></a></li>
+<li>Remove margin top of <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> in <a href="../components/detail/faq"><code>@faq</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/page-title-banner--form-presta"><code>@page-title-banner--form-presta</code></a></li>
+<li>Remove custom margin top in <a href="../components/detail/page-title-banner--prestation"><code>@page-title-banner--prestation</code></a></li>
+<li>Remove custom margin top in <a href="../components/detail/page-title-banner"><code>@page-title-banner</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/teaser-list"><code>@teaser-list</code></a></li>
+<li>Add margin top on <a href="../components/detail/separator--gray-bars-wide"><code>@separator--gray-bars-wide</code></a> in <a href="../components/detail/teaser-list"><code>@teaser-list</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/template-communiques-presse-detail"><code>@template-communiques-presse-detail</code></a></li>
+<li>Use <code>.vd-text-md-small</code> to make headings smaller in right column in <a href="../components/detail/template--2-col-nav"><code>@template--2-col-nav</code></a>, <a href="../components/detail/template--2-col"><code>@template--2-col</code></a> and <a href="../components/detail/template--homepage"><code>@template--homepage</code></a></li>
+<li>Remove custom margin on <code>&lt;section&gt;</code> in <a href="../components/detail/service"><code>@service</code></a></li>
+<li>Remove margin top on <a href="../components/detail/autority-address"><code>@autority-address</code></a> in <a href="../components/detail/service"><code>@service</code></a></li>
+<li>Remove margin top on <a href="../components/detail/alert--default"><code>@alert--default</code></a> in <a href="../components/detail/formulaire-prestation-confirmation"><code>@formulaire-prestation-confirmation</code></a></li>
+<li>Remove margin top in <a href="../components/detail/notification"><code>@notification</code></a></li>
+<li>Remove margin top on <a href="../components/detail/autority-address"><code>@autority-address</code></a> in <a href="../components/detail/theme"><code>@theme</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/h1"><code>@h1</code></a></li>
+<li>Add <a href="../components/detail/h2"><code>@h2</code></a></li>
+<li>Add <a href="../components/detail/h3"><code>@h3</code></a></li>
+<li>Add <a href="../components/detail/h4"><code>@h4</code></a></li>
+<li>Add <a href="../components/detail/h5"><code>@h5</code></a></li>
+<li>Add <a href="../components/detail/h6"><code>@h6</code></a></li>
 </ul>
 <h2 id="-0-23-0-2017-05-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0">0.23.0</a> - 2017-05-17</h2>
 <h3 id="changed">Changed</h3>
@@ -1742,10 +1781,21 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
             
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-headings">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Headings</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/headings" data-pjax>
-                <span>Headings</span>
+            <a class="Tree-entityLink" href="../components/detail/h1" data-pjax>
+                <span>H 1</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1762,6 +1812,131 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/h2" data-pjax>
+                <span>H 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/h3" data-pjax>
+                <span>H 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/h4" data-pjax>
+                <span>H 4</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/h5" data-pjax>
+                <span>H 5</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/h6" data-pjax>
+                <span>H 6</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
