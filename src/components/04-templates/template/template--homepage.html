@@ -4,13 +4,13 @@
   {% include '@page-title' %}
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 content-column">
       {% block main %}
       {% include '@paragraph' %}
       {% endblock %}
     </div>
 
-    <aside class="col-md-4 vd-text-md-small">
+    <aside class="col-md-4 vd-text-md-small content-column">
       {% block aside %}
       {% include '@paragraph' %}
       {% endblock %}
@@ -21,7 +21,7 @@
 
 {% render '@separator--gray-bars-wide', { styleModifier: "mb-3" }, true %}
 
-<div class="container">
+<div class="container content-column">
   {% block contentSecondary %}
   {% include '@paragraph' %}
   {% endblock %}
