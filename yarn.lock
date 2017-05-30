@@ -398,7 +398,7 @@ autoprefixer@^6.0.0, autoprefixer@^6.3.1:
 
 autoprefixer@^7.1.1:
   version "7.1.1"
-  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/autoprefixer/-/autoprefixer-7.1.1.tgz#97bc854c7d0b979f8d6489de547a0d17fb307f6d"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.1.tgz#97bc854c7d0b979f8d6489de547a0d17fb307f6d"
   dependencies:
     browserslist "^2.1.3"
     caniuse-lite "^1.0.30000670"
@@ -670,7 +670,7 @@ browserslist@^1.1.1, browserslist@^1.1.3, browserslist@^1.3.6, browserslist@^1.5
 
 browserslist@^2.1.3:
   version "2.1.4"
-  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/browserslist/-/browserslist-2.1.4.tgz#cc526af4a1312b7d2e05653e56d0c8ab70c0e053"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.1.4.tgz#cc526af4a1312b7d2e05653e56d0c8ab70c0e053"
   dependencies:
     caniuse-lite "^1.0.30000670"
     electron-to-chromium "^1.3.11"
@@ -773,7 +773,7 @@ caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, ca
 
 caniuse-lite@^1.0.30000670:
   version "1.0.30000676"
-  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/caniuse-lite/-/caniuse-lite-1.0.30000676.tgz#1e962123f48073f0c51c4ea0651dd64d25786498"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000676.tgz#1e962123f48073f0c51c4ea0651dd64d25786498"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -2859,14 +2859,7 @@ imagemin-optipng@^5.1.0, imagemin-optipng@^5.2.1:
     is-png "^1.0.0"
     optipng-bin "^3.0.0"
 
-imagemin-svgo@^5.1.0:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/imagemin-svgo/-/imagemin-svgo-5.2.1.tgz#74d593ce4cbe1b87efdb3d06a4a56078f71a8147"
-  dependencies:
-    is-svg "^2.0.0"
-    svgo "^0.7.0"
-
-imagemin-svgo@^5.2.2:
+imagemin-svgo@^5.1.0, imagemin-svgo@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/imagemin-svgo/-/imagemin-svgo-5.2.2.tgz#501699f5789730a57922b8736ea15c53f7b55838"
   dependencies:
