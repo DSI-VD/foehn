@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix `@separator--default` color
+
 ## [0.24.0] - 2017-05-30
 
 ### Changed
