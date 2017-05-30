@@ -16,6 +16,9 @@
   "browserify-shim": {
     "jquery": "global:jQuery"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "scripts": {
     "start": "yarn && gulp dev",
     "build": "yarn && gulp build",
@@ -34,7 +37,7 @@
   },
   "devDependencies": {
     "@frctl/nunjucks": "^1.0.3",
-    "autoprefixer": "^6.7.5",
+    "autoprefixer": "^7.1.1",
     "bootstrap": "4.0.0-alpha.6",
     "cssnano": "^3.9.1",
     "del": "^2.2.2",
