@@ -1,0 +1,120 @@
+
+
+    <div class="row">
+        <div class="col-md-12 ">
+            <article class="mb-1 p-1 bg-faded ">
+                <header>
+                    <h3 class="mb-1">
+                       {{ title }}
+                    </h3>
+                    {%- if meta -%}
+                    <dl class="small row">
+                        {%- if meta.type -%}
+                        <dt class="col-4">Type</dt>
+                        <dd class="col-8">{{ meta.type }}</dd>
+                        {% endif -%}
+                        {%- if meta.reference -%}
+                        <dt class="col-4">Référence</dt>
+                        <dd class="col-8"><samp>{{ meta.reference }}</samp></dd>
+                        {% endif -%}
+                        {% if meta.date -%}
+                        <dt class="col-4">Date</dt>
+                        <dd class="col-8">{{ meta.date }}</dd>
+                        {% endif -%}
+                        {% if meta.receiveDate -%}
+                        <dt class="col-4">Reçu le</dt>
+                        <dd class="col-8">{{ meta.receiveDate }}</dd>
+                        {% endif -%}
+                        {% if meta.closeDate -%}
+                        <dt class="col-4">Clôturé le</dt>
+                        <dd class="col-8">{{ meta.closeDate }}</dd>
+                        {% endif -%}
+                        {% if meta.readDate -%}
+                        <dt class="col-4">Lu le</dt>
+                        <dd class="col-8">{{ meta.readDate }}</dd>
+                        {% endif -%}
+                        {% if meta.quittanceDate -%}
+                        <dt class="col-4">Quittancé le</dt>
+                        <dd class="col-8">{{ meta.quittanceDate }}</dd>
+                        {% endif -%}
+                        {% if meta.status -%}
+                        <dt class="col-4">Statut</dt>
+                        <dd class="col-8">{{ meta.status }}</dd>
+                        {% endif -%}
+                        {% if meta.recipient -%}
+                        <dt class="col-4">Bénéficiaire</dt>
+                        <dd class="col-8">{{ meta.recipient }}</dd>
+                        {%- endif %}
+                    </dl>
+                    {%- endif -%}
+                </header>
+                {% if text %}
+                <p>{{ text }}</p>
+                {% endif %}
+
+                {% if note %}
+                <p><small>{{ note }}</small></p>
+                {% endif %}
+
+                <footer>
+                    {% render '@actions', actions %}
+                </footer>
+
+            </article>
+
+            <article class="mb-1 p-1 ">
+                <h4 class="mb-1">Historique</h4>
+                {% for item in historique %}
+
+                {% if item.title %}
+                <h5 class="mb-1">
+                    {{ item.title }}
+                </h5>
+                {% endif %}
+
+                {% if item.meta %}
+                <dl class="small row">
+                    {% if item.meta.type %}
+                    <dt class="col-4">Type</dt>
+                    <dd class="col-8">{{ item.meta.type }}</dd>
+                    {% endif %}
+
+                    {% if item.meta.treatedDate %}
+                    <dt class="col-4">Traité le</dt>
+                    <dd class="col-8">{{ item.meta.treatedDate }}</dd>
+                    {% endif %}
+
+                    {% if item.meta.receiveDate %}
+                    <dt class="col-4">Reçu le</dt>
+                    <dd class="col-8">{{ item.meta.receiveDate }}</dd>
+                    {% endif %}
+
+                    {% if item.meta.readDate %}
+                    <dt class="col-4">Lu le</dt>
+                    <dd class="col-8">{{ item.meta.readDate }}</dd>
+                    {% endif %}
+
+                    {% if item.meta.quittanceDate %}
+                    <dt class="col-4">Quittancé le</dt>
+                    <dd class="col-8">{{ item.meta.quittanceDate }}</dd>
+                    {% endif %}
+
+                    {% if item.meta.treatedBy %}
+                    <dt class="col-4">Traité par</dt>
+                    <dd class="col-8">{{ item.meta.treatedBy }}</dd>
+                    {% endif %}
+                </dl>
+                {% endif %}
+
+                {% if item.text %}
+                <p>{{ item.text }}</p>
+                {% endif %}
+
+                {% endfor %}
+            </article>
+
+
+        </div>
+
+    </div>
+

@@ -1,0 +1,50 @@
+<article class="mb-1 p-1 bg-faded">
+    <div class="row">
+        <div class="col-md-12">
+            <header>
+                <h3 class="mb-1">
+                    {% if available == true %}
+                    <a href="{{ url }}">{{ title }}</a>
+                        {% if meta.typeAcces != "libre d'accès" %}
+                         <span class="fa fa-unlock-alt" aria-hidden="true"></span>
+                        {% endif %}
+                    {% endif %}
+                    {% if available != true %}
+                    {{ title }} <span class="fa fa-lock" aria-hidden="true"></span>
+                    {% endif %}
+                </h3>
+                {%- if meta -%}
+                <dl class="small row">
+                    {%- if meta.theme -%}
+                    <dt class="col-4">Thème</dt>
+                    <dd class="col-8">{{ meta.theme }}</dd>
+                    {% endif -%}
+                    {%- if meta.typeAcces -%}
+                    <dt class="col-4">Type d'accès</dt>
+                    <dd class="col-8">
+                        {% if available != true %}
+                        <a href="#">{{ meta.typeAcces }}</a>
+                        {% endif %}
+                        {% if available == true %}
+                        {{ meta.typeAcces }}
+                        {% endif %}
+                    </dd>
+                    {% endif -%}
+                </dl>
+                {%- endif -%}
+            </header>
+            {% if text %}
+            <p>{{ text }}</p>
+            {% endif %}
+            <footer>
+                {%- if actions -%}
+                    {%- for action in actions -%}
+                        <div>
+                            <a href="{{ action.url }}">{{ action.title }}</a>
+                        </div>
+                    {% endfor %}
+                {%- endif -%}
+            </footer>
+        </div>
+    </div>
+</article>

@@ -3,27 +3,15 @@
     "collated": true,
     "variants": [
       {
-        "name": "black",
-        "context": {
-          "class": "vd-hr-black"
-        }
-      },
-      {
         "name": "green-pattern-wide",
         "context": {
-          "class": "vd-separator vd-separator-green-pattern vd-separator-wide"
-        }
-      },
-      {
-        "name": "gray-pattern",
-        "context": {
-          "class": "vd-separator vd-separator-gray-pattern"
+          "class": "vd-separator vd-separator-green-pattern"
         }
       },
       {
         "name": "gray-bars-wide",
         "context": {
-          "class": "vd-separator vd-separator-gray-bars vd-separator-wide"
+          "class": "vd-separator vd-separator-gray-bars"
         }
       }
     ]

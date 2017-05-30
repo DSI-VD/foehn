@@ -1,7 +1,7 @@
 {
     "status": "prototype",
     "context": {
-        "pageTitle": "Tableau de bord",
+        "pageTitle": "Détail du message",
         "navigation": {
             "title": "@nav-horizontal.title",
             "items": [
@@ -18,7 +18,7 @@
                     "active": null
                 },
                 {
-                    "text": "Prestations",
+                    "text": "Préstations",
                     "title": null,
                     "url": "prestations",
                     "active": null
@@ -37,37 +37,35 @@
                 }
             ]
         },
-        "communications": [
-            {
-              "title": "Message important !",
-              "url": "message-detail",
-              "meta": {
-                "receiveDate": "16.03.2017",
-                "readDate": "26.02.2017"
-              },
-              "text": "En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension.",
-              "actions": {
+        "communication":{
+            "title": "Message important !",
+            "meta": {
+                "receiveDate": "17.02.2017",
+                "readDate": "18.02.2017",
+                "quittanceDate": "-"
+            },
+            "text": "En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension.",
+            "actions": {
                 "title": "Actions sur la communication",
                 "actions": [
-                  {
-                    "title": "Quittancer",
-                    "url": "#"
-                  }
+                    {
+                        "title": "Quittancer",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Télécharger",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Retour...",
+                        "url": "#"
+                    }
                 ]
-              }
-            }
-        ],
-        "demandes": [
-            "@notification--demande",
-            {
-              "title": "Organisation d'une manifestation",
-              "messages": [
-                {
-                  "title": "Fournir une copie de votre carte d'identité."
-                }
-              ],
-              "tasks": null
-            }
-        ]
+            },
+            "note": "Une fois quittancé, le message sera disponible jusqu'au ... Dans ce laps de temps, vous pourrez choisir de le conserver indéfiniment."
+        }
+
     }
 }
+
+

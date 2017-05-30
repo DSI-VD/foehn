@@ -184,8 +184,8 @@ $inverse-color: $gray-lighter !default;
 // Style anchor elements.
 
 $link-color:            $vd-green-dark !default;
-$link-decoration:       none !default;
-$link-hover-color:      $vd-green-dark !default;
+$link-decoration:       underline !default;
+$link-hover-color:      $gray-dark !default;
 $link-hover-decoration: underline !default;
 
 
@@ -293,7 +293,7 @@ $blockquote-font-size:    $font-size-base !default;
 $blockquote-border-color: $vd-gray-dark !default;
 $blockquote-border-width: 0 !default;
 
-$hr-border-color: $brand-primary !default;
+$hr-border-color: $vd-gray-dark !default;
 $hr-border-width: $border-width !default;
 
 $mark-padding: .2em !default;

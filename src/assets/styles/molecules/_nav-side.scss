@@ -27,18 +27,4 @@
   .active {
     font-weight: $font-weight-bold;
   }
-
-  .nav-link {
-    text-decoration: none;
-  }
-
-  .nav-link:hover {
-    color: $body-color;
-    text-decoration: underline;
-  }
-
-  .nav-link:visited {
-    color: $vd-gray;
-    text-decoration: underline;
-  }
 }
