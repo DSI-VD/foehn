@@ -10,10 +10,12 @@
 
 .vd-separator-gray-bars {
   height: 5px;
+  background-size: 4px 5px;
   background-image: url('../svg/bars_gray.svg');
 }
 
 .vd-separator-green-pattern {
   height: 4px;
+  background-size: 162px 4px;
   background-image: url('../svg/pattern_squares_green.svg');
 }

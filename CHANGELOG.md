@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Fix `@separator--default` color
+- Fix `@separator--green-pattern-wide` width in IE
+- Fix `@separator--gray-bars-wide` width in IE
 
 ## [0.24.0] - 2017-05-30
 
