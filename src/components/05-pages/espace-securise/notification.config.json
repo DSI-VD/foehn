@@ -45,8 +45,9 @@
     },
     {
       "name": "message",
+      "url": "message-detail",
       "context": {
-        "title": "Message important",
+        "title": "Message important !",
         "meta": {
           "type": "Communication",
           "receiveDate": "17.02.2017",

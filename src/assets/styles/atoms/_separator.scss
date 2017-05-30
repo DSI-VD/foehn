@@ -1,13 +1,9 @@
 @charset 'UTF-8';
 
-hr {
-  @include media-breakpoint-up(md) {
-    max-width: 350px; // this is pretty much a col-4 on a large viewport–
-  }
-}
-
+/**
+ * Custom style for separators
+ */
 .vd-separator {
-  height: 4px;
   background-repeat: repeat-x;
   border: none;
 }
@@ -17,7 +13,7 @@ hr {
   background-image: url('../svg/bars_gray.svg');
 }
 
-.vd-hr-black { border-color: $black; }
-.vd-separator-wide { max-width: none; }
-.vd-separator-green-pattern { background-image: url('../svg/pattern_squares_green.svg'); }
-.vd-separator-gray-pattern { background-image: url('../svg/pattern_squares_gray.svg'); }
+.vd-separator-green-pattern {
+  height: 4px;
+  background-image: url('../svg/pattern_squares_green.svg');
+}

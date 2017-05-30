@@ -3,6 +3,41 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix `@separator--default` color
+
+## [0.24.0] - 2017-05-30
+
+### Changed
+- Remove `@separator--gray-pattern` in `@example-list`
+- Remove the `.vd-separator-wide` class and make all separators full width
+- `historique.config.json` updated with new data
+- `prestations-config-json` updated, unnecessary attributes removed
+- `prestations.html` globaly changed to follow new chosen interface
+- attributes renamed in `tableau-de-bord.config.json` and values updated
+- `@notification` template updated with new elements
+- `notification.config.json` updated on `url` and `title` attributes.
+- Remove `.small` class on `@footer` and `@footer--securise`
+- Remove `.text-muted` class in `@footer`
+
+### Added
+- Add `@demande-detail` files (.config and .html)
+- Add `@message-detail` files (.config and .html)
+- Add `@demande-historique.html` template
+- Add `@prestation.html` template
+
+### Fix
+- Fix `@breadcrumb` font size
+- Fix `@footer` margin
+- Fix `@link` color
+- Fix link color and decoration in `@nav-side`
+
+### Removed
+- Remove `@separator--default--black`
+- Remove `@separator--gray-pattern`
+
+## [0.23.1] - 2017-05-17
+
 ### Changed
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
 - `@access-nav` molecule use `.fixed-top`
@@ -41,7 +76,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@h5`
 - Add `@h6`
 
-## [0.23.0]
+## [0.23.0] - 2017-05-17
 
 ### Changed
 - The `@alert` molecule has been renamed `@alert--default`
@@ -49,7 +84,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Add `@alert--fixed` molecule
 
-## [0.22.0]
+## [0.22.0] - 2017-05-09
 
 ### Changed
 - Change margin in `@footer`
@@ -70,18 +105,18 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove `@radio--warning`
 - Remove `@input--validation-warning`
 
-## [0.21.3]
+## [0.21.3] - 2017-05-03
 
 ### Fix
 - Change color of `:focus` style
 - Only upload the `dist/assets/` folder on the registry
 
-## [0.21.2]
+## [0.21.2] - 2017-05-03
 
 ### Fix
 - Fix npm script
 
-## [0.21.1]
+## [0.21.1]  
 
 ### Changed
 - `@accueil` and `@teaser-list--homepage` use `@teaser--small-media` for the first image
@@ -104,7 +139,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix missing `@lead` in `@news-detail`
 - Fix `@social-icons` has no title in `@news-detail`
 
-## [0.21.0]
+## [0.21.0] - 2017-04-21
 
 ### Changed
 - `@radio` only contain one radio button
@@ -150,13 +185,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - Removed feedback molecule
 
-## [0.20.1]
+## [0.20.1] - 2017-04-06
 
 ### Fix
 - Remove unused bower.json
 - Fix line breaks in inline SVG
 
-## [0.20.0]
+## [0.20.0] - 2017-04-06
 
 ### Changed
 - Agenda use default teaser
@@ -195,7 +230,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove teaser-alternate--2-3_1-3 component
 - Remove projects-list component
 
-## [0.19.0]
+## [0.19.0] - 2017-03-21
 
 ### Changed
 - Add url on autority-address
@@ -236,7 +271,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove `.flex-row` class (was overriding a B4 class and was never used)
 - Remove legacy Toolbox styleguide assets
 
-## [0.18.0]
+## [0.18.0] - 2017-03-07
 
 ### Changed
 - Change alert color
@@ -264,7 +299,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add password type in input molecule
 - Add file type in input molecule
 
-## [0.17.0]
+## [0.17.0] - 2017-02-17
 
 ### Changed
 
@@ -299,7 +334,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Removed teaser-link component
 
-## [0.16.0]
+## [0.16.0] - 2017-02-10
 
 ### Changed
 
@@ -327,7 +362,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix margin of publish-time atom
 - Fix breadcrumb isn't display on certain templates and pages
 
-## [0.15.0]
+## [0.15.0] - 2017-02-09
 
 ### Changed
 
@@ -412,7 +447,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove unnecessary ignored files in gitignore and stylelintrc
 - Remove font-icons from project, use font-awesome instead #598
 
-## [0.14.0]
+## [0.14.0] - 2017-01-20
 
 ### Changed
 
@@ -483,7 +518,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed polyfills from styleguide #566
 - Removed Contact link from header-securise component #490
 
-## [0.13.0]
+## [0.13.0] - 2016-12-22
 
 ### Changed
 
@@ -541,7 +576,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `vd-teaser-img` size on IE
 - Fix the mobile navigation #460
 
-## [0.12.0]
+## [0.12.0] - 2016-12-08
 
 ### Changed
 
@@ -575,7 +610,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix figure-caption size and look #429
 - Fix logo width (to avoid it being full width flex)
 
-## [0.11.0]
+## [0.11.0] - 2016-12-06
 
 ### Changed
 
@@ -610,25 +645,25 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Changed Graphik font name in doc #426
 - Fix search form height #459
 
-## [0.10.2]
+## [0.10.2] - 2016-11-29
 
 ### Fixed
 
 - Fix Changelog file extension
 
-## [0.10.1]
+## [0.10.1] - 2016-11-29
 
 ### Fixed
 
 - Fix Changelog location
 
-## [0.10.0]
+## [0.10.0] - 2016-11-29
 
 ### Changed
 
 - Finetune all components
 
-## [0.9.0]
+## [0.9.0] - 2016-11-17
 
 ### Changed
 
@@ -639,7 +674,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Add all basics components
 
-## [0.8.0]
+## [0.8.0] - 2016-08-23
 
 ### Added
 
@@ -650,7 +685,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Refactor CSS
 - Add clearfix in `.o-wrapper`
 
-## [0.7.0]
+## [0.7.0] - 2016-08-17
 
 ### Added
 
@@ -760,7 +795,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove `vd-layout--column`
 - Remove unused alerts
 
-## [0.6.1]
+## [0.6.1] - 2016-07-13
 
 ### Changed
 
@@ -786,7 +821,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Replace `postcss-advanced-variables` with `postcss-each`, `postcss-for` and `postcss-simple-vars`
 - Update CSS linting rules
 
-## [0.6.0]
+## [0.6.0] - 2016-05-25
 
 ### Added
 
@@ -824,7 +859,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix missing `vd-*` prefix in Fraction atom
 - Fix missing `vd-*` prefix in Footnote atom
 
-## [0.5.0]
+## [0.5.0] - 2016-04-29
 
 ### Added
 
@@ -852,7 +887,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix uncollapsed table cells
 - Fix `foehn.css` table of content
 
-## [0.4.2]
+## [0.4.2] 2016-04-14
 
 ### Added
 
@@ -874,13 +909,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Font comparaison pages are removed
 
-## [0.4.1]
+## [0.4.1] - 2016-03-15
 
 ### Changed
 
 - Update building documetation
 
-## [0.4.0]
+## [0.4.0] - 2016-02-16
 
 ### Added
 
@@ -899,7 +934,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Fix active state on button wasn't working
 
-## [0.3.1]
+## [0.3.1] 2016-02-23
 
 ### Added
 
@@ -909,7 +944,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Forms are more readable
 
-## [0.3.0]
+## [0.3.0] - 2016-02-19
 
 ### Added
 
@@ -935,14 +970,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed Typekit javascripts
 - Removed `picturefill` polyfill
 
-## [0.2.1]
+## [0.2.1] - 2016-02-11
 
 ### Changed
 
 - Enforce properties order in CSS
 - Set letter-spacing in blockquotes to 0
 
-## [0.2.0]
+## [0.2.0] - 2016-02-11
 
 ### Added
 
@@ -965,7 +1000,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix alignment problems in IE11 with layouts items
 - Fix nesting problems in IE with layouts items
 
-## 0.1
+## 0.1 - 2015-09-23
 
 ### Added
 
@@ -1038,7 +1073,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.23.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.24.0...HEAD
+[0.24.0]: https://github.com/DSI-VD/foehn/compare/v0.23.1...v0.24.0
+[0.23.1]: https://github.com/DSI-VD/foehn/compare/v0.23.0...v0.23.1
 [0.23.0]: https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/DSI-VD/foehn/compare/v0.21.3...v0.22.0
 [0.21.3]: https://github.com/DSI-VD/foehn/compare/v0.21.2...v0.21.3
