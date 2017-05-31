@@ -38,13 +38,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove margin top on `@alert--default` in `@formulaire-prestation-confirmation`
 - Remove margin top in `@notification`
 - Remove margin top on `@autority-address` in `@theme`
-- Add {{.vd-content-column}} style in `@template--2-col-nav`
-- Add {{.vd-content-column}} style in `@template--2-col`
-- Add {{.vd-content-column}} style in `@accueil`
-- Add {{.vd-content-column}} style in `@theme`
-- Add {{.vd-text-md-small}} style in `@template--2-col-nav`
-- Add {{.vd-text-md-small}} style in `@template--2-col`
-- Add {{.vd-text-md-small}} style in `@accueil`
+- Add `.vd-content-column` style in `@template--2-col-nav`
+- Add `.vd-content-column` style in `@template--2-col`
+- Add `.vd-content-column` style in `@accueil`
+- Add `.vd-content-column` style in `@theme`
+- Add `.vd-text-md-small` style in `@template--2-col-nav`
+- Add `.vd-text-md-small` style in `@template--2-col`
+- Add `.vd-text-md-small` style in `@accueil`
 
 ### Added
 - Add `@h1`
@@ -53,8 +53,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@h4`
 - Add `@h5`
 - Add `@h6`
-- Add {{.vd-content-column}} style to remove top margin of the first element of a column
-- Add {{.vd-text-md-small}} to make headings smaller when viewport is medium size
+- Add `.vd-content-column` style to remove top margin of the first element of a column
+- Add `.vd-text-md-small` to make headings smaller when viewport is medium size
 
 ### Fix
 - Fix default grid gutter is `30px` width
@@ -64,7 +64,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@separator--gray-bars-wide` width in IE
 
 ### Removed
-- Removed {{.vd-section-title}} style
+- Removed `.vd-section-title` style
 
 ## [0.24.0] - 2017-05-30
 
