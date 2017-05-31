@@ -3,11 +3,67 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Add margin before `@h1`, `@h2`, `@h3`, `@h4`, `@h5`, `@h6`, for better legibility
+- Replace `.vd-section-title` by `.vd-heading-light`
+- Add `.h4` class to `.vd-heading-light` headings in `@social-icons`
+- Add `.h4` class to `.vd-heading-light` headings in `@agenda`
+- Add `.h4` class to `.vd-heading-light` headings in `@autority-address`
+- Add `.h4` class to `.vd-heading-light` headings in `@footer`
+- Add `.h4` class to `.vd-heading-light` headings in `@teaser-list`
+- Add `.h4` class to `.vd-heading-light` headings in `@twitter-feed`
+- Add `.h4` class to `.vd-heading-light` headings in `@service`
+- Add `.h4` class to `.vd-heading-light` headings in `@accueil`
+- Remove custom margin bottom  in `@faq-item`
+- Remove custom margin bottom  in `@avs13`
+- Remove custom margin bottom  in `@dates`
+- Remove custom margin bottom  in `@dates`
+- Set margin top to null in `@domain-item`
+- Remove custom margin bottom in `@teaser`
+- Change `.mb-0` class by `.mt-0` in `@teaser-card`
+- Remove useless `<div>` in `@highlight`
+- Remove custom margin bottom  in `@agenda`
+- Remove custom margin bottom  in `@autority-address`
+- Remove custom margin bottom  in `@autority-info`
+- Remove margin top of `@search-form--regular` in `@faq`
+- Remove custom margin bottom in `@page-title-banner--form-presta`
+- Remove custom margin top in `@page-title-banner--prestation`
+- Remove custom margin top in `@page-title-banner`
+- Remove custom margin bottom in `@teaser-list`
+- Add margin top on `@separator--gray-bars-wide` in `@teaser-list`
+- Remove custom margin bottom in `@template-communiques-presse-detail`
+- Use `.vd-text-md-small` to make headings smaller in right column in `@template--2-col-nav`, `@template--2-col` and `@template--homepage`
+- Remove custom margin on `<section>` in `@service`
+- Remove margin top on `@autority-address` in `@service`
+- Remove margin top on `@alert--default` in `@formulaire-prestation-confirmation`
+- Remove margin top in `@notification`
+- Remove margin top on `@autority-address` in `@theme`
+- Add {{.vd-content-column}} style in `@template--2-col-nav`
+- Add {{.vd-content-column}} style in `@template--2-col`
+- Add {{.vd-content-column}} style in `@accueil`
+- Add {{.vd-content-column}} style in `@theme`
+- Add {{.vd-text-md-small}} style in `@template--2-col-nav`
+- Add {{.vd-text-md-small}} style in `@template--2-col`
+- Add {{.vd-text-md-small}} style in `@accueil`
+
+### Added
+- Add `@h1`
+- Add `@h2`
+- Add `@h3`
+- Add `@h4`
+- Add `@h5`
+- Add `@h6`
+- Add {{.vd-content-column}} style to remove top margin of the first element of a column
+- Add {{.vd-text-md-small}} to make headings smaller when viewport is medium size
+
 ### Fix
-- Fix ` @teaser-list--homepage` in `@accueil`
+- Fix `@teaser-list--homepage` in `@accueil`
 - Fix `@separator--default` color
 - Fix `@separator--green-pattern-wide` width in IE
 - Fix `@separator--gray-bars-wide` width in IE
+
+### Removed
+- Removed {{.vd-section-title}} style
 
 ## [0.24.0] - 2017-05-30
 
@@ -44,40 +100,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
 - `@access-nav` molecule use `.fixed-top`
-- Replace `.vd-section-title` by `.vd-heading-light`
-- Add `.h4` class to all `.vd-heading-light` headings
-- Remove custom margin bottom  in `@faq-item`
-- Remove custom margin bottom  in `@avs13`
-- Remove custom margin bottom  in `@dates`
-- Remove custom margin bottom  in `@dates`
-- Set margin top to null in `@domain-item`
-- Remove custom margin bottom in `@teaser`
-- Change `.mb-0` class by `.mt-0` in `@teaser-card`
-- Remove useless `<div>` in `@highlight`
-- Remove custom margin bottom  in `@agenda`
-- Remove custom margin bottom  in `@autority-address`
-- Remove custom margin bottom  in `@autority-info`
-- Remove margin top of `@search-form--regular` in `@faq`
-- Remove custom margin bottom in `@page-title-banner--form-presta`
-- Remove custom margin top in `@page-title-banner--prestation`
-- Remove custom margin top in `@page-title-banner`
-- Remove custom margin bottom in `@teaser-list`
-- Add margin top on `@separator--gray-bars-wide` in `@teaser-list`
-- Remove custom margin bottom in `@template-communiques-presse-detail`
-- Use `.vd-text-md-small` to make headings smaller in right column in `@template--2-col-nav`, `@template--2-col` and `@template--homepage`
-- Remove custom margin on `<section>` in `@service`
-- Remove margin top on `@autority-address` in `@service`
-- Remove margin top on `@alert--default` in `@formulaire-prestation-confirmation`
-- Remove margin top in `@notification`
-- Remove margin top on `@autority-address` in `@theme`
-
-### Added
-- Add `@h1`
-- Add `@h2`
-- Add `@h3`
-- Add `@h4`
-- Add `@h5`
-- Add `@h6`
 
 ## [0.23.0] - 2017-05-17
 
