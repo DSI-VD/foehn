@@ -6,6 +6,7 @@
       "news": {
         "title": "Actualités",
         "homepage": true,
+        "titleModifier": "mt-md-0",
         "teasers": [
           {
             "title": "10’800 habitants supplémentaires et record de naturalisations en 2016",
