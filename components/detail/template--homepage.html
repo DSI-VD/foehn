@@ -435,13 +435,13 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 content-column"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 vd-content-column"</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 vd-text-md-small content-column"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 vd-text-md-small vd-content-column"</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
@@ -452,7 +452,7 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-separator vd-separator-gray-bars my-3"</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container content-column"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container vd-content-column"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
@@ -568,13 +568,13 @@
   {% include '<a href="page-title">@page-title</a>' %}
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 content-column"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 vd-content-column"</span>&gt;</span>
       {% block main %}
       {% include '<a href="paragraph">@paragraph</a>' %}
       {% endblock %}
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 vd-text-md-small content-column"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 vd-text-md-small vd-content-column"</span>&gt;</span>
       {% block aside %}
       {% include '<a href="paragraph">@paragraph</a>' %}
       {% endblock %}
@@ -585,7 +585,7 @@
 
 {% render '<a href="separator--gray-bars-wide">@separator--gray-bars-wide</a>', { styleModifier: "my-3" }, true %}
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container content-column"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container vd-content-column"</span>&gt;</span>
   {% block contentSecondary %}
   {% include '<a href="paragraph">@paragraph</a>' %}
   {% endblock %}
