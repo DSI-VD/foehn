@@ -29,7 +29,7 @@ h6 {
  * alignment problems.
  *
  * 1. If the column contain more than one level before the first heading,
- *    use `.content-column` class. It's better than having this kind of rule
+ *    use `.vd-content-column` class. It's better than having this kind of rule
  *    https://twitter.com/alienlebarge/status/864834956551434245
  */
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -42,7 +42,7 @@ h6 {
   }
 }
 
-.content-column > :first-child > :first-child {
+.vd-content-column > :first-child > :first-child {
   margin-top: 0; /* [1] */
 }
 
