@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.25.0] - 2017-05-31
+
 ### Changed
 - Add margin before `@h1`, `@h2`, `@h3`, `@h4`, `@h5`, `@h6`, for better legibility
 - Replace `.vd-section-title` by `.vd-heading-light`
@@ -1099,7 +1101,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.24.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.25.0...HEAD
+[0.25.0]: https://github.com/DSI-VD/foehn/compare/v0.24.0...v0.25.0
 [0.24.0]: https://github.com/DSI-VD/foehn/compare/v0.23.1...v0.24.0
 [0.23.1]: https://github.com/DSI-VD/foehn/compare/v0.23.0...v0.23.1
 [0.23.0]: https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0
