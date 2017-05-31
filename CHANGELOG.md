@@ -57,6 +57,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add {{.vd-text-md-small}} to make headings smaller when viewport is medium size
 
 ### Fix
+- Fix default grid gutter is `30px` width
 - Fix `@teaser-list--homepage` in `@accueil`
 - Fix `@separator--default` color
 - Fix `@separator--green-pattern-wide` width in IE
