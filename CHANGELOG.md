@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Fix ` @teaser-list--homepage` in `@accueil`
 - Fix `@separator--default` color
 - Fix `@separator--green-pattern-wide` width in IE
 - Fix `@separator--gray-bars-wide` width in IE
