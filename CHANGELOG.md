@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Refactor lists in `@departements`
 - Change logo positioning in `@footer--default`
+- Change HTML structure and style of `@footer--default`
+- Change HTML structure and style of `@footer--securise`
 
 ### Removed
 - Removed `@list-no-bullet`
