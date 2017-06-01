@@ -13,12 +13,12 @@
 
   <ul class="list-unstyled">
   {% for autority in autorities %}
-    <li>
+    <li class="my-1">
       <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a>
       {% if autority.autorities %}
-      <ul class="vd-list-no-bullet">
+      <ul class="list-unstyled">
         {% for autority in autority.autorities %}
-        <li><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
+        <li class="ml-3 my-1"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -34,12 +34,12 @@
 
   <ul class="list-unstyled">
   {% for autority in autoritiesAlt %}
-    <li>
+    <li class="my-1">
       <a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="h3">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a>
       {% if autority.autorities %}
-      <ul class="vd-list-no-bullet">
+      <ul class="list-unstyled">
         {% for autority in autority.autorities %}
-        <li><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
+        <li class="ml-3 my-1"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% endif %}

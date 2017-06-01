@@ -2,10 +2,6 @@
 
 /**
  * List
- *
- * 1. Add margin between list elements
- * 2. For lists inside another list, add margin between a list and her parent
- *    list element.
  */
 
 ul {
@@ -23,11 +19,4 @@ ul {
   li {
     margin-bottom: 0;
   }
-}
-
-/**
- * remove bullet
- */
-.vd-list-no-bullet {
-  list-style: none;
 }

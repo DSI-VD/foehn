@@ -3,6 +3,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Refactor lists in `@departements`
+
+### Removed
+- Removed `@list-no-bullet`
+- Removed `.vd-list-no-bullet` style
+
 ## [0.25.0] - 2017-05-31
 
 ### Changed
