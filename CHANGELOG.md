@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 - Fix margin of list of icons in `@teaser-list--homepage`
 - Fix margin of the first content element in `@accueil`
+- Fix text decoration of `:hover` link in `@nav-side`
 
 ## [0.25.0] - 2017-05-31
 

@@ -15,6 +15,11 @@
     border-bottom: 1px solid $vd-green-dark;
   }
 
+  .nav-link:focus,
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
   .nav-item {
     margin-bottom: ($spacer-y / 2);
 
