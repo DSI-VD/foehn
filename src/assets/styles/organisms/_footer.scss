@@ -1,7 +1,13 @@
 @charset 'UTF-8';
 
+/**
+ * footer
+ *
+ * 1. add a white line between on top of the green border
+ * 2. Make text and links more readable
+ */
 .footer {
-  position: relative;
+  position: relative; /* [1] */
   padding: ($spacer * 3) 0 ($spacer * 2);
   background-image: url(../svg/bars_black.svg);
   background-repeat: repeat-x;
@@ -9,37 +15,27 @@
   background-size: auto 21px;
   background-color: $brand-inverse;
   border-bottom: 23px solid $vd-green;
-  color: $white;
-
-  &:focus {
-    color: $body-color;
-  }
+  color: $white; /* [2] */
 
   &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-top: 2px solid $white;
+    content: ''; /* [1] */
+    display: block; /* [1] */
+    position: absolute; /* [1] */
+    bottom: 0; /* [1] */
+    left: 0; /* [1] */
+    width: 100%; /* [1] */
+    border-top: 2px solid $white; /* [1] */
   }
 
-  .nav-link {
-    color: $white;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
+  a {
+    &,
+    &:visited {
+      color: $white; /* [2] */
     }
-  }
 
-  .container {
-    position: relative;
-  }
-
-  .vd-section-title {
-    font-size: $font-size-base * 0.9;
+    &:focus {
+      color: $body-color; /* [2] */
+    }
   }
 }
 

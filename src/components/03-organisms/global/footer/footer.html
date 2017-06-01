@@ -2,64 +2,74 @@
   {% if updateTime %}{% render '@update-time' %}{% endif %}
   {%render '@social-icons', {title:'Partager', titleModifier:'sr-only', styleModifier:'mt-2 mb-1'}, true %}
 </div>
-<footer class="footer">
+
+<footer>
+
   <div class="container">
-    <a href="#" class="footer-btn-backtotop btn btn-sm btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
-    <div class="row">
+    <div class="text-right">
+      <a href="#" class="btn btn-sm btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
         <div class="col-xs-10">
           <nav class="row" aria-label="pied de page">
             <div class="col-sm-4">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Offres d'emploi</a>
+              <h4 class="vd-heading-light">Titre 1</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#">Offres d'emploi</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Statistiques</a>
+                <li>
+                  <a href="#">Statistiques</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portail sécurisé</a>
+                <li>
+                  <a href="#">Portail sécurisé</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Flux RSS</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-4">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Espace sécurisé</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Mentions légales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Permaliens</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Guide Typo 3</a>
+                <li>
+                  <a href="#">Flux RSS</a>
                 </li>
               </ul>
             </div>
             <div class="col-sm-4">
-              <h4 class="vd-heading-light h4 text-white mb-1">Sites partenaires</h4>
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Promotion Vaud.ch</a>
+              <h4 class="vd-heading-light">Titre 2</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#">Espace sécurisé</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tourisme</a>
+                <li>
+                  <a href="#">Mentions légales</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Musées</a>
+                <li>
+                  <a href="#">Contact</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Patrimoine</a>
+                <li>
+                  <a href="#">Permaliens</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CH.ch</a>
+                <li>
+                  <a href="#">Guide Typo 3</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h4 class="vd-heading-light">Sites partenaires</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#">Promotion Vaud.ch</a>
+                </li>
+                <li>
+                  <a href="#">Tourisme</a>
+                </li>
+                <li>
+                  <a href="#">Musées</a>
+                </li>
+                <li>
+                  <a href="#">Patrimoine</a>
+                </li>
+                <li>
+                  <a href="#">CH.ch</a>
                 </li>
               </ul>
             </div>
@@ -70,6 +80,8 @@
             <img class="img-fluid" src="{{ '/assets/svg/logo/logo--white.svg' | path }}" alt="Canton de Vaud">
           </div>
         </div>
+      </div>
     </div>
   </div>
+
 </footer>
