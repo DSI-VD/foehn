@@ -1,5 +1,5 @@
 <ul{% if class %} class="{{class}}"{% endif %}>
   {%- for item in list -%}
-  <li>{{ item.item }}</li>
+  <li{% if item.class %} class={{ item.class}}{% endif %}>{{ item.item }}</li>
   {%- endfor -%}
 </ul>
