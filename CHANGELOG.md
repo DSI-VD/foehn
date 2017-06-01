@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Refactor lists in `@departements`
+- Use `text-decoration-skip` for better underlined links
 
 ### Removed
 - Removed `@list-no-bullet`
