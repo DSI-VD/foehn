@@ -10,6 +10,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Removed `@list-no-bullet`
 - Removed `.vd-list-no-bullet` style
 
+### Fix
+- Fix margin of list of icons in `@teaser-list--homepage`
+
 ## [0.25.0] - 2017-05-31
 
 ### Changed
