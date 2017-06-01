@@ -39,16 +39,6 @@
   }
 }
 
-.footer-logo-container {
-  align-self: flex-end;
-}
-
 .footer-logo {
   max-width: $spacer * 2;
-}
-
-.footer-btn-backtotop {
-  position: absolute;
-  top: ($spacer * -4.7);
-  right: $grid-gutter-width-base * 0.5;
 }
