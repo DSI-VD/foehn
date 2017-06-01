@@ -16,4 +16,12 @@ module.exports = {
     context: {
         list: listItemData, // use our generated list of members as context data for our template.
     },
+    variants: [
+        {
+            name: 'unstyled',
+            context: {
+                class: 'list-unstyled'
+            }
+        }
+    ]
 };
