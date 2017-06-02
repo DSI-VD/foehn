@@ -6,7 +6,7 @@
     {
       "name": "default",
       "context": {
-        "updateTime": true,
+        "updateTime": false,
         "social": true,
         "lists": [
           {
