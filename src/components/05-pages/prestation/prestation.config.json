@@ -18,8 +18,8 @@
             "url": "#"
           }
         ],
-        "footer": {
-          "updateTime": true,
+        "footer":{
+          "updateTime": true
         },
         "index": {
           "listLinks": [
