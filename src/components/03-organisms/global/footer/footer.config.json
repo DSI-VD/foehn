@@ -1,6 +1,110 @@
 {
-    "status": "ready",
-    "context": {
-      "updateTime": true
+  "status": "ready",
+  "context": {
+  },
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "updateTime": true,
+        "social": true,
+        "lists": [
+          {
+            "title": "Titre 1",
+            "items": [
+              {
+                "text": "Offre d'emploi",
+                "url": "#"
+              },
+              {
+                "text": "Statistiques",
+                "url": "#"
+              },
+              {
+                "text": "Portail sécurisé",
+                "url": "#"
+              },
+              {
+                "text": "Flux RSS",
+                "url": "#"
+              }
+            ]
+          },
+          {
+            "title": "Titre 2",
+            "items": [
+              {
+                "text": "Espace sécurisé",
+                "url": "#"
+              },
+              {
+                "text": "Mentions légales",
+                "url": "#"
+              },
+              {
+                "text": "Contact",
+                "url": "#"
+              },
+              {
+                "text": "Permaliens",
+                "url": "#"
+              },
+              {
+                "text": "Guides TYPO3",
+                "url": "#"
+              }
+            ]
+          },
+          {
+            "title": "Sites partenaires",
+            "items": [
+              {
+                "text": "Promotion Vaud.ch",
+                "url": "#"
+              },
+              {
+                "text": "Tourisme",
+                "url": "#"
+              },
+              {
+                "text": "Musées",
+                "url": "#"
+              },
+              {
+                "text": "Patrimoine",
+                "url": "#"
+              },
+              {
+                "text": "CH.ch",
+                "url": "#"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "securise",
+      "context": {
+        "lists": [
+          {
+            "items": [
+              {
+                "text": "Contact",
+                "url": "#"
+              },
+              {
+                "text": "Pourquoi créer un compte",
+                "url": "#"
+              },
+              {
+                "text": "Mentions légales",
+                "url": "#"
+              }
+            ]
+          }
+        ]
+      }
     }
+  ]
 }
