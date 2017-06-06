@@ -1,6 +1,10 @@
 @charset 'UTF-8';
 
 .vd-list-boxed {
+  li {
+    margin-bottom: ($spacer / 2);
+  }
+
   .nav-link {
     display: inline;
     padding: ($spacer / 5);
