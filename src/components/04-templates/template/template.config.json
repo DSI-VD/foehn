@@ -9,7 +9,10 @@
             "page": "Parent page",
             "url": "#"
           }
-        ]
+        ],
+        "footer": {
+          "updateTime": false
+        }
     },
     "variants": [
       {
