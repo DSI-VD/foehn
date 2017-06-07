@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Refactor lists in `@departements`
 - Use `text-decoration-skip` for better underlined links
+- Remove `<small>` tags in `@domain-item`
 - Change logo positioning in `@footer--default`
 - Change HTML structure and style of `@footer--default`
 - Change HTML structure and style of `@footer--securise`
