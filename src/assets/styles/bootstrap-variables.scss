@@ -242,20 +242,20 @@ $grid-gutter-widths: (
 $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       'Roboto', $font-family-sans-serif !default;
+$font-family-base:       'Open Sans', $font-family-sans-serif !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
 
-$font-weight-normal: 300 !default;
+$font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$font-size-h1: 2.2rem !default;
+$font-size-h1: 2.3rem !default;
 $font-size-h2: 1.8rem !default;
 $font-size-h3: 1.5rem !default;
 $font-size-h4: 1.3rem !default;
@@ -357,7 +357,7 @@ $table-border-color:            $gray-lighter !default;
 $btn-padding-x:                  1rem !default;
 $btn-padding-y:                  0.5rem !default;
 $btn-line-height:                1.45 !default;
-$btn-font-weight:                500 !default;
+$btn-font-weight:                700 !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15) !default;
 $btn-focus-box-shadow:           0 0 0 3px rgba($vd-focus, .5) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
