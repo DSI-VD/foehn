@@ -3,15 +3,14 @@ status: draft
 ---
 ## Fonts used
 
-- Graphik Light - normal 400
-- Graphik LightItalic - italic 400
-- Graphik Medium - normal 500
-- Produkt Light - normal 300
-- Produkt LightItalic  - italic 300
-- Produkt Medium - normal 500
-- Produkt Bold - normal 700
-
-<hr class="my-3">
+- [Roboto slab](https://fonts.google.com/specimen/Roboto+Slab)
+  - Regular
+  - Bold
+- [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+  - Regular
+  - Regular Italic
+  - Bold
+  - Bold Italic
 
 ## [Webfont Loader](https://github.com/typekit/webfontloader) code
 

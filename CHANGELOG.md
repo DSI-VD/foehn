@@ -6,10 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Refactor lists in `@departements`
 - Use `text-decoration-skip` for better underlined links
+- Typography is based on Open Sans and Roboto Slab fonts
 
 ### Removed
 - Removed `@list-no-bullet`
 - Removed `.vd-list-no-bullet` style
+- Remove Graphik and Produkt fonts
 
 ### Fix
 - Fix margin of list of icons in `@teaser-list--homepage`
