@@ -16,7 +16,7 @@
           <nav class="row" aria-label="pied de page">
             {% for list in lists %}
             <div class="col-sm">
-              {% if list.title %}<h4 class="vd-heading-light">{{ list.title }}</h4>{% endif %}
+              {% if list.title %}<h2 class="vd-heading-light h4">{{ list.title }}</h2>{% endif %}
               <ul class="list-unstyled">
               {%- for item in list.items -%}
                 <li><a href="{{ url }}">{{ item.text }}</a></li>
