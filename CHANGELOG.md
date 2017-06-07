@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change HTML structure and style of `@footer--default`
 - Change HTML structure and style of `@footer--securise`
 - Typography is based on Open Sans and Roboto Slab fonts
+- Google CDN is used to get fonts
 
 ### Removed
 - Removed `@list-no-bullet`
