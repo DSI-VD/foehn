@@ -40,6 +40,10 @@ h6 {
       margin-top: 0;
     }
   }
+
+  .col#{$infix} > :first-child {
+    margin-top: 0;
+  }
 }
 
 .vd-content-column > :first-child > :first-child {
