@@ -18,7 +18,9 @@
             "url": "#"
           }
         ],
-        "updateTime": true,
+        "footer":{
+          "updateTime": true
+        },
         "index": {
           "listLinks": [
             {

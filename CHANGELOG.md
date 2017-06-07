@@ -6,6 +6,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Refactor lists in `@departements`
 - Use `text-decoration-skip` for better underlined links
+- Change logo positioning in `@footer--default`
+- Change HTML structure and style of `@footer--default`
+- Change HTML structure and style of `@footer--securise`
 - Typography is based on Open Sans and Roboto Slab fonts
 
 ### Removed
@@ -17,6 +20,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix margin of list of icons in `@teaser-list--homepage`
 - Fix margin of the first content element in `@accueil`
 - Fix text decoration of `:hover` link in `@nav-side`
+- Fix top margin of `.col-{viewport}`s first element
 - Fix `@list-boxed` margin
 
 ## [0.25.0] - 2017-05-31
