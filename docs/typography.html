@@ -77,25 +77,27 @@
     
     <h2 id="fonts-used">Fonts used</h2>
 <ul>
-<li>Graphik Light - normal 400</li>
-<li>Graphik LightItalic - italic 400</li>
-<li>Graphik Medium - normal 500</li>
-<li>Produkt Light - normal 300</li>
-<li>Produkt LightItalic  - italic 300</li>
-<li>Produkt Medium - normal 500</li>
-<li>Produkt Bold - normal 700</li>
+<li><a href="https://fonts.google.com/specimen/Roboto+Slab">Roboto slab</a><ul>
+<li>Regular</li>
+<li>Bold</li>
 </ul>
-<hr class="my-3">
-
+</li>
+<li><a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a><ul>
+<li>Regular</li>
+<li>Regular Italic</li>
+<li>Bold</li>
+<li>Bold Italic</li>
+</ul>
+</li>
+</ul>
 <h2 id="-webfont-loader-https-github-com-typekit-webfontloader-code"><a href="https://github.com/typekit/webfontloader">Webfont Loader</a> code</h2>
 <p>Insert this code in your base template, to invoke all the needed fonts.</p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-comment">&lt;!-- Instead of using a CDN, you can host yourself the file --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
   WebFont.load({
-    custom: {
-      families: [<span class="hljs-string">'Graphik:n4,i4,n5'</span>, <span class="hljs-string">'Produkt:n3,i3,n5,n7'</span>],
-      urls: [<span class="hljs-string">'{{ '</span>/assets/fonts/fonts.css<span class="hljs-string">' | path }}'</span>]
+    google: {
+      families: [<span class="hljs-string">'Open+Sans:400,400i,700,700i'</span>, <span class="hljs-string">'Roboto+Slab:300,700'</span>]
     }
   });
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></code>
