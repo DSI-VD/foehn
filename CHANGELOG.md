@@ -3,6 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Rename `@prestation` in `@detail-prestation`
+
+### Fix
+- Fix generation problem with `@detail-prestation`
+
 ## [0.26.0] - 2017-06-07
 
 ### Changed
