@@ -1,15 +1,21 @@
-<div class="row">
-  {% for color in primary %}
-  <div class="col-sm-3">
-    <div class="card mb-1">
-      <div class="card-img-top" style="background-color: {{ color.value }}; min-height: 7em;"></div>
+<div class="">
+  {% for palette, values in colors %}
+
+  <h2>{{ palette | capitalize }}</h2>
+
+  <div class="d-flex flex-row flex-wrap">
+  {% for key, value in values %}
+    <div class="card mr-1 mb-1">
+      <div class="card-img-top" style="background-color: {{ value }}; min-height: 7em; min-width: 10em;"></div>
       <div class="card-block">
-        <p class="card-title mt-0">{{ color.name }}</p>
-        <p class="card-text"><code>{{ color.value }}</code></p>
+        <p class="card-title mt-0">{{ key }}</p>
+        <p class="card-text"><code>{{ value }}</code></p>
       </div>
     </div>
     <!-- <div style="background-color: {{ color.value }};" class="pb-3">{{ color.name }}</div>
     <code>{{ color.value }}</code> -->
+  {% endfor %}
   </div>
+
   {% endfor %}
 </div>

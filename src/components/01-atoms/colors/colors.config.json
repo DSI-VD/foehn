@@ -1,55 +1,35 @@
 {
   "status": "prototype",
   "context": {
-    "primary": [
-      {
-        "name": "gray-light",
-        "value": "#aab6db"
+    "colors": {
+      "primary": {
+        "green-darker": "#1e5e02",
+        "green-dark": "#02851a",
+        "green-dark-2": "#028b02",
+        "green": "#40d940",
+        "green-light": "#9f3",
+        "green-lighter": "#cf9"
       },
-      {
-        "name": "gray-lighter",
-        "value": "#dce3e8"
+      "secondary": {
+        "purple-2": "#9f42ff",
+        "purple": "#90f"
       },
-      {
-        "name": "gray-lighter-2",
-        "value": "#c3d1dc"
+      "grayscale": {
+        "gray-darker": "#273c46",
+        "gray-dark": "#080808",
+        "gray": "#697983",
+        "gray-light": "#aab6db",
+        "gray-lighter-2": "#c3d1dc",
+        "gray-lighter": "#dce3e8",
+        "gray-lightest": "#e0eaf0"
       },
-      {
-        "name": "green-darker",
-        "value": "#1e5e02"
-      },
-      {
-        "name": "green",
-        "value": "#40d940"
-      },
-      {
-        "name": "green-light",
-        "value": "#9f3"
-      },
-      {
-        "name": "green-lighter",
-        "value": "#cf9"
-      },
-      {
-        "name": "purple-2",
-        "value": "#9f42ff"
-      },
-      {
-        "name": "gray-dark",
-        "value": "#080808"
-      },
-      {
-        "name": "gray",
-        "value": "#697983"
-      },
-      {
-        "name": "green-dark",
-        "value": "#02851a"
-      },
-      {
-        "name": "purple",
-        "value": "#90f"
+      "states": {
+        "success": "#028b02",
+        "warning": "#ff9c00",
+        "danger": "#c3105c",
+        "info": "#82afcc",
+        "focus": "#ffbf47"
       }
-    ]
+    }
   }
 }
