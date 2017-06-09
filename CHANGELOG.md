@@ -7,9 +7,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Rename `@prestation` in `@detail-prestation`
+- Change HTML structure of `@logo-etat--default` and `@logo-etat--alternate`
 
 ### Fix
 - Fix generation problem with `@detail-prestation`
+- Fix the logo display in IE
 
 ## [0.26.0] - 2017-06-07
 
