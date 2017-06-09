@@ -10,8 +10,11 @@
         "green-lighter": "#cf9"
       },
       "secondary": {
-        "purple-2": "#9f42ff",
-        "purple": "#90f"
+        "purple-darker": "#2a0046",
+        "purple-dark": "#6200a3",
+        "purple": "#90f",
+        "purple-light": "#be5cff",
+        "purple-lighter": "#e3b9ff"
       },
       "grayscale": {
         "gray-darker": "#273c46",
