@@ -4,8 +4,7 @@
     "colors": {
       "primary": {
         "green-darker": "#1e5e02",
-        "green-dark": "#02851a",
-        "green-dark-2": "#028b02",
+        "green-dark": "#028b02",
         "green": "#40d940",
         "green-light": "#9f3",
         "green-lighter": "#cf9"

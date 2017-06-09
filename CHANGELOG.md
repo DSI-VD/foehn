@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove `vd-green-dark-2` color
+- `vd-green` is the brand color
+
 ## [0.26.0] - 2017-06-07
 
 ### Changed
