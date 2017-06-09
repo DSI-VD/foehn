@@ -17,8 +17,8 @@
         "purple-lighter": "#e3b9ff"
       },
       "grayscale": {
-        "gray-darker": "#273c46",
-        "gray-dark": "#080808",
+        "gray-darker": "#080808",
+        "gray-dark": "#273c46",
         "gray": "#697983",
         "gray-light": "#aab6db",
         "gray-lighter-2": "#c3d1dc",
