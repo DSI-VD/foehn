@@ -3,71 +3,32 @@
 /**
  * Logo of the site web
  *
- * 1. Make the logo and text be side by side
- * 2. Width of the logo
- * 3. If there's no coat of arms, add the margin needed for the logo to stay in
- *    position (width of logo + its margin)
- * 4. Add the green blocks underline
+ * 1. Offset the blason on the left
+ * 2. Align little blason at the end (bottom)
+ * 3. Align image at the start (top)
  */
-
 .vd-logo {
-  display: inline-block;
-  display: inline-flex; /* [1] */
-  position: relative;
-  margin-bottom: $spacer;
+  display: flex;
 
-  @include plain-hover-focus {
-    color: $body-color;
-    text-decoration: none;
-  }
-}
+  &__blason {
+    width: 1.8em;
+    margin-right: 3 * $spacer;
+    margin-left: -3 * $spacer; /* 1 */
 
-.vd-logo-img {
-  position: relative;
-  width: 1.8em; /* [2] */
-  margin-right: 0.25em;
-  margin-left: -2em - 0.5em; /* [3] */
-
-  @include media-breakpoint-up(md) {
-    position: absolute;
-    margin-right: 1.5em;
-    margin-left: -2em - 0.65em; /* [3] */
-  }
-
-  img {
-    position: absolute;
-    bottom: -0.2em;
-
-    @include media-breakpoint-up(md) {
-      position: relative;
-      bottom: 0;
+    @include media-breakpoint-down(sm) {
+      margin-right: 2 * $spacer;
+      align-self: flex-end; /* 2 */
     }
   }
 
-  + .vd-logo-title {
-    margin-left: ($spacer * 2);
-  }
-}
-
-.vd-logo-title {
-  margin-top: $spacer * 0.5;
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: $spacer * 2;
-  }
-
-  > img {
+  &__image {
+    align-self: flex-start; /* 3 */
     width: 12em;
-    height: 1.6em;
-  }
+    height: auto;
+    margin-top: $spacer;
 
-  /* add the green underline */
-  &:after {
-    content: ''; /* [4] */
-    display: block; /* [4] */
-    width: 100%; /* [4] */
-    height: 4px; /* [4] */
-    margin-top: 2px; /* [4] */
-    background-image: url('../svg/pattern_squares_green.svg'); /* [4] */
+    @include media-breakpoint-up(md) {
+      margin-bottom: $spacer * 3;
+    }
   }
 }
