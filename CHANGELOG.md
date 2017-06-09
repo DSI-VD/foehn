@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Rename `@prestation` in `@detail-prestation`
 - Change HTML structure of `@logo-etat--default` and `@logo-etat--alternate`
 
+### Added
+- Add `@header--application` component
+
 ### Fix
 - Fix generation problem with `@detail-prestation`
 - Fix the logo display in IE
