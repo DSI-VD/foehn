@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix `@h1` size
+
 ## [0.26.1] - 2017-06-08
 
 ### Changed
