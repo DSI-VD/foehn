@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Fix `@h1` size
+- Add documentation about Google fonts styles
 
 ## [0.26.1] - 2017-06-08
 
