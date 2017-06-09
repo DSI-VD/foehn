@@ -290,10 +290,10 @@ $abbr-border-color: $gray-light !default;
 
 $blockquote-small-color:  $gray !default;
 $blockquote-font-size:    $font-size-base !default;
-$blockquote-border-color: $vd-gray-dark !default;
+$blockquote-border-color: $vd-gray-darker !default;
 $blockquote-border-width: 0 !default;
 
-$hr-border-color: $vd-gray-dark !default;
+$hr-border-color: $vd-gray-darker !default;
 $hr-border-width: $border-width !default;
 
 $mark-padding: .2em !default;
@@ -363,7 +363,7 @@ $btn-focus-box-shadow:           0 0 0 3px rgba($vd-focus, .5) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
 
 $btn-primary-color:              $white !default;
-$btn-primary-bg:                 $vd-gray-darker !default;
+$btn-primary-bg:                 $vd-gray-dark !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $white !default;
