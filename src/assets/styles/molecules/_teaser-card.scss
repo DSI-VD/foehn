@@ -68,7 +68,7 @@ a.vd-teaser-card {
 
   .card-title,
   .card-text {
-    color: $vd-gray-dark; /* [1] */
+    color: $vd-gray-darker; /* [1] */
   }
 }
 
@@ -76,7 +76,7 @@ a.vd-teaser-card {
  * Dark gray
  */
 .vd-card-darkgray {
-  @include card-variant($vd-gray-darker, $vd-gray-darker);
+  @include card-variant($vd-gray-dark, $vd-gray-dark);
 
   @extend %card-inside;
 }

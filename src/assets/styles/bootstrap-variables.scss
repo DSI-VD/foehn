@@ -104,7 +104,7 @@ $pink:   #ff5b77 !default;
 $purple: #613d7c !default;
 
 // Create grayscale
-$gray-dark:                 $vd-gray-dark !default;
+$gray-dark:                 $vd-gray-darker !default;
 $gray:                      $vd-gray !default;
 $gray-light:                $vd-gray-light !default;
 $gray-lighter:              $vd-gray-lighter !default;
@@ -116,7 +116,7 @@ $brand-success:             $vd-success !default;
 $brand-info:                $vd-info !default;
 $brand-warning:             $vd-warning !default;
 $brand-danger:              $vd-danger !default;
-$brand-inverse:             $vd-gray-darker !default;
+$brand-inverse:             $vd-gray-dark !default;
 
 
 // Options
@@ -290,10 +290,10 @@ $abbr-border-color: $gray-light !default;
 
 $blockquote-small-color:  $gray !default;
 $blockquote-font-size:    $font-size-base !default;
-$blockquote-border-color: $vd-gray-dark !default;
+$blockquote-border-color: $vd-gray-darker !default;
 $blockquote-border-width: 0 !default;
 
-$hr-border-color: $vd-gray-dark !default;
+$hr-border-color: $vd-gray-darker !default;
 $hr-border-width: $border-width !default;
 
 $mark-padding: .2em !default;
@@ -363,7 +363,7 @@ $btn-focus-box-shadow:           0 0 0 3px rgba($vd-focus, .5) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
 
 $btn-primary-color:              $white !default;
-$btn-primary-bg:                 $vd-gray-darker !default;
+$btn-primary-bg:                 $vd-gray-dark !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $white !default;
