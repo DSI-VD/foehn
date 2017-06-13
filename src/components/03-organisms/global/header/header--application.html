@@ -1,0 +1,14 @@
+<header class="header">
+  {% include '@access-nav' %}
+  <div class="container">
+
+    <div class="d-flex flex-column flex-sm-row">
+
+      <div class="mr-auto">
+        {% render '@logo-etat', { styleModifier: 'mb-1' }, true %}
+        <h1 class="h3 mt-0 vd-heading-light">{{ applicationTitle }}</h1>
+      </div>
+
+    </div><!-- /.row -->
+  </div>
+</header>
