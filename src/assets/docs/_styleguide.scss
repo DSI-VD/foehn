@@ -1,0 +1,42 @@
+/* Palette container */
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.25em;
+}
+
+/* Colour swatch */
+.color {
+  flex: 1 1 4em;
+  position: relative;
+  margin: 0 0.25em 1.5em;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5em;
+    background-color: currentColor;
+  }
+
+  code {
+    display: inline-block;
+    color: $code-color;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-style: normal;
+    color: $white;
+    font: 0.75em/1em Hack, Consolas, Monaco, monospace;
+    text-shadow: 0 0 2px $black;
+  }
+}
+
+.color--base {
+  margin-right: 1em;
+  order: -1;
+}
