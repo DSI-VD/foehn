@@ -53,7 +53,7 @@ a.vd-teaser-card {
  * Green
  */
 .vd-card-green {
-  @include card-variant($vd-green-darker, $vd-green-darker);
+  @include card-variant($vd-primary-darker, $vd-primary-darker);
 
   @extend %card-inside;
 }
@@ -64,11 +64,11 @@ a.vd-teaser-card {
  * 1. Make the text visible
  */
 .vd-card-lightgray {
-  @include card-variant($vd-gray-lighter, $vd-gray-lighter);
+  @include card-variant($vd-neutral-lighter, $vd-neutral-lighter);
 
   .card-title,
   .card-text {
-    color: $vd-gray-darker; /* [1] */
+    color: $vd-neutral-darker; /* [1] */
   }
 }
 
@@ -76,7 +76,7 @@ a.vd-teaser-card {
  * Dark gray
  */
 .vd-card-darkgray {
-  @include card-variant($vd-gray-dark, $vd-gray-dark);
+  @include card-variant($vd-neutral-dark, $vd-neutral-dark);
 
   @extend %card-inside;
 }

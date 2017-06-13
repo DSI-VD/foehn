@@ -8,7 +8,7 @@
 
 .vd-nav-primary-toggle {
   @include media-breakpoint-up(md) {
-    border-bottom: 1px dotted $vd-green;
+    border-bottom: 1px dotted $vd-primary;
   }
 }
 
