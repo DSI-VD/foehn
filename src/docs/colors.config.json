@@ -2,25 +2,25 @@
   "context": {
     "colors": {
       "primary": {
-        "green-darker": "#1e5e02",
-        "green-dark": "#028b02",
-        "green": "#40d940",
-        "green-light": "#9f3",
-        "green-lighter": "#cf9"
+        "darker": "#1e5e02",
+        "dark": "#028b02",
+        "base": "#40d940",
+        "light": "#9f3",
+        "lighter": "#cf9"
       },
       "secondary": {
-        "purple-darker": "#2a0046",
-        "purple-dark": "#6200a3",
-        "purple": "#90f",
-        "purple-light": "#be5cff",
-        "purple-lighter": "#e3b9ff"
+        "darker": "#2a0046",
+        "dark": "#6200a3",
+        "base": "#90f",
+        "light": "#be5cff",
+        "lighter": "#e3b9ff"
       },
-      "grayscale": {
-        "gray-darker": "#080808",
-        "gray-dark": "#273c46",
-        "gray": "#697983",
-        "gray-light": "#aab6db",
-        "gray-lighter": "#dce3e8"
+      "neutral": {
+        "darker": "#080808",
+        "dark": "#273c46",
+        "base": "#697983",
+        "light": "#aab6db",
+        "lighter": "#dce3e8"
       },
       "states": {
         "success": "#028b02",

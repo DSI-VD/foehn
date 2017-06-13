@@ -15,35 +15,25 @@
 // All custom colors (only those not defined in bootstrap-variables.scss),
 // based on the design mockups
 
-// Header, separators, stripes
-$vd-gray-light:             #aab6db;
-$vd-gray-lighter:           #dce3e8;
+$vd-primary-darker:           #1e5e02;
+$vd-primary-dark:             #028b02;
+$vd-primary:                  #40d940;
+$vd-primary-light:            #9f3;
+$vd-primary-lighter:          #cf9;
 
-$vd-green-darker:           #1e5e02;
-$vd-green:                  #40d940;
-$vd-green-light:            #9f3;
-$vd-green-lighter:          #cf9;
+$vd-secondary-darker:          #2a0046;
+$vd-secondary-dark:            #6200a3;
+$vd-secondary:                 #90f;
+$vd-secondary-light:           #be5cff;
+$vd-secondary-lighter:         #e3b9ff;
 
-$vd-purple-darker:          #2a0046;
-$vd-purple-dark:            #6200a3;
-$vd-purple-light:           #be5cff;
-$vd-purple-lighter:         #e3b9ff;
+$vd-neutral-darker:            #080808;
+$vd-neutral-dark:              #273c46;
+$vd-neutral:                   #697983;
+$vd-neutral-light:             #aab6db;
+$vd-neutral-lighter:           #dce3e8;
 
-// Text colors
-$vd-gray-darker:            #080808;
-$vd-gray:                   #697983;
-$vd-green-dark:             #028b02;
-$vd-purple:                 #90f;
-
-// Button colors
-$white:                     #fff;
-$black:                     #000;
-
-// Footer colors
-$vd-gray-dark:            #273c46;
-
-// States colors
-$vd-success:                $vd-green-dark;
+$vd-success:                $vd-primary-dark;
 $vd-warning:                #ff9c00;
 $vd-danger:                 #c3105c;
 $vd-info:                   #82afcc;
@@ -51,21 +41,21 @@ $vd-focus:                  #ffbf47;
 $vd-visited:                #384083;
 
 // Gradient color
-$vd-gradient:               linear-gradient(to right, $vd-green 0%, #008772 33%, #008772 40%, #0c6 100%);
+$vd-gradient:               linear-gradient(to right, $vd-primary 0%, #008772 33%, #008772 40%, #0c6 100%);
 
 // Patterns
 //
 // All the patterns used as background
 // Must be used with the `@ include vd-pattern-dotted($code, $viewbox-x: 4, $viewbox-y: 4)` mixin
-$pattern-gray-color: str-replace(#{$vd-gray-lighter}, '#', '%23');
+$pattern-gray-color: str-replace(#{$vd-neutral-lighter}, '#', '%23');
 $pattern-dotted-gray: "%3Crect%20fill%3D%27#{$pattern-gray-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-gray-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
-$pattern-green-color: str-replace(#{$vd-green-light}, '#', '%23');
+$pattern-green-color: str-replace(#{$vd-primary-light}, '#', '%23');
 $pattern-dotted-green-bright: "%3Crect%20fill%3D%27#{$pattern-green-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-green-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
-$pattern-dotted-green-color: str-replace(#{$vd-green}, '#', '%23');
+$pattern-dotted-green-color: str-replace(#{$vd-primary}, '#', '%23');
 $pattern-dotted-green: "%3Crect%20fill%3D%27#{$pattern-dotted-green-color}%27%20x%3D%270%27%20y%3D%270%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E%3Crect%20fill%3D%27#{$pattern-dotted-green-color}%27%20x%3D%272%27%20y%3D%272%27%20width%3D%271%27%20height%3D%271%27%3E%20%3C%2Frect%3E";
-$pattern-bars-gray-02-color: str-replace(#{$vd-gray-lighter}, '#', '%23');
+$pattern-bars-gray-02-color: str-replace(#{$vd-neutral-lighter}, '#', '%23');
 $pattern-bars-gray-02: "%3Cpolygon fill=%22#{$pattern-bars-gray-02-color}%22 points=%220,4 0.5306,4 0,3.4694 	%22/>%3Cpolygon fill=%22#{$pattern-bars-gray-02-color}%22 points=%220,0 0,0.5299 3.4701,4 4,4 4,3.4694 0.5306,0%22/>%3Cpolygon fill=%22#{$pattern-bars-gray-02-color}%22 points=%224,0 3.4701,0 4,0.5299%22/>";
-$pattern-bars-purple-color: str-replace(#{$vd-purple}, '#', '%23');
+$pattern-bars-purple-color: str-replace(#{$vd-secondary}, '#', '%23');
 $pattern-bars-purple: "%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%220,4 0.5306,4 0,3.4694 	%22/>%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%220,0 0,0.5299 3.4701,4 4,4 4,3.4694 0.5306,0%22/>%3Cpolygon fill=%22#{$pattern-bars-purple-color}%22 points=%224,0 3.4701,0 4,0.5299%22/>";
 
 // base64 backgrounds, to set as `background: $pattern-striped-green;`
