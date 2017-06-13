@@ -21,8 +21,7 @@
         "gray-dark": "#273c46",
         "gray": "#697983",
         "gray-light": "#aab6db",
-        "gray-lighter": "#dce3e8",
-        "gray-lightest": "#e0eaf0"
+        "gray-lighter": "#dce3e8"
       },
       "states": {
         "success": "#028b02",
