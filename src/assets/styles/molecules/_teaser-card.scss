@@ -64,7 +64,7 @@ a.vd-teaser-card {
  * 1. Make the text visible
  */
 .vd-card-lightgray {
-  @include card-variant($vd-gray-lightest, $vd-gray-lightest);
+  @include card-variant($vd-gray-lighter, $vd-gray-lighter);
 
   .card-title,
   .card-text {
