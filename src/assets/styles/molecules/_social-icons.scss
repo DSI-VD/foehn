@@ -17,6 +17,10 @@
   text-align: center;
   text-decoration: none;
 
+  &:visited {
+    color: $white !important;
+  }
+
   &:hover,
   &:focus {
     background: $link-hover-color;
