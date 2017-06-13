@@ -28,7 +28,8 @@
         "warning": "#ff9c00",
         "danger": "#c3105c",
         "info": "#82afcc",
-        "focus": "#ffbf47"
+        "focus": "#ffbf47",
+        "visited": "#384083"
       }
     }
   }

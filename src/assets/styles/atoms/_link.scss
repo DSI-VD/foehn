@@ -23,7 +23,7 @@ a {
   }
 
   &:visited:not(.btn) {
-    color: $vd-gray; /* [3] */
+    color: $vd-visited; /* [3] */
   }
 
   &[href^="tel"]:link,
