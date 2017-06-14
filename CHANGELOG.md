@@ -3,7 +3,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Change HTML structure of `@logo-etat--default` and `@logo-etat--alternate`
+
 ### Fix
+- Fix the logo display in IE
 - Fix `@h1` size
 - Add documentation about Google fonts styles
 
@@ -11,14 +15,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Rename `@prestation` in `@detail-prestation`
-- Change HTML structure of `@logo-etat--default` and `@logo-etat--alternate`
 
 ### Added
 - Add `@header--application` component
 
 ### Fix
 - Fix generation problem with `@detail-prestation`
-- Fix the logo display in IE
 
 ## [0.26.0] - 2017-06-07
 
