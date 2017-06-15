@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
 - `@access-nav` molecule use `.fixed-top`
 - Use default Twitter's widget on `@accueil`
+- Use [default twitter timeline](https://dev.twitter.com/web/embedded-timelines/user) in `@twitter-feed`
 
 ### Removed
 - Remove `@twitter-feed`
