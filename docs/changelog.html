@@ -77,18 +77,169 @@
     
     <p>All notable changes to this project will be documented in this file.
 This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
-<h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.23.0...HEAD">Unreleased</a></h2>
+<h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.26.1...HEAD">Unreleased</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
-<li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.sr-only</code> and <code>.sr-only-focusable</code> to hide navigation and make it focusable</li>
-<li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.fixed-top</code></li>
-<li>Use default Twitter’s widget on <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Change HTML structure of <a href="../components/detail/logo-etat--default"><code>@logo-etat--default</code></a> and <a href="../components/detail/logo-etat--alternate"><code>@logo-etat--alternate</code></a></li>
+<li>Use <a href="https://dev.twitter.com/web/embedded-timelines/user">default twitter timeline</a> in <a href="../components/detail/twitter-feed"><code>@twitter-feed</code></a></li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix the logo display in IE</li>
+<li>Fix <a href="../components/detail/h1"><code>@h1</code></a> size</li>
+<li>Add documentation about Google fonts styles</li>
 </ul>
 <h3 id="removed">Removed</h3>
 <ul>
 <li>Remove <a href="../components/detail/twitter-feed"><code>@twitter-feed</code></a></li>
 </ul>
-<h2 id="-0-23-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0">0.23.0</a></h2>
+<h2 id="-0-26-1-2017-06-08"><a href="https://github.com/DSI-VD/foehn/compare/v0.26.0...v0.26.1">0.26.1</a> - 2017-06-08</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Rename <a href="../components/detail/prestation"><code>@prestation</code></a> in <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/header--application"><code>@header--application</code></a> component</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix generation problem with <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
+</ul>
+<h2 id="-0-26-0-2017-06-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.25.0...v0.26.0">0.26.0</a> - 2017-06-07</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Refactor lists in <a href="../components/detail/departements"><code>@departements</code></a></li>
+<li>Use <code>text-decoration-skip</code> for better underlined links</li>
+<li>Remove <code>&lt;small&gt;</code> tags in <a href="../components/detail/domain-item"><code>@domain-item</code></a></li>
+<li>Change logo positioning in <a href="../components/detail/footer--default"><code>@footer--default</code></a></li>
+<li>Change HTML structure and style of <a href="../components/detail/footer--default"><code>@footer--default</code></a></li>
+<li>Change HTML structure and style of <a href="../components/detail/footer--securise"><code>@footer--securise</code></a></li>
+<li>Typography is based on Open Sans and Roboto Slab fonts</li>
+<li>Google CDN is used to get fonts</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed <a href="../components/detail/list-no-bullet"><code>@list-no-bullet</code></a></li>
+<li>Removed <code>.vd-list-no-bullet</code> style</li>
+<li>Remove Graphik and Produkt fonts</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix margin of list of icons in <a href="../components/detail/teaser-list--homepage"><code>@teaser-list--homepage</code></a></li>
+<li>Fix margin of the first content element in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Fix text decoration of <code>:hover</code> link in <a href="../components/detail/nav-side"><code>@nav-side</code></a></li>
+<li>Fix top margin of <code>.col-{viewport}</code>s first element</li>
+<li>Fix <a href="../components/detail/list-boxed"><code>@list-boxed</code></a> margin</li>
+</ul>
+<h2 id="-0-25-0-2017-05-31"><a href="https://github.com/DSI-VD/foehn/compare/v0.24.0...v0.25.0">0.25.0</a> - 2017-05-31</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Add margin before <a href="../components/detail/h1"><code>@h1</code></a>, <a href="../components/detail/h2"><code>@h2</code></a>, <a href="../components/detail/h3"><code>@h3</code></a>, <a href="../components/detail/h4"><code>@h4</code></a>, <a href="../components/detail/h5"><code>@h5</code></a>, <a href="../components/detail/h6"><code>@h6</code></a>, for better legibility</li>
+<li>Replace <code>.vd-section-title</code> by <code>.vd-heading-light</code></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/social-icons"><code>@social-icons</code></a></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/autority-address"><code>@autority-address</code></a></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/footer"><code>@footer</code></a></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/teaser-list"><code>@teaser-list</code></a></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/twitter-feed"><code>@twitter-feed</code></a></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/service"><code>@service</code></a></li>
+<li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/faq-item"><code>@faq-item</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/avs13"><code>@avs13</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/dates"><code>@dates</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/dates"><code>@dates</code></a></li>
+<li>Set margin top to null in <a href="../components/detail/domain-item"><code>@domain-item</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/teaser"><code>@teaser</code></a></li>
+<li>Change <code>.mb-0</code> class by <code>.mt-0</code> in <a href="../components/detail/teaser-card"><code>@teaser-card</code></a></li>
+<li>Remove useless <code>&lt;div&gt;</code> in <a href="../components/detail/highlight"><code>@highlight</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/autority-address"><code>@autority-address</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/autority-info"><code>@autority-info</code></a></li>
+<li>Remove margin top of <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> in <a href="../components/detail/faq"><code>@faq</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/page-title-banner--form-presta"><code>@page-title-banner--form-presta</code></a></li>
+<li>Remove custom margin top in <a href="../components/detail/page-title-banner--prestation"><code>@page-title-banner--prestation</code></a></li>
+<li>Remove custom margin top in <a href="../components/detail/page-title-banner"><code>@page-title-banner</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/teaser-list"><code>@teaser-list</code></a></li>
+<li>Add margin top on <a href="../components/detail/separator--gray-bars-wide"><code>@separator--gray-bars-wide</code></a> in <a href="../components/detail/teaser-list"><code>@teaser-list</code></a></li>
+<li>Remove custom margin bottom in <a href="../components/detail/template-communiques-presse-detail"><code>@template-communiques-presse-detail</code></a></li>
+<li>Use <code>.vd-text-md-small</code> to make headings smaller in right column in <a href="../components/detail/template--2-col-nav"><code>@template--2-col-nav</code></a>, <a href="../components/detail/template--2-col"><code>@template--2-col</code></a> and <a href="../components/detail/template--homepage"><code>@template--homepage</code></a></li>
+<li>Remove custom margin on <code>&lt;section&gt;</code> in <a href="../components/detail/service"><code>@service</code></a></li>
+<li>Remove margin top on <a href="../components/detail/autority-address"><code>@autority-address</code></a> in <a href="../components/detail/service"><code>@service</code></a></li>
+<li>Remove margin top on <a href="../components/detail/alert--default"><code>@alert--default</code></a> in <a href="../components/detail/formulaire-prestation-confirmation"><code>@formulaire-prestation-confirmation</code></a></li>
+<li>Remove margin top in <a href="../components/detail/notification"><code>@notification</code></a></li>
+<li>Remove margin top on <a href="../components/detail/autority-address"><code>@autority-address</code></a> in <a href="../components/detail/theme"><code>@theme</code></a></li>
+<li>Add <code>.vd-content-column</code> style in <a href="../components/detail/template--2-col-nav"><code>@template--2-col-nav</code></a></li>
+<li>Add <code>.vd-content-column</code> style in <a href="../components/detail/template--2-col"><code>@template--2-col</code></a></li>
+<li>Add <code>.vd-content-column</code> style in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Add <code>.vd-content-column</code> style in <a href="../components/detail/theme"><code>@theme</code></a></li>
+<li>Add <code>.vd-text-md-small</code> style in <a href="../components/detail/template--2-col-nav"><code>@template--2-col-nav</code></a></li>
+<li>Add <code>.vd-text-md-small</code> style in <a href="../components/detail/template--2-col"><code>@template--2-col</code></a></li>
+<li>Add <code>.vd-text-md-small</code> style in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/h1"><code>@h1</code></a></li>
+<li>Add <a href="../components/detail/h2"><code>@h2</code></a></li>
+<li>Add <a href="../components/detail/h3"><code>@h3</code></a></li>
+<li>Add <a href="../components/detail/h4"><code>@h4</code></a></li>
+<li>Add <a href="../components/detail/h5"><code>@h5</code></a></li>
+<li>Add <a href="../components/detail/h6"><code>@h6</code></a></li>
+<li>Add <code>.vd-content-column</code> style to remove top margin of the first element of a column</li>
+<li>Add <code>.vd-text-md-small</code> to make headings smaller when viewport is medium size</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix default grid gutter is <code>30px</code> width</li>
+<li>Fix <a href="../components/detail/teaser-list--homepage"><code>@teaser-list--homepage</code></a> in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Fix <a href="../components/detail/separator--default"><code>@separator--default</code></a> color</li>
+<li>Fix <a href="../components/detail/separator--green-pattern-wide"><code>@separator--green-pattern-wide</code></a> width in IE</li>
+<li>Fix <a href="../components/detail/separator--gray-bars-wide"><code>@separator--gray-bars-wide</code></a> width in IE</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed <code>.vd-section-title</code> style</li>
+</ul>
+<h2 id="-0-24-0-2017-05-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.23.1...v0.24.0">0.24.0</a> - 2017-05-30</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Remove <a href="../components/detail/separator--gray-pattern"><code>@separator--gray-pattern</code></a> in <a href="../components/detail/example-list"><code>@example-list</code></a></li>
+<li>Remove the <code>.vd-separator-wide</code> class and make all separators full width</li>
+<li><code>historique.config.json</code> updated with new data</li>
+<li><code>prestations-config-json</code> updated, unnecessary attributes removed</li>
+<li><code>prestations.html</code> globaly changed to follow new chosen interface</li>
+<li>attributes renamed in <code>tableau-de-bord.config.json</code> and values updated</li>
+<li><a href="../components/detail/notification"><code>@notification</code></a> template updated with new elements</li>
+<li><code>notification.config.json</code> updated on <code>url</code> and <code>title</code> attributes.</li>
+<li>Remove <code>.small</code> class on <a href="../components/detail/footer"><code>@footer</code></a> and <a href="../components/detail/footer--securise"><code>@footer--securise</code></a></li>
+<li>Remove <code>.text-muted</code> class in <a href="../components/detail/footer"><code>@footer</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/demande-detail"><code>@demande-detail</code></a> files (.config and .html)</li>
+<li>Add <a href="../components/detail/message-detail"><code>@message-detail</code></a> files (.config and .html)</li>
+<li>Add <a href="../components/detail/demande-historique.html"><code>@demande-historique.html</code></a> template</li>
+<li>Add <a href="../components/detail/prestation.html"><code>@prestation.html</code></a> template</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix <a href="../components/detail/breadcrumb"><code>@breadcrumb</code></a> font size</li>
+<li>Fix <a href="../components/detail/footer"><code>@footer</code></a> margin</li>
+<li>Fix <a href="../components/detail/link"><code>@link</code></a> color</li>
+<li>Fix link color and decoration in <a href="../components/detail/nav-side"><code>@nav-side</code></a></li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Remove <a href="../components/detail/separator--default--black"><code>@separator--default--black</code></a></li>
+<li>Remove <a href="../components/detail/separator--gray-pattern"><code>@separator--gray-pattern</code></a></li>
+</ul>
+<h2 id="-0-23-1-2017-05-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.23.0...v0.23.1">0.23.1</a> - 2017-05-17</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.sr-only</code> and <code>.sr-only-focusable</code> to hide navigation and make it focusable</li>
+<li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.fixed-top</code></li>
+</ul>
+<h2 id="-0-23-0-2017-05-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0">0.23.0</a> - 2017-05-17</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>The <a href="../components/detail/alert"><code>@alert</code></a> molecule has been renamed <a href="../components/detail/alert--default"><code>@alert--default</code></a></li>
@@ -97,7 +248,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Add <a href="../components/detail/alert--fixed"><code>@alert--fixed</code></a> molecule</li>
 </ul>
-<h2 id="-0-22-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.3...v0.22.0">0.22.0</a></h2>
+<h2 id="-0-22-0-2017-05-09"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.3...v0.22.0">0.22.0</a> - 2017-05-09</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Change margin in <a href="../components/detail/footer"><code>@footer</code></a></li>
@@ -121,13 +272,13 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Remove <a href="../components/detail/radio--warning"><code>@radio--warning</code></a></li>
 <li>Remove <a href="../components/detail/input--validation-warning"><code>@input--validation-warning</code></a></li>
 </ul>
-<h2 id="-0-21-3-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.2...v0.21.3">0.21.3</a></h2>
+<h2 id="-0-21-3-2017-05-03"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.2...v0.21.3">0.21.3</a> - 2017-05-03</h2>
 <h3 id="fix">Fix</h3>
 <ul>
 <li>Change color of <code>:focus</code> style</li>
 <li>Only upload the <code>dist/assets/</code> folder on the registry</li>
 </ul>
-<h2 id="-0-21-2-"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.1...v0.21.2">0.21.2</a></h2>
+<h2 id="-0-21-2-2017-05-03"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.1...v0.21.2">0.21.2</a> - 2017-05-03</h2>
 <h3 id="fix">Fix</h3>
 <ul>
 <li>Fix npm script</li>
@@ -157,7 +308,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix missing <a href="../components/detail/lead"><code>@lead</code></a> in <a href="../components/detail/news-detail"><code>@news-detail</code></a></li>
 <li>Fix <a href="../components/detail/social-icons"><code>@social-icons</code></a> has no title in <a href="../components/detail/news-detail"><code>@news-detail</code></a></li>
 </ul>
-<h2 id="-0-21-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.1...v0.21.0">0.21.0</a></h2>
+<h2 id="-0-21-0-2017-04-21"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.1...v0.21.0">0.21.0</a> - 2017-04-21</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li><a href="../components/detail/radio"><code>@radio</code></a> only contain one radio button</li>
@@ -206,13 +357,13 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Removed feedback molecule</li>
 </ul>
-<h2 id="-0-20-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.0...v0.20.1">0.20.1</a></h2>
+<h2 id="-0-20-1-2017-04-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.0...v0.20.1">0.20.1</a> - 2017-04-06</h2>
 <h3 id="fix">Fix</h3>
 <ul>
 <li>Remove unused bower.json</li>
 <li>Fix line breaks in inline SVG</li>
 </ul>
-<h2 id="-0-20-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.19.0...v0.20.0">0.20.0</a></h2>
+<h2 id="-0-20-0-2017-04-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.19.0...v0.20.0">0.20.0</a> - 2017-04-06</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Agenda use default teaser</li>
@@ -254,7 +405,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Remove teaser-alternate–2-3_1-3 component</li>
 <li>Remove projects-list component</li>
 </ul>
-<h2 id="-0-19-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.18.0...v0.19.0">0.19.0</a></h2>
+<h2 id="-0-19-0-2017-03-21"><a href="https://github.com/DSI-VD/foehn/compare/v0.18.0...v0.19.0">0.19.0</a> - 2017-03-21</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Add url on autority-address</li>
@@ -298,7 +449,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Remove <code>.flex-row</code> class (was overriding a B4 class and was never used)</li>
 <li>Remove legacy Toolbox styleguide assets</li>
 </ul>
-<h2 id="-0-18-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.17.0...v0.18.0">0.18.0</a></h2>
+<h2 id="-0-18-0-2017-03-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.17.0...v0.18.0">0.18.0</a> - 2017-03-07</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Change alert color</li>
@@ -326,7 +477,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Add password type in input molecule</li>
 <li>Add file type in input molecule</li>
 </ul>
-<h2 id="-0-17-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.16.0...v0.15.0">0.17.0</a></h2>
+<h2 id="-0-17-0-2017-02-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.16.0...v0.15.0">0.17.0</a> - 2017-02-17</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Use autority-address organism in communiques-presse-list page</li>
@@ -360,7 +511,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Removed teaser-link component</li>
 </ul>
-<h2 id="-0-16-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.15.0...v0.16.0">0.16.0</a></h2>
+<h2 id="-0-16-0-2017-02-10"><a href="https://github.com/DSI-VD/foehn/compare/v0.15.0...v0.16.0">0.16.0</a> - 2017-02-10</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Change margin of footer–securise</li>
@@ -387,7 +538,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix margin of publish-time atom</li>
 <li>Fix breadcrumb isn’t display on certain templates and pages</li>
 </ul>
-<h2 id="-0-15-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.14.0...v0.15.0">0.15.0</a></h2>
+<h2 id="-0-15-0-2017-02-09"><a href="https://github.com/DSI-VD/foehn/compare/v0.14.0...v0.15.0">0.15.0</a> - 2017-02-09</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Default teaser-card is the light grey one</li>
@@ -473,7 +624,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Remove unnecessary ignored files in gitignore and stylelintrc</li>
 <li>Remove font-icons from project, use font-awesome instead #598</li>
 </ul>
-<h2 id="-0-14-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.13.0...v0.14.0">0.14.0</a></h2>
+<h2 id="-0-14-0-2017-01-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.13.0...v0.14.0">0.14.0</a> - 2017-01-20</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Use teaser-list in Communiqué de presse page</li>
@@ -543,7 +694,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Removed polyfills from styleguide #566</li>
 <li>Removed Contact link from header-securise component #490</li>
 </ul>
-<h2 id="-0-13-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.12.0...v0.13.0">0.13.0</a></h2>
+<h2 id="-0-13-0-2016-12-22"><a href="https://github.com/DSI-VD/foehn/compare/v0.12.0...v0.13.0">0.13.0</a> - 2016-12-22</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Change the columns in the footer to <code>xs</code> sizes</li>
@@ -600,7 +751,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix <code>vd-teaser-img</code> size on IE</li>
 <li>Fix the mobile navigation #460</li>
 </ul>
-<h2 id="-0-12-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.11.0...v0.12.0">0.12.0</a></h2>
+<h2 id="-0-12-0-2016-12-08"><a href="https://github.com/DSI-VD/foehn/compare/v0.11.0...v0.12.0">0.12.0</a> - 2016-12-08</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Modify the existing Blockquotes to <code>.vd-blockquote-bubble</code> and <code>.vd-blockquote-bubble-media</code> classes #487</li>
@@ -633,7 +784,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix figure-caption size and look #429</li>
 <li>Fix logo width (to avoid it being full width flex)</li>
 </ul>
-<h2 id="-0-11-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0">0.11.0</a></h2>
+<h2 id="-0-11-0-2016-12-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0">0.11.0</a> - 2016-12-06</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Twitter feed show two items</li>
@@ -667,22 +818,22 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Changed Graphik font name in doc #426</li>
 <li>Fix search form height #459</li>
 </ul>
-<h2 id="-0-10-2-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2">0.10.2</a></h2>
+<h2 id="-0-10-2-2016-11-29"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.1...v0.10.2">0.10.2</a> - 2016-11-29</h2>
 <h3 id="fixed">Fixed</h3>
 <ul>
 <li>Fix Changelog file extension</li>
 </ul>
-<h2 id="-0-10-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.0...v0.10.1">0.10.1</a></h2>
+<h2 id="-0-10-1-2016-11-29"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.0...v0.10.1">0.10.1</a> - 2016-11-29</h2>
 <h3 id="fixed">Fixed</h3>
 <ul>
 <li>Fix Changelog location</li>
 </ul>
-<h2 id="-0-10-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0">0.10.0</a></h2>
+<h2 id="-0-10-0-2016-11-29"><a href="https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0">0.10.0</a> - 2016-11-29</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Finetune all components</li>
 </ul>
-<h2 id="-0-9-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0">0.9.0</a></h2>
+<h2 id="-0-9-0-2016-11-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0">0.9.0</a> - 2016-11-17</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>foehn is now based on bootstrap v4</li>
@@ -692,7 +843,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Add all basics components</li>
 </ul>
-<h2 id="-0-8-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0">0.8.0</a></h2>
+<h2 id="-0-8-0-2016-08-23"><a href="https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0">0.8.0</a> - 2016-08-23</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Forms style use based on (WTF, forms ?](<a href="http://wtfforms.com/">http://wtfforms.com/</a>)</li>
@@ -702,7 +853,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Refactor CSS</li>
 <li>Add clearfix in <code>.o-wrapper</code></li>
 </ul>
-<h2 id="-0-7-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.1...v0.7.0">0.7.0</a></h2>
+<h2 id="-0-7-0-2016-08-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.1...v0.7.0">0.7.0</a> - 2016-08-17</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Add style for the header</li>
@@ -811,7 +962,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Remove <code>vd-layout--column</code></li>
 <li>Remove unused alerts</li>
 </ul>
-<h2 id="-0-6-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.0...v0.6.1">0.6.1</a></h2>
+<h2 id="-0-6-1-2016-07-13"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.0...v0.6.1">0.6.1</a> - 2016-07-13</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Hide legend and label in search bar</li>
@@ -836,7 +987,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Replace <code>postcss-advanced-variables</code> with <code>postcss-each</code>, <code>postcss-for</code> and <code>postcss-simple-vars</code></li>
 <li>Update CSS linting rules</li>
 </ul>
-<h2 id="-0-6-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.5.0...v0.6.0">0.6.0</a></h2>
+<h2 id="-0-6-0-2016-05-25"><a href="https://github.com/DSI-VD/foehn/compare/v0.5.0...v0.6.0">0.6.0</a> - 2016-05-25</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Add text accessibility documentation</li>
@@ -873,7 +1024,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix missing <code>vd-*</code> prefix in Fraction atom</li>
 <li>Fix missing <code>vd-*</code> prefix in Footnote atom</li>
 </ul>
-<h2 id="-0-5-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.2...v0.5.0">0.5.0</a></h2>
+<h2 id="-0-5-0-2016-04-29"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.2...v0.5.0">0.5.0</a> - 2016-04-29</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Provide a <code>/dist</code> folder with all foehn files</li>
@@ -900,7 +1051,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix uncollapsed table cells</li>
 <li>Fix <code>foehn.css</code> table of content</li>
 </ul>
-<h2 id="-0-4-2-"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.1...v0.4.2">0.4.2</a></h2>
+<h2 id="-0-4-2-2016-04-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.1...v0.4.2">0.4.2</a> 2016-04-14</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Add style for transparent buttons</li>
@@ -921,12 +1072,12 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Font comparaison pages are removed</li>
 </ul>
-<h2 id="-0-4-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.0...v0.4.1">0.4.1</a></h2>
+<h2 id="-0-4-1-2016-03-15"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.0...v0.4.1">0.4.1</a> - 2016-03-15</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Update building documetation</li>
 </ul>
-<h2 id="-0-4-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.1...v0.4.0">0.4.0</a></h2>
+<h2 id="-0-4-0-2016-02-16"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.1...v0.4.0">0.4.0</a> - 2016-02-16</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Added styles for alert boxes</li>
@@ -944,7 +1095,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Fix active state on button wasn’t working</li>
 </ul>
-<h2 id="-0-3-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.0...v0.3.1">0.3.1</a></h2>
+<h2 id="-0-3-1-2016-02-23"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.0...v0.3.1">0.3.1</a> 2016-02-23</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>More grays variations are added to the color palette</li>
@@ -953,7 +1104,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <ul>
 <li>Forms are more readable</li>
 </ul>
-<h2 id="-0-3-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.1...v0.3.0">0.3.0</a></h2>
+<h2 id="-0-3-0-2016-02-19"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.1...v0.3.0">0.3.0</a> - 2016-02-19</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Color palette documentation and create CSS variables for colors</li>
@@ -978,13 +1129,13 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Removed Typekit javascripts</li>
 <li>Removed <code>picturefill</code> polyfill</li>
 </ul>
-<h2 id="-0-2-1-"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.0...v0.2.1">0.2.1</a></h2>
+<h2 id="-0-2-1-2016-02-11"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.0...v0.2.1">0.2.1</a> - 2016-02-11</h2>
 <h3 id="changed">Changed</h3>
 <ul>
 <li>Enforce properties order in CSS</li>
 <li>Set letter-spacing in blockquotes to 0</li>
 </ul>
-<h2 id="-0-2-0-"><a href="https://github.com/DSI-VD/foehn/compare/v0.1.0...v0.2.0">0.2.0</a></h2>
+<h2 id="-0-2-0-2016-02-11"><a href="https://github.com/DSI-VD/foehn/compare/v0.1.0...v0.2.0">0.2.0</a> - 2016-02-11</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>PostCSS is used to generate the stylesheets</li>
@@ -1006,7 +1157,7 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Fix alignment problems in IE11 with layouts items</li>
 <li>Fix nesting problems in IE with layouts items</li>
 </ul>
-<h2 id="0-1">0.1</h2>
+<h2 id="0-1-2015-09-23">0.1 - 2015-09-23</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>Atom: Headings</li>
