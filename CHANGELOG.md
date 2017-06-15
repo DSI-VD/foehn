@@ -5,11 +5,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Change HTML structure of `@logo-etat--default` and `@logo-etat--alternate`
+- Use [default twitter timeline](https://dev.twitter.com/web/embedded-timelines/user) in `@twitter-feed`
 
 ### Fix
 - Fix the logo display in IE
 - Fix `@h1` size
 - Add documentation about Google fonts styles
+
+### Removed
+- Remove `@twitter-feed`
 
 ## [0.26.1] - 2017-06-08
 
