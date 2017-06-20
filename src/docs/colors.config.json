@@ -3,7 +3,7 @@
     "colors": {
       "primary": {
         "darker": "#1e5e02",
-        "dark": "#028b02",
+        "dark": "#3c8a2e",
         "base": "#40d940",
         "light": "#9f3",
         "lighter": "#cf9"
@@ -23,7 +23,7 @@
         "lighter": "#dce3e8"
       },
       "states": {
-        "success": "#028b02",
+        "success": "#3c8a2e",
         "warning": "#ff9c00",
         "danger": "#c3105c",
         "info": "#82afcc",
