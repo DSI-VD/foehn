@@ -22,6 +22,9 @@
         "light": "#aab6db",
         "lighter": "#dce3e8"
       },
+      "text": {
+        "body": "#080808"
+      },
       "states": {
         "success": "#3c8a2e",
         "warning": "#ff9c00",
