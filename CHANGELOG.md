@@ -7,6 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove `vd-green-dark-2` color
 - `vd-green` is the brand color
 
+### Added
+- Add color palette documentation
+
 ## [0.26.0] - 2017-06-07
 
 ### Changed
