@@ -83,19 +83,19 @@ a.btn {
 .vd-btn-chevron-t {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-top, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-top, $vd-green); }
+  &:after { @include vd-background-image-icon($vd-chevron-top, $vd-primary); }
 }
 
 .vd-btn-chevron-r {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-right, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-right, $vd-green); }
+  &:after { @include vd-background-image-icon($vd-chevron-right, $vd-primary); }
 }
 
 .vd-btn-chevron-b {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-green); }
+  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
 }
 
 .vd-btn-chevron-l {
@@ -116,7 +116,7 @@ a.btn {
     pointer-events: none;
     user-select: none;
 
-    @include vd-background-image-icon($vd-chevron-left, $vd-green);
+    @include vd-background-image-icon($vd-chevron-left, $vd-primary);
   }
 
   &.btn-secondary:before,
@@ -132,5 +132,5 @@ a.btn {
   &.btn-secondary:before,
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-cross, $white); }
-  &:after { @include vd-background-image-icon($vd-cross, $vd-green); }
+  &:after { @include vd-background-image-icon($vd-cross, $vd-primary); }
 }

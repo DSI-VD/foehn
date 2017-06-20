@@ -1,0 +1,8 @@
+/*!
+ * This style only apply on fractal documentation.
+ * It it not a part of the foehn design system.
+ */
+
+@import 'main-variables';
+@import 'bootstrap-variables'; // override defaults bootstrap variables
+@import '../docs/styleguide';

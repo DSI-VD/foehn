@@ -4,8 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove `vd-green-dark-2` color
+- `vd-green` is the brand color
 - Change HTML structure of `@logo-etat--default` and `@logo-etat--alternate`
 - Use [default twitter timeline](https://dev.twitter.com/web/embedded-timelines/user) in `@twitter-feed`
+
+### Added
+- Add color palette documentation
 
 ### Fix
 - Fix the logo display in IE

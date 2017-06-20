@@ -104,7 +104,7 @@ function deploy() {
  * Styles
  */
 function styles() {
-    return gulp.src(`${paths.src}/assets/styles/main.scss`)
+    return gulp.src([`${paths.src}/assets/styles/main.scss`, `${paths.src}/assets/styles/styleguide.scss`])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
