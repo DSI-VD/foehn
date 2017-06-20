@@ -3,7 +3,7 @@
 .vd-nav-side {
   position: relative;
   padding: $spacer ($spacer / 2);
-  border-left: 1px solid $vd-green-dark;
+  border-left: 1px solid $vd-primary-dark;
 
   &:after {
     content: '';
@@ -12,7 +12,7 @@
     bottom: 0;
     left: -1px;
     width: 10px;
-    border-bottom: 1px solid $vd-green-dark;
+    border-bottom: 1px solid $vd-primary-dark;
   }
 
   .nav-link:focus,
