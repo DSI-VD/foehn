@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add color palette documentation
 
 ### Fix
+- Fix `@social-icons` HTML structure
 - Fix hide logo in the footer for accessibility
 - Fix the logo display in IE
 - Fix `@h1` size
