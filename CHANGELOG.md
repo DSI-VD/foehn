@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add color palette documentation
 
 ### Fix
+- Fix missing `role` attribute in `@search-form`
 - Fix `@social-icons` title in `@footer`
 - Fix `@social-icons` HTML structure
 - Fix hide logo in the footer for accessibility
