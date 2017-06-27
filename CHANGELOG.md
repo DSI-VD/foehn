@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add color palette documentation
 
 ### Fix
+- Fix missing `aria-hidden` in `@list-boxed` for font icon accessibility
 - Fix missing `role` attribute in `@search-form`
 - Fix `@social-icons` title in `@footer`
 - Fix `@social-icons` HTML structure
