@@ -1,7 +1,7 @@
 {% if (social) or (updateTime) %}
 <div class="container mt-3">
   {% if updateTime %}{% render '@update-time' %}{% endif %}
-  {%if social %}{%render '@social-icons', {title:'Partager', titleModifier:'sr-only', styleModifier:'mt-2 mb-1'}, true %}{% endif %}
+  {%if social %}{%render '@social-icons', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-2 mb-1'}, true %}{% endif %}
 </div>
 {% endif %}
 
