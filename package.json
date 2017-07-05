@@ -40,7 +40,7 @@
     "autoprefixer": "^7.1.1",
     "bootstrap": "4.0.0-alpha.6",
     "cssnano": "^3.9.1",
-    "del": "^2.2.2",
+    "del": "^3.0.0",
     "eslint": "^3.16.1",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.3.0",
