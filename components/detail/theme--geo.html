@@ -444,11 +444,9 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-3"</span>&gt;</span>
-
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Logement<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 vd-content-column"</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Dans ce thème<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -514,7 +512,7 @@
 
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 small vd-content-column"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 vd-text-md-small vd-content-column"</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Service name<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
@@ -551,6 +549,7 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
         <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
 
@@ -645,22 +644,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-b2e8edf174b94a8027cc0fbf22ada90e-panel-view">
     <code class="Code Code--lang-html">
-        <pre>{% include '<a href="header">@header</a>' %}
-
-{% include '<a href="page-title-banner">@page-title-banner</a>' %}
-
-{% if searchForm %}
-{% render '<a href="search-banner--default">@search-banner--default</a>', searchForm, true %}
-{% endif %}
-
-<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-3"</span>&gt;</span>
-
-  {% include '<a href="page-title">@page-title</a>' %}
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 vd-content-column"</span>&gt;</span>
-
+        <pre>{% extends '<a href="template--2-col">@template--2-col</a>' %}
+{% block main %}
       <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Dans ce thème<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-bg-pattern-green p-1 mb-1"</span>&gt;</span>
         {% render '<a href="list-boxed">@list-boxed</a>', prestations %}
@@ -671,21 +656,15 @@
 
       <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Pages d'informations<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
       {% render '<a href="list-links">@list-links</a>', pages %}
-
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 small vd-content-column"</span>&gt;</span>
+{% endblock %}
+{% block aside %}
       {% if sidebar %}
       {% render '<a href="autority-info">@autority-info</a>' %}
       {% render '<a href="autority-info">@autority-info</a>' %}
       {% else %}
       {% render '<a href="autority-address">@autority-address</a>' %}
       {% endif %}
-    <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
-
-{% render '<a href="footer">@footer</a>', footer, true %}</pre>
+{% endblock %}</pre>
     </code>
 </div>
 
@@ -850,16 +829,10 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(10)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(6)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
-                <a href="header">@<span>header</span></a>, 
-            
-                <a href="page-title-banner">@<span>page-title-banner</span></a>, 
-            
-                <a href="search-banner--default">@<span>search-banner--default</span></a>, 
-            
-                <a href="page-title">@<span>page-title</span></a>, 
+                <a href="template--2-col">@<span>template--2-col</span></a>, 
             
                 <a href="list-boxed">@<span>list-boxed</span></a>, 
             
@@ -869,9 +842,7 @@
             
                 <a href="autority-info">@<span>autority-info</span></a>, 
             
-                <a href="autority-address">@<span>autority-address</span></a>, 
-            
-                <a href="footer">@<span>footer</span></a>
+                <a href="autority-address">@<span>autority-address</span></a>
             
             </span>
         </li class="Meta-item">
