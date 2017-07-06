@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix light headers `.vd-heading-light` not affected by `.vd-text-md-small` 
+
 ## [0.27.0] - 2017-07-05
 
 ### Changed
