@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Make `@nav` text bigger by removing `.small` class
+
 ## [0.27.0] - 2017-07-05
 
 ### Changed
