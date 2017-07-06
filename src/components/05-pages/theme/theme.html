@@ -1,41 +1,21 @@
-{% include '@header' %}
-
-{% include '@page-title-banner' %}
-
-{% if searchForm %}
-{% render '@search-banner--default', searchForm, true %}
-{% endif %}
-
-<main id="main" class="container mt-3">
-
-  {% include '@page-title' %}
-
-  <div class="row">
-
-    <div class="col-md-8 vd-content-column">
-
-      <h2>Dans ce thème</h2>
-      <div class="vd-bg-pattern-green p-1 mb-1">
-        {% render '@list-boxed', prestation %}
-        <p>
-          {% render '@button--default', button, true %}
-        </p>
-      </div>
-
-      <h2 class="sr-only">Pages d'informations</h2>
-      {% render '@list-links' %}
-
-    </div>
-
-    <aside class="col-md-4 small vd-content-column">
-      {% if sidebar %}
-      {% render '@autority-info' %}
-      {% render '@autority-info' %}
-      {% else %}
-      {% render '@autority-address' %}
-      {% endif %}
-    </aside>
+{% extends '@template--2-col' %}
+{% block main %}
+  <h2>Dans ce thème</h2>
+  <div class="vd-bg-pattern-green p-1 mb-1">
+    {% render '@list-boxed', prestations %}
+    <p>
+      {% render '@button--default', button, true %}
+    </p>
   </div>
-</main>
 
-{% render '@footer', footer, true %}
+  <h2 class="sr-only">Pages d'informations</h2>
+  {% render '@list-links' %}
+{% endblock %}
+{% block aside %}
+  {% if sidebar %}
+  {% render '@autority-info' %}
+  {% render '@autority-info' %}
+  {% else %}
+  {% render '@autority-address' %}
+  {% endif %}
+{% endblock %}
