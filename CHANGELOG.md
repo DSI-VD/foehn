@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix `@list-boxed` list items margin
+
 ## [0.27.0] - 2017-07-05
 
 ### Changed
