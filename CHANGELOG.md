@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove `.text-uppercase` class in `@template-communiques-presse-detail--alternate`
 - Remove content of the `<aside>` in `@template-communiques-presse-detail--default`
 - Remove content of the `<aside>` in `@template-communiques-presse-detail--alternate`
+- Change text in `@domains-list`
 
 ## Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
