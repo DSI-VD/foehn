@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `.vd-content` class in `@template--domaines`
 - Add `.vd-content` class in `@template--homepage`
 - Add `.vd-content` class in `@template--news-detail`
+- Remove `.text-uppercase` class in `@template-communiques-presse-detail--default`
+- Remove `.text-uppercase` class in `@template-communiques-presse-detail--alternate`
 
 ## Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
