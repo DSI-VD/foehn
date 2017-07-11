@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ## Changed
+- `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
 - Add `.vd-content` class in `@template--2-col-nav`
 - Add `.vd-content` class in `@template--2-col`
