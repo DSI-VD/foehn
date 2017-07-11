@@ -4,5 +4,10 @@
 // with non-<p> tags
 // https://github.com/DSI-VD/foehn/issues/235
 .vd-content {
-  max-width: $vd-content-max-width;
+  p,
+  p:not(.lead),
+  ul:not([class]),
+  ul.vd-list-links {
+    max-width: $vd-content-max-width;
+  }
 }

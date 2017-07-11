@@ -3,9 +3,18 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## Changed
+- Add `.vd-content` class in `@template--default`
+- Add `.vd-content` class in `@template--2-col-nav`
+- Add `.vd-content` class in `@template--2-col`
+- Add `.vd-content` class in `@template--domaines`
+- Add `.vd-content` class in `@template--homepage`
+- Add `.vd-content` class in `@template--news-detail`
+
 ## Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
 - Fix `@list-boxed` list items margin
+- Fix max length of paragraph and lists for pleasant reading
 
 ## [0.27.0] - 2017-07-05
 
