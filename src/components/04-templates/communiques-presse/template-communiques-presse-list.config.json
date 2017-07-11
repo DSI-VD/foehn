@@ -10,7 +10,7 @@
       "id": "search",
       "label": "Rechercher<span class=\"sr-only\"> les communiqués de presse</span>",
       "labelHidden": false,
-      "labelStyleModifier": "h5 d-block"
+      "labelStyleModifier": "h5 d-block mt-0"
     },
     "dates": {
       "from": {
