@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
+- Fix `@list-boxed` list items margin
 
 ## [0.27.0] - 2017-07-05
 
