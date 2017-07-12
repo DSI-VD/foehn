@@ -18,6 +18,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change text in `@domains-list`
 - Add `.mt-0` class for '@input--default' in `@template-communiques-presse-list--default`
 
+## Added
+- Add error 404 page `@error--default`
+- Add error 500 page `@error--500`
+
 ## Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
 - Fix `@list-boxed` list items margin
