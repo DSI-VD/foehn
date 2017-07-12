@@ -3,7 +3,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## Changed
+### Changed
 - `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
 - Add `.vd-content` class in `@template--2-col-nav`
@@ -18,7 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change text in `@domains-list`
 - Add `.mt-0` class for '@input--default' in `@template-communiques-presse-list--default`
 
-## Fix
+### Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
 - Fix `@list-boxed` list items margin
 - Fix max length of paragraph and lists for pleasant reading
