@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove content of the `<aside>` in `@template-communiques-presse-detail--alternate`
 - Change text in `@domains-list`
 - Add `.mt-0` class for '@input--default' in `@template-communiques-presse-list--default`
+- Change HTML structure of `@footer--default` and `@footer--securise` to fix logo positioning in IE
 
 ### Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
