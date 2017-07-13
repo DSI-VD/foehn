@@ -52,37 +52,64 @@ h6 {
 
 /**
  * Make the headings smaller on desktop
+ *
+ * 1. Light header keep their original font-size.
+ *    Not using `:not()` because of IE11
  */
 @include media-breakpoint-up(md) {
   .vd-text-md-small {
     .h1,
     h1 {
       font-size: $font-size-h1 * 0.8;
+
+      &.vd-heading-light {
+        font-size: $font-size-h1; /* [1] */
+      }
     }
 
     .h2,
     h2 {
       font-size: $font-size-h2 * 0.8;
+
+      &.vd-heading-light {
+        font-size: $font-size-h2; /* [1] */
+      }
     }
 
     .h3,
     h3 {
       font-size: $font-size-h3 * 0.8;
+
+      &.vd-heading-light {
+        font-size: $font-size-h3; /* [1] */
+      }
     }
 
     .h4,
     h4 {
       font-size: $font-size-h4 * 0.8;
+
+      &.vd-heading-light {
+        font-size: $font-size-h4; /* [1] */
+      }
     }
 
     .h5,
     h5 {
       font-size: $font-size-h5 * 0.8;
+
+      &.vd-heading-light {
+        font-size: $font-size-h5; /* [1] */
+      }
     }
 
     .h6,
     h6 {
       font-size: $font-size-h6 * 0.8;
+
+      &.vd-heading-light {
+        font-size: $font-size-h6; /* [1] */
+      }
     }
 
     font-size: $small-font-size;
