@@ -24,6 +24,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change HMTL structure of `@social-icons` in `@actualite`
 - Change HMTL structure of `@social-icons` in `@template-communiques-presse-detail`
 
+### Added
+- Add error 404 page `@error--default`
+- Add error 500 page `@error--500`
+
 ### Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
 - Fix light headers `.vd-heading-light` not affected by `.vd-text-md-small` 
