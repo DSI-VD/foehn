@@ -23,6 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
+- Fix light headers `.vd-heading-light` not affected by `.vd-text-md-small` 
 - Fix `@list-boxed` list items margin
 - Fix max length of paragraph and lists for pleasant reading
 
