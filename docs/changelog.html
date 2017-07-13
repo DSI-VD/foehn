@@ -91,17 +91,29 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Add <code>.vd-content</code> class in <a href="../components/detail/template--news-detail"><code>@template--news-detail</code></a></li>
 <li>Remove <code>.text-uppercase</code> class in <a href="../components/detail/template-communiques-presse-detail--default"><code>@template-communiques-presse-detail--default</code></a></li>
 <li>Remove <code>.text-uppercase</code> class in <a href="../components/detail/template-communiques-presse-detail--alternate"><code>@template-communiques-presse-detail--alternate</code></a></li>
+<li>Make <a href="../components/detail/nav"><code>@nav</code></a> text bigger by removing <code>.small</code> class</li>
 <li>Remove content of the <code>&lt;aside&gt;</code> in <a href="../components/detail/template-communiques-presse-detail--default"><code>@template-communiques-presse-detail--default</code></a></li>
 <li>Remove content of the <code>&lt;aside&gt;</code> in <a href="../components/detail/template-communiques-presse-detail--alternate"><code>@template-communiques-presse-detail--alternate</code></a></li>
 <li>Change text in <a href="../components/detail/domains-list"><code>@domains-list</code></a></li>
 <li>Add <code>.mt-0</code> class for ‘@input–default’ in <a href="../components/detail/template-communiques-presse-list--default"><code>@template-communiques-presse-list--default</code></a></li>
 <li>Change HTML structure of <a href="../components/detail/footer--default"><code>@footer--default</code></a> and <a href="../components/detail/footer--securise"><code>@footer--securise</code></a> to fix logo positioning in IE</li>
+<li>Add <code>mt-0</code> class on <a href="../components/detail/teaser-small--alt"><code>@teaser-small--alt</code></a>‘s heading</li>
+<li>Change HMTL structure of <a href="../components/detail/social-icons"><code>@social-icons</code></a> in <a href="../components/detail/news-detail"><code>@news-detail</code></a></li>
+<li>Change HMTL structure of <a href="../components/detail/social-icons"><code>@social-icons</code></a> in <a href="../components/detail/actualite"><code>@actualite</code></a></li>
+<li>Change HMTL structure of <a href="../components/detail/social-icons"><code>@social-icons</code></a> in <a href="../components/detail/template-communiques-presse-detail"><code>@template-communiques-presse-detail</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add error 404 page <a href="../components/detail/error--default"><code>@error--default</code></a></li>
+<li>Add error 500 page <a href="../components/detail/error--500"><code>@error--500</code></a></li>
 </ul>
 <h3 id="fix">Fix</h3>
 <ul>
 <li>Fix <a href="../components/detail/theme--default"><code>@theme--default</code></a> now extends a <a href="../components/detail/template--2-col"><code>@template--2-col</code></a> template</li>
+<li>Fix light headers <code>.vd-heading-light</code> not affected by <code>.vd-text-md-small</code> </li>
 <li>Fix <a href="../components/detail/list-boxed"><code>@list-boxed</code></a> list items margin</li>
 <li>Fix max length of paragraph and lists for pleasant reading</li>
+<li>Fix focus style being inconsistent across browsers</li>
 </ul>
 <h2 id="-0-27-0-2017-07-05"><a href="https://github.com/DSI-VD/foehn/compare/v0.26.1...v0.27.0">0.27.0</a> - 2017-07-05</h2>
 <h3 id="changed">Changed</h3>
@@ -5833,6 +5845,70 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 
 
             </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-error">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Error</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/error--default" data-pjax>
+                <span>404</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/error--500" data-pjax>
+                <span>500</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
