@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `.vd-content` class in `@template--news-detail`
 - Remove `.text-uppercase` class in `@template-communiques-presse-detail--default`
 - Remove `.text-uppercase` class in `@template-communiques-presse-detail--alternate`
+- Make `@nav` text bigger by removing `.small` class
 - Remove content of the `<aside>` in `@template-communiques-presse-detail--default`
 - Remove content of the `<aside>` in `@template-communiques-presse-detail--alternate`
 - Change text in `@domains-list`
