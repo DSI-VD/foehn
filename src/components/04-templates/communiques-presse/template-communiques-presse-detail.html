@@ -26,9 +26,7 @@
 
       {% include '@lead' %}
 
-      <div class="text-center mt-2">
-        {% render '@social-icons' %}
-      </div>
+      {% render '@social-icons', {titleModifier: 'sr-only', styleModifier: 'text-center mb-1'}, true %}
 
       {% block main %}
       {% render '@paragraph' %}

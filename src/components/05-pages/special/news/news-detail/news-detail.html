@@ -3,9 +3,9 @@
 
   {% render '@lead' %}
 
-  <div class="text-center mt-2">
-    {% render '@social-icons' %}
-  </div>
+
+  {% render '@social-icons', {titleModifier: 'text-center', styleModifier: 'text-center mb-1'}, true %}
+
 
   {% render '@figure', medias.image, true %}
 
