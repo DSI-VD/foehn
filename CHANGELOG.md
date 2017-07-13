@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change text in `@domains-list`
 - Add `.mt-0` class for '@input--default' in `@template-communiques-presse-list--default`
 - Change HTML structure of `@footer--default` and `@footer--securise` to fix logo positioning in IE
+- Add `mt-0` class on `@teaser-small--alt`'s heading
 
 ### Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
