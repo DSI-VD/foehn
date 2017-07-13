@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change HMTL structure of `@social-icons` in `@actualite`
 - Change HMTL structure of `@social-icons` in `@template-communiques-presse-detail`
 - Show heading of `@social-icons` in `@actualite`
+- Hide heading of `@social-icons` in `@template-communiques-presse-detail--default`
 
 ## Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
