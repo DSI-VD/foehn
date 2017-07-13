@@ -23,6 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@theme--default` now extends a `@template--2-col` template
 - Fix `@list-boxed` list items margin
 - Fix max length of paragraph and lists for pleasant reading
+- Fix focus style being inconsistent across browsers
 
 ## [0.27.0] - 2017-07-05
 
