@@ -62,7 +62,7 @@ module.exports = {
                         url: '#',
                     },
                     {
-                        page: 'autorités',
+                        page: 'Autorités',
                         url: '#',
                     },
                     {
@@ -82,7 +82,7 @@ module.exports = {
                         url: '#',
                     },
                     {
-                        page: 'autorités',
+                        page: 'Autorités',
                         url: '#',
                     },
                     {
