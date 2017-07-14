@@ -29,6 +29,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Add error 404 page `@error--default`
 - Add error 500 page `@error--500`
+- Add page `@news-list--categories`
 
 ### Fix
 - Fix `@theme--default` now extends a `@template--2-col` template
