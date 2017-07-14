@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.28.0] - 2017-07-14
+
 ### Changed
 - `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
@@ -1195,7 +1197,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.27.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.28.0...HEAD
+[0.28.0]: https://github.com/DSI-VD/foehn/compare/v0.27.0...v0.28.0
 [0.27.0]: https://github.com/DSI-VD/foehn/compare/v0.26.1...v0.27.0
 [0.26.1]: https://github.com/DSI-VD/foehn/compare/v0.26.0...v0.26.1
 [0.26.0]: https://github.com/DSI-VD/foehn/compare/v0.25.0...v0.26.0
