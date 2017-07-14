@@ -72,5 +72,29 @@ module.exports = {
                 ],
             },
         },
+        {
+            name: 'categories',
+            context: {
+                pageTitle: 'Categorie: Agriculture',
+                breadcrumb: [
+                    {
+                        page: 'vd.ch',
+                        url: '#',
+                    },
+                    {
+                        page: 'autorités',
+                        url: '#',
+                    },
+                    {
+                        page: 'Service des automobiles et de la navigation',
+                        url: '#',
+                    },
+                    {
+                        page: 'Actualité',
+                        url: '#',
+                    },
+                ],
+            },
+        },
     ],
 };
