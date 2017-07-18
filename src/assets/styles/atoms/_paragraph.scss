@@ -10,3 +10,15 @@
     max-width: $vd-content-max-width;
   }
 }
+
+/**
+ * Make headings look like normal text
+ */
+.p {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-normal;
+  margin-top: 0;
+  margin-bottom: $spacer;
+}
