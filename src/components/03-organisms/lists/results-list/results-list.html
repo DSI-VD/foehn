@@ -1,0 +1,8 @@
+<ol class="list-unstyled">
+  {% for result in list %}
+  <li>
+    <h3 class="p mb-0"><a href="{{ result.url }}">{{ result.title }}</a></h3>
+    <p>{{ result.excerpt }}</p>
+  </li>
+  {% endfor %}
+</ol>

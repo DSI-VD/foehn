@@ -1,0 +1,9 @@
+{
+  "context": {
+    "pageTitle": "Résultats de recherche",
+    "results": {
+      "prestations": "@theme--default.prestations",
+      "pages": "@results-list.list"
+    }
+  }
+}
