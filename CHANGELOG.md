@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix link color in `@highlight`
+
 ## [0.28.0] - 2017-07-14
 
 ### Changed
