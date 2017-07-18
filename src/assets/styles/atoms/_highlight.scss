@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+/**
+ * Highlight visually content
+ *
+ * 1. Make link accessible
+ */
 .vd-highlight {
   padding: ($spacer * 2) ($spacer * 3);
   background: $brand-inverse;
@@ -29,4 +34,15 @@
     color: $vd-primary-lighter;
   }
   /* stylelint-enable */
+
+  a {
+    &,
+    &:visited {
+      color: $white; /* [1] */
+    }
+
+    &:focus {
+      color: $body-color; /* [1] */
+    }
+  }
 }
