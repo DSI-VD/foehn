@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Add `.p` syle to make headings look like paragraph
+- Add `@results-list` organim
+- Add `@search` page
 
 ## [0.28.0] - 2017-07-14
 
