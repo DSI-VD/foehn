@@ -1,6 +1,7 @@
 {% extends '@template--2-col' %}
 {% block main %}
-  <h2>10 préstations trouvés</h2>
+{% render '@search-form--default' %}
+  <h2>10 préstations trouvées</h2>
   <div class="vd-bg-pattern-green p-1 mb-1">
     {% render '@list-boxed', prestations %}
   </div>
@@ -9,20 +10,12 @@
   {% render '@pagination' %}
 {% endblock %}
 {% block aside %}
-  <h2 class="vd-heading-light">Vous ne trouvez pas votre information ?</h2>
-  <p>Comment puis je vous aider ?</p>
-  <p>
-    {% render '@button--default', { text: 'Contact' }, true %}
-  </p>
-  <h2 class="vd-heading-light">Trouver une prestation</h2>
+  <h2>Vous ne trouvez pas votre information ?</h2>
+  <p>Comment pouvons-nous vous aider ?</p>
   <p>
     {% render '@button--default', { text: 'Tous les thèmes' }, true %}
   </p>
-  <h2 class="vd-heading-light">Les plus visités</h2>
-  <ul class="vd-list-links">
-    <li><a href="#0">Inscription au chômage</a></li>
-    <li><a href="#0">Formulaire d'indemnisation</a></li>
-    <li><a href="#0">Vaud Tax 2017</a></li>
-    <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-  </ul>
+  <p>
+    {% render '@button--default', { text: 'Nous écrire' }, true %}
+  </p>
 {% endblock %}
