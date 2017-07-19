@@ -2,6 +2,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+### Fix
 - Fix logo is visible in `@footer`
 
 ## [0.28.0] - 2017-07-14
