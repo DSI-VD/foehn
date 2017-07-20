@@ -4,6 +4,9 @@
     "results": {
       "prestations": "@theme--default.prestations",
       "pages": "@results-list.list"
+    },
+    "header": {
+      "searchForm": false
     }
   }
 }
