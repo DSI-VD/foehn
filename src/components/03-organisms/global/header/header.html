@@ -10,16 +10,18 @@
       </div>
 
     </div>
+    {% if searchForm %}
     <div class="row">
       <div class="col-md-5">
         {% include '@logo-etat' %}
       </div>
-      {% if searchForm %}
       <div class="col-md-5 offset-md-2">
         {% render '@search-form--default', { styleModifier: 'my-2' }, true %}
       </div>
-      {% endif %}
     </div>
+    {% else %}
+    {% include '@logo-etat' %}
+    {% endif %}
   </div>
 
   {% render '@nav-primary' %}
