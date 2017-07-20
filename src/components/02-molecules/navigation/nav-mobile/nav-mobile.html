@@ -21,7 +21,7 @@
           <a class="nav-link" href="#0">Contact</a>
         </li>
         <li class="nav-item vd-nav-item-secure">
-          <span class="fa fa-lock fa-lg" aria-hidden="true"></span>
+          <span class="vd-heading-light h6 mt-0"><span class="fa fa-lock fa-lg" aria-hidden="true"></span> Espace sécurisé</span>
           <a class="nav-link btn btn-primary vd-btn-chevron-r" href="../connexion">Accéder à l'espace sécurisé</a>
         </li>
       </ul>
@@ -41,12 +41,7 @@
       </ul>
     </div>
     <div class="dropdown-item bg-inverse">
-      <p class="text-white text-center mt-1 small">
-        Suivre vd.ch sur les réseaux sociaux
-      </p>
-
-      {% render '@social-icons' %}
-
+      {% render '@social-icons', { titleModifier: 'text-white text-center h6', title: 'Suivre vd.ch sur les réseaux sociaux', styleModifier: 'text-center mb-1' }, true %}
     </div>
   </nav>
 </div>
