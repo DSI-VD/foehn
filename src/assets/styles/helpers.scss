@@ -2,7 +2,29 @@
 
 // Background Helpers
 .vd-bg-pattern-gray {
-  @include vd-pattern-dotted($pattern-dotted-gray);
+  background-image:
+    linear-gradient(
+      45deg,
+      $vd-neutral-lighter 25%,
+      transparent 25%
+    ),
+    linear-gradient(
+      -45deg,
+      $vd-neutral-lighter 25%,
+      transparent 25%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 75%,
+      $vd-neutral-lighter 75%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75%,
+      $vd-neutral-lighter 75%
+    );
+  background-size: 2px 2px;
+  background-position: 0 0, 1px 0, 1px -1px, 0 1px;
 }
 
 .vd-bg-pattern-green-bright {
@@ -22,7 +44,18 @@
 }
 
 .vd-bg-pattern-bars-gray {
-  @include vd-pattern-dotted($pattern-bars-gray-02);
+  background-image:
+    linear-gradient(
+      45deg,
+      $vd-neutral-lighter 25%,
+      transparent 25%,
+      transparent 50%,
+      $vd-neutral-lighter 50%,
+      $vd-neutral-lighter 75%,
+      transparent 75%,
+      transparent
+    );
+  background-size: 4px 4px;
 }
 
 // Spacing helpers
