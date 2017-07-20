@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Fix logo is visible in `@footer`
+- Fix link color in `@highlight`
 
 ## [0.28.0] - 2017-07-14
 
