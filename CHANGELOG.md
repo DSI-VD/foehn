@@ -8,6 +8,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@results-list` organim
 - Add `@search` page
 
+### Fix
+- Fix logo is visible in `@footer`
+- Fix link color in `@highlight`
+- Fix `.vd-bg-pattern-gray` dotted pattern use CSS instead of background SVG. It's now IE8 compatible.
+- Fix `.vd-bg-pattern-bars-gray` striped pattern use CSS instead of background SVG. It's now IE8 compatible.
+
 ## [0.28.0] - 2017-07-14
 
 ### Changed
