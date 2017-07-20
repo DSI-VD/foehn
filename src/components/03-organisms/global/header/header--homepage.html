@@ -10,6 +10,7 @@
       </div>
 
     </div>
+    {% if searchForm %}
     <div class="row">
       <div class="col-md-5">
         {% render '@logo-etat--alternate' %}
@@ -18,6 +19,9 @@
         {% render '@search-form--default', { styleModifier: 'my-2' }, true %}
       </div>
     </div>
+    {% else %}
+    {% include '@logo-etat' %}
+    {% endif %}
   </div>
 
   {% render '@nav-primary',  {navOpen: true}, true %}
