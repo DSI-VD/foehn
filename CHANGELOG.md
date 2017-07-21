@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.28.1] - 2017-07-21
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organim
@@ -1208,7 +1210,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.28.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.28.1...HEAD
+[0.28.1]: https://github.com/DSI-VD/foehn/compare/v0.28.0...v0.28.1
 [0.28.0]: https://github.com/DSI-VD/foehn/compare/v0.27.0...v0.28.0
 [0.27.0]: https://github.com/DSI-VD/foehn/compare/v0.26.1...v0.27.0
 [0.26.1]: https://github.com/DSI-VD/foehn/compare/v0.26.0...v0.26.1
