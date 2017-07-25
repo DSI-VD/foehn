@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Default | Foehn</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../../assets/styles/vendors.css">
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:300,700" rel="stylesheet">
+  </head>
+  <body>
+
+    <ol class="list-unstyled">
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Site officiel du Canton de Vaud - VD.CH</a></h3>
+    <p>Informations officielles, présentation de l'institution (pouvoirs législatif, exécutif et judiciaire), informations...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Offres d'emploi dans l'administration - VD.CH</a></h3>
+    <p>L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton avec 39'000 collaborateur- trice-s et compte plus de 400...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Les impôts dans le canton de Vaud - VD.CH</a></h3>
+    <p>Nouveau - Formulaire de dénonciation spontanée. La loi prévoit une dénonciation spontanée non punissable pour le contribuable...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Offres d'emploi ACV - VD.CH</a></h3>
+    <p>L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton. Nous offrons aux plus de 39'000 collaborateur-trice-s de...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Service des automobiles et de la navigation - VD.CH</a></h3>
+    <p>Le Service des automobiles et de la navigation oeuvre au service de toute la population du canton de Vaud. Nos activités se...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Jours fériés et vacances scolaires 2017 - VD.CH</a></h3>
+    <p>Loi sur le personnel de l'Etat de <mark>Vaud</mark>. Art. 123. – Sont jours fériés : les dimanches, les 1er et 2 janvier, le...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Communiqués de l'Etat de Vaud - VD.CH</a></h3>
+    <p>Communiqués de l'Etat de <mark>Vaud</mark>. Cette page permet de retrouver tous les communiqués publiés depuis 2004 par le...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Postes vacants dans l'enseignement obligatoire - VD.CH</a></h3>
+    <p>Enseignant-e spécialisé-e et aide à l'intégration. Lieu de travail : 1530 Payerne; Enseignant de discipline académique (ALL)...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Service des affaires culturelles - VD.CH</a></h3>
+    <p>Bienvenue sur la page d'accueil du Service des affaires culturelles de l'Etat de <mark>Vaud</mark>. Le menu de navigation en...</p>
+  </li>
+  
+  <li>
+    <h3 class="p mb-0"><a href="#">Autorités - VD.CH</a></h3>
+    <p>6 juil. 2017 ... Logo du Canton de <mark>Vaud</mark>. Thèmes · Autorités · Annuaire. Chercher : ... Nouvel organigramme de...</p>
+  </li>
+  
+</ol>
+
+
+    <!-- CCWEB-10102 test typo -->
+    <div class="container bg-info text-white fixed-bottom">
+      <h2 class="h4 mt-1">Test des polices</h2>
+      <div class="row">
+        <div class="col-sm">
+          <p>Les polices sont actuellement testées. Ce bouton est provisoire.</p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-font">Changer la police</button>
+          <p>Choix: <span class="vd-toggle-font__selection">1</span></p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-blur">Presbytie</button>
+        </div>
+      </div>
+    </div>
+    <!-- /CCWEB-10102 -->
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="../../assets/scripts/vendors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+
+    <!-- CCWEB-10102 test typo -->
+    <script>
+
+    $(".vd-toggle-blur").click(function() {
+      $("html").toggleClass("vd-blur");
+    });
+
+    $(".vd-toggle-font").click(function() {
+      $("html").toggleClass("vd-alternate-font");
+
+      var text = $('.vd-toggle-font__selection').text();
+      $('.vd-toggle-font__selection').text(
+        text == "1" ? "2" : "1");
+    });
+    </script>
+    <!-- /CCWEB-10102 -->
+
+    <script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:400,400i,700,700i', 'Roboto+Slab:300,700']
+    }
+  });
+</script>
+
+  </body>
+</html>
+
