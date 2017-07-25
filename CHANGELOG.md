@@ -3,12 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## [0.28.1] - 2017-07-21
-
 ### Added
 - Add `.p` syle to make headings look like paragraph
-- Add `@results-list` organim
+- Add `@results-list` organism
 - Add `@search` page
+
+## [0.28.1] - 2017-07-21
 
 ### Fix
 - Fix logo is visible in `@footer`
