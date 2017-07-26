@@ -98,9 +98,9 @@ a.btn {
   &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
 }
 .vd-btn-pagination-l {
-  position: relative;
+  position: absolute;
   padding-left: $spacer * 1.5;
-
+  left:0;
   &:before {
     content: '';
     display: inline-block;
@@ -117,15 +117,16 @@ a.btn {
     @include vd-background-image-icon($vd-chevron-left, $link-color);
   }
   &:hover {
+    text-decoration: underline;
     &:before{
       @include vd-background-image-icon($vd-chevron-left, $link-hover-color);
     }
   }
 }
 .vd-btn-pagination-r {
-  position: relative;
+  position: absolute;
   padding-right: $spacer * 1.5;
-
+  right:0;
   &:after {
     content: '';
     display: inline-block;
@@ -139,10 +140,10 @@ a.btn {
     background-size: 100% 100%;
     pointer-events: none;
     user-select: none;
-
     @include vd-background-image-icon($vd-chevron-right, $link-color);
   }
   &:hover {
+    text-decoration: underline;
     &:after{
       @include vd-background-image-icon($vd-chevron-right, $link-hover-color);
     }

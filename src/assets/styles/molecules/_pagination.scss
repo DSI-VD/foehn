@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+/**
+ * pagination numbers
+ */
+.vd-pagination{
+  width:100%;
+  position: relative;
+  text-align: center;
+  ul{
+    display: inline-block;
+    li{
+      display: inline-block;
+      a{
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
