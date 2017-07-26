@@ -1,8 +1,17 @@
 <nav>
   <h3 class="sr-only">Pagination</h3>
   <ul class="list-unstyled d-flex justify-content-start flex-wrap mb-0">
-    {% if previous %}<li class="pr-1"><a href="{{ previous.url }}" class="btn btn-secondary vd-btn-chevron-l">{{ previous.text }}</a></li>{% endif %}
-    {% if next %}<li class="ml-auto"><a href="{{ next.url }}" class="btn btn-primary vd-btn-chevron-r">{{ next.text }}</a></li>{% endif %}
+    {% if previous %}<li class="pr-1"><a href="{{ previous.url }}" class="btn vd-btn-pagination-l">{{ previous.text }}</a></li>{% endif %}
+    <li class="ml-auto"><a href="#" class="btn">1</a></li>
+    <li class="ml-auto"><a href="#" class="btn">2</a></li>
+    <li class="ml-auto"><a href="#" class="btn">3</a></li>
+    <li class="ml-auto"><a href="#" class="btn">4</a></li>
+    <li class="ml-auto"><a href="#" class="btn">5</a></li>
+    <li class="ml-auto"><a href="#" class="btn">6</a></li>
+    <li class="ml-auto"><a href="#" class="btn">...</a></li>
+    <li class="ml-auto"><a href="#" class="btn">55</a></li>
+
+    {% if next %}<li class="ml-auto"><a href="{{ next.url }}" class="btn vd-btn-pagination-r">{{ next.text }}</a></li>{% endif %}
     {% if submit %}<li class="ml-auto">{% render '@button--submit' %}</li>{% endif %}
   </ul>
 </nav>

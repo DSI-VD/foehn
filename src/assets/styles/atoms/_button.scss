@@ -97,7 +97,57 @@ a.btn {
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
   &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
 }
+.vd-btn-pagination-l {
+  position: relative;
+  padding-left: $spacer * 1.5;
 
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $spacer * 1.5;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    pointer-events: none;
+    user-select: none;
+    @include vd-background-image-icon($vd-chevron-left, $link-color);
+  }
+  &:hover {
+    &:before{
+      @include vd-background-image-icon($vd-chevron-left, $link-hover-color);
+    }
+  }
+}
+.vd-btn-pagination-r {
+  position: relative;
+  padding-right: $spacer * 1.5;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $spacer * 1.5;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    pointer-events: none;
+    user-select: none;
+
+    @include vd-background-image-icon($vd-chevron-right, $link-color);
+  }
+  &:hover {
+    &:after{
+      @include vd-background-image-icon($vd-chevron-right, $link-hover-color);
+    }
+  }
+}
 .vd-btn-chevron-l {
   position: relative;
   padding-left: $spacer * 1.5;
