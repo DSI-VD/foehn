@@ -92,12 +92,12 @@ function clean() {
  * Deploy
  */
 function deploy() {
-  // Push contents of build folder to `gh-pages` branch
+    // Push contents of build folder to `gh-pages` branch
     return gulp.src(`${paths.build}/**/*`)
-    .pipe(ghPages({
-        force: true,
-        remoteUrl: 'https://github.com/DSI-VD/foehn.git',
-    }));
+        .pipe(ghPages({
+            force: true,
+            remoteUrl: 'https://github.com/DSI-VD/foehn.git',
+        }));
 }
 
 /**
@@ -105,11 +105,11 @@ function deploy() {
  */
 function styles() {
     return gulp.src([`${paths.src}/assets/styles/main.scss`, `${paths.src}/assets/styles/styleguide.scss`])
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss(processors))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(`${paths.dest}/assets/styles`));
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss(processors))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
 
 /**
@@ -120,13 +120,13 @@ function lintstyles() {
         `${paths.src}/assets/styles/**/*.s+(a|c)ss`,
         `!${paths.src}/assets/styles/bootstrap-variables.scss`,
     ])
-     .pipe(stylelint({
-         failAfterError: false,
-         reporters: [{
-             formatter: 'string',
-             console: true,
-         }],
-     }));
+        .pipe(stylelint({
+            failAfterError: false,
+            reporters: [{
+                formatter: 'string',
+                console: true,
+            }],
+        }));
 }
 
 /**
@@ -134,11 +134,11 @@ function lintstyles() {
  */
 function stylesVendors() {
     return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
-   .pipe(sourcemaps.init())
-   .pipe(postcss(processors))
-   .pipe(rename('vendors.css'))
-   .pipe(sourcemaps.write('./'))
-   .pipe(gulp.dest(`${paths.dest}/assets/styles/`));
+        .pipe(sourcemaps.init())
+        .pipe(postcss(processors))
+        .pipe(rename('vendors.css'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(`${paths.dest}/assets/styles/`));
 }
 
 /**
@@ -149,7 +149,7 @@ function fonts() {
         `${paths.src}/assets/fonts/**/*`,
         'node_modules/font-awesome/fonts/**/*',
     ])
-    .pipe(gulp.dest(`${paths.dest}/assets/fonts/`));
+        .pipe(gulp.dest(`${paths.dest}/assets/fonts/`));
 }
 
 /**
@@ -159,10 +159,10 @@ function scriptsVendors() {
     return gulp.src([
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
     ])
-    .pipe(sourcemaps.init())
-    .pipe(rename('vendors.js'))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
+        .pipe(sourcemaps.init())
+        .pipe(rename('vendors.js'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
 /**
@@ -174,8 +174,8 @@ function scriptsVendors() {
  */
 function svg() {
     return gulp.src(`${paths.src}/assets/svg/**/*.svg`)
-    .pipe(imagemin())
-    .pipe(gulp.dest(`${paths.dest}/assets/svg`));
+        .pipe(imagemin())
+        .pipe(gulp.dest(`${paths.dest}/assets/svg`));
 }
 
 /**
@@ -187,8 +187,8 @@ function svg() {
  */
 function images() {
     return gulp.src(`${paths.src}/assets/img/**/*.*`)
-    .pipe(imagemin())
-    .pipe(gulp.dest(`${paths.dest}/assets/img`));
+        .pipe(imagemin())
+        .pipe(gulp.dest(`${paths.dest}/assets/img`));
 }
 
 /**
@@ -200,8 +200,8 @@ function lintscripts() {
         './*.js',
         '!node_modules/**',
     ])
-      .pipe(eslint())
-      .pipe(eslint.format());
+        .pipe(eslint())
+        .pipe(eslint.format());
 }
 
 /**
@@ -213,9 +213,9 @@ function lintscripts() {
  */
 function copyChangelog() {
     return gulp.src('CHANGELOG.md')
-    .pipe(replace(/`@(\S+)`/g, '[\`@$1\`](../components/detail/$1)'))
-    .pipe(rename('changelog.md'))
-    .pipe(gulp.dest(`${paths.src}/docs/`));
+        .pipe(replace(/`@(\S+)`/g, '[\`@$1\`](../components/detail/$1)'))
+        .pipe(rename('changelog.md'))
+        .pipe(gulp.dest(`${paths.src}/docs/`));
 }
 
 /**
