@@ -11,12 +11,12 @@ faker.locale = 'fr';
 for (let i = 0; i < peopleCount; i += 1) {
     peopleData.push({
         name: faker.name.findName(), // generate a random name
-        email: faker.internet.email(),  // generate a random email address
-        jobTitle: faker.name.jobTitle(),  // generate a random email address
-        jobType: faker.name.jobTitle(),  // generate a random email address
-        streetPrefix: faker.address.streetPrefix(),  // generate a random email address
-        street: faker.address.streetName(),  // generate a random email address
-        city: faker.address.city(),  // generate a random email address
+        email: faker.internet.email(), // generate a random email address
+        jobTitle: faker.name.jobTitle(), // generate a random email address
+        jobType: faker.name.jobTitle(), // generate a random email address
+        streetPrefix: faker.address.streetPrefix(), // generate a random email address
+        street: faker.address.streetName(), // generate a random email address
+        city: faker.address.city(), // generate a random email address
     });
 }
 
