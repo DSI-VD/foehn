@@ -32,9 +32,7 @@
 
   .nav-item {
     display: inline-flex;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 145px;
+    flex: 0 1 145px;
     margin-right: 2px;
     margin-bottom: 2px;
     white-space: nowrap;
