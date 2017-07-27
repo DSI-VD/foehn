@@ -22,9 +22,7 @@
  * width of an M).
  */
 .vd-form-flex__item {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
+  flex: 0 0 auto;
   margin-right: $spacer;
 
   &--2-char-width {
