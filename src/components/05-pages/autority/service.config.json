@@ -49,19 +49,34 @@
       "id": "actualites",
       "teasers": [
         {
-          "authors": false
+          "authors": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         },
         {
-          "authors": false
+          "authors": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         },
         {
-          "authors": false
+          "authors": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         },
         {
-          "authors": false
+          "authors": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         },
         {
-          "authors": false
+          "authors": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         }
       ]
     },
@@ -71,19 +86,31 @@
       "teasers": [
         {
           "authors": false,
-          "categories": false
+          "categories": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         },
         {
           "authors": false,
-          "categories": false
+          "categories": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         },
         {
           "authors": false,
-          "categories": false
+          "categories": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         },
         {
           "authors": false,
-          "categories": false
+          "categories": false,
+          "media": {
+            "styleModifier": "vd-w-md-50"
+          }
         }
       ]
     },
