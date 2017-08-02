@@ -2,6 +2,7 @@
 
 // Override normalize.css – because setting the font-family on `body` is not
 // specific enough for those tags
+
 button,
 input,
 optgroup,
@@ -97,58 +98,7 @@ a.btn {
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
   &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
 }
-.vd-btn-pagination-l {
-  position: absolute;
-  padding-left: $spacer * 1.5;
-  left:0;
-  &:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: $spacer * 1.5;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    pointer-events: none;
-    user-select: none;
-    @include vd-background-image-icon($vd-chevron-left, $link-color);
-  }
-  &:hover {
-    text-decoration: underline;
-    &:before{
-      @include vd-background-image-icon($vd-chevron-left, $link-hover-color);
-    }
-  }
-}
-.vd-btn-pagination-r {
-  position: absolute;
-  padding-right: $spacer * 1.5;
-  right:0;
-  &:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: $spacer * 1.5;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    pointer-events: none;
-    user-select: none;
-    @include vd-background-image-icon($vd-chevron-right, $link-color);
-  }
-  &:hover {
-    text-decoration: underline;
-    &:after{
-      @include vd-background-image-icon($vd-chevron-right, $link-hover-color);
-    }
-  }
-}
+
 .vd-btn-chevron-l {
   position: relative;
   padding-left: $spacer * 1.5;
