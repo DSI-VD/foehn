@@ -3,17 +3,7 @@
 .vd-nav-side {
   position: relative;
   padding: $spacer ($spacer / 2);
-  border-left: 1px solid $vd-primary-dark;
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: -1px;
-    width: 10px;
-    border-bottom: 1px solid $vd-primary-dark;
-  }
+  border: 1px solid $vd-neutral-light;
 
   .nav-link:focus,
   .nav-link:hover {
@@ -26,6 +16,15 @@
     ul {
       margin-top: ($spacer-y / 2);
       list-style-type: none;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $vd-neutral-light;
+      padding-bottom: 0.5rem;
+    }
+
+    &:not(:first-child) {
+      margin-top: 0.5rem;
     }
   }
 
