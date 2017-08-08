@@ -3,6 +3,7 @@
 .vd-nav-side {
   position: relative;
   padding: $spacer ($spacer / 2);
+  background: $vd-neutral-lighter;
   border: 1px solid $vd-neutral-light;
 
   .nav-link:focus,
