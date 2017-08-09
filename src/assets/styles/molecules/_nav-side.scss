@@ -2,17 +2,27 @@
 
 .vd-nav-side {
   position: relative;
-  padding: $spacer ($spacer / 2);
-  background: $vd-neutral-lighter;
-  border: 1px solid $vd-neutral-light;
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  border-top: 1px solid $vd-neutral-light;
+  border-bottom: 1px solid $vd-neutral-light;
+
+  @include media-breakpoint-down(md) {
+    margin-top: $spacer !important;
+  }
 
   .nav-link:focus,
   .nav-link:hover {
     text-decoration: underline;
   }
 
+  >.nav-item {
+    padding-right: ($spacer);
+    padding-left: ($spacer);
+  }
   .nav-item {
     margin-bottom: ($spacer-y / 2);
+
 
     ul {
       margin-top: ($spacer-y / 2);
