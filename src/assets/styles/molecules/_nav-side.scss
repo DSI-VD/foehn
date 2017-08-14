@@ -2,8 +2,6 @@
 
 .vd-nav-side {
   position: relative;
-  padding-top: $spacer;
-  padding-bottom: $spacer;
   border-top: 1px solid $vd-neutral-light;
   border-bottom: 1px solid $vd-neutral-light;
 
@@ -16,13 +14,20 @@
     text-decoration: underline;
   }
 
-  >.nav-item {
+  > .nav-item {
     padding-right: ($spacer);
     padding-left: ($spacer);
   }
-  .nav-item {
-    margin-bottom: ($spacer-y / 2);
 
+  .nav-item {
+    padding-top: 0.3rem;
+    padding-bottom: ($spacer-y / 2);
+
+    .nav-link {
+      padding-top: 0;
+      padding-bottom: 0;
+      color: $vd-primary-dark;
+    }
 
     ul {
       margin-top: ($spacer-y / 2);
@@ -31,11 +36,6 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid $vd-neutral-light;
-      padding-bottom: 0.5rem;
-    }
-
-    &:not(:first-child) {
-      margin-top: 0.5rem;
     }
   }
 
