@@ -5,6 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   margin: ($spacer / -2);
+  padding-left: 0;
+  width: 100%;
 
   .btn {
     display: inline-block;
@@ -25,7 +27,7 @@
     }
 
     @include media-breakpoint-up(sm) {
-      max-width: calc(33% - #{$spacer});
+      //max-width: calc(33% - #{$spacer});
     }
 
     @include vd-pattern-dotted($pattern-dotted-green);
