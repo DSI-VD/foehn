@@ -6,7 +6,6 @@
   flex-wrap: wrap;
   margin: ($spacer / -2);
   padding-left: 0;
-  width: 100%;
 
   .btn {
     display: inline-block;
@@ -21,7 +20,7 @@
     white-space: nowrap;
     box-shadow: 2px 2px 0 0 $black;
 
-    a{
+    a {
       text-decoration: none;
       color: $black;
     }
