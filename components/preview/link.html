@@ -23,11 +23,46 @@
     <a href="#">This is a text link</a>
 
 
+    <!-- CCWEB-10102 test typo -->
+    <div class="container bg-info text-white fixed-bottom">
+      <h2 class="h4 mt-1">Test des polices</h2>
+      <div class="row">
+        <div class="col-sm">
+          <p>Les polices sont actuellement testées. Ce bouton est provisoire.</p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-font">Changer la police</button>
+          <p>Choix: <span class="vd-toggle-font__selection">1</span></p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-blur">Presbytie</button>
+        </div>
+      </div>
+    </div>
+    <!-- /CCWEB-10102 -->
 
     <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="../../assets/scripts/vendors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+
+    <!-- CCWEB-10102 test typo -->
+    <script>
+
+    $(".vd-toggle-blur").click(function() {
+      $("html").toggleClass("vd-blur");
+    });
+
+    $(".vd-toggle-font").click(function() {
+      $("html").toggleClass("vd-alternate-font");
+
+      var text = $('.vd-toggle-font__selection').text();
+      $('.vd-toggle-font__selection').text(
+        text == "1" ? "2" : "1");
+    });
+    </script>
+    <!-- /CCWEB-10102 -->
+
     <script>
   WebFont.load({
     google: {

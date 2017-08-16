@@ -784,25 +784,25 @@
     <h2 class="vd-heading-light h4">Bases légales</h2>
     <ul class="vd-list-links">
   
-  <li><a href="https://gabriel.net">Dolorum harum explicabo sapiente provident perferendis ut possimus voluptatibus.</a></li>
+  <li><a href="http://théo.fr">Voluptatibus corporis culpa consectetur molestiae molestiae.</a></li>
   
-  <li><a href="http://yanis.net">Quasi doloremque culpa aut quasi nostrum id accusantium dignissimos.</a></li>
+  <li><a href="https://jules.org">Quidem repellendus similique sint distinctio.</a></li>
   
-  <li><a href="https://lisa.com">Illo rerum aut corrupti.</a></li>
+  <li><a href="http://raphaël.name">Eligendi consequatur distinctio et aut eum corrupti dolore repellat.</a></li>
   
-  <li><a href="https://mathéo.org">Vitae et aspernatur.</a></li>
+  <li><a href="https://anaïs.org">Sit enim et ut nisi et saepe explicabo aut.</a></li>
   
-  <li><a href="http://pauline.fr">Cupiditate beatae enim ducimus facere.</a></li>
+  <li><a href="https://juliette.info">Autem vitae delectus illo rerum fugiat.</a></li>
   
-  <li><a href="http://jeanne.com">Molestiae quam rem facilis sit voluptatibus commodi placeat libero.</a></li>
+  <li><a href="http://evan.com">Dolores delectus quo et dicta quia.</a></li>
   
-  <li><a href="http://mathéo.org">Distinctio architecto occaecati debitis rem excepturi.</a></li>
+  <li><a href="http://clara.name">Exercitationem et ducimus.</a></li>
   
-  <li><a href="https://lena.info">Nostrum quos atque quo fugit laborum libero tenetur corporis.</a></li>
+  <li><a href="http://jules.name">Magnam laudantium illo.</a></li>
   
-  <li><a href="http://maëlys.com">Eos non nemo odit necessitatibus.</a></li>
+  <li><a href="http://alexis.com">Magni enim voluptatum.</a></li>
   
-  <li><a href="http://alice.org">Sit id neque ut qui exercitationem.</a></li>
+  <li><a href="http://mathéo.com">Ipsam fuga consequatur tenetur illo.</a></li>
   
 </ul>
 
@@ -968,11 +968,46 @@
 
 
 
+    <!-- CCWEB-10102 test typo -->
+    <div class="container bg-info text-white fixed-bottom">
+      <h2 class="h4 mt-1">Test des polices</h2>
+      <div class="row">
+        <div class="col-sm">
+          <p>Les polices sont actuellement testées. Ce bouton est provisoire.</p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-font">Changer la police</button>
+          <p>Choix: <span class="vd-toggle-font__selection">1</span></p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-blur">Presbytie</button>
+        </div>
+      </div>
+    </div>
+    <!-- /CCWEB-10102 -->
 
     <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="../../assets/scripts/vendors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+
+    <!-- CCWEB-10102 test typo -->
+    <script>
+
+    $(".vd-toggle-blur").click(function() {
+      $("html").toggleClass("vd-blur");
+    });
+
+    $(".vd-toggle-font").click(function() {
+      $("html").toggleClass("vd-alternate-font");
+
+      var text = $('.vd-toggle-font__selection').text();
+      $('.vd-toggle-font__selection').text(
+        text == "1" ? "2" : "1");
+    });
+    </script>
+    <!-- /CCWEB-10102 -->
+
     <script>
   WebFont.load({
     google: {

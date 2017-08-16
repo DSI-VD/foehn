@@ -20,14 +20,49 @@
   </head>
   <body>
 
-    <ol><li>Voluptate aliquam quo sint aliquam repudiandae fugiat.</li><li>Officiis occaecati sequi.</li><li>Iusto magni occaecati voluptas rem labore.</li><li>Qui commodi omnis dolorem voluptatem nisi nisi hic ut fugiat.</li><li>Quisquam harum blanditiis alias.</li><li>Deleniti quia eum quia expedita debitis labore.</li><li>Sed qui nesciunt tenetur.</li><li>Aspernatur inventore architecto minima et recusandae.</li><li>Nulla voluptatem veritatis fugiat quas in quaerat aut non.</li><li>Illo neque modi in.</li></ol>
+    <ol><li>Incidunt laboriosam dignissimos ut modi asperiores sed.</li><li>Repellendus sint error perferendis.</li><li>Vero similique atque magni dolores voluptatum et et aut ducimus.</li><li>Repellendus odio qui non tenetur laboriosam illo voluptatibus.</li><li>Minima recusandae aliquid aut ullam non nihil rerum incidunt.</li><li>Et adipisci ut et minima.</li><li>Quod sed illo rerum maxime.</li><li>Dolore cupiditate dicta.</li><li>Ut id aperiam qui soluta laudantium debitis nisi enim et.</li><li>Et minus laboriosam non corporis rerum eum officia placeat.</li></ol>
 
 
+    <!-- CCWEB-10102 test typo -->
+    <div class="container bg-info text-white fixed-bottom">
+      <h2 class="h4 mt-1">Test des polices</h2>
+      <div class="row">
+        <div class="col-sm">
+          <p>Les polices sont actuellement testées. Ce bouton est provisoire.</p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-font">Changer la police</button>
+          <p>Choix: <span class="vd-toggle-font__selection">1</span></p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-primary vd-toggle-blur">Presbytie</button>
+        </div>
+      </div>
+    </div>
+    <!-- /CCWEB-10102 -->
 
     <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="../../assets/scripts/vendors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+
+    <!-- CCWEB-10102 test typo -->
+    <script>
+
+    $(".vd-toggle-blur").click(function() {
+      $("html").toggleClass("vd-blur");
+    });
+
+    $(".vd-toggle-font").click(function() {
+      $("html").toggleClass("vd-alternate-font");
+
+      var text = $('.vd-toggle-font__selection').text();
+      $('.vd-toggle-font__selection').text(
+        text == "1" ? "2" : "1");
+    });
+    </script>
+    <!-- /CCWEB-10102 -->
+
     <script>
   WebFont.load({
     google: {
