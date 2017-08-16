@@ -21,6 +21,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - complete refactoring of pagination component `@pagination` 
 
 
+### Changed
+- remove attribute `title` from link in `@teaser`
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
