@@ -17,6 +17,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.28.3] - 2017-08-16
 
+### Changed
+- complete refactoring of pagination component `@pagination` 
+
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
