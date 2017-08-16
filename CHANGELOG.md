@@ -24,6 +24,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - remove attribute `title` from link in `@teaser`
 
+## Changed
+- add `.access-nav` to `@access-nav`
+- CSS changes
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
