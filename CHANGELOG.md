@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Move `@publish-time` after headings in `@template--news-detail`
+- Remove class `.vd-text-green` in `@publish-time`
+
+### Changed
 - Change link in button in `@template-communiques-presse-detail--default`
 
 ### Added
