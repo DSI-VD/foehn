@@ -3,9 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-### Fix
-- move publish time after h1
-- remove class vd-text-green to publish time <p>
+### Changed
+- Move `@publish-time` after headings in `@template--news-detail`
+- Remove class `.vd-text-green` in `@publish-time`
 
 ## [0.28.2] - 2017-08-16
 
