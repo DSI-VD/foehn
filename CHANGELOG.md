@@ -3,6 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- move publish time after h1
+- remove class vd-text-green to publish time <p>
+
+## [0.28.2] - 2017-08-16
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
