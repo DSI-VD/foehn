@@ -5,9 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Move `@publish-time` after headings in `@template--news-detail`
+- Correction orthographe interne à foehn composant `@search`
 - Remove class `.vd-text-green` in `@publish-time`
-
-### Changed
 - Change link in button in `@template-communiques-presse-detail--default`
 
 ### Added
