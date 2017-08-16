@@ -12,6 +12,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove class `.vd-text-green` in `@publish-time`
 - Change link in button in `@template-communiques-presse-detail--default`
 
+### Changed
+- Change style of `@teaser` in `@service`
+
+## [0.28.3] - 2017-08-16
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
