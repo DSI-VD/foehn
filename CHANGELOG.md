@@ -4,6 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Added
+- Add media parameter to JSON file
+- "media": {
+    "styleModifier": "vd-w-md-50"
+}
+
+## [0.28.2] - 2017-08-16
+
+### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
 - Add `@search` page
