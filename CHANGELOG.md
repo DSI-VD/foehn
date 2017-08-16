@@ -4,10 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Add media parameter to JSON file (05-pages/autority/service.config.json)
-- "media": {
-    "styleModifier": "vd-w-md-50"
-}
+- Change style of `@teaser` in `@service`
 
 ## [0.28.3] - 2017-08-16
 
