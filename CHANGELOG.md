@@ -2,7 +2,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- "reset search" button to reset search filters after a fist choice. 
 
+ 
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
