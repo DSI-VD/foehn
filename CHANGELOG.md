@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### changed
+- tranform authority links into a list (ul -> li)
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
