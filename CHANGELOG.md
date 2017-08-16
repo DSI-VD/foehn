@@ -2,6 +2,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- add "first" to `nav-side.config.json` for first element
+- moddified `@nav-side`
+- CSS changes
 
 ### Added
 - Add `.p` syle to make headings look like paragraph
