@@ -9,7 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
     "styleModifier": "vd-w-md-50"
 }
 
-## [0.28.2] - 2017-08-16
+## [0.28.3] - 2017-08-16
 
 ### Added
 - Add `.p` syle to make headings look like paragraph
