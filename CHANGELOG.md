@@ -3,6 +3,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Correction orthographe interne à foehn composant `@search`
+
+## [0.28.4] - 2017-07-21
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
