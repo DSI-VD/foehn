@@ -2,6 +2,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+## Changed
+- add `.access-nav` to `@access-nav`
 
 ### Added
 - Add `.p` syle to make headings look like paragraph
