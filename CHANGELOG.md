@@ -35,6 +35,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - tranform authority links into a list (ul -> li)
 
 ### Added
+- "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
 - Add `@search` page
