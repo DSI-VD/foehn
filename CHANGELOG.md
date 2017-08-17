@@ -28,6 +28,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add `.access-nav` to `@access-nav`
 - CSS changes
 
+### Changed
+- add aria-hidden="true" to secure header icon `@header--securise`
+
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
