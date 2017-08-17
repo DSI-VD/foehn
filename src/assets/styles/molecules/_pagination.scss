@@ -12,7 +12,7 @@
 
     @include media-breakpoint-down(sm) {
       padding-left: 0;
-      left:-10px;
+      left: -10px;
     }
 
     &:before {
@@ -52,7 +52,7 @@
 
     @include media-breakpoint-down(sm) {
       padding-right: 0;
-      right:-10px;
+      right: -10px;
     }
 
     &:after {
