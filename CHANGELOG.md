@@ -2,11 +2,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-### Added
-- "reset search" button to reset search filters after a fist choice. 
 
- 
 ### Added
+- "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
 - Add `@search` page
