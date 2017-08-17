@@ -1,8 +1,8 @@
 <nav>
-  <ul class="nav flex-column vd-nav-side">
+  <ul class="nav flex-column vd-nav-side mb-1">
     {% for item in items %}
     <li class="nav-item">
-      <a class="nav-link{% if item.active %} active{% endif %}" href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.name }}</a>
+      <a class="nav-link{% if item.active %} active{% endif %}  {% if item.first %} h4 mt-0{% endif %}" href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.name }}</a>
       {% if item.items %}
         <ul>
           {% for item in item.items %}
