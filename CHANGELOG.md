@@ -3,10 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Changed
+- add "first" to `nav-side.config.json` for first element
+- moddified `@nav-side`
 - remove attribute `title` from link in `@teaser` (end of page)
-
-
-### Changed
 - Move `@publish-time` after headings in `@template--news-detail`
 - Correction orthographe interne à foehn composant `@search`
 - Remove class `.vd-text-green` in `@publish-time`
