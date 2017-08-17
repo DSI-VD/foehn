@@ -31,6 +31,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add aria-hidden="true" to secure header icon `@header--securise`
 
 
+### changed
+- tranform authority links into a list (ul -> li)
+
 ### Added
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
