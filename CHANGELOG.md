@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Change the structure of `@nav-mobile`
+
 ## [0.28.1] - 2017-07-21
 
 ### Fix
