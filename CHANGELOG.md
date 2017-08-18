@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Changed
+- add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
+
+
+### Changed
 - add "first" to `nav-side.config.json` for first element
 - moddified `@nav-side`
 - remove attribute `title` from link in `@teaser` (end of page)
