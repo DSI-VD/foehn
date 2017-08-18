@@ -44,6 +44,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@results-list` organism
 - Add `@search` page
 
+### Changed
+- Change the structure of `@nav-mobile`
+
 ## [0.28.1] - 2017-07-21
 
 ### Fix
