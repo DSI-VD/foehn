@@ -2,50 +2,30 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-### Changed
-- add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
-
 
 ### Changed
-- add "first" to `nav-side.config.json` for first element
-- moddified `@nav-side`
-- remove attribute `title` from link in `@teaser` (end of page)
+- Add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
+- Add "first" to `nav-side.config.json` for first element
+- Moddified `@nav-side`
+- Remove attribute `title` from link in `@teaser` (end of page)
 - Move `@publish-time` after headings in `@template--news-detail`
 - Correction orthographe interne à foehn composant `@search`
 - Remove class `.vd-text-green` in `@publish-time`
 - Change link in button in `@template-communiques-presse-detail--default`
-
-### Changed
 - Change style of `@teaser` in `@service`
-
-## [0.28.3] - 2017-08-16
-
-### Changed
-- complete refactoring of pagination component `@pagination` 
-
-
-### Changed
-- remove attribute `title` from link in `@teaser`
-
-## Changed
-- add `.access-nav` to `@access-nav`
+- Complete refactoring of pagination component `@pagination`
+- Remove attribute `title` from link in `@teaser`
+- Add `.access-nav` to `@access-nav`
 - CSS changes
-
-### Changed
-- add aria-hidden="true" to secure header icon `@header--securise`
-
-
-### changed
-- tranform authority links into a list (ul -> li)
+- Add `aria-hidden="true"` to secure header icon `@header--securise`
+- Tranform authority links into a list (`ul` -> `li`)
+- Change the structure of `@nav-mobile`
 
 ### Added
 - "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
 - Add `@search` page
-
-### Changed
-- Change the structure of `@nav-mobile`
 
 ## [0.28.1] - 2017-07-21
 
