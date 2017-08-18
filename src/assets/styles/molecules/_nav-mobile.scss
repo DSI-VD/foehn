@@ -44,9 +44,11 @@
 
   .nav-item {
     flex: 1 1 50%;
-    margin-top: $spacer;
+    margin-top: $spacer / 2;
     margin-bottom: 0;
-    padding: 0 $spacer;
+    padding-right: $spacer;
+    padding-left: $spacer;
+    padding-bottom: $spacer / 2;
     border-bottom: 1px solid $white;
     font-size: $font-size-lg;
   }
