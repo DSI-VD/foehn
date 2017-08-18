@@ -68,8 +68,8 @@
   <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu<span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></button>
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
-    <h2>Navigation mobile</h2>
-    <div class="dropdown-item pt-2 pb-1 text-center">
+    <h2 class="sr-only">Navigation mobile</h2>
+    <div class="dropdown-item pt-2 text-center">
       <a class="btn btn-primary vd-btn-chevron-r" href="../domaines">Tous les thèmes</a>
     </div>
     <div class="dropdown-item px-0 pb-0">
@@ -87,13 +87,12 @@
           <a class="nav-link" href="#0">Contact</a>
         </li>
         <li class="nav-item vd-nav-item-secure">
-          <span class="fa fa-lock fa-lg" aria-hidden="true"></span>
-          <a class="nav-link btn btn-primary vd-btn-chevron-r" href="../connexion">Accéder à l'espace sécurisé</a>
+          <a class="nav-link btn btn-primary vd-btn-chevron-r" href="../connexion"><span class="fa fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
         </li>
       </ul>
     </div>
-    <div class="dropdown-item">
-      <p>Découvrir</p>
+    <div class="dropdown-item px-0 pb-0">
+      <h2 class="vd-heading-light h6 text-center mt-1 mb-0">Découvrir</h2>
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="#0">International</a>
@@ -107,12 +106,8 @@
       </ul>
     </div>
     <div class="dropdown-item bg-inverse">
-      <p class="text-white text-center mt-1">
-        <small>Suivre vd.ch sur les réseaux sociaux</small>
-      </p>
-
-      <h2 class="vd-heading-light h4 mb-1">Partager la page</h2>
-<ul class="list-inline vd-social-icons">
+      <h2 class="vd-heading-light h4 mb-1 text-white text-center h6">Suivre vd.ch sur les réseaux sociaux</h2>
+<ul class="list-inline vd-social-icons text-center mb-1">
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#"><span class="fa fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
   </li>
@@ -132,7 +127,6 @@
     <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
   </li>
 </ul>
-
 
     </div>
   </nav>
@@ -320,7 +314,7 @@
           <div class="row">
             <div class="col-6">
               <fieldset>
-  <legend class="h5">Publié du</legend><div class="vd-form-flex">
+  <legend class="h5 mt-0">Publié du</legend><div class="vd-form-flex">
     <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
   <label for="fromDatesDay" class="sr-only">Jour</label><input class="form-control" type="number" id="fromDatesDay" name="testInput" value="" pattern="[0-9]*" min="1" max="31" size="2" placeholder="JJ">
 </div>
@@ -339,7 +333,7 @@
             </div>
             <div class="col-6">
               <fieldset>
-  <legend class="h5">au</legend><div class="vd-form-flex">
+  <legend class="h5 mt-0">au</legend><div class="vd-form-flex">
     <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
   <label for="toDatesDay" class="sr-only">Jour</label><input class="form-control" type="number" id="toDatesDay" name="testInput" value="" pattern="[0-9]*" min="1" max="31" size="2" placeholder="JJ">
 </div>
