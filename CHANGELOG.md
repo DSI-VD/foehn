@@ -2,37 +2,26 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.29.0]
+
 ### Changed
-- add "first" to `nav-side.config.json` for first element
-- moddified `@nav-side`
-- remove attribute `title` from link in `@teaser` (end of page)
+- Add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
+- Add "first" to `nav-side.config.json` for first element
+- Moddified `@nav-side`
+- Remove attribute `title` from link in `@teaser` (end of page)
 - Move `@publish-time` after headings in `@template--news-detail`
 - Correction orthographe interne à foehn composant `@search`
 - Remove class `.vd-text-green` in `@publish-time`
 - Change link in button in `@template-communiques-presse-detail--default`
-
-### Changed
 - Change style of `@teaser` in `@service`
-
-## [0.28.3] - 2017-08-16
-
-### Changed
-- complete refactoring of pagination component `@pagination` 
-
-
-### Changed
-- remove attribute `title` from link in `@teaser`
-
-## Changed
-- add `.access-nav` to `@access-nav`
+- Complete refactoring of pagination component `@pagination`
+- Remove attribute `title` from link in `@teaser`
+- Add `.access-nav` to `@access-nav`
 - CSS changes
-
-### Changed
-- add aria-hidden="true" to secure header icon `@header--securise`
-
-
-### changed
-- tranform authority links into a list (ul -> li)
+- Add `aria-hidden="true"` to secure header icon `@header--securise`
+- Tranform authority links into a list (`ul` -> `li`)
+- Change the structure of `@nav-mobile`
 
 ### Added
 - "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
@@ -1242,7 +1231,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.28.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.29.0...HEAD
+[0.29.0]: https://github.com/DSI-VD/foehn/compare/v0.28.1...v0.29.0
 [0.28.1]: https://github.com/DSI-VD/foehn/compare/v0.28.0...v0.28.1
 [0.28.0]: https://github.com/DSI-VD/foehn/compare/v0.27.0...v0.28.0
 [0.27.0]: https://github.com/DSI-VD/foehn/compare/v0.26.1...v0.27.0
