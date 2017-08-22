@@ -7,6 +7,7 @@ bower_components
 .idea
 tmp/
 dist/
+.swp
 
 # changelog is ignored because it's copied from ./CHANGELOG.md
 src/docs/changelog.md
