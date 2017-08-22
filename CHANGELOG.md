@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.29.0]
+
 ### Changed
 - Add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
 - Add "first" to `nav-side.config.json` for first element
@@ -1229,7 +1231,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.28.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.29.0...HEAD
+[0.29.0]: https://github.com/DSI-VD/foehn/compare/v0.28.1...v0.29.0
 [0.28.1]: https://github.com/DSI-VD/foehn/compare/v0.28.0...v0.28.1
 [0.28.0]: https://github.com/DSI-VD/foehn/compare/v0.27.0...v0.28.0
 [0.27.0]: https://github.com/DSI-VD/foehn/compare/v0.26.1...v0.27.0
