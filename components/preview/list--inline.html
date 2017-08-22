@@ -20,49 +20,14 @@
   </head>
   <body>
 
-    <ul class="list-inline"><li class=list-inline-item>Quaerat porro ratione et.</li><li class=list-inline-item>Hic aperiam in.</li><li class=list-inline-item>Ullam consequatur nihil mollitia adipisci recusandae consequatur.</li><li class=list-inline-item>Ut iste nihil quidem modi accusantium.</li><li class=list-inline-item>Exercitationem voluptas cupiditate voluptatem eligendi.</li><li class=list-inline-item>Soluta saepe quia laboriosam et velit dolorem enim asperiores earum.</li><li class=list-inline-item>Qui aperiam sed blanditiis quia hic ipsam.</li><li class=list-inline-item>Officia libero minus quia.</li><li class=list-inline-item>Ut earum voluptates eum modi officia.</li><li class=list-inline-item>Et reprehenderit mollitia tenetur.</li></ul>
+    <ul class="list-inline"><li class=list-inline-item>Sed voluptate optio voluptas laboriosam deserunt aut ea eius modi.</li><li class=list-inline-item>Provident ut reprehenderit placeat aliquam dolore modi.</li><li class=list-inline-item>Amet eligendi et.</li><li class=list-inline-item>Nostrum quasi enim qui iure deserunt autem voluptatem repellat.</li><li class=list-inline-item>Quos voluptatem ut.</li><li class=list-inline-item>Ut reprehenderit debitis omnis corporis quis.</li><li class=list-inline-item>Quo commodi rerum suscipit explicabo reiciendis.</li><li class=list-inline-item>Enim ipsam voluptatem fugiat.</li><li class=list-inline-item>Nesciunt et laboriosam recusandae nostrum eveniet.</li><li class=list-inline-item>Et atque impedit occaecati.</li></ul>
 
 
-    <!-- CCWEB-10102 test typo -->
-    <div class="container bg-info text-white fixed-bottom">
-      <h2 class="h4 mt-1">Test des polices</h2>
-      <div class="row">
-        <div class="col-sm">
-          <p>Les polices sont actuellement testées. Ce bouton est provisoire.</p>
-        </div>
-        <div class="col-sm">
-          <button class="btn btn-primary vd-toggle-font">Changer la police</button>
-          <p>Choix: <span class="vd-toggle-font__selection">1</span></p>
-        </div>
-        <div class="col-sm">
-          <button class="btn btn-primary vd-toggle-blur">Presbytie</button>
-        </div>
-      </div>
-    </div>
-    <!-- /CCWEB-10102 -->
 
     <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="../../assets/scripts/vendors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-
-    <!-- CCWEB-10102 test typo -->
-    <script>
-
-    $(".vd-toggle-blur").click(function() {
-      $("html").toggleClass("vd-blur");
-    });
-
-    $(".vd-toggle-font").click(function() {
-      $("html").toggleClass("vd-alternate-font");
-
-      var text = $('.vd-toggle-font__selection').text();
-      $('.vd-toggle-font__selection').text(
-        text == "1" ? "2" : "1");
-    });
-    </script>
-    <!-- /CCWEB-10102 -->
-
     <script>
   WebFont.load({
     google: {

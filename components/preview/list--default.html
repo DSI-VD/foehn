@@ -20,49 +20,14 @@
   </head>
   <body>
 
-    <ul><li>Qui adipisci soluta distinctio quae pariatur non eos.</li><li>Et impedit quis tenetur doloribus adipisci sed numquam facilis minima.</li><li>Molestiae adipisci alias rem corporis.</li><li>Veniam non vel dolore aut.</li><li>Consequatur illum et quia doloremque expedita nobis odio.</li><li>Rem deserunt natus minus similique harum asperiores ex.</li><li>At dignissimos iusto dolorem porro inventore expedita in.</li><li>Quam deleniti ut non quia molestiae id tenetur vitae quidem.</li><li>Perspiciatis dolorem neque.</li><li>Nulla repellat rerum sint quos.</li></ul>
+    <ul><li>Animi aliquid explicabo sequi mollitia sit et autem.</li><li>Vitae laboriosam repudiandae ratione et rerum.</li><li>Reprehenderit labore fuga accusantium rerum sint est.</li><li>Ullam molestiae velit non consequatur reiciendis.</li><li>Dolores amet nihil sed.</li><li>Veniam voluptatem asperiores vel hic reiciendis natus ratione dolores dolorem.</li><li>Quo deleniti id qui ut corporis.</li><li>Tempore mollitia iusto earum debitis quis eius dolore rerum deleniti.</li><li>Cumque nam debitis molestias est et totam.</li><li>Est consequuntur et voluptatem magni voluptatem suscipit repellat ipsam labore.</li></ul>
 
 
-    <!-- CCWEB-10102 test typo -->
-    <div class="container bg-info text-white fixed-bottom">
-      <h2 class="h4 mt-1">Test des polices</h2>
-      <div class="row">
-        <div class="col-sm">
-          <p>Les polices sont actuellement testées. Ce bouton est provisoire.</p>
-        </div>
-        <div class="col-sm">
-          <button class="btn btn-primary vd-toggle-font">Changer la police</button>
-          <p>Choix: <span class="vd-toggle-font__selection">1</span></p>
-        </div>
-        <div class="col-sm">
-          <button class="btn btn-primary vd-toggle-blur">Presbytie</button>
-        </div>
-      </div>
-    </div>
-    <!-- /CCWEB-10102 -->
 
     <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="../../assets/scripts/vendors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-
-    <!-- CCWEB-10102 test typo -->
-    <script>
-
-    $(".vd-toggle-blur").click(function() {
-      $("html").toggleClass("vd-blur");
-    });
-
-    $(".vd-toggle-font").click(function() {
-      $("html").toggleClass("vd-alternate-font");
-
-      var text = $('.vd-toggle-font__selection').text();
-      $('.vd-toggle-font__selection').text(
-        text == "1" ? "2" : "1");
-    });
-    </script>
-    <!-- /CCWEB-10102 -->
-
     <script>
   WebFont.load({
     google: {
