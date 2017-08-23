@@ -86,13 +86,11 @@ a.btn {
   &:after { @include vd-background-image-icon($vd-chevron-top, $vd-primary); }
 }
 
-
 .vd-btn-chevron-b {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
   &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
 }
-
 
 /**
  * Adds a cross icon inside the button
