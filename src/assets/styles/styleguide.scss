@@ -4,5 +4,6 @@
  */
 
 @import 'main-variables';
+@import "../../../node_modules/bootstrap/scss/functions";
 @import 'bootstrap-variables'; // override defaults bootstrap variables
 @import '../docs/styleguide';

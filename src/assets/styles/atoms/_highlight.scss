@@ -7,7 +7,7 @@
  */
 .vd-highlight {
   padding: ($spacer * 2) ($spacer * 3);
-  background: $brand-inverse;
+  background: theme-color("dark");
   color: $white;
 
   > h1,
