@@ -120,7 +120,7 @@ $theme-color-interval: 8% !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-rounded:            false !default;
-$enable-shadows:            false !default;
+$enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
