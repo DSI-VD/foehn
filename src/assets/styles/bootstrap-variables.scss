@@ -108,7 +108,8 @@ $theme-colors: (
   warning: $vd-warning,
   danger: $vd-danger,
   light: $gray-100,
-  dark: $vd-neutral-dark
+  dark: $vd-neutral-dark,
+  focus: $vd-focus
 ) !default;
 
 // Set a specific jump point for requesting color jumps
@@ -348,7 +349,7 @@ $input-btn-line-height-lg:  1.5 !default;
 
 $btn-font-weight:                $font-weight-bold !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
-$btn-focus-box-shadow:           0 0 0 3px rgba(theme-color("primary"), .25) !default;
+$btn-focus-box-shadow:           0 0 0 3px rgba(theme-color("focus"), .25) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
 
 $btn-link-disabled-color:        $gray-600 !default;
