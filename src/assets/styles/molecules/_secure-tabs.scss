@@ -1,8 +1,8 @@
 @charset 'UTF-8';
 
 .vd-nav-tabs-secure {
-  margin-bottom: ($spacer-y / 2);
-  padding-bottom: ($spacer-y / 2);
+  margin-bottom: ($spacer / 2);
+  padding-bottom: ($spacer / 2);
 
   @include media-breakpoint-up(md) {
     display: flex;
@@ -45,7 +45,7 @@
 
   .nav-link {
     flex: 1 1 auto;
-    padding: ($spacer-y / 2.5) $spacer-x ($spacer-y / 7);
+    padding: ($spacer / 2.5) $spacer ($spacer / 7);
     background: rgba($body-bg, 0.75);
     border: 2px solid transparent;
     text-align: center;

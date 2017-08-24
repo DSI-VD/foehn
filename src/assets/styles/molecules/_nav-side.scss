@@ -21,7 +21,7 @@
 
   .nav-item {
     padding-top: 0.3rem;
-    padding-bottom: ($spacer-y / 2);
+    padding-bottom: ($spacer / 2);
 
     .nav-link {
       padding-top: 0;
@@ -36,7 +36,7 @@
     }
 
     ul {
-      margin-top: ($spacer-y / 2);
+      margin-top: ($spacer / 2);
       list-style-type: none;
     }
 

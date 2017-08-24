@@ -22,7 +22,7 @@
 
   .dropdown-menu {
     width: 100%;
-    background: $gray-lightest;
+    background: $gray-100;
     border: 0;
   }
 
@@ -89,7 +89,7 @@
 
   &.open {
     .dropdown-toggle {
-      background: $gray-lightest;
+      background: $gray-100;
     }
   }
 }

@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+- Update to Bootstrap 4 Beta
+
 ## [0.29.0]
 
 ### Changed
