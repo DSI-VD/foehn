@@ -101,14 +101,14 @@ $colors: (
 ) !default;
 
 $theme-colors: (
-  primary: $blue,
+  primary: $vd-primary-dark,
   secondary: $gray-600,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
+  success: $vd-success,
+  info: $vd-info,
+  warning: $vd-warning,
+  danger: $vd-danger,
   light: $gray-100,
-  dark: $gray-800
+  dark: $vd-neutral-dark
 ) !default;
 
 // Set a specific jump point for requesting color jumps
