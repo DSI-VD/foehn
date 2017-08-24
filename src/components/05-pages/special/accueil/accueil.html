@@ -1,7 +1,7 @@
 {% extends '@template--homepage' %}
 {% block main %}
   <section class="hidden-md-up">
-    <h2 class="vd-heading-light h4 mb-2">Les plus visités</h2>
+    <h2 class="vd-heading-light h4 mb-4">Les plus visités</h2>
     <ul class="vd-list-links">
       <li><a href="#0">Inscription au chômage</a></li>
       <li><a href="#0">Formulaire d'indemnisation</a></li>
@@ -10,14 +10,14 @@
     </ul>
   </section>
 
-  <p class="hidden-md-up mb-2 text-center"><a href="../domaines" class="btn btn-primary vd-btn-chevron-r">Tous les thèmes</a></p>
+  <p class="hidden-md-up mb-4 text-center"><a href="../domaines" class="btn btn-primary vd-btn-chevron-r">Tous les thèmes</a></p>
 
   {% render '@teaser-list--homepage', news %}
 
 {% endblock %}
 
 {% block aside %}
-  <section class="mb-3 hidden-sm-down">
+  <section class="mb-5 hidden-sm-down">
     {% render '@twitter-feed' %}
   </section>
 
@@ -27,7 +27,7 @@
 {% endblock %}
 
 {% block contentSecondary %}
-<section class="mb-3">
+<section class="mb-5">
   <h2 class="vd-heading-light h4">Autorités</h2>
 
   {% render '@button-tiles', buttonTilesTop %}
