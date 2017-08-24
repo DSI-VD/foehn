@@ -1,11 +1,11 @@
 {% if (social) or (updateTime) %}
-<div class="container mt-3">
+<div class="container mt-5">
   {% if updateTime %}{% render '@update-time' %}{% endif %}
-  {%if social %}{%render '@social-icons', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-2 mb-1'}, true %}{% endif %}
+  {%if social %}{%render '@social-icons', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-4 mb-1'}, true %}{% endif %}
 </div>
 {% endif %}
 
-<footer{% if (not social) and (not updateTime) %} class="mt-3"{% endif %}>
+<footer{% if (not social) and (not updateTime) %} class="mt-5"{% endif %}>
 
   {% render '@button-back-to-top' %}
 

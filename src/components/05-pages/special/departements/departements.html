@@ -1,14 +1,14 @@
 {% extends '@template--default' %}
 {% block main %}
 
-<section class="mb-2">
+<section class="mb-4">
   <h2 class="sr-only">Toutes les autorités</h2>
 
   {% render '@button-tiles', buttonTilesTop %}
   {% render '@button-tiles', buttonTilesBottom %}
 </section>
 
-<section class="mb-2">
+<section class="mb-4">
   <h2 class="sr-only">Départements</h2>
 
   <ul class="list-unstyled">
@@ -18,7 +18,7 @@
       {% if autority.autorities %}
       <ul class="list-unstyled">
         {% for autority in autority.autorities %}
-        <li class="ml-3 my-1"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
+        <li class="ml-5 my-1"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; <span class="sr-only">Abbreviation: </span>{{ autority.abbr }}</small>{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -27,10 +27,10 @@
   </ul>
 </section>
 
-{% render '@separator--green-pattern-wide', {styleModifier: "my-3"}, true %}
+{% render '@separator--green-pattern-wide', {styleModifier: "my-5"}, true %}
 
-<section class="mb-2">
-  <h2 class="mb-2">Autres entités</h2>
+<section class="mb-4">
+  <h2 class="mb-4">Autres entités</h2>
 
   <ul class="list-unstyled">
   {% for autority in autoritiesAlt %}
@@ -39,7 +39,7 @@
       {% if autority.autorities %}
       <ul class="list-unstyled">
         {% for autority in autority.autorities %}
-        <li class="ml-3 my-1"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
+        <li class="ml-5 my-1"><a href="{% if autority.url %}{{autority.url}}{% else %}#{% endif %}" class="vd-link-invisible"><span class="lead">{{ autority.name }}</span>{% if autority.abbr %}<small> &dash; {{ autority.abbr }}</small>{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% endif %}
