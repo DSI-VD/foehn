@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Remove `vd-btn-chevron-r` et `vd-btn-chevron-l` from all buttons
+- Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
 
 ### Added
 - Add `.p` syle to make headings look like paragraph
