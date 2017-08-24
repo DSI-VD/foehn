@@ -250,8 +250,8 @@ $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 
 $font-weight-light: 300 !default;
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
@@ -265,7 +265,7 @@ $h6-font-size: 0.9rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   'Roboto Slab', $font-family-sans-serif !default;
-$headings-font-weight:   500 !default;
+$headings-font-weight:   700 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 
