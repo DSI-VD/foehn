@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
 - Update to Bootstrap 4 Beta
   - Update spacing utilities class
   - Replace `.btn-primary` class with `.btn-dark`
