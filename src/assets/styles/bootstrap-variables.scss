@@ -486,10 +486,12 @@ $custom-file-button-color:  $custom-file-color !default;
 $custom-file-button-bg:     $input-group-addon-bg !default;
 $custom-file-text: (
   placeholder: (
-    en: "Choose file..."
+    en: "Choose file...",
+    fr: "Choisir un fichier..."
   ),
   button-label: (
-    en: "Browse"
+    en: "Browse",
+    fr: "Parcourir"
   )
 ) !default;
 
