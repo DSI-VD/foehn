@@ -7,7 +7,10 @@ bower_components
 .idea
 tmp/
 dist/
-.swp
+
+# Ignore Vim temporary files
+*.swp
+*.swo
 
 # changelog is ignored because it's copied from ./CHANGELOG.md
 src/docs/changelog.md
