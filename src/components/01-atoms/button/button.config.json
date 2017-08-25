@@ -22,7 +22,7 @@
       {
         "name": "secondary",
         "context": {
-          "class": "btn btn-dark btn-secondary vd-btn-chevron-r"
+          "class": "btn btn-secondary vd-btn-chevron-r"
         }
       },
       {
