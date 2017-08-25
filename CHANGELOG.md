@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
+
 ## [0.29.0]
 
 ### Changed
