@@ -4,8 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 - Update to Bootstrap 4 Beta
-  - Update spacing utilities class 
+  - Update spacing utilities class
   - Replace `.btn-primary` class with `.btn-dark`
+  - Update grid offsetting
 
 ## [0.29.0]
 

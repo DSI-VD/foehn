@@ -31,3 +31,20 @@ Two size are included in spacing utilities.
 ## Update button class
 
 Replace `.btn-primary` class with `.btn-dark`.
+
+## Update grid uffsetting columns
+
+Update the grid to `drop` `push`, `pull`, and `offset` in favor of new `.order-` modifiers and margin utilities. Take a look at [the documentation](https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns).
+
+In foehn these change take place in two components.
+### Header
+Use `.ml-auto` to push the search-form on the right.
+```html
+{% view '@header' %}
+```
+
+### Header homepage
+Use `.ml-auto` to push the search-form on the right.
+```html
+{% view '@header--homepage' %}
+```
