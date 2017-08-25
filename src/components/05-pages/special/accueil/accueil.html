@@ -1,6 +1,6 @@
 {% extends '@template--homepage' %}
 {% block main %}
-  <section class="hidden-md-up">
+  <section class="d-md-none">
     <h2 class="vd-heading-light h4 mb-4">Les plus visités</h2>
     <ul class="vd-list-links">
       <li><a href="#0">Inscription au chômage</a></li>
@@ -10,14 +10,14 @@
     </ul>
   </section>
 
-  <p class="hidden-md-up mb-4 text-center"><a href="../domaines" class="btn btn-dark">Tous les thèmes</a></p>
+  <p class="d-md-none mb-4 text-center"><a href="../domaines" class="btn btn-dark">Tous les thèmes</a></p>
 
   {% render '@teaser-list--homepage', news %}
 
 {% endblock %}
 
 {% block aside %}
-  <section class="mb-5 hidden-sm-down">
+  <section class="mb-5 d-none d-md-block">
     {% render '@twitter-feed' %}
   </section>
 

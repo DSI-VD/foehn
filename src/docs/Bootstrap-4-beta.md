@@ -48,3 +48,24 @@ Use `.ml-auto` to push the search-form on the right.
 ```html
 {% view '@header--homepage' %}
 ```
+
+## Update display property helpers
+
+Remove `.hidden-*` classes in favor of our newer `.d-*` [display utilities](https://getbootstrap.com/docs/4.0/utilities/display/).
+
+- Find: `hidden-(xxs|xs|sm|md|lg|xl)-up`
+- Replace: `d-$1-none`
+
+For the next class, you have to set the correct display property. Look at [the doc](https://getbootstrap.com/docs/4.0/utilities/display/) for more information.
+
+- Find: `hidden-xxs-down`
+- Replace `d-none d-xs-{display property}`
+
+- Find: `hidden-xs-down`
+- Replace `d-none d-sm-{display property}`
+
+- Find: `d-none hidden-sm-down`
+- Replace `d-none d-md-{display property}`
+
+- Find: `d-none hidden-md-down`
+- Replace `d-none d-lg-{display property}`
