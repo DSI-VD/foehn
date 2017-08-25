@@ -61,11 +61,14 @@ For the next class, you have to set the correct display property. Look at [the d
 - Find: `hidden-xxs-down`
 - Replace `d-none d-xs-{display property}`
 
+
 - Find: `hidden-xs-down`
 - Replace `d-none d-sm-{display property}`
 
-- Find: `d-none hidden-sm-down`
+
+- Find: `hidden-sm-down`
 - Replace `d-none d-md-{display property}`
 
-- Find: `d-none hidden-md-down`
+
+- Find: `hidden-md-down`
 - Replace `d-none d-lg-{display property}`
