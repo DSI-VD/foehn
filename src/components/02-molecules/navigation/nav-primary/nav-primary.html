@@ -2,11 +2,11 @@
   <div class="vd-nav-primary-toggle">
     <div class="container">
       <div class="text-center text-md-left">
-        <button type="button" class="hidden-sm-down btn btn-sm btn-dark {% if navOpen %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if navOpen %}true{% else %}false{% endif %}"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
+        <button type="button" class="d-none d-md-inline-block btn btn-sm btn-dark {% if navOpen %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if navOpen %}true{% else %}false{% endif %}"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
       </div>
     </div>
   </div>
-  <div class="hidden-sm-down collapse {% if navOpen %}show {% endif %}clearfix" id="nav-primary-container">
+  <div class="d-none d-md-block collapse {% if navOpen %}show {% endif %}clearfix" id="nav-primary-container">
     <div class="vd-nav-primary-content">
       <div class="container">
         <div class="row">
