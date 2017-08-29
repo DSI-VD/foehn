@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Fix `@nav` is not hidden on mobile
+
 ## [0.30.0]
 
 ### Changed
