@@ -2,9 +2,9 @@
 title: "Upgrade Bootstrap 4 Beta"
 ---
 
-Foehn v0.29.0 use the Bootstrap alpha 6. Foehn v0.30.0 use the beta version.
+Foehn v0.29.0 used the Bootstrap alpha 6 version. Foehn v0.30.0 now use the beta version.
 
-Here are all the change you need to do to make the jump.
+Here are all the changes you need to make the jump.
 
 ## Update spacing utilities
 
@@ -32,18 +32,19 @@ Two size are included in spacing utilities.
 
 Replace `.btn-primary` class with `.btn-dark`.
 
-## Update grid uffsetting columns
+## Update grid offsetting columns
 
 Update the grid to `drop` `push`, `pull`, and `offset` in favor of new `.order-` modifiers and margin utilities. Take a look at [the documentation](https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns).
 
 In foehn these change take place in two components.
-### Header
+
+### [Header](http://dsi-vd.github.io/foehn/components/detail/header)
 Use `.ml-auto` to push the search-form on the right.
 ```html
 {% view '@header' %}
 ```
 
-### Header homepage
+### [Header homepage](http://dsi-vd.github.io/foehn/components/detail/header--homepage)
 Use `.ml-auto` to push the search-form on the right.
 ```html
 {% view '@header--homepage' %}
@@ -51,7 +52,7 @@ Use `.ml-auto` to push the search-form on the right.
 
 ## Update display property helpers
 
-Remove `.hidden-*` classes in favor of our newer `.d-*` [display utilities](https://getbootstrap.com/docs/4.0/utilities/display/).
+Remove `.hidden-*` classes in favor of the newer `.d-*` [display utilities](https://getbootstrap.com/docs/4.0/utilities/display/).
 
 - Find: `hidden-(xxs|xs|sm|md|lg|xl)-up`
 - Replace: `d-$1-none`
@@ -73,18 +74,18 @@ For the next class, you have to set the correct display property. Look at [the d
 - Find: `hidden-md-down`
 - Replace `d-none d-lg-{display property}`
 
-## Update navbar
+## Update [nav-horizontal](http://dsi-vd.github.io/foehn/components/detail/nav-horizontal)
 
 [Navbar](https://getbootstrap.com/docs/4.0/components/navbar/) have been
 updated.
-- `navbar-toggleable-*` class is replaced bay `navbar-expand`.
+- `.navbar-toggleable-*` class is replaced bay `.navbar-expand`.
 - The brand come before the toggle button.
 
 ```html
 {% view '@nav-horizontal' %}
 ```
 
-## Update Primary nav
+## Update [nav-primary](http://dsi-vd.github.io/foehn/components/detail/nav-primary)
 
 There's some comflicts with display (`.d-*`) and `.collapse` classes in `nav-primary` component.
 `.d-none` and `d-md-block` have to be moved on another `<div>`.
