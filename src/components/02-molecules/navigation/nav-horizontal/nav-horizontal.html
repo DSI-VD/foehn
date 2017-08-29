@@ -1,8 +1,8 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded{% if styleModifier %} {{ styleModifier }}{% endif %}">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md navbar-light bg-faded{% if styleModifier %} {{ styleModifier }}{% endif %}">
+  <span class="navbar-brand d-md-none">{{ title }}</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <span class="navbar-brand d-lg-none">{{ title }}</span>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       {% for item in items -%}

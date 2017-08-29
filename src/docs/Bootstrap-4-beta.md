@@ -72,3 +72,14 @@ For the next class, you have to set the correct display property. Look at [the d
 
 - Find: `hidden-md-down`
 - Replace `d-none d-lg-{display property}`
+
+## Update navbar
+
+[Navbar](https://getbootstrap.com/docs/4.0/components/navbar/) have been
+updated.
+- `navbar-toggleable-*` class is replaced bay `navbar-expand`.
+- The brand come before the toggle button.
+
+```html
+{% view '@nav-horizontal' %}
+```
