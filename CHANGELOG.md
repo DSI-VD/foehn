@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   - Replace `.btn-primary` class with `.btn-dark`
   - Update grid offsetting
   - Fix `@button-secondary` style by removing `.btn-dark` class
+  - Update navbar
 
 ## [0.29.0]
 
