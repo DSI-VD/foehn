@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove hamburger icon in `@nav-mobile`
+
 ### Fix
 - Fix `@nav` config
 
