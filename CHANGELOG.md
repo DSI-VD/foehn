@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.30.0]
+
 ### Changed
 - Remove hamburger icon in `@nav-mobile`
 - Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
@@ -1249,7 +1251,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.29.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.30.0...HEAD
+[0.30.0]: https://github.com/DSI-VD/foehn/compare/v0.29.0...v0.30.0
 [0.29.0]: https://github.com/DSI-VD/foehn/compare/v0.28.1...v0.29.0
 [0.28.1]: https://github.com/DSI-VD/foehn/compare/v0.28.0...v0.28.1
 [0.28.0]: https://github.com/DSI-VD/foehn/compare/v0.27.0...v0.28.0
