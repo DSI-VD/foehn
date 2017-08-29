@@ -1,10 +1,10 @@
 ---
-title: "Upgrade Bootstrap 4 Beta"
+title: "Upgrade to Bootstrap 4 Beta"
 ---
 
 Foehn v0.29.0 used the Bootstrap alpha 6 version. Foehn v0.30.0 now use the beta version.
 
-Here are all the changes you need to make the jump.
+Here are all the changes you need to do to make the jump.
 
 ## Update spacing utilities
 
