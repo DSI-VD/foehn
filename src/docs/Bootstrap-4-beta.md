@@ -83,3 +83,11 @@ updated.
 ```html
 {% view '@nav-horizontal' %}
 ```
+
+## Update Primary nav
+
+There's some comflicts with display (`.d-*`) and `.collapse` classes in `nav-primary` component.
+`.d-none` and `d-md-block` have to be moved on another `<div>`.
+```html
+{% view '@nav-primary' %}
+```
