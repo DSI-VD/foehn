@@ -153,11 +153,11 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4d6f84aaf71422e2934625ca140fb258-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-5"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-right"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-primary vd-btn-chevron-t"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Retour vers le haut de la page"</span>&gt;</span>Haut<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-dark vd-btn-chevron-t"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Retour vers le haut de la page"</span>&gt;</span>Haut<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -198,13 +198,13 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4d6f84aaf71422e2934625ca140fb258-panel-view">
     <code class="Code Code--lang-html">
         <pre>{% if (social) or (updateTime) %}
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-3"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5"</span>&gt;</span>
   {% if updateTime %}{% render '<a href="update-time">@update-time</a>' %}{% endif %}
-  {%if social %}{%render '<a href="social-icons">@social-icons</a>', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-2 mb-1'}, true %}{% endif %}
+  {%if social %}{%render '<a href="social-icons">@social-icons</a>', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-4 mb-1'}, true %}{% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 {% endif %}
 
-<span class="hljs-tag">&lt;<span class="hljs-name">footer{%</span> <span class="hljs-attr">if</span> (<span class="hljs-attr">not</span> <span class="hljs-attr">social</span>) <span class="hljs-attr">and</span> (<span class="hljs-attr">not</span> <span class="hljs-attr">updateTime</span>) %} <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">footer{%</span> <span class="hljs-attr">if</span> (<span class="hljs-attr">not</span> <span class="hljs-attr">social</span>) <span class="hljs-attr">and</span> (<span class="hljs-attr">not</span> <span class="hljs-attr">updateTime</span>) %} <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-5"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
 
   {% render '<a href="button-back-to-top">@button-back-to-top</a>' %}
 
@@ -5287,6 +5287,16 @@
 </div>
 
 
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/bootstrap-4-beta" data-pjax>
+                <span>Bootstrap 4 Beta</span>
+                
             </a>
         </li>
         

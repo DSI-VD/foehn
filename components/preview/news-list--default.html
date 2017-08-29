@@ -24,31 +24,31 @@
   <nav class="container fixed-top access-nav" aria-label="menu accessibilité">
   <ul class="list-unstyled mt-1">
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
       </li>
     </ul>
 </nav>
@@ -81,8 +81,8 @@
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
     <h2 class="sr-only">Navigation mobile</h2>
-    <div class="dropdown-item pt-2 pb-1 text-center">
-      <a class="btn btn-primary " href="../domaines">Tous les thèmes</a>
+    <div class="dropdown-item pt-4 text-center">
+      <a class="btn btn-dark" href="../domaines">Tous les thèmes</a>
     </div>
     <div class="dropdown-item px-0 pb-0">
       <ul class="nav">
@@ -99,7 +99,7 @@
           <a class="nav-link" href="#0">Contact</a>
         </li>
         <li class="nav-item vd-nav-item-secure">
-          <a class="nav-link btn btn-primary" href="../connexion"><span class="fa fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
+          <a class="nav-link btn btn-dark" href="../connexion"><span class="fa fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
         </li>
       </ul>
     </div>
@@ -132,10 +132,10 @@
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
   </li>
-  <li class="list-inline-item hidden-lg-up">
+  <li class="list-inline-item d-lg-none">
     <a class="vd-social-icon" href="#"><span class="fa fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
   </li>
-  <li class="list-inline-item hidden-md-down">
+  <li class="list-inline-item d-none d-lg-inline-block">
     <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
   </li>
 </ul>
@@ -156,8 +156,8 @@
 </a>
 
       </div>
-      <div class="col-md-5 offset-md-2">
-        <form class="input-group vd-search-form my-2" action="#" role="search">
+      <div class="col-md-5 ml-auto">
+        <form class="input-group vd-search-form my-4" action="#" role="search">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form" type="text" class="form-control" placeholder="Rechercher"  aria-describedby="search-form-label">
   <span class="input-group-btn">
@@ -173,13 +173,11 @@
   <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <div class="text-center text-md-left">
-        <button type="button" class="hidden-sm-down btn btn-sm btn-primary collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
-      </div>
+      <button type="button" class="d-none d-md-inline-block btn btn-sm btn-dark collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
     </div>
   </div>
-  <div class="hidden-sm-down collapse clearfix" id="nav-primary-container">
-    <div class="vd-nav-primary-content">
+  <div class="collapse clearfix" id="nav-primary-container">
+    <div class="vd-nav-primary-content d-none d-md-block">
       <div class="container">
         <div class="row">
           <nav class="col-md-8" id="nav-primary">
@@ -277,7 +275,7 @@
             </ul>
           </nav>
           <div class="col-md-4">
-            <h2 class="vd-heading-light h4 mt-3 mb-1">Les plus visités</h2>
+            <h2 class="vd-heading-light h4 mt-5 mb-1">Les plus visités</h2>
             <ul class="vd-list-links">
               <li><a href="#0">Inscription au chômage</a></li>
               <li><a href="#0">Formulaire d'indemnisation</a></li>
@@ -312,16 +310,16 @@
 </div>
 
 
-<main id="main" class="container mt-3 vd-content">
+<main id="main" class="container mt-5 vd-content">
   <h1 class="sr-only">Actualités</h1>
 
 
   
   <div class="row">
     
-    <article role="article" aria-label="We need to parse the back-end THX bus!" class="col-md-6">
+    <article role="article" aria-label="The IB array is down, program the optical application so we can transmit the USB driver!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://noa.name">We need to parse the back-end THX bus!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://célia.eu">The IB array is down, program the optical application so we can transmit the USB driver!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -331,8 +329,8 @@
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?55262"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?38771"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?38031">
-      <img src="http://lorempixel.com/360/240/?80564" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?70398"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?46666"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?37429">
+      <img src="http://lorempixel.com/360/240/?15177" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -340,20 +338,20 @@
   
   
   <p>
-    commodi nesciunt doloremque
+    In nam quia non. Odio nihil laborum odio veniam. Quae dolores qui ea mollitia aut veritatis. Error enim aut.
   </p>
   
   
   <p>
-    <a href="http://noa.name">Lire la suite<span class="sr-only"> de l'article We need to parse the back-end THX bus!</span></a>
+    <a href="http://célia.eu">Lire la suite<span class="sr-only"> de l'article The IB array is down, program the optical application so we can transmit the USB driver!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="parsing the bandwidth won't do anything, we need to program the digital XSS capacitor!" class="col-md-6">
+    <article role="article" aria-label="Try to bypass the SAS monitor, maybe it will program the optical microchip!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://sacha.info">parsing the bandwidth won't do anything, we need to program the digital XSS capacitor!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://camille.eu">Try to bypass the SAS monitor, maybe it will program the optical microchip!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -363,8 +361,8 @@
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?71446"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?73397"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?3511">
-      <img src="http://lorempixel.com/360/240/?24443" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?32969"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?89868"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?59656">
+      <img src="http://lorempixel.com/360/240/?65151" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -372,20 +370,23 @@
   
   
   <p>
-    sed voluptas debitis
+    Et veniam assumenda quasi incidunt temporibus.
+Ab sit aliquid pariatur nihil consequuntur perferendis.
+Nesciunt explicabo sit rerum officia voluptatum occaecati et voluptatem.
+Cum eos et exercitationem quam est consequatur non.
   </p>
   
   
   <p>
-    <a href="https://sacha.info">Lire la suite<span class="sr-only"> de l'article parsing the bandwidth won't do anything, we need to program the digital XSS capacitor!</span></a>
+    <a href="https://camille.eu">Lire la suite<span class="sr-only"> de l'article Try to bypass the SAS monitor, maybe it will program the optical microchip!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="We need to compress the digital GB matrix!" class="col-md-6">
+    <article role="article" aria-label="The SCSI protocol is down, program the bluetooth array so we can navigate the AI firewall!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://manon.fr">We need to compress the digital GB matrix!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://sacha.fr">The SCSI protocol is down, program the bluetooth array so we can navigate the AI firewall!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -395,8 +396,8 @@
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?38940"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?77675"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?83166">
-      <img src="http://lorempixel.com/360/240/?96244" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?71666"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?37532"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?24736">
+      <img src="http://lorempixel.com/360/240/?25221" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -404,20 +405,20 @@
   
   
   <p>
-    Nam a quo cupiditate molestiae repudiandae voluptas. Ex laborum blanditiis non iure rerum impedit accusamus animi deserunt. Ratione numquam quidem qui.
+    non alias pariatur
   </p>
   
   
   <p>
-    <a href="https://manon.fr">Lire la suite<span class="sr-only"> de l'article We need to compress the digital GB matrix!</span></a>
+    <a href="https://sacha.fr">Lire la suite<span class="sr-only"> de l'article The SCSI protocol is down, program the bluetooth array so we can navigate the AI firewall!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="The JSON pixel is down, navigate the solid state card so we can hack the SAS capacitor!" class="col-md-6">
+    <article role="article" aria-label="Try to synthesize the SCSI array, maybe it will input the multi-byte port!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://clara.com">The JSON pixel is down, navigate the solid state card so we can hack the SAS capacitor!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://sacha.fr">Try to synthesize the SCSI array, maybe it will input the multi-byte port!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -427,8 +428,8 @@
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?28949"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?21172"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?81035">
-      <img src="http://lorempixel.com/360/240/?17008" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?25440"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?22694"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?7236">
+      <img src="http://lorempixel.com/360/240/?80790" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -436,22 +437,20 @@
   
   
   <p>
-    Dolor minima voluptatem hic illo quia labore vitae. Molestiae consequatur fugit deserunt eaque sed debitis at et est. Qui beatae tenetur sit placeat fugit necessitatibus dolor ipsum.
- Sint autem perferendis quam omnis veniam omnis alias aut. Amet velit quibusdam et mollitia qui debitis dolorem eius. Aperiam vero architecto praesentium sit. Et sequi fuga sed delectus quo qui. Autem excepturi quod eveniet qui debitis explicabo fugiat minus sequi.
-...
+    ipsum ea molestiae
   </p>
   
   
   <p>
-    <a href="https://clara.com">Lire la suite<span class="sr-only"> de l'article The JSON pixel is down, navigate the solid state card so we can hack the SAS capacitor!</span></a>
+    <a href="https://sacha.fr">Lire la suite<span class="sr-only"> de l'article Try to synthesize the SCSI array, maybe it will input the multi-byte port!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="Use the haptic COM program, then you can transmit the optical firewall!" class="col-md-6">
+    <article role="article" aria-label="Try to transmit the ADP monitor, maybe it will override the haptic transmitter!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://alice.net">Use the haptic COM program, then you can transmit the optical firewall!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://mathis.fr">Try to transmit the ADP monitor, maybe it will override the haptic transmitter!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -461,8 +460,8 @@
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?2970"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?59832"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?66137">
-      <img src="http://lorempixel.com/360/240/?60316" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?4586"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?67903"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?8105">
+      <img src="http://lorempixel.com/360/240/?44978" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -470,23 +469,20 @@
   
   
   <p>
-    Mollitia qui explicabo dicta.
-Voluptatum molestias omnis iste numquam et aut id.
-Non non voluptatem aut impedit voluptate accusantium nulla.
-Itaque quas officiis quos aut assumenda saepe.
+    expedita
   </p>
   
   
   <p>
-    <a href="https://alice.net">Lire la suite<span class="sr-only"> de l'article Use the haptic COM program, then you can transmit the optical firewall!</span></a>
+    <a href="https://mathis.fr">Lire la suite<span class="sr-only"> de l'article Try to transmit the ADP monitor, maybe it will override the haptic transmitter!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="If we synthesize the firewall, we can get to the SQL monitor through the back-end AI feed!" class="col-md-6">
+    <article role="article" aria-label="You can't back up the capacitor without navigating the 1080p SCSI interface!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://noa.org">If we synthesize the firewall, we can get to the SQL monitor through the back-end AI feed!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://clara.info">You can't back up the capacitor without navigating the 1080p SCSI interface!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -496,8 +492,8 @@ Itaque quas officiis quos aut assumenda saepe.
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?24791"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?75583"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?97021">
-      <img src="http://lorempixel.com/360/240/?79729" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?28542"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?15820"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?399">
+      <img src="http://lorempixel.com/360/240/?40139" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -505,20 +501,20 @@ Itaque quas officiis quos aut assumenda saepe.
   
   
   <p>
-    explicabo
+    Corrupti beatae id eius. Et quia ducimus fuga autem rerum id dolorem. Magnam aliquid ipsam quam ipsa aperiam vitae velit possimus. Est doloremque mollitia expedita perspiciatis expedita facilis animi. Earum omnis esse quisquam quisquam ipsum eligendi reiciendis. Velit iste necessitatibus voluptate consequatur sed repudiandae repudiandae.
   </p>
   
   
   <p>
-    <a href="https://noa.org">Lire la suite<span class="sr-only"> de l'article If we synthesize the firewall, we can get to the SQL monitor through the back-end AI feed!</span></a>
+    <a href="http://clara.info">Lire la suite<span class="sr-only"> de l'article You can't back up the capacitor without navigating the 1080p SCSI interface!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can't hack the feed without navigating the neural SMS capacitor!" class="col-md-6">
+    <article role="article" aria-label="Use the cross-platform SMS alarm, then you can calculate the back-end bandwidth!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://léa.name">You can't hack the feed without navigating the neural SMS capacitor!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://baptiste.eu">Use the cross-platform SMS alarm, then you can calculate the back-end bandwidth!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -528,8 +524,8 @@ Itaque quas officiis quos aut assumenda saepe.
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?97067"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?8873"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?20242">
-      <img src="http://lorempixel.com/360/240/?45273" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?91817"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?18448"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?73970">
+      <img src="http://lorempixel.com/360/240/?2675" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -537,20 +533,20 @@ Itaque quas officiis quos aut assumenda saepe.
   
   
   <p>
-    est
+    doloribus tempore debitis
   </p>
   
   
   <p>
-    <a href="http://léa.name">Lire la suite<span class="sr-only"> de l'article You can't hack the feed without navigating the neural SMS capacitor!</span></a>
+    <a href="https://baptiste.eu">Lire la suite<span class="sr-only"> de l'article Use the cross-platform SMS alarm, then you can calculate the back-end bandwidth!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can't connect the transmitter without hacking the digital PCI microchip!" class="col-md-6">
+    <article role="article" aria-label="If we transmit the protocol, we can get to the SDD circuit through the mobile SDD application!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://lina.fr">You can't connect the transmitter without hacking the digital PCI microchip!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://maxime.name">If we transmit the protocol, we can get to the SDD circuit through the mobile SDD application!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -560,8 +556,8 @@ Itaque quas officiis quos aut assumenda saepe.
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?30600"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?14247"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?83859">
-      <img src="http://lorempixel.com/360/240/?15507" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?12851"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?18455"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?66558">
+      <img src="http://lorempixel.com/360/240/?41997" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -569,20 +565,20 @@ Itaque quas officiis quos aut assumenda saepe.
   
   
   <p>
-    Accusamus aut facilis mollitia non consequatur facilis unde fugit esse. Doloribus eum eos. Quod voluptas qui ea non.
+    Est porro quasi minus. Possimus doloremque aut. Id reiciendis eligendi quo velit qui dolore sunt. Dolorem perferendis impedit odit consequatur explicabo aut sed optio nam. Dignissimos et ea. Id similique id vero eius.
   </p>
   
   
   <p>
-    <a href="https://lina.fr">Lire la suite<span class="sr-only"> de l'article You can't connect the transmitter without hacking the digital PCI microchip!</span></a>
+    <a href="https://maxime.name">Lire la suite<span class="sr-only"> de l'article If we transmit the protocol, we can get to the SDD circuit through the mobile SDD application!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="The THX application is down, parse the auxiliary protocol so we can parse the SSL system!" class="col-md-6">
+    <article role="article" aria-label="We need to calculate the multi-byte TCP interface!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://nathan.fr">The THX application is down, parse the auxiliary protocol so we can parse the SSL system!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://rayan.com">We need to calculate the multi-byte TCP interface!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -592,8 +588,8 @@ Itaque quas officiis quos aut assumenda saepe.
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?26225"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?6584"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?58103">
-      <img src="http://lorempixel.com/360/240/?70572" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?14822"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?28831"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?68816">
+      <img src="http://lorempixel.com/360/240/?59518" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -601,20 +597,20 @@ Itaque quas officiis quos aut assumenda saepe.
   
   
   <p>
-    Non aliquam qui voluptatem ducimus vel illo nemo assumenda amet.
+    Quas ut vel hic consequatur debitis sint molestiae optio occaecati.
   </p>
   
   
   <p>
-    <a href="http://nathan.fr">Lire la suite<span class="sr-only"> de l'article The THX application is down, parse the auxiliary protocol so we can parse the SSL system!</span></a>
+    <a href="http://rayan.com">Lire la suite<span class="sr-only"> de l'article We need to calculate the multi-byte TCP interface!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="I'll navigate the primary THX system, that should driver the IB interface!" class="col-md-6">
+    <article role="article" aria-label="You can't quantify the array without calculating the haptic RAM circuit!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://sarah.info">I'll navigate the primary THX system, that should driver the IB interface!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://pierre.info">You can't quantify the array without calculating the haptic RAM circuit!</a></h3>
 
     <p class="small">
       <span class="sr-only">le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -624,8 +620,8 @@ Itaque quas officiis quos aut assumenda saepe.
   
   <figure class="figure">
   <a href="#"><picture class="figure-img">
-      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?9305"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?86304"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?61593">
-      <img src="http://lorempixel.com/360/240/?48917" class="img-fluid" alt="">
+      <source media="(min-width: 60em)" srcset="http://lorempixel.com/1600/1067/?79391"><source media="(min-width: 40em)" srcset="http://lorempixel.com/960/640/?2371"><source media="(min-width: 20em)" srcset="http://lorempixel.com/640/427/?82294">
+      <img src="http://lorempixel.com/360/240/?97968" class="img-fluid" alt="">
 </picture>
   </a>
 </figure>
@@ -633,12 +629,12 @@ Itaque quas officiis quos aut assumenda saepe.
   
   
   <p>
-    voluptas quisquam ut
+    quod
   </p>
   
   
   <p>
-    <a href="https://sarah.info">Lire la suite<span class="sr-only"> de l'article I'll navigate the primary THX system, that should driver the IB interface!</span></a>
+    <a href="http://pierre.info">Lire la suite<span class="sr-only"> de l'article You can't quantify the array without calculating the haptic RAM circuit!</span></a>
   </p>
   
 </article>
@@ -648,7 +644,7 @@ Itaque quas officiis quos aut assumenda saepe.
   <nav>
   <h3 class="sr-only">Pagination</h3>
   <div class="vd-pagination">
-    <a href="#" class="btn vd-btn-pagination-l"><span class="hidden-sm-down">Précédent</span>&nbsp;</a>
+    <a href="#" class="btn vd-btn-pagination-l"><span class="d-none d-md-inline-block">Précédent</span>&nbsp;</a>
       <ul class="list-unstyled mb-0">
         <li><a href="#" class="btn">1</a></li>
         <li><a href="#" class="btn">2</a></li>
@@ -656,7 +652,7 @@ Itaque quas officiis quos aut assumenda saepe.
         <li><a href="#" class="btn">...</a></li>
         <li><a href="#" class="btn">55</a></li>
       </ul>
-    <a href="#" class="btn vd-btn-pagination-r"><span class="hidden-sm-down">Suivant</span>&nbsp;</a>
+    <a href="#" class="btn vd-btn-pagination-r"><span class="d-none d-md-inline-block">Suivant</span>&nbsp;</a>
     
   </div>
 </nav>
@@ -666,10 +662,10 @@ Itaque quas officiis quos aut assumenda saepe.
 </main>
 
 
-<div class="container mt-3">
+<div class="container mt-5">
   
   <h2 class="vd-heading-light h4 mb-1 sr-only">Partager la page</h2>
-<ul class="list-inline vd-social-icons mt-2 mb-1">
+<ul class="list-inline vd-social-icons mt-4 mb-1">
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#"><span class="fa fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
   </li>
@@ -682,10 +678,10 @@ Itaque quas officiis quos aut assumenda saepe.
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
   </li>
-  <li class="list-inline-item hidden-lg-up">
+  <li class="list-inline-item d-lg-none">
     <a class="vd-social-icon" href="#"><span class="fa fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
   </li>
-  <li class="list-inline-item hidden-md-down">
+  <li class="list-inline-item d-none d-lg-inline-block">
     <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
   </li>
 </ul>
@@ -697,7 +693,7 @@ Itaque quas officiis quos aut assumenda saepe.
 
   <div class="container">
   <div class="text-right">
-    <a href="#" class="btn btn-sm btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <a href="#" class="btn btn-sm btn-dark vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
   </div>
 </div>
 

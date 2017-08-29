@@ -24,31 +24,31 @@
   <nav class="container fixed-top access-nav" aria-label="menu accessibilité">
   <ul class="list-unstyled mt-1">
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="1" href="#nav-primary" title="[Alt+1] Menu de navigation de la page">Menu de navigation de la page</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="2" href="#main" title="[Alt+2] Debut du contenu de la page">Début du contenu de la page</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="3" href="#" title="[Alt+3] Page de contact">Page de contact</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="4" href="#" title="[Alt+4] Plan du site du Canton de Vaud">Plan du site</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="5" href="#search-form" title="[Alt+5] Accès au champ de recherche">Accès au champ de recherche</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="6" href="#" title="[Alt+6] Accès à l'index thématique">Thèmes</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="7" href="#" title="[Alt+7] Accès à la navigation par autorités">Autorités</a>
       </li>
       <li>
-        <a class="sr-only sr-only-focusable btn btn-primary pt-0" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
+        <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="8" href="#" title="[Alt+8] Page d'aide pour les personnes en situation de handicap">Page d'aide pour les personnes en situation de handicap</a>
       </li>
     </ul>
 </nav>
@@ -81,8 +81,8 @@
 
   <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
     <h2 class="sr-only">Navigation mobile</h2>
-    <div class="dropdown-item pt-2 pb-1 text-center">
-      <a class="btn btn-primary " href="../domaines">Tous les thèmes</a>
+    <div class="dropdown-item pt-4 text-center">
+      <a class="btn btn-dark" href="../domaines">Tous les thèmes</a>
     </div>
     <div class="dropdown-item px-0 pb-0">
       <ul class="nav">
@@ -99,7 +99,7 @@
           <a class="nav-link" href="#0">Contact</a>
         </li>
         <li class="nav-item vd-nav-item-secure">
-          <a class="nav-link btn btn-primary" href="../connexion"><span class="fa fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
+          <a class="nav-link btn btn-dark" href="../connexion"><span class="fa fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
         </li>
       </ul>
     </div>
@@ -132,10 +132,10 @@
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
   </li>
-  <li class="list-inline-item hidden-lg-up">
+  <li class="list-inline-item d-lg-none">
     <a class="vd-social-icon" href="#"><span class="fa fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
   </li>
-  <li class="list-inline-item hidden-md-down">
+  <li class="list-inline-item d-none d-lg-inline-block">
     <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
   </li>
 </ul>
@@ -156,8 +156,8 @@
 </a>
 
       </div>
-      <div class="col-md-5 offset-md-2">
-        <form class="input-group vd-search-form my-2" action="#" role="search">
+      <div class="col-md-5 ml-auto">
+        <form class="input-group vd-search-form my-4" action="#" role="search">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form" type="text" class="form-control" placeholder="Rechercher"  aria-describedby="search-form-label">
   <span class="input-group-btn">
@@ -173,13 +173,11 @@
   <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <div class="text-center text-md-left">
-        <button type="button" class="hidden-sm-down btn btn-sm btn-primary collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
-      </div>
+      <button type="button" class="d-none d-md-inline-block btn btn-sm btn-dark collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
     </div>
   </div>
-  <div class="hidden-sm-down collapse clearfix" id="nav-primary-container">
-    <div class="vd-nav-primary-content">
+  <div class="collapse clearfix" id="nav-primary-container">
+    <div class="vd-nav-primary-content d-none d-md-block">
       <div class="container">
         <div class="row">
           <nav class="col-md-8" id="nav-primary">
@@ -277,7 +275,7 @@
             </ul>
           </nav>
           <div class="col-md-4">
-            <h2 class="vd-heading-light h4 mt-3 mb-1">Les plus visités</h2>
+            <h2 class="vd-heading-light h4 mt-5 mb-1">Les plus visités</h2>
             <ul class="vd-list-links">
               <li><a href="#0">Inscription au chômage</a></li>
               <li><a href="#0">Formulaire d'indemnisation</a></li>
@@ -314,7 +312,7 @@
 </div>
 
 
-<main id="main" class="container mt-3 vd-content">
+<main id="main" class="container mt-5 vd-content">
   <h1 class="sr-only">Template</h1>
 
 
@@ -337,10 +335,10 @@
 </main>
 
 
-<div class="container mt-3">
+<div class="container mt-5">
   
   <h2 class="vd-heading-light h4 mb-1 sr-only">Partager la page</h2>
-<ul class="list-inline vd-social-icons mt-2 mb-1">
+<ul class="list-inline vd-social-icons mt-4 mb-1">
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#"><span class="fa fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
   </li>
@@ -353,10 +351,10 @@
   <li class="list-inline-item">
     <a class="vd-social-icon" href="#"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
   </li>
-  <li class="list-inline-item hidden-lg-up">
+  <li class="list-inline-item d-lg-none">
     <a class="vd-social-icon" href="#"><span class="fa fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
   </li>
-  <li class="list-inline-item hidden-md-down">
+  <li class="list-inline-item d-none d-lg-inline-block">
     <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
   </li>
 </ul>
@@ -368,7 +366,7 @@
 
   <div class="container">
   <div class="text-right">
-    <a href="#" class="btn btn-sm btn-primary vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <a href="#" class="btn btn-sm btn-dark vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
   </div>
 </div>
 
