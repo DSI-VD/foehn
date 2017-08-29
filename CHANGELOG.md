@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Remove hamburger icon in `@nav-mobile`
+- Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
 
 ### Fix
 - Fix `@nav` config
