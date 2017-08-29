@@ -10,6 +10,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 - Fix `@nav` config
 
+### Remove
+- Remove `@page-title-banner-prestation`
+
 ## [0.29.0]
 
 ### Changed
