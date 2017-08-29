@@ -4,20 +4,12 @@
       "styleModifier": "hidden-sm-down",
       "items": [
         {
-          "name": "Autorité",
+          "name": "Autorités",
           "url": "#",
           "active": true
         },
         {
           "name": "Annuaire",
-          "url": "#"
-        },
-        {
-          "name": "Agenda",
-          "url": "#"
-        },
-        {
-          "name": "Contact",
           "url": "#"
         },
         {
