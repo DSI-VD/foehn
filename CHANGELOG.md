@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove hamburger icon in `@nav-mobile`
 - Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
 - Update to Bootstrap 4 Beta
   - Update spacing utilities class
@@ -12,6 +13,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   - Fix `@button-secondary` style by removing `.btn-dark` class
   - Update `@nav-horizontal`
   - Update `@primary-nav`
+
+### Fix
+- Fix `@nav` config
+
+### Remove
+- Remove unused varaints of headings
+- Remove `@page-title-banner-prestation`
 
 ## [0.29.0]
 
