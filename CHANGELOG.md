@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@nav` config
 
 ### Remove
+- Remove unused varaints of headings
 - Remove `@page-title-banner-prestation`
 
 ## [0.29.0]
