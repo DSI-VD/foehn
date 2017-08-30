@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Fix update spacing utilities `{property}{sides}-1` becomes `{property}{sides}-3`
+
 ## [0.31.0] - 2017-08-30
 
 ### Changed
