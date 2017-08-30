@@ -8,6 +8,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@nav-mobile` do not open
 - Fix the wrong scripts were included before the end of the `<body>` tag
 
+### Fix
+- Fix `@nav-mobile` positionning
+
 ## [0.30.0]
 
 ### Changed
