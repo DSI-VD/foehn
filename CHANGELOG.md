@@ -3,7 +3,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## [0.31.0]
+## [0.31.0] - 2017-08-30
 
 ### Changed
 - Fix `@nav` is not hidden on mobile
@@ -13,7 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 - Fix `@nav-mobile` positionning
 
-## [0.30.0]
+## [0.30.0] - 2017-08-29
 
 ### Changed
 - Remove hamburger icon in `@nav-mobile`
