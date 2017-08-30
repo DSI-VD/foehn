@@ -2,9 +2,18 @@
 title: "Upgrade to Bootstrap 4 Beta"
 ---
 
-Foehn v0.29.0 used the Bootstrap alpha 6 version. Foehn v0.30.0 now use the beta version.
+Foehn v0.29.0 used the Bootstrap alpha 6 version. Since v0.30.0, Foehn use the beta version of Bootstrap.
 
 Here are all the changes you need to do to make the jump.
+
+## Update scripts
+
+Update the scripts to inlcude before the `</body>` tag.
+
+```html
+{% view '@scripts-footer' %}
+{% view '@webfont-loading' %}
+```
 
 ## Update spacing utilities
 

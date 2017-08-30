@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Fix `@nav` is not hidden on mobile
+- Fix `@nav-mobile` do not open
+- Fix the wrong scripts were included before the end of the `<body>` tag
 
 ## [0.30.0]
 
