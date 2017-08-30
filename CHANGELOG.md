@@ -33,7 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove unused varaints of headings
 - Remove `@page-title-banner-prestation`
 
-## [0.29.0]
+## [0.29.0] - 2017-08-22
 
 ### Changed
 - Add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
