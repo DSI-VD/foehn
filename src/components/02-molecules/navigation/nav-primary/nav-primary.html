@@ -12,12 +12,12 @@
             <h2 class="sr-only">Navigation par thèmes</h2>
             <ul class="list-unstyled mb-0 row">
               {% for domain in domains.domains %}
-              {% render '@domain-item', {name:domain.name, styleModifier:'py-1 mb-0 col-md-6 col-lg-4', description:domain.description}, true %}
+              {% render '@domain-item', {name:domain.name, styleModifier:'py-3 mb-0 col-md-6 col-lg-4', description:domain.description}, true %}
               {% endfor %}
             </ul>
           </nav>
           <div class="col-md-4">
-            <h2 class="vd-heading-light h4 mt-5 mb-1">Les plus visités</h2>
+            <h2 class="vd-heading-light h4 mt-5 mb-3">Les plus visités</h2>
             <ul class="vd-list-links">
               <li><a href="#0">Inscription au chômage</a></li>
               <li><a href="#0">Formulaire d'indemnisation</a></li>

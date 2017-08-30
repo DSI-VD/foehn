@@ -21,19 +21,23 @@ Two size are included in spacing utilities.
 
 | old values            | new values            |
 |-----------------------|-----------------------|
-| `{property}{sides}-1` | `{property}{sides}-1` |
+|                       | `{property}{sides}-1` |
 |                       | `{property}{sides}-2` |
-|                       | `{property}{sides}-3` |
+| `{property}{sides}-1` | `{property}{sides}-3` |
 | `{property}{sides}-2` | `{property}{sides}-4` |
 | `{property}{sides}-3` | `{property}{sides}-5` |
 
-### Regex to use
+### Regex to use (in this order)
 
 #### size 3 becomes 5
 - Find: `([pm])([xytrbl])-3`
 - Replace: `$1$2-5`
 
 #### size 2 becomes 4
+- Find: `([pm])([xytrbl])-3`
+- Replace: `$1$2-5`
+
+#### size 1 becomes 3
 - Find: `([pm])([xytrbl])-3`
 - Replace: `$1$2-5`
 
