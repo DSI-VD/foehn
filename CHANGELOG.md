@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.31.1]
+
 ### Changed
 - Fix `@nav` is not hidden on mobile
 - Fix `@nav-mobile` do not open
@@ -1259,7 +1261,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.30.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.31.0...HEAD
+[0.31.0]: https://github.com/DSI-VD/foehn/compare/v0.30.0...v0.31.0
 [0.30.0]: https://github.com/DSI-VD/foehn/compare/v0.29.0...v0.30.0
 [0.29.0]: https://github.com/DSI-VD/foehn/compare/v0.28.1...v0.29.0
 [0.28.1]: https://github.com/DSI-VD/foehn/compare/v0.28.0...v0.28.1
