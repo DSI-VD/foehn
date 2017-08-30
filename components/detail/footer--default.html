@@ -155,8 +155,8 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5"</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light h4 mb-1 sr-only"</span>&gt;</span>Partager la page<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline vd-social-icons mt-4 mb-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light h4 mb-3 sr-only"</span>&gt;</span>Partager la page<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline vd-social-icons mt-4 mb-3"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline-item"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-social-icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-envelope"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Envoyer par courriel<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -249,7 +249,7 @@
         <pre>{% if (social) or (updateTime) %}
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5"</span>&gt;</span>
   {% if updateTime %}{% render '<a href="update-time">@update-time</a>' %}{% endif %}
-  {%if social %}{%render '<a href="social-icons">@social-icons</a>', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-4 mb-1'}, true %}{% endif %}
+  {%if social %}{%render '<a href="social-icons">@social-icons</a>', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-4 mb-3'}, true %}{% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 {% endif %}
 

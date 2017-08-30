@@ -97,7 +97,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>{property}{sides}-1</code></td>
+<td></td>
 <td><code>{property}{sides}-1</code></td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@
 <td><code>{property}{sides}-2</code></td>
 </tr>
 <tr>
-<td></td>
+<td><code>{property}{sides}-1</code></td>
 <td><code>{property}{sides}-3</code></td>
 </tr>
 <tr>
@@ -118,13 +118,18 @@
 </tr>
 </tbody>
 </table>
-<h3 id="regex-to-use">Regex to use</h3>
+<h3 id="regex-to-use-in-this-order-">Regex to use (in this order)</h3>
 <h4 id="size-3-becomes-5">size 3 becomes 5</h4>
 <ul>
 <li>Find: <code>([pm])([xytrbl])-3</code></li>
 <li>Replace: <code>$1$2-5</code></li>
 </ul>
 <h4 id="size-2-becomes-4">size 2 becomes 4</h4>
+<ul>
+<li>Find: <code>([pm])([xytrbl])-3</code></li>
+<li>Replace: <code>$1$2-5</code></li>
+</ul>
+<h4 id="size-1-becomes-3">size 1 becomes 3</h4>
 <ul>
 <li>Find: <code>([pm])([xytrbl])-3</code></li>
 <li>Replace: <code>$1$2-5</code></li>
@@ -255,12 +260,12 @@ updated.</p>
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Navigation par thèmes<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled mb-0 row"</span>&gt;</span>
               {% for domain in domains.domains %}
-              {% render '@domain-item', {name:domain.name, styleModifier:'py-1 mb-0 col-md-6 col-lg-4', description:domain.description}, true %}
+              {% render '@domain-item', {name:domain.name, styleModifier:'py-3 mb-0 col-md-6 col-lg-4', description:domain.description}, true %}
               {% endfor %}
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light h4 mt-5 mb-1"</span>&gt;</span>Les plus visités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light h4 mt-5 mb-3"</span>&gt;</span>Les plus visités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-list-links"</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Inscription au chômage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Formulaire d'indemnisation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>

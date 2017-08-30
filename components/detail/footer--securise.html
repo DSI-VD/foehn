@@ -200,7 +200,7 @@
         <pre>{% if (social) or (updateTime) %}
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5"</span>&gt;</span>
   {% if updateTime %}{% render '<a href="update-time">@update-time</a>' %}{% endif %}
-  {%if social %}{%render '<a href="social-icons">@social-icons</a>', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-4 mb-1'}, true %}{% endif %}
+  {%if social %}{%render '<a href="social-icons">@social-icons</a>', {title:'Partager la page', titleModifier:'sr-only', styleModifier:'mt-4 mb-3'}, true %}{% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 {% endif %}
 
