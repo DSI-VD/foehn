@@ -1,18 +1,18 @@
 @charset 'UTF-8';
 
 .vd-btn-tiles {
-  display: block;
   display: flex;
   flex-wrap: wrap;
   margin: ($spacer / -2);
   padding-left: 0;
+  max-width:100%;
 
   .btn {
-    display: inline-block;
     display: inline-flex;
     flex-grow: 1;
     flex-shrink: 0;
     min-width: calc(25% - #{$spacer});
+    max-width: calc(33% - #{$spacer});
     position: relative;
     margin: ($spacer / 2);
     color: $black;
