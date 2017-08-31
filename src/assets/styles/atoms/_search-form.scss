@@ -46,19 +46,7 @@
  * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
  */
 .vd-search-form-regular {
-  ::-webkit-input-placeholder {
-    font-style: italic;
-  }
-
-  :-moz-placeholder {
-    font-style: italic;
-  }
-
-  ::-moz-placeholder {
-    font-style: italic;
-  }
-
-  :-ms-input-placeholder {
+  ::placeholder {
     font-style: italic;
   }
 
