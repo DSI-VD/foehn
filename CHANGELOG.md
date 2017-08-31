@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
+
 ## [0.32.0] - 2017-08-30
 
 ### Changed
