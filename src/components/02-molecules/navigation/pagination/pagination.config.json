@@ -1,13 +1,28 @@
 {
-    "status": "ready",
-    "context": {
-      "previous": {
-        "url": "#",
-        "text": "Précédent"
-      },
-      "next": {
-        "url": "#",
-        "text": "Suivant"
+  "status": "ready",
+  "context": {
+    "previous": {
+      "url": "#",
+      "text": "Précédent"
+    },
+    "next": {
+      "url": "#",
+      "text": "Suivant"
+    }
+  },
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "showPages": false
+      }
+    },
+    {
+      "name": "pages",
+      "context": {
+        "showPages": true
       }
     }
+  ]
 }
+

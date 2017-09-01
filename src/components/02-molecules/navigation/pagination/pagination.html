@@ -2,13 +2,15 @@
   <h3 class="sr-only">Pagination</h3>
   <div class="vd-pagination">
     {% if previous %}<a href="{{ previous.url }}" class="btn vd-btn-pagination-l"><span class="d-none d-md-inline-block">{{ previous.text }}</span>&nbsp;</a>{% endif %}
-      <ul class="list-unstyled mb-0">
+    {% if showPages %}
+    <ul class="list-unstyled mb-0">
         <li><a href="#" class="btn">1</a></li>
         <li><a href="#" class="btn">2</a></li>
         <li><a href="#" class="btn">3</a></li>
         <li><a href="#" class="btn">...</a></li>
         <li><a href="#" class="btn">55</a></li>
       </ul>
+    {% endif %}
     {% if next %}<a href="{{ next.url }}" class="btn vd-btn-pagination-r"><span class="d-none d-md-inline-block">{{ next.text }}</span>&nbsp;</a>{% endif %}
     {% if submit %}<li class="ml-auto">{% render '@button--submit' %}</li>{% endif %}
   </div>
