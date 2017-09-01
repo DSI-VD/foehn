@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Use `srcset` attribut in `@image--default`
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Fix
