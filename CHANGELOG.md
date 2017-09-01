@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@teaser-small--media` use `@image--fluid` instead of `@image-responsive`
 - Use `srcset` attribut in `@image--default`
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
