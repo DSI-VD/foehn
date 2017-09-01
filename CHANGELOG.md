@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@actualite` use `@figure--default` instead of hardcoded HTML
 - `@figure--default` no more use `<picture>` and `<source>` markup
 - `@teaser-small--media` use `@image--fluid` instead of `@image-responsive`
 - Use `srcset` attribut in `@image--default`
