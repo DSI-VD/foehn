@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- add sr-only to `@detail-prestation` h2 for more descriptive titles
+
+### Changed
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Fix
