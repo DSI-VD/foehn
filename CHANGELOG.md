@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove one `nav` from `detail-prestation`
+
+### Changed
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Fix
