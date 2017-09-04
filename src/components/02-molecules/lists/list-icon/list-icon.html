@@ -1,7 +1,7 @@
 <ul class="vd-list-icons">
   {% for item in listIcon %}
   <li>
-    <span class="fa {{ item.icon }}" aria-hidden="true"></span> <a href="{{ item.url }}">{{ item.item }}</a>
+    <span class="fa {{ item.icon }}" aria-hidden="true"></span> {% if item.accessibleLegend %}<span class="sr-only">{{ item.accessibleLegend }}</span>{% endif %}<a href="{{ item.url }}">{{ item.item }}</a>
   </li>
   {% endfor %}
 </ul>
