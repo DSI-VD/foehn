@@ -1,6 +1,7 @@
 {
   "context": {
     "name": "Service name",
+    "accessibleName": "Service responsable",
     "url": "#",
     "division": "division",
     "address": {
@@ -21,12 +22,14 @@
       {
         "item": "+41 21 123 45 67",
         "icon": "fa-phone",
-        "url": "tel:+41211234567"
+        "url": "tel:+41211234567",
+        "accessibleLegend": "Téléphone"
       },
       {
         "item": "+41 21 123 45 67",
         "icon": "fa-fax",
-        "url": "tel:+41211234567"
+        "url": "tel:+41211234567",
+        "accessibleLegend": "Fax"
       },
       {
         "item": "service@vd.ch",
