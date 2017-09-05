@@ -45,15 +45,19 @@
     }
   }
 
+  .vd-btn-pagination-submit,
   .vd-btn-pagination-r {
     position: absolute;
-    padding-right: $spacer * 1.5;
     right: 0;
 
     @include media-breakpoint-down(sm) {
       padding-right: 0;
       right: -10px;
     }
+  }
+
+  .vd-btn-pagination-r {
+    padding-right: $spacer * 1.5;
 
     &:after {
       content: '';

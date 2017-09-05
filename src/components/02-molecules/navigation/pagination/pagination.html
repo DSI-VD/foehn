@@ -10,6 +10,6 @@
         <li><a href="#" class="btn">55</a></li>
       </ul>
     {% if next %}<a href="{{ next.url }}" class="btn vd-btn-pagination-r"><span class="d-none d-md-inline-block">{{ next.text }}</span>&nbsp;</a>{% endif %}
-    {% if submit %}<li class="ml-auto">{% render '@button--submit' %}</li>{% endif %}
+    {% if submit %}{% render '@button--submit', { class:submit.class }, true %}{% endif %}
   </div>
 </nav>
