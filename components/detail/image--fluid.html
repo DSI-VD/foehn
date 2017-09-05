@@ -153,7 +153,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-09ac33d32950a6fb953d4c91c0673a47-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://source.unsplash.com/random/400x200"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.it/960x640/ea09ff/000001?text=Default|960x640"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://placehold.it/320x210/d8e7ff/000001?text=320x210 320w, https://placehold.it/540x360/a4c6fc/000001?text=540x360 540w, https://placehold.it/720x480/6ba4ff/000001?text=720x480 720w, https://placehold.it/960x640/3f89ff/000001?text=960x640 960w, https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760 1140w"</span>
+    <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -161,7 +162,15 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-09ac33d32950a6fb953d4c91c0673a47-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> {% <span class="hljs-attr">if</span> <span class="hljs-attr">class</span> %}<span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}{% if styleModifier %} {{ styleModifier }}{% endif %}"</span> {% <span class="hljs-attr">elif</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span>{% <span class="hljs-attr">endif</span> %}<span class="hljs-attr">src</span>=<span class="hljs-string">"{{ src }}"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"{{ alt }}"</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+    {% <span class="hljs-attr">if</span> <span class="hljs-attr">class</span> %}<span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>
+    {% <span class="hljs-attr">elif</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span> {% <span class="hljs-attr">endif</span> %}
+    <span class="hljs-attr">src</span>=<span class="hljs-string">"{{ src }}"</span>
+    {%<span class="hljs-attr">if</span> <span class="hljs-attr">srcset</span> %}<span class="hljs-attr">srcset</span>=<span class="hljs-string">"
+      {%- for item in srcset -%}
+      {{ item.file }} {{ item.width }}{% if not loop.last %}, {% endif %}
+      {%- endfor -%}
+    "</span>{% <span class="hljs-attr">endif</span> %} <span class="hljs-attr">alt</span>=<span class="hljs-string">"{{ alt }}"</span>&gt;</span></pre>
     </code>
 </div>
 
@@ -171,8 +180,30 @@
         
             
             <pre>{
-  <span class="hljs-attr">"src"</span>: <span class="hljs-string">"https://source.unsplash.com/random/400x200"</span>,
+  <span class="hljs-attr">"src"</span>: <span class="hljs-string">"https://placehold.it/960x640/ea09ff/000001?text=Default|960x640"</span>,
   <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Alternative text"</span>,
+  <span class="hljs-attr">"srcset"</span>: [
+    {
+      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"320w"</span>,
+      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/320x210/d8e7ff/000001?text=320x210"</span>
+    },
+    {
+      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"540w"</span>,
+      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/540x360/a4c6fc/000001?text=540x360"</span>
+    },
+    {
+      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"720w"</span>,
+      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/720x480/6ba4ff/000001?text=720x480"</span>
+    },
+    {
+      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"960w"</span>,
+      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/960x640/3f89ff/000001?text=960x640"</span>
+    },
+    {
+      <span class="hljs-attr">"width"</span>: <span class="hljs-string">"1140w"</span>,
+      <span class="hljs-attr">"file"</span>: <span class="hljs-string">"https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760"</span>
+    }
+  ],
   <span class="hljs-attr">"class"</span>: <span class="hljs-string">"img-fluid"</span>
 }</pre>
             
@@ -242,6 +273,19 @@
         </li>
         
         
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(3)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="figure">@<span>figure</span></a>, 
+            
+                <a href="figure--picture">@<span>figure--picture</span></a>, 
+            
+                <a href="teaser-small--media">@<span>teaser-small--media</span></a>
+            
+            </span>
+        </li>
+        
     </ul>
 </div>
 
@@ -249,10 +293,19 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-09ac33d32950a6fb953d4c91c0673a47-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p>You can use the class <code>.img-fluid</code> to make the image responsive.</p>
-<p>You can use the class <code>.img-desaturate</code> on any element to desaturate the colors.</p>
-<p>You can use the <code>.rounded</code>, <code>.rounded-circle</code> and all <code>.rounded-[top,right,bottom,left]</code> classes on any element.</p>
+        <h1 id="sizes">Sizes</h1>
+<p>Here are the recommended image width for the <code>srcset</code> attribute:</p>
+<ul>
+<li>320px</li>
+<li>540px</li>
+<li>720px</li>
+<li>960px</li>
+<li>1140px</li>
+</ul>
+<code><pre>&lt;img
 
+    src="https://placehold.it/<span class="hljs-number">960x640</span>/ea09ff/<span class="hljs-number">000001</span>?text=Default|<span class="hljs-number">960x640</span>"
+    srcset="https://placehold.it/<span class="hljs-number">320x210</span>/d8e7ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">320x210</span> <span class="hljs-number">320w</span>, https://placehold.it/<span class="hljs-number">540x360</span>/a4c6fc/<span class="hljs-number">000001</span>?text=<span class="hljs-number">540x360</span> <span class="hljs-number">540w</span>, https://placehold.it/<span class="hljs-number">720x480</span>/<span class="hljs-number">6</span>ba4ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">720x480</span> <span class="hljs-number">720w</span>, https://placehold.it/<span class="hljs-number">960x640</span>/<span class="hljs-number">3</span>f89ff/<span class="hljs-number">000001</span>?text=<span class="hljs-number">960x640</span> <span class="hljs-number">960w</span>, https://placehold.it/<span class="hljs-number">1140x760</span>/<span class="hljs-number">0</span>a68ff/fffffa?text=<span class="hljs-number">1140x760</span> <span class="hljs-number">1140w</span>" alt="Alternative text"&gt;</pre></code>
         
     </div>
 </div>
@@ -2132,10 +2185,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-figure">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Figure</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="figure" data-pjax>
-                <span>Figure</span>
+            <a class="Tree-entityLink" href="figure--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2152,6 +2216,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="figure--picture" data-pjax>
+                <span>Picture</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

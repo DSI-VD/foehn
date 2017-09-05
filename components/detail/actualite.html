@@ -458,11 +458,11 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure vd-teaser-img"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid figure-img"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Description de l'image"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>La #jom permet de découvrir des secteurs professionnels traditionnellement associés au sexe opposé.
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"strong"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/img/picture-960x640.jpg"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"../../assets/img/picture-320x213.jpg 320w, ../../assets/img/picture-540x360.jpg 540w, ../../assets/img/picture-720x480.jpg 720w, ../../assets/img/picture-960x640.jpg 960w, ../../assets/img/picture-1140x760.jpg 1140w"</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>Ceci est une légende<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-figure-credits"</span>&gt;</span>Crédit photo<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
@@ -583,10 +583,7 @@
 
   {% render '<a href="social-icons">@social-icons</a>', {titleModifier: 'text-center', styleModifier: 'text-center mb-3'}, true %}
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure vd-teaser-img"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://www.vd.ch/uploads/_processed_/5/1/csm_JOM2015_fb2430dc27.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid figure-img"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Description de l'image"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption"</span>&gt;</span>La #jom permet de découvrir des secteurs professionnels traditionnellement associés au sexe opposé. <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"strong"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+  {% render '<a href="figure">@figure</a>', media, true %}
 
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
     Explorer de nouveaux univers professionnels au-delà des secteurs traditionnellement féminins ou masculins, c'est ce que proposera la Journée Oser tous les métiers le jeudi 10 novembre prochain. Les filles accompagneront un homme dans sa journée de travail, et les garçons une femme. En plus de cette mise en situation professionnelle, les écoliers auront la possibilité de participer aux ateliers organisés par le BEFH.
@@ -618,7 +615,38 @@
       <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Actualités"</span>,
       <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
     }
-  ]
+  ],
+  <span class="hljs-attr">"media"</span>: {
+    <span class="hljs-attr">"image"</span>: {
+      <span class="hljs-attr">"default"</span>: {
+        <span class="hljs-attr">"src"</span>: <span class="hljs-string">"../../assets/img/picture-960x640.jpg"</span>,
+        <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Alternative text"</span>,
+        <span class="hljs-attr">"class"</span>: <span class="hljs-string">"img-fluid"</span>,
+        <span class="hljs-attr">"srcset"</span>: [
+          {
+            <span class="hljs-attr">"width"</span>: <span class="hljs-string">"320w"</span>,
+            <span class="hljs-attr">"file"</span>: <span class="hljs-string">"../../assets/img/picture-320x213.jpg"</span>
+          },
+          {
+            <span class="hljs-attr">"width"</span>: <span class="hljs-string">"540w"</span>,
+            <span class="hljs-attr">"file"</span>: <span class="hljs-string">"../../assets/img/picture-540x360.jpg"</span>
+          },
+          {
+            <span class="hljs-attr">"width"</span>: <span class="hljs-string">"720w"</span>,
+            <span class="hljs-attr">"file"</span>: <span class="hljs-string">"../../assets/img/picture-720x480.jpg"</span>
+          },
+          {
+            <span class="hljs-attr">"width"</span>: <span class="hljs-string">"960w"</span>,
+            <span class="hljs-attr">"file"</span>: <span class="hljs-string">"../../assets/img/picture-960x640.jpg"</span>
+          },
+          {
+            <span class="hljs-attr">"width"</span>: <span class="hljs-string">"1140w"</span>,
+            <span class="hljs-attr">"file"</span>: <span class="hljs-string">"../../assets/img/picture-1140x760.jpg"</span>
+          }
+        ]
+      }
+    }
+  }
 }</pre>
             
         
@@ -666,12 +694,14 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(3)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="template--news-detail">@<span>template--news-detail</span></a>, 
             
                 <a href="social-icons">@<span>social-icons</span></a>, 
+            
+                <a href="figure">@<span>figure</span></a>, 
             
                 <a href="blockquote">@<span>blockquote</span></a>
             
@@ -2566,10 +2596,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-figure">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Figure</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="figure" data-pjax>
-                <span>Figure</span>
+            <a class="Tree-entityLink" href="figure--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2586,6 +2627,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="figure--picture" data-pjax>
+                <span>Picture</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

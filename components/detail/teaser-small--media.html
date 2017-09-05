@@ -161,7 +161,8 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-small-img"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.it/360x240/F1BF9F/ffffff?text=Default|360x240"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.it/960x640/ea09ff/000001?text=Default|960x640"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://placehold.it/320x210/d8e7ff/000001?text=320x210 320w, https://placehold.it/540x360/a4c6fc/000001?text=540x360 540w, https://placehold.it/720x480/6ba4ff/000001?text=720x480 720w, https://placehold.it/960x640/3f89ff/000001?text=960x640 960w, https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760 1140w"</span>
+            <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -177,7 +178,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-link-invisible"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">“#”</span>&gt;</span>Title here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
   {% render '<a href="numbered-title">@numbered-title</a>' %}
   <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-teaser-small-img"</span>&gt;</span>
-    {% render '<a href="image-responsive">@image-responsive</a>' %}
+    {% render '<a href="image--fluid">@image--fluid</a>' %}
   <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
@@ -261,7 +262,7 @@
             
                 <a href="numbered-title">@<span>numbered-title</span></a>, 
             
-                <a href="image-responsive">@<span>image-responsive</span></a>
+                <a href="image--fluid">@<span>image--fluid</span></a>
             
             </span>
         </li class="Meta-item">
@@ -2155,10 +2156,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-figure">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Figure</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="figure" data-pjax>
-                <span>Figure</span>
+            <a class="Tree-entityLink" href="figure--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2175,6 +2187,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="figure--picture" data-pjax>
+                <span>Picture</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
