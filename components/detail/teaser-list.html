@@ -327,7 +327,7 @@
 
   
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"# "</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"link to somewhere "</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark "</span>
-&gt;</span>Toutes l'actualitées<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+&gt;</span>Toutes les actualités<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
   
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
@@ -350,12 +350,12 @@
   {% if homepage %}
   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Autres actualités<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>{% render '<a href="button--default">@button--default</a>', {text: 'Toutes l\'actualitées'}, true %}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>{% render '<a href="button--default">@button--default</a>', button, true %}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>{% render '<a href="button--secondary">@button--secondary</a>', {text: 'Tous les communiqués'}, true %}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>{% render '<a href="button--secondary">@button--secondary</a>', {text: 'Décisions du conseil d\'état'}, true %}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   {% else %}
-  {% render '<a href="button--default">@button--default</a>', {text: 'Toutes l\'actualitées'}, true %}
+  {% render '<a href="button--default">@button--default</a>', button, true %}
   {% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 
@@ -370,6 +370,9 @@
             
             <pre>{
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Actualités"</span>,
+  <span class="hljs-attr">"button"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Toutes les actualités"</span>
+  },
   <span class="hljs-attr">"teasers"</span>: [
     {
       <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Ut condimentum magna a ornare pulvinar"</span>,
