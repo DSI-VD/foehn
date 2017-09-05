@@ -34,11 +34,11 @@ Two size are included in spacing utilities.
 - Replace: `$1$2-5`
 
 #### size 2 becomes 4
-- Find: `([pm])([xytrbl])-3`
+- Find: `([pm])([xytrbl])-2`
 - Replace: `$1$2-5`
 
 #### size 1 becomes 3
-- Find: `([pm])([xytrbl])-3`
+- Find: `([pm])([xytrbl])-1`
 - Replace: `$1$2-5`
 
 ## Update button class

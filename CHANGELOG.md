@@ -2,7 +2,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-
+  
 ### Changed
 - `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
@@ -10,6 +10,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `@figure--default` no more use `<picture>` and `<source>` markup
 - `@teaser-small--media` use `@image--fluid` instead of `@image-responsive`
 - Use `srcset` attribut in `@image--default`
+- add sr-only to `@detail-prestation` h2 for more descriptive titles
+- Changed button labels in `teaser-list` and `service`
+- Change `@faq-item` column layout
+- Change `@card` column layout
+- Add class `btn btn-success vd-btn-pagination-submit` to `@button--submit` for pagination in `formulaire-prestation.config.json`
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
