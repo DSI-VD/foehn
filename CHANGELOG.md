@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
   
 ### Changed
+- Changed button labels in `teaser-list` and `service`
 - Change `@faq-item` column layout
 - Change `@card` column layout
 - Add class `btn btn-success vd-btn-pagination-submit` to `@button--submit` for pagination in `formulaire-prestation.config.json`
