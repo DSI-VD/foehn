@@ -44,7 +44,8 @@
             },
             "next": false,
             "submit": {
-              "href": "formulaire-prestation-confirmation"
+              "href": "formulaire-prestation-confirmation",
+              "class": "btn btn-success vd-btn-pagination-submit"
             }
           }
         }
