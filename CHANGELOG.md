@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
+- Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Fix
