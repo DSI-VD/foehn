@@ -5,9 +5,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - change `@card` column layout
-
-
-### Changed
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Fix
