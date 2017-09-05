@@ -112,7 +112,10 @@
             "styleModifier": "vd-w-md-50"
           }
         }
-      ]
+      ],
+      "button": {
+        "text": "Tous les projets"
+      }
     },
     "organisation": {
       "links": {
