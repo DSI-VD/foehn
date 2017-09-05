@@ -2,9 +2,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-
+  
 ### Changed
-- change `@faq-item` column layout
+- Change `@faq-item` column layout
+- Change `@card` column layout
+- Add class `btn btn-success vd-btn-pagination-submit` to `@button--submit` for pagination in `formulaire-prestation.config.json`
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Fix
