@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
   
 ### Changed
+- add sr-only to `@detail-prestation` h2 for more descriptive titles
 - Changed button labels in `teaser-list` and `service`
 - Change `@faq-item` column layout
 - Change `@card` column layout
