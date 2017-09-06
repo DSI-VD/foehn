@@ -6,13 +6,7 @@
     {
       "name": "light",
       "context": {
-        "styleModifier": "vd-heading-light h4"
-      }
-    },
-    {
-      "name": "arrow",
-      "context": {
-        "icon": "fa-arrow-down"
+        "styleModifier": "vd-heading-light"
       }
     }
   ]

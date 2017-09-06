@@ -1,8 +1,8 @@
-<article class="mb-1 p-1 bg-faded">
+<article class="mb-3 p-1 bg-faded">
   <div class="row">
     <div class="col-md-12">
       <header>
-        <h3 class="mb-1">
+        <h3 class="mb-3">
             <a href="{{ url }}">{{ title }}</a>
         </h3>
         {%- if meta -%}
@@ -55,14 +55,14 @@
       {% endif %}
 
       {%- if tasks -%}
-      <h4 class="mb-1">Tâches à traiter</h4>
+      <h4 class="mb-3">Tâches à traiter</h4>
       <ul>
         {%- for task in tasks -%}
         <li><a href="{{ task.url }}">{{ task.title }}</a> <small class="d-block">Reçu le {{ task.date }}</small></li>      {% endfor %}
       </ul>
       {%- endif -%}
       {%- if messages -%}
-      <h4 class="mb-1">Messages à traiter</h4>
+      <h4 class="mb-3">Messages à traiter</h4>
       <ul>
         {%- for message in messages -%}
         <li><a href="{{ message.url }}">{{ message.title }}</a> <small class="d-block">Reçu le {{ message.date }}</small></li>

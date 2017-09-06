@@ -26,14 +26,14 @@
   margin-right: $spacer;
 
   &--2-char-width {
-    flex-basis: ($font-size-base * 1.8) + ($input-padding-x * 2);
+    flex-basis: ($font-size-base * 1.8) + ($input-btn-padding-x * 2);
   }
 
   &--3-char-width {
-    flex-basis: ($font-size-base * 2.7) + ($input-padding-x * 2);
+    flex-basis: ($font-size-base * 2.7) + ($input-btn-padding-x * 2);
   }
 
   &--4-char-width {
-    flex-basis: ($font-size-base * 3.6) + ($input-padding-x * 2);
+    flex-basis: ($font-size-base * 3.6) + ($input-btn-padding-x * 2);
   }
 }

@@ -1,6 +1,6 @@
 {% for domain in domains %}
   <div>
-    <div class="row mt-3">
+    <div class="row mt-5">
 
       <div class="col-md-4">
         <h2 id="{{ domain.name | lower | urlencode }}">{{ domain.name | capitalize }}</h2>
@@ -17,18 +17,18 @@
       <div class="col-md-8">
         <ul class="list-unstyled row" aria-labelledby="{{ domain.name | lower | urlencode }}">
           {% for theme in domain.themes %}
-          {% render '@domain-item', {styleModifier:'mb-2 col-md-6', name:theme.name}, true %}
+          {% render '@domain-item', {styleModifier:'mb-4 col-md-6', name:theme.name}, true %}
           {% endfor %}
         </ul><!-- /.col-md-8 -->
       </div><!-- /.row -->
 
     </div><!-- /.row -->
     <p>
-      <a href="#" class="btn btn-primary vd-btn-chevron-t">Tous les thèmes</a>
+      <a href="#" class="btn btn-dark vd-btn-chevron-t">Tous les thèmes</a>
     </p>
     {% if loop.last %}
     {% else %}
-    {% render '@separator--green-pattern-wide', {styleModifier: "mt-2"}, true %}
+    {% render '@separator--green-pattern-wide', {styleModifier: "mt-4"}, true %}
     {% endif %}
   </div>
 {% endfor %}
