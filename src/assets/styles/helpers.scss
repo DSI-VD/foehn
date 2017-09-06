@@ -6,21 +6,21 @@
     linear-gradient(
       45deg,
       $vd-neutral-lighter 25%,
-      transparent 25%
+      $body-bg 25%
     ),
     linear-gradient(
       -45deg,
       $vd-neutral-lighter 25%,
-      transparent 25%
+      $body-bg 25%
     ),
     linear-gradient(
       45deg,
-      transparent 75%,
+      $body-bg 75%,
       $vd-neutral-lighter 75%
     ),
     linear-gradient(
       -45deg,
-      transparent 75%,
+      $body-bg 75%,
       $vd-neutral-lighter 75%
     );
   background-size: 2px 2px;
