@@ -2,8 +2,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-  
+
 ### Changed
+- add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
 - `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@actualite` use `@figure--default` instead of hardcoded HTML
@@ -78,6 +79,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Tranform authority links into a list (`ul` -> `li`)
 - Change the structure of `@nav-mobile`
 
+
 ### Added
 - "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
 - Add `.p` syle to make headings look like paragraph
@@ -95,6 +97,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.28.0] - 2017-07-14
 
 ### Changed
+- add `.pt-1` class to `domain-item` for Firefox bug in focus
 - `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
 - Add `.vd-content` class in `@template--2-col-nav`
