@@ -1,8 +1,8 @@
 <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   {%- if blason -%}
   <div class="vd-logo__blason">
-    <img src="{{ '/assets/svg/logo/logo.svg' | path }}" class="img-fluid hidden-sm-down" alt="Logo du canton de Vaud" />
-    <img src="{{ '/assets/svg/logo/logo-square.svg' | path }}" class="img-fluid hidden-md-up" aria-hidden="true" alt="Logo du canton de Vaud" />
+    <img src="{{ '/assets/svg/logo/logo.svg' | path }}" class="img-fluid d-none d-md-block" alt="Logo du canton de Vaud" />
+    <img src="{{ '/assets/svg/logo/logo-square.svg' | path }}" class="img-fluid d-md-none" aria-hidden="true" alt="Logo du canton de Vaud" />
   </div>
   {%- endif %}
   <img src="{{ '/assets/svg/ETATVAUD.svg' | path }}" class="vd-logo__image{% if styleModifier %} {{ styleModifier }}{% endif %}" alt="État de Vaud" aria-hidden="true" />

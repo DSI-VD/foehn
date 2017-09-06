@@ -2,9 +2,9 @@
 
     <div class="row">
         <div class="col-md-12 ">
-            <article class="mb-1 p-1 bg-faded ">
+            <article class="mb-3 p-1 bg-faded ">
                 <header>
-                    <h3 class="mb-1">
+                    <h3 class="mb-3">
                        {{ title }}
                     </h3>
                     {%- if meta -%}
@@ -62,12 +62,12 @@
 
             </article>
 
-            <article class="mb-1 p-1 ">
-                <h4 class="mb-1">Historique</h4>
+            <article class="mb-3 p-1 ">
+                <h4 class="mb-3">Historique</h4>
                 {% for item in historique %}
 
                 {% if item.title %}
-                <h5 class="mb-1">
+                <h5 class="mb-3">
                     {{ item.title }}
                 </h5>
                 {% endif %}

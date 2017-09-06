@@ -19,7 +19,7 @@
       border 0.11s;
 
     &:focus {
-      padding-left: $input-padding-y;
+      padding-left: $input-btn-padding-y;
       border: 2px solid $vd-focus;
       box-shadow: none;
     }
@@ -40,15 +40,24 @@
   }
 }
 
+/**
+ * regular search form
+ *
+ * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
+ */
 .vd-search-form-regular {
   .btn {
-    background: $vd-primary;
-    border-color: $vd-primary;
+    background: $vd-primary-dark;
+    border-color: $vd-primary-dark;
     color: $white;
 
     @include hover {
       background: darken($vd-primary, 10%);
       border-color: darken($vd-primary, 10%);
     }
+  }
+
+  .input-group-btn > .btn {
+    padding-top: $input-btn-padding-y * 1.1; /* [1] */
   }
 }

@@ -44,7 +44,7 @@ a.vd-teaser-card {
     color: $white; /* [1] */
 
     @include hover {
-      color: $gray-light; /* [1] */
+      color: $gray-300; /* [1] */
     }
   }
 }
@@ -52,9 +52,9 @@ a.vd-teaser-card {
 /**
  * Green
  */
-.vd-card-green {
-  @include card-variant($vd-primary-darker, $vd-primary-darker);
+@include bg-variant(".vd-card-green", $vd-primary-darker);
 
+.vd-card-green {
   @extend %card-inside;
 }
 
@@ -63,9 +63,9 @@ a.vd-teaser-card {
  *
  * 1. Make the text visible
  */
-.vd-card-lightgray {
-  @include card-variant($vd-neutral-lighter, $vd-neutral-lighter);
+@include bg-variant(".vd-card-lightgray", $vd-primary-darker);
 
+.vd-card-lightgray {
   .card-title,
   .card-text {
     color: $vd-neutral-darker; /* [1] */
@@ -75,17 +75,17 @@ a.vd-teaser-card {
 /**
  * Dark gray
  */
-.vd-card-darkgray {
-  @include card-variant($vd-neutral-dark, $vd-neutral-dark);
+@include bg-variant(".vd-card-darkgray ", $vd-primary-darker);
 
+.vd-card-darkgray {
   @extend %card-inside;
 }
 
 /**
  * Black
  */
-.vd-card-black {
-  @include card-variant($black, $black);
+@include bg-variant(".vd-card-black ", $vd-primary-darker);
 
+.vd-card-black {
   @extend %card-inside;
 }
