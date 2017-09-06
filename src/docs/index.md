@@ -70,14 +70,6 @@ Put this in your `<head/>` tag:
 Put this just before the closing `</body>` tag:
 
 ```html
-<!-- load all the javascript files (jQuery needed for Bootstrap, TetherJS needed for the Tooltip Bootstrap plugin) -->
-<script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-<script src="path/to/build/js/vendors.min.js"></script>
-<script src="path/to/build/js/vendors.bundle.js"></script>
-<script src="path/to/build/js/app.bundle.js"></script>
-
-<!-- call all the fonts asynchronously -->
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"> </script>
+{% view '@scripts-footer' %}
 {% view '@webfont-loading' %}
 ```

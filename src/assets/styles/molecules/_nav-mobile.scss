@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+/**
+ * Mobile navigation
+ *
+ * 1. Override Bootstrap popper menu positionning
+ */
 .vd-nav-mobile {
   display: flex;
   position: relative;
@@ -21,9 +26,11 @@
   }
 
   .dropdown-menu {
+    top: (3 * $spacer) !important; /* [1] */
     width: 100%;
-    background: $gray-lightest;
+    background: $gray-100;
     border: 0;
+    transform: none !important; /* [1] */
   }
 
   .dropdown-item {
@@ -44,9 +51,11 @@
 
   .nav-item {
     flex: 1 1 50%;
-    margin-top: $spacer;
+    margin-top: $spacer / 2;
     margin-bottom: 0;
-    padding: 0 $spacer;
+    padding-right: $spacer;
+    padding-left: $spacer;
+    padding-bottom: $spacer / 2;
     border-bottom: 1px solid $white;
     font-size: $font-size-lg;
   }
@@ -87,7 +96,7 @@
 
   &.open {
     .dropdown-toggle {
-      background: $gray-lightest;
+      background: $gray-100;
     }
   }
 }

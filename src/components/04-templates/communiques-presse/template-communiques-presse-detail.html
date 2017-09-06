@@ -21,12 +21,12 @@
         {% endif %}
 
         <p class="mb-0">{{ pressRelease.preHeader }}</p>
-        <h1 class="h2 px-2 py-2 mt-0 vd-bg-pattern-bars-gray">{{ pageTitle }}</h1>
+        <h1 class="h2 px-4 py-4 mt-0 vd-bg-pattern-bars-gray">{{ pageTitle }}</h1>
       </header>
 
       {% include '@lead' %}
 
-      {% render '@social-icons', {titleModifier: 'sr-only', styleModifier: 'text-center mb-1'}, true %}
+      {% render '@social-icons', {titleModifier: 'sr-only', styleModifier: 'text-center mb-3'}, true %}
 
       {% block main %}
       {% render '@paragraph' %}
@@ -66,7 +66,7 @@
   </div>
 
   <nav>
-    <a href="#">Retour sur la liste des communiqués</a>
+    <a href="#" title="link to somewhere" class="btn btn-dark">Retour sur la liste des communiqués</a>
   </nav>
 
 </main>

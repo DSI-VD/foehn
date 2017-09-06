@@ -20,19 +20,31 @@ for (let i = 0; i < teaserItemCount; i += 1) {
         media: {
             caption: null,
             image: {
-                source: [
-                    {
-                        srset: faker.image.imageUrl(1600, 1067, '', 1),
-                    },
-                    {
-                        srset: faker.image.imageUrl(960, 640, '', 1),
-                    },
-                    {
-                        srset: faker.image.imageUrl(640, 427, '', 1),
-                    },
-                ],
                 default: {
-                    src: faker.image.imageUrl(360, 240, '', 1),
+                    src: faker.image.imageUrl(960, 640, '', 1),
+                    class: 'img-fluid',
+                    srcset: [
+                        {
+                            width: '320w',
+                            file: faker.image.imageUrl(320, 213, '', 1),
+                        },
+                        {
+                            width: '540w',
+                            file: faker.image.imageUrl(540, 360, '', 1),
+                        },
+                        {
+                            width: '720w',
+                            file: faker.image.imageUrl(720, 480, '', 1),
+                        },
+                        {
+                            width: '960w',
+                            file: faker.image.imageUrl(960, 640, '', 1),
+                        },
+                        {
+                            width: '1140w',
+                            file: faker.image.imageUrl(1140, 760, '', 1),
+                        },
+                    ],
                 },
             },
         },

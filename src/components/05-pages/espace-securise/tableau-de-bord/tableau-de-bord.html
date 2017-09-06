@@ -7,16 +7,16 @@
         <a href="#communications">Une communication</a> et <a href="#demandes">deux demandes</a> requierent votre attention.
       </p>
 
-      <section class="mb-3" id="communications">
-        <h2 class="mb-1">Communication(s)</h2>
+      <section class="mb-5" id="communications">
+        <h2 class="mb-3">Communication(s)</h2>
 
         {%- for communication in communications -%}
         {% render '@notification--message', communication, true -%}
         {% endfor -%}
       </section>
 
-      <section class="mb-3" id="demandes">
-        <h2 class="mb-1">Demande(s)</h2>
+      <section class="mb-5" id="demandes">
+        <h2 class="mb-3">Demande(s)</h2>
 
         {%- for demande in demandes -%}
         {% render '@notification--demande', demande, true -%}
@@ -26,7 +26,7 @@
     </div>
 
     <div class="col-md-4">
-      <h2 class="mb-1">Prestations favorites</h2>
+      <h2 class="mb-3">Prestations favorites</h2>
       <ul>
         <li><a href="#dsfsfs">Modification des impôts</a></li>
         <li><a href="#dsfsfs">Voter en ligne</a></li>
