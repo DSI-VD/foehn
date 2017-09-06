@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Rename `@header--application` in `@header-application`
+- Add `@header-application--fluid` variant
 - add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
 - `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
