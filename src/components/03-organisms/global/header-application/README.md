@@ -1,1 +1,1 @@
-Application title is not mandatory
+Application title is not optional
