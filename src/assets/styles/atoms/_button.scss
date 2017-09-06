@@ -2,6 +2,7 @@
 
 // Override normalize.css – because setting the font-family on `body` is not
 // specific enough for those tags
+
 button,
 input,
 optgroup,
@@ -10,12 +11,16 @@ textarea {
   font-family: $font-family-base;
 }
 
+button {
+  border-radius: 0;
+}
+
 /**
  * Button
  */
 .btn {
   white-space: normal;
-  padding-top: $btn-padding-y * 1.1;
+  padding-top: $input-btn-padding-y * 1.1;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 
@@ -41,7 +46,7 @@ a.btn {
 }
 
 .btn-sm {
-  padding-top: $btn-padding-y-sm * 2;
+  padding-top: $input-btn-padding-y-sm * 2;
   font-size: $font-size-base * 0.8;
 }
 
@@ -86,43 +91,10 @@ a.btn {
   &:after { @include vd-background-image-icon($vd-chevron-top, $vd-primary); }
 }
 
-.vd-btn-chevron-r {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-right, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-right, $vd-primary); }
-}
-
 .vd-btn-chevron-b {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
   &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
-}
-
-.vd-btn-chevron-l {
-  position: relative;
-  padding-left: $spacer * 1.5;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: $spacer * 1.5;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    pointer-events: none;
-    user-select: none;
-
-    @include vd-background-image-icon($vd-chevron-left, $vd-primary);
-  }
-
-  &.btn-secondary:before,
-  &.btn-success:before {
-    @include vd-background-image-icon($vd-chevron-left, $white);
-  }
 }
 
 /**

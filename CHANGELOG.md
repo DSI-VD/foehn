@@ -6,8 +6,85 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
+- add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
+- `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
+- `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
+- `@actualite` use `@figure--default` instead of hardcoded HTML
+- `@figure--default` no more use `<picture>` and `<source>` markup
+- `@teaser-small--media` use `@image--fluid` instead of `@image-responsive`
+- Use `srcset` attribut in `@image--default`
+- add sr-only to `@detail-prestation` h2 for more descriptive titles
+- Changed button labels in `teaser-list` and `service`
+- Change `@faq-item` column layout
+- Change `@card` column layout
+- Add class `btn btn-success vd-btn-pagination-submit` to `@button--submit` for pagination in `formulaire-prestation.config.json`
+- Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
+- Add `@figure-picture` component
+
+### Fix
+- Fix `@page-title-banner` background too dark in Firefox
+- Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
+
+## [0.32.0] - 2017-08-30
+
+### Changed
+- Fix update spacing utilities `{property}{sides}-1` becomes `{property}{sides}-3`
+
+## [0.31.0] - 2017-08-30
+
+### Changed
+- Fix `@nav` is not hidden on mobile
+- Fix `@nav-mobile` do not open
+- Fix the wrong scripts were included before the end of the `<body>` tag
+
+### Fix
+- Fix `@nav-mobile` positionning
+
+## [0.30.0] - 2017-08-29
+
+### Changed
+- Remove hamburger icon in `@nav-mobile`
+- Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
+- Update to Bootstrap 4 Beta
+  - Update spacing utilities class
+  - Replace `.btn-primary` class with `.btn-dark`
+  - Update grid offsetting
+  - Fix `@button-secondary` style by removing `.btn-dark` class
+  - Update `@nav-horizontal`
+  - Update `@primary-nav`
+
+### Fix
+- Fix `@nav` config
+
+### Remove
+- Remove unused varaints of headings
+- Remove `@page-title-banner-prestation`
+
+## [0.29.0] - 2017-08-22
+
+### Changed
+- Add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
+- Add "first" to `nav-side.config.json` for first element
+- Moddified `@nav-side`
+- Remove attribute `title` from link in `@teaser` (end of page)
+- Move `@publish-time` after headings in `@template--news-detail`
+- Correction orthographe interne à foehn composant `@search`
+- Remove class `.vd-text-green` in `@publish-time`
+- Change link in button in `@template-communiques-presse-detail--default`
+- Change style of `@teaser` in `@service`
+- Complete refactoring of pagination component `@pagination`
+- Remove attribute `title` from link in `@teaser`
+- Add `.access-nav` to `@access-nav`
+- CSS changes
+- Add `aria-hidden="true"` to secure header icon `@header--securise`
+- Tranform authority links into a list (`ul` -> `li`)
+- Change the structure of `@nav-mobile`
+
+
+### Added
+- "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
 - Add `@search` page
@@ -23,6 +100,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.28.0] - 2017-07-14
 
 ### Changed
+- add `.pt-1` class to `domain-item` for Firefox bug in focus
 - `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
 - Add `.vd-content` class in `@template--2-col-nav`
@@ -1214,7 +1292,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.28.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.32.0...HEAD
+[0.32.0]: https://github.com/DSI-VD/foehn/compare/v0.31.0...v0.32.0
+[0.31.0]: https://github.com/DSI-VD/foehn/compare/v0.30.0...v0.31.0
+[0.30.0]: https://github.com/DSI-VD/foehn/compare/v0.29.0...v0.30.0
+[0.29.0]: https://github.com/DSI-VD/foehn/compare/v0.28.1...v0.29.0
 [0.28.1]: https://github.com/DSI-VD/foehn/compare/v0.28.0...v0.28.1
 [0.28.0]: https://github.com/DSI-VD/foehn/compare/v0.27.0...v0.28.0
 [0.27.0]: https://github.com/DSI-VD/foehn/compare/v0.26.1...v0.27.0
