@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.28.0] - 2017-07-14
 
 ### Changed
+- add `.pt-1` class to `domain-item` for Firefox bug in focus
 - `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
 - Add `.vd-content` class in `@template--2-col-nav`
