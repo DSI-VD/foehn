@@ -30,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Remove
 - Remove `@fixed-bottom-container` component
 - Remove `@tabs` component
+- Remove `@pagination-vertical` component
 
 ## [0.32.0] - 2017-08-30
 
