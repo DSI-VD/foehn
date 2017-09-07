@@ -27,6 +27,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@page-title-banner` background too dark in Firefox
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
 
+## Remove
+- Remove `@fixed-bottom-container`
+
 ## [0.32.0] - 2017-08-30
 
 ### Changed
