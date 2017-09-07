@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
 
 ## Remove
+- Remove `@secure-tabs` component
 - Remove `@fixed-bottom-container` component
 - Remove `@tabs` component
 - Remove `@pagination-vertical` component
