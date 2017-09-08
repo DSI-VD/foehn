@@ -1,73 +1,45 @@
 @charset "UTF-8";
 
 /**
- * Style for the side nav
+ * Nav-side style
  *
- * 1. Use the headings font
+ * 1. The first element of the nav have to look like a headings
+ * 2. Every list element has a separator
+ * 3. Add a separator at the top of the first element. Because `ul` are inside
+ *    `li`
+ * 4. Starting at the third level of list, there's a padding on the left.
  */
 .vd-nav-side {
-  position: relative;
-  border-top: 1px solid $vd-neutral-light;
-  border-bottom: 1px solid $vd-neutral-light;
-
-  @include media-breakpoint-down(md) {
-    margin-top: $spacer !important;
-  }
-
-  /* style the first element of the page */
-  > li:first-child > a {
-    font-size: $h4-font-size;
+  > ul > li:first-child > a {
+    font-size: $h4-font-size; /* [1] */
     font-family: $headings-font-family; /* [1] */
     font-weight: $headings-font-weight; /* [1] */
-    background-color: lightgray;
-  }
+    color: $black; /* [1] */
+    text-decoration: none; /* [1] */
 
-  > li > ul {
-    padding-left: 0;
-  }
-
-  .nav-link:focus,
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-
-  > .nav-item {
-    padding-right: ($spacer);
-    padding-left: ($spacer);
-  }
-
-  .nav-item {
-    padding-top: 0.3rem;
-    padding-bottom: ($spacer / 2);
-
-    .nav-link {
-      padding-top: 0;
-      padding-bottom: 0;
-      color: $vd-primary-dark;
-
-      &.h4 {
-        color: $black;
-        font-family: $font-family-base;
-        margin-bottom: 0;
-      }
-    }
-
-    ul {
-      margin-top: ($spacer / 2);
-      list-style-type: none;
-    }
-
-    &:not(:last-child) {
-      border-bottom: 1px solid $vd-neutral-light;
+    &:hover {
+      text-decoration: underline; /* [1] */
     }
   }
 
-  .active {
-    font-weight: $font-weight-bold;
+  .nav-link {
+    border-bottom: 1px solid $vd-neutral-light; /* [2] */
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  .nav:first-child .nav-link {
+    border-top: 1px solod $vd-neutral-light; /* [3] */
+  }
+
+  > ul ul ul {
+    padding-left: $spacer; /* [3] */
   }
 }
 
-html.wf-active .vd-nav-side > li:first-child > a {
+html.wf-active .vd-nav-side > ul > li:first-child > a {
   font-family: $headings-font-family-enhance; /* [1] */
   font-weight: $headings-font-weight; /* [1] */
 }
