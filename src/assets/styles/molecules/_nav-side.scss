@@ -8,6 +8,9 @@
  * 3. Add a separator at the top of the first element. Because `ul` are inside
  *    `li`
  * 4. Starting at the third level of list, there's a padding on the left.
+ *
+ * A note for futur me: Sorry for that. Bad design makes me doing bad CSS with
+ *                      lot of specificities.
  */
 .vd-nav-side {
   > ul > li:first-child > a {
