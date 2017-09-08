@@ -9,6 +9,10 @@
     margin-top: $spacer !important;
   }
 
+  > li > ul {
+    padding-left: 0;
+  }
+
   .nav-link:focus,
   .nav-link:hover {
     text-decoration: underline;
