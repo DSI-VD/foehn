@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/**
+ * Style for the side nav
+ *
+ * 1. Use the headings font
+ */
 .vd-nav-side {
   position: relative;
   border-top: 1px solid $vd-neutral-light;
@@ -7,6 +12,14 @@
 
   @include media-breakpoint-down(md) {
     margin-top: $spacer !important;
+  }
+
+  /* style the first element of the page */
+  > li:first-child > a {
+    font-size: $h4-font-size;
+    font-family: $headings-font-family; /* [1] */
+    font-weight: $headings-font-weight; /* [1] */
+    background-color: lightgray;
   }
 
   > li > ul {
@@ -52,4 +65,9 @@
   .active {
     font-weight: $font-weight-bold;
   }
+}
+
+html.wf-active .vd-nav-side > li:first-child > a {
+  font-family: $headings-font-family-enhance; /* [1] */
+  font-weight: $headings-font-weight; /* [1] */
 }
