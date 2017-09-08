@@ -1,10 +1,14 @@
-<nav>
-  <ul class="nav flex-column vd-nav-side mb-3">
+<nav class="vd-nav-side mb-3">
+  <ul class="nav flex-column">
     {% for item in items %}
     <li class="nav-item">
-      <a class="nav-link{% if item.active %} active{% endif %}  {% if item.first %} h4 mt-0{% endif %}" href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.name }}</a>
+      <a class="nav-link{% if item.active %} active{% endif %}  {% if item.first %} h4 mt-0{% endif %}"
+         href="{{ item.url }}"{% if item.title %}
+         title="{{ item.title }}"{% endif %} >
+         {{ item.name }}
+      </a>
       {%- if item.items %}
-        <ul>
+        <ul class="nav flex-column">
           {% for item in item.items -%}
           <li class="nav-item">
             <a class="nav-link{% if item.active %} active{% endif %}"
@@ -13,7 +17,7 @@
               {{ item.name }}
             </a>
             {%- if item.items %}
-            <ul>
+            <ul class="nav flex-column">
               {% for item in item.items -%}
               <li class="nav-item">
                 <a class="nav-link{% if item.active %} active{% endif %}"
