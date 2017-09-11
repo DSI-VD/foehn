@@ -2,6 +2,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- change class from `h3` to `h5` for `h1` title in `@header--application`
 
 ## [0.32.0] - 2017-08-30
 
