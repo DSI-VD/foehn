@@ -11,8 +11,7 @@
     display: inline-flex;
     flex-grow: 1;
     flex-shrink: 0;
-    min-width: calc(25% - #{$spacer});
-    max-width: calc(33% - #{$spacer});
+    width: calc(33% - #{$spacer});
     position: relative;
     margin: ($spacer / 2);
     color: $black;
@@ -23,6 +22,9 @@
     a {
       text-decoration: none;
       color: $black;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     @include media-breakpoint-up(sm) {
