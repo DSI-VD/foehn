@@ -5,14 +5,14 @@
   flex-wrap: wrap;
   margin: ($spacer / -2);
   padding-left: 0;
-  max-width:100%;
+  max-width: 100%;
 
   .btn {
     display: inline-flex;
     flex-grow: 1;
     flex-shrink: 0;
-    width: calc(33% - #{$spacer});
     position: relative;
+    width: calc(33% - #{$spacer});
     margin: ($spacer / 2);
     color: $black;
     transition: background-color 0.2s;
