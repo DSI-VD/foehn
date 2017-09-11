@@ -6,16 +6,18 @@
 
 ul {
   list-style-type: disc;
+
   li {
     margin-bottom: $spacer;
   }
 }
 
-ol{
-  li{
-    margin-bottom:$spacer;
+ol {
+  li {
+    margin-bottom: $spacer;
   }
 }
+
 /**
  * square bullet list
  */
