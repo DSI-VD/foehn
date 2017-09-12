@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change `h5` to `strong.h5` in `@card`
 - Change class from `h3` to `h5` for `h1` title in `@header--application`
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
