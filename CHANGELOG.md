@@ -2,8 +2,6 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-### Changed
-- Add `margin-bottom: $spacer` to `ul` and `ol` `li`
 
 ### Changed
 - Change class from `h3` to `h5` for `h1` title in `@header--application`
@@ -27,6 +25,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@figure-picture` component
 
 ### Fix
+- Fix unordered and ordered lists spacings
 - Fix italic placeholder in `@search-form--default`
 - Fix `@page-title-banner` background too dark in Firefox
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
