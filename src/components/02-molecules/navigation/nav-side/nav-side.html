@@ -5,6 +5,9 @@
       <a class="nav-link{% if item.active %} active{% endif %}  {% if item.first %} h4 mt-0{% endif %}"
          href="{{ item.url }}"{% if item.title %}
          title="{{ item.title }}"{% endif %} >
+         {%- if item.active -%}
+         <span class="sr-only">Vous êtes ici: </span>
+         {%- endif -%}
          {{ item.name }}
       </a>
       {%- if item.items %}
@@ -14,6 +17,9 @@
             <a class="nav-link{% if item.active %} active{% endif %}"
                href="{{ item.url }}"{% if item.title %}
                title="{{ item.title }}"{% endif %}>
+              {%- if item.active -%}
+              <span class="sr-only">Vous êtes ici: </span>
+              {%- endif -%}
               {{ item.name }}
             </a>
             {%- if item.items %}
@@ -23,7 +29,10 @@
                 <a class="nav-link{% if item.active %} active{% endif %}"
                    href="{{ item.url }}"
                    {% if item.title %} title="{{ item.title }}"}{% endif %}>
-                  {{ item.name }}
+                {%- if item.active -%}
+                <span class="sr-only">Vous êtes ici: </span>
+                {%- endif -%}
+                {{ item.name }}
                 </a>
               </li>
               {%- endfor %}
