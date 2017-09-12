@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
   
 ### Changed
+- Add sr-only title for services `<h2 class="sr-only">Services</h2>`
 - Change `@faq-item` column layout
 - Change `@card` column layout
 - Add class `btn btn-success vd-btn-pagination-submit` to `@button--submit` for pagination in `formulaire-prestation.config.json`
