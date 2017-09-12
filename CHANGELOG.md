@@ -3,7 +3,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Changed
-- Add italic to search placeholder on focus
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
 - Add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
@@ -24,6 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@figure-picture` component
 
 ### Fix
+- Fix italic placeholder in `@search-form--default`
 - Fix `@page-title-banner` background too dark in Firefox
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
 
