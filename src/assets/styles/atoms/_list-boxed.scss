@@ -1,8 +1,11 @@
 @charset 'UTF-8';
 
 .vd-list-boxed {
+  margin-bottom: ($spacer * 2);
+  margin-top: ($spacer / 2);
+
   li {
-    margin-bottom: $spacer;
+    margin-bottom: ($spacer / 2);
   }
 
   .nav-link {
