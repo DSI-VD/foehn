@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Replace `.text-muted` class with `.text-secondary`
 - Replace `.bg-inverse` class with `.bg-dark`
 - Replace `.bg-faded` class with `.bg-light`
 - Add one more level of navigation in `@nav-side`. The root page of navigation
