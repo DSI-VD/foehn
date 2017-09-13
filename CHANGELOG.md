@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add one more level of navigation in `@nav-side`. The root page of navigation
+  is the first element of the navigation.
 - Change class from `h3` to `h5` for `h1` title in `@header--application`
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
@@ -25,6 +27,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@figure-picture` component
 
 ### Fix
+- Fix content in `@content`
 - Fix unordered and ordered lists spacings
 - Fix italic placeholder in `@search-form--default`
 - Fix `@page-title-banner` background too dark in Firefox
