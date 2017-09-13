@@ -6,16 +6,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Add one more level of navigation in `@nav-side`. The root page of navigation
   is the first element of the navigation.
+- Change class from `h3` to `h5` for `h1` title in `@header--application`
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
-- add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
+- Add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
 - `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@actualite` use `@figure--default` instead of hardcoded HTML
 - `@figure--default` no more use `<picture>` and `<source>` markup
 - `@teaser-small--media` use `@image--fluid` instead of `@image-responsive`
 - Use `srcset` attribut in `@image--default`
-- add sr-only to `@detail-prestation` h2 for more descriptive titles
+- Add sr-only to `@detail-prestation` h2 for more descriptive titles
 - Changed button labels in `teaser-list` and `service`
 - Change `@faq-item` column layout
 - Change `@card` column layout
@@ -27,6 +28,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Fix content in `@content`
+- Fix unordered and ordered lists spacings
+- Fix italic placeholder in `@search-form--default`
 - Fix `@page-title-banner` background too dark in Firefox
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
 
