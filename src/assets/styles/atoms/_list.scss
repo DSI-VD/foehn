@@ -6,19 +6,6 @@
 
 ul {
   list-style-type: disc;
-  margin-bottom: ($spacer * 2);
-
-  li {
-    margin-bottom: $spacer;
-  }
-}
-
-ol {
-  margin-bottom: ($spacer * 2);
-
-  li {
-    margin-bottom: $spacer;
-  }
 }
 
 /**
@@ -28,8 +15,17 @@ ol {
   padding-left: $spacer;
   list-style-type: square;
   color: $black;
+  margin-bottom: ($spacer * 2);
 
   li {
-    margin-bottom: $spacer;
+    margin-bottom: ($spacer / 2);
+  }
+}
+
+.vd-list-boxed {
+  margin-bottom: ($spacer * 2);
+
+  li {
+    margin-bottom: ($spacer / 2);
   }
 }
