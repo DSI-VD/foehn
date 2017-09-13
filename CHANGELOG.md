@@ -26,6 +26,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@figure-picture` component
 
 ### Fix
+- Fix content in `@content`
 - Fix `@page-title-banner` background too dark in Firefox
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
 
