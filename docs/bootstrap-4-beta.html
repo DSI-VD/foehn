@@ -136,6 +136,12 @@
 </ul>
 <h2 id="update-button-class">Update button class</h2>
 <p>Replace <code>.btn-primary</code> class with <code>.btn-dark</code>.</p>
+<h2 id="update-color-helpers">Update color helpers</h2>
+<ul>
+<li>Replace <code>.text-muted</code> class with <code>.text-secondary</code></li>
+<li>Replace <code>.bg-inverse</code> class with <code>.bg-dark</code></li>
+<li>Replace <code>.bg-faded</code> class with <code>.bg-light</code></li>
+</ul>
 <h2 id="update-grid-offsetting-columns">Update grid offsetting columns</h2>
 <p>Update the grid to <code>drop</code> <code>push</code>, <code>pull</code>, and <code>offset</code> in favor of new <code>.order-</code> modifiers and margin utilities. Take a look at <a href="https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns">the documentation</a>.</p>
 <p>In foehn these change take place in two components.</p>
@@ -229,7 +235,7 @@ updated.</p>
 <li><code>.navbar-toggleable-*</code> class is replaced bay <code>.navbar-expand</code>.</li>
 <li>The brand come before the toggle button.</li>
 </ul>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-md navbar-light bg-faded{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>&gt;</span>
+<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-md navbar-light bg-light{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand d-md-none"</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#navbarSupportedContent"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
