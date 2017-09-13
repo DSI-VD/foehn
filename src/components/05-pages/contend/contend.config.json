@@ -1,6 +1,6 @@
 {
   "context": {
-    "pageTitle": "Polluants atmosphériques",
+    "pageTitle": "Ammoniac",
     "breadcrumb": [
       {
         "page": "vd.ch",
@@ -12,6 +12,10 @@
       },
       {
         "page": "Air",
+        "url": "#"
+      },
+      {
+        "page": "Polluants atmosphériques",
         "url": "#"
       }
     ],
@@ -44,8 +48,7 @@
                 },
                 {
                   "name": "Comment améliorer l'air",
-                  "url": "http://www.placeholder-url-4.com/",
-                  "active": true
+                  "url": "http://www.placeholder-url-4.com/"
                 },
                 {
                   "name": "En cas de canicule",
@@ -59,7 +62,8 @@
             },
             {
               "name": "Ammoniac",
-              "url": "http://www.placeholder-url-7.com/"
+              "url": "http://www.placeholder-url-7.com/",
+              "active": true
             },
             {
               "name": "Qualité de l'air",
