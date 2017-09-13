@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Replace `.bg-faded` class with `.bg-light`
 - Add one more level of navigation in `@nav-side`. The root page of navigation
   is the first element of the navigation.
 - Change class from `h3` to `h5` for `h1` title in `@header--application`
