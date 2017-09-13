@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add sr-only title to `@nav-side`
 - Replace `.text-muted` class with `.text-secondary`
 - Replace `.bg-inverse` class with `.bg-dark`
 - Replace `.bg-faded` class with `.bg-light`
