@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add one more level of navigation in `@nav-side`. The root page of navigation
+  is the first element of the navigation.
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
 - add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
