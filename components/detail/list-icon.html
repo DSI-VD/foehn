@@ -174,11 +174,14 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-14bc5fe19c3d0157f395c34f010174bc-panel-view">
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-list-icons"</span>&gt;</span>
-  {% for item in listIcon %}
+  {% for item in listIcon.items %}
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa {{ item.icon }}"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ item.url }}"</span>&gt;</span>{{ item.item }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa {{ item.icon }}"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> {% if item.accessibleLegend %}<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>{{ item.accessibleLegend }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ item.url }}"</span>&gt;</span>{{ item.item }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   {% endfor %}
+  {% if listIcon.button %}
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark"</span>&gt;</span>Contacter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  {% endif %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></pre>
     </code>
 </div>
@@ -189,18 +192,20 @@
         
             
             <pre>{
-  <span class="hljs-attr">"listIcon"</span>: [
-    {
-      <span class="hljs-attr">"item"</span>: <span class="hljs-string">"info.spi@vd.ch"</span>,
-      <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"fa-info-circle"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"item"</span>: <span class="hljs-string">"voir sur la carte"</span>,
-      <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"fa-map-marker"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    }
-  ]
+  <span class="hljs-attr">"listIcon"</span>: {
+    <span class="hljs-attr">"items"</span>: [
+      {
+        <span class="hljs-attr">"item"</span>: <span class="hljs-string">"info.spi@vd.ch"</span>,
+        <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"fa-info-circle"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"item"</span>: <span class="hljs-string">"voir sur la carte"</span>,
+        <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"fa-map-marker"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      }
+    ]
+  }
 }</pre>
             
         
@@ -402,6 +407,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--secondary" data-pjax>
                 <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--link" data-pjax>
+                <span>Link</span>
                 
 
 <div class="Status Status--unlabelled">

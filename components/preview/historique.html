@@ -255,18 +255,25 @@
 
 <nav>
   <h3 class="sr-only">Pagination</h3>
-  <div class="vd-pagination">
-    <a href="#" class="btn vd-btn-pagination-l"><span class="d-none d-md-inline-block">Précédent</span>&nbsp;</a>
-      <ul class="list-unstyled mb-0">
-        <li><a href="#" class="btn">1</a></li>
-        <li><a href="#" class="btn">2</a></li>
-        <li><a href="#" class="btn">3</a></li>
-        <li><a href="#" class="btn">...</a></li>
-        <li><a href="#" class="btn">55</a></li>
+  <div class="d-flex justify-content-between">
+      <a href="#" 
+   title="link to somewhere" 
+   class="btn btn-link"
+   > <span class="fa fa-chevron-left" aria-hidden="true"></span> Précédent</a>
+<ul class="list-inline mb-0 d-none d-md-inline-block">
+        <li class="list-inline-item"><a href="#" class="btn">1</a></li>
+        <li class="list-inline-item"><a href="#" class="btn">2</a></li>
+        <li class="list-inline-item"><a href="#" class="btn">3</a></li>
+        <li class="list-inline-item"><a href="#" class="btn">...</a></li>
+        <li class="list-inline-item"><a href="#" class="btn">55</a></li>
       </ul>
-    <a href="#" class="btn vd-btn-pagination-r"><span class="d-none d-md-inline-block">Suivant</span>&nbsp;</a>
-    
-  </div>
+      <a href="#" 
+   title="link to somewhere" 
+   class="btn btn-link"
+   >Suivant <span class="fa fa-chevron-right" aria-hidden="true"></span>
+</a>
+
+    </div>
 </nav>
 
 
