@@ -33,10 +33,9 @@ button {
   }
 
   &[data-toggle="collapse"] {
-    @extend .vd-btn-chevron-b;
-
-    &[aria-expanded="true"] {
-      @extend .vd-btn-cross;
+    .fa {
+      font-size: 1rem;
+      color: $vd-primary;
     }
   }
 }
@@ -64,9 +63,7 @@ a.btn {
 // Buttons with icons
 //
 // Prefixed with vd-, add the class to button to add a chevron icon
-.vd-btn-chevron-t,
-.vd-btn-chevron-r,
-.vd-btn-chevron-b {
+.vd-btn-chevron-r {
   position: relative;
   padding-right: $spacer * 1.5;
 
@@ -87,15 +84,35 @@ a.btn {
 }
 
 .vd-btn-chevron-t {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-top, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-top, $vd-primary); }
+  .fa {
+    font-size: 1rem;
+    color: $vd-primary;
+  }
+  &.btn-secondary,
+  &.btn-success{
+    .fa {
+      color: $white;
+    }
+  }
+  //&.btn-secondary:after,
+  //&.btn-success:after { @include vd-background-image-icon($vd-chevron-top, $white); }
+  //&:after { @include vd-background-image-icon($vd-chevron-top, $vd-primary); }
 }
 
 .vd-btn-chevron-b {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
+  .fa {
+    font-size: 1rem;
+    color: $vd-primary;
+  }
+  &.btn-secondary,
+  &.btn-success{
+    .fa {
+      color: $white;
+    }
+  }
+  //&.btn-secondary:after,
+  //&.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
+  //&:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
 }
 
 /**

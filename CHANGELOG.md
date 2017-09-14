@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- use font-awesome icons for `@nav-primary`, `@button-back-to-top`, `@domains-list` and `@faq-item`
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
 - add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
