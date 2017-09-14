@@ -2,6 +2,9 @@
     "status": "ready",
     "context": {
       "title": "Actualités",
+      "button": {
+        "text": "Toutes les actualités"
+      },
       "teasers": [
         {
           "title": "Ut condimentum magna a ornare pulvinar",
