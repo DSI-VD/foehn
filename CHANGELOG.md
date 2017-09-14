@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
+- Add `@button--link` variant to `@button`
 - Add `@figure-picture` component
 
 ### Fix
