@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@pagination` set to use new `@button--link` variant button
+- `@pagination` use Bootstrap helper class instead of custom class
 - Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
 - Add sr-only title for services `<h2 class="sr-only">Services</h2>`
 - Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
@@ -36,6 +38,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
+- Add `@button--link` variant to `@button`
 - Add `@figure-picture` component
 
 ### Fix
