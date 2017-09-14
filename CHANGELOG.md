@@ -33,6 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@figure-picture` component
 
 ### Fix
+- Fix `@nav` config for active page
 - Fix content in `@content`
 - Fix unordered and ordered lists spacings
 - Fix italic placeholder in `@search-form--default`
