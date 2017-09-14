@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `aria-invalid="true"` Aria attribut and change help text on 
+  `@input--validation-danger` to warn screen readers that the value is invalid
 - Fix `@logo-etat--default` accessibility by removing `aria-labelledby` and
   adding `title` attribut
 - Add sr-only title to `@nav-side`
