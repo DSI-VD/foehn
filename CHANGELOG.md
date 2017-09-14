@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
 - Add sr-only title for services `<h2 class="sr-only">Services</h2>`
 - Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
 - Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)
