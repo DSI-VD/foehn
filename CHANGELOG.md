@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - `@pagination` set to use new `@button--link` variant button
 - `@pagination` use Bootstrap helper class instead of custom class
+- Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
+- Add sr-only title for services `<h2 class="sr-only">Services</h2>`
+- Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
+- Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)
+- Add `aria-invalid="true"` Aria attribut and change help text on 
+  `@input--validation-danger` to warn screen readers that the value is invalid
+- Fix `@logo-etat--default` accessibility by removing `aria-labelledby` and
+  adding `title` attribut
 - Add sr-only title to `@nav-side`
 - Replace `.text-muted` class with `.text-secondary`
 - Replace `.bg-inverse` class with `.bg-dark`
@@ -34,6 +42,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@figure-picture` component
 
 ### Fix
+- Fix `@nav` config for active page
 - Fix content in `@content`
 - Fix unordered and ordered lists spacings
 - Fix italic placeholder in `@search-form--default`
