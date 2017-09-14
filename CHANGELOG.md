@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
   
 ### Changed
-- Changed `@contact-form` to use rendering of elements instead of HTML
+- Changed `@contact-form` to use rendering of elements instead of HTML. Changed 'Requis' to 'requis' (lowercase) in `@text-area` and `@input`
 - Changed `@textarea` to use dynamic label, id and required 
 - `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
