@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Fix `@logo-etat--default` accessibility by removing `aria-labelledby` and
+  adding `title` attribut
 - Add sr-only title to `@nav-side`
 - Replace `.text-muted` class with `.text-secondary`
 - Replace `.bg-inverse` class with `.bg-dark`
