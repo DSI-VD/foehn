@@ -9,7 +9,7 @@
 
   {% render '@input--default', {label: "Sujet", id: "subject", required: true}, true %}
 
-  {% render '@textarea' %}
+  {% render '@textarea', {label: "Message", id: "message", required: true} %}
 
   <div class="form-group">
     {% render '@submit' %}
