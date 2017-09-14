@@ -9,9 +9,9 @@
     </ul>
   </section>
 
-  <nav class="mb-5">
-    {% render '@index-menu', index %}
-  </nav>
+
+  {% render '@index-menu', {styleModifier: 'mb-5'}, true %}
+
 
   <section id="1" class="mb-5">
     <h2><span class="sr-only">Obtenir la prestation </span>En ligne</h2>
