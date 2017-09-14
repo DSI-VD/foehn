@@ -3,11 +3,13 @@
     "context": {
       "previous": {
         "url": "#",
-        "text": "Précédent"
+        "text": "Précédent",
+        "iconBefore": "fa-chevron-left"
       },
       "next": {
         "url": "#",
-        "text": "Suivant"
+        "text": "Suivant",
+        "iconAfter": "fa-chevron-right"
       }
     }
 }
