@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
+- Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)
 - Add `aria-invalid="true"` Aria attribut and change help text on 
   `@input--validation-danger` to warn screen readers that the value is invalid
 - Fix `@logo-etat--default` accessibility by removing `aria-labelledby` and
