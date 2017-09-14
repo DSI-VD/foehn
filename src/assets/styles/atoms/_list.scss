@@ -6,6 +6,19 @@
 
 ul {
   list-style-type: disc;
+  margin-bottom: ($spacer * 2);
+
+  li {
+    margin-bottom: $spacer;
+  }
+}
+
+ol {
+  margin-bottom: ($spacer * 2);
+
+  li {
+    margin-bottom: $spacer;
+  }
 }
 
 /**
@@ -17,6 +30,6 @@ ul {
   color: $black;
 
   li {
-    margin-bottom: 0;
+    margin-bottom: $spacer;
   }
 }

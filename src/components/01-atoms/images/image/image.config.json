@@ -1,14 +1,38 @@
 {
     "status": "ready",
     "context": {
-      "src": "https://source.unsplash.com/random/400x200",
-      "alt": "Alternative text"
+      "src": "https://placehold.it/960x640/ea09ff/000001?text=Default|960x640",
+      "alt": "Alternative text",
+      "srcset": [
+        {
+            "width": "320w",
+            "file": "https://placehold.it/320x210/d8e7ff/000001?text=320x210"
+        },
+        {
+            "width": "540w",
+            "file": "https://placehold.it/540x360/a4c6fc/000001?text=540x360"
+        },
+        {
+            "width": "720w",
+            "file": "https://placehold.it/720x480/6ba4ff/000001?text=720x480"
+        },
+        {
+            "width": "960w",
+            "file": "https://placehold.it/960x640/3f89ff/000001?text=960x640"
+        },
+        {
+            "width": "1140w",
+            "file": "https://placehold.it/1140x760/0a68ff/fffffa?text=1140x760"
+        }
+      ]
     },
     "variants": [
       {
         "name": "desaturate",
         "context": {
-          "class": "img-desaturate"
+          "class": "img-desaturate",
+          "src": "https://source.unsplash.com/random/960x640",
+          "srcset": false
         }
       },
       {
@@ -21,7 +45,8 @@
         "name": "rounded",
         "context": {
           "class": "rounded-circle",
-          "src": "https://source.unsplash.com/random/200x200"
+          "src": "https://source.unsplash.com/random/200x200",
+          "srcset": false
         }
       }
     ]
