@@ -10,6 +10,7 @@
       {
         "name": "danger",
         "context": {
+          "helpText": "Ce message sera traité de manière confidentielle",
           "validation": {
             "class": "danger",
             "text": "Veuillez saisir votre message"
