@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add sr-only to links in `@detail-prestation`
+- Changed `@button--cta` to show sr-only title after link
 - `@pagination` set to use new `@button--link` variant button
 - `@pagination` use Bootstrap helper class instead of custom class
 - Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
