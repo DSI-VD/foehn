@@ -1,5 +1,5 @@
 <a href="{{ href }}" 
-   title="{{ text }} {{ title }}"
+   {%- if title %}title="{{ text }} {{ title }}"{% endif -%}
    class="{{ class }}"
    {% if attributes %}
    {% for attribute, value in attributes %}
