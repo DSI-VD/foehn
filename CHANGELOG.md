@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.33.0] - 2017-09-15
+
 ### Changed
 - `@pagination` set to use new `@button--link` variant button
 - `@pagination` use Bootstrap helper class instead of custom class
@@ -1320,7 +1322,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.32.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.33.0...HEAD
+[0.33.0]: https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0
 [0.32.0]: https://github.com/DSI-VD/foehn/compare/v0.31.0...v0.32.0
 [0.31.0]: https://github.com/DSI-VD/foehn/compare/v0.30.0...v0.31.0
 [0.30.0]: https://github.com/DSI-VD/foehn/compare/v0.29.0...v0.30.0
