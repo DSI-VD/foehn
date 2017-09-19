@@ -3,6 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Changed `@contact-form` to use rendering of elements instead of HTML
+- Changed 'Requis' to 'requis' (lowercase) in `@textarea` and `@input--required`
+- Changed `@textarea` to use dynamic label, id and required
+- Add `aria-invalid=true` if `@textarea--danger`'s is invalid
+
 ## [0.33.0] - 2017-09-15
 
 ### Changed
