@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `sr-only` to links in `@detail-prestation`
 - Changed `@contact-form` to use rendering of elements instead of HTML
 - Changed 'Requis' to 'requis' (lowercase) in `@textarea` and `@input--required`
 - Changed `@textarea` to use dynamic label, id and required
