@@ -155,7 +155,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-2f226f5191928642142f45392a40412f-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"link to somewhere"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Button link to somewhere"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -163,8 +163,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-2f226f5191928642142f45392a40412f-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ href }}"</span> 
-   <span class="hljs-attr">title</span>=<span class="hljs-string">"{{ title }}"</span> 
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ href }}"</span>
+   {%<span class="hljs-attr">-</span> <span class="hljs-attr">if</span> <span class="hljs-attr">title</span> %}<span class="hljs-attr">title</span>=<span class="hljs-string">"{{ text }} {{ title }}"</span>{% <span class="hljs-attr">endif</span> <span class="hljs-attr">-</span>%}
    <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ class }}"</span>
    {% <span class="hljs-attr">if</span> <span class="hljs-attr">attributes</span> %}
    {% <span class="hljs-attr">for</span> <span class="hljs-attr">attribute</span>, <span class="hljs-attr">value</span> <span class="hljs-attr">in</span> <span class="hljs-attr">attributes</span> %}
