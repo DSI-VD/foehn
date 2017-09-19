@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Add number of search results in `@template-communiques-presse-list--results`
+- Add number of search results in `@template-communiques-presse-list--results` and change `<h5>` to `<p>` for this element
 - Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
 - Add sr-only title for services `<h2 class="sr-only">Services</h2>`
 - Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
