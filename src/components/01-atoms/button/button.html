@@ -1,4 +1,4 @@
-<a href="{{ href }}" 
+<a href="{{ href }}"
    {%- if title %}title="{{ text }} {{ title }}"{% endif -%}
    class="{{ class }}"
    {% if attributes %}
@@ -8,7 +8,6 @@
    {% endif %}>
 {%- if iconBefore %} <span class="fa {{ iconBefore }}" aria-hidden="true"></span> {% endif -%}
 {{ text }}
-{%- if title %}<span class="sr-only">{{ title }}</span>{%- endif %}
 {%- if iconAfter %} <span class="fa {{ iconAfter }}" aria-hidden="true"></span>
 {% endif -%}
 </a>
