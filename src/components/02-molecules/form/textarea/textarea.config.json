@@ -10,7 +10,7 @@
       {
         "name": "danger",
         "context": {
-          "helpText": "Ce message sera traité de manière confidentielle",
+          "helpText": "Le message doit contenir au minimum trois caractères.",
           "validation": {
             "class": "danger",
             "text": "Veuillez saisir votre message"
