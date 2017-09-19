@@ -1,17 +1,19 @@
 {
   "status": "ready",
   "context": {
-    "listIcon": [
-      {
-        "item": "info.spi@vd.ch",
-        "icon": "fa-info-circle",
-        "url": "#"
-      },
-      {
-        "item": "voir sur la carte",
-        "icon": "fa-map-marker",
-        "url": "#"
-      }
-    ]
+    "listIcon":{
+      "items":[
+        {
+          "item": "info.spi@vd.ch",
+          "icon": "fa-info-circle",
+          "url": "#"
+        },
+        {
+          "item": "voir sur la carte",
+          "icon": "fa-map-marker",
+          "url": "#"
+        }
+      ]
+    }
   }
 }

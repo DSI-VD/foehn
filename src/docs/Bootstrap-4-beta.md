@@ -34,16 +34,22 @@ Two size are included in spacing utilities.
 - Replace: `$1$2-5`
 
 #### size 2 becomes 4
-- Find: `([pm])([xytrbl])-3`
+- Find: `([pm])([xytrbl])-2`
 - Replace: `$1$2-5`
 
 #### size 1 becomes 3
-- Find: `([pm])([xytrbl])-3`
+- Find: `([pm])([xytrbl])-1`
 - Replace: `$1$2-5`
 
 ## Update button class
 
 Replace `.btn-primary` class with `.btn-dark`.
+
+## Update color helpers
+
+- Replace `.text-muted` class with `.text-secondary`
+- Replace `.bg-inverse` class with `.bg-dark`
+- Replace `.bg-faded` class with `.bg-light`
 
 ## Update grid offsetting columns
 
