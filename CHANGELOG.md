@@ -2,10 +2,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-  
+
 ### Changed
-- Changed `@contact-form` to use rendering of elements instead of HTML. Changed 'Requis' to 'requis' (lowercase) in `@textarea` and `@input`
-- Changed `@textarea` to use dynamic label, id and required 
+- Changed `@contact-form` to use rendering of elements instead of HTML
+- Changed 'Requis' to 'requis' (lowercase) in `@textarea` and `@input--required`
+- Changed `@textarea` to use dynamic label, id and required
+- Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 - `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
 - `@actualite` use `@figure--default` instead of hardcoded HTML
