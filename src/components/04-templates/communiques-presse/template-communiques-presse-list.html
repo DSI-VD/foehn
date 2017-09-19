@@ -33,7 +33,7 @@
 
     <div class="col-md-8">
       {% block main %}
-      {% if results %}<h2 class="mb-5">{{ total }} résultats trouvés</h2>{% else %}<h2 class="sr-only">Liste des communiqués de presse</h2>{% endif %}
+      {% if results %}<p>{{ total }} résultats trouvés</h2>{% else %}<p class="sr-only">Liste des communiqués de presse</p>{% endif %}
       {% render '@teaser-alt-list' %}
       {% endblock %}
     </div>
