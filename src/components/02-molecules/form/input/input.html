@@ -11,7 +11,7 @@
     {%- if labelStyleModifier %} 
     class="{{ labelStyleModifier }}"
     {%- endif -%}>{{ label }}
-      {%- if required %} <span aria-hidden="true">(Requis)</span>{% endif -%}
+      {%- if required %} <span aria-hidden="true">(requis)</span>{% endif -%}
   </label>
   {%- if validation.text %}
   <div class="form-control-feedback">{{ validation.text }}</div>
