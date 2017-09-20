@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Changed `@download-list` to user `@h3` element with styleModifier
+- Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
 - Add `mb-1` class to Press Release subtitle (`@teaser-small--alt`)
 - Add `@pagination--pages` variant to `@pagination` for `@teaser-alt-list`
 - Add more real data to table example in `@table` html
