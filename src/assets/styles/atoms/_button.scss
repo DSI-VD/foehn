@@ -88,8 +88,9 @@ a.btn {
     font-size: 1rem;
     color: $vd-primary;
   }
+
   &.btn-secondary,
-  &.btn-success{
+  &.btn-success {
     .fa {
       color: $white;
     }
@@ -104,8 +105,9 @@ a.btn {
     font-size: 1rem;
     color: $vd-primary;
   }
+
   &.btn-secondary,
-  &.btn-success{
+  &.btn-success {
     .fa {
       color: $white;
     }
@@ -123,4 +125,21 @@ a.btn {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-cross, $white); }
   &:after { @include vd-background-image-icon($vd-cross, $vd-primary); }
+}
+
+/**
+ * Toggle menu icon
+ *
+ * 1. Close show fa-chevron-down icon
+ * 2. Close show fa-chevron-time icon
+ */
+
+.collapsed.vd-menu-toggle .vd-fa-menu-toggle:before {
+  content: "\f078"; /* [1] */
+  font-size: 1rem;
+}
+
+.vd-menu-toggle .vd-fa-menu-toggle:before {
+  content: "\f00d"; /* [2] */
+  font-size: 1rem;
 }
