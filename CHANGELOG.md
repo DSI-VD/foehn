@@ -4,7 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Add number of search results in `@template-communiques-presse-list--results` and change `<h5>` to `<p>` for this element
+- Add number of search results in `@template-communiques-presse-list--results`
+- Add class `vd-p mb-3` to results numbers in `@template-communiques-presse-list--results`
 - Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
 - Add sr-only title for services `<h2 class="sr-only">Services</h2>`
 - Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
@@ -37,6 +38,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
+- Add `_text.scss` atom to make title elements look like text
 - Add `@figure-picture` component
 
 ### Fix
