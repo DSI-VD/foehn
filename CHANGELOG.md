@@ -13,6 +13,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Changed `@textarea` to use dynamic label, id and required
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 
+### Added
+- Add `@datalist--communes`
+
 ## [0.33.0] - 2017-09-15
 
 ### Changed
