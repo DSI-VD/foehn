@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add margin bottom to `@list-boxed` and `@list-links` list elements
+- Changed class of `ul` in `@nav-primary` for `vd-menu-list-links` to set margin-bottom to 0
 - Change class from `h3` to `h5` for `h1` title in `@header--application`
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
