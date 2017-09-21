@@ -5,7 +5,10 @@
   flex-wrap: wrap;
   margin: ($spacer / -2);
   padding-left: 0;
-  max-width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    margin-right: ($spacer / 2);
+  }
 
   .btn {
     display: inline-flex;
@@ -13,6 +16,7 @@
     flex-shrink: 0;
     position: relative;
     width: calc(33% - #{$spacer});
+    max-width: calc(33% - #{$spacer});
     margin: ($spacer / 2);
     color: $black;
     transition: background-color 0.2s;
@@ -28,7 +32,9 @@
     }
 
     @include media-breakpoint-down(sm) {
-      width:100%;
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
     }
 
     @include vd-pattern-dotted($pattern-dotted-green);
