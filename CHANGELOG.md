@@ -28,9 +28,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
+- Add `@logo` and `@logo--white` components
 - Add `@figure-picture` component
 
 ### Fix
+- Fix `@footer` use `@logo-white`
 - Fix content in `@content`
 - Fix unordered and ordered lists spacings
 - Fix italic placeholder in `@search-form--default`
