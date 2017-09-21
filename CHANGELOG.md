@@ -6,6 +6,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Changed `@download-list` to user `@h3` element with styleModifier
 - Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
+- Add number of search results in `@template-communiques-presse-list--results`
+- Add class `vd-p mb-3` to results numbers in `@template-communiques-presse-list--results`
+- Change `h5` to `strong.h5` in `@card`
 - Add `mb-1` class to Press Release subtitle (`@teaser-small--alt`)
 - Add `@pagination--pages` variant to `@pagination` for `@teaser-alt-list`
 - Add more real data to table example in `@table` html
@@ -14,6 +17,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Changed 'Requis' to 'requis' (lowercase) in `@textarea` and `@input--required`
 - Changed `@textarea` to use dynamic label, id and required
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
+
+### Added
+- Add `.vd-p` class to make text elements look like body text
+- Add `@logo` and `@logo--white` components
+- Add `@datalist--communes`
+
+### Fix
+- Fix `@footer` use `@logo-white`
 
 ## [0.33.0] - 2017-09-15
 
