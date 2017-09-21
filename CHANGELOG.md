@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add number of search results in `@template-communiques-presse-list--results`
+- Add class `vd-p mb-3` to results numbers in `@template-communiques-presse-list--results`
 - Change `h5` to `strong.h5` in `@card`
 - Add `mb-1` class to Press Release subtitle (`@teaser-small--alt`)
 - Add `@pagination--pages` variant to `@pagination` for `@teaser-alt-list`
@@ -15,6 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 
 ### Added
+- Add `.vd-p` class to make text elements look like body text
 - Add `@logo` and `@logo--white` components
 - Add `@datalist--communes`
 
