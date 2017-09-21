@@ -67,12 +67,11 @@
 @import 'atoms/headings';
 @import 'atoms/button';
 @import 'atoms/update-time';
+@import 'atoms/text';
 @import 'atoms/input-group';
 
 // molecules:
 @import 'molecules/teaser-card';
-@import 'molecules/fixed-bottom-container';
-@import 'molecules/pagination-vertical';
 @import 'molecules/pagination';
 @import 'molecules/teaser-small';
 @import 'molecules/card';
@@ -82,14 +81,12 @@
 @import 'molecules/form-group-states';
 @import 'molecules/nav-mobile';
 @import 'molecules/logo-etat';
-@import 'molecules/secure-tabs';
 @import 'molecules/nav-side';
 @import 'molecules/list-icon';
 @import 'molecules/table';
 @import 'molecules/figure';
 @import 'molecules/teaser';
 @import 'molecules/social-icons';
-@import 'molecules/tabs';
 @import 'molecules/nav';
 @import 'molecules/nav-primary';
 @import 'molecules/blockquote';

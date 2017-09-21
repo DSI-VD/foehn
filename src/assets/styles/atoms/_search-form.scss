@@ -46,6 +46,10 @@
  * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
  */
 .vd-search-form-regular {
+  ::placeholder {
+    font-style: italic;
+  }
+
   .btn {
     background: $vd-primary-dark;
     border-color: $vd-primary-dark;

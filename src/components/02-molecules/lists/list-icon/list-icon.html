@@ -1,7 +1,10 @@
 <ul class="vd-list-icons">
-  {% for item in listIcon %}
+  {% for item in listIcon.items %}
   <li>
-    <span class="fa {{ item.icon }}" aria-hidden="true"></span> <a href="{{ item.url }}">{{ item.item }}</a>
+    <span class="fa {{ item.icon }}" aria-hidden="true"></span> {% if item.accessibleLegend %}<span class="sr-only">{{ item.accessibleLegend }}</span>{% endif %}<a href="{{ item.url }}">{{ item.item }}</a>
   </li>
   {% endfor %}
+  {% if listIcon.button %}
+  <li class="mt-3"><a href="#" class="btn btn-dark">Contacter</a></li>
+  {% endif %}
 </ul>
