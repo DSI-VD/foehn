@@ -14,7 +14,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 
 ### Added
+- Add `@logo` and `@logo--white` components
 - Add `@datalist--communes`
+
+### Fix
+- Fix `@footer` use `@logo-white`
 
 ## [0.33.0] - 2017-09-15
 
