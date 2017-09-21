@@ -34,5 +34,997 @@
       ]
     },
     "fallbackLabel": "Merci de le spécifier s'il ne figure pas dans la liste"
-  }
+  },
+  "variants": [
+    {
+      "name": "communes",
+      "context": {
+        "label": "Séléctionnez une commune",
+        "id": "commune",
+        "list": {
+          "id": "listCommunes",
+          "options": [
+            {
+              "name": "(Toutes)"
+            },
+            {
+              "name": "Aclens"
+            },
+            {
+              "name": "Agiez"
+            },
+            {
+              "name": "Aigle"
+            },
+            {
+              "name": "Allaman"
+            },
+            {
+              "name": "Apples"
+            },
+            {
+              "name": "Arnex-sur-Nyon"
+            },
+            {
+              "name": "Arnex-sur-Orbe"
+            },
+            {
+              "name": "Arzier"
+            },
+            {
+              "name": "Assens"
+            },
+            {
+              "name": "Aubonne"
+            },
+            {
+              "name": "Avenches"
+            },
+            {
+              "name": "Ballaigues"
+            },
+            {
+              "name": "Ballens"
+            },
+            {
+              "name": "Bassins"
+            },
+            {
+              "name": "Baulmes"
+            },
+            {
+              "name": "Bavois"
+            },
+            {
+              "name": "Begnins"
+            },
+            {
+              "name": "Belmont-sur-Lausanne"
+            },
+            {
+              "name": "Belmont-sur-Yverdon"
+            },
+            {
+              "name": "Bercher"
+            },
+            {
+              "name": "Berolle"
+            },
+            {
+              "name": "Bettens"
+            },
+            {
+              "name": "Bex"
+            },
+            {
+              "name": "Bioley-Magnoux"
+            },
+            {
+              "name": "Bioley-Orjulaz"
+            },
+            {
+              "name": "Bière"
+            },
+            {
+              "name": "Blonay"
+            },
+            {
+              "name": "Bofflens"
+            },
+            {
+              "name": "Bogis-Bossey"
+            },
+            {
+              "name": "Bonvillars"
+            },
+            {
+              "name": "Borex"
+            },
+            {
+              "name": "Bottens"
+            },
+            {
+              "name": "Bougy-Villars"
+            },
+            {
+              "name": "Boulens"
+            },
+            {
+              "name": "Bourg-en-Lavaux"
+            },
+            {
+              "name": "Bournens"
+            },
+            {
+              "name": "Boussens"
+            },
+            {
+              "name": "Bremblens"
+            },
+            {
+              "name": "Brenles"
+            },
+            {
+              "name": "Bretigny-sur-Morrens"
+            },
+            {
+              "name": "Bretonnières"
+            },
+            {
+              "name": "Buchillon"
+            },
+            {
+              "name": "Bullet"
+            },
+            {
+              "name": "Bursinel"
+            },
+            {
+              "name": "Bursins"
+            },
+            {
+              "name": "Burtigny"
+            },
+            {
+              "name": "Bussigny-près-Lausanne"
+            },
+            {
+              "name": "Bussy-Chardonney"
+            },
+            {
+              "name": "Bussy-sur-Moudon"
+            },
+            {
+              "name": "Carrouge (VD)"
+            },
+            {
+              "name": "Chamblon"
+            },
+            {
+              "name": "Champagne"
+            },
+            {
+              "name": "Champtauroz"
+            },
+            {
+              "name": "Champvent"
+            },
+            {
+              "name": "Chardonne"
+            },
+            {
+              "name": "Chavannes-de-Bogis"
+            },
+            {
+              "name": "Chavannes-des-Bois"
+            },
+            {
+              "name": "Chavannes-le-Chêne"
+            },
+            {
+              "name": "Chavannes-le-Veyron"
+            },
+            {
+              "name": "Chavannes-près-Renens"
+            },
+            {
+              "name": "Chavannes-sur-Moudon"
+            },
+            {
+              "name": "Chavornay"
+            },
+            {
+              "name": "Chesalles-sur-Moudon"
+            },
+            {
+              "name": "Cheseaux-Noréaz"
+            },
+            {
+              "name": "Cheseaux-sur-Lausanne"
+            },
+            {
+              "name": "Chessel"
+            },
+            {
+              "name": "Chevilly"
+            },
+            {
+              "name": "Chevroux"
+            },
+            {
+              "name": "Chexbres"
+            },
+            {
+              "name": "Chigny"
+            },
+            {
+              "name": "Château-d'Oex"
+            },
+            {
+              "name": "Chéserex"
+            },
+            {
+              "name": "Chêne-Pâquier"
+            },
+            {
+              "name": "Clarmont"
+            },
+            {
+              "name": "Coinsins"
+            },
+            {
+              "name": "Commugny"
+            },
+            {
+              "name": "Concise"
+            },
+            {
+              "name": "Coppet"
+            },
+            {
+              "name": "Corbeyrier"
+            },
+            {
+              "name": "Corcelles-le-Jorat"
+            },
+            {
+              "name": "Corcelles-près-Concise"
+            },
+            {
+              "name": "Corcelles-près-Payerne"
+            },
+            {
+              "name": "Corcelles-sur-Chavornay"
+            },
+            {
+              "name": "Corseaux"
+            },
+            {
+              "name": "Corsier-sur-Vevey"
+            },
+            {
+              "name": "Cossonay"
+            },
+            {
+              "name": "Cottens (VD)"
+            },
+            {
+              "name": "Crans-près-Céligny"
+            },
+            {
+              "name": "Crassier"
+            },
+            {
+              "name": "Cremin"
+            },
+            {
+              "name": "Crissier"
+            },
+            {
+              "name": "Cronay"
+            },
+            {
+              "name": "Croy"
+            },
+            {
+              "name": "Cuarnens"
+            },
+            {
+              "name": "Cuarny"
+            },
+            {
+              "name": "Cudrefin"
+            },
+            {
+              "name": "Cugy (VD)"
+            },
+            {
+              "name": "Curtilles"
+            },
+            {
+              "name": "Daillens"
+            },
+            {
+              "name": "Denens"
+            },
+            {
+              "name": "Denges"
+            },
+            {
+              "name": "Dizy"
+            },
+            {
+              "name": "Dompierre (VD)"
+            },
+            {
+              "name": "Donneloye"
+            },
+            {
+              "name": "Duillier"
+            },
+            {
+              "name": "Dully"
+            },
+            {
+              "name": "Démoret"
+            },
+            {
+              "name": "Echallens"
+            },
+            {
+              "name": "Echandens"
+            },
+            {
+              "name": "Echichens"
+            },
+            {
+              "name": "Eclépens"
+            },
+            {
+              "name": "Ecublens (VD)"
+            },
+            {
+              "name": "Epalinges"
+            },
+            {
+              "name": "Ependes (VD)"
+            },
+            {
+              "name": "Essert-Pittet"
+            },
+            {
+              "name": "Essertes"
+            },
+            {
+              "name": "Essertines-sur-Rolle"
+            },
+            {
+              "name": "Essertines-sur-Yverdon"
+            },
+            {
+              "name": "Etagnières"
+            },
+            {
+              "name": "Etoy"
+            },
+            {
+              "name": "Eysins"
+            },
+            {
+              "name": "Faoug"
+            },
+            {
+              "name": "Ferlens (VD)"
+            },
+            {
+              "name": "Ferreyres"
+            },
+            {
+              "name": "Fey"
+            },
+            {
+              "name": "Fiez"
+            },
+            {
+              "name": "Fontaines-sur-Grandson"
+            },
+            {
+              "name": "Forel (Lavaux)"
+            },
+            {
+              "name": "Forel-sur-Lucens"
+            },
+            {
+              "name": "Founex"
+            },
+            {
+              "name": "Froideville"
+            },
+            {
+              "name": "Féchy"
+            },
+            {
+              "name": "Genolier"
+            },
+            {
+              "name": "Giez"
+            },
+            {
+              "name": "Gilly"
+            },
+            {
+              "name": "Gimel"
+            },
+            {
+              "name": "Gingins"
+            },
+            {
+              "name": "Givrins"
+            },
+            {
+              "name": "Gland"
+            },
+            {
+              "name": "Gollion"
+            },
+            {
+              "name": "Goumoëns"
+            },
+            {
+              "name": "Grancy"
+            },
+            {
+              "name": "Grandcour"
+            },
+            {
+              "name": "Grandevent"
+            },
+            {
+              "name": "Grandson"
+            },
+            {
+              "name": "Grens"
+            },
+            {
+              "name": "Gryon"
+            },
+            {
+              "name": "Henniez"
+            },
+            {
+              "name": "Hermenches"
+            },
+            {
+              "name": "Jongny"
+            },
+            {
+              "name": "Jorat-Menthue"
+            },
+            {
+              "name": "Jouxtens-Mézery"
+            },
+            {
+              "name": "Juriens"
+            },
+            {
+              "name": "L'Abbaye"
+            },
+            {
+              "name": "L'Abergement"
+            },
+            {
+              "name": "L'Isle"
+            },
+            {
+              "name": "L'Orient"
+            },
+            {
+              "name": "La Chaux (Cossonay)"
+            },
+            {
+              "name": "La Coudre"
+            },
+            {
+              "name": "La Praz"
+            },
+            {
+              "name": "La Rippe"
+            },
+            {
+              "name": "La Sarraz"
+            },
+            {
+              "name": "La Tour-de-Peilz"
+            },
+            {
+              "name": "Lausanne"
+            },
+            {
+              "name": "Lavey-Morcles"
+            },
+            {
+              "name": "Lavigny"
+            },
+            {
+              "name": "Le Brassus"
+            },
+            {
+              "name": "Le Chenit"
+            },
+            {
+              "name": "Le Lieu"
+            },
+            {
+              "name": "Le Mont-sur-Lausanne"
+            },
+            {
+              "name": "Le Pont"
+            },
+            {
+              "name": "Le Sentier"
+            },
+            {
+              "name": "Le Séchey"
+            },
+            {
+              "name": "Le Vaud"
+            },
+            {
+              "name": "Les Bioux"
+            },
+            {
+              "name": "Les Clées"
+            },
+            {
+              "name": "Leysin"
+            },
+            {
+              "name": "Lignerolle"
+            },
+            {
+              "name": "Lonay"
+            },
+            {
+              "name": "Longirod"
+            },
+            {
+              "name": "Lovatens"
+            },
+            {
+              "name": "Lucens"
+            },
+            {
+              "name": "Luins"
+            },
+            {
+              "name": "Lully (VD)"
+            },
+            {
+              "name": "Lussery-Villars"
+            },
+            {
+              "name": "Lussy-sur-Morges"
+            },
+            {
+              "name": "Lutry"
+            },
+            {
+              "name": "Maracon"
+            },
+            {
+              "name": "Marchissy"
+            },
+            {
+              "name": "Mathod"
+            },
+            {
+              "name": "Mauborget"
+            },
+            {
+              "name": "Mauraz"
+            },
+            {
+              "name": "Mex (VD)"
+            },
+            {
+              "name": "Mies"
+            },
+            {
+              "name": "Missy"
+            },
+            {
+              "name": "Moiry"
+            },
+            {
+              "name": "Mollens (VD)"
+            },
+            {
+              "name": "Molondin"
+            },
+            {
+              "name": "Mont-la-Ville"
+            },
+            {
+              "name": "Mont-sur-Rolle"
+            },
+            {
+              "name": "Montagny-près-Yverdon"
+            },
+            {
+              "name": "Montanaire"
+            },
+            {
+              "name": "Montcherand"
+            },
+            {
+              "name": "Montherod"
+            },
+            {
+              "name": "Montilliez"
+            },
+            {
+              "name": "Montpreveyres"
+            },
+            {
+              "name": "Montreux"
+            },
+            {
+              "name": "Montricher"
+            },
+            {
+              "name": "Morges"
+            },
+            {
+              "name": "Morrens (VD)"
+            },
+            {
+              "name": "Moudon"
+            },
+            {
+              "name": "Mutrux"
+            },
+            {
+              "name": "Mézières (VD)"
+            },
+            {
+              "name": "Novalles"
+            },
+            {
+              "name": "Noville"
+            },
+            {
+              "name": "Nyon"
+            },
+            {
+              "name": "Ogens"
+            },
+            {
+              "name": "Ollon"
+            },
+            {
+              "name": "Onnens (VD)"
+            },
+            {
+              "name": "Oppens"
+            },
+            {
+              "name": "Orbe"
+            },
+            {
+              "name": "Orges"
+            },
+            {
+              "name": "Ormont-Dessous"
+            },
+            {
+              "name": "Ormont-Dessus"
+            },
+            {
+              "name": "Orny"
+            },
+            {
+              "name": "Oron"
+            },
+            {
+              "name": "Orzens"
+            },
+            {
+              "name": "Oulens-sous-Echallens"
+            },
+            {
+              "name": "Pailly"
+            },
+            {
+              "name": "Pampigny"
+            },
+            {
+              "name": "Paudex"
+            },
+            {
+              "name": "Payerne"
+            },
+            {
+              "name": "Penthalaz"
+            },
+            {
+              "name": "Penthaz"
+            },
+            {
+              "name": "Penthéréaz"
+            },
+            {
+              "name": "Perroy"
+            },
+            {
+              "name": "Poliez-Pittet"
+            },
+            {
+              "name": "Pompaples"
+            },
+            {
+              "name": "Pomy"
+            },
+            {
+              "name": "Prangins"
+            },
+            {
+              "name": "Premier"
+            },
+            {
+              "name": "Prilly"
+            },
+            {
+              "name": "Provence"
+            },
+            {
+              "name": "Préverenges"
+            },
+            {
+              "name": "Prévonloup"
+            },
+            {
+              "name": "Puidoux"
+            },
+            {
+              "name": "Pully"
+            },
+            {
+              "name": "Rances"
+            },
+            {
+              "name": "Renens (VD)"
+            },
+            {
+              "name": "Rennaz"
+            },
+            {
+              "name": "Reverolle"
+            },
+            {
+              "name": "Rivaz"
+            },
+            {
+              "name": "Roche (VD)"
+            },
+            {
+              "name": "Rolle"
+            },
+            {
+              "name": "Romainmôtier-Envy"
+            },
+            {
+              "name": "Romanel-sur-Lausanne"
+            },
+            {
+              "name": "Romanel-sur-Morges"
+            },
+            {
+              "name": "Ropraz"
+            },
+            {
+              "name": "Rossenges"
+            },
+            {
+              "name": "Rossinière"
+            },
+            {
+              "name": "Rougemont"
+            },
+            {
+              "name": "Rovray"
+            },
+            {
+              "name": "Rueyres"
+            },
+            {
+              "name": "Saint-Barthélemy (VD)"
+            },
+            {
+              "name": "Saint-Cergue"
+            },
+            {
+              "name": "Saint-George"
+            },
+            {
+              "name": "Saint-Livres"
+            },
+            {
+              "name": "Saint-Légier-La Chiésaz"
+            },
+            {
+              "name": "Saint-Oyens"
+            },
+            {
+              "name": "Saint-Prex"
+            },
+            {
+              "name": "Saint-Saphorin (Lavaux)"
+            },
+            {
+              "name": "Saint-Sulpice (VD)"
+            },
+            {
+              "name": "Sainte-Croix"
+            },
+            {
+              "name": "Sarzens"
+            },
+            {
+              "name": "Saubraz"
+            },
+            {
+              "name": "Savigny"
+            },
+            {
+              "name": "Senarclens"
+            },
+            {
+              "name": "Sergey"
+            },
+            {
+              "name": "Servion"
+            },
+            {
+              "name": "Signy-Avenex"
+            },
+            {
+              "name": "Suchy"
+            },
+            {
+              "name": "Sullens"
+            },
+            {
+              "name": "Suscévaz"
+            },
+            {
+              "name": "Syens"
+            },
+            {
+              "name": "Sévery"
+            },
+            {
+              "name": "Tannay"
+            },
+            {
+              "name": "Tartegnin"
+            },
+            {
+              "name": "Tolochenaz"
+            },
+            {
+              "name": "Trey"
+            },
+            {
+              "name": "Treycovagnes"
+            },
+            {
+              "name": "Treytorrens (Payerne)"
+            },
+            {
+              "name": "Trélex"
+            },
+            {
+              "name": "Tévenon"
+            },
+            {
+              "name": "Ursins"
+            },
+            {
+              "name": "Valbroye"
+            },
+            {
+              "name": "Valeyres-sous-Montagny"
+            },
+            {
+              "name": "Valeyres-sous-Rances"
+            },
+            {
+              "name": "Valeyres-sous-Ursins"
+            },
+            {
+              "name": "Vallorbe"
+            },
+            {
+              "name": "Vaulion"
+            },
+            {
+              "name": "Vaux-sur-Morges"
+            },
+            {
+              "name": "Vevey"
+            },
+            {
+              "name": "Veytaux"
+            },
+            {
+              "name": "Vich"
+            },
+            {
+              "name": "Villars-Epeney"
+            },
+            {
+              "name": "Villars-Sainte-Croix"
+            },
+            {
+              "name": "Villars-le-Comte"
+            },
+            {
+              "name": "Villars-le-Terroir"
+            },
+            {
+              "name": "Villars-sous-Yens"
+            },
+            {
+              "name": "Villarzel"
+            },
+            {
+              "name": "Villeneuve (VD)"
+            },
+            {
+              "name": "Vinzel"
+            },
+            {
+              "name": "Vuarrens"
+            },
+            {
+              "name": "Vucherens"
+            },
+            {
+              "name": "Vufflens-la-Ville"
+            },
+            {
+              "name": "Vufflens-le-Château"
+            },
+            {
+              "name": "Vugelles-La Mothe"
+            },
+            {
+              "name": "Vuiteboeuf"
+            },
+            {
+              "name": "Vulliens"
+            },
+            {
+              "name": "Vullierens"
+            },
+            {
+              "name": "Vully-les-Lacs"
+            },
+            {
+              "name": "Yens"
+            },
+            {
+              "name": "Yverdon-les-Bains"
+            },
+            {
+              "name": "Yvonand"
+            },
+            {
+              "name": "Yvorne"
+            }
+          ]
+        }
+      }
+    }
+  ]
 }
