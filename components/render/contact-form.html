@@ -1,130 +1,38 @@
 
 
 <form>
-  <div 
-    class="form-group">
-  <label 
-    for="firstname"
-    >Prénom <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="firstname" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
-</div>
-
-
-  <div 
-    class="form-group">
-  <label 
-    for="name"
-    >Nom <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="name" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
-</div>
-
-
-  <div 
-    class="form-group">
-  <label 
-    for="email"
-    >Courriel <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="email" 
-    id="email" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
-</div>
-
-
-  <div 
-    class="form-group">
-  <label 
-    for="phone"
-    >Téléphone <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="phone" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
-</div>
-
-
-  <div 
-    class="form-group">
-  <label 
-    for="subject"
-    >Sujet <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="subject" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
-</div>
-
+  <p>Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
 
   <div class="form-group">
-  <label for="message">Message <span aria-hidden="true">(requis)</span></label><textarea class="form-control" type="" id="message" rows="3" ></textarea>
-</div>
+    <label for="firstname">Prénom</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="firstname" name="firstname" value="" required aria-required="true">
+  </div>
 
+  <div class="form-group">
+    <label for="lastname">Nom</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="lastname" name="lastname" value="" required aria-required="true">
+  </div>
+
+  <div class="form-group">
+    <label for="mail">Courriel</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="mail" name="mail" value="" required aria-required="true" aria-describedby="mailHelp">
+    <small id="mailHelp" class="form-text text-muted">Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Téléphone</label>
+    <input class="form-control" type="text" id="phone" name="phone" value="">
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Sujet</label> <strong><abbr title="required">*</abbr></strong>
+    <input class="form-control" type="text" id="subject" name="subject" value="" required aria-required="true">
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label> <strong><abbr title="required">*</abbr></strong>
+    <textarea class="form-control" id="message" name="message" rows="8" cols="40" required aria-required="true"></textarea>
+  </div>
 
   <div class="form-group">
     <button type="submit" class="btn btn-dark">Envoyer</button>

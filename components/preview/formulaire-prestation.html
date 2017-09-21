@@ -58,9 +58,7 @@
     <div class="d-flex flex-column flex-sm-row">
 
       <div class="mr-auto">
-        <a href="../accueil" 
-   class="vd-logo" 
-   title="Aller à la page d'accueil du Site du Canton de Vaud">
+        <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <img src="../../assets/svg/ETATVAUD.svg" class="vd-logo__image" alt="État de Vaud" aria-hidden="true" />
 </a>
 
@@ -104,176 +102,43 @@
 
   <form action="formulaire-prestation-confirmation">
 
-    <div 
-    class="form-group">
-  <label 
-    for="name"
-    >Nom <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="name" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
+    <div class="form-group">
+  <label for="name">Nom <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="text" id="name" name="testInput" value="" required aria-required="true">
 </div>
 
 
-    <div 
-    class="form-group">
-  <label 
-    for="firstname"
-    >Prénom <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="firstname" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
+    <div class="form-group">
+  <label for="firstname">Prénom <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="text" id="firstname" name="testInput" value="" required aria-required="true">
 </div>
 
 
     <fieldset>
   <legend>Quelle est votre date de naissance ?</legend>
-  <small id="dates-help" class="form-text text-secondary">Par exemple, 23 7 1979</small>
+  <small id="dates-help" class="form-text text-muted">Par exemple, 23 7 1979</small>
   <div class="vd-form-flex">
-    <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div 
-    class="form-group">
-  <label 
-    for="inputDatesDay"
-    >Jour</label>
-  
-  <input 
-    class="form-control" 
-    type="number" 
-    id="inputDatesDay" 
-    name="testInput" 
-    value=""
-    
-    
-     pattern="[0-9]*"
-     min="1"
-     max="31"
-     size="2"
-    
-    
-    >
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
+  <label for="inputDatesDay">Jour</label><input class="form-control" type="number" id="inputDatesDay" name="testInput" value="" pattern="[0-9]*" min="1" max="31" size="2">
 </div>
 </div>
-    <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div 
-    class="form-group">
-  <label 
-    for="inputDatesMonth"
-    >Mois</label>
-  
-  <input 
-    class="form-control" 
-    type="number" 
-    id="inputDatesMonth" 
-    name="testInput" 
-    value=""
-    
-    
-     pattern="[0-9]*"
-     min="1"
-     max="12"
-     size="2"
-    
-    
-    >
+    <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
+  <label for="inputDatesMonth">Mois</label><input class="form-control" type="number" id="inputDatesMonth" name="testInput" value="" pattern="[0-9]*" min="1" max="12" size="2">
 </div>
 </div>
-    <div class="vd-form-flex__item vd-form-flex__item--4-char-width"><div 
-    class="form-group">
-  <label 
-    for="inputDatesYear"
-    >Année</label>
-  
-  <input 
-    class="form-control" 
-    type="number" 
-    id="inputDatesYear" 
-    name="testInput" 
-    value=""
-    
-    
-     pattern="[0-9]*"
-     min="1950"
-     max="2017"
-     size="4"
-    
-    
-    >
+    <div class="vd-form-flex__item vd-form-flex__item--4-char-width"><div class="form-group">
+  <label for="inputDatesYear">Année</label><input class="form-control" type="number" id="inputDatesYear" name="testInput" value="" pattern="[0-9]*" min="1950" max="2017" size="4">
 </div>
 </div>
   </div>
 </fieldset>
 
 
-    <div 
-    class="form-group">
-  <label 
-    for="institution"
-    >Etablissement</label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="institution" 
-    name="testInput" 
-    value=""
-    
-    
-    
-    
-    
-    
-    
-    
-    >
+    <div class="form-group">
+  <label for="institution">Etablissement</label><input class="form-control" type="text" id="institution" name="testInput" value="">
 </div>
 
 
-    <div 
-    class="form-group">
-  <label 
-    for="function"
-    >Fonction</label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="function" 
-    name="testInput" 
-    value=""
-    
-    
-    
-    
-    
-    
-    
-    
-    >
+    <div class="form-group">
+  <label for="function">Fonction</label><input class="form-control" type="text" id="function" name="testInput" value="">
 </div>
 
 
@@ -321,65 +186,36 @@
   <label for="testDataInput" id="testDataInputLabel">Quel est votre fruit favoris ?</label>
   <datalist id="list">
     <select class="form-control" name="testDataInput" aria-labelledby="testDataInputLabel">
+      
       <option>Abricot</option>
+      
       <option>Ananas</option>
+      
       <option>Citron</option>
+      
       <option>Fruit de la passion</option>
+      
       <option>Grenade</option>
+      
       <option>Groseille</option>
+      
       <option>Kaki</option>
+      
       <option>Kiwi</option>
+      
     </select> <small id="testDataInputfallbackLabel" class="form-text">Merci de le spécifier s'il ne figure pas dans la liste</small>
   </datalist>
   <input id="testDataInput" class="form-control" name="state" list="list" aria-labelledby="testDataInputfallbackLabel">
 </div>
 
 
-    <div 
-    class="form-group">
-  <label 
-    for="address"
-    >Adresse <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="text" 
-    id="address" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
+    <div class="form-group">
+  <label for="address">Adresse <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="text" id="address" name="testInput" value="" required aria-required="true">
 </div>
 
 
-    <div 
-    class="form-group">
-  <label 
-    for="email"
-    >Courriel <span aria-hidden="true">(requis)</span></label>
-  
-  <input 
-    class="form-control" 
-    type="email" 
-    id="email" 
-    name="testInput" 
-    value=""
-     required aria-required="true"
-    
-    
-    
-    
-    
-    
-    
-    >
+    <div class="form-group">
+  <label for="email">Courriel <span aria-hidden="true">(Requis)</span></label><input class="form-control" type="email" id="email" name="testInput" value="" required aria-required="true">
 </div>
 
 
@@ -406,19 +242,24 @@
     </fieldset>
 
     <div class="form-group">
-  <label for="testTextarea">Example textarea</label><textarea class="form-control" type="" id="testTextarea" rows="3" ></textarea>
+  <label for="exampleTextarea">Example textarea</label><textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 </div>
 
 
     <nav>
-    <h3 class="sr-only">Pagination</h3>
-    <div class="d-flex justify-content-between">
-        
-        <a href="#"title="Suivant link to somewhere"class="btn btn-link"
-   >Suivant <span class="fa fa-chevron-right" aria-hidden="true"></span>
-</a>
-
-        </div>
+  <h3 class="sr-only">Pagination</h3>
+  <div class="vd-pagination">
+    
+      <ul class="list-unstyled mb-0">
+        <li><a href="#" class="btn">1</a></li>
+        <li><a href="#" class="btn">2</a></li>
+        <li><a href="#" class="btn">3</a></li>
+        <li><a href="#" class="btn">...</a></li>
+        <li><a href="#" class="btn">55</a></li>
+      </ul>
+    <a href="formulaire-prestation--step-2" class="btn vd-btn-pagination-r"><span class="d-none d-md-inline-block">Suivant</span>&nbsp;</a>
+    
+  </div>
 </nav>
 
 
@@ -434,7 +275,7 @@
 
   <div class="container">
   <div class="text-right">
-    <a href="#" class="btn btn-sm btn-dark vd-btn-chevron-t" title="Retour vers le haut de la page">Haut</a>
+    <a href="#" class="btn btn-sm btn-dark vd-btn-chevron-t" title="Retour vers le haut de la page">Haut <span class="fa fa-chevron-up"></span></a>
   </div>
 </div>
 
@@ -456,7 +297,6 @@
           <div class="d-flex align-items-end flex-column h-100">
             <div class="mt-auto">
               <img aria-hidden="true" class="img-fluid footer-logo" src="../../assets/svg/logo/logo--white.svg" alt="Canton de Vaud">
-
             </div>
           </div>
         </div>

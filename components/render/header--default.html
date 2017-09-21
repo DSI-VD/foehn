@@ -42,7 +42,7 @@
   <ul class="nav justify-content-end d-none d-md-flex">
     
     <li class="nav-item">
-      <a href="#" class="nav-link">Autorités</a>
+      <a href="#" class="nav-link active"><span class="sr-only">page active: </span>Autorités</a>
     </li>
     
     <li class="nav-item">
@@ -97,7 +97,7 @@
         </li>
       </ul>
     </div>
-    <div class="dropdown-item bg-dark">
+    <div class="dropdown-item bg-inverse">
       <h2 class="vd-heading-light h4 mb-3 text-white text-center h6">Suivre vd.ch sur les réseaux sociaux</h2>
 <ul class="list-inline vd-social-icons text-center mb-3">
   <li class="list-inline-item">
@@ -131,9 +131,7 @@
     
     <div class="row">
       <div class="col-md-5">
-        <a href="../accueil" 
-   class="vd-logo" 
-   title="Aller à la page d'accueil du Site du Canton de Vaud">
+        <a href="../accueil" class="vd-logo" aria-labelledby="aria-vd-logo">
   <img src="../../assets/svg/ETATVAUD.svg" class="vd-logo__image" alt="État de Vaud" aria-hidden="true" />
 </a>
 
@@ -155,7 +153,11 @@
   <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="d-none d-md-inline-block btn btn-sm btn-dark collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false"><span class="sr-only">Accédez à la liste de </span>Tous les thèmes</button>
+      <button type="button" class="d-none d-md-inline-block btn btn-sm btn-dark vd-menu-toggle collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">
+        <span class="sr-only">Accédez à la liste de </span>
+        Tous les thèmes
+        <span class="fa vd-fa-menu-toggle fa-fw" aria-hidden="true"></span>
+      </button>
     </div>
   </div>
   <div class="collapse clearfix" id="nav-primary-container">
