@@ -29,11 +29,9 @@ body {
  */
 html {
   &.wf-opensans-n4-active {
-    body {
+    body,
+   .vd-p {
       font-family: $font-family-base-enhance; /* [1] */
-    }
-    .vd-p {
-      font-family: $font-family-base-enhance;
     }
   }
 
