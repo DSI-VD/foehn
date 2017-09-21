@@ -79,21 +79,65 @@
     
     <p>All notable changes to this project will be documented in this file.
 This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
-<h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.32.0...HEAD">Unreleased</a></h2>
+<h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.33.0...HEAD">Unreleased</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
-<li>use CSS to change icon in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> (closed / open)</li>
-<li>use font-awesome icons for <a href="../components/detail/nav-primary"><code>@nav-primary</code></a>, <a href="../components/detail/button-back-to-top"><code>@button-back-to-top</code></a>, <a href="../components/detail/domains-list"><code>@domains-list</code></a> and <a href="../components/detail/faq-item"><code>@faq-item</code></a></li>
+<li>Use CSS to change icon in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> (closed / open)</li>
+<li>Use font-awesome icons for <a href="../components/detail/nav-primary"><code>@nav-primary</code></a>, <a href="../components/detail/button-back-to-top"><code>@button-back-to-top</code></a>, <a href="../components/detail/domains-list"><code>@domains-list</code></a> and <a href="../components/detail/faq-item"><code>@faq-item</code></a></li>
+<li>Changed <a href="../components/detail/download-list"><code>@download-list</code></a> to user <a href="../components/detail/h3"><code>@h3</code></a> element with styleModifier</li>
+<li>Changed <a href="../components/detail/template-communiques-presse-detail--default"><code>@template-communiques-presse-detail--default</code></a> to pass h5 style to <a href="../components/detail/h3"><code>@h3</code></a> in <a href="../components/detail/download-list"><code>@download-list</code></a></li>
+<li>Add number of search results in <a href="../components/detail/template-communiques-presse-list--results"><code>@template-communiques-presse-list--results</code></a></li>
+<li>Add class <code>vd-p mb-3</code> to results numbers in <a href="../components/detail/template-communiques-presse-list--results"><code>@template-communiques-presse-list--results</code></a></li>
+<li>Change <code>h5</code> to <code>strong.h5</code> in <a href="../components/detail/card"><code>@card</code></a></li>
+<li>Add <code>mb-1</code> class to Press Release subtitle (<a href="../components/detail/teaser-small--alt"><code>@teaser-small--alt</code></a>)</li>
+<li>Add <a href="../components/detail/pagination--pages"><code>@pagination--pages</code></a> variant to <a href="../components/detail/pagination"><code>@pagination</code></a> for <a href="../components/detail/teaser-alt-list"><code>@teaser-alt-list</code></a></li>
+<li>Add more real data to table example in <a href="../components/detail/table"><code>@table</code></a> html</li>
+<li>Add <code>sr-only</code> to links in <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
+<li>Changed <a href="../components/detail/contact-form"><code>@contact-form</code></a> to use rendering of elements instead of HTML</li>
+<li>Changed ‘Requis’ to ‘requis’ (lowercase) in <a href="../components/detail/textarea"><code>@textarea</code></a> and <a href="../components/detail/input--required"><code>@input--required</code></a></li>
+<li>Changed <a href="../components/detail/textarea"><code>@textarea</code></a> to use dynamic label, id and required</li>
+<li>Add <code>aria-invalid=true</code> if <a href="../components/detail/textarea--danger"><code>@textarea--danger</code></a>‘s is invalid</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <code>.vd-p</code> class to make text elements look like body text</li>
+<li>Add <a href="../components/detail/logo"><code>@logo</code></a> and <a href="../components/detail/logo--white"><code>@logo--white</code></a> components</li>
+<li>Add <a href="../components/detail/datalist--communes"><code>@datalist--communes</code></a></li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix <a href="../components/detail/footer"><code>@footer</code></a> use <a href="../components/detail/logo-white"><code>@logo-white</code></a></li>
+</ul>
+<h2 id="-0-33-0-2017-09-15"><a href="https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0">0.33.0</a> - 2017-09-15</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><a href="../components/detail/pagination"><code>@pagination</code></a> set to use new <a href="../components/detail/button--link"><code>@button--link</code></a> variant button</li>
+<li><a href="../components/detail/pagination"><code>@pagination</code></a> use Bootstrap helper class instead of custom class</li>
+<li>Remove one <code>nav</code> from <code>detail-prestation</code> and add class to remaining <a href="../components/detail/index-menu"><code>@index-menu</code></a></li>
+<li>Add sr-only title for services <code>&lt;h2 class=&quot;sr-only&quot;&gt;Services&lt;/h2&gt;</code></li>
+<li>Changed <code>listIcon</code> structure in JSON files, adding one level with button (optional) and items inside.</li>
+<li>Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)</li>
+<li>Add <code>aria-invalid=&quot;true&quot;</code> Aria attribut and change help text on 
+<a href="../components/detail/input--validation-danger"><code>@input--validation-danger</code></a> to warn screen readers that the value is invalid</li>
+<li>Fix <a href="../components/detail/logo-etat--default"><code>@logo-etat--default</code></a> accessibility by removing <code>aria-labelledby</code> and
+adding <code>title</code> attribut</li>
+<li>Add sr-only title to <a href="../components/detail/nav-side"><code>@nav-side</code></a></li>
+<li>Replace <code>.text-muted</code> class with <code>.text-secondary</code></li>
+<li>Replace <code>.bg-inverse</code> class with <code>.bg-dark</code></li>
+<li>Replace <code>.bg-faded</code> class with <code>.bg-light</code></li>
+<li>Add one more level of navigation in <a href="../components/detail/nav-side"><code>@nav-side</code></a>. The root page of navigation
+is the first element of the navigation.</li>
+<li>Change class from <code>h3</code> to <code>h5</code> for <code>h1</code> title in <a href="../components/detail/header--application"><code>@header--application</code></a></li>
 <li>Rename <a href="../components/detail/header--application"><code>@header--application</code></a> in <a href="../components/detail/header-application"><code>@header-application</code></a></li>
 <li>Add <a href="../components/detail/header-application--fluid"><code>@header-application--fluid</code></a> variant</li>
-<li>add <code>vd-pt-3</code>class to domains links in menu, to fix FF bug with outline</li>
+<li>Add <code>vd-pt-3</code>class to domains links in menu, to fix FF bug with outline</li>
 <li><a href="../components/detail/accueil"><code>@accueil</code></a> use <code>srcset</code> attribut in images instead of <code>&lt;picture&gt;</code> and <code>&lt;source&gt;</code></li>
 <li><a href="../components/detail/news-list"><code>@news-list</code></a> use <code>srcset</code> attribut in images instead of <code>&lt;picture&gt;</code> and <code>&lt;source&gt;</code></li>
 <li><a href="../components/detail/actualite"><code>@actualite</code></a> use <a href="../components/detail/figure--default"><code>@figure--default</code></a> instead of hardcoded HTML</li>
 <li><a href="../components/detail/figure--default"><code>@figure--default</code></a> no more use <code>&lt;picture&gt;</code> and <code>&lt;source&gt;</code> markup</li>
 <li><a href="../components/detail/teaser-small--media"><code>@teaser-small--media</code></a> use <a href="../components/detail/image--fluid"><code>@image--fluid</code></a> instead of <a href="../components/detail/image-responsive"><code>@image-responsive</code></a></li>
 <li>Use <code>srcset</code> attribut in <a href="../components/detail/image--default"><code>@image--default</code></a></li>
-<li>add sr-only to <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a> h2 for more descriptive titles</li>
+<li>Add sr-only to <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a> h2 for more descriptive titles</li>
 <li>Changed button labels in <code>teaser-list</code> and <code>service</code></li>
 <li>Change <a href="../components/detail/faq-item"><code>@faq-item</code></a> column layout</li>
 <li>Change <a href="../components/detail/card"><code>@card</code></a> column layout</li>
@@ -102,12 +146,24 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 </ul>
 <h3 id="added">Added</h3>
 <ul>
+<li>Add <a href="../components/detail/button--link"><code>@button--link</code></a> variant to <a href="../components/detail/button"><code>@button</code></a></li>
 <li>Add <a href="../components/detail/figure-picture"><code>@figure-picture</code></a> component</li>
 </ul>
 <h3 id="fix">Fix</h3>
 <ul>
+<li>Fix <a href="../components/detail/nav"><code>@nav</code></a> config for active page</li>
+<li>Fix content in <a href="../components/detail/content"><code>@content</code></a></li>
+<li>Fix unordered and ordered lists spacings</li>
+<li>Fix italic placeholder in <a href="../components/detail/search-form--default"><code>@search-form--default</code></a></li>
 <li>Fix <a href="../components/detail/page-title-banner"><code>@page-title-banner</code></a> background too dark in Firefox</li>
 <li>Fix styles for <a href="https://css-tricks.com/fout-foit-foft/">FOUT</a></li>
+</ul>
+<h2 id="remove">Remove</h2>
+<ul>
+<li>Remove <a href="../components/detail/secure-tabs"><code>@secure-tabs</code></a> component</li>
+<li>Remove <a href="../components/detail/fixed-bottom-container"><code>@fixed-bottom-container</code></a> component</li>
+<li>Remove <a href="../components/detail/tabs"><code>@tabs</code></a> component</li>
+<li>Remove <a href="../components/detail/pagination-vertical"><code>@pagination-vertical</code></a> component</li>
 </ul>
 <h2 id="-0-32-0-2017-08-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.31.0...v0.32.0">0.32.0</a> - 2017-08-30</h2>
 <h3 id="changed">Changed</h3>
