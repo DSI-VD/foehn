@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Changed `@download-list` to user `@h3` element with styleModifier
+- Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
 - Add number of search results in `@template-communiques-presse-list--results`
 - Add class `vd-p mb-3` to results numbers in `@template-communiques-presse-list--results`
 - Change `h5` to `strong.h5` in `@card`
