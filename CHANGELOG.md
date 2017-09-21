@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add class `.w-100` to div containing `@logo--white` in `@footer`
 - Use CSS to change icon in `@nav-primary` (closed / open)
 - Use font-awesome icons for `@nav-primary`, `@button-back-to-top`, `@domains-list` and `@faq-item`
 - Changed `@download-list` to user `@h3` element with styleModifier
