@@ -120,6 +120,7 @@ a.btn {
   &.btn-success:after { @include vd-background-image-icon($vd-cross, $white); }
   &:after { @include vd-background-image-icon($vd-cross, $vd-primary); }
 }
+
 /**
  * Toggle menu icon
  *
@@ -136,6 +137,7 @@ a.btn {
   content: "\f00d"; /* [2] */
   font-size: 1rem;
 }
+
 .btn-link {
   font-weight: bold;
 
