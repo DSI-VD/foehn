@@ -17,7 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 
 ### Added
-- Add `_text.scss` atom to make title elements look like text
+- Add `.vd-p` class to make text elements look like body text
 - Add `@logo` and `@logo--white` components
 - Add `@datalist--communes`
 
