@@ -19,8 +19,8 @@
     },
     "listIcon":{
       "button": {
-        "text": "Contacter",
-        "title": "Contacter l'office"
+        "text": "Nous écrire",
+        "title": "Ecrire à l'office"
       },
       "items":[
         {
