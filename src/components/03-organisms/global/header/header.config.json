@@ -4,19 +4,10 @@
     "applicationTitle": "Application title",
     "domains": "@domains-list",
     "nav": {
-      "items": [{
-          "name": "Mon compte",
-          "url": "#",
-          "active": true
-        },
-        {
-          "name": "Paramètres",
-          "url": "#"
-        },
-        {
-          "name": "Se déconnecter",
-          "url": "accueil"
-        }
+      "items": [
+          {
+          "active": false
+          }
       ]
     },
     "searchForm": true,
