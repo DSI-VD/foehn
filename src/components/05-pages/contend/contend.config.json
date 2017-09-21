@@ -20,13 +20,16 @@
       }
     ],
     "download": {
-      "listIcon": [
-        {
-          "item": "Comment agir, fiche à télécharger",
-          "icon": "fa-download",
-          "url": "#"
-        }
-      ]
+      "listIcon": {
+        "items": [
+          {
+            "item": "Comment agir, fiche à télécharger",
+            "icon": "fa-download",
+            "url": "#"
+          },
+          false
+        ]
+      }
     },
     "navSide": {
       "items": [
