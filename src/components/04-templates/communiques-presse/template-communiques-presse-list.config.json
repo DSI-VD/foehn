@@ -74,7 +74,8 @@
   "variants": [{
     "name": "Results",
     "context": {
-      "results": true
+      "results": true,
+      "total": 97
     }
   }]
 }

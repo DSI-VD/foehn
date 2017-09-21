@@ -26,6 +26,12 @@
         }
       },
       {
+          "name": "link",
+          "context": {
+              "class": "btn btn-link"
+          }
+      },
+      {
         "name": "submit",
         "context": {
           "class": "btn btn-success",
