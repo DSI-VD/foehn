@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change `h5` to `strong.h5` in `@card`
 - Add `mb-1` class to Press Release subtitle (`@teaser-small--alt`)
 - Add `@pagination--pages` variant to `@pagination` for `@teaser-alt-list`
 - Add more real data to table example in `@table` html
