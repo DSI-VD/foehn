@@ -106,3 +106,13 @@ a.btn {
   &.btn-success:after { @include vd-background-image-icon($vd-cross, $white); }
   &:after { @include vd-background-image-icon($vd-cross, $vd-primary); }
 }
+
+.btn-link {
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-hover-color;
+  }
+}
+
