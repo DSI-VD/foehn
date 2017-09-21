@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Use CSS to change icon in `@nav-primary` (closed / open)
+- Use font-awesome icons for `@nav-primary`, `@button-back-to-top`, `@domains-list` and `@faq-item`
 - Changed `@download-list` to user `@h3` element with styleModifier
 - Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
 - Add number of search results in `@template-communiques-presse-list--results`
