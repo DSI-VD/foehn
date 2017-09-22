@@ -58,7 +58,7 @@
   {% if openingHours.title %}<h3>{{ openingHours.title }}<span class="sr-only"> du {{ name }}</span></h3>{% endif %}
   {% if openingHours.openingHours %}
     {% for hour in openingHours.openingHours %}
-    <p itemprop="openingHours" content="{{ hours.microdata }}">{{ hour.text }}</p>
+    <p itemprop="openingHours" content="{{ hour.microdata }}">{{ hour.text }}</p>
     {% endfor %}
   {% endif %}
   {% if openingHours.info -%}
