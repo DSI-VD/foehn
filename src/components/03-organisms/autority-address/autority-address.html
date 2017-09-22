@@ -19,12 +19,14 @@
 
   {% if description %}<p>{{ description }}</p>{% endif %}
 
+  {% if address -%}
   <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-    <span itemprop="streetAddress">{{ address.street }}</span> <br>
+    <span itemprop="streetAddress">{{ address.streetAddress }}</span> <br>
     <span itemprop="postalCode">{{ address.postalCode }}</span>
-    <span itemprop="addressLocality">{{ address.locality }}</span>
-    <span class="sr-only" itemprop="addressCountry">Suisse</span>
+    <span itemprop="addressLocality">{{ address.addressLocality }}</span>
+    <span class="sr-only" itemprop="addressCountry">{{ address.addressCountry }}</span>
   </p>
+  {% endif %}
 
   <div itemscope itemtype="http://schema.org/GovernmentBuilding">
   {% if openingHours.title %}<h3>{{ openingHours.title }}<span class="sr-only"> du {{ name }}</span></h3>{% endif %}
