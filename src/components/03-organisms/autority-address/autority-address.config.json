@@ -18,6 +18,11 @@
         "text": "Lien libre"
       }
     ],
+    "button": {
+      "text": "Nous écrire",
+      "href": "#",
+      "title": "Formulair de contact"
+    },
     "openingHours": {
       "title": "Heures d'ouverture",
       "openingHours": [
