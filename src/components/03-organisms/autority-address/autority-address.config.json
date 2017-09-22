@@ -12,6 +12,12 @@
     },
     "telephone": "+41211234567",
     "email": "service.departement@vd.ch",
+    "additionalUrl": [
+      {
+        "url": "https://www.fake-url.com",
+        "text": "Lien libre"
+      }
+    ],
     "openingHours": {
       "title": "Heures d'ouverture",
       "openingHours": [

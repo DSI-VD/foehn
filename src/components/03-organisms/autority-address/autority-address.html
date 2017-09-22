@@ -38,6 +38,11 @@
       <a href="mailto:{{ email }}"
          itemprop="email">{{ email }}</a><br>
     {%- endif %}
+    {% if additionalUrl %}
+      {% for item in additionalUrl %}
+        <a href="{{ item.url }}">{{ item.text }}</a>
+      {% endfor %}
+    {% endif %}
   </p>
 
   <div itemscope itemtype="http://schema.org/GovernmentBuilding">
