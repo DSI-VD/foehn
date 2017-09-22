@@ -34,6 +34,9 @@
          content="{{ telephone }}"
          itemprop="telephone">{{ telephone }}</a><br>
     {%- endif %}
+    {% if email -%}
+      <a href="mailto:{{ email }}"
+         itemprop="email">{{ email }}</a><br>
     {%- endif %}
   </p>
 

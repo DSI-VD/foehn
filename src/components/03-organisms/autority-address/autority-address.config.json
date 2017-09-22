@@ -11,6 +11,7 @@
         "addressCountry": "Suisse"
     },
     "telephone": "+41211234567",
+    "email": "service.departement@vd.ch",
     "openingHours": {
       "title": "Heures d'ouverture",
       "openingHours": [
