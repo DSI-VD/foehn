@@ -13,7 +13,9 @@
     {%- endif %}
   </h2>
 
-  {% if division %}<h3 class="vd-heading-light h4 mb-3">{{ division }}</h3>{% endif %}
+  {% if division -%}
+  <h3 class="vd-heading-light h4 mt-0">{{ division }}</h3>
+  {%- endif %}
   <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
     <span itemprop="streetAddress">{{ address.street }}</span> <br>
     <span itemprop="postalCode">{{ address.postalCode }}</span>
