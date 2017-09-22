@@ -61,6 +61,9 @@
     <p itemprop="openingHours" content="{{ hours.microdata }}">{{ hour.text }}</p>
     {% endfor %}
   {% endif %}
+  {% if openingHours.info -%}
+  <p>{{ openingHours.info  }}</p>
+  {%- endif %}
   </div>
 
 </address>

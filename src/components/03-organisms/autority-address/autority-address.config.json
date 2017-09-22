@@ -30,7 +30,8 @@
           "text": "du lundi au vendredi de 8h00 à 11h30 et de 13h30 à 16h30",
           "microdata": "Mo,Tu,We,Th,Fr 08:00-11:30,13:30-16:30"
         }
-      ]
+      ],
+      "info": "Nous sommes fermés pendant la période des fêtes"
     }
   }
 }
