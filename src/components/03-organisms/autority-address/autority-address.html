@@ -36,8 +36,15 @@
     {%- endif %}
     {% if email -%}
       <a href="mailto:{{ email }}"
-         itemprop="email">{{ email }}</a><br>
+        itemprop="email">{{ email }}</a><br>
     {%- endif %}
+    {% if address %}
+      <a href="https://www.google.ch/maps/search/
+      {%- for item, value in address -%}
+        {{ value  | urlencode }}%20
+      {%- endfor -%}
+        ">Visualiser sur la carte</a><br>
+    {% endif %}
     {% if additionalUrl %}
       {% for item in additionalUrl %}
         <a href="{{ item.url }}">{{ item.text }}</a>
