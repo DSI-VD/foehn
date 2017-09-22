@@ -52,6 +52,8 @@
     {% endif %}
   </p>
 
+  <p>{% render '@button--default', button, true %}</p>
+
   <div itemscope itemtype="http://schema.org/GovernmentBuilding">
   {% if openingHours.title %}<h3>{{ openingHours.title }}<span class="sr-only"> du {{ name }}</span></h3>{% endif %}
   {% if openingHours.openingHours %}
