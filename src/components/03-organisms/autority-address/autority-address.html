@@ -26,7 +26,13 @@
     <span itemprop="addressLocality">{{ address.addressLocality }}</span>
     <span class="sr-only" itemprop="addressCountry">{{ address.addressCountry }}</span>
   </p>
-  {% endif %}
+  {%- endif %}
+
+  <p>
+    {% if telephone -%}
+      <a href="tel:{{ telephone }}" content="{{ telephone }}">{{ telephone }}</a><br>
+    {%- endif %}
+  </p>
 
   <div itemscope itemtype="http://schema.org/GovernmentBuilding">
   {% if openingHours.title %}<h3>{{ openingHours.title }}<span class="sr-only"> du {{ name }}</span></h3>{% endif %}

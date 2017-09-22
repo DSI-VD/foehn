@@ -10,6 +10,7 @@
         "addressLocality": "Lausanne",
         "addressCountry": "Suisse"
     },
+    "telephone": "+41211234567",
     "openingHours": {
       "title": "Heures d'ouverture",
       "openingHours": [
