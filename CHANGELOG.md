@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Add class `.w-100` to div containing `@logo--white` in `@footer`
+- Changed `@button-tiles` width to max 33% desktop, 100% mobile
+- Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
+- Add `@download-list` to `@departements`
+- Changed `@download-list` for optional `h3`
 - Use CSS to change icon in `@nav-primary` (closed / open)
 - Use font-awesome icons for `@nav-primary`, `@button-back-to-top`, `@domains-list` and `@faq-item`
 - Changed `@download-list` to user `@h3` element with styleModifier
