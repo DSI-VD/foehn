@@ -15,6 +15,7 @@
     flex-grow: 1;
     flex-shrink: 0;
     position: relative;
+    width: calc(33% - #{$spacer});
     max-width: calc(33% - #{$spacer});
     margin: ($spacer / 2);
     color: $black;
