@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
 - Add `@download-list` to `@departements`
 - Changed `@download-list` for optional `h3`
 - Use CSS to change icon in `@nav-primary` (closed / open)
