@@ -3,6 +3,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.34.0] - 2017-09-25
 ### Changed
 - Add class `.w-100` to div containing `@logo--white` in `@footer`
 - Changed `@button-tiles` width to max 33% desktop, 100% mobile
