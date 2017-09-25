@@ -2,10 +2,11 @@
 {% block main %}
 
 <section class="mb-4">
-  <h2 class="sr-only">Toutes les autorités</h2>
+  <h3>Organigramme à télécharger</h3>
+  <p>L'organigramme de l'Etat avec les coordonnées des principales entités, mis à jour au 5 février 2016, est disponible en format PDF (A3).</p>
 
-  {% render '@button-tiles', buttonTilesTop %}
-  {% render '@button-tiles', buttonTilesBottom %}
+  {% render '@download-list', downloadList %}
+
 </section>
 
 <section class="mb-4">
