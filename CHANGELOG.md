@@ -2,6 +2,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+- Changed `@button-tiles` width to max 33% desktop, 100% mobile
 
 ### Changed
 - Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
