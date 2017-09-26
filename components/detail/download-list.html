@@ -175,7 +175,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-e60d0f067b5c526fb087086bce50b4a8-panel-view">
     <code class="Code Code--lang-html">
-        <pre>{% include '<a href="h3">@h3</a>' %}
+        <pre>{%- if text %}{% include '<a href="h3">@h3</a>' %}{%- endif %}
 {% include '<a href="list-icon">@list-icon</a>' %}</pre>
     </code>
 </div>
@@ -260,7 +260,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="template-communiques-presse-detail">@<span>template-communiques-presse-detail</span></a>, 
@@ -268,6 +268,8 @@
                 <a href="template-communiques-presse-detail--alternate">@<span>template-communiques-presse-detail--alternate</span></a>, 
             
                 <a href="contend">@<span>contend</span></a>, 
+            
+                <a href="departements">@<span>departements</span></a>, 
             
                 <a href="news-detail">@<span>news-detail</span></a>
             
