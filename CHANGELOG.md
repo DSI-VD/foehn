@@ -3,8 +3,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## [0.34.0] - 2017-09-25
+## [0.34.0] - 2017-09-26
+
 ### Changed
+- Add 'toutes les actualités' in render of `@button-default` in `@teaser-list--homepage`
+- Add `.text-right` to div containing `@logo--white` in `@footer` to align it to the right
 - Add class `.w-100` to div containing `@logo--white` in `@footer`
 - Changed `@button-tiles` width to max 33% desktop, 100% mobile
 - Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
