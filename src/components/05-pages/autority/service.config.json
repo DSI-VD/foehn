@@ -146,42 +146,40 @@
     "autorityAddress": {
       "name": "Direction générale de l'environnement",
       "url": "#",
+      "division": "division",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
       "address": {
-        "street": "Place du Château 1",
+        "streetAddress": "Place du Château 1",
         "postalCode": "1014",
-        "locality": "Lausanne"
+        "addressLocality": "Lausanne",
+        "addressCountry": "Suisse"
+      },
+      "telephone": "+41 21 316 45 15",
+      "email": "service@vd.ch",
+      "additionalUrl": [
+        {
+          "url": "https://www.fake-url.com",
+          "text": "Lien libre"
+        }
+      ],
+      "button": {
+        "text": "Nous écrire",
+        "href": "#",
+        "title": "Formulair de contact"
       },
       "openingHours": {
         "title": "Heures d'ouverture",
         "openingHours": [{
           "text": "du lundi au vendredi de 8h00 à 11h30 et de 13h30 à 16h30",
           "microdata": "Mo,Tu,We,Th,Fr 08:00-11:30,13:30-16:30"
-        }]
+        }],
+        "info": "Nous sommes fermés pendant la période des fêtes"
       },
-      "listIcon": [{
-          "item": "+41 21 316 45 15 ",
-          "icon": "fa-phone",
-          "url": "tel:+41213164515 "
-        },
-        {
-          "item": "+41 21 316 45 27 ",
-          "icon": "fa-fax",
-          "url": "tel:+41213164527 "
-        },
-        {
-          "item": "service@vd.ch",
-          "icon": "fa-envelope",
-          "url": "mailto:service@vd.ch"
-        },
-        {
-          "item": "voir sur la carte",
-          "icon": "fa-map-marker",
-          "url": "#"
-        }
-      ],
+      "image": true,
       "button": {
-        "text": "Contacter",
-        "title": "Contacter l'office"
+        "text": "Nous écrire",
+        "href": "#",
+        "title": "Formulaire de contact"
       }
     },
     "prestations": {
