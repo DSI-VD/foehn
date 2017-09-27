@@ -5,6 +5,24 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Refactor `@autority-address`
+
+### Added
+- Add variant `@autority-address--search`
+- Add variant `@service--search`
+- Add component `@detail-contact`
+
+## [0.34.0] - 2017-09-26
+
+### Changed
+- Add 'toutes les actualités' in render of `@button-default` in `@teaser-list--homepage`
+- Add `.text-right` to div containing `@logo--white` in `@footer` to align it to the right
+- Add class `.w-100` to div containing `@logo--white` in `@footer`
+- Changed `@button-tiles` width to max 33% desktop, 100% mobile
+- Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
+- Add `@download-list` to `@departements`
+- Changed `@download-list` for optional `h3`
+- Use CSS to change icon in `@nav-primary` (closed / open)
+- Use font-awesome icons for `@nav-primary`, `@button-back-to-top`, `@domains-list` and `@faq-item`
 - Changed `@download-list` to user `@h3` element with styleModifier
 - Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
 - Add number of search results in `@template-communiques-presse-list--results`
@@ -20,9 +38,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 
 ### Added
-- Add variant `@autority-address--search`
-- Add variant `@service--search`
-- Add component `@detail-contact`
 - Add `.vd-p` class to make text elements look like body text
 - Add `@logo` and `@logo--white` components
 - Add `@datalist--communes`
