@@ -57,17 +57,12 @@
     "autorityAddress": {
       "name": "Bureau d'information et de communication",
       "address": {
-        "street": "Rue de la Barre 2",
-        "postal-code": "1014",
-        "locality": "Lausanne"
+        "streetAddress": "Rue de la Barre 2",
+        "postOfficeBoxNumber": "5278",
+        "postalCode": "1000",
+        "addressLocality": "Lausanne",
+        "addressCountry": "Suisse"
       },
-      "listIcon": [
-        {
-          "item": "voir sur la carte",
-          "icon": "fa-map-marker",
-          "url": "#"
-        }
-      ],
       "button": "@autority-address.button"
     }
   },

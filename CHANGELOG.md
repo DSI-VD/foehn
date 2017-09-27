@@ -3,6 +3,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Refactor `@autority-address`
+
+### Added
+- Add variant `@autority-address--search`
+- Add variant `@service--search`
+- Add component `@detail-contact`
+
 ## [0.34.0] - 2017-09-26
 
 ### Changed
