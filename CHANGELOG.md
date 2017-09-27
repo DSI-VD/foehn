@@ -8,6 +8,66 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `.d-inline-block` class to `@list-boxed` to align second line
 - Add margin bottom to `@list-boxed` and `@list-links` list elements
 - Changed class of `ul` in `@nav-primary` for `vd-menu-list-links` to set margin-bottom to 0
+- Refactor `@autority-address`
+
+### Added
+- Add variant `@autority-address--search`
+- Add variant `@service--search`
+- Add component `@detail-contact`
+
+## [0.34.0] - 2017-09-26
+
+### Changed
+- Add 'toutes les actualités' in render of `@button-default` in `@teaser-list--homepage`
+- Add `.text-right` to div containing `@logo--white` in `@footer` to align it to the right
+- Add class `.w-100` to div containing `@logo--white` in `@footer`
+- Changed `@button-tiles` width to max 33% desktop, 100% mobile
+- Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
+- Add `@download-list` to `@departements`
+- Changed `@download-list` for optional `h3`
+- Use CSS to change icon in `@nav-primary` (closed / open)
+- Use font-awesome icons for `@nav-primary`, `@button-back-to-top`, `@domains-list` and `@faq-item`
+- Changed `@download-list` to user `@h3` element with styleModifier
+- Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
+- Add number of search results in `@template-communiques-presse-list--results`
+- Add class `vd-p mb-3` to results numbers in `@template-communiques-presse-list--results`
+- Change `h5` to `strong.h5` in `@card`
+- Add `mb-1` class to Press Release subtitle (`@teaser-small--alt`)
+- Add `@pagination--pages` variant to `@pagination` for `@teaser-alt-list`
+- Add more real data to table example in `@table` html
+- Add `sr-only` to links in `@detail-prestation`
+- Changed `@contact-form` to use rendering of elements instead of HTML
+- Changed 'Requis' to 'requis' (lowercase) in `@textarea` and `@input--required`
+- Changed `@textarea` to use dynamic label, id and required
+- Add `aria-invalid=true` if `@textarea--danger`'s is invalid
+
+### Added
+- Add `.vd-p` class to make text elements look like body text
+- Add `@logo` and `@logo--white` components
+- Add `@datalist--communes`
+
+### Fix
+- Fix `@footer` use `@logo-white`
+
+## [0.33.0] - 2017-09-15
+
+### Changed
+- `@pagination` set to use new `@button--link` variant button
+- `@pagination` use Bootstrap helper class instead of custom class
+- Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
+- Add sr-only title for services `<h2 class="sr-only">Services</h2>`
+- Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
+- Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)
+- Add `aria-invalid="true"` Aria attribut and change help text on 
+  `@input--validation-danger` to warn screen readers that the value is invalid
+- Fix `@logo-etat--default` accessibility by removing `aria-labelledby` and
+  adding `title` attribut
+- Add sr-only title to `@nav-side`
+- Replace `.text-muted` class with `.text-secondary`
+- Replace `.bg-inverse` class with `.bg-dark`
+- Replace `.bg-faded` class with `.bg-light`
+- Add one more level of navigation in `@nav-side`. The root page of navigation
+  is the first element of the navigation.
 - Change class from `h3` to `h5` for `h1` title in `@header--application`
 - Rename `@header--application` in `@header-application`
 - Add `@header-application--fluid` variant
@@ -26,9 +86,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
+- Add `@button--link` variant to `@button`
 - Add `@figure-picture` component
 
 ### Fix
+- Fix `@nav` config for active page
+- Fix content in `@content`
 - Fix unordered and ordered lists spacings
 - Fix italic placeholder in `@search-form--default`
 - Fix `@page-title-banner` background too dark in Firefox
@@ -1305,7 +1368,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.32.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.33.0...HEAD
+[0.33.0]: https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0
 [0.32.0]: https://github.com/DSI-VD/foehn/compare/v0.31.0...v0.32.0
 [0.31.0]: https://github.com/DSI-VD/foehn/compare/v0.30.0...v0.31.0
 [0.30.0]: https://github.com/DSI-VD/foehn/compare/v0.29.0...v0.30.0

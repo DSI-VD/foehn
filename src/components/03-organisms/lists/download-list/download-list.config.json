@@ -1,17 +1,20 @@
 {
   "status": "ready",
   "context": {
-    "listIcon": [
-      {
-        "item": "Lorem ipsum dolor sit.",
-        "icon": "fa-download",
-        "url": "#"
-      },
-      {
-        "item": "Facilis possimus culpa a!",
-        "icon": "fa-download",
-        "url": "#"
-      }
-    ]
+    "text": "Téléchargements",
+    "listIcon":{
+      "items":[
+        {
+          "item": "Lorem ipsum dolor sit.",
+          "icon": "fa-download",
+          "url": "#"
+        },
+        {
+          "item": "Facilis possimus culpa a!",
+          "icon": "fa-download",
+          "url": "#"
+        }
+      ]
+    }
   }
 }

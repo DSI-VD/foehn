@@ -1,6 +1,6 @@
 {
   "name": "foehn",
-  "version": "0.32.0",
+  "version": "0.34.0",
   "author": "DSI VD <info.dsi@vd.ch>",
   "repository": {
     "type": "git",
@@ -34,7 +34,9 @@
   "dependencies": {
     "@frctl/fractal": "^1.1.5",
     "@frctl/mandelbrot": "^1.2.0",
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "jquery": "^3.0.0",
+    "popper.js": "1.11.0"
   },
   "devDependencies": {
     "@frctl/nunjucks": "^1.0.3",
