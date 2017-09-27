@@ -5,12 +5,21 @@
     "division": "division",
     "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
     "address": {
-        "streetAddress": "Rue de la Barre 2",
-        "postalCode": "1000",
-        "addressLocality": "Lausanne",
-        "addressCountry": "Suisse"
+      "streetAddress": "Rue de la Barre 2",
+      "postalCode": "1000",
+      "postOfficeBoxNumber": "5278",
+      "addressLocality": "Lausanne",
+      "addressCountry": "Suisse"
     },
-    "telephone": "+41211234567",
+    "account": {
+      "type": "CCP",
+      "number": "10-206496-4"
+    },
+    "person": {
+      "name": "Alain Duvoisin",
+      "jobTitle": "Garde Forestier"
+    },
+    "telephone": "+41 21 123 45 67",
     "email": "service.departement@vd.ch",
     "additionalUrl": [
       {
@@ -34,5 +43,28 @@
       "info": "Nous sommes fermés pendant la période des fêtes"
     },
     "image": true
-  }
+  },
+  "variants": [
+    {
+      "name": "search",
+      "context": {
+        "division": null,
+        "suggestions": [
+          {
+            "text": "Bofflens",
+            "url": "#"
+          },
+          {
+            "text": "Bogis",
+            "url": "#"
+          },
+          {
+            "text": "Bonvillard",
+            "url": "#"
+          }
+
+      ]
+      }
+    }
+  ]
 }

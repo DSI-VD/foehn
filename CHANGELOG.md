@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Refactor `@autority-address`
 - Changed `@download-list` to user `@h3` element with styleModifier
 - Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
 - Add number of search results in `@template-communiques-presse-list--results`
@@ -19,6 +20,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 
 ### Added
+- Add variant `@autority-address--search`
+- Add variant `@service--search`
+- Add component `@detail-contact`
 - Add `.vd-p` class to make text elements look like body text
 - Add `@logo` and `@logo--white` components
 - Add `@datalist--communes`

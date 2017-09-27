@@ -18,10 +18,20 @@
   {%- endif %}
 
   {% if description %}<p>{{ description }}</p>{% endif %}
-
+  {% if person -%}
+  <p itemscope itemtype ="http://schema.org/Person" class="mb-0">
+    <span itemprop="name">{{ person.name }}</span> <br>
+    {% if person.jobTitle -%}
+      <span itemprop="jobTitle">{{ person.jobTitle }}</span> <br>
+    {%- endif %}
+  </p>
+  {%- endif %}
   {% if address -%}
   <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
     <span itemprop="streetAddress">{{ address.streetAddress }}</span> <br>
+    {% if address.postOfficeBoxNumber -%}
+      Case postale <span itemprop="postOfficeBoxNumber">{{ address.postOfficeBoxNumber }}</span><br>
+    {%- endif %}
     <span itemprop="postalCode">{{ address.postalCode }}</span>
     <span itemprop="addressLocality">{{ address.addressLocality }}</span>
     <span class="sr-only" itemprop="addressCountry">{{ address.addressCountry }}</span>
@@ -65,6 +75,8 @@
   <p>{{ openingHours.info  }}</p>
   {%- endif %}
   </div>
+  {% if account %}<h3>{{ account.type }}<span class="sr-only"> du {{ name }}</span></h3>{% endif %}
+  <p>{{ account.number }}</p>
 
   {% if image -%}
   <img class="img-fluid"
