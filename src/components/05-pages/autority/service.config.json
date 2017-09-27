@@ -151,8 +151,17 @@
       "address": {
         "streetAddress": "Place du Château 1",
         "postalCode": "1014",
+        "postOfficeBoxNumber": "5278",
         "addressLocality": "Lausanne",
         "addressCountry": "Suisse"
+      },
+      "account": {
+        "type": "CCP",
+        "number": "10-206496-4"
+      },
+      "person": {
+        "name": "Alain Duvoisin",
+        "jobTitle": "Garde Forestier"
       },
       "telephone": "+41 21 316 45 15",
       "email": "service@vd.ch",
