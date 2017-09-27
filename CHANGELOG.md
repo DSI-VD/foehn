@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.35.0] - 2017-09-27
+
 ### Changed
 - Change class of `@domaines` list for `vd-menu-list-links` instead of `vd-list-links`
 - Add `.d-inline-block` class to `@list-boxed` to align second line
