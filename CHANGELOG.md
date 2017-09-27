@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change class of `@domaines` list for `vd-menu-list-links` instead of `vd-list-links`
+- Add `.d-inline-block` class to `@list-boxed` to align second line
+- Add margin bottom to `@list-boxed` and `@list-links` list elements
+- Changed class of `ul` in `@nav-primary` for `vd-menu-list-links` to set margin-bottom to 0
 - Refactor `@autority-address`
 
 ### Added
