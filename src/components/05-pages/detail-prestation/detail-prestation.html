@@ -9,9 +9,9 @@
     </ul>
   </section>
 
-  <nav class="mb-5">
-    {% render '@index-menu', index %}
-  </nav>
+
+  {% render '@index-menu', {styleModifier: 'mb-5'}, true %}
+
 
   <section id="1" class="mb-5">
     <h2><span class="sr-only">Obtenir la prestation </span>En ligne</h2>
@@ -48,7 +48,7 @@
     </div>
 
     <p class="text-center">
-      {% render '@button--cta', {text:'Commencer', icon:"fa-lock", title:"Commencer la prestation Extrait du registre des poursuites pour soi-même en ligne"}, true %}
+    {% render '@button--cta', {text:"Commencer<span class='sr-only'> la prestation Extrait du registre des poursuite pour soi-même en ligne</span>", iconBefore:"fa-lock", title: false}, true %}
     </p>
   </section>
 
@@ -83,7 +83,7 @@
     </div>
 
     <p class="text-center">
-      {% render '@button--cta', {text:'Commencer', title:"Commencer la prestation Extrait du registre des poursuites pour soi-même au guichet"}, true %}
+      {% render '@button--cta', {text:"Commencer<span class='sr-only'> la prestation Extrait du registre des poursuite pour soi-même au guichet</span>", iconBefore:"fa-lock", title: false}, true %}
     </p>
   </section>
 
@@ -119,7 +119,7 @@
     </div>
 
     <p class="text-center">
-      {% render '@button--cta', {text:'Commencer', title:"Commencer la prestation Extrait du registre des poursuites pour soi-même par téléphone"}, true %}
+      {% render '@button--cta', {text:"Commencer<span class='sr-only'> la prestation Extrait du registre des poursuite pour soi-même par téléphone</span>", iconBefore:"fa-lock", title: false}, true %}
     </p>
   </section>
 

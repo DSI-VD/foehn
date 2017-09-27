@@ -3,10 +3,34 @@
     "name": "Service name",
     "url": "#",
     "division": "division",
+    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
     "address": {
-        "street": "Rue de la Barre 2",
-        "postalCode": "1000",
-        "locality": "Lausanne"
+      "streetAddress": "Rue de la Barre 2",
+      "postOfficeBoxNumber": "5278",
+      "postalCode": "1000",
+      "addressLocality": "Lausanne",
+      "addressCountry": "Suisse"
+    },
+    "account": {
+      "type": "CCP",
+      "number": "10-206496-4"
+    },
+    "person": {
+      "name": "Alain Duvoisin",
+      "jobTitle": "Garde Forestier"
+    },
+    "telephone": "+41 21 123 45 67",
+    "email": "service.departement@vd.ch",
+    "additionalUrl": [
+      {
+        "url": "https://www.fake-url.com",
+        "text": "Lien libre"
+      }
+    ],
+    "button": {
+      "text": "Nous écrire",
+      "href": "#",
+      "title": "Formulaire de contact"
     },
     "openingHours": {
       "title": "Heures d'ouverture",
@@ -15,33 +39,32 @@
           "text": "du lundi au vendredi de 8h00 à 11h30 et de 13h30 à 16h30",
           "microdata": "Mo,Tu,We,Th,Fr 08:00-11:30,13:30-16:30"
         }
-      ]
+      ],
+      "info": "Nous sommes fermés pendant la période des fêtes"
     },
-    "listIcon": [
-      {
-        "item": "+41 21 123 45 67",
-        "icon": "fa-phone",
-        "url": "tel:+41211234567"
-      },
-      {
-        "item": "+41 21 123 45 67",
-        "icon": "fa-fax",
-        "url": "tel:+41211234567"
-      },
-      {
-        "item": "service@vd.ch",
-        "icon": "fa-envelope",
-        "url": "mailto:service@vd.ch"
-      },
-      {
-        "item": "voir sur la carte",
-        "icon": "fa-map-marker",
-        "url": "#"
+    "image": true
+  },
+  "variants": [
+    {
+      "name": "search",
+      "context": {
+        "division": null,
+        "suggestions": [
+          {
+            "text": "Bofflens",
+            "url": "#"
+          },
+          {
+            "text": "Bogis",
+            "url": "#"
+          },
+          {
+            "text": "Bonvillard",
+            "url": "#"
+          }
+
+      ]
       }
-    ],
-    "button": {
-      "text": "Contacter",
-      "title": "Contacter l'office"
     }
-  }
+  ]
 }

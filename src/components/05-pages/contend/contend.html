@@ -2,29 +2,32 @@
 {% block main %}
 
   <h2 class="sr-only">Introduction</h2>
-  <p>L'ozone est un constituant naturel de l'atmosphère. Entre 10 et 50 km d’altitude, la couche d’ozone nous protège des rayons UV du soleil. Mais à la surface de la terre, une trop forte concentration de ce gaz a des effets nocifs, aussi bien pour les êtres vivants que pour la végétation. L’excès de «mauvais » ozone est dû aux activités humaines. Les transports motorisés, l’industrie et l’utilisation de solvants entraînent des rejets d’oxydes d’azote et de composés organiques volatils, lesquels se transforment en ozone sous l’effet d’un fort ensoleillement. C’est pourquoi les problèmes d’ozone apparaissent au printemps et en été.</p>
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+  ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+  tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+  ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
-  {% render '@download-list', download %}
+  {% render '@download-list', download, true %}
 
   <h2 class="sr-only">Information sur l'ozone</h2>
   <dl class="row">
     <dt class="col-sm-3">Nom</dt>
-    <dd class="col-sm-9">Ozone</dd>
+    <dd class="col-sm-9">Ammoniac</dd>
 
     <dt class="col-sm-3">Surnom</dt>
-    <dd class="col-sm-9">O3</dd>
+    <dd class="col-sm-9">NH<sub>3</sub></dd>
 
     <dt class="col-sm-3">Origine</dt>
-    <dd class="col-sm-9">Mécanisme de formation complexe du à l'action du soleil et de la chaleur sur les oxydes d'azote et les composés organiques volatils.</dd>
+    <dd class="col-sm-9">Activités agricoles (élevage d’animaux et utilisation d’engrais de ferme)</dd>
 
     <dt class="col-sm-3">Signe particulier</dt>
-    <dd class="col-sm-9">Polluant secondaire, est en excès au niveau du sol. À ne pas confondre avec la couche d'ozone.</dd>
+    <dd class="col-sm-9">Est un précurseur important dans la formation de particules secondaires</dd>
 
     <dt class="col-sm-3">Profession</dt>
-    <dd class="col-sm-9">Oxydant universel</dd>
+    <dd class="col-sm-9">Fabricant de particules fines secondaires</dd>
 
     <dt class="col-sm-3">Effets nocifs</dt>
-    <dd class="col-sm-9">Provoque des irritations oculaires et des altérations pulmonaires. Endommage également les végétaux.</dd>
+    <dd class="col-sm-9">Substance odorante qui provoque des irritations des voies respiratoires, et qui contribue à l’eutrophisation des milieux aquatiques.</dd>
   </dl>
 {% endblock %}
 {% block aside %}
