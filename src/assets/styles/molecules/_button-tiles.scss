@@ -12,11 +12,9 @@
 
   .btn {
     display: inline-flex;
-    flex-grow: 1;
-    flex-shrink: 0;
     position: relative;
+    padding: 0;
     width: calc(33% - #{$spacer});
-    max-width: calc(33% - #{$spacer});
     margin: ($spacer / 2);
     color: $black;
     transition: background-color 0.2s;
@@ -24,6 +22,10 @@
     box-shadow: 2px 2px 0 0 $black;
 
     a {
+      display: block;
+      width: 100%;
+      padding:.5rem .75rem;
+      text-align: left;
       text-decoration: none;
       color: $black;
       white-space: nowrap;
@@ -32,8 +34,10 @@
     }
 
     @include media-breakpoint-down(sm) {
+      display: block;
       width: 100%;
-      max-width: 100%;
+      text-align: left;
+      margin-right: 0;
     }
 
     @include vd-pattern-dotted($pattern-dotted-green);
