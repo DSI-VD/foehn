@@ -13,9 +13,9 @@
   .btn {
     display: inline-flex;
     position: relative;
-    padding: 0;
     width: calc(33% - #{$spacer});
     margin: ($spacer / 2);
+    padding: 0;
     color: $black;
     transition: background-color 0.2s;
     white-space: nowrap;
@@ -24,7 +24,7 @@
     a {
       display: block;
       width: 100%;
-      padding:.5rem .75rem;
+      padding: 0.5rem 0.75rem;
       text-align: left;
       text-decoration: none;
       color: $black;
