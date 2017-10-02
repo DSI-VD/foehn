@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
+- better `@button-tiles` css factoring
+
 ## [0.35.0] - 2017-09-27
 
 ### Changed
