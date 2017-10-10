@@ -96,7 +96,7 @@ function deploy() {
     return gulp.src(`${paths.build}/**/*`)
         .pipe(ghPages({
             force: true,
-            // remoteUrl: 'https://github.com/DSI-VD/foehn.git',
+            remoteUrl: 'https://github.com/DSI-VD/foehn.git',
         }));
 }
 
