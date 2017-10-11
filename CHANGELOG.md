@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
+
 ## [0.35.0] - 2017-09-27
 
 ### Changed
