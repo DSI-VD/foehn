@@ -4,7 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `.vd-flex-order` to CP header
+- Add `.vd-flex-before` around all elements of `@template-communiques-presse-detail--default` header except title
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
+
+### Added
+- `_header-flex.scss` in styles molecules
 
 ## [0.35.0] - 2017-09-27
 
