@@ -3,6 +3,7 @@
     "context": {
       "title": "Rechercher dans les actualités",
       "placeholder": "Rechercher",
+      "label": "Rechercher",
       "options": "@fieldset--checkbox"
     }
 }
