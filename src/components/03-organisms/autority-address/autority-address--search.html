@@ -14,7 +14,7 @@
 <h3 class="vd-heading-light h4 mt-0">{{ division }}</h3>
 {%- endif %}
 {% if description %}<p>{{ description }}</p>{% endif %}
-{% render '@search-form--default', { placeholder: 'Commune ou NPA'}, true %}
+{% render '@search-form--default', { placeholder: 'Commune ou NPA', label: 'Rechercher le service par commune ou NPA'}, true %}
 {% if suggestions %}
 <ul>
     {% for suggestion in suggestions %}
