@@ -19,7 +19,6 @@ a {
   }
 
   &:focus {
-    @extend .d-inline-block;
     @include vd-focus; /* [2] */
   }
 
