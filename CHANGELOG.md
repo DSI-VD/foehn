@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `@ @filter-list--default` component
 - Add `@ @filter-list--table` component
 
+### Fix
+- Fix margin-bottom of the last element in `@highlight`
 ## [0.35.0] - 2017-09-27
 
 ### Changed
