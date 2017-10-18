@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ### Added
-- Add vesion number in CSS file
+- Add version number in CSS file
 - Add `@ @filter-list--default` component
 - Add `@ @filter-list--table` component
 
