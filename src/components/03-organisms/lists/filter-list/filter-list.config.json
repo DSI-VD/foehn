@@ -1,0 +1,13 @@
+{
+  "context": {
+    "format": "list"
+  },
+  "variants": [
+    {
+      "name": "table",
+      "context": {
+        "format": "table"
+      }
+    }
+  ]
+}

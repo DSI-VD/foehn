@@ -8,6 +8,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Add vesion number in CSS file
+- Add `@ @filter-list--default` component
+- Add `@ @filter-list--table` component
 
 ## [0.35.0] - 2017-09-27
 
