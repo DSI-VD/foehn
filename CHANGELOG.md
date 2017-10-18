@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 - Fix margin-bottom of the last element in `@highlight`
 - Fix `.vd-bg-pattern-gray` for IE and Firefox
+- Fix `@search-banner--default` button height
 
 ## [0.35.0] - 2017-09-27
 
