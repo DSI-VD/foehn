@@ -38,6 +38,6 @@ a {
   }
 
   &[rel^="category"]:before {
-    content: "#"
+    content: "#";
   }
 }
