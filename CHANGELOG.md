@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Add style to links with rel="category" to add "#"
 
+### Fix
+- Fix `@teaser-card--default` background color
+- Fix `@teaser-card--green` background color
+- Fix `@teaser-card--dark-grey` background color
+- Fix `@teaser-card--black` background color
+
 ## [0.36.0] - 2017-10-19
 
 ### Changed
