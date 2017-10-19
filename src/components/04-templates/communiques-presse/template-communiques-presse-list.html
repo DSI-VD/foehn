@@ -2,7 +2,7 @@
 
 {% include '@page-title-banner' %}
 
-<div class="vd-bg-pattern-bars-gray py-4 mt-3">
+<div class="vd-bg-pattern-bars-gray py-4 mt-3 d-print-none">
   <div class="container">
     <form class="form">
       <div class="row">
@@ -31,7 +31,7 @@
 
   <div class="row">
 
-    <div class="col-md-8">
+    <div class="col-md-8 vd-print-full-width">
       {% block main %}
       {% if results %}<h2 class="vd-p mb-3">{{ total }} résultats trouvés</h2>{% else %}<h2 class="sr-only">Liste des communiqués de presse</h2>{% endif %}
       {% render '@teaser-alt-list' %}

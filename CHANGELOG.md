@@ -4,9 +4,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `.d-print-none` and `h1.d-print-block` to `@logo-etat`.
+- Add `.d-print-none` to `@nav-primary`, `@nav`.
+- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to display `h1`replacing logo at 100% width (print)
+- Add `.vd-print-none` to search form row in `@template-communiques-presse-list` 
+- Add `.vd-print-full-width` to CP list results of `@template-communiques-presse-list`
+- Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ### Added
+- Add `_print.scss` for print styles, with `.vd-print-full-width` to override column sizes to 100% for print
 - Add version number in CSS file
 - Add `@ @filter-list--default` component
 - Add `@ @filter-list--table` component
