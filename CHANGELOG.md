@@ -5,12 +5,21 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Add style to links with rel="category" to add "#"
+
+## [0.36.0] - 2017-10-19
+
+### Changed
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ### Added
 - Add version number in CSS file
 - Add `@ @filter-list--default` component
 - Add `@ @filter-list--table` component
+
+### Fix
+- Fix margin-bottom of the last element in `@highlight`
+- Fix `.vd-bg-pattern-gray` for IE and Firefox
+- Fix `@search-banner--default` button height
 
 ## [0.35.0] - 2017-09-27
 
@@ -1379,7 +1388,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.35.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.36.0...HEAD
+[0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v.0.36.0
 [0.35.0]: https://github.com/DSI-VD/foehn/compare/v0.34.0...v0.35.0
 [0.34.0]: https://github.com/DSI-VD/foehn/compare/v0.33.0...v0.34.0
 [0.33.0]: https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0
