@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `line-height:normal` to `.list-unstyled li a>.h3` to fix Firefox focus bug AND `.d-inline-block` to all links of `@departements`
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ## [0.35.0] - 2017-09-27
