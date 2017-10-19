@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Add style to links with rel="category" to add "#"
+
 ## [0.36.0] - 2017-10-19
 
 ### Changed
