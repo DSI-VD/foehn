@@ -37,3 +37,7 @@ a {
     }
   }
 }
+// fix Firefox focus bug
+.list-unstyled li a>.h3 {
+  line-height:normal;
+}
