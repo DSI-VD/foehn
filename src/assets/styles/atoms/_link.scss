@@ -36,4 +36,12 @@ a {
       cursor: default; /* [4] */
     }
   }
+
+  &[rel^="category"]:before {
+    content: "#"
+  }
+}
+// fix Firefox focus bug
+.list-unstyled li a>.h3 {
+  line-height:normal;
 }
