@@ -1,6 +1,6 @@
 {
   "name": "foehn",
-  "version": "0.35.0",
+  "version": "0.36.0",
   "author": "DSI VD <info.dsi@vd.ch>",
   "repository": {
     "type": "git",
@@ -53,6 +53,7 @@
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-eslint": "^4.0.0",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-header": "^1.8.9",
     "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
