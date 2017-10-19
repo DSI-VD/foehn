@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add style to links with rel="category" to add "#"
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ### Added
