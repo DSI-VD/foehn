@@ -36,4 +36,8 @@ a {
       cursor: default; /* [4] */
     }
   }
+
+  &[rel^="category"]:before {
+    content: "#"
+  }
 }
