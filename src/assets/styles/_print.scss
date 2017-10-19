@@ -15,13 +15,18 @@
     min-width: 800px;
   }
 
-  header {
+  aside {
+    page-break-before: always;
+  }
+
+  header,
+  .vd-bg-pattern-bars-gray {
     background-image: none !important;
   }
 
+  aside,
   .vd-content-column,
-  .vd-print-full-width,
-  aside {
+  .vd-print-full-width {
     flex-basis: 100% !important;
     max-width: 100% !important;
     width: 100% !important;
@@ -40,12 +45,12 @@
     display: none;
   }
 
+  footer,
   .vd-nav-mobile,
   .d-md-none,
   .vd-social-icons,
   .vd-search-form,
-  .vd-search-form-regular,
-  footer {
+  .vd-search-form-regular {
     display: none !important;
   }
 
