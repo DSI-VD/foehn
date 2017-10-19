@@ -1,5 +1,20 @@
 // print
+@page {
+  size: A4;
+}
+
 @media print {
+  body {
+    margin: 0;
+    padding: 0 !important;
+    min-width: 800px;
+  }
+
+  .container {
+    width: auto;
+    min-width: 800px;
+  }
+
   header {
     background-image: none !important;
   }
@@ -25,6 +40,8 @@
     display: none;
   }
 
+  .vd-nav-mobile,
+  .d-md-none,
   .vd-social-icons,
   .vd-search-form,
   .vd-search-form-regular,
