@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Add conditional for sr-only `<span class="sr-only">{% if not authors %}Publié {% endif %} {{ datePreText }}</span>` in `@teaser`
+- Better meta information in `@teaser` if there no authors
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ## [0.35.0] - 2017-09-27
