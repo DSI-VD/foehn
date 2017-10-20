@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Upgrade from Bootstrap Beta to Bootstrap Beta 2
+
 ## [0.37.0] - 2017-10-20
 
 ### Changed
