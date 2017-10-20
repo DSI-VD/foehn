@@ -47,6 +47,7 @@
  * regular search form
  *
  * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
+ *    see also CCWEB-9943
  */
 .vd-search-form-regular {
   ::placeholder {
@@ -65,6 +66,6 @@
   }
 
   .input-group-btn > .btn {
-    padding-top: $input-btn-padding-y * 1.1; /* [1] */
+    height: 2.375rem;
   }
 }
