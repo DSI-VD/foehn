@@ -4,12 +4,38 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Upgrade from Bootstrap Beta to Bootstrap Beta 2
 - Add `.d-flex flex-column` to `@template-communiques-presse-detail--default` header
 - Add div `.order-1` around all elements of `@template-communiques-presse-detail--default` header except title
 - Add `order-2` tp `h1`
+
+## [0.37.0] - 2017-10-20
+
+### Changed
+- Better meta information in `@teaser` if there no authors
+
+### Fix
+- Add `line-height:normal` to `.list-unstyled li a>.h3` to fix Firefox focus bug AND `.d-inline-block` to all links of `@departements`
+- Add style to links with rel="category" to add "#"
+- Fix `@teaser-card--default` background color
+- Fix `@teaser-card--green` background color
+- Fix `@teaser-card--dark-grey` background color
+- Fix `@teaser-card--black` background color
+
+## [0.36.0] - 2017-10-19
+
+### Changed
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
+### Added
+- Add version number in CSS file
+- Add `@filter-list--default` component
+- Add `@filter-list--table` component
 
+### Fix
+- Fix margin-bottom of the last element in `@highlight`
+- Fix `.vd-bg-pattern-gray` for IE and Firefox
+- Fix `@search-banner--default` button height
 
 ## [0.35.0] - 2017-09-27
 
@@ -1378,7 +1404,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.33.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.37.0...HEAD
+[0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
+[0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
+[0.35.0]: https://github.com/DSI-VD/foehn/compare/v0.34.0...v0.35.0
+[0.34.0]: https://github.com/DSI-VD/foehn/compare/v0.33.0...v0.34.0
 [0.33.0]: https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0
 [0.32.0]: https://github.com/DSI-VD/foehn/compare/v0.31.0...v0.32.0
 [0.31.0]: https://github.com/DSI-VD/foehn/compare/v0.30.0...v0.31.0
