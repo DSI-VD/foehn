@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Better meta information in `@teaser` if there no authors
+- Upgrade frome Bootstrap Beta to Bootstrap Beta 2
 
 ### Fix
 - Add `line-height:normal` to `.list-unstyled li a>.h3` to fix Firefox focus bug AND `.d-inline-block` to all links of `@departements`
