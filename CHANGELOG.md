@@ -5,11 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Add `.d-flex flex-column` to `@template-communiques-presse-detail--default` header
-- Add `.vd-flex-before` around all elements of `@template-communiques-presse-detail--default` header except title
+- Add div `.order-1` around all elements of `@template-communiques-presse-detail--default` header except title
+- Add `order-2` tp `h1`
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
-### Added
-- `_header-flex.scss` in styles molecules
+
 
 ## [0.35.0] - 2017-09-27
 
