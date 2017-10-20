@@ -437,13 +437,17 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 vd-content-column"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small text-uppercase font-weight-bold"</span>&gt;</span>nature du communiqué<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small"</span>&gt;</span>Emeteur<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small font-weight-bold"</span>&gt;</span>Lausanne, le 1er juillet 2016<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex flex-column"</span>&gt;</span>
 
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0"</span>&gt;</span>Axes forts de transports publics<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2 px-4 py-4 mt-0 vd-bg-pattern-bars-gray"</span>&gt;</span>Le Service de la sécurité civile et militaire est certifié<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2 px-4 py-4 mt-0 vd-bg-pattern-bars-gray order-2"</span>&gt;</span>Le Service de la sécurité civile et militaire est certifié<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-1"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small text-uppercase font-weight-bold"</span>&gt;</span>nature du communiqué<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small"</span>&gt;</span>Emeteur<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small font-weight-bold"</span>&gt;</span>Lausanne, le 1er juillet 2016<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0"</span>&gt;</span>Axes forts de transports publics<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
             <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lead"</span>&gt;</span>Au terme d'une démarche initiée courant 2014, le Service de la sécurité civile et militaire (SSCM) a officiellement obtenu la certification à la norme internationale ISO 9001:2015 de son système de management de la qualité. L'obtention de
@@ -671,22 +675,27 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 vd-content-column"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small text-uppercase font-weight-bold"</span>&gt;</span>{{ pressRelease.nature }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small"</span>&gt;</span>{{ pressRelease.sender }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small font-weight-bold"</span>&gt;</span>{{ pressRelease.date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex flex-column"</span>&gt;</span>
 
-        {% if icons %}
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Partnaires<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline"</span>&gt;</span>
-          {% for partner in pressRelease.partners %}
-          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>{{ partner.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"{{ partner.src }}"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"{{ partner.alt }}"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-          {% endfor %}
-        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2 px-4 py-4 mt-0 vd-bg-pattern-bars-gray order-2"</span>&gt;</span>{{ pageTitle }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-1"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small text-uppercase font-weight-bold"</span>&gt;</span>{{ pressRelease.nature }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0 small"</span>&gt;</span>{{ pressRelease.sender }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small font-weight-bold"</span>&gt;</span>{{ pressRelease.date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0"</span>&gt;</span>{{ pressRelease.preHeader }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2 px-4 py-4 mt-0 vd-bg-pattern-bars-gray"</span>&gt;</span>{{ pageTitle }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+          {% if icons %}
+          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Partnaires<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline"</span>&gt;</span>
+            {% for partner in pressRelease.partners %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>{{ partner.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"{{ partner.src }}"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"{{ partner.alt }}"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            {% endfor %}
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          {% endif %}
+
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0"</span>&gt;</span>{{ pressRelease.preHeader }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
       <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
       {% include '<a href="lead">@lead</a>' %}
