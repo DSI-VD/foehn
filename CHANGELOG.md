@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.37.0] - 2017-10-20
+
 ### Changed
 - Better meta information in `@teaser` if there no authors
 - Upgrade frome Bootstrap Beta to Bootstrap Beta 2
@@ -1397,8 +1399,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.36.0...HEAD
-[0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v.0.36.0
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.37.0...HEAD
+[0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
+[0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
 [0.35.0]: https://github.com/DSI-VD/foehn/compare/v0.34.0...v0.35.0
 [0.34.0]: https://github.com/DSI-VD/foehn/compare/v0.33.0...v0.34.0
 [0.33.0]: https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0
