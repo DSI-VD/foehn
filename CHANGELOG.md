@@ -3,11 +3,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Upgrade from Bootstrap Beta to Bootstrap Beta 2
+
 ## [0.37.0] - 2017-10-20
 
 ### Changed
 - Better meta information in `@teaser` if there no authors
-- Upgrade frome Bootstrap Beta to Bootstrap Beta 2
 
 ### Fix
 - Add `line-height:normal` to `.list-unstyled li a>.h3` to fix Firefox focus bug AND `.d-inline-block` to all links of `@departements`
