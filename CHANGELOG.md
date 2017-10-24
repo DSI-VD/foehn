@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.38.0] - 2017-10-24
+
 ### Changed
 - Upgrade from Bootstrap Beta to Bootstrap Beta 2
 - Add `.d-flex flex-column` to `@template-communiques-presse-detail--default` header
@@ -1404,7 +1406,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.37.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.38.0...HEAD
+[0.38.0]: https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0
 [0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
 [0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
 [0.35.0]: https://github.com/DSI-VD/foehn/compare/v0.34.0...v0.35.0
