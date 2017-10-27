@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Change layout of `@theme` for `@template--2-col`.
+- Harmonize `@list-boxed` margins
+
 ## [0.38.0] - 2017-10-24
 
 ### Changed
