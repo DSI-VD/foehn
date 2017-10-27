@@ -11,10 +11,20 @@ ul {
 /**
  * square bullet list
  */
-.vd-list-links {
+.vd-list-links,
+.vd-menu-list-links {
   padding-left: $spacer;
   list-style-type: square;
   color: $black;
+  margin-bottom: ($spacer * 2);
+
+  li {
+    margin-bottom: $spacer;
+  }
+}
+
+.vd-menu-list-links {
+  margin-bottom: 0;
 
   li {
     margin-bottom: 0;

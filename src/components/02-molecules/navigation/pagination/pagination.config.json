@@ -1,13 +1,30 @@
 {
-    "status": "ready",
-    "context": {
-      "previous": {
-        "url": "#",
-        "text": "Précédent"
-      },
-      "next": {
-        "url": "#",
-        "text": "Suivant"
+  "status": "ready",
+  "context": {
+    "previous": {
+      "url": "#",
+      "text": "Précédent",
+      "iconBefore": "fa-chevron-left"
+    },
+    "next": {
+      "url": "#",
+      "text": "Suivant",
+      "iconAfter": "fa-chevron-right"
+    }
+  },
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "showPages": false
+      }
+    },
+    {
+      "name": "pages",
+      "context": {
+        "showPages": true
       }
     }
+  ]
 }
+

@@ -13,7 +13,6 @@
     padding-bottom: 0;
     padding-left: 0;
     border-color: transparent;
-    font-style: italic;
     transition:
       padding 0.11s ease-in,
       border 0.11s;
@@ -38,14 +37,23 @@
       background: darken($vd-primary, 10%);
     }
   }
+
+  ::placeholder {
+    font-style: italic;
+  }
 }
 
 /**
  * regular search form
  *
  * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
+ *    see also CCWEB-9943
  */
 .vd-search-form-regular {
+  ::placeholder {
+    font-style: italic;
+  }
+
   .btn {
     background: $vd-primary-dark;
     border-color: $vd-primary-dark;
@@ -58,6 +66,6 @@
   }
 
   .input-group-btn > .btn {
-    padding-top: $input-btn-padding-y * 1.1; /* [1] */
+    height: 2.375rem;
   }
 }
