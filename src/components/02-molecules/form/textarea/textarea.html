@@ -1,5 +1,6 @@
 <div class="form-group{% if validation.class === 'danger' %} vd-form-group-{{ validation.class }}{% endif %}">
-  <label for="exampleTextarea">Example textarea</label>
-  {%- if validation.text %}<div class="text-{{ validation.class }}">{{ validation.text }}</div>{% endif -%}
-  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  <label for="{{ id }}"{% if labelHidden %} class="sr-only"{% endif %}{% if labelStyleModifier %} class="{{ labelStyleModifier }}"{% endif %}>{{ label }}{% if required %} <span aria-hidden="true">(requis)</span>{% endif %}</label>
+  {%- if validation.text %}<div class="form-control-feedback">{{ validation.text }}</div>{% endif -%}
+  {%- if helpText %}<small id="{{ id }}Help" class="form-text text-muted">{{ helpText }}</small>{% endif -%}
+  <textarea class="form-control" type="{{ type }}" id="{{ id }}" rows="3" {% if validation.class === 'danger' %} aria-invalid="true"{% endif %}{% if helpText %} aria-describedby="{{ id }}Help"{% endif %}></textarea>
 </div>

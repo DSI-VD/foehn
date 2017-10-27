@@ -45,6 +45,12 @@ Two size are included in spacing utilities.
 
 Replace `.btn-primary` class with `.btn-dark`.
 
+## Update color helpers
+
+- Replace `.text-muted` class with `.text-secondary`
+- Replace `.bg-inverse` class with `.bg-dark`
+- Replace `.bg-faded` class with `.bg-light`
+
 ## Update grid offsetting columns
 
 Update the grid to `drop` `push`, `pull`, and `offset` in favor of new `.order-` modifiers and margin utilities. Take a look at [the documentation](https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns).

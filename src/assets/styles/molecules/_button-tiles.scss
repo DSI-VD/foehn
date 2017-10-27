@@ -1,19 +1,22 @@
 @charset 'UTF-8';
 
 .vd-btn-tiles {
-  display: block;
   display: flex;
   flex-wrap: wrap;
   margin: ($spacer / -2);
   padding-left: 0;
 
+  @include media-breakpoint-down(sm) {
+    margin-right: ($spacer / 2);
+  }
+
   .btn {
-    display: inline-block;
     display: inline-flex;
     flex-grow: 1;
     flex-shrink: 0;
-    min-width: calc(25% - #{$spacer});
     position: relative;
+    width: calc(33% - #{$spacer});
+    max-width: calc(33% - #{$spacer});
     margin: ($spacer / 2);
     color: $black;
     transition: background-color 0.2s;
@@ -23,10 +26,14 @@
     a {
       text-decoration: none;
       color: $black;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    @include media-breakpoint-up(sm) {
-      //max-width: calc(33% - #{$spacer});
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      max-width: 100%;
     }
 
     @include vd-pattern-dotted($pattern-dotted-green);
@@ -36,7 +43,7 @@
     }
 
     &:focus {
-      @include box-shadow($btn-focus-box-shadow);
+      @include box-shadow($input-btn-focus-box-shadow);
     }
 
     &:active {

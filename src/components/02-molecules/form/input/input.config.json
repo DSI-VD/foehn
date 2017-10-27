@@ -32,7 +32,7 @@
         "name": "validation danger",
         "context": {
           "label": "Courriel",
-          "helpText": "Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.",
+          "helpText": "Le courriel saisi n'est pas valide.",
           "validation": {
             "class": "danger",
             "text": "Veuillez saisir votre courriel"
