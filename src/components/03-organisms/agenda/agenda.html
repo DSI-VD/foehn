@@ -1,7 +1,24 @@
 <section>
   <h2 class="vd-heading-light h4">{{ title }}</h2>
-
-  {% for teaser in teasers %}
-  {% render '@teaser', teaser, true %}
-  {% endfor %}
+  <ul class="list-unstyled">
+      {% for event in events %}
+      <li class="vd-agenda">
+          <h3 class="vd-agenda__title mt-0">
+              <a href="{{ event.url }}">{{ event.title }}</a>
+          </h3>
+          <p class="vd-agenda__meta vd-bg-pattern-gray d-flex flex-column
+          align-items-center justify-content-center p-3">
+            {% if event.date.end %}<span>du</span> {% endif %}
+            <span class="h1 my-1">{{ event.date.start.day }}</span>
+            <span class="h5 my-1">{{ event.date.start.month }}</span>
+            {% if event.date.end %}
+            <span>au</span>
+            <span class="h1 my-1">{{ event.date.end.day }}</span>
+            <span class="h5 my-1">{{ event.date.end.month }}</span>
+            {% endif %}
+          </p>
+          <p class="vd-agenda__content">{{ event.excerpt }}</p>
+      </li>
+      {% endfor %}
+  </ul>
 </section>
