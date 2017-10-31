@@ -48,6 +48,15 @@
     &:hover {
       background-color: rgba($vd-primary-dark, 0.15);
       text-decoration: none;
+
+    &:focus {
+      @include box-shadow($input-btn-focus-box-shadow);
+    }
+
+    &:active {
+      top: 2px;
+      left: 2px;
+      box-shadow: 0 0 0 0 $black;
     }
 
     &:visited {

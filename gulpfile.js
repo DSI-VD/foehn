@@ -23,6 +23,15 @@ const paths = {
     src: `${__dirname}/src`,
 };
 
+const header = require('gulp-header');
+const pkg = require('./package.json');
+
+const banner = ['/**',
+    ' * <%= pkg.name %> - <%= pkg.description %>',
+    ' * @version v<%= pkg.version %>',
+    ' */',
+    ''].join('\n');
+
 /*
  * Configure a Fractal instance.
  */
@@ -96,7 +105,7 @@ function deploy() {
     return gulp.src(`${paths.build}/**/*`)
         .pipe(ghPages({
             force: true,
-            // remoteUrl: 'https://github.com/DSI-VD/foehn.git',
+            remoteUrl: 'https://github.com/DSI-VD/foehn.git',
         }));
 }
 
@@ -109,6 +118,7 @@ function styles() {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write('./'))
+        .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
 
