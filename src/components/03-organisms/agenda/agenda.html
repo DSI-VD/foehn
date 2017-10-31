@@ -1,24 +1,27 @@
 <section>
   <h2 class="vd-heading-light h4">{{ title }}</h2>
   <ul class="list-unstyled">
-      {% for event in events %}
-      <li class="vd-agenda">
-          <h3 class="vd-agenda__title mt-0">
-              <a href="{{ event.url }}">{{ event.title }}</a>
-          </h3>
-          <p class="vd-agenda__meta vd-bg-pattern-gray d-flex flex-column
-          align-items-center justify-content-center p-3">
-            {% if event.date.end %}<span>du</span> {% endif %}
-            <span class="h1 my-1">{{ event.date.start.day }}</span>
-            <span class="h5 my-1">{{ event.date.start.month }}</span>
-            {% if event.date.end %}
-            <span>au</span>
-            <span class="h1 my-1">{{ event.date.end.day }}</span>
-            <span class="h5 my-1">{{ event.date.end.month }}</span>
-            {% endif %}
-          </p>
-          <p class="vd-agenda__content">{{ event.excerpt }}</p>
+    {% for event in events %}
+      <li class="d-flex flex-column">
+        <h3 class="order-2 mt-1">
+          <a href="{{ event.url }}">{{ event.title }}</a>
+        </h3>
+        <p class="order-1 mt-3 vd-bg-pattern-gray d-flex">
+        <span class="d-flex flex-column w-100 p-3">
+          {% if event.date.end %}<span class="text-center">du</span> {% endif %}
+          <span class="text-center h1 my-1">{{ event.date.start.day }}</span>
+          <span class="text-center h5 my-1">{{ event.date.start.month }}</span>
+        </span>
+        {% if event.date.end %}
+          <span class="d-flex flex-column w-100 p-3">
+            <span class="text-center">au</span>
+            <span class="text-center h1 my-1">{{ event.date.end.day }}</span>
+            <span class="text-center h5 my-1">{{ event.date.end.month }}</span>
+          </span>
+        {% endif %}
+        </p>
+        <p class="order-3">{{ event.excerpt }}</p>
       </li>
-      {% endfor %}
+    {% endfor %}
   </ul>
 </section>
