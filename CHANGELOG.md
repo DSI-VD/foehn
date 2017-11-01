@@ -4,7 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
+- Transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
+- Better `@button-tiles` css factoring
+- Add class `vd-btn-tiles__item` to `@button-tiles`
 
 ## [0.38.0] - 2017-10-24
 
