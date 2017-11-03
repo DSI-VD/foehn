@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
+  `@theme--list` and `@theme--geo`
 - Transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
 - Better `@button-tiles` css factoring
 - Add class `vd-btn-tiles__item` to `@button-tiles`
