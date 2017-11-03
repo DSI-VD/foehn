@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.39.0]
+
 ### Changed
 - Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
   `@theme--list` and `@theme--geo`
@@ -1413,7 +1415,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.38.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.39.0...HEAD
+[0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
 [0.38.0]: https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0
 [0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
 [0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
