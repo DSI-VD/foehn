@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Fix column width in `@example-list`
+
 ## [0.39.0]
 
 ### Changed
