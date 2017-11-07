@@ -28,7 +28,7 @@
       "helpText": "<span class=\"sr-only\">Saisir quatres chiffres: <abbr title=\"Exemple\">Ex.</abbr>: 5678</span>"
     },
     "input4": {
-      "id": "inputAvs1",
+      "id": "inputAvs4",
       "label": "Chiffre aléatoire et anonyme et numéro de contrôle",
       "labelHidden": true,
       "max": "99",
