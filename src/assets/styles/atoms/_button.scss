@@ -29,7 +29,7 @@ button {
   }
 
   &:focus {
-    @include box-shadow($btn-focus-box-shadow);
+    @include box-shadow($input-btn-focus-box-shadow);
   }
 
   &[data-toggle="collapse"] {
@@ -47,6 +47,7 @@ a.btn {
 
 .btn-sm {
   padding-top: $input-btn-padding-y-sm * 2;
+  padding-bottom: $input-btn-padding-y-sm * 2;
   font-size: $font-size-base * 0.8;
 }
 
@@ -63,9 +64,7 @@ a.btn {
 // Buttons with icons
 //
 // Prefixed with vd-, add the class to button to add a chevron icon
-.vd-btn-chevron-t,
-.vd-btn-chevron-r,
-.vd-btn-chevron-b {
+.vd-btn-chevron-r {
   position: relative;
   padding-right: $spacer * 1.5;
 
@@ -86,15 +85,31 @@ a.btn {
 }
 
 .vd-btn-chevron-t {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-top, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-top, $vd-primary); }
+  .fa {
+    font-size: 1rem;
+    color: $vd-primary;
+  }
+
+  &.btn-secondary,
+  &.btn-success {
+    .fa {
+      color: $white;
+    }
+  }
 }
 
 .vd-btn-chevron-b {
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-chevron-bottom, $white); }
-  &:after { @include vd-background-image-icon($vd-chevron-bottom, $vd-primary); }
+  .fa {
+    font-size: 1rem;
+    color: $vd-primary;
+  }
+
+  &.btn-secondary,
+  &.btn-success {
+    .fa {
+      color: $white;
+    }
+  }
 }
 
 /**
@@ -105,4 +120,30 @@ a.btn {
   &.btn-secondary:after,
   &.btn-success:after { @include vd-background-image-icon($vd-cross, $white); }
   &:after { @include vd-background-image-icon($vd-cross, $vd-primary); }
+}
+
+/**
+ * Toggle menu icon
+ *
+ * 1. Close show fa-chevron-down icon
+ * 2. Close show fa-chevron-time icon
+ */
+
+.collapsed.vd-menu-toggle .vd-fa-menu-toggle:before {
+  content: "\f078"; /* [1] */
+  font-size: 1rem;
+}
+
+.vd-menu-toggle .vd-fa-menu-toggle:before {
+  content: "\f00d"; /* [2] */
+  font-size: 1rem;
+}
+
+.btn-link {
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-hover-color;
+  }
 }
