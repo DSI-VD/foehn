@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Visually hide `@input--number`s help texts in `@avs13`
+- Change content of `fieldset`s help text in `@avs13`
 - Fix column width in `@example-list`
 
 ## [0.39.0]
