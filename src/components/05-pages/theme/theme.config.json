@@ -42,9 +42,9 @@
             ]
         },
         "button": {
-          "text": "Voir tout",
-          "title": "Afficher toutes les prestations",
-          "href": "theme--list"
+          "text": "Voir tout<span class='sr-only'>es les prestations</span>",
+          "href": "theme--list",
+          "title": false
         }
     },
     "variants": [
@@ -172,8 +172,8 @@
             ]
           },
           "button": {
-            "text": "Voir moins",
-            "title": "Afficher moins de prestations",
+            "text": "Voir moins<span class='sr-only'> de prestations</span>",
+            "title": false,
             "href": "theme--default"
           }
         }

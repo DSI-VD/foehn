@@ -15,4 +15,8 @@ dist/
 # changelog is ignored because it's copied from ./CHANGELOG.md
 src/docs/changelog.md
 
+# We only support Yarn as our official Node packager, and so we aonly commit
+# `yarn.lock` file.:w
+package-lock.json
+
 npm-debug.log

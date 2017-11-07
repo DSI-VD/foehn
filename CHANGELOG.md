@@ -4,10 +4,154 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
+- Fix column width in `@example-list`
+
+## [0.39.0]
+
+### Changed
+- Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
+  `@theme--list` and `@theme--geo`
+- Transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
+- Better `@button-tiles` css factoring
+- Add class `vd-btn-tiles__item` to `@button-tiles`
+
+## [0.38.0] - 2017-10-24
+
+### Changed
+- Upgrade from Bootstrap Beta to Bootstrap Beta 2
+- Add `.d-flex flex-column` to `@template-communiques-presse-detail--default` header
+- Add div `.order-1` around all elements of `@template-communiques-presse-detail--default` header except title
+- Add `order-2` tp `h1`
+
+## [0.37.0] - 2017-10-20
+
+### Changed
+- Better meta information in `@teaser` if there no authors
 
 ### Fix
+- Add `line-height:normal` to `.list-unstyled li a>.h3` to fix Firefox focus bug AND `.d-inline-block` to all links of `@departements`
+- Add style to links with rel="category" to add "#"
+- Fix `@teaser-card--default` background color
+- Fix `@teaser-card--green` background color
+- Fix `@teaser-card--dark-grey` background color
+- Fix `@teaser-card--black` background color
+
+## [0.36.0] - 2017-10-19
+
+### Changed
+- Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
+
+### Added
+- Add version number in CSS file
+- Add `@filter-list--default` component
+- Add `@filter-list--table` component
+
+### Fix
+- Fix margin-bottom of the last element in `@highlight`
+- Fix `.vd-bg-pattern-gray` for IE and Firefox
+- Fix `@search-banner--default` button height
+
+## [0.35.0] - 2017-09-27
+
+### Changed
+- Change class of `@domaines` list for `vd-menu-list-links` instead of `vd-list-links`
+- Add `.d-inline-block` class to `@list-boxed` to align second line
+- Add margin bottom to `@list-boxed` and `@list-links` list elements
+- Changed class of `ul` in `@nav-primary` for `vd-menu-list-links` to set margin-bottom to 0
+- Refactor `@autority-address`
+
+### Added
+- Add variant `@autority-address--search`
+- Add variant `@service--search`
+- Add component `@detail-contact`
+
+## [0.34.0] - 2017-09-26
+
+### Changed
+- Add 'toutes les actualités' in render of `@button-default` in `@teaser-list--homepage`
+- Add `.text-right` to div containing `@logo--white` in `@footer` to align it to the right
+- Add class `.w-100` to div containing `@logo--white` in `@footer`
+- Changed `@button-tiles` width to max 33% desktop, 100% mobile
+- Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
+- Add `@download-list` to `@departements`
+- Changed `@download-list` for optional `h3`
+- Use CSS to change icon in `@nav-primary` (closed / open)
+- Use font-awesome icons for `@nav-primary`, `@button-back-to-top`, `@domains-list` and `@faq-item`
+- Changed `@download-list` to user `@h3` element with styleModifier
+- Changed `@template-communiques-presse-detail--default` to pass h5 style to `@h3` in `@download-list`
+- Add number of search results in `@template-communiques-presse-list--results`
+- Add class `vd-p mb-3` to results numbers in `@template-communiques-presse-list--results`
+- Change `h5` to `strong.h5` in `@card`
+- Add `mb-1` class to Press Release subtitle (`@teaser-small--alt`)
+- Add `@pagination--pages` variant to `@pagination` for `@teaser-alt-list`
+- Add more real data to table example in `@table` html
+- Add `sr-only` to links in `@detail-prestation`
+- Changed `@contact-form` to use rendering of elements instead of HTML
+- Changed 'Requis' to 'requis' (lowercase) in `@textarea` and `@input--required`
+- Changed `@textarea` to use dynamic label, id and required
+- Add `aria-invalid=true` if `@textarea--danger`'s is invalid
+
+### Added
+- Add `.vd-p` class to make text elements look like body text
+- Add `@logo` and `@logo--white` components
+- Add `@datalist--communes`
+
+### Fix
+- Fix `@footer` use `@logo-white`
+
+## [0.33.0] - 2017-09-15
+
+### Changed
+- `@pagination` set to use new `@button--link` variant button
+- `@pagination` use Bootstrap helper class instead of custom class
+- Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
+- Add sr-only title for services `<h2 class="sr-only">Services</h2>`
+- Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
+- Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)
+- Add `aria-invalid="true"` Aria attribut and change help text on 
+  `@input--validation-danger` to warn screen readers that the value is invalid
+- Fix `@logo-etat--default` accessibility by removing `aria-labelledby` and
+  adding `title` attribut
+- Add sr-only title to `@nav-side`
+- Replace `.text-muted` class with `.text-secondary`
+- Replace `.bg-inverse` class with `.bg-dark`
+- Replace `.bg-faded` class with `.bg-light`
+- Add one more level of navigation in `@nav-side`. The root page of navigation
+  is the first element of the navigation.
+- Change class from `h3` to `h5` for `h1` title in `@header--application`
+- Rename `@header--application` in `@header-application`
+- Add `@header-application--fluid` variant
+- Add `vd-pt-3`class to domains links in menu, to fix FF bug with outline
+- `@accueil` use `srcset` attribut in images instead of `<picture>` and `<source>`
+- `@news-list` use `srcset` attribut in images instead of `<picture>` and `<source>`
+- `@actualite` use `@figure--default` instead of hardcoded HTML
+- `@figure--default` no more use `<picture>` and `<source>` markup
+- `@teaser-small--media` use `@image--fluid` instead of `@image-responsive`
+- Use `srcset` attribut in `@image--default`
+- Add sr-only to `@detail-prestation` h2 for more descriptive titles
+- Changed button labels in `teaser-list` and `service`
+- Change `@faq-item` column layout
+- Change `@card` column layout
+- Add class `btn btn-success vd-btn-pagination-submit` to `@button--submit` for pagination in `formulaire-prestation.config.json`
+- Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
+
+### Added
+- Add `@button--link` variant to `@button`
+- Add `@figure-picture` component
+
+### Fix
+- Fix `@nav` config for active page
+- Fix content in `@content`
+- Fix unordered and ordered lists spacings
+- Fix italic placeholder in `@search-form--default`
+- Fix `@page-title-banner` background too dark in Firefox
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
+
+## Remove
+- Remove `@secure-tabs` component
+- Remove `@fixed-bottom-container` component
+- Remove `@tabs` component
+- Remove `@pagination-vertical` component
 
 ## [0.32.0] - 2017-08-30
 
@@ -64,6 +208,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Tranform authority links into a list (`ul` -> `li`)
 - Change the structure of `@nav-mobile`
 
+
 ### Added
 - "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
 - Add `.p` syle to make headings look like paragraph
@@ -81,6 +226,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.28.0] - 2017-07-14
 
 ### Changed
+- add `.pt-1` class to `domain-item` for Firefox bug in focus
 - `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
 - Add `.vd-content` class in `@template--2-col-nav`
@@ -1272,7 +1418,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.32.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.39.0...HEAD
+[0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
+[0.38.0]: https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0
+[0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
+[0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
+[0.35.0]: https://github.com/DSI-VD/foehn/compare/v0.34.0...v0.35.0
+[0.34.0]: https://github.com/DSI-VD/foehn/compare/v0.33.0...v0.34.0
+[0.33.0]: https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0
 [0.32.0]: https://github.com/DSI-VD/foehn/compare/v0.31.0...v0.32.0
 [0.31.0]: https://github.com/DSI-VD/foehn/compare/v0.30.0...v0.31.0
 [0.30.0]: https://github.com/DSI-VD/foehn/compare/v0.29.0...v0.30.0

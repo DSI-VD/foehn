@@ -1,0 +1,52 @@
+{% extends '@template--2-col' %}
+{% block main %}
+  <section>
+    <h2 class="sr-only">Présentations</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae id quidem assumenda reprehenderit ea enim suscipit, consequatur quam impedit aut atque repudiandae tempore minus velit ullam hic, ipsa fuga expedita? Dolorum explicabo corporis
+      placeat assumenda. Illo facilis iure, asperiores dolor earum vel? Voluptatem nobis quasi, necessitatibus dicta molestias perferendis a est itaque tempore eveniet, facilis quisquam impedit officia temporibus perspiciatis rem libero expedita unde
+      commodi recusandae nulla voluptas corrupti! Inventore in quasi omnis itaque rem perspiciatis doloremque aliquid expedita tempora, quibusdam facilis ipsa nam assumenda magnam molestias cupiditate vero laborum odio natus facere! Consectetur cum id
+      ipsum quidem, eligendi quis possimus in itaque nostrum eos? Accusantium repudiandae impedit repellendus tempora consequatur nemo libero voluptates, minima sint repellat dolor tenetur, vel voluptas natus possimus suscipit voluptatum, culpa provident
+      fugiat soluta quos assumenda deleniti rem? Vero omnis eligendi eum nihil quaerat possimus doloremque, modi inventore corporis, laudantium alias delectus ipsum ipsam sit temporibus voluptatem necessitatibus illo suscipit beatae atque adipisci qui
+      veritatis! Excepturi ipsa tempore, qui aliquam animi et. Quasi fugit delectus odio in dolor dignissimos aut nulla rem, excepturi expedita culpa vitae doloremque, id et exercitationem ex voluptatem ipsam fuga corrupti. Eius, ut animi. Magni sunt
+      provident illo quibusdam, unde, maxime!</p>
+  </section>
+
+  {% render '@index-menu', indexMenu %}
+
+  {% render '@separator--gray-bars-wide', {styleModifier: 'my-5'}, true %}
+
+  {% render '@teaser-list', news, true %}
+
+  {% render '@teaser-list', projects, true  %}
+
+  <section>
+    <h2 class="vd-heading-light h4" id="organisation">Organisation</h2>
+    {% render '@card' %}
+    <h2 class="sr-only">Services</h2>
+    {% render '@list-links', organisation.links %}
+  </section>
+
+  <section>
+    <h2 class="vd-heading-light h4" id="prestations">Prestations</h2>
+    {% render '@list-links', prestations %}
+    {% render '@button--default', {text:"Toutes les prestations"}, true %}
+  </section>
+
+  <section id="baseslegales">
+    <h2 class="vd-heading-light h4">Bases légales</h2>
+    {% render '@list-links' %}
+  </section>
+
+  <section id="publications">
+    <h2 class="vd-heading-light h4">Publications</h2>
+    {% render '@list-links', publications %}
+  </section>
+
+  <section id="offresdemplois">
+    <h2 class="vd-heading-light h4">Offres d'emploi</h2>
+    {% render '@list-links', offres %}
+  </section>
+{% endblock %}
+{% block aside %}
+  {% render '@autority-address--search', autorityAddress %}
+{% endblock %}

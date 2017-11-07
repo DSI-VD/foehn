@@ -6,7 +6,7 @@
         <h2 id="{{ domain.name | lower | urlencode }}">{{ domain.name | capitalize }}</h2>
         <h3 id="acces-direct-{{ domain.name | lower | urlencode }}" class="sr-only">Les plus visités</h3>
         <nav class="p-1" aria-labelledby="acces-direct-{{ domain.name | lower }}">
-          <ul class="vd-list-links">
+          <ul class="vd-menu-list-links">
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
@@ -24,7 +24,7 @@
 
     </div><!-- /.row -->
     <p>
-      <a href="#" class="btn btn-dark vd-btn-chevron-t">Tous les thèmes</a>
+      <a href="#" class="btn btn-dark vd-btn-chevron-t">Tous les thèmes <span class="fa fa-chevron-up"></span></a>
     </p>
     {% if loop.last %}
     {% else %}

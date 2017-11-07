@@ -5,11 +5,11 @@
       {% for item in image.source -%}
       <source media="{{ item.media }}" srcset="{{ item.srset }}">
       {%- endfor %}
-      {% render '@image-responsive', image.default -%}
+      {% render '@image--fluid', image -%}
     </picture>
-    {%- else %}
-    {% render '@image-responsive', image.default %}
-    {% endif %}
+    {%- else -%}
+    {%- render '@image--fluid', image.default -%}
+    {%- endif %}
   {% if url -%}</a>{% endif -%}
   {% if caption -%}
   <figcaption class="figure-caption">{{ caption.text }}{% if caption.credit %}<span class="vd-figure-credits">{{ caption.credit }}</span>{% endif %}</figcaption>

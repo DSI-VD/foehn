@@ -1,12 +1,12 @@
 <div class="vd-card mb-3">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 mt-3">
+      <div class="col-4 col-sm-3 col-lg-2 mt-3">
         {% render '@image--rounded', image, true %}
       </div>
-      <div class="col-xs-8">
+      <div class="col-8 col-sm-9 col-lg-10">
         <div class="card-block vd-card-block">
-          <h5 class="card-title vd-card-title">{{ name }}</h5>
+          <strong class="h5 card-title vd-card-title">{{ name }}</strong>
           <p class="card-text vd-card-text">{{ position }}</p>
           {% render '@list-links', links %}
         </div>

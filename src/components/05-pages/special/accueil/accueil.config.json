@@ -14,23 +14,32 @@
             "media": {
               "styleModifier": "vd-w-md-50",
               "image": {
-                "source": [
-                  {
-                    "media": "(min-width: 60em)",
-                    "srset": "../../assets/img/picture-1600x1067.jpg"
-                  },
-                  {
-                    "media": "(min-width: 40em)",
-                    "srset": "../../assets/img/picture-960x640.jpg"
-                  },
-                  {
-                    "media": "(min-width: 20em)",
-                    "srset": "../../assets/img/picture-640x427.jpg"
-                  }
-                ],
                 "default": {
-                  "src": "../../assets/img/picture-320x214.jpg",
-                  "alt": "Alternative text"
+                  "src": "../../assets/img/picture-960x640.jpg",
+                  "alt": "Alternative text",
+                  "class": "@image--fluid.class",
+                  "srcset": [
+                    {
+                        "width": "320w",
+                        "file": "../../assets/img/picture-320x213.jpg"
+                    },
+                    {
+                        "width": "540w",
+                        "file": "../../assets/img/picture-540x360.jpg"
+                    },
+                    {
+                        "width": "720w",
+                        "file": "../../assets/img/picture-720x480.jpg"
+                    },
+                    {
+                        "width": "960w",
+                        "file": "../../assets/img/picture-960x640.jpg"
+                    },
+                    {
+                        "width": "1140w",
+                        "file": "../../assets/img/picture-1140x760.jpg"
+                    }
+                  ]
                 }
               }
             },
@@ -81,9 +90,6 @@
           {
             "item": "Départements",
             "url": "#"
-          },{
-            "item": "Organigramme",
-            "url": "#"
           }
         ]
       },
@@ -104,23 +110,32 @@
             "categories": false,
             "media": {
               "image": {
-                "source": [
-                  {
-                    "media": "(min-width: 60em)",
-                    "srset": "../../assets/img/picture-1600x1067.jpg"
-                  },
-                  {
-                    "media": "(min-width: 40em)",
-                    "srset": "../../assets/img/picture-960x640.jpg"
-                  },
-                  {
-                    "media": "(min-width: 20em)",
-                    "srset": "../../assets/img/picture-640x427.jpg"
-                  }
-                ],
                 "default": {
-                  "src": "../../assets/img/picture-320x214.jpg",
-                  "alt": "Alternative text"
+                  "src": "../../assets/img/picture-960x640.jpg",
+                  "alt": "Alternative text",
+                  "class": "@image--fluid.class",
+                  "srcset": [
+                    {
+                        "width": "320w",
+                        "file": "../../assets/img/picture-320x213.jpg"
+                    },
+                    {
+                        "width": "540w",
+                        "file": "../../assets/img/picture-540x360.jpg"
+                    },
+                    {
+                        "width": "720w",
+                        "file": "../../assets/img/picture-720x480.jpg"
+                    },
+                    {
+                        "width": "960w",
+                        "file": "../../assets/img/picture-960x640.jpg"
+                    },
+                    {
+                        "width": "1140w",
+                        "file": "../../assets/img/picture-1140x760.jpg"
+                    }
+                  ]
                 }
               }
             },
