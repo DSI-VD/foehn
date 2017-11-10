@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change button text in `@nav-primary`
 - Fix `id` of the fourth `@input--number` in `@avs13`
 - Visually hide `@input--number`s help texts in `@avs13`
 - Change content of `fieldset`s help text in `@avs13`
