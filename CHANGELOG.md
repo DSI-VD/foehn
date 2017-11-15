@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change news title wording in news list
+- Add class `.mt-0` to `@template--news-detail` 
 - Change button text in `@nav-primary`
 - Rebuild `@agenda` and update it in `@accueil`
 - Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
