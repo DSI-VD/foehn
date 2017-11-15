@@ -10,7 +10,7 @@
         "social": true,
         "lists": [
           {
-            "title": "Titre 1",
+            "title": "Accès directs",
             "items": [
               {
                 "text": "Offre d'emploi",
@@ -23,16 +23,17 @@
               {
                 "text": "Portail sécurisé",
                 "url": "#"
-              },
-              {
-                "text": "Flux RSS",
-                "url": "#"
               }
+
             ]
           },
           {
-            "title": "Titre 2",
+            "title": "",
             "items": [
+              {
+                "text": "Flux RSS",
+                "url": "#"
+              },
               {
                 "text": "Espace sécurisé",
                 "url": "#"
@@ -55,6 +56,7 @@
               }
             ]
           },
+
           {
             "title": "Sites partenaires",
             "items": [
