@@ -6,6 +6,19 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Rebuild `@agenda` and update it in `@accueil`
 - Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
+- Fix `id` of the fourth `@input--number` in `@avs13`
+- Visually hide `@input--number`s help texts in `@avs13`
+- Change content of `fieldset`s help text in `@avs13`
+- Fix column width in `@example-list`
+
+## [0.39.0]
+
+### Changed
+- Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
+  `@theme--list` and `@theme--geo`
+- Transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
+- Better `@button-tiles` css factoring
+- Add class `vd-btn-tiles__item` to `@button-tiles`
 
 ## [0.38.0] - 2017-10-24
 
@@ -1410,7 +1423,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.38.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.39.0...HEAD
+[0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
 [0.38.0]: https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0
 [0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
 [0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
