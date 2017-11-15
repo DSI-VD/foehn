@@ -1,7 +1,27 @@
 <section>
   <h2 class="vd-heading-light h4">{{ title }}</h2>
-
-  {% for teaser in teasers %}
-  {% render '@teaser', teaser, true %}
-  {% endfor %}
+  <ul class="list-unstyled">
+    {% for event in events %}
+      <li class="d-flex flex-column">
+        <h3 class="order-2 mt-1">
+          <a href="{{ event.url }}">{{ event.title }}</a>
+        </h3>
+        <p class="order-1 mt-3 vd-bg-pattern-gray d-flex justify-content-center">
+        <span class="d-flex flex-column p-3">
+          {% if event.date.end %}<span class="text-center">du</span> {% endif %}
+          <span class="text-center my-1 h1">{{ event.date.start.day }}</span>
+          <span class="text-center my-1">{{ event.date.start.month }}</span>
+        </span>
+        {% if event.date.end %}
+          <span class="d-flex flex-column p-3">
+            <span class="text-center">au</span>
+            <span class="text-center my-1 h1">{{ event.date.end.day }}</span>
+            <span class="text-center my-1">{{ event.date.end.month }}</span>
+          </span>
+        {% endif %}
+        </p>
+        <p class="order-3">{{ event.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
