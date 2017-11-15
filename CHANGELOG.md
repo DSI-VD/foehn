@@ -12,7 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change content of `fieldset`s help text in `@avs13`
 - Fix column width in `@example-list`
 
-## [0.39.0]
+## [0.39.0] - 2017-11-03
 
 ### Changed
 - Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
