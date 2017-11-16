@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change text in "back to top" button in `@domains-list`
+- Added breadcrumb for header in `domaines.config.json`
+- Added `@page-title-banner` in `@template--domaines`
+- Changed column widths in `@domains-list` from `.col-md-*` to `.col-lg-*`
+- Add margin on the first column in `@domains-list`
 - Rebuild `@pagitation` and `@pagination--pages`
 - Add a link for more infos and results heading in `@filter-list-result-table`
 - Add a link for more infos in `@filter-list-result-list`
