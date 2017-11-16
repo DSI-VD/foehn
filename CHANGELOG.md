@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Rebuild `@pagitation` and `@pagination--pages`
+- Add a link for more infos and results heading in `@filter-list-result-table`
 - Add a link for more infos in `@filter-list-result-list`
 - Add number text to show number of results in `@filter-list-result-list`
 - Use two columns to display `@filter-list-form`
