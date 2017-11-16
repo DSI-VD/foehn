@@ -13,7 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix column width in `@example-list`
 
 ### Added
-- Add new heading style `.vd-heading-opensans`. Same as `.vd-heading-light` with Open Sans
+- Add new heading style `.vd-heading-light-alt`.
 
 ## [0.39.0] - 2017-11-03
 

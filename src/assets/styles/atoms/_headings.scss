@@ -63,7 +63,7 @@ h6 {
       font-size: $h1-font-size * 0.8;
 
       &.vd-heading-light,
-      &.vd-heading-opensans {
+      &.vd-heading-light-alt {
         font-size: $h1-font-size; /* [1] */
       }
     }
@@ -73,7 +73,7 @@ h6 {
       font-size: $h2-font-size * 0.8;
 
       &.vd-heading-light,
-      &.vd-heading-opensans {
+      &.vd-heading-light-alt {
         font-size: $h2-font-size; /* [1] */
       }
     }
@@ -83,7 +83,7 @@ h6 {
       font-size: $h3-font-size * 0.8;
 
       &.vd-heading-light,
-      &.vd-heading-opensans {
+      &.vd-heading-light-alt {
         font-size: $h3-font-size; /* [1] */
       }
     }
@@ -93,7 +93,7 @@ h6 {
       font-size: $h4-font-size * 0.8;
 
       &.vd-heading-light,
-      &.vd-heading-opensans {
+      &.vd-heading-light-alt {
         font-size: $h4-font-size; /* [1] */
       }
     }
@@ -103,7 +103,7 @@ h6 {
       font-size: $h5-font-size * 0.8;
 
       &.vd-heading-light,
-      &.vd-heading-opensans {
+      &.vd-heading-light-alt {
         font-size: $h5-font-size; /* [1] */
       }
     }
@@ -113,7 +113,7 @@ h6 {
       font-size: $h6-font-size * 0.8;
 
       &.vd-heading-light,
-      &.vd-heading-opensans {
+      &.vd-heading-light-alt {
         font-size: $h6-font-size; /* [1] */
       }
     }
@@ -132,7 +132,7 @@ h6 {
   text-transform: uppercase;
 }
 
-.vd-heading-opensans {
+.vd-heading-light-alt {
   font-family: $font-family-base-enhance !important;
   font-weight: $font-weight-normal;
   text-transform: uppercase;
