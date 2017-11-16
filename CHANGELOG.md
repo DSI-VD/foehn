@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
 - Change text in "back to top" button in `@domains-list`
 - Added breadcrumb for header in `domaines.config.json`
 - Added `@page-title-banner` in `@template--domaines`
