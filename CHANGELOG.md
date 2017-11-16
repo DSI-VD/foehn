@@ -9,12 +9,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a link for more infos in `@filter-list-result-list`
 - Add number text to show number of results in `@filter-list-result-list`
 - Use two columns to display `@filter-list-form`
+- Change button text in `@nav-primary`
+- Rebuild `@agenda` and update it in `@accueil`
+- Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
 - Fix `id` of the fourth `@input--number` in `@avs13`
 - Visually hide `@input--number`s help texts in `@avs13`
 - Change content of `fieldset`s help text in `@avs13`
 - Fix column width in `@example-list`
 
-## [0.39.0]
+## [0.39.0] - 2017-11-03
 
 ### Changed
 - Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
