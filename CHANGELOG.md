@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add padding-right:0 to top nav
 - Change button text in `@nav-primary`
 - Rebuild `@agenda` and update it in `@accueil`
 - Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
