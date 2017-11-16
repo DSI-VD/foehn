@@ -4,9 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change text in "back to top" button in `@domains-list`
 - Added breadcrumb for header in `domaines.config.json`
 - Added `@page-title-banner` in `@template--domaines`
-- Changed column widths in `@domains-list` from `.col-md-X` to `.col-lg-X`
+- Changed column widths in `@domains-list` from `.col-md-*` to `.col-lg-*`
+- Add margin on the first column in `@domains-list`
 - Change button text in `@nav-primary`
 - Rebuild `@agenda` and update it in `@accueil`
 - Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
