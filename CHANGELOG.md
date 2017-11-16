@@ -12,6 +12,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change content of `fieldset`s help text in `@avs13`
 - Fix column width in `@example-list`
 
+### Removed
+- remove `search-banner--half-width`
+
 ## [0.39.0] - 2017-11-03
 
 ### Changed
