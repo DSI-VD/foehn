@@ -22,6 +22,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change content of `fieldset`s help text in `@avs13`
 - Fix column width in `@example-list`
 
+### Added
+- Add new heading style `.vd-heading-light-alt`.
+
 ## [0.39.0] - 2017-11-03
 
 ### Changed
