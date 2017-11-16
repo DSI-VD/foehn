@@ -11,6 +11,8 @@
         "lists": [
           {
             "title": "Accès directs",
+            "style": "vd-list-columns",
+            "hideTitle": true,
             "items": [
               {
                 "text": "Offre d'emploi",
@@ -23,13 +25,7 @@
               {
                 "text": "Portail sécurisé",
                 "url": "#"
-              }
-
-            ]
-          },
-          {
-            "title": "",
-            "items": [
+              },
               {
                 "text": "Flux RSS",
                 "url": "#"
@@ -54,11 +50,14 @@
                 "text": "Guides TYPO3",
                 "url": "#"
               }
+
             ]
           },
 
+
           {
             "title": "Sites partenaires",
+            "hideTitle": false,
             "items": [
               {
                 "text": "Promotion Vaud.ch",
