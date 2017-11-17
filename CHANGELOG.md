@@ -4,6 +4,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
+- Change text in "back to top" button in `@domains-list`
+- Added breadcrumb for header in `domaines.config.json`
+- Added `@page-title-banner` in `@template--domaines`
+- Changed column widths in `@domains-list` from `.col-md-*` to `.col-lg-*`
+- Add margin on the first column in `@domains-list`
+- Rebuild `@pagitation` and `@pagination--pages`
+- Add a link for more infos and results heading in `@filter-list-result-table`
+- Add a link for more infos in `@filter-list-result-list`
+- Add number text to show number of results in `@filter-list-result-list`
+- Use two columns to display `@filter-list-form`
 - Change button text in `@nav-primary`
 - Rebuild `@agenda` and update it in `@accueil`
 - Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
@@ -12,8 +23,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change content of `fieldset`s help text in `@avs13`
 - Fix column width in `@example-list`
 
+### Added
+- Add new heading style `.vd-heading-light-alt`.
+
 ### Removed
-- remove `search-banner--half-width`
+- Remove `@search-banner--half-width`
 
 ## [0.39.0] - 2017-11-03
 

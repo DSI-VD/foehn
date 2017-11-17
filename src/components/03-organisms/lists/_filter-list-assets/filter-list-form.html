@@ -1,11 +1,29 @@
 <form class="mb-3">
   <legend>Rechercher une institution</legend>
-  {% render '@input--default', {label: "Nom", id: "name"}, true %}
-  {% render '@select--default', {label: "Clientèle", id: "cutomer"}, true %}
-  {% render '@select--default', {label: "Région", id: "region"}, true %}
-  {% render '@select--default', {label: "Degré", id: "degree"}, true %}
-  {% render '@select--default', {label: "Situation", id: "situation"}, true %}
-  {% render '@select--default', {label: "Situation", id: "situation"}, true %}
+  <div class="row">
+    <div class="col-md-6">
+      {% render '@input--default', {label: "Nom", id: "name"}, true %}
+    </div>
+    <div class="col-md-6">
+      {% render '@select--default', {label: "Clientèle", id: "cutomer"}, true %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {% render '@select--default', {label: "Région", id: "region"}, true %}
+    </div>
+    <div class="col-md-6">
+      {% render '@select--default', {label: "Degré", id: "degree"}, true %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {% render '@select--default', {label: "Situation", id: "situation"}, true %}
+    </div>
+    <div class="col-md-6">
+      {% render '@select--default', {label: "Situation", id: "situation"}, true %}
+    </div>
+  </div>
   {% render '@button--default', {text: "Rechercher"}, true %}
   {% render '@button--secondary', {text: "Annuler"}, true %}
 </form>
