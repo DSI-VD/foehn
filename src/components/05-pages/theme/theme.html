@@ -1,6 +1,8 @@
 {% extends '@template--default' %}
 {% block main %}
   <h2>Dans ce thème</h2>
+  {% render '@search-banner', {styleModifier: 'mb-3',
+  title: 'Rechercher dans les prestations'}, true %}
   <div class="vd-bg-pattern-green p-1 mb-3">
     {% render '@list-boxed', prestations %}
     <p>
