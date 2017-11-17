@@ -26,6 +26,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Add new heading style `.vd-heading-light-alt`.
 
+### Removed
+- Remove `@search-banner--half-width`
+
 ## [0.39.0] - 2017-11-03
 
 ### Changed
