@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add link to homepage ("/") to `@footer`
+- Hide footer titles, but keep them for accessibility (sr-only)
+- Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
 - Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
 - Change text in "back to top" button in `@domains-list`
 - Added breadcrumb for header in `domaines.config.json`
