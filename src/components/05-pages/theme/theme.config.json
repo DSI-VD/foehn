@@ -11,6 +11,10 @@
             "url": "#"
           }
         ],
+        "searchForm": {
+          "title": "Rechercher dans les prestations",
+          "titleModifier": "mt-0"
+        },
         "prestations": {
           "list": [
               {

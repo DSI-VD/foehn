@@ -1,5 +1,14 @@
 {% extends '@template--default' %}
 {% block main %}
+<div class="vd-bg-pattern-bars-gray clearfix my-3 py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        {% render '@search-form--regular', searchForm %}
+      </div>
+    </div>
+  </div>
+</div>
   <h2>Dans ce thème</h2>
   <div class="vd-bg-pattern-green p-1 mb-3">
     {% render '@list-boxed', prestations %}
