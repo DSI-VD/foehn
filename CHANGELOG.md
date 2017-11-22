@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add link to homepage ("/") to `@footer`
+- Hide footer titles, but keep them for accessibility (sr-only)
+- Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
 - Change button text in `@nav-primary`
 - Rebuild `@agenda` and update it in `@accueil`
 - Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
