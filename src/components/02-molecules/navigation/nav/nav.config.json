@@ -15,7 +15,8 @@
         {
           "name": "Mon compte",
           "url": "formulaire-prestation",
-          "icon": "fa-lock"
+          "icon": "fa-lock",
+          "style": "pr-0"
         }
       ]
     }
