@@ -4,7 +4,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Change bg for headings for an image, in class `.vd-bg-pattern-gray`
 - Add link to homepage ("/") to `@footer`
 - Hide footer titles, but keep them for accessibility (sr-only)
 - Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
@@ -29,6 +28,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Add new heading style `.vd-heading-light-alt`.
+
+### Fix
+- Use background image in class `.vd-bg-pattern-gray`
 
 ### Removed
 - Remove `@search-banner--half-width`
