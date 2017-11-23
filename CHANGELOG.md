@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Change news title wording in `@news-list
 - Add class `.mt-0` to `@template--news-detail` 
-- Add link to homepage ("/") to `@footer`
+- Add link to homepage to `@footer`
 - Hide footer titles, but keep them for accessibility (sr-only)
 - Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
 - Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
