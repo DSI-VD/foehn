@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
 - Change layout of `@theme` for `@template--2-col`.
 - Harmonize `@list-boxed` margins
 
