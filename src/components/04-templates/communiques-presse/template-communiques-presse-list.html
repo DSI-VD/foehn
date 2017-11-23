@@ -2,62 +2,60 @@
 
 {% include '@page-title-banner' %}
 
-<main>
-{% include '@page-title' %}
-<div class="vd-bg-pattern-bars-gray py-4 mt-3 mb-4">
-  <div class="container">
-    <form class="form">
-      <h2 class="sr-only">Recherche</h2>
-      <div class="row">
-        <div class="col-lg-3 col-xl-4">
-          {% render '@input--default', search, true %}
-        </div>
-        <div class="col-lg-9 col-xl-8 d-none d-md-block">
-          <div class="row">
-            <div class="col-6">
-              {% render '@dates', dates.from, true %}
-            </div>
-            <div class="col-6">
-              {% render '@dates', dates.to, true %}
+<main class="container mt-5">
+  {% include '@page-title' %}
+  <div class="vd-bg-pattern-bars-gray py-4 mt-3 mb-4">
+    <div class="container">
+      <form class="form">
+        <div class="row">
+          <div class="col-lg-3 col-xl-4">
+            {% render '@input--default', search, true %}
+          </div>
+          <div class="col-lg-9 col-xl-8 d-none d-md-block">
+            <div class="row">
+              <div class="col-6">
+                {% render '@dates', dates.from, true %}
+              </div>
+              <div class="col-6">
+                {% render '@dates', dates.to, true %}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <button type="submit" class="btn btn-dark mr-4 mb-3 mb-sm-0">Rechercher</button>
-      <a href="#" class="btn btn-secondary mb-3 mb-sm-0">Réinitialiser</a>
-    </form>
+        <button type="submit" class="btn btn-dark mr-4 mb-3 mb-sm-0">Rechercher</button>
+        <a href="#" class="btn btn-secondary mb-3 mb-sm-0">Réinitialiser</a>
+      </form>
+    </div>
   </div>
-</div>
+  {% include '@page-title' %}
 
-<div class="container mt-5">
   <div class="row">
 
     <div class="col-md-8">
       {% block main %}
       {% if results %}<h2 class="vd-p mb-3">{{ total }} résultats trouvés</h2>{% else %}<h2 class="sr-only">Liste des communiqués de presse</h2>{% endif %}
       {% render '@teaser-alt-list' %}
-    {% endblock %}
+      {% endblock %}
     </div>
 
     <aside class="col-md-4 small">
       {% block aside %}
-        {% render '@autority-address', autorityAddress %}
+      {% render '@autority-address', autorityAddress %}
 
-        <p class="mt-5">Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
-        <ul class="vd-list-links mb-5">
-          <li><a href="#">communiqués de la Police cantonale</a></li>
-          <li><a href="#">communiqués du Centre hospitalier universitaire vaudois (CHUV)</a></li>
-          <li><a href="#">communiqués de l'Université de Lausanne</a></li>
-        </ul>
+      <p class="mt-5">Les communiqués diffusés par les autres institutions de l'Etat sont disponible sur les pages suivantes:</p>
+      <ul class="vd-list-links mb-5">
+        <li><a href="#">communiqués de la Police cantonale</a></li>
+        <li><a href="#">communiqués du Centre hospitalier universitaire vaudois (CHUV)</a></li>
+        <li><a href="#">communiqués de l'Université de Lausanne</a></li>
+      </ul>
 
-        <p>
+      <p>
         <span class="fa fa-rss-square" aria-hidden="true"></span> <a href="#">Abonnement</a>
-        </p>
+      </p>
       {% endblock %}
     </aside>
 
   </div>
-</div>
 </main>
 
 {% render '@footer', footer, true %}
