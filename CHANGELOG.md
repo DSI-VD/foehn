@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
+- Change layout of `@theme` for `@template--2-col`.
 - Change news title wording in `@news-list
 - Add class `.mt-0` to `@template--news-detail` 
 - Add link to homepage to `@footer`
