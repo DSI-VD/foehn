@@ -90,67 +90,46 @@
           {
             "item": "Départements",
             "url": "#"
-          },{
-            "item": "Organigramme",
-            "url": "#"
           }
         ]
       },
       "agenda": {
         "title": "Agenda et événements",
-        "teasers": [
+        "events": [
           {
             "title": "Elections cantonales",
-            "authors": false,
-            "categories": false,
-            "media": false,
+            "url": "#",
             "excerpt": "Le 30 avril 2017, les citoyens vaudois sont appelés à élire le Grand Conseil vaudois ainsi que le Conseil d'État (1er tour). Le deuxième tour de l'élection du Conseil d'État aura lieu le 21 mai 2017 (2e tour).",
-            "readMore": false
+            "date": {
+              "start": {
+                "day": "30",
+                "month": "avril"
+              }
+            }
           },
           {
             "title": "Athletissima",
-            "authors": false,
-            "categories": false,
-            "media": {
-              "image": {
-                "default": {
-                  "src": "../../assets/img/picture-960x640.jpg",
-                  "alt": "Alternative text",
-                  "class": "@image--fluid.class",
-                  "srcset": [
-                    {
-                        "width": "320w",
-                        "file": "../../assets/img/picture-320x213.jpg"
-                    },
-                    {
-                        "width": "540w",
-                        "file": "../../assets/img/picture-540x360.jpg"
-                    },
-                    {
-                        "width": "720w",
-                        "file": "../../assets/img/picture-720x480.jpg"
-                    },
-                    {
-                        "width": "960w",
-                        "file": "../../assets/img/picture-960x640.jpg"
-                    },
-                    {
-                        "width": "1140w",
-                        "file": "../../assets/img/picture-1140x760.jpg"
-                    }
-                  ]
-                }
-              }
-            },
             "excerpt": "L’édition 2017 se déroulera le jeudi 6 juillet au Stade de la Pontaise à Lausanne.",
-            "readMore": false
+            "date": {
+              "start": {
+                "day": "6",
+                "month": "juillet"
+              },
+              "end": {
+                "day": "7",
+                "month": "juillet"
+              }
+            }
           },
           {
-            "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
-            "authors": false,
-            "categories": false,
-            "media": false,
-            "readMore": false
+            "title": "Noël",
+            "excerpt": "Noël est une fête d'origine romaine célébrée chaque année, majoritairement dans la nuit du 24 au 25 décembre ainsi que le 25 toute la journée.",
+            "date": {
+              "start": {
+                "day": "24",
+                "month": "décembre"
+              }
+            }
           }
         ]
       }

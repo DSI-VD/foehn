@@ -1,45 +1,53 @@
-@charset 'UTF-8';
+@charset ':UTF-8';
 
+/**
+ * Button tiles
+ *
+ * 1. Remove list styles
+ * 2. Make button the same height if there's is a lot of text in one of them.
+ * 3. Max width of an element is 33% on desktop.
+ */
 .vd-btn-tiles {
+  padding-left: 0; /* [1] */
+  list-style: none; /* [1] */
   display: flex;
-  flex-wrap: wrap;
-  margin: ($spacer / -2);
-  padding-left: 0;
+  flex-flow: column wrap;
 
-  @include media-breakpoint-down(sm) {
-    margin-right: ($spacer / 2);
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    margin-right: -$spacer/2;
+    margin-left: -$spacer/2;
   }
 
-  .btn {
-    display: inline-flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    position: relative;
-    width: calc(33% - #{$spacer});
-    max-width: calc(33% - #{$spacer});
-    margin: ($spacer / 2);
+  &__item {
+    flex: 1;
+    margin-bottom: $spacer;
+    align-self: stretch; /* [2] */
+
+    @include media-breakpoint-up(sm) {
+      flex: 1 0 30%; /* [3] */
+      margin-right: $spacer/2;
+      margin-left: $spacer/2;
+      max-width: calc(33% - #{$spacer}); /* [3] */
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 100%; /* [2] */
+    padding: $spacer/2;
+    font-weight: $btn-font-weight;
     color: $black;
-    transition: background-color 0.2s;
-    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
     box-shadow: 2px 2px 0 0 $black;
 
-    a {
-      text-decoration: none;
-      color: $black;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    @include media-breakpoint-down(sm) {
-      width: 100%;
-      max-width: 100%;
-    }
-
+    @include transition($btn-transition);
     @include vd-pattern-dotted($pattern-dotted-green);
 
-    @include hover-focus-active {
+    &:hover {
       background-color: rgba($vd-primary-dark, 0.15);
+      text-decoration: none;
     }
 
     &:focus {
@@ -52,9 +60,8 @@
       box-shadow: 0 0 0 0 $black;
     }
 
-    &.active {
-      background: $vd-primary-dark;
-      color: $white;
+    &:visited {
+      color: currentColor !important;
     }
   }
 }

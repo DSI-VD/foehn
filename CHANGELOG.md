@@ -6,6 +6,47 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
 - Change layout of `@theme` for `@template--2-col`.
+- Change news title wording in `@news-list
+- Add class `.mt-0` to `@template--news-detail` 
+- Add link to homepage to `@footer`
+- Hide footer titles, but keep them for accessibility (sr-only)
+- Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
+- Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
+- Change text in "back to top" button in `@domains-list`
+- Added breadcrumb for header in `domaines.config.json`
+- Added `@page-title-banner` in `@template--domaines`
+- Changed column widths in `@domains-list` from `.col-md-*` to `.col-lg-*`
+- Add margin on the first column in `@domains-list`
+- Rebuild `@pagitation` and `@pagination--pages`
+- Add a link for more infos and results heading in `@filter-list-result-table`
+- Add a link for more infos in `@filter-list-result-list`
+- Add number text to show number of results in `@filter-list-result-list`
+- Use two columns to display `@filter-list-form`
+- Change button text in `@nav-primary`
+- Rebuild `@agenda` and update it in `@accueil`
+- Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
+- Fix `id` of the fourth `@input--number` in `@avs13`
+- Visually hide `@input--number`s help texts in `@avs13`
+- Change content of `fieldset`s help text in `@avs13`
+- Fix column width in `@example-list`
+
+### Added
+- Add new heading style `.vd-heading-light-alt`.
+
+### Fix
+- Use background image in class `.vd-bg-pattern-gray`
+
+### Removed
+- Remove `@search-banner--half-width`
+
+## [0.39.0] - 2017-11-03
+
+### Changed
+- Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
+  `@theme--list` and `@theme--geo`
+- Transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
+- Better `@button-tiles` css factoring
+- Add class `vd-btn-tiles__item` to `@button-tiles`
 
 ## [0.38.0] - 2017-10-24
 
@@ -1410,7 +1451,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.38.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.39.0...HEAD
+[0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
 [0.38.0]: https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0
 [0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
 [0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
