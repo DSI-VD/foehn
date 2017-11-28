@@ -3,13 +3,5 @@
     "title": "Rechercher dans les actualités",
     "placeholder": "Rechercher",
     "width": "col-md-8"
-  },
-  "variants": [
-    {
-      "name": "half-width",
-      "context": {
-        "width": "col-md-6"
-      }
-    }
-  ]
+  }
 }
