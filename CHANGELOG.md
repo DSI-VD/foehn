@@ -31,6 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix column width in `@example-list`
 
 ### Added
+- Add documentation about link accessibility
 - Add new heading style `.vd-heading-light-alt`.
 
 ### Fix
