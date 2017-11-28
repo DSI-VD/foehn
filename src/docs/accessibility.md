@@ -31,3 +31,121 @@ All pages should contain:
 ## Browsers support
 
 The styleguide uses Bootstrap 4, which is supporting all recent browsers ([see documentation](http://v4-alpha.getbootstrap.com/getting-started/browsers-devices/#supported-browsers)). No polyfills are added for older browsers support.
+
+## Liens
+
+### Le lien doit être compréhensible de lui-même
+
+La configuration par défaut de certains lecteurs d'écran fait qu'ils ne lisent pas les attributs `title` des liens. Il faut donc privilégier un lien clair.
+
+Au besoin, il est possible de raccourcir visuellement le lien via CSS
+
+    <a><span class="visually-hidden">Ceci est un très long </span>lien</a>
+
+### Le lien doit être concis
+
+Utiliser des liens les plus concis possible sans sacrifier le sens.
+
+Il ne s'agit pas d'une technique WCAG2, mais il est recommandé de ne pas dépasser 100 caractères.
+
+Les lecteurs ont beaucoup de fonctionnalité qui permet aux utilisateurs de sauter au prochain mot, à la prochaine phrase, au prochain paragraphe ou au prochain en-tête par contre, les liens sont toujours lus dans leur intégralité.
+Imaginé ce qui se passe si un paragraphe entier est un lien, l'entier du TEXT est lu par le lecteur d'écran sans aucune possibilité de stopper cette lecture. Cela peut être très agaçant.
+
+Avec l'avènement du HTML5, faire de blocs de texte des liens est, malheureusement, une pratique courante à éviter.
+
+### Toujours proposer une alternative textuelle, ne pas s'appuyer que sur le visuel
+
+#### Caractères non-ASCII
+
+Il faut éviter d'utiliser des caractères non ASCII.
+
+Si cela est impossible, proposez une alternative textuelle en cachant le caractère non ASCII aux lecteurs d'écran.
+
+    <a>
+     <span class="visually-hidden">Smiley face</span>
+     <span aria-hidden="true">:-)</span>
+    </a>
+
+#### Context visuel
+
+Certains liens peuvent paraitre clairs aux voyants, mais c'est un autre problème pour les utilisateurs de lecteurs d'écran.
+
+Voici un exemple:
+
+> [12 - 17 ans](#) , [17 - 21 ans](#)
+
+Le cas ci-dessus le lecteur d'écran lira:
+
+> 12 17 ans
+
+Remplacer le tiret par avec le mot "à" rendra le lien bien plus clair.
+
+> [12 à 17 ans](#) , [17 à 21 ans](#)
+
+Ici le lecteur lira:
+
+> douze à 17 ans, 17 à 21 ans
+
+### Ne pas utiliser d'URL comme lien texte
+
+Par exemple l'URL [`www.chateaudechillon.ch/lemusee/contact/noustrouver.html`](http://www.chateaudechillon.ch) est aisément déchiffrable pour une personne voyante. Un lecteur d'écran, lui, lira tout à la suite. Cela devient très vite incompréhensible. Il faut favoriser un lien comme: [Comment accéder au Château de Chillon](#) .
+
+### Restreindre le nombre de liens sur une page
+
+Les liens sont une forme de navigation.
+
+Lorsque vous construisez votre page, gardez à l'esprit que certaines personnes navigue de lien en lien. S'il y en a beaucoup, cela devient compliqué de s'y retrouver .
+
+### Ne pas faire de lien direct sur des téléchargements
+
+Les études UX montrent que les gens n'aiment pas télécharger. C'est encore plus frustrant lorsqu'ils lancent un téléchargement sans s'y attendre.
+
+Il faut toujours indiquer quand un lien va lancer un téléchargement. Cette information doit être dans le lien.
+
+- Mauvais exemple: [liste des établissements](#) (PDF)
+- Bon exemple: [liste des établissements (PDF)](#)
+
+[](https://static.notion-static.com/7330e97d211542dda46022f212314db2/link-docs.mp4)
+
+Si vous utilisez une icône pour symboliser le format du document faites de sorte qu'ils aient un attribut `alt` .
+
+Il ne faut pas utiliser d'icônes appliquées par CSS. Ceux-ci seront invisibles pour les lecteurs d'écran.
+
+#### Si on a plusieurs liens à télécharger
+
+Voici un exemple de liste de téléchargement ("Rapport annuel" étant le titre suivi d'une liste):
+
+> **Rapport annuel** 
+- [2016 PDF](#) , [2016 Word](#) 
+- [2017 PDF](#) , [2017 Word](#)
+
+    <h3>Rapport annuel</h3>
+    <ul>
+     <li><a href="#">2016 PDF</a>, <a href="#">2016 Word</a></li>
+     <li><a href="#">2017 PDF</a>, <a href="#">2017 Word</a></li>
+    </ul>
+
+### Avertir les utilisateurs lorsqu'ils vont ouvrir une nouvelle fenêtre
+
+L'ouverture d'une nouvelle fenêtre ou d'un nouvel onglet peut créer des confusions. Les lecteurs d'écran récents avertissent de l'ouverture d'une nouvelle fenêtre qu'une fois le lien cliqué par l'utilisateur. Les anciens lecteurs d'écran n'avertissent pas du tout l'utilisateur.
+
+Les voyants peuvent voir la nouvelle fenêtre s'ouvrir, mais les utilisateurs souffrant de problème cognitif peuvent avoir des difficultés à interpréter ce qu'il se passe. Dès lors, quand ils cliquent sur le bouton "retour" du navigateur, rien ne se passe, car il n'y a pas de liens précédents où se rendre dans une nouvelle fenêtre ou onglet.
+
+L'auteur doit avertir l'utilisateur sur le comportement du lien. Il est possible d'ajouter cette information entre parenthèses à la fin du lien.
+
+> [Liste des contacts (ouvre une nouvelle fenêtre)](#)
+
+### Soulignement des liens
+
+Les utilisateurs s'attendent à ce que les liens soient soulignés.
+
+De plus, les critères d'accessibilité WCAG 2.0 requièrent pour le niveau A de ne pas s'appuyer uniquement sur la couleur pour indiquer une action.
+
+> 1.4.1 Use of Color: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)
+— [1.4.1 Use of Color](https://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color)
+
+### Liens scriptés
+
+L'utilisation d'événements script pour émuler des liens est également interdite dans le WCAG2.
+
+Les liens doivent être des `<a href="">` ou `<area>` . L'utilisation de `onclick` sur des éléments divers comme des `<span>` , `<img>` ou `<div>` n'est pas permise.

@@ -4,6 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `.mb-5` to homepage heading
+- Remove button "departements" from home `@button-tiles`
+- Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
+- Change layout of `@theme` for `@template--2-col`.
+- Change news title wording in `@news-list
+- Add class `.mt-0` to `@template--news-detail` 
+- Add link to homepage to `@footer`
+- Hide footer titles, but keep them for accessibility (sr-only)
+- Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
 - Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
 - Change text in "back to top" button in `@domains-list`
 - Added breadcrumb for header in `domaines.config.json`
@@ -24,7 +33,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix column width in `@example-list`
 
 ### Added
+- Add documentation about link accessibility
 - Add new heading style `.vd-heading-light-alt`.
+
+### Fix
+- Fix focus style overlapping headings chars
+- Use background image in class `.vd-bg-pattern-gray`
 
 ### Removed
 - Remove `@search-banner--half-width`
