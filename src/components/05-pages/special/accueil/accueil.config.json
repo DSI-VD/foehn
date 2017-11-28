@@ -85,14 +85,6 @@
           }
         ]
       },
-      "buttonTilesBottom": {
-        "items": [
-          {
-            "item": "Départements",
-            "url": "#"
-          }
-        ]
-      },
       "agenda": {
         "title": "Agenda et événements",
         "events": [

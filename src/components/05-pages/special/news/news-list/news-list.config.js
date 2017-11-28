@@ -54,7 +54,7 @@ for (let i = 0; i < teaserItemCount; i += 1) {
 
 module.exports = {
     context: {
-        pageTitle: 'Actualités',
+        pageTitle: 'Toutes les actualités',
         breadcrumb: [
             {
                 page: 'vd.ch',
