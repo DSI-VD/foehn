@@ -156,7 +156,7 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light h4"</span>&gt;</span>Actualités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light-alt h4"</span>&gt;</span>Actualités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"article"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Ut condimentum magna a ornare pulvinar"</span> "&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
@@ -345,7 +345,7 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-3c678a70f3fdb5a352e020046a582895-panel-view">
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">section{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span>{% <span class="hljs-attr">endif</span>%}{% <span class="hljs-attr">if</span> <span class="hljs-attr">id</span> %} <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light h4{% if titleModifier %} {{ titleModifier }}{% endif %}"</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light-alt h4{% if titleModifier %} {{ titleModifier }}{% endif %}"</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
   {% for teaser in teasers %}
   {% render '<a href="teaser">@teaser</a>', teaser, true %}
@@ -2930,8 +2930,104 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="pagination--first" data-pjax>
+                <span>First</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="pagination--last" data-pjax>
+                <span>Last</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="pagination--pages" data-pjax>
                 <span>Pages</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="pagination--pages-first" data-pjax>
+                <span>Pages First</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="pagination--pages-last" data-pjax>
+                <span>Pages Last</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4378,21 +4474,10 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-banner">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search-banner" data-pjax>
                 <span>Search Banner</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="search-banner--default" data-pjax>
-                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4409,35 +4494,6 @@
 
 
             </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="search-banner--half-width" data-pjax>
-                <span>Half Width</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
