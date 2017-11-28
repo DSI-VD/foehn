@@ -35,6 +35,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add new heading style `.vd-heading-light-alt`.
 
 ### Fix
+- Fix focus style overlapping headings chars
 - Use background image in class `.vd-bg-pattern-gray`
 
 ### Removed
