@@ -30,3 +30,12 @@ ul {
     margin-bottom: 0;
   }
 }
+
+/**
+ * multi column list
+ */
+ul.vd-list-columns {
+  @include media-breakpoint-up(sm) {
+    column-count: 2;
+  }
+}
