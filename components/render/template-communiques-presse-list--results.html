@@ -261,7 +261,7 @@
             </ul>
           </nav>
           <div class="col-md-4">
-            <h2 class="vd-heading-light-alt h4 mt-5 mb-3">Les plus visités</h2>
+            <h2 class="vd-heading-light h4 mt-5 mb-3">Les plus visités</h2>
             <ul class="vd-menu-list-links">
               <li><a href="#0">Inscription au chômage</a></li>
               <li><a href="#0">Formulaire d'indemnisation</a></li>
@@ -296,12 +296,15 @@
 </div>
 
 
-<div class="vd-bg-pattern-bars-gray py-4 mt-3">
-  <div class="container">
-    <form class="form">
-      <div class="row">
-        <div class="col-lg-3 col-xl-4">
-          <div 
+<main class="container mt-5">
+  <h1 class="sr-only">Communiqués de presse</h1>
+
+  <div class="vd-bg-pattern-bars-gray py-4 mt-3 mb-4">
+    <div class="container">
+      <form class="form">
+        <div class="row">
+          <div class="col-lg-3 col-xl-4">
+            <div 
     class="form-group">
   <label 
     for="search"
@@ -325,11 +328,11 @@
     >
 </div>
 
-        </div>
-        <div class="col-lg-9 col-xl-8 d-none d-md-block">
-          <div class="row">
-            <div class="col-6">
-              <fieldset>
+          </div>
+          <div class="col-lg-9 col-xl-8 d-none d-md-block">
+            <div class="row">
+              <div class="col-6">
+                <fieldset>
   <legend class="h5 mt-0">Publié du</legend><div class="vd-form-flex">
     <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div 
     class="form-group">
@@ -403,9 +406,9 @@
   </div>
 </fieldset>
 
-            </div>
-            <div class="col-6">
-              <fieldset>
+              </div>
+              <div class="col-6">
+                <fieldset>
   <legend class="h5 mt-0">au</legend><div class="vd-form-flex">
     <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div 
     class="form-group">
@@ -479,17 +482,15 @@
   </div>
 </fieldset>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <button type="submit" class="btn btn-dark mr-4">Rechercher</button>
-      <a href="#" class="btn btn-secondary">Réinitialiser</a>
-    </form>
+        <button type="submit" class="btn btn-dark mr-4 mb-3 mb-sm-0">Rechercher</button>
+        <a href="#" class="btn btn-secondary mb-3 mb-sm-0">Réinitialiser</a>
+      </form>
+    </div>
   </div>
-</div>
-
-<main class="container mt-5">
   <h1 class="sr-only">Communiqués de presse</h1>
 
 
@@ -611,64 +612,25 @@
 
   
 </div>
-<nav class="vd-pagination" aria-label="">
-  <ul class="vd-pagination__list">
+<nav>
+    <h3 class="sr-only">Pagination</h3>
+    <div class="d-flex justify-content-between">
+        <a href="#"title="Précédent link to somewhere"class="btn btn-link"
+   > <span class="fa fa-chevron-left" aria-hidden="true"></span> Précédent</a>
+
+        <ul class="list-inline mb-0 d-none d-md-inline-block">
+            <li class="list-inline-item"><a href="#" class="btn">1</a></li>
+            <li class="list-inline-item"><a href="#" class="btn">2</a></li>
+            <li class="list-inline-item"><a href="#" class="btn">3</a></li>
+            <li class="list-inline-item"><a href="#" class="btn">...</a></li>
+            <li class="list-inline-item"><a href="#" class="btn">55</a></li>
+        </ul>
         
-        <li class="vd-pagination__item vd-pagination__item--previous">
-            
-            <a href="#" class="vd-pagination__link">
-            
-                <span class="vd-pagination__title">
-                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                    Page précédente
-                </span>
-                
-            
-            </a>
-            
-        </li>
-        
-        
-            <li class="vd-pagination__item d-none d-md-inline-block">
-                <a href="#" class="vd-pagination__link">
-                  <span class="sr-only">Page </span>2
-                </a>
-            </li>
-            <li class="vd-pagination__item d-none d-md-inline-block">
-                <a href="#" class="vd-pagination__link">
-                  <span class="sr-only">Page </span>3
-                </a>
-            </li>
-            <li class="vd-pagination__item is-active d-none d-md-inline-block">
-                  <span class="sr-only">Page </span>4
-            </li>
-            <li class="vd-pagination__item d-none d-md-inline-block">
-                <a href="#" class="vd-pagination__link">
-                  <span class="sr-only">Page </span>5
-                </a>
-            </li>
-            <li class="vd-pagination__item d-none d-md-inline-block">
-                <a href="#" class="vd-pagination__link">
-                  <span class="sr-only">Page </span>6
-                </a>
-            </li>
-          
-          
-        <li class="vd-pagination__item vd-pagination__item--next">
-          
-            <a href="#" class="vd-pagination__link">
-              
-                <span class="vd-pagination__title">
-                    Page suivante
-                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                </span>
-                
-            
-            </a>
-            
-        </li>
-        
-    </ul>
+        <a href="#"title="Suivant link to somewhere"class="btn btn-link"
+   >Suivant <span class="fa fa-chevron-right" aria-hidden="true"></span>
+</a>
+
+        </div>
 </nav>
 
 
@@ -779,13 +741,18 @@
           <nav class="row" aria-label="pied de page">
             
             <div class="col-sm">
-              <h2 class="vd-heading-light h4 sr-only">Accès directs</h2>
-              <ul class="list-unstyled vd-list-columns"><li><a href="">Offre d'emploi</a></li><li><a href="">Statistiques</a></li><li><a href="">Portail sécurisé</a></li><li><a href="">Flux RSS</a></li><li><a href="">Espace sécurisé</a></li><li><a href="">Mentions légales</a></li><li><a href="">Contact</a></li><li><a href="">Permaliens</a></li><li><a href="">Guides TYPO3</a></li></ul>
+              <h2 class="vd-heading-light h4">Titre 1</h2>
+              <ul class="list-unstyled"><li><a href="">Offre d'emploi</a></li><li><a href="">Statistiques</a></li><li><a href="">Portail sécurisé</a></li><li><a href="">Flux RSS</a></li></ul>
             </div>
             
             <div class="col-sm">
-              <h2 class="vd-heading-light h4 ">Sites partenaires</h2>
-              <ul class="list-unstyled "><li><a href="">Promotion Vaud.ch</a></li><li><a href="">Tourisme</a></li><li><a href="">Musées</a></li><li><a href="">Patrimoine</a></li><li><a href="">CH.ch</a></li></ul>
+              <h2 class="vd-heading-light h4">Titre 2</h2>
+              <ul class="list-unstyled"><li><a href="">Espace sécurisé</a></li><li><a href="">Mentions légales</a></li><li><a href="">Contact</a></li><li><a href="">Permaliens</a></li><li><a href="">Guides TYPO3</a></li></ul>
+            </div>
+            
+            <div class="col-sm">
+              <h2 class="vd-heading-light h4">Sites partenaires</h2>
+              <ul class="list-unstyled"><li><a href="">Promotion Vaud.ch</a></li><li><a href="">Tourisme</a></li><li><a href="">Musées</a></li><li><a href="">Patrimoine</a></li><li><a href="">CH.ch</a></li></ul>
             </div>
             
           </nav>
@@ -793,10 +760,8 @@
         <div class="col-xs-2">
           <div class="d-flex align-items-end flex-column h-100">
             <div class="mt-auto w-100 text-right">
-              <a href="#">
-                <img aria-hidden="true" class="img-fluid footer-logo" src="../../assets/svg/logo/logo--white.svg" alt="Canton de Vaud">
+              <img aria-hidden="true" class="img-fluid footer-logo" src="../../assets/svg/logo/logo--white.svg" alt="Canton de Vaud">
 
-              </a>
             </div>
           </div>
         </div>
