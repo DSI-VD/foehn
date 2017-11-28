@@ -1,28 +1,60 @@
 {
   "status": "ready",
   "context": {
-    "previous": {
-      "url": "#",
-      "text": "Précédent",
-      "iconBefore": "fa-chevron-left"
-    },
-    "next": {
-      "url": "#",
-      "text": "Suivant",
-      "iconAfter": "fa-chevron-right"
+    "pages": {
+      "previous": {
+        "url": "#"
+      },
+      "next": {
+        "url": "#"
+      }
     }
   },
   "variants": [
     {
-      "name": "default",
+      "name": "first",
       "context": {
-        "showPages": false
+        "pages": {
+          "previous": false
+        }
+      }
+    },
+    {
+      "name": "last",
+      "context": {
+        "pages": {
+          "next": false
+        }
       }
     },
     {
       "name": "pages",
       "context": {
-        "showPages": true
+        "pages": {
+          "insidePages": true
+        }
+      }
+    },
+    {
+      "name": "pages-first",
+      "context": {
+        "pages": {
+          "previous": {
+            "disabled": " is-disabled"
+          },
+          "insidePages": true
+        }
+      }
+    },
+    {
+      "name": "pages-last",
+      "context": {
+        "pages": {
+          "next": {
+            "disabled": " is-disabled"
+          },
+          "insidePages": true
+        }
       }
     }
   ]

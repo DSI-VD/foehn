@@ -1,17 +1,65 @@
-<nav>
-    <h3 class="sr-only">Pagination</h3>
-    <div class="d-flex justify-content-between">
-        {% if previous %}{% render '@button--link', previous, true %}{% endif -%}
-        {% if showPages %}
-        <ul class="list-inline mb-0 d-none d-md-inline-block">
-            <li class="list-inline-item"><a href="#" class="btn">1</a></li>
-            <li class="list-inline-item"><a href="#" class="btn">2</a></li>
-            <li class="list-inline-item"><a href="#" class="btn">3</a></li>
-            <li class="list-inline-item"><a href="#" class="btn">...</a></li>
-            <li class="list-inline-item"><a href="#" class="btn">55</a></li>
-        </ul>
+<nav class="vd-pagination" aria-label="{{ title }}">
+  <ul class="vd-pagination__list">
+        {% if pages.previous %}
+        <li class="vd-pagination__item vd-pagination__item--previous{{ pages.previous.disabled }}">
+            {% if not pages.previous.disabled %}
+            <a href="{{ pages.previous.url }}" class="vd-pagination__link">
+            {% endif %}
+                <span class="vd-pagination__title">
+                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                    Page précédente
+                </span>
+                {% if not pages.insidePages %}
+                    <span class="sr-only">:</span>
+                    <span class="vd-pagination__label">11 sur 244</span>
+                {% endif %}
+            {% if not pages.previous.disable %}
+            </a>
+            {% endif %}
+        </li>
         {% endif %}
-        {% if next %}{% render '@button--link', next, true %}{% endif %}
-        {% if submit %}{% render '@button--submit', { class:submit.class }, true %}{% endif -%}
-    </div>
+        {% if pages.insidePages %}
+            <li class="vd-pagination__item d-none d-md-inline-block">
+                <a href="#" class="vd-pagination__link">
+                  <span class="sr-only">Page </span>2
+                </a>
+            </li>
+            <li class="vd-pagination__item d-none d-md-inline-block">
+                <a href="#" class="vd-pagination__link">
+                  <span class="sr-only">Page </span>3
+                </a>
+            </li>
+            <li class="vd-pagination__item is-active d-none d-md-inline-block">
+                  <span class="sr-only">Page </span>4
+            </li>
+            <li class="vd-pagination__item d-none d-md-inline-block">
+                <a href="#" class="vd-pagination__link">
+                  <span class="sr-only">Page </span>5
+                </a>
+            </li>
+            <li class="vd-pagination__item d-none d-md-inline-block">
+                <a href="#" class="vd-pagination__link">
+                  <span class="sr-only">Page </span>6
+                </a>
+            </li>
+          {% endif %}
+          {% if pages.next %}
+        <li class="vd-pagination__item vd-pagination__item--next{{ pages.next.disabled }}">
+          {% if not pages.next.disabled %}
+            <a href="{{ pages.next.url }}" class="vd-pagination__link">
+              {% endif %}
+                <span class="vd-pagination__title">
+                    Page suivante
+                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                </span>
+                {% if not pages.insidePages %}
+                    <span class="sr-only">:</span>
+                    <span class="vd-pagination__label">13 sur 244</span>
+                  {% endif %}
+            {% if not pages.next.disabled %}
+            </a>
+            {% endif %}
+        </li>
+        {% endif %}
+    </ul>
 </nav>
