@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Reorder HTML element in `@teaser-small--alt.html` for better a11y
+- Change HTML structure in `@template-communiques-presse-list`
 - Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
 - Change layout of `@theme` for `@template--2-col`.
 - Change news title wording in `@news-list
