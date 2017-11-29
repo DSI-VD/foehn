@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add class `.vd-text-md-small` to aside of `@template-communiques-presse-detail` and `@template-communiques-presse-list--default`
 - Add `.mb-5` to homepage heading
 - Remove button "departements" from home `@button-tiles`
 - Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
