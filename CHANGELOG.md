@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `@search-form--regular` to `@news-list--default` and `@theme--default` 
 - Add `.mb-5` to homepage heading
 - Remove button "departements" from home `@button-tiles`
 - Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
