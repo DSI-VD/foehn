@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Reorder HTML element in `@teaser-small--alt.html` for better a11y
+- Change HTML structure in `@template-communiques-presse-list`
 - Add class `.vd-text-md-small` to aside of `@template-communiques-presse-detail` and `@template-communiques-presse-list--default`
 - Add `.mb-5` to homepage heading
 - Remove button "departements" from home `@button-tiles`
