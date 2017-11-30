@@ -12,6 +12,9 @@ dist/
 *.swp
 *.swo
 
+# Ignore log
+yarn-error.log
+
 # changelog is ignored because it's copied from ./CHANGELOG.md
 src/docs/changelog.md
 
