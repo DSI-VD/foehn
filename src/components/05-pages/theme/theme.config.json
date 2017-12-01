@@ -11,32 +11,36 @@
             "url": "#"
           }
         ],
+        "searchForm": {
+          "title": "Rechercher dans les prestations",
+          "titleModifier": "mt-0"
+        },
         "prestations": {
           "list": [
               {
-                "item": "Adipisci blanditiis quia aspernatur voluptas.",
+                "item" : "Commander les publications du Bureau cantonal pour l'intégration des étrangers et la prévention du racisme (BCI)",
                 "url": "#",
                 "secure": true
               },
               {
-                "item": "Sit laudantium ad magni ut consectetur ipsam.",
+                "item" : "Consulter état de traitement des dossiers de personnes étrangères (cette prestation demande un identification)",
                 "url": "#"
               },
               {
-                "item": "Omnis est neque modi sit qui cumque atque voluptas.",
+                "item" : "Demander un appui (information et accompagnement) sur une question d'actes à caractère raciste",
                 "url": "#"
               },
               {
-                "item": "Doloremque rerum voluptate.",
+                "item" : "Demander un appui (information et orientation) sur une question de mariage forcé",
                 "url": "#"
               },
               {
-                "item": "Impedit provident esse voluptas nesciunt ipsum suscipit qui earum fuga.",
+                "item" : "Demander une subvention pour un projet d'intégration et/ou de prévention du racisme (cette prestation demande un identification)",
                 "url": "#",
                 "secure": true
               },
               {
-                "item": "Natus animi est mollitia.",
+                "item" : "Demander, en tant que personne non européenne, une autorisation de séjour pour vivre auprès d'un conjoint ou parent titulaire d'un permis B, C ou L",
                 "url": "#"
               }
             ]
