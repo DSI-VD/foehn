@@ -1,7 +1,6 @@
 {
     "status": "ready",
     "context": {
-      "styleModifier": "d-none d-md-flex",
       "items": [
         {
           "name": "Autorités",
