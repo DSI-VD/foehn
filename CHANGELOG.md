@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `@search-form--regular` to `@news-list--default` and `@theme--default` 
 - Reorder HTML element in `@teaser-small--alt.html` for better a11y
 - Change HTML structure in `@template-communiques-presse-list`
 - Add class `.vd-text-md-small` to aside of `@template-communiques-presse-detail` and `@template-communiques-presse-list--default`
