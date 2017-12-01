@@ -1,22 +1,32 @@
+# Ignore modules
 node_modules
 bower_components
+
+# Ignore Sass cache
 .sass-cache
+
+# Ignore OSX's `DS_Store` file
 *.DS_Store
+
+# Ignore `gulp-gh-pages` directory
 .publish
 .env
+
+# Ignore editor files
 .idea
+.swp
+.swo
+
+# Ignore projects specifics files
 tmp/
 dist/
-
-# Ignore Vim temporary files
-*.swp
-*.swo
-
 # changelog is ignored because it's copied from ./CHANGELOG.md
 src/docs/changelog.md
 
-# We only support Yarn as our official Node packager, and so we aonly commit
-# `yarn.lock` file.:w
-package-lock.json
-
+# Ignore log
+yarn-error.log
 npm-debug.log
+
+# We only support Yarn as our official Node packager, and so we only commit
+# `yarn.lock` file.
+package-lock.json

@@ -4,7 +4,31 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `@search-form--regular` to `@news-list--default` and `@theme--default` 
+- Reorder HTML element in `@teaser-small--alt.html` for better a11y
+- Change HTML structure in `@template-communiques-presse-list`
+- Add class `.vd-text-md-small` to aside of `@template-communiques-presse-detail` and `@template-communiques-presse-list--default`
+- Add `.mb-5` to homepage heading
+- Remove button "departements" from home `@button-tiles`
+- Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
 - Change top nav with `.list-inline` for margin-right
+- Change layout of `@theme` for `@template--2-col`.
+- Change news title wording in `@news-list
+- Add class `.mt-0` to `@template--news-detail` 
+- Add link to homepage to `@footer`
+- Hide footer titles, but keep them for accessibility (sr-only)
+- Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
+- Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
+- Change text in "back to top" button in `@domains-list`
+- Added breadcrumb for header in `domaines.config.json`
+- Added `@page-title-banner` in `@template--domaines`
+- Changed column widths in `@domains-list` from `.col-md-*` to `.col-lg-*`
+- Add margin on the first column in `@domains-list`
+- Rebuild `@pagitation` and `@pagination--pages`
+- Add a link for more infos and results heading in `@filter-list-result-table`
+- Add a link for more infos in `@filter-list-result-list`
+- Add number text to show number of results in `@filter-list-result-list`
+- Use two columns to display `@filter-list-form`
 - Change button text in `@nav-primary`
 - Rebuild `@agenda` and update it in `@accueil`
 - Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
@@ -12,6 +36,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Visually hide `@input--number`s help texts in `@avs13`
 - Change content of `fieldset`s help text in `@avs13`
 - Fix column width in `@example-list`
+
+### Added
+- Add documentation about link accessibility
+- Add new heading style `.vd-heading-light-alt`.
+
+### Fix
+- Fix focus style overlapping headings chars
+- Use background image in class `.vd-bg-pattern-gray`
+
+### Removed
+- Remove `@search-banner--half-width`
 
 ## [0.39.0] - 2017-11-03
 
