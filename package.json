@@ -39,6 +39,9 @@
     "popper.js": "^1.12.6"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome": "^1.0.0",
+    "@fortawesome/fontawesome-free-brands": "^5.0.0",
+    "@fortawesome/fontawesome-free-solid": "^5.0.0",
     "@frctl/nunjucks": "^1.0.3",
     "autoprefixer": "^7.1.6",
     "bootstrap": "4.0.0-beta.2",
@@ -49,7 +52,6 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.4.0",
-    "font-awesome": "^4.6.3",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-eslint": "^4.0.0",
     "gulp-gh-pages": "^0.5.4",
