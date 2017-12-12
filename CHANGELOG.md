@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.40.0] - 2017-12-12
+
 ### Changed
 - Add `@search-form--regular` to `@news-list--default` and `@theme--default` 
 - Reorder HTML element in `@teaser-small--alt.html` for better a11y
@@ -1460,7 +1462,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.39.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.40.0...HEAD
+[0.40.0]: https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0
 [0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
 [0.38.0]: https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0
 [0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
