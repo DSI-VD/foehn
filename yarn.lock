@@ -6,18 +6,6 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@allmarkedup/fang/-/fang-1.0.0.tgz#20aa2ea365c57b0a28e6b563613270f5630d6883"
 
-"@fortawesome/fontawesome-free-brands@^5.0.0":
-  version "5.0.0"
-  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/@fortawesome/fontawesome-free-brands/-/fontawesome-free-brands-5.0.0.tgz#9552ce4e570cf5956dc0a58dfa16976425c8cb55"
-
-"@fortawesome/fontawesome-free-solid@^5.0.0":
-  version "5.0.0"
-  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/@fortawesome/fontawesome-free-solid/-/fontawesome-free-solid-5.0.0.tgz#423f33f5270a2c6112df13446dba86ea95667560"
-
-"@fortawesome/fontawesome@^1.0.0":
-  version "1.0.0"
-  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/@fortawesome/fontawesome/-/fontawesome-1.0.0.tgz#ef48b981c117e6ff6d99ac9a1275038b0f7c4996"
-
 "@frctl/fractal@^1.0.0", "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.7":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.7.tgz#7f2e0874ef88b0f611a8d594965e3510f8c9ada3"
