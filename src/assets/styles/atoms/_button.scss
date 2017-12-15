@@ -53,29 +53,6 @@ a.btn {
   }
 }
 
-// Buttons with icons
-//
-// Prefixed with vd-, add the class to button to add a chevron icon
-.vd-btn-chevron-r {
-  position: relative;
-  padding-right: $spacer * 1.5;
-
-  &:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: $spacer * 1.5;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    pointer-events: none;
-    user-select: none;
-  }
-}
-
 .btn-link {
   font-weight: bold;
 
