@@ -34,10 +34,6 @@ button {
 
   &[data-toggle="collapse"] {
     @extend .vd-btn-chevron-b;
-
-    &[aria-expanded="true"] {
-      @extend .vd-btn-cross;
-    }
   }
 }
 
@@ -110,16 +106,6 @@ a.btn {
       color: $white;
     }
   }
-}
-
-/**
- * Adds a cross icon inside the button
- */
-.vd-btn-cross {
-  &.btn-secondary:before,
-  &.btn-secondary:after,
-  &.btn-success:after { @include vd-background-image-icon($vd-cross, $white); }
-  &:after { @include vd-background-image-icon($vd-cross, $vd-primary); }
 }
 
 .btn-link {
