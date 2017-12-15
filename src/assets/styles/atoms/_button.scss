@@ -31,10 +31,6 @@ button {
   &:focus {
     @include box-shadow($input-btn-focus-box-shadow);
   }
-
-  &[data-toggle="collapse"] {
-    @extend .vd-btn-chevron-b;
-  }
 }
 
 a.btn {
@@ -77,20 +73,6 @@ a.btn {
     background-size: 100% 100%;
     pointer-events: none;
     user-select: none;
-  }
-}
-
-.vd-btn-chevron-b {
-  .fa {
-    font-size: 1rem;
-    color: $vd-primary;
-  }
-
-  &.btn-secondary,
-  &.btn-success {
-    .fa {
-      color: $white;
-    }
   }
 }
 
