@@ -122,28 +122,28 @@ a.btn {
   &:after { @include vd-background-image-icon($vd-cross, $vd-primary); }
 }
 
-/**
- * Toggle menu icon
- *
- * 1. Close show fa-chevron-down icon
- * 2. Close show fa-chevron-time icon
- */
-
-.collapsed.vd-menu-toggle .vd-fa-menu-toggle:before {
-  content: "\f078"; /* [1] */
-  font-size: 1rem;
-}
-
-.vd-menu-toggle .vd-fa-menu-toggle:before {
-  content: "\f00d"; /* [2] */
-  font-size: 1rem;
-}
-
 .btn-link {
   font-weight: bold;
 
   &:hover {
     text-decoration: none;
     color: $link-hover-color;
+  }
+}
+
+/**
+ * Fontawesome icons inside button
+ *
+ * 1. Icons inside a button are green
+ */
+
+.btn {
+  .fab,
+  .fas,
+  .fa,
+  .far,
+  .fal,
+  .svg-inline--fa {
+    color: $vd-primary; /* [1] */
   }
 }
