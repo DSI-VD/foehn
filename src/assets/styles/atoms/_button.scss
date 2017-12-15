@@ -135,6 +135,7 @@ a.btn {
  * Fontawesome icons inside button
  *
  * 1. Icons inside a button are green
+ * 2. Icons inside a secondary or success button are white
  */
 
 .btn {
@@ -145,5 +146,17 @@ a.btn {
   .fal,
   .svg-inline--fa {
     color: $vd-primary; /* [1] */
+  }
+
+  &.btn-secondary,
+  &.btn-success {
+    .fab,
+    .fas,
+    .fa,
+    .far,
+    .fal,
+    .svg-inline-fa {
+      color: $white; /* [2] */
+    }
   }
 }
