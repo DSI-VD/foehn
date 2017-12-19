@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Upgrade Fontawesome to v5.
+-- Add a documentation how to upgrade
 -- Update `@list-boxed` HTML
 -- Update `@search-form--regular-option` HTML
 -- Update `@search-form--regular` HTML
