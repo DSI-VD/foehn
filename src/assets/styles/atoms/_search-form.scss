@@ -34,7 +34,7 @@
 
     &,
     .svg-inline--fa {
-      color: $white
+      color: $white;
     }
 
     @include hover {
@@ -62,6 +62,11 @@
     background: $vd-primary-dark;
     border-color: $vd-primary-dark;
     color: $white;
+
+    &,
+    .svg-inline--fa {
+      color: $white;
+    }
 
     @include hover {
       background: darken($vd-primary, 10%);
