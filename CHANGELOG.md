@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add text in the link logo in `@footer`
 - Add `role="search"` attribute for the form in
   `@template-communiques-presse-list--default` and `@template-communiques-presse-list--results`
 - Add `role="search"` attribute in `@search-form--regular` and
