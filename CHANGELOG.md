@@ -3,6 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Add `role="search"` attribute for the form in
+  `@template-communiques-presse-list--default` and `@template-communiques-presse-list--results`
+- Add `role="search"` attribute in `@search-form--regular` and
+  `@search-form--regular-option`
+
 ## [0.40.0] - 2017-12-12
 
 ### Changed
