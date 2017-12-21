@@ -12,8 +12,10 @@
           }
         ],
         "searchForm": {
-          "title": "Rechercher dans les prestations",
-          "titleModifier": "mt-0"
+          "heading": {
+              "text": "Rechercher dans les prestations",
+              "styleModifier": "mt-0"
+          }
         },
         "prestations": {
           "list": [

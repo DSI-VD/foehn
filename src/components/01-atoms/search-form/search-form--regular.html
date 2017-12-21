@@ -1,4 +1,14 @@
-<h4{% if titleModifier %} class="{{ titleModifier }}"{% endif %}>{{ title }}</h4>
+{%- if heading.level == "h2" -%}
+  {%- render '@h2', heading, true -%}
+{%- elif heading.level == "h3" -%}
+  {%- render '@h3', heading, true -%}
+{%- elif heading.level == "h4" or not heading.level -%}
+  {%- render '@h4', heading, true -%}
+{%- elif heading.level == "h5" -%}
+  {%- render '@h5', heading, true -%}
+{%- elif heading.level == "h6" -%}
+  {%- render '@h6', heading, true -%}
+{%- endif %}
 
 <form class="input-group vd-search-form-regular" action="#" role="search">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
