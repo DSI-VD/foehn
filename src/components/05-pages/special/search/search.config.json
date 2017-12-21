@@ -6,24 +6,24 @@
     },
     "filters": [
       {
-        "title": "Tout afficher",
+        "title": "<span class=\"sr-only\">Afficher </span>Tout",
         "url": "#",
         "active": true
       },
       {
-        "title": "Afficher uniquement les actualités",
+        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Actualités",
         "url": "#"
       },
       {
-        "title": "Afficher uniquement les documents",
+        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Documents",
         "url": "#"
       },
       {
-        "title": "Afficher uniquement les dossiers",
+        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Dossiers",
         "url": "#"
       },
       {
-        "title": "Afficher uniquement les départements",
+        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Départements",
         "url": "#"
       }
     ],
