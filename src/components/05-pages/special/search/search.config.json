@@ -6,6 +6,7 @@
         "text": "Rechercher",
         "level": "h2"
       },
+      "placeholder": false
     },
     "filters": [
       {
