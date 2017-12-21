@@ -1,6 +1,22 @@
 {% extends '@template' %}
 {% block main %}
   {% render '@search-form--regular', searchForm, true %}
+  <h2>Résultats</h2>
+  <h3>Filtrer les résultats</h3>
+  <ul class="nav flex-column flex-sm-row">
+    {% for filter in filters -%}
+      <li class="nav-item">
+        <a href="{{ filter.url }}"
+          {% if filter.active %}
+            class="nav-link active">
+          {% else %}
+            class="nav-link">
+          {% endif %}
+        {{ filter.title }}
+        </a>
+      </li>
+      {%- endfor %}
+  </ul>
   {% render '@results-list' %}
   {% render '@pagination' %}
 {% endblock %}
