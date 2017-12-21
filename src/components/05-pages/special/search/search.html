@@ -1,6 +1,6 @@
 {% extends '@template' %}
 {% block main %}
-  {% render '@search-form--regular' %}
+  {% render '@search-form--regular', searchForm, true %}
   <h2>97 résultats trouvées</h2>
   {% render '@results-list' %}
   {% render '@pagination' %}
