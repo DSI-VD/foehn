@@ -4,6 +4,29 @@
     "searchForm":{
       "title": "Rechercher"
     },
+    "filters": [
+      {
+        "title": "Tout afficher",
+        "url": "#",
+        "active": true
+      },
+      {
+        "title": "Afficher uniquement les actualités",
+        "url": "#"
+      },
+      {
+        "title": "Afficher uniquement les documents",
+        "url": "#"
+      },
+      {
+        "title": "Afficher uniquement les dossiers",
+        "url": "#"
+      },
+      {
+        "title": "Afficher uniquement les départements",
+        "url": "#"
+      }
+    ],
     "header": {
       "searchForm": false
     }
