@@ -2,7 +2,7 @@
 <ol class="list-unstyled">
   {% for result in list %}
     <li>
-      <h3><a href="{{ result.url }}">{{ result.title }}</a></h3>
+      <h4><a href="{{ result.url }}">{{ result.title }}</a></h4>
       {% if result.type %}
         <p class="small">
         {%- if result.type == "news" -%}
