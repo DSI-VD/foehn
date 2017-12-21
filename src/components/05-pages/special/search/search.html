@@ -1,22 +1,7 @@
-{% extends '@template--2-col' %}
 {% extends '@template' %}
 {% block main %}
-  {% render '@search-form--default' %}
-  <h2>10 prestations trouvées</h2>
-  <div class="vd-bg-pattern-green p-1 mb-3">
-    {% render '@list-boxed', prestations %}
-  </div>
+  {% render '@search-form--regular' %}
   <h2>97 résultats trouvées</h2>
   {% render '@results-list' %}
   {% render '@pagination' %}
-{% endblock %}
-{% block aside %}
-  <h2>Vous ne trouvez pas votre information ?</h2>
-  <p>Comment pouvons-nous vous aider ?</p>
-  <p>
-    {% render '@button--default', { text: 'Tous les thèmes' }, true %}
-  </p>
-  <p>
-    {% render '@button--default', { text: 'Nous écrire' }, true %}
-  </p>
 {% endblock %}
