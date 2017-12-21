@@ -1,8 +1,11 @@
 {
   "context": {
     "pageTitle": "Recherche",
-    "searchForm":{
-      "title": "Rechercher"
+    "searchForm": {
+      "heading": {
+        "text": "Rechercher",
+        "level": "h2"
+      },
     },
     "filters": [
       {

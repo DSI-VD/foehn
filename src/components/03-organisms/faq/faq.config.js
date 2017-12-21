@@ -23,6 +23,10 @@ module.exports = {
         searchForm: {
             title: 'Rechercher dans les questions',
             titleModifier: 'mt-0',
+            heading: {
+                text: 'Rechercher dans les questions',
+                styleModifier: 'mt-0',
+            },
         },
         faqs: faqData,
     },

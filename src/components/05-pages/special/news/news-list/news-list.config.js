@@ -63,8 +63,10 @@ module.exports = {
         ],
         teasers: teaserItemData,
         searchForm: {
-            title: 'Rechercher dans les actualités',
-            titleModifier: 'mt-0',
+            heading: {
+                text: 'Rechercher dans les actualités',
+                styleModifier: 'mt-0',
+            },
         },
     },
     variants: [
