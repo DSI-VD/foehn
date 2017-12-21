@@ -1,6 +1,6 @@
 {
   "context": {
-    "pageTitle": "Rechercher sur vd.ch",
+    "pageTitle": "Recherche",
     "results": {
       "prestations": "@theme--default.prestations",
       "pages": "@results-list.list"
