@@ -1,6 +1,9 @@
 {
   "context": {
     "pageTitle": "Recherche",
+    "searchForm":{
+      "title": "Rechercher"
+    },
     "header": {
       "searchForm": false
     }
