@@ -1,8 +1,17 @@
 <ol class="list-unstyled">
   {% for result in list %}
-  <li>
-    <h3 class="p mb-0"><a href="{{ result.url }}">{{ result.title }}</a></h3>
-    <p>{{ result.excerpt | truncate(125) }}</p>
-  </li>
+    <li>
+      <h3><a href="{{ result.url }}">{{ result.title }}</a></h3>
+      {% if result.type %}
+        <p class="small">
+        {%- if result.type == "news" -%}
+          Actualité du {{ result.date }}
+        {%- elif result.type == "prestation" -%}
+          Ce résultat est une préstation
+        {%- endif -%}
+        </p>
+      {% endif %}
+      <p>{{ result.excerpt | truncate(125) }}</p>
+    </li>
   {% endfor %}
 </ol>

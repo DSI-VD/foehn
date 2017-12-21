@@ -4,12 +4,15 @@
       {
         "title": "Site officiel du Canton de Vaud - VD.CH",
         "url": "#",
-        "excerpt": "Informations officielles, présentation de l'institution (pouvoirs législatif, exécutif et judiciaire), informations thématiques et de l'administration cantonale vaudoise."
+        "excerpt": "Informations officielles, présentation de l'institution (pouvoirs législatif, exécutif et judiciaire), informations thématiques et de l'administration cantonale vaudoise.",
+        "type": "news",
+        "date": "10 juillet 2017"
       },
       {
         "title": "Offres d'emploi dans l'administration - VD.CH",
         "url": "#",
-        "excerpt": "L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton avec 39'000 collaborateur- trice-s et compte plus de 400 métiers différents. Nous vous donnons ..."
+        "excerpt": "L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton avec 39'000 collaborateur- trice-s et compte plus de 400 métiers différents. Nous vous donnons ...",
+        "type": "prestation"
       },
       {
         "title": "Les impôts dans le canton de Vaud - VD.CH",
@@ -19,7 +22,7 @@
       {
         "title": "Offres d'emploi ACV - VD.CH",
         "url": "#",
-        "excerpt": "L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton. Nous offrons aux plus de 39'000 collaborateur-trice-s de l'Administration cantonale vaudoise (ACV) une ..."
+        "excerpt": "L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton. Nous offrons aux plus de 39'000 collaborateur-trice-s de l'Administration cantonale vaudoise (}ACV) une ..."
       },
       {
         "title": "Service des automobiles et de la navigation - VD.CH",
