@@ -19,15 +19,11 @@
         "url": "#"
       },
       {
-        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Documents",
+        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Prestations",
         "url": "#"
       },
       {
-        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Dossiers",
-        "url": "#"
-      },
-      {
-        "title": "<span class=\"sr-only\">Afficher uniquement les </span>Départements",
+        "title": "<span class=\"sr-only\">Afficher uniquement les résultats concernant le </span>Grand Conseil",
         "url": "#"
       }
     ],
