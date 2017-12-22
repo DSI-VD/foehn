@@ -27,8 +27,27 @@
         "url": "#"
       }
     ],
+    "results": true,
     "header": {
       "searchForm": false
     }
-  }
+  },
+  "variants": [
+    {
+      "name": "default"
+    },
+    {
+      "name": "no search",
+      "context": {
+        "results": false
+      }
+    },
+    {
+      "name": "no results",
+      "context": {
+        "results": false,
+        "error": true
+      }
+    }
+  ]
 }
