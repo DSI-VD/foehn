@@ -2,6 +2,8 @@
 title: Page de recherche
 ---
 
+Documentation sur [la page de recherche]({{ '/components/detail/search' | path }}).
+
 ## Champs de recherche
 
 Il ne doit pas y avoir de champ de recherche dans le *header*. Il est affiché
@@ -33,7 +35,18 @@ en-dessous du titre.
 ```
 {% render '@search-item--prestation' %}
 ```
+
 ### Description
 
 Reprend la descrition de la page et dans le cas où elle n'est pas présente, il
 faut afficher un extrait de la page.
+
+## Première recherche
+
+Si on arrive sur la page sans effectuer de recherche, [uniquement le champs de
+recherche est présent]({{ '/components/detail/search--no-search' | path }}).
+
+## Pas de réultats
+
+Si la recherche ne donne aucun résultat, on [oriente l'utilisateur avec un
+message]({{ '/components/detail/search--no-results' | path }}).
