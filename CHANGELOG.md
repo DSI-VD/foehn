@@ -5,26 +5,26 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Upgrade Fontawesome to v5.
--- Add a documentation how to upgrade
--- Update `@list-boxed` HTML
--- Update `@search-form--regular-option` HTML
--- Update `@search-form--regular` HTML
--- Update `@search-form` HTML
--- Update `@dropdown`
--- Update `@nav-mobile`
--- Update `@nav-primary`
--- Update `@pagination`
--- Update `@social-icons`
--- Update `@button-back-to-top`
--- Update `@header--securise`
--- Update `@filter-list-result-table`
--- Update `example-list`
--- Update `@template-communiques-press-detail`
--- Update `@template-communiques-press-list`
--- Update `@prestation`
--- Update `@documents`
--- Remove `vendor.css` stylesheet in header in all components (see `@preview`)
--- Add link to fontawesome JavaScript in footer in all components (see `@preview`)
+  - Add a documentation how to upgrade
+  - Update `@list-boxed` HTML
+  - Update `@search-form--regular-option` HTML
+  - Update `@search-form--regular` HTML
+  - Update `@search-form` HTML
+  - Update `@dropdown`
+  - Update `@nav-mobile`
+  - Update `@nav-primary`
+  - Update `@pagination`
+  - Update `@social-icons`
+  - Update `@button-back-to-top`
+  - Update `@header--securise`
+  - Update `@filter-list-result-table`
+  - Update `example-list`
+  - Update `@template-communiques-press-detail`
+  - Update `@template-communiques-press-list`
+  - Update `@prestation`
+  - Update `@documents`
+  - Remove `vendor.css` stylesheet in header in all components (see `@preview`)
+  - Add link to fontawesome JavaScript in footer in all components (see `@preview`)
 - Remove `.vd-btn-chevron-*` class in `@faq-item`, `@button-back-to-top`,
   `@domain-list`
 - Add text in the link logo in `@footer`
