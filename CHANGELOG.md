@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Change how `@search` page is displayed
 - Upgrade Fontawesome to v5.
   - Add a documentation how to upgrade
   - Update `@list-boxed` HTML
@@ -32,6 +33,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   `@template-communiques-presse-list--default` and `@template-communiques-presse-list--results`
 - Add `role="search"` attribute in `@search-form--regular` and
   `@search-form--regular-option`
+
+### Added
+- Add `@search--no-results` and `@search--no-search` components
+- Add documentation about search pages.
 
 ## [0.40.0] - 2017-12-12
 
