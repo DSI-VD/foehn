@@ -14,8 +14,8 @@ bower_components
 
 # Ignore editor files
 .idea
-.swp
-.swo
+*.swp
+*.swo
 
 # Ignore projects specifics files
 tmp/
