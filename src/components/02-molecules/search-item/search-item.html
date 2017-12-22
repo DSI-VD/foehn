@@ -1,0 +1,24 @@
+{% if heading.styleModifier -%}
+  <h4 class="{{ heading.styleModifier }}">
+{%- else -%}
+  <h4>
+{%- endif %}
+  <a href="{{ url }}">
+    {{ title }}
+    {%- if type.file %}
+    (<span class="sr-only">Fichier </span><abbr title="{{ type.file.abbr }}">PDF</abbr>)
+    {%- endif %}
+  </a>
+</h4>
+{% if type and not type.file -%}
+  <p class="small">
+    {%- if type.news -%}
+      Actualité du {{ type.news.date }}
+    {%- elif type.prestation -%}
+      Ce résultat est une préstation
+    {%- endif -%}
+  </p>
+{%- endif %}
+<p>
+  {{ excerpt }}
+</p>
