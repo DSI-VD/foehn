@@ -140,29 +140,6 @@ function lintstyles() {
 }
 
 /**
- * Style vendors
- */
-function stylesVendors() {
-    return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss(processors))
-        .pipe(rename('vendors.css'))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(`${paths.dest}/assets/styles/`));
-}
-
-/**
- * Fonts
- */
-function fonts() {
-    return gulp.src([
-        `${paths.src}/assets/fonts/**/*`,
-        'node_modules/font-awesome/fonts/**/*',
-    ])
-        .pipe(gulp.dest(`${paths.dest}/assets/fonts/`));
-}
-
-/**
  * Scripts Vendors
  */
 function scriptsVendors() {
@@ -240,7 +217,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, stylesVendors, fonts, scriptsVendors, svg, images, lintscripts));
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, svg, images, lintscripts));
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));
