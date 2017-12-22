@@ -25,8 +25,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 -- Update `@documents`
 -- Remove `vendor.css` stylesheet in header in all components (see `@preview`)
 -- Add link to fontawesome JavaScript in footer in all components (see `@preview`)
-- remove `.vd-btn-chevron-*` class in `@faq-item`, `@button-back-to-top`,
+- Remove `.vd-btn-chevron-*` class in `@faq-item`, `@button-back-to-top`,
   `@domain-list`
+- Add text in the link logo in `@footer`
+- Add `role="search"` attribute for the form in
+  `@template-communiques-presse-list--default` and `@template-communiques-presse-list--results`
+- Add `role="search"` attribute in `@search-form--regular` and
+  `@search-form--regular-option`
 
 ## [0.40.0] - 2017-12-12
 
