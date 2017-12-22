@@ -14,9 +14,12 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="../../assets/styles/vendors.css">
-    <link rel="stylesheet" href="../../assets/styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:300,700" rel="stylesheet">
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
   </head>
   <body>
 
@@ -99,7 +102,7 @@
           <a class="nav-link" href="#0">Contact</a>
         </li>
         <li class="nav-item vd-nav-item-secure">
-          <a class="nav-link btn btn-dark" href="../connexion"><span class="fa fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
+          <a class="nav-link btn btn-dark" href="../connexion"><span class="fas fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
         </li>
       </ul>
     </div>
@@ -121,22 +124,22 @@
       <h2 class="vd-heading-light h4 mb-3 text-white text-center h6">Suivre vd.ch sur les réseaux sociaux</h2>
 <ul class="list-inline vd-social-icons text-center mb-3">
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
+    <a class="vd-social-icon" href="#"><span class="fas fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
   </li>
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Partager sur Twitter</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-twitter" aria-hidden="true"></span><span class="sr-only">Partager sur Twitter</span></a>
   </li>
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-facebook" aria-hidden="true"></span><span class="sr-only">Partager sur Facebook</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-facebook-f" aria-hidden="true"></span><span class="sr-only">Partager sur Facebook</span></a>
   </li>
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
   </li>
   <li class="list-inline-item d-lg-none">
-    <a class="vd-social-icon" href="#"><span class="fa fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
   </li>
   <li class="list-inline-item d-none d-lg-inline-block">
-    <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
+    <a class="vd-social-icon" href="#"><span class="fas fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
   </li>
 </ul>
 
@@ -163,7 +166,7 @@
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form" type="text" class="form-control" placeholder="Rechercher"  aria-describedby="search-form-label">
   <span class="input-group-btn">
-  <button class="btn" type="submit" aria-label="Rechercher"><i class="fa fa-search" aria-hidden="true"></i></button>
+  <button class="btn" type="submit" aria-label="Rechercher"><i class="fas fa-search" aria-hidden="true"></i></button>
   </span>
 </form>
 
@@ -175,22 +178,30 @@
   <div class="vd-nav-primary">
   <div class="vd-nav-primary-toggle">
     <div class="container">
-      <button type="button" class="d-none d-md-inline-block btn btn-sm btn-dark vd-menu-toggle collapsed" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="false">
+      <button type="button"
+            class="d-none d-md-inline-block btn btn-sm btn-dark vd-nav-primary__button collapsed"
+            data-toggle="collapse"
+            data-target="#nav-primary-container"
+            aria-controls="nav-primary-container"
+          aria-expanded="false">
         <span class="sr-only">Accédez au </span>
         Infos et services en ligne
-        <span class="fa vd-fa-menu-toggle fa-fw" aria-hidden="true"></span>
+        <span class="fas fa-chevron-down fa-fw fa-lg"></span>
+        <span class="fas fa-times fa-fw fa-lg"></span>
       </button>
     </div>
   </div>
-  <div class="collapse clearfix" id="nav-primary-container">
+  <div class="collapse clearfix"
+       id="nav-primary-container">
     <div class="vd-nav-primary-content d-none d-md-block">
       <div class="container">
         <div class="row">
-          <nav class="col-md-8" id="nav-primary">
+          <nav class="col-md-8"
+               id="nav-primary">
             <h2 class="sr-only">Navigation par thèmes</h2>
             <ul class="list-unstyled mb-0 row">
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#culture" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Culture</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Aides et soutiens, Musées cantonaux…<span class="sr-only">)</span></span>
@@ -198,7 +209,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#economie" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Economie</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Poursuites et faillites, Registre du commerce…<span class="sr-only">)</span></span>
@@ -206,7 +217,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#environnement" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Environnement</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Faune et nature, Energie…<span class="sr-only">)</span></span>
@@ -214,7 +225,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#etat%2C%20droit%2C%20finance" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Etat, Droit, Finance</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Impôts, rémunérations, fiscalité…<span class="sr-only">)</span></span>
@@ -222,7 +233,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#formation" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Formation</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Jours fériés et vacances scolaires…<span class="sr-only">)</span></span>
@@ -230,7 +241,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#mobilit%C3%A9" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Mobilité</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Automobile, Navigation…<span class="sr-only">)</span></span>
@@ -238,7 +249,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#sant%C3%A9" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Santé</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Prévention, Professionnels…<span class="sr-only">)</span></span>
@@ -246,7 +257,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#social" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Social</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Aide aux victimes et auteur-e-s de violences…<span class="sr-only">)</span></span>
@@ -254,7 +265,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#vie%20priv%C3%A9e" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Vie privée</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Documents d'identité…<span class="sr-only">)</span></span>
@@ -262,7 +273,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#s%C3%A9curit%C3%A9" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Sécurité</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Police, contrôle, casiers judiciaire…<span class="sr-only">)</span></span>
@@ -270,7 +281,7 @@
 </li>
 
               
-              <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
   <a href="domaines#territoire" class="vd-link-invisible d-inline-block pt-1">
     <span class="vd-domain-item-title h2 mt-0 d-block">Territoire</span>
     <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Informations sur le territoire, Registre foncier…<span class="sr-only">)</span></span>
@@ -346,22 +357,22 @@
   <h2 class="vd-heading-light h4 mb-3 sr-only">Partager la page</h2>
 <ul class="list-inline vd-social-icons mt-4 mb-3">
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
+    <a class="vd-social-icon" href="#"><span class="fas fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
   </li>
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Partager sur Twitter</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-twitter" aria-hidden="true"></span><span class="sr-only">Partager sur Twitter</span></a>
   </li>
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-facebook" aria-hidden="true"></span><span class="sr-only">Partager sur Facebook</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-facebook-f" aria-hidden="true"></span><span class="sr-only">Partager sur Facebook</span></a>
   </li>
   <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
   </li>
   <li class="list-inline-item d-lg-none">
-    <a class="vd-social-icon" href="#"><span class="fa fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
+    <a class="vd-social-icon" href="#"><span class="fab fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
   </li>
   <li class="list-inline-item d-none d-lg-inline-block">
-    <a class="vd-social-icon" href="#"><span class="fa fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
+    <a class="vd-social-icon" href="#"><span class="fas fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
   </li>
 </ul>
 
@@ -372,7 +383,7 @@
 
   <div class="container">
   <div class="text-right">
-    <a href="#" class="btn btn-sm btn-dark vd-btn-chevron-t" title="Retour vers le haut de la page">Haut <span class="fa fa-chevron-up"></span></a>
+    <a href="#" class="btn btn-sm btn-dark" title="Retour vers le haut de la page">Haut <span class="fas fa-chevron-up"></span></a>
   </div>
 </div>
 
