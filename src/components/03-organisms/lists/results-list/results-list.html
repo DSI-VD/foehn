@@ -2,17 +2,7 @@
 <ol class="list-unstyled">
   {% for result in list %}
     <li>
-      <h4><a href="{{ result.url }}">{{ result.title }}</a></h4>
-      {% if result.type %}
-        <p class="small">
-        {%- if result.type == "news" -%}
-          Actualité du {{ result.date }}
-        {%- elif result.type == "prestation" -%}
-          Ce résultat est une préstation
-        {%- endif -%}
-        </p>
-      {% endif %}
-      <p>{{ result.excerpt | truncate(125) }}</p>
+      {% render '@search-item', result, true %}
     </li>
   {% endfor %}
 </ol>
