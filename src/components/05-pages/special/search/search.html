@@ -2,8 +2,7 @@
 {% block main %}
   {% render '@search-form--regular', searchForm, true %}
   {% if results %}
-    <h2>Résultats</h2>
-    <h3>Filtrer les résultats</h3>
+    <h2>Filtrer les résultats</h2>
     <ul class="nav flex-column flex-sm-row">
       {% for filter in filters -%}
         <li class="nav-item">
