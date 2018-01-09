@@ -1,7 +1,7 @@
 {% if heading.styleModifier -%}
   <h4 class="{{ heading.styleModifier }}">
 {%- else -%}
-  <h4>
+  <h3>
 {%- endif %}
   <a href="{{ url }}">
     {{ title }}
@@ -9,7 +9,7 @@
     (<span class="sr-only">Fichier </span><abbr title="{{ type.file.abbr }}">PDF</abbr>)
     {%- endif %}
   </a>
-</h4>
+</h3>
 {% if type and not type.file -%}
   <p class="small">
     {%- if type.news -%}
