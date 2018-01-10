@@ -3,6 +3,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Add a value in the input field of `@search`
+- Change headings level in `@search`
+- Rename page `@search`
+
 ## [0.41.0] - 2017-12-22
 
 ### Changed
