@@ -169,16 +169,18 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-57ae9c32642bd859cb47b60603a71c43-panel-view">
     <code class="Code Code--lang-html">
-        <pre>{%- if heading.level == "h2" -%}
-{%- render '<a href="h2">@h2</a>', heading, true -%}
-{%- elif heading.level == "h3" -%}
-{%- render '<a href="h3">@h3</a>', heading, true -%}
-{%- elif heading.level == "h4" or not heading.level -%}
-{%- render '<a href="h4">@h4</a>', heading, true -%}
-{%- elif heading.level == "h5" -%}
-{%- render '<a href="h5">@h5</a>', heading, true -%}
-{%- elif heading.level == "h6" -%}
-{%- render '<a href="h6">@h6</a>', heading, true -%}
+        <pre>{%- if heading -%}
+  {%- if heading.level == "h2" -%}
+  {%- render '<a href="h2">@h2</a>', heading, true -%}
+  {%- elif heading.level == "h3" -%}
+  {%- render '<a href="h3">@h3</a>', heading, true -%}
+  {%- elif heading.level == "h4" or not heading.level -%}
+  {%- render '<a href="h4">@h4</a>', heading, true -%}
+  {%- elif heading.level == "h5" -%}
+  {%- render '<a href="h5">@h5</a>', heading, true -%}
+  {%- elif heading.level == "h6" -%}
+  {%- render '<a href="h6">@h6</a>', heading, true -%}
+  {%- endif %}
 {%- endif %}
 
 <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group vd-search-form-regular"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"search"</span>&gt;</span>
