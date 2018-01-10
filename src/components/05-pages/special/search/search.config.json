@@ -4,7 +4,8 @@
     "searchForm": {
       "heading": {
         "text": "Rechercher",
-        "level": "h2"
+        "level": "h2",
+        "styleModifier": "sr-only"
       },
       "placeholder": false
     },
