@@ -46,7 +46,10 @@
     {
       "name": "no search",
       "context": {
-        "results": false
+        "results": false,
+        "searchForm": {
+          "heading": false
+        }
       }
     },
     {

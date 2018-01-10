@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a value in the input field of `@search`
 - Change headings level in `@search`
 - Rename page `@search`
+- Remove useless heading in `@search--no-search`
 
 ### Fix
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
