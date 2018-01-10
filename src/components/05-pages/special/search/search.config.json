@@ -34,7 +34,10 @@
   },
   "variants": [
     {
-      "name": "default"
+      "name": "default",
+      "context": {
+        "pageTitle": "Résultats de recherche pour \"vaud\""
+      }
     },
     {
       "name": "no search",
@@ -45,6 +48,7 @@
     {
       "name": "no results",
       "context": {
+        "pageTitle":"Résultats de recherche pour \"tagadatsointsoin\"",
         "results": false,
         "error": true
       }
