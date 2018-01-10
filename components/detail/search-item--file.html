@@ -153,12 +153,12 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-6d8c661417254b6964850eb8d83eba8c-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
     Titre du document
     (<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Fichier <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Portable Document Format"</span>&gt;</span>PDF<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span>)
   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ligula eget elit rutrum, vitae ornare turpis pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum elementum sodales. Phasellus in enim nunc. Phasellus
@@ -175,7 +175,7 @@
         <pre>{% if heading.styleModifier -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ heading.styleModifier }}"</span>&gt;</span>
 {%- else -%}
-  <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
 {%- endif %}
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ url }}"</span>&gt;</span>
     {{ title }}
@@ -183,7 +183,7 @@
     (<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Fichier <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"{{ type.file.abbr }}"</span>&gt;</span>PDF<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span>)
     {%- endif %}
   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 {% if type and not type.file -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small"</span>&gt;</span>
     {%- if type.news -%}
