@@ -54,7 +54,10 @@
       "context": {
         "pageTitle":"Résultats de recherche pour \"tagadatsointsoin\"",
         "results": false,
-        "error": true
+        "error": true,
+        "searchForm": {
+          "value": "tagadatsointsoin"
+        }
       }
     }
   ]
