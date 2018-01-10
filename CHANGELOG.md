@@ -8,6 +8,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Change headings level in `@search`
 - Rename page `@search`
 
+### Fix
+- Fix first chevron wasn't displayed on mobile in `@navigation`
+
 ## [0.41.0] - 2017-12-22
 
 ### Changed
