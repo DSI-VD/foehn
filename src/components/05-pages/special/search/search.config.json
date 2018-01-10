@@ -36,7 +36,10 @@
     {
       "name": "default",
       "context": {
-        "pageTitle": "Résultats de recherche pour \"vaud\""
+        "pageTitle": "Résultats de recherche pour \"vaud\"",
+        "searchForm": {
+          "value": "vaud"
+        }
       }
     },
     {

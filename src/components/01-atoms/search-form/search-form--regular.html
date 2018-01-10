@@ -1,18 +1,27 @@
 {%- if heading.level == "h2" -%}
-  {%- render '@h2', heading, true -%}
+{%- render '@h2', heading, true -%}
 {%- elif heading.level == "h3" -%}
-  {%- render '@h3', heading, true -%}
+{%- render '@h3', heading, true -%}
 {%- elif heading.level == "h4" or not heading.level -%}
-  {%- render '@h4', heading, true -%}
+{%- render '@h4', heading, true -%}
 {%- elif heading.level == "h5" -%}
-  {%- render '@h5', heading, true -%}
+{%- render '@h5', heading, true -%}
 {%- elif heading.level == "h6" -%}
-  {%- render '@h6', heading, true -%}
+{%- render '@h6', heading, true -%}
 {%- endif %}
 
 <form class="input-group vd-search-form-regular" action="#" role="search">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
-  <input id="search-form" type="text" class="form-control" {% if  placeholder %}placeholder="{{ placeholder }}"{% endif %} aria-describedby="search-form-label">
+  <input id="search-form"
+         type="text"
+         class="form-control"
+         {%- if  placeholder %}
+         placeholder="{{ placeholder }}"
+         {% endif -%}
+         {%- if  value %}
+         value="{{ value }}"
+         {% endif -%}
+         aria-describedby="search-form-label">
   <span class="input-group-btn">
     <button class="btn btn-dark" type="submit" aria-label="Rechercher"><i class="fas fa-search" aria-hidden="true"></i></button>
   </span>
