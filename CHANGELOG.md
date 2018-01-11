@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Fix `aria-label` in `@pagination`
 - Add a value in the input field of `@search`
 - Change headings level in `@search`
 - Rename page `@search`
