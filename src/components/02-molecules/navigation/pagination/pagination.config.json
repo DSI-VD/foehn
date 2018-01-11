@@ -1,6 +1,7 @@
 {
   "status": "ready",
   "context": {
+    "title": "Pagination",
     "pages": {
       "previous": {
         "url": "#"
