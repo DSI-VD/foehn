@@ -1,6 +1,7 @@
 # Ignore modules
 node_modules
 bower_components
+*.iml
 
 # Ignore Sass cache
 .sass-cache
