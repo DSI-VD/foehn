@@ -6,11 +6,11 @@
                     {% if available == true %}
                     <a href="{{ url }}">{{ title }}</a>
                         {% if meta.typeAcces != "libre d'accès" %}
-                         <span class="fa fa-unlock-alt" aria-hidden="true"></span>
+                         <span class="fas fa-unlock" aria-hidden="true"></span>
                         {% endif %}
                     {% endif %}
                     {% if available != true %}
-                    {{ title }} <span class="fa fa-lock" aria-hidden="true"></span>
+                    {{ title }} <span class="fas fa-lock" aria-hidden="true"></span>
                     {% endif %}
                 </h3>
                 {%- if meta -%}

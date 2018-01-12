@@ -2,54 +2,68 @@
   "context": {
     "list": [
       {
-        "title": "Site officiel du Canton de Vaud - VD.CH",
+        "title": "Site officiel du Canton de Vaud",
         "url": "#",
         "excerpt": "Informations officielles, présentation de l'institution (pouvoirs législatif, exécutif et judiciaire), informations thématiques et de l'administration cantonale vaudoise."
       },
       {
-        "title": "Offres d'emploi dans l'administration - VD.CH",
+        "title": "Offres d'emploi dans l'administration",
         "url": "#",
         "excerpt": "L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton avec 39'000 collaborateur- trice-s et compte plus de 400 métiers différents. Nous vous donnons ..."
       },
       {
-        "title": "Les impôts dans le canton de Vaud - VD.CH",
+        "title": "Les impôts dans le canton de Vaud",
         "url": "#",
         "excerpt": "Nouveau - Formulaire de dénonciation spontanée. La loi prévoit une dénonciation spontanée non punissable pour le contribuable qui dénonce spontanément ..."
       },
       {
-        "title": "Offres d'emploi ACV - VD.CH",
+        "title": "Recette du papet vaudois",
         "url": "#",
-        "excerpt": "L'Etat de <mark>Vaud</mark> est le plus grand employeur du canton. Nous offrons aux plus de 39'000 collaborateur-trice-s de l'Administration cantonale vaudoise (ACV) une ..."
+        "excerpt": "Alliance du blanc de la pomme de terre et du vert du poireau, le papet, dont les couleurs rappellent celles du drapeau vaudois, est préparé traditionnellement le 24 janvier, à la mémoire de l'indépendance vaudoise de 1798. Malgré tout, son apparition est probablement plus récente.",
+        "type": {
+          "file": {
+            "type": "pdf",
+            "abbr": "Portable Document Format"
+          }
+        }
       },
       {
-        "title": "Service des automobiles et de la navigation - VD.CH",
+        "title": "Service des automobiles et de la navigation",
         "url": "#",
         "excerpt": "Le Service des automobiles et de la navigation oeuvre au service de toute la population du canton de Vaud. Nos activités se concentrent sur vous, clients et ..."
       },
       {
-        "title": "Jours fériés et vacances scolaires 2017 - VD.CH",
+        "title": "Création d’un Diplôme en conduite d’alpage",
         "url": "#",
-        "excerpt": "Loi sur le personnel de l'Etat de <mark>Vaud</mark>. Art. 123. – Sont jours fériés : les dimanches, les 1er et 2 janvier, le Vendredi-Saint, le lundi de Pâques, l' Ascension, ..."
+        "excerpt": " Au printemps 2018, Agrilogie proposera une nouvelle formation en conduite d’alpage, d’une durée de trois mois. Entretien de l’alpage, gestion des herbages, soins au bétail, fabrication de fromages de vaches et de chèvres, commercialisation, marketing et accueil touristique sont les principaux contenus de cette formation qui se déroulera entièrement au Pays-d’Enhaut.",
+        "type": {
+          "news": {
+            "date": "19 décembre 2017"
+          }
+        }
       },
       {
-        "title": "Communiqués de l'Etat de Vaud - VD.CH",
+        "title": "Communiqués de l'Etat de Vaud",
         "url": "#",
         "excerpt": "Communiqués de l'Etat de <mark>Vaud</mark>. Cette page permet de retrouver tous les communiqués publiés depuis 2004 par le Conseil d'Etat, les départements de ..."
       },
       {
-        "title": "Postes vacants dans l'enseignement obligatoire - VD.CH",
+        "title": "Postes vacants dans l'enseignement obligatoire",
         "url": "#",
         "excerpt": "Enseignant-e spécialisé-e et aide à l'intégration. Lieu de travail : 1530 Payerne; Enseignant de discipline académique (ALL) Lieu de travail : 1040 Echallens ..."
       },
       {
-        "title": "Service des affaires culturelles - VD.CH",
+        "title": "Service des affaires culturelles",
         "url": "#",
         "excerpt": "Bienvenue sur la page d'accueil du Service des affaires culturelles de l'Etat de <mark>Vaud</mark>. Le menu de navigation en colonne de gauche vous permet d'accéder aux  ..."
       },
       {
-        "title": "Autorités - VD.CH",
+        "title": "S'inscrire à l'examen du permis de conduire",
         "url": "#",
-        "excerpt": "6 juil. 2017 ... Logo du Canton de <mark>Vaud</mark>. Thèmes · Autorités · Annuaire. Chercher : ... Nouvel organigramme de l'Etat de Vaud: législature 2017-2022 ..."
+        "excerpt": "Description de la prestation",
+        "type": {
+          "prestation": true
+        }
       }
     ]
   }

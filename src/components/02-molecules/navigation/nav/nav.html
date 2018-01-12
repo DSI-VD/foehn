@@ -1,9 +1,9 @@
 <nav class="d-print-none">
   <h2 class="sr-only">Sous-navigation</h2>
-  <ul class="nav justify-content-end{% if styleModifier %} {{ styleModifier }}{% endif %}">
+  <ul class="list-inline text-right{% if styleModifier %} {{ styleModifier }}{% endif %}">
     {% for item in items %}
-    <li class="nav-item">
-      {% if item.icon %}<span class="nav-link"><span class="fa {{ item.icon }}" aria-hidden="true"></span> {% endif %}<a href="{{ item.url }}"{% if not item.icon %} class="nav-link{%if item.active%} active{% endif %}"{% endif %}>{% if item.active %}<span class="sr-only">page active: </span>{% endif %}{{ item.name }}</a>{% if item.icon %}</span>{% endif %}
+    <li class="list-inline-item">
+      {% if item.icon %}<span class="fa {{ item.icon }}" aria-hidden="true"></span> {% endif %}<a href="{{ item.url }}"{% if not item.icon %} class="{%if item.active%} active{% endif %}"{% endif %}>{% if item.active %}<span class="sr-only">page active: </span>{% endif %}{{ item.name }}</a>{% if item.icon %}{% endif %}
     </li>
     {% endfor %}
   </ul>
