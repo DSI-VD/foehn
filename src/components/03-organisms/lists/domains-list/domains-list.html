@@ -2,8 +2,8 @@
   <div>
     <div class="row mt-5">
 
-      <div class="col-md-4">
-        <h2 id="{{ domain.name | lower | urlencode }}">{{ domain.name | capitalize }}</h2>
+      <div class="col-lg-4 mb-3">
+        <h1 id="{{ domain.name | lower | urlencode }}">{{ domain.name | capitalize }}</h1>
         <h3 id="acces-direct-{{ domain.name | lower | urlencode }}" class="sr-only">Les plus visités</h3>
         <nav class="p-1" aria-labelledby="acces-direct-{{ domain.name | lower }}">
           <ul class="vd-menu-list-links">
@@ -12,19 +12,19 @@
             <li class="nav-item"><a href="#" class="nav-link">Lorem ipsum dolor.</a></li>
           </ul>
         </nav>
-      </div><!-- /.col-md-4 -->
+      </div><!-- /.col-lg-4 -->
 
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <ul class="list-unstyled row" aria-labelledby="{{ domain.name | lower | urlencode }}">
           {% for theme in domain.themes %}
           {% render '@domain-item', {styleModifier:'mb-4 col-md-6', name:theme.name}, true %}
           {% endfor %}
-        </ul><!-- /.col-md-8 -->
+        </ul><!-- /.col-lg-8 -->
       </div><!-- /.row -->
 
     </div><!-- /.row -->
     <p>
-      <a href="#" class="btn btn-dark vd-btn-chevron-t">Tous les thèmes <span class="fa fa-chevron-up"></span></a>
+      <a href="#" class="btn btn-dark">Haut <span class="fas fa-chevron-up"></span></a>
     </p>
     {% if loop.last %}
     {% else %}

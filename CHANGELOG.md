@@ -4,22 +4,143 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Add `.d-print-none` and `h1.d-print-block` to `@logo-etat`.
-- Add `.d-print-none` to `@nav-primary`, `@nav`.
-- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to display `h1`replacing logo at 100% width (print)
-- Add `.vd-print-none` to search form row in `@template-communiques-presse-list` 
-- Add `.vd-print-full-width` to CP list results of `@template-communiques-presse-list`
-- Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
+- Fix `aria-label` in `@pagination`
+- Add a value in the input field of `@search`
+- Change headings level in `@search`
+- Rename page `@search`
+- Remove useless heading in `@search--no-search`
+
+### Fix
+- Fix first chevrn wasn't displayed on mobile in `@navigation`
+
+## [0.41.0] - 2017-12-22
+
+### Changed
+- Change how `@search` page is displayed
+- Upgrade Fontawesome to v5.
+  - Add a documentation how to upgrade
+  - Update `@list-boxed` HTML
+  - Update `@search-form--regular-option` HTML
+  - Update `@search-form--regular` HTML
+  - Update `@search-form` HTML
+  - Update `@dropdown`
+  - Update `@nav-mobile`
+  - Update `@nav-primary`
+  - Update `@pagination`
+  - Update `@social-icons`
+  - Update `@button-back-to-top`
+  - Update `@header--securise`
+  - Update `@filter-list-result-table`
+  - Update `example-list`
+  - Update `@template-communiques-press-detail`
+  - Update `@template-communiques-press-list`
+  - Update `@prestation`
+  - Update `@documents`
+  - Remove `vendor.css` stylesheet in header in all components (see `@preview`)
+  - Add link to fontawesome JavaScript in footer in all components (see `@preview`)
+- Remove `.vd-btn-chevron-*` class in `@faq-item`, `@button-back-to-top`,
+  `@domain-list`
+- Add text in the link logo in `@footer`
+- Add `role="search"` attribute for the form in
+  `@template-communiques-presse-list--default` and `@template-communiques-presse-list--results`
+- Add `role="search"` attribute in `@search-form--regular` and
+  `@search-form--regular-option`
+
+### Added
+- Add `@search--no-results` and `@search--no-search` components
+- Add documentation about search pages.
+
+## [0.40.0] - 2017-12-12
+
+### Changed
+- Add `@search-form--regular` to `@news-list--default` and `@theme--default` 
+- Reorder HTML element in `@teaser-small--alt.html` for better a11y
+- Change HTML structure in `@template-communiques-presse-list`
+- Add class `.vd-text-md-small` to aside of `@template-communiques-presse-detail` and `@template-communiques-presse-list--default`
+- Add `.mb-5` to homepage heading
+- Remove button "departements" from home `@button-tiles`
+- Remove margin from `.vd-list-boxed` and add it to containing element (`vd-pattern-green`) in `@theme`
+- Change top nav with `.list-inline` for margin-right
+- Change layout of `@theme` for `@template--2-col`.
+- Change news title wording in `@news-list
+- Add class `.mt-0` to `@template--news-detail` 
+- Add link to homepage to `@footer`
+- Hide footer titles, but keep them for accessibility (sr-only)
+- Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
+- Change heading from h3 to h4 in `@search-form--regular` and `@search-form--regular-options`
+- Change text in "back to top" button in `@domains-list`
+- Added breadcrumb for header in `domaines.config.json`
+- Added `@page-title-banner` in `@template--domaines`
+- Changed column widths in `@domains-list` from `.col-md-*` to `.col-lg-*`
+- Add margin on the first column in `@domains-list`
+- Rebuild `@pagitation` and `@pagination--pages`
+- Add a link for more infos and results heading in `@filter-list-result-table`
+- Add a link for more infos in `@filter-list-result-list`
+- Add number text to show number of results in `@filter-list-result-list`
+- Use two columns to display `@filter-list-form`
+- Change button text in `@nav-primary`
+- Rebuild `@agenda` and update it in `@accueil`
+- Add `padding-bottom: $input-btn-padding-y-sm * 2;` to `.btn-sm` in `_button.scss` for better padding of `@nav-primary`
+- Fix `id` of the fourth `@input--number` in `@avs13`
+- Visually hide `@input--number`s help texts in `@avs13`
+- Change content of `fieldset`s help text in `@avs13`
+- Fix column width in `@example-list`
+
+### Added
+- Add documentation about link accessibility
+- Add new heading style `.vd-heading-light-alt`.
+
+### Fix
+- Fix focus style overlapping headings chars
+- Use background image in class `.vd-bg-pattern-gray`
+
+### Removed
+- Remove `@search-banner--half-width`
+
+## [0.39.0] - 2017-11-03
+
+### Changed
+- Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
+  `@theme--list` and `@theme--geo`
+- Transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
+- Better `@button-tiles` css factoring
+- Add class `vd-btn-tiles__item` to `@button-tiles`
+
+## [0.38.0] - 2017-10-24
+
+### Changed
+- Upgrade from Bootstrap Beta to Bootstrap Beta 2
+- Add `.d-flex flex-column` to `@template-communiques-presse-detail--default` header
+- Add div `.order-1` around all elements of `@template-communiques-presse-detail--default` header except title
+- Add `order-2` tp `h1`
+
+## [0.37.0] - 2017-10-20
+
+### Changed
+- Better meta information in `@teaser` if there no authors
+
+### Fix
+- Add `line-height:normal` to `.list-unstyled li a>.h3` to fix Firefox focus bug AND `.d-inline-block` to all links of `@departements`
+- Add style to links with rel="category" to add "#"
+- Fix `@teaser-card--default` background color
+- Fix `@teaser-card--green` background color
+- Fix `@teaser-card--dark-grey` background color
+- Fix `@teaser-card--black` background color
+
+## [0.36.0] - 2017-10-19
+
+### Changed
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ### Added
-- Add `_print.scss` for print styles, with `.vd-print-full-width` to override column sizes to 100% for print
 - Add version number in CSS file
-- Add `@ @filter-list--default` component
-- Add `@ @filter-list--table` component
+- Add `@filter-list--default` component
+- Add `@filter-list--table` component
 
 ### Fix
 - Fix margin-bottom of the last element in `@highlight`
+- Fix `.vd-bg-pattern-gray` for IE and Firefox
+- Fix `@search-banner--default` button height
 
 ## [0.35.0] - 2017-09-27
 
@@ -1388,7 +1509,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.35.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.41.0...HEAD
+[0.41.0]: https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0
+[0.40.0]: https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0
+[0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
+[0.38.0]: https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0
+[0.37.0]: https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0
+[0.36.0]: https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0
 [0.35.0]: https://github.com/DSI-VD/foehn/compare/v0.34.0...v0.35.0
 [0.34.0]: https://github.com/DSI-VD/foehn/compare/v0.33.0...v0.34.0
 [0.33.0]: https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0
