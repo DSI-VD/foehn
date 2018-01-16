@@ -22,7 +22,7 @@
                id="nav-primary">
             <h2 class="sr-only">Navigation par thèmes</h2>
             <ul class="list-unstyled mb-0 row">
-              {% for domain in domains.domains %}
+              {% for domain in domains %}
                 {% render '@domain-item', {name:domain.name, styleModifier:'py-3 mb-0 col-md-6 col-lg-4', description:domain.description}, true %}
               {% endfor %}
             </ul>
