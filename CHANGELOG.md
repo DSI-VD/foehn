@@ -5,7 +5,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Rename menu button in `@nav-primary`
-- Fix `aria-label` in `@pagination`
 - Add a visibly-hidden header in `@pagination` for accessibility
 - Add a value in the input field of `@search`
 - Change headings level in `@search`
