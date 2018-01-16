@@ -6,13 +6,5 @@
         "wrapperClass": "col-md-4"
       },
       "domains": "@domains-list"
-    },
-    "variants": [
-      {
-        "name": "open",
-        "context": {
-          "navOpen": true
-        }
-      }
-    ]
+    }
 }
