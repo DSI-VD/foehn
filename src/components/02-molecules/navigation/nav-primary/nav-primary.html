@@ -28,17 +28,17 @@
       <div class="vd-nav-primary__menu-content">
         <div class="container">
           <div class="row">
-            <nav class="col-md-8"
+            <nav class="col-md-8 order-md-1"
                  id="nav-primary">
               <h2 class="sr-only">Navigation par thèmes</h2>
               <ul class="list-unstyled mb-0 row">
                 {% for domain in domains.domains %}
-                  {% render '@domain-item', {name:domain.name, styleModifier:'py-3 mb-0 col-md-6 col-lg-4', description:domain.description}, true %}
+                  {% render '@domain-item--small', {name:domain.name, styleModifier:'py-3 mb-0 col-sm-6 col-lg-4', description:domain.description}, true %}
                 {% endfor %}
               </ul>
             </nav>
-            <div class="col-md-4">
-              <h2 class="vd-heading-light-alt h4 mt-5 mb-3">Les plus visités</h2>
+            <div class="col-md-4 order-first order-md-2">
+              <h2 class="vd-heading-light-alt h4 my-3">Les plus visités</h2>
               <ul class="vd-menu-list-links">
                 <li><a href="#0">Inscription au chômage</a></li>
                 <li><a href="#0">Formulaire d'indemnisation</a></li>
