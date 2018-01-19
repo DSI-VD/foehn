@@ -189,7 +189,9 @@
     {%- if type.news -%}
       Actualité du {{ type.news.date }}
     {%- elif type.prestation -%}
-      Préstation
+    Préstation
+    {%- elif type.communique -%}
+      Communiqué de presse du {{ type.communique.date }}
     {%- endif -%}
   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 {%- endif %}
