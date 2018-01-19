@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add a type of `communique` in `@search-item`
 - Rename menu button in `@nav-primary`
 - Fix `aria-label` in `@pagination`
 - Add a visibly-hidden header in `@pagination` for accessibility
