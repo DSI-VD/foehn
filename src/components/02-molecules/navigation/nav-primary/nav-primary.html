@@ -3,7 +3,7 @@
   <!-- button -->
   <div class="container">
     <button type="button"
-          class="btn btn-sm btn-link vd-nav-primary__button {% if navOpen %}{% else %}collapsed{% endif %}"
+          class="btn btn-sm btn-link vd-nav-primary__button {% if navOpen %}js-closeMenuOnMobile__button {% else %}collapsed{% endif %}"
           data-toggle="collapse"
           data-target="#nav-primary-container"
           aria-controls="nav-primary-container"
@@ -23,7 +23,7 @@
 
   <!-- menu -->
   <div class="vd-nav-primary__menu-container">
-    <div class="collapse {% if navOpen %}show {% endif %}clearfix"
+    <div class="collapse {% if navOpen %}show js-closeMenuOnMobile__container {% endif %}clearfix"
          id="nav-primary-container">
       <div class="vd-nav-primary__menu-content">
         <div class="container">

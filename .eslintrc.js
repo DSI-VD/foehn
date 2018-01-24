@@ -22,6 +22,8 @@ module.exports = {
         "new-cap": ["error", { "properties": false }],
     },
     "env": {
-        "node": true
+        "node": true,
+        "jquery": true,
+        "browser": true
     }
 };
