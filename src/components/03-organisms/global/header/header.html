@@ -1,8 +1,14 @@
 <header class="header">
   {% include '@access-nav' %}
   <div class="container">
-    {% render '@nav', nav, true %}
-
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end">
+      <div>
+        {% render '@nav', nav, true %}
+      </div>
+      <div class="ml-3">
+        login
+      </div>
+    </div>
     {% if searchForm %}
     <div class="row">
       <div class="col-md-5">
