@@ -4,7 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Rename menu button in `@nav-primary`
+- Change `@nav-primary`
+  - Add a javascript on `@nav-primary` to close the navigation when loaded on a 
+mobile device. Add `js-closeMenuOnMobile__*` classes to enable this feature.
+Take a loot at `@nav-primary--open` for documentation.
+  - Add `foehn-scripts--footer.js` in the footer of all pages.
+  - Rename menu button in `@nav-primary`
 - Fix `aria-label` in `@pagination`
 - Add a visibly-hidden header in `@pagination` for accessibility
 - Add a value in the input field of `@search`
