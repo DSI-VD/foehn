@@ -1,0 +1,14 @@
+<h2 class="sr-only">Informations de connexion</h2>
+<p class="mb-0">
+  <span class="fas fa-lock"></span>
+  {% if user %}
+  <a href="#">{{ user }}</a>
+  {% else %}
+  <a href="#">Se connecter</a>
+  {% endif %}
+</p>
+{% if user %}
+<p class="mb-0">
+  <a href="#">Se déconnecter</a>
+</p>
+{% endif %}
