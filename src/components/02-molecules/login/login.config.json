@@ -1,5 +1,10 @@
 {
-  "context": {
-    "user": "Jean Villard Gilles"
-  }
+  "variants": [
+    {
+      "name": "logged",
+      "context": {
+        "user": "Jean Villard Gilles"
+      }
+    }
+  ]
 }
