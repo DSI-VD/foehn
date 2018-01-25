@@ -12,10 +12,25 @@
   padding-top: $spacer;
 }
 
-.vd-nav-primary__menu-content {
-  padding-bottom: $spacer;
-  .container {
+/**
+ * Set the background to white to remove the border with dotted background
+ */
+.vd-nav-primary__menu-bg-md {
+  @include media-breakpoint-up(sm) {
     background: $white;
+  }
+}
+
+/**
+ * Add a dotted border background on mobile
+ */
+.vd-nav-primary__menu-bg-sm {
+  @include media-breakpoint-down(sm) {
+    background: $white;
+    padding-left: $spacer/2;
+    padding-right: $spacer/2;
+    margin-left: -$spacer/2;
+    margin-right: -$spacer/2;
   }
 }
 

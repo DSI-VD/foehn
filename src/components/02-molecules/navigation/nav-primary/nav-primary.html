@@ -25,26 +25,28 @@
   <div class="vd-nav-primary__menu-container">
     <div class="collapse {% if navOpen %}show js-closeMenuOnMobile__container {% endif %}clearfix"
          id="nav-primary-container">
-      <div class="vd-nav-primary__menu-content">
-        <div class="container">
-          <div class="row">
-            <nav class="col-md-8 order-md-1 mt-3" id="nav-primary">
-              <h2 class="sr-only">Navigation par thèmes</h2>
-              <ul class="list-unstyled mb-0 row">
-                {% for domain in domains.domains %}
-                  {% render '@domain-item--small', {name:domain.name,
-                  styleModifier:'mb-3 col-sm-6 col-lg-4', description:domain.description}, true %}
-                {% endfor %}
-              </ul>
-            </nav>
-            <div class="col-md-4 order-first order-md-2 mt-3">
-              <h2 class="vd-heading-light-alt h4">Les plus visités</h2>
-              <ul class="vd-menu-list-links">
-                <li><a href="#0">Inscription au chômage</a></li>
-                <li><a href="#0">Formulaire d'indemnisation</a></li>
-                <li><a href="#0">Vaud Tax 2017</a></li>
-                <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-              </ul>
+      <div class="pb-3">
+        <div class="container vd-nav-primary__menu-bg-md">
+          <div class="vd-nav-primary__menu-bg-sm">
+            <div class="row">
+              <nav class="col-md-8 order-md-1 mt-3" id="nav-primary">
+                <h2 class="sr-only">Navigation par thèmes</h2>
+                <ul class="list-unstyled mb-0 row">
+                  {% for domain in domains.domains %}
+                    {% render '@domain-item--small', {name:domain.name,
+                    styleModifier:'mb-3 col-sm-6 col-lg-4', description:domain.description}, true %}
+                  {% endfor %}
+                </ul>
+              </nav>
+              <div class="col-md-4 order-first order-md-2 mt-3">
+                <h2 class="vd-heading-light-alt h4">Les plus visités</h2>
+                <ul class="vd-menu-list-links">
+                  <li><a href="#0">Inscription au chômage</a></li>
+                  <li><a href="#0">Formulaire d'indemnisation</a></li>
+                  <li><a href="#0">Vaud Tax 2017</a></li>
+                  <li><a href="#0">Vacances scolaires et jours fériés</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
