@@ -6,9 +6,7 @@
       <div>
         {% render '@nav', nav, true %}
       </div>
-      <div class="ml-3">
-        {% render '@login' %}
-      </div>
+      {% render '@login', { styleModifier: 'ml-3'}, true %}
     </div>
     {% if searchForm %}
     <div class="row">
