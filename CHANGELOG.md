@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- '@header', `@header--homepage`and `@header-securise` use `@login` new
+  component
 - Use flexbox to display `@nav` in `@header` and `@header--homepage`
 - Change `@nav-primary`
   - Add a javascript on `@nav-primary` to close the navigation when loaded on a 

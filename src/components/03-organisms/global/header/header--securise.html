@@ -8,23 +8,7 @@
         {% include '@logo-etat' %}
       </div>
 
-      <section class="mt-3">
-        <h2 class="sr-only">Votre identité</h2>
-        <div class="d-flex flex-column">
-          <dl class="mb-0">
-            <dt class="sr-only">Nom et prénom</dt>
-            <dd class="mb-0"><span class="fas fa-lock" aria-hidden="true"></span> <a href="#" title="Gérer mon compte">{{ identity }}</a></dd>
-
-            <dt class="sr-only">Nom du bénéficiaire</dt>
-            <dd class="mb-0">{{ beneficiary }}</dd>
-          </dl>
-          <div>
-            <p>
-              <a href="#">Se déconnecter</a>
-            </p>
-          </div>
-        </div><!-- /.d-flex -->
-      </section>
+      {% render '@login', { styleModifier: 'mt-3 small'}, true %}
 
     </div><!-- /.row -->
   </div>
