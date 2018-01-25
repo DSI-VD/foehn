@@ -1,12 +1,13 @@
 <header class="header">
   {% include '@access-nav' %}
   <div class="container">
-    <div class="d-flex flex-wrap justify-content-between justify-content-md-end">
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end
+      small">
       <div>
         {% render '@nav', nav, true %}
       </div>
       <div class="ml-3">
-        login
+        {% render '@login' %}
       </div>
     </div>
     {% if searchForm %}
