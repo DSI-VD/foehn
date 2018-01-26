@@ -16,6 +16,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
 
+### Fix
+- Fix first chevron wasn't displayed on mobile in `@navigation`
+
 ## [0.41.0] - 2017-12-22
 
 ### Changed
