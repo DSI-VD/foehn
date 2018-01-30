@@ -29,6 +29,7 @@ Take a loot at `@nav-primary--open` for documentation.
 - Add `@login` component
 
 ### Fix
+- Fix poistion of the blason in `@logo-etat`
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
 - Refactor `@logo-etat` and `@nav-primary` spacings
 
