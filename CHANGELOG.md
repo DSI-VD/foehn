@@ -12,7 +12,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `.vd-print-full-width` to CP list results of `@template-communiques-presse-list`
 - Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
 - Add exception for print in `_breadcrumb.scss` to show all breadcrumb
+- Add a type of `communique` in `@search-item`
+- Rename menu button in `@nav-primary`
 - Fix `aria-label` in `@pagination`
+- Add a visibly-hidden header in `@pagination` for accessibility
 - Add a value in the input field of `@search`
 - Change headings level in `@search`
 - Rename page `@search`
