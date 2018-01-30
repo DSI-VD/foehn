@@ -4,8 +4,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Align `@login` text on the right in `@header`, `@header--homepage` and
-  `@header--securise`
 - On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
 - Remove button "Tous les thèmes" and section "Les plus visités" that were only
   visible on mobile in `@accueil`
