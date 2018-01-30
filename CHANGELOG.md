@@ -7,8 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
 - Remove button "Tous les thèmes" and section "Les plus visités" that were only
   visible on mobile in `@accueil`
-- '@header', `@header--homepage`and `@header-securise` use `@login` new
-  component
+-  Change the structure of '@header', `@header--homepage` and `@header-securise`
+  - Use the new `@login` component
+  - Change spacing of `@search-form--default`
 - Use flexbox to display `@nav` in `@header` and `@header--homepage`
 - Change `@nav-primary`
   - Add a javascript on `@nav-primary` to close the navigation when loaded on a 
@@ -23,6 +24,9 @@ Take a loot at `@nav-primary--open` for documentation.
 - Change headings level in `@search`
 - Rename page `@search`
 - Remove useless heading in `@search--no-search`
+
+### Added
+- Add `@login` component
 
 ### Fix
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
