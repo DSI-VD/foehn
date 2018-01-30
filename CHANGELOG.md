@@ -4,7 +4,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Add `.d-print-none` and `h1.d-print-block` to `@logo-etat`.
 - Add `.d-print-none` to `@nav-primary`, `@nav`.
 - Add `.d-print-none` to search form from `@theme--default`.
 - Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to display `h1`replacing logo at 100% width (print)
