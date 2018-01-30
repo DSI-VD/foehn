@@ -4,6 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Add `.d-print-none` and `h1.d-print-block` to `@logo-etat`.
+- Add `.d-print-none` to `@nav-primary`, `@nav`.
+- Add `.d-print-none` to search form from `@theme--default`.
+- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to display `h1`replacing logo at 100% width (print)
+- Add `.vd-print-none` to search form row in `@template-communiques-presse-list` 
+- Add `.vd-print-full-width` to CP list results of `@template-communiques-presse-list`
+- Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
+- Add exception for print in `_breadcrumb.scss` to show all breadcrumb
 - Add a type of `communique` in `@search-item`
 - Rename menu button in `@nav-primary`
 - Fix `aria-label` in `@pagination`
