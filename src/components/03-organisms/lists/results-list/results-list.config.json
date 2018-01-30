@@ -45,7 +45,12 @@
       {
         "title": "Communiqués de l'Etat de Vaud",
         "url": "#",
-        "excerpt": "Communiqués de l'Etat de <mark>Vaud</mark>. Cette page permet de retrouver tous les communiqués publiés depuis 2004 par le Conseil d'Etat, les départements de ..."
+        "excerpt": "Communiqués de l'Etat de <mark>Vaud</mark>. Cette page permet de retrouver tous les communiqués publiés depuis 2004 par le Conseil d'Etat, les départements de ...",
+        "type": {
+          "communique": {
+            "date": "16 décembre 2017"
+          }
+        }
       },
       {
         "title": "Postes vacants dans l'enseignement obligatoire",
