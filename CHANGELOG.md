@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+
 - On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
 - Remove button "Tous les thèmes" and section "Les plus visités" that were only
   visible on mobile in `@accueil`
@@ -18,6 +19,14 @@ Take a loot at `@nav-primary--open` for documentation.
   - Add `foehn-scripts--footer.js` in the footer of all pages.
   - Rename menu button in `@nav-primary`
   - Remove `@nav-mobile`
+- Add `.d-print-none` to `@nav-primary`, `@nav`.
+- Add `.d-print-none` to search form from `@theme--default`.
+- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to display `h1`replacing logo at 100% width (print)
+- Add `.vd-print-none` to search form row in `@template-communiques-presse-list` 
+- Add `.vd-print-full-width` to CP list results of `@template-communiques-presse-list`
+- Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
+- Add exception for print in `_breadcrumb.scss` to show all breadcrumb
+- Add a type of `communique` in `@search-item`
 - Fix `aria-label` in `@pagination`
 - Add a visibly-hidden header in `@pagination` for accessibility
 - Add a value in the input field of `@search`
