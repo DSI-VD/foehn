@@ -25,6 +25,7 @@ Take a loot at `@nav-primary--open` for documentation.
 
 ### Fix
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
+- Refactor `@logo-etat` and `@nav-primary` spacings
 
 ## [0.41.0] - 2017-12-22
 
