@@ -2,13 +2,13 @@
   {% include '@access-nav' %}
   <div class="container">
 
-    <div class="d-flex flex-column flex-sm-row">
+    <div class="d-flex flex-column flex-sm-row-reverse">
 
-      <div class="mr-auto">
+      {% render '@login', { styleModifier: 'text-right'}, true %}
+
+      <div class="mr-sm-auto">
         {% include '@logo-etat' %}
       </div>
-
-      {% render '@login', { styleModifier: 'mt-3'}, true %}
 
     </div><!-- /.row -->
   </div>
