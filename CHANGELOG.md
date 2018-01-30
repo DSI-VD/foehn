@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove button "Tous les thèmes" and section "Les plus visités" that were only
+  visible on mobile in `@accueil`
 - '@header', `@header--homepage`and `@header-securise` use `@login` new
   component
 - Use flexbox to display `@nav` in `@header` and `@header--homepage`
