@@ -14,9 +14,9 @@
   margin-bottom: $spacer;
 
   &__blason {
+    position: absolute;
     width: 1.8em;
     margin-left: -3 * $spacer; /* [1] */
-    position: absolute;
 
     img {
       width: 100%; /* [2] */
