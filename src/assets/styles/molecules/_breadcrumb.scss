@@ -16,6 +16,10 @@
 
   @include media-breakpoint-down(xs) {
     li:not(:nth-last-child(-n+2)) { display: none; }
+
+    @media print {
+      li:not(:nth-last-child(-n+2)) { display: inline; }
+    }
   }
 
   a {

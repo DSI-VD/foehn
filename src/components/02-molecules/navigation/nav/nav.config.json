@@ -10,11 +10,6 @@
         {
           "name": "Annuaire",
           "url": "#"
-        },
-        {
-          "name": "Mon compte",
-          "url": "formulaire-prestation",
-          "icon": "fa-lock"
         }
       ]
     }
