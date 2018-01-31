@@ -57,12 +57,11 @@
 </nav>
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end">
+      <div>
         <nav class="d-print-none">
   <h2 class="sr-only">Sous-navigation</h2>
-  <ul class="list-inline text-right">
+  <ul class="list-inline text-right small">
     
     <li class="list-inline-item">
       <a href="#" class="">Autorités</a>
@@ -72,83 +71,20 @@
       <a href="#" class="">Annuaire</a>
     </li>
     
-    <li class="list-inline-item">
-      <span class="fa fa-lock" aria-hidden="true"></span> <a href="formulaire-prestation">Mon compte</a>
-    </li>
-    
   </ul>
 </nav>
 
-        <div class="vd-nav-mobile dropdown">
-  <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button" id="nav-mobile-button">menu</button>
-
-  <nav class="dropdown-menu" aria-labelledby="nav-mobile-button">
-    <h2 class="sr-only">Navigation mobile</h2>
-    <div class="dropdown-item pt-4 text-center">
-      <a class="btn btn-dark" href="../domaines">Tous les thèmes</a>
-    </div>
-    <div class="dropdown-item px-0 pb-0">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#0">Autorités</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#0">Annuaire</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#0">Agenda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#0">Contact</a>
-        </li>
-        <li class="nav-item vd-nav-item-secure">
-          <a class="nav-link btn btn-dark" href="../connexion"><span class="fas fa-lock fa-lg" aria-hidden="true"></span> Accéder à l'espace sécurisé</a>
-        </li>
-      </ul>
-    </div>
-    <div class="dropdown-item px-0 pb-0">
-      <h2 class="vd-heading-light h6 text-center mt-3 mb-0">Découvrir</h2>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#0">International</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#0">Tourisme</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#0">Musées</a>
-        </li>
-      </ul>
-    </div>
-    <div class="dropdown-item bg-dark">
-      <h2 class="vd-heading-light h4 mb-3 text-white text-center h6">Suivre vd.ch sur les réseaux sociaux</h2>
-<ul class="list-inline vd-social-icons text-center mb-3">
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fas fa-envelope" aria-hidden="true"></span><span class="sr-only">Envoyer par courriel</span></a>
-  </li>
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fab fa-twitter" aria-hidden="true"></span><span class="sr-only">Partager sur Twitter</span></a>
-  </li>
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fab fa-facebook-f" aria-hidden="true"></span><span class="sr-only">Partager sur Facebook</span></a>
-  </li>
-  <li class="list-inline-item">
-    <a class="vd-social-icon" href="#"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="sr-only">Partager sur Linkedin</span></a>
-  </li>
-  <li class="list-inline-item d-lg-none">
-    <a class="vd-social-icon" href="#"><span class="fab fa-whatsapp" aria-hidden="true"></span><span class="sr-only">Partager sur WhatsApp</span></a>
-  </li>
-  <li class="list-inline-item d-none d-lg-inline-block">
-    <a class="vd-social-icon" href="#"><span class="fas fa-print" aria-hidden="true"></span><span class="sr-only">Imprimer la page</span></a>
-  </li>
-</ul>
-
-    </div>
-  </nav>
-</div>
-
-
       </div>
+      <section class="small ml-3 text-right">
+  <h2 class="sr-only">Votre identité</h2>
+  <p class="mb-0">
+    <span class="fas fa-lock"></span>
+    
+    <a href="#">Se connecter</a>
+    
+  </p>
+  
+</section>
 
     </div>
     
@@ -162,7 +98,7 @@
 
       </div>
       <div class="col-md-5 ml-auto">
-        <form class="input-group vd-search-form my-4" action="#" role="search">
+        <form class="input-group vd-search-form mt-2 mb-4" action="#" role="search">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form" type="text" class="form-control" placeholder="Rechercher"  aria-describedby="search-form-label">
   <span class="input-group-btn">
@@ -176,133 +112,146 @@
   </div>
 
   <div class="vd-nav-primary d-print-none">
-  <div class="vd-nav-primary-toggle">
-    <div class="container">
-      <button type="button"
-            class="d-none d-md-inline-block btn btn-sm btn-dark vd-nav-primary__button collapsed"
-            data-toggle="collapse"
-            data-target="#nav-primary-container"
-            aria-controls="nav-primary-container"
-            aria-expanded="false">
-        Accès aux thèmes
-        <span class="fas fa-chevron-down fa-fw fa-lg"></span>
-        <span class="fas fa-times fa-fw fa-lg"></span>
-      </button>
-    </div>
+
+  <!-- button -->
+  <div class="container">
+    <button type="button"
+          class="btn btn-sm btn-link vd-nav-primary__button collapsed"
+          data-toggle="collapse"
+          data-target="#nav-primary-container"
+          aria-controls="nav-primary-container"
+        aria-expanded="false">
+      <div class="d-flex justify-content-between">
+        <div>
+          <span class="vd-nav-primary__button--close">Cacher les thèmes</span>
+          <span class="vd-nav-primary__button--open">Afficher les thèmes</span>
+        </div>
+        <div>
+          <span class="vd-nav-primary__button--open fas fa-plus"></span>
+          <span class="vd-nav-primary__button--close fas fa-minus"></span>
+        </div>
+      </div>
+    </button>
   </div>
-  <div class="collapse clearfix"
-       id="nav-primary-container">
-    <div class="vd-nav-primary-content d-none d-md-block">
-      <div class="container">
-        <div class="row">
-          <nav class="col-md-8"
-               id="nav-primary">
-            <h2 class="sr-only">Navigation par thèmes</h2>
-            <ul class="list-unstyled mb-0 row">
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+
+  <!-- menu -->
+  <div class="vd-nav-primary__menu-container">
+    <div class="collapse clearfix"
+         id="nav-primary-container">
+      <div class="pb-3">
+        <div class="container vd-nav-primary__menu-bg-md">
+          <div class="vd-nav-primary__menu-bg-sm">
+            <div class="row">
+              <nav class="col-md-8 order-md-1 mt-3" id="nav-primary">
+                <h2 class="sr-only">Navigation par thèmes</h2>
+                <ul class="list-unstyled mb-0 row">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#culture" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Culture</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Aides et soutiens, Musées cantonaux…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Culture</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#economie" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Economie</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Poursuites et faillites, Registre du commerce…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Economie</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#environnement" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Environnement</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Faune et nature, Energie…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Environnement</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#etat%2C%20droit%2C%20finance" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Etat, Droit, Finance</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Impôts, rémunérations, fiscalité…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Etat, Droit, Finance</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#formation" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Formation</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Jours fériés et vacances scolaires…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Formation</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#mobilit%C3%A9" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Mobilité</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Automobile, Navigation…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Mobilité</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Automobiles, Routes, navigation, transports publics, mobilités durables, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#sant%C3%A9" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Santé</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Prévention, Professionnels…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Santé</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#social" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Social</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Aide aux victimes et auteur-e-s de violences…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Social</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#vie%20priv%C3%A9e" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Vie privée</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Documents d'identité…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Vie privée</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#s%C3%A9curit%C3%A9" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Sécurité</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Police, contrôle, casiers judiciaire…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Sécurité</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Police, pénitentiaire, armée, catastrophe, protection de la population, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-                <li class="vd-domain-item py-3 mb-0 col-md-6 col-lg-4">
+                  
+                    <li class="vd-domain-item mb-3 col-sm-6 col-lg-4">
   <a href="domaines#territoire" class="vd-link-invisible d-inline-block pt-1">
-    <span class="vd-domain-item-title h2 mt-0 d-block">Territoire</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Informations sur le territoire, Registre foncier…<span class="sr-only">)</span></span>
+    <span class="h4 my-0 d-block">Territoire</span>
+    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc.<span class="sr-only">)</span></span>
   </a>
 </li>
 
-              
-            </ul>
-          </nav>
-          <div class="col-md-4">
-            <h2 class="vd-heading-light-alt h4 mt-5 mb-3">Les plus visités</h2>
-            <ul class="vd-menu-list-links">
-              <li><a href="#0">Inscription au chômage</a></li>
-              <li><a href="#0">Formulaire d'indemnisation</a></li>
-              <li><a href="#0">Vaud Tax 2017</a></li>
-              <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-            </ul>
+                  
+                </ul>
+              </nav>
+              <div class="col-md-4 order-first order-md-2 mt-3">
+                <h2 class="vd-heading-light-alt h4">Les plus visités</h2>
+                <ul class="vd-menu-list-links">
+                  <li><a href="#0">Inscription au chômage</a></li>
+                  <li><a href="#0">Formulaire d'indemnisation</a></li>
+                  <li><a href="#0">Vaud Tax 2017</a></li>
+                  <li><a href="#0">Vacances scolaires et jours fériés</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </div>
 
 
@@ -360,9 +309,9 @@
 </div>
   <div class="row">
     
-    <article role="article" aria-label="I'll hack the 1080p AGP interface, that should microchip the JSON microchip!" class="col-md-6">
+    <article role="article" aria-label="Use the virtual PCI bandwidth, then you can index the open-source interface!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://manon.com">I'll hack the 1080p AGP interface, that should microchip the JSON microchip!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://louise.org">Use the virtual PCI bandwidth, then you can index the open-source interface!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -374,8 +323,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?70713"
-    srcset="http://lorempixel.com/320/213/?63244 320w, http://lorempixel.com/540/360/?87028 540w, http://lorempixel.com/720/480/?12670 720w, http://lorempixel.com/960/640/?12093 960w, http://lorempixel.com/1140/760/?99759 1140w" alt="">
+    src="http://lorempixel.com/960/640/?72534"
+    srcset="http://lorempixel.com/320/213/?52647 320w, http://lorempixel.com/540/360/?48092 540w, http://lorempixel.com/720/480/?8912 720w, http://lorempixel.com/960/640/?2305 960w, http://lorempixel.com/1140/760/?92182 1140w" alt="">
 
   </a>
 </figure>
@@ -383,20 +332,20 @@
   
   
   <p>
-    Nobis laboriosam occaecati.
+    Dicta vero sit qui atque. Hic itaque ut culpa accusantium asperiores magnam aut quam rerum. Vitae explicabo aut dignissimos exercitationem aut blanditiis soluta. Eius dolor maxime sequi occaecati. Omnis aut laboriosam ut porro veniam minima.
   </p>
   
   
   <p>
-    <a href="http://manon.com">Lire la suite<span class="sr-only"> de l'article I'll hack the 1080p AGP interface, that should microchip the JSON microchip!</span></a>
+    <a href="https://louise.org">Lire la suite<span class="sr-only"> de l'article Use the virtual PCI bandwidth, then you can index the open-source interface!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="Try to navigate the AGP microchip, maybe it will copy the bluetooth port!" class="col-md-6">
+    <article role="article" aria-label="copying the pixel won't do anything, we need to override the multi-byte AGP firewall!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://maxime.name">Try to navigate the AGP microchip, maybe it will copy the bluetooth port!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://lisa.fr">copying the pixel won't do anything, we need to override the multi-byte AGP firewall!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -408,8 +357,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?92673"
-    srcset="http://lorempixel.com/320/213/?63836 320w, http://lorempixel.com/540/360/?56206 540w, http://lorempixel.com/720/480/?84049 720w, http://lorempixel.com/960/640/?13861 960w, http://lorempixel.com/1140/760/?4038 1140w" alt="">
+    src="http://lorempixel.com/960/640/?24757"
+    srcset="http://lorempixel.com/320/213/?60735 320w, http://lorempixel.com/540/360/?19951 540w, http://lorempixel.com/720/480/?37368 720w, http://lorempixel.com/960/640/?57843 960w, http://lorempixel.com/1140/760/?96493 1140w" alt="">
 
   </a>
 </figure>
@@ -417,20 +366,20 @@
   
   
   <p>
-    Quibusdam sequi et deleniti accusamus quod odit. Rem sit doloribus eius vitae. Aut nihil laudantium.
+    Laborum odio repellendus dolores quia autem. Quisquam alias et. At facere aperiam accusamus tempore vel. Autem omnis enim quisquam hic nulla voluptatibus qui sunt possimus. Inventore incidunt eius nemo expedita velit possimus aliquid suscipit sequi. Deleniti eaque debitis et.
   </p>
   
   
   <p>
-    <a href="https://maxime.name">Lire la suite<span class="sr-only"> de l'article Try to navigate the AGP microchip, maybe it will copy the bluetooth port!</span></a>
+    <a href="https://lisa.fr">Lire la suite<span class="sr-only"> de l'article copying the pixel won't do anything, we need to override the multi-byte AGP firewall!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="We need to connect the wireless HTTP feed!" class="col-md-6">
+    <article role="article" aria-label="I'll parse the 1080p TCP system, that should sensor the SAS transmitter!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://louna.fr">We need to connect the wireless HTTP feed!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://léa.name">I'll parse the 1080p TCP system, that should sensor the SAS transmitter!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -442,8 +391,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?79037"
-    srcset="http://lorempixel.com/320/213/?63336 320w, http://lorempixel.com/540/360/?42242 540w, http://lorempixel.com/720/480/?34270 720w, http://lorempixel.com/960/640/?82215 960w, http://lorempixel.com/1140/760/?37716 1140w" alt="">
+    src="http://lorempixel.com/960/640/?24875"
+    srcset="http://lorempixel.com/320/213/?79987 320w, http://lorempixel.com/540/360/?56150 540w, http://lorempixel.com/720/480/?77289 720w, http://lorempixel.com/960/640/?77892 960w, http://lorempixel.com/1140/760/?70549 1140w" alt="">
 
   </a>
 </figure>
@@ -451,20 +400,22 @@
   
   
   <p>
-    Autem facere velit nam reprehenderit sed minima a ut consequuntur. Excepturi sunt possimus non commodi numquam alias veritatis temporibus. Facilis omnis sapiente ipsum ea qui enim voluptatibus. Maxime debitis aliquam labore iste et quia nulla. Eius eveniet quidem veritatis beatae facilis numquam ea. Nisi illum nostrum dolor autem voluptas excepturi eligendi.
+    Voluptas occaecati fugiat sit. Beatae autem soluta non magni voluptatem totam reprehenderit dolore. Quasi placeat quae. Eligendi consequatur dolor sed sit qui omnis.
+ Omnis deleniti minima libero necessitatibus aliquam unde quos laudantium temporibus. Velit quae quia. Neque sed quaerat inventore aliquam et quibusdam quo in facere. Inventore rem ut fuga quos ut. Possimus blanditiis alias id inventore atque eveniet quia soluta. Velit enim cumque.
+...
   </p>
   
   
   <p>
-    <a href="http://louna.fr">Lire la suite<span class="sr-only"> de l'article We need to connect the wireless HTTP feed!</span></a>
+    <a href="http://léa.name">Lire la suite<span class="sr-only"> de l'article I'll parse the 1080p TCP system, that should sensor the SAS transmitter!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="Try to calculate the SMS feed, maybe it will back up the back-end interface!" class="col-md-6">
+    <article role="article" aria-label="I'll connect the digital SCSI transmitter, that should transmitter the SAS microchip!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://elisa.org">Try to calculate the SMS feed, maybe it will back up the back-end interface!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://manon.com">I'll connect the digital SCSI transmitter, that should transmitter the SAS microchip!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -476,8 +427,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?54448"
-    srcset="http://lorempixel.com/320/213/?18585 320w, http://lorempixel.com/540/360/?12913 540w, http://lorempixel.com/720/480/?97185 720w, http://lorempixel.com/960/640/?68599 960w, http://lorempixel.com/1140/760/?2743 1140w" alt="">
+    src="http://lorempixel.com/960/640/?89102"
+    srcset="http://lorempixel.com/320/213/?20262 320w, http://lorempixel.com/540/360/?70721 540w, http://lorempixel.com/720/480/?71514 720w, http://lorempixel.com/960/640/?40513 960w, http://lorempixel.com/1140/760/?44623 1140w" alt="">
 
   </a>
 </figure>
@@ -485,20 +436,20 @@
   
   
   <p>
-    Ut illum nesciunt possimus nesciunt explicabo. Vel molestiae quod non nam quaerat iure recusandae itaque. At quia repellat. Inventore aut blanditiis dolorem perferendis. Reiciendis tempora voluptas et qui id deserunt facere voluptatem et. Et tempora aut rerum consequatur non.
+    non vero recusandae
   </p>
   
   
   <p>
-    <a href="http://elisa.org">Lire la suite<span class="sr-only"> de l'article Try to calculate the SMS feed, maybe it will back up the back-end interface!</span></a>
+    <a href="https://manon.com">Lire la suite<span class="sr-only"> de l'article I'll connect the digital SCSI transmitter, that should transmitter the SAS microchip!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="I'll transmit the haptic HTTP alarm, that should card the RAM array!" class="col-md-6">
+    <article role="article" aria-label="Try to connect the XML port, maybe it will reboot the solid state port!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="https://lou.fr">I'll transmit the haptic HTTP alarm, that should card the RAM array!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://louise.net">Try to connect the XML port, maybe it will reboot the solid state port!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -510,8 +461,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?38879"
-    srcset="http://lorempixel.com/320/213/?55591 320w, http://lorempixel.com/540/360/?37601 540w, http://lorempixel.com/720/480/?57495 720w, http://lorempixel.com/960/640/?27662 960w, http://lorempixel.com/1140/760/?86008 1140w" alt="">
+    src="http://lorempixel.com/960/640/?40924"
+    srcset="http://lorempixel.com/320/213/?39739 320w, http://lorempixel.com/540/360/?97789 540w, http://lorempixel.com/720/480/?88911 720w, http://lorempixel.com/960/640/?43212 960w, http://lorempixel.com/1140/760/?45576 1140w" alt="">
 
   </a>
 </figure>
@@ -519,20 +470,20 @@
   
   
   <p>
-    ad accusamus repudiandae
+    Velit maxime eveniet id sequi.
   </p>
   
   
   <p>
-    <a href="https://lou.fr">Lire la suite<span class="sr-only"> de l'article I'll transmit the haptic HTTP alarm, that should card the RAM array!</span></a>
+    <a href="http://louise.net">Lire la suite<span class="sr-only"> de l'article Try to connect the XML port, maybe it will reboot the solid state port!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can't reboot the matrix without generating the optical ADP alarm!" class="col-md-6">
+    <article role="article" aria-label="Try to reboot the JBOD circuit, maybe it will calculate the digital driver!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://mohamed.name">You can't reboot the matrix without generating the optical ADP alarm!</a></h3>
+    <h3><a class="vd-link-invisible" href="https://benjamin.com">Try to reboot the JBOD circuit, maybe it will calculate the digital driver!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -544,8 +495,8 @@
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?37473"
-    srcset="http://lorempixel.com/320/213/?50010 320w, http://lorempixel.com/540/360/?20640 540w, http://lorempixel.com/720/480/?6621 720w, http://lorempixel.com/960/640/?94550 960w, http://lorempixel.com/1140/760/?37658 1140w" alt="">
+    src="http://lorempixel.com/960/640/?75121"
+    srcset="http://lorempixel.com/320/213/?59008 320w, http://lorempixel.com/540/360/?84960 540w, http://lorempixel.com/720/480/?33047 720w, http://lorempixel.com/960/640/?29883 960w, http://lorempixel.com/1140/760/?92449 1140w" alt="">
 
   </a>
 </figure>
@@ -553,24 +504,20 @@
   
   
   <p>
-    Qui laudantium id eos enim impedit ut pariatur sit.
-Rem sint adipisci et at sit.
-Quod libero eos voluptatem blanditiis quisquam ab dolorem voluptatum sequi.
-Similique sit et reiciendis occaecati voluptatem aspernatur.
-Rem odit qui.
+    Et ad optio fugit eligendi autem et blanditiis nulla omnis. Corrupti officiis voluptatem fuga officiis. Et ipsam aliquid nemo. Veritatis suscipit sunt vel cupiditate velit voluptatem quam consequuntur dolorum. Mollitia quaerat nulla quia. Quis et dolorem sit ab.
   </p>
   
   
   <p>
-    <a href="http://mohamed.name">Lire la suite<span class="sr-only"> de l'article You can't reboot the matrix without generating the optical ADP alarm!</span></a>
+    <a href="https://benjamin.com">Lire la suite<span class="sr-only"> de l'article Try to reboot the JBOD circuit, maybe it will calculate the digital driver!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can't input the feed without backing up the auxiliary AGP feed!" class="col-md-6">
+    <article role="article" aria-label="The XSS hard drive is down, program the 1080p panel so we can back up the XSS array!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://marie.com">You can't input the feed without backing up the auxiliary AGP feed!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://maxime.com">The XSS hard drive is down, program the 1080p panel so we can back up the XSS array!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -582,8 +529,8 @@ Rem odit qui.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?26721"
-    srcset="http://lorempixel.com/320/213/?56372 320w, http://lorempixel.com/540/360/?64339 540w, http://lorempixel.com/720/480/?62375 720w, http://lorempixel.com/960/640/?80339 960w, http://lorempixel.com/1140/760/?49741 1140w" alt="">
+    src="http://lorempixel.com/960/640/?4959"
+    srcset="http://lorempixel.com/320/213/?55855 320w, http://lorempixel.com/540/360/?1157 540w, http://lorempixel.com/720/480/?69379 720w, http://lorempixel.com/960/640/?32452 960w, http://lorempixel.com/1140/760/?94686 1140w" alt="">
 
   </a>
 </figure>
@@ -591,20 +538,20 @@ Rem odit qui.
   
   
   <p>
-    quo
+    incidunt qui exercitationem
   </p>
   
   
   <p>
-    <a href="http://marie.com">Lire la suite<span class="sr-only"> de l'article You can't input the feed without backing up the auxiliary AGP feed!</span></a>
+    <a href="http://maxime.com">Lire la suite<span class="sr-only"> de l'article The XSS hard drive is down, program the 1080p panel so we can back up the XSS array!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can't hack the circuit without navigating the primary IB sensor!" class="col-md-6">
+    <article role="article" aria-label="Use the neural RAM port, then you can override the digital panel!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://alicia.name">You can't hack the circuit without navigating the primary IB sensor!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://elisa.fr">Use the neural RAM port, then you can override the digital panel!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -616,8 +563,8 @@ Rem odit qui.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?47150"
-    srcset="http://lorempixel.com/320/213/?64729 320w, http://lorempixel.com/540/360/?61831 540w, http://lorempixel.com/720/480/?39993 720w, http://lorempixel.com/960/640/?48264 960w, http://lorempixel.com/1140/760/?13552 1140w" alt="">
+    src="http://lorempixel.com/960/640/?92320"
+    srcset="http://lorempixel.com/320/213/?38324 320w, http://lorempixel.com/540/360/?74497 540w, http://lorempixel.com/720/480/?49892 720w, http://lorempixel.com/960/640/?53856 960w, http://lorempixel.com/1140/760/?29674 1140w" alt="">
 
   </a>
 </figure>
@@ -625,21 +572,20 @@ Rem odit qui.
   
   
   <p>
-    Quasi sunt reiciendis qui enim architecto. Ipsa sit officia labore impedit nostrum labore quibusdam quidem. Libero quaerat repudiandae enim quaerat unde. Suscipit corporis pariatur. Iste voluptatem fugit quas eos quod reiciendis laborum tenetur. Iusto dolores temporibus quia qui ducimus a.
- Est adipisci quisquam qui voluptas. Praesentium eos nihil omnis aut dolorem et deserunt ut. Sapiente enim nihil quo incidunt unde nemo labore. Qui sint...
+    Soluta iure voluptate exercitationem qui. Nihil ab cupiditate. Commodi doloribus quia ipsam officiis eum unde voluptatem dignissimos.
   </p>
   
   
   <p>
-    <a href="http://alicia.name">Lire la suite<span class="sr-only"> de l'article You can't hack the circuit without navigating the primary IB sensor!</span></a>
+    <a href="http://elisa.fr">Lire la suite<span class="sr-only"> de l'article Use the neural RAM port, then you can override the digital panel!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="You can't parse the capacitor without bypassing the mobile RAM bus!" class="col-md-6">
+    <article role="article" aria-label="The HTTP application is down, connect the solid state panel so we can navigate the RSS interface!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://adam.info">You can't parse the capacitor without bypassing the mobile RAM bus!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://camille.info">The HTTP application is down, connect the solid state panel so we can navigate the RSS interface!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -651,8 +597,8 @@ Rem odit qui.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?22095"
-    srcset="http://lorempixel.com/320/213/?28010 320w, http://lorempixel.com/540/360/?45095 540w, http://lorempixel.com/720/480/?58915 720w, http://lorempixel.com/960/640/?29996 960w, http://lorempixel.com/1140/760/?9065 1140w" alt="">
+    src="http://lorempixel.com/960/640/?50704"
+    srcset="http://lorempixel.com/320/213/?7889 320w, http://lorempixel.com/540/360/?35253 540w, http://lorempixel.com/720/480/?87402 720w, http://lorempixel.com/960/640/?37817 960w, http://lorempixel.com/1140/760/?65557 1140w" alt="">
 
   </a>
 </figure>
@@ -660,20 +606,21 @@ Rem odit qui.
   
   
   <p>
-    Unde quis hic aliquam sit autem blanditiis ipsam eveniet.
+    Tenetur explicabo incidunt sed cupiditate. Consequatur voluptas rem dolorem aut nam culpa perferendis pariatur ea. Repudiandae magnam blanditiis laborum corporis tempore id vel est. Quia delectus qui ipsum veritatis consequatur. Qui sit eos eligendi nesciunt tenetur minus aut. Ducimus provident ipsa voluptatibus inventore similique.
+ Pariatur iure autem similique. Quia quam odio provident in voluptas. Et vitae ad sed qui nihil. Quam nisi...
   </p>
   
   
   <p>
-    <a href="http://adam.info">Lire la suite<span class="sr-only"> de l'article You can't parse the capacitor without bypassing the mobile RAM bus!</span></a>
+    <a href="http://camille.info">Lire la suite<span class="sr-only"> de l'article The HTTP application is down, connect the solid state panel so we can navigate the RSS interface!</span></a>
   </p>
   
 </article>
 
     
-    <article role="article" aria-label="If we index the microchip, we can get to the HTTP transmitter through the 1080p HTTP bus!" class="col-md-6">
+    <article role="article" aria-label="Use the bluetooth XSS capacitor, then you can calculate the haptic transmitter!" class="col-md-6">
   <header>
-    <h3><a class="vd-link-invisible" href="http://rayan.net">If we index the microchip, we can get to the HTTP transmitter through the 1080p HTTP bus!</a></h3>
+    <h3><a class="vd-link-invisible" href="http://mohamed.name">Use the bluetooth XSS capacitor, then you can calculate the haptic transmitter!</a></h3>
 
     <p class="small">
       <span class="sr-only">Publié  le </span><time datetime="2017-03-31T13:05:23+00:00" pubdate>31.03.2017</time>
@@ -685,8 +632,8 @@ Rem odit qui.
   <a href="#"><img
     class="img-fluid"
     
-    src="http://lorempixel.com/960/640/?16531"
-    srcset="http://lorempixel.com/320/213/?1722 320w, http://lorempixel.com/540/360/?31439 540w, http://lorempixel.com/720/480/?19028 720w, http://lorempixel.com/960/640/?81402 960w, http://lorempixel.com/1140/760/?80437 1140w" alt="">
+    src="http://lorempixel.com/960/640/?84293"
+    srcset="http://lorempixel.com/320/213/?6275 320w, http://lorempixel.com/540/360/?74180 540w, http://lorempixel.com/720/480/?83113 720w, http://lorempixel.com/960/640/?16257 960w, http://lorempixel.com/1140/760/?56245 1140w" alt="">
 
   </a>
 </figure>
@@ -694,12 +641,12 @@ Rem odit qui.
   
   
   <p>
-    dolorem
+    Deleniti et aut. Accusantium delectus at dolor quod amet et aut laboriosam atque. Minus delectus enim eos.
   </p>
   
   
   <p>
-    <a href="http://rayan.net">Lire la suite<span class="sr-only"> de l'article If we index the microchip, we can get to the HTTP transmitter through the 1080p HTTP bus!</span></a>
+    <a href="http://mohamed.name">Lire la suite<span class="sr-only"> de l'article Use the bluetooth XSS capacitor, then you can calculate the haptic transmitter!</span></a>
   </p>
   
 </article>
@@ -829,6 +776,7 @@ Rem odit qui.
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="../../assets/scripts/vendors.js"></script>
+<script src="../../assets/scripts/foehn-scripts--footer.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
 <script>

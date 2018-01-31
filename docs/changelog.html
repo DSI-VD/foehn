@@ -82,7 +82,24 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <h2 id="-unreleased-"><a href="https://github.com/DSI-VD/foehn/compare/v0.41.0...HEAD">Unreleased</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
-<li>Add <code>.d-print-none</code> and <code>h1.d-print-block</code> to <a href="../components/detail/logo-etat"><code>@logo-etat</code></a>.</li>
+<li>On mobile, <a href="../components/detail/login"><code>@login</code></a> comes before <a href="../components/detail/logo-etat"><code>@logo-etat</code></a> in <a href="../components/detail/header-securisee"><code>@header-securisee</code></a>.</li>
+<li>Remove button “Tous les thèmes” and section “Les plus visités” that were only
+visible on mobile in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Change the structure of ‘@header’, <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> and <a href="../components/detail/header-securise"><code>@header-securise</code></a><ul>
+<li>Use the new <a href="../components/detail/login"><code>@login</code></a> component</li>
+<li>Change spacing of <a href="../components/detail/search-form--default"><code>@search-form--default</code></a></li>
+</ul>
+</li>
+<li>Use flexbox to display <a href="../components/detail/nav"><code>@nav</code></a> in <a href="../components/detail/header"><code>@header</code></a> and <a href="../components/detail/header--homepage"><code>@header--homepage</code></a></li>
+<li>Change <a href="../components/detail/nav-primary"><code>@nav-primary</code></a><ul>
+<li>Add a javascript on <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> to close the navigation when loaded on a 
+mobile device. Add <code>js-closeMenuOnMobile__*</code> classes to enable this feature.
+Take a loot at <a href="../components/detail/nav-primary--open"><code>@nav-primary--open</code></a> for documentation.</li>
+<li>Add <code>foehn-scripts--footer.js</code> in the footer of all pages.</li>
+<li>Rename menu button in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a></li>
+<li>Remove <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
+</ul>
+</li>
 <li>Add <code>.d-print-none</code> to <a href="../components/detail/nav-primary"><code>@nav-primary</code></a>, <a href="../components/detail/nav"><code>@nav</code></a>.</li>
 <li>Add <code>.d-print-none</code> to search form from <a href="../components/detail/theme--default"><code>@theme--default</code></a>.</li>
 <li>Add <code>.vd-print-full-width</code> to <a href="../components/detail/header"><code>@header</code></a> and <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> in order to display <code>h1</code>replacing logo at 100% width (print)</li>
@@ -91,7 +108,6 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Add <code>.vd-print-none</code> to bottom Autorities section of  <a href="../components/detail/accueil"><code>@accueil</code></a> </li>
 <li>Add exception for print in <code>_breadcrumb.scss</code> to show all breadcrumb</li>
 <li>Add a type of <code>communique</code> in <a href="../components/detail/search-item"><code>@search-item</code></a></li>
-<li>Rename menu button in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a></li>
 <li>Fix <code>aria-label</code> in <a href="../components/detail/pagination"><code>@pagination</code></a></li>
 <li>Add a visibly-hidden header in <a href="../components/detail/pagination"><code>@pagination</code></a> for accessibility</li>
 <li>Add a value in the input field of <a href="../components/detail/search"><code>@search</code></a></li>
@@ -99,9 +115,15 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <li>Rename page <a href="../components/detail/search"><code>@search</code></a></li>
 <li>Remove useless heading in <a href="../components/detail/search--no-search"><code>@search--no-search</code></a></li>
 </ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/login"><code>@login</code></a> component</li>
+</ul>
 <h3 id="fix">Fix</h3>
 <ul>
+<li>Fix poistion of the blason in <a href="../components/detail/logo-etat"><code>@logo-etat</code></a></li>
 <li>Fix first chevrn wasn’t displayed on mobile in <a href="../components/detail/navigation"><code>@navigation</code></a></li>
+<li>Refactor <a href="../components/detail/logo-etat"><code>@logo-etat</code></a> and <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> spacings</li>
 </ul>
 <h2 id="-0-41-0-2017-12-22"><a href="https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0">0.41.0</a> - 2017-12-22</h2>
 <h3 id="changed">Changed</h3>
@@ -3507,6 +3529,70 @@ is the first element of the navigation.</li>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-login">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Login</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/login--default" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/login--logged" data-pjax>
+                <span>Logged</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-media">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Media</span>
@@ -3862,10 +3948,21 @@ is the first element of the navigation.</li>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-domain-item">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Domain Item</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/domain-item" data-pjax>
-                <span>Domain Item</span>
+            <a class="Tree-entityLink" href="../components/detail/domain-item--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3882,6 +3979,35 @@ is the first element of the navigation.</li>
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/domain-item--small" data-pjax>
+                <span>Small</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -3982,10 +4108,21 @@ is the first element of the navigation.</li>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-nav-primary">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Nav Primary</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/nav-mobile" data-pjax>
-                <span>Nav Mobile</span>
+            <a class="Tree-entityLink" href="../components/detail/nav-primary--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4008,8 +4145,8 @@ is the first element of the navigation.</li>
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/nav-primary" data-pjax>
-                <span>Nav Primary</span>
+            <a class="Tree-entityLink" href="../components/detail/nav-primary--open" data-pjax>
+                <span>Open</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4026,6 +4163,11 @@ is the first element of the navigation.</li>
 
 
             </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
