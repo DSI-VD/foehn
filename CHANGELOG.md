@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Use `.nav.nav-pills` instead of `.nav` for the filter of the `@search` page
 - On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
 - Remove button "Tous les thèmes" and section "Les plus visités" that were only
   visible on mobile in `@accueil`
