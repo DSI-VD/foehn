@@ -1,8 +1,383 @@
 {
   "status": "ready",
   "context": {
-    "domains": "@nav-primary.domains",
-    "activeDomain": "Economie"
+    "domains": [{
+        "name": "Culture",
+        "themes": [{
+            "name": "Aides et soutiens"
+          },
+          {
+            "name": "Ecole-Musée"
+          },
+          {
+            "name": "Bibliothèque cantonale et universitaire"
+          },
+          {
+            "name": "Musées cantonaux"
+          },
+          {
+            "name": "Patrimoine vaudois"
+          },
+          {
+            "name": "Passculture"
+          },
+          {
+            "name": "Formations artistiques"
+          },
+          {
+            "name": "Cinéma"
+          },
+          {
+            "name": "Assises de la culture"
+          }
+        ],
+        "description": "Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc."
+      },
+      {
+        "name": "Economie",
+        "themes": [{
+            "name": "Entreprises"
+          },
+          {
+            "name": "Marchés publics"
+          },
+          {
+            "name": "Emploi - Chômage"
+          },
+          {
+            "name": "Développement économique"
+          },
+          {
+            "name": "Tourisme"
+          },
+          {
+            "name": "Agriculture"
+          },
+          {
+            "name": "Protection consommateur"
+          },
+          {
+            "name": "Poursuites et faillites"
+          },
+          {
+            "name": "Registre du commerce"
+          },
+          {
+            "name": "Police du commerce"
+          }
+        ],
+        "description": "Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc."
+      },
+      {
+        "name": "Environnement",
+        "themes": [{
+            "name": "Développement durable"
+          },
+          {
+            "name": "Faune et nature"
+          },
+          {
+            "name": "Forêts"
+          },
+          {
+            "name": "Air"
+          },
+          {
+            "name": "Sols"
+          },
+          {
+            "name": "Eaux"
+          },
+          {
+            "name": "Energie"
+          },
+          {
+            "name": "Bruit"
+          },
+          {
+            "name": "Rayonnement"
+          },
+          {
+            "name": "Produits chimiques"
+          },
+          {
+            "name": "Déchets"
+          },
+          {
+            "name": "Sites pollués"
+          }
+        ],
+        "description": "Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc."
+      },
+      {
+        "name": "Etat, Droit, Finance",
+        "themes": [{
+            "name": "Lois / Constitution"
+          },
+          {
+            "name": "Votations et élections"
+          },
+          {
+            "name": "Justice"
+          },
+          {
+            "name": "Médiations"
+          },
+          {
+            "name": "Protection des données et transparence"
+          },
+          {
+            "name": "Curatelles et tutelles"
+          },
+          {
+            "name": "Égalité"
+          },
+          {
+            "name": "Impôts"
+          },
+          {
+            "name": "Finances publiques"
+          },
+          {
+            "name": "Affaires extérieures"
+          },
+          {
+            "name": "Personnel de l'État"
+          },
+          {
+            "name": "Statistiques"
+          }
+        ],
+        "description": "Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc."
+      },
+      {
+        "name": "Formation",
+        "themes": [{
+            "name": "Avant l'Ecole"
+          },
+          {
+            "name": "Scolarité obligatoire"
+          },
+          {
+            "name": "Gymnase"
+          },
+          {
+            "name": "Apprentissage"
+          },
+          {
+            "name": "Enseignement supérieur"
+          },
+          {
+            "name": "Orientation"
+          },
+          {
+            "name": "Bourses"
+          },
+          {
+            "name": "Pédagogie spécialisée"
+          },
+          {
+            "name": "Santé à l'école"
+          },
+          {
+            "name": "Jours fériés et vacances scolaires"
+          },
+          {
+            "name": "Schooling"
+          },
+          {
+            "name": "Espace enseignant"
+          }
+        ],
+        "description": "Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc."
+      },
+      {
+        "name": "Mobilité",
+        "themes": [{
+            "name": "Mobilité et planification"
+          },
+          {
+            "name": "Mobilité douce"
+          },
+          {
+            "name": "Promotion des mobilités durables"
+          },
+          {
+            "name": "Routes"
+          },
+          {
+            "name": "Transports publics"
+          },
+          {
+            "name": "Automobile"
+          },
+          {
+            "name": "Navigation"
+          }
+        ],
+        "description": "Automobiles, Routes, navigation, transports publics, mobilités durables, etc."
+      },
+      {
+        "name": "Santé",
+        "themes": [{
+            "name": "Actualités"
+          },
+          {
+            "name": "Système de santé"
+          },
+          {
+            "name": "Organisation"
+          },
+          {
+            "name": "Lutte contre les maladies"
+          },
+          {
+            "name": "Prévention"
+          },
+          {
+            "name": "Dépendances"
+          },
+          {
+            "name": "Professionnels"
+          }
+        ],
+        "description": "Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc."
+      },
+      {
+        "name": "Social",
+        "themes": [{
+            "name": "Informations sociales"
+          },
+          {
+            "name": "Prestations, assurances et soutien"
+          },
+          {
+            "name": "Vivre à domicile"
+          },
+          {
+            "name": "EMS"
+          },
+          {
+            "name": "Handicaps"
+          },
+          {
+            "name": "Dettes et surendettement"
+          },
+          {
+            "name": "Aide aux victimes et auteur-e-s de violences"
+          },
+          {
+            "name": "Bénévolat"
+          }
+        ],
+        "description": "Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc."
+      },
+      {
+        "name": "Vie privée",
+        "themes": [{
+            "name": "Familles"
+          },
+          {
+            "name": "Enfance et jeunesse"
+          },
+          {
+            "name": "Logement"
+          },
+          {
+            "name": "Contrôle des habitants"
+          },
+          {
+            "name": "Etat civil"
+          },
+          {
+            "name": "Documents d'identité"
+          },
+          {
+            "name": "Population étrangère"
+          },
+          {
+            "name": "Religions"
+          },
+          {
+            "name": "Animaux"
+          },
+          {
+            "name": "Sport"
+          },
+          {
+            "name": "Violence domestique"
+          }
+        ],
+        "description": "Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc."
+      },
+      {
+        "name": "Sécurité",
+        "themes": [{
+            "name": "Prévention"
+          },
+          {
+            "name": "Protection de la population"
+          },
+          {
+            "name": "Police"
+          },
+          {
+            "name": "Pompiers"
+          },
+          {
+            "name": "Armée"
+          },
+          {
+            "name": "Protection civile"
+          },
+          {
+            "name": "Pénitentiaire"
+          },
+          {
+            "name": "Catastrophe"
+          },
+          {
+            "name": "Service civil"
+          }
+        ],
+        "description": "Police, pénitentiaire, armée, catastrophe, protection de la population, etc."
+      },
+      {
+        "name": "Territoire",
+        "themes": [{
+            "name": "Aménagement"
+          },
+          {
+            "name": "Améliorations foncières"
+          },
+          {
+            "name": "Opérations foncières"
+          },
+          {
+            "name": "Géologie"
+          },
+          {
+            "name": "Dangers Naturels"
+          },
+          {
+            "name": "Informations sur le territoire"
+          },
+          {
+            "name": "Construction"
+          },
+          {
+            "name": "Registre foncier"
+          },
+          {
+            "name": "Districts / Préfectures"
+          },
+          {
+            "name": "Communes"
+          }
+        ],
+        "description": "Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc."
+      }
+    ]
   }
 
 }
