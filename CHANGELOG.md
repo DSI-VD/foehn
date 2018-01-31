@@ -4,15 +4,30 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
+- Remove button "Tous les thèmes" and section "Les plus visités" that were only
+  visible on mobile in `@accueil`
+-  Change the structure of '@header', `@header--homepage` and `@header-securise`
+  - Use the new `@login` component
+  - Change spacing of `@search-form--default`
+  - Remove `@nav-mobile`
+- Use flexbox to display `@nav` in `@header` and `@header--homepage`
+- Change `@nav-primary` styles
+  - Add a javascript on `@nav-primary` to close the navigation when loaded on a 
+    mobile device. Add `js-closeMenuOnMobile__*` classes to enable this feature.
+    Take a loot at `@nav-primary--open` for documentation.
+  - Rename menu button in `@nav-primary`
+- Add `foehn-scripts--footer.js` in the footer of all pages.
 - Add `.d-print-none` to `@nav-primary`, `@nav`.
 - Add `.d-print-none` to search form from `@theme--default`.
-- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to display `h1`replacing logo at 100% width (print)
+- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to 
+  display `h1`replacing logo at 100% width (print)
 - Add `.vd-print-none` to search form row in `@template-communiques-presse-list` 
-- Add `.vd-print-full-width` to CP list results of `@template-communiques-presse-list`
+- Add `.vd-print-full-width` to CP list results of 
+  `@template-communiques-presse-list`
 - Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
 - Add exception for print in `_breadcrumb.scss` to show all breadcrumb
 - Add a type of `communique` in `@search-item`
-- Rename menu button in `@nav-primary`
 - Fix `aria-label` in `@pagination`
 - Add a visibly-hidden header in `@pagination` for accessibility
 - Add a value in the input field of `@search`
@@ -20,8 +35,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Rename page `@search`
 - Remove useless heading in `@search--no-search`
 
+### Added
+- Add `@login` component
+
 ### Fix
+- Fix poistion of the blason in `@logo-etat`
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
+- Refactor `@logo-etat` and `@nav-primary` spacings
+
+### Removed
+- Remove `@nav-mobile`
 
 ## [0.41.0] - 2017-12-22
 

@@ -4,6 +4,7 @@
     "applicationTitle": "Application title",
     "domains": "@domains-list",
     "nav": {
+      "styleModifier": "small",
       "items": [
           {
           "active": false
