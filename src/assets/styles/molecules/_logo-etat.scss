@@ -11,10 +11,11 @@
  */
 .vd-logo {
   display: flex;
+  margin-bottom: $spacer;
 
   &__blason {
+    position: absolute;
     width: 1.8em;
-    margin-right: 3 * $spacer;
     margin-left: -3 * $spacer; /* [1] */
 
     img {
@@ -31,10 +32,5 @@
     align-self: flex-start; /* [4] */
     width: 12em;
     height: auto;
-    margin-top: $spacer;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: $spacer * 3;
-    }
   }
 }

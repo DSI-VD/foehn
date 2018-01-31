@@ -153,6 +153,19 @@ function scriptsVendors() {
 }
 
 /**
+ * Scripts
+ */
+function scripts() {
+    return gulp.src([
+        `${paths.src}/assets/scripts/**/*.js`,
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(rename('foehn-scripts--footer.js'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
+}
+
+/**
  * SVG
  *
  * FIXME: You have to add dependencies manually
@@ -211,13 +224,13 @@ function copyChangelog() {
 function watch() {
     serve();
     gulp.watch(`${paths.src}/**/*.scss`, gulp.parallel(lintstyles, styles));
-    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts));
+    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scripts));
 }
 
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, svg, images, lintscripts));
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scripts, svg, images, lintscripts));
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));
