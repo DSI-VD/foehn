@@ -3,7 +3,7 @@
   {% render '@search-form--regular', searchForm, true %}
   {% if results %}
     <h2 class="h5">Filtrer les résultats</h2>
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills flex-column flex-xs-row">
       {% for filter in filters -%}
         <li class="nav-item">
           <a href="{{ filter.url }}"
