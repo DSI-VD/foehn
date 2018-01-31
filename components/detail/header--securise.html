@@ -195,13 +195,17 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-lock"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Se connecter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Jean Villard Gilles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-0"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Se déconnecter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
             <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-sm-auto"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3 mr-sm-auto"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../accueil"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-logo d-print-none"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Aller à la page d'accueil du Site du Canton de Vaud"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/svg/ETATVAUD.svg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-logo__image"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"État de Vaud"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span> /&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -225,9 +229,9 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex flex-column flex-sm-row-reverse"</span>&gt;</span>
 
-      {% render '<a href="login">@login</a>', { styleModifier: 'text-right'}, true %}
+      {% render '<a href="login--logged">@login--logged</a>', { styleModifier: 'text-right'}, true %}
 
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mr-sm-auto"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3 mr-sm-auto"</span>&gt;</span>
         {% include '<a href="logo-etat">@logo-etat</a>' %}
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -716,7 +720,7 @@
             
                 <a href="access-nav">@<span>access-nav</span></a>, 
             
-                <a href="login">@<span>login</span></a>, 
+                <a href="login--logged">@<span>login--logged</span></a>, 
             
                 <a href="logo-etat">@<span>logo-etat</span></a>
             
