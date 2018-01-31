@@ -10,7 +10,6 @@
     "variants": [
       {
         "name": "open",
-        "hidden": true,
         "context": {
           "navOpen": true
         }
