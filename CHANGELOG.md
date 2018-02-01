@@ -43,6 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Fix caption's width is the same as the images in a `.figure`
+- Remove CSS fix for Firefox ESR 45 in `.figure`
 - Fix poistion of the blason in `@logo-etat`
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
 - Refactor `@logo-etat` and `@nav-primary` spacings
