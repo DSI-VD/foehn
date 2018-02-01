@@ -1,0 +1,22 @@
+{% for result in list %}
+<div class="row">
+    <div class="col-lg-4">
+        <img class="img-fluid mb-3 mb-lg-0" src="http://placehold.it/500x400" alt="Card image cap">
+    </div>
+    <div class="col-lg-8">
+        <h2>{{ result.title }}</h2>
+        {% include '@paragraph' %}
+        {% if result.date %}
+        <div class="row">
+            <div class="col-xs-6 col-lg-4"><strong>Date de la vente</strong></div>
+            <div class="col-xs-6 col-lg-8">{{ result.date }}</div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">{% render '@separator--green-pattern-wide', {styleModifier: "my-5"}, true %}</div>
+</div>
+{% endfor %}
+
+
