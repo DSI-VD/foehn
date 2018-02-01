@@ -37,6 +37,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove useless heading in `@search--no-search`
 
 ### Added
+- Add `@text-and-image--left` and `@text-and-image--right` to show how to 
+  display images aside text.
 - Add `@login` component
 
 ### Fix
