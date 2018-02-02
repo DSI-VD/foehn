@@ -37,6 +37,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove useless heading in `@search--no-search`
 
 ### Added
+- Add  a `@figure` in `@agenda`
 - Add `@login` component
 
 ### Fix
