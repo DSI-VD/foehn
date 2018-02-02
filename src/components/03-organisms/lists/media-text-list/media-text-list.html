@@ -1,0 +1,16 @@
+{% for result in list %}
+  <div class="row mb-5">
+    <div class="col-md-8 order-md-2">
+        <h2>{{ result.title }}</h2>
+        {% include '@paragraph' %}
+        {% if result.date %}
+        <dl class="row">
+            <dt class="col-xs-6 col-lg-4">Date de la vente</dt>
+            <dd class="col-xs-6 col-lg-8">{{ result.date }}</dd>
+        </dl>
+        {% endif %}
+    </div>
+    {% render '@figure', { styleModifier: 'col-md-4 order-md-1' }, true %}
+  </div>
+{% endfor %}
+

@@ -38,6 +38,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove useless heading in `@search--no-search`
 
 ### Added
+- Add `@media-text-list` component in organisms
 - Add `@text-and-image--left`, `@text-and-image--top` and 
   `@text-and-image--right` to show how to display images aside text.
 - Add  a `@figure` in `@agenda`
