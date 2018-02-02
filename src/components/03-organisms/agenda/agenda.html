@@ -20,7 +20,10 @@
           </span>
         {% endif %}
         </p>
-        <p class="order-3">{{ event.excerpt }}</p>
+        {% if event.image -%}
+          {% render '@figure', event.image, true %}
+        {%- endif %}
+        <p class="order-4">{{ event.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
