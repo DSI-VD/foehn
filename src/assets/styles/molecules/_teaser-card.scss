@@ -42,8 +42,18 @@ a.vd-teaser-card {
   .card-text,
   a {
     color: $white; /* [1] */
+  }
 
+  a {
     @include hover {
+      color: $gray-300; /* [1] */
+    }
+
+    &:visited {
+      color: $white;
+    }
+
+    &:visited:hover {
       color: $gray-300; /* [1] */
     }
   }
