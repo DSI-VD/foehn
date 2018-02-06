@@ -1,6 +1,7 @@
 {
   "status": "ready",
   "context": {
+    "activeDomain": "Economie",
     "domains": [{
         "name": "Culture",
         "themes": [{
@@ -31,7 +32,7 @@
             "name": "Assises de la culture"
           }
         ],
-        "description": "Aides et soutiens, Musées cantonaux…"
+        "description": "Aides et subventions, passculture, Musées, Bibliothèques, Patrimoine vaudois, etc."
       },
       {
         "name": "Economie",
@@ -66,7 +67,7 @@
             "name": "Police du commerce"
           }
         ],
-        "description": "Poursuites et faillites, Registre du commerce…"
+        "description": "Registre du commerce, poursuites et faillites, Entreprise, Chômage, Agriculture, développement économique, etc."
       },
       {
         "name": "Environnement",
@@ -107,7 +108,7 @@
             "name": "Sites pollués"
           }
         ],
-        "description": "Faune et nature, Energie…"
+        "description": "Subventions pour l’énergie, faune et nature, eaux, forêts, air, développement durable, etc."
       },
       {
         "name": "Etat, Droit, Finance",
@@ -148,7 +149,7 @@
             "name": "Statistiques"
           }
         ],
-        "description": "Impôts, rémunérations, fiscalité…"
+        "description": "Justice, votations, Egalité, protection des données, Impôts, finances publiques, Etat employeur, statistiques, etc."
       },
       {
         "name": "Formation",
@@ -189,7 +190,7 @@
             "name": "Espace enseignant"
           }
         ],
-        "description": "Jours fériés et vacances scolaires…"
+        "description": "Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc."
       },
       {
         "name": "Mobilité",
@@ -215,7 +216,7 @@
             "name": "Navigation"
           }
         ],
-        "description": "Automobile, Navigation…"
+        "description": "Automobiles, Routes, navigation, transports publics, mobilités durables, etc."
       },
       {
         "name": "Santé",
@@ -241,7 +242,7 @@
             "name": "Professionnels"
           }
         ],
-        "description": "Prévention, Professionnels…"
+        "description": "Prévention, système de santé, dépendances, santé en milieu scolaire, droit des patients, les professionnels de la santé, etc."
       },
       {
         "name": "Social",
@@ -270,7 +271,7 @@
             "name": "Bénévolat"
           }
         ],
-        "description": "Aide aux victimes et auteur-e-s de violences…"
+        "description": "Subside à l’assurance maladie, revenu d’insertion, violence, le RDU, les prestations familles, PC familles, Rente-pont, etc."
       },
       {
         "name": "Vie privée",
@@ -308,7 +309,7 @@
             "name": "Violence domestique"
           }
         ],
-        "description": "Documents d'identité…"
+        "description": "Vacances scolaires, scolarité obligatoire, orientation, apprentissage, gymnase, Bourses, etc."
       },
       {
         "name": "Sécurité",
@@ -340,7 +341,7 @@
             "name": "Service civil"
           }
         ],
-        "description": "Police, contrôle, casiers judiciaire…"
+        "description": "Police, pénitentiaire, armée, catastrophe, protection de la population, etc."
       },
       {
         "name": "Territoire",
@@ -375,7 +376,7 @@
             "name": "Communes"
           }
         ],
-        "description": "Informations sur le territoire, Registre foncier…"
+        "description": "Aménagement, permis de construire, registre foncier, communes, préfectures, dangers naturels, etc."
       }
     ]
   }
