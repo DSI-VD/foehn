@@ -3,8 +3,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-### Changed
+### Fix
 - Removed flex and width from `@search-form--default` styles for FF
+
+## [0.42.0] - 2018-02-06
+
+### Changed
+- Change title and links of `@index-menu` in `@detail-prestation`
+- Changed `%card-inside` styles to remove hover from text and have a white link visited color
 - Use `.nav.nav-pills` instead of `.nav` for the filter of the `@search` page
 - On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
 - Remove button "Tous les thèmes" and section "Les plus visités" that were only
@@ -38,6 +44,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove useless heading in `@search--no-search`
 
 ### Added
+- Add `@media-text-list` component in organisms
+- Add `@text-and-image--left`, `@text-and-image--top` and 
+  `@text-and-image--right` to show how to display images aside text.
 - Add  a `@figure` in `@agenda`
 - Add `@login` component
 
@@ -1547,7 +1556,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.41.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.42.0...HEAD
+[0.42.0]: https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0
 [0.41.0]: https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0
 [0.40.0]: https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0
 [0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
