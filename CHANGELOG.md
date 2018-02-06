@@ -3,8 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.42.1] - 2018-02-06
+
 ### Fix
-- Removed flex and width from `@search-form--default` styles for FF
+- Fix `@search-form--default` icon messing around at certain viewport
 
 ## [0.42.0] - 2018-02-06
 
@@ -1556,7 +1558,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.42.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.42.1...HEAD
+[0.42.1]: https://github.com/DSI-VD/foehn/compare/v0.42.0...v0.42.1
 [0.42.0]: https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0
 [0.41.0]: https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0
 [0.40.0]: https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0
