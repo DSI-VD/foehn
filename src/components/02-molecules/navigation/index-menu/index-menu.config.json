@@ -1,6 +1,7 @@
 {
   "status": "ready",
   "context": {
+    "title": "Sommaire",
     "listLinks": [{
         "item": "Repellendus quibusdam voluptatibus.",
         "url": "#"
