@@ -3,7 +3,7 @@
   {% render '@search-form--regular', searchForm, true %}
   {% if results %}
     <h2 class="h5">Filtrer les résultats</h2>
-    <ul class="nav flex-column flex-sm-row">
+    <ul class="nav nav-pills">
       {% for filter in filters -%}
         <li class="nav-item">
           <a href="{{ filter.url }}"
@@ -21,10 +21,6 @@
     {% render '@pagination' %}
   {% elif error %}
     <h2>Aucun résultat</h2>
-    <p>Vous pouvez</p>
-    <ul>
-      <li>essayer avec des termes différents</li>
-      <li>changer de filtre</li>
-    </ul>
+    <p>Vous pouvez essayer avec des termes différents</p>
   {% endif %}
 {% endblock %}

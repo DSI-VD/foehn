@@ -1,0 +1,10 @@
+{
+  "variants": [
+    {
+      "name": "logged",
+      "context": {
+        "user": "Jean Villard Gilles"
+      }
+    }
+  ]
+}

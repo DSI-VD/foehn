@@ -3,16 +3,36 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.42.0] - 2018-02-06
+
 ### Changed
+- Change title and links of `@index-menu` in `@detail-prestation`
+- Changed `%card-inside` styles to remove hover from text and have a white link visited color
+- Use `.nav.nav-pills` instead of `.nav` for the filter of the `@search` page
+- On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
+- Remove button "Tous les thèmes" and section "Les plus visités" that were only
+  visible on mobile in `@accueil`
+-  Change the structure of '@header', `@header--homepage` and `@header-securise`
+  - Use the new `@login` component
+  - Change spacing of `@search-form--default`
+  - Remove `@nav-mobile`
+- Use flexbox to display `@nav` in `@header` and `@header--homepage`
+- Change `@nav-primary` styles
+  - Add a javascript on `@nav-primary` to close the navigation when loaded on a 
+    mobile device. Add `js-closeMenuOnMobile__*` classes to enable this feature.
+    Take a loot at `@nav-primary--open` for documentation.
+  - Rename menu button in `@nav-primary`
+- Add `foehn-scripts--footer.js` in the footer of all pages.
 - Add `.d-print-none` to `@nav-primary`, `@nav`.
 - Add `.d-print-none` to search form from `@theme--default`.
-- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to display `h1`replacing logo at 100% width (print)
+- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to 
+  display `h1`replacing logo at 100% width (print)
 - Add `.vd-print-none` to search form row in `@template-communiques-presse-list` 
-- Add `.vd-print-full-width` to CP list results of `@template-communiques-presse-list`
+- Add `.vd-print-full-width` to CP list results of 
+  `@template-communiques-presse-list`
 - Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
 - Add exception for print in `_breadcrumb.scss` to show all breadcrumb
 - Add a type of `communique` in `@search-item`
-- Rename menu button in `@nav-primary`
 - Fix `aria-label` in `@pagination`
 - Add a visibly-hidden header in `@pagination` for accessibility
 - Add a value in the input field of `@search`
@@ -20,8 +40,22 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Rename page `@search`
 - Remove useless heading in `@search--no-search`
 
+### Added
+- Add `@media-text-list` component in organisms
+- Add `@text-and-image--left`, `@text-and-image--top` and 
+  `@text-and-image--right` to show how to display images aside text.
+- Add  a `@figure` in `@agenda`
+- Add `@login` component
+
 ### Fix
+- Fix caption's width is the same as the images in a `.figure`
+- Remove CSS fix for Firefox ESR 45 in `.figure`
+- Fix poistion of the blason in `@logo-etat`
 - Fix first chevrn wasn't displayed on mobile in `@navigation`
+- Refactor `@logo-etat` and `@nav-primary` spacings
+
+### Removed
+- Remove `@nav-mobile`
 
 ## [0.41.0] - 2017-12-22
 
@@ -1519,7 +1553,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.41.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.42.0...HEAD
+[0.42.0]: https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0
 [0.41.0]: https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0
 [0.40.0]: https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0
 [0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
