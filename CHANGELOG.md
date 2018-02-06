@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.42.0] - 2018-02-06
+
 ### Changed
 - Change title and links of `@index-menu` in `@detail-prestation`
 - Changed `%card-inside` styles to remove hover from text and have a white link visited color
@@ -1551,7 +1553,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.41.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.42.0...HEAD
+[0.42.0]: https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0
 [0.41.0]: https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0
 [0.40.0]: https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0
 [0.39.0]: https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0
