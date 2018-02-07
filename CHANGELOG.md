@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.43.0] - 2018-02-07
+
 ### Changed
 - Set the width of `@figure` in `@agenda` to be 50% on desktop bay adding
   `.vd-w-md-50` class
@@ -1565,7 +1567,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.42.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.43.0...HEAD
+[0.43.0]: https://github.com/DSI-VD/foehn/compare/v0.42.1...v0.43.0
 [0.42.1]: https://github.com/DSI-VD/foehn/compare/v0.42.0...v0.42.1
 [0.42.0]: https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0
 [0.41.0]: https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0
