@@ -1,9 +1,9 @@
 /**
  * foehn - Frontend pattern library for State of Vaud
- * @version v0.42.1
+ * @version v0.43.0
  */
 /*!
  * This style only apply on fractal documentation.
  * It it not a part of the foehn design system.
- */.palette{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -.25em}.color{-webkit-box-flex:1;-ms-flex:1 1 4em;flex:1 1 4em;position:relative;margin:0 .25em 1.5em}.color:before{content:"";display:block;width:100%;height:5em;background-color:currentColor}.color code{display:inline-block;color:#bd4147}.color span{display:block;position:absolute;top:.5rem;left:.5rem;font-style:normal;color:#fff;font:.75em/1em Hack,Consolas,Monaco,monospace;text-shadow:0 0 2px #000}.color--base{-webkit-box-flex:1;-ms-flex:1 1 12em;flex:1 1 12em;margin-right:1em;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}
+ */.palette{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -.25em}.color{-webkit-box-flex:1;-ms-flex:1 1 4em;flex:1 1 4em;position:relative;margin:0 .25em 1.5em}.color:before{content:"";display:block;width:100%;height:5em;background-color:currentColor}.color code{display:inline-block;color:#e83e8c}.color span{display:block;position:absolute;top:.5rem;left:.5rem;font-style:normal;color:#fff;font:.75em/1em Hack,Consolas,Monaco,monospace;text-shadow:0 0 2px #000}.color--base{-webkit-box-flex:1;-ms-flex:1 1 12em;flex:1 1 12em;margin-right:1em;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}
 /*# sourceMappingURL=styleguide.css.map */
