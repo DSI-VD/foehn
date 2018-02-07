@@ -108,7 +108,7 @@ $enable-rounded:            false !default;
 $enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        true !default;
-$enable-hover-media-query:  false !default;
+$enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
 
@@ -119,23 +119,27 @@ $enable-print-styles:       true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
+// stylelint-disable
 $spacer: 1rem !default;
-$spacers: (
+$spacers: () !default;
+$spacers: map-merge((
   0: 0,
   1: ($spacer * .25),
   2: ($spacer * .5),
   3: $spacer,
   4: ($spacer * 1.5),
   5: ($spacer * 3)
-) !default;
+), $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.
-$sizes: (
+$sizes: () !default;
+$sizes: map-merge((
   25: 25%,
   50: 50%,
   75: 75%,
   100: 100%
-) !default;
+), $sizes);
+// stylelint-enable
 
 // Body
 //
@@ -304,8 +308,8 @@ $table-cell-padding:          .75rem !default;
 $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
-$table-accent-bg:             rgba($black,.05) !default;
-$table-hover-bg:              rgba($black,.075) !default;
+$table-accent-bg:             rgba($black, .05) !default;
+$table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;
@@ -400,8 +404,8 @@ $input-disabled-bg:                     $gray-200 !default;
 
 $input-color:                           $gray-700 !default;
 $input-border-color:                    $gray-700 !default;
-$input-border-width:                    $border-width !default;
-$input-box-shadow:                      inset 0 1px 1px rgba($black,.075) !default;
+$input-border-width:                    $input-btn-border-width !default;
+$input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
 
 $input-border-radius:                   $border-radius !default;
 $input-border-radius-lg:                $border-radius-lg !default;
@@ -415,7 +419,7 @@ $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
 $input-placeholder-color:               $gray-600 !default;
 
-$input-height-border:                   $input-btn-border-width * 2 !default;
+$input-height-border:                   $input-border-width * 2 !default;
 
 $input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
 $input-height:                          calc(#{$input-height-inner} + #{$input-height-border}) !default;
@@ -456,6 +460,7 @@ $custom-control-label-disabled-color:     $gray-600 !default;
 
 $custom-control-indicator-checked-color:        $white !default;
 $custom-control-indicator-checked-bg:           $white !default;
+$custom-control-indicator-checked-disabled-bg:  rgba(theme-color("primary"), .5) !default;
 $custom-control-indicator-checked-box-shadow:   none !default;
 
 $custom-control-indicator-focus-box-shadow:     0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
@@ -492,7 +497,7 @@ $custom-select-border-color:        $input-border-color !default;
 $custom-select-border-radius:       $border-radius !default;
 
 $custom-select-focus-border-color:  $input-focus-border-color !default;
-$custom-select-focus-box-shadow:    inset 0 1px 2px rgba($black, .075), $input-btn-focus-box-shadow !default;
+$custom-select-focus-box-shadow:    inset 0 1px 2px rgba($black, .075), 0 0 5px rgba($custom-select-focus-border-color, .5) !default;
 
 $custom-select-font-size-sm:        75% !default;
 $custom-select-height-sm:           $input-height-sm !default;
@@ -540,7 +545,7 @@ $dropdown-border-color:             rgba($black, .15) !default;
 $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               $gray-200 !default;
-$dropdown-box-shadow:               0 .5rem 1rem rgba($black,.175) !default;
+$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
 $dropdown-link-color:               $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
@@ -593,6 +598,8 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 $navbar-padding-y:                  ($spacer / 2) !default;
 $navbar-padding-x:                  $spacer !default;
 
+$navbar-nav-link-padding-x:         .5rem !default;
+
 $navbar-brand-font-size:            $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height:                   ($font-size-base * $line-height-base + $nav-link-padding-y * 2) !default;
@@ -632,6 +639,8 @@ $pagination-color:                  $link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-color:           $gray-300 !default;
+
+$pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 
 $pagination-hover-color:            $link-hover-color !default;
 $pagination-hover-bg:               $gray-200 !default;
@@ -675,9 +684,11 @@ $card-columns-margin:               $card-spacer-y !default;
 
 // Tooltips
 
+$tooltip-font-size:           $font-size-sm !default;
 $tooltip-max-width:           200px !default;
 $tooltip-color:               $white !default;
 $tooltip-bg:                  $black !default;
+$tooltip-border-radius:        $border-radius !default;
 $tooltip-opacity:             .9 !default;
 $tooltip-padding-y:           .25rem !default;
 $tooltip-padding-x:           .5rem !default;
@@ -690,10 +701,12 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 
 // Popovers
 
+$popover-font-size:                 $font-size-sm !default;
 $popover-bg:                        $white !default;
 $popover-max-width:                 276px !default;
 $popover-border-width:              $border-width !default;
 $popover-border-color:              rgba($black, .2) !default;
+$popover-border-radius:             $border-radius-lg !default;
 $popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
 
 $popover-header-bg:                 darken($popover-bg, 3%) !default;
@@ -767,6 +780,10 @@ $alert-margin-bottom:               1rem !default;
 $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
+
+$alert-bg-level:                    -10 !default;
+$alert-border-level:                -9 !default;
+$alert-color-level:                 6 !default;
 
 
 // Progress bars
@@ -878,3 +895,8 @@ $kbd-bg:                            $gray-900 !default;
 
 $pre-color:                         $gray-900 !default;
 $pre-scrollable-max-height:         340px !default;
+
+
+// Printing
+$print-page-size:                   a3 !default;
+$print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
