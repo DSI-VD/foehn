@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix color of `@list-links` when insiade a `@highlight`
+
 ## [0.43.0] - 2018-02-07
 
 ### Changed
