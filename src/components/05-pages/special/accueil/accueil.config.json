@@ -111,6 +111,9 @@
                 "day": "7",
                 "month": "juillet"
               }
+            },
+            "image": {
+              "styleModifier": "order-3 vd-w-md-50"
             }
           },
           {
