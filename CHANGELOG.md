@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## Changed
+- Set the width of `@figure` in `@agenda` to be 50% on desktop bay adding
+  `.vd-w-md-50` class
+
 ## [0.42.1] - 2018-02-06
 
 ### Fix
