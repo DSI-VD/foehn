@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Fix hidden descender in `@input` and `@select`
 - Fix color of `@list-links` when insiade a `@highlight`
 - Upgrade to Bootstrap 4
 
