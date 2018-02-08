@@ -68,7 +68,7 @@ module.exports = {
                 styleModifier: 'mt-0 h4',
                 level: 'h2',
             },
-            label: 'Rechercher dans les actualités'
+            label: 'Rechercher dans les actualités',
         },
     },
     variants: [
