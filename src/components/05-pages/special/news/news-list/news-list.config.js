@@ -65,7 +65,8 @@ module.exports = {
         searchForm: {
             heading: {
                 text: 'Rechercher dans les actualités',
-                styleModifier: 'mt-0',
+                styleModifier: 'mt-0 h4',
+                level: 'h2',
             },
             label: 'Rechercher dans les actualités'
         },
