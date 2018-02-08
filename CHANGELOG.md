@@ -3,6 +3,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove `@search-form--regular` in `@theme--default`
+- Change label of the search form in:
+  - `@faq`
+  - `@search-banner`
+  - `@news-list`
+  - `@news-list--activities`
+  - `@news-list--categories`
+  - `@theme--list`
+
 ### Fix
 - Fix hidden descender in `@input` and `@select`
 - Fix color of `@list-links` when insiade a `@highlight`
