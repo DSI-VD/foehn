@@ -53,7 +53,12 @@
         "label": "List all prestations",
         "context": {
           "searchForm": {
-            "title": "Rechercher dans les prestations"
+            "heading": {
+              "text": "Rechercher dans les prestations",
+              "level": "h2",
+              "styleModifier": "mt-0"
+            },
+            "label": "Rechercher dans les prestations"
           },
           "prestations": {
             "list": [

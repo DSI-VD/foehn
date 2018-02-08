@@ -6,6 +6,7 @@
         "level": "h4"
       },
       "placeholder": "Rechercher",
-      "options": "@fieldset--checkbox"
+      "options": "@fieldset--checkbox",
+      "label": "Champ de recherche"
     }
 }
