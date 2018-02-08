@@ -4,6 +4,7 @@
       "text": "Rechercher dans les actualités"
     },
     "placeholder": "Rechercher",
-    "width": "col-md-8"
+    "width": "col-md-8",
+    "label": "Rechercher dans les actualités"
   }
 }
