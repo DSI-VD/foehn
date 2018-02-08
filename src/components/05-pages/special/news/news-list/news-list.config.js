@@ -67,6 +67,7 @@ module.exports = {
                 text: 'Rechercher dans les actualités',
                 styleModifier: 'mt-0',
             },
+            label: 'Rechercher dans les actualités'
         },
     },
     variants: [
