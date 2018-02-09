@@ -4,7 +4,6 @@
  * 1. Links with a heading class should be the default color
  * 2. Focus style
  * 3. Visited style
- * 4. Disable links to phone on desktop
  */
 a {
   text-decoration-skip: ink;
@@ -24,17 +23,6 @@ a {
 
   &:visited:not(.btn) {
     color: $vd-visited; /* [3] */
-  }
-
-  &[href^="tel"]:link,
-  &[href^="tel"]:visited,
-  &[href^="tel"]:hover {
-    @include media-breakpoint-up(md) {
-      text-decoration: none; /* [4] */
-      color: currentColor; /* [4] */
-      pointer-events: none; /* [4] */
-      cursor: default; /* [4] */
-    }
   }
 
   &[rel^="category"]:before {
