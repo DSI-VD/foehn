@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove `@figure`'s caption in `@agenda`
+
 ## [0.44.0] - 2018-02-09
 
 ### Changed
