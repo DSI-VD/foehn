@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.44.0] - 2018-02-09
+
 ### Changed
 - Remove `@search-form--regular` in `@theme--default`
 - Change label of the search form in:
@@ -1582,7 +1584,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.43.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.44.0...HEAD
+[0.44.0]: https://github.com/DSI-VD/foehn/compare/v0.43.0...v0.44.0
 [0.43.0]: https://github.com/DSI-VD/foehn/compare/v0.42.1...v0.43.0
 [0.42.1]: https://github.com/DSI-VD/foehn/compare/v0.42.0...v0.42.1
 [0.42.0]: https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0
