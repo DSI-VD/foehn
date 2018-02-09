@@ -57,9 +57,9 @@
 @import "print";
 
 // atoms:
-@import 'atoms/link';
-@import 'atoms/badge';
-@import 'atoms/search-form';
+@import '../../components/01-atoms/text/inlinetexts/link/link.scss';
+@import '../../components/01-atoms/badge/badge.scss';
+@import '../../components/01-atoms/search-form/search-form';
 @import 'atoms/image';
 @import 'atoms/figure';
 @import 'atoms/list-boxed';
