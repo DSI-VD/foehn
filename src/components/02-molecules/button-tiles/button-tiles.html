@@ -1,5 +1,7 @@
 <ul class="vd-btn-tiles mb-3">
-  {% for item in items %}
-  <li class="btn"><a href="{{ item.url }}" >{{ item.item }}</a></li>
-  {% endfor %}
+  {% for item in items -%}
+    <li class="vd-btn-tiles__item">
+      <a href="{{ item.url }}" class="vd-btn-tiles__link">{{ item.item }}</a>
+    </li>
+  {%- endfor %}
 </ul>

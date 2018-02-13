@@ -54,7 +54,7 @@ for (let i = 0; i < teaserItemCount; i += 1) {
 
 module.exports = {
     context: {
-        pageTitle: 'Actualités',
+        pageTitle: 'Toutes les actualités',
         breadcrumb: [
             {
                 page: 'vd.ch',
@@ -62,6 +62,14 @@ module.exports = {
             },
         ],
         teasers: teaserItemData,
+        searchForm: {
+            heading: {
+                text: 'Rechercher dans les actualités',
+                styleModifier: 'mt-0 h4',
+                level: 'h2',
+            },
+            label: 'Rechercher dans les actualités',
+        },
     },
     variants: [
         {

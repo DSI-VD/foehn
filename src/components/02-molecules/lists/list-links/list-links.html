@@ -1,5 +1,9 @@
 <ul class="vd-list-links">
-  {% for item in listLinks %}
-  <li><a href="{{ item.url }}">{{ item.item }}</a></li>
-  {% endfor %}
+  {% for item in listLinks -%}
+    {% if item.item -%}
+      <li>
+        <a href="{{ item.url }}">{{ item.item }}</a>
+      </li>
+    {%- endif%}
+  {%- endfor %}
 </ul>

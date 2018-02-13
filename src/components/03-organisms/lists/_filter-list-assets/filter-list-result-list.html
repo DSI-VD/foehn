@@ -1,0 +1,39 @@
+<h2>Ordre de tri</h2>
+<ul>
+    <li><a href="#">Trier par ordre alphabétique</a></li>
+    <li><a href="#">Trier par ordre alphabétique inverse</a></li>
+</ul>
+
+<h2>Liste des résultats</h2>
+
+<p>
+{% for item in results %}
+{%if loop.last %}{{ loop.length }}{% endif %}
+{% endfor %}
+résultats trouvés
+</p>
+
+<ol class="list-unstyled">
+    {% for item in results %}
+    <li>
+        <h3>{{ item.name }}</h3>
+        <dl class="row">
+            <dt class="col-md-4">Région</dt>
+            <dd class="col-md-8">Lausanne</dd>
+            <dt class="col-md-4">Situation</dt>
+            <dd class="col-md-8">Violence conjugale, Traite des êtres humains, Situation de précarité</dd>
+            <dt class="col-md-4">Clientèle</dt>
+            <dd class="col-md-8">Adultes uniquement</dd>
+            <dt class="col-md-4">Degré</dt>
+            <dd class="col-md-8">Avec rendez-vous</dd>
+            <dt class="col-md-4">Offre</dt>
+            <dd class="col-md-8">Hébergement, Intervention d'urgence, Information - Prévention - Orientation</dd>
+        </dl>
+        <p>
+            <a href="#">
+                Plus de détail<span class="sr-only"> sur {{ item.name }}</span>
+            </a>
+        </p>
+    </li>
+    {% endfor %}
+</ol>

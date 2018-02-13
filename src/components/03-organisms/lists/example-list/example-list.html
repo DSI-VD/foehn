@@ -93,29 +93,29 @@
   <p class="h4" property="jobTitle">{{ people.jobType }}</p>
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <p property="address" typeof="PostalAddress"><span property="streetAddress">{{ people.streetPrefix }} {{ street }} {{ loop.index }}</span><br>
     Case postale <span property="postOfficeBoxNumber">80{{ loop.index }}</span><br>
     <span property="postalCode">100{{ loop.index }}</span> <span property="addressLocality">{{ people.city }}</span></p>
       <ul class="vd-list-icons">
         <li>
-          <span class="fa fa-phone" aria-hidden="true"></span>
+          <span class="fas fa-phone" aria-hidden="true"></span>
           <span class="sr-only" title="Téléphone">Téléphone</span>
           <a href="tel:+41211234567" property="telephone">+41 21 123 45 67</a>
         </li>
         <li>
-          <span class="fa fa-fax" aria-hidden="true"></span>
+          <span class="fas fa-fax" aria-hidden="true"></span>
             <span class="sr-only">Fax</span>
             <span>+41 21 123 45 67</span>
         </li>
         <li>
-          <span class="fa fa-envelope" aria-hidden="true"></span>
+          <span class="fas fa-envelope" aria-hidden="true"></span>
           <span class="sr-only">Courriel</span>
           <a href="mailto:{{ people.mail }}" property="email">{{ people.email }}</a>
         </li>
       </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
       <dl class="row">
         <dt class="col-md-6">Titre</dt>
         <dd class="col-md-6">{{ people.jobTitle }}</dd>

@@ -1,22 +1,19 @@
 <header class="header">
   {% include '@access-nav' %}
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-
-        {% render '@nav' %}
-        {% include '@nav-mobile' %}
-
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end">
+      <div>
+        {% render '@nav', nav, true %}
       </div>
-
+      {% render '@login', { styleModifier: 'ml-3 text-right'}, true %}
     </div>
     {% if searchForm %}
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 vd-print-full-width">
         {% render '@logo-etat--alternate' %}
       </div>
       <div class="col-md-5 ml-auto">
-        {% render '@search-form--default', { styleModifier: 'my-4' }, true %}
+        {% render '@search-form--default', { styleModifier: 'mt-2 mb-4' }, true %}
       </div>
     </div>
     {% else %}

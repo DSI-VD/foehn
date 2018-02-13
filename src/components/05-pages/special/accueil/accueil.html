@@ -1,16 +1,5 @@
 {% extends '@template--homepage' %}
 {% block main %}
-  <section class="d-md-none">
-    <h2 class="vd-heading-light h4 mb-4">Les plus visités</h2>
-    <ul class="vd-list-links">
-      <li><a href="#0">Inscription au chômage</a></li>
-      <li><a href="#0">Formulaire d'indemnisation</a></li>
-      <li><a href="#0">Vaud Tax 2017</a></li>
-      <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-    </ul>
-  </section>
-
-  <p class="d-md-none mb-4 text-center"><a href="../domaines" class="btn btn-dark">Tous les thèmes</a></p>
 
   {% render '@teaser-list--homepage', news %}
 
@@ -28,10 +17,9 @@
 
 {% block contentSecondary %}
 <section class="mb-5">
-  <h2 class="vd-heading-light h4">Autorités</h2>
+  <h2 class="vd-heading-light-alt h4 mb-5 d-print-none">Autorités</h2>
 
   {% render '@button-tiles', buttonTilesTop %}
-  {% render '@button-tiles', buttonTilesBottom %}
 
   <p>
     <a href="../autorites/" class="btn btn-dark">Toutes les autorités</a>

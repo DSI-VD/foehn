@@ -22,6 +22,7 @@ h5,
 h6 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
+  line-height: 1.25;
 }
 
 /**
@@ -62,7 +63,8 @@ h6 {
     h1 {
       font-size: $h1-font-size * 0.8;
 
-      &.vd-heading-light {
+      &.vd-heading-light,
+      &.vd-heading-light-alt {
         font-size: $h1-font-size; /* [1] */
       }
     }
@@ -71,7 +73,8 @@ h6 {
     h2 {
       font-size: $h2-font-size * 0.8;
 
-      &.vd-heading-light {
+      &.vd-heading-light,
+      &.vd-heading-light-alt {
         font-size: $h2-font-size; /* [1] */
       }
     }
@@ -80,7 +83,8 @@ h6 {
     h3 {
       font-size: $h3-font-size * 0.8;
 
-      &.vd-heading-light {
+      &.vd-heading-light,
+      &.vd-heading-light-alt {
         font-size: $h3-font-size; /* [1] */
       }
     }
@@ -89,7 +93,8 @@ h6 {
     h4 {
       font-size: $h4-font-size * 0.8;
 
-      &.vd-heading-light {
+      &.vd-heading-light,
+      &.vd-heading-light-alt {
         font-size: $h4-font-size; /* [1] */
       }
     }
@@ -98,7 +103,8 @@ h6 {
     h5 {
       font-size: $h5-font-size * 0.8;
 
-      &.vd-heading-light {
+      &.vd-heading-light,
+      &.vd-heading-light-alt {
         font-size: $h5-font-size; /* [1] */
       }
     }
@@ -107,7 +113,8 @@ h6 {
     h6 {
       font-size: $h6-font-size * 0.8;
 
-      &.vd-heading-light {
+      &.vd-heading-light,
+      &.vd-heading-light-alt {
         font-size: $h6-font-size; /* [1] */
       }
     }
@@ -122,6 +129,12 @@ h6 {
  */
 .vd-heading-light {
   font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  text-transform: uppercase;
+}
+
+.vd-heading-light-alt {
+  font-family: $font-family-base-enhance !important;
   font-weight: $font-weight-normal;
   text-transform: uppercase;
 }

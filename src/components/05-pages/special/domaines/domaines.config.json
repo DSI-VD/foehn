@@ -1,5 +1,15 @@
 {
   "context": {
-    "pageTitle": "Domaines"
+    "pageTitle": "Economie",
+    "breadcrumb": [
+      {
+        "page": "vd.ch",
+        "url": "#"
+      },
+      {
+        "page": "Parent page",
+        "url": "#"
+      }
+    ]
   }
 }

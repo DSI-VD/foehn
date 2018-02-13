@@ -1,0 +1,42 @@
+{
+  "context": {
+    "title": "Titre du document",
+    "url": "#",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ligula eget elit rutrum, vitae ornare turpis pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum elementum sodales. Phasellus in enim nunc. Phasellus et dolor purus. Integer facilisis libero vitae libero ultricies, a tempor mi mattis. Nulla risus lectus, fringilla vel placerat viverra, semper finibus neque. Fusce placerat ligula mollis, imperdiet lacus id, malesuada nulla. Vivamus mollis hendrerit sollicitudin. Sed eget lacinia leo, ut bibendum purus. Sed condimentum varius convallis. Integer quis massa lacus. Pellentesque lacinia magna id odio ultricies, quis maximus enim porttitor. Aenean et tincidunt nisl."
+  },
+  "variants": [
+    {
+      "name": "default",
+      "label": "Page"
+    },
+    {
+      "name": "news",
+      "context": {
+        "type": {
+          "news": {
+            "date": "10 juillet 2017"
+          }
+        }
+      }
+    },
+    {
+      "name": "prestation",
+      "context": {
+        "type": {
+          "prestation": true
+        }
+      }
+    },
+    {
+      "name": "file",
+      "context": {
+        "type": {
+          "file": {
+            "type": "pdf",
+            "abbr": "Portable Document Format"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -4,6 +4,7 @@
  * Highlight visually content
  *
  * 1. Make link accessible
+ * 2. Remove bottom margin of the last element
  */
 .vd-highlight {
   padding: ($spacer * 2) ($spacer * 3);
@@ -44,5 +45,13 @@
     &:focus {
       color: $body-color; /* [1] */
     }
+  }
+
+  > :last-child {
+    margin-bottom: 0; /* [2] */
+  }
+
+  .vd-list-links {
+    color: $white;
   }
 }
