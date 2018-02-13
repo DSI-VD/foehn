@@ -12,6 +12,7 @@ module.exports = {
         "no-param-reassign": 0,
         "strict": 0,
         "max-len": ["error", 200],
+        "prefer-arrow-callback": 0,
         "prefer-rest-params": 0,
         "no-useless-escape": 0,
         "global-require": 0,
@@ -19,9 +20,11 @@ module.exports = {
         "eqeqeq": ["warn"],
         "no-restricted-syntax": 0,
         "consistent-return": 0,
-        "new-cap": ["error", { "properties": false }],
+        "new-cap": ["error", { "properties": false }]
     },
     "env": {
-        "node": true
+        "node": true,
+        "jquery": true,
+        "browser": true
     }
 };

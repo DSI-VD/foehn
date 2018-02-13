@@ -23,6 +23,15 @@ const paths = {
     src: `${__dirname}/src`,
 };
 
+const header = require('gulp-header');
+const pkg = require('./package.json');
+
+const banner = ['/**',
+    ' * <%= pkg.name %> - <%= pkg.description %>',
+    ' * @version v<%= pkg.version %>',
+    ' */',
+    ''].join('\n');
+
 /*
  * Configure a Fractal instance.
  */
@@ -109,6 +118,7 @@ function styles() {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write('./'))
+        .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
 
@@ -130,29 +140,6 @@ function lintstyles() {
 }
 
 /**
- * Style vendors
- */
-function stylesVendors() {
-    return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss(processors))
-        .pipe(rename('vendors.css'))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(`${paths.dest}/assets/styles/`));
-}
-
-/**
- * Fonts
- */
-function fonts() {
-    return gulp.src([
-        `${paths.src}/assets/fonts/**/*`,
-        'node_modules/font-awesome/fonts/**/*',
-    ])
-        .pipe(gulp.dest(`${paths.dest}/assets/fonts/`));
-}
-
-/**
  * Scripts Vendors
  */
 function scriptsVendors() {
@@ -161,6 +148,19 @@ function scriptsVendors() {
     ])
         .pipe(sourcemaps.init())
         .pipe(rename('vendors.js'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
+}
+
+/**
+ * Scripts
+ */
+function scripts() {
+    return gulp.src([
+        `${paths.src}/assets/scripts/**/*.js`,
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(rename('foehn-scripts--footer.js'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
@@ -224,13 +224,13 @@ function copyChangelog() {
 function watch() {
     serve();
     gulp.watch(`${paths.src}/**/*.scss`, gulp.parallel(lintstyles, styles));
-    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts));
+    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scripts));
 }
 
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, stylesVendors, fonts, scriptsVendors, svg, images, lintscripts));
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scripts, svg, images, lintscripts));
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));

@@ -21,8 +21,12 @@ module.exports = {
     context: {
         titleModifier: 'sr-only',
         searchForm: {
-            title: 'Rechercher dans les questions',
+            label: 'Rechercher dans les questions',
             titleModifier: 'mt-0',
+            heading: {
+                text: 'Rechercher dans les questions',
+                styleModifier: 'mt-0',
+            },
         },
         faqs: faqData,
     },

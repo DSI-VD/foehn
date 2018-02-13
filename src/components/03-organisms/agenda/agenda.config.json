@@ -1,28 +1,49 @@
 {
     "status": "ready",
     "context": {
-      "title": "Agenda et événements",
-      "teasers": [
-        {
-          "title": "Ut condimentum magna a ornare pulvinar",
-          "authors": false,
-          "categories": false,
-          "media": false,
-          "readMore": false
-        },
-        {
-          "title": "Etiam vehicula ligula nec convallis fringilla",
-          "authors": false,
-          "categories": false,
-          "readMore": false
-        },
-        {
-          "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
-          "authors": false,
-          "categories": false,
-          "media": false,
-          "readMore": false
-        }
-      ]
+        "title": "Agenda et événements",
+        "events": [
+            {
+                "title": "Ut condimentum magna a ornare pulvinar",
+                "url": "#",
+                "excerpt": "rem ipsum dolor sit amet, consectetur adipisicing elit. Modi esse non autem blanditiis, facere, cumque, eligendi voluptatem moletias vero sint ad optio ab tempora quis, maiores sapiente iusto quia quam. Modi ducimus, cumque repellat, illum perferendis suscipit ad voluptatem veniam delectus qui reiciendis, quod impedit ab libero omnis? Consequatur atque nihil exercitationem est, amet maxime quia.",
+                "date": {
+                    "start": {
+                        "day": "31",
+                        "month": "juillet"
+                    },
+                    "end": {
+                        "day": "1",
+                        "month": "août"
+                    }
+                }
+            },
+            {
+                "title": "Etiam vehicula ligula nec convallis fringilla",
+                "url": "#",
+                "image": {
+                  "styleModifier": "order-3 vd-w-md-50",
+                  "caption": false
+                },
+                "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi esse non autem blanditiis, facere, cumque, eligendi voluptatem moletias vero sint ad optio ab tempora quis, maiores sapiente iusto quia quam. Modi ducimus, cumque repellat, illum perferendis suscipit ad voluptatem veniam delectus qui reiciendis, quod impedit ab libero omnis? Consequatur atque nihil exercitationem est, amet maxime quia.",
+                "date": {
+                    "start": {
+                        "day": "24",
+                        "month": "novembre"
+                    }
+                }
+            },
+            {
+                "title": "Sed vitae magna eget enim condimentum aliquam semper sit amet velit",
+                "url": "#",
+                "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi esse non autem blanditiis, facere, cumque, eligendi voluptatem moletias vero sint ad optio ab tempora quis, maiores sapiente iusto quia quam. Modi ducimus, cumque repellat, illum perferendis suscipit ad voluptatem veniam delectus qui reiciendis, quod impedit ab libero omnis? Consequatur atque nihil exercitationem est, amet maxime quia.",
+                "date": {
+                    "start": {
+                        "day": "1",
+                        "month": "décembre"
+                    }
+                }
+            }
+        ]
     }
 }

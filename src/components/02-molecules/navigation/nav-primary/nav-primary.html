@@ -1,36 +1,57 @@
-<div class="vd-nav-primary">
-  <div class="vd-nav-primary-toggle">
-    <div class="container">
-      <button type="button" class="d-none d-md-inline-block btn btn-sm btn-dark vd-menu-toggle {% if navOpen %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#nav-primary-container"  aria-controls="nav-primary-container" aria-expanded="{% if navOpen %}true{% else %}false{% endif %}">
-        <span class="sr-only">Accédez à la liste de </span>
-        Tous les thèmes
-        <span class="fa vd-fa-menu-toggle fa-fw" aria-hidden="true"></span>
-      </button>
-    </div>
+<div class="vd-nav-primary d-print-none">
+
+  <!-- button -->
+  <div class="container">
+    <button type="button"
+          class="btn btn-sm btn-link vd-nav-primary__button {% if navOpen %}js-closeMenuOnMobile__button {% else %}collapsed{% endif %}"
+          data-toggle="collapse"
+          data-target="#nav-primary-container"
+          aria-controls="nav-primary-container"
+        aria-expanded="{%- if navOpen %}true{% else %}false{% endif -%}">
+      <div class="d-flex justify-content-between">
+        <div>
+          <span class="vd-nav-primary__button--close">Cacher les thèmes</span>
+          <span class="vd-nav-primary__button--open">Afficher les thèmes</span>
+        </div>
+        <div>
+          <span class="vd-nav-primary__button--open fas fa-plus"></span>
+          <span class="vd-nav-primary__button--close fas fa-minus"></span>
+        </div>
+      </div>
+    </button>
   </div>
-  <div class="collapse {% if navOpen %}show {% endif %}clearfix" id="nav-primary-container">
-    <div class="vd-nav-primary-content d-none d-md-block">
-      <div class="container">
-        <div class="row">
-          <nav class="col-md-8" id="nav-primary">
-            <h2 class="sr-only">Navigation par thèmes</h2>
-            <ul class="list-unstyled mb-0 row">
-              {% for domain in domains.domains %}
-              {% render '@domain-item', {name:domain.name, styleModifier:'py-3 mb-0 col-md-6 col-lg-4', description:domain.description}, true %}
-              {% endfor %}
-            </ul>
-          </nav>
-          <div class="col-md-4">
-            <h2 class="vd-heading-light h4 mt-5 mb-3">Les plus visités</h2>
-            <ul class="vd-menu-list-links">
-              <li><a href="#0">Inscription au chômage</a></li>
-              <li><a href="#0">Formulaire d'indemnisation</a></li>
-              <li><a href="#0">Vaud Tax 2017</a></li>
-              <li><a href="#0">Vacances scolaires et jours fériés</a></li>
-            </ul>
+
+  <!-- menu -->
+  <div class="vd-nav-primary__menu-container">
+    <div class="collapse {% if navOpen %}show js-closeMenuOnMobile__container {% endif %}clearfix"
+         id="nav-primary-container">
+      <div class="pb-3">
+        <div class="container vd-nav-primary__menu-bg-md">
+          <div class="vd-nav-primary__menu-bg-sm">
+            <div class="row">
+              <nav class="col-md-8 order-md-1 mt-3" id="nav-primary">
+                <h2 class="sr-only">Navigation par thèmes</h2>
+                <ul class="list-unstyled mb-0 row">
+                  {% for domain in domains.domains %}
+                    {% render '@domain-item--small', {name:domain.name,
+                    styleModifier:'mb-3 col-sm-6 col-lg-4', description:domain.description}, true %}
+                  {% endfor %}
+                </ul>
+              </nav>
+              <div class="col-md-4 order-first order-md-2 mt-3">
+                <h2 class="vd-heading-light-alt h4">Les plus visités</h2>
+                <ul class="vd-menu-list-links">
+                  <li><a href="#0">Inscription au chômage</a></li>
+                  <li><a href="#0">Formulaire d'indemnisation</a></li>
+                  <li><a href="#0">Vaud Tax 2017</a></li>
+                  <li><a href="#0">Vacances scolaires et jours fériés</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </div>

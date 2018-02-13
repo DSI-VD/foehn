@@ -14,37 +14,37 @@
         "prestations": {
           "list": [
               {
-                "item": "Adipisci blanditiis quia aspernatur voluptas.",
+                "item" : "Commander les publications du Bureau cantonal pour l'intégration des étrangers et la prévention du racisme (BCI)",
                 "url": "#",
                 "secure": true
               },
               {
-                "item": "Sit laudantium ad magni ut consectetur ipsam.",
+                "item" : "Consulter état de traitement des dossiers de personnes étrangères (cette prestation demande un identification)",
                 "url": "#"
               },
               {
-                "item": "Omnis est neque modi sit qui cumque atque voluptas.",
+                "item" : "Demander un appui (information et accompagnement) sur une question d'actes à caractère raciste",
                 "url": "#"
               },
               {
-                "item": "Doloremque rerum voluptate.",
+                "item" : "Demander un appui (information et orientation) sur une question de mariage forcé",
                 "url": "#"
               },
               {
-                "item": "Impedit provident esse voluptas nesciunt ipsum suscipit qui earum fuga.",
+                "item" : "Demander une subvention pour un projet d'intégration et/ou de prévention du racisme (cette prestation demande un identification)",
                 "url": "#",
                 "secure": true
               },
               {
-                "item": "Natus animi est mollitia.",
+                "item" : "Demander, en tant que personne non européenne, une autorisation de séjour pour vivre auprès d'un conjoint ou parent titulaire d'un permis B, C ou L",
                 "url": "#"
               }
             ]
         },
         "button": {
-          "text": "Voir tout",
-          "title": "Afficher toutes les prestations",
-          "href": "theme--list"
+          "text": "Voir tout<span class='sr-only'>es les prestations</span>",
+          "href": "theme--list",
+          "title": false
         }
     },
     "variants": [
@@ -53,7 +53,12 @@
         "label": "List all prestations",
         "context": {
           "searchForm": {
-            "title": "Rechercher dans les prestations"
+            "heading": {
+              "text": "Rechercher dans les prestations",
+              "level": "h2",
+              "styleModifier": "mt-0"
+            },
+            "label": "Rechercher dans les prestations"
           },
           "prestations": {
             "list": [
@@ -172,8 +177,8 @@
             ]
           },
           "button": {
-            "text": "Voir moins",
-            "title": "Afficher moins de prestations",
+            "text": "Voir moins<span class='sr-only'> de prestations</span>",
+            "title": false,
             "href": "theme--default"
           }
         }

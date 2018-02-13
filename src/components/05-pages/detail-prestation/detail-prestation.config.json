@@ -21,23 +21,34 @@
         "footer":{
           "updateTime": true
         },
-        "index": {
+        "indexMenu": {
+          "styleModifier": "mb-5",
+          "title": "Obtenir la prestation",
           "listLinks": [
             {
-              "item": "Obtenir la prestation en ligne",
+              "item": "<span class=\"sr-only\">Obtenir la prestation </span>En ligne",
               "url": "#1"
             },
             {
-              "item": "Obtenir la prestation au guichet",
+              "item": "<span class=\"sr-only\">Obtenir la prestation </span>Au guichet",
               "url": "#2"
             },
             {
-              "item": "Obtenir la prestation par courrier",
+              "item": "<span class=\"sr-only\">Obtenir la prestation </span>Par courrier",
               "url": "#3"
             },
             {
               "item": "Recommandations et informations",
               "url": "#4"
+            },
+            {
+              "item": false
+            },
+            {
+              "item": false
+            },
+            {
+              "item": false
             }
           ]
         },

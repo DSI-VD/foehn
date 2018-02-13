@@ -1,21 +1,26 @@
-{% extends '@template--2-col' %}
+{% extends '@template' %}
 {% block main %}
-  {% render '@search-form--default' %}
-  <h2>10 prestations trouvées</h2>
-  <div class="vd-bg-pattern-green p-1 mb-3">
-    {% render '@list-boxed', prestations %}
-  </div>
-  <h2>97 résultats trouvées</h2>
-  {% render '@results-list' %}
-  {% render '@pagination' %}
-{% endblock %}
-{% block aside %}
-  <h2>Vous ne trouvez pas votre information ?</h2>
-  <p>Comment pouvons-nous vous aider ?</p>
-  <p>
-    {% render '@button--default', { text: 'Tous les thèmes' }, true %}
-  </p>
-  <p>
-    {% render '@button--default', { text: 'Nous écrire' }, true %}
-  </p>
+  {% render '@search-form--regular', searchForm, true %}
+  {% if results %}
+    <h2 class="h5">Filtrer les résultats</h2>
+    <ul class="nav nav-pills">
+      {% for filter in filters -%}
+        <li class="nav-item">
+          <a href="{{ filter.url }}"
+            {% if filter.active %}
+              class="nav-link active">
+            {% else %}
+              class="nav-link">
+            {% endif %}
+          {{ filter.title }}
+          </a>
+        </li>
+        {%- endfor %}
+    </ul>
+    {% render '@results-list' %}
+    {% render '@pagination' %}
+  {% elif error %}
+    <h2>Aucun résultat</h2>
+    <p>Vous pouvez essayer avec des termes différents</p>
+  {% endif %}
 {% endblock %}

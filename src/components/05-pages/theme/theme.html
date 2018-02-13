@@ -1,13 +1,23 @@
-{% extends '@template--default' %}
+{% extends '@template--2-col' %}
 {% block main %}
+  {% if searchForm -%}
+  <div class="vd-bg-pattern-bars-gray clearfix my-3 py-4 d-print-none">
+    <div class="container">
+      {% render '@search-form--regular', searchForm %}
+    </div>
+  </div>
+  {%- endif %}
   <h2>Dans ce thème</h2>
-  <div class="vd-bg-pattern-green p-1 mb-3">
+  <div class="vd-bg-pattern-green p-3 mb-3">
     {% render '@list-boxed', prestations %}
-    <p>
-      {% render '@button--default', button, true %}
+    <p class="mb-0">
+    {% render '@button--default', button, true %}
     </p>
   </div>
 
   <h2 class="sr-only">Pages d'informations</h2>
   {% render '@list-links' %}
+{% endblock %}
+{% block aside %}
+
 {% endblock %}

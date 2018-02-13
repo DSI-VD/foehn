@@ -42,8 +42,18 @@ a.vd-teaser-card {
   .card-text,
   a {
     color: $white; /* [1] */
+  }
 
+  a {
     @include hover {
+      color: $gray-300; /* [1] */
+    }
+
+    &:visited {
+      color: $white;
+    }
+
+    &:visited:hover {
       color: $gray-300; /* [1] */
     }
   }
@@ -63,7 +73,7 @@ a.vd-teaser-card {
  *
  * 1. Make the text visible
  */
-@include bg-variant(".vd-card-lightgray", $vd-primary-darker);
+@include bg-variant(".vd-card-lightgray", $vd-neutral-light);
 
 .vd-card-lightgray {
   .card-title,
@@ -75,7 +85,7 @@ a.vd-teaser-card {
 /**
  * Dark gray
  */
-@include bg-variant(".vd-card-darkgray ", $vd-primary-darker);
+@include bg-variant(".vd-card-darkgray ", $vd-neutral-dark);
 
 .vd-card-darkgray {
   @extend %card-inside;
@@ -84,7 +94,7 @@ a.vd-teaser-card {
 /**
  * Black
  */
-@include bg-variant(".vd-card-black ", $vd-primary-darker);
+@include bg-variant(".vd-card-black ", $black);
 
 .vd-card-black {
   @extend %card-inside;
