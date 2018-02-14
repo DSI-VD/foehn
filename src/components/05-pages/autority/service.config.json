@@ -189,7 +189,8 @@
         "text": "Nous écrire",
         "href": "#",
         "title": "Formulaire de contact"
-      }
+      },
+      "suggestions": false
     },
     "prestations": {
       "listLinks": [
