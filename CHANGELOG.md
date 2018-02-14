@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Fix accessibility of `@autority-address--search`
 - Remove `@figure`'s caption in `@agenda`
 
 ### Fix
