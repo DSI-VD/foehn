@@ -8,9 +8,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Remove `@figure`'s caption in `@agenda`
 
 ### Fix
+- Fix wording of result heading in `@example-list`
 - Fix style of button linked to a phone number who are black on desktop
 - Fix style of link to a phone number who are deisplay as normal text on
   desktop
+
 ## [0.44.0] - 2018-02-09
 
 ### Changed
