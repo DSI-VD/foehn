@@ -49,6 +49,15 @@
       "name": "search",
       "context": {
         "division": null,
+        "search": {
+          "heading": {
+            "level": "h3",
+            "text": "Rechercher l'entité compétente selon la commune ou le numéro postal (NPA)",
+            "styleModifier": "h4"
+          },
+          "label": "Rechercher l'entité compétente selon la commune ou le numéro postal (NPA)",
+          "placeholder": false
+        },
         "suggestions": [
           {
             "text": "Bofflens",
