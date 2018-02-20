@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fix
 - Refactor CSS
+- Fix wording in `@detail-prestation`
 
 ## [0.45.0] - 2018-02-20
 
