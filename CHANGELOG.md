@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Refactor CSS
+
 ## [0.45.0] - 2018-02-20
 
 ### Changed
