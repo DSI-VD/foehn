@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+.vd-form-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  input[type="number"] {
+    /* stylelint-disable */
+    -moz-appearance: textfield; /* [1] */
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none; /* [2] */
+      margin: 0; /* [2] */ /* [3] */
+    }
+    /* stylelint-enable */
+  }
+}
+
+/**
+ * Set the width of a div containing an `<input>` with x chars (based on the
+ * width of an M).
+ */
+.vd-form-flex__item {
+  flex: 0 0 auto;
+  margin-right: $spacer;
+
+  &--2-char-width {
+    flex-basis: ($font-size-base * 1.8) + ($input-btn-padding-x * 2);
+  }
+
+  &--3-char-width {
+    flex-basis: ($font-size-base * 2.7) + ($input-btn-padding-x * 2);
+  }
+
+  &--4-char-width {
+    flex-basis: ($font-size-base * 3.6) + ($input-btn-padding-x * 2);
+  }
+}

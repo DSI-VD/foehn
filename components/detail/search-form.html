@@ -131,6 +131,10 @@
         
         
         
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-9d9aed991fe4860d411954242253bbb8-panel-assets">Assets</a>
+        </li>
+        
         
         
         
@@ -238,6 +242,129 @@
     
     
 
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-9d9aed991fe4860d411954242253bbb8-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-c6bda2127bef5b8a8e427d757744e8af">_search-form.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-c6bda2127bef5b8a8e427d757744e8af" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+
+<span class="hljs-selector-class">.vd-search-form</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">border-top</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$black</span>;
+  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$black</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer</span>;
+
+  <span class="hljs-selector-class">.form-control</span> {
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">border-color</span>: transparent;
+    <span class="hljs-attribute">transition</span>:
+      padding <span class="hljs-number">0.11s</span> ease-in,
+      border <span class="hljs-number">0.11s</span>;
+
+    &amp;:focus {
+      <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$input-btn-padding-y</span>;
+      <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$vd-focus</span>;
+      <span class="hljs-attribute">box-shadow</span>: none;
+    }
+  }
+
+  <span class="hljs-selector-class">.input-group-btn</span> {
+    <span class="hljs-attribute">width</span>: auto;
+  }
+
+  <span class="hljs-selector-class">.input-group-btn</span> &gt; <span class="hljs-selector-class">.btn</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.2rem</span> <span class="hljs-number">0.8rem</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$vd-primary-dark</span>;
+
+    &amp;,
+    <span class="hljs-selector-class">.svg-inline--fa</span> {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+    }
+
+    @<span class="hljs-keyword">include</span> hover {
+      <span class="hljs-attribute">background</span>: darken(<span class="hljs-variable">$vd-primary</span>, <span class="hljs-number">10%</span>);
+    }
+  }
+
+  ::placeholder {
+    font-style: italic;
+  }
+}
+
+<span class="hljs-comment">/**
+ * regular search form
+ *
+ * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
+ *    see also CCWEB-9943
+ */</span>
+<span class="hljs-selector-class">.vd-search-form-regular</span> {
+  ::placeholder {
+    font-style: italic;
+  }
+
+  <span class="hljs-selector-class">.btn</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$vd-primary-dark</span>;
+    <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$vd-primary-dark</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+
+    &amp;,
+    <span class="hljs-selector-class">.svg-inline--fa</span> {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+    }
+
+    @<span class="hljs-keyword">include</span> hover {
+      <span class="hljs-attribute">background</span>: darken(<span class="hljs-variable">$vd-primary</span>, <span class="hljs-number">10%</span>);
+      <span class="hljs-attribute">border-color</span>: darken(<span class="hljs-variable">$vd-primary</span>, <span class="hljs-number">10%</span>);
+    }
+  }
+
+  <span class="hljs-selector-class">.input-group-btn</span> &gt; <span class="hljs-selector-class">.btn</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">2.375rem</span>;
+  }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/search-form/_search-form.scss"><span>/components/raw/search-form/_search-form.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/01-atoms/search-form/_search-form.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.3 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -1355,7 +1482,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>

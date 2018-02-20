@@ -131,6 +131,10 @@
         
         
         
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-2f226f5191928642142f45392a40412f-panel-assets">Assets</a>
+        </li>
+        
         
         
         
@@ -197,6 +201,189 @@
     
     
 
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-2f226f5191928642142f45392a40412f-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-3d276877be60a9e6846b0c90abe94473">_button.scss</option>
+                
+                <option value="file-e035a3d6b514dc4f73a74f659598d7c2">_input-group.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-3d276877be60a9e6846b0c90abe94473" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+
+<span class="hljs-comment">// Override normalize.css – because setting the font-family on `body` is not</span>
+<span class="hljs-comment">// specific enough for those tags</span>
+
+<span class="hljs-selector-tag">button</span>,
+<span class="hljs-selector-tag">input</span>,
+<span class="hljs-selector-tag">optgroup</span>,
+<span class="hljs-selector-tag">select</span>,
+<span class="hljs-selector-tag">textarea</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family-base</span>;
+}
+
+<span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">/**
+ * Button
+ */</span>
+<span class="hljs-selector-class">.btn</span> {
+  <span class="hljs-attribute">white-space</span>: normal;
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$input-btn-padding-y</span> * <span class="hljs-number">1.1</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
+  -webkit-<span class="hljs-attribute">font</span>-smoothing: antialiased;
+
+  &amp;:hover {
+    <span class="hljs-attribute">cursor</span>: pointer;
+  }
+
+  &amp;:focus {
+    @<span class="hljs-keyword">include</span> box-shadow(<span class="hljs-variable">$input-btn-focus-box-shadow</span>);
+  }
+}
+
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.btn</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+
+<span class="hljs-selector-class">.btn-sm</span> {
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$input-btn-padding-y-sm</span> * <span class="hljs-number">2</span>;
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$input-btn-padding-y-sm</span> * <span class="hljs-number">2</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span> * <span class="hljs-number">0.8</span>;
+}
+
+<span class="hljs-selector-class">.btn-block</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">justify-content</span>: center;
+
+  <span class="hljs-selector-class">.fa</span> {
+    <span class="hljs-attribute">align-self</span>: center;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer</span>;
+  }
+}
+
+<span class="hljs-selector-class">.btn-link</span> {
+  <span class="hljs-attribute">font-weight</span>: bold;
+
+  &amp;:hover {
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$link-hover-color</span>;
+  }
+}
+
+<span class="hljs-comment">/**
+ * Fontawesome icons inside button
+ *
+ * 1. Icons inside a button are green
+ * 2. Icons inside a secondary or success button are white
+ */</span>
+
+<span class="hljs-selector-class">.btn</span> {
+  <span class="hljs-selector-class">.fab</span>,
+  <span class="hljs-selector-class">.fas</span>,
+  <span class="hljs-selector-class">.fa</span>,
+  <span class="hljs-selector-class">.far</span>,
+  <span class="hljs-selector-class">.fal</span>,
+  <span class="hljs-selector-class">.svg-inline--fa</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$vd-primary</span>; <span class="hljs-comment">/* [1] */</span>
+  }
+
+  &amp;<span class="hljs-selector-class">.btn-secondary</span>,
+  &amp;<span class="hljs-selector-class">.btn-success</span> {
+    <span class="hljs-selector-class">.fab</span>,
+    <span class="hljs-selector-class">.fas</span>,
+    <span class="hljs-selector-class">.fa</span>,
+    <span class="hljs-selector-class">.far</span>,
+    <span class="hljs-selector-class">.fal</span>,
+    <span class="hljs-selector-class">.svg-inline--fa</span> {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">/* [2] */</span>
+    }
+  }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/button/_button.scss"><span>/components/raw/button/_button.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/01-atoms/button/_button.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.3 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-e035a3d6b514dc4f73a74f659598d7c2" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+
+<span class="hljs-comment">/**
+ * 1. Overrides Bootstrap behavior: it's broken in IE if we don't specify
+ *    shrink and basis value.
+ */</span>
+
+<span class="hljs-selector-class">.input-group-btn</span> {
+  &gt; <span class="hljs-selector-class">.btn</span> {
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span> <span class="hljs-number">1</span> auto; <span class="hljs-comment">/* [1] */</span>
+    <span class="hljs-attribute">padding</span>: (<span class="hljs-variable">$input-btn-padding-y</span> * <span class="hljs-number">0.8</span>) <span class="hljs-variable">$input-btn-padding-x</span>;
+    <span class="hljs-attribute">box-shadow</span>: none;
+  }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/button/_input-group.scss"><span>/components/raw/button/_input-group.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/01-atoms/button/_input-group.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">284 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -1317,7 +1504,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>

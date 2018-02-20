@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+.vd-teaser-small {
+  display: block;
+  margin: $spacer 0 ($spacer * 2);
+  padding-bottom: ($spacer / 2);
+  border-bottom: 1px solid $vd-primary-darker;
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.vd-teaser-small-img {
+  max-width: 100%;
+
+  @include media-breakpoint-up(md) {
+    max-width: 40%;
+  }
+}

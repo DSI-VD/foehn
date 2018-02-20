@@ -131,6 +131,10 @@
         
         
         
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-1e8f8296fd16ea56d0ccd0c6a2ce8c1b-panel-assets">Assets</a>
+        </li>
+        
         
         
         
@@ -196,6 +200,152 @@
     
     
 
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-1e8f8296fd16ea56d0ccd0c6a2ce8c1b-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-5264b86a0a681a0335e1e7973e10b9c9">_teaser-card.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-5264b86a0a681a0335e1e7973e10b9c9" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+
+<span class="hljs-selector-class">.vd-teaser-card</span> {
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-comment">// padding-bottom: 1em;</span>
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-comment">// 👺 Proof of concept of the nice angled layout and dog ear effect</span>
+  <span class="hljs-comment">// clip-path: polygon(0 0, 76% 0, 100% 7%, 100% 96%, 4% 100%);</span>
+
+  <span class="hljs-comment">// &amp;:before {</span>
+  <span class="hljs-comment">//   content: '';</span>
+  <span class="hljs-comment">//   position: absolute;</span>
+  <span class="hljs-comment">//   top: 0;</span>
+  <span class="hljs-comment">//   right: 0;</span>
+  <span class="hljs-comment">//   width: 24%;</span>
+  <span class="hljs-comment">//   height: 30%;</span>
+  <span class="hljs-comment">//   background: inherit;</span>
+  <span class="hljs-comment">//   clip-path: polygon(0 0, 100% 23%, 70% 100%);</span>
+  <span class="hljs-comment">// }</span>
+
+  <span class="hljs-selector-class">.card-title</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family-base</span>;
+  }
+
+  <span class="hljs-selector-class">.card-text</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+  }
+}
+
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.vd-teaser-card</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+
+<span class="hljs-comment">/**
+ * Placeholder for card content
+ *
+ * 1. Make the text visible
+ */</span>
+%card-inside {
+  <span class="hljs-selector-class">.card-title</span>,
+  <span class="hljs-selector-class">.card-text</span>,
+  <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">/* [1] */</span>
+  }
+
+  <span class="hljs-selector-tag">a</span> {
+    @<span class="hljs-keyword">include</span> hover {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-300</span>; <span class="hljs-comment">/* [1] */</span>
+    }
+
+    &amp;:visited {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+    }
+
+    &amp;:visited:hover {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-300</span>; <span class="hljs-comment">/* [1] */</span>
+    }
+  }
+}
+
+<span class="hljs-comment">/**
+ * Green
+ */</span>
+@<span class="hljs-keyword">include</span> bg-variant(<span class="hljs-string">".vd-card-green"</span>, <span class="hljs-variable">$vd-primary-darker</span>);
+
+<span class="hljs-selector-class">.vd-card-green</span> {
+  @<span class="hljs-keyword">extend</span> %card-inside;
+}
+
+<span class="hljs-comment">/**
+ * Light gray
+ *
+ * 1. Make the text visible
+ */</span>
+@<span class="hljs-keyword">include</span> bg-variant(<span class="hljs-string">".vd-card-lightgray"</span>, <span class="hljs-variable">$vd-neutral-light</span>);
+
+<span class="hljs-selector-class">.vd-card-lightgray</span> {
+  <span class="hljs-selector-class">.card-title</span>,
+  <span class="hljs-selector-class">.card-text</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$vd-neutral-darker</span>; <span class="hljs-comment">/* [1] */</span>
+  }
+}
+
+<span class="hljs-comment">/**
+ * Dark gray
+ */</span>
+@<span class="hljs-keyword">include</span> bg-variant(<span class="hljs-string">".vd-card-darkgray "</span>, <span class="hljs-variable">$vd-neutral-dark</span>);
+
+<span class="hljs-selector-class">.vd-card-darkgray</span> {
+  @<span class="hljs-keyword">extend</span> %card-inside;
+}
+
+<span class="hljs-comment">/**
+ * Black
+ */</span>
+@<span class="hljs-keyword">include</span> bg-variant(<span class="hljs-string">".vd-card-black "</span>, <span class="hljs-variable">$black</span>);
+
+<span class="hljs-selector-class">.vd-card-black</span> {
+  @<span class="hljs-keyword">extend</span> %card-inside;
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/teaser-card/_teaser-card.scss"><span>/components/raw/teaser-card/_teaser-card.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/02-molecules/teaser/teaser-card/_teaser-card.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.5 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -1280,7 +1430,7 @@ In case of dark background, use the class <code>.card-inverse</code> to display 
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>

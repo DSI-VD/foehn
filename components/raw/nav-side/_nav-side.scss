@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/**
+ * Nav-side style
+ *
+ * 1. The first element of the nav have to look like a headings
+ * 2. Every list element has a separator
+ * 3. Add a separator at the top of the first element. Because `ul` are inside
+ *    `li`
+ * 4. Starting at the third level of list, there's a padding on the left.
+ *
+ * A note for futur me: Sorry for that. Bad design makes me doing bad CSS with
+ *                      lot of specificities.
+ */
+.vd-nav-side {
+  > ul > li:first-child > a {
+    font-size: $h4-font-size; /* [1] */
+    font-family: $headings-font-family; /* [1] */
+    font-weight: $headings-font-weight; /* [1] */
+    color: $black; /* [1] */
+    text-decoration: none; /* [1] */
+
+    &:hover {
+      text-decoration: underline; /* [1] */
+    }
+  }
+
+  .nav-link {
+    border-bottom: 1px solid $vd-neutral-light; /* [2] */
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  .nav:first-child .nav-link {
+    border-top: 1px solod $vd-neutral-light; /* [3] */
+  }
+
+  > ul ul ul {
+    padding-left: $spacer; /* [3] */
+  }
+}
+
+html.wf-active .vd-nav-side > ul > li:first-child > a {
+  font-family: $headings-font-family-enhance; /* [1] */
+  font-weight: $headings-font-weight; /* [1] */
+}

@@ -1,0 +1,35 @@
+/**
+ * Links
+ *
+ * 1. Links with a heading class should be the default color
+ * 2. Focus style
+ * 3. Visited style
+ */
+a {
+  text-decoration-skip: ink;
+
+  &.h1,
+  &.h2,
+  &.h3,
+  &.h4,
+  &.h5,
+  &.h6 {
+    color: currentColor; /* [1] */
+  }
+
+  &:focus {
+    @include vd-focus; /* [2] */
+  }
+
+  &:visited:not(.btn) {
+    color: $vd-visited; /* [3] */
+  }
+
+  &[rel^="category"]:before {
+    content: "#";
+  }
+}
+// fix Firefox focus bug
+.list-unstyled li a > .h3 {
+  line-height: normal;
+}

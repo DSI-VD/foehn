@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+/**
+ * Breadcrumb
+ *
+ * 1. Only display the parent page on mobile
+ */
+.breadcrumb {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  > li {
+    display: inline;
+  }
+
+  @include media-breakpoint-down(xs) {
+    li:not(:nth-last-child(-n+2)) { display: none; }
+
+    @media print {
+      li:not(:nth-last-child(-n+2)) { display: inline; }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb-item { float: none; }

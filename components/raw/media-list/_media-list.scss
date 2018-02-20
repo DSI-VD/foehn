@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+/**
+ * Media-lists
+ *
+ * 1. Ensure that image are lits vertically. Override bootstrap style for
+ *    `.figure`
+ */
+
+.media-lists .figure {
+  display: block; /* [1] */
+}

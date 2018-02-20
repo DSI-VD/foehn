@@ -1,0 +1,93 @@
+@charset 'UTF-8';
+
+// Override normalize.css – because setting the font-family on `body` is not
+// specific enough for those tags
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-base;
+}
+
+button {
+  border-radius: 0;
+}
+
+/**
+ * Button
+ */
+.btn {
+  white-space: normal;
+  padding-top: $input-btn-padding-y * 1.1;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    @include box-shadow($input-btn-focus-box-shadow);
+  }
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding-top: $input-btn-padding-y-sm * 2;
+  padding-bottom: $input-btn-padding-y-sm * 2;
+  font-size: $font-size-base * 0.8;
+}
+
+.btn-block {
+  display: flex;
+  justify-content: center;
+
+  .fa {
+    align-self: center;
+    padding-left: $spacer;
+  }
+}
+
+.btn-link {
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-hover-color;
+  }
+}
+
+/**
+ * Fontawesome icons inside button
+ *
+ * 1. Icons inside a button are green
+ * 2. Icons inside a secondary or success button are white
+ */
+
+.btn {
+  .fab,
+  .fas,
+  .fa,
+  .far,
+  .fal,
+  .svg-inline--fa {
+    color: $vd-primary; /* [1] */
+  }
+
+  &.btn-secondary,
+  &.btn-success {
+    .fab,
+    .fas,
+    .fa,
+    .far,
+    .fal,
+    .svg-inline--fa {
+      color: $white; /* [2] */
+    }
+  }
+}
