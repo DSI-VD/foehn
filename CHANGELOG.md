@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.45.0] - 2018-02-20
+
 ### Changed
 - Fix accessibility of `@autority-address--search`
 - Remove `@figure`'s caption in `@agenda`
@@ -1595,7 +1597,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.44.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.45.0...HEAD
+[0.45.0]: https://github.com/DSI-VD/foehn/compare/v0.44.0...v0.45.0
 [0.44.0]: https://github.com/DSI-VD/foehn/compare/v0.43.0...v0.44.0
 [0.43.0]: https://github.com/DSI-VD/foehn/compare/v0.42.1...v0.43.0
 [0.42.1]: https://github.com/DSI-VD/foehn/compare/v0.42.0...v0.42.1
