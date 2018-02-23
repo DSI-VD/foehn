@@ -1,7 +1,8 @@
 <header class="header">
   {% include '@access-nav' %}
   <div class="container">
-    <div class="d-flex flex-wrap justify-content-between justify-content-md-end">
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end
+      d-print-none">
       <div>
         {% render '@nav', nav, true %}
       </div>
@@ -9,10 +10,10 @@
     </div>
     {% if searchForm %}
     <div class="row">
-      <div class="col-md-5 vd-print-full-width">
+      <div class="col-md-5">
         {% render '@logo-etat--alternate' %}
       </div>
-      <div class="col-md-5 ml-auto">
+      <div class="col-md-5 ml-auto d-print-none">
         {% render '@search-form--default', { styleModifier: 'mt-2 mb-4' }, true %}
       </div>
     </div>
