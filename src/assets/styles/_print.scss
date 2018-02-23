@@ -39,6 +39,17 @@
 
   a {
     color: #000 !important;
+    &:before,
+    &:after {
+      font-size: 80%;
+      color: $gray-500;
+    }
+    &:before {
+      content:"[";
+    }
+    &:after {
+      content:"]("attr(href) ")";
+    }
   }
 
   .btn {
