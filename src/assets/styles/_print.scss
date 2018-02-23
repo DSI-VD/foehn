@@ -39,16 +39,19 @@
 
   a {
     color: #000 !important;
+
     &:before,
     &:after {
       font-size: 80%;
       color: $gray-500;
     }
+
     &:before {
-      content:"[";
+      content: "[";
     }
+
     &:after {
-      content:"]("attr(href) ")";
+      content: "]("attr(href) ")";
     }
   }
 
