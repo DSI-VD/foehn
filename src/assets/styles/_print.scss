@@ -4,22 +4,29 @@
 }
 
 @media print {
+
   body {
     margin: 0;
     padding: 0 !important;
     min-width: 1000px;
   }
 
-  .container {
-    width: auto;
-    min-width: 1000px;
+  /**
+   * 1. Resetting the padding because it's messing up the print in Firefox
+   */
+  .header {
+    background: none !important;
+    padding-top: 0 !important; /* [1] */
+  }
+
+  .vd-logo__blason {
+    display: none;
   }
 
   aside {
     page-break-before: always;
   }
 
-  header,
   .vd-bg-pattern-bars-gray {
     background-image: none !important;
   }
@@ -32,13 +39,19 @@
     width: 100% !important;
   }
 
-  p,
-  .vd-content p:not(.lead) {
-    max-width: 100% !important;
-  }
+  /**
+   * Style the links that ar inside a paragraph
+   *
+   * 1. Break long url
+   * 2. Write the url after the link
+   */
 
   a {
-    color: #000 !important;
+    color: $black !important
+  }
+
+  p a {
+    word-wrap: break-word; /* [1] */
 
     &:before,
     &:after {
@@ -47,11 +60,11 @@
     }
 
     &:before {
-      content: "[";
+      content: "["; /* [2] */
     }
 
     &:after {
-      content: "]("attr(href) ")";
+      content: "]("attr(href) ")"; /* [2] */
     }
   }
 
@@ -59,7 +72,26 @@
     display: none;
   }
 
-  footer,
+  /**
+   * Image
+   *
+   * 1. Do not print full size images
+   */
+  img {
+    max-width: 500px !important;
+  }
+
+  /**
+   * Remove interactive elements. They are useless on print
+   */
+  video,
+  audio,
+  object,
+  embed {
+    display: none;
+  }
+
+  body > footer,
   .vd-nav-mobile,
   .d-md-none,
   .vd-social-icons,
