@@ -26,6 +26,10 @@
       margin-right: 2 * $spacer;
       align-self: flex-end; /* [3] */
     }
+
+    @media print {
+      display: none;
+    }
   }
 
   &__image {
@@ -33,4 +37,5 @@
     width: 12em;
     height: auto;
   }
+
 }

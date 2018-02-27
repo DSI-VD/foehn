@@ -3,6 +3,10 @@
 // Background Helpers
 .vd-bg-pattern-gray {
   background: transparent url(../../assets/img/bg_headings.gif) top left;
+
+  @media print {
+    background: none !important;
+  }
 }
 
 .vd-bg-pattern-green-bright {
@@ -34,6 +38,10 @@
       transparent
     );
   background-size: 4px 4px;
+
+  @media print {
+    display: none;
+  }
 }
 
 // Spacing helpers

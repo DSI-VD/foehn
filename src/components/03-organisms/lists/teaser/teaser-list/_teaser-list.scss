@@ -8,7 +8,13 @@
   .vd-teaser-list-striped-item:nth-of-type(odd) {
     background-color: $vd-neutral-lighter;
     border-bottom: 1px solid $vd-neutral-lighter;
+
+    @media print {
+      background: none !important;
+      border-bottom: none !important;
+    }
   }
 
   margin-bottom: $spacer;
+
 }
