@@ -420,9 +420,15 @@
   <span class="hljs-selector-class">.vd-teaser-list-striped-item</span>:nth-of-type(odd) {
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$vd-neutral-lighter</span>;
     <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$vd-neutral-lighter</span>;
+
+    @<span class="hljs-keyword">media</span> print {
+      <span class="hljs-attribute">background</span>: none <span class="hljs-meta">!important</span>;
+      <span class="hljs-attribute">border-bottom</span>: none <span class="hljs-meta">!important</span>;
+    }
   }
 
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer</span>;
+
 }
 </pre>
                             </code>
@@ -440,7 +446,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">281 Bytes</span>
+                    <span class="Meta-value">381 Bytes</span>
                 </li>
             </ul>
         </div>

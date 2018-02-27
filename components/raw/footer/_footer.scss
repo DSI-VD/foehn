@@ -37,6 +37,10 @@
       color: $body-color; /* [2] */
     }
   }
+
+  @media print {
+    display: none;
+  }
 }
 
 .footer-logo {

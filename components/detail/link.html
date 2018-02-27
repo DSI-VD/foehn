@@ -237,7 +237,36 @@
   &amp;<span class="hljs-selector-attr">[rel^="category"]</span>:before {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">"#"</span>;
   }
+
+  @<span class="hljs-keyword">media</span> print {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span> <span class="hljs-meta">!important</span>;
+  }
 }
+
+<span class="hljs-comment">/**
+ * Style the links that ar inside a paragraph
+ *
+ * 1. Break long url
+ * 2. Write the url after the link
+ */</span>
+<span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">word-wrap</span>: break-word; <span class="hljs-comment">/* [1] */</span>
+
+  &amp;:before,
+  &amp;:after {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80%</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-500</span>;
+  }
+
+  &amp;:before {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">"["</span>; <span class="hljs-comment">/* [2] */</span>
+  }
+
+  &amp;:after {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">"]("</span>attr(href) <span class="hljs-string">")"</span>; <span class="hljs-comment">/* [2] */</span>
+  }
+}
+
 <span class="hljs-comment">// fix Firefox focus bug</span>
 <span class="hljs-selector-class">.list-unstyled</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> &gt; <span class="hljs-selector-class">.h3</span> {
   <span class="hljs-attribute">line-height</span>: normal;
@@ -258,7 +287,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">487 Bytes</span>
+                    <span class="Meta-value">874 Bytes</span>
                 </li>
             </ul>
         </div>

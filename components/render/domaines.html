@@ -1,7 +1,7 @@
 
 
 <header class="header">
-  <nav class="container fixed-top access-nav" aria-label="menu accessibilité">
+  <nav class="container fixed-top access-nav d-print-none" aria-label="menu accessibilité">
   <ul class="list-unstyled mt-3">
       <li>
         <a class="sr-only sr-only-focusable btn btn-dark pt-0" accesskey="0" href="#" title="[Alt+0] Page d'accueil du site">Accueil</a>
@@ -34,7 +34,8 @@
 </nav>
 
   <div class="container">
-    <div class="d-flex flex-wrap justify-content-between justify-content-md-end">
+    <div class="d-flex flex-wrap justify-content-between justify-content-md-end
+      d-print-none">
       <div>
         <nav class="d-print-none">
   <h2 class="sr-only">Sous-navigation</h2>
@@ -66,7 +67,7 @@
     </div>
     
     <div class="row">
-      <div class="col-md-5 vd-print-full-width">
+      <div class="col-md-5">
         <a href="../accueil"
    class="vd-logo"
    title="Aller à la page d'accueil du Site du Canton de Vaud"><div class="vd-logo__blason">
@@ -77,7 +78,7 @@
 </a>
 
       </div>
-      <div class="col-md-5 ml-auto">
+      <div class="col-md-5 ml-auto d-print-none">
         <form class="input-group vd-search-form mt-2 mb-4" action="#" role="search">
   <label class="sr-only" for="search-form" id="search-form-label">Champ de recherche</label>
   <input id="search-form"
