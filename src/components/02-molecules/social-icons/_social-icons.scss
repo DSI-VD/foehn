@@ -2,6 +2,10 @@
 
 .vd-social-icons {
   margin-bottom: 0;
+
+  @media print {
+    display: none;
+  }
 }
 
 .vd-social-icon {

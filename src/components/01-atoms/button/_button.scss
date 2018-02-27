@@ -31,6 +31,10 @@ button {
   &:focus {
     @include box-shadow($input-btn-focus-box-shadow);
   }
+
+  @media print {
+    display: none;
+  }
 }
 
 a.btn {

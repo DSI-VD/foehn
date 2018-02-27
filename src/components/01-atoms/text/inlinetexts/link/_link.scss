@@ -28,7 +28,36 @@ a {
   &[rel^="category"]:before {
     content: "#";
   }
+
+  @media print {
+    color: $black !important;
+  }
 }
+
+/**
+ * Style the links that ar inside a paragraph
+ *
+ * 1. Break long url
+ * 2. Write the url after the link
+ */
+p a {
+  word-wrap: break-word; /* [1] */
+
+  &:before,
+  &:after {
+    font-size: 80%;
+    color: $gray-500;
+  }
+
+  &:before {
+    content: "["; /* [2] */
+  }
+
+  &:after {
+    content: "]("attr(href) ")"; /* [2] */
+  }
+}
+
 // fix Firefox focus bug
 .list-unstyled li a > .h3 {
   line-height: normal;

@@ -43,6 +43,10 @@
   ::placeholder {
     font-style: italic;
   }
+
+  @media print {
+    display: none;
+  }
 }
 
 /**
@@ -74,5 +78,9 @@
 
   .input-group-btn > .btn {
     height: 2.375rem;
+  }
+
+  @media print {
+    display: none;
   }
 }

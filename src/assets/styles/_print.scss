@@ -4,6 +4,9 @@
 }
 
 @media print {
+  /**
+   * Reset body size
+   */
   body {
     margin: 0;
     padding: 0 !important;
@@ -13,31 +16,13 @@
   /**
    * Fix firefox print
    * https://github.com/twbs/bootstrap/issues/23489
+   *
+   * 1. Only apply on Firefox
    */
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix() { /* [1] */
     .row {
       display: block;
     }
-  }
-
-  /**
-   * 1. Resetting the padding because it's messing up the print in Firefox
-   */
-  .header {
-    background: none !important;
-    padding-top: 0 !important; /* [1] */
-  }
-
-  .vd-logo__blason {
-    display: none;
-  }
-
-  aside {
-    //page-break-before: always;
-  }
-
-  .vd-bg-pattern-bars-gray {
-    background-image: none !important;
   }
 
   aside,
@@ -49,48 +34,6 @@
   }
 
   /**
-   * Style the links that ar inside a paragraph
-   *
-   * 1. Break long url
-   * 2. Write the url after the link
-   */
-
-  a {
-    color: $black !important;
-  }
-
-  p a {
-    word-wrap: break-word; /* [1] */
-
-    &:before,
-    &:after {
-      font-size: 80%;
-      color: $gray-500;
-    }
-
-    &:before {
-      content: "["; /* [2] */
-    }
-
-    &:after {
-      content: "]("attr(href) ")"; /* [2] */
-    }
-  }
-
-  .btn {
-    display: none;
-  }
-
-  /**
-   * Image
-   *
-   * 1. Do not print full size images
-   */
-  img {
-    max-width: 500px !important;
-  }
-
-  /**
    * Remove interactive elements. They are useless on print
    */
   video,
@@ -98,24 +41,5 @@
   object,
   embed {
     display: none;
-  }
-
-  body > footer,
-  .vd-nav-mobile,
-  .d-md-none,
-  .vd-social-icons,
-  .vd-search-form,
-  .vd-search-form-regular {
-    display: none !important;
-  }
-
-  .vd-teaser-list-striped .vd-teaser-list-striped-item:nth-of-type(odd),
-  .vd-bg-pattern-gray {
-    background: none !important;
-    border-bottom: none !important;
-  }
-
-  .px-3 {
-    padding-left: 0 !important;
   }
 }
