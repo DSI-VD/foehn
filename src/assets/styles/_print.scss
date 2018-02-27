@@ -4,11 +4,20 @@
 }
 
 @media print {
-
   body {
     margin: 0;
     padding: 0 !important;
     min-width: 1000px;
+  }
+
+  /**
+   * Fix firefox print
+   * https://github.com/twbs/bootstrap/issues/23489
+   */
+  @-moz-document url-prefix() {
+    .row {
+      display: block;
+    }
   }
 
   /**
@@ -24,7 +33,7 @@
   }
 
   aside {
-    page-break-before: always;
+    //page-break-before: always;
   }
 
   .vd-bg-pattern-bars-gray {
@@ -47,7 +56,7 @@
    */
 
   a {
-    color: $black !important
+    color: $black !important;
   }
 
   p a {
