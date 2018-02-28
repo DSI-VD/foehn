@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix link printing url
+
 ## [0.45.1] - 2018-02-28
 
 ### Fix
