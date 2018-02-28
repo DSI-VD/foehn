@@ -40,21 +40,23 @@ a {
  * 1. Break long url
  * 2. Write the url after the link
  */
-p a {
-  word-wrap: break-word; /* [1] */
+@media print {
+  p a {
+    word-wrap: break-word; /* [1] */
 
-  &:before,
-  &:after {
-    font-size: 80%;
-    color: $gray-500;
-  }
+    &:before,
+    &:after {
+      font-size: 80%;
+      color: $gray-500;
+    }
 
-  &:before {
-    content: "["; /* [2] */
-  }
+    &:before {
+      content: "["; /* [2] */
+    }
 
-  &:after {
-    content: "]("attr(href) ")"; /* [2] */
+    &:after {
+      content: "]("attr(href) ")"; /* [2] */
+    }
   }
 }
 
