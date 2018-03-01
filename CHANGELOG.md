@@ -3,6 +3,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Change CSS class in login section on `@header--default`, `@header--securise` 
+  and `@header--homepage` to push the text on the right when too long
+
+### Added
+- Add `@header--hompegage-logged` component
+
 ## [0.45.2] - 2018-03-01
 
 ### Fix
