@@ -6,12 +6,12 @@
       <div>
         {% render '@nav', nav, true %}
       </div>
-      {% render '@login', { styleModifier: 'ml-auto mb-3 text-right'}, true %}
+      {% render '@login--logged', { styleModifier: 'ml-auto mb-3 text-right'}, true %}
     </div>
     {% if searchForm %}
     <div class="row">
-      <div class="col-md-5 vd-print-full-width">
-        {% render '@logo-etat' %}
+      <div class="col-md-5">
+        {% render '@logo-etat--alternate' %}
       </div>
       <div class="col-md-5 ml-auto d-print-none">
         {% render '@search-form--default', { styleModifier: 'mt-2 mb-4' }, true %}
@@ -22,6 +22,6 @@
     {% endif %}
   </div>
 
-  {% render '@nav-primary' %}
+  {% render '@nav-primary',  {navOpen: true}, true %}
 
 </header>
