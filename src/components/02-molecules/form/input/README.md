@@ -12,7 +12,7 @@ The only way to trigger the numerical keyboard on mobile is to use the following
 <input type="number" pattern="[0-9]*">
 ```
 
-![Numerical Keyboard](/components/raw/input/numerical-keyboard.png)
+![Numerical Keyboard](../raw/input/numerical-keyboard.png)
 
 # `autocomplete` attribute
 

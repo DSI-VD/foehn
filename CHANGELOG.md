@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix typo in `@input` notes
+
 ## [0.45.2] - 2018-03-01
 
 ### Fix
