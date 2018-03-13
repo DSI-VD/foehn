@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Simplify JavaScripts vendors to include in the footer. All vendors are
+  concatenated into one `vendors.js` file. See `@scripts-footer`
 - Add categories in `@publish-info`
 - Rename `@publish-time` in `@publish-info`
 
