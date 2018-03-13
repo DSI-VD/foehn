@@ -4,7 +4,7 @@
 
 <main class="container container-small vd-content" id="main">
   <h1 class="text-center mb-3 mt-0">{{ pageTitle }}</h1>
-  {% include '@publish-time' %}
+  {% render '@publish-info' %}
 
   {% block main %}
   {% include '@paragraph' %}
