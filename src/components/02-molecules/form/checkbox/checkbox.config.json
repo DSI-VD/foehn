@@ -2,40 +2,15 @@
   "status": "ready",
   "collated": true,
   "context": {
-    "label": "Consectetur adipisicing elit"
+    "label": "Consectetur adipisicing elit",
+    "id": "exampleOption1"
   },
-  "variants": [{
-      "name": "validation success",
-      "context": {
-        "label": "Checkbox with success",
-        "validation": {
-          "class": "success"
-        }
-      }
-    },
-    {
-      "name": "validation warning",
-      "hidden": true,
-      "context": {
-        "label": "Checkbox with warning",
-        "validation": {
-          "class": "warning"
-        }
-      }
-    },
-    {
-      "name": "validation danger",
-      "context": {
-        "label": "Checkbox with danger",
-        "validation": {
-          "class": "danger"
-        }
-      }
-    },
+  "variants": [
     {
       "name": "disabled",
       "context": {
         "label": "Option is disabled",
+        "id": "exampleOption2",
         "disabled": true
       }
     }
