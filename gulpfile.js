@@ -7,7 +7,6 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
-const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const imagemin = require('gulp-imagemin');
@@ -145,12 +144,10 @@ function lintstyles() {
  */
 function scriptsVendors() {
     return gulp.src([
-        'node_modules/jquery/dist/jquery.slim.min.js',
-        'node_modules/popper.js/dist/popper.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
     ])
         .pipe(sourcemaps.init())
-        .pipe(concat('vendors.js'))
+        .pipe(rename('vendors.js'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
