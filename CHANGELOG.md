@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Add categories in `@publish-info`
+- Rename `@publish-time` in `@publish-info`
+
 ### Fix
 - Fix typo in `@input` notes
 
