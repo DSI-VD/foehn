@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- JS vendors are concatenated inside one unique `vendors.js` file. See
+  `@scripts-footer`
+
 ## [0.46.0] - 2018-03-1
 
 ### Changed
