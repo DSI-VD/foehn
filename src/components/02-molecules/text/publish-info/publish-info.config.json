@@ -1,0 +1,19 @@
+{
+  "status": "ready",
+  "context": {
+    "categories": [
+      {
+        "name": "Accessibilité",
+        "url": "#"
+      },
+      {
+        "name": "Agriculture",
+        "url": "news-list--categories"
+      },
+      {
+        "name": "Tourisme",
+        "url": "#"
+      }
+    ]
+  }
+}
