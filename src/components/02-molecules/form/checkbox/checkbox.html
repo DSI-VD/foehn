@@ -1,4 +1,4 @@
-<div class="form-check{% if validation.class %} has-{{ validation.class }}{% endif %}{% if disabled %} disabled{% endif %}">
+<div class="form-check{% if validation.class %} has-{{ validation.class }}{% endif %}{% if disabled %} disabled{% endif %}{% if styleModifier %} {{ styleModifier }}{% endif %}">
   <input class="form-check-input"
           type="checkbox"
           value="{{ value }}"

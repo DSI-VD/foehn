@@ -37,6 +37,26 @@
             "text": "Veuillez sélectionner une option"
           }
         }
+      },
+      {
+        "name": "yes or no",
+        "context": {
+          "legend": "Avez-vous déjà un compte utilisateur ?",
+          "items": [
+            {
+              "label": "Oui",
+              "name": "example",
+              "id": "exampleYes",
+              "styleModifier": "form-check-inline"
+            },
+            {
+              "label": "Non",
+              "name": "example",
+              "id": "exampleNo",
+              "styleModifier": "form-check-inline"
+            }
+          ]
+        }
       }
     ]
 }
