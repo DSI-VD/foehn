@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.46.0] - 2018-03-1
+
 ### Changed
 - Add categories in `@publish-info`
 - Rename `@publish-time` in `@publish-info`
@@ -1616,8 +1618,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.45.2...HEAD
-[0.45.2]: https://github.com/DSI-VD/foehn/compare/v0.45.1...0.45.2
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.46.0...HEAD
+[0.46.0]: https://github.com/DSI-VD/foehn/compare/v0.45.2...v0.46.0
+[0.45.2]: https://github.com/DSI-VD/foehn/compare/v0.45.1...v0.45.2
 [0.45.1]: https://github.com/DSI-VD/foehn/compare/v0.45.0...v0.45.1
 [0.45.0]: https://github.com/DSI-VD/foehn/compare/v0.44.0...v0.45.0
 [0.44.0]: https://github.com/DSI-VD/foehn/compare/v0.43.0...v0.44.0
