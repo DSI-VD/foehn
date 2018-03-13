@@ -2,40 +2,17 @@
   "status": "ready",
   "collated": true,
   "context": {
-    "label": "Sed eu magna eget augue tincidunt semper"
+    "label": "This is an option",
+    "name": "exampleOptions",
+    "id": "exampleOption1",
+    "value": "option1"
   },
-  "variants": [{
-      "name": "validation success",
-      "context": {
-        "label": "Radio with success",
-        "validation": {
-          "class": "success"
-        }
-      }
-    },
+  "variants": [
     {
-      "name": "validation warning",
-      "hidden": true,
-      "context": {
-        "label": "Radio with warning",
-        "validation": {
-          "class": "warning"
-        }
-      }
-    },
-    {
-      "name": "validation danger",
-      "context": {
-        "label": "Radio with danger",
-        "validation": {
-          "class": "danger"
-        }
-      }
-    },
-    {
-      "name": "disabled",
+      "name": "Disabled option",
       "context": {
         "label": "Option is disabled",
+        "id": "exampleOption2",
         "disabled": true
       }
     }
