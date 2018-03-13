@@ -1,25 +1,28 @@
 {
     "status": "ready",
-    "collated": true,
     "context": {
       "legend": "Legend",
       "items": [
         {
           "label": "Cras sed ligula eu est cursus eleifend ut id turpis",
           "name": "example",
+          "id": "exampleOption1",
           "checked": true
         },
         {
           "label": "Fusce feugiat quam vel tellus malesuada, sit amet maximus justo hendrerit",
-          "name": "example"
+          "name": "example",
+          "id": "exampleOption2"
         },
         {
           "label": "Aenean id est non dui porttitor euismod",
-          "name": "example"
+          "name": "example",
+          "id": "exampleOption3"
         },
         {
           "label": "Phasellus dignissim metus quis blandit varius",
           "name": "example",
+          "id": "exampleOption4",
           "disabled": true
         }
       ]

@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- HTML markup of `@radio` has changed. The `<input>` is now outside of the
+  `<label>`
 - JS vendors are concatenated inside one unique `vendors.js` file. See
   `@scripts-footer`
 
