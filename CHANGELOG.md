@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove image's caption in `@agenda` on `@accueil`
+
 ## [0.47.0] - 2018-03-14
 
 ### Changed

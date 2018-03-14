@@ -113,7 +113,8 @@
               }
             },
             "image": {
-              "styleModifier": "order-3 vd-w-md-50"
+              "styleModifier": "order-3 vd-w-md-50",
+              "caption": false
             }
           },
           {
