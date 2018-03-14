@@ -12,6 +12,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - JS vendors are concatenated inside one unique `vendors.js` file. See
   `@scripts-footer`
 
+### Added
+- Add a `@fieldset--yes-or-no` component
+
 ## [0.46.0] - 2018-03-1
 
 ### Changed
