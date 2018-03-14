@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Validation Danger | Foehn</title>
+    <title>Disabled Option | Foehn</title>
     <meta name="description" content="">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width">
@@ -23,10 +23,11 @@
   </head>
   <body>
 
-    <div class="form-check has-danger">
-  <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" value="">
-    Checkbox with danger
+    <div class="form-check disabled">
+  <input class="form-check-input"
+         type="radio" value="option1" id="exampleOption2" name="exampleOptions" disabled >
+  <label class="form-check-label" for="exampleOption2">
+    Option is disabled
   </label>
 </div>
 
