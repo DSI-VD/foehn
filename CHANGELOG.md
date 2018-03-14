@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.47.0] - 2018-03-14
+
 ### Changed
 - HTML markup of `@checkbox` has changed. The `<input>` is now outside of the
   `<label>`
@@ -1630,7 +1632,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.46.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.47.0...HEAD
+[0.47.0]: https://github.com/DSI-VD/foehn/compare/v0.46.0...v0.47.0
 [0.46.0]: https://github.com/DSI-VD/foehn/compare/v0.45.2...v0.46.0
 [0.45.2]: https://github.com/DSI-VD/foehn/compare/v0.45.1...v0.45.2
 [0.45.1]: https://github.com/DSI-VD/foehn/compare/v0.45.0...v0.45.1
