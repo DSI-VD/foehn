@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Remove vendors concatenation in `@scripts-footer.html`
 - Remove image's caption in `@agenda` on `@accueil`
 
 ## [0.47.0] - 2018-03-14
