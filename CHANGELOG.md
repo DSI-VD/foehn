@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.48.0] - 2018-03-15
+
 ### Changed
 - Remove vendors concatenation in `@scripts-footer.html`
 - Remove image's caption in `@agenda` on `@accueil`
@@ -1636,7 +1638,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.47.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.48.0...HEAD
+[0.48.0]: https://github.com/DSI-VD/foehn/compare/v0.47.0...v0.48.0
 [0.47.0]: https://github.com/DSI-VD/foehn/compare/v0.46.0...v0.47.0
 [0.46.0]: https://github.com/DSI-VD/foehn/compare/v0.45.2...v0.46.0
 [0.45.2]: https://github.com/DSI-VD/foehn/compare/v0.45.1...v0.45.2
