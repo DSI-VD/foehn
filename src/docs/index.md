@@ -57,19 +57,13 @@ $ npm install git+ssh://git@git.etat-de-vaud.ch:typo3/foehn
 Put this in your `<head/>` tag:
 
 ```html
-<!-- load all stylesheets -->
-<link rel="stylesheet" href="path/to/build/css/vendors.min.css">
-<link rel="stylesheet" href="path/to/build/css/main.css">
-
-<!-- load polyfills for old IE -->
-<!--[if lte IE 9]>
-<script src="path/to/build/js/polyfills.min.js"></script>
-<![endif]-->
+{% render '@styles-header' %}
+{% render '@scripts-header' %}
 ```
 
 Put this just before the closing `</body>` tag:
 
 ```html
-{% view '@scripts-footer' %}
-{% view '@webfont-loading' %}
+{% render '@scripts-footer' %}
+{% render '@webfont-loading' %}
 ```
