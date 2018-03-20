@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix doc about wich files to put in the `<head>`.
+
 ## [0.48.0] - 2018-03-15
 
 ### Changed
