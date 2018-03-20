@@ -11,6 +11,7 @@ const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const imagemin = require('gulp-imagemin');
 const eslint = require('gulp-eslint');
+const jsonlint = require('gulp-jsonlint');
 
 const processors = [
     require('autoprefixer'),
@@ -204,6 +205,25 @@ function lintscripts() {
 }
 
 /**
+ * Lint JSON
+ *
+ * 1. Lint CSS source maps once they are generated. Be sure to run this function
+ *    once source maps files are generated
+ * 2. Lint JS source maps once they are generated. Be sure to run this function
+ *    once source maps files are generated
+ */
+function lintjson() {
+    return gulp.src([
+        '*.json',
+        `${paths.src}/**/*.json`,
+        `${paths.dest}/**/*.css.map`, // [1]
+        `${paths.dest}/**/*.js.map`, // [2]
+    ])
+        .pipe(jsonlint())
+        .pipe(jsonlint.reporter());
+}
+
+/**
  * Copy changelog in fractal
  *
  * Copy changelog and make links on components
@@ -229,7 +249,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scripts, svg, images, lintscripts));
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scripts, svg, images, lintscripts), lintjson);
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));

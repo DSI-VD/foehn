@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Add a JSON linter to the build process
+
 ## [0.48.1] - 2018-03-20
 
 ### Fix
