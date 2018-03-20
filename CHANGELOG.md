@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.48.1] - 2018-03-20
+
 ### Fix
 - Remove banner in CSS source maps
 - Fix doc about wich files to put in the `<head>`.
@@ -1642,7 +1644,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.48.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.48.1...HEAD
+[0.48.1]: https://github.com/DSI-VD/foehn/compare/v0.48.0...v0.48.1
 [0.48.0]: https://github.com/DSI-VD/foehn/compare/v0.47.0...v0.48.0
 [0.47.0]: https://github.com/DSI-VD/foehn/compare/v0.46.0...v0.47.0
 [0.46.0]: https://github.com/DSI-VD/foehn/compare/v0.45.2...v0.46.0
