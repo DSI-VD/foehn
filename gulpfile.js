@@ -117,8 +117,8 @@ function styles() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
-        .pipe(sourcemaps.write('./'))
         .pipe(header(banner, { pkg: pkg }))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
 
