@@ -192,6 +192,22 @@ function images() {
 }
 
 /**
+ * Manifest
+ */
+function manifests() {
+    return gulp.src(`${paths.src}/assets/manifest/**/*.*`)
+        .pipe(gulp.dest(`${paths.dest}/assets/manifest`));
+}
+
+/**
+ * XML
+ */
+function xmls() {
+    return gulp.src(`${paths.src}/assets/xml/**/*.*`)
+        .pipe(gulp.dest(`${paths.dest}/assets/xml`));
+}
+
+/**
  * Lint Scripts
  */
 function lintscripts() {
@@ -249,7 +265,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scripts, svg, images, lintscripts), lintjson);
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scripts, svg, images, manifests, xmls, lintscripts), lintjson);
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));
