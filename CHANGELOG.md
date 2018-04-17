@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Add `@favicon` component, documentation and ressources
+
 ### Fix
 - Add a JSON linter to the build process
 
