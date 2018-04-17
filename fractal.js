@@ -1,5 +1,7 @@
 'use strict';
 
+const pkg = require('./package.json');
+
 const paths = {
     build: `${__dirname}/dist`,
     src: `${__dirname}/src`,
@@ -20,6 +22,7 @@ const fractal = require('@frctl/fractal').create();
 
 // Project config
 fractal.set('project.title', 'Foehn'); // set the title of the project
+fractal.set('project.version', pkg.version); // set the version of the project
 
 // Components config
 fractal.components.set('default.status', 'wip');
