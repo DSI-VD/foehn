@@ -152,6 +152,16 @@ function scriptsVendors() {
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
+function scriptsVendorsRename() {
+    return gulp.src([
+        'node_modules/@fortawesome/fontawesome-free/js/all.js',
+    ])
+        .pipe(rename({
+            prefix: 'fontawesome-',
+        }))
+        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
+}
+
 /**
  * Scripts
  */
@@ -265,7 +275,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scripts, svg, images, manifests, xmls, lintscripts), lintjson);
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, scripts, svg, images, manifests, xmls, lintscripts), lintjson);
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));

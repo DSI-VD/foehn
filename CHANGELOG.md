@@ -3,6 +3,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- The URL of Fontawesome JavaScript has changed in `@sript-header`. Fontawesome 
+  is internalized inside foehn.
+
+### Fix
+- Fontawesome updated to v5.1.0-4
+
 ## [0.49.0] - 2018-04-17
 
 ### Added
