@@ -163,6 +163,20 @@ function scriptsVendorsRename() {
 }
 
 /**
+ *  Fonts
+ */
+function fonts() {
+    return gulp.src([
+        'node_modules/roboto-fontface/fonts/roboto-slab/*.*',
+        'node_modules/open-sans-fontface/fonts/Regular/*.*',
+        'node_modules/open-sans-fontface/fonts/Italic/*.*',
+        'node_modules/open-sans-fontface/fonts/Bold/*.*',
+        'node_modules/open-sans-fontface/fonts/BoldItalic/*.*',
+    ])
+        .pipe(gulp.dest(`${paths.dest}/assets/fonts/`));
+}
+
+/**
  * Scripts
  */
 function scripts() {
@@ -275,7 +289,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, scripts, svg, images, manifests, xmls, lintscripts), lintjson);
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, fonts, scripts, svg, images, manifests, xmls, lintscripts), lintjson);
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));
