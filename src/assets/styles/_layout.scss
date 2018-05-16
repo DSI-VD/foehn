@@ -28,14 +28,12 @@ body {
  * 2. Headings font
  */
 html {
-  &.wf-opensans-n4-active {
+  &.fonts-loaded {
     body,
     .vd-p {
       font-family: $font-family-base-enhance; /* [1] */
     }
-  }
 
-  &.wf-robotoslab-n7-active {
     h1,
     h2,
     h3,
@@ -50,9 +48,7 @@ html {
     .h6 {
       font-family: $headings-font-family-enhance; /* [2] */
     }
-  }
 
-  &.wf-robotoslab-n3-active {
     .lead {
       font-family: $headings-font-family-enhance; /* [2] */
     }

@@ -1,8 +1,23 @@
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
 <script>
-  WebFont.load({
-    google: {
-      families: ['Open Sans:400,400i,700,700i', 'Roboto Slab:300,700']
+(function() {
+    // Optimization for Repeat Views
+    if( sessionStorage.fontsLoadedFoutWithClass ) {
+      document.documentElement.className += " fonts-loaded";
+      return;
     }
-  });
+    if( "fonts" in document ) {
+      Promise.all([
+        document.fonts.load("1em Open Sans"),
+        document.fonts.load("700 1em Open Sans"),
+        document.fonts.load("italic 1em Open Sans"),
+        document.fonts.load("italic 700 1em Open Sans"),
+        document.fonts.load("1em Roboto Slab"),
+        document.fonts.load("700 1em Roboto Slab")
+      ]).then(function () {
+        document.documentElement.className += " fonts-loaded";
+        // Optimization for Repeat Views
+        sessionStorage.fontsLoadedFoutWithClass = true;
+      });
+    }
+  })();
 </script>
