@@ -87,7 +87,8 @@
       families: [<span class="hljs-string">'Open Sans:400,400i,700,700i'</span>, <span class="hljs-string">'Roboto Slab:300,700'</span>]
     }
   });
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></code><h2 id="update-spacing-utilities">Update spacing utilities</h2>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</pre></code><h2 id="update-spacing-utilities">Update spacing utilities</h2>
 <p>Two size are included in spacing utilities.</p>
 <table>
 <thead>
@@ -146,7 +147,7 @@
 <h2 id="update-grid-offsetting-columns">Update grid offsetting columns</h2>
 <p>Update the grid to <code>drop</code> <code>push</code>, <code>pull</code>, and <code>offset</code> in favor of new <code>.order-</code> modifiers and margin utilities. Take a look at <a href="https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns">the documentation</a>.</p>
 <p>In foehn these change take place in two components.</p>
-<h3 id="-header-http-dsi-vd-github-io-foehn-components-detail-header-"><a href="http://dsi-vd.github.io/foehn/components/detail/header">Header</a></h3>
+<h3 id="header"><a href="http://dsi-vd.github.io/foehn/components/detail/header">Header</a></h3>
 <p>Use <code>.ml-auto</code> to push the search-form on the right.</p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header"</span>&gt;</span>
   {% include '@access-nav' %}
@@ -174,7 +175,8 @@
 
   {% render '@nav-primary' %}
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></pre></code><h3 id="-header-homepage-http-dsi-vd-github-io-foehn-components-detail-header-homepage-"><a href="http://dsi-vd.github.io/foehn/components/detail/header--homepage">Header homepage</a></h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+</pre></code><h3 id="header-homepage"><a href="http://dsi-vd.github.io/foehn/components/detail/header--homepage">Header homepage</a></h3>
 <p>Use <code>.ml-auto</code> to push the search-form on the right.</p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header"</span>&gt;</span>
   {% include '@access-nav' %}
@@ -202,7 +204,8 @@
 
   {% render '@nav-primary',  {navOpen: true}, true %}
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></pre></code><h2 id="update-display-property-helpers">Update display property helpers</h2>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+</pre></code><h2 id="update-display-property-helpers">Update display property helpers</h2>
 <p>Remove <code>.hidden-*</code> classes in favor of the newer <code>.d-*</code> <a href="https://getbootstrap.com/docs/4.0/utilities/display/">display utilities</a>.</p>
 <ul>
 <li>Find: <code>hidden-(xxs|xs|sm|md|lg|xl)-up</code></li>
@@ -225,7 +228,7 @@
 <li>Find: <code>hidden-md-down</code></li>
 <li>Replace <code>d-none d-lg-{display property}</code></li>
 </ul>
-<h2 id="update-nav-horizontal-http-dsi-vd-github-io-foehn-components-detail-nav-horizontal-">Update <a href="http://dsi-vd.github.io/foehn/components/detail/nav-horizontal">nav-horizontal</a></h2>
+<h2 id="update-nav-horizontal">Update <a href="http://dsi-vd.github.io/foehn/components/detail/nav-horizontal">nav-horizontal</a></h2>
 <p><a href="https://getbootstrap.com/docs/4.0/components/navbar/">Navbar</a> have been
 updated.</p>
 <ul>
@@ -246,7 +249,8 @@ updated.</p>
       {%- endfor %}
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre></code><h2 id="update-nav-primary-http-dsi-vd-github-io-foehn-components-detail-nav-primary-">Update <a href="http://dsi-vd.github.io/foehn/components/detail/nav-primary">nav-primary</a></h2>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+</pre></code><h2 id="update-nav-primary">Update <a href="http://dsi-vd.github.io/foehn/components/detail/nav-primary">nav-primary</a></h2>
 <p>There’s some comflicts with display (<code>.d-*</code>) and <code>.collapse</code> classes in <code>nav-primary</code> component.
 <code>.d-none</code> and <code>d-md-block</code> have to be moved on another <code>&lt;div&gt;</code>.</p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-nav-primary d-print-none"</span>&gt;</span>
@@ -305,7 +309,8 @@ updated.</p>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</pre></code>
     
 
 
