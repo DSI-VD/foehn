@@ -163,20 +163,6 @@ function scriptsVendorsRename() {
 }
 
 /**
- *  Fonts
- */
-function fonts() {
-    return gulp.src([
-        'node_modules/roboto-fontface/fonts/roboto-slab/*.*',
-        'node_modules/open-sans-fontface/fonts/Regular/*.*',
-        'node_modules/open-sans-fontface/fonts/Italic/*.*',
-        'node_modules/open-sans-fontface/fonts/Bold/*.*',
-        'node_modules/open-sans-fontface/fonts/BoldItalic/*.*',
-    ])
-        .pipe(gulp.dest(`${paths.dest}/assets/fonts/`));
-}
-
-/**
  * Scripts
  */
 function scripts() {
@@ -213,6 +199,14 @@ function images() {
     return gulp.src(`${paths.src}/assets/img/**/*.*`)
         .pipe(imagemin())
         .pipe(gulp.dest(`${paths.dest}/assets/img`));
+}
+
+/**
+ * Fonts
+ */
+function fonts() {
+    return gulp.src(`${paths.src}/assets/fonts/**/*.*`)
+        .pipe(gulp.dest(`${paths.dest}/assets/fonts`));
 }
 
 /**
@@ -289,7 +283,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, fonts, scripts, svg, images, manifests, xmls, lintscripts), lintjson);
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, scripts, svg, images, fonts, manifests, xmls, lintscripts), lintjson);
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));
