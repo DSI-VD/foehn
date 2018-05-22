@@ -21,9 +21,11 @@
     z(p,function(a){h=a;u()});t(p,L(c,'"'+c.family+'",monospace'))})})};"object"===typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
 
     var fontA = new FontFaceObserver('Roboto Slab');
+    var fontB = new FontFaceObserver('Open Sans');
 
     Promise.all([
-      fontA.load(null, 10000)
+      fontA.load(null, 10000),
+      fontB.load(null, 10000)
     ]).then(function () {
       document.documentElement.className += " fonts-loaded";
 
