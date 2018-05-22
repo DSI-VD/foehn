@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Upgrade to [Bootstrap 4.1.1](http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1-1/)
 - Upgrade to [Bootstrap 4.1](http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1/)
 - The URL of Fontawesome JavaScript has changed in `@sript-header`. Fontawesome 
   is internalized inside foehn.
