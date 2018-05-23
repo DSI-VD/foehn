@@ -24,8 +24,8 @@
     var fontB = new FontFaceObserver('Open Sans');
 
     Promise.all([
-      fontA.load(null, 10000),
-      fontB.load(null, 10000)
+      fontA.load(null, 1000),
+      fontB.load(null, 1000)
     ]).then(function () {
       document.documentElement.className += " fonts-loaded";
 
