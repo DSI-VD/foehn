@@ -2,7 +2,7 @@
   (function() {
 
     // Optimization for Repeat Views
-    if( sessionStorage.fontsLoadedFoutWithClass ) {
+    if( sessionStorage.fontsLoaded ) {
       document.documentElement.className += " fonts-loaded";
       return;
     }
@@ -30,7 +30,7 @@
       document.documentElement.className += " fonts-loaded";
 
       // Optimization for Repeat Views
-      sessionStorage.fontsLoadedFoutWithClassPolyfill = true;
+      sessionStorage.fontsLoaded = true;
     });
 
   })();
