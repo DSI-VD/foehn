@@ -4,7 +4,6 @@
 @import 'mixins';
 @import 'main-variables';
 
-@import "fonts";
 
 // bootstrap
 // This a copy of the `../../../node_modules/bootstrap/scss/bootstrap.scss` file
@@ -53,6 +52,7 @@
 @import 'helpers';
 
 // layout
+@import "fonts";
 @import "layout";
 
 // print

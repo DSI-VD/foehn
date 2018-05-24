@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 /**
  * Fonts are downloaded here https://google-webfonts-helper.herokuapp.com/
  */
@@ -97,3 +99,53 @@
     url('../fonts/open-sans-v15-latin-700italic.ttf') format('truetype'),
     url('../fonts/open-sans-v15-latin-700italic.svg#OpenSans') format('svg');
 }
+
+/**
+ * Typography
+ *
+ * 1. Set the standards opentype features for a more readable text.
+ *    See http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
+
+body {
+  font-variant-ligatures: common-ligatures, contextual; /* [1] */
+  font-feature-settings: "kern"; /* [1] */
+  font-kerning: normal; /* [1] */
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Use enhance fonts when they are loaded via webfontloader
+ * https://github.com/typekit/webfontloader
+ *
+ * 1. Base font
+ * 2. Headings font
+ */
+html {
+  &.fonts-loaded {
+    body,
+    .vd-p {
+      font-family: $font-family-base-enhance; /* [1] */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      font-family: $headings-font-family-enhance; /* [2] */
+    }
+
+    .lead {
+      font-family: $headings-font-family-enhance; /* [2] */
+    }
+  }
+}
+
