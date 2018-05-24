@@ -82,6 +82,18 @@ This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p
 <h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v0.49.0...HEAD">Unreleased</a></h2>
 <h3 id="changed">Changed</h3>
 <ul>
+<li>Update fonts loading strategy to speed up font loading and internalize fonts.<ul>
+<li>Fonts are internilized in Foehn. We do not use Google Fonts service anymore.</li>
+<li>Use <a href="https://github.com/bramstein/fontfaceobserver">Font Face Observer</a> 
+instead of <a href="https://github.com/typekit/webfontloader">webfontloader</a> to load
+fonts. Take a look at <a href="../components/detail/webfont-loading"><code>@webfont-loading</code></a>.</li>
+<li>Font loading script is placed in the <code>&lt;head&gt;</code> of the document. Take a look 
+at <a href="../components/detail/preview"><code>@preview</code></a>.</li>
+<li>Replace all <code>.wf-*</code> CSS class with a unique <code>.fonts-loaded</code> class for <a href="https://www.zachleat.com/web/webfont-glossary/#fout">FOUT</a></li>
+</ul>
+</li>
+<li>Upgrade to <a href="http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1-1/">Bootstrap 4.1.1</a></li>
+<li>Upgrade to <a href="http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1/">Bootstrap 4.1</a></li>
 <li>The URL of Fontawesome JavaScript has changed in <a href="../components/detail/sript-header"><code>@sript-header</code></a>. Fontawesome 
 is internalized inside foehn.</li>
 </ul>
@@ -2020,6 +2032,30 @@ is the first element of the navigation.</li>
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/styles-header" data-pjax>
                 <span>Styles Header</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/webfont-loading" data-pjax>
+                <span>Webfont Loading</span>
                 
 
 <div class="Status Status--unlabelled">
