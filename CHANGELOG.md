@@ -4,6 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- Update fonts loading strategy
+  - Fonts are internilized in Foehn. We do not use Google Fonts service anymore.
+  - Use [Font Face Observer](https://github.com/bramstein/fontfaceobserver) 
+    instead of [webfontloader](https://github.com/typekit/webfontloader) to load
+    fonts. Take a look at `@webfont-loading`.
+  - Loading script is placed in the `<head>` of the document. Take a look at
+    `@preview`.
+  - Replace all `.wf-*` CSS class with a unique `.fonts-loaded` class for [FOUT](https://www.zachleat.com/web/webfont-glossary/#fout)
 - Upgrade to [Bootstrap 4.1.1](http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1-1/)
 - Upgrade to [Bootstrap 4.1](http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1/)
 - The URL of Fontawesome JavaScript has changed in `@sript-header`. Fontawesome 
