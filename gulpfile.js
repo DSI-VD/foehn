@@ -145,9 +145,9 @@ function lintstyles() {
  */
 function scriptsVendors() {
     return gulp.src([
-        'node_modules/jquery/dist/jquery.slim.min.js',
-        'node_modules/popper.js/dist/umd/popper.min.js',
-        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/jquery/dist/jquery.slim.min.*',
+        'node_modules/popper.js/dist/umd/popper.min.*',
+        'node_modules/bootstrap/dist/js/bootstrap.min.*',
     ])
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
