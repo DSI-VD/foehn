@@ -15,6 +15,7 @@
 
     {% render '@styles-header' %}
 
+    {% render '@webfont-loading' %}
     {% render '@scripts-header' %}
   </head>
   <body>
@@ -22,6 +23,5 @@
     {{ yield }}
 
     {% render '@scripts-footer' %}
-    {% render '@webfont-loading' %}
   </body>
 </html>
