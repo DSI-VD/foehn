@@ -59,11 +59,11 @@ Put this in your `<head/>` tag:
 ```html
 {% render '@styles-header' %}
 {% render '@scripts-header' %}
+{% render '@webfont-loading' %}
 ```
 
 Put this just before the closing `</body>` tag:
 
 ```html
 {% render '@scripts-footer' %}
-{% render '@webfont-loading' %}
 ```

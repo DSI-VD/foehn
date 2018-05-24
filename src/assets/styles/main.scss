@@ -4,6 +4,7 @@
 @import 'mixins';
 @import 'main-variables';
 
+
 // bootstrap
 // This a copy of the `../../../node_modules/bootstrap/scss/bootstrap.scss` file
 // the only exception, is that the variables are overriden
@@ -51,6 +52,7 @@
 @import 'helpers';
 
 // layout
+@import "fonts";
 @import "layout";
 
 // print

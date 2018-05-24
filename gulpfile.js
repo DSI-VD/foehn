@@ -202,6 +202,14 @@ function images() {
 }
 
 /**
+ * Fonts
+ */
+function fonts() {
+    return gulp.src(`${paths.src}/assets/fonts/**/*.*`)
+        .pipe(gulp.dest(`${paths.dest}/assets/fonts`));
+}
+
+/**
  * Manifest
  */
 function manifests() {
@@ -275,7 +283,7 @@ function watch() {
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, scripts, svg, images, manifests, xmls, lintscripts), lintjson);
+const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, scripts, svg, images, fonts, manifests, xmls, lintscripts), lintjson);
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));
