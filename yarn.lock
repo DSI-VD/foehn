@@ -3148,13 +3148,14 @@ gulp-header@^2.0.5:
     lodash.template "^4.4.0"
     through2 "^2.0.0"
 
-gulp-imagemin@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/gulp-imagemin/-/gulp-imagemin-3.4.0.tgz#23a8d4c5133f50a2a708aca87ca4b2d6eb7c4403"
+gulp-imagemin@^4.1.0:
+  version "4.1.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/gulp-imagemin/-/gulp-imagemin-4.1.0.tgz#5ce347f1d1706fed3cc8f1777ca9094a583b50b7"
   dependencies:
     chalk "^2.1.0"
-    gulp-util "^3.0.8"
+    fancy-log "^1.3.2"
     imagemin "^5.3.1"
+    plugin-error "^0.1.2"
     plur "^2.1.2"
     pretty-bytes "^4.0.2"
     through2-concurrent "^1.1.1"
@@ -3162,7 +3163,7 @@ gulp-imagemin@^3.4.0:
     imagemin-gifsicle "^5.2.0"
     imagemin-jpegtran "^5.0.2"
     imagemin-optipng "^5.2.1"
-    imagemin-svgo "^5.2.2"
+    imagemin-svgo "^6.0.0"
 
 gulp-jsonlint@^1.2.1:
   version "1.2.1"
@@ -3250,7 +3251,7 @@ gulp-stylelint@^7.0.0:
     strip-ansi "^4.0.0"
     through2 "^2.0.3"
 
-gulp-util@^3.0.1, gulp-util@^3.0.7, gulp-util@^3.0.8:
+gulp-util@^3.0.1, gulp-util@^3.0.7:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
   dependencies:
@@ -3531,13 +3532,6 @@ imagemin-optipng@^5.2.1:
     exec-buffer "^3.0.0"
     is-png "^1.0.0"
     optipng-bin "^3.0.0"
-
-imagemin-svgo@^5.2.2:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/imagemin-svgo/-/imagemin-svgo-5.2.4.tgz#6cd5d342cae4bcd8b483594e5315695df02b9e9b"
-  dependencies:
-    is-svg "^2.0.0"
-    svgo "^0.7.0"
 
 imagemin-svgo@^6.0.0:
   version "6.0.0"
