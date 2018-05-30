@@ -1677,7 +1677,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.49.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.50.1...HEAD
+[0.50.1]: https://github.com/DSI-VD/foehn/compare/v0.50.0...v0.50.1
+[0.50.0]: https://github.com/DSI-VD/foehn/compare/v0.49.0...v0.50.0
 [0.49.0]: https://github.com/DSI-VD/foehn/compare/v0.48.1...v0.49.0
 [0.48.1]: https://github.com/DSI-VD/foehn/compare/v0.48.0...v0.48.1
 [0.48.0]: https://github.com/DSI-VD/foehn/compare/v0.47.0...v0.48.0
