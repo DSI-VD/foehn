@@ -50,7 +50,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.4.0",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "^4.0.0",
     "gulp-eslint": "^4.0.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-header": "^1.8.9",

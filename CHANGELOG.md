@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Upgrade Gulp build system
+
 ## [0.50.0]
 
 ### Changed
