@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.50.0]
+
 ### Changed
 - Update fonts loading strategy to speed up font loading and internalize fonts.
   - Fonts are internilized in Foehn. We do not use Google Fonts service anymore.
