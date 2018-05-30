@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.50.1] - 2018-05-30
+
 ### Fix - 2018-05-30
 - Fix light weight of Roboto Slab font was missing
 - Upgrade all node modules
