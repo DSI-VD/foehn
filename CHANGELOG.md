@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Upgrade Autoprefixer
 - Upgrade Gulp build system
 
 ## [0.50.0]

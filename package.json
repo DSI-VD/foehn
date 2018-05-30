@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@frctl/nunjucks": "^1.0.3",
-    "autoprefixer": "^7.1.6",
+    "autoprefixer": "^8.5.2",
     "bootstrap": "4.1.1",
     "cssnano": "^3.9.1",
     "del": "^3.0.0",
