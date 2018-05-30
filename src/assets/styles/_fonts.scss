@@ -36,6 +36,22 @@
     url('../fonts/roboto-slab-v7-latin-regular.svg#RobotoSlab') format('svg');
 }
 
+/* roboto-slab-300 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/roboto-slab-v7-latin-300.eot');
+  src:
+    local('Roboto Slab Light'),
+    local('RobotoSlab-Light'),
+    url('../fonts/roboto-slab-v7-latin-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-slab-v7-latin-300.woff2') format('woff2'),
+    url('../fonts/roboto-slab-v7-latin-300.woff') format('woff'),
+    url('../fonts/roboto-slab-v7-latin-300.ttf') format('truetype'),
+    url('../fonts/roboto-slab-v7-latin-300.svg#RobotoSlab') format('svg');
+}
+
 /* open-sans-regular - latin */
 @font-face {
   font-family: 'Open Sans';
