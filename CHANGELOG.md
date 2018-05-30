@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix - 2018-05-30
+- Upgrade Stylelint modules
 - Upgrade Autoprefixer
 - Upgrade Gulp build system
 
