@@ -180,7 +180,7 @@ function scriptsFooter() {
 /**
  * Scripts header
  *
- * Scripts that are in the header of th document
+ * Scripts that are in the header of the document
  */
 function scriptsHeader() {
     return gulp.src([
