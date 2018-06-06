@@ -163,14 +163,31 @@ function scriptsVendorsRename() {
 }
 
 /**
- * Scripts
+ * Scripts footer
+ *
+ * the scripts that are placed in the footer of the document
  */
-function scripts() {
+function scriptsFooter() {
     return gulp.src([
-        `${paths.src}/assets/scripts/**/*.js`,
+        `${paths.src}/assets/scripts/nav-primary.js`,
     ])
         .pipe(sourcemaps.init())
         .pipe(rename('foehn-scripts--footer.js'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
+}
+
+/**
+ * Scripts header
+ *
+ * Scripts that are in the header of th document
+ */
+function scriptsHeader() {
+    return gulp.src([
+        `${paths.src}/assets/scripts/webfont-loading.js`,
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(rename('foehn-scripts--header.js'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
@@ -277,13 +294,30 @@ function copyChangelog() {
 function watch() {
     serve();
     gulp.watch(`${paths.src}/**/*.scss`, gulp.parallel(lintstyles, styles));
-    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scripts));
+    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scriptsHeader, scriptsFooter));
 }
 
 /**
  * Task set
  */
-const compile = gulp.series(gulp.parallel(copyChangelog, styles, lintstyles, scriptsVendors, scriptsVendorsRename, scripts, svg, images, fonts, manifests, xmls, lintscripts), lintjson);
+const compile = gulp.series(
+    gulp.parallel(
+        copyChangelog,
+        styles,
+        lintstyles,
+        scriptsVendors,
+        scriptsVendorsRename,
+        scriptsHeader,
+        scriptsFooter,
+        svg,
+        images,
+        fonts,
+        manifests,
+        xmls,
+        lintscripts,
+    ),
+    lintjson,
+);
 
 gulp.task('build', gulp.series(clean, compile, build));
 gulp.task('dev', gulp.series(cleanDest, compile, watch));
