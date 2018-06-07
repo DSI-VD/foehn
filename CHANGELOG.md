@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- There's no more inline scripts to include in the `<head>`. Webfont loading
+  scripts is in `foehn-scripts--header.js`.
+
 ## [0.50.1] - 2018-05-30
 
 ### Fix - 2018-05-30
