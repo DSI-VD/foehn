@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Update favicons files
+
 ## [0.51.0] - 2018-06-07
 
 ### Changed
