@@ -62,12 +62,14 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-stylelint": "^7.0.0",
+    "gulp-uglify": "^3.0.0",
     "imagemin-gifsicle": "^5.1.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^6.0.0",
     "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^0.8.1"
+    "stylelint-order": "^0.8.1",
+    "uglify-es": "^3.3.9"
   }
 }

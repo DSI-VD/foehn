@@ -6,12 +6,21 @@ const ghPages = require('gulp-gh-pages');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
-const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const imagemin = require('gulp-imagemin');
 const eslint = require('gulp-eslint');
 const jsonlint = require('gulp-jsonlint');
+
+/* gulp-uglify must use uglify-es module becaus we use ESlint
+ * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
+ *     https://github.com/gruntjs/grunt-contrib-uglify/issues/477#issuecomment-305329757
+ */
+const sourcemaps = require('gulp-sourcemaps');
+const uglifyjs = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+
+const minify = composer(uglifyjs, console);
 
 const processors = [
     require('autoprefixer'),
@@ -173,6 +182,7 @@ function scriptsFooter() {
     ])
         .pipe(sourcemaps.init())
         .pipe(rename('foehn-scripts--footer.js'))
+        .pipe(minify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
@@ -188,6 +198,7 @@ function scriptsHeader() {
     ])
         .pipe(sourcemaps.init())
         .pipe(rename('foehn-scripts--header.js'))
+        .pipe(minify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
