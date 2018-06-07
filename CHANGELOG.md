@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.51.0] - 2018-06-07
+
 ### Changed
 - There's no more inline scripts to include in the `<head>`. Webfont loading
   scripts is in `foehn-scripts--header.js`.
@@ -1684,7 +1686,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.50.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.51.0...HEAD
+[0.51.0]: https://github.com/DSI-VD/foehn/compare/v0.50.1...v0.51.0
 [0.50.1]: https://github.com/DSI-VD/foehn/compare/v0.50.0...v0.50.1
 [0.50.0]: https://github.com/DSI-VD/foehn/compare/v0.49.0...v0.50.0
 [0.49.0]: https://github.com/DSI-VD/foehn/compare/v0.48.1...v0.49.0
