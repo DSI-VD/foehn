@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.51.2] - 2018-06-07
+
 ### Fix
 - Fix favicon SVG file for Safari
 
@@ -1694,7 +1696,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.51.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.51.2...HEAD
+[0.51.2]: https://github.com/DSI-VD/foehn/compare/v0.51.1...v0.51.2
 [0.51.1]: https://github.com/DSI-VD/foehn/compare/v0.51.0...v0.51.1
 [0.51.0]: https://github.com/DSI-VD/foehn/compare/v0.50.1...v0.51.0
 [0.50.1]: https://github.com/DSI-VD/foehn/compare/v0.50.0...v0.50.1
