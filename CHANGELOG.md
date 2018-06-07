@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- Fix favicon SVG file for Safari
+
 ## [0.51.1] - 2018-06-07
 
 ### Fix
