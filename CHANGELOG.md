@@ -3,6 +3,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Remove `media-lists` class and `<div>` in `@media-list`
+
 ## [0.51.2] - 2018-06-07
 
 ### Fix
