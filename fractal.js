@@ -10,7 +10,11 @@ const paths = {
 
 const mandelbrot = require('@frctl/mandelbrot')({
     lang: 'en',
-    styles: ['default', '/assets/styles/styleguide.css'],
+    styles: [
+        '/assets/styles/doc-main.css',
+        'default',
+        '/assets/styles/styleguide.css',
+    ],
     static: {
         mount: 'fractal',
     },

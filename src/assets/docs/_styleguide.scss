@@ -41,3 +41,31 @@
   margin-right: 1em;
   order: -1;
 }
+
+/**
+ * Style to show components in the doc
+ */
+.foehn-example {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #bfc1c3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+
+    &::before {
+      content: "EXAMPLE";
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0.21053em 0.78947em 0.21053em 0.78947em;
+      text-transform: none;
+      font-size: 12px;
+      line-height: 1.25;
+      background: #bfc1c3;
+      color: white;
+  }
+}

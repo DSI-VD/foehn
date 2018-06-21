@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const del = require('del');
 const ghPages = require('gulp-gh-pages');
 const postcss = require('gulp-postcss');
+const prefixwrap = require('postcss-prefixwrap');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
@@ -25,6 +26,10 @@ const minify = composer(uglifyjs, console);
 const processors = [
     require('autoprefixer'),
     require('cssnano'),
+];
+
+const wrapProcessors = [
+    prefixwrap('.foehn-example'),
 ];
 
 const paths = {
@@ -129,6 +134,18 @@ function styles() {
         .pipe(postcss(processors))
         .pipe(header(banner, { pkg: pkg }))
         .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(`${paths.dest}/assets/styles`));
+}
+
+/**
+ * Style for documentation
+ */
+function docStyles() {
+    return gulp.src([`${paths.dest}/assets/styles/main.css`])
+        .pipe(postcss(wrapProcessors))
+        .pipe(rename({
+            prefix: 'doc-',
+        }))
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
 
@@ -327,6 +344,7 @@ const compile = gulp.series(
         xmls,
         lintscripts,
     ),
+    docStyles,
     lintjson,
 );
 
