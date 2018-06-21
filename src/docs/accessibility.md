@@ -1,6 +1,22 @@
 ---
+title: Accessibilité
+label: Accessibilité
 status: draft
 ---
+
+## Politique d'accessibilité
+
+- S'engager avec les personnes handicapées, comprendre leurs besoins et les
+  intégrer dans le périmètre et la planification du site Web.
+- Atteindre au moins le niveau AA des Directives d'accessibilité au contenu Web
+  2.1 et le niveau AAA dans la mesure du possible
+- Effectuer des évaluations formelles et informelles de l'accessibilité en
+  fonction des Directives d'accessibilité au contenu Web 2.1 tout au long du
+  développement.
+- Mettre en place un programme continu d'évaluations de l'accessibilité et de
+  tests avec les personnes handicapées après mise en production
+
+## Aspect légale
 
 Selon l'article 10 de la Constitution du Canton de Vaud nul ne doit subir de discrimination.
 
