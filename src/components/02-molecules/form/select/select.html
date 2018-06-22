@@ -1,8 +1,8 @@
 <div class="form-group">
   <label for="exampleSelect1">{{ label }}</label>
   <select class="{{ class }}" id="{{ id }}"{% if multiple %} multiple{% endif %}>
-    {% for option in options %}
+    {%- for option in options -%}
     <option{% if option.value %} value="{{ option.value }}"{% endif %}{% if option.selected %} selected{% endif %}{% if option.disabled %} disabled{% endif %}>{{ option.name }}</option>
-    {% endfor %}
+    {% endfor -%}
   </select>
 </div>
