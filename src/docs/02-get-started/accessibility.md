@@ -1,7 +1,7 @@
 ---
 title: Accessibilité
 label: Accessibilité
-status: draft
+status: review
 ---
 
 ## Politique d'accessibilité

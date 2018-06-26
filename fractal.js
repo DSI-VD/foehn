@@ -36,6 +36,29 @@ fractal.components.set('path', `${paths.src}/components`); // tell Fractal where
 fractal.components.set('default.preview', '@preview'); // Tell Fractal what is the default preview
 
 // Docs config
+fractal.docs.set('statuses', {
+    draft: {
+        label: 'Draft',
+        description: 'Do not implement.',
+        color: '#FF3333',
+    },
+    wip: {
+        label: 'WIP',
+        description: 'Work in progress. Implement with caution.',
+        color: '#FF9233',
+    },
+    review: {
+        label: 'Need review',
+        description: 'Ready for a review.',
+        color: '#32edff',
+    },
+    ready: {
+        label: 'Ready',
+        description: 'Ready to implement.',
+        color: '#29CC29',
+    },
+});
+fractal.docs.set('default.status', 'draft');
 fractal.docs.set('ext', '.md');
 fractal.docs.set('path', `${paths.src}/docs`); // tell Fractal where the documentation pages will live
 fractal.docs.engine('@frctl/nunjucks'); // use Nunjucks for docs
