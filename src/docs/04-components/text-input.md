@@ -4,6 +4,10 @@ label: Champs texte
 status: review
 ---
 
+<div class="foehn-example">
+{% render '@input--default' %}
+</div>
+
 ## Quand utiliser ce composant
 
 Utilisez le composant de saisie de texte lorsque les utilisateurs doivent saisir
