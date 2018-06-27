@@ -30,8 +30,6 @@ lignes. Dans ce cas, vous devez utiliser le composant [textarea](./textarea).
 {% render '@input--default' %}
 ```
 
-### Label du champs de saisie
-
 ### Labelisez les entrées de texte
 
 Toutes les entrées de texte doivent avoir des label visibles; le placeholder
