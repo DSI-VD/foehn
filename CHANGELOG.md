@@ -3,6 +3,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.52.1] - 2018-07-03
+
+## Fix
+- Fix width of input with 2 characters in `@dates`
+
+## [0.52.0] - 2018-06-20
+
 ### Changed
 - Replace `text-right` class with `text-md-right` in `@nav` component
 - Change HTML class of `@login` in `@header` component
@@ -1701,7 +1708,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.51.2...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.52.1...HEAD
+[0.52.1]: https://github.com/DSI-VD/foehn/compare/v0.52.0...v0.52.1
+[0.52.0]: https://github.com/DSI-VD/foehn/compare/v0.51.2...v0.52.0
 [0.51.2]: https://github.com/DSI-VD/foehn/compare/v0.51.1...v0.51.2
 [0.51.1]: https://github.com/DSI-VD/foehn/compare/v0.51.0...v0.51.1
 [0.51.0]: https://github.com/DSI-VD/foehn/compare/v0.50.1...v0.51.0
