@@ -3,7 +3,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## [0.50.1] - 2018-07-03
+## [0.52.1] - 2018-07-03
 
 ## Fix
 - Fix width of input with 2 characters in `@dates`
