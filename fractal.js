@@ -1,7 +1,5 @@
 'use strict';
 
-const pkg = require('./package.json');
-
 const paths = {
     build: `${__dirname}/dist`,
     src: `${__dirname}/src`,
@@ -23,6 +21,7 @@ const mandelbrot = require('@frctl/mandelbrot')({
 
 /* Create a new Fractal */
 const fractal = require('@frctl/fractal').create();
+const pkg = require('./package.json');
 
 // Project config
 fractal.set('project.title', 'Foehn'); // set the title of the project
