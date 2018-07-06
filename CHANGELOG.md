@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Set browserlist coverage [to `default`](http://browserl.ist/?q=defaults)
 - Upgrade dependencies
 
 ## [0.52.1] - 2018-07-03

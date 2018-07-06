@@ -17,8 +17,7 @@
     "jquery": "global:jQuery"
   },
   "browserslist": [
-    "last 2 versions",
-    "Firefox ESR"
+    "defaults"
   ],
   "scripts": {
     "start": "yarn && gulp dev",
