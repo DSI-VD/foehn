@@ -1,5 +1,5 @@
 ---
-status: wip
+status: review
 ---
 
 Évitez la décoration inutile. N'utilisez les images que si elles rebondent à un
