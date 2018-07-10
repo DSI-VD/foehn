@@ -3,6 +3,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- add accessibility doc
+- add colors doc
+- add images doc
+- add layout doc
+- add text input doc
+- add textarea doc
+
 ### Fix
 - Set browserlist coverage [to `default`](http://browserl.ist/?q=defaults)
 - Upgrade dependencies
