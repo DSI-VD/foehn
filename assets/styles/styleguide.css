@@ -1,9 +1,0 @@
-/**
- * foehn - Frontend pattern library for State of Vaud
- * @version v0.52.1
- */
-/*!
- * This style only apply on fractal documentation.
- * It it not a part of the foehn design system.
- */.palette{-ms-flex-wrap:wrap;display:-webkit-box;display:-ms-flexbox;display:flex;flex-wrap:wrap;margin:0 -.25em}.color{-ms-flex:1 1 4em;-webkit-box-flex:1;flex:1 1 4em;margin:0 .25em 1.5em;position:relative}.color:before{background-color:currentColor;content:"";display:block;height:5em;width:100%}.color code{color:#e83e8c;display:inline-block}.color span{color:#fff;display:block;font:.75em/1em Hack,Consolas,Monaco,monospace;font-style:normal;left:.5rem;position:absolute;text-shadow:0 0 2px #000;top:.5rem}.color--base{-ms-flex:1 1 12em;-ms-flex-order:-1;-webkit-box-flex:1;-webkit-box-ordinal-group:0;flex:1 1 12em;margin-right:1em;order:-1}
-/*# sourceMappingURL=styleguide.css.map */
