@@ -81,14 +81,288 @@
     
     <p>All notable changes to this project will be documented in this file.
 This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
-<h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v0.40.0...HEAD">Unreleased</a></h2>
+<h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.1...HEAD">Unreleased</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>add accessibility doc</li>
+<li>add colors doc</li>
+<li>add images doc</li>
+<li>add layout doc</li>
+<li>add text input doc</li>
+<li>add textarea doc</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Set browserlist coverage <a href="http://browserl.ist/?q=defaults">to <code>default</code></a></li>
+<li>Upgrade dependencies</li>
+</ul>
+<h2 id="0-52-1-2018-07-03"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.0...v0.52.1">0.52.1</a> - 2018-07-03</h2>
+<h2 id="fix">Fix</h2>
+<ul>
+<li>Fix width of input with 2 characters in <a href="../components/detail/dates"><code>@dates</code></a></li>
+</ul>
+<h2 id="0-52-0-2018-06-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.51.2...v0.52.0">0.52.0</a> - 2018-06-20</h2>
 <h3 id="changed">Changed</h3>
 <ul>
+<li>Replace <code>text-right</code> class with <code>text-md-right</code> in <a href="../components/detail/nav"><code>@nav</code></a> component</li>
+<li>Change HTML class of <a href="../components/detail/login"><code>@login</code></a> in <a href="../components/detail/header"><code>@header</code></a> component</li>
+<li>Remove <code>media-lists</code> class and <code>&lt;div&gt;</code> in <a href="../components/detail/media-list"><code>@media-list</code></a></li>
+</ul>
+<h2 id="0-51-2-2018-06-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.51.1...v0.51.2">0.51.2</a> - 2018-06-07</h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix favicon SVG file for Safari</li>
+</ul>
+<h2 id="0-51-1-2018-06-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.51.0...v0.51.1">0.51.1</a> - 2018-06-07</h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Update favicons files</li>
+</ul>
+<h2 id="0-51-0-2018-06-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.50.1...v0.51.0">0.51.0</a> - 2018-06-07</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>There’s no more inline scripts to include in the <code>&lt;head&gt;</code>. Webfont loading
+scripts is in <code>foehn-scripts--header.js</code>.</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Minify JavaScript files</li>
+</ul>
+<h2 id="0-50-1-2018-05-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.50.0...v0.50.1">0.50.1</a> - 2018-05-30</h2>
+<h3 id="fix-2018-05-30">Fix - 2018-05-30</h3>
+<ul>
+<li>Fix light weight of Roboto Slab font was missing</li>
+<li>Upgrade all node modules</li>
+</ul>
+<h2 id="0-50-0-2018-05-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.49.0...v0.50.0">0.50.0</a> - 2018-05-30</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Update fonts loading strategy to speed up font loading and internalize fonts.<ul>
+<li>Fonts are internilized in Foehn. We do not use Google Fonts service anymore.</li>
+<li>Use <a href="https://github.com/bramstein/fontfaceobserver">Font Face Observer</a> 
+instead of <a href="https://github.com/typekit/webfontloader">webfontloader</a> to load
+fonts. Take a look at <a href="../components/detail/webfont-loading"><code>@webfont-loading</code></a>.</li>
+<li>Font loading script is placed in the <code>&lt;head&gt;</code> of the document. Take a look 
+at <a href="../components/detail/preview"><code>@preview</code></a>.</li>
+<li>Replace all <code>.wf-*</code> CSS class with a unique <code>.fonts-loaded</code> class for <a href="https://www.zachleat.com/web/webfont-glossary/#fout">FOUT</a></li>
+</ul>
+</li>
+<li>Upgrade to <a href="http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1-1/">Bootstrap 4.1.1</a></li>
+<li>Upgrade to <a href="http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1/">Bootstrap 4.1</a></li>
+<li>The URL of Fontawesome JavaScript has changed in <a href="../components/detail/sript-header"><code>@sript-header</code></a>. Fontawesome 
+is internalized inside foehn.</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fontawesome updated to v5.1.0-4</li>
+</ul>
+<h2 id="0-49-0-2018-04-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.48.1...v0.49.0">0.49.0</a> - 2018-04-17</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/favicon"><code>@favicon</code></a> component, documentation and ressources</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Add a JSON linter to the build process</li>
+</ul>
+<h2 id="0-48-1-2018-03-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.48.0...v0.48.1">0.48.1</a> - 2018-03-20</h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Remove banner in CSS source maps</li>
+<li>Fix doc about wich files to put in the <code>&lt;head&gt;</code>.</li>
+</ul>
+<h2 id="0-48-0-2018-03-15"><a href="https://github.com/DSI-VD/foehn/compare/v0.47.0...v0.48.0">0.48.0</a> - 2018-03-15</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Remove vendors concatenation in <a href="../components/detail/scripts-footer.html"><code>@scripts-footer.html</code></a></li>
+<li>Remove image’s caption in <a href="../components/detail/agenda"><code>@agenda</code></a> on <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+</ul>
+<h2 id="0-47-0-2018-03-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.46.0...v0.47.0">0.47.0</a> - 2018-03-14</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>HTML markup of <a href="../components/detail/checkbox"><code>@checkbox</code></a> has changed. The <code>&lt;input&gt;</code> is now outside of the
+<code>&lt;label&gt;</code></li>
+<li>JS vendors are concatenated inside one unique <code>vendors.js</code> file. See</li>
+<li>HTML markup of <a href="../components/detail/radio"><code>@radio</code></a> has changed. The <code>&lt;input&gt;</code> is now outside of the
+<code>&lt;label&gt;</code></li>
+<li>JS vendors are concatenated inside one unique <code>vendors.js</code> file. See
+<a href="../components/detail/scripts-footer"><code>@scripts-footer</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add a <a href="../components/detail/fieldset--yes-or-no"><code>@fieldset--yes-or-no</code></a> component</li>
+</ul>
+<h2 id="0-46-0-2018-03-1"><a href="https://github.com/DSI-VD/foehn/compare/v0.45.2...v0.46.0">0.46.0</a> - 2018-03-1</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Add categories in <a href="../components/detail/publish-info"><code>@publish-info</code></a></li>
+<li>Rename <a href="../components/detail/publish-time"><code>@publish-time</code></a> in <a href="../components/detail/publish-info"><code>@publish-info</code></a></li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix typo in <a href="../components/detail/input"><code>@input</code></a> notes</li>
+</ul>
+<h2 id="0-45-2-2018-03-01"><a href="https://github.com/DSI-VD/foehn/compare/v0.45.1...v0.45.2">0.45.2</a> - 2018-03-01</h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix link printing url</li>
+</ul>
+<h2 id="0-45-1-2018-02-28"><a href="https://github.com/DSI-VD/foehn/compare/v0.45.0...v0.45.1">0.45.1</a> - 2018-02-28</h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Refactor CSS</li>
+<li>Fix wording in <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
+<li>Fix <code>.row</code> are not correctly printed in Firefox</li>
+</ul>
+<h2 id="0-45-0-2018-02-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.44.0...v0.45.0">0.45.0</a> - 2018-02-20</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Fix accessibility of <a href="../components/detail/autority-address--search"><code>@autority-address--search</code></a></li>
+<li>Remove <a href="../components/detail/figure"><code>@figure</code></a>‘s caption in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Refactor CSS</li>
+<li>Fix wording of result heading in <a href="../components/detail/example-list"><code>@example-list</code></a></li>
+<li>Fix style of button linked to a phone number who are black on desktop</li>
+<li>Fix style of link to a phone number who are deisplay as normal text on
+desktop</li>
+</ul>
+<h2 id="0-44-0-2018-02-09"><a href="https://github.com/DSI-VD/foehn/compare/v0.43.0...v0.44.0">0.44.0</a> - 2018-02-09</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Remove <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> in <a href="../components/detail/theme--default"><code>@theme--default</code></a></li>
+<li>Change label of the search form in:<ul>
+<li><a href="../components/detail/faq"><code>@faq</code></a></li>
+<li><a href="../components/detail/search-banner"><code>@search-banner</code></a></li>
+<li><a href="../components/detail/news-list"><code>@news-list</code></a></li>
+<li><a href="../components/detail/news-list--activities"><code>@news-list--activities</code></a></li>
+<li><a href="../components/detail/news-list--categories"><code>@news-list--categories</code></a></li>
+<li><a href="../components/detail/theme--list"><code>@theme--list</code></a></li>
+</ul>
+</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix hidden descender in <a href="../components/detail/input"><code>@input</code></a> and <a href="../components/detail/select"><code>@select</code></a></li>
+<li>Fix color of <a href="../components/detail/list-links"><code>@list-links</code></a> when insiade a <a href="../components/detail/highlight"><code>@highlight</code></a></li>
+<li>Upgrade to Bootstrap 4</li>
+</ul>
+<h2 id="0-43-0-2018-02-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.42.1...v0.43.0">0.43.0</a> - 2018-02-07</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Set the width of <a href="../components/detail/figure"><code>@figure</code></a> in <a href="../components/detail/agenda"><code>@agenda</code></a> to be 50% on desktop bay adding
+<code>.vd-w-md-50</code> class</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Upgrade to Bootstrap 4 Beta 3</li>
+</ul>
+<h2 id="0-42-1-2018-02-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.42.0...v0.42.1">0.42.1</a> - 2018-02-06</h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix <a href="../components/detail/search-form--default"><code>@search-form--default</code></a> icon messing around at certain viewport</li>
+</ul>
+<h2 id="0-42-0-2018-02-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0">0.42.0</a> - 2018-02-06</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Change title and links of <a href="../components/detail/index-menu"><code>@index-menu</code></a> in <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
+<li>Changed <code>%card-inside</code> styles to remove hover from text and have a white link visited color</li>
+<li>Use <code>.nav.nav-pills</code> instead of <code>.nav</code> for the filter of the <a href="../components/detail/search"><code>@search</code></a> page</li>
+<li>On mobile, <a href="../components/detail/login"><code>@login</code></a> comes before <a href="../components/detail/logo-etat"><code>@logo-etat</code></a> in <a href="../components/detail/header-securisee"><code>@header-securisee</code></a>.</li>
+<li>Remove button “Tous les thèmes” and section “Les plus visités” that were only
+visible on mobile in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Change the structure of ‘@header’, <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> and <a href="../components/detail/header-securise"><code>@header-securise</code></a><ul>
+<li>Use the new <a href="../components/detail/login"><code>@login</code></a> component</li>
+<li>Change spacing of <a href="../components/detail/search-form--default"><code>@search-form--default</code></a></li>
+<li>Remove <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
+</ul>
+</li>
+<li>Use flexbox to display <a href="../components/detail/nav"><code>@nav</code></a> in <a href="../components/detail/header"><code>@header</code></a> and <a href="../components/detail/header--homepage"><code>@header--homepage</code></a></li>
+<li>Change <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> styles<ul>
+<li>Add a javascript on <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> to close the navigation when loaded on a 
+mobile device. Add <code>js-closeMenuOnMobile__*</code> classes to enable this feature.
+Take a loot at <a href="../components/detail/nav-primary--open"><code>@nav-primary--open</code></a> for documentation.</li>
+<li>Rename menu button in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a></li>
+</ul>
+</li>
+<li>Add <code>foehn-scripts--footer.js</code> in the footer of all pages.</li>
+<li>Add <code>.d-print-none</code> to <a href="../components/detail/nav-primary"><code>@nav-primary</code></a>, <a href="../components/detail/nav"><code>@nav</code></a>.</li>
+<li>Add <code>.d-print-none</code> to search form from <a href="../components/detail/theme--default"><code>@theme--default</code></a>.</li>
+<li>Add <code>.vd-print-full-width</code> to <a href="../components/detail/header"><code>@header</code></a> and <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> in order to 
+display <code>h1</code>replacing logo at 100% width (print)</li>
+<li>Add <code>.vd-print-none</code> to search form row in <a href="../components/detail/template-communiques-presse-list"><code>@template-communiques-presse-list</code></a> </li>
+<li>Add <code>.vd-print-full-width</code> to CP list results of 
+<a href="../components/detail/template-communiques-presse-list"><code>@template-communiques-presse-list</code></a></li>
+<li>Add <code>.vd-print-none</code> to bottom Autorities section of  <a href="../components/detail/accueil"><code>@accueil</code></a> </li>
+<li>Add exception for print in <code>_breadcrumb.scss</code> to show all breadcrumb</li>
+<li>Add a type of <code>communique</code> in <a href="../components/detail/search-item"><code>@search-item</code></a></li>
+<li>Fix <code>aria-label</code> in <a href="../components/detail/pagination"><code>@pagination</code></a></li>
+<li>Add a visibly-hidden header in <a href="../components/detail/pagination"><code>@pagination</code></a> for accessibility</li>
+<li>Add a value in the input field of <a href="../components/detail/search"><code>@search</code></a></li>
+<li>Change headings level in <a href="../components/detail/search"><code>@search</code></a></li>
+<li>Rename page <a href="../components/detail/search"><code>@search</code></a></li>
+<li>Remove useless heading in <a href="../components/detail/search--no-search"><code>@search--no-search</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/media-text-list"><code>@media-text-list</code></a> component in organisms</li>
+<li>Add <a href="../components/detail/text-and-image--left"><code>@text-and-image--left</code></a>, <a href="../components/detail/text-and-image--top"><code>@text-and-image--top</code></a> and 
+<a href="../components/detail/text-and-image--right"><code>@text-and-image--right</code></a> to show how to display images aside text.</li>
+<li>Add  a <a href="../components/detail/figure"><code>@figure</code></a> in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
+<li>Add <a href="../components/detail/login"><code>@login</code></a> component</li>
+</ul>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix caption’s width is the same as the images in a <code>.figure</code></li>
+<li>Remove CSS fix for Firefox ESR 45 in <code>.figure</code></li>
+<li>Fix poistion of the blason in <a href="../components/detail/logo-etat"><code>@logo-etat</code></a></li>
+<li>Fix first chevrn wasn’t displayed on mobile in <a href="../components/detail/navigation"><code>@navigation</code></a></li>
+<li>Refactor <a href="../components/detail/logo-etat"><code>@logo-etat</code></a> and <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> spacings</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Remove <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
+</ul>
+<h2 id="0-41-0-2017-12-22"><a href="https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0">0.41.0</a> - 2017-12-22</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Change how <a href="../components/detail/search"><code>@search</code></a> page is displayed</li>
+<li>Upgrade Fontawesome to v5.<ul>
+<li>Add a documentation how to upgrade</li>
+<li>Update <a href="../components/detail/list-boxed"><code>@list-boxed</code></a> HTML</li>
+<li>Update <a href="../components/detail/search-form--regular-option"><code>@search-form--regular-option</code></a> HTML</li>
+<li>Update <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> HTML</li>
+<li>Update <a href="../components/detail/search-form"><code>@search-form</code></a> HTML</li>
+<li>Update <a href="../components/detail/dropdown"><code>@dropdown</code></a></li>
+<li>Update <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
+<li>Update <a href="../components/detail/nav-primary"><code>@nav-primary</code></a></li>
+<li>Update <a href="../components/detail/pagination"><code>@pagination</code></a></li>
+<li>Update <a href="../components/detail/social-icons"><code>@social-icons</code></a></li>
+<li>Update <a href="../components/detail/button-back-to-top"><code>@button-back-to-top</code></a></li>
+<li>Update <a href="../components/detail/header--securise"><code>@header--securise</code></a></li>
+<li>Update <a href="../components/detail/filter-list-result-table"><code>@filter-list-result-table</code></a></li>
+<li>Update <code>example-list</code></li>
+<li>Update <a href="../components/detail/template-communiques-press-detail"><code>@template-communiques-press-detail</code></a></li>
+<li>Update <a href="../components/detail/template-communiques-press-list"><code>@template-communiques-press-list</code></a></li>
+<li>Update <a href="../components/detail/prestation"><code>@prestation</code></a></li>
+<li>Update <a href="../components/detail/documents"><code>@documents</code></a></li>
+<li>Remove <code>vendor.css</code> stylesheet in header in all components (see <a href="../components/detail/preview"><code>@preview</code></a>)</li>
+<li>Add link to fontawesome JavaScript in footer in all components (see <a href="../components/detail/preview"><code>@preview</code></a>)</li>
+</ul>
+</li>
+<li>Remove <code>.vd-btn-chevron-*</code> class in <a href="../components/detail/faq-item"><code>@faq-item</code></a>, <a href="../components/detail/button-back-to-top"><code>@button-back-to-top</code></a>,
+<a href="../components/detail/domain-list"><code>@domain-list</code></a></li>
 <li>Add text in the link logo in <a href="../components/detail/footer"><code>@footer</code></a></li>
 <li>Add <code>role=&quot;search&quot;</code> attribute for the form in
 <a href="../components/detail/template-communiques-presse-list--default"><code>@template-communiques-presse-list--default</code></a> and <a href="../components/detail/template-communiques-presse-list--results"><code>@template-communiques-presse-list--results</code></a></li>
 <li>Add <code>role=&quot;search&quot;</code> attribute in <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> and
 <a href="../components/detail/search-form--regular-option"><code>@search-form--regular-option</code></a></li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../components/detail/search--no-results"><code>@search--no-results</code></a> and <a href="../components/detail/search--no-search"><code>@search--no-search</code></a> components</li>
+<li>Add documentation about search pages.</li>
 </ul>
 <h2 id="0-40-0-2017-12-12"><a href="https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0">0.40.0</a> - 2017-12-12</h2>
 <h3 id="changed">Changed</h3>
