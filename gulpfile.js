@@ -223,9 +223,6 @@ function scriptsHeader() {
 /**
  * SVG
  *
- * FIXME: You have to add dependencies manually
- * https://github.com/sindresorhus/gulp-imagemin/issues/232
- * `$ yarn add imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo`
  */
 function svg() {
     return gulp.src(`${paths.src}/assets/svg/**/*.svg`)
