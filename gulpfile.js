@@ -226,17 +226,21 @@ function scriptsHeader() {
  */
 function svg() {
     return gulp.src(`${paths.src}/assets/svg/**/*.svg`)
-        .pipe(imagemin())
+        .pipe(imagemin({
+            verbose: true,
+        }))
         .pipe(gulp.dest(`${paths.dest}/assets/svg`));
 }
 
 /**
  * Image
  *
- * We do minify original images instead of processing theme through each builds.
  */
 function images() {
     return gulp.src(`${paths.src}/assets/img/**/*.*`)
+        .pipe(imagemin({
+            verbose: true,
+        }))
         .pipe(gulp.dest(`${paths.dest}/assets/img`));
 }
 
