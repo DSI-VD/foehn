@@ -10,10 +10,10 @@ const stylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const imagemin = require('gulp-imagemin');
-const eslint = require('gulp-eslint');
+const xo = require('gulp-xo');
 const jsonlint = require('gulp-jsonlint');
 
-/* gulp-uglify must use uglify-es module becaus we use ESlint
+/* Gulp-uglify must use uglify-es module becaus we use ESlint
  * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
  *     https://github.com/gruntjs/grunt-contrib-uglify/issues/477#issuecomment-305329757
  */
@@ -25,17 +25,17 @@ const minify = composer(uglifyjs, console);
 
 const processors = [
     require('autoprefixer'),
-    require('cssnano'),
+    require('cssnano')
 ];
 
 const wrapProcessors = [
-    prefixwrap('.foehn-example'),
+    prefixwrap('.foehn-example')
 ];
 
 const paths = {
     build: `${__dirname}/dist`,
     dest: `${__dirname}/tmp`,
-    src: `${__dirname}/src`,
+    src: `${__dirname}/src`
 };
 
 const header = require('gulp-header');
@@ -53,7 +53,7 @@ const banner = ['/**',
 
 const fractal = require('./fractal.js');
 
-const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
+const logger = fractal.cli.console; // Keep a reference to the fractal CLI console utility
 
 /*
  * Start the Fractal server
@@ -66,7 +66,7 @@ const logger = fractal.cli.console; // keep a reference to the fractal CLI conso
  */
 function serve() {
     const server = fractal.web.server({
-        sync: true,
+        sync: true
     });
 
     server.on('error', err => logger.error(err.message));
@@ -120,7 +120,7 @@ function deploy() {
     return gulp.src(`${paths.build}/**/*`)
         .pipe(ghPages({
             force: true,
-            remoteUrl: 'https://github.com/DSI-VD/foehn.git',
+            remoteUrl: 'https://github.com/DSI-VD/foehn.git'
         }));
 }
 
@@ -132,7 +132,7 @@ function styles() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
-        .pipe(header(banner, { pkg: pkg }))
+        .pipe(header(banner, {pkg}))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
@@ -144,7 +144,7 @@ function docStyles() {
     return gulp.src([`${paths.dest}/assets/styles/main.css`])
         .pipe(postcss(wrapProcessors))
         .pipe(rename({
-            prefix: 'doc-',
+            prefix: 'doc-'
         }))
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
@@ -155,14 +155,14 @@ function docStyles() {
 function lintstyles() {
     return gulp.src([
         `${paths.src}/assets/styles/**/*.s+(a|c)ss`,
-        `!${paths.src}/assets/styles/bootstrap-variables.scss`,
+        `!${paths.src}/assets/styles/bootstrap-variables.scss`
     ])
         .pipe(stylelint({
             failAfterError: false,
             reporters: [{
                 formatter: 'string',
-                console: true,
-            }],
+                console: true
+            }]
         }));
 }
 
@@ -173,17 +173,17 @@ function scriptsVendors() {
     return gulp.src([
         'node_modules/jquery/dist/jquery.slim.min.*',
         'node_modules/popper.js/dist/umd/popper.min.*',
-        'node_modules/bootstrap/dist/js/bootstrap.min.*',
+        'node_modules/bootstrap/dist/js/bootstrap.min.*'
     ])
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
 function scriptsVendorsRename() {
     return gulp.src([
-        'node_modules/@fortawesome/fontawesome-free/js/all.js',
+        'node_modules/@fortawesome/fontawesome-free/js/all.js'
     ])
         .pipe(rename({
-            prefix: 'fontawesome-',
+            prefix: 'fontawesome-'
         }))
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
@@ -195,7 +195,7 @@ function scriptsVendorsRename() {
  */
 function scriptsFooter() {
     return gulp.src([
-        `${paths.src}/assets/scripts/nav-primary.js`,
+        `${paths.src}/assets/scripts/nav-primary.js`
     ])
         .pipe(sourcemaps.init())
         .pipe(rename('foehn-scripts--footer.js'))
@@ -211,7 +211,7 @@ function scriptsFooter() {
  */
 function scriptsHeader() {
     return gulp.src([
-        `${paths.src}/assets/scripts/webfont-loading.js`,
+        `${paths.src}/assets/scripts/webfont-loading.js`
     ])
         .pipe(sourcemaps.init())
         .pipe(rename('foehn-scripts--header.js'))
@@ -277,10 +277,10 @@ function lintscripts() {
     return gulp.src([
         `${paths.src}/**/*.js`,
         './*.js',
-        '!node_modules/**',
+        '!node_modules/**'
     ])
-        .pipe(eslint())
-        .pipe(eslint.format());
+        .pipe(xo())
+        .pipe(xo.format());
 }
 
 /**
@@ -296,7 +296,7 @@ function lintjson() {
         '*.json',
         `${paths.src}/**/*.json`,
         `${paths.dest}/**/*.css.map`, // [1]
-        `${paths.dest}/**/*.js.map`, // [2]
+        `${paths.dest}/**/*.js.map` // [2]
     ])
         .pipe(jsonlint())
         .pipe(jsonlint.reporter());
@@ -311,7 +311,7 @@ function lintjson() {
  */
 function copyChangelog() {
     return gulp.src('CHANGELOG.md')
-        .pipe(replace(/`@(\S+)`/g, '[\`@$1\`](../components/detail/$1)'))
+        .pipe(replace(/`@(\S+)`/g, '[`@$1`](../components/detail/$1)'))
         .pipe(rename('changelog.md'))
         .pipe(gulp.dest(`${paths.src}/docs/`));
 }

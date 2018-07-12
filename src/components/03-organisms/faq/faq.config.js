@@ -1,18 +1,18 @@
 'use strict';
 
-const faker = require('faker'); // require the faker module
+const faker = require('faker'); // Require the faker module
 
-const faqCount = 10; // how many faqs we should generate data for
+const faqCount = 10; // How many faqs we should generate data for
 const faqData = [];
 
-// sets locale to fr
+// Sets locale to fr
 faker.locale = 'fr';
 
 for (let i = 0; i < faqCount; i += 1) {
     faqData.push({
         question: faker.lorem.sentence(),
         answer: faker.lorem.paragraphs(),
-        author: `${faker.name.firstName()} ${faker.name.lastName()}`,
+        author: `${faker.name.firstName()} ${faker.name.lastName()}`
     });
 }
 
@@ -25,9 +25,9 @@ module.exports = {
             titleModifier: 'mt-0',
             heading: {
                 text: 'Rechercher dans les questions',
-                styleModifier: 'mt-0',
-            },
+                styleModifier: 'mt-0'
+            }
         },
-        faqs: faqData,
-    },
+        faqs: faqData
+    }
 };

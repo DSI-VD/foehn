@@ -1,6 +1,6 @@
 'use strict';
 
-const faker = require('faker'); // require the faker module
+const faker = require('faker'); // Require the faker module
 
 // sets locale to fr
 faker.locale = 'fr';
@@ -8,7 +8,7 @@ faker.locale = 'fr';
 /**
  * Demandes
  */
-const teaserItemCount = 10; // how many itmes we should generate data for
+const teaserItemCount = 10; // How many itmes we should generate data for
 const teaserItemData = [];
 
 for (let i = 0; i < teaserItemCount; i += 1) {
@@ -26,29 +26,29 @@ for (let i = 0; i < teaserItemCount; i += 1) {
                     srcset: [
                         {
                             width: '320w',
-                            file: faker.image.imageUrl(320, 213, '', 1),
+                            file: faker.image.imageUrl(320, 213, '', 1)
                         },
                         {
                             width: '540w',
-                            file: faker.image.imageUrl(540, 360, '', 1),
+                            file: faker.image.imageUrl(540, 360, '', 1)
                         },
                         {
                             width: '720w',
-                            file: faker.image.imageUrl(720, 480, '', 1),
+                            file: faker.image.imageUrl(720, 480, '', 1)
                         },
                         {
                             width: '960w',
-                            file: faker.image.imageUrl(960, 640, '', 1),
+                            file: faker.image.imageUrl(960, 640, '', 1)
                         },
                         {
                             width: '1140w',
-                            file: faker.image.imageUrl(1140, 760, '', 1),
-                        },
-                    ],
-                },
-            },
+                            file: faker.image.imageUrl(1140, 760, '', 1)
+                        }
+                    ]
+                }
+            }
         },
-        excerpt: faker.lorem.text(),
+        excerpt: faker.lorem.text()
     });
 }
 
@@ -58,18 +58,18 @@ module.exports = {
         breadcrumb: [
             {
                 page: 'vd.ch',
-                url: '#',
-            },
+                url: '#'
+            }
         ],
         teasers: teaserItemData,
         searchForm: {
             heading: {
                 text: 'Rechercher dans les actualités',
                 styleModifier: 'mt-0 h4',
-                level: 'h2',
+                level: 'h2'
             },
-            label: 'Rechercher dans les actualités',
-        },
+            label: 'Rechercher dans les actualités'
+        }
     },
     variants: [
         {
@@ -79,18 +79,18 @@ module.exports = {
                 breadcrumb: [
                     {
                         page: 'vd.ch',
-                        url: '#',
+                        url: '#'
                     },
                     {
                         page: 'Autorités',
-                        url: '#',
+                        url: '#'
                     },
                     {
                         page: 'Service des automobiles et de la navigation',
-                        url: '#',
-                    },
-                ],
-            },
+                        url: '#'
+                    }
+                ]
+            }
         },
         {
             name: 'categories',
@@ -99,22 +99,22 @@ module.exports = {
                 breadcrumb: [
                     {
                         page: 'vd.ch',
-                        url: '#',
+                        url: '#'
                     },
                     {
                         page: 'Autorités',
-                        url: '#',
+                        url: '#'
                     },
                     {
                         page: 'Service des automobiles et de la navigation',
-                        url: '#',
+                        url: '#'
                     },
                     {
                         page: 'Actualité',
-                        url: '#',
-                    },
-                ],
-            },
-        },
-    ],
+                        url: '#'
+                    }
+                ]
+            }
+        }
+    ]
 };

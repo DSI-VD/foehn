@@ -1,4 +1,5 @@
 // Webfont loading
+// eslint-disable-next-line func-names
 (function webfontloading() {
     // Optimization for Repeat Views
     if (sessionStorage.fontsLoaded) {
@@ -26,11 +27,11 @@
 
     Promise.all([
         fontA.load(null, 1000),
-        fontB.load(null, 1000),
-    ]).then(function setSessionStorage() {
+        fontB.load(null, 1000)
+    ]).then(() => {
         document.documentElement.className += ' fonts-loaded';
 
         // Optimization for Repeat Views
         sessionStorage.fontsLoaded = true;
     });
-}());
+})();
