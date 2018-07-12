@@ -236,13 +236,10 @@ function svg() {
 /**
  * Image
  *
- * FIXME: You have to add dependencies manually
- * https://github.com/sindresorhus/gulp-imagemin/issues/232
- * `$ yarn add imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo`
+ * We do minify original images instead of processing theme through each builds.
  */
 function images() {
     return gulp.src(`${paths.src}/assets/img/**/*.*`)
-        .pipe(imagemin())
         .pipe(gulp.dest(`${paths.dest}/assets/img`));
 }
 
