@@ -14,6 +14,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fix
 - Set browserlist coverage [to `default`](http://browserl.ist/?q=defaults)
 - Upgrade dependencies
+- Minifacation of images and SVGs has been removed to speed up the build. Images
+  and SVGs have to be minified upstream.
 
 ## [0.52.1] - 2018-07-03
 
