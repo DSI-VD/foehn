@@ -9,7 +9,6 @@ const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
-const imagemin = require('gulp-imagemin');
 const eslint = require('gulp-eslint');
 const jsonlint = require('gulp-jsonlint');
 
@@ -223,24 +222,22 @@ function scriptsHeader() {
 /**
  * SVG
  *
+ * Make sure to minify the original SVGs
+ * We do not minify during the build to speed up the process
  */
 function svg() {
     return gulp.src(`${paths.src}/assets/svg/**/*.svg`)
-        .pipe(imagemin({
-            verbose: true,
-        }))
         .pipe(gulp.dest(`${paths.dest}/assets/svg`));
 }
 
 /**
  * Image
  *
+ * Make sure to minify the original images
+ * We do not minify during the build to speed up the process
  */
 function images() {
     return gulp.src(`${paths.src}/assets/img/**/*.*`)
-        .pipe(imagemin({
-            verbose: true,
-        }))
         .pipe(gulp.dest(`${paths.dest}/assets/img`));
 }
 
