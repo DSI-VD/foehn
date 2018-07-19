@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add textarea doc
 
 ### Fix
+- Use [XO](https://github.com/xojs/xo) to lint JavaScript
 - Set browserlist coverage [to `default`](http://browserl.ist/?q=defaults)
 - Upgrade dependencies
 - Minifacation of images and SVGs has been removed to speed up the build. Images
