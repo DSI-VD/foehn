@@ -16,21 +16,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add textarea doc
 
 ### Fix
-- Upgrade Autoprefixer to 9.1.0
-- Upgrade gulp-postcss to 8.0.0
-- Upgrade gulp-xo to 0.19.0
+- Upgrade a bunch of modules that you do note need to take care of
 - Upgrade to Fontawesome 5.2. Fore more informaiotn, take a look at the
   [Announcement](https://blog.fontawesome.com/font-awesome-5-2-372-new-icons-adfb42c6c35)
-- Upgrade stylelint to 9.4.0
-- Upgrade cssnano to 4.0.5
-- Upgrade popper.js to 1.14.4
 - Upgrade Bootstrap to 4.1.3. See
   [4.1.2](http://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/) and
   [4.1.3](http://blog.getbootstrap.com/2018/07/24/bootstrap-4-1-3/) blog posts
   for more information
 - Use [XO](https://github.com/xojs/xo) to lint JavaScript
 - Set browserlist coverage [to `default`](http://browserl.ist/?q=defaults)
-- Upgrade dependencies
 - Minifacation of images and SVGs has been removed to speed up the build. Images
   and SVGs have to be minified upstream.
 
