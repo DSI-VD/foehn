@@ -16,9 +16,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add textarea doc
 
 ### Fix
-- Upgrade Bootstrap to 4.1.2. See [blog
-  post](http://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/) for more
-  information.
+- Upgrade Bootstrap to 4.1.3. See
+  [4.1.2](http://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/) and
+  [4.1.3](http://blog.getbootstrap.com/2018/07/24/bootstrap-4-1-3/) blog posts
+  for more information
 - Use [XO](https://github.com/xojs/xo) to lint JavaScript
 - Set browserlist coverage [to `default`](http://browserl.ist/?q=defaults)
 - Upgrade dependencies
