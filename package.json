@@ -31,7 +31,7 @@
     "npm": "3.10.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.1.0-4",
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.0",
     "faker": "^4.1.0",

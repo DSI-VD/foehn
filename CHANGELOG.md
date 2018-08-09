@@ -16,6 +16,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add textarea doc
 
 ### Fix
+- Upgrade to Fontawesome 5.2. Fore more informaiotn, take a look at the
+  [Announcement](https://blog.fontawesome.com/font-awesome-5-2-372-new-icons-adfb42c6c35)
 - Upgrade stylelint to 9.4.0
 - Upgrade cssnano to 4.0.5
 - Upgrade popper.js to 1.14.4

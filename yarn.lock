@@ -6,9 +6,9 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@allmarkedup/fang/-/fang-1.0.0.tgz#20aa2ea365c57b0a28e6b563613270f5630d6883"
 
-"@fortawesome/fontawesome-free@^5.1.0-4":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.1.0.tgz#f35f5ba91366b7a58b0b6a4f22ff0907fe002219"
+"@fortawesome/fontawesome-free@^5.2.0":
+  version "5.2.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/@fortawesome/fontawesome-free/-/fontawesome-free-5.2.0.tgz#50cd9856774351c56c0b1b0db4efe122d7913e58"
 
 "@frctl/fractal@^1.0.0", "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.7":
   version "1.1.7"
