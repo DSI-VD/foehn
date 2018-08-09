@@ -3,6 +3,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Change text "requis" for a more understandable "obligatoire" in 
+  `@input-required`
+
 ### Added
 - add accessibility doc
 - add colors doc
