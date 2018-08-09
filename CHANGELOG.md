@@ -16,6 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add textarea doc
 
 ### Fix
+- Upgrade cssnano to 4.0.5
 - Upgrade popper.js to 1.14.4
 - Upgrade Bootstrap to 4.1.3. See
   [4.1.2](http://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/) and

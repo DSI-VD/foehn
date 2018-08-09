@@ -191,7 +191,7 @@ align-text@^0.1.1, align-text@^0.1.3:
 
 alphanum-sort@^1.0.0:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
 amdefine@>=0.0.4:
   version "1.0.1"
@@ -259,7 +259,7 @@ ansi-styles@^2.2.1:
 
 ansi-styles@^3.2.1:
   version "3.2.1"
-  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
   dependencies:
     color-convert "^1.9.0"
 
@@ -308,7 +308,7 @@ are-we-there-yet@~1.1.2:
 
 argparse@^1.0.7:
   version "1.0.10"
-  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
   dependencies:
     sprintf-js "~1.0.2"
 
@@ -649,7 +649,7 @@ body-parser@1.18.2:
 
 boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
 
 boom@2.x.x:
   version "2.10.1"
@@ -760,13 +760,6 @@ browser-sync@^2.18.13:
     ua-parser-js "0.7.17"
     yargs "6.4.0"
 
-browserslist@^2.0.0:
-  version "2.11.3"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.11.3.tgz#fe36167aed1bbcde4827ebfe71347a2cc70b99b2"
-  dependencies:
-    caniuse-lite "^1.0.30000792"
-    electron-to-chromium "^1.3.30"
-
 browserslist@^3.2.8:
   version "3.2.8"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-3.2.8.tgz#b0005361d6471f0f5952797a76fc985f1f978fc6"
@@ -775,11 +768,11 @@ browserslist@^3.2.8:
     electron-to-chromium "^1.3.47"
 
 browserslist@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.0.0.tgz#48703f1ed7ef981c6719e39e9444f20632b06571"
+  version "4.0.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/browserslist/-/browserslist-4.0.1.tgz#61c05ce2a5843c7d96166408bc23d58b5416e818"
   dependencies:
-    caniuse-lite "^1.0.30000859"
-    electron-to-chromium "^1.3.50"
+    caniuse-lite "^1.0.30000865"
+    electron-to-chromium "^1.3.52"
     node-releases "^1.0.0-alpha.10"
 
 bs-recipes@1.3.4:
@@ -869,16 +862,20 @@ camelcase@^4.0.0, camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
-caniuse-api@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-2.0.0.tgz#b1ddb5a5966b16f48dc4998444d4bbc6c7d9d834"
+caniuse-api@^3.0.0:
+  version "3.0.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/caniuse-api/-/caniuse-api-3.0.0.tgz#5e4d90e2274961d46291997df599e3ed008ee4c0"
   dependencies:
-    browserslist "^2.0.0"
+    browserslist "^4.0.0"
     caniuse-lite "^1.0.0"
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000859, caniuse-lite@^1.0.30000864:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000865:
+  version "1.0.30000874"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/caniuse-lite/-/caniuse-lite-1.0.30000874.tgz#a641b1f1c420d58d9b132920ef6ba87bbdcd2223"
+
+caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000864:
   version "1.0.30000864"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000864.tgz#7a08c78da670f23c06f11aa918831b8f2dd60ddc"
 
@@ -913,7 +910,7 @@ chalk@^1.0.0, chalk@^1.1.0, chalk@^1.1.1, chalk@^1.1.3:
 
 chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1:
   version "2.4.1"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
   dependencies:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
@@ -1098,7 +1095,7 @@ co@^4.6.0:
 
 coa@~2.0.1:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/coa/-/coa-2.0.1.tgz#f3f8b0b15073e35d70263fb1042cb2c023db38af"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/coa/-/coa-2.0.1.tgz#f3f8b0b15073e35d70263fb1042cb2c023db38af"
   dependencies:
     q "^1.1.2"
 
@@ -1131,21 +1128,21 @@ collection-visit@^1.0.0:
 
 color-convert@^1.9.0, color-convert@^1.9.1:
   version "1.9.2"
-  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.2.tgz#49881b8fba67df12a96bdf3f56c0aab9e7913147"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/color-convert/-/color-convert-1.9.2.tgz#49881b8fba67df12a96bdf3f56c0aab9e7913147"
   dependencies:
     color-name "1.1.1"
 
 color-name@1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.1.tgz#4b1415304cf50028ea81643643bd82ea05803689"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/color-name/-/color-name-1.1.1.tgz#4b1415304cf50028ea81643643bd82ea05803689"
 
 color-name@^1.0.0:
   version "1.1.3"
-  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
 
 color-string@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.2.tgz#26e45814bc3c9a7cbd6751648a41434514a773a9"
+  version "1.5.3"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/color-string/-/color-string-1.5.3.tgz#c9bbc5f01b58b5492f3d6857459cb6590ce204cc"
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
@@ -1156,7 +1153,7 @@ color-support@^1.1.3:
 
 color@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/color/-/color-3.0.0.tgz#d920b4328d534a3ac8295d68f7bd4ba6c427be9a"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/color/-/color-3.0.0.tgz#d920b4328d534a3ac8295d68f7bd4ba6c427be9a"
   dependencies:
     color-convert "^1.9.1"
     color-string "^1.5.2"
@@ -1167,7 +1164,7 @@ colors@^1.1.2:
 
 colors@~1.1.2:
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
 columnify@^1.5.4:
   version "1.5.4"
@@ -1334,7 +1331,7 @@ cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
 
 cosmiconfig@^5.0.0:
   version "5.0.5"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.0.5.tgz#a809e3c2306891ce17ab70359dc8bdf661fe2cd0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/cosmiconfig/-/cosmiconfig-5.0.5.tgz#a809e3c2306891ce17ab70359dc8bdf661fe2cd0"
   dependencies:
     is-directory "^0.3.1"
     js-yaml "^3.9.0"
@@ -1381,24 +1378,24 @@ crypto-random-string@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
 
-css-color-names@^0.0.4:
+css-color-names@0.0.4, css-color-names@^0.0.4:
   version "0.0.4"
-  resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
 css-declaration-sorter@^3.0.0:
   version "3.0.1"
-  resolved "https://registry.yarnpkg.com/css-declaration-sorter/-/css-declaration-sorter-3.0.1.tgz#d0e3056b0fd88dc1ea9dceff435adbe9c702a7f8"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-declaration-sorter/-/css-declaration-sorter-3.0.1.tgz#d0e3056b0fd88dc1ea9dceff435adbe9c702a7f8"
   dependencies:
     postcss "^6.0.0"
     timsort "^0.3.0"
 
 css-select-base-adapter@~0.1.0:
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/css-select-base-adapter/-/css-select-base-adapter-0.1.0.tgz#0102b3d14630df86c3eb9fa9f5456270106cf990"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-select-base-adapter/-/css-select-base-adapter-0.1.0.tgz#0102b3d14630df86c3eb9fa9f5456270106cf990"
 
 css-select@~1.3.0-rc0:
   version "1.3.0-rc0"
-  resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.3.0-rc0.tgz#6f93196aaae737666ea1036a8cb14a8fcb7a9231"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-select/-/css-select-1.3.0-rc0.tgz#6f93196aaae737666ea1036a8cb14a8fcb7a9231"
   dependencies:
     boolbase "^1.0.0"
     css-what "2.1"
@@ -1407,29 +1404,29 @@ css-select@~1.3.0-rc0:
 
 css-tree@1.0.0-alpha.29:
   version "1.0.0-alpha.29"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha.29.tgz#3fa9d4ef3142cbd1c301e7664c1f352bd82f5a39"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-tree/-/css-tree-1.0.0-alpha.29.tgz#3fa9d4ef3142cbd1c301e7664c1f352bd82f5a39"
   dependencies:
     mdn-data "~1.1.0"
     source-map "^0.5.3"
 
 css-tree@1.0.0-alpha25:
   version "1.0.0-alpha25"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha25.tgz#1bbfabfbf6eeef4f01d9108ff2edd0be2fe35597"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-tree/-/css-tree-1.0.0-alpha25.tgz#1bbfabfbf6eeef4f01d9108ff2edd0be2fe35597"
   dependencies:
     mdn-data "^1.0.0"
     source-map "^0.5.3"
 
 css-unit-converter@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/css-unit-converter/-/css-unit-converter-1.1.1.tgz#d9b9281adcfd8ced935bdbaba83786897f64e996"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-unit-converter/-/css-unit-converter-1.1.1.tgz#d9b9281adcfd8ced935bdbaba83786897f64e996"
 
 css-url-regex@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/css-url-regex/-/css-url-regex-1.1.0.tgz#83834230cc9f74c457de59eebd1543feeb83b7ec"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-url-regex/-/css-url-regex-1.1.0.tgz#83834230cc9f74c457de59eebd1543feeb83b7ec"
 
 css-what@2.1:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
 
 css@2.X, css@^2.2.1:
   version "2.2.3"
@@ -1442,7 +1439,7 @@ css@2.X, css@^2.2.1:
 
 cssnano-preset-default@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cssnano-preset-default/-/cssnano-preset-default-4.0.0.tgz#c334287b4f7d49fb2d170a92f9214655788e3b6b"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/cssnano-preset-default/-/cssnano-preset-default-4.0.0.tgz#c334287b4f7d49fb2d170a92f9214655788e3b6b"
   dependencies:
     css-declaration-sorter "^3.0.0"
     cssnano-util-raw-cache "^4.0.0"
@@ -1477,25 +1474,25 @@ cssnano-preset-default@^4.0.0:
 
 cssnano-util-get-arguments@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cssnano-util-get-arguments/-/cssnano-util-get-arguments-4.0.0.tgz#ed3a08299f21d75741b20f3b81f194ed49cc150f"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/cssnano-util-get-arguments/-/cssnano-util-get-arguments-4.0.0.tgz#ed3a08299f21d75741b20f3b81f194ed49cc150f"
 
 cssnano-util-get-match@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cssnano-util-get-match/-/cssnano-util-get-match-4.0.0.tgz#c0e4ca07f5386bb17ec5e52250b4f5961365156d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/cssnano-util-get-match/-/cssnano-util-get-match-4.0.0.tgz#c0e4ca07f5386bb17ec5e52250b4f5961365156d"
 
 cssnano-util-raw-cache@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cssnano-util-raw-cache/-/cssnano-util-raw-cache-4.0.0.tgz#be0a2856e25f185f5f7a2bcc0624e28b7f179a9f"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/cssnano-util-raw-cache/-/cssnano-util-raw-cache-4.0.0.tgz#be0a2856e25f185f5f7a2bcc0624e28b7f179a9f"
   dependencies:
     postcss "^6.0.0"
 
 cssnano-util-same-parent@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cssnano-util-same-parent/-/cssnano-util-same-parent-4.0.0.tgz#d2a3de1039aa98bc4ec25001fa050330c2a16dac"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/cssnano-util-same-parent/-/cssnano-util-same-parent-4.0.0.tgz#d2a3de1039aa98bc4ec25001fa050330c2a16dac"
 
-cssnano@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-4.0.0.tgz#e1a4161f17d82dff5fba17a90a7bfd97add79a1b"
+cssnano@^4.0.5:
+  version "4.0.5"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/cssnano/-/cssnano-4.0.5.tgz#8789b5fdbe7be05d8a0f7e45c4c789ebe712f5aa"
   dependencies:
     cosmiconfig "^5.0.0"
     cssnano-preset-default "^4.0.0"
@@ -1504,7 +1501,7 @@ cssnano@^4.0.0:
 
 csso@^3.5.0:
   version "3.5.1"
-  resolved "https://registry.yarnpkg.com/csso/-/csso-3.5.1.tgz#7b9eb8be61628973c1b261e169d2f024008e758b"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/csso/-/csso-3.5.1.tgz#7b9eb8be61628973c1b261e169d2f024008e758b"
   dependencies:
     css-tree "1.0.0-alpha.29"
 
@@ -1613,7 +1610,7 @@ defaults@^1.0.3:
 
 define-properties@^1.1.2:
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.2.tgz#83a73f2fea569898fb737193c8f873caf6d45c94"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/define-properties/-/define-properties-1.1.2.tgz#83a73f2fea569898fb737193c8f873caf6d45c94"
   dependencies:
     foreach "^2.0.5"
     object-keys "^1.0.8"
@@ -1722,7 +1719,7 @@ doctrine@^2.1.0:
 
 dom-serializer@0:
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
   dependencies:
     domelementtype "~1.1.1"
     entities "~1.1.1"
@@ -1733,7 +1730,7 @@ domelementtype@1, domelementtype@^1.3.0:
 
 domelementtype@~1.1.1:
   version "1.1.3"
-  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
 
 domhandler@^2.3.0:
   version "2.4.2"
@@ -1743,7 +1740,7 @@ domhandler@^2.3.0:
 
 domutils@1.5.1:
   version "1.5.1"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -1835,9 +1832,13 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.3.30, electron-to-chromium@^1.3.47, electron-to-chromium@^1.3.50:
+electron-to-chromium@^1.3.47:
   version "1.3.51"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.51.tgz#6a42b49daaf7f22a5b37b991daf949f34dbdb9b5"
+
+electron-to-chromium@^1.3.52:
+  version "1.3.56"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/electron-to-chromium/-/electron-to-chromium-1.3.56.tgz#aad1420d23e9dd8cd2fc2bc53f4928adcf85f02f"
 
 encodeurl@~1.0.1, encodeurl@~1.0.2:
   version "1.0.2"
@@ -1934,7 +1935,7 @@ es-abstract@^1.10.0, es-abstract@^1.5.1, es-abstract@^1.6.1:
 
 es-to-primitive@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.1.1.tgz#45355248a88979034b6792e19bb81f2b7975dd0d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/es-to-primitive/-/es-to-primitive-1.1.1.tgz#45355248a88979034b6792e19bb81f2b7975dd0d"
   dependencies:
     is-callable "^1.1.1"
     is-date-object "^1.0.1"
@@ -2214,8 +2215,8 @@ espree@^4.0.0:
     acorn-jsx "^4.1.1"
 
 esprima@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804"
+  version "4.0.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
 
 espurify@^1.5.0:
   version "1.8.1"
@@ -2588,7 +2589,7 @@ flat-cache@^1.2.1:
 
 flatten@^1.0.2:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
 flush-write-stream@^1.0.2:
   version "1.0.3"
@@ -2621,7 +2622,7 @@ for-own@^1.0.0:
 
 foreach@^2.0.5:
   version "2.0.5"
-  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
 
 forever-agent@~0.6.1:
   version "0.6.1"
@@ -2710,7 +2711,7 @@ fstream@^1.0.0, fstream@^1.0.2:
 
 function-bind@^1.1.0, function-bind@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
 functional-red-black-tree@^1.0.1:
   version "1.0.1"
@@ -3268,7 +3269,7 @@ has-flag@^2.0.0:
 
 has-flag@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
 
 has-gulplog@^0.1.0:
   version "0.1.0"
@@ -3317,7 +3318,7 @@ has-yarn@^1.0.0:
 
 has@^1.0.0, has@^1.0.1:
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
   dependencies:
     function-bind "^1.1.1"
 
@@ -3332,7 +3333,7 @@ hawk@~3.1.3:
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
 
 highlight.js@^9.5.0:
   version "9.12.0"
@@ -3354,15 +3355,15 @@ hosted-git-info@^2.1.4:
 
 hsl-regex@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/hsl-regex/-/hsl-regex-1.0.0.tgz#d49330c789ed819e276a4c0d272dffa30b18fe6e"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/hsl-regex/-/hsl-regex-1.0.0.tgz#d49330c789ed819e276a4c0d272dffa30b18fe6e"
 
 hsla-regex@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/hsla-regex/-/hsla-regex-1.0.0.tgz#c1ce7a3168c8c6614033a4b5f7877f3b225f9c38"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/hsla-regex/-/hsla-regex-1.0.0.tgz#c1ce7a3168c8c6614033a4b5f7877f3b225f9c38"
 
 html-comment-regex@^1.1.0:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.1.tgz#668b93776eaae55ebde8f3ad464b307a4963625e"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/html-comment-regex/-/html-comment-regex-1.1.1.tgz#668b93776eaae55ebde8f3ad464b307a4963625e"
 
 html-tags@^2.0.0:
   version "2.0.0"
@@ -3476,7 +3477,7 @@ indent-string@^3.0.0:
 
 indexes-of@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/indexes-of/-/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/indexes-of/-/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
 
 indexof@0.0.1:
   version "0.0.1"
@@ -3588,7 +3589,7 @@ irregular-plurals@^1.0.0:
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/is-absolute-url/-/is-absolute-url-2.1.0.tgz#50530dfb84fcc9aa7dbe7852e83a37b93b9f2aa6"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-absolute-url/-/is-absolute-url-2.1.0.tgz#50530dfb84fcc9aa7dbe7852e83a37b93b9f2aa6"
 
 is-absolute@^1.0.0:
   version "1.0.0"
@@ -3626,11 +3627,11 @@ is-alphanumerical@^1.0.0:
 
 is-arrayish@^0.2.1:
   version "0.2.1"
-  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
 
 is-arrayish@^0.3.1:
   version "0.3.2"
-  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
 
 is-binary-path@^1.0.0:
   version "1.0.1"
@@ -3650,7 +3651,7 @@ is-builtin-module@^1.0.0:
 
 is-callable@^1.1.1, is-callable@^1.1.3:
   version "1.1.4"
-  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
 
 is-ci@^1.0.10:
   version "1.1.0"
@@ -3660,7 +3661,7 @@ is-ci@^1.0.10:
 
 is-color-stop@^1.0.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-color-stop/-/is-color-stop-1.1.0.tgz#cfff471aee4dd5c9e158598fbe12967b5cdad345"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-color-stop/-/is-color-stop-1.1.0.tgz#cfff471aee4dd5c9e158598fbe12967b5cdad345"
   dependencies:
     css-color-names "^0.0.4"
     hex-color-regex "^1.1.0"
@@ -3683,7 +3684,7 @@ is-data-descriptor@^1.0.0:
 
 is-date-object@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/is-date-object/-/is-date-object-1.0.1.tgz#9aa20eb6aeebbff77fbd33e74ca01b33581d3a16"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-date-object/-/is-date-object-1.0.1.tgz#9aa20eb6aeebbff77fbd33e74ca01b33581d3a16"
 
 is-decimal@^1.0.0:
   version "1.0.2"
@@ -3707,7 +3708,7 @@ is-descriptor@^1.0.0, is-descriptor@^1.0.2:
 
 is-directory@^0.3.1:
   version "0.3.1"
-  resolved "https://registry.yarnpkg.com/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
 
 is-dotfile@^1.0.0:
   version "1.0.3"
@@ -3838,7 +3839,7 @@ is-obj-prop@^1.0.0:
 
 is-obj@^1.0.0:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
 
 is-path-cwd@^1.0.0:
   version "1.0.0"
@@ -3891,7 +3892,7 @@ is-redirect@^1.0.0:
 
 is-regex@^1.0.4:
   version "1.0.4"
-  resolved "https://registry.yarnpkg.com/is-regex/-/is-regex-1.0.4.tgz#5517489b547091b0930e095654ced25ee97e9491"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-regex/-/is-regex-1.0.4.tgz#5517489b547091b0930e095654ced25ee97e9491"
   dependencies:
     has "^1.0.1"
 
@@ -3923,13 +3924,13 @@ is-supported-regexp-flag@^1.0.0:
 
 is-svg@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/is-svg/-/is-svg-3.0.0.tgz#9321dbd29c212e5ca99c4fa9794c714bcafa2f75"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-svg/-/is-svg-3.0.0.tgz#9321dbd29c212e5ca99c4fa9794c714bcafa2f75"
   dependencies:
     html-comment-regex "^1.1.0"
 
 is-symbol@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/is-symbol/-/is-symbol-1.0.1.tgz#3cc59f00025194b6ab2e38dbae6689256b660572"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-symbol/-/is-symbol-1.0.1.tgz#3cc59f00025194b6ab2e38dbae6689256b660572"
 
 is-typedarray@~1.0.0:
   version "1.0.0"
@@ -4054,7 +4055,7 @@ js-yaml@^3.11.0, js-yaml@^3.4.3, js-yaml@^3.6.1, js-yaml@^3.8.1, js-yaml@^3.9.0,
 
 js-yaml@~3.10.0:
   version "3.10.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -4065,7 +4066,7 @@ jsbn@~0.1.0:
 
 json-parse-better-errors@^1.0.1:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
 
 json-schema-traverse@^0.3.0:
   version "0.3.1"
@@ -4376,7 +4377,7 @@ lodash.keys@^3.0.0:
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
-  resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
 lodash.mergewith@^4.6.0, lodash.mergewith@^4.6.1:
   version "4.6.1"
@@ -4426,7 +4427,7 @@ lodash.templatesettings@^4.0.0:
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
 lodash.upperfirst@^4.2.0:
   version "4.3.1"
@@ -4577,7 +4578,7 @@ mdast-util-compact@^1.0.0:
 
 mdn-data@^1.0.0, mdn-data@~1.1.0:
   version "1.1.4"
-  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -4730,7 +4731,7 @@ minimist-options@^3.0.1:
 
 minimist@0.0.8:
   version "0.0.8"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
 minimist@1.1.x:
   version "1.1.3"
@@ -4891,7 +4892,7 @@ node-pre-gyp@^0.10.0:
 
 node-releases@^1.0.0-alpha.10:
   version "1.0.0-alpha.10"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.0.0-alpha.10.tgz#61c8d5f9b5b2e05d84eba941d05b6f5202f68a2a"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/node-releases/-/node-releases-1.0.0-alpha.10.tgz#61c8d5f9b5b2e05d84eba941d05b6f5202f68a2a"
   dependencies:
     semver "^5.3.0"
 
@@ -4967,8 +4968,8 @@ normalize-selector@^0.2.0:
   resolved "https://registry.yarnpkg.com/normalize-selector/-/normalize-selector-0.2.0.tgz#d0b145eb691189c63a78d201dc4fdb1293ef0c03"
 
 normalize-url@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.1.0.tgz#c3cbb2b09fbf1485e92935d603d9ee7156c61937"
+  version "3.2.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/normalize-url/-/normalize-url-3.2.0.tgz#98d0948afc82829f374320f405fe9ca55a5f8567"
 
 now-and-later@^2.0.0:
   version "2.0.0"
@@ -5004,7 +5005,7 @@ npm-run-path@^2.0.0:
 
 nth-check@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.1.tgz#9929acdf628fc2c41098deab82ac580cf149aae4"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/nth-check/-/nth-check-1.0.1.tgz#9929acdf628fc2c41098deab82ac580cf149aae4"
   dependencies:
     boolbase "~1.0.0"
 
@@ -5086,7 +5087,7 @@ object.defaults@^1.0.0, object.defaults@^1.1.0:
 
 object.getownpropertydescriptors@^2.0.3:
   version "2.0.3"
-  resolved "https://registry.yarnpkg.com/object.getownpropertydescriptors/-/object.getownpropertydescriptors-2.0.3.tgz#8758c846f5b407adab0f236e0986f14b051caa16"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/object.getownpropertydescriptors/-/object.getownpropertydescriptors-2.0.3.tgz#8758c846f5b407adab0f236e0986f14b051caa16"
   dependencies:
     define-properties "^1.1.2"
     es-abstract "^1.5.1"
@@ -5120,7 +5121,7 @@ object.reduce@^1.0.0:
 
 object.values@^1.0.4:
   version "1.0.4"
-  resolved "https://registry.yarnpkg.com/object.values/-/object.values-1.0.4.tgz#e524da09b4f66ff05df457546ec72ac99f13069a"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/object.values/-/object.values-1.0.4.tgz#e524da09b4f66ff05df457546ec72ac99f13069a"
   dependencies:
     define-properties "^1.1.2"
     es-abstract "^1.6.1"
@@ -5308,7 +5309,7 @@ parse-json@^2.1.0, parse-json@^2.2.0:
 
 parse-json@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-4.0.0.tgz#be35f5425be1f7f6c747184f98a788cb99477ee0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/parse-json/-/parse-json-4.0.0.tgz#be35f5425be1f7f6c747184f98a788cb99477ee0"
   dependencies:
     error-ex "^1.3.1"
     json-parse-better-errors "^1.0.1"
@@ -5504,7 +5505,7 @@ posix-character-classes@^0.1.0:
 
 postcss-calc@^6.0.0:
   version "6.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-calc/-/postcss-calc-6.0.1.tgz#3d24171bbf6e7629d422a436ebfe6dd9511f4330"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-calc/-/postcss-calc-6.0.1.tgz#3d24171bbf6e7629d422a436ebfe6dd9511f4330"
   dependencies:
     css-unit-converter "^1.1.1"
     postcss "^6.0.0"
@@ -5512,8 +5513,8 @@ postcss-calc@^6.0.0:
     reduce-css-calc "^2.0.0"
 
 postcss-colormin@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-colormin/-/postcss-colormin-4.0.0.tgz#8a21f10b3843590d181eedf2a6a109617b6553ec"
+  version "4.0.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-colormin/-/postcss-colormin-4.0.1.tgz#6f1c18a0155bc69613f2ff13843e2e4ae8ff0bbe"
   dependencies:
     browserslist "^4.0.0"
     color "^3.0.0"
@@ -5523,32 +5524,32 @@ postcss-colormin@^4.0.0:
 
 postcss-convert-values@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-convert-values/-/postcss-convert-values-4.0.0.tgz#77d77d9aed1dc4e6956e651cc349d53305876f62"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-convert-values/-/postcss-convert-values-4.0.0.tgz#77d77d9aed1dc4e6956e651cc349d53305876f62"
   dependencies:
     postcss "^6.0.0"
     postcss-value-parser "^3.0.0"
 
 postcss-discard-comments@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-discard-comments/-/postcss-discard-comments-4.0.0.tgz#9684a299e76b3e93263ef8fd2adbf1a1c08fd88d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-discard-comments/-/postcss-discard-comments-4.0.0.tgz#9684a299e76b3e93263ef8fd2adbf1a1c08fd88d"
   dependencies:
     postcss "^6.0.0"
 
 postcss-discard-duplicates@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-discard-duplicates/-/postcss-discard-duplicates-4.0.0.tgz#42f3c267f85fa909e042c35767ecfd65cb2bd72c"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-discard-duplicates/-/postcss-discard-duplicates-4.0.0.tgz#42f3c267f85fa909e042c35767ecfd65cb2bd72c"
   dependencies:
     postcss "^6.0.0"
 
 postcss-discard-empty@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-discard-empty/-/postcss-discard-empty-4.0.0.tgz#55e18a59c74128e38c7d2804bcfa4056611fb97f"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-discard-empty/-/postcss-discard-empty-4.0.0.tgz#55e18a59c74128e38c7d2804bcfa4056611fb97f"
   dependencies:
     postcss "^6.0.0"
 
 postcss-discard-overridden@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-discard-overridden/-/postcss-discard-overridden-4.0.0.tgz#4a0bf85978784cf1f81ed2c1c1fd9d964a1da1fa"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-discard-overridden/-/postcss-discard-overridden-4.0.0.tgz#4a0bf85978784cf1f81ed2c1c1fd9d964a1da1fa"
   dependencies:
     postcss "^6.0.0"
 
@@ -5599,19 +5600,20 @@ postcss-media-query-parser@^0.2.3:
   resolved "https://registry.yarnpkg.com/postcss-media-query-parser/-/postcss-media-query-parser-0.2.3.tgz#27b39c6f4d94f81b1a73b8f76351c609e5cef244"
 
 postcss-merge-longhand@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-4.0.0.tgz#a4541b668a0a6ac25aa21d930142fd02b41a717c"
+  version "4.0.4"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-merge-longhand/-/postcss-merge-longhand-4.0.4.tgz#bffc7c6ffa146591c993a0bb8373d65f9a06d4d0"
   dependencies:
+    css-color-names "0.0.4"
     postcss "^6.0.0"
     postcss-value-parser "^3.0.0"
     stylehacks "^4.0.0"
 
 postcss-merge-rules@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-4.0.0.tgz#ab467832cbff4b22cf9350fed92536677ead4ecf"
+  version "4.0.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-merge-rules/-/postcss-merge-rules-4.0.1.tgz#430fd59b3f2ed2e8afcd0b31278eda39854abb10"
   dependencies:
     browserslist "^4.0.0"
-    caniuse-api "^2.0.0"
+    caniuse-api "^3.0.0"
     cssnano-util-same-parent "^4.0.0"
     postcss "^6.0.0"
     postcss-selector-parser "^3.0.0"
@@ -5619,14 +5621,14 @@ postcss-merge-rules@^4.0.0:
 
 postcss-minify-font-values@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-minify-font-values/-/postcss-minify-font-values-4.0.0.tgz#4cc33d283d6a81759036e757ef981d92cbd85bed"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-minify-font-values/-/postcss-minify-font-values-4.0.0.tgz#4cc33d283d6a81759036e757ef981d92cbd85bed"
   dependencies:
     postcss "^6.0.0"
     postcss-value-parser "^3.0.0"
 
 postcss-minify-gradients@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-minify-gradients/-/postcss-minify-gradients-4.0.0.tgz#3fc3916439d27a9bb8066db7cdad801650eb090e"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-minify-gradients/-/postcss-minify-gradients-4.0.0.tgz#3fc3916439d27a9bb8066db7cdad801650eb090e"
   dependencies:
     cssnano-util-get-arguments "^4.0.0"
     is-color-stop "^1.0.0"
@@ -5635,7 +5637,7 @@ postcss-minify-gradients@^4.0.0:
 
 postcss-minify-params@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-minify-params/-/postcss-minify-params-4.0.0.tgz#05e9166ee48c05af651989ce84d39c1b4d790674"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-minify-params/-/postcss-minify-params-4.0.0.tgz#05e9166ee48c05af651989ce84d39c1b4d790674"
   dependencies:
     alphanum-sort "^1.0.0"
     cssnano-util-get-arguments "^4.0.0"
@@ -5645,7 +5647,7 @@ postcss-minify-params@^4.0.0:
 
 postcss-minify-selectors@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-minify-selectors/-/postcss-minify-selectors-4.0.0.tgz#b1e9f6c463416d3fcdcb26e7b785d95f61578aad"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-minify-selectors/-/postcss-minify-selectors-4.0.0.tgz#b1e9f6c463416d3fcdcb26e7b785d95f61578aad"
   dependencies:
     alphanum-sort "^1.0.0"
     has "^1.0.0"
@@ -5654,13 +5656,13 @@ postcss-minify-selectors@^4.0.0:
 
 postcss-normalize-charset@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-charset/-/postcss-normalize-charset-4.0.0.tgz#24527292702d5e8129eafa3d1de49ed51a6ab730"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-charset/-/postcss-normalize-charset-4.0.0.tgz#24527292702d5e8129eafa3d1de49ed51a6ab730"
   dependencies:
     postcss "^6.0.0"
 
 postcss-normalize-display-values@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-display-values/-/postcss-normalize-display-values-4.0.0.tgz#950e0c7be3445770a160fffd6b6644c3c0cd8f89"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-display-values/-/postcss-normalize-display-values-4.0.0.tgz#950e0c7be3445770a160fffd6b6644c3c0cd8f89"
   dependencies:
     cssnano-util-get-match "^4.0.0"
     postcss "^6.0.0"
@@ -5668,7 +5670,7 @@ postcss-normalize-display-values@^4.0.0:
 
 postcss-normalize-positions@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-positions/-/postcss-normalize-positions-4.0.0.tgz#ee9343ab981b822c63ab72615ecccd08564445a3"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-positions/-/postcss-normalize-positions-4.0.0.tgz#ee9343ab981b822c63ab72615ecccd08564445a3"
   dependencies:
     cssnano-util-get-arguments "^4.0.0"
     has "^1.0.0"
@@ -5677,7 +5679,7 @@ postcss-normalize-positions@^4.0.0:
 
 postcss-normalize-repeat-style@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-repeat-style/-/postcss-normalize-repeat-style-4.0.0.tgz#b711c592cf16faf9ff575e42fa100b6799083eff"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-repeat-style/-/postcss-normalize-repeat-style-4.0.0.tgz#b711c592cf16faf9ff575e42fa100b6799083eff"
   dependencies:
     cssnano-util-get-arguments "^4.0.0"
     cssnano-util-get-match "^4.0.0"
@@ -5686,7 +5688,7 @@ postcss-normalize-repeat-style@^4.0.0:
 
 postcss-normalize-string@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-string/-/postcss-normalize-string-4.0.0.tgz#718cb6d30a6fac6ac6a830e32c06c07dbc66fe5d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-string/-/postcss-normalize-string-4.0.0.tgz#718cb6d30a6fac6ac6a830e32c06c07dbc66fe5d"
   dependencies:
     has "^1.0.0"
     postcss "^6.0.0"
@@ -5694,7 +5696,7 @@ postcss-normalize-string@^4.0.0:
 
 postcss-normalize-timing-functions@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-timing-functions/-/postcss-normalize-timing-functions-4.0.0.tgz#0351f29886aa981d43d91b2c2bd1aea6d0af6d23"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-timing-functions/-/postcss-normalize-timing-functions-4.0.0.tgz#0351f29886aa981d43d91b2c2bd1aea6d0af6d23"
   dependencies:
     cssnano-util-get-match "^4.0.0"
     postcss "^6.0.0"
@@ -5702,14 +5704,14 @@ postcss-normalize-timing-functions@^4.0.0:
 
 postcss-normalize-unicode@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-unicode/-/postcss-normalize-unicode-4.0.0.tgz#5acd5d47baea5d17674b2ccc4ae5166fa88cdf97"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-unicode/-/postcss-normalize-unicode-4.0.0.tgz#5acd5d47baea5d17674b2ccc4ae5166fa88cdf97"
   dependencies:
     postcss "^6.0.0"
     postcss-value-parser "^3.0.0"
 
 postcss-normalize-url@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-url/-/postcss-normalize-url-4.0.0.tgz#b7a9c8ad26cf26694c146eb2d68bd0cf49956f0d"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-url/-/postcss-normalize-url-4.0.0.tgz#b7a9c8ad26cf26694c146eb2d68bd0cf49956f0d"
   dependencies:
     is-absolute-url "^2.0.0"
     normalize-url "^3.0.0"
@@ -5718,14 +5720,14 @@ postcss-normalize-url@^4.0.0:
 
 postcss-normalize-whitespace@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-whitespace/-/postcss-normalize-whitespace-4.0.0.tgz#1da7e76b10ae63c11827fa04fc3bb4a1efe99cc0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-normalize-whitespace/-/postcss-normalize-whitespace-4.0.0.tgz#1da7e76b10ae63c11827fa04fc3bb4a1efe99cc0"
   dependencies:
     postcss "^6.0.0"
     postcss-value-parser "^3.0.0"
 
 postcss-ordered-values@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-ordered-values/-/postcss-ordered-values-4.0.0.tgz#58b40c74f72e022eb34152c12e4b0f9354482fc2"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-ordered-values/-/postcss-ordered-values-4.0.0.tgz#58b40c74f72e022eb34152c12e4b0f9354482fc2"
   dependencies:
     cssnano-util-get-arguments "^4.0.0"
     postcss "^6.0.0"
@@ -5738,17 +5740,17 @@ postcss-prefixwrap@^1.3.0:
     postcss "6.0.14"
 
 postcss-reduce-initial@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-reduce-initial/-/postcss-reduce-initial-4.0.0.tgz#0afbdb0e7399960a9d06cb45b469d8121108b45b"
+  version "4.0.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-reduce-initial/-/postcss-reduce-initial-4.0.1.tgz#f2d58f50cea2b0c5dc1278d6ea5ed0ff5829c293"
   dependencies:
     browserslist "^4.0.0"
-    caniuse-api "^2.0.0"
+    caniuse-api "^3.0.0"
     has "^1.0.0"
     postcss "^6.0.0"
 
 postcss-reduce-transforms@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-reduce-transforms/-/postcss-reduce-transforms-4.0.0.tgz#f645fc7440c35274f40de8104e14ad7163edf188"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-reduce-transforms/-/postcss-reduce-transforms-4.0.0.tgz#f645fc7440c35274f40de8104e14ad7163edf188"
   dependencies:
     cssnano-util-get-match "^4.0.0"
     has "^1.0.0"
@@ -5789,7 +5791,7 @@ postcss-scss@^1.0.2:
 
 postcss-selector-parser@^2.2.2:
   version "2.2.3"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-2.2.3.tgz#f9437788606c3c9acee16ffe8d8b16297f27bb90"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-selector-parser/-/postcss-selector-parser-2.2.3.tgz#f9437788606c3c9acee16ffe8d8b16297f27bb90"
   dependencies:
     flatten "^1.0.2"
     indexes-of "^1.0.1"
@@ -5812,7 +5814,7 @@ postcss-sorting@^3.1.0:
 
 postcss-svgo@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-svgo/-/postcss-svgo-4.0.0.tgz#c0bbad02520fc636c9d78b0e8403e2e515c32285"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-svgo/-/postcss-svgo-4.0.0.tgz#c0bbad02520fc636c9d78b0e8403e2e515c32285"
   dependencies:
     is-svg "^3.0.0"
     postcss "^6.0.0"
@@ -5825,7 +5827,7 @@ postcss-syntax@^0.28.0:
 
 postcss-unique-selectors@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-unique-selectors/-/postcss-unique-selectors-4.0.0.tgz#04c1e9764c75874261303402c41f0e9769fc5501"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss-unique-selectors/-/postcss-unique-selectors-4.0.0.tgz#04c1e9764c75874261303402c41f0e9769fc5501"
   dependencies:
     alphanum-sort "^1.0.0"
     postcss "^6.0.0"
@@ -5956,7 +5958,7 @@ punycode@^2.1.0:
 
 q@^1.1.2:
   version "1.5.1"
-  resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
 qs@6.2.3:
   version "6.2.3"
@@ -6138,7 +6140,7 @@ redent@^2.0.0:
 
 reduce-css-calc@^2.0.0:
   version "2.1.4"
-  resolved "https://registry.yarnpkg.com/reduce-css-calc/-/reduce-css-calc-2.1.4.tgz#c20e9cda8445ad73d4ff4bea960c6f8353791708"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/reduce-css-calc/-/reduce-css-calc-2.1.4.tgz#c20e9cda8445ad73d4ff4bea960c6f8353791708"
   dependencies:
     css-unit-converter "^1.1.1"
     postcss-value-parser "^3.3.0"
@@ -6438,11 +6440,11 @@ ret@~0.1.10:
 
 rgb-regex@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/rgb-regex/-/rgb-regex-1.0.1.tgz#c0e0d6882df0e23be254a475e8edd41915feaeb1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/rgb-regex/-/rgb-regex-1.0.1.tgz#c0e0d6882df0e23be254a475e8edd41915feaeb1"
 
 rgba-regex@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/rgba-regex/-/rgba-regex-1.0.0.tgz#43374e2e2ca0968b0ef1523460b7d730ff22eeb3"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/rgba-regex/-/rgba-regex-1.0.0.tgz#43374e2e2ca0968b0ef1523460b7d730ff22eeb3"
 
 right-align@^0.1.1:
   version "0.1.3"
@@ -6655,7 +6657,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
   dependencies:
     is-arrayish "^0.3.1"
 
@@ -6813,7 +6815,7 @@ source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1:
 
 source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 sparkles@^1.0.0:
   version "1.0.1"
@@ -6860,7 +6862,7 @@ split-string@^3.0.1, split-string@^3.0.2:
 
 sprintf-js@~1.0.2:
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
 sshpk@^1.7.0:
   version "1.14.2"
@@ -6879,7 +6881,7 @@ sshpk@^1.7.0:
 
 stable@~0.1.6:
   version "0.1.8"
-  resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
 
 stack-trace@0.0.10:
   version "0.0.10"
@@ -7038,7 +7040,7 @@ style-search@^0.1.0:
 
 stylehacks@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.0.tgz#64b323951c4a24e5fc7b2ec06c137bf32d155e8a"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/stylehacks/-/stylehacks-4.0.0.tgz#64b323951c4a24e5fc7b2ec06c137bf32d155e8a"
   dependencies:
     browserslist "^4.0.0"
     postcss "^6.0.0"
@@ -7134,7 +7136,7 @@ supports-color@^4.4.0:
 
 supports-color@^5.3.0, supports-color@^5.4.0:
   version "5.4.0"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.4.0.tgz#1c6b337402c2137605efe19f10fec390f6faab54"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/supports-color/-/supports-color-5.4.0.tgz#1c6b337402c2137605efe19f10fec390f6faab54"
   dependencies:
     has-flag "^3.0.0"
 
@@ -7151,7 +7153,7 @@ svg-tags@^1.0.0:
 
 svgo@^1.0.0:
   version "1.0.5"
-  resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.0.5.tgz#7040364c062a0538abacff4401cea6a26a7a389a"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/svgo/-/svgo-1.0.5.tgz#7040364c062a0538abacff4401cea6a26a7a389a"
   dependencies:
     coa "~2.0.1"
     colors "~1.1.2"
@@ -7289,7 +7291,7 @@ timers-ext@^0.1.2:
 
 timsort@^0.3.0:
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
 
 tmp@^0.0.29:
   version "0.0.29"
@@ -7505,11 +7507,11 @@ union-value@^1.0.0:
 
 uniq@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
 
 uniqs@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
 
 unique-stream@^2.0.2:
   version "2.2.1"
@@ -7566,7 +7568,7 @@ unpipe@1.0.0, unpipe@~1.0.0:
 
 unquote@~1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/unquote/-/unquote-1.1.1.tgz#8fded7324ec6e88a0ff8b905e7c098cdc086d544"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/unquote/-/unquote-1.1.1.tgz#8fded7324ec6e88a0ff8b905e7c098cdc086d544"
 
 unset-value@^1.0.0:
   version "1.0.0"
@@ -7643,7 +7645,7 @@ util-deprecate@~1.0.1:
 
 util.promisify@~1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/util.promisify/-/util.promisify-1.0.0.tgz#440f7165a459c9a16dc145eb8e72f35687097030"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/util.promisify/-/util.promisify-1.0.0.tgz#440f7165a459c9a16dc145eb8e72f35687097030"
   dependencies:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
@@ -7687,7 +7689,7 @@ vary@~1.1.2:
 
 vendors@^1.0.0:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.2.tgz#7fcb5eef9f5623b156bcea89ec37d63676f21801"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/vendors/-/vendors-1.0.2.tgz#7fcb5eef9f5623b156bcea89ec37d63676f21801"
 
 verror@1.10.0:
   version "1.10.0"
