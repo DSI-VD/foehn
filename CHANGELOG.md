@@ -3,9 +3,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-### Changed
-- Change text "requis" for a more understandable "obligatoire" in 
-  `@input-required`
+## [0.52.2] - 2018-08-14
 
 ### Added
 - add accessibility doc
@@ -16,6 +14,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - add textarea doc
 
 ### Fix
+- Change text "requis" for a more understandable "obligatoire" in 
+  `@input-required`
 - Upgrade a bunch of modules that you do note need to take care of
 - Upgrade to Fontawesome 5.2. Fore more informaiotn, take a look at the
   [Announcement](https://blog.fontawesome.com/font-awesome-5-2-372-new-icons-adfb42c6c35)
@@ -1733,7 +1733,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.52.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.52.2...HEAD
+[0.52.2]: https://github.com/DSI-VD/foehn/compare/v0.52.1...v0.52.2
 [0.52.1]: https://github.com/DSI-VD/foehn/compare/v0.52.0...v0.52.1
 [0.52.0]: https://github.com/DSI-VD/foehn/compare/v0.51.2...v0.52.0
 [0.51.2]: https://github.com/DSI-VD/foehn/compare/v0.51.1...v0.51.2
