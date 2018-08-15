@@ -4,7 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Remove
+- Remove pagination with page numbers `@pagination--pages`,
+  `@pagination-pages-first` and `@pagination--pages-last`
 - Remove unused CSS style `.vd-pagination-pages`
+
 ## [0.52.2] - 2018-08-14
 
 ### Added
