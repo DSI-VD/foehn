@@ -63,27 +63,3 @@
   display: block;
   font-size: 0.8em;
 }
-
-/**
- * Pagination des pages
- *
- * Remove list styles
- */
-
-.vd-pagination-pages {
-  padding-left: 0; /* [1] */
-  list-style: none; /* [1] */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.vd-pagination-pages__item--active {
-  padding: 0.5em;
-  color: gray;
-}
-
-.vd-pagination-pages__link {
-  display: inline-block;
-  padding: 0.5em;
-}
