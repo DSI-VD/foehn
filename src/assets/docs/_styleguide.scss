@@ -70,17 +70,31 @@
   }
 }
 
+/**
+ * Style render component filter for documentation
+ *
+ * 1. Make the iframe resizable. (it currently don't work in Firefox.
+ *    See https://bugzilla.mozilla.org/show_bug.cgi?id=680823
+ * 2. Fix a limit to the resize
+ */
 .component-example {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray-400;
 
   &__preview-link {
-    position: absolute;
-    top: 0;
-    left: 0;
+    font-size: .8em;
+    padding: .5em;
+    background: $gray-200;
   }
+
   &__iframe {
     display: block;
+    padding: 1rem;
     width:100%;
     height: 300px;
+    resize: both; /* [1] */
+    outline: 1px solid $gray-400;
+    max-width: 100%;/* [2] */
   }
 }

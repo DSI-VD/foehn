@@ -25,8 +25,11 @@ const njk = require('@frctl/nunjucks')({
         compUrl: function (handle) {
             return `/components/detail/${handle.replace('@', '')}`;
         },
-        renderComponent: function (handle) {
-            return `<div class="component-example"><span class="component-example__preview-link"><a href="../../components/preview/${handle.replace('@', '')}" target="_blank">Open this example in a new window</a></span><iframe class="component-example" src="../../components/preview/${handle.replace('@', '')}"></iframe></div>`;
+        /* TODO: improve urls to the detail page. It doesn't take into account
+         * the base url. It means that if the structure of the doc change, it
+         * may break. */
+        renderComponent(handle) {
+            return `<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/${handle.replace('@', '')}">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/${handle.replace('@', '')}"></iframe></div>`;
         }
     }
 });
