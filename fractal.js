@@ -22,7 +22,7 @@ const mandelbrot = require('@frctl/mandelbrot')({
 /* Tune Nunjucks */
 const njk = require('@frctl/nunjucks')({
     filters: {
-        compUrl: function (handle) {
+        compUrl(handle) {
             return `/components/detail/${handle.replace('@', '')}`;
         },
         /* TODO: improve urls to the detail page. It doesn't take into account
