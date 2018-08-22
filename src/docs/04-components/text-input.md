@@ -4,9 +4,7 @@ label: Champs texte
 status: review
 ---
 
-<div class="foehn-example">
-{% render '@input--default' %}
-</div>
+{{ '@input--default' | renderComponent }}
 
 ## Quand utiliser ce composant
 
@@ -22,9 +20,7 @@ lignes. Dans ce cas, vous devez utiliser le composant [textarea](./textarea).
 
 ## Fonctionnement
 
-<div class="foehn-example">
-{% render '@input--default' %}
-</div>
+{{ '@input--default' | renderComponent }}
 
 ```html
 {% render '@input--default' %}
@@ -67,9 +63,7 @@ si elle est plus large que la fenêtre, auquel cas elle rétrécira pour s'adapt
 Utilisez un texte d'aide qui est pertinent pour la majorité des utilisateurs -
 par exemple, comment leurs informations seront utilisées ou où les trouver.
 
-<div class="foehn-example">
-{% render '@input--help-text', {label: "Couriel"}, true %}
-</div>
+{{ '@input--help-text' | renderComponent }}
 
 ```html
 {% render '@input--help-text', {label: "Couriel"}, true %}

@@ -22,6 +22,21 @@ const mandelbrot = require('@frctl/mandelbrot')({
     skin: 'navy'
 });
 
+/* Tune Nunjucks */
+const njk = require('@frctl/nunjucks')({
+    filters: {
+        compUrl(handle) {
+            return `/components/detail/${handle.replace('@', '')}`;
+        },
+        /* TODO: improve urls to the detail page. It doesn't take into account
+         * the base url. It means that if the structure of the doc change, it
+         * may break. */
+        renderComponent(handle) {
+            return `<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/${handle.replace('@', '')}">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/${handle.replace('@', '')}"></iframe></div>`;
+        }
+    }
+});
+
 /* Create a new Fractal */
 const fractal = require('@frctl/fractal').create();
 const pkg = require('./package.json');
@@ -32,7 +47,7 @@ fractal.set('project.version', pkg.version); // Set the version of the project
 
 // Components config
 fractal.components.set('default.status', 'wip');
-fractal.components.engine('@frctl/nunjucks'); // Register the Nunjucks adapter for your components
+fractal.components.engine(njk); // Register the Nunjucks adapter for your components
 fractal.components.set('ext', '.html'); // Look for files with a .nunj file extension
 fractal.components.set('path', `${paths.src}/components`); // Tell Fractal where the components will live
 fractal.components.set('default.preview', '@preview'); // Tell Fractal what is the default preview
@@ -63,7 +78,7 @@ fractal.docs.set('statuses', {
 fractal.docs.set('default.status', 'draft');
 fractal.docs.set('ext', '.md');
 fractal.docs.set('path', `${paths.src}/docs`); // Tell Fractal where the documentation pages will live
-fractal.docs.engine('@frctl/nunjucks'); // Use Nunjucks for docs
+fractal.docs.engine(njk); // Use Nunjucks for docs
 
 // Web UI config
 fractal.web.theme(mandelbrot); // Tell fractal wich theme to use
