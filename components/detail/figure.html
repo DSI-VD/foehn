@@ -237,28 +237,24 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">/**
- * 1. Make the caption having the same width as the image
+ * Remove margin between caption and image
  */</span>
-
-<span class="hljs-selector-class">.figure</span> {
-  <span class="hljs-attribute">display</span>: table; <span class="hljs-comment">/* [1] */</span>
-
-  <span class="hljs-selector-class">.figure-caption</span> {
-    <span class="hljs-attribute">display</span>: table-caption; <span class="hljs-comment">/* [1] */</span>
-    <span class="hljs-selector-tag">caption</span>-side: bottom; <span class="hljs-comment">/* [1] */</span>
-  }
-}
-
 <span class="hljs-selector-class">.figure-img</span> {
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
 }
 
+<span class="hljs-comment">/**
+ * Style figure caption
+ */</span>
 <span class="hljs-selector-class">.figure-caption</span> {
   <span class="hljs-attribute">font-style</span>: italic;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-500</span>;
   <span class="hljs-attribute">text-align</span>: left;
 }
 
+<span class="hljs-comment">/**
+ * Style for credits inside figcaption
+ */</span>
 <span class="hljs-selector-class">.vd-figure-credits</span> {
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80%</span>;
@@ -290,7 +286,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">545 Bytes</span>
+                    <span class="Meta-value">468 Bytes</span>
                 </li>
             </ul>
         </div>
