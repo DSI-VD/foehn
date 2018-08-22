@@ -1,26 +1,22 @@
 /**
- * 1. Make the caption having the same width as the image
+ * Remove margin between caption and image
  */
-
-.figure {
-  display: table; /* [1] */
-
-  .figure-caption {
-    display: table-caption; /* [1] */
-    caption-side: bottom; /* [1] */
-  }
-}
-
 .figure-img {
   margin-bottom: 0;
 }
 
+/**
+ * Style figure caption
+ */
 .figure-caption {
   font-style: italic;
   color: $gray-500;
   text-align: left;
 }
 
+/**
+ * Style for credits inside figcaption
+ */
 .vd-figure-credits {
   display: block;
   font-size: 80%;

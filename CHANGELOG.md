@@ -3,8 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fix
+- fix figcaption position was not right in IE
+
 ### Remove
 - Remove unused CSS style `.vd-pagination-pages`
+
 ## [0.52.2] - 2018-08-14
 
 ### Added
