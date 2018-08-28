@@ -21,6 +21,9 @@
       "name": "first",
       "context": {
         "pages": {
+          "next": {
+            "label": "2 sur 244"
+          },
           "previous": false
         }
       }
@@ -29,7 +32,10 @@
       "name": "last",
       "context": {
         "pages": {
-          "next": false
+          "next": false,
+          "previous": {
+            "label": "243 sur 244"
+          }
         }
       }
     }
