@@ -4,9 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
-- fix figcaption position was not right in IE
+- Fix figcaption position was not right in IE
+- Fix pagination in `@formulaire-presation`. The text of the next and previous
+  links has been changed and a label with the name of the target page has been
+  added
 
 ### Remove
+- Remove pagination with page numbers `@pagination--pages`,
+  `@pagination-pages-first` and `@pagination--pages-last`
 - Remove unused CSS style `.vd-pagination-pages`
 
 ## [0.52.2] - 2018-08-14

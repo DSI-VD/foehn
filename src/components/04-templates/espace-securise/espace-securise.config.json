@@ -1,19 +1,23 @@
 {
-    "status": "prototype",
-    "context": {
-      "pageTitle": "Nom de la prestation",
-      "stepTitle": "Titre de l'étape",
-      "stepNumber": "Etape X sur Y",
-      "pagination": {
+  "status": "prototype",
+  "context": {
+    "pageTitle": "Nom de la prestation",
+    "stepTitle": "Titre de l'étape",
+    "stepNumber": "Etape X sur Y",
+    "pagination": {
+      "pages": {
         "previous": {
           "url": "#",
-          "text": "Précédent"
+          "title": "Précédent",
+          "label": "Nom de l'étape précédente"
         },
         "next": {
           "url": "#",
-          "text": "Suivant"
+          "title": "Suivant",
+          "label": "Nom de l'étape suivante"
         }
-      },
-      "navigation": "@nav-horizontal"
-    }
+      }
+    },
+    "navigation": "@nav-horizontal"
+  }
 }
