@@ -82,11 +82,20 @@
     <p>All notable changes to this project will be documented in this file.
 This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
 <h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.2...HEAD">Unreleased</a></h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Fix figcaption position was not right in IE</li>
+<li>Fix pagination in <a href="../components/detail/formulaire-presation"><code>@formulaire-presation</code></a>. The text of the next and previous
+links has been changed and a label with the name of the target page has been
+added</li>
+</ul>
 <h3 id="remove">Remove</h3>
 <ul>
-<li>Remove unused CSS style <code>.vd-pagination-pages</code><h2 id="0-52-2-2018-08-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.1...v0.52.2">0.52.2</a> - 2018-08-14</h2>
-</li>
+<li>Remove pagination with page numbers <a href="../components/detail/pagination--pages"><code>@pagination--pages</code></a>,
+<a href="../components/detail/pagination-pages-first"><code>@pagination-pages-first</code></a> and <a href="../components/detail/pagination--pages-last"><code>@pagination--pages-last</code></a></li>
+<li>Remove unused CSS style <code>.vd-pagination-pages</code></li>
 </ul>
+<h2 id="0-52-2-2018-08-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.1...v0.52.2">0.52.2</a> - 2018-08-14</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>add accessibility doc</li>
@@ -4523,21 +4532,10 @@ is the first element of the navigation.</li>
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-pagination">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/pagination" data-pjax>
                 <span>Pagination</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/pagination--default" data-pjax>
-                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4554,131 +4552,6 @@ is the first element of the navigation.</li>
 
 
             </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/pagination--first" data-pjax>
-                <span>First</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/pagination--last" data-pjax>
-                <span>Last</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/pagination--pages" data-pjax>
-                <span>Pages</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/pagination--pages-first" data-pjax>
-                <span>Pages First</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/pagination--pages-last" data-pjax>
-                <span>Pages Last</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -8226,6 +8099,30 @@ is the first element of the navigation.</li>
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/pagination" data-pjax>
+                <span>Pagination</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="components/panel" data-pjax>
                 <span>Panel</span>
                 
@@ -8536,7 +8433,7 @@ is the first element of the navigation.</li>
 
 
 
-<script src="../fractal/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="../assets/scripts/fontawesome-all.js?cachebust=1.2.0"></script>
 
 
 

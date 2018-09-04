@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
 
-    <title>Default | Foehn</title>
+    <title>Pagination | Foehn</title>
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon-apple-touch-icon.png?v=0.52.2">
@@ -35,47 +35,54 @@
   </head>
   <body>
 
-    <nav class="vd-pagination" aria-label="Pagination">
-  <ul class="vd-pagination__list">
-        
-        <li class="vd-pagination__item vd-pagination__item--previous">
-            
-            <a href="#" class="vd-pagination__link">
-            
-                <span class="vd-pagination__title">
-                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
-                    Page précédente
-                </span>
-                
-                    <span class="sr-only">:</span>
-                    <span class="vd-pagination__label">11 sur 244</span>
-                
-            
-            </a>
-            
-        </li>
-        
-        
-          
-        <li class="vd-pagination__item vd-pagination__item--next">
-          
-            <a href="#" class="vd-pagination__link">
-              
-                <span class="vd-pagination__title">
-                    Page suivante
-                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
-                </span>
-                
-                    <span class="sr-only">:</span>
-                    <span class="vd-pagination__label">13 sur 244</span>
-                  
-            
-            </a>
-            
-        </li>
-        
-    </ul>
+    <!-- Start: @pagination--default -->
+<nav class="vd-pagination" aria-label="Pagination">
+  <ul class="vd-pagination__list"><li class="vd-pagination__item vd-pagination__item--previous">
+      <a href="#" class="vd-pagination__link">
+        <span class="vd-pagination__title">
+          <span class="fas fa-chevron-left" aria-hidden="true"></span>
+          Page précédente
+        </span><span class="sr-only">:</span>
+        <span class="vd-pagination__label">11 sur 244</span></a>
+    </li><li class="vd-pagination__item vd-pagination__item--next">
+      <a href="#" class="vd-pagination__link">
+        <span class="vd-pagination__title">
+          Page suivante
+          <span class="fas fa-chevron-right" aria-hidden="true"></span>
+        </span><span class="sr-only">:</span>
+        <span class="vd-pagination__label">13 sur 244</span></a>
+    </li>
+  </ul>
 </nav>
+<!-- End: @pagination--default -->
+
+<!-- Start: @pagination--first -->
+<nav class="vd-pagination" aria-label="Pagination">
+  <ul class="vd-pagination__list"><li class="vd-pagination__item vd-pagination__item--next">
+      <a href="#" class="vd-pagination__link">
+        <span class="vd-pagination__title">
+          Page suivante
+          <span class="fas fa-chevron-right" aria-hidden="true"></span>
+        </span><span class="sr-only">:</span>
+        <span class="vd-pagination__label">2 sur 244</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- End: @pagination--first -->
+
+<!-- Start: @pagination--last -->
+<nav class="vd-pagination" aria-label="Pagination">
+  <ul class="vd-pagination__list"><li class="vd-pagination__item vd-pagination__item--previous">
+      <a href="#" class="vd-pagination__link">
+        <span class="vd-pagination__title">
+          <span class="fas fa-chevron-left" aria-hidden="true"></span>
+          Page précédente
+        </span><span class="sr-only">:</span>
+        <span class="vd-pagination__label">243 sur 244</span></a>
+    </li>
+  </ul>
+</nav>
+<!-- End: @pagination--last -->
 
 
     <script src="../../assets/scripts/jquery.slim.min.js"></script>
