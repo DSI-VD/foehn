@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Fix button padding in `@search-form`
 - Fix figcaption position was not right in IE
 - Fix pagination in `@formulaire-presation`. The text of the next and previous
   links has been changed and a label with the name of the target page has been
