@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Upgrade fontawesome to v5.3.1
 - Fix fractal how wasn't collapsing
 - Fix button padding in `@search-form`
 - Fix figcaption position was not right in IE
