@@ -13,9 +13,6 @@ const mandelbrot = require('@frctl/mandelbrot')({
         'default',
         '/assets/styles/styleguide.css'
     ],
-    scripts: [
-        '/assets/scripts/fontawesome-all.js'
-    ],
     static: {
         mount: 'fractal'
     },
