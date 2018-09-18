@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Fix
+- Upgrade a bunch of modules that you do note need to take care of
 - Upgrade fontawesome to v5.3.1
 - Fix fractal how wasn't collapsing
 - Fix button padding in `@search-form`
