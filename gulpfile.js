@@ -94,7 +94,7 @@ function build() {
     });
 }
 
-/**
+/*
  * Clean Dest
  *
  * When developing, we do not clean dist/ folder to avoid nightmare of merge conflict.
@@ -104,14 +104,14 @@ function cleanDest() {
     return del(paths.dest);
 }
 
-/**
+/*
  * Clean
  */
 function clean() {
     return del([paths.dest, paths.build]);
 }
 
-/**
+/*
  * Deploy
  */
 function deploy() {
@@ -123,7 +123,7 @@ function deploy() {
         }));
 }
 
-/**
+/*
  * Styles
  */
 function styles() {
@@ -136,7 +136,7 @@ function styles() {
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
 
-/**
+/*
  * Style for documentation
  */
 function docStyles() {
@@ -148,7 +148,7 @@ function docStyles() {
         .pipe(gulp.dest(`${paths.dest}/assets/styles`));
 }
 
-/**
+/*
  * Style linting
  */
 function lintstyles() {
@@ -165,7 +165,7 @@ function lintstyles() {
         }));
 }
 
-/**
+/*
  * Scripts Vendors
  */
 function scriptsVendors() {
@@ -187,7 +187,7 @@ function scriptsVendorsRename() {
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
-/**
+/*
  * Scripts footer
  *
  * the scripts that are placed in the footer of the document
@@ -203,7 +203,7 @@ function scriptsFooter() {
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
-/**
+/*
  * Scripts header
  *
  * Scripts that are in the header of the document
@@ -219,7 +219,7 @@ function scriptsHeader() {
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
-/**
+/*
  * SVG
  *
  * Make sure to minify the original SVGs
@@ -230,7 +230,7 @@ function svg() {
         .pipe(gulp.dest(`${paths.dest}/assets/svg`));
 }
 
-/**
+/*
  * Image
  *
  * Make sure to minify the original images
@@ -241,7 +241,7 @@ function images() {
         .pipe(gulp.dest(`${paths.dest}/assets/img`));
 }
 
-/**
+/*
  * Fonts
  */
 function fonts() {
@@ -249,7 +249,7 @@ function fonts() {
         .pipe(gulp.dest(`${paths.dest}/assets/fonts`));
 }
 
-/**
+/*
  * Manifest
  */
 function manifests() {
@@ -257,7 +257,7 @@ function manifests() {
         .pipe(gulp.dest(`${paths.dest}/assets/manifest`));
 }
 
-/**
+/*
  * XML
  */
 function xmls() {
@@ -265,7 +265,7 @@ function xmls() {
         .pipe(gulp.dest(`${paths.dest}/assets/xml`));
 }
 
-/**
+/*
  * Lint Scripts
  */
 function lintscripts() {
@@ -278,7 +278,7 @@ function lintscripts() {
         .pipe(xo.format());
 }
 
-/**
+/*
  * Lint JSON
  *
  * 1. Lint CSS source maps once they are generated. Be sure to run this function
@@ -297,7 +297,7 @@ function lintjson() {
         .pipe(jsonlint.reporter());
 }
 
-/**
+/*
  * Copy changelog in fractal
  *
  * Copy changelog and make links on components
@@ -311,7 +311,7 @@ function copyChangelog() {
         .pipe(gulp.dest(`${paths.src}/docs/`));
 }
 
-/**
+/*
  * Watch
  */
 function watch() {
@@ -320,7 +320,7 @@ function watch() {
     gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scriptsHeader, scriptsFooter));
 }
 
-/**
+/*
  * Task set
  */
 const compile = gulp.series(
