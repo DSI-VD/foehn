@@ -10,5 +10,17 @@
       </div>
 
     </div><!-- /.row -->
+
+  </div>
+</header>
+
+<header class="header">
+  {% include '@access-nav' %}
+  <div class="{{ styleModifier }}">
+    <div class="d-flex flex-row flex-wrap mb-3 mt-3">
+      {% render '@logo-etat', { styleModifier: 'mb-3' }, true %}
+      <div class="h4 vd-heading-light mt-0 mx-1">//</div>
+      <div class="h4 vd-heading-light mt-0">{{ applicationTitle }}</div>
+    </div>
   </div>
 </header>
