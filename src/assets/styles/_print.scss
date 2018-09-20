@@ -17,11 +17,13 @@
    * Fix firefox print
    * https://github.com/twbs/bootstrap/issues/23489
    *
-   * 1. Only apply on Firefox
+   * 1. Only apply on Firefox (see http://browserhacks.com/)
+   * 2. Fix Firefox messing with printing flexbox
    */
-  @-moz-document url-prefix() { /* [1] */
+  @supports (-moz-appearance:meterbar) and
+    (background-blend-mode:difference,normal) { /* [1] */
     .row {
-      display: block;
+      display: block; /* [2] */
     }
   }
 
