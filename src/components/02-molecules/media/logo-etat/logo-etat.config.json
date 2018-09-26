@@ -4,7 +4,14 @@
       {
         "name": "alternate",
         "context": {
+          "styleModifier": "vd-logo--alt",
           "blason": true
+        }
+      },
+      {
+        "name": "alternate-2",
+        "context": {
+          "logoAlternate": true
         }
       }
     ]

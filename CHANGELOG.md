@@ -3,6 +3,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- `@logo-etat--alternate` use the new class '.vd-logo-alt'
+
+### Added
+- Added a new logo with less height `@logo-alternate-2`
+
 ### Fix
 - Fix print with Firefox
 - Upgrade a bunch of modules that you do note need to take care of
