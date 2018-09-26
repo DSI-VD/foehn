@@ -1,26 +1,8 @@
 <header class="header">
   {% include '@access-nav' %}
-  <div class="{{ styleModifier }}">
-
-    <div class="d-flex flex-column flex-sm-row">
-
-      <div class="mr-auto">
-        {% render '@logo-etat', { styleModifier: 'mb-3' }, true %}
-        <h1 class="h5 mt-0 vd-heading-light">{{ applicationTitle }}</h1>
-      </div>
-
-    </div><!-- /.row -->
-
-  </div>
-</header>
-
-<header class="header">
-  {% include '@access-nav' %}
-  <div class="{{ styleModifier }}">
-    <div class="d-flex flex-row flex-wrap mb-3 mt-3">
-      {% render '@logo-etat', { styleModifier: 'mb-3' }, true %}
-      <div class="h4 vd-heading-light mt-0 mx-1">//</div>
-      <div class="h4 vd-heading-light mt-0">{{ applicationTitle }}</div>
-    </div>
+  <div class="d-flex flex-column flex-md-row flex-wrap{%- if styleModifier %} {{ styleModifier }}{%- endif %}">
+    {% render '@logo-etat--alternate-2', logo, true %}
+    <span class="h4 vd-heading-light mt-1 mx-1 d-none d-md-inline">//</span>
+    <span class="h4 vd-heading-light mt-1">{{ applicationTitle }}</span>
   </div>
 </header>
