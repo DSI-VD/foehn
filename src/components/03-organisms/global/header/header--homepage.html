@@ -2,23 +2,23 @@
   {% include '@access-nav' %}
   <div class="container">
     <div class="d-flex flex-wrap justify-content-between justify-content-md-end
-      d-print-none">
+    d-print-none">
       <div>
         {% render '@nav', nav, true %}
       </div>
       {% render '@login', { styleModifier: 'ml-3 text-right'}, true %}
     </div>
     {% if searchForm %}
-    <div class="row">
-      <div class="col-md-5">
-        {% render '@logo-etat--alternate' %}
+      <div class="row">
+        <div class="col-md-5">
+          {% render '@logo-etat--alternate' %}
+        </div>
+        <div class="col-md-5 ml-auto d-print-none">
+          {% render '@search-form--default', { styleModifier: 'mt-2 mb-4' }, true %}
+        </div>
       </div>
-      <div class="col-md-5 ml-auto d-print-none">
-        {% render '@search-form--default', { styleModifier: 'mt-2 mb-4' }, true %}
-      </div>
-    </div>
     {% else %}
-    {% include '@logo-etat' %}
+      {% include '@logo-etat' %}
     {% endif %}
   </div>
 
