@@ -10,8 +10,15 @@
  * 4. Align image at the start (top)
  */
 .vd-logo {
-  display: flex;
   margin-bottom: $spacer;
+
+  &--alt {
+    display: flex;
+
+    .vd-logo__image {
+      align-self: flex-start; /* [4] */
+    }
+  }
 
   &__blason {
     position: absolute;
@@ -33,7 +40,6 @@
   }
 
   &__image {
-    align-self: flex-start; /* [4] */
     width: 12em;
     height: auto;
   }

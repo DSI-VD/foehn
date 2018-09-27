@@ -82,8 +82,20 @@
     <p>All notable changes to this project will be documented in this file.
 This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
 <h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.2...HEAD">Unreleased</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><a href="../components/detail/espace-securise"><code>@espace-securise</code></a> and <a href="../components/detail/espace-securise--form"><code>@espace-securise--form</code></a> use
+<a href="../components/detail/header-application--default"><code>@header-application--default</code></a> and <a href="../components/detail/login"><code>@login</code></a> at the top of the page instead of
+<a href="../components/detail/header-securise"><code>@header-securise</code></a></li>
+<li><a href="../components/detail/logo-etat--alternate"><code>@logo-etat--alternate</code></a> use the new class ‘.vd-logo-alt’</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Added a new logo with less height <a href="../components/detail/logo-alternate-2"><code>@logo-alternate-2</code></a></li>
+</ul>
 <h3 id="fix">Fix</h3>
 <ul>
+<li>Fix print with Firefox</li>
 <li>Upgrade a bunch of modules that you do note need to take care of</li>
 <li>Upgrade fontawesome to v5.3.1</li>
 <li>Fix fractal how wasn’t collapsing</li>
@@ -95,6 +107,7 @@ added</li>
 </ul>
 <h3 id="remove">Remove</h3>
 <ul>
+<li>Remove <a href="../components/detail/header-securise"><code>@header-securise</code></a></li>
 <li>Remove pagination with page numbers <a href="../components/detail/pagination--pages"><code>@pagination--pages</code></a>,
 <a href="../components/detail/pagination-pages-first"><code>@pagination-pages-first</code></a> and <a href="../components/detail/pagination--pages-last"><code>@pagination--pages-last</code></a></li>
 <li>Remove unused CSS style <code>.vd-pagination-pages</code></li>
@@ -4194,6 +4207,30 @@ is the first element of the navigation.</li>
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/logo-etat--alternate-2" data-pjax>
+                <span>Alternate 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -5535,30 +5572,6 @@ is the first element of the navigation.</li>
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/header--homepage" data-pjax>
                 <span>Homepage</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/header--securise" data-pjax>
-                <span>Securise</span>
                 
 
 <div class="Status Status--unlabelled">
