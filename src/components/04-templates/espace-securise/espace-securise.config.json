@@ -1,6 +1,9 @@
 {
   "status": "prototype",
   "context": {
+    "header": {
+      "applicationTitle": false
+    },
     "pageTitle": "Nom de la prestation",
     "stepTitle": "Titre de l'étape",
     "stepNumber": "Etape X sur Y",

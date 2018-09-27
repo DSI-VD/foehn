@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
+- `@espace-securise` and `@espace-securise--form` use
+  `@header-application--default` and `@login` at the top of the page instead of
+  `@header-securise`
 - `@logo-etat--alternate` use the new class '.vd-logo-alt'
 
 ### Added

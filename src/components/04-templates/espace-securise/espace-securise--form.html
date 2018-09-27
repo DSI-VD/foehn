@@ -1,4 +1,6 @@
-{% render '@header--securise' %}
+{% render '@header-application--default', header, true %}
+
+{% render '@login--logged', { styleModifier: 'container text-right mb-3' }, true %}
 
 <main id="main">
   {% include '@page-title-banner--form-presta' %}
