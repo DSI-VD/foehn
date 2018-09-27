@@ -24,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   added
 
 ### Remove
+- Remove `@header-securise`
 - Remove pagination with page numbers `@pagination--pages`,
   `@pagination-pages-first` and `@pagination--pages-last`
 - Remove unused CSS style `.vd-pagination-pages`
