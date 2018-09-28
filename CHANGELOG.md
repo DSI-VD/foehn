@@ -6,7 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - `@espace-securise` and `@espace-securise--form` use
   `@header-application--default` and `@login` at the top of the page instead of
-  `@header-securise`
+  `@header-securise`. It means this is the same for  `@connexion`, 
+  `@demande-detail`, `@documents`, `@formulaire-prestation-confirmation`, 
+  `@historique`, `@messaga-detail`, `@prestations`, `@tableau-de-bord`
+- The navigation in `@espace-securise` is after the page title
 - `@logo-etat--alternate` use the new class '.vd-logo-alt'
 
 ### Added

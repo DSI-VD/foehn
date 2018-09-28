@@ -3,10 +3,9 @@
 {% render '@login--logged', { styleModifier: 'container text-right mb-3' }, true %}
 
 <main id="main">
-  {% include '@page-title-banner--form-presta' %}
+  {% render '@page-title-banner', pageTitle, true %}
 
   <div class="container">
-    <h2>{{ stepTitle }}</h2>
     <p class="h3">{{ stepNumber }}</p>
       <div class="row">
         <div class="col-md-8">

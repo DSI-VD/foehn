@@ -2,19 +2,20 @@
 
 {% render '@login--logged', { styleModifier: 'container text-right mb-3' }, true %}
 
-{% if navigation %}
-<div class="container mb-4">
-  {% render '@nav-horizontal', navigation %}
-</div>
-{% endif %}
 
 <main id="main">
-  {% include '@page-title-banner--form-presta' %}
+  {% render '@page-title-banner', pageTitle, true %}
+
+  {% if navigation %}
+    <div class="container mb-4">
+      {% render '@nav-horizontal', navigation %}
+    </div>
+  {% endif %}
 
   <div class="container">
     {% block main %}
 
-    {% render '@paragraph' %}
+      {% render '@paragraph' %}
 
     {% endblock %}
   </div>
