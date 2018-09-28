@@ -74,7 +74,8 @@
    title="Aller à la page d'accueil du Site du Canton de Vaud">
   <img src="../../assets/svg/ETATVAUD-alt.svg" class="vd-logo__image" alt="État de Vaud" aria-hidden="true" />
 </a>
-
+<span class="h4 vd-heading-light mt-1 mx-1 d-none d-md-inline">//</span>
+    <span class="h4 vd-heading-light mt-1">Application title</span>
   </div>
 </header>
 
@@ -96,13 +97,30 @@
 
 
 <main id="main">
+  <div class="vd-bg-pattern-gray">
   <div class="container">
-  <h1>Nom de la prestation</h1>
+        <nav>
+  <h2 class="sr-only">File d'Ariane</h2>
+  <ol class="breadcrumb">
+    
+    <li class="breadcrumb-item"><a href="#">level 1</a></li>
+    
+    <li class="breadcrumb-item"><a href="#">level 2</a></li>
+    
+    <li class="breadcrumb-item"><a href="#">level 3</a></li>
+    
+    <li class="breadcrumb-item"><a href="#">level 4</a></li>
+    
+    <li class="sr-only">Vous êtes ici: [titre de la page]</li>
+  </ol>
+</nav>
+
+        <h1 aria-hidden="true" class="mt-0">Page title</h1>
+  </div>
 </div>
 
 
   <div class="container">
-    <h2>Titre de l'étape</h2>
     <p class="h3">Etape X sur Y</p>
       <div class="row">
         <div class="col-md-8">
