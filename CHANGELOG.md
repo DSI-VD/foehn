@@ -3,6 +3,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.53.0] - 2018-10-03
+
 ### Changed
 - `@espace-securise` and `@espace-securise--form` use
   `@header-application--default` and `@login` at the top of the page instead of
@@ -1762,7 +1764,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.52.2...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.53.0...HEAD
+[0.53.0]: https://github.com/DSI-VD/foehn/compare/v0.52.2...v0.53.0
 [0.52.2]: https://github.com/DSI-VD/foehn/compare/v0.52.1...v0.52.2
 [0.52.1]: https://github.com/DSI-VD/foehn/compare/v0.52.0...v0.52.1
 [0.52.0]: https://github.com/DSI-VD/foehn/compare/v0.51.2...v0.52.0
