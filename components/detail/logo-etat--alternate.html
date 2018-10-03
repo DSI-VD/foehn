@@ -242,6 +242,7 @@
  *    https://gist.github.com/larrybotha/7881691
  * 3. Align little blason at the end (bottom)
  * 4. Align image at the start (top)
+ * 5. Fix SVG not showing in IE
  */</span>
 <span class="hljs-selector-class">.vd-logo</span> {
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer</span>;
@@ -276,6 +277,11 @@
   &amp;__image {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">12em</span>;
     <span class="hljs-attribute">height</span>: auto;
+
+    @<span class="hljs-keyword">media</span> screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      <span class="hljs-attribute">max-width</span>: <span class="hljs-number">12em</span>; <span class="hljs-comment">/* [5] */</span>
+      <span class="hljs-attribute">width</span>: auto; <span class="hljs-comment">/* [5] */</span>
+    }
   }
 
 }
@@ -295,7 +301,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">791 Bytes</span>
+                    <span class="Meta-value">971 Bytes</span>
                 </li>
             </ul>
         </div>
