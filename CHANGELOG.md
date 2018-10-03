@@ -10,7 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   `@demande-detail`, `@documents`, `@formulaire-prestation-confirmation`, 
   `@historique`, `@messaga-detail`, `@prestations`, `@tableau-de-bord`
 - The navigation in `@espace-securise` is after the page title
-- `@logo-etat--alternate` use the new class '.vd-logo-alt'
+- `@logo-etat--alternate` use the new class `.vd-logo-alt`
 
 ### Added
 - Added a new logo with less height `@logo-alternate-2`
