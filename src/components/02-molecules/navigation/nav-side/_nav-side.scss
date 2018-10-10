@@ -15,7 +15,7 @@
 .vd-nav-side {
   > ul > li:first-child > a {
     font-size: $h4-font-size; /* [1] */
-    font-family: $headings-font-family; /* [1] */
+    font-family: $font-family-serif; /* [1] */
     font-weight: $headings-font-weight; /* [1] */
     color: $black; /* [1] */
     text-decoration: none; /* [1] */
@@ -40,9 +40,4 @@
   > ul ul ul {
     padding-left: $spacer; /* [3] */
   }
-}
-
-html.wf-active .vd-nav-side > ul > li:first-child > a {
-  font-family: $headings-font-family-enhance; /* [1] */
-  font-weight: $headings-font-weight; /* [1] */
 }

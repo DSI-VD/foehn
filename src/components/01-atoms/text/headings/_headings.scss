@@ -6,7 +6,8 @@ h1 {
 }
 
 /**
- * Add margin around headings
+ * 1. Add margin around headings
+ * 2. Set custom font-family
  */
 .h1,
 .h2,
@@ -20,9 +21,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  line-height: 1.25;
+  margin-top: 1.5em; /* [1] */
+  margin-bottom: 0.5em; /* [1] */
+  line-height: 1.25; /* [1] */
+  font-family: $font-family-serif; /* [2] */
 }
 
 /**
@@ -134,7 +136,7 @@ h6 {
 }
 
 .vd-heading-light-alt {
-  font-family: $font-family-base-enhance !important;
+  font-family: $font-family-base !important;
   font-weight: $font-weight-normal;
   text-transform: uppercase;
 }

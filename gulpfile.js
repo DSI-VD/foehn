@@ -204,22 +204,6 @@ function scriptsFooter() {
 }
 
 /*
- * Scripts header
- *
- * Scripts that are in the header of the document
- */
-function scriptsHeader() {
-    return gulp.src([
-        `${paths.src}/assets/scripts/webfont-loading.js`
-    ])
-        .pipe(sourcemaps.init())
-        .pipe(rename('foehn-scripts--header.js'))
-        .pipe(minify())
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
-}
-
-/*
  * SVG
  *
  * Make sure to minify the original SVGs
@@ -317,7 +301,7 @@ function copyChangelog() {
 function watch() {
     serve();
     gulp.watch(`${paths.src}/**/*.scss`, gulp.parallel(lintstyles, styles));
-    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scriptsHeader, scriptsFooter));
+    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scriptsFooter));
 }
 
 /*
@@ -330,7 +314,6 @@ const compile = gulp.series(
         lintstyles,
         scriptsVendors,
         scriptsVendorsRename,
-        scriptsHeader,
         scriptsFooter,
         svg,
         images,

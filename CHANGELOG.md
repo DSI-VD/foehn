@@ -1,7 +1,15 @@
-All notable changes to this project will be documented in this file.
+Alld notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+### Removed
+- Remove `foehn-scripts--header.js` in the `<head>` of the page. It contained
+  only Font Face Observer which has been removed in favor of CSS font-display.
+
+### Fix
+- Font loading strategy has been changed. CSS `font-display` is now used. It
+  means some styles have been rewritten.
 
 ## [0.53.0] - 2018-10-03
 
