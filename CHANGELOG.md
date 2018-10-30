@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fix
+- The name of the package is now `@dsivd/foehn`
+
 ## [0.54.0] - 2018-10-11
 
 ### Removed
