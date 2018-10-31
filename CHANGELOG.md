@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2018-10-31
+
 ### Fix
 - The name of the package is now `@dsivd/foehn`
 
@@ -1779,7 +1781,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v0.54.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/DSI-VD/foehn/compare/v0.54.0...v1.0.0
 [0.54.0]: https://github.com/DSI-VD/foehn/compare/v0.53.0...v0.54.0
 [0.53.0]: https://github.com/DSI-VD/foehn/compare/v0.52.2...v0.53.0
 [0.52.2]: https://github.com/DSI-VD/foehn/compare/v0.52.1...v0.52.2
