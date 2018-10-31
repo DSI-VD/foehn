@@ -8,7 +8,7 @@
  */
 .footer {
   position: relative; /* [1] */
-  padding: ($spacer * 3) 0 ($spacer * 2);
+  padding: $spacer 0 $spacer;
   background-image: url(../svg/bars_black.svg);
   background-repeat: repeat-x;
   background-position: center bottom;
@@ -46,4 +46,5 @@
 .footer-logo {
   width: 100%;
   max-width: $spacer * 2;
+  margin-bottom: $spacer;
 }
