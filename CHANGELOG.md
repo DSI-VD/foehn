@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2018-11-01
+
 ### Fix
 - Move `@fortawesome/fontawesome-free`, `@frctl/fractal`, `@frctl/mandelbrot`,
   `faker`, `jquery` and `popper.js` dependencies in devDendencies since files
@@ -1787,7 +1789,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/DSI-VD/foehn/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/DSI-VD/foehn/compare/v0.54.0...v1.0.0
 [0.54.0]: https://github.com/DSI-VD/foehn/compare/v0.53.0...v0.54.0
 [0.53.0]: https://github.com/DSI-VD/foehn/compare/v0.52.2...v0.53.0
