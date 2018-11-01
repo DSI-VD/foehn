@@ -67,8 +67,11 @@
     ]
   },
   "peerDependencies": {
-    "@fortawesome/fontawesome-free": "^5.4.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4"
+  },
+  "dependencies": {},
+  "optionalDependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.2"
   }
 }
