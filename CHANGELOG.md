@@ -5,19 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-- Move `jquery` and `popper.js` dependencies in
-  [`peerDependencies`](https://docs.npmjs.com/files/package.json#peerdependencies).
-  So if you need them in your project, you have to install them yourself.
-- Move `@fortawesome/fontawesome-free` dependencies in
-  [`optionalDependencies`](https://docs.npmjs.com/files/package.json#optionaldependencies).
-  If you do not need it, use the [`--no-optianal` flag with
-  npm](https://docs.npmjs.com/cli/install) or [`--ignore-optionnal` with
-  Yarn](https://yarnpkg.com/en/docs/cli/install#toc-yarn-install-ignore-optional).
-
 ### Fix
-- Move `@frctl/fractal`, `@frctl/mandelbrot` and `faker` dependencies in 
-  devDendencies
+- Move `@fortawesome/fontawesome-free`, `@frctl/fractal`, `@frctl/mandelbrot`,
+  `faker`, `jquery` and `popper.js` dependencies in devDendencies since files
+  are moved into Foehn's assets.
 - Footer margins have been reduced
 
 ## [1.0.0] - 2018-10-31
