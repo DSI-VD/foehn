@@ -20,9 +20,10 @@
     "defaults"
   ],
   "scripts": {
-    "start": "yarn && gulp dev",
-    "build": "yarn && gulp build",
-    "deploy": "yarn && gulp publish",
+    "install-modules": "yarn && yarn add jquery@^3 popper.js@^1.14.3 --peer",
+    "start": "npm run install-modules && gulp dev",
+    "build": "npm run install-modules && gulp build",
+    "deploy": "npm run install-modules && gulp publish",
     "release-version": "yarn version",
     "publish-version": "npm run build && npm publish --tag latest"
   },
@@ -67,8 +68,8 @@
     ]
   },
   "peerDependencies": {
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.4"
+    "jquery": "^3",
+    "popper.js": "^1.14.3"
   },
   "dependencies": {},
   "optionalDependencies": {
