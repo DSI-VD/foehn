@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fix
+- Fix logo positioning when there's no searh in the header
+- Fix logo hover style
+
 ## [1.0.1] - 2018-11-01
 
 ### Fix
