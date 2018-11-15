@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix logo hover style
 - Add automated a11y tests
 - Fix color contrast of help text in forms to be WCAG AA compliant
+- Fix focus style of `@search-form-default` was out of place due to some extra
+  padding
 
 ## [1.0.1] - 2018-11-01
 
