@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fix
 - Fix logo positioning when there's no searh in the header
 - Fix logo hover style
+- Add automated a11y tests
 
 ## [1.0.1] - 2018-11-01
 

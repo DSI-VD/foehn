@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "./dist/components/preview/accueil.html",
+    "./dist/components/preview/actualite.html",
+    "./dist/components/preview/contend.html",
+    "./dist/components/preview/departements.html",
+    "./dist/components/preview/domaines.html",
+    "./dist/components/preview/formulaire-prestation--default.html"
+  ]
+}
