@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix logo positioning when there's no searh in the header
 - Fix logo hover style
 - Add automated a11y tests
+- Fix color contrast of help text in forms to be WCAG AA compliant
 
 ## [1.0.1] - 2018-11-01
 
