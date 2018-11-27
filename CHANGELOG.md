@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix color contrast of help text in forms to be WCAG AA compliant
 - Fix focus style of `@search-form-default` was out of place due to some extra
   padding
+- Fix `src/assets/svg/ETATVAUD-alt.svg` viewbox to be inlined in IE11
 
 ## [1.0.1] - 2018-11-01
 
