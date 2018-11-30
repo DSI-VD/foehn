@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add `@tree-view` component
+
 ## [1.0.3] - 2018-11-28
 
 ### Fix

@@ -1,0 +1,81 @@
+<h2>Liste des entités</h2>
+<ul class="list-unstyled vd-tree-view">
+  {% for entitie in entities %}
+    <li class="border-bottom pb-4">
+      <span class="h3 d-inline-block"><a href="#">{{ entitie.text }}</a></span>
+      {% if entitie.enfants|length %}
+        <a href="#{{ entitie.id}}"
+           class="is-collapsed vd-tree-view__button"
+           data-toggle="collapse"
+           aria-expanded="false"
+           aria-controls="{{ entitie.id }}"
+           role="button">
+          Voir les sous-entités
+          <span class="sr-only"> de {{ entitie.text }}</span>
+        </a>
+        <a href="#{{ entitie.id }}"
+           class="is-not-collapsed vd-tree-view__button"
+           data-toggle="collapse"
+           aria-expanded="false"
+           aria-controls="{{ entitie.id }}"
+           role="button">
+          Cacher les sous-entités
+          <span class="sr-only"> de {{ entitie.text }}</span>
+        </a>
+
+        <ul class="list-unstyled ml-3 ml-md-5 collapse" id="{{ entitie.id }}">
+          {% for entitie in entitie.enfants %}
+            <li>
+              <span class="h4 d-inline-block"><a href="#">{{ entitie.text }}</a></span>
+              {% if entitie.enfants|length %}
+                <a href="#{{ entitie.id}}"
+                   class="is-collapsed vd-tree-view__button"
+                   data-toggle="collapse"
+                   aria-expanded="false"
+                   aria-controls="{{ entitie.id }}"
+                   role="button">
+                  Voir les sous-entités
+                  <span class="sr-only"> de {{ entitie.text }}</span>
+                </a>
+                <a href="#{{ entitie.id }}"
+                   class="is-not-collapsed vd-tree-view__button"
+                   data-toggle="collapse"
+                   aria-expanded="false"
+                   aria-controls="{{ entitie.id }}"
+                   role="button">
+                  Cacher les sous-entités
+                  <span class="sr-only"> de {{ entitie.text }}</span>
+                </a>
+                <ul class="list-unstyled ml-3 ml-md-5 collapse" id="{{ entitie.id }}">
+                  {% for entitie in entitie.enfants %}
+                    <li>
+                      <span class="h5 d-inline-block"><a href="#">{{ entitie.text }}</a></span>
+                      {% if entitie.enfants %}
+                        <ul class="list-unstyled ml-3 ml-md-5">
+                          {% for entitie in entitie.enfants %}
+                            <li class="mb-1">
+                              <a href="#">{{ entitie.text }}</a>
+                              {% if entitie.enfants %}
+                                <ul class="list-unstyled ml-3 ml-md-5">
+                                  {% for entitie in entitie.enfants %}
+                                    <li class="mb-1">
+                                      <a href="#">{{ entitie.text }}</a>
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    {% endfor %}
+                    </li>
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
