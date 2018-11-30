@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.2.0" type="text/css">
 
 
-<title>Directory | Foehn</title>
+<title>Tree View | Foehn</title>
 
 </head>
 <body>
@@ -56,14 +56,14 @@
     
     
 
-<div class="Pen" data-behaviour="pen" id="pen-531c49e2ef65f07758fd227b93210501">
+<div class="Pen" data-behaviour="pen" id="pen-f29a357ff9eb9ea3b3da90e17d5768c1">
 
     
 
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/directory" title="Component preview">
-            Directory
+        <a class="Pen-previewLink" href="../preview/tree-view" title="Component preview">
+            Tree View
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -83,14 +83,14 @@
 </div>
 
 
-    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-531c49e2ef65f07758fd227b93210501">
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-f29a357ff9eb9ea3b3da90e17d5768c1">
     <div class="Preview-wrapper" data-role="resizer">
         <div class="Preview-resizer">
             
              <iframe
                 class="Preview-iframe"
                 data-role="window"
-                src="../preview/directory"
+                src="../preview/tree-view"
                 sandbox="allow-same-origin allow-scripts allow-forms"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
@@ -105,7 +105,7 @@
     <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
 
     <div class="Pen-panel Pen-info" data-role="info">
-    <div class="Browser" data-behaviour="browser" id="browser-531c49e2ef65f07758fd227b93210501">
+    <div class="Browser" data-behaviour="browser" id="browser-f29a357ff9eb9ea3b3da90e17d5768c1">
 
     
 
@@ -114,37 +114,41 @@
         
         
         <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-531c49e2ef65f07758fd227b93210501-panel-html">HTML</a>
+            <a href="#browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-html">HTML</a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--view" data-role="tab">
-            <a href="#browser-531c49e2ef65f07758fd227b93210501-panel-view">View</a>
+            <a href="#browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-view">View</a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--context" data-role="tab">
-            <a href="#browser-531c49e2ef65f07758fd227b93210501-panel-context">Context</a>
+            <a href="#browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-context">Context</a>
         </li>
         
         
         
         
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-assets">Assets</a>
+        </li>
         
         
         
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-531c49e2ef65f07758fd227b93210501-panel-info">Info</a>
+            <a href="#browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-info">Info</a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-531c49e2ef65f07758fd227b93210501-panel-notes">Notes</a>
+            <a href="#browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-notes">Notes</a>
         </li>
         
         
@@ -154,62 +158,53 @@
 
     
     
-<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-531c49e2ef65f07758fd227b93210501-panel-html">
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-    <span class="hljs-selector-attr">[data-toggle="collapse"]</span><span class="hljs-selector-attr">[aria-expanded="true"]</span><span class="hljs-selector-class">.is-collapsed</span> {
-  <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
-}
-<span class="hljs-selector-attr">[data-toggle="collapse"]</span><span class="hljs-selector-attr">[aria-expanded="false"]</span><span class="hljs-selector-class">.is-not-collapsed</span> {
-  <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
-}
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Liste des entités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Liste des entités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled vd-tree-view"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Secrétariat général du Grand Conseil<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Secrétariat général du Grand Conseil<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Bureau cantonal de médiation administrative<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Bureau cantonal de médiation administrative<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Groupe Impact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Groupe Impact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Cour des comptes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Cour des comptes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Préposée à la protection des données et à l'information<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Préposée à la protection des données et à l'information<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département du territoire et de l'environnement<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département du territoire et de l'environnement<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département de la formation, de la jeunesse et de la culture<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département de la formation, de la jeunesse et de la culture<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E13224"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-collapsed"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E13224"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E13224"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed vd-tree-view__button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E13224"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
             Voir les sous-entités
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de Département de la formation, de la jeunesse et de la culture<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E13224"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-not-collapsed"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E13224"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E13224"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-not-collapsed vd-tree-view__button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E13224"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
             Cacher les sous-entités
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de Département de la formation, de la jeunesse et de la culture<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5 collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"E13224"</span>&gt;</span>
 
@@ -226,11 +221,11 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h4 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Direction générale de l'enseignement obligatoire<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E12518"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-collapsed"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E12518"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E12518"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed vd-tree-view__button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E12518"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
                     Voir les sous-entités
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de Direction générale de l'enseignement obligatoire<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E12518"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-not-collapsed"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E12518"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#E12518"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-not-collapsed vd-tree-view__button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"E12518"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
                     Cacher les sous-entités
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de Direction générale de l'enseignement obligatoire<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -1219,52 +1214,52 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département des institutions et de la sécurité<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département des institutions et de la sécurité<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département de la santé et de l'action sociale<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département de la santé et de l'action sociale<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département de l'économie, de l'innovation et du sport<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département de l'économie, de l'innovation et du sport<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département des infrastructures et des ressources humaines<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département des infrastructures et des ressources humaines<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département des finances et des relations extérieures<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Département des finances et des relations extérieures<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Ordre Judiciaire<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Ordre Judiciaire<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Entité Test<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Entité Test<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Internet<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Internet<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -1274,49 +1269,16 @@
 </div>
 
     
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-531c49e2ef65f07758fd227b93210501-panel-view">
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-<span class="hljs-selector-attr">[data-toggle="collapse"]</span><span class="hljs-selector-attr">[aria-expanded="true"]</span><span class="hljs-selector-class">.is-collapsed</span> {
-  <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
-}
-<span class="hljs-selector-attr">[data-toggle="collapse"]</span><span class="hljs-selector-attr">[aria-expanded="false"]</span><span class="hljs-selector-class">.is-not-collapsed</span> {
-  <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
-}
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Liste des entités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Liste des entités<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled vd-tree-view"</span>&gt;</span>
   {% for entitie in entities %}
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-block d-md-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    {% if entitie.enfants|length %}
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#{{ entitie.id}}"</span>
-       <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>
-       <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-collapsed"</span>
-       <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span>
-       <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>
-       <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"{{ entitie.id }}"</span>&gt;</span>
-      Voir les sous-entités
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de {{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#{{ entitie.id }}"</span>
-       <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>
-       <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-not-collapsed"</span>
-       <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span>
-       <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>
-       <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"{{ entitie.id }}"</span>&gt;</span>
-      Cacher les sous-entités
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de {{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5 collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ entitie.id }}"</span>&gt;</span>
-      {% for entitie in entitie.enfants %}
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h4 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        {% if entitie.enfants|length %}
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#{{ entitie.id }}"</span>
-           <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-collapsed"</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-bottom pb-4"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      {% if entitie.enfants|length %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#{{ entitie.id}}"</span>
+           <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed vd-tree-view__button"</span>
            <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span>
            <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>
            <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"{{ entitie.id }}"</span>
@@ -1325,7 +1287,7 @@
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de {{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#{{ entitie.id }}"</span>
-           <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block d-md-inline-block is-not-collapsed"</span>
+           <span class="hljs-attr">class</span>=<span class="hljs-string">"is-not-collapsed vd-tree-view__button"</span>
            <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span>
            <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>
            <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"{{ entitie.id }}"</span>
@@ -1333,44 +1295,68 @@
           Cacher les sous-entités
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de {{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5 collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ entitie.id }}"</span>&gt;</span>
           {% for entitie in entitie.enfants %}
-          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h5 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            {% if entitie.enfants %}
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5"</span>&gt;</span>
-              {% for entitie in entitie.enfants %}
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                {% if entitie.enfants %}
-                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h4 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              {% if entitie.enfants|length %}
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#{{ entitie.id}}"</span>
+                   <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed vd-tree-view__button"</span>
+                   <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span>
+                   <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>
+                   <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"{{ entitie.id }}"</span>
+                   <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+                  Voir les sous-entités
+                  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de {{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#{{ entitie.id }}"</span>
+                   <span class="hljs-attr">class</span>=<span class="hljs-string">"is-not-collapsed vd-tree-view__button"</span>
+                   <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span>
+                   <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>
+                   <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"{{ entitie.id }}"</span>
+                   <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+                  Cacher les sous-entités
+                  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span> de {{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5 collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ entitie.id }}"</span>&gt;</span>
                   {% for entitie in entitie.enfants %}
-                  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                  {% endfor %}
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h5 d-inline-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                      {% if entitie.enfants %}
+                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5"</span>&gt;</span>
+                          {% for entitie in entitie.enfants %}
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                              {% if entitie.enfants %}
+                                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled ml-3 ml-md-5"</span>&gt;</span>
+                                  {% for entitie in entitie.enfants %}
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>{{ entitie.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                  {% endfor %}
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                              {% endif %}
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                          {% endfor %}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                      {% endif %}
+                    {% endfor %}
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                {% endif %}
-              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-              {% endfor %}
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-            {% endif %}
-            {% endfor %}
-          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              {% endif %}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          {% endfor %}
         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-        {% endif %}
-      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      {% endfor %}
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-    {% endif %}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      {% endif %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   {% endfor %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></pre>
     </code>
 </div>
 
     
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-531c49e2ef65f07758fd227b93210501-panel-context">
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-context">
     <code class="Code Code--lang-json">
         
             
@@ -4878,14 +4864,75 @@
     
 
 
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-845ff35ef1a896d6969e8724ba9298dc">tree-view.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-845ff35ef1a896d6969e8724ba9298dc" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-comment">/**
+ * 1. Put the toggle button under the list element
+ * 2. Toggle visiblity of the buttons in the tree list
+ */</span>
+
+<span class="hljs-selector-class">.vd-tree-view__button</span> {
+  <span class="hljs-attribute">display</span>: block; <span class="hljs-comment">/* [1] */</span>
+}
+
+<span class="hljs-selector-class">.vd-tree-view__button</span><span class="hljs-selector-attr">[data-toggle="collapse"]</span><span class="hljs-selector-attr">[aria-expanded="true"]</span><span class="hljs-selector-class">.is-collapsed</span> {
+  <span class="hljs-attribute">display</span>: none; <span class="hljs-comment">/* [2] */</span>
+}
+
+<span class="hljs-selector-class">.vd-tree-view__button</span><span class="hljs-selector-attr">[data-toggle="collapse"]</span><span class="hljs-selector-attr">[aria-expanded="false"]</span><span class="hljs-selector-class">.is-not-collapsed</span> {
+  <span class="hljs-attribute">display</span>: none; <span class="hljs-comment">/* [2] */</span>
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/tree-view/tree-view.scss"><span>/components/raw/tree-view/tree-view.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/03-organisms/lists/tree-view/tree-view.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">400 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
 
 
     
-    <div class="Browser-panel" data-role="tab-panel" id="browser-531c49e2ef65f07758fd227b93210501-panel-info">
+    <div class="Browser-panel" data-role="tab-panel" id="browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-info">
     <ul class="Meta">
         <li class="Meta-item">
             <strong class="Meta-key">Handle:</strong>
-            <span class="Meta-value">@directory</span>
+            <span class="Meta-value">@tree-view</span>
         </li>
         
         
@@ -4896,12 +4943,12 @@
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
-                    <li><a data-no-pjax href="../preview/directory"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../preview/tree-view"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
 </a></li>
-                    <li><a data-no-pjax href="../render/directory"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../render/tree-view"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
@@ -4911,7 +4958,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/03-organisms/lists/directory/directory.html</span>
+            <span class="Meta-value">src/components/03-organisms/lists/tree-view/tree-view.html</span>
         </li>
         
         
@@ -4919,10 +4966,19 @@
 </div>
 
     
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-531c49e2ef65f07758fd227b93210501-panel-notes">
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-f29a357ff9eb9ea3b3da90e17d5768c1-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <p>Ce composant permet d’afficher une liste déroulante à deux fonctionnalités.</p>
+<ol>
+<li>Un lien permet d’accéder à une autre page.</li>
+<li>Un permet de dérouler la liste.</li>
+</ol>
+<p>Utilisez ce composant uniquement pour les listes comportant plus de 200
+éléments.</p>
+<p>Le lien permettant de dérouler la liste doit avoir le <code>role=button</code>. Cela permet
+de naviguer soit par bouton soit par lien au moyen d’un lecteur d’écran.</p>
+
         
     </div>
 </div>
@@ -8827,30 +8883,6 @@
     
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
-                <span>Directory</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="domains-list" data-pjax>
                 <span>Domains List</span>
@@ -9158,6 +9190,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Tree View</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     
