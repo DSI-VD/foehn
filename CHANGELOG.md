@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add `@tree-view` component
 
+### Fix
+- Upgrade some modules
+
 ## [1.0.3] - 2018-11-28
 
 ### Fix
