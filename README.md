@@ -50,6 +50,14 @@ Build `./src` to `./dist`
 $ yarn build
 ```
 
+## Test accessibilit
+
+To test basic accessibility issues using [Pa11y](http://pa11y.org/).
+
+```
+$ yarn test-a11y
+```
+
 ## Deploy the styleguide
 
 We deploy the styleguide to a `gh-pages` branch on Github. To do this, use the

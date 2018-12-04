@@ -24,7 +24,7 @@
     "build": "yarn && gulp build",
     "deploy": "yarn && gulp publish",
     "publish-version": "yarn build && npm publish --tag latest",
-    "a11y-test": "./node_modules/.bin/pa11y-ci"
+    "test-a11y": "./node_modules/.bin/pa11y-ci"
   },
   "engines": {
     "node": ">=6.7.0",
