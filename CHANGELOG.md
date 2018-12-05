@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix pagination in `@filter-list` component
 - Upgrade some modules
 
+### Removed
+- Removed `@dropdown` component
 ## [1.0.3] - 2018-11-28
 
 ### Fix
