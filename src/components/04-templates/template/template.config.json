@@ -1,33 +1,34 @@
 {
-    "context": {
-        "pageTitle": "Template",
-        "breadcrumb": [{
-            "page": "vd.ch",
-            "url": "#"
-          },
-          {
-            "page": "Parent page",
-            "url": "#"
-          }
-        ],
-        "footer": {
-          "updateTime": false
-        }
+  "status": "ready",
+  "context": {
+    "pageTitle": "Template",
+    "breadcrumb": [{
+      "page": "vd.ch",
+      "url": "#"
     },
-    "variants": [
-      {
-        "status": "ready",
-        "name": "default",
-        "label": "1 column"
-      },
-      {
-        "status": "ready",
-        "name": "2 col",
-        "label": "2 columns"
-      },
-      {
-        "name": "2 col nav",
-        "label": "2 columns with side navigation"
-      }
-    ]
+    {
+      "page": "Parent page",
+      "url": "#"
+    }
+    ],
+    "footer": {
+      "updateTime": false
+    }
+  },
+  "variants": [
+    {
+      "status": "ready",
+      "name": "default",
+      "label": "1 column"
+    },
+    {
+      "status": "ready",
+      "name": "2 col",
+      "label": "2 columns"
+    },
+    {
+      "name": "2 col nav",
+      "label": "2 columns with side navigation"
+    }
+  ]
 }

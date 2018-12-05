@@ -1,20 +1,20 @@
 {
-    "status": "wip",
-    "variants": [
-      {
-        "name": "default",
-        "label": "404",
-        "context": {
-          "pageTitle": "Page non trouvée",
-          "content": "<p>Impossible d\u2019afficher la page que vous voulez consulter. Vous avez sans doute saisi une mauvaise adresse (URL), le document n\u2019existe pas ou son nom a \u00E9t\u00E9 modifi\u00E9.<\/p>\r\n  <p>Vous pouvez utiliser <a href=\"#\">la recherche<\/a> ou <a href=\"#\">naviguer depuis la page d'accueil<\/a> afin de trouver l'information d\u00E9sir\u00E9e.<\/p>"
-        }
-      },
-      {
-        "name": "500",
-        "context": {
-          "pageTitle": "Une erreur est survenue",
-          "content": "<p>Une erreur inattendue semble se produire.<\/p>\r\n<p>Pourquoi ne pas essayer de rafra\u00EEchir votre page ?<\/p>\r\n<p>Vous pouvez utiliser <a href=\"#\">la recherche<\/a> ou <a href=\"#\">naviguer depuis la page d'accueil<\/a> afin de trouver l'information d\u00E9sir\u00E9e.<\/p>"
-        }
+  "status": "ready",
+  "variants": [
+    {
+      "name": "default",
+      "label": "404",
+      "context": {
+        "pageTitle": "Page non trouvée",
+        "content": "<p>Impossible d\u2019afficher la page que vous voulez consulter. Vous avez sans doute saisi une mauvaise adresse (URL), le document n\u2019existe pas ou son nom a \u00E9t\u00E9 modifi\u00E9.<\/p>\r\n  <p>Vous pouvez utiliser <a href=\"#\">la recherche<\/a> ou <a href=\"#\">naviguer depuis la page d'accueil<\/a> afin de trouver l'information d\u00E9sir\u00E9e.<\/p>"
       }
-    ]
+    },
+    {
+      "name": "500",
+      "context": {
+        "pageTitle": "Une erreur est survenue",
+        "content": "<p>Une erreur inattendue semble se produire.<\/p>\r\n<p>Pourquoi ne pas essayer de rafra\u00EEchir votre page ?<\/p>\r\n<p>Vous pouvez utiliser <a href=\"#\">la recherche<\/a> ou <a href=\"#\">naviguer depuis la page d'accueil<\/a> afin de trouver l'information d\u00E9sir\u00E9e.<\/p>"
+      }
+    }
+  ]
 }

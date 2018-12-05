@@ -1,5 +1,5 @@
 {
-  "status": "wip",
+  "status": "ready",
   "context": {
     "label": "Quel est votre fruit favoris ?",
     "id": "testDataInput",

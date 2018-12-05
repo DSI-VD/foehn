@@ -1,5 +1,5 @@
 {
-  "status": "prototype",
+  "status": "ready",
   "context": {
     "legend": "Votre numéro <abbr title=\"Numero AVS\">AVS13</abbr>",
     "helpText": "Par exemple, 756 1234 5678 97",
