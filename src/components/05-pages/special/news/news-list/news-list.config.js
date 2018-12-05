@@ -53,6 +53,7 @@ for (let i = 0; i < teaserItemCount; i += 1) {
 }
 
 module.exports = {
+    status: 'ready',
     context: {
         pageTitle: 'Toutes les actualités',
         breadcrumb: [

@@ -1,5 +1,5 @@
 {
-    "status": "wip",
+    "status": "ready",
     "context": {
       "caption": "A caption functions like a heading for a table",
       "summary": "A summary conveys information about the organization of the data in a table and helps users navigate it."

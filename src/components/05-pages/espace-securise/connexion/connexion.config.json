@@ -1,6 +1,6 @@
 {
-    "status": "prototype",
-    "context": {
-      "pageTitle": "Connexion"
-    }
+  "status": "ready",
+  "context": {
+    "pageTitle": "Connexion"
+  }
 }
