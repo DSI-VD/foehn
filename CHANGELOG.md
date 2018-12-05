@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `@tree-view` component
 
 ### Fix
+- Fix pagination in `@filter-list` component
 - Upgrade some modules
 
 ## [1.0.3] - 2018-11-28
