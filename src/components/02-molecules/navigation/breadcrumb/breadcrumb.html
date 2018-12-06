@@ -2,7 +2,9 @@
   <h2 class="sr-only">File d'Ariane</h2>
   <ol class="breadcrumb">
     {% for item in breadcrumb %}
-    <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.page }}</a></li>
+      {%-if item.page %}
+      <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.page }}</a></li>
+      {%- endif %}
     {% endfor %}
     <li class="sr-only">Vous êtes ici: [titre de la page]</li>
   </ol>
