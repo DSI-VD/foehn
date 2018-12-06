@@ -1,73 +1,75 @@
 {
     "status": "prototype",
     "context": {
-        "pageTitle": "Tableau de bord",
-        "navigation": {
-            "title": "@nav-horizontal.title",
-            "items": [
-                {
-                    "text": "Tableau de bord",
-                    "title": null,
-                    "url": "tableau-de-bord",
-                    "active": true
-                },
-                {
-                    "text": "Historique",
-                    "title": null,
-                    "url": "historique",
-                    "active": null
-                },
-                {
-                    "text": "Prestations",
-                    "title": null,
-                    "url": "prestations",
-                    "active": null
-                },
-                {
-                    "text": "Documents",
-                    "title": null,
-                    "url": "documents",
-                    "active": null
-                },
-                {
-                    "text": "Paramètres",
-                    "title": null,
-                    "url": "parametres",
-                    "active": null
-                }
-            ]
-        },
-        "communications": [
-            {
-              "title": "Message important !",
-              "url": "message-detail",
-              "meta": {
-                "receiveDate": "16.03.2017",
-                "readDate": "26.02.2017"
-              },
-              "text": "En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension.",
-              "actions": {
-                "title": "Actions sur la communication",
-                "actions": [
-                  {
-                    "title": "Quittancer",
-                    "url": "#"
-                  }
-                ]
-              }
-            }
-        ],
-        "demandes": [
-            "@notification--demande",
-            {
-              "title": "Organisation d'une manifestation",
-              "messages": [
-                {
-                  "title": "Fournir une copie de votre carte d'identité."
-                }
-              ],
-              "tasks": null
-            }
+      "pageTitle": {
+        "text": "Tableau de bord"
+      },
+      "navigation": {
+        "title": "@nav-horizontal.title",
+        "items": [
+          {
+            "text": "Tableau de bord",
+            "title": null,
+            "url": "tableau-de-bord",
+            "active": true
+          },
+          {
+            "text": "Historique",
+            "title": null,
+            "url": "historique",
+            "active": null
+          },
+          {
+            "text": "Prestations",
+            "title": null,
+            "url": "prestations",
+            "active": null
+          },
+          {
+            "text": "Documents",
+            "title": null,
+            "url": "documents",
+            "active": null
+          },
+          {
+            "text": "Paramètres",
+            "title": null,
+            "url": "parametres",
+            "active": null
+          }
         ]
+      },
+      "communications": [
+        {
+          "title": "Message important !",
+          "url": "message-detail",
+          "meta": {
+            "receiveDate": "16.03.2017",
+            "readDate": "26.02.2017"
+          },
+          "text": "En date du 01.01.2017, une nouvelle charte graphique a été dévelopée dans le but de satisfaire le plus grand nombre de personne et de faciliter l'utilisation de l'espace sécurisé. Merci de votre compréhension.",
+          "actions": {
+            "title": "Actions sur la communication",
+            "actions": [
+              {
+                "title": "Quittancer",
+                "url": "#"
+              }
+            ]
+          }
+        }
+      ],
+      "demandes": [
+        "@notification--demande",
+        {
+          "title": "Organisation d'une manifestation",
+          "messages": [
+            {
+              "title": "Fournir une copie de votre carte d'identité."
+            }
+          ],
+          "tasks": null
+        }
+      ]
     }
 }

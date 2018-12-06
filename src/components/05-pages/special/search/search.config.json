@@ -1,7 +1,9 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Rechercher",
+    "pageTitle": {
+      "text": "Rechercher"
+    },
     "searchForm": {
       "heading": {
         "text": "Rechercher",
@@ -38,7 +40,9 @@
     {
       "name": "default",
       "context": {
-        "pageTitle": "Résultats de recherche pour \"vaud\"",
+        "pageTitle": {
+          "text": "Résultats de recherche pour \"vaud\""
+        },
         "searchForm": {
           "value": "vaud"
         }
@@ -56,7 +60,9 @@
     {
       "name": "no results",
       "context": {
-        "pageTitle":"Résultats de recherche pour \"tagadatsointsoin\"",
+        "pageTitle": {
+          "text": "Résultats de recherche pour \"tagadatsointsoin\""
+        },
         "results": false,
         "error": true,
         "searchForm": {

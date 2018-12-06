@@ -1,7 +1,9 @@
 {
   "status": "prototype",
   "context": {
-    "pageTitle": "Prestations",
+    "pageTitle": {
+      "text": "Prestations"
+    },
     "navigation": {
       "title": "@nav-horizontal.title",
       "items": [

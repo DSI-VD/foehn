@@ -1,7 +1,9 @@
 {
     "status": "ready",
     "context": {
-      "pageTitle": "Site officiel de l'État de Vaud",
+      "pageTitle": {
+        "text": "Site officiel de l'État de Vaud"
+      },
       "navOpen": true,
       "news": {
         "title": "Actualités",
@@ -20,24 +22,24 @@
                   "class": "@image--fluid.class",
                   "srcset": [
                     {
-                        "width": "320w",
-                        "file": "../../assets/img/picture-320x213.jpg"
+                      "width": "320w",
+                      "file": "../../assets/img/picture-320x213.jpg"
                     },
                     {
-                        "width": "540w",
-                        "file": "../../assets/img/picture-540x360.jpg"
+                      "width": "540w",
+                      "file": "../../assets/img/picture-540x360.jpg"
                     },
                     {
-                        "width": "720w",
-                        "file": "../../assets/img/picture-720x480.jpg"
+                      "width": "720w",
+                      "file": "../../assets/img/picture-720x480.jpg"
                     },
                     {
-                        "width": "960w",
-                        "file": "../../assets/img/picture-960x640.jpg"
+                      "width": "960w",
+                      "file": "../../assets/img/picture-960x640.jpg"
                     },
                     {
-                        "width": "1140w",
-                        "file": "../../assets/img/picture-1140x760.jpg"
+                      "width": "1140w",
+                      "file": "../../assets/img/picture-1140x760.jpg"
                     }
                   ]
                 }
@@ -77,11 +79,11 @@
             "item": "Grand Conseil",
             "url": "#"
           },{
-            "item": "Conseil d'État",
-            "url": "#"
+          "item": "Conseil d'État",
+          "url": "#"
           },{
-            "item": "Ordre Judiciaire",
-            "url": "#"
+          "item": "Ordre Judiciaire",
+          "url": "#"
           }
         ]
       },

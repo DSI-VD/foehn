@@ -2,7 +2,9 @@
   "context": "ready",
   "status": "prototype",
   "context": {
-    "pageTitle": "Documents",
+    "pageTitle": {
+      "text": "Documents"
+    },
     "navigation": {
       "title": "@nav-horizontal.title",
       "items": [

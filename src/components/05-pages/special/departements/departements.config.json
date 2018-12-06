@@ -1,7 +1,9 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Départements",
+    "pageTitle": {
+      "text": "Départements"
+    },
     "breadcrumb": [
       {
         "page": "vd.ch",

@@ -1,7 +1,9 @@
 {
   "context": "ready",
   "context": {
-    "pageTitle": "Détail de la demande",
+    "pageTitle": {
+      "text": "Détail de la demande"
+    },
     "navigation": {
       "title": "@nav-horizontal.title",
       "items": [

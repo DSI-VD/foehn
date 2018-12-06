@@ -1,7 +1,9 @@
 {
   "status": "ready",
   "context": {
-      "pageTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor.",
+    "pageTitle": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor."
+    },
     "breadcrumb": [
       {
         "page": "vd.ch",
@@ -16,8 +18,8 @@
       "item": "Communiqué du 1er novembre 2016",
       "url": "http://nicolas.eu"
     },{
-      "item": "Lorem ipsum dolor sit amet, consectetur",
-      "url": "http://nicolas.eu"
+    "item": "Lorem ipsum dolor sit amet, consectetur",
+    "url": "http://nicolas.eu"
     }],
     "medias": {
       "image": {

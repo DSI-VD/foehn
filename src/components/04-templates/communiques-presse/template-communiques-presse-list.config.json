@@ -2,7 +2,9 @@
   "status": "ready",
   "label": "Liste",
   "context": {
-    "pageTitle": "Communiqués de presse",
+    "pageTitle": {
+      "text": "Communiqués de presse"
+    },
     "breadcrumb": [{
       "page": "vd.ch",
       "url": "#"

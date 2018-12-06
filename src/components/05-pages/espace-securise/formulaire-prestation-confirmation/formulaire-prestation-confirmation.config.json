@@ -1,6 +1,8 @@
 {
     "status": "prototype",
     "context": {
-      "pageTitle": "Commander un extrait du registre des poursuites"
+      "pageTitle": {
+        "text": "Commander un extrait du registre des poursuites"
+      }
     }
 }

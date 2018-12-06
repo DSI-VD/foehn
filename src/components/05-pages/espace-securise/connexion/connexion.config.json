@@ -1,6 +1,8 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Connexion"
+    "pageTitle": {
+      "text": "Connexion"
+    }
   }
 }

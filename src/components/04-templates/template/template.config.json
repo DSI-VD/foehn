@@ -1,16 +1,24 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Template",
-    "breadcrumb": [{
-      "page": "vd.ch",
-      "url": "#"
+    "pageTitle": {
+      "text": "Template",
+      "styleModifier": "container mt-0"
     },
-    {
-      "page": "Parent page",
-      "url": "#"
-    }
-    ],
+    "breadcrumb": {
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Parent page",
+          "url": "#"
+        },
+        null,
+        null
+      ]
+    },
     "footer": {
       "updateTime": false
     }

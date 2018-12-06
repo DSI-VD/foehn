@@ -1,6 +1,8 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Hidden page title"
+    "pageTitle": {
+      "text": "Hidden page title"
+    }
   }
 }

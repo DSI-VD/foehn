@@ -1,7 +1,9 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Economie",
+    "pageTitle": {
+      "text": "Economie"
+    },
     "breadcrumb": [
       {
         "page": "vd.ch",

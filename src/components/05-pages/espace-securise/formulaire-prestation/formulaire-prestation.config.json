@@ -5,7 +5,9 @@
       "applicationTitle": "e-ACO : Détermination / modification des acomptes"
     },
     "pageTitle": {
-      "pageTitle": "Information personnelles",
+      "pageTitle": {
+        "text": "Information personnelles"
+      },
       "breadcrumb": [
         {
           "page": "vd.ch"

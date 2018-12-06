@@ -1,7 +1,9 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Page title",
+    "pageTitle": {
+      "text": "Page title"
+    },
     "prestation": {
       "label": "Commander",
       "url": "#"

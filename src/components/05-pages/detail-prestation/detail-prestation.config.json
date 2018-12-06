@@ -1,7 +1,9 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Extrait du registre des poursuites pour soi-même",
+    "pageTitle": {
+      "text": "Extrait du registre des poursuites pour soi-même"
+    },
     "prestation": {
       "label": "Commander",
       "url": "#"
