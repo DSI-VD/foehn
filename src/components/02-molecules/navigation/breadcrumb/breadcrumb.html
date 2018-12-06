@@ -1,4 +1,4 @@
-<nav>
+<nav{% if styleModifier %} class="{{ styleModifier }}"{% endif %}>
   <h2 class="sr-only">File d'Ariane</h2>
   <ol class="breadcrumb">
     {% for item in breadcrumb %}

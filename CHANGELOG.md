@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add `@tree-view` component
+- Add a style modifier in `@breadcrumb`
 
 ### Fix
 - Fix pagination in `@filter-list` component
