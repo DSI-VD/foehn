@@ -3,11 +3,11 @@
 {% include '@page-title-banner--light' %}
 
 <main class="container container-small vd-content" id="main">
-  <h1 class="text-center mb-3 mt-0">{{ pageTitle }}</h1>
+  {% render '@h1', pageTitle, true %}
   {% render '@publish-info' %}
 
   {% block main %}
-  {% include '@paragraph' %}
+    {% include '@paragraph' %}
   {% endblock %}
 
 </main>

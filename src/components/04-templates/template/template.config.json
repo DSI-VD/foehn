@@ -52,7 +52,8 @@
       "name": "news-detail",
       "context": {
         "pageTitle": {
-          "text": "News detail"
+          "text": "News detail",
+          "styleModifier": "text-center mb-3 mt-0"
         }
       }
     }
