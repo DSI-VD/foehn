@@ -1,27 +1,36 @@
 {% render '@header--default', header, true %}
 
-{% include '@page-title-banner' %}
+<div class="vd-bg-pattern-gray">
+  <div class="container">
+    {% render '@breadcrumb', breadcrumb, true %}
+  </div>
+</div>
 
-<main id="main" class="container mt-5 vd-content">
-  {% include '@page-title' %}
+<main id="main">
+  <div class="vd-bg-pattern-gray">
+    {% render '@h1', pageTitle, true %}
+  </div>
 
-  <div class="row">
-    <div class="col-md-8 vd-content-column">
-      {% block main %}
-      {% include '@paragraph' %}
-      {% endblock %}
-    </div>
-
-    <div class="col-md-4 vd-content-column vd-content">
-      {% render '@nav-side', navSide %}
-      <aside class="vd-text-md-small">
-        {% block aside %}
-        {% include '@paragraph' %}
+  <div class="container mt-5 vd-content">
+    <div class="row">
+      <div class="col-md-8 vd-content-column">
+        {% block main %}
+          {% include '@paragraph' %}
         {% endblock %}
-      </aside>
-    </div>
+      </div>
 
+      <div class="col-md-4 vd-content-column vd-content">
+        {% render '@nav-side', navSide %}
+        <aside class="vd-text-md-small">
+          {% block aside %}
+            {% include '@paragraph' %}
+          {% endblock %}
+        </aside>
+      </div>
+    </div>
   </div>
 </main>
 
 {% render '@footer', footer, true %}
+
+

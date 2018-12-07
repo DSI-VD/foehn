@@ -1,18 +1,19 @@
 {% render '@header--homepage', header, true %}
 
 <main id="main" class="container mt-3 mt-md-5 vd-content">
-  {% include '@page-title' %}
+
+  {% render '@h1', pageTitle, true %}
 
   <div class="row">
     <div class="col-md-8 vd-content-column">
       {% block main %}
-      {% include '@paragraph' %}
+        {% include '@paragraph' %}
       {% endblock %}
     </div>
 
     <aside class="col-md-4 vd-text-md-small vd-content-column">
       {% block aside %}
-      {% include '@paragraph' %}
+        {% include '@paragraph' %}
       {% endblock %}
     </aside>
 
@@ -23,7 +24,7 @@
 
 <div class="container vd-content-column vd-content">
   {% block contentSecondary %}
-  {% include '@paragraph' %}
+    {% include '@paragraph' %}
   {% endblock %}
 </div>
 

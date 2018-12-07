@@ -38,6 +38,23 @@
     {
       "name": "2 col nav",
       "label": "2 columns with side navigation"
+    },
+    {
+      "name": "homepage",
+      "context": {
+        "pageTitle": {
+          "text": "Homepage",
+          "styleModifier": "sr-only"
+        }
+      }
+    },
+    {
+      "name": "news-detail",
+      "context": {
+        "pageTitle": {
+          "text": "News detail"
+        }
+      }
     }
   ]
 }
