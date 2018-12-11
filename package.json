@@ -12,7 +12,6 @@
   "main": "dist/index.html",
   "license": "MIT",
   "publishConfig": {
-    "registry": "http://nexus.etat-de-vaud.ch/repository/npm-vd/",
     "access": "public"
   },
   "browserify-shim": {
