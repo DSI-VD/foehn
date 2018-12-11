@@ -2,6 +2,7 @@
   "name": "@dsivd/foehn",
   "version": "1.0.3",
   "author": "DSI VD <info.dsi@vd.ch>",
+  "homepage": "https://dsi-vd.github.io/foehn/",
   "repository": {
     "type": "git",
     "url": "ssh://git@bitbucket.etat-de-vaud.ch/cybsdk/foehn.git"
