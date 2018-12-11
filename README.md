@@ -84,6 +84,7 @@ The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 ```shell
 $ yarn version
 ```
+
 ## NPM
 
 ### Getting Foehn npm package
