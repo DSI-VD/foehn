@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `@tree-view` component
 
 ### Fix
+- Foehn is available on npmjs.com
+- The npm package has a README
+- `src` folder is included in the npm package
 - Fix pagination in `@filter-list` component
 - Upgrade some modules
 
