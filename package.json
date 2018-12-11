@@ -5,7 +5,7 @@
   "homepage": "https://dsi-vd.github.io/foehn/",
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.etat-de-vaud.ch/cybsdk/foehn.git"
+    "url": "https://github.com/DSI-VD/foehn"
   },
   "description": "Frontend pattern library for State of Vaud",
   "keywords": "frontend, css, html, js, styleguide, pattern, library, design, standard",
