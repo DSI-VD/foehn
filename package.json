@@ -22,9 +22,11 @@
     "defaults"
   ],
   "scripts": {
-    "start": "yarn && gulp dev",
+    "prestart": "yarn",
+    "start": "gulp dev",
     "build": "yarn && gulp build",
     "deploy": "yarn && gulp publish",
+    "prepublishOnly": "yarn && gulp build",
     "publish-version": "yarn build && npm publish --tag latest",
     "test-a11y": "./node_modules/.bin/pa11y-ci"
   },
