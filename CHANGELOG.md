@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fix
+- License is now Apache License 2.0
+
 ## [1.0.4] - 2018-12-11
 
 ### Added
