@@ -8,7 +8,7 @@
          {%- if labelHidden %} class="sr-only"{% endif -%}
          {%- if labelStyleModifier %} class="{{ labelStyleModifier }}" {%- endif -%}>
     {{ label }}
-      {%- if required %} <span aria-hidden="true">(obligatoire)</span>{% endif %}
+      {%- if optional %} <span aria-hidden="true">(facultatif)</span>{% endif %}
   </label>
   {%- if validation.text %}
   <div class="form-control-feedback">{{ validation.text }}</div>
@@ -24,7 +24,7 @@
          id="{{ id }}"
          name="{{ name }}"
          value="{% if value %}{{ value }}{% endif %}"
-         {%- if required %} required aria-required="true"{% endif %}
+         {%- if not optional %} required aria-required="true"{% endif %}
          {%- if helpText %} aria-describedby="{{ id }}Help"{% endif %}
          {%- if pattern %} pattern="{{ pattern }}"{% endif %}
          {%- if min %} min="{{ min }}"{% endif %}

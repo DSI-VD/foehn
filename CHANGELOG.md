@@ -5,8 +5,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Inputs are required by default to be GDPR compliant
+
+### Added
+- Add `@input-optional` component
+
 ### Fix
 - Fix link color to be compliant with WCAG AA
+
+### Removed
+- Removed `@input-reuired`. Input are required by default.
 
 ## [1.0.4] - 2018-12-11
 

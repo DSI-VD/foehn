@@ -36,6 +36,11 @@ Les label doivent être alignés au-dessus du champs texte auxquel elles se
 réfèrent. Ils devraient être courts, directs et commencer par une majuscule.
 N'utilisez pas de deux-points à la fin des étiquettes.  
 
+### Champs requis
+
+Demander uniquement les informations nécéssaire au traitement de la trasnsaction.
+Par défaut les champs sont requis.
+
 ### la taille des champs texte doit être adapté
 
 Aidez les utilisateurs à comprendre ce qu'ils doivent entrer en faisant en sorte
