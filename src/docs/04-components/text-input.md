@@ -38,7 +38,7 @@ N'utilisez pas de deux-points à la fin des étiquettes.
 
 ### Champs requis
 
-Demander uniquement les informations nécéssaire au traitement de la trasnsaction.
+Demandez uniquement les informations nécessaire au traitement de la prestation.
 Par défaut les champs sont requis.
 
 ### la taille des champs texte doit être adapté
