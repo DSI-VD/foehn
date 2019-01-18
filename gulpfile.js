@@ -43,8 +43,6 @@ const pkg = require('./package.json');
 const banner = ['/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
     ' * @version v<%= pkg.version %>',
-    ' * Copyright 2019 Etat de Vaud - Direction des systèmes d\'information',
-    ' * See http://www.apache.org/licenses/LICENSE-2.0 for license information',
     ' */',
     ''].join('\n');
 

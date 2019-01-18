@@ -10,7 +10,7 @@
   "description": "Frontend pattern library for State of Vaud",
   "keywords": "frontend, css, html, js, styleguide, pattern, library, design, standard",
   "main": "dist/index.html",
-  "license": "Apache 2.0",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
