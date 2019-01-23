@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add `@input-optional` component
+- Add documentation about LPrD law
 
 ### Fix
 - Fix link color to be compliant with WCAG AA
