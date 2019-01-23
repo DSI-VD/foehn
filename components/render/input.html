@@ -10,23 +10,23 @@
          type="text"
          id="testInput"
          name="testInput"
-         value="">
+         value="" required aria-required="true">
 </div>
 <!-- End: @input--default -->
 
-<!-- Start: @input--required -->
+<!-- Start: @input--optional -->
 <div class="form-group">
   <label for="testInput">
-    Label <span aria-hidden="true">(obligatoire)</span>
+    Label <span aria-hidden="true">(facultatif)</span>
   </label>
   
   <input class="form-control"
          type="text"
          id="testInput"
          name="testInput"
-         value="" required aria-required="true">
+         value="">
 </div>
-<!-- End: @input--required -->
+<!-- End: @input--optional -->
 
 <!-- Start: @input--disabled -->
 <div class="form-group">
@@ -38,7 +38,7 @@
          type="text"
          id="testInput"
          name="testInput"
-         value="" disabled>
+         value="" required aria-required="true" disabled>
 </div>
 <!-- End: @input--disabled -->
 
@@ -55,7 +55,7 @@
          type="email"
          id="testInput"
          name="testInput"
-         value="" aria-describedby="testInputHelp">
+         value="" required aria-required="true" aria-describedby="testInputHelp">
 </div>
 <!-- End: @input--help-text -->
 
@@ -74,7 +74,7 @@
          type="email"
          id="testInput"
          name="testInput"
-         value="" aria-describedby="testInputHelp" aria-invalid="true">
+         value="" required aria-required="true" aria-describedby="testInputHelp" aria-invalid="true">
 </div>
 <!-- End: @input--validation-danger -->
 
@@ -90,7 +90,7 @@
          type="text"
          id="testInput"
          name="testInput"
-         value="">
+         value="" required aria-required="true">
 </div>
 <!-- End: @input--validation-success -->
 
@@ -104,7 +104,7 @@
          type="email"
          id="emailInput"
          name="testInput"
-         value="">
+         value="" required aria-required="true">
 </div>
 <!-- End: @input--email -->
 
@@ -118,7 +118,7 @@
          type="number"
          id="numberInput"
          name="testInput"
-         value="" pattern="[0-9]*" min="1" max="99" size="2">
+         value="" required aria-required="true" pattern="[0-9]*" min="1" max="99" size="2">
 </div>
 <!-- End: @input--number -->
 
@@ -132,7 +132,7 @@
          type="password"
          id="passwordInput"
          name="testInput"
-         value="">
+         value="" required aria-required="true">
 </div>
 <!-- End: @input--password -->
 
@@ -146,7 +146,7 @@
          type="date"
          id="date"
          name="testInput"
-         value="">
+         value="" required aria-required="true">
 </div>
 <!-- End: @input--date -->
 
@@ -160,7 +160,7 @@
          type="file"
          id="fileInput"
          name="testInput"
-         value="">
+         value="" required aria-required="true">
 </div>
 <!-- End: @input--file -->
 

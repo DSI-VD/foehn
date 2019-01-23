@@ -7,7 +7,7 @@
 
   <div class="form-group">
   <label for="Enseigne">
-    Nom de l'enseigne <span aria-hidden="true">(obligatoire)</span>
+    Nom de l'enseigne
   </label>
   
   <input class="form-control"
@@ -39,7 +39,7 @@
          type="text"
          id="street"
          name="testInput"
-         value="">
+         value="" required aria-required="true">
 </div>
 
 
@@ -52,7 +52,7 @@
          type="text"
          id="streetNumber"
          name="streetNumber"
-         value="" pattern="[0-9]*">
+         value="" required aria-required="true" pattern="[0-9]*">
 </div>
 
 
@@ -65,7 +65,7 @@
          type="text"
          id="postalCode"
          name="postalCode"
-         value="" pattern="[0-9]*">
+         value="" required aria-required="true" pattern="[0-9]*">
 </div>
 
 
@@ -414,7 +414,7 @@
          type="text"
          id="responsible"
          name="responsible"
-         value="">
+         value="" required aria-required="true">
 </div>
 
 

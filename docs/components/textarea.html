@@ -82,7 +82,7 @@
     <div class="foehn-example">
 <div class="form-group">
   <label for="testTextarea">
-    Pouvez-vous fournir plus de détails ?
+    Pouvez-vous fournir plus de détails ? <span aria-hidden="true">(facultatif)</span>
   </label><small id="testTextareaHelp" class="form-text text-muted">Ne saisissez pas d’informations financières, comme des numéros de
       comptes banquaire ou de carte de crédit.</small><textarea class="form-control" id="testTextarea" aria-describedby="testTextareaHelp"></textarea>
 </div>
@@ -100,7 +100,7 @@ texte</a>.</p>
 <div class="foehn-example">
 <div class="form-group">
   <label for="testTextarea">
-    Pouvez-vous fournir plus de détails ?
+    Pouvez-vous fournir plus de détails ? <span aria-hidden="true">(facultatif)</span>
   </label><small id="testTextareaHelp" class="form-text text-muted">Ne saisissez pas d’informations financières, comme des numéros de
       comptes banquaire ou de carte de crédit.</small><textarea class="form-control" id="testTextarea" aria-describedby="testTextareaHelp"></textarea>
 </div>
@@ -108,7 +108,7 @@ texte</a>.</p>
 <p></div></p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"testTextarea"</span>&gt;</span>
-    Pouvez-vous fournir plus de détails ?
+    Pouvez-vous fournir plus de détails ? <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>(facultatif)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testTextareaHelp"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text text-muted"</span>&gt;</span>Ne saisissez pas d'informations financières, comme des numéros de
       comptes banquaire ou de carte de crédit.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testTextarea"</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"testTextareaHelp"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -126,7 +126,7 @@ de texte en renseignant l’atribut <code>rows</code>.</p>
 <div class="foehn-example">
 <div class="form-group">
   <label for="testTextarea">
-    Pouvez-vous fournir plus de détails ?
+    Pouvez-vous fournir plus de détails ? <span aria-hidden="true">(facultatif)</span>
   </label><small id="testTextareaHelp" class="form-text text-muted">Ne saisissez pas d’informations financières, comme des numéros de
       comptes banquaire ou de carte de crédit.</small><textarea class="form-control" id="testTextarea" rows="10" aria-describedby="testTextareaHelp"></textarea>
 </div>
@@ -134,7 +134,7 @@ de texte en renseignant l’atribut <code>rows</code>.</p>
 <p></div></p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"testTextarea"</span>&gt;</span>
-    Pouvez-vous fournir plus de détails ?
+    Pouvez-vous fournir plus de détails ? <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>(facultatif)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testTextareaHelp"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text text-muted"</span>&gt;</span>Ne saisissez pas d'informations financières, comme des numéros de
       comptes banquaire ou de carte de crédit.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testTextarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"10"</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"testTextareaHelp"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -5690,6 +5690,30 @@ champs de saisie texte, vous ne devriez donc pas les empêcher de le faire.</p>
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../get-started/accessibility" data-pjax>
                 <span>Accessibilité</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #32edff;" title="Need review"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../get-started/demander-des-informations" data-pjax>
+                <span>Demander des informations</span>
                 
 
 <div class="Status Status--unlabelled">
