@@ -31,7 +31,7 @@ dans une loi.
 En cas d’absence de base légale, la personne doit avoir consenti au traitement
 de ses données.
 
-#### Quelles sont les données sensibles
+#### Quelles sont les données sensibles ?
 
 > Donnée sensible, toute donnée personnelle se rapportant :
 > - aux opinions ou activités religieuses, philosophiques, politiques ou syndicales, ainsi qu'à une origine ethnique ;
