@@ -55,7 +55,7 @@ Build `./src` to `./dist`
 $ yarn build
 ```
 
-## Test accessibilit
+## Test accessibility
 
 To test basic accessibility issues using [Pa11y](http://pa11y.org/).
 
