@@ -37,7 +37,7 @@ de ses données.
 > - aux opinions ou activités religieuses, philosophiques, politiques ou syndicales, ainsi qu'à une origine ethnique ;
 > - à la sphère intime de la personne, en particulier à son état psychique, mental ou physique ;
 > aux mesures et aides individuelles découlant des législations sociales ;
-> aux poursuites ou sanctions pénales et administratives.
+> aux poursuites ou sanctions pénales et administratives.  
 > &mdash; Art. 4 al. 1 ch. 2 Définition, [Loi sur la protection des données personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01)
 
 ### Article de loi
