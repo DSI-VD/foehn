@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2019-02-07
+
 ### Changed
 - Inputs are required by default to be GDPR compliant
 
@@ -1834,7 +1836,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.4...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.5...HEAD
+[1.0.5]: https://github.com/DSI-VD/foehn/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/DSI-VD/foehn/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/DSI-VD/foehn/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/DSI-VD/foehn/compare/v1.0.1...v1.0.2
