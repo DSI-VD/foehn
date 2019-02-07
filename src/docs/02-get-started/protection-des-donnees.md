@@ -3,13 +3,14 @@ title: Protection des données
 label: Protection des données
 status: review
 ---
-L’État de Vaud est soumis à la [Loi sur la protection des données
+L'administration cantonale vaudoise est soumise à la [Loi sur la protection des
+données
 personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01).
 De ce fait, il y a quelques règles à suivre lorsque des informations sur les
-utilisateurs sont collectées.
+utilisateurs (usagers, collaborateurs, etc.) sont collectées.
 
 Les principes cités ci dessous ne sont pas exhaustifs. Pour de plus amples
-information, veuillez consulter la [Loi sur la protection des données
+informations, veuillez consulter la [Loi sur la protection des données
 personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01)
 ou en cas de questions contacter la [Préposée à la protection des données et à
 l'information](https://www.vd.ch/toutes-les-autorites/preposee-a-la-protection-des-donnees-et-a-linformation/).
@@ -23,11 +24,21 @@ doit être nécessaire à l'accomplissement d'une tâche publique.
 
 ### Données sensibles
 
-Le traitement des données doit être prévu par une loi et servir à
-l’accomplissent d'une tâche publique clairement définie.
+Le traitement des données doit être expressément prévu par une loi ou être
+absolument nécessaire à l’accomplissent d’une tâche légale clairement définie
+dans une loi.
 
-En cas d'absence de base l'égale, la personne doit avoir consenti au traitement
+En cas d’absence de base légale, la personne doit avoir consenti au traitement
 de ses données.
+
+#### Quelles sont les données sensibles
+
+> Donnée sensible, toute donnée personnelle se rapportant :
+> - aux opinions ou activités religieuses, philosophiques, politiques ou syndicales, ainsi qu'à une origine ethnique ;
+> - à la sphère intime de la personne, en particulier à son état psychique, mental ou physique ;
+> aux mesures et aides individuelles découlant des législations sociales ;
+> aux poursuites ou sanctions pénales et administratives.
+> &mdash; Art. 4 al. 1 ch. 2 Définition, [Loi sur la protection des données personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01)
 
 ### Article de loi
 
@@ -84,13 +95,13 @@ Les personnes concernées doivent savoir que des données les concernant sont
 traitées. De plus, elles doivent savoir dans quel but les données sont
 collectées.
 
-Lorsque des données sont collectés, il faut informer:
+Lorsque des données sont collectées, il faut informer sur :
 
 - L'identité du responsable de traitement (le service et non la DSI)
 - A quoi vont servir ces données
-- A qui les données vont être transmises (y compris les prestataires)
-- Quelles sont les possibilités pour l'usager d'accéder à ses propres données
-- Quelles sont les conséquences en cas de refus de fournir des données
+- A qui les données vont être transmises lorsqu’il est possible de l’anticiper (y compris les prestataires)
+- Le fait que l’usager puisse accéder à ses propres données 
+- Les conséquences en cas de refus de fournir des données
 
 ### Articles de loi
 
@@ -104,7 +115,8 @@ Lorsque des données sont collectés, il faut informer:
 > c. au cas où la communication des données est envisagée, les catégories des destinataires des données ;  
 > d. le droit d'accéder aux données ;  
 > e. la possibilité de refuser de fournir les données requises et les conséquences d'un tel refus.  
-> &mdash; Art. 13 Transparence, [Loi sur la protection des données personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01)
+> Si les données ne sont pas collectées auprès de la personne concernée, le responsable du traitement doit fournir par écrit à cette dernière les informations énumérées à l'alinéa précédent, au plus tard lors de l'enregistrement des données, à moins que cela ne s'avère impossible, ne nécessite des efforts disproportionnés ou que l'enregistrement ou la communication ne soient expressément prévus par la loi.  
+> &mdash; Art. 13 Devoir d’informer, [Loi sur la protection des données personnelles](https://prestations.vd.ch/pub/blv-publication/actes/consolide/172.65?key=1548146253812&id=cf9df545-13f7-4106-a95b-9b3ab8fa8b01)
 
 ---
 
@@ -112,14 +124,19 @@ Lorsque des données sont collectés, il faut informer:
 
 Voici quelques exemples à adapter au besoin:
 
-- Les données transmises à l'administration par le biais de ce formulaire ont
-  pour seule finalité de permettre la réalisation "nom de la prestation" (ex. :
-  inscription à la conférence, demander une autorisation, etc.)
-- Les données collectées ne seront en aucun cas vendues ou transmises à des
-  tiers. (art.6 Linfo)
-- Les données demandées se fondent sur la base légale (mettre cette phrase
-  uniquement s'il existe une base légale métier)
+- Les données transmises à l’administration par le biais de ce formulaire seront
+  utilisées pour les finalités suivantes : « indiquer les finalités, en principe
+  uniquement la prestation demandée » (ex. : inscription à la conférence,
+  demander une autorisation, etc.)
+- Les données collectées ne seront en aucun cas transmises à des tiers
+- Les données collectées peuvent être transmises à _"intégrer le nom des entités
+  éventuellement destinataires des données"_.
+- La collecte des données se fonde sur la base légale (mettre cette phrase
+  uniquement s’il existe une base légale métier)
 - Les données ne sont conservées que le temps nécessaire à la réalisation de la
-  demande.
-- En cas de demande sur les données transmises, vous pouvez vous adresser au
-  (nom du Service qui a fait la demande de formulaire)
+  demande (pour info, en pratique, elles sont gardées plus longtemps, notamment
+  quand il y a des délais de prescriptions).
+- Pour accéder à vos propres données, ou obtenir de plus amples renseignements
+  sur les transmissions de données (données transmises, quels cas sont
+  concernés, etc.), vous pouvez vous adresser au _"nom du Service qui a fait la
+  demande de formulaire"_
