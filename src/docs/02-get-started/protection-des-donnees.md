@@ -1,7 +1,7 @@
 ---
 title: Protection des données
 label: Protection des données
-status: review
+status: ready
 ---
 L'administration cantonale vaudoise est soumise à la [Loi sur la protection des
 données
