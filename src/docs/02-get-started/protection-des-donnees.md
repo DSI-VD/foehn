@@ -135,8 +135,7 @@ Voici quelques exemples à adapter au besoin:
 - La collecte des données se fonde sur la base légale (mettre cette phrase
   uniquement s’il existe une base légale métier)
 - Les données ne sont conservées que le temps nécessaire à la réalisation de la
-  demande (pour info, en pratique, elles sont gardées plus longtemps, notamment
-  quand il y a des délais de prescriptions).
+  demande.
 - Pour accéder à vos propres données, ou obtenir de plus amples renseignements
   sur les transmissions de données (données transmises, quels cas sont
   concernés, etc.), vous pouvez vous adresser au _"nom du Service qui a fait la
