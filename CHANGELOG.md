@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fix
+- Fix deprecated `text-decoration-skip: ink;` CSS property
+
 ## [1.0.6] - 2019-02-07
 
 ### Fix
