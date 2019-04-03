@@ -3,9 +3,9 @@
 
   <form action="formulaire-prestation-confirmation">
 
-    {% render '@input--default', {label: "Nom", id: "name", required: true}, true %}
+    {% render '@input--default', {label: "Nom", id: "name"}, true %}
 
-    {% render '@input--default', {label: "Prénom", id: "firstname", required: true}, true %}
+    {% render '@input--default', {label: "Prénom", id: "firstname"}, true %}
 
     {% render '@dates' %}
 
@@ -19,9 +19,9 @@
 
     {% render '@datalist' %}
 
-    {% render '@input--default', {label: "Adresse", id:"address", required: true}, true %}
+    {% render '@input--default', {label: "Adresse", id:"address"}, true %}
 
-    {% render '@input--email', {id: "email", required: true}, true %}
+    {% render '@input--email', {id: "email"}, true %}
 
     <fieldset>
       <legend>Radio</legend>

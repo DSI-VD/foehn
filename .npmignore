@@ -1,4 +1,3 @@
-*.*
-src/
+.github/
+.publish/
 tmp/
-!dist/assets/**

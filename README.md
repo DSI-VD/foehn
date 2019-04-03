@@ -1,14 +1,19 @@
 # Fœhn
 
-Fœhn (*føn*) is the design system build for [the website of the State of Vaud](http://www.vd.ch/).
+Fœhn (*føn*) is the design system build for [the website of the State of
+Vaud](http://www.vd.ch/).
 
 [Take a look at the documentation](http://dsi-vd.github.io/foehn/).
 
-[Fractal](http://fractal.build/) and [Bootstrap 4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
+[Fractal](http://fractal.build/) and [Bootstrap
+4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
 
 ## Changelog
 
-Upgrading? Please read our [CHANGELOG](https://github.com/DSI-VD/foehn/blob/master/CHANGELOG.md) to learn what changes to expect in the latest version, whether that's new features, bug fixes, changes, or whatever else.
+Upgrading? Please read our
+[CHANGELOG](https://github.com/DSI-VD/foehn/blob/master/CHANGELOG.md) to learn
+what changes to expect in the latest version, whether that's new features, bug
+fixes, changes, or whatever else.
 
 ## Run locally
 
@@ -50,7 +55,7 @@ Build `./src` to `./dist`
 $ yarn build
 ```
 
-## Test accessibilit
+## Test accessibility
 
 To test basic accessibility issues using [Pa11y](http://pa11y.org/).
 
@@ -71,7 +76,8 @@ The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 
 ## New version
 
-1. Make sure, the `CHANGELOG.md` is up to date. If not, update it and commit the changes.
+1. Make sure, the `CHANGELOG.md` is up to date. If not, update it and commit the
+   changes.
 1. Run the [`$ yarn version`](https://yarnpkg.com/fr/docs/cli/version) command
    to create a new version of the package. (It also create the tag.)
 
@@ -79,17 +85,22 @@ The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
 $ yarn version
 ```
 
-## Publish on the npm registry
+## NPM
+
+### Getting Foehn npm package
+
+[Foehn is available on the npmjs
+registry](https://www.npmjs.com/package/@dsivd/foehn).
+
+### Publish on the npm registry
 
 The following command will build the code and publish the latest version on the
 registry you have set in your [NPM config](https://docs.npmjs.com/cli/config).
 
 ```shell
-$ yarn publish-version
+$ yarn publish --tag latest
 ```
 
-If you need to publish a specific version, use `$ npm run build && npm publish --tag <tag>` to build the code and publish [a specific tag](https://docs.npmjs.com/cli/publish).
-
-#### Publish on Nexus (for internal use)
-
-Make sure you have [set Nexus as your registry](https://portail.etat-de-vaud.ch/outils/dsiwiki/x/HABSGw).
+If you need to publish a specific version, use `$ yarn  publish --tag <tag>` to
+build the code and publish [a specific
+tag](https://yarnpkg.com/en/docs/cli/publish#toc-yarn-publish-tag).

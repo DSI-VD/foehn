@@ -3,7 +3,7 @@
          {%- if labelHidden %} class="sr-only"{% endif %}
          {%- if labelStyleModifier %} class="{{ labelStyleModifier }}" {% endif %}>
     {{ label }}
-    {%- if required %} <span aria-hidden="true">(requis)</span>{% endif %}
+    {%- if not optional %} <span aria-hidden="true">(facultatif)</span>{% endif %}
   </label>
   {%- if validation.text %}<div class="form-control-feedback">{{ validation.text }}</div>{% endif -%}
   {%- if helpText %}<small id="{{ id }}Help" class="form-text text-muted">{{ helpText }}</small>{% endif -%}

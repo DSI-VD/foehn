@@ -1,17 +1,18 @@
 {
   "name": "@dsivd/foehn",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "author": "DSI VD <info.dsi@vd.ch>",
+  "homepage": "https://dsi-vd.github.io/foehn/",
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.etat-de-vaud.ch/cybsdk/foehn.git"
+    "url": "https://github.com/DSI-VD/foehn"
   },
   "description": "Frontend pattern library for State of Vaud",
   "keywords": "frontend, css, html, js, styleguide, pattern, library, design, standard",
   "main": "dist/index.html",
   "license": "MIT",
   "publishConfig": {
-    "registry": "http://nexus.etat-de-vaud.ch/repository/npm-vd/"
+    "access": "public"
   },
   "browserify-shim": {
     "jquery": "global:jQuery"
@@ -20,11 +21,13 @@
     "defaults"
   ],
   "scripts": {
-    "start": "yarn && gulp dev",
+    "prestart": "yarn",
+    "start": "gulp dev",
     "build": "yarn && gulp build",
     "deploy": "yarn && gulp publish",
+    "prepublishOnly": "yarn && gulp build",
     "publish-version": "yarn build && npm publish --tag latest",
-    "test-a11y": "./node_modules/.bin/pa11y-ci"
+    "test-a11y": "./node_modules/.bin/pa11y-ci --reporter html"
   },
   "engines": {
     "node": ">=6.7.0",
@@ -55,6 +58,7 @@
     "gulp-xo": "^0.19.0",
     "jquery": "^3.3.1",
     "pa11y-ci": "^2.1.1",
+    "pa11y-reporter-html": "^1.0.0",
     "popper.js": "^1.14.4",
     "postcss-prefixwrap": "^1.3.0",
     "stylelint": "^9.4.0",

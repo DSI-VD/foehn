@@ -10,9 +10,9 @@
     },
     "variants": [
       {
-        "name": "required",
+        "name": "optional",
         "context": {
-          "required": true
+          "optional": true
         }
       },
       {

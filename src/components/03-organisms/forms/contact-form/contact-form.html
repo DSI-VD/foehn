@@ -1,15 +1,15 @@
 <form>
-  {% render '@input--default', {label: "Prénom", id: "firstname", required: true}, true %}
+  {% render '@input--default', {label: "Prénom", id: "firstname"}, true %}
 
-  {% render '@input--default', {label: "Nom", id: "name", required: true}, true %}
+  {% render '@input--default', {label: "Nom", id: "name"}, true %}
 
-  {% render '@input--email', {id: "email", required: true}, true %}
+  {% render '@input--email', {id: "email"}, true %}
 
-  {% render '@input--default', {label: "Téléphone", id: "phone", required: true}, true %}
+  {% render '@input--default', {label: "Téléphone", id: "phone"}, true %}
 
-  {% render '@input--default', {label: "Sujet", id: "subject", required: true}, true %}
+  {% render '@input--default', {label: "Sujet", id: "subject"}, true %}
 
-  {% render '@textarea', {label: "Message", id: "message", required: true} %}
+  {% render '@textarea', {label: "Message", id: "message"} %}
 
   <div class="form-group">
     {% render '@submit' %}

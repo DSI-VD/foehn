@@ -6,7 +6,7 @@
  * 3. Visited style
  */
 a {
-  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
 
   &.h1,
   &.h2,

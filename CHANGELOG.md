@@ -5,11 +5,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fix
+- Fix deprecated `text-decoration-skip: ink;` CSS property
+
+## [1.0.6] - 2019-02-07
+
+### Fix
+- typo
+
+## [1.0.5] - 2019-02-07
+
+### Changed
+- Inputs are required by default to be GDPR compliant
+
+### Added
+- Add `@input-optional` component
+- Add documentation about LPrD law
+
+### Fix
+- Fix link color to be compliant with WCAG AA
+
+### Removed
+- Removed `@input-reuired`. Input are required by default.
+
+## [1.0.4] - 2018-12-11
+
 ### Added
 - Add `@tree-view` component
 - Add a style modifier in `@breadcrumb`
 
 ### Fix
+- Foehn is available on npmjs.com
+- The npm package has a README
+- `src` folder is included in the npm package
 - Fix pagination in `@filter-list` component
 - Upgrade some modules
 
@@ -1817,7 +1845,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.6...HEAD
+[1.0.6]: https://github.com/DSI-VD/foehn/compare/v1.0.5...v1.0.6
+[1.0.5]: https://github.com/DSI-VD/foehn/compare/v1.0.4...v1.0.5
+[1.0.4]: https://github.com/DSI-VD/foehn/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/DSI-VD/foehn/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/DSI-VD/foehn/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/DSI-VD/foehn/compare/v1.0.0...v1.0.1
