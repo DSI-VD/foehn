@@ -2,18 +2,23 @@
   "status": "ready",
   "context": {
     "pageTitle": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor.",
+      "styleModifier": "text-center mb-3 mt-0"
     },
-    "breadcrumb": [
-      {
-        "page": "vd.ch",
-        "url": "#"
-      },
-      {
-        "page": "Actualites",
-        "url": "news-list"
-      }
-    ],
+    "breadcrumb": {
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Actualites",
+          "url": "news-list"
+        },
+        null,
+        null
+      ]
+    },
     "listLinks": [{
       "item": "Communiqué du 1er novembre 2016",
       "url": "http://nicolas.eu"
