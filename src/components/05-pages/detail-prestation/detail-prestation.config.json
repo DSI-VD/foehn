@@ -2,24 +2,31 @@
   "status": "ready",
   "context": {
     "pageTitle": {
-      "text": "Extrait du registre des poursuites pour soi-même"
+      "text": "Extrait du registre des poursuites pour soi-même",
+      "styleModifier": "container mt-0"
     },
     "prestation": {
       "label": "Commander",
       "url": "#"
     },
-    "breadcrumb": [
-      {
-        "page": "vd.ch",
-        "url": "#"
-      },{
-      "page": "Économie",
-      "url": "#"
-      },{
-      "page": "Poursuites et faillites",
-      "url": "#"
-      }
-    ],
+    "breadcrumb": {
+      "styleModifier": "pb-1",
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Économie",
+          "url": "#"
+        },
+        {
+          "page": "Poursuites et faillites",
+          "url": "#"
+        },
+        null
+      ]
+    },
     "footer":{
       "updateTime": true
     },

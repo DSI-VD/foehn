@@ -1,25 +1,31 @@
 {
   "status": "ready",
   "context": {
-    "pageTitle": "Ammoniac",
-    "breadcrumb": [
-      {
-        "page": "vd.ch",
-        "url": "#"
-      },
-      {
-        "page": "Environnement",
-        "url": "#"
-      },
-      {
-        "page": "Air",
-        "url": "#"
-      },
-      {
-        "page": "Polluants atmosphériques",
-        "url": "#"
-      }
-    ],
+    "pageTitle": {
+      "text": "Ammoniac",
+      "styleModifier": "container mt-0"
+    },
+    "breadcrumb": {
+      "styleModifier": "pb-1",
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Environnement",
+          "url": "#"
+        },
+        {
+          "page": "Air",
+          "url": "#"
+        },
+        {
+          "page": "Polluants atmosphériques",
+          "url": "#"
+        }
+      ]
+    },
     "download": {
       "listIcon": {
         "items": [

@@ -2,20 +2,27 @@
   "status": "ready",
   "context": {
     "pageTitle": {
-      "text": "Direction générale de l'environnement (DGE)"
+      "text": "Direction générale de l'environnement (DGE)",
+      "styleModifier": "container mt-0"
     },
-    "breadcrumb": [
-      {
-        "page": "vd.ch",
-        "url": "#"
-      }, {
-      "page": "Autorités",
-      "url": "#"
-      }, {
-      "page": "Département du territoire et de l'environnement",
-      "url": "#"
-      }
-    ],
+    "breadcrumb": {
+      "styleModifier": "pb-1",
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Autorités",
+          "url": "#"
+        },
+        {
+          "page": "Département du territoire et de l'environnement",
+          "url": "#"
+        },
+        null
+      ]
+    },
     "indexMenu": {
       "listLinks": [
         {

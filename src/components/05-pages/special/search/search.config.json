@@ -2,7 +2,11 @@
   "status": "ready",
   "context": {
     "pageTitle": {
-      "text": "Rechercher"
+      "text": "Rechercher",
+      "styleModifier": "container mt-0"
+    },
+    "breadcrumb": {
+      "styleModifier": "pb-1"
     },
     "searchForm": {
       "heading": {

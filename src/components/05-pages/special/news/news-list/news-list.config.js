@@ -55,13 +55,22 @@ for (let i = 0; i < teaserItemCount; i += 1) {
 module.exports = {
     status: 'ready',
     context: {
-        pageTitle: 'Toutes les actualités',
-        breadcrumb: [
-            {
-                page: 'vd.ch',
-                url: '#'
-            }
-        ],
+        pageTitle: {
+            text: 'Toutes les actualités',
+            styleModifier: 'container mt-0'
+        },
+        breadcrumb: {
+            styleModifier: 'pb-1',
+            breadcrumb: [
+                {
+                    page: 'vd.ch',
+                    url: '#'
+                },
+                null,
+                null,
+                null
+            ]
+        },
         teasers: teaserItemData,
         searchForm: {
             heading: {
@@ -76,45 +85,54 @@ module.exports = {
         {
             name: 'activities',
             context: {
-                pageTitle: 'Toutes les activités',
-                breadcrumb: [
-                    {
-                        page: 'vd.ch',
-                        url: '#'
-                    },
-                    {
-                        page: 'Autorités',
-                        url: '#'
-                    },
-                    {
-                        page: 'Service des automobiles et de la navigation',
-                        url: '#'
-                    }
-                ]
+                pageTitle: {
+                    text: 'Toutes les activités'
+                },
+                breadcrumb: {
+                    breadcrumb: [
+                        {
+                            page: 'vd.ch',
+                            url: '#'
+                        },
+                        {
+                            page: 'Autorités',
+                            url: '#'
+                        },
+                        {
+                            page: 'Service des automobiles et de la navigation',
+                            url: '#'
+                        },
+                        null
+                    ]
+                }
             }
         },
         {
             name: 'categories',
             context: {
-                pageTitle: 'Categorie: Agriculture',
-                breadcrumb: [
-                    {
-                        page: 'vd.ch',
-                        url: '#'
-                    },
-                    {
-                        page: 'Autorités',
-                        url: '#'
-                    },
-                    {
-                        page: 'Service des automobiles et de la navigation',
-                        url: '#'
-                    },
-                    {
-                        page: 'Actualité',
-                        url: '#'
-                    }
-                ]
+                pageTitle: {
+                    text: 'Categorie: Agriculture'
+                },
+                breadcrumb: {
+                    breadcrumb: [
+                        {
+                            page: 'vd.ch',
+                            url: '#'
+                        },
+                        {
+                            page: 'Autorités',
+                            url: '#'
+                        },
+                        {
+                            page: 'Service des automobiles et de la navigation',
+                            url: '#'
+                        },
+                        {
+                            page: 'Actualité',
+                            url: '#'
+                        }
+                    ]
+                }
             }
         }
     ]

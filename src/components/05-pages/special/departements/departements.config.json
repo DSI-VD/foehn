@@ -2,14 +2,21 @@
   "status": "ready",
   "context": {
     "pageTitle": {
-      "text": "Départements"
+      "text": "Départements",
+      "styleModifier": "container mt-0"
     },
-    "breadcrumb": [
-      {
-        "page": "vd.ch",
-        "url": "#"
-      }
-    ],
+    "breadcrumb": {
+      "styleModifier": "pb-1",
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        null,
+        null,
+        null
+      ]
+    },
     "buttonTilesTop": {
       "items": [
         {

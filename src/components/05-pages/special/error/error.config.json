@@ -6,7 +6,20 @@
       "label": "404",
       "context": {
         "pageTitle": {
-          "text": "Page non trouvée"
+          "text": "Page non trouvée",
+          "styleModifier": "container mt-0"
+        },
+        "breadcrumb": {
+          "styleModifier": "pb-1",
+          "breadcrumb": [
+            {
+              "page": "vd.ch",
+              "url": "#"
+            },
+            null,
+            null,
+            null
+          ]
         },
         "content": "<p>Impossible d\u2019afficher la page que vous voulez consulter. Vous avez sans doute saisi une mauvaise adresse (URL), le document n\u2019existe pas ou son nom a \u00E9t\u00E9 modifi\u00E9.<\/p>\r\n  <p>Vous pouvez utiliser <a href=\"#\">la recherche<\/a> ou <a href=\"#\">naviguer depuis la page d'accueil<\/a> afin de trouver l'information d\u00E9sir\u00E9e.<\/p>"
       }
@@ -15,7 +28,20 @@
       "name": "500",
       "context": {
         "pageTitle": {
-          "text": "Une erreur est survenue"
+          "text": "Une erreur est survenue",
+          "styleModifier": "container mt-0"
+        },
+        "breadcrumb": {
+          "styleModifier": "pb-1",
+          "breadcrumb": [
+            {
+              "page": "vd.ch",
+              "url": "#"
+            },
+            null,
+            null,
+            null
+          ]
         },
         "content": "<p>Une erreur inattendue semble se produire.<\/p>\r\n<p>Pourquoi ne pas essayer de rafra\u00EEchir votre page ?<\/p>\r\n<p>Vous pouvez utiliser <a href=\"#\">la recherche<\/a> ou <a href=\"#\">naviguer depuis la page d'accueil<\/a> afin de trouver l'information d\u00E9sir\u00E9e.<\/p>"
       }

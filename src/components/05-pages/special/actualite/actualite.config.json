@@ -2,17 +2,23 @@
   "status": "ready",
   "context": {
     "pageTitle": {
-      "text": "La Journée Oser tous les métiers élargit son offre"
+      "text": "La Journée Oser tous les métiers élargit son offre",
+      "styleModifier": "text-center mb-3 mt-0"
     },
-    "breadcrumb":  [
-      {
-        "page": "vd.ch",
-        "url": "#"
-      },{
-      "page": "Actualités",
-      "url": "#"
-      }
-    ],
+    "breadcrumb": {
+      "breadcrumb":  [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Actualités",
+          "url": "#"
+        },
+        null,
+        null
+      ]
+    },
     "media": {
       "image": {
         "default": {

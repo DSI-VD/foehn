@@ -2,18 +2,24 @@
   "status": "ready",
   "context": {
     "pageTitle": {
-      "text": "Theme name"
+      "text": "Theme name",
+      "styleModifier": "container mt-0"
     },
-    "breadcrumb": [
-      {
-        "page": "vd.ch",
-        "url": "#"
-      },
-      {
-        "page": "Domaines",
-        "url": "#"
-      }
-    ],
+    "breadcrumb": {
+      "styleModifier": "pb-1",
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Domaines",
+          "url": "#"
+        },
+        null,
+        null
+      ]
+    },
     "prestations": {
       "list": [
         {
