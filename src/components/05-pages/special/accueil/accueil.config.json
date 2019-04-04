@@ -2,7 +2,8 @@
     "status": "ready",
     "context": {
       "pageTitle": {
-        "text": "Site officiel de l'État de Vaud"
+        "text": "Site officiel de l'État de Vaud",
+        "styleModifier": "sr-only"
       },
       "navOpen": true,
       "news": {
