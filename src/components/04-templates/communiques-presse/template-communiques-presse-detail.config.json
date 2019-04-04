@@ -2,13 +2,20 @@
   "status": "ready",
   "label": "Détail",
   "context": {
-    "breadcrumb": [{
-      "page": "vd.ch",
-      "url": "#"
-    },{
-      "page": "Communiqués de presse",
-      "url": "#"
-    }],
+    "breadcrumb": {
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        {
+          "page": "Communiqués de presse",
+          "url": "#"
+        },
+        null,
+        null
+      ]
+    },
     "pageTitle": {
       "text": "Le Service de la sécurité civile et militaire est certifié"
     },
