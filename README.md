@@ -98,7 +98,7 @@ The following command will build the code and publish the latest version on the
 registry you have set in your [NPM config](https://docs.npmjs.com/cli/config).
 
 ```shell
-$ yarn publish --tag latest
+$ npm publish --tag latest
 ```
 
 If you need to publish a specific version, use `$ yarn  publish --tag <tag>` to
