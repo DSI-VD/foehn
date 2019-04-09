@@ -394,6 +394,7 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container container-small vd-content"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center mb-3 mt-0"</span>&gt;</span>La Journée Oser tous les métiers élargit son offre<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center small"</span>&gt;</span>
         Publié le <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2017-03-31T13:05:23+00:00"</span>&gt;</span>31.03.2017<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
 
@@ -585,17 +586,24 @@
         
             
             <pre>{
-  <span class="hljs-attr">"pageTitle"</span>: <span class="hljs-string">"La Journée Oser tous les métiers élargit son offre"</span>,
-  <span class="hljs-attr">"breadcrumb"</span>: [
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Actualités"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    }
-  ],
+  <span class="hljs-attr">"pageTitle"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"La Journée Oser tous les métiers élargit son offre"</span>,
+    <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"text-center mb-3 mt-0"</span>
+  },
+  <span class="hljs-attr">"breadcrumb"</span>: {
+    <span class="hljs-attr">"breadcrumb"</span>: [
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Actualités"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      <span class="hljs-literal">null</span>,
+      <span class="hljs-literal">null</span>
+    ]
+  },
   <span class="hljs-attr">"media"</span>: {
     <span class="hljs-attr">"image"</span>: {
       <span class="hljs-attr">"default"</span>: {
@@ -5314,30 +5322,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="template--domaines" data-pjax>
-                <span>Domaines</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--homepage" data-pjax>
                 <span>Homepage</span>
                 
@@ -5364,6 +5348,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--news-detail" data-pjax>
                 <span>News Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="template--domaines" data-pjax>
+                <span>Domaines</span>
                 
 
 <div class="Status Status--unlabelled">

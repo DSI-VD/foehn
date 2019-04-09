@@ -378,7 +378,7 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-bg-pattern-gray"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-1"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>File d'Ariane<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
 
@@ -390,14 +390,20 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-0"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5 vd-content"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-bg-pattern-gray"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-0"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5 vd-content"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, obcaecati veritatis ipsam officia necessitatibus fuga, tempora vel unde libero soluta excepturi? Cumque dolorem, atque soluta. Obcaecati vel vero ipsam corporis.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
 
@@ -494,14 +500,22 @@
     <code class="Code Code--lang-html">
         <pre>{% render '<a href="header--homepage">@header--homepage</a>', header, true %}
 
-{% include '<a href="page-title-banner">@page-title-banner</a>' %}
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-bg-pattern-gray"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    {% render '<a href="breadcrumb">@breadcrumb</a>', breadcrumb, true %}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5 vd-content"</span>&gt;</span>
-  {% include '<a href="page-title">@page-title</a>' %}
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-bg-pattern-gray"</span>&gt;</span>
+    {% render '<a href="h1">@h1</a>', pageTitle, true %}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-  {% block main %}
-  {% include '<a href="paragraph">@paragraph</a>' %}
-  {% endblock %}
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5 vd-content"</span>&gt;</span>
+    {% block main %}
+      {% include '<a href="paragraph">@paragraph</a>' %}
+    {% endblock %}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
 
@@ -515,17 +529,25 @@
         
             
             <pre>{
-  <span class="hljs-attr">"pageTitle"</span>: <span class="hljs-string">"Template"</span>,
-  <span class="hljs-attr">"breadcrumb"</span>: [
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Parent page"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    }
-  ],
+  <span class="hljs-attr">"pageTitle"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Template"</span>,
+    <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"container mt-0"</span>
+  },
+  <span class="hljs-attr">"breadcrumb"</span>: {
+    <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"pb-1"</span>,
+    <span class="hljs-attr">"breadcrumb"</span>: [
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Parent page"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      <span class="hljs-literal">null</span>,
+      <span class="hljs-literal">null</span>
+    ]
+  },
   <span class="hljs-attr">"footer"</span>: {
     <span class="hljs-attr">"updateTime"</span>: <span class="hljs-literal">null</span>
   }
@@ -567,16 +589,16 @@
                     <span>2 columns with side navigation</span>
                 </a>, 
             
-                <a href="">
-                    <span>Domaines</span>
-                </a>, 
-            
                 <a href="template--homepage">
                     <span>Homepage</span>
                 </a>, 
             
                 <a href="template--news-detail">
                     <span>News Detail</span>
+                </a>, 
+            
+                <a href="">
+                    <span>Domaines</span>
                 </a>
             
             </span>
@@ -610,9 +632,9 @@
             
                 <a href="header--homepage">@<span>header--homepage</span></a>, 
             
-                <a href="page-title-banner">@<span>page-title-banner</span></a>, 
+                <a href="breadcrumb">@<span>breadcrumb</span></a>, 
             
-                <a href="page-title">@<span>page-title</span></a>, 
+                <a href="h1">@<span>h1</span></a>, 
             
                 <a href="paragraph">@<span>paragraph</span></a>, 
             
@@ -5255,30 +5277,6 @@
     
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
-                <span>Domaines</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--homepage" data-pjax>
                 <span>Homepage</span>
@@ -5306,6 +5304,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--news-detail" data-pjax>
                 <span>News Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Domaines</span>
                 
 
 <div class="Status Status--unlabelled">

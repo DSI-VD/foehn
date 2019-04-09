@@ -181,7 +181,7 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-239ed79d71a9300d67da17ff61915f00-panel-view">
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container pt-3"</span>&gt;</span>
-  {% include '<a href="breadcrumb">@breadcrumb</a>' %}
+  {% render '<a href="breadcrumb">@breadcrumb</a>', breadcrumb, true %}
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
 </div>
@@ -192,29 +192,33 @@
         
             
             <pre>{
-  <span class="hljs-attr">"pageTitle"</span>: <span class="hljs-string">"Page title"</span>,
+  <span class="hljs-attr">"pageTitle"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Page title"</span>
+  },
   <span class="hljs-attr">"prestation"</span>: {
     <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Commander"</span>,
     <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
   },
-  <span class="hljs-attr">"breadcrumb"</span>: [
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 1"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 2"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 3"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 4"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    }
-  ]
+  <span class="hljs-attr">"breadcrumb"</span>: {
+    <span class="hljs-attr">"breadcrumb"</span>: [
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 1"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 2"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 3"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"level 4"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      }
+    ]
+  }
 }</pre>
             
         
@@ -4926,30 +4930,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="template--domaines" data-pjax>
-                <span>Domaines</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--homepage" data-pjax>
                 <span>Homepage</span>
                 
@@ -4976,6 +4956,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--news-detail" data-pjax>
                 <span>News Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="template--domaines" data-pjax>
+                <span>Domaines</span>
                 
 
 <div class="Status Status--unlabelled">

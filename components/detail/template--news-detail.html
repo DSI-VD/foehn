@@ -376,7 +376,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container pt-3"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pb-1"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>File d'Ariane<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
 
@@ -391,7 +391,8 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container container-small vd-content"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center mb-3 mt-0"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center mb-3 mt-0"</span>&gt;</span>News detail<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center small"</span>&gt;</span>
         Publié le <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2017-03-31T13:05:23+00:00"</span>&gt;</span>31.03.2017<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
 
@@ -516,11 +517,11 @@
 {% include '<a href="page-title-banner--light">@page-title-banner--light</a>' %}
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container container-small vd-content"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center mb-3 mt-0"</span>&gt;</span>{{ pageTitle }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  {% render '<a href="h1">@h1</a>', pageTitle, true %}
   {% render '<a href="publish-info">@publish-info</a>' %}
 
   {% block main %}
-  {% include '<a href="paragraph">@paragraph</a>' %}
+    {% include '<a href="paragraph">@paragraph</a>' %}
   {% endblock %}
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
@@ -535,17 +536,25 @@
         
             
             <pre>{
-  <span class="hljs-attr">"pageTitle"</span>: <span class="hljs-string">"Template"</span>,
-  <span class="hljs-attr">"breadcrumb"</span>: [
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    },
-    {
-      <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Parent page"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-    }
-  ],
+  <span class="hljs-attr">"pageTitle"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"News detail"</span>,
+    <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"text-center mb-3 mt-0"</span>
+  },
+  <span class="hljs-attr">"breadcrumb"</span>: {
+    <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"pb-1"</span>,
+    <span class="hljs-attr">"breadcrumb"</span>: [
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"vd.ch"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      {
+        <span class="hljs-attr">"page"</span>: <span class="hljs-string">"Parent page"</span>,
+        <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      },
+      <span class="hljs-literal">null</span>,
+      <span class="hljs-literal">null</span>
+    ]
+  },
   <span class="hljs-attr">"footer"</span>: {
     <span class="hljs-attr">"updateTime"</span>: <span class="hljs-literal">null</span>
   }
@@ -587,16 +596,16 @@
                     <span>2 columns with side navigation</span>
                 </a>, 
             
-                <a href="template--domaines">
-                    <span>Domaines</span>
-                </a>, 
-            
                 <a href="template--homepage">
                     <span>Homepage</span>
                 </a>, 
             
                 <a href="">
                     <span>News Detail</span>
+                </a>, 
+            
+                <a href="template--domaines">
+                    <span>Domaines</span>
                 </a>
             
             </span>
@@ -625,12 +634,14 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(5)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(6)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="header--default">@<span>header--default</span></a>, 
             
                 <a href="page-title-banner--light">@<span>page-title-banner--light</span></a>, 
+            
+                <a href="h1">@<span>h1</span></a>, 
             
                 <a href="publish-info">@<span>publish-info</span></a>, 
             
@@ -5278,30 +5289,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="template--domaines" data-pjax>
-                <span>Domaines</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="template--homepage" data-pjax>
                 <span>Homepage</span>
                 
@@ -5328,6 +5315,30 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
                 <span>News Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="template--domaines" data-pjax>
+                <span>Domaines</span>
                 
 
 <div class="Status Status--unlabelled">
