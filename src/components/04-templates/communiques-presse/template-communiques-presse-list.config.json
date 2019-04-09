@@ -5,10 +5,17 @@
     "pageTitle": {
       "text": "Communiqués de presse"
     },
-    "breadcrumb": [{
-      "page": "vd.ch",
-      "url": "#"
-    }],
+    "breadcrumb": {
+      "breadcrumb": [
+        {
+          "page": "vd.ch",
+          "url": "#"
+        },
+        null,
+        null,
+        null
+      ]
+    },
     "search" : {
       "id": "search",
       "label": "Rechercher<span class=\"sr-only\"> les communiqués de presse</span>",
