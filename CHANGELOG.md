@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fix
+- Upgrade a bunch of modules that you do note need to take care of
+
 ## [1.1.0] - 2019-04-09
 
 ### Changed
