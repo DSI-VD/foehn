@@ -31,8 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
       `@page-title` component
 
 ### Fix
-- Fix `@pagniation` not showing in  "@template-communiques-presse-list--default"
-  and "@template-communiques-presse-list--results"
+- Fix `@pagniation` not showing in  `@template-communiques-presse-list--default`
+  and `@template-communiques-presse-list--results`
 - Fix deprecated `text-decoration-skip: ink;` CSS property
 
 ## [1.0.6] - 2019-02-07
