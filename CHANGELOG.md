@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2019-04-09
+
 ### Changed
 - The HTML structure of the templates have changed to avoid having a double `h1` 
   in the page.
@@ -1872,7 +1874,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.0.6...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/DSI-VD/foehn/compare/v1.0.6...v1.1.0
 [1.0.6]: https://github.com/DSI-VD/foehn/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/DSI-VD/foehn/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/DSI-VD/foehn/compare/v1.0.3...v1.0.4
