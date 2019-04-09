@@ -1,6 +1,6 @@
 <div class="vd-bg-pattern-gray">
   <div class="container">
-        {% include '@breadcrumb' %}
-        <h1 aria-hidden="true" class="mt-0">{{ pageTitle.text }}</h1>
+    {% render '@breadcrumb', breadcrumb, true %}
+    <h1 aria-hidden="true" class="mt-0">{{ pageTitle.text }}</h1>
   </div>
 </div>
