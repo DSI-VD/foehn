@@ -8,12 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - The HTML structure of the templates have changed to avoid having a double `h1` 
   in the page.
-  - Change on the `@content`, `@departements`, `@detail-contact`,
-    `@detail-prestation`, `@domaines`, `@error-500`, `@error--default`,
-    `@news-list--activites`, `@news-list--categories`, `@news-list--default`,
-    `@news-list`, `@search--default`, `@search--no-results`,
-    `@search--no-search`, `@search`, `@service--default`, `@service--search`,
-    `@service`, `@template--2-col-nav`, `@template--2-col`,
+  - Here is a list of the change on `@content`, `@departements`,
+    `@detail-contact`, `@detail-prestation`, `@domaines`, `@error-500`,
+    `@error--default`, `@news-list--activites`, `@news-list--categories`,
+    `@news-list--default`, `@news-list`, `@search--default`,
+    `@search--no-results`, `@search--no-search`, `@search`, `@service--default`,
+    `@service--search`, `@service`, `@template--2-col-nav`, `@template--2-col`,
     `@template--default`, `@template--domaines`, `@template--homepage`,
     `@template--new-detail`, `@template--new-detail`, `@template`,
     `@theme--default`, `@theme--geo`, `@theme--list`, `@theme` components
@@ -27,8 +27,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Change CSS class of the `<h1>` tag to `class="container mt-0"` to make it
       visible.
     - Add a `<div class="container mt-5 vd-content">` around the content
-  - Change on the `@page-title` component
-    - Change CSS class of the `<h1>` tag to `class="container mt-0 pt-3"`
+  - Change CSS class of the `<h1>` tag to `class="container mt-0 pt-3"` in
+      `@page-title` component
 
 ### Fix
 - Fix deprecated `text-decoration-skip: ink;` CSS property
