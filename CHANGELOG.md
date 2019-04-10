@@ -5,6 +5,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.2] - 2019-04-10
+
+### Changed
+- Remove `aria-hidden="true"` on the `<h1>` in `@page-title-banner` component
+  - Make sure to update component that include `@page-title-banner`
+    - @template-communiques-presse-list
+    - @template-communiques-presse-list--results
+    - @espace-securise
+    - @espace-securise--form
+
 ## [1.1.1] - 2019-04-10
 
 ### Fix
