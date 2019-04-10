@@ -5,6 +5,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Change text that show number of steps in form in
+  `@formulaire-prestation--default`. "Etape X de Y" has been replaced by "Etape
+  X sur Y"
+
 ## [1.1.2] - 2019-04-10
 
 ### Changed

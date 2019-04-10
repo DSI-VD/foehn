@@ -27,14 +27,14 @@
       }
     },
     "stepTitle": "Titre de l'étape",
-    "stepNumber": "Etape 1 de X"
+    "stepNumber": "Etape 1 sur X"
   },
   "variants": [
     {
       "name": "default",
       "label": "Step 1",
       "context": {
-        "stepNumber": "Etape 1 de 4",
+        "stepNumber": "Etape 1 sur 4",
         "pagination": {
           "pages": {
             "previous": false,
@@ -50,7 +50,7 @@
     {
       "name": "Step 2",
       "context": {
-        "stepNumber": "Etape 2 de 4",
+        "stepNumber": "Etape 2 sur 4",
         "pagination": {
           "pages": {
             "previous": {
@@ -70,7 +70,7 @@
     {
       "name": "Step 3",
       "context": {
-        "stepNumber": "Etape 3 de 4",
+        "stepNumber": "Etape 3 sur 4",
         "pagination": {
           "pages": {
             "previous": {
