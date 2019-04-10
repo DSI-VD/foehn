@@ -55,7 +55,7 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-stylelint": "^8.0.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-xo": "^0.19.0",
+    "gulp-xo": "^0.21.0",
     "jquery": "^3.3.1",
     "pa11y-ci": "^2.1.1",
     "pa11y-reporter-html": "^1.0.0",
