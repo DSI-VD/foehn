@@ -6,9 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-- Upgrade [Bootstrap to
-  v4.2.1](https://blog.getbootstrap.com/2018/12/21/bootstrap-4-2-1/). Checkout
-  the full [v4.2.0 ship list](https://github.com/twbs/bootstrap/issues/26952)
+- Upgrade Bootstrap from v4.1.3 to v4.3.1
+  - Upgrade [Bootstrap to
+    v4.3.1](https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/).
+  - Upgrade [Bootstrap to
+    v4.3.0](https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/). Checkout
+    the full [v4.3.0 ship list](https://github.com/twbs/bootstrap/issues/27893)
+  - Upgrade [Bootstrap to
+    v4.2.1](https://blog.getbootstrap.com/2018/12/21/bootstrap-4-2-1/). Checkout
+    the full [v4.2.0 ship list](https://github.com/twbs/bootstrap/issues/26952)
 - Change text that show number of steps in form in
   `@formulaire-prestation--default`. "Etape X de Y" has been replaced by "Etape
   X sur Y"
