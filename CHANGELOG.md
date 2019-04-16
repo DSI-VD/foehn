@@ -39,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - The HTML structure of the templates have changed to avoid having a double `h1` 
   in the page.
-  - Here is a list of the change on `@content`, `@departements`,
+  - Here is a list of the change on `@contend`, `@departements`,
     `@detail-contact`, `@detail-prestation`, `@domaines`, `@error-500`,
     `@error--default`, `@news-list--activites`, `@news-list--categories`,
     `@news-list--default`, `@news-list`, `@search--default`,
