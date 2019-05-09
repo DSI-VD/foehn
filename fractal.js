@@ -16,7 +16,9 @@ const mandelbrot = require('@frctl/mandelbrot')({
     static: {
         mount: 'fractal'
     },
-    skin: 'navy'
+    skin: 'navy',
+    nav: ['docs', 'components'] // Show docs above components in the sidebar
+
 });
 
 /* Tune Nunjucks */
