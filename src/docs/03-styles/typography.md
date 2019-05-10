@@ -1,7 +1,7 @@
 ---
 title: Typographie
 label: Typographie
-status: draft
+status: review
 ---
 
 ## Polices
