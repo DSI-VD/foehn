@@ -1,0 +1,62 @@
+{
+  "status": "ready",
+  "collated": true,
+  "context": {
+    "list": [
+      {
+        "item": "pommes"
+      },
+      {
+        "item": "oranges"
+      },
+      {
+        "item": "pêches"
+      }
+    ]
+  },
+  "variants": [
+    {
+      "name": "unstyled",
+      "context": {
+        "class": "list-unstyled",
+        "list": [
+          {
+            "item": "<a href=\"#\">L'aide et les soins à domicile<\/a>"
+          },
+          {
+            "item": "<a href=\"#\">Centre d'accueil temporaire<\/a>"
+          },
+          {
+            "item": "<a href=\"#\">Court-séjour en EMS<\/a>"
+          },
+          {
+            "item": "<a href=\"#\">Plus<\/a>"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ordered",
+      "context": {
+        "list": [
+          {
+            "item": "Adresse de livraison."
+          },
+          {
+            "item": "Paiement."
+          },
+          {
+            "item": "Confirmation."
+          }
+        ]
+      }
+    },
+    {
+      "name": "inline",
+      "hidden": true,
+      "context": {
+        "class": "list-inline"
+      }
+    }
+  ]
+}
