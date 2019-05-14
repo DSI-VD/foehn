@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add documentation how to ask for a phone number
+- Add `@input--phone` and `@input--phone-error` variants to
+  `@input--default`component
 ## [1.2.0] - 2019-04-16
 
 ### Changed
