@@ -5,8 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Fix
-- Add documentation for typography
+### Added
+- Add [documentation for typography](../../docs/styles/typography)
 
 ## [1.2.0] - 2019-04-16
 
