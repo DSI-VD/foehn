@@ -30,6 +30,7 @@
          {%- if min %} min="{{ min }}"{% endif %}
          {%- if max %} max="{{ max }}"{% endif %}
          {%- if size %} size="{{ size }}"{% endif %}
+         {%- if autocomplete %} autocomplete="{{ value }}"{% endif %}
          {%- if placeholder %} placeholder="{{ placeholder }}"{% endif %}
          {%- if disabled %} disabled{% endif%}
          {%- if validation.class === 'danger' %} aria-invalid="true"{% endif %}>

@@ -103,6 +103,28 @@
           "type": "file",
           "class": "form-control-file"
         }
+      },
+      {
+        "name": "phone",
+        "context": {
+          "label": "Numéro de téléphone",
+          "id": "phoneInput",
+          "type": "tel",
+          "autocomplete": "tel"
+        }
+      },
+      {
+        "name": "phone-error",
+        "context": {
+          "label": "Numéro de téléphone",
+          "id": "phoneInput",
+          "type": "tel",
+          "autocomplete": "tel",
+          "validation": {
+            "class": "danger",
+            "text": "Entrez un numéro de téléphone suisse"
+          }
+        }
       }
     ]
 }
