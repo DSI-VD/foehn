@@ -5,8 +5,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Current page is visible in `@breadcrumb` and the typo is smaller
+
 ### Added
 - Add [documentation for typography](../../docs/styles/typography)
+- Add documentation about [breadcrumb component](../../docs/components/breadcrumbs)
 
 ## [1.2.0] - 2019-04-16
 
