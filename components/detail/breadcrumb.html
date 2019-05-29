@@ -41,7 +41,7 @@
 </svg>
 
     </button>
-    <a href="../../../" class="Header-title" data-pjax>Foehn</a>
+    <a href="../../.." class="Header-title" data-pjax>Foehn</a>
 </div>
 
     </div>
@@ -173,7 +173,7 @@
 
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>level 4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Vous êtes ici: [titre de la page]<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span>&gt;</span>Titre de la page courante<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre>
         
@@ -191,7 +191,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ item.url }}"</span>&gt;</span>{{ item.page }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
       {%- endif %}
     {% endfor %}
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Vous êtes ici: [titre de la page]<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span>&gt;</span>Titre de la page courante<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre>
     </code>
@@ -257,31 +257,27 @@
 <span class="hljs-comment">/**
  * Breadcrumb
  *
- * 1. Only display the parent page on mobile
+ * 1. Hacks that allow the pattern background set with `vd-bg-pattern-gray` to
+ *    aligne nicely between the breadcrum and the title
+ * 2. Set space around the arrows
+ * 3. Set position of the arrows
  */</span>
-<span class="hljs-selector-class">.breadcrumb</span> {
-  <span class="hljs-attribute">overflow</span>: hidden;
-  <span class="hljs-attribute">white-space</span>: nowrap;
-  <span class="hljs-attribute">text-overflow</span>: ellipsis;
 
-  &gt; <span class="hljs-selector-tag">li</span> {
-    <span class="hljs-attribute">display</span>: inline;
-  }
-
-  @<span class="hljs-keyword">include</span> media-breakpoint-down(xs) {
-    <span class="hljs-selector-tag">li</span>:not(:nth-last-child(-n+2)) { <span class="hljs-attribute">display</span>: none; }
-
-    @<span class="hljs-keyword">media</span> print {
-      <span class="hljs-selector-tag">li</span>:not(:nth-last-child(-n+2)) { <span class="hljs-attribute">display</span>: inline; }
-    }
-  }
-
-  <span class="hljs-selector-tag">a</span> {
-    <span class="hljs-attribute">text-decoration</span>: none;
-  }
+<span class="hljs-selector-class">.breadcrumb-item</span> {
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">1.5rem</span>; <span class="hljs-comment">/* [1] */</span>
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$small-font-size</span>;
 }
 
-<span class="hljs-selector-class">.breadcrumb-item</span> { <span class="hljs-attribute">float</span>: none; }
+<span class="hljs-selector-class">.breadcrumb-item</span> + <span class="hljs-selector-class">.breadcrumb-item</span>::before {
+  <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/* [3] */</span>
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.breadcrumb-item</span> + <span class="hljs-selector-class">.breadcrumb-item</span> {
+  <span class="hljs-attribute">margin-left</span>: .<span class="hljs-number">25rem</span>; <span class="hljs-comment">/* [2] */</span>
+  <span class="hljs-attribute">position</span>: relative; <span class="hljs-comment">/* [3] */</span>
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0.75rem</span>; <span class="hljs-comment">/* [2] */</span>
+}
 </pre>
                             </code>
                             
@@ -298,7 +294,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">463 Bytes</span>
+                    <span class="Meta-value">564 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -405,7 +401,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../../" data-pjax>
+            <a class="Tree-entityLink" href="../../.." data-pjax>
                 <span>Overview</span>
                 
 
@@ -665,7 +661,7 @@
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/components/breadcrumbs" data-pjax>
-                <span>Breadcrumbs</span>
+                <span>Fil d'Ariane</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -673,7 +669,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -1219,6 +1215,46 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-patterns">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Patterns</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/patterns/ask-users-for-telephone-numbers" data-pjax>
+                <span>Numéro de téléphone</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/changelog" data-pjax>
@@ -1245,7 +1281,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../../" data-pjax>
+            <a class="Tree-entityLink" href="../../.." data-pjax>
                 <span>Overview</span>
                 
 

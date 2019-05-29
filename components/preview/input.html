@@ -198,6 +198,36 @@
 </div>
 <!-- End: @input--file -->
 
+<!-- Start: @input--phone -->
+<div class="form-group">
+  <label for="phoneInput">
+    Numéro de téléphone
+  </label>
+  
+  <input class="form-control"
+         type="tel"
+         id="phoneInput"
+         name="testInput"
+         value="" required aria-required="true" autocomplete="">
+</div>
+<!-- End: @input--phone -->
+
+<!-- Start: @input--phone-error -->
+<div class="form-group has-danger vd-form-group-danger">
+  <label for="phoneInput">
+    Numéro de téléphone
+  </label>
+  <div class="form-control-feedback">Entrez un numéro de téléphone suisse</div>
+  
+  
+  <input class="form-control form-control-danger"
+         type="tel"
+         id="phoneInput"
+         name="testInput"
+         value="" required aria-required="true" autocomplete="" aria-invalid="true">
+</div>
+<!-- End: @input--phone-error -->
+
 
     <script src="../../assets/scripts/jquery.slim.min.js"></script>
 <script src="../../assets/scripts/popper.min.js"></script>
