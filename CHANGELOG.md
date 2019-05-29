@@ -6,7 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-- Current page is visible in `@breadcrumb` and the typo is smaller
+- On small screen `@breadcrumb` typo is smaller and the parent pages are
+  visibles
+- Current page on `@breadcrumb` use `aria-current` attribut insted of the text
+  *"Vous êtes ici:"*
 
 ### Added
 - Add documentation how to ask for a phone number
