@@ -5,18 +5,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-- On small screen `@breadcrumb` typo is smaller and the parent pages are
-  visibles
-- Current page on `@breadcrumb` use `aria-current` attribut insted of the text
-  *"Vous êtes ici:"*
-
 ### Added
 - Add documentation how to ask for a phone number
 - Add `@input--phone` and `@input--phone-error` variants to
   `@input--default`component
 - Add [documentation for typography](../../docs/styles/typography)
 - Add documentation about [breadcrumb component](../../docs/components/breadcrumbs)
+
+### Changed
+  - On small screen `@breadcrumb` typo is smaller and the parent pages are
+  visibles
+  - Current page on `@breadcrumb` use `aria-current` attribut insted of the text
+  *"Vous êtes ici:"*
+
+### Fixes
+- Upgrade a bunch of modules that you do note need to take care of. It fix some
+  security vulnerabilities
 
 ## [1.2.0] - 2019-04-16
 
