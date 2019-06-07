@@ -6,7 +6,7 @@ status: wip
 
 Permet à l'utilisateur de vérifier et de modifier ses réponses avant de soumettre une demande.
 
-{{ '@check-answers' | renderComponent }}
+{{ '@verification-page' | renderComponent }}
 
 ## Quand utiliser ce shéma
 
