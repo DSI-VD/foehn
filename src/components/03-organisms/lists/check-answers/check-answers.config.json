@@ -1,0 +1,26 @@
+{
+  "status": "ready",
+  "context": {
+    "title": {
+      "text": "Informations personnelles"
+    },
+    "styleModifier": "",
+    "items": [
+      {
+        "question": "Nom",
+        "answer": "Clark Kent",
+        "url": "#"
+      },
+      {
+        "question": "Surnom",
+        "answer": "Superman",
+        "url": "#"
+      },
+      {
+        "question": "Adresse",
+        "answer": "34 Kriptionitstrasse <br>9999 Metropolis",
+        "url": "#"
+      }
+    ]
+  }
+}
