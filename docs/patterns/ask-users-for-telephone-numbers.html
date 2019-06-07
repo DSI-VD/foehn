@@ -79,74 +79,37 @@
 
     
     
-    <h2 id="quand-utiliser-ce-sh-ma">Quand utiliser ce shéma</h2>
-<p>Ne collectez les numéros de téléphone des personnes que si vous en avez réellement besoin (voir <a href="/docs/get-started/protection-des-donnees">la documentation relative à la protection des données</a>). Tout le monde n’a pas ou ne peut pas utiliser un téléphone, alors assurez-vous de laisser aux utilisateurs le choix de la manière dont ils peuvent être contactés.</p>
+    <div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/input--phone">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/input--phone"></iframe></div>
+
+<h2 id="quand-utiliser-ce-sh-ma">Quand utiliser ce shéma</h2>
+<p>Ne collectez les numéros de téléphone des personnes que si vous en avez
+réellement besoin (voir <a href="/docs/get-started/protection-des-donnees">la documentation relative à la protextion des
+données</a>). Tout le monde n’a pas ou ne
+peut pas utiliser un téléphone, alors assurez-vous de laisser aux utilisateurs
+le choix de la manière dont ils peuvent être contactés.</p>
 <h2 id="comment-a-marche">Comment ça marche</h2>
 <h3 id="autoriser-diff-rents-formats">Autoriser différents formats</h3>
-<p>Les utilisateurs devraient être autorisés à entrer les numéros de téléphone dans le format qui leur est familier. Il faut prévoir la saisie d’espaces, de tirets, de crochets et des parenthèses supplémentaires, et pouvoir prendre en charge les indicatifs de pays et de zone.</p>
+<p>Les utilisateurs devraient être autorisés à entrer les numéros de téléphone dans
+le format qui leur est familier. Vous devez prévoir des espaces, des tirets, des
+crochets et des tirets supplémentaires, et pouvoir prendre en charge les
+indicatifs de pays et de zone.</p>
 <h3 id="valider-les-num-ros-de-t-l-phone">Valider les numéros de téléphone</h3>
-<p>Vous devez valider les numéros de téléphone afin de permettre aux utilisateurs de savoir s’ils ont saisi correctement.</p>
+<p>Vous devez valider les numéros de téléphone afin de permettre aux utilisateurs
+de savoir s’ils en ont mal saisi.</p>
 <h3 id="utilisez-l-attribut-autocomplete">Utilisez l’attribut autocomplete</h3>
-<p>Utilisez l’attribut <code>autocomplete</code> sur les entrées de numéro de téléphone. Cela permet aux navigateurs de saisir automatiquement les informations d’un utilisateur s’il les a déjà saisies.</p>
-<p>Pour ce faire, définissez l’attribut <code>autocomplete</code> avec la valeur <code>tel</code>.</p>
+<p>Utilisez l’attribut <code>autocomplete</code> sur les entrées de numéro de téléphone. Cela
+permet aux navigateurs de saisir automatiquement les informations d’un
+utilisateur s’il les a déjà saisies.</p>
+<p>Pour ce faire, définissez l’attribut <code>autocomplete</code> sur <code>tel</code>.</p>
 <h2 id="message-d-erreur">Message d’erreur</h2>
-<p>Les messages d’erreur doivent être stylés comme ci-dessous:</p>
+<p>Les messages d’erreur doivent être stylé comme ci-dessous:</p>
 <div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/input--phone-error">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/input--phone-error"></iframe></div>
 
 <p>Assurez-vous que les erreurs suivent les instructions fournies dans le message d’erreur et ont des messages d’erreur spécifiques pour des états d’erreur spécifiques.</p>
-<p>Assurez-vous que les messages d’erreur soient spécifiques au type d’erreur. (par exemple: “Entrez un numéro de téléphone suisse”)</p>
 <h3 id="si-le-num-ro-de-t-l-phone-n-est-pas-dans-le-bon-format-et-qu-il-n-y-a-pas-d-exemple">Si le numéro de téléphone n’est pas dans le bon format et qu’il n’y a pas d’exemple</h3>
 <p>Afficher le message “Entrez un numéro de téléphone, par exemple 024 123 45 67, 079 123 45 67 ou +41 24 123 45 67”.</p>
 <h3 id="si-le-num-ro-de-t-l-phone-n-est-pas-dans-le-bon-format-et-qu-il-existe-un-exemple">Si le numéro de téléphone n’est pas dans le bon format et qu’il existe un exemple</h3>
-<p>Affichez le message “Entrez un numéro de téléphone dans le format correct”.</p>
-<h2 id="soyez-clair-sur-le-type-de-num-ro-de-t-l-phone-que-vous-voulez">Soyez clair sur le type de numéro de téléphone que vous voulez</h2>
-<p>Utilisez le label ou le texte d’aide pour informer l’utilisateur que vous avez besoin d’un numéro suisse, international ou un numéro de téléphone mobile.</p>
-<div class="foehn-example">
-<div class="form-group">
-  <label for="testInput">
-    Téléphone
-  </label>
-  <small
-      id="testInputHelp"
-      class="form-text text-secondary">Pour les numéro internationaux, inclure le code du pays</small>
-
-  <input class="form-control"
-         type="text"
-         id="testInput"
-         name="testInput"
-         value="" required aria-required="true" aria-describedby="testInputHelp">
-</div>
-
-<p></div></p>
-<h2 id="utiliser-des-exemples-de-num-ros-de-t-l-phone">Utiliser des exemples de numéros de téléphone</h2>
-<p>Si vous désirez des numéros à utiliser comme exemple (par exemple dans les textes d’aide). Utilisez les numéros suivant:</p>
-<ul>
-<li>Numéro local: 021 123 45 67</li>
-<li>Numéro international: +41 21 123 45 67</li>
-<li>Numéro de téléphone mobile: 079 123 45 67</li>
-</ul>
-<h2 id="expliquez-pourquoi-vous-avez-besoin-d-un-num-ro-de-t-l-phone">Expliquez pourquoi vous avez besoin d’un numéro de téléphone</h2>
-<p>Indiquez aux utilisateurs pourquoi et quand vous allez les contacter.</p>
-<h2 id="ne-pas-afficher-les-num-ros-de-t-l-phone-comme-des-liens-sur-les-appareils-ne-pouvant-pas-effectuer-d-appel">Ne pas afficher les numéros de téléphone comme des liens sur les appareils ne pouvant pas effectuer d’appel</h2>
-<p>Il est possible de baliser les numéros de téléphone comme ci-dessous:</p>
-<code><pre><span class="hljs-attribute">&lt;a href="tel:+41211234567&gt;</span>021 123 45 67<span class="hljs-attribute">&lt;/a&gt;</span></pre></code><p>Cependant, cela affichera le numéro de téléphone sous forme de lien. Cela porte à confusion sur les appareils qui ne prennent pas en charge les appels téléphoniques comme la plupart des ordinateurs de bureau.</p>
-<p>De plus, cela n’est pas nécessaire. La plupart des navigateurs mobiles modernes détectent automatiquement les numéros de téléphone et les affichent comme des liens.</p>
-<p>Si vous devez baliser un numéro de téléphone en tant que liens, par exemple, pour prendre en charge un appareil ne pouvant pas les détecter automatiquement, assurez-vous qu’ils ne s’affichent pas en tant que liens sur des appareils ne pouvant pas faire d’appel.</p>
-<h2 id="comment-crire-les-num-ros-de-t-l-phone">Comment écrire les numéros de téléphone</h2>
-<p>Le format international est à privilégier: +41 21 123 45 67</p>
-<p>Utilser des espaces pour séparer les groupes de chiffre: </p>
-<ul>
-<li>+41 21 123 45 67</li>
-<li>021 123 45 67</li>
-<li>079 13 45 67</li>
-</ul>
-<p>Si un numéro de téléphone est facilement mémorisable, grouper les chiffres en groupes faciles à retenir: 0800 11 22 33</p>
-<h2 id="-viter-d-utiliser-des-masques-de-saisie">Éviter d’utiliser des masques de saisie</h2>
-<p>Évitez <a href="https://css-tricks.com/input-masking/">les masques de saisie</a>, car il est plus difficile pour les utilisateurs de:</p>
-<ul>
-<li>taper un nombre de la manière qu’ils préfèrent</li>
-<li>transcrire un numéro étranger et être certain de l’avoir correctement saisie</li>
-</ul>
+<p>Affichez le message “Entrez un numéro de téléphone au format correct”.</p>
 
     
 
@@ -4930,7 +4893,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6107,6 +6070,30 @@
 
 
 <span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/verification-page" data-pjax>
+                <span>Verification Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
