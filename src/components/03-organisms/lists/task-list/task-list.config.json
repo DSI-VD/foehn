@@ -1,0 +1,80 @@
+{
+  "status": "wip",
+  "context": {
+    "sections": [
+      {
+        "title": {
+          "text": "A vérifier avant de commencer"
+        },
+        "items": [
+          {
+            "text": "Vérifier votre éligibilité",
+            "url": "#",
+            "status": {
+              "text": "Terminé",
+              "badge": "success"
+            }
+          },
+          {
+            "text": "Lire les documents relatifs",
+            "url": "#",
+            "status": {
+              "text": "Terminé",
+              "badge": "success"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "text": "A préparer pour la demande"
+        },
+        "items": [
+          {
+            "text": "Information sur la société",
+            "url": "#",
+            "status": {
+              "text": "Terminé",
+              "badge": "success"
+            }
+          },
+          {
+            "text": "Vos coordonnées",
+            "url": "#",
+            "status": {
+              "text": "Terminé",
+              "badge": "success"
+            }
+          },
+          {
+            "text": "Lister les contextes de la demande",
+            "url": "#"
+          },
+          {
+            "text": "Preuve de solvabilité",
+            "url": "#"
+          },
+          {
+            "text": "Donner des preuves médicales",
+            "url": "#",
+            "status": {
+              "text": "Terminé",
+              "badge": "success"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "text": "Faire la demande"
+        },
+        "items": [
+          {
+            "text": "Soumettre la demande et payer",
+            "url": "#"
+          }
+        ]
+      }
+    ]
+  }
+}

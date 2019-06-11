@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add [documentation about task list page pattern](../../docs/patterns/task-list-pages)
+  - Add `@tysk-list` and `@task-list-page` components
 - Add [documentation how users check their answer before submitting a
   form](../../docs/patterns/check-answers)
 - Add `@check-answers` and `@verification-page` component
