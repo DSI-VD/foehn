@@ -6,17 +6,19 @@
   {% render '@page-title-banner', pageTitle, true %}
 
   <div class="container">
-    <p class="h3">{{ stepNumber }}</p>
-      <div class="row">
-        <div class="col-md-8">
-          {% block main %}
+    {% if stepNumber %}
+      <p class="h3">{{ stepNumber }}</p>
+    {% endif %}
+    <div class="row">
+      <div class="col-md-8">
+        {% block main %}
 
           {% render '@paragraph' %}
           {% render '@pagination', pagination, true  %}
 
-          {% endblock %}
-        </div>
+        {% endblock %}
       </div>
+    </div>
   </div>
 </main>
 {% render '@footer--securise' %}

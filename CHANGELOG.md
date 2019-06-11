@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 - Upgrade a bunch of modules that you do note need to take care of. It fix some
   security vulnerabilities
+- Make "Etape x sur Y" texte optional in `@espace-securise--form`
 
 ## [1.2.0] - 2019-04-16
 
