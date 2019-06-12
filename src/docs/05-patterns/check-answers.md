@@ -24,7 +24,7 @@ pour déterminer si elle est utile.
 
 ## Comment est-ce que cela fonctionne
 
-Les page de vérification permettent:
+Les pages de vérification permettent:
 
 - augmenter la confiance des utilisateurs, car ils peuvent voir clairement
   qu'ils ont rempli toutes les sections et que leurs données ont été saisies
@@ -33,19 +33,22 @@ Les page de vérification permettent:
 
 ### Rendre la page compréhensible
 
-Sur votre page de réponses aux chèques, vous devriez:
+Sur la page de vérification, vous devriez:
 
-- préciser qu'il y a une tâche à effectuer sur la page
+- indiquer clairement qu'il y a une tâche à effectuer sur la page. Par exemple
+  en titrant la page "Vérifiez vos données avant d'envoyer votre demande".
 - indiquer clairement que la transaction ne sera pas complète tant que
   l'utilisateur n'aura pas confirmé que ses informations sont correctes
 - diviser le contenu en sections lorsque vous le pouvez
-- affichez uniquement les sections qui intéressent les utilisateurs. Par
-  exemple, s’ils ont dit venir de Suisse, n’indiquez pas de sections pour
-  les questions auxquelles ils n’ont pas répondu concernant les lieux situés en
-  dehors de la Suisse.
+- affichez uniquement les sections auxquelles les utilisateurs ont répondu. Par
+  exemple, s’ils ont dit venir de Suisse, n’indiquez pas de sections qui
+  concerne les personnes ne venant pas de Suisse.
 - reformulez les questions si vous en avez besoin. Par exemple, vous n'avez pas
   besoin libeller chaque ligne individuelle d'une adresse et vous pouvez
   reformuler de longues questions de manière plus synthétique
+- simplifier les libéllé des réponses si néccéssaire. Par exemple, regrouper les
+  différents champs d'une adresse une adresse "rue", "numéro de rue",
+  "localité", etc. en un champs unique "adresse".
 - assurez-vous que le bouton d'envoi indique clairement l'action qu'il effectue.
   Par exemple, «Modifier les détails de votre compte» ou «Envoyer le formulaire
   de demande»
