@@ -6,7 +6,7 @@ status: review
 
 ## Polices
 
-Si vos interfaces sont utilise le domaine vd.ch, vous devez utiliser les [Open
+Si vos interfaces utilises le domaine vd.ch, vous devez utiliser [Open
 Sans](https://fonts.google.com/specimen/Open+Sans) pour les corps de texte et
 [Robotto Slab](https://fonts.google.com/specimen/Roboto+Slab) pour les titres.
 
@@ -24,20 +24,20 @@ Ecrivez les titre en minuscule sauf la première lettre.
 
 ## Paragraphes
 
-### Corps de text
+### Corps de texte
 
-La taille par défaut des paragraphe est 16px.
+La taille par défaut des paragraphes est 16px.
 
 {{ '@paragraph' | renderComponent }}
 
-Il est possible de create des paragraphe d'en-tête ou des texte en petit afin
+Il est possible de créer des paragraphes d'en-tête ou des textes en petit afin
 de renforcer la hiérarchie dans votre page.
 
-### En-tête
+### En-tête ou chapeau
 
-Un paragraphe de tête est un paragraphe d'introduction que vous pouvez utiliser
+Un paragraphe d'en tête (ou chapeau) est un paragraphe d'introduction que vous pouvez utiliser
 en haut de page pour résumer le contenu. Les en-têtes ont une taille de 20px.
-Elle ne doivent être utilisés qu'une fois par page si nécessaire.
+Elle ne doivent être utilisées qu'une fois par page si nécessaire.
 
 {{ '@lead' | renderComponent }}
 
@@ -95,13 +95,13 @@ suivre votre demande. Les mises à jour seront envoyées à
 **this.person@email.com**“
 
 Utilisez le gras avec parcimonie. Une utilisation abusive empêchera les
-utilisateurs de savoir quelles parties à votre contenu ils doivent prêter le
-plus d'attention.
+utilisateurs de savoir quelle partie du contenu est importante.
 
 ## Liens
 
-Les liens sont vert et soulignés par défaut. Si votre lien se trouve à la fin
-d'une phrase, assurez-vous que le point de fin de phrase ne soit pas inclue.
+Les liens sont verts et soulignés par défaut. Si votre lien se trouve à la fin
+d'une phrase, assurez-vous que le point de fin de phrase ne soit pas inclus dans
+le lien.
 
 {{ '@link' | renderComponent }}
 
