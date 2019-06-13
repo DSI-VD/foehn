@@ -7,13 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add [documentation about task list page pattern](../../docs/patterns/task-list-pages)
-  - Add `@tysk-list` and `@task-list-page` components
+  - Add `@task-list` and `@task-list-page` components
 - Add [documentation how users check their answer before submitting a
   form](../../docs/patterns/check-answers)
-- Add `@check-answers` and `@verification-page` component
+  - Add `@check-answers` and `@verification-page` component
 - Add documentation how to ask for a phone number
-- Add `@input--phone` and `@input--phone-error` variants to
-  `@input--default`component
+  - Add `@input--phone` and `@input--phone-error` variants to
+    `@input--default`component
 - Add [documentation for typography](../../docs/styles/typography)
 - Add documentation about [breadcrumb component](../../docs/components/breadcrumbs)
 
