@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Add `@task-list` and `@task-list-page` components
 - Add [documentation how users check their answer before submitting a
   form](../../docs/patterns/check-answers)
-  - Add `@check-answers` and `@verification-page` component
+  - Add `@check-answers` and `@check-answers-page` component
 - Add documentation how to ask for a phone number
   - Add `@input--phone` and `@input--phone-error` variants to
     `@input--default`component
