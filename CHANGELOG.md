@@ -19,9 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Error message in `@input--validation-danger` is now red like in `@fieldset--error`
-  - On small screen `@breadcrumb` typo is smaller and the parent pages are
+- On small screen `@breadcrumb` typo is smaller and the parent pages are
   visibles
-  - Current page on `@breadcrumb` use `aria-current` attribut insted of the text
+- Current page on `@breadcrumb` use `aria-current` attribut instead of the text
   *"Vous êtes ici:"*
 
 ### Fixes
