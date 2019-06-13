@@ -165,7 +165,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"testInput"</span>&gt;</span>
         Courriel
     <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback"</span>&gt;</span>Veuillez saisir votre courriel<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-danger"</span>&gt;</span>Veuillez saisir votre courriel<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"testInputHelp"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text text-secondary"</span>&gt;</span>Le courriel saisi n'est pas valide.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
 
@@ -191,7 +191,7 @@
       {%- if optional %} <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>(facultatif)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif %}
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   {%- if validation.text %}
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback"</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback{% if validation.class %} text-{{ validation.class }}{% endif %}"</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   {% endif %}
   {% if helpText -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">small</span>
@@ -6348,6 +6348,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="check-answers-page" data-pjax>
+                <span>Check Answers Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="connexion" data-pjax>
                 <span>Connexion</span>
                 
@@ -6486,30 +6510,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="task-list-page" data-pjax>
                 <span>Task List Page</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="verification-page" data-pjax>
-                <span>Verification Page</span>
                 
 
 <div class="Status Status--unlabelled">
