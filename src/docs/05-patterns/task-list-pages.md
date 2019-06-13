@@ -1,7 +1,7 @@
 ---
 title: "Liste de tâches"
 label: "Liste de tâches"
-status: wip
+status: ready
 ---
 
 Les pages de liste de tâches aident les utilisateurs à comprendre:
