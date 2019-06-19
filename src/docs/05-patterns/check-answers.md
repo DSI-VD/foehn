@@ -1,12 +1,12 @@
 ---
 title: "Vérification des réponses"
 label: "Vérification des réponses"
-status: wip
+status: ready
 ---
 
 Permet à l'utilisateur de vérifier et de modifier ses réponses avant de soumettre une demande.
 
-{{ '@verification-page' | renderComponent }}
+{{ '@check-answers-page' | renderComponent }}
 
 ## Quand utiliser ce shéma
 
