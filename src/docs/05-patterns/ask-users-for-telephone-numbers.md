@@ -4,13 +4,13 @@ label: "Numéro de téléphone"
 status: wip
 ---
 
-## Quand utiliser ce shéma
+## Quand utiliser ce schéma
 
 Ne collectez les numéros de téléphone des personnes que si vous en avez
 réellement besoin (voir [la documentation relative à la protection des
 données](/docs/get-started/protection-des-donnees)). Tout le monde n’a pas ou ne
 peut pas utiliser un téléphone, alors assurez-vous de laisser aux utilisateurs
-le choix de la manière pour être contactés.
+le choix de la manière avec laquelle l'administration peut les contacter.
 
 ## Comment ça marche 
 
@@ -40,21 +40,19 @@ Les messages d'erreur doivent être stylés comme ci-dessous:
 
 {{ '@input--phone-error' | renderComponent }}
 
-Assurez-vous que les erreurs suivent les instructions fournies dans le message
-d'erreur et ont des messages d'erreur spécifiques pour des états d'erreur
-spécifiques.
+Assurez-vous que les erreurs suivent les instructions fournies dans [la
+documentation des messages d'erreur](../components/error-message) et ont des
+messages spécifiques à chaque type d'erreur.
 
 Assurez-vous que les messages d'erreur soient spécifiques au type d'erreur. (par
 exemple: "Entrez un numéro de téléphone suisse")
 
-### Si le numéro de téléphone n'est pas dans le bon format et qu'il n'y a pas
-d'exemple
+### Si le numéro de téléphone n'est pas dans le bon format et qu'il n'y a pas d'exemple
 
 Afficher le message "Entrez un numéro de téléphone, par exemple 024 123 45 67,
 079 123 45 67 ou +41 24 123 45 67".
 
-### Si le numéro de téléphone n’est pas dans le bon format et qu’il existe un
-exemple
+### Si le numéro de téléphone n’est pas dans le bon format et qu’il existe un exemple
 
 Affichez le message "Entrez un numéro de téléphone dans le format correct".
 
@@ -70,7 +68,7 @@ helpText: "Pour les numéro internationaux, inclure le code du pays"}, true %}
 ## Utiliser des exemples de numéros de téléphone
 
 Si vous désirez des numéros à utiliser comme exemple (par exemple dans les
-textes d'aide). Utilisez les numéros suivant:
+textes d'aide). Utilisez les numéros suivants:
 
 - Numéro local: 021 123 45 67
 - Numéro international: +41 21 123 45 67
