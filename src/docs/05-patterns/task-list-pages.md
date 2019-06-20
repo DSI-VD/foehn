@@ -12,7 +12,7 @@ Les pages de liste de tâches aident les utilisateurs à comprendre:
 
 {{ '@task-list-page' | renderComponent }}
 
-## Quand utiliser ce shéma
+## Quand utiliser ce schéma
 
 Utilisez uniquement une page de liste de tâches pour les transactions ou
 prestations plus longues impliquant plusieurs tâches que les utilisateurs
@@ -20,7 +20,7 @@ peuvent avoir besoin d'effectuer sur un certain nombre de sessions.
 
 Essayez de simplifier la transaction avant d’utiliser une page de liste de
 tâches. Si vous êtes en mesure de réduire le nombre de tâches ou d'étapes, vous
-n'en avez peut-être pas besoin.
+n'avez peut-être pas besoin de ce schéma.
 
 ## Comment ça marche
 
