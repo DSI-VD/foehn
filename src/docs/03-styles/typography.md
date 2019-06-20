@@ -1,7 +1,7 @@
 ---
 title: Typographie
 label: Typographie
-status: review
+status: ready
 ---
 
 ## Polices
@@ -12,13 +12,16 @@ Sans](https://fonts.google.com/specimen/Open+Sans) pour les corps de texte et
 
 ## Titres
 
-Utilisez les en-têtes de manière cohérente pour créer une hiérarchie claire sur
-l'ensemble de vos page.
+Utilisez [les éléments de
+titre](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements)
+de manière cohérente pour créer une hiérarchie claire sur l'ensemble de vos
+pages.
 
-Marquez les en-têtes sémantiquement à l'aide de l'élément HTML approprié `<hx>`
-et utilisez la classe d'en-tête correspondante pour appliquer le style Foehn.
+Marquez les en-têtes sémantiquement à l'aide de l'élément HTML approprié (de
+`<h1>` à `<h6>`) et utilisez la classe d'en-tête correspondante pour appliquer
+le style Foehn.
 
-Ecrivez les titre en minuscule sauf la première lettre.
+Ecrivez les titres en minuscule sauf la première lettre.
 
 {{ '@headings-list' | renderComponent }}
 
@@ -73,7 +76,7 @@ texte.
 <span class="h2">This text will looks like an h2</span>
 ```
 
-### Epaisseur du texte
+### Graisse du texte
 
 Comme pour la taille de la police, vous pouvez ajouter une classe afin de
 modifier la graisse entre normal ou gras à n'importe quel élément typographique.
@@ -107,8 +110,8 @@ le lien.
 
 ## Listes
 
-Utilisez des listes pour faciliter la lecture des blocs de texte et diviser les
-informations en fragments compréhensibles.
+Utilisez des listes pour rendre plus aisé la lecture des blocs de texte et diviser les
+informations en fragments plus facilement compréhensibles.
 
 {{ '@list--unstyled' | renderComponent }}
 
