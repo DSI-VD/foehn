@@ -139,7 +139,7 @@ page afin de déterminer rapidement ce qu'elle contient. Ainsi, il peut ne pas
 être source de confusion si, ce faisant, on doit déterminer le but de la page.
 
 ```
-<title>Menu - Restaurant chinois Maison bleue - Commande en ligne</title>
+<title>Calculer mes impôts - VD.CH</title>
 ```
 
 Mettre à jour la valeur de title afin de refléter un changement d'état important
@@ -147,5 +147,5 @@ Mettre à jour la valeur de title afin de refléter un changement d'état import
 utile :
 
 ```
-<title>2 erreurs sur votre commande - Restaurant chinois Maison bleue - Commande en ligne</title>
+<title>2 erreurs sur le formulair - Calculer mes impôts - VD.CH</title>
 ```
