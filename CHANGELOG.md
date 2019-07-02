@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add [documentation how to write titles](../../docs/regles-d-ecriture/titles)
 - Add [documentation about task list page pattern](../../docs/patterns/task-list-pages)
   - Add `@task-list` and `@task-list-page` components
 - Add [documentation how users check their answer before submitting a
