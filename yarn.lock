@@ -125,9 +125,9 @@
     to-fast-properties "^2.0.0"
 
 "@fortawesome/fontawesome-free@^5.4.2":
-  version "5.8.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.2.tgz#fae4112c4fb47086f6ae167e32524b280000abd5"
-  integrity sha512-E4fDUF4fbu9AxKpaQQqCN3XBnNzb/5e0Gvd9OaQsYkK574LVI57v/EqqPfIm/mC7jYbxaPNrhvT5AF+Yzwyizg==
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.9.0.tgz#1aa5c59efb1b8c6eb6277d1e3e8c8f31998b8c8e"
+  integrity sha512-g795BBEzM/Hq2SYNPm/NQTIp3IWd4eXSH0ds87Na2jnrAUFX3wkyZAI4Gwj9DOaWMuz2/01i8oWI7P7T/XLkhg==
 
 "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.7":
   version "1.1.7"
@@ -7014,9 +7014,9 @@ postcss-ordered-values@^4.1.2:
     postcss-value-parser "^3.0.0"
 
 postcss-prefixwrap@^1.3.0:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/postcss-prefixwrap/-/postcss-prefixwrap-1.5.1.tgz#a737e739fc6328e0e62acdf03e2d4cf4a63151e5"
-  integrity sha512-hU5HW/9LpyQPtWwtX56W2D7NKNkOj2lfHl57cdSc8cxiwa6zDEG1ERoyLYmn57unwl/aD+5KYVjA3vWjSHMRdQ==
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/postcss-prefixwrap/-/postcss-prefixwrap-1.6.0.tgz#b4428a9d8d87398c22135e4d8e2cf7a375b4838e"
+  integrity sha512-8oVioo4EroqEpFthTWjLxkuHfrTF7QEhW7fda7MBV44nwpRV/yN+fcHNqTffzxrqxW94MTCoP9XHxOgtniMTnQ==
 
 postcss-reduce-initial@^4.0.3:
   version "4.0.3"
