@@ -5,6 +5,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add [documentation about header](../../docs/components/header)
+
+### Removed
+- Remove application title in `@header-application` and
+  `@header-application--fluid`
+
 ### Fixes
 - Upgrade a bunch of modules that you do note need to take care of
 

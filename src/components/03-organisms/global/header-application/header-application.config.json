@@ -1,7 +1,6 @@
 {
   "status": "ready",
   "context": {
-    "applicationTitle": "Application title",
     "styleModifier": "container"
   },
   "variants": [

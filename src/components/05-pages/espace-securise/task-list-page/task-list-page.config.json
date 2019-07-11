@@ -1,9 +1,6 @@
 {
   "status": "wip",
   "context": {
-    "header": {
-      "applicationTitle": "Nom de l'application"
-    },
     "pageTitle": {
       "pageTitle": {
         "text": "Nom de la prestation"
