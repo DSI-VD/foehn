@@ -3,9 +3,12 @@
   <ol class="breadcrumb">
     {% for item in breadcrumb %}
       {%-if item.page %}
-      <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.page }}</a></li>
+      {% if not loop.last %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.page }}</a></li>
+      {% else %}
+        <li class="sr-only" aria-current="page">{{ item.page  }}</li>
+      {% endif %}
       {%- endif %}
     {% endfor %}
-    <li class="sr-only" aria-current="page">Titre de la page courante</li>
   </ol>
 </nav>

@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `@header-application--fluid`
 
 ### Fixes
+- Fix current page in `@breadcrumb` wasn't generated dynamically via nunjuck
 - Upgrade a bunch of modules that you do note need to take care of
 
 ## [1.3.0] - 2019-07-04
