@@ -20,7 +20,10 @@
           "page": "Département du territoire et de l'environnement",
           "url": "#"
         },
-        null
+        {
+          "page": "Direction générale de l'environnement (DGE)",
+          "url": "#"
+        }
       ]
     },
     "indexMenu": {

@@ -12,7 +12,10 @@
           "page": "Communiqués de presse",
           "url": "#"
         },
-        null,
+        {
+          "page": "Le Service de la sécurité civile et militaire est certifié",
+          "url": "#"
+        },
         null
       ]
     },

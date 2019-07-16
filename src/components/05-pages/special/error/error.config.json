@@ -16,8 +16,10 @@
               "page": "vd.ch",
               "url": "#"
             },
-            null,
-            null,
+            {
+              "page": "Page non trouvée",
+              "url": "#"
+            },
             null
           ]
         },
@@ -38,7 +40,10 @@
               "page": "vd.ch",
               "url": "#"
             },
-            null,
+            {
+              "page": "Une erreur est survenue",
+              "url": "#"
+            },
             null,
             null
           ]

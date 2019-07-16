@@ -19,6 +19,10 @@
           {
             "page": "e-ACO : Détermination / modification des acomptes",
             "url": "https://www.vd.ch/prestation-detail/prestation/modifier-ses-acomptes-avec-e-aco-pour-les-individus-personnes-physiques/"
+          },
+          {
+            "page": "Merci de vérifier vos données avant de soumettre votre demande",
+            "url": "#"
           }
         ]
       }

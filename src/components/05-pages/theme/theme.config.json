@@ -16,7 +16,10 @@
           "page": "Domaines",
           "url": "#"
         },
-        null,
+        {
+          "page": "Theme name",
+          "url": "#"
+        },
         null
       ]
     },

@@ -16,8 +16,14 @@
           "page": "Parent page",
           "url": "#"
         },
-        null,
-        null
+        {
+          "page": "Parent page",
+          "url": "#"
+        },
+        {
+          "page": "Template",
+          "url": "#"
+        }
       ]
     },
     "footer": {

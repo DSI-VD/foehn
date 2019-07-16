@@ -15,7 +15,10 @@
           "page": "Actualites",
           "url": "news-list"
         },
-        null,
+        {
+          "page": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, neque. Cupiditate cumque, molestiae dolor.",
+          "url": "news-list"
+        },
         null
       ]
     },

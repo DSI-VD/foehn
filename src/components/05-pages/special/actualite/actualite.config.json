@@ -15,7 +15,10 @@
           "page": "Actualités",
           "url": "#"
         },
-        null,
+        {
+          "page": "La Journée Oser tous les métiers élargit son offre",
+          "url": "#"
+        },
         null
       ]
     },

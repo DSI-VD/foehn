@@ -11,7 +11,10 @@
           "page": "vd.ch",
           "url": "#"
         },
-        null,
+        {
+          "page": "Communiqués de presse",
+          "url": "#"
+        },
         null,
         null
       ]
