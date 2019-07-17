@@ -4,7 +4,7 @@ label: Avertissement
 status: wip
 ---
 
-{{ '@highlight' | renderComponent }}
+{{ '@warning-text' | renderComponent }}
 
 ## Quand utiliser ce composant
 
@@ -14,7 +14,7 @@ d'une action ou l'absence d'action, qu'ils pourraient prendre.
 
 ## Fonctionnement
 
-{{ '@highlight' | renderComponent }}
+{{ '@warning-text' | renderComponent }}
 
 Vous devrez peut-être réécrire le texte ("Avertissement" dans l'exemple)
 pour l'adapter à votre contexte.
