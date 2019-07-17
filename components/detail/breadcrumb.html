@@ -161,7 +161,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-b8018f7eb2d57758f3c50fbdc187cc90-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Fil d'Ariane"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>File d'Ariane<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
 
@@ -180,7 +180,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-b8018f7eb2d57758f3c50fbdc187cc90-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span>{% <span class="hljs-attr">endif</span> %} <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Fil d'Ariane"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>File d'Ariane<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
     {% for item in breadcrumb %}
