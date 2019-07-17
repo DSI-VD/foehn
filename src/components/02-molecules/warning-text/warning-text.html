@@ -1,0 +1,11 @@
+<div class="vd-warning-text">
+  {% if title -%}
+    <h3>{{ title }}</h3>
+  {%- endif %}
+  {%- if text %}
+  <p>{{ text }}</p>
+  {%- endif %}
+  {% if link -%}
+    <p><a href="{{ link.url }}">{{ link.text }}</a></p>
+  {%- endif %}
+</div>
