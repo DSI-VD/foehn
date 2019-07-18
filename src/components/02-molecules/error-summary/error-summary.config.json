@@ -1,0 +1,16 @@
+{
+  "status": "wip",
+  "context": {
+    "title": "Il y a un problème",
+    "errorList": [
+      {
+        "text": "La date à laquelle votre passeport a été délivré doit être dans le passé",
+        "url": "#passport-issued-error"
+      },
+      {
+        "text": "Entrez un code postal à quatre chiffres comme 1234",
+        "url": "#postcode-error"
+      }
+    ]
+  }
+}

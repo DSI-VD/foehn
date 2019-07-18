@@ -38,3 +38,8 @@
   outline: 3px solid $vd-focus;
   color: currentColor;
 }
+
+@mixin vd-focus-outline() {
+  outline: 5px solid $vd-focus !important;
+  outline-offset: 0;
+}
