@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The *highlight* component has been rename in `@warning-text`
   - The CSS class has been renamed from `.vd-highlight` to `.vd-warning-text`.
     Make sure to update any reference to it
+- Add a `role` attribute in `@header-application` and `@header-application--fluid`
 
 ### Removed
 - Remove application title in `@header-application` and
