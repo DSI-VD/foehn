@@ -125,9 +125,9 @@
     to-fast-properties "^2.0.0"
 
 "@fortawesome/fontawesome-free@^5.4.2":
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.9.0.tgz#1aa5c59efb1b8c6eb6277d1e3e8c8f31998b8c8e"
-  integrity sha512-g795BBEzM/Hq2SYNPm/NQTIp3IWd4eXSH0ds87Na2jnrAUFX3wkyZAI4Gwj9DOaWMuz2/01i8oWI7P7T/XLkhg==
+  version "5.10.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/@fortawesome/fontawesome-free/-/fontawesome-free-5.10.1.tgz#dec28ee02c3fc51da46d53ce4da9d5787312fbd7"
+  integrity sha512-PYncBhgN1l02mwHmczukexmu4yRTjRDAAdcK62jdWSAW8epcnZ9K2win/7rMrffiv/c7XLVDA8vD+yi6WyvbGQ==
 
 "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.7":
   version "1.1.7"
@@ -288,7 +288,7 @@
 
 JSV@^4.0.x:
   version "4.0.2"
-  resolved "https://registry.yarnpkg.com/JSV/-/JSV-4.0.2.tgz#d077f6825571f82132f9dffaed587b4029feff57"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/JSV/-/JSV-4.0.2.tgz#d077f6825571f82132f9dffaed587b4029feff57"
   integrity sha1-0Hf2glVx+CEy+d/67Vh7QCn+/1c=
 
 abbrev@1:
@@ -367,15 +367,15 @@ ansi-align@^2.0.0:
 
 ansi-colors@^1.0.1:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-1.1.0.tgz#6374b4dd5d4718ff3ce27a671a3b1cad077132a9"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/ansi-colors/-/ansi-colors-1.1.0.tgz#6374b4dd5d4718ff3ce27a671a3b1cad077132a9"
   integrity sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==
   dependencies:
     ansi-wrap "^0.1.0"
 
-ansi-colors@^3.2.3:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
-  integrity sha512-hHUXGagefjN2iRrID63xckIvotOXOojhQKWIPUZ4mNUZ9nLZW+7FMNoE1lOkEhNWYsx/7ysGIuJYCiMAA9FnrA==
+ansi-colors@^4.1.1:
+  version "4.1.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
+  integrity sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==
 
 ansi-escapes@^1.0.0, ansi-escapes@^1.1.0:
   version "1.4.0"
@@ -389,7 +389,7 @@ ansi-escapes@^3.1.0, ansi-escapes@^3.2.0:
 
 ansi-gray@^0.1.1:
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/ansi-gray/-/ansi-gray-0.1.1.tgz#2962cf54ec9792c48510a3deb524436861ef7251"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/ansi-gray/-/ansi-gray-0.1.1.tgz#2962cf54ec9792c48510a3deb524436861ef7251"
   integrity sha1-KWLPVOyXksSFEKPetSRDaGHvclE=
   dependencies:
     ansi-wrap "0.1.0"
@@ -430,12 +430,12 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
 
 ansi-styles@~1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-1.0.0.tgz#cb102df1c56f5123eab8b67cd7b98027a0279178"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/ansi-styles/-/ansi-styles-1.0.0.tgz#cb102df1c56f5123eab8b67cd7b98027a0279178"
   integrity sha1-yxAt8cVvUSPquLZ817mAJ6AnkXg=
 
 ansi-wrap@0.1.0, ansi-wrap@^0.1.0:
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
   integrity sha1-qCJQ3bABXponyoLoLqYDu/pF768=
 
 anymatch@^1.3.0:
@@ -495,7 +495,7 @@ arr-diff@^2.0.0:
 
 arr-diff@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/arr-diff/-/arr-diff-4.0.0.tgz#d6461074febfec71e7e15235761a329a5dc7c520"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/arr-diff/-/arr-diff-4.0.0.tgz#d6461074febfec71e7e15235761a329a5dc7c520"
   integrity sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA=
 
 arr-filter@^1.1.1:
@@ -519,7 +519,7 @@ arr-map@^2.0.0, arr-map@^2.0.2:
 
 arr-union@^3.1.0:
   version "3.1.0"
-  resolved "https://registry.yarnpkg.com/arr-union/-/arr-union-3.1.0.tgz#e39b09aea9def866a8f206e288af63919bae39c4"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/arr-union/-/arr-union-3.1.0.tgz#e39b09aea9def866a8f206e288af63919bae39c4"
   integrity sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
 
 array-differ@^1.0.0:
@@ -635,7 +635,7 @@ assert-plus@1.0.0, assert-plus@^1.0.0:
 
 assign-symbols@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
   integrity sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=
 
 astral-regex@^1.0.0:
@@ -1207,7 +1207,7 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4
 
 chalk@~0.4.0:
   version "0.4.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-0.4.0.tgz#5199a3ddcd0c1efe23bc08c1b027b06176e0c64f"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/chalk/-/chalk-0.4.0.tgz#5199a3ddcd0c1efe23bc08c1b027b06176e0c64f"
   integrity sha1-UZmj3c0MHv4jvAjBsCewYXbgxk8=
   dependencies:
     ansi-styles "~1.0.0"
@@ -1491,7 +1491,7 @@ color-string@^1.5.2:
 
 color-support@^1.1.3:
   version "1.1.3"
-  resolved "https://registry.yarnpkg.com/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
   integrity sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==
 
 color@^3.0.0:
@@ -1574,7 +1574,7 @@ concat-stream@1.6.2, concat-stream@^1.4.7, concat-stream@^1.6.0:
 
 concat-with-sourcemaps@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/concat-with-sourcemaps/-/concat-with-sourcemaps-1.1.0.tgz#d4ea93f05ae25790951b99e7b3b09e3908a4082e"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/concat-with-sourcemaps/-/concat-with-sourcemaps-1.1.0.tgz#d4ea93f05ae25790951b99e7b3b09e3908a4082e"
   integrity sha512-4gEjHJFT9e+2W/77h/DS5SGUgwDaOwprX8L/gl5+3ixnzkVJJsZWDSelmN3Oilw3LNDZjZV0yqH1hLG3k6nghg==
   dependencies:
     source-map "^0.6.1"
@@ -1701,7 +1701,7 @@ core-js@^2.0.0, core-js@^2.4.0, core-js@^2.5.0:
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
 cosmiconfig@^4.0.0:
@@ -3717,26 +3717,26 @@ gulp-gh-pages@^0.5.4:
     wrap-promise "^1.0.1"
 
 gulp-header@^2.0.5:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/gulp-header/-/gulp-header-2.0.7.tgz#07505740eb432e8d2bb2af68744858dabaaf491b"
-  integrity sha512-qppGkYGQZnt/mRJiiR5wYZIUwNUn47Xpg4+6tHYDVeAW5IDLbHBQwbw7axfMLWGE+gKQpB+yXLeslHMw1/Haog==
+  version "2.0.9"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/gulp-header/-/gulp-header-2.0.9.tgz#8b432c4d4379dee6788845b16785b09c7675af84"
+  integrity sha512-LMGiBx+qH8giwrOuuZXSGvswcIUh0OiioNkUpLhNyvaC6/Ga8X6cfAeme2L5PqsbXMhL8o8b/OmVqIQdxprhcQ==
   dependencies:
     concat-with-sourcemaps "^1.1.0"
-    lodash.template "^4.4.0"
+    lodash.template "^4.5.0"
     map-stream "0.0.7"
     through2 "^2.0.0"
 
 gulp-jsonlint@^1.2.1:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/gulp-jsonlint/-/gulp-jsonlint-1.3.0.tgz#8203e5d533f947472c498d83526a7f179abb4a5c"
-  integrity sha512-Hjg5EK07j6SLvZ9KapQ6P/TggpX4D90aVGKitJ0E5npzB8AfhVK2z6gIBj8s3C+h7jthnwPJT8E9V/uQbMhJ9w==
+  version "1.3.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/gulp-jsonlint/-/gulp-jsonlint-1.3.1.tgz#6ebb117f50e2eb7cd8a4ff20094998110b55d296"
+  integrity sha512-vZmMMp2D+z8SpDc8PoSJ6IdxaaPk9zpwNjIPaHFe/qu+WyAoGQ0HTxulokLnZx7qsOx4GFwAjCEwXQyUI6Hi4A==
   dependencies:
-    ansi-colors "^3.2.3"
+    ansi-colors "^4.1.1"
     fancy-log "^1.3.3"
     jsonlint "1.6.3"
     map-stream "0.0.7"
     plugin-error "1.0.1"
-    through2 "^3.0.0"
+    through2 "^3.0.1"
 
 gulp-postcss@^8.0.0:
   version "8.0.0"
@@ -3928,7 +3928,7 @@ has-binary2@~1.0.2:
 
 has-color@~0.1.0:
   version "0.1.7"
-  resolved "https://registry.yarnpkg.com/has-color/-/has-color-0.1.7.tgz#67144a5260c34fc3cca677d041daf52fe7b78b2f"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/has-color/-/has-color-0.1.7.tgz#67144a5260c34fc3cca677d041daf52fe7b78b2f"
   integrity sha1-ZxRKUmDDT8PMpnfQQdr1L+e3iy8=
 
 has-cors@1.1.0:
@@ -4233,10 +4233,15 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@2.0.3, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
+inherits@2, inherits@2.0.3, inherits@^2.0.1, inherits@~2.0.0, inherits@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+
+inherits@^2.0.3, inherits@~2.0.3:
+  version "2.0.4"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
 ini@^1.3.4, ini@^1.3.5, ini@~1.3.0:
   version "1.3.5"
@@ -4487,7 +4492,7 @@ is-extendable@^0.1.0, is-extendable@^0.1.1:
 
 is-extendable@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/is-extendable/-/is-extendable-1.0.1.tgz#a7470f9e426733d81bd81e1155264e3a3507cab4"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/is-extendable/-/is-extendable-1.0.1.tgz#a7470f9e426733d81bd81e1155264e3a3507cab4"
   integrity sha512-arnXMxT1hhoKo9k1LZdmlNyJdDDfy2v0fXjFlmok4+i8ul/6WlbVge9bhM74OpNPQPMGUToDtz+KXa1PneJxOA==
   dependencies:
     is-plain-object "^2.0.4"
@@ -4959,7 +4964,7 @@ jsonfile@^4.0.0:
 
 jsonlint@1.6.3:
   version "1.6.3"
-  resolved "https://registry.yarnpkg.com/jsonlint/-/jsonlint-1.6.3.tgz#cb5e31efc0b78291d0d862fbef05900adf212988"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/jsonlint/-/jsonlint-1.6.3.tgz#cb5e31efc0b78291d0d862fbef05900adf212988"
   integrity sha512-jMVTMzP+7gU/IyC6hvKyWpUU8tmTkK5b3BPNuMI9U8Sit+YAWLlZwB6Y6YrdCxfg2kNz05p3XY3Bmm4m26Nv3A==
   dependencies:
     JSV "^4.0.x"
@@ -5207,7 +5212,7 @@ lodash._reevaluate@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reevaluate/-/lodash._reevaluate-3.0.0.tgz#58bc74c40664953ae0b124d806996daca431e2ed"
   integrity sha1-WLx0xAZklTrgsSTYBpltrKQx4u0=
 
-lodash._reinterpolate@^3.0.0, lodash._reinterpolate@~3.0.0:
+lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
@@ -5373,12 +5378,12 @@ lodash.template@^3.0.0:
     lodash.restparam "^3.0.0"
     lodash.templatesettings "^3.0.0"
 
-lodash.template@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
-  integrity sha1-5zoDhcg1VZF0bgILmWecaQ5o+6A=
+lodash.template@^4.5.0:
+  version "4.5.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
+  integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
   dependencies:
-    lodash._reinterpolate "~3.0.0"
+    lodash._reinterpolate "^3.0.0"
     lodash.templatesettings "^4.0.0"
 
 lodash.templatesettings@^3.0.0:
@@ -5390,11 +5395,11 @@ lodash.templatesettings@^3.0.0:
     lodash.escape "^3.0.0"
 
 lodash.templatesettings@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-4.1.0.tgz#2b4d4e95ba440d915ff08bc899e4553666713316"
-  integrity sha1-K01OlbpEDZFf8IvImeRVNmZxMxY=
+  version "4.2.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/lodash.templatesettings/-/lodash.templatesettings-4.2.0.tgz#e481310f049d3cf6d47e912ad09313b154f0fb33"
+  integrity sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   dependencies:
-    lodash._reinterpolate "~3.0.0"
+    lodash._reinterpolate "^3.0.0"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -5527,7 +5532,7 @@ map-obj@^2.0.0:
 
 map-stream@0.0.7:
   version "0.0.7"
-  resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.0.7.tgz#8a1f07896d82b10926bd3744a2420009f88974a8"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/map-stream/-/map-stream-0.0.7.tgz#8a1f07896d82b10926bd3744a2420009f88974a8"
   integrity sha1-ih8HiW2CsQkmvTdEokIACfiJdKg=
 
 map-visit@^1.0.0:
@@ -6011,7 +6016,7 @@ node.extend@^2.0.0:
 
 nomnom@^1.5.x:
   version "1.8.1"
-  resolved "https://registry.yarnpkg.com/nomnom/-/nomnom-1.8.1.tgz#2151f722472ba79e50a76fc125bb8c8f2e4dc2a7"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/nomnom/-/nomnom-1.8.1.tgz#2151f722472ba79e50a76fc125bb8c8f2e4dc2a7"
   integrity sha1-IVH3Ikcrp55Qp2/BJbuMjy5Nwqc=
   dependencies:
     chalk "~0.4.0"
@@ -6565,7 +6570,7 @@ parse-json@^4.0.0:
 
 parse-node-version@^1.0.0:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/parse-node-version/-/parse-node-version-1.0.1.tgz#e2b5dbede00e7fa9bc363607f53327e8b073189b"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/parse-node-version/-/parse-node-version-1.0.1.tgz#e2b5dbede00e7fa9bc363607f53327e8b073189b"
   integrity sha512-3YHlOa/JgH6Mnpr05jP9eDG254US9ek25LyIxZlDItp2iJtwyaXQb57lBYLdT3MowkUFYEV2XXNAYIPlESvJlA==
 
 parse-passwd@^1.0.0:
@@ -7217,10 +7222,15 @@ process-nextick-args@^1.0.7:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
   integrity sha1-FQ4gt1ZZCtP5EJPyWk8q2L/zC6M=
 
-process-nextick-args@^2.0.0, process-nextick-args@~2.0.0:
+process-nextick-args@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
   integrity sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
+
+process-nextick-args@~2.0.0:
+  version "2.0.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
+  integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
 progress@^2.0.0, progress@^2.0.1:
   version "2.0.3"
@@ -7443,7 +7453,7 @@ read-pkg@^3.0.0:
 
 "readable-stream@2 || 3", readable-stream@^3.1.1:
   version "3.4.0"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.4.0.tgz#a51c26754658e0a3c21dbf59163bd45ba6f447fc"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/readable-stream/-/readable-stream-3.4.0.tgz#a51c26754658e0a3c21dbf59163bd45ba6f447fc"
   integrity sha512-jItXPLmrSR8jmTRmRWJXCnGJsfy85mB3Wd/uINMXA65yrnFo0cPClFIUWzo2najVNSl+mx7/4W8ttlLWJe99pQ==
   dependencies:
     inherits "^2.0.3"
@@ -7874,6 +7884,11 @@ safe-buffer@5.1.2, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.2, s
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
+
+safe-buffer@~5.2.0:
+  version "5.2.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
+  integrity sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
 
 safe-regex@^1.1.0:
   version "1.1.0"
@@ -8415,11 +8430,11 @@ string-width@^3.0.0:
     strip-ansi "^5.1.0"
 
 string_decoder@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.2.0.tgz#fe86e738b19544afe70469243b2a1ee9240eae8d"
-  integrity sha512-6YqyX6ZWEYguAxgZzHGL7SsCeGx3V2TtOTqZz1xSTSWnqsbWwbptafNyvf/ACquZUXV3DANr5BDIwNYe1mN42w==
+  version "1.3.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/string_decoder/-/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
+  integrity sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
   dependencies:
-    safe-buffer "~5.1.0"
+    safe-buffer "~5.2.0"
 
 string_decoder@~0.10.x:
   version "0.10.31"
@@ -8428,7 +8443,7 @@ string_decoder@~0.10.x:
 
 string_decoder@~1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
   integrity sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
   dependencies:
     safe-buffer "~5.1.0"
@@ -8466,7 +8481,7 @@ strip-ansi@^5.1.0:
 
 strip-ansi@~0.1.0:
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-0.1.1.tgz#39e8a98d044d150660abe4a6808acf70bb7bc991"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/strip-ansi/-/strip-ansi-0.1.1.tgz#39e8a98d044d150660abe4a6808acf70bb7bc991"
   integrity sha1-OeipjQRNFQZgq+SmgIrPcLt7yZE=
 
 strip-bom-stream@^1.0.0:
@@ -8775,9 +8790,9 @@ through2@^0.6.0:
     readable-stream ">=1.0.33-1 <1.1.0-0"
     xtend ">=4.0.0 <4.1.0-0"
 
-through2@^3.0.0:
+through2@^3.0.0, through2@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
   integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
   dependencies:
     readable-stream "2 || 3"
@@ -8789,7 +8804,7 @@ through@^2.3.6:
 
 time-stamp@^1.0.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
   integrity sha1-dkpaEa9QVhkhsTPztE5hhofg9cM=
 
 timed-out@^3.0.0:
@@ -9021,7 +9036,7 @@ underscore@1.x.x:
 
 underscore@~1.6.0:
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.6.0.tgz#8b38b10cacdef63337b8b24e4ff86d45aea529a8"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/underscore/-/underscore-1.6.0.tgz#8b38b10cacdef63337b8b24e4ff86d45aea529a8"
   integrity sha1-izixDKze9jM3uLJOT/htRa6lKag=
 
 undertaker-registry@^1.0.0:
@@ -9233,7 +9248,7 @@ use@^3.1.0:
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
 util.promisify@~1.0.0:
@@ -9659,10 +9674,15 @@ xo@^0.24.0:
     update-notifier "^2.3.0"
     xo-init "^0.7.0"
 
-"xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.1, xtend@~4.0.0, xtend@~4.0.1:
+"xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.1, xtend@~4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
+
+xtend@~4.0.1:
+  version "4.0.2"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^3.2.0, y18n@^3.2.1:
   version "3.2.1"
