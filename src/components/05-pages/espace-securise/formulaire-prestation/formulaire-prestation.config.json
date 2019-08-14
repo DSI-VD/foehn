@@ -1,6 +1,9 @@
 {
   "status": "ready",
   "context": {
+    "header": {
+      "applicationTitle": "e-ACO : Détermination / modification des acomptes"
+    },
     "pageTitle": {
       "pageTitle": {
         "text": "Information personnelles"

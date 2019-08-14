@@ -1,6 +1,9 @@
 {
   "status": "wip",
   "context": {
+    "header": {
+      "applicationTitle": "e-ACO : Détermination / modification des acomptes"
+    },
     "pageTitle": {
       "pageTitle": {
         "text": "Merci de vérifier vos données avant de soumettre votre demande"
