@@ -10,7 +10,8 @@ status: wip
 
 Utilisez le composant d'avertissement lorsque vous devez avertir les
 utilisateurs de quelque chose d'important, tel que les conséquences juridiques
-d'une action ou l'absence d'action, qu'ils pourraient prendre.
+d'une action ou l'absence d'action, qu'ils pourraient prendre ou toute autre
+information incontournable (envoyer un document avant d'appeler, etc.)
 
 ## Fonctionnement
 
