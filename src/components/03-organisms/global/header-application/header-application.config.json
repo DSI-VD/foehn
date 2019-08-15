@@ -1,7 +1,6 @@
 {
   "status": "ready",
   "context": {
-    "applicationTitle": "Application title",
     "styleModifier": "container"
   },
   "variants": [
@@ -9,6 +8,13 @@
       "name": "fluid",
       "context": {
         "styleModifier": "container-fluid"
+      }
+    },
+    {
+      "name": "name",
+      "context": {
+        "applicationTitle": "Service name",
+        "styleModifier": "container"
       }
     }
   ]

@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add [documentation about header](../../docs/components/header)
 
 ### Changed
+- Change structure of `@header-application` and `@header-application--title` and
+  `@header-application--fluid` for better accessibility
 - Add `aria-label` attribute in `@breadcrumb`
 - The *highlight* component has been rename in `@warning-text`
   - The CSS class has been renamed from `.vd-highlight` to `.vd-warning-text`.

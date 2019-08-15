@@ -1,10 +1,9 @@
 <header class="header" role="banner">
   {% include '@access-nav' %}
-  <div class="d-flex flex-column flex-md-row flex-wrap{%- if styleModifier %} {{ styleModifier }}{%- endif %}">
+  <div class="vd-header-application{%- if styleModifier %} {{ styleModifier }}{%- endif %}">
     {% render '@logo-etat--alternate-2', logo, true %}
     {%- if applicationTitle -%}
-    <span class="h4 vd-heading-light mt-1 mx-1 d-none d-md-inline">//</span>
-    <span class="h4 vd-heading-light mt-1">{{ applicationTitle }}</span>
+    <span class="vd-header-application__title">{{ applicationTitle }}</span>
     {%- endif %}
   </div>
 </header>
