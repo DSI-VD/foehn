@@ -28,7 +28,7 @@ Vous devez:
 - affiche les mêmes messages d'erreur que sur les champs avec des erreurs
 
 Lisez [les instructions pour écrire de bons messages
-d'erreur](../error-message/).
+d'erreur](error-message/).
 
 ## Créer un lien du récaptulatif à chaques réponse incorrectes
 
