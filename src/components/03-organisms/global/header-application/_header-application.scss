@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+/**
+ * header for application
+ *
+ * 1. Show a double slash between logo and title when not on mobile
+ * 2. Do not show the double slash when on mobile. Since we can not detect when
+ *    items are wrappes we use media queries
+ */
+
+.vd-header-application {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* [2] */
+  @include media-breakpoint-up(md) {
+    flex-direction: row; /* [2] */
+  }
+}
+
+.vd-header-application__title {
+  margin-bottom: $spacer/2;
+
+  font-size: $h4-font-size;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    margin-top: $spacer/4;
+
+    &:before {
+      content: "//"; /* [1] */
+      margin-left: $spacer/4; /* [1] */
+      margin-right: $spacer/4; /* [1] */
+    }
+  }
+}

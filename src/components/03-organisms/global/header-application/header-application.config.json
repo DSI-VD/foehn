@@ -9,6 +9,13 @@
       "context": {
         "styleModifier": "container-fluid"
       }
+    },
+    {
+      "name": "name",
+      "context": {
+        "applicationTitle": "Service name",
+        "styleModifier": "container"
+      }
     }
   ]
 }
