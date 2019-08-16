@@ -4,7 +4,9 @@
   {% if errorList -%}
     <ul>
       {% for item in errorList -%}
+        {%- if item -%}
         <li><a href="{{ item.url }}" class="text-danger">{{ item.text }}</a></li>
+        {%- endif -%}
       {% endfor -%}
     </ul>
   {% endif -%}
