@@ -39,7 +39,8 @@ Pour les questions qui nécéssitent que l’utilisateur réponde à un seul
 champ, comme un téléchargement de fichier, une sélection, une zone de texte, une
 entrée de texte ou un nombre de caractères, faites un lien vers le champ.
 
-*Mettre un exemple*
+[Exemple de lien depuis une résumé d'erreur vers un champs
+unique (GOV.uk design system)](https://design-system.service.gov.uk/components/error-summary/linking/index.html#name)
 
 Lorsqu'un utilisateur doit entrer sa réponse dans plusieurs champs, tels que les
 champs jour, mois et année dans un composant de saisie de la date, faites un
@@ -48,19 +49,20 @@ lien vers le premier champ contenant une erreur.
 Si vous ne savez pas quel champ contient une erreur, faites un lien vers le
 premier champ.
 
-*Mettre un exemple*
+[Exemple de lien depuis un résumé d'erreur vers une réponse à plusieurs champs
+(GOV.uk design
+system)](https://design-system.service.gov.uk/components/error-summary/linking-multiple-fields/index.html)
 
 Pour les questions qui nécessitent que l'utilisateur sélectionne une ou
 plusieurs options dans une liste à l'aide de boutons radios ou de cases à
 cocher, faites un lien vers le premier bouton radio ou case à cocher.
 
-*Mettre un exemple*
+[Exemple de lien depuis un résumé d'erreur vers une des cases à cocher (GOV.uk
+design system (GOV.uk design
+system)](https://design-system.service.gov.uk/components/error-summary/linking-checkboxes-radios/index.html)
 
 ## Où placer le récapitulatif des erreurs
 
 Placez le récapitulatif des erreurs au début du conteneur `<main>` juste après
 le `<h1>`.
-
-*Mettre un exemple*
-
 
