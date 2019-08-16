@@ -83,6 +83,29 @@
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v1.3.0...HEAD">Unreleased</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add <a href="../../docs/components/warning-text">documentation for warning text
+component</a></li>
+<li>Add <a href="../../docs/components/header">documentation about header</a></li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Change structure of <a href="../components/detail/header-application"><code>@header-application</code></a> and <a href="../components/detail/header-application--title"><code>@header-application--title</code></a> and
+<a href="../components/detail/header-application--fluid"><code>@header-application--fluid</code></a> for better accessibility</li>
+<li>Add <code>aria-label</code> attribute in <a href="../components/detail/breadcrumb"><code>@breadcrumb</code></a></li>
+<li>The <em>highlight</em> component has been rename in <a href="../components/detail/warning-text"><code>@warning-text</code></a><ul>
+<li>The CSS class has been renamed from <code>.vd-highlight</code> to <code>.vd-warning-text</code>.
+Make sure to update any reference to it</li>
+</ul>
+</li>
+<li>Add a <code>role</code> attribute in <a href="../components/detail/header-application"><code>@header-application</code></a> and <a href="../components/detail/header-application--fluid"><code>@header-application--fluid</code></a></li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>Fix current page in <a href="../components/detail/breadcrumb"><code>@breadcrumb</code></a> wasn’t generated dynamically via nunjuck</li>
+<li>Upgrade a bunch of modules that you do note need to take care of</li>
+</ul>
 <h2 id="1-3-0-2019-07-04"><a href="https://github.com/DSI-VD/foehn/compare/v1.2.0...v1.3.0">1.3.0</a> - 2019-07-04</h2>
 <h3 id="added">Added</h3>
 <ul>
@@ -2523,7 +2546,7 @@ is the first element of the navigation.</li>
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="components/error-summary" data-pjax>
-                <span>Error Summary</span>
+                <span>Récapitulatif des erreurs</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2531,7 +2554,7 @@ is the first element of the navigation.</li>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -4556,6 +4579,30 @@ is the first element of the navigation.</li>
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/error-summary" data-pjax>
+                <span>Error Summary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>

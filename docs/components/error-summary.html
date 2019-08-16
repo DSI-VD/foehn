@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Error Summary | Foehn</title>
+<title>Récapitulatif des erreurs | Foehn</title>
 
 </head>
 <body>
@@ -56,12 +56,12 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Error Summary</h1>
+        <h1 class="Document-title">Récapitulatif des erreurs</h1>
         
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #FF3333; border-color: #FF3333;">Draft</label>
+<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
 
 </div>
 
@@ -79,7 +79,53 @@
 
     
     
-    
+    <p>Utilisez ce composant en haut d’une page pour récapituler les erreurs qu’un
+utilisateur a commises.</p>
+<p>Lorsqu’un utilisateur commet une erreur, vous devez afficher un récapitulatif
+d’erreur et un message d’erreur à côté de chaque réponse contenant une erreur.</p>
+<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/error-summary">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/error-summary"></iframe></div>
+
+<h2 id="quand-utiliser-ce-composant">Quand utiliser ce composant</h2>
+<p>Toujours afficher un résumé des erreurs en cas d’erreur de validation, même s’il
+n’y en a qu’une.</p>
+<p>Vous devez:</p>
+<ul>
+<li>ajoutez «Erreur:» au début du <code>&lt;title&gt;</code> pour que les lecteurs d’écran le
+lisent dès que possible</li>
+<li>afficher un résumé des erreurs en haut d’une page</li>
+<li>déplace le focus du clavier sur le récapitulatif des erreurs</li>
+<li>inclure l’en-tête “Il y a un problème”</li>
+<li>faire un lien vers chacune des réponses comportant des erreurs de validation</li>
+<li>affiche les mêmes messages d’erreur que sur les champs avec des erreurs</li>
+</ul>
+<p>Lisez <a href="error-message/">les instructions pour écrire de bons messages
+d’erreur</a>.</p>
+<h2 id="cr-er-un-lien-du-r-captulatif-chaques-r-ponse-incorrectes">Créer un lien du récaptulatif à chaques réponse incorrectes</h2>
+<p>Vous devez lier les erreurs du récapitulatif aux champs auxquels elles
+se rapportent.</p>
+<p>Pour les questions qui nécéssitent que l’utilisateur réponde à un seul
+champ, comme un téléchargement de fichier, une sélection, une zone de texte, une
+entrée de texte ou un nombre de caractères, faites un lien vers le champ.</p>
+<p><a href="https://design-system.service.gov.uk/components/error-summary/linking/index.html#name">Exemple de lien depuis une résumé d’erreur vers un champs
+unique (GOV.uk design system)</a></p>
+<p>Lorsqu’un utilisateur doit entrer sa réponse dans plusieurs champs, tels que les
+champs jour, mois et année dans un composant de saisie de la date, faites un
+lien vers le premier champ contenant une erreur.</p>
+<p>Si vous ne savez pas quel champ contient une erreur, faites un lien vers le
+premier champ.</p>
+<p><a href="https://design-system.service.gov.uk/components/error-summary/linking-multiple-fields/index.html">Exemple de lien depuis un résumé d’erreur vers une réponse à plusieurs champs
+(GOV.uk design
+system)</a></p>
+<p>Pour les questions qui nécessitent que l’utilisateur sélectionne une ou
+plusieurs options dans une liste à l’aide de boutons radios ou de cases à
+cocher, faites un lien vers le premier bouton radio ou case à cocher.</p>
+<p><a href="https://design-system.service.gov.uk/components/error-summary/linking-checkboxes-radios/index.html">Exemple de lien depuis un résumé d’erreur vers une des cases à cocher (GOV.uk
+design system (GOV.uk design
+system)</a></p>
+<h2 id="o-placer-le-r-capitulatif-des-erreurs">Où placer le récapitulatif des erreurs</h2>
+<p>Placez le récapitulatif des erreurs au début du conteneur <code>&lt;main&gt;</code> juste après
+le <code>&lt;h1&gt;</code>.</p>
+
     
 
 
@@ -515,7 +561,7 @@
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
-                <span>Error Summary</span>
+                <span>Récapitulatif des erreurs</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -523,7 +569,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -2548,6 +2594,30 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/error-summary" data-pjax>
+                <span>Error Summary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
