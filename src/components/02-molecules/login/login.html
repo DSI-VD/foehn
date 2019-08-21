@@ -1,7 +1,7 @@
 <section class="small{% if styleModifier %} {{ styleModifier }}{% endif %}">
   <h2 class="sr-only">Votre identité</h2>
   <p class="mb-0">
-    <span class="fas fa-lock"></span>
+    <span class="fas fa-lock" aria-hidden="true"></span>
     {% if user %}
     <a href="#">{{ user }}</a>
     {% else %}

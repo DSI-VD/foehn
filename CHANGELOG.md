@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add [documentation about header](../../docs/components/header)
 
 ### Changed
+- Add `aria-hidden="true"` on the lock icon in `@login-logged` for better
+  accessibility
 - Change structure of `@header-application` and `@header-application--title` and
   `@header-application--fluid` for better accessibility
 - Add `aria-label` attribute in `@breadcrumb`
