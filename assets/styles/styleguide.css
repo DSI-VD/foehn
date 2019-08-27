@@ -1,0 +1,9 @@
+/**
+ * @dsivd/foehn - Frontend pattern library for State of Vaud
+ * @version v1.3.0
+ */
+/*!
+ * This style only apply on fractal documentation.
+ * It it not a part of the foehn design system.
+ */.palette{display:flex;flex-wrap:wrap;margin:0 -.25em}.color{flex:1 1 4em;position:relative;margin:0 .25em 1.5em}.color:before{content:"";display:block;width:100%;height:5em;background-color:currentColor}.color code{display:inline-block;color:#e83e8c}.color span{display:block;position:absolute;top:.5rem;left:.5rem;font-style:normal;color:#fff;font:.75em/1em Hack,Consolas,Monaco,monospace;text-shadow:0 0 2px #000}.color--base{flex:1 1 12em;margin-right:1em;order:-1}.foehn-example{position:relative;overflow:hidden;border:1px solid #bfc1c3;margin-top:1em;margin-bottom:1em;padding:2em 1em 1em}.foehn-example:before{content:"EXAMPLE";position:absolute;top:0;left:0;padding:.21053em .78947em;text-transform:none;font-size:12px;line-height:1.25;background:#bfc1c3;color:#fff}.component-example{display:flex;flex-direction:column;border:1px solid #ced4da}.component-example__preview-link{font-size:.8em;padding:.5em;background:#dce3e8}.component-example__iframe{display:block;padding:1rem;width:100%;height:300px;resize:both;outline:1px solid #ced4da;max-width:100%}
+/*# sourceMappingURL=styleguide.css.map */
