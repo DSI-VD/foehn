@@ -8,8 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add [documentation for error summary](../../docs/components/error-summary)
 - Add `@error-summary` component
-- Add [documentation for warning text
-  component](../../docs/components/warning-text)
 - Add [documentation about header](../../docs/components/header)
 
 ### Changed
