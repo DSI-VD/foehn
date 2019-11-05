@@ -16,9 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change structure of `@header-application` and `@header-application--title` and
   `@header-application--fluid` for better accessibility
 - Add `aria-label` attribute in `@breadcrumb`
-- The *highlight* component has been rename in `@warning-text`
-  - The CSS class has been renamed from `.vd-highlight` to `.vd-warning-text`.
-    Make sure to update any reference to it
 - Add a `role` attribute in `@header-application` and `@header-application--fluid`
 
 ### Fixes
