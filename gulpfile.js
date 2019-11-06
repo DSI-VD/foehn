@@ -284,13 +284,17 @@ function lintjson() {
 /*
  * Copy changelog in fractal
  *
- * Copy changelog and make links on components
- * `@component` becomes [`@component`](url/the/component)
+ * Copy changelog to make it viewable in fractal doc.
+ * Make links on components `@component` becomes
+ * [`@component`](url/the/component).
+ * Change markdown links to make them usable from fractal doc.
+ *
  * Do not forget to put `src/docs/changelog.md` in `.gitignore`
  */
 function copyChangelog() {
     return gulp.src('CHANGELOG.md')
         .pipe(replace(/`@(\S+)`/g, '[`@$1`](../components/detail/$1)'))
+        .pipe(replace('](src/', '](../'))
         .pipe(rename('changelog.md'))
         .pipe(gulp.dest(`${paths.src}/docs/`));
 }

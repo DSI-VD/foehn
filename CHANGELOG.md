@@ -6,9 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Add [documentation for error summary](../../docs/components/error-summary)
+- Add [documentation for error summary](src/docs/components/error-summary)
 - Add `@error-summary` component
-- Add [documentation about header](../../docs/components/header)
+- Add [documentation about header](src/docs/components/header)
 
 ### Changed
 - Add `aria-hidden="true"` on the lock icon in `@login-logged` for better
@@ -25,17 +25,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.3.0] - 2019-07-04
 
 ### Added
-- Add [documentation how to write titles](../../docs/regles-d-ecriture/titles)
-- Add [documentation about task list page pattern](../../docs/patterns/task-list-pages)
+- Add [documentation how to write titles](src/docs/regles-d-ecriture/titles)
+- Add [documentation about task list page pattern](src/docs/patterns/task-list-pages)
   - Add `@task-list` and `@task-list-page` components
 - Add [documentation how users check their answer before submitting a
-  form](../../docs/patterns/check-answers)
+  form](src/docs/patterns/check-answers)
   - Add `@check-answers` and `@check-answers-page` component
 - Add documentation how to ask for a phone number
   - Add `@input--phone` and `@input--phone-error` variants to
     `@input--default`component
-- Add [documentation for typography](../../docs/styles/typography)
-- Add documentation about [breadcrumb component](../../docs/components/breadcrumbs)
+- Add [documentation for typography](src/docs/styles/typography)
+- Add documentation about [breadcrumb component](src/docs/components/breadcrumbs)
 
 ### Changed
 - Error message in `@input--validation-danger` is now red like in `@fieldset--error`
