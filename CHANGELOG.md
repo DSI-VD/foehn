@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add [documentation about header](src/docs/components/header)
 
 ### Changed
+- Fix table not being read properly in some screen readers. The
+  `.table-responsive` class has been moved to a `<div>` element around the
+  `<table>` one
 - Add `aria-hidden="true"` on the lock icon in `@login-logged` for better
   accessibility
 - Change structure of `@header-application` and `@header-application--title` and
