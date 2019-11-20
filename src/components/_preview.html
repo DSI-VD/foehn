@@ -19,7 +19,7 @@
   </head>
   <body>
 
-    {{ yield }}
+    {{ yield | safe }}
 
     {% render '@scripts-footer' %}
   </body>
