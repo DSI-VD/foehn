@@ -324,10 +324,10 @@ const compile = gulp.series(
         fonts,
         manifests,
         xmls,
-        lintscripts,
+        lintscripts
     ),
     docStyles,
-    lintjson,
+    lintjson
 );
 
 gulp.task('build', gulp.series(clean, compile, build));
