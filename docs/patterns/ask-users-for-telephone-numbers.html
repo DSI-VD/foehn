@@ -79,41 +79,40 @@
 
     
     
-    <h2 id="quand-utiliser-ce-sch-ma">Quand utiliser ce schéma</h2>
+    <h2 id="quand-utiliser-ce-schéma">Quand utiliser ce schéma</h2>
 <p>Ne collectez les numéros de téléphone des personnes que si vous en avez
 réellement besoin (voir <a href="/docs/get-started/protection-des-donnees">la documentation relative à la protection des
 données</a>). Tout le monde n’a pas ou ne
 peut pas utiliser un téléphone, alors assurez-vous de laisser aux utilisateurs
 le choix de la manière avec laquelle l’administration peut les contacter.</p>
-<h2 id="comment-a-marche">Comment ça marche</h2>
-<h3 id="autoriser-diff-rents-formats">Autoriser différents formats</h3>
+<h2 id="comment-ça-marche">Comment ça marche</h2>
+<h3 id="autoriser-différents-formats">Autoriser différents formats</h3>
 <p>Les utilisateurs devraient être autorisés à entrer les numéros de téléphone dans
 le format qui leur est familier. Il faut prévoir la saisie d’espaces, de tirets,
 de crochets et des parenthèses supplémentaires, et pouvoir prendre en charge les
 indicatifs de pays et de zone.</p>
-<h3 id="valider-les-num-ros-de-t-l-phone">Valider les numéros de téléphone</h3>
+<h3 id="valider-les-numéros-de-téléphone">Valider les numéros de téléphone</h3>
 <p>Vous devez valider les numéros de téléphone afin de permettre aux utilisateurs
 de savoir s’ils ont saisi correctement.</p>
-<h3 id="utilisez-l-attribut-autocomplete">Utilisez l’attribut autocomplete</h3>
+<h3 id="utilisez-lattribut-autocomplete">Utilisez l’attribut autocomplete</h3>
 <p>Utilisez l’attribut <code>autocomplete</code> sur les entrées de numéro de téléphone. Cela
 permet aux navigateurs de saisir automatiquement les informations d’un
 utilisateur s’il les a déjà saisies.</p>
 <p>Pour ce faire, définissez l’attribut <code>autocomplete</code> avec la valeur <code>tel</code>.</p>
-<h2 id="message-d-erreur">Message d’erreur</h2>
+<h2 id="message-derreur">Message d’erreur</h2>
 <p>Les messages d’erreur doivent être stylés comme ci-dessous:</p>
-<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/input--phone-error">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/input--phone-error"></iframe></div>
-
+<p>&lt;div class=&quot;component-example&quot;&gt;&lt;span class=&quot;component-example__preview-link&quot;&gt;&lt;a href=&quot;../../components/detail/input–phone-error&quot;&gt;Open detail page of this component&lt;/a&gt;&lt;/span&gt;&lt;iframe class=&quot;component-example__iframe&quot; src=&quot;../../components/preview/input–phone-error&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</p>
 <p>Assurez-vous que les erreurs suivent les instructions fournies dans <a href="../components/error-message">la
 documentation des messages d’erreur</a> et ont des
 messages spécifiques à chaque type d’erreur.</p>
 <p>Assurez-vous que les messages d’erreur soient spécifiques au type d’erreur. (par
 exemple: “Entrez un numéro de téléphone suisse”)</p>
-<h3 id="si-le-num-ro-de-t-l-phone-n-est-pas-dans-le-bon-format-et-qu-il-n-y-a-pas-d-exemple">Si le numéro de téléphone n’est pas dans le bon format et qu’il n’y a pas d’exemple</h3>
+<h3 id="si-le-numéro-de-téléphone-nest-pas-dans-le-bon-format-et-quil-ny-a-pas-dexemple">Si le numéro de téléphone n’est pas dans le bon format et qu’il n’y a pas d’exemple</h3>
 <p>Afficher le message “Entrez un numéro de téléphone, par exemple 024 123 45 67,
 079 123 45 67 ou +41 24 123 45 67”.</p>
-<h3 id="si-le-num-ro-de-t-l-phone-n-est-pas-dans-le-bon-format-et-qu-il-existe-un-exemple">Si le numéro de téléphone n’est pas dans le bon format et qu’il existe un exemple</h3>
+<h3 id="si-le-numéro-de-téléphone-nest-pas-dans-le-bon-format-et-quil-existe-un-exemple">Si le numéro de téléphone n’est pas dans le bon format et qu’il existe un exemple</h3>
 <p>Affichez le message “Entrez un numéro de téléphone dans le format correct”.</p>
-<h2 id="soyez-clair-sur-le-type-de-num-ro-de-t-l-phone-que-vous-voulez">Soyez clair sur le type de numéro de téléphone que vous voulez</h2>
+<h2 id="soyez-clair-sur-le-type-de-numéro-de-téléphone-que-vous-voulez">Soyez clair sur le type de numéro de téléphone que vous voulez</h2>
 <p>Utilisez le label ou le texte d’aide pour informer l’utilisateur que vous avez
 besoin d’un numéro suisse, international ou un numéro de téléphone mobile.</p>
 <div class="foehn-example"> <div class="form-group">
@@ -124,15 +123,16 @@ besoin d’un numéro suisse, international ou un numéro de téléphone mobile.
       id="testInputHelp"
       class="form-text text-secondary">Pour les numéro internationaux, inclure le code du pays</small>
 
-  <input class="form-control"
+<p>  <input class="form-control"
          type="text"
          id="testInput"
          name="testInput"
-         value="" required aria-required="true" aria-describedby="testInputHelp">
+         value="" required aria-required="true" aria-describedby="testInputHelp"></p>
 </div>
 
-<p></div></p>
-<h2 id="utiliser-des-exemples-de-num-ros-de-t-l-phone">Utiliser des exemples de numéros de téléphone</h2>
+</div>
+
+<h2 id="utiliser-des-exemples-de-numéros-de-téléphone">Utiliser des exemples de numéros de téléphone</h2>
 <p>Si vous désirez des numéros à utiliser comme exemple (par exemple dans les
 textes d’aide). Utilisez les numéros suivants:</p>
 <ul>
@@ -140,19 +140,19 @@ textes d’aide). Utilisez les numéros suivants:</p>
 <li>Numéro international: +41 21 123 45 67</li>
 <li>Numéro de téléphone mobile: 079 123 45 67</li>
 </ul>
-<h2 id="-viter-d-utiliser-des-masques-de-saisie">Éviter d’utiliser des masques de saisie</h2>
+<h2 id="éviter-dutiliser-des-masques-de-saisie">Éviter d’utiliser des masques de saisie</h2>
 <p>Évitez <a href="https://css-tricks.com/input-masking/">les masques de saisie</a>, car il
 est plus difficile pour les utilisateurs de:</p>
 <ul>
 <li>taper un nombre de la manière qu’ils préfèrent</li>
 <li>transcrire un numéro étranger et être certain de l’avoir correctement saisie</li>
 </ul>
-<h2 id="expliquez-pourquoi-vous-avez-besoin-d-un-num-ro-de-t-l-phone">Expliquez pourquoi vous avez besoin d’un numéro de téléphone</h2>
+<h2 id="expliquez-pourquoi-vous-avez-besoin-dun-numéro-de-téléphone">Expliquez pourquoi vous avez besoin d’un numéro de téléphone</h2>
 <p>Indiquez aux utilisateurs pourquoi et quand vous allez les contacter.</p>
-<h2 id="ne-pas-afficher-les-num-ros-de-t-l-phone-comme-des-liens-sur-les-appareils-ne">Ne pas afficher les numéros de téléphone comme des liens sur les appareils ne</h2>
+<h2 id="ne-pas-afficher-les-numéros-de-téléphone-comme-des-liens-sur-les-appareils-ne">Ne pas afficher les numéros de téléphone comme des liens sur les appareils ne</h2>
 <p>pouvant pas effectuer d’appel</p>
 <p>Il est possible de baliser les numéros de téléphone comme ci-dessous:</p>
-<code><pre><span class="hljs-attribute">&lt;a href="tel:+41211234567&gt;</span>021 123 45 67<span class="hljs-attribute">&lt;/a&gt;</span> </pre></code><p>Cependant, cela affichera le numéro de téléphone sous forme de lien. Cela porte
+<pre><code><span class="hljs-string">&lt;a</span> <span class="hljs-string">href="tel:+41211234567&gt;021</span> <span class="hljs-number">123</span> <span class="hljs-number">45</span> <span class="hljs-number">67</span><span class="hljs-string">&lt;/a&gt;</span> </code></pre><p>Cependant, cela affichera le numéro de téléphone sous forme de lien. Cela porte
 à confusion sur les appareils qui ne prennent pas en charge les appels
 téléphoniques comme la plupart des ordinateurs de bureau.</p>
 <p>De plus, cela n’est pas nécessaire. La plupart des navigateurs mobiles modernes
@@ -162,7 +162,7 @@ liens.</p>
 pour prendre en charge un appareil ne pouvant pas les détecter automatiquement,
 assurez-vous qu’ils ne s’affichent pas en tant que liens sur des appareils ne
 pouvant pas faire d’appel.</p>
-<h2 id="comment-crire-les-num-ros-de-t-l-phone">Comment écrire les numéros de téléphone</h2>
+<h2 id="comment-écrire-les-numéros-de-téléphone">Comment écrire les numéros de téléphone</h2>
 <p>Le format international est à privilégier: +41 21 123 45 67</p>
 <p>Utilser des espaces pour séparer les groupes de chiffre: </p>
 <ul>

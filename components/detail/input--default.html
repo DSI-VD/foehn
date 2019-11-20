@@ -453,11 +453,11 @@
 <p>The <code>required</code> attribute is <a href="http://caniuse.com/#feat=form-validation">not implemented uniformly across browsers</a>. It also tends to invoke an undesirable feature: marking empty required fields as invalid from the outset. For our purposes this is rather verbose and aggressive.</p>
 <h1 id="triggering-the-numerical-keyboard">Triggering the numerical keyboard</h1>
 <p>The only way to trigger the numerical keyboard on mobile is to use the following <code>input</code>:</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span>&gt;</span></pre></code><p><img src="../raw/input/numerical-keyboard.png" alt="Numerical Keyboard"></p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[0-9]*"</span>&gt;</span></code></pre><p><img src="../raw/input/numerical-keyboard.png" alt="Numerical Keyboard"></p>
 <h1 id="autocomplete-attribute"><code>autocomplete</code> attribute</h1>
 <p>This attribute indicates whether the value of the control can be automatically completed by the browser. It may be a good practice to use this attribute with known data, such as a form where the user must enter his or her contact information.</p>
 <p>More inforamtion in <a href="https://www.w3.org/TR/html5/forms.html#autofilling-form-controls:-the-autocomplete-attribute">Autofilling form controls: the autocomplete attribute</a>.</p>
-<code><pre>&lt;<span class="hljs-keyword">form</span> action=<span class="hljs-string">""</span> autocomplete=<span class="hljs-string">"on"</span>&gt;
+<pre><code>&lt;<span class="hljs-keyword">form</span> action=<span class="hljs-string">""</span> autocomplete=<span class="hljs-string">"on"</span>&gt;
   &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"name"</span>&gt;Nom&lt;/<span class="hljs-keyword">label</span>&gt;
   &lt;<span class="hljs-keyword">input</span> id=<span class="hljs-string">"name"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> autocomplete=<span class="hljs-string">"name"</span> /&gt;
 
@@ -475,7 +475,7 @@
 
   &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"submit"</span> /&gt;
 
-&lt;/<span class="hljs-keyword">form</span>&gt;</pre></code>
+&lt;/<span class="hljs-keyword">form</span>&gt;</code></pre>
         
     </div>
 </div>

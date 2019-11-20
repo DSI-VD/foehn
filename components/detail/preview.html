@@ -229,7 +229,7 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 
-    {{ yield }}
+    {{ yield | safe }}
 
     {% render '<a href="scripts-footer">@scripts-footer</a>' %}
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
