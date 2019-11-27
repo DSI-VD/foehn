@@ -38,7 +38,7 @@ Pour ce faire, définissez l'attribut `autocomplete` avec la valeur `tel`.
 
 Les messages d'erreur doivent être stylés comme ci-dessous:
 
-{{ '@input--phone-error' | renderComponent }}
+{{ '@input--phone-error' | renderComponent | safe }}
 
 Assurez-vous que les erreurs suivent les instructions fournies dans [la
 documentation des messages d'erreur](../components/error-message) et ont des

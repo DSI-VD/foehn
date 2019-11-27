@@ -4,7 +4,7 @@ label: Pagination
 status: wip 
 ---
 
-{{ '@pagination--default' | renderComponent }}
+{{ '@pagination--default' | renderComponent | safe }}
 
 Liens qui permettent aux utilisateurs de naviguer à travers une séquence
 linéaire de pages ou d'éléments.
@@ -24,7 +24,7 @@ tout la pagination.
 
 ## Fonctionnement
 
-{{ '@pagination' | renderComponent }}
+{{ '@pagination' | renderComponent | safe }}
 
 ### Première page
 

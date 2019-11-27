@@ -6,7 +6,7 @@ status: ready
 
 Permet à l'utilisateur de vérifier et de modifier ses réponses avant de soumettre une demande.
 
-{{ '@check-answers-page' | renderComponent }}
+{{ '@check-answers-page' | renderComponent | safe }}
 
 ## Quand utiliser ce shéma
 

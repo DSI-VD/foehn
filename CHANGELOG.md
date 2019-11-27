@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+- Fix components example not showing properly in the doc
+
 ## [1.4.0] - 2019-11-20
 
 ### Added

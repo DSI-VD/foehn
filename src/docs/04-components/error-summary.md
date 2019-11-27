@@ -10,7 +10,7 @@ utilisateur a commises.
 Lorsqu'un utilisateur commet une erreur, vous devez afficher un récapitulatif
 d'erreur et un message d'erreur à côté de chaque réponse contenant une erreur.
 
-{{ '@error-summary' | renderComponent }}
+{{ '@error-summary' | renderComponent | safe }}
 
 ## Quand utiliser ce composant
 

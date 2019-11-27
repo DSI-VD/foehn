@@ -23,7 +23,7 @@ le style Foehn.
 
 Ecrivez les titres en minuscule sauf la première lettre.
 
-{{ '@headings-list' | renderComponent }}
+{{ '@headings-list' | renderComponent | safe }}
 
 ## Paragraphes
 
@@ -31,7 +31,7 @@ Ecrivez les titres en minuscule sauf la première lettre.
 
 La taille par défaut des paragraphes est 16px.
 
-{{ '@paragraph' | renderComponent }}
+{{ '@paragraph' | renderComponent | safe }}
 
 Il est possible de créer des paragraphes d'en-tête ou des textes en petit afin
 de renforcer la hiérarchie dans votre page.
@@ -42,7 +42,7 @@ Un paragraphe d'en tête (ou chapeau) est un paragraphe d'introduction que vous 
 en haut de page pour résumer le contenu. Les en-têtes ont une taille de 20px.
 Elle ne doivent être utilisées qu'une fois par page si nécessaire.
 
-{{ '@lead' | renderComponent }}
+{{ '@lead' | renderComponent | safe }}
 
 ### Corps de texte petit
 
@@ -52,7 +52,7 @@ la police de votre paragraphe.
 La majorité de votre corps de texte devrait utiliser la taille de paragraphe
 standard.
 
-{{ '@small--utilitie' | renderComponent }}
+{{ '@small--utilitie' | renderComponent | safe }}
 
 ## Classes de surcharge de style
 
@@ -106,14 +106,14 @@ Les liens sont verts et soulignés par défaut. Si votre lien se trouve à la fi
 d'une phrase, assurez-vous que le point de fin de phrase ne soit pas inclus dans
 le lien.
 
-{{ '@link' | renderComponent }}
+{{ '@link' | renderComponent | safe }}
 
 ## Listes
 
 Utilisez des listes pour rendre plus aisé la lecture des blocs de texte et diviser les
 informations en fragments plus facilement compréhensibles.
 
-{{ '@list--unstyled' | renderComponent }}
+{{ '@list--unstyled' | renderComponent | safe }}
 
 ### Listes à puces
 
@@ -121,7 +121,7 @@ Introduisez les listes à puces avec une phrase se terminant par deux-points.
 Commencez chaque élément par une lettre minuscule et n'utilisez pas
 un point final.
 
-{{ '@list--default' | renderComponent }}
+{{ '@list--default' | renderComponent | safe }}
 
 ### Listes numérotées
 
@@ -132,11 +132,11 @@ Vous n'avez pas besoin d'utiliser une phrase d'introduction pour les listes
 numérotées. Les éléments d'une liste numérotée doivent se terminer par un point
 car ils doivent constituer une phrase complète.
 
-{{ '@list--ordered' | renderComponent }}
+{{ '@list--ordered' | renderComponent | safe }}
 
 ## Saut de section
 
 Vous pouvez utiliser un séparateur `<hr>` pour
 créer une rupture thématique entre des sections de contenu. 
 
-{{ '@separator--default' | renderComponent }}
+{{ '@separator--default' | renderComponent | safe }}

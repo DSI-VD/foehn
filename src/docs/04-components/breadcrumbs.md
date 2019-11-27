@@ -10,7 +10,7 @@ Lors des tests utilisateurs, nous avons remarqué que le fils d'Ariane est
 fortement utilisé pour naviguer dans le site, lorsque le système de sous page
 est développé.
 
-{{ '@breadcrumb' | renderComponent }}
+{{ '@breadcrumb' | renderComponent | safe }}
 
 ## Quand utiliser ce composant
 

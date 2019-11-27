@@ -10,7 +10,7 @@ Les pages de liste de tâches aident les utilisateurs à comprendre:
 - l'ordre dans lequel ils doivent accomplir des tâches
 - quand ils ont terminé les tâches ou leur status 
 
-{{ '@task-list-page' | renderComponent }}
+{{ '@task-list-page' | renderComponent | safe }}
 
 ## Quand utiliser ce schéma
 

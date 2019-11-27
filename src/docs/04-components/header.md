@@ -6,7 +6,7 @@ status: review
 
 L'en-tête vd.ch montre aux utilisateurs qu'ils se trouvent sur vd.ch et quel service ils utilisent.
 
-{{ '@header-application' | renderComponent }}
+{{ '@header-application' | renderComponent | safe }}
 
 ## Quand utiliser ce composant
 
@@ -27,7 +27,7 @@ Dans tous les cas, le logo doit être un lien vers la page d'accueil du site vd.
 
 Utilisez l'en-tête par défaut si votre prestation compte 5 pages ou moins.
 
-{{ '@header-application' | renderComponent }}
+{{ '@header-application' | renderComponent | safe }}
 
 ### En-tête avec titre
 
@@ -38,17 +38,17 @@ utilisent.
 Utilisez un titre qui compréhensible par les utilisateurs. Evitez les
 dénominations technique.
 
-{{ '@header-application--name' | renderComponent }}
+{{ '@header-application--name' | renderComponent | safe }}
 
 ### En-tête avec largeur variable
 
 Si la mise en page le requiert, un en-tête avec largeur variable est disponible
 
-{{ '@header-application--fluid' | renderComponent }}
+{{ '@header-application--fluid' | renderComponent | safe }}
 
 ### En-tête du site vd.ch
 
 vd.ch utilise un en-tête particulier qui lui est réservé.
 
-{{ '@header' | renderComponent }}
+{{ '@header' | renderComponent | safe }}
 

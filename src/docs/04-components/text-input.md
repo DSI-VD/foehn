@@ -4,7 +4,7 @@ label: Champs texte
 status: review
 ---
 
-{{ '@input--default' | renderComponent }}
+{{ '@input--default' | renderComponent | safe }}
 
 ## Quand utiliser ce composant
 
@@ -20,7 +20,7 @@ lignes. Dans ce cas, vous devez utiliser le composant [textarea](./textarea).
 
 ## Fonctionnement
 
-{{ '@input--default' | renderComponent }}
+{{ '@input--default' | renderComponent | safe }}
 
 ```html
 {% render '@input--default' %}
@@ -63,7 +63,7 @@ si elle est plus large que la fenêtre, auquel cas elle rétrécira pour s'adapt
 Utilisez un texte d'aide qui est pertinent pour la majorité des utilisateurs -
 par exemple, comment leurs informations seront utilisées ou où les trouver.
 
-{{ '@input--help-text' | renderComponent }}
+{{ '@input--help-text' | renderComponent | safe }}
 
 ```html
 {% render '@input--help-text', {label: "Couriel"}, true %}
