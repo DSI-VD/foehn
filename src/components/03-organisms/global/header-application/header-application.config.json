@@ -13,7 +13,7 @@
     {
       "name": "name",
       "context": {
-        "applicationTitle": "Service name",
+        "applicationTitle": "Nom de la prestation",
         "styleModifier": "container"
       }
     }
