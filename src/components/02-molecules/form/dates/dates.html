@@ -1,17 +1,35 @@
-<fieldset>
-  <legend{% if legendModifier %} class="{{ legendModifier }}"{% endif %}>{{ legend }}</legend>
-  {%- if helpText %}
-  <small id="dates-help" class="form-text text-secondary">{{ helpText }}</small>
-  {% endif -%}
-  <div class="vd-form-flex">
-    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
-      {%- render '@input--number', inputDay , true -%}
+{%- if validation -%}
+<div class="has-{{ validation.class }}
+  {%- if validation.class === 'danger' %} vd-form-group-{{ validation.class }}
+  {%- endif -%}
+  ">
+{%- endif -%}
+
+  <fieldset>
+    <legend{% if legendModifier %} class="{{ legendModifier }}"{% endif %}>{{ legend }}</legend>
+
+    {% if validation.text %}
+    <div class="form-control-feedback text-danger mb-1">{{ validation.text }}</div>
+    {% endif %}
+
+    {%- if helpText %}
+    <small id="dates-help" class="form-text text-secondary">{{ helpText }}</small>
+    {% endif -%}
+
+    <div class="vd-form-flex">
+      <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+        {%- render '@input--number', inputDay , true -%}
+      </div>
+      <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
+        {%- render '@input--number', inputMonth , true -%}
+      </div>
+      <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
+        {%- render '@input--number', inputYear , true -%}
+      </div>
     </div>
-    <div class="vd-form-flex__item vd-form-flex__item--2-char-width">
-      {%- render '@input--number', inputMonth , true -%}
-    </div>
-    <div class="vd-form-flex__item vd-form-flex__item--4-char-width">
-      {%- render '@input--number', inputYear , true -%}
-    </div>
+
+  </fieldset>
+
+{% if validation %}
   </div>
-</fieldset>
+{% endif %}

@@ -22,5 +22,17 @@
         "max": "2017",
         "size": "4"
       }
-    }
+    },
+    "variants": [
+      {
+        "name": "danger",
+        "context": {
+          "legend": "Quelle est la date d'émission de votre passeport ?",
+          "validation": {
+            "class": "danger",
+            "text": "La date d'émission de votre passeport doit être dans le passé"
+          }
+        }
+      }
+    ]
 }
