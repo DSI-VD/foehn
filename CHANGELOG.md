@@ -5,8 +5,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Override the style of the caption to be diplayed at the top of the table
+
 ### Fixes
 - Fix components example not showing properly in the doc
+- Remove table's summary because it's not used
 
 ## [1.4.0] - 2019-11-20
 
