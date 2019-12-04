@@ -5,8 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
-- Add a `.vd-table__caption` class to display caption at the top of the tables
+### Changed
+- Override the style of the caption to be diplayed at the top of the table
 
 ### Fixes
 - Fix components example not showing properly in the doc
