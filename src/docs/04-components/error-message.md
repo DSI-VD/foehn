@@ -6,7 +6,7 @@ status: draft
 
 Utilisez un message d'erreur en cas d'erreur de validation. Expliquez ce qui s'est mal passé et comment y remédier.
 
-**Mettre un exemple**
+{{ '@dates--danger' | renderComponent | safe }}
 
 ## Quand utiliser ce composant
 
