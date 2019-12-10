@@ -29,7 +29,7 @@
     },
     "variants": [
       {
-        "name": "error",
+        "name": "radio-error",
         "context": {
           "error": true,
           "validation": {
@@ -54,6 +54,45 @@
               "name": "example",
               "id": "exampleNo",
               "styleModifier": "form-check-inline"
+            }
+          ]
+        }
+      },
+      {
+        "name": "checkbox",
+        "context": {
+          "type": "checkbox"
+        }
+      },
+      {
+        "name": "checkbox-error",
+        "context": {
+          "legend": "Quelle est votre nationalité ?",
+          "type": "checkbox",
+          "helpText": "Si vous avez la double nationalité, sélectionnez toutes les options qui vous concernent.",
+          "error": true,
+          "validation": {
+            "class": "danger",
+            "text": "Sélectionnez si vous êtes Suisse, Français ou citoyen d'un autre pays"
+          },
+          "items": [
+            {
+              "label": "Suisse",
+              "name": "nationalite",
+              "id": "swiss",
+              "checked": false
+            },
+            {
+              "label": "Français",
+              "name": "nationalite",
+              "id": "french",
+              "checked": false
+            },
+            {
+              "label": "Citoyen d'un autre pays",
+              "name": "nationalite",
+              "id": "other",
+              "checked": false
             }
           ]
         }

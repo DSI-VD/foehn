@@ -5,8 +5,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add `@fieldset--checkbox-error` components
+
 ### Changed
 - Override the style of the caption to be diplayed at the top of the table
+- Renamed `@fieldset--error` component to `@fieldset--radio-error
 
 ### Fixes
 - Fix components example not showing properly in the doc
