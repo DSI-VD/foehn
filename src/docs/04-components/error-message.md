@@ -46,7 +46,7 @@ Résumez toutes les erreurs en haut de la page sur laquelle l'utilisateur se tro
 
 ### Légende
 
-**Mettre un exemple**
+{{ '@fieldset--checkbox-error' | renderComponent | safe }}
 
 ### Label
 
