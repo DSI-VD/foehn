@@ -1,7 +1,7 @@
 ---
 title: "Messages d'erreurs"
 label: "Messages d'erreurs"
-status: draft
+status: wip
 ---
 
 Utilisez un message d'erreur en cas d'erreur de validation. Expliquez ce qui s'est mal passé et comment y remédier.
@@ -10,18 +10,18 @@ Utilisez un message d'erreur en cas d'erreur de validation. Expliquez ce qui s'e
 
 ## Quand utiliser ce composant
 
-Affiche un message d'erreur à côté du champ et dans le [récapitulatif des erreurs](error-summary/) en cas d'erreur de validation.
+Lorsque'il faut afficher un message d'erreur à côté du champ et dans le [récapitulatif des erreurs](error-summary/) en cas d'erreur de validation.
 
 Utilisez des messages standard pour différents composants.
 
-Essayez de concevoir votre service de manière à ce qu'il soit facile à utiliser et à comprendre afin que personne ne voie un message d'erreur .
+Essayez de concevoir votre prestation ou formulaire de manière à ce qu'il soit facile à utiliser et à comprendre afin que personne ne voie un message d'erreur .
 
 ## Quand ne pas utiliser ce composant
 
 Afficher une erreur uniquement lorsque quelqu'un tente de passer à la partie suivante du service. Ne pas afficher les messages d'erreur:
 
 - lorsque les utilisateurs sélectionnent ou tabulent vers un champ
-- lorsqu'ils saisissent des caractères.
+- lorsqu'ils saisissent des caractères
 - quand ils sortent d'un champ
 
 N'utilisez pas de messages d'erreur pour indiquer aux utilisateurs qu'ils ne sont pas éligibles ou qu'ils n'ont pas la permission de faire quelque chose. Au lieu de cela, amenez-les sur un écran qui:
@@ -34,7 +34,7 @@ N'utilisez pas de messages d'erreur pour indiquer aux utilisateurs qu'ils ne son
 
 Pour chaque erreur:
 
-- mettre le message en rouge après le texte de la question et le texte d'aide
+- mettre le message en rouge après le texte de la question et avant le texte d'aide
 - utilisez une bordure rouge pour connecter visuellement le message et la question à laquelle il appartient
 - si l'erreur concerne des champs de texte spécifiques dans la question, indiquez-les également par une bordure rouge
 
@@ -115,20 +115,20 @@ Utilisez des instructions et des descriptions, mais utilisez-les de manière coh
 
 Utilisez des modèles de messages pour les erreurs courantes sur:
 
-- adresses
-- nombre de caractères
-- cases à cocher
-- entrée de date
-- Rendez-vous
-- groupe ethnique
-- adresse e-mail
-- téléchargement de fichiers
-- noms
-- Numéros d'assurance nationale
-- radios
-- numéros de téléphone
+- adresses (en cours de rédaction)
+- nombre de caractères (en cours de rédaction)
+- cases à cocher (en cours de rédaction)
+- entrée de date (en cours de rédaction)
+- Rendez-vous (en cours de rédaction)
+- groupe ethnique (en cours de rédaction)
+- adresse e-mail (en cours de rédaction)
+- téléchargement de fichiers (en cours de rédaction)
+- noms (en cours de rédaction)
+- Numéros d'assurance nationale (en cours de rédaction)
+- radios (en cours de rédaction)
+- numéros de téléphone (en cours de rédaction)
 - saisie de texte
-- textarea  
+- textarea (en cours de rédaction)
 
 ### Monitorez les erreurs
 
