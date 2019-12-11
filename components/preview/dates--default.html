@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
 
-    <title>Error | Foehn</title>
+    <title>Default | Foehn</title>
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon-apple-touch-icon.png?v=1.4.0">
@@ -34,42 +34,54 @@
   </head>
   <body>
 
-    <div class="vd-form-group-danger">
-<fieldset class="form-group">
-  <legend>Legend</legend><div class="form-control-feedback text-danger">Veuillez sélectionner une option</div><div class="form-check">
-  <input class="form-check-input"
-         type="radio" id="exampleOption1" name="example" checked >
-  <label class="form-check-label" for="exampleOption1">
-    Cras sed ligula eu est cursus eleifend ut id turpis
-  </label>
-</div>
+    <fieldset>
+    <legend>Quelle est votre date de naissance ?</legend>
 
-  <div class="form-check">
-  <input class="form-check-input"
-         type="radio" id="exampleOption2" name="example" >
-  <label class="form-check-label" for="exampleOption2">
-    Fusce feugiat quam vel tellus malesuada, sit amet maximus justo hendrerit
+    
+    <small id="dates-help" class="form-text text-secondary">Par exemple, 23 7 1979</small>
+    <div class="vd-form-flex">
+      <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
+  <label for="inputDatesDay">
+    Jour
   </label>
+  
+  <input class="form-control"
+         type="number"
+         id="inputDatesDay"
+         name="testInput"
+         value="" required aria-required="true" pattern="[0-9]*" min="1" max="31" size="2">
 </div>
-
-  <div class="form-check">
-  <input class="form-check-input"
-         type="radio" id="exampleOption3" name="example" >
-  <label class="form-check-label" for="exampleOption3">
-    Aenean id est non dui porttitor euismod
+</div>
+      <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
+  <label for="inputDatesMonth">
+    Mois
   </label>
+  
+  <input class="form-control"
+         type="number"
+         id="inputDatesMonth"
+         name="testInput"
+         value="" required aria-required="true" pattern="[0-9]*" min="1" max="12" size="2">
 </div>
-
-  <div class="form-check disabled">
-  <input class="form-check-input"
-         type="radio" id="exampleOption4" name="example" disabled >
-  <label class="form-check-label" for="exampleOption4">
-    Phasellus dignissim metus quis blandit varius
+</div>
+      <div class="vd-form-flex__item vd-form-flex__item--4-char-width"><div class="form-group">
+  <label for="inputDatesYear">
+    Année
   </label>
+  
+  <input class="form-control"
+         type="number"
+         id="inputDatesYear"
+         name="testInput"
+         value="" required aria-required="true" pattern="[0-9]*" min="1950" max="2017" size="4">
 </div>
+</div>
+    </div>
 
   </fieldset>
-</div>
+
+
+
 
     <script src="../../assets/scripts/jquery.slim.min.js"></script>
 <script src="../../assets/scripts/popper.min.js"></script>

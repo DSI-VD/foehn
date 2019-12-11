@@ -228,6 +228,25 @@
 </div>
 <!-- End: @input--phone-error -->
 
+<!-- Start: @input--help-error -->
+<div class="form-group has-danger vd-form-group-danger">
+  <label for="dossier">
+    Numéro de dossier
+  </label>
+  <div class="form-control-feedback text-danger">Entre un numéro de dossier dans le format correct.</div>
+  
+  <small
+      id="dossierHelp"
+      class="form-text text-secondary">Il se trouve sur votre convocation et les courriers reçus. Per exemple, &quot;DT 12 53 47 F&quot;.</small>
+  
+  <input class="form-control form-control-danger"
+         type="text"
+         id="dossier"
+         name="testInput"
+         value="" required aria-required="true" aria-describedby="dossierHelp" aria-invalid="true">
+</div>
+<!-- End: @input--help-error -->
+
 
     <script src="../../assets/scripts/jquery.slim.min.js"></script>
 <script src="../../assets/scripts/popper.min.js"></script>
