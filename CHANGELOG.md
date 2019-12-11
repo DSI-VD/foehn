@@ -6,7 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Add `@fieldset--checkbox-error` components
+- Add `@fieldset--checkbox-error` component to be used in [documentation about
+  error message](src/docs/compoents/error-message)
+- Add `@input--help-error` component to be used in [documentation about error
+  message](src/docs/compoents/error-message)
+- Add [documentation about error message](src/docs/compoents/error-message)
 
 ### Changed
 - Override the style of the caption to be diplayed at the top of the table
