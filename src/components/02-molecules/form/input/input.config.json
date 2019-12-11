@@ -125,6 +125,18 @@
             "text": "Entrez un numéro de téléphone suisse"
           }
         }
+      },
+      {
+        "name": "help-error",
+        "context": {
+          "label": "Numéro de dossier",
+          "id": "dossier",
+          "helpText": "Il se trouve sur votre convocation et les courriers reçus. Per exemple, \"DT 12 53 47 F\".",
+          "validation": {
+            "class": "danger",
+            "text": "Entre un numéro de dossier dans le format correct."
+          }
+        }
       }
     ]
 }

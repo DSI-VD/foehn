@@ -50,7 +50,7 @@ Résumez toutes les erreurs en haut de la page sur laquelle l'utilisateur se tro
 
 ### Label
 
-**Mettre un exemple**
+{{ '@input--help-error' | renderComponent | safe }}
 
 ### Soyez clair et concis
 
