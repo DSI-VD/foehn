@@ -1,6 +1,6 @@
 ---
 name: Autoescaping bug
-about: There is some HTML in the component
+about: There is some HTML code in the component that must not be present
 title: Fix autoescaping content
 labels: bug
 assignees: alienlebarge
