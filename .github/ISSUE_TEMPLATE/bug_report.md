@@ -34,5 +34,5 @@ Steps to reproduce the behavior:
  - Browser [e.g. stock browser, safari]
  - Version [e.g. 22]
 
-##Additional context
+## Additional context
 <!--Add any other context about the problem here.-->
