@@ -180,7 +180,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mt-2 border-bottom"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">dt</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>Adresse<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>34 Kriptionitstrasse &amp;lt;br&amp;gt;9999 Metropolis<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>34 Kriptionitstrasse <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>9999 Metropolis<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-2 text-md-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Modifier<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
 
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -208,10 +208,10 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mt-2 border-bottom"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">dt</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>{{ item.question }}<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
           {% if item.url %}
-            <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>{{ item.answer }}<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>{{ item.answer | safe }}<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-2 text-md-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ item.url }}"</span>&gt;</span>Modifier<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
           {% else %}
-            <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span>{{ item.answer }}<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8"</span>&gt;</span>{{ item.answer | safe }}<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
           {% endif %}
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       {% endfor %}
