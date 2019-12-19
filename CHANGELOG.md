@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add [documentation about error message](src/docs/compoents/error-message)
 
 ### Changed
+- The input's border is now red when there's is an error. See `@input--help-error`
 - Override the style of the caption to be diplayed at the top of the table
 - Renamed `@fieldset--error` component to `@fieldset--radio-error
 

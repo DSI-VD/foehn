@@ -32,7 +32,8 @@
         "name": "validation danger",
         "context": {
           "label": "Courriel",
-          "helpText": "Le courriel saisi n'est pas valide.",
+          "class": "form-control is-invalid",
+          "helpText": "Votre courriel n'est pas conservé et ne sera pas communiqué à des organismes tiers.",
           "validation": {
             "class": "danger",
             "text": "Veuillez saisir votre courriel"
@@ -117,6 +118,7 @@
         "name": "phone-error",
         "context": {
           "label": "Numéro de téléphone",
+          "class": "form-control is-invalid",
           "id": "phoneInput",
           "type": "tel",
           "autocomplete": "tel",
@@ -131,6 +133,7 @@
         "context": {
           "label": "Numéro de dossier",
           "id": "dossier",
+          "class": "form-control is-invalid",
           "helpText": "Il se trouve sur votre convocation et les courriers reçus. Per exemple, \"DT 12 53 47 F\".",
           "validation": {
             "class": "danger",
