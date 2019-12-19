@@ -31,6 +31,15 @@
           "validation": {
             "class": "danger",
             "text": "La date d'émission de votre passeport doit être dans le passé"
+          },
+          "inputDay": {
+            "class": "form-control is-invalid"
+          },
+          "inputMonth": {
+            "class": "form-control is-invalid"
+          },
+          "inputYear": {
+            "class": "form-control is-invalid"
           }
         }
       }
