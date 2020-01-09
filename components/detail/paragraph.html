@@ -211,14 +211,14 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">// we don't apply this rule only to the &lt;p&gt; tag, to avoid issues</span>
 <span class="hljs-comment">// with non-&lt;p&gt; tags</span>
 <span class="hljs-comment">// https://github.com/DSI-VD/foehn/issues/235</span>
 <span class="hljs-selector-class">.vd-content</span> {
-  <span class="hljs-selector-tag">p</span>:not(<span class="hljs-selector-class">.lead</span>),
-  <span class="hljs-selector-tag">ul</span>:not(<span class="hljs-selector-attr">[class]</span>),
+  <span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-class">.lead</span>),
+  <span class="hljs-selector-tag">ul</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-attr">[class]</span>),
   <span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.vd-list-links</span> {
     <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$vd-content-max-width</span>;
   }
@@ -264,7 +264,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-selector-class">.vd-p</span> {
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;

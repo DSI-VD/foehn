@@ -228,19 +228,19 @@
     <span class="hljs-attribute">color</span>: currentColor; <span class="hljs-comment">/* [1] */</span>
   }
 
-  &amp;:focus {
-    @<span class="hljs-keyword">include</span> vd-focus; <span class="hljs-comment">/* [2] */</span>
+  &amp;<span class="hljs-selector-pseudo">:focus</span> {
+    <span class="hljs-keyword">@include</span> vd-focus; <span class="hljs-comment">/* [2] */</span>
   }
 
-  &amp;:visited:not(<span class="hljs-selector-class">.btn</span>) {
+  &amp;<span class="hljs-selector-pseudo">:visited</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-class">.btn</span>) {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$vd-visited</span>; <span class="hljs-comment">/* [3] */</span>
   }
 
-  &amp;<span class="hljs-selector-attr">[rel^="category"]</span>:before {
+  &amp;<span class="hljs-selector-attr">[rel^="category"]</span><span class="hljs-selector-pseudo">:before</span> {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">"#"</span>;
   }
 
-  @<span class="hljs-keyword">media</span> print {
+  <span class="hljs-keyword">@media</span> print {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span> <span class="hljs-meta">!important</span>;
   }
 }
@@ -251,21 +251,21 @@
  * 1. Break long url
  * 2. Write the url after the link
  */</span>
-@<span class="hljs-keyword">media</span> print {
+<span class="hljs-keyword">@media</span> print {
   <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span> {
     <span class="hljs-attribute">word-wrap</span>: break-word; <span class="hljs-comment">/* [1] */</span>
 
-    &amp;:before,
-    &amp;:after {
+    &amp;<span class="hljs-selector-pseudo">:before</span>,
+    &amp;<span class="hljs-selector-pseudo">:after</span> {
       <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80%</span>;
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-500</span>;
     }
 
-    &amp;:before {
+    &amp;<span class="hljs-selector-pseudo">:before</span> {
       <span class="hljs-attribute">content</span>: <span class="hljs-string">"["</span>; <span class="hljs-comment">/* [2] */</span>
     }
 
-    &amp;:after {
+    &amp;<span class="hljs-selector-pseudo">:after</span> {
       <span class="hljs-attribute">content</span>: <span class="hljs-string">"]("</span>attr(href) <span class="hljs-string">")"</span>; <span class="hljs-comment">/* [2] */</span>
     }
   }

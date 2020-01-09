@@ -248,7 +248,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * Breadcrumb
@@ -260,13 +260,13 @@
  */</span>
 
 <span class="hljs-selector-class">.breadcrumb-item</span> {
-  @<span class="hljs-keyword">include</span> media-breakpoint-down(sm){
+  <span class="hljs-keyword">@include</span> media-breakpoint-down(sm){
     <span class="hljs-attribute">min-height</span>: <span class="hljs-number">1.5rem</span>; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$small-font-size</span>;
   }
 }
 
-<span class="hljs-selector-class">.breadcrumb-item</span> + <span class="hljs-selector-class">.breadcrumb-item</span>::before {
+<span class="hljs-selector-class">.breadcrumb-item</span> + <span class="hljs-selector-class">.breadcrumb-item</span><span class="hljs-selector-pseudo">::before</span> {
   <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/* [3] */</span>
   <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
 }

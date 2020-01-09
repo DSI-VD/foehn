@@ -305,7 +305,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-selector-class">.vd-list-boxed</span> {
 
@@ -321,12 +321,12 @@
     <span class="hljs-attribute">text-decoration</span>: none;
     <span class="hljs-attribute">transition</span>: background <span class="hljs-number">0.2s</span>;
 
-    &amp;:hover,
-    &amp;:focus {
+    &amp;<span class="hljs-selector-pseudo">:hover</span>,
+    &amp;<span class="hljs-selector-pseudo">:focus</span> {
       <span class="hljs-attribute">background</span>: lighten(<span class="hljs-variable">$link-color</span>, <span class="hljs-number">65%</span>);
     }
 
-    &amp;:active {
+    &amp;<span class="hljs-selector-pseudo">:active</span> {
       <span class="hljs-attribute">background</span>: lighten(<span class="hljs-variable">$link-color</span>, <span class="hljs-number">55%</span>);
     }
   }

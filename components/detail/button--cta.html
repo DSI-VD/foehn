@@ -228,7 +228,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">// Override normalize.css – because setting the font-family on `body` is not</span>
 <span class="hljs-comment">// specific enough for those tags</span>
@@ -254,15 +254,15 @@
   <span class="hljs-attribute">text-transform</span>: uppercase;
   -webkit-<span class="hljs-attribute">font</span>-smoothing: antialiased;
 
-  &amp;:hover {
+  &amp;<span class="hljs-selector-pseudo">:hover</span> {
     <span class="hljs-attribute">cursor</span>: pointer;
   }
 
-  &amp;:focus {
-    @<span class="hljs-keyword">include</span> box-shadow(<span class="hljs-variable">$input-btn-focus-box-shadow</span>);
+  &amp;<span class="hljs-selector-pseudo">:focus</span> {
+    <span class="hljs-keyword">@include</span> box-shadow(<span class="hljs-variable">$input-btn-focus-box-shadow</span>);
   }
 
-  @<span class="hljs-keyword">media</span> print {
+  <span class="hljs-keyword">@media</span> print {
     <span class="hljs-attribute">display</span>: none;
   }
 }
@@ -290,7 +290,7 @@
 <span class="hljs-selector-class">.btn-link</span> {
   <span class="hljs-attribute">font-weight</span>: bold;
 
-  &amp;:hover {
+  &amp;<span class="hljs-selector-pseudo">:hover</span> {
     <span class="hljs-attribute">text-decoration</span>: none;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$link-hover-color</span>;
   }
@@ -354,7 +354,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * 1. Overrides Bootstrap behavior: it's broken in IE if we don't specify

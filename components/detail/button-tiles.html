@@ -163,7 +163,7 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles mb-3"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles__item"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles__link"</span>&gt;</span>Le portail IAM (Identity and Access Management) permet de se connecter de manière sécurisée aux différentes ressources de l&amp;#39;Etat de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles__link"</span>&gt;</span>Le portail IAM (Identity and Access Management) permet de se connecter de manière sécurisée aux différentes ressources de l<span class="hljs-symbol">&amp;#39;</span>Etat de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles__item"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-btn-tiles__link"</span>&gt;</span>Button 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -240,7 +240,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">':UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">':UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * Button tiles
@@ -255,7 +255,7 @@
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-flow</span>: column wrap;
 
-  @<span class="hljs-keyword">include</span> media-breakpoint-up(sm) {
+  <span class="hljs-keyword">@include</span> media-breakpoint-up(sm) {
     <span class="hljs-attribute">flex-direction</span>: row;
     <span class="hljs-attribute">margin-right</span>: -<span class="hljs-variable">$spacer</span>/<span class="hljs-number">2</span>;
     <span class="hljs-attribute">margin-left</span>: -<span class="hljs-variable">$spacer</span>/<span class="hljs-number">2</span>;
@@ -266,7 +266,7 @@
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer</span>;
     <span class="hljs-attribute">align-self</span>: stretch; <span class="hljs-comment">/* [2] */</span>
 
-    @<span class="hljs-keyword">include</span> media-breakpoint-up(sm) {
+    <span class="hljs-keyword">@include</span> media-breakpoint-up(sm) {
       <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">30%</span>; <span class="hljs-comment">/* [3] */</span>
       <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$spacer</span>/<span class="hljs-number">2</span>;
       <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer</span>/<span class="hljs-number">2</span>;
@@ -284,25 +284,25 @@
     <span class="hljs-attribute">text-transform</span>: uppercase;
     <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$black</span>;
 
-    @<span class="hljs-keyword">include</span> transition(<span class="hljs-variable">$btn-transition</span>);
-    @<span class="hljs-keyword">include</span> vd-pattern-dotted(<span class="hljs-variable">$pattern-dotted-green</span>);
+    <span class="hljs-keyword">@include</span> transition(<span class="hljs-variable">$btn-transition</span>);
+    <span class="hljs-keyword">@include</span> vd-pattern-dotted(<span class="hljs-variable">$pattern-dotted-green</span>);
 
-    &amp;:hover {
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {
       <span class="hljs-attribute">background-color</span>: rgba(<span class="hljs-variable">$vd-primary-dark</span>, <span class="hljs-number">0.15</span>);
       <span class="hljs-attribute">text-decoration</span>: none;
     }
 
-    &amp;:focus {
-      @<span class="hljs-keyword">include</span> box-shadow(<span class="hljs-variable">$input-btn-focus-box-shadow</span>);
+    &amp;<span class="hljs-selector-pseudo">:focus</span> {
+      <span class="hljs-keyword">@include</span> box-shadow(<span class="hljs-variable">$input-btn-focus-box-shadow</span>);
     }
 
-    &amp;:active {
+    &amp;<span class="hljs-selector-pseudo">:active</span> {
       <span class="hljs-attribute">top</span>: <span class="hljs-number">2px</span>;
       <span class="hljs-attribute">left</span>: <span class="hljs-number">2px</span>;
       <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$black</span>;
     }
 
-    &amp;:visited {
+    &amp;<span class="hljs-selector-pseudo">:visited</span> {
       <span class="hljs-attribute">color</span>: currentColor <span class="hljs-meta">!important</span>;
     }
   }

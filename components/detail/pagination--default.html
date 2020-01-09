@@ -273,7 +273,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * 1. unstyle list
@@ -321,7 +321,7 @@
   <span class="hljs-attribute">display</span>: block;
 
   &amp;,
-  &amp;:hover {
+  &amp;<span class="hljs-selector-pseudo">:hover</span> {
     <span class="hljs-attribute">text-decoration</span>: none;
   }
 }
@@ -329,7 +329,7 @@
 <span class="hljs-selector-class">.vd-pagination__title</span> {
   <span class="hljs-attribute">text-decoration</span>: none;
 
-  @<span class="hljs-keyword">include</span> media-breakpoint-up(sm) {
+  <span class="hljs-keyword">@include</span> media-breakpoint-up(sm) {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.3em</span>;
   }
 }

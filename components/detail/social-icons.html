@@ -252,12 +252,12 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-selector-class">.vd-social-icons</span> {
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
 
-  @<span class="hljs-keyword">media</span> print {
+  <span class="hljs-keyword">@media</span> print {
     <span class="hljs-attribute">display</span>: none;
   }
 }
@@ -275,12 +275,12 @@
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">text-decoration</span>: none;
 
-  &amp;:visited {
+  &amp;<span class="hljs-selector-pseudo">:visited</span> {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span> <span class="hljs-meta">!important</span>;
   }
 
-  &amp;:hover,
-  &amp;:focus {
+  &amp;<span class="hljs-selector-pseudo">:hover</span>,
+  &amp;<span class="hljs-selector-pseudo">:focus</span> {
     <span class="hljs-attribute">background</span>: <span class="hljs-variable">$link-hover-color</span>;
     <span class="hljs-attribute">text-decoration</span>: none;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;

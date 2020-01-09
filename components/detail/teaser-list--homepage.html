@@ -276,7 +276,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Tous les communiqués link to somewhere"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Tous les communiqués<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Décisions du conseil d&amp;#39;état link to somewhere"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Décisions du conseil d&amp;#39;état<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Décisions du conseil d<span class="hljs-symbol">&amp;#39;</span>état link to somewhere"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Décisions du conseil d<span class="hljs-symbol">&amp;#39;</span>état<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
@@ -387,18 +387,18 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * A list that add some background on odd elements
  */</span>
 
 <span class="hljs-selector-class">.vd-teaser-list-striped</span> {
-  <span class="hljs-selector-class">.vd-teaser-list-striped-item</span>:nth-of-type(odd) {
+  <span class="hljs-selector-class">.vd-teaser-list-striped-item</span><span class="hljs-selector-pseudo">:nth-of-type</span>(odd) {
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$vd-neutral-lighter</span>;
     <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$vd-neutral-lighter</span>;
 
-    @<span class="hljs-keyword">media</span> print {
+    <span class="hljs-keyword">@media</span> print {
       <span class="hljs-attribute">background</span>: none <span class="hljs-meta">!important</span>;
       <span class="hljs-attribute">border-bottom</span>: none <span class="hljs-meta">!important</span>;
     }

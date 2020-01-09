@@ -225,7 +225,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * Logo of the website
@@ -258,12 +258,12 @@
       <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>; <span class="hljs-comment">/* [2] */</span>
     }
 
-    @<span class="hljs-keyword">include</span> media-breakpoint-down(sm) {
+    <span class="hljs-keyword">@include</span> media-breakpoint-down(sm) {
       <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">2</span> * <span class="hljs-variable">$spacer</span>;
       <span class="hljs-attribute">align-self</span>: flex-end; <span class="hljs-comment">/* [3] */</span>
     }
 
-    @<span class="hljs-keyword">media</span> print {
+    <span class="hljs-keyword">@media</span> print {
       <span class="hljs-attribute">display</span>: none;
     }
   }
@@ -272,7 +272,7 @@
     <span class="hljs-attribute">width</span>: <span class="hljs-number">12em</span>;
     <span class="hljs-attribute">height</span>: auto;
 
-    @<span class="hljs-keyword">media</span> screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (-ms-high-contrast: active), (-ms-high-contrast: none) {
       <span class="hljs-attribute">max-width</span>: <span class="hljs-number">12em</span>; <span class="hljs-comment">/* [5] */</span>
       <span class="hljs-attribute">width</span>: auto; <span class="hljs-comment">/* [5] */</span>
     }

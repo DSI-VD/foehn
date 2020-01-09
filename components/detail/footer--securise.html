@@ -310,7 +310,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * footer
@@ -329,7 +329,7 @@
   <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">23px</span> solid <span class="hljs-variable">$vd-primary</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">/* [2] */</span>
 
-  &amp;:after {
+  &amp;<span class="hljs-selector-pseudo">:after</span> {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">display</span>: block; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/* [1] */</span>
@@ -341,16 +341,16 @@
 
   <span class="hljs-selector-tag">a</span> {
     &amp;,
-    &amp;:visited {
+    &amp;<span class="hljs-selector-pseudo">:visited</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">/* [2] */</span>
     }
 
-    &amp;:focus {
+    &amp;<span class="hljs-selector-pseudo">:focus</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$body-color</span>; <span class="hljs-comment">/* [2] */</span>
     }
   }
 
-  @<span class="hljs-keyword">media</span> print {
+  <span class="hljs-keyword">@media</span> print {
     <span class="hljs-attribute">display</span>: none;
   }
 }

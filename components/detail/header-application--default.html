@@ -258,7 +258,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * header for application
@@ -272,7 +272,7 @@
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-wrap</span>: wrap;
   <span class="hljs-attribute">flex-direction</span>: column; <span class="hljs-comment">/* [2] */</span>
-  @<span class="hljs-keyword">include</span> media-breakpoint-up(md) {
+  <span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
     <span class="hljs-attribute">flex-direction</span>: row; <span class="hljs-comment">/* [2] */</span>
   }
 }
@@ -283,10 +283,10 @@
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$h4-font-size</span>;
   <span class="hljs-attribute">text-transform</span>: uppercase;
 
-  @<span class="hljs-keyword">include</span> media-breakpoint-up(md) {
+  <span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer</span>/<span class="hljs-number">4</span>;
 
-    &amp;:before {
+    &amp;<span class="hljs-selector-pseudo">:before</span> {
       <span class="hljs-attribute">content</span>: <span class="hljs-string">"//"</span>; <span class="hljs-comment">/* [1] */</span>
       <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer</span>/<span class="hljs-number">4</span>; <span class="hljs-comment">/* [1] */</span>
       <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$spacer</span>/<span class="hljs-number">4</span>; <span class="hljs-comment">/* [1] */</span>

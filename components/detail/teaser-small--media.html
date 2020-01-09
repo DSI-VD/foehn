@@ -226,7 +226,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-selector-class">.vd-teaser-small</span> {
   <span class="hljs-attribute">display</span>: block;
@@ -234,7 +234,7 @@
   <span class="hljs-attribute">padding-bottom</span>: (<span class="hljs-variable">$spacer</span> / <span class="hljs-number">2</span>);
   <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$vd-primary-darker</span>;
 
-  &amp;:last-of-type {
+  &amp;<span class="hljs-selector-pseudo">:last-of-type</span> {
     <span class="hljs-attribute">border</span>: none;
   }
 }
@@ -242,7 +242,7 @@
 <span class="hljs-selector-class">.vd-teaser-small-img</span> {
   <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
 
-  @<span class="hljs-keyword">include</span> media-breakpoint-up(md) {
+  <span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">40%</span>;
   }
 }

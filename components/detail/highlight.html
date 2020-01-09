@@ -223,7 +223,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-comment">/**
  * Highlight visually content
@@ -263,16 +263,16 @@
 
   <span class="hljs-selector-tag">a</span> {
     &amp;,
-    &amp;:visited {
+    &amp;<span class="hljs-selector-pseudo">:visited</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">/* [1] */</span>
     }
 
-    &amp;:focus {
+    &amp;<span class="hljs-selector-pseudo">:focus</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$body-color</span>; <span class="hljs-comment">/* [1] */</span>
     }
   }
 
-  &gt; :last-child {
+  &gt; <span class="hljs-selector-pseudo">:last-child</span> {
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
   }
 

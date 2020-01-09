@@ -165,7 +165,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-circle img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://api.adorable.io/avatars/200/hello@vd.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Alternative text"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>La démocratie ne se découpe pas en morceaux dont on ne choisirait que les meilleurs.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote-footer"</span>&gt;</span>Pascal Broulis, Conseil d&amp;#39;État de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote-footer"</span>&gt;</span>Pascal Broulis, Conseil d<span class="hljs-symbol">&amp;#39;</span>État de Vaud<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></pre>
         
@@ -226,7 +226,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">'UTF-8'</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">'UTF-8'</span>;
 
 <span class="hljs-selector-tag">blockquote</span>,
 <span class="hljs-selector-class">.blockquote</span> {
@@ -235,7 +235,7 @@
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-lg</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-500</span>;
 
-  &amp;:before {
+  &amp;<span class="hljs-selector-pseudo">:before</span> {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">'“'</span>;
     <span class="hljs-attribute">position</span>: absolute;
     <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
@@ -247,14 +247,14 @@
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$link-color</span>;
   }
 
-  <span class="hljs-selector-tag">p</span>:last-of-type {
+  <span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:last-of-type</span> {
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer</span> * <span class="hljs-number">0.4</span>;
   }
 }
 
 <span class="hljs-selector-tag">blockquote</span> <span class="hljs-selector-tag">cite</span>,
 <span class="hljs-selector-class">.blockquote-footer</span> {
-  &amp;:before {
+  &amp;<span class="hljs-selector-pseudo">:before</span> {
     <span class="hljs-attribute">content</span>: none;
   }
 }
@@ -269,7 +269,7 @@
 }
 
 <span class="hljs-selector-class">.blockquote-reverse</span> {
-  &amp;:after {
+  &amp;<span class="hljs-selector-pseudo">:after</span> {
     <span class="hljs-attribute">right</span>: auto;
     <span class="hljs-attribute">left</span>: <span class="hljs-number">40px</span>;
   }
@@ -284,11 +284,11 @@
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.3</span>;
 
-  &amp;:before {
+  &amp;<span class="hljs-selector-pseudo">:before</span> {
     <span class="hljs-attribute">content</span>: none;
   }
 
-  &amp;:after {
+  &amp;<span class="hljs-selector-pseudo">:after</span> {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
     <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">position</span>: absolute;
@@ -297,9 +297,9 @@
     <span class="hljs-attribute">width</span>: <span class="hljs-number">41px</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">18px</span>;
 
-    @<span class="hljs-keyword">include</span> media-breakpoint-up(sm) { <span class="hljs-attribute">right</span>: <span class="hljs-number">80px</span>; }
+    <span class="hljs-keyword">@include</span> media-breakpoint-up(sm) { <span class="hljs-attribute">right</span>: <span class="hljs-number">80px</span>; }
 
-    @<span class="hljs-keyword">include</span> vd-background-image-icon(<span class="hljs-variable">$vd-blockquote-pointer</span>, theme-color(<span class="hljs-string">"dark"</span>), 41, 18);
+    <span class="hljs-keyword">@include</span> vd-background-image-icon(<span class="hljs-variable">$vd-blockquote-pointer</span>, theme-color(<span class="hljs-string">"dark"</span>), <span class="hljs-number">41</span>, <span class="hljs-number">18</span>);
   }
 
   <span class="hljs-selector-tag">p</span> {
@@ -315,7 +315,7 @@
     <span class="hljs-attribute">width</span>: <span class="hljs-number">80px</span>;
     <span class="hljs-attribute">height</span>: auto;
 
-    @<span class="hljs-keyword">include</span> media-breakpoint-up(sm) {
+    <span class="hljs-keyword">@include</span> media-breakpoint-up(sm) {
       <span class="hljs-attribute">right</span>: -<span class="hljs-number">75px</span>;
       <span class="hljs-attribute">width</span>: <span class="hljs-number">120px</span>;
     }
@@ -331,7 +331,7 @@
   <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$spacer</span> * <span class="hljs-number">2.8</span>;
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer</span> * <span class="hljs-number">2</span>;
 
-  @<span class="hljs-keyword">include</span> media-breakpoint-up(sm) {
+  <span class="hljs-keyword">@include</span> media-breakpoint-up(sm) {
     <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$spacer</span> * <span class="hljs-number">5</span>;
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer</span>;
     <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer</span> * <span class="hljs-number">4.5</span>;

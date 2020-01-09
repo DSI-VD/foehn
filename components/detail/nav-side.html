@@ -383,7 +383,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">"UTF-8"</span>;
+                                <pre><span class="hljs-keyword">@charset</span> <span class="hljs-string">"UTF-8"</span>;
 
 <span class="hljs-comment">/**
  * Nav-side style
@@ -398,14 +398,14 @@
  *                      lot of specificities.
  */</span>
 <span class="hljs-selector-class">.vd-nav-side</span> {
-  &gt; <span class="hljs-selector-tag">ul</span> &gt; <span class="hljs-selector-tag">li</span>:first-child &gt; <span class="hljs-selector-tag">a</span> {
+  &gt; <span class="hljs-selector-tag">ul</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-child</span> &gt; <span class="hljs-selector-tag">a</span> {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$h4-font-size</span>; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family-serif</span>; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$headings-font-weight</span>; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">text-decoration</span>: none; <span class="hljs-comment">/* [1] */</span>
 
-    &amp;:hover {
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {
       <span class="hljs-attribute">text-decoration</span>: underline; <span class="hljs-comment">/* [1] */</span>
     }
   }
@@ -418,7 +418,7 @@
     }
   }
 
-  <span class="hljs-selector-class">.nav</span>:first-child <span class="hljs-selector-class">.nav-link</span> {
+  <span class="hljs-selector-class">.nav</span><span class="hljs-selector-pseudo">:first-child</span> <span class="hljs-selector-class">.nav-link</span> {
     <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solod <span class="hljs-variable">$vd-neutral-light</span>; <span class="hljs-comment">/* [3] */</span>
   }
 
