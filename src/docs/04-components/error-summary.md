@@ -30,7 +30,9 @@ Vous devez:
 Lisez [les instructions pour écrire de bons messages
 d'erreur](error-message).
 
-## Créer un lien du récaptulatif à chaques réponse incorrectes
+{{ '@error-summary' | renderComponent | safe }}
+
+## Créer un lien du récaptulatif vers chaques réponse incorrectes
 
 Vous devez lier les erreurs du récapitulatif aux champs auxquels elles
 se rapportent.
