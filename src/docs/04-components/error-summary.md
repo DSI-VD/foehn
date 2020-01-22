@@ -8,7 +8,8 @@ Utilisez ce composant en haut d'une page pour récapituler les erreurs qu'un
 utilisateur a commises.
 
 Lorsqu'un utilisateur commet une erreur, vous devez afficher un récapitulatif
-d'erreur et un message d'erreur à côté de chaque réponse contenant une erreur.
+d'erreur et un [message d'erreur](error-message) à côté de chaque réponse
+contenant une erreur.
 
 {{ '@error-summary' | renderComponent | safe }}
 
@@ -24,7 +25,8 @@ Vous devez:
 - afficher un résumé des erreurs en haut d'une page
 - déplace le focus du clavier sur le récapitulatif des erreurs
 - inclure l'en-tête "Il y a un problème"
-- faire un lien vers chacune des réponses comportant des erreurs de validation
+- faire un lien du récapitulatif vers chacune des réponses comportant des
+  erreurs de validation
 - affiche les mêmes messages d'erreur que sur les champs avec des erreurs
 
 Lisez [les instructions pour écrire de bons messages d'erreur](error-message).
