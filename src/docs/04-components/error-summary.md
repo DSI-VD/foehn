@@ -1,7 +1,7 @@
 ---
 title: "Récapitulatif des erreurs"
 label: "Récapitulatif des erreurs"
-status: wip
+status: ready
 ---
 
 Utilisez ce composant en haut d'une page pour récapituler les erreurs qu'un
