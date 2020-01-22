@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed `@fieldset--error` component to `@fieldset--radio-error
 
 ### Fixes
+- Upgrade a bunch of modules that you do note need to take care of
 - Fix components example not showing properly in the doc
 - Remove table's summary because it's not used
 - Fix disabeld autoescaping
