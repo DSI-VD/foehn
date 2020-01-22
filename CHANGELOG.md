@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2020-01-22
+
 ### Added
 - Add `@fieldset--checkbox-error` component to be used in [documentation about
   error message](src/docs/compoents/error-message)
@@ -1974,7 +1976,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/DSI-VD/foehn/compare/v1.4.0...v.1.5.0
 [1.4.0]: https://github.com/DSI-VD/foehn/compare/v1.3.0...v.1.4.0
 [1.3.0]: https://github.com/DSI-VD/foehn/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/DSI-VD/foehn/compare/v1.1.2...v1.2.0
