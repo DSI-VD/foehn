@@ -1,7 +1,7 @@
 ---
 title: "Messages d'erreurs"
 label: "Messages d'erreurs"
-status: wip
+status: ready
 ---
 
 Utilisez un message d'erreur en cas d'erreur de validation. Expliquez ce qui
@@ -16,9 +16,8 @@ Lorsque'il faut afficher un message d'erreur à côté du champ et dans le
 
 Utilisez des messages standard pour différents composants.
 
-Essayez de concevoir votre prestation ou formulaire de manière à ce qu'il soit
-facile à utiliser et à comprendre afin que personne ne voie un message d'erreur
-.
+Essayez de formuler les questions de manière explicite et univoque afin d’éviter
+des problèmes de compréhension et limiter ainsi les messages d’erreurs.
 
 ## Quand ne pas utiliser ce composant
 
@@ -45,8 +44,8 @@ Pour chaque erreur:
   d'aide
 - utilisez une bordure rouge pour connecter visuellement le message et la
   question à laquelle il appartient
-- si l'erreur concerne des champs de texte spécifiques dans la question,
-  indiquez-les également par une bordure rouge
+- si l'erreur concerne un champs dans une question composée de plusieurs champs,
+  utiliser une bordure rouge pour signaler toute la question
 
 Pour aider les utilisateurs de lecteur d'écran, le composant de message d'erreur
 inclut un «Erreur:» masqué avant le message d'erreur. Ces utilisateurs
@@ -82,6 +81,7 @@ Ne pas utiliser:
 - 'désolé' car cela n'aide pas à résoudre le problème
 - 'valide' et 'invalide' car ils n'ajoutent rien au message
 - humour, langage informel comme 'oups' 
+- le tutoyement
 
 Ne donnez pas d'exemple dans le message d'erreur s'il y a un exemple à l'écran.
 Par exemple, si vous demandez un numéro d'AVS et que vous incluez 'CH 756 1234
