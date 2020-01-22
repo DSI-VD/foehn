@@ -61,7 +61,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
 
 </div>
 
@@ -79,21 +79,27 @@
 
     
     
-    <p>Utilisez un message d’erreur en cas d’erreur de validation. Expliquez ce qui s’est mal passé et comment y remédier.</p>
+    <p>Utilisez un message d’erreur en cas d’erreur de validation. Expliquez ce qui
+s’est mal passé et comment y remédier.</p>
 <div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/dates--danger">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/dates--danger"></iframe></div>
 
 <h2 id="quand-utiliser-ce-composant">Quand utiliser ce composant</h2>
-<p>Lorsque’il faut afficher un message d’erreur à côté du champ et dans le <a href="error-summary/">récapitulatif des erreurs</a> en cas d’erreur de validation.</p>
+<p>Lorsque’il faut afficher un message d’erreur à côté du champ et dans le
+<a href="error-summary/">récapitulatif des erreurs</a> en cas d’erreur de validation.</p>
 <p>Utilisez des messages standard pour différents composants.</p>
-<p>Essayez de concevoir votre prestation ou formulaire de manière à ce qu’il soit facile à utiliser et à comprendre afin que personne ne voie un message d’erreur .</p>
+<p>Essayez de formuler les questions de manière explicite et univoque afin d’éviter
+des problèmes de compréhension et limiter ainsi les messages d’erreurs.</p>
 <h2 id="quand-ne-pas-utiliser-ce-composant">Quand ne pas utiliser ce composant</h2>
-<p>Afficher une erreur uniquement lorsque quelqu’un tente de passer à la partie suivante du service. Ne pas afficher les messages d’erreur:</p>
+<p>Afficher une erreur uniquement lorsque quelqu’un tente de passer à la partie
+suivante du service. Ne pas afficher les messages d’erreur:</p>
 <ul>
 <li>lorsque les utilisateurs sélectionnent ou tabulent vers un champ</li>
 <li>lorsqu’ils saisissent des caractères</li>
 <li>quand ils sortent d’un champ</li>
 </ul>
-<p>N’utilisez pas de messages d’erreur pour indiquer aux utilisateurs qu’ils ne sont pas éligibles ou qu’ils n’ont pas la permission de faire quelque chose. Au lieu de cela, amenez-les sur un écran qui:</p>
+<p>N’utilisez pas de messages d’erreur pour indiquer aux utilisateurs qu’ils ne
+sont pas éligibles ou qu’ils n’ont pas la permission de faire quelque chose. Au
+lieu de cela, amenez-les sur un écran qui:</p>
 <ul>
 <li>explique pourquoi nous ne pouvons pas accepter la saisie ou la sélection</li>
 <li>leur dit quoi faire ensuite</li>
@@ -102,13 +108,21 @@
 <h2 id="fonctionnement">Fonctionnement</h2>
 <p>Pour chaque erreur:</p>
 <ul>
-<li>mettre le message en rouge après le texte de la question et avant le texte d’aide</li>
-<li>utilisez une bordure rouge pour connecter visuellement le message et la question à laquelle il appartient</li>
-<li>si l’erreur concerne des champs de texte spécifiques dans la question, indiquez-les également par une bordure rouge</li>
+<li>mettre le message en rouge après le texte de la question et avant le texte
+d’aide</li>
+<li>utilisez une bordure rouge pour connecter visuellement le message et la
+question à laquelle il appartient</li>
+<li>si l’erreur concerne un champs dans une question composée de plusieurs champs,
+utiliser une bordure rouge pour signaler toute la question</li>
 </ul>
-<p>Pour aider les utilisateurs de lecteur d’écran, le composant de message d’erreur inclut un «Erreur:» masqué avant le message d’erreur. Ces utilisateurs entendront, par exemple, «Erreur: la date à laquelle votre passeport a été délivré doit être dans le passé».</p>
-<p>Si votre message d’erreur est écrit dans une autre langue, vous pouvez modifier le préfixe en fonction des besoins, comme indiqué dans cet exemple.</p>
-<p>Résumez toutes les erreurs en haut de la page sur laquelle l’utilisateur se trouve à l’aide d’un <a href="error-summary">récapitulatif des erreurs</a>.</p>
+<p>Pour aider les utilisateurs de lecteur d’écran, le composant de message d’erreur
+inclut un «Erreur:» masqué avant le message d’erreur. Ces utilisateurs
+entendront, par exemple, «Erreur: la date à laquelle votre passeport a été
+délivré doit être dans le passé».</p>
+<p>Si votre message d’erreur est écrit dans une autre langue, vous pouvez modifier
+le préfixe en fonction des besoins, comme indiqué dans cet exemple.</p>
+<p>Résumez toutes les erreurs en haut de la page sur laquelle l’utilisateur se
+trouve à l’aide d’un <a href="error-summary">récapitulatif des erreurs</a>.</p>
 <h3 id="légende">Légende</h3>
 <div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/fieldset--checkbox-error">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/fieldset--checkbox-error"></iframe></div>
 
@@ -116,29 +130,40 @@
 <div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/input--help-error">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/input--help-error"></iframe></div>
 
 <h3 id="soyez-clair-et-concis">Soyez clair et concis</h3>
-<p>Décrivez ce qui s’est passé et dites-leur comment y remédier. Le message doit être rédigé en français clair, utiliser un langage positif et aller droit au but.</p>
+<p>Décrivez ce qui s’est passé et dites-leur comment y remédier. Le message doit
+être rédigé en français clair, utiliser un langage positif et aller droit au
+but.</p>
 <p>Ne pas utiliser:</p>
 <ul>
-<li>jargon technique tel que ‘erreur de formulaire’, ‘erreur non spécifiée’ et ‘erreur 0x0000000643’</li>
+<li>jargon technique tel que ‘erreur de formulaire’, ‘erreur non spécifiée’ et
+‘erreur 0x0000000643’</li>
 <li>des mots comme «interdit», «illégal», «vous avez oublié» et «interdit»</li>
 <li>‘s’il vous plaît’ car cela implique un choix</li>
 <li>‘désolé’ car cela n’aide pas à résoudre le problème</li>
 <li>‘valide’ et ‘invalide’ car ils n’ajoutent rien au message</li>
 <li>humour, langage informel comme ‘oups’ </li>
+<li>le tutoyement</li>
 </ul>
-<p>Ne donnez pas d’exemple dans le message d’erreur s’il y a un exemple à l’écran. Par exemple, si vous demandez un numéro d’AVS et que vous incluez ‘CH 756 1234 5678 97’ comme indice, n’incluez pas d’exemple dans le message d’erreur.</p>
+<p>Ne donnez pas d’exemple dans le message d’erreur s’il y a un exemple à l’écran.
+Par exemple, si vous demandez un numéro d’AVS et que vous incluez ‘CH 756 1234
+5678 97’ comme indice, n’incluez pas d’exemple dans le message d’erreur.</p>
 <p>Avant toute chose, visez la clarté.</p>
-<p>Lisez le message à voix haute pour voir si cela ressemble à quelque chose que vous diriez.</p>
+<p>Lisez le message à voix haute pour voir si cela ressemble à quelque chose que
+vous diriez.</p>
 <h3 id="être-cohérent">Être cohérent</h3>
-<p>Utilisez le même message à côté du champ et dans le récapitulatif des erreurs pour qu’ils:</p>
+<p>Utilisez le même message à côté du champ et dans le récapitulatif des erreurs
+pour qu’ils:</p>
 <ul>
 <li>ressemble, sonne et signifie la même chose</li>
 <li>donner un sens hors contexte</li>
 <li>réduire l’effort cognitif nécessaire pour comprendre ce qui s’est passé</li>
 </ul>
-<p>Utilisez le label de la question ou du formulaire en erreur pour fournir un contexte. Par exemple, “Entrez combien d’heures vous travaillez par semaine” pour “Combien d’heures travaillez-vous par semaine ?”</p>
+<p>Utilisez le label de la question ou du formulaire en erreur pour fournir un
+contexte. Par exemple, “Entrez combien d’heures vous travaillez par semaine”
+pour “Combien d’heures travaillez-vous par semaine ?”</p>
 <h3 id="être-spécifique">Être spécifique</h3>
-<p>Les message d’erreurs trop généraux n’aident personne. Ils n’ont pas de sens hors contexte. Évitez les messages tels que:</p>
+<p>Les message d’erreurs trop généraux n’aident personne. Ils n’ont pas de sens
+hors contexte. Évitez les messages tels que:</p>
 <ul>
 <li>‘Une erreur est survenue’</li>
 <li>‘Répondre à la question’</li>
@@ -146,7 +171,8 @@
 <li>‘Remplissez le champ’</li>
 <li>‘Ce champ est requis’</li>
 </ul>
-<p>Chaque type d’erreur nécessite un message particulier. Par exemple, les champs de texte peuvent être:</p>
+<p>Chaque type d’erreur nécessite un message particulier. Par exemple, les champs
+de texte peuvent être:</p>
 <ul>
 <li>vide</li>
 <li>trop long</li>
@@ -154,15 +180,24 @@
 <li>en utilisant des caractères qui ne sont pas autorisés</li>
 <li>dans le mauvais format</li>
 </ul>
-<p>Une message d’erreur pour une situation spécifique est plus utile. Il informera l’utilisateur sur ce qui s’est passé et comment y remédier.</p>
+<p>Une message d’erreur pour une situation spécifique est plus utile. Il informera
+l’utilisateur sur ce qui s’est passé et comment y remédier.</p>
 <h3 id="utiliser-des-instructions-et-des-descriptions">Utiliser des instructions et des descriptions</h3>
-<p>Certains messages d’erreurs fonctionnent mieux lorsque lorsqu’ils sont formulés en instructions et d’autres en descriptions. Par exemple:</p>
+<p>Certains messages d’erreurs fonctionnent mieux lorsque lorsqu’ils sont formulés
+en instructions et d’autres en descriptions. Par exemple:</p>
 <ul>
-<li>‘Entrez votre prénom’ est plus clair, plus direct et naturel que ‘Le prénom doit avoir une entrée’</li>
-<li>‘Entrez un prénom de 35 caractères ou moins’ est plus verbeux, moins direct et naturel que ‘Le prénom doit comporter 35 caractères ou moins’</li>
-<li>‘Entrez une date après le 31 août 2017 pour le début du cours’ est plus précis, moins direct et naturel que ‘La date à laquelle vous avez commencé le cours doit être après le 31 août 2017’ </li>
+<li>‘Entrez votre prénom’ est plus clair, plus direct et naturel que ‘Le prénom
+doit avoir une entrée’</li>
+<li>‘Entrez un prénom de 35 caractères ou moins’ est plus verbeux, moins direct et
+naturel que ‘Le prénom doit comporter 35 caractères ou moins’</li>
+<li>‘Entrez une date après le 31 août 2017 pour le début du cours’ est plus
+précis, moins direct et naturel que ‘La date à laquelle vous avez commencé le
+cours doit être après le 31 août 2017’ </li>
 </ul>
-<p>Utilisez des instructions et des descriptions, mais utilisez-les de manière cohérente. Par exemple, utilisez une instruction pour les champs vides telle que “Entrez votre nom”, mais une description telle que “Le nom doit comporter 35 caractères ou moins” pour les entrées trop longues. </p>
+<p>Utilisez des instructions et des descriptions, mais utilisez-les de manière
+cohérente. Par exemple, utilisez une instruction pour les champs vides telle que
+“Entrez votre nom”, mais une description telle que “Le nom doit comporter 35
+caractères ou moins” pour les entrées trop longues. </p>
 <h3 id="utiliser-des-modèles-de-message-derreur">Utiliser des modèles de message d’erreur</h3>
 <p>Utilisez des modèles de messages pour les erreurs courantes sur:</p>
 <ul>
@@ -608,7 +643,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
