@@ -27,22 +27,21 @@ Vous devez:
 - faire un lien vers chacune des réponses comportant des erreurs de validation
 - affiche les mêmes messages d'erreur que sur les champs avec des erreurs
 
-Lisez [les instructions pour écrire de bons messages
-d'erreur](error-message).
+Lisez [les instructions pour écrire de bons messages d'erreur](error-message).
 
 {{ '@error-summary' | renderComponent | safe }}
 
 ## Créer un lien du récaptulatif vers chaques réponse incorrectes
 
-Vous devez lier les erreurs du récapitulatif aux champs auxquels elles
-se rapportent.
+Vous devez lier les erreurs du récapitulatif aux champs auxquels elles se
+rapportent.
 
-Pour les questions qui nécéssitent que l’utilisateur réponde à un seul
-champ, comme un téléchargement de fichier, une sélection, une zone de texte, une
-entrée de texte ou un nombre de caractères, faites un lien vers le champ.
+Pour les questions qui nécéssitent que l’utilisateur réponde à un seul champ,
+comme un téléchargement de fichier, une sélection, une zone de texte, une entrée
+de texte ou un nombre de caractères, faites un lien vers le champ.
 
-[Exemple de lien depuis une résumé d'erreur vers un champs
-unique (GOV.uk design system)](https://design-system.service.gov.uk/components/error-summary/linking/index.html#name)
+[Exemple de lien depuis une résumé d'erreur vers un champs unique (GOV.uk design
+system)](https://design-system.service.gov.uk/components/error-summary/linking/index.html#name)
 
 Lorsqu'un utilisateur doit entrer sa réponse dans plusieurs champs, tels que les
 champs jour, mois et année dans un composant de saisie de la date, faites un
