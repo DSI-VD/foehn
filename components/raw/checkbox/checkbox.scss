@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+/**
+ * Add a focus style on checkbox
+ *
+ * The same style apply for radio buttons
+ */
+
+.form-check-input:focus {
+  @include vd-focus();
+}
