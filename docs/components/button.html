@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="../../assets/styles/styleguide.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Button | Foehn</title>
+<title>Bouton | Foehn</title>
 
 </head>
 <body>
@@ -56,12 +56,12 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Button</h1>
+        <h1 class="Document-title">Bouton</h1>
         
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #FF3333; border-color: #FF3333;">Draft</label>
+<label class="Status-label" style="background-color: #32edff; border-color: #32edff;">Need review</label>
 
 </div>
 
@@ -79,7 +79,75 @@
 
     
     
-    
+    <div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/button">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/button"></iframe></div>
+
+<h2 id="quand-utiliser-ce-composant">Quand utiliser ce composant</h2>
+<p>Utilisez le composant bouton pour aider les utilisateurs à effectuer une action
+comme démarrer une application ou enregistrer leurs informations.</p>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<p>Écrivez le texte du bouton avec une majuscule au début. Il sera reformaté en
+majuscule.  Le text doit décrire l’action qu’il effectue.</p>
+<p>Par exemple:</p>
+<ul>
+<li>“<em>Commencez</em>“ au début d’une prestation</li>
+<li>“<em>Se connecter</em>“ à un compte qu’un utilisateur a déjà créé </li>
+<li>“<em>Continuer</em>“ lorsque le service ou la prestation n’enregistre pas les
+informations d’un utilisateur </li>
+<li>“<em>Enregistrer et continuer</em>“ lorsque le service ou la prestation enregistre
+les informations d’un utilisateur </li>
+<li>“<em>Enregistrer et revenir plus tard</em>“ lorsqu’un utilisateur peut enregistrer
+ses informations et revenir plus tard</li>
+<li>“<em>Ajouter un élément</em>“ pour ajouter un autre élément à une liste ou à un
+groupe</li>
+<li>“<em>Payer</em>“ pour effectuer un paiement </li>
+<li>“<em>Confirmer et envoyer</em>“ sur une page de réponses aux chèques qui n’a pas de
+contenu légal qu’un utilisateur doit accepter</li>
+<li>“<em>Accepter et envoyer</em>“ sur une page de vérification de réponses aux qui a un
+contenu légal qu’un utilisateur doit accepter</li>
+<li>“<em>Se déconnecter</em>“ lorsqu’un utilisateur est connecté à un compte</li>
+</ul>
+<p>Vous devrez peut-être inclure plus ou différents mots pour mieux décrire
+l’action. Par exemple, “Ajouter une autre adresse” et “Accepter et demander un
+remboursement de taxe”.</p>
+<p>Alignez le bouton d’action principal sur le bord gauche de votre formulaire.</p>
+<h3 id="bouton-par-défaut">Bouton par défaut</h3>
+<p>Utilisez un bouton d’action par défaut pour l’action principale d’une page.</p>
+<p>Évitez d’utiliser plusieurs boutons par défaut sur une seule page. Le fait
+d’avoir plusieur bouton d’action principale réduit leur impact et rend plus
+difficile pour les utilisateurs de savoir ce qu’ils doivent faire.</p>
+<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/button">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/button"></iframe></div>
+
+<h3 id="bouton-de-démarrage">Bouton de démarrage</h3>
+<p>Utilisez un bouton de démarrage pour l’action principale sur votre page de
+prestation ou service.</p>
+<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/button--cta">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/button--cta"></iframe></div>
+
+<h3 id="bouton-secondaire">Bouton secondaire</h3>
+<p>Utilisez les boutons secondaires pour les actions secondaires sur une page.</p>
+<p>Les pages contenant trop de boutons d’action empêchent les utilisateurs de
+savoir quoi faire ensuite. Avant d’ajouter de nombreux boutons secondaires,
+essayez de simplifier la page ou de répartir le contenu sur plusieurs pages.</p>
+<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/button--secondary">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/button--secondary"></iframe></div>
+
+<p>Vous pouvez utiliser des boutons secondaires en combinaison avec des boutons par
+défaut.</p>
+<h3 id="bouton-davertissement">Bouton d’avertissement</h3>
+<div class="component-example"><span class="component-example__preview-link"><a href="../../components/detail/button--danger">Open detail page of this component</a></span><iframe class="component-example__iframe" src="../../components/preview/button--danger"></iframe></div>
+
+<p>Utilisez uniquement des boutons d’avertissement pour les actions ayant des
+conséquences destructrices graves qui ne peuvent pas être facilement annulées
+par un utilisateur. Par exemple, supprimer définitivement un compte.</p>
+<p>Lorsque vous laissez les utilisateurs effectuer une action comme celle-ci, c’est
+une bonne idée d’inclure une étape supplémentaire qui leur demande de la
+confirmer.</p>
+<p>Dans ce cas, utilisez un autre style de bouton pour l’appel initial à l’action
+et un bouton d’avertissement pour la confirmation finale.</p>
+<p>Ne vous fiez pas seulement à la couleur rouge d’un bouton d’avertissement pour
+communiquer la nature sérieuse de l’action. En effet, tous les utilisateurs ne
+seront pas en mesure de voir la couleur ou de comprendre ce qu’elle signifie.
+Assurez-vous que le contexte et le texte du bouton indiquent clairement ce qui
+se passera si l’utilisateur le sélectionne.</p>
+
     
 
 
@@ -395,7 +463,7 @@
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
-                <span>Button</span>
+                <span>Bouton</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -403,7 +471,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+<span class="Status-dot" style="border-color: #32edff;" title="Need review"></span>
 
 
 </div>
@@ -1263,6 +1331,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../components/detail/button--submit" data-pjax>
                 <span>Submit</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/button--danger" data-pjax>
+                <span>Danger</span>
                 
 
 <div class="Status Status--unlabelled">
