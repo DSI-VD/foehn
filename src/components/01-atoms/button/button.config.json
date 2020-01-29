@@ -1,7 +1,7 @@
 {
     "status": "ready",
     "context": {
-        "text": "Button",
+        "text": "Sauver et continuer",
         "href": "#",
         "title": "link to somewhere"
     },
@@ -16,12 +16,15 @@
         "name": "cta",
         "label": "Call to action",
         "context": {
+          "text": "Démarrer",
+          "title": "Démarrer la prestation",
           "class": "btn btn-success"
         }
       },
       {
         "name": "secondary",
         "context": {
+          "text": "Trouver l'adresse",
           "class": "btn btn-secondary"
         }
       },
@@ -36,6 +39,13 @@
         "context": {
           "class": "btn btn-success",
           "text": "Transmettre"
+        }
+      },
+      {
+        "name": "danger",
+        "context": {
+          "class": "btn btn-danger",
+          "text": "Supprimer le compte"
         }
       }
     ]

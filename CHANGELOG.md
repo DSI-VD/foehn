@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add [documentation for buttons](src/docs/components/button)
+- Add `@button--danger` component
+
 ### Fixes
 - Add focus style on `@radio` and `@checkbox`
 
