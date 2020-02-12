@@ -165,7 +165,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Quelle est la date d<span class="hljs-symbol">&amp;#39;</span>émission de votre passeport ?<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-danger mb-1"</span>&gt;</span>La date d<span class="hljs-symbol">&amp;#39;</span>émission de votre passeport doit être dans le passé<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-danger mb-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>La date d<span class="hljs-symbol">&amp;#39;</span>émission de votre passeport doit être dans le passé<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dates-help"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text text-secondary"</span>&gt;</span>Par exemple, 23 7 1979<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-flex"</span>&gt;</span>
@@ -219,7 +219,10 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">legend{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">legendModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ legendModifier }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>{{ legend }}<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
 
     {% if validation.text %}
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-danger mb-1"</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-danger mb-1"</span>&gt;</span>
+      {%- if validation.class == "danger" -%}<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{%- endif -%}
+      {{- validation.text -}}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     {% endif %}
 
     {%- if helpText %}
