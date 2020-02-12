@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 - Add focus style on `@radio` and `@checkbox`
+- Fix missing "Error: " introduction text when there's a error message in
+  `@dates--danger` and `@input--help-error`
 
 ## [1.5.0] - 2020-01-22
 

@@ -11,7 +11,10 @@
       {%- if optional %} <span aria-hidden="true">(facultatif)</span>{% endif %}
   </label>
   {%- if validation.text %}
-  <div class="form-control-feedback{% if validation.class %} text-{{ validation.class }}{% endif %}">{{ validation.text }}</div>
+  <div class="form-control-feedback{% if validation.class %} text-{{ validation.class }}{% endif %}">
+    {%- if validation.class == "danger" -%}<span class="sr-only">Erreur: </span>{%- endif -%}
+    {{- validation.text -}}
+  </div>
   {% endif %}
   {% if helpText -%}
   <small
