@@ -137,7 +137,7 @@
           "helpText": "Il se trouve sur votre convocation et les courriers reçus. Per exemple, \"DT 12 53 47 F\".",
           "validation": {
             "class": "danger",
-            "text": "Entre un numéro de dossier dans le format correct."
+            "text": "Entrez un numéro de dossier dans le format correct."
           }
         }
       }
