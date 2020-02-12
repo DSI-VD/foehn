@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `@input--help-error` and `@dates-danger`. The `.form-control-danger` class has
   been replaced by `.is-invalid`
 - Override the style of the caption to be diplayed at the top of the table
-- Renamed `@fieldset--error` component to `@fieldset--radio-error
+- Renamed `@fieldset--error` component to `@fieldset--radio-error`
 
 ### Fixes
 - Upgrade a bunch of modules that you do note need to take care of
