@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `@fieldset--checkbox-error` component to be used in [documentation about
   error message](src/docs/components/error-message)
 - Add `@input--help-error` component to be used in [documentation about error
-  message](src/docs/compoents/error-message)
+  message](src/docs/components/error-message)
 - Add [documentation about error message](src/docs/components/error-message)
 
 ### Changed
@@ -63,7 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.3.0] - 2019-07-04
 
 ### Added
-- Add [documentation how to write titles](src/docs/regles-d-ecriture/titles)
+- Add [documentation how to write titles](src/docs/writing-for-vdch/titles)
 - Add [documentation about task list page pattern](src/docs/patterns/task-list-pages)
   - Add `@task-list` and `@task-list-page` components
 - Add [documentation how users check their answer before submitting a
