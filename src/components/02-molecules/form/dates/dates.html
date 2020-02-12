@@ -9,7 +9,10 @@
     <legend{% if legendModifier %} class="{{ legendModifier }}"{% endif %}>{{ legend }}</legend>
 
     {% if validation.text %}
-    <div class="form-control-feedback text-danger mb-1">{{ validation.text }}</div>
+    <div class="form-control-feedback text-danger mb-1">
+      {%- if validation.class == "danger" -%}<span class="sr-only">Erreur: </span>{%- endif -%}
+      {{- validation.text -}}
+    </div>
     {% endif %}
 
     {%- if helpText %}
