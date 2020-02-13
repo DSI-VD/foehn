@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.3] - 2020-02-13
+
 ### Fixes
 - Add missing `aria-describedby` that reference the error message on the
   `<fieldset>` of `@dates--danger`
@@ -1993,7 +1995,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive typography
 
 
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.5.1...HEAD
+[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.5.2...HEAD
+[1.5.2]: https://github.com/DSI-VD/foehn/compare/v1.5.1...v.1.5.2
 [1.5.1]: https://github.com/DSI-VD/foehn/compare/v1.5.0...v.1.5.1
 [1.5.0]: https://github.com/DSI-VD/foehn/compare/v1.4.0...v.1.5.0
 [1.4.0]: https://github.com/DSI-VD/foehn/compare/v1.3.0...v.1.4.0
