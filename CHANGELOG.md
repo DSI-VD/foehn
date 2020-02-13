@@ -5,7 +5,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.5.3] - 2020-02-13
+## [1.5.2] - 2020-02-13
 
 ### Fixes
 - Add missing `aria-describedby` that reference the error message on the
