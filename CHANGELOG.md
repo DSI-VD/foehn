@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixes
-- Add missong `aria-describedby` that reference the error message on the
+- Add missing `aria-describedby` that reference the error message on the
   `<fieldset>` of `@dates--danger`
 - Add missing `aria-describedby` that reference the error message in
   `@input--help-error` and `@input--phone-error`
