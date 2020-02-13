@@ -14,15 +14,15 @@
     <title>Phone Error | Foehn</title>
 
     <!-- Favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon-apple-touch-icon.png?v=1.5.1">
-<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32x32.png?v=1.5.1">
-<link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16x16.png?v=1.5.1">
-<link rel="manifest" href="../../assets/manifest/site.webmanifest?v=1.5.1">
-<link rel="mask-icon" href="../../assets/svg/safari-pinned-tab.svg?v=1.5.1" color="#4d8b43">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon-apple-touch-icon.png?v=1.5.2">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32x32.png?v=1.5.2">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16x16.png?v=1.5.2">
+<link rel="manifest" href="../../assets/manifest/site.webmanifest?v=1.5.2">
+<link rel="mask-icon" href="../../assets/svg/safari-pinned-tab.svg?v=1.5.2" color="#4d8b43">
 <link rel="shortcut icon" href="../../assets/img/favicon.ico">
 <meta name="msapplication-TileColor" content="#4d8b43">
 <meta name="msapplication-TileImage" content="/assets/img/favicon-mstile-144x144.png">
-<meta name="msapplication-config" content="../../assets/xml/browserconfig.xml?v=1.5.1">
+<meta name="msapplication-config" content="../../assets/xml/browserconfig.xml?v=1.5.2">
 <meta name="theme-color" content="#ffffff">
 
 
@@ -35,17 +35,13 @@
   <body>
 
     <div class="form-group has-danger vd-form-group-danger">
-  <label for="phoneInput">
-    Numéro de téléphone
-  </label>
-  <div class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de téléphone suisse</div>
-  
+  <label for="phoneInput">Numéro de téléphone</label><div id="phoneInputErrorMessage" class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de téléphone suisse</div>
   
   <input class="form-control is-invalid"
          type="tel"
          id="phoneInput"
          name="testInput"
-         value="" required aria-required="true" autocomplete="" aria-invalid="true">
+         value="" required aria-required="true" aria-describedby="phoneInputErrorMessage" autocomplete="" aria-invalid="true">
 </div>
 
 

@@ -1,17 +1,17 @@
 
 
-<div class="has-danger vd-form-group-danger"><fieldset>
+<div class="has-danger vd-form-group-danger"><fieldset aria-describedby="passeportIssuedErrorMessage
+    passeportIssuedHelpText"
+  >
     <legend>Quelle est la date d&#39;émission de votre passeport ?</legend>
 
     
-    <div class="form-control-feedback text-danger mb-1"><span class="sr-only">Erreur: </span>La date d&#39;émission de votre passeport doit être dans le passé</div>
+    <div id="passeportIssuedErrorMessage" class="form-control-feedback text-danger mb-1"><span class="sr-only">Erreur: </span>La date d&#39;émission de votre passeport doit être dans le passé</div>
     
-    <small id="dates-help" class="form-text text-secondary">Par exemple, 23 7 1979</small>
+    <small id="passeportIssuedHelpText" class="form-text text-secondary">Par exemple, 23 7 1979</small>
     <div class="vd-form-flex">
       <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
-  <label for="inputDatesDay">
-    Jour
-  </label>
+  <label for="inputDatesDay">Jour</label>
   
   <input class="form-control is-invalid"
          type="number"
@@ -21,9 +21,7 @@
 </div>
 </div>
       <div class="vd-form-flex__item vd-form-flex__item--2-char-width"><div class="form-group">
-  <label for="inputDatesMonth">
-    Mois
-  </label>
+  <label for="inputDatesMonth">Mois</label>
   
   <input class="form-control is-invalid"
          type="number"
@@ -33,9 +31,7 @@
 </div>
 </div>
       <div class="vd-form-flex__item vd-form-flex__item--4-char-width"><div class="form-group">
-  <label for="inputDatesYear">
-    Année
-  </label>
+  <label for="inputDatesYear">Année</label>
   
   <input class="form-control is-invalid"
          type="number"
@@ -49,6 +45,6 @@
   </fieldset>
 
 
-  </div>
+</div>
 
 

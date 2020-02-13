@@ -156,12 +156,9 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-group-danger"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"
-                                fieldsetHelp
-                                fieldsetError
-                                "</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"fieldsetHelp fieldsetErrorMessage"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Quelle est votre nationalité ?<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fieldsetError"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-danger"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Sélectionnez si vous êtes Suisse, Français ou citoyen d<span class="hljs-symbol">&amp;#39;</span>un autre pays<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fieldsetErrorMessage"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-danger"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Sélectionnez si vous êtes Suisse, Français ou citoyen d<span class="hljs-symbol">&amp;#39;</span>un autre pays<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fieldsetHelp"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-text text-secondary"</span>&gt;</span>Si vous avez la double nationalité, sélectionnez toutes les options qui vous concernent.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-check"</span>&gt;</span>
@@ -196,14 +193,14 @@
     <code class="Code Code--lang-html">
         <pre>{%- if validation.class === 'danger' %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-form-group-{{ validation.class }}"</span>&gt;</span>{% endif %}
   <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>
-    {% <span class="hljs-attr">if</span> <span class="hljs-attr">helpText</span> <span class="hljs-attr">or</span> <span class="hljs-attr">validation.text</span> %}
+    {% <span class="hljs-attr">if</span> <span class="hljs-attr">helpText</span> <span class="hljs-attr">or</span> <span class="hljs-attr">validation.text</span> <span class="hljs-attr">-</span>%}
               <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">"
-                                {% if helpText %}{{ id }}Help{% endif %}
-                                {% if validation.text %}{{id}}Error{% endif %}
+                                {%- if helpText %}{{ id }}Help{% endif %}
+                                {%- if validation.text %} {{id}}ErrorMessage{% endif -%}
                                 "</span>
     {%<span class="hljs-attr">-</span> <span class="hljs-attr">endif</span> <span class="hljs-attr">-</span>%}&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">legend{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">legendModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ legendModifier }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>{{ legend }}<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
-{%- if validation.text %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}Error"</span><span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-{{ validation.class }}"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>{% endif %}
+  {%- if validation.text %}<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}ErrorMessage"</span><span class="hljs-attr">class</span>=<span class="hljs-string">"form-control-feedback text-{{ validation.class }}"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Erreur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{{ validation.text }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>{% endif %}
   {% if helpText -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">small</span>
       <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ id }}Help"</span>

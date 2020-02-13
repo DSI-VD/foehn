@@ -2,9 +2,7 @@
 
 <!-- Start: @input--default -->
 <div class="form-group">
-  <label for="testInput">
-    Label
-  </label>
+  <label for="testInput">Label</label>
   
   <input class="form-control"
          type="text"
@@ -16,9 +14,7 @@
 
 <!-- Start: @input--optional -->
 <div class="form-group">
-  <label for="testInput">
-    Label <span aria-hidden="true">(facultatif)</span>
-  </label>
+  <label for="testInput">Label <span aria-hidden="true">(facultatif)</span></label>
   
   <input class="form-control"
          type="text"
@@ -30,9 +26,7 @@
 
 <!-- Start: @input--disabled -->
 <div class="form-group">
-  <label for="testInput">
-    Label
-  </label>
+  <label for="testInput">Label</label>
   
   <input class="form-control"
          type="text"
@@ -44,47 +38,35 @@
 
 <!-- Start: @input--help-text -->
 <div class="form-group">
-  <label for="testInput">
-    Label
-  </label>
+  <label for="testInput">Label</label>
   <small
       id="testInputHelp"
       class="form-text text-secondary">Votre courriel n&#39;est pas conservé et ne sera pas communiqué à des organismes tiers.</small>
-  
   <input class="form-control"
          type="email"
          id="testInput"
          name="testInput"
-         value="" required aria-required="true" aria-describedby="testInputHelp">
+         value="" required aria-required="true" aria-describedby="testInputHelp ">
 </div>
 <!-- End: @input--help-text -->
 
 <!-- Start: @input--validation-danger -->
 <div class="form-group has-danger vd-form-group-danger">
-  <label for="testInput">
-    Courriel
-  </label>
-  <div class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Veuillez saisir votre courriel</div>
-  
+  <label for="testInput">Courriel</label><div id="testInputErrorMessage" class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Veuillez saisir votre courriel</div>
   <small
       id="testInputHelp"
       class="form-text text-secondary">Votre courriel n&#39;est pas conservé et ne sera pas communiqué à des organismes tiers.</small>
-  
   <input class="form-control is-invalid"
          type="email"
          id="testInput"
          name="testInput"
-         value="" required aria-required="true" aria-describedby="testInputHelp" aria-invalid="true">
+         value="" required aria-required="true" aria-describedby="testInputHelp testInputErrorMessage" aria-invalid="true">
 </div>
 <!-- End: @input--validation-danger -->
 
 <!-- Start: @input--validation-success -->
 <div class="form-group has-success">
-  <label for="testInput">
-    Label
-  </label>
-  <div class="form-control-feedback text-success">Succès</div>
-  
+  <label for="testInput">Label</label><div id="testInputErrorMessage" class="form-control-feedback text-success">Succès</div>
   
   <input class="form-control"
          type="text"
@@ -96,9 +78,7 @@
 
 <!-- Start: @input--email -->
 <div class="form-group">
-  <label for="emailInput">
-    Courriel
-  </label>
+  <label for="emailInput">Courriel</label>
   
   <input class="form-control"
          type="email"
@@ -110,9 +90,7 @@
 
 <!-- Start: @input--number -->
 <div class="form-group">
-  <label for="numberInput">
-    Chiffre
-  </label>
+  <label for="numberInput">Chiffre</label>
   
   <input class="form-control"
          type="number"
@@ -124,9 +102,7 @@
 
 <!-- Start: @input--password -->
 <div class="form-group">
-  <label for="passwordInput">
-    Password
-  </label>
+  <label for="passwordInput">Password</label>
   
   <input class="form-control"
          type="password"
@@ -138,9 +114,7 @@
 
 <!-- Start: @input--date -->
 <div class="form-group">
-  <label for="date">
-    Date
-  </label>
+  <label for="date">Date</label>
   
   <input class="form-control"
          type="date"
@@ -152,9 +126,7 @@
 
 <!-- Start: @input--file -->
 <div class="form-group">
-  <label for="fileInput">
-    Fichier
-  </label>
+  <label for="fileInput">Fichier</label>
   
   <input class="form-control-file"
          type="file"
@@ -166,9 +138,7 @@
 
 <!-- Start: @input--phone -->
 <div class="form-group">
-  <label for="phoneInput">
-    Numéro de téléphone
-  </label>
+  <label for="phoneInput">Numéro de téléphone</label>
   
   <input class="form-control"
          type="tel"
@@ -180,36 +150,27 @@
 
 <!-- Start: @input--phone-error -->
 <div class="form-group has-danger vd-form-group-danger">
-  <label for="phoneInput">
-    Numéro de téléphone
-  </label>
-  <div class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de téléphone suisse</div>
-  
+  <label for="phoneInput">Numéro de téléphone</label><div id="phoneInputErrorMessage" class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de téléphone suisse</div>
   
   <input class="form-control is-invalid"
          type="tel"
          id="phoneInput"
          name="testInput"
-         value="" required aria-required="true" autocomplete="" aria-invalid="true">
+         value="" required aria-required="true" aria-describedby="phoneInputErrorMessage" autocomplete="" aria-invalid="true">
 </div>
 <!-- End: @input--phone-error -->
 
 <!-- Start: @input--help-error -->
 <div class="form-group has-danger vd-form-group-danger">
-  <label for="dossier">
-    Numéro de dossier
-  </label>
-  <div class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de dossier dans le format correct.</div>
-  
+  <label for="dossier">Numéro de dossier</label><div id="dossierErrorMessage" class="form-control-feedback text-danger"><span class="sr-only">Erreur: </span>Entrez un numéro de dossier dans le format correct.</div>
   <small
       id="dossierHelp"
       class="form-text text-secondary">Il se trouve sur votre convocation et les courriers reçus. Per exemple, &quot;DT 12 53 47 F&quot;.</small>
-  
   <input class="form-control is-invalid"
          type="text"
          id="dossier"
          name="testInput"
-         value="" required aria-required="true" aria-describedby="dossierHelp" aria-invalid="true">
+         value="" required aria-required="true" aria-describedby="dossierHelp dossierErrorMessage" aria-invalid="true">
 </div>
 <!-- End: @input--help-error -->
 
