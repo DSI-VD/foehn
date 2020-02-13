@@ -5,18 +5,27 @@
   ">
 {%- endif -%}
 
-  <fieldset>
-    <legend{% if legendModifier %} class="{{ legendModifier }}"{% endif %}>{{ legend }}</legend>
+  <fieldset
+  {%- if helpText or validation.text %} aria-describedby="
+    {%- if validation.text %}{{ id }}ErrorMessage{% endif %}
+    {% if helpText %}{{ id }}HelpText{% endif -%}
+  "
+  {% endif -%}
+  >
+    <legend
+    {%- if legendModifier %} class="{{ legendModifier }}"{% endif %}>
+      {{- legend -}}
+    </legend>
 
     {% if validation.text %}
-    <div class="form-control-feedback text-danger mb-1">
+    <div id="{{ id }}ErrorMessage" class="form-control-feedback text-danger mb-1">
       {%- if validation.class == "danger" -%}<span class="sr-only">Erreur: </span>{%- endif -%}
       {{- validation.text -}}
     </div>
     {% endif %}
 
     {%- if helpText %}
-    <small id="dates-help" class="form-text text-secondary">{{ helpText }}</small>
+    <small id="{{ id }}HelpText" class="form-text text-secondary">{{ helpText }}</small>
     {% endif -%}
 
     <div class="vd-form-flex">
@@ -34,5 +43,5 @@
   </fieldset>
 
 {% if validation %}
-  </div>
+</div>
 {% endif %}

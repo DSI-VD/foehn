@@ -1,6 +1,7 @@
 {
     "status": "ready",
     "context": {
+      "id": "birthday",
       "legend": "Quelle est votre date de naissance ?",
       "helpText": "Par exemple, 23 7 1979",
       "inputDay": {
@@ -27,6 +28,7 @@
       {
         "name": "danger",
         "context": {
+          "id": "passeportIssued",
           "legend": "Quelle est la date d'émission de votre passeport ?",
           "validation": {
             "class": "danger",
