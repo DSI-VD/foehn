@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+- Add missing `aria-describedby` that reference the error message in
+  `@input--help-error` and `@input--phone-error`
+
 ## [1.5.1] - 2020-02-12
 
 ### Added

@@ -7,27 +7,31 @@
   <label for="{{ id }}"
          {%- if labelHidden %} class="sr-only"{% endif -%}
          {%- if labelStyleModifier %} class="{{ labelStyleModifier }}" {%- endif -%}>
-    {{ label }}
-      {%- if optional %} <span aria-hidden="true">(facultatif)</span>{% endif %}
+    {{- label -}}
+      {%- if optional %} <span aria-hidden="true">(facultatif)</span>{% endif -%}
   </label>
-  {%- if validation.text %}
-  <div class="form-control-feedback{% if validation.class %} text-{{ validation.class }}{% endif %}">
+  {%- if validation.text -%}
+  <div id="{{id}}ErrorMessage" class="form-control-feedback{% if validation.class %} text-{{ validation.class }}{% endif %}">
     {%- if validation.class == "danger" -%}<span class="sr-only">Erreur: </span>{%- endif -%}
     {{- validation.text -}}
   </div>
-  {% endif %}
+  {%- endif %}
   {% if helpText -%}
   <small
       id="{{ id }}Help"
       class="form-text text-secondary">{{ helpText }}</small>
-  {% endif %}
+  {%- endif %}
   <input class="{{ class }}"
          type="{{ type }}"
          id="{{ id }}"
          name="{{ name }}"
          value="{% if value %}{{ value }}{% endif %}"
          {%- if not optional %} required aria-required="true"{% endif %}
-         {%- if helpText %} aria-describedby="{{ id }}Help"{% endif %}
+         {%- if helpText or validation.class === 'danger' %} aria-describedby="
+             {%- if helpText %}{{ id }}Help {% endif -%}
+             {%- if validation.class === 'danger' %}{{id}}ErrorMessage{% endif -%}
+         "
+         {%- endif %}
          {%- if pattern %} pattern="{{ pattern }}"{% endif %}
          {%- if min %} min="{{ min }}"{% endif %}
          {%- if max %} max="{{ max }}"{% endif %}
