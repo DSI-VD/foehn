@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+- Fix padding for inputs with a validation state
+
 ## [1.5.2] - 2020-02-13
 
 ### Fixes
