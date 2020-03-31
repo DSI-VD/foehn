@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- The `<a>` tag which is around the logo in `@footer` has a `d-inline-block` to
+  fix focus style
+
 ## [1.5.3] - 2020-03-10
 
 ### Fixes
