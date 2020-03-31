@@ -83,6 +83,11 @@
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v1.5.3...HEAD">Unreleased</a></h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>The <code>&lt;a&gt;</code> tag which is around the logo in <a href="../components/detail/footer"><code>@footer</code></a> has a <code>d-inline-block</code> to
+fix focus style</li>
+</ul>
 <h2 id="153---2020-03-10"><a href="https://github.com/DSI-VD/foehn/compare/v1.5.2...1.5.3">1.5.3</a> - 2020-03-10</h2>
 <h3 id="fixes">Fixes</h3>
 <ul>
@@ -118,7 +123,7 @@ error message</a></li>
 message</a></li>
 <li>Add <a href="../docs/components/error-message">documentation about error message</a></li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>The input’s border is now red when there’s is an error. See
 <a href="../components/detail/input--help-error"><code>@input--help-error</code></a> and <a href="../components/detail/dates-danger"><code>@dates-danger</code></a>. The <code>.form-control-danger</code> class has
@@ -140,7 +145,7 @@ been replaced by <code>.is-invalid</code></li>
 <li>Add <a href="../components/detail/error-summary"><code>@error-summary</code></a> component</li>
 <li>Add <a href="../docs/components/header">documentation about header</a></li>
 </ul>
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 <ul>
 <li>Fix table not being read properly in some screen readers. The
 <code>.table-responsive</code> class has been moved to a <code>&lt;div&gt;</code> element around the
@@ -178,7 +183,7 @@ form</a><ul>
 <li>Add <a href="../docs/styles/typography">documentation for typography</a></li>
 <li>Add documentation about <a href="../docs/components/breadcrumbs">breadcrumb component</a></li>
 </ul>
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 <ul>
 <li>Error message in <a href="../components/detail/input--validation-danger"><code>@input--validation-danger</code></a> is now red like in <a href="../components/detail/fieldset--error"><code>@fieldset--error</code></a></li>
 <li>Change some behaviour of the <a href="../components/detail/breadcrumb"><code>@breadcrumb</code></a><ul>
@@ -195,7 +200,7 @@ security vulnerabilities</li>
 <li>Make “Etape x sur Y” texte optional in <a href="../components/detail/espace-securise--form"><code>@espace-securise--form</code></a></li>
 </ul>
 <h2 id="120---2019-04-16"><a href="https://github.com/DSI-VD/foehn/compare/v1.1.2...v1.2.0">1.2.0</a> - 2019-04-16</h2>
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 <ul>
 <li>Upgrade Bootstrap from v4.1.3 to v4.3.1<ul>
 <li>Upgrade <a href="https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/">Bootstrap to
@@ -213,7 +218,7 @@ the full <a href="https://github.com/twbs/bootstrap/issues/26952">v4.2.0 ship li
 X sur Y”</li>
 </ul>
 <h2 id="112---2019-04-10"><a href="https://github.com/DSI-VD/foehn/compare/v1.1.1...v1.1.2">1.1.2</a> - 2019-04-10</h2>
-<h3 id="changed-4">Changed</h3>
+<h3 id="changed-5">Changed</h3>
 <ul>
 <li>Remove <code>aria-hidden=&quot;true&quot;</code> on the <code>&lt;h1&gt;</code> in <a href="../components/detail/page-title-banner"><code>@page-title-banner</code></a> component<ul>
 <li>Make sure to update component that include <a href="../components/detail/page-title-banner"><code>@page-title-banner</code></a><ul>
@@ -232,7 +237,7 @@ X sur Y”</li>
 <li>Upgrade a bunch of modules that you do note need to take care of</li>
 </ul>
 <h2 id="110---2019-04-09"><a href="https://github.com/DSI-VD/foehn/compare/v1.0.6...v1.1.0">1.1.0</a> - 2019-04-09</h2>
-<h3 id="changed-5">Changed</h3>
+<h3 id="changed-6">Changed</h3>
 <ul>
 <li>The HTML structure of the templates have changed to avoid having a double <code>h1</code> 
 in the page.<ul>
@@ -274,7 +279,7 @@ and <a href="../components/detail/template-communiques-presse-list--results"><co
 <li>typo</li>
 </ul>
 <h2 id="105---2019-02-07"><a href="https://github.com/DSI-VD/foehn/compare/v1.0.4...v1.0.5">1.0.5</a> - 2019-02-07</h2>
-<h3 id="changed-6">Changed</h3>
+<h3 id="changed-7">Changed</h3>
 <ul>
 <li>Inputs are required by default to be GDPR compliant</li>
 </ul>
@@ -351,7 +356,7 @@ only Font Face Observer which has been removed in favor of CSS font-display.</li
 means some styles have been rewritten.</li>
 </ul>
 <h2 id="0530---2018-10-03"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.2...v0.53.0">0.53.0</a> - 2018-10-03</h2>
-<h3 id="changed-7">Changed</h3>
+<h3 id="changed-8">Changed</h3>
 <ul>
 <li><a href="../components/detail/espace-securise"><code>@espace-securise</code></a> and <a href="../components/detail/espace-securise--form"><code>@espace-securise--form</code></a> use
 <a href="../components/detail/header-application--default"><code>@header-application--default</code></a> and <a href="../components/detail/login"><code>@login</code></a> at the top of the page instead of
@@ -416,7 +421,7 @@ and SVGs have to be minified upstream.</li>
 <li>Fix width of input with 2 characters in <a href="../components/detail/dates"><code>@dates</code></a></li>
 </ul>
 <h2 id="0520---2018-06-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.51.2...v0.52.0">0.52.0</a> - 2018-06-20</h2>
-<h3 id="changed-8">Changed</h3>
+<h3 id="changed-9">Changed</h3>
 <ul>
 <li>Replace <code>text-right</code> class with <code>text-md-right</code> in <a href="../components/detail/nav"><code>@nav</code></a> component</li>
 <li>Change HTML class of <a href="../components/detail/login"><code>@login</code></a> in <a href="../components/detail/header"><code>@header</code></a> component</li>
@@ -433,7 +438,7 @@ and SVGs have to be minified upstream.</li>
 <li>Update favicons files</li>
 </ul>
 <h2 id="0510---2018-06-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.50.1...v0.51.0">0.51.0</a> - 2018-06-07</h2>
-<h3 id="changed-9">Changed</h3>
+<h3 id="changed-10">Changed</h3>
 <ul>
 <li>There’s no more inline scripts to include in the <code>&lt;head&gt;</code>. Webfont loading
 scripts is in <code>foehn-scripts--header.js</code>.</li>
@@ -449,7 +454,7 @@ scripts is in <code>foehn-scripts--header.js</code>.</li>
 <li>Upgrade all node modules</li>
 </ul>
 <h2 id="0500---2018-05-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.49.0...v0.50.0">0.50.0</a> - 2018-05-30</h2>
-<h3 id="changed-10">Changed</h3>
+<h3 id="changed-11">Changed</h3>
 <ul>
 <li>Update fonts loading strategy to speed up font loading and internalize fonts.<ul>
 <li>Fonts are internilized in Foehn. We do not use Google Fonts service anymore.</li>
@@ -486,13 +491,13 @@ is internalized inside foehn.</li>
 <li>Fix doc about wich files to put in the <code>&lt;head&gt;</code>.</li>
 </ul>
 <h2 id="0480---2018-03-15"><a href="https://github.com/DSI-VD/foehn/compare/v0.47.0...v0.48.0">0.48.0</a> - 2018-03-15</h2>
-<h3 id="changed-11">Changed</h3>
+<h3 id="changed-12">Changed</h3>
 <ul>
 <li>Remove vendors concatenation in <a href="../components/detail/scripts-footer.html"><code>@scripts-footer.html</code></a></li>
 <li>Remove image’s caption in <a href="../components/detail/agenda"><code>@agenda</code></a> on <a href="../components/detail/accueil"><code>@accueil</code></a></li>
 </ul>
 <h2 id="0470---2018-03-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.46.0...v0.47.0">0.47.0</a> - 2018-03-14</h2>
-<h3 id="changed-12">Changed</h3>
+<h3 id="changed-13">Changed</h3>
 <ul>
 <li>HTML markup of <a href="../components/detail/checkbox"><code>@checkbox</code></a> has changed. The <code>&lt;input&gt;</code> is now outside of the
 <code>&lt;label&gt;</code></li>
@@ -507,7 +512,7 @@ is internalized inside foehn.</li>
 <li>Add a <a href="../components/detail/fieldset--yes-or-no"><code>@fieldset--yes-or-no</code></a> component</li>
 </ul>
 <h2 id="0460---2018-03-1"><a href="https://github.com/DSI-VD/foehn/compare/v0.45.2...v0.46.0">0.46.0</a> - 2018-03-1</h2>
-<h3 id="changed-13">Changed</h3>
+<h3 id="changed-14">Changed</h3>
 <ul>
 <li>Add categories in <a href="../components/detail/publish-info"><code>@publish-info</code></a></li>
 <li>Rename <a href="../components/detail/publish-time"><code>@publish-time</code></a> in <a href="../components/detail/publish-info"><code>@publish-info</code></a></li>
@@ -529,7 +534,7 @@ is internalized inside foehn.</li>
 <li>Fix <code>.row</code> are not correctly printed in Firefox</li>
 </ul>
 <h2 id="0450---2018-02-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.44.0...v0.45.0">0.45.0</a> - 2018-02-20</h2>
-<h3 id="changed-14">Changed</h3>
+<h3 id="changed-15">Changed</h3>
 <ul>
 <li>Fix accessibility of <a href="../components/detail/autority-address--search"><code>@autority-address--search</code></a></li>
 <li>Remove <a href="../components/detail/figure"><code>@figure</code></a>‘s caption in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
@@ -543,7 +548,7 @@ is internalized inside foehn.</li>
 desktop</li>
 </ul>
 <h2 id="0440---2018-02-09"><a href="https://github.com/DSI-VD/foehn/compare/v0.43.0...v0.44.0">0.44.0</a> - 2018-02-09</h2>
-<h3 id="changed-15">Changed</h3>
+<h3 id="changed-16">Changed</h3>
 <ul>
 <li>Remove <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> in <a href="../components/detail/theme--default"><code>@theme--default</code></a></li>
 <li>Change label of the search form in:<ul>
@@ -563,7 +568,7 @@ desktop</li>
 <li>Upgrade to Bootstrap 4</li>
 </ul>
 <h2 id="0430---2018-02-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.42.1...v0.43.0">0.43.0</a> - 2018-02-07</h2>
-<h3 id="changed-16">Changed</h3>
+<h3 id="changed-17">Changed</h3>
 <ul>
 <li>Set the width of <a href="../components/detail/figure"><code>@figure</code></a> in <a href="../components/detail/agenda"><code>@agenda</code></a> to be 50% on desktop bay adding
 <code>.vd-w-md-50</code> class</li>
@@ -578,7 +583,7 @@ desktop</li>
 <li>Fix <a href="../components/detail/search-form--default"><code>@search-form--default</code></a> icon messing around at certain viewport</li>
 </ul>
 <h2 id="0420---2018-02-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.41.0...v0.42.0">0.42.0</a> - 2018-02-06</h2>
-<h3 id="changed-17">Changed</h3>
+<h3 id="changed-18">Changed</h3>
 <ul>
 <li>Change title and links of <a href="../components/detail/index-menu"><code>@index-menu</code></a> in <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
 <li>Changed <code>%card-inside</code> styles to remove hover from text and have a white link visited color</li>
@@ -639,7 +644,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Remove <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
 </ul>
 <h2 id="0410---2017-12-22"><a href="https://github.com/DSI-VD/foehn/compare/v0.40.0...v0.41.0">0.41.0</a> - 2017-12-22</h2>
-<h3 id="changed-18">Changed</h3>
+<h3 id="changed-19">Changed</h3>
 <ul>
 <li>Change how <a href="../components/detail/search"><code>@search</code></a> page is displayed</li>
 <li>Upgrade Fontawesome to v5.<ul>
@@ -679,7 +684,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Add documentation about search pages.</li>
 </ul>
 <h2 id="0400---2017-12-12"><a href="https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0">0.40.0</a> - 2017-12-12</h2>
-<h3 id="changed-19">Changed</h3>
+<h3 id="changed-20">Changed</h3>
 <ul>
 <li>Add <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> to <a href="../components/detail/news-list--default"><code>@news-list--default</code></a> and <a href="../components/detail/theme--default"><code>@theme--default</code></a> </li>
 <li>Reorder HTML element in <a href="../components/detail/teaser-small--alt.html"><code>@teaser-small--alt.html</code></a> for better a11y</li>
@@ -729,7 +734,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Remove <a href="../components/detail/search-banner--half-width"><code>@search-banner--half-width</code></a></li>
 </ul>
 <h2 id="0390---2017-11-03"><a href="https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0">0.39.0</a> - 2017-11-03</h2>
-<h3 id="changed-20">Changed</h3>
+<h3 id="changed-21">Changed</h3>
 <ul>
 <li>Fix a11y of “Voir plus” and “Voir moins” buttons in <a href="../components/detail/theme--default"><code>@theme--default</code></a>, 
 <a href="../components/detail/theme--list"><code>@theme--list</code></a> and <a href="../components/detail/theme--geo"><code>@theme--geo</code></a></li>
@@ -738,7 +743,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Add class <code>vd-btn-tiles__item</code> to <a href="../components/detail/button-tiles"><code>@button-tiles</code></a></li>
 </ul>
 <h2 id="0380---2017-10-24"><a href="https://github.com/DSI-VD/foehn/compare/v0.37.0...v0.38.0">0.38.0</a> - 2017-10-24</h2>
-<h3 id="changed-21">Changed</h3>
+<h3 id="changed-22">Changed</h3>
 <ul>
 <li>Upgrade from Bootstrap Beta to Bootstrap Beta 2</li>
 <li>Add <code>.d-flex flex-column</code> to <a href="../components/detail/template-communiques-presse-detail--default"><code>@template-communiques-presse-detail--default</code></a> header</li>
@@ -746,7 +751,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Add <code>order-2</code> tp <code>h1</code></li>
 </ul>
 <h2 id="0370---2017-10-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.36.0...v0.37.0">0.37.0</a> - 2017-10-20</h2>
-<h3 id="changed-22">Changed</h3>
+<h3 id="changed-23">Changed</h3>
 <ul>
 <li>Better meta information in <a href="../components/detail/teaser"><code>@teaser</code></a> if there no authors</li>
 </ul>
@@ -760,7 +765,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Fix <a href="../components/detail/teaser-card--black"><code>@teaser-card--black</code></a> background color</li>
 </ul>
 <h2 id="0360---2017-10-19"><a href="https://github.com/DSI-VD/foehn/compare/v0.35.0...v0.36.0">0.36.0</a> - 2017-10-19</h2>
-<h3 id="changed-23">Changed</h3>
+<h3 id="changed-24">Changed</h3>
 <ul>
 <li>Fix <a href="../components/detail/teaser-card"><code>@teaser-card</code></a> margins. Rename <code>.card-block</code> class in <code>.card-body</code>.</li>
 </ul>
@@ -777,7 +782,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Fix <a href="../components/detail/search-banner--default"><code>@search-banner--default</code></a> button height</li>
 </ul>
 <h2 id="0350---2017-09-27"><a href="https://github.com/DSI-VD/foehn/compare/v0.34.0...v0.35.0">0.35.0</a> - 2017-09-27</h2>
-<h3 id="changed-24">Changed</h3>
+<h3 id="changed-25">Changed</h3>
 <ul>
 <li>Change class of <a href="../components/detail/domaines"><code>@domaines</code></a> list for <code>vd-menu-list-links</code> instead of <code>vd-list-links</code></li>
 <li>Add <code>.d-inline-block</code> class to <a href="../components/detail/list-boxed"><code>@list-boxed</code></a> to align second line</li>
@@ -792,7 +797,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Add component <a href="../components/detail/detail-contact"><code>@detail-contact</code></a></li>
 </ul>
 <h2 id="0340---2017-09-26"><a href="https://github.com/DSI-VD/foehn/compare/v0.33.0...v0.34.0">0.34.0</a> - 2017-09-26</h2>
-<h3 id="changed-25">Changed</h3>
+<h3 id="changed-26">Changed</h3>
 <ul>
 <li>Add ‘toutes les actualités’ in render of <a href="../components/detail/button-default"><code>@button-default</code></a> in <a href="../components/detail/teaser-list--homepage"><code>@teaser-list--homepage</code></a></li>
 <li>Add <code>.text-right</code> to div containing <a href="../components/detail/logo--white"><code>@logo--white</code></a> in <a href="../components/detail/footer"><code>@footer</code></a> to align it to the right</li>
@@ -828,7 +833,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Fix <a href="../components/detail/footer"><code>@footer</code></a> use <a href="../components/detail/logo-white"><code>@logo-white</code></a></li>
 </ul>
 <h2 id="0330---2017-09-15"><a href="https://github.com/DSI-VD/foehn/compare/v0.32.0...v0.33.0">0.33.0</a> - 2017-09-15</h2>
-<h3 id="changed-26">Changed</h3>
+<h3 id="changed-27">Changed</h3>
 <ul>
 <li><a href="../components/detail/pagination"><code>@pagination</code></a> set to use new <a href="../components/detail/button--link"><code>@button--link</code></a> variant button</li>
 <li><a href="../components/detail/pagination"><code>@pagination</code></a> use Bootstrap helper class instead of custom class</li>
@@ -885,12 +890,12 @@ is the first element of the navigation.</li>
 <li>Remove <a href="../components/detail/pagination-vertical"><code>@pagination-vertical</code></a> component</li>
 </ul>
 <h2 id="0320---2017-08-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.31.0...v0.32.0">0.32.0</a> - 2017-08-30</h2>
-<h3 id="changed-27">Changed</h3>
+<h3 id="changed-28">Changed</h3>
 <ul>
 <li>Fix update spacing utilities <code>{property}{sides}-1</code> becomes <code>{property}{sides}-3</code></li>
 </ul>
 <h2 id="0310---2017-08-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.30.0...v0.31.0">0.31.0</a> - 2017-08-30</h2>
-<h3 id="changed-28">Changed</h3>
+<h3 id="changed-29">Changed</h3>
 <ul>
 <li>Fix <a href="../components/detail/nav"><code>@nav</code></a> is not hidden on mobile</li>
 <li>Fix <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a> do not open</li>
@@ -901,7 +906,7 @@ is the first element of the navigation.</li>
 <li>Fix <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a> positionning</li>
 </ul>
 <h2 id="0300---2017-08-29"><a href="https://github.com/DSI-VD/foehn/compare/v0.29.0...v0.30.0">0.30.0</a> - 2017-08-29</h2>
-<h3 id="changed-29">Changed</h3>
+<h3 id="changed-30">Changed</h3>
 <ul>
 <li>Remove hamburger icon in <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
 <li>Remove <code>vd-btn-chevron-r</code> and <code>vd-btn-chevron-l</code> from all buttons</li>
@@ -925,7 +930,7 @@ is the first element of the navigation.</li>
 <li>Remove <a href="../components/detail/page-title-banner-prestation"><code>@page-title-banner-prestation</code></a></li>
 </ul>
 <h2 id="0290---2017-08-22"><a href="https://github.com/DSI-VD/foehn/compare/v0.28.1...v0.29.0">0.29.0</a> - 2017-08-22</h2>
-<h3 id="changed-30">Changed</h3>
+<h3 id="changed-31">Changed</h3>
 <ul>
 <li>Add mt-0 to legends of date search fields JSON from <code>template-communiques-press-list.json</code></li>
 <li>Add “first” to <code>nav-side.config.json</code> for first element</li>
@@ -960,7 +965,7 @@ is the first element of the navigation.</li>
 <li>Fix <code>.vd-bg-pattern-bars-gray</code> striped pattern use CSS instead of background SVG. It’s now IE8 compatible.</li>
 </ul>
 <h2 id="0280---2017-07-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.27.0...v0.28.0">0.28.0</a> - 2017-07-14</h2>
-<h3 id="changed-31">Changed</h3>
+<h3 id="changed-32">Changed</h3>
 <ul>
 <li>add <code>.pt-1</code> class to <code>domain-item</code> for Firefox bug in focus</li>
 <li><a href="../components/detail/theme"><code>@theme</code></a> use <a href="../components/detail/template--default"><code>@template--default</code></a></li>
@@ -1000,7 +1005,7 @@ is the first element of the navigation.</li>
 <li>Fix focus style being inconsistent across browsers</li>
 </ul>
 <h2 id="0270---2017-07-05"><a href="https://github.com/DSI-VD/foehn/compare/v0.26.1...v0.27.0">0.27.0</a> - 2017-07-05</h2>
-<h3 id="changed-32">Changed</h3>
+<h3 id="changed-33">Changed</h3>
 <ul>
 <li>Remove <code>vd-green-dark-2</code> color</li>
 <li><code>vd-green</code> is the brand color</li>
@@ -1027,7 +1032,7 @@ is the first element of the navigation.</li>
 <li>Remove <a href="../components/detail/twitter-feed"><code>@twitter-feed</code></a></li>
 </ul>
 <h2 id="0261---2017-06-08"><a href="https://github.com/DSI-VD/foehn/compare/v0.26.0...v0.26.1">0.26.1</a> - 2017-06-08</h2>
-<h3 id="changed-33">Changed</h3>
+<h3 id="changed-34">Changed</h3>
 <ul>
 <li>Rename <a href="../components/detail/prestation"><code>@prestation</code></a> in <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
 </ul>
@@ -1040,7 +1045,7 @@ is the first element of the navigation.</li>
 <li>Fix generation problem with <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
 </ul>
 <h2 id="0260---2017-06-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.25.0...v0.26.0">0.26.0</a> - 2017-06-07</h2>
-<h3 id="changed-34">Changed</h3>
+<h3 id="changed-35">Changed</h3>
 <ul>
 <li>Refactor lists in <a href="../components/detail/departements"><code>@departements</code></a></li>
 <li>Use <code>text-decoration-skip</code> for better underlined links</li>
@@ -1066,7 +1071,7 @@ is the first element of the navigation.</li>
 <li>Fix <a href="../components/detail/list-boxed"><code>@list-boxed</code></a> margin</li>
 </ul>
 <h2 id="0250---2017-05-31"><a href="https://github.com/DSI-VD/foehn/compare/v0.24.0...v0.25.0">0.25.0</a> - 2017-05-31</h2>
-<h3 id="changed-35">Changed</h3>
+<h3 id="changed-36">Changed</h3>
 <ul>
 <li>Add margin before <a href="../components/detail/h1"><code>@h1</code></a>, <a href="../components/detail/h2"><code>@h2</code></a>, <a href="../components/detail/h3"><code>@h3</code></a>, <a href="../components/detail/h4"><code>@h4</code></a>, <a href="../components/detail/h5"><code>@h5</code></a>, <a href="../components/detail/h6"><code>@h6</code></a>, for better legibility</li>
 <li>Replace <code>.vd-section-title</code> by <code>.vd-heading-light</code></li>
@@ -1134,7 +1139,7 @@ is the first element of the navigation.</li>
 <li>Removed <code>.vd-section-title</code> style</li>
 </ul>
 <h2 id="0240---2017-05-30"><a href="https://github.com/DSI-VD/foehn/compare/v0.23.1...v0.24.0">0.24.0</a> - 2017-05-30</h2>
-<h3 id="changed-36">Changed</h3>
+<h3 id="changed-37">Changed</h3>
 <ul>
 <li>Remove <a href="../components/detail/separator--gray-pattern"><code>@separator--gray-pattern</code></a> in <a href="../components/detail/example-list"><code>@example-list</code></a></li>
 <li>Remove the <code>.vd-separator-wide</code> class and make all separators full width</li>
@@ -1167,13 +1172,13 @@ is the first element of the navigation.</li>
 <li>Remove <a href="../components/detail/separator--gray-pattern"><code>@separator--gray-pattern</code></a></li>
 </ul>
 <h2 id="0231---2017-05-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.23.0...v0.23.1">0.23.1</a> - 2017-05-17</h2>
-<h3 id="changed-37">Changed</h3>
+<h3 id="changed-38">Changed</h3>
 <ul>
 <li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.sr-only</code> and <code>.sr-only-focusable</code> to hide navigation and make it focusable</li>
 <li><a href="../components/detail/access-nav"><code>@access-nav</code></a> molecule use <code>.fixed-top</code></li>
 </ul>
 <h2 id="0230---2017-05-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.22.0...v0.23.0">0.23.0</a> - 2017-05-17</h2>
-<h3 id="changed-38">Changed</h3>
+<h3 id="changed-39">Changed</h3>
 <ul>
 <li>The <a href="../components/detail/alert"><code>@alert</code></a> molecule has been renamed <a href="../components/detail/alert--default"><code>@alert--default</code></a></li>
 </ul>
@@ -1182,7 +1187,7 @@ is the first element of the navigation.</li>
 <li>Add <a href="../components/detail/alert--fixed"><code>@alert--fixed</code></a> molecule</li>
 </ul>
 <h2 id="0220---2017-05-09"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.3...v0.22.0">0.22.0</a> - 2017-05-09</h2>
-<h3 id="changed-39">Changed</h3>
+<h3 id="changed-40">Changed</h3>
 <ul>
 <li>Change margin in <a href="../components/detail/footer"><code>@footer</code></a></li>
 <li>Add <a href="../components/detail/update-time"><code>@update-time</code></a> in <a href="../components/detail/service"><code>@service</code></a></li>
@@ -1217,7 +1222,7 @@ is the first element of the navigation.</li>
 <li>Fix npm script</li>
 </ul>
 <h2 id="0211"><a href="https://github.com/DSI-VD/foehn/compare/v0.21.0...v0.21.1">0.21.1</a></h2>
-<h3 id="changed-40">Changed</h3>
+<h3 id="changed-41">Changed</h3>
 <ul>
 <li><a href="../components/detail/accueil"><code>@accueil</code></a> and <a href="../components/detail/teaser-list--homepage"><code>@teaser-list--homepage</code></a> use <a href="../components/detail/teaser--small-media"><code>@teaser--small-media</code></a> for the first image</li>
 <li>Images can have a link in <a href="../components/detail/figure"><code>@figure</code></a></li>
@@ -1242,7 +1247,7 @@ is the first element of the navigation.</li>
 <li>Fix <a href="../components/detail/social-icons"><code>@social-icons</code></a> has no title in <a href="../components/detail/news-detail"><code>@news-detail</code></a></li>
 </ul>
 <h2 id="0210---2017-04-21"><a href="https://github.com/DSI-VD/foehn/compare/v0.20.1...v0.21.0">0.21.0</a> - 2017-04-21</h2>
-<h3 id="changed-41">Changed</h3>
+<h3 id="changed-42">Changed</h3>
 <ul>
 <li><a href="../components/detail/radio"><code>@radio</code></a> only contain one radio button</li>
 <li><a href="../components/detail/checkbox"><code>@checkbox</code></a> only contain one checkbox</li>
@@ -1297,7 +1302,7 @@ is the first element of the navigation.</li>
 <li>Fix line breaks in inline SVG</li>
 </ul>
 <h2 id="0200---2017-04-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.19.0...v0.20.0">0.20.0</a> - 2017-04-06</h2>
-<h3 id="changed-42">Changed</h3>
+<h3 id="changed-43">Changed</h3>
 <ul>
 <li>Agenda use default teaser</li>
 <li>Service page use only teaser-list–default</li>
@@ -1339,7 +1344,7 @@ is the first element of the navigation.</li>
 <li>Remove projects-list component</li>
 </ul>
 <h2 id="0190---2017-03-21"><a href="https://github.com/DSI-VD/foehn/compare/v0.18.0...v0.19.0">0.19.0</a> - 2017-03-21</h2>
-<h3 id="changed-43">Changed</h3>
+<h3 id="changed-44">Changed</h3>
 <ul>
 <li>Add url on autority-address</li>
 <li>Refactor page organisation</li>
@@ -1383,7 +1388,7 @@ is the first element of the navigation.</li>
 <li>Remove legacy Toolbox styleguide assets</li>
 </ul>
 <h2 id="0180---2017-03-07"><a href="https://github.com/DSI-VD/foehn/compare/v0.17.0...v0.18.0">0.18.0</a> - 2017-03-07</h2>
-<h3 id="changed-44">Changed</h3>
+<h3 id="changed-45">Changed</h3>
 <ul>
 <li>Change alert color</li>
 <li>Template engine is Nunjucks</li>
@@ -1411,7 +1416,7 @@ is the first element of the navigation.</li>
 <li>Add file type in input molecule</li>
 </ul>
 <h2 id="0170---2017-02-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.16.0...v0.15.0">0.17.0</a> - 2017-02-17</h2>
-<h3 id="changed-45">Changed</h3>
+<h3 id="changed-46">Changed</h3>
 <ul>
 <li>Use autority-address organism in communiques-presse-list page</li>
 <li>Use autority-address organism in communiques-presse-detail page</li>
@@ -1445,7 +1450,7 @@ is the first element of the navigation.</li>
 <li>Removed teaser-link component</li>
 </ul>
 <h2 id="0160---2017-02-10"><a href="https://github.com/DSI-VD/foehn/compare/v0.15.0...v0.16.0">0.16.0</a> - 2017-02-10</h2>
-<h3 id="changed-46">Changed</h3>
+<h3 id="changed-47">Changed</h3>
 <ul>
 <li>Change margin of footer–securise</li>
 <li>Update-time in footer–default is optional</li>
@@ -1472,7 +1477,7 @@ is the first element of the navigation.</li>
 <li>Fix breadcrumb isn’t display on certain templates and pages</li>
 </ul>
 <h2 id="0150---2017-02-09"><a href="https://github.com/DSI-VD/foehn/compare/v0.14.0...v0.15.0">0.15.0</a> - 2017-02-09</h2>
-<h3 id="changed-47">Changed</h3>
+<h3 id="changed-48">Changed</h3>
 <ul>
 <li>Default teaser-card is the light grey one</li>
 <li>Change <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;h1&gt;</code> , etc. structure of templates ad pages</li>
@@ -1558,7 +1563,7 @@ is the first element of the navigation.</li>
 <li>Remove font-icons from project, use font-awesome instead #598</li>
 </ul>
 <h2 id="0140---2017-01-20"><a href="https://github.com/DSI-VD/foehn/compare/v0.13.0...v0.14.0">0.14.0</a> - 2017-01-20</h2>
-<h3 id="changed-48">Changed</h3>
+<h3 id="changed-49">Changed</h3>
 <ul>
 <li>Use teaser-list in Communiqué de presse page</li>
 <li>Move teaser-alternate-2 in teaser-small</li>
@@ -1628,7 +1633,7 @@ is the first element of the navigation.</li>
 <li>Removed Contact link from header-securise component #490</li>
 </ul>
 <h2 id="0130---2016-12-22"><a href="https://github.com/DSI-VD/foehn/compare/v0.12.0...v0.13.0">0.13.0</a> - 2016-12-22</h2>
-<h3 id="changed-49">Changed</h3>
+<h3 id="changed-50">Changed</h3>
 <ul>
 <li>Change the columns in the footer to <code>xs</code> sizes</li>
 <li>All grid layout use <code>.vd-nav-flex</code> class</li>
@@ -1685,7 +1690,7 @@ is the first element of the navigation.</li>
 <li>Fix the mobile navigation #460</li>
 </ul>
 <h2 id="0120---2016-12-08"><a href="https://github.com/DSI-VD/foehn/compare/v0.11.0...v0.12.0">0.12.0</a> - 2016-12-08</h2>
-<h3 id="changed-50">Changed</h3>
+<h3 id="changed-51">Changed</h3>
 <ul>
 <li>Modify the existing Blockquotes to <code>.vd-blockquote-bubble</code> and <code>.vd-blockquote-bubble-media</code> classes #487</li>
 <li>Move back to top button in domain list</li>
@@ -1718,7 +1723,7 @@ is the first element of the navigation.</li>
 <li>Fix logo width (to avoid it being full width flex)</li>
 </ul>
 <h2 id="0110---2016-12-06"><a href="https://github.com/DSI-VD/foehn/compare/v0.10.2...v0.11.0">0.11.0</a> - 2016-12-06</h2>
-<h3 id="changed-51">Changed</h3>
+<h3 id="changed-52">Changed</h3>
 <ul>
 <li>Twitter feed show two items</li>
 <li>Twitter feed use <code>.vd-teaser-small</code> class</li>
@@ -1762,12 +1767,12 @@ is the first element of the navigation.</li>
 <li>Fix Changelog location</li>
 </ul>
 <h2 id="0100---2016-11-29"><a href="https://github.com/DSI-VD/foehn/compare/v0.9.0...v0.10.0">0.10.0</a> - 2016-11-29</h2>
-<h3 id="changed-52">Changed</h3>
+<h3 id="changed-53">Changed</h3>
 <ul>
 <li>Finetune all components</li>
 </ul>
 <h2 id="090---2016-11-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.8.0...v0.9.0">0.9.0</a> - 2016-11-17</h2>
-<h3 id="changed-53">Changed</h3>
+<h3 id="changed-54">Changed</h3>
 <ul>
 <li>foehn is now based on bootstrap v4</li>
 <li>foehn use <a href="http://frontend.github.io/toolbox/">toolbox</a> for documentation</li>
@@ -1781,7 +1786,7 @@ is the first element of the navigation.</li>
 <ul>
 <li>Forms style use based on (WTF, forms ?](<a href="http://wtfforms.com/">http://wtfforms.com/</a>)</li>
 </ul>
-<h3 id="changed-54">Changed</h3>
+<h3 id="changed-55">Changed</h3>
 <ul>
 <li>Refactor CSS</li>
 <li>Add clearfix in <code>.o-wrapper</code></li>
@@ -1822,7 +1827,7 @@ is the first element of the navigation.</li>
 <li>Add a theme page with real content</li>
 <li>Add gutter helpers <code>.vd-u-g*</code> for <code>.vd-layout__item</code></li>
 </ul>
-<h3 id="changed-55">Changed</h3>
+<h3 id="changed-56">Changed</h3>
 <ul>
 <li>Renamed the class <code>vd-visually-hidden</code> in <code>vd-u-visually-hidden</code></li>
 <li>Renamed the class <code>vd-hidden</code> in <code>vd-u-hidden</code></li>
@@ -1896,7 +1901,7 @@ is the first element of the navigation.</li>
 <li>Remove unused alerts</li>
 </ul>
 <h2 id="061---2016-07-13"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.0...v0.6.1">0.6.1</a> - 2016-07-13</h2>
-<h3 id="changed-56">Changed</h3>
+<h3 id="changed-57">Changed</h3>
 <ul>
 <li>Hide legend and label in search bar</li>
 <li>Refactor gulp tasks</li>
@@ -1937,7 +1942,7 @@ is the first element of the navigation.</li>
 <li>Add a molecule for search results</li>
 <li>CSS linting support stylelint 6.3.3 rules</li>
 </ul>
-<h3 id="changed-57">Changed</h3>
+<h3 id="changed-58">Changed</h3>
 <ul>
 <li>HTML in <code>dist/</code> instead of <code>src/</code> is linted</li>
 <li>Homepage view has been updated</li>
@@ -1966,7 +1971,7 @@ is the first element of the navigation.</li>
 <li>Add states class for button</li>
 <li>Add style for disabled button</li>
 </ul>
-<h3 id="changed-58">Changed</h3>
+<h3 id="changed-59">Changed</h3>
 <ul>
 <li><code>.btn</code> object class is renamed <code>.buttton</code></li>
 <li>Update normalize.css to 4.1.1</li>
@@ -1994,7 +1999,7 @@ is the first element of the navigation.</li>
 <li>Add <code>.list-block</code> style for blocky list</li>
 <li>HTML is linted via <em>htmllint</em></li>
 </ul>
-<h3 id="changed-59">Changed</h3>
+<h3 id="changed-60">Changed</h3>
 <ul>
 <li><code>&lt;code&gt;</code> use a background color from the palette</li>
 <li><code>toolkit.*</code> files are renamed in <code>foehn.*</code></li>
@@ -2006,7 +2011,7 @@ is the first element of the navigation.</li>
 <li>Font comparaison pages are removed</li>
 </ul>
 <h2 id="041---2016-03-15"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.0...v0.4.1">0.4.1</a> - 2016-03-15</h2>
-<h3 id="changed-60">Changed</h3>
+<h3 id="changed-61">Changed</h3>
 <ul>
 <li>Update building documetation</li>
 </ul>
@@ -2018,7 +2023,7 @@ is the first element of the navigation.</li>
 <li>Forms have a focus state</li>
 <li>All classes are prefixed with <code>vd-*</code></li>
 </ul>
-<h3 id="changed-61">Changed</h3>
+<h3 id="changed-62">Changed</h3>
 <ul>
 <li>Improve button design and styles</li>
 <li>Improve styles of checkboxes</li>
@@ -2033,7 +2038,7 @@ is the first element of the navigation.</li>
 <ul>
 <li>More grays variations are added to the color palette</li>
 </ul>
-<h3 id="changed-62">Changed</h3>
+<h3 id="changed-63">Changed</h3>
 <ul>
 <li>Forms are more readable</li>
 </ul>
@@ -2049,7 +2054,7 @@ is the first element of the navigation.</li>
 <li>Added styles for captions</li>
 <li>Added documentation about image and art direction</li>
 </ul>
-<h3 id="changed-63">Changed</h3>
+<h3 id="changed-64">Changed</h3>
 <ul>
 <li>Use responsive markup for images</li>
 <li>Use a variables for blockquote border</li>
@@ -2063,7 +2068,7 @@ is the first element of the navigation.</li>
 <li>Removed <code>picturefill</code> polyfill</li>
 </ul>
 <h2 id="021---2016-02-11"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.0...v0.2.1">0.2.1</a> - 2016-02-11</h2>
-<h3 id="changed-64">Changed</h3>
+<h3 id="changed-65">Changed</h3>
 <ul>
 <li>Enforce properties order in CSS</li>
 <li>Set letter-spacing in blockquotes to 0</li>
