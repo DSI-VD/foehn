@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added [documentation about inset-text](src(docs/components/inset-text)
+
 ### Changed
 - The `<a>` tag which is around the logo in `@footer` has a `d-inline-block` to
   fix focus style
