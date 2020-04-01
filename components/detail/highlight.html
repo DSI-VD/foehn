@@ -162,12 +162,7 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-highlight"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Title here<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-        illum deleniti soluta itaque, vel impedit, aperiam voluptatibus repudiandae
-        minima nostrum, quaerat quisquam libero sit aspernatur enim quae natus, nam
-        molestias!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>This is a link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    L<span class="hljs-symbol">&amp;#39;</span>enregistrement peut prendre jusqu<span class="hljs-symbol">&amp;#39;</span>à huit semaines.
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -177,12 +172,7 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9069d2540a7a90dd67f8df6e54d78357-panel-view">
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-highlight"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Title here<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-    illum deleniti soluta itaque, vel impedit, aperiam voluptatibus repudiandae
-    minima nostrum, quaerat quisquam libero sit aspernatur enim quae natus, nam
-    molestias!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>This is a link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  {{ text }}
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
 </div>
@@ -192,7 +182,9 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"L'enregistrement peut prendre jusqu'à huit semaines."</span>
+}</pre>
             
         
     </code>
@@ -317,6 +309,21 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="highlight--default">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="highlight--alt">
+                    <span>Alt</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -910,7 +917,7 @@
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/components/inset-text" data-pjax>
-                <span>Inset Text</span>
+                <span>Text en encart</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -918,7 +925,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF3333;" title="Draft"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -3355,10 +3362,21 @@
         
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-highlight">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Highlight</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="highlight--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3375,6 +3393,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="highlight--alt" data-pjax>
+                <span>Alt</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
