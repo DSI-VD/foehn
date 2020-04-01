@@ -1,0 +1,6 @@
+@charset 'UTF-8';
+
+.vd-inset-text {
+  padding: $spacer;
+  border-left: ($spacer * .5) solid $vd-neutral;
+}
