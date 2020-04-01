@@ -3,7 +3,7 @@ status: wip
 label: Text en encart
 ---
 
-{{ '@inset-text' | renderComponent | safe }}
+{{ '@highlight' | renderComponent | safe }}
 
 ## Quand utiliser ce composant
 
@@ -22,4 +22,4 @@ Si vous devez attirer l'attention sur un contenu très important, comme des info
 
 Utilisez le texte en encart avec parcimonie. Il est moins efficace s'il est surutilisé.
 
-{{ '@inset-text' | renderComponent | safe }}
+{{ '@highlight' | renderComponent | safe }}
