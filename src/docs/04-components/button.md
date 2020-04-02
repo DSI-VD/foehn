@@ -13,7 +13,7 @@ comme démarrer une application ou enregistrer leurs informations.
 ## Fonctionnement
 
 Écrivez le texte du bouton avec une majuscule au début. Il sera reformaté en
-majuscule.  Le text doit décrire l'action qu'il effectue.
+majuscule.  Le texte doit décrire l'action qu'il effectue.
 
 Par exemple:
 
@@ -45,8 +45,8 @@ Alignez le bouton d'action principal sur le bord gauche de votre formulaire.
 Utilisez un bouton d'action par défaut pour l'action principale d'une page.
 
 Évitez d'utiliser plusieurs boutons par défaut sur une seule page. Le fait
-d'avoir plusieur bouton d'action principale réduit leur impact et rend plus
-difficile pour les utilisateurs de savoir ce qu'ils doivent faire.
+d'avoir plusieurs boutons d'action principale réduit leur impact et rend plus
+difficile pour les utilisateurs de savoir ce qu'ils doivent faire en premier.
 
 {{ '@button' | renderComponent | safe }}
 
