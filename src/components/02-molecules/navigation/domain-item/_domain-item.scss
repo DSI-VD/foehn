@@ -10,18 +10,17 @@
  */
 
 .vd-domain-item {
+  display: flex;
+  flex-direction: column;
+
   &:focus-within {
     background: $vd-focus; /* [3] */
   }
 }
 
-.vd-domain-item__title {
-  font-weight: 300; /* [1] */
-}
-
-
-
 .vd-domain-item__link {
+  margin-top: $spacer / 4;
+
   &:focus {
     outline: 0; /* [4] */
   }
@@ -38,4 +37,23 @@
 
 .vd-domain-item__text {
   color: $gray-500;
+}
+
+
+
+.vd-domain-item--big {
+  .vd-domain-item__link {
+    font-weight: 300; /* [1] */
+  }
+}
+
+
+
+.vd-domain-item--small {
+  .vd-domain-item__link {
+    margin-bottom: 0 !important;
+  }
+  .vd-domain-item__text {
+    margin-top: 0;
+  }
 }

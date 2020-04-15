@@ -1,6 +1,6 @@
-<li class="vd-domain-item d-flex flex-column{% if styleModifier %} {{ styleModifier }}{% endif %}">
+<li class="vd-domain-item vd-domain-item--big{% if styleModifier %} {{ styleModifier }}{% endif %}">
   <a href="{% if url %}{{ url }}{% else %}domaines{% endif %}"
-    class="vd-link-invisible vd-domain-item__link vd-domain-item__title h2 mt-1">
+    class="vd-link-invisible vd-domain-item__link h2">
     {{- name -}}
   </a>
   <span class="vd-domain-item__text">
