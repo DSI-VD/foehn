@@ -1,6 +1,11 @@
-<li class="vd-domain-item{% if styleModifier %} {{ styleModifier }}{% endif %}">
-  <a href="{% if url %}{{ url }}{% else %}domaines#{{ name | lower | urlencode }}{% endif %}" class="vd-link-invisible d-inline-block pt-1">
-    <span class="h4 my-0 d-block">{{ name }}</span>
-    <span class="vd-domain-item-text mb-0"><span class="sr-only">(Exemple de contenu: </span>{{ description }}<span class="sr-only">)</span></span>
+<li class="vd-domain-item vd-domain-item--small{% if styleModifier %} {{ styleModifier }}{% endif %}">
+  <a href="{% if url %}{{ url }}{% else %}domaines#{{ name | lower | urlencode }}{% endif %}"
+    class="vd-domain-item__link vd-link-invisible h4">
+      {{- name -}}
   </a>
+  <span class="vd-domain-item__text">
+    <span class="sr-only">(Exemple de contenu: </span>
+    {{- description -}}
+    <span class="sr-only">)</span>
+  </span>
 </li>

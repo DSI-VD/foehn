@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added [documentation about inset-text](src(docs/components/inset-text)
 
 ### Changed
+- Change HTML structure and CSS classes of `@domain-item` which is used in
+  `@domain-list`
+- Change HTML structure and CSS classes of `@domain-item--small` which is used
+  in `@nav-primary` and `@nav-primary--open`
+- Remove `.mb-3` class in `@domain-item--small` render in `@nav-primary`and
+  `@nav-primary--open`
 - The `<a>` tag which is around the logo in `@footer` has a `d-inline-block` to
   fix focus style
 
