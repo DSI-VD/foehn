@@ -34,7 +34,7 @@
                 <ul class="list-unstyled mb-0 row">
                   {% for domain in domains.domains %}
                     {% render '@domain-item--small', {name:domain.name,
-                    styleModifier:'col-sm-6 col-lg-4', description:domain.description}, true %}
+                    styleModifier:'col-sm-6 col-lg-4 mb-3', description:domain.description}, true %}
                   {% endfor %}
                 </ul>
               </nav>
