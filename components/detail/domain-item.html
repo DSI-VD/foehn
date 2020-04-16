@@ -161,11 +161,11 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1c93c46a9d4575d7e97b731cd50b6217-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"domaines"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-link-invisible d-inline-block pt-1"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item-title h2 mt-0 d-block"</span>&gt;</span>This is the title<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item-text mb-0"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item vd-domain-item--big"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"domaines"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-link-invisible vd-domain-item__link h2"</span>&gt;</span>This is the title<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item__text"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></pre>
         
     </code>
@@ -174,11 +174,16 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1c93c46a9d4575d7e97b731cd50b6217-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% if url %}{{ url }}{% else %}domaines{% endif %}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-link-invisible d-inline-block pt-1"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item-title h2 mt-0 d-block"</span>&gt;</span>{{ name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item-text mb-0"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{{ description }}<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item vd-domain-item--big{% if styleModifier %} {{ styleModifier }}{% endif %}"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% if url %}{{ url }}{% else %}domaines{% endif %}"</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-link-invisible vd-domain-item__link h2"</span>&gt;</span>
+    {{- name -}}
   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-domain-item__text"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>(Exemple de contenu: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    {{- description -}}
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></pre>
     </code>
 </div>
@@ -228,15 +233,58 @@
  * Teaser links
  *
  * 1. Override heading font-weight
+ * 2. Let user click on the whole item
+ * 3. Set focus style for the whole item
+ * 4. Remove focus style on the link
  */</span>
+
 <span class="hljs-selector-class">.vd-domain-item</span> {
-  <span class="hljs-selector-class">.vd-domain-item-title</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+
+  &amp;<span class="hljs-selector-pseudo">:focus</span>-within {
+    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$vd-focus</span>; <span class="hljs-comment">/* [3] */</span>
+  }
+}
+
+<span class="hljs-selector-class">.vd-domain-item__link</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer</span> / <span class="hljs-number">4</span>;
+
+  &amp;<span class="hljs-selector-pseudo">:focus</span> {
+    <span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [4] */</span>
+  }
+
+  &amp;<span class="hljs-selector-pseudo">:after</span> {
+    <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>; <span class="hljs-comment">/* [2] */</span>
+  }
+}
+
+<span class="hljs-selector-class">.vd-domain-item__text</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-500</span>;
+}
+
+
+
+<span class="hljs-selector-class">.vd-domain-item--big</span> {
+  <span class="hljs-selector-class">.vd-domain-item__link</span> {
     <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>; <span class="hljs-comment">/* [1] */</span>
   }
 }
 
-<span class="hljs-selector-class">.vd-domain-item-text</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gray-500</span>;
+
+
+<span class="hljs-selector-class">.vd-domain-item--small</span> {
+  <span class="hljs-selector-class">.vd-domain-item__link</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
+  }
+  <span class="hljs-selector-class">.vd-domain-item__text</span> {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+  }
 }
 </pre>
                             </code>
@@ -254,7 +302,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">209 Bytes</span>
+                    <span class="Meta-value">871 Bytes</span>
                 </li>
             </ul>
         </div>

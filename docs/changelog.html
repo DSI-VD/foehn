@@ -192,8 +192,8 @@ form</a><ul>
 <li>Error message in <a href="../components/detail/input--validation-danger"><code>@input--validation-danger</code></a> is now red like in <a href="../components/detail/fieldset--error"><code>@fieldset--error</code></a></li>
 <li>Change some behaviour of the <a href="../components/detail/breadcrumb"><code>@breadcrumb</code></a><ul>
 <li>On small screen font size is smaller and the parent pages is visibles</li>
-<li>Current page on use <code>aria-current</code> attribute instead of the text <em>“Vous êtes
-ici:”</em></li>
+<li>Current page on use <code>aria-current</code> attribute instead of the text *”Vous êtes
+ici:”*</li>
 </ul>
 </li>
 </ul>
@@ -243,7 +243,7 @@ X sur Y”</li>
 <h2 id="110---2019-04-09"><a href="https://github.com/DSI-VD/foehn/compare/v1.0.6...v1.1.0">1.1.0</a> - 2019-04-09</h2>
 <h3 id="changed-6">Changed</h3>
 <ul>
-<li>The HTML structure of the templates have changed to avoid having a double <code>h1</code>
+<li>The HTML structure of the templates have changed to avoid having a double <code>h1</code> 
 in the page.<ul>
 <li>Here is a list of the change on <a href="../components/detail/contend"><code>@contend</code></a>, <a href="../components/detail/departements"><code>@departements</code></a>,
 <a href="../components/detail/detail-contact"><code>@detail-contact</code></a>, <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a>, <a href="../components/detail/domaines"><code>@domaines</code></a>, <a href="../components/detail/error-500"><code>@error-500</code></a>,
@@ -267,13 +267,13 @@ visible.</li>
 </ul>
 </li>
 <li>Change CSS class of the <code>&lt;h1&gt;</code> tag to <code>class=&quot;container mt-0 pt-3&quot;</code> in
-<a href="../components/detail/page-title"><code>@page-title</code></a> component</li>
+  <a href="../components/detail/page-title"><code>@page-title</code></a> component</li>
 </ul>
 </li>
 </ul>
 <h3 id="fix-1">Fix</h3>
 <ul>
-<li>Fix <a href="../components/detail/pagniation"><code>@pagniation</code></a> not showing in <a href="../components/detail/template-communiques-presse-list--default"><code>@template-communiques-presse-list--default</code></a>
+<li>Fix <a href="../components/detail/pagniation"><code>@pagniation</code></a> not showing in  <a href="../components/detail/template-communiques-presse-list--default"><code>@template-communiques-presse-list--default</code></a>
 and <a href="../components/detail/template-communiques-presse-list--results"><code>@template-communiques-presse-list--results</code></a></li>
 <li>Fix deprecated <code>text-decoration-skip: ink;</code> CSS property</li>
 </ul>
@@ -364,8 +364,8 @@ means some styles have been rewritten.</li>
 <ul>
 <li><a href="../components/detail/espace-securise"><code>@espace-securise</code></a> and <a href="../components/detail/espace-securise--form"><code>@espace-securise--form</code></a> use
 <a href="../components/detail/header-application--default"><code>@header-application--default</code></a> and <a href="../components/detail/login"><code>@login</code></a> at the top of the page instead of
-<a href="../components/detail/header-securise"><code>@header-securise</code></a>. It means this is the same for <a href="../components/detail/connexion"><code>@connexion</code></a>,
-<a href="../components/detail/demande-detail"><code>@demande-detail</code></a>, <a href="../components/detail/documents"><code>@documents</code></a>, <a href="../components/detail/formulaire-prestation-confirmation"><code>@formulaire-prestation-confirmation</code></a>,
+<a href="../components/detail/header-securise"><code>@header-securise</code></a>. It means this is the same for  <a href="../components/detail/connexion"><code>@connexion</code></a>, 
+<a href="../components/detail/demande-detail"><code>@demande-detail</code></a>, <a href="../components/detail/documents"><code>@documents</code></a>, <a href="../components/detail/formulaire-prestation-confirmation"><code>@formulaire-prestation-confirmation</code></a>, 
 <a href="../components/detail/historique"><code>@historique</code></a>, <a href="../components/detail/messaga-detail"><code>@messaga-detail</code></a>, <a href="../components/detail/prestations"><code>@prestations</code></a>, <a href="../components/detail/tableau-de-bord"><code>@tableau-de-bord</code></a></li>
 <li>The navigation in <a href="../components/detail/espace-securise"><code>@espace-securise</code></a> is after the page title</li>
 <li><a href="../components/detail/logo-etat--alternate"><code>@logo-etat--alternate</code></a> use the new class <code>.vd-logo-alt</code></li>
@@ -405,7 +405,7 @@ added</li>
 </ul>
 <h3 id="fix-11">Fix</h3>
 <ul>
-<li>Change text “requis” for a more understandable “obligatoire” in
+<li>Change text “requis” for a more understandable “obligatoire” in 
 <a href="../components/detail/input-required"><code>@input-required</code></a></li>
 <li>Upgrade a bunch of modules that you do note need to take care of</li>
 <li>Upgrade to Fontawesome 5.2. Fore more informaiotn, take a look at the
@@ -462,17 +462,17 @@ scripts is in <code>foehn-scripts--header.js</code>.</li>
 <ul>
 <li>Update fonts loading strategy to speed up font loading and internalize fonts.<ul>
 <li>Fonts are internilized in Foehn. We do not use Google Fonts service anymore.</li>
-<li>Use <a href="https://github.com/bramstein/fontfaceobserver">Font Face Observer</a>
+<li>Use <a href="https://github.com/bramstein/fontfaceobserver">Font Face Observer</a> 
 instead of <a href="https://github.com/typekit/webfontloader">webfontloader</a> to load
 fonts. Take a look at <a href="../components/detail/webfont-loading"><code>@webfont-loading</code></a>.</li>
-<li>Font loading script is placed in the <code>&lt;head&gt;</code> of the document. Take a look
+<li>Font loading script is placed in the <code>&lt;head&gt;</code> of the document. Take a look 
 at <a href="../components/detail/preview"><code>@preview</code></a>.</li>
 <li>Replace all <code>.wf-*</code> CSS class with a unique <code>.fonts-loaded</code> class for <a href="https://www.zachleat.com/web/webfont-glossary/#fout">FOUT</a></li>
 </ul>
 </li>
 <li>Upgrade to <a href="http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1-1/">Bootstrap 4.1.1</a></li>
 <li>Upgrade to <a href="http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1/">Bootstrap 4.1</a></li>
-<li>The URL of Fontawesome JavaScript has changed in <a href="../components/detail/sript-header"><code>@sript-header</code></a>. Fontawesome
+<li>The URL of Fontawesome JavaScript has changed in <a href="../components/detail/sript-header"><code>@sript-header</code></a>. Fontawesome 
 is internalized inside foehn.</li>
 </ul>
 <h3 id="fix-16">Fix</h3>
@@ -595,13 +595,15 @@ desktop</li>
 <li>On mobile, <a href="../components/detail/login"><code>@login</code></a> comes before <a href="../components/detail/logo-etat"><code>@logo-etat</code></a> in <a href="../components/detail/header-securisee"><code>@header-securisee</code></a>.</li>
 <li>Remove button “Tous les thèmes” and section “Les plus visités” that were only
 visible on mobile in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
-<li>Change the structure of ‘@header’, <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> and <a href="../components/detail/header-securise"><code>@header-securise</code></a></li>
+<li>Change the structure of ‘@header’, <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> and <a href="../components/detail/header-securise"><code>@header-securise</code></a><ul>
 <li>Use the new <a href="../components/detail/login"><code>@login</code></a> component</li>
 <li>Change spacing of <a href="../components/detail/search-form--default"><code>@search-form--default</code></a></li>
 <li>Remove <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
+</ul>
+</li>
 <li>Use flexbox to display <a href="../components/detail/nav"><code>@nav</code></a> in <a href="../components/detail/header"><code>@header</code></a> and <a href="../components/detail/header--homepage"><code>@header--homepage</code></a></li>
 <li>Change <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> styles<ul>
-<li>Add a javascript on <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> to close the navigation when loaded on a
+<li>Add a javascript on <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> to close the navigation when loaded on a 
 mobile device. Add <code>js-closeMenuOnMobile__*</code> classes to enable this feature.
 Take a loot at <a href="../components/detail/nav-primary--open"><code>@nav-primary--open</code></a> for documentation.</li>
 <li>Rename menu button in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a></li>
@@ -610,12 +612,12 @@ Take a loot at <a href="../components/detail/nav-primary--open"><code>@nav-prima
 <li>Add <code>foehn-scripts--footer.js</code> in the footer of all pages.</li>
 <li>Add <code>.d-print-none</code> to <a href="../components/detail/nav-primary"><code>@nav-primary</code></a>, <a href="../components/detail/nav"><code>@nav</code></a>.</li>
 <li>Add <code>.d-print-none</code> to search form from <a href="../components/detail/theme--default"><code>@theme--default</code></a>.</li>
-<li>Add <code>.vd-print-full-width</code> to <a href="../components/detail/header"><code>@header</code></a> and <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> in order to
+<li>Add <code>.vd-print-full-width</code> to <a href="../components/detail/header"><code>@header</code></a> and <a href="../components/detail/header--homepage"><code>@header--homepage</code></a> in order to 
 display <code>h1</code>replacing logo at 100% width (print)</li>
-<li>Add <code>.vd-print-none</code> to search form row in <a href="../components/detail/template-communiques-presse-list"><code>@template-communiques-presse-list</code></a></li>
-<li>Add <code>.vd-print-full-width</code> to CP list results of
+<li>Add <code>.vd-print-none</code> to search form row in <a href="../components/detail/template-communiques-presse-list"><code>@template-communiques-presse-list</code></a> </li>
+<li>Add <code>.vd-print-full-width</code> to CP list results of 
 <a href="../components/detail/template-communiques-presse-list"><code>@template-communiques-presse-list</code></a></li>
-<li>Add <code>.vd-print-none</code> to bottom Autorities section of <a href="../components/detail/accueil"><code>@accueil</code></a></li>
+<li>Add <code>.vd-print-none</code> to bottom Autorities section of  <a href="../components/detail/accueil"><code>@accueil</code></a> </li>
 <li>Add exception for print in <code>_breadcrumb.scss</code> to show all breadcrumb</li>
 <li>Add a type of <code>communique</code> in <a href="../components/detail/search-item"><code>@search-item</code></a></li>
 <li>Fix <code>aria-label</code> in <a href="../components/detail/pagination"><code>@pagination</code></a></li>
@@ -628,9 +630,9 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <h3 id="added-11">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/media-text-list"><code>@media-text-list</code></a> component in organisms</li>
-<li>Add <a href="../components/detail/text-and-image--left"><code>@text-and-image--left</code></a>, <a href="../components/detail/text-and-image--top"><code>@text-and-image--top</code></a> and
+<li>Add <a href="../components/detail/text-and-image--left"><code>@text-and-image--left</code></a>, <a href="../components/detail/text-and-image--top"><code>@text-and-image--top</code></a> and 
 <a href="../components/detail/text-and-image--right"><code>@text-and-image--right</code></a> to show how to display images aside text.</li>
-<li>Add a <a href="../components/detail/figure"><code>@figure</code></a> in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
+<li>Add  a <a href="../components/detail/figure"><code>@figure</code></a> in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
 <li>Add <a href="../components/detail/login"><code>@login</code></a> component</li>
 </ul>
 <h3 id="fix-26">Fix</h3>
@@ -688,7 +690,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <h2 id="0400---2017-12-12"><a href="https://github.com/DSI-VD/foehn/compare/v0.39.0...v0.40.0">0.40.0</a> - 2017-12-12</h2>
 <h3 id="changed-20">Changed</h3>
 <ul>
-<li>Add <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> to <a href="../components/detail/news-list--default"><code>@news-list--default</code></a> and <a href="../components/detail/theme--default"><code>@theme--default</code></a></li>
+<li>Add <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> to <a href="../components/detail/news-list--default"><code>@news-list--default</code></a> and <a href="../components/detail/theme--default"><code>@theme--default</code></a> </li>
 <li>Reorder HTML element in <a href="../components/detail/teaser-small--alt.html"><code>@teaser-small--alt.html</code></a> for better a11y</li>
 <li>Change HTML structure in <a href="../components/detail/template-communiques-presse-list"><code>@template-communiques-presse-list</code></a></li>
 <li>Add class <code>.vd-text-md-small</code> to aside of <a href="../components/detail/template-communiques-presse-detail"><code>@template-communiques-presse-detail</code></a> and <a href="../components/detail/template-communiques-presse-list--default"><code>@template-communiques-presse-list--default</code></a></li>
@@ -698,7 +700,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Change top nav with <code>.list-inline</code> for margin-right</li>
 <li>Change layout of <a href="../components/detail/theme"><code>@theme</code></a> for <a href="../components/detail/template--2-col"><code>@template--2-col</code></a>.</li>
 <li>Change news title wording in `@news-list</li>
-<li>Add class <code>.mt-0</code> to <a href="../components/detail/template--news-detail"><code>@template--news-detail</code></a></li>
+<li>Add class <code>.mt-0</code> to <a href="../components/detail/template--news-detail"><code>@template--news-detail</code></a> </li>
 <li>Add link to homepage to <a href="../components/detail/footer"><code>@footer</code></a></li>
 <li>Hide footer titles, but keep them for accessibility (sr-only)</li>
 <li>Merge first two footer columns into one displayed in columns by class <code>.vd-list-columns</code></li>
@@ -738,7 +740,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <h2 id="0390---2017-11-03"><a href="https://github.com/DSI-VD/foehn/compare/v0.38.0...v0.39.0">0.39.0</a> - 2017-11-03</h2>
 <h3 id="changed-21">Changed</h3>
 <ul>
-<li>Fix a11y of “Voir plus” and “Voir moins” buttons in <a href="../components/detail/theme--default"><code>@theme--default</code></a>,
+<li>Fix a11y of “Voir plus” and “Voir moins” buttons in <a href="../components/detail/theme--default"><code>@theme--default</code></a>, 
 <a href="../components/detail/theme--list"><code>@theme--list</code></a> and <a href="../components/detail/theme--geo"><code>@theme--geo</code></a></li>
 <li>Transfer padding from <code>li.btn</code> to contained <code>a</code> in <a href="../components/detail/button-tiles"><code>@button-tiles</code></a> for all the button surface to be clickable</li>
 <li>Better <a href="../components/detail/button-tiles"><code>@button-tiles</code></a> css factoring</li>
@@ -805,7 +807,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Add <code>.text-right</code> to div containing <a href="../components/detail/logo--white"><code>@logo--white</code></a> in <a href="../components/detail/footer"><code>@footer</code></a> to align it to the right</li>
 <li>Add class <code>.w-100</code> to div containing <a href="../components/detail/logo--white"><code>@logo--white</code></a> in <a href="../components/detail/footer"><code>@footer</code></a></li>
 <li>Changed <a href="../components/detail/button-tiles"><code>@button-tiles</code></a> width to max 33% desktop, 100% mobile</li>
-<li>Remove style italic from class <code>.form-control</code> in <code>_search-form.scss</code>, add it for <code>::placeholder</code></li>
+<li>Remove style italic from class <code>.form-control</code> in <code>_search-form.scss</code>, add it for <code>::placeholder</code> </li>
 <li>Add <a href="../components/detail/download-list"><code>@download-list</code></a> to <a href="../components/detail/departements"><code>@departements</code></a></li>
 <li>Changed <a href="../components/detail/download-list"><code>@download-list</code></a> for optional <code>h3</code></li>
 <li>Use CSS to change icon in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> (closed / open)</li>
@@ -843,7 +845,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Add sr-only title for services <code>&lt;h2 class=&quot;sr-only&quot;&gt;Services&lt;/h2&gt;</code></li>
 <li>Changed <code>listIcon</code> structure in JSON files, adding one level with button (optional) and items inside.</li>
 <li>Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)</li>
-<li>Add <code>aria-invalid=&quot;true&quot;</code> Aria attribut and change help text on
+<li>Add <code>aria-invalid=&quot;true&quot;</code> Aria attribut and change help text on 
 <a href="../components/detail/input--validation-danger"><code>@input--validation-danger</code></a> to warn screen readers that the value is invalid</li>
 <li>Fix <a href="../components/detail/logo-etat--default"><code>@logo-etat--default</code></a> accessibility by removing <code>aria-labelledby</code> and
 adding <code>title</code> attribut</li>
@@ -1085,17 +1087,17 @@ is the first element of the navigation.</li>
 <li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/twitter-feed"><code>@twitter-feed</code></a></li>
 <li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/service"><code>@service</code></a></li>
 <li>Add <code>.h4</code> class to <code>.vd-heading-light</code> headings in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
-<li>Remove custom margin bottom in <a href="../components/detail/faq-item"><code>@faq-item</code></a></li>
-<li>Remove custom margin bottom in <a href="../components/detail/avs13"><code>@avs13</code></a></li>
-<li>Remove custom margin bottom in <a href="../components/detail/dates"><code>@dates</code></a></li>
-<li>Remove custom margin bottom in <a href="../components/detail/dates"><code>@dates</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/faq-item"><code>@faq-item</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/avs13"><code>@avs13</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/dates"><code>@dates</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/dates"><code>@dates</code></a></li>
 <li>Set margin top to null in <a href="../components/detail/domain-item"><code>@domain-item</code></a></li>
 <li>Remove custom margin bottom in <a href="../components/detail/teaser"><code>@teaser</code></a></li>
 <li>Change <code>.mb-0</code> class by <code>.mt-0</code> in <a href="../components/detail/teaser-card"><code>@teaser-card</code></a></li>
 <li>Remove useless <code>&lt;div&gt;</code> in <a href="../components/detail/highlight"><code>@highlight</code></a></li>
-<li>Remove custom margin bottom in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
-<li>Remove custom margin bottom in <a href="../components/detail/autority-address"><code>@autority-address</code></a></li>
-<li>Remove custom margin bottom in <a href="../components/detail/autority-info"><code>@autority-info</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/agenda"><code>@agenda</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/autority-address"><code>@autority-address</code></a></li>
+<li>Remove custom margin bottom  in <a href="../components/detail/autority-info"><code>@autority-info</code></a></li>
 <li>Remove margin top of <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> in <a href="../components/detail/faq"><code>@faq</code></a></li>
 <li>Remove custom margin bottom in <a href="../components/detail/page-title-banner--form-presta"><code>@page-title-banner--form-presta</code></a></li>
 <li>Remove custom margin top in <a href="../components/detail/page-title-banner--prestation"><code>@page-title-banner--prestation</code></a></li>
