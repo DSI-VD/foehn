@@ -5,6 +5,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Change HTML structure of `@address` and `@address--search` for better
+  accessibility.The link to the service page in the title contains text for
+  screen readers that explains where the link leads.
+
 ## [1.6.0] - 2020-04-16
 
 ### Added

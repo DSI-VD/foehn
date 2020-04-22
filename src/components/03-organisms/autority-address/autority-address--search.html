@@ -1,7 +1,7 @@
 <h2 itemprop="name"
     {%- if titleModifier %} class="{{ titleModifier }}" {% endif %}>
     {%- if url %}
-    <a href="{{ url }}" title="Pages du service {{ name }}" itemprop="url">
+    <a href="{{ url }}" itemprop="url">
         {%- endif %}
         {%- if accessibleName %}
         <span class="sr-only">{{ accessibleName }}</span>{% endif -%}
