@@ -159,8 +159,9 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">address</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">"http://schema.org/GovernmentOrganization"</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">"name"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Pages du service Service name"</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">"url"</span>&gt;</span>Service name<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Pages du service Service name"</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">"url"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Accéder à la page de: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">"name"</span>&gt;</span>Service name<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vd-heading-light h4 mt-0"</span>&gt;</span>division<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -212,14 +213,14 @@
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">address</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">"http://schema.org/GovernmentOrganization"</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">"name"</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>
     {%<span class="hljs-attr">-</span> <span class="hljs-attr">if</span> <span class="hljs-attr">titleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ titleModifier }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
     {%- if url %}
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ url }}"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Pages du service {{ name }}"</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">"url"</span>&gt;</span>
     {%- endif %}
-    {%- if accessibleName %}
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>{{ accessibleName }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif -%}
-      {{ name }}
+    {%- if accessibleLink %}
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>{{ accessibleLink }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{% endif -%}
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">"name"</span>&gt;</span>{{ name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     {%- if url -%}
       <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     {%- endif %}
@@ -308,6 +309,7 @@
             
             <pre>{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Service name"</span>,
+  <span class="hljs-attr">"accessibleLink"</span>: <span class="hljs-string">"Accéder à la page de: "</span>,
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
   <span class="hljs-attr">"division"</span>: <span class="hljs-string">"division"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."</span>,
