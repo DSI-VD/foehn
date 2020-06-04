@@ -395,8 +395,8 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-5 vd-content"</span>&gt;</span>
 
-        <span class="hljs-symbol">&amp;lt;</span>p<span class="hljs-symbol">&amp;gt;</span>Impossible d’afficher la page que vous voulez consulter. Vous avez sans doute saisi une mauvaise adresse (URL), le document n’existe pas ou son nom a été modifié.<span class="hljs-symbol">&amp;lt;</span>/p<span class="hljs-symbol">&amp;gt;</span>
-        <span class="hljs-symbol">&amp;lt;</span>p<span class="hljs-symbol">&amp;gt;</span>Vous pouvez utiliser <span class="hljs-symbol">&amp;lt;</span>a href=<span class="hljs-symbol">&amp;quot;</span>#<span class="hljs-symbol">&amp;quot;</span><span class="hljs-symbol">&amp;gt;</span>la recherche<span class="hljs-symbol">&amp;lt;</span>/a<span class="hljs-symbol">&amp;gt;</span> ou <span class="hljs-symbol">&amp;lt;</span>a href=<span class="hljs-symbol">&amp;quot;</span>#<span class="hljs-symbol">&amp;quot;</span><span class="hljs-symbol">&amp;gt;</span>naviguer depuis la page d<span class="hljs-symbol">&amp;#39;</span>accueil<span class="hljs-symbol">&amp;lt;</span>/a<span class="hljs-symbol">&amp;gt;</span> afin de trouver l<span class="hljs-symbol">&amp;#39;</span>information désirée.<span class="hljs-symbol">&amp;lt;</span>/p<span class="hljs-symbol">&amp;gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Impossible d’afficher la page que vous voulez consulter. Vous avez sans doute saisi une mauvaise adresse (URL), le document n’existe pas ou son nom a été modifié.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Vous pouvez utiliser <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>la recherche<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> ou <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>naviguer depuis la page d'accueil<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> afin de trouver l'information désirée.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
@@ -494,7 +494,7 @@
     <code class="Code Code--lang-html">
         <pre>{% extends '<a href="template--default">@template--default</a>' %}
 {% block main %}
-  {{ content }}
+  {{ content | safe }}
 {% endblock %}</pre>
     </code>
 </div>
