@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   accessibility.The link to the service page in the title contains text for
   screen readers that explains where the link leads.
 
+### Fixes
+- Fix HTML tags showing in `@error-500` and `error-404`
+
 ## [1.6.0] - 2020-04-16
 
 ### Added
