@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Upgrade [Bootstrap to 4.5.0](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
 
 ### Fixes
+- Remove deprecated `bg-variant` mixin
 - Fix HTML tags showing in `@error-500` and `error-404`
 - Upgrade a bunch of modules that you do note need to take care of
 
