@@ -296,10 +296,10 @@
 <span class="hljs-comment">/**
  * Green
  */</span>
-<span class="hljs-keyword">@include</span> bg-variant(<span class="hljs-string">".vd-card-green"</span>, <span class="hljs-variable">$vd-primary-darker</span>);
-
 <span class="hljs-selector-class">.vd-card-green</span> {
   <span class="hljs-keyword">@extend</span> %card-inside;
+
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$vd-primary-darker</span>;
 }
 
 <span class="hljs-comment">/**
@@ -307,9 +307,9 @@
  *
  * 1. Make the text visible
  */</span>
-<span class="hljs-keyword">@include</span> bg-variant(<span class="hljs-string">".vd-card-lightgray"</span>, <span class="hljs-variable">$vd-neutral-light</span>);
-
 <span class="hljs-selector-class">.vd-card-lightgray</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$vd-neutral-light</span>;
+
   <span class="hljs-selector-class">.card-title</span>,
   <span class="hljs-selector-class">.card-text</span> {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$vd-neutral-darker</span>; <span class="hljs-comment">/* [1] */</span>
@@ -319,18 +319,18 @@
 <span class="hljs-comment">/**
  * Dark gray
  */</span>
-<span class="hljs-keyword">@include</span> bg-variant(<span class="hljs-string">".vd-card-darkgray "</span>, <span class="hljs-variable">$vd-neutral-dark</span>);
-
 <span class="hljs-selector-class">.vd-card-darkgray</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$vd-neutral-dark</span>;
+
   <span class="hljs-keyword">@extend</span> %card-inside;
 }
 
 <span class="hljs-comment">/**
  * Black
  */</span>
-<span class="hljs-keyword">@include</span> bg-variant(<span class="hljs-string">".vd-card-black "</span>, <span class="hljs-variable">$black</span>);
-
 <span class="hljs-selector-class">.vd-card-black</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$black</span>;
+
   <span class="hljs-keyword">@extend</span> %card-inside;
 }
 </pre>
