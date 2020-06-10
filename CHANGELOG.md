@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change HTML structure of `@address` and `@address--search` for better
   accessibility.The link to the service page in the title contains text for
   screen readers that explains where the link leads.
+- Upgrade Bootstrap from v4.3.1 to v4.5.0
+  - Upgrade [Bootstrap to 4.4.0](https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/)
+  - Upgrade [Bootstrap to 4.4.1](https://blog.getbootstrap.com/2019/11/28/bootstrap-4-4-1/)
+  - Upgrade [Bootstrap to 4.5.0](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
 
 ### Fixes
 - Fix HTML tags showing in `@error-500` and `error-404`
