@@ -180,7 +180,7 @@
     <code class="Code Code--lang-html hljs">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">class</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{class}}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>
   {%- for item in list -%}
-  <span class="hljs-tag">&lt;<span class="hljs-name">li{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">item.class</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">item.class</span>}}{% <span class="hljs-attr">endif</span> %}&gt;</span>{{ item.item }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li{%</span> <span class="hljs-attr">if</span> <span class="hljs-attr">item.class</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">item.class</span>}}{% <span class="hljs-attr">endif</span> %}&gt;</span>{{ item.item | safe }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   {%- endfor -%}
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></pre>
     </code>
