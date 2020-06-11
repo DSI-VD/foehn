@@ -19,7 +19,7 @@
   {% if helpText -%}
   <small
       id="{{ id }}Help"
-      class="form-text text-secondary">{{ helpText }}</small>
+      class="form-text text-secondary">{{ helpText | safe }}</small>
   {%- endif %}
   <input class="{{ class }}"
          type="{{ type }}"
