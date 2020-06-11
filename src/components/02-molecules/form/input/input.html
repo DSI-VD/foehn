@@ -7,7 +7,7 @@
   <label for="{{ id }}"
          {%- if labelHidden %} class="sr-only"{% endif -%}
          {%- if labelStyleModifier %} class="{{ labelStyleModifier }}" {%- endif -%}>
-    {{- label -}}
+    {{- label | safe -}}
       {%- if optional %} <span aria-hidden="true">(facultatif)</span>{% endif -%}
   </label>
   {%- if validation.text -%}
