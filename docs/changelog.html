@@ -89,8 +89,21 @@
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <h2 id="unreleased"><a href="https://github.com/DSI-VD/foehn/compare/v1.6.0...HEAD">Unreleased</a></h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>New <a href="../components/detail/login--logged-pro"><code>@login--logged-pro</code></a> component for users logged in a professional context</li>
+</ul>
 <h3 id="changed">Changed</h3>
 <ul>
+<li>Change HTML structure of <a href="../components/detail/header-application"><code>@header-application</code></a>, <a href="../components/detail/header-application--fluid"><code>@header-application--fluid</code></a>, 
+<a href="../components/detail/header-application--name"><code>@header-application--name</code></a></li>
+<li><a href="../components/detail/login"><code>@login</code></a> and <a href="../components/detail/login--logged"><code>@login--logged</code></a> have a new style. There’s an avatar that shows
+in which context the user is logged in.</li>
+<li>Header in <a href="../components/detail/espace-securise"><code>@espace-securise</code></a> and <a href="../components/detail/espace-securise--form"><code>@espace-securise--form</code></a> has change due to
+the changes on the <a href="../components/detail/login"><code>@login</code></a> component</li>
+<li>Change header in <a href="../components/detail/check-answers-page"><code>@check-answers-page</code></a>, <a href="../components/detail/formulaire-prestation"><code>@formulaire-prestation</code></a>,
+<a href="../components/detail/formulaire-prestation--step-2"><code>@formulaire-prestation--step-2</code></a>, <a href="../components/detail/formulaire-prestation--step-3"><code>@formulaire-prestation--step-3</code></a>,
+<a href="../components/detail/task-list-page"><code>@task-list-page</code></a> to show when a user is logged in</li>
 <li>Change HTML structure of <a href="../components/detail/address"><code>@address</code></a> and <a href="../components/detail/address--search"><code>@address--search</code></a> for better
 accessibility.The link to the service page in the title contains text for
 screen readers that explains where the link leads.</li>
@@ -101,14 +114,21 @@ screen readers that explains where the link leads.</li>
 </ul>
 </li>
 </ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>CSS classes <code>.vd-header-application</code> and <code>.vd-header-application__title</code> for 
+<a href="../components/detail/header-application"><code>@header-application</code></a>have been removed</li>
+</ul>
 <h3 id="fixes">Fixes</h3>
 <ul>
+<li>Fix <a href="../components/detail/page-title"><code>@page-title</code></a> not showing the right heading</li>
+<li>Fix HTML tags showing up in components</li>
 <li>Remove deprecated <code>bg-variant</code> mixin</li>
 <li>Fix HTML tags showing in <a href="../components/detail/error-500"><code>@error-500</code></a> and <code>error-404</code></li>
 <li>Upgrade a bunch of modules that you do note need to take care of</li>
 </ul>
 <h2 id="160---2020-04-16"><a href="https://github.com/DSI-VD/foehn/compare/v1.5.3...v.1.6.0">1.6.0</a> - 2020-04-16</h2>
-<h3 id="added">Added</h3>
+<h3 id="added-1">Added</h3>
 <ul>
 <li>Added <a href="src(docs/components/inset-text">documentation about inset-text</a></li>
 </ul>
@@ -136,7 +156,7 @@ fix focus style</li>
 <a href="../components/detail/input--help-error"><code>@input--help-error</code></a> and <a href="../components/detail/input--phone-error"><code>@input--phone-error</code></a></li>
 </ul>
 <h2 id="151---2020-02-12"><a href="https://github.com/DSI-VD/foehn/compare/v1.5.0...v1.5.1">1.5.1</a> - 2020-02-12</h2>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li>Add <a href="../docs/components/button">documentation for buttons</a></li>
 <li>Add <a href="../components/detail/button--danger"><code>@button--danger</code></a> component</li>
@@ -148,7 +168,7 @@ fix focus style</li>
 <a href="../components/detail/dates--danger"><code>@dates--danger</code></a> and <a href="../components/detail/input--help-error"><code>@input--help-error</code></a></li>
 </ul>
 <h2 id="150---2020-01-22"><a href="https://github.com/DSI-VD/foehn/compare/v1.4.0...v1.5.0">1.5.0</a> - 2020-01-22</h2>
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/fieldset--checkbox-error"><code>@fieldset--checkbox-error</code></a> component to be used in <a href="../docs/components/error-message">documentation about
 error message</a></li>
@@ -172,7 +192,7 @@ been replaced by <code>.is-invalid</code></li>
 <li>Fix disabeld autoescaping</li>
 </ul>
 <h2 id="140---2019-11-20"><a href="https://github.com/DSI-VD/foehn/compare/v1.3.0...v1.4.0">1.4.0</a> - 2019-11-20</h2>
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 <ul>
 <li>Add <a href="../docs/components/error-summary">documentation for error summary</a></li>
 <li>Add <a href="../components/detail/error-summary"><code>@error-summary</code></a> component</li>
@@ -196,7 +216,7 @@ accessibility</li>
 <li>Upgrade a bunch of modules that you do note need to take care of</li>
 </ul>
 <h2 id="130---2019-07-04"><a href="https://github.com/DSI-VD/foehn/compare/v1.2.0...v1.3.0">1.3.0</a> - 2019-07-04</h2>
-<h3 id="added-4">Added</h3>
+<h3 id="added-5">Added</h3>
 <ul>
 <li>Add <a href="../docs/writing-for-vdch/titles">documentation how to write titles</a></li>
 <li>Add <a href="../docs/patterns/task-list-pages">documentation about task list page pattern</a><ul>
@@ -316,7 +336,7 @@ and <a href="../components/detail/template-communiques-presse-list--results"><co
 <ul>
 <li>Inputs are required by default to be GDPR compliant</li>
 </ul>
-<h3 id="added-5">Added</h3>
+<h3 id="added-6">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/input-optional"><code>@input-optional</code></a> component</li>
 <li>Add documentation about LPrD law</li>
@@ -325,12 +345,12 @@ and <a href="../components/detail/template-communiques-presse-list--results"><co
 <ul>
 <li>Fix link color to be compliant with WCAG AA</li>
 </ul>
-<h3 id="removed">Removed</h3>
+<h3 id="removed-1">Removed</h3>
 <ul>
 <li>Removed <a href="../components/detail/input-reuired"><code>@input-reuired</code></a>. Input are required by default.</li>
 </ul>
 <h2 id="104---2018-12-11"><a href="https://github.com/DSI-VD/foehn/compare/v1.0.3...v1.0.4">1.0.4</a> - 2018-12-11</h2>
-<h3 id="added-6">Added</h3>
+<h3 id="added-7">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/tree-view"><code>@tree-view</code></a> component</li>
 <li>Add a style modifier in <a href="../components/detail/breadcrumb"><code>@breadcrumb</code></a></li>
@@ -343,7 +363,7 @@ and <a href="../components/detail/template-communiques-presse-list--results"><co
 <li>Fix pagination in <a href="../components/detail/filter-list"><code>@filter-list</code></a> component</li>
 <li>Upgrade some modules</li>
 </ul>
-<h3 id="removed-1">Removed</h3>
+<h3 id="removed-2">Removed</h3>
 <ul>
 <li>Removed <a href="../components/detail/dropdown"><code>@dropdown</code></a> component</li>
 <li>Removed <a href="../components/detail/numbered-title"><code>@numbered-title</code></a> component</li>
@@ -378,7 +398,7 @@ are moved into Foehn’s assets.</li>
 <li>The name of the package is now <a href="../components/detail/dsivd/foehn"><code>@dsivd/foehn</code></a></li>
 </ul>
 <h2 id="0540---2018-10-11"><a href="https://github.com/DSI-VD/foehn/compare/v0.53.0...v0.54.0">0.54.0</a> - 2018-10-11</h2>
-<h3 id="removed-2">Removed</h3>
+<h3 id="removed-3">Removed</h3>
 <ul>
 <li>Remove <code>foehn-scripts--header.js</code> in the <code>&lt;head&gt;</code> of the page. It contained
 only Font Face Observer which has been removed in favor of CSS font-display.</li>
@@ -399,7 +419,7 @@ means some styles have been rewritten.</li>
 <li>The navigation in <a href="../components/detail/espace-securise"><code>@espace-securise</code></a> is after the page title</li>
 <li><a href="../components/detail/logo-etat--alternate"><code>@logo-etat--alternate</code></a> use the new class <code>.vd-logo-alt</code></li>
 </ul>
-<h3 id="added-7">Added</h3>
+<h3 id="added-8">Added</h3>
 <ul>
 <li>Added a new logo with less height <a href="../components/detail/logo-alternate-2"><code>@logo-alternate-2</code></a></li>
 </ul>
@@ -423,7 +443,7 @@ added</li>
 <li>Remove unused CSS style <code>.vd-pagination-pages</code></li>
 </ul>
 <h2 id="0522---2018-08-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.52.1...v0.52.2">0.52.2</a> - 2018-08-14</h2>
-<h3 id="added-8">Added</h3>
+<h3 id="added-9">Added</h3>
 <ul>
 <li>add accessibility doc</li>
 <li>add colors doc</li>
@@ -509,7 +529,7 @@ is internalized inside foehn.</li>
 <li>Fontawesome updated to v5.1.0-4</li>
 </ul>
 <h2 id="0490---2018-04-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.48.1...v0.49.0">0.49.0</a> - 2018-04-17</h2>
-<h3 id="added-9">Added</h3>
+<h3 id="added-10">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/favicon"><code>@favicon</code></a> component, documentation and ressources</li>
 </ul>
@@ -540,7 +560,7 @@ is internalized inside foehn.</li>
 <li>JS vendors are concatenated inside one unique <code>vendors.js</code> file. See
 <a href="../components/detail/scripts-footer"><code>@scripts-footer</code></a></li>
 </ul>
-<h3 id="added-10">Added</h3>
+<h3 id="added-11">Added</h3>
 <ul>
 <li>Add a <a href="../components/detail/fieldset--yes-or-no"><code>@fieldset--yes-or-no</code></a> component</li>
 </ul>
@@ -656,7 +676,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Rename page <a href="../components/detail/search"><code>@search</code></a></li>
 <li>Remove useless heading in <a href="../components/detail/search--no-search"><code>@search--no-search</code></a></li>
 </ul>
-<h3 id="added-11">Added</h3>
+<h3 id="added-12">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/media-text-list"><code>@media-text-list</code></a> component in organisms</li>
 <li>Add <a href="../components/detail/text-and-image--left"><code>@text-and-image--left</code></a>, <a href="../components/detail/text-and-image--top"><code>@text-and-image--top</code></a> and 
@@ -672,7 +692,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Fix first chevrn wasn’t displayed on mobile in <a href="../components/detail/navigation"><code>@navigation</code></a></li>
 <li>Refactor <a href="../components/detail/logo-etat"><code>@logo-etat</code></a> and <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> spacings</li>
 </ul>
-<h3 id="removed-3">Removed</h3>
+<h3 id="removed-4">Removed</h3>
 <ul>
 <li>Remove <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
 </ul>
@@ -711,7 +731,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Add <code>role=&quot;search&quot;</code> attribute in <a href="../components/detail/search-form--regular"><code>@search-form--regular</code></a> and
 <a href="../components/detail/search-form--regular-option"><code>@search-form--regular-option</code></a></li>
 </ul>
-<h3 id="added-12">Added</h3>
+<h3 id="added-13">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/search--no-results"><code>@search--no-results</code></a> and <a href="../components/detail/search--no-search"><code>@search--no-search</code></a> components</li>
 <li>Add documentation about search pages.</li>
@@ -752,7 +772,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Change content of <code>fieldset</code>s help text in <a href="../components/detail/avs13"><code>@avs13</code></a></li>
 <li>Fix column width in <a href="../components/detail/example-list"><code>@example-list</code></a></li>
 </ul>
-<h3 id="added-13">Added</h3>
+<h3 id="added-14">Added</h3>
 <ul>
 <li>Add documentation about link accessibility</li>
 <li>Add new heading style <code>.vd-heading-light-alt</code>.</li>
@@ -762,7 +782,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Fix focus style overlapping headings chars</li>
 <li>Use background image in class <code>.vd-bg-pattern-gray</code></li>
 </ul>
-<h3 id="removed-4">Removed</h3>
+<h3 id="removed-5">Removed</h3>
 <ul>
 <li>Remove <a href="../components/detail/search-banner--half-width"><code>@search-banner--half-width</code></a></li>
 </ul>
@@ -802,7 +822,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <ul>
 <li>Fix <a href="../components/detail/teaser-card"><code>@teaser-card</code></a> margins. Rename <code>.card-block</code> class in <code>.card-body</code>.</li>
 </ul>
-<h3 id="added-14">Added</h3>
+<h3 id="added-15">Added</h3>
 <ul>
 <li>Add version number in CSS file</li>
 <li>Add <a href="../components/detail/filter-list--default"><code>@filter-list--default</code></a> component</li>
@@ -823,7 +843,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Changed class of <code>ul</code> in <a href="../components/detail/nav-primary"><code>@nav-primary</code></a> for <code>vd-menu-list-links</code> to set margin-bottom to 0</li>
 <li>Refactor <a href="../components/detail/autority-address"><code>@autority-address</code></a></li>
 </ul>
-<h3 id="added-15">Added</h3>
+<h3 id="added-16">Added</h3>
 <ul>
 <li>Add variant <a href="../components/detail/autority-address--search"><code>@autority-address--search</code></a></li>
 <li>Add variant <a href="../components/detail/service--search"><code>@service--search</code></a></li>
@@ -855,7 +875,7 @@ display <code>h1</code>replacing logo at 100% width (print)</li>
 <li>Changed <a href="../components/detail/textarea"><code>@textarea</code></a> to use dynamic label, id and required</li>
 <li>Add <code>aria-invalid=true</code> if <a href="../components/detail/textarea--danger"><code>@textarea--danger</code></a>‘s is invalid</li>
 </ul>
-<h3 id="added-16">Added</h3>
+<h3 id="added-17">Added</h3>
 <ul>
 <li>Add <code>.vd-p</code> class to make text elements look like body text</li>
 <li>Add <a href="../components/detail/logo"><code>@logo</code></a> and <a href="../components/detail/logo--white"><code>@logo--white</code></a> components</li>
@@ -901,7 +921,7 @@ is the first element of the navigation.</li>
 <li>Add class <code>btn btn-success vd-btn-pagination-submit</code> to <a href="../components/detail/button--submit"><code>@button--submit</code></a> for pagination in <code>formulaire-prestation.config.json</code></li>
 <li>Upgrade <a href="https://github.com/typekit/webfontloader">webfont.js</a> in <a href="../components/detail/webfont-loading"><code>@webfont-loading</code></a></li>
 </ul>
-<h3 id="added-17">Added</h3>
+<h3 id="added-18">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/button--link"><code>@button--link</code></a> variant to <a href="../components/detail/button"><code>@button</code></a></li>
 <li>Add <a href="../components/detail/figure-picture"><code>@figure-picture</code></a> component</li>
@@ -982,7 +1002,7 @@ is the first element of the navigation.</li>
 <li>Tranform authority links into a list (<code>ul</code> -&gt; <code>li</code>)</li>
 <li>Change the structure of <a href="../components/detail/nav-mobile"><code>@nav-mobile</code></a></li>
 </ul>
-<h3 id="added-18">Added</h3>
+<h3 id="added-19">Added</h3>
 <ul>
 <li>“reset search” button to reset search filters after a first choice in <a href="../components/detail/template-communiques-presse-list"><code>@template-communiques-presse-list</code></a></li>
 <li>Add <code>.p</code> syle to make headings look like paragraph</li>
@@ -1023,7 +1043,7 @@ is the first element of the navigation.</li>
 <li>Add <code>.vd-content-column</code> style in <a href="../components/detail/template-communiques-presse-detail--default"><code>@template-communiques-presse-detail--default</code></a></li>
 <li>Add <code>.vd-content-column</code> style in <a href="../components/detail/template-communiques-presse-detail--alternate"><code>@template-communiques-presse-detail--alternate</code></a></li>
 </ul>
-<h3 id="added-19">Added</h3>
+<h3 id="added-20">Added</h3>
 <ul>
 <li>Add error 404 page <a href="../components/detail/error--default"><code>@error--default</code></a></li>
 <li>Add error 500 page <a href="../components/detail/error--500"><code>@error--500</code></a></li>
@@ -1045,7 +1065,7 @@ is the first element of the navigation.</li>
 <li>Change HTML structure of <a href="../components/detail/logo-etat--default"><code>@logo-etat--default</code></a> and <a href="../components/detail/logo-etat--alternate"><code>@logo-etat--alternate</code></a></li>
 <li>Use <a href="https://dev.twitter.com/web/embedded-timelines/user">default twitter timeline</a> in <a href="../components/detail/twitter-feed"><code>@twitter-feed</code></a></li>
 </ul>
-<h3 id="added-20">Added</h3>
+<h3 id="added-21">Added</h3>
 <ul>
 <li>Add color palette documentation</li>
 </ul>
@@ -1060,7 +1080,7 @@ is the first element of the navigation.</li>
 <li>Fix <a href="../components/detail/h1"><code>@h1</code></a> size</li>
 <li>Add documentation about Google fonts styles</li>
 </ul>
-<h3 id="removed-5">Removed</h3>
+<h3 id="removed-6">Removed</h3>
 <ul>
 <li>Remove <a href="../components/detail/twitter-feed"><code>@twitter-feed</code></a></li>
 </ul>
@@ -1069,7 +1089,7 @@ is the first element of the navigation.</li>
 <ul>
 <li>Rename <a href="../components/detail/prestation"><code>@prestation</code></a> in <a href="../components/detail/detail-prestation"><code>@detail-prestation</code></a></li>
 </ul>
-<h3 id="added-21">Added</h3>
+<h3 id="added-22">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/header--application"><code>@header--application</code></a> component</li>
 </ul>
@@ -1089,7 +1109,7 @@ is the first element of the navigation.</li>
 <li>Typography is based on Open Sans and Roboto Slab fonts</li>
 <li>Google CDN is used to get fonts</li>
 </ul>
-<h3 id="removed-6">Removed</h3>
+<h3 id="removed-7">Removed</h3>
 <ul>
 <li>Removed <a href="../components/detail/list-no-bullet"><code>@list-no-bullet</code></a></li>
 <li>Removed <code>.vd-list-no-bullet</code> style</li>
@@ -1148,7 +1168,7 @@ is the first element of the navigation.</li>
 <li>Add <code>.vd-text-md-small</code> style in <a href="../components/detail/template--2-col"><code>@template--2-col</code></a></li>
 <li>Add <code>.vd-text-md-small</code> style in <a href="../components/detail/accueil"><code>@accueil</code></a></li>
 </ul>
-<h3 id="added-22">Added</h3>
+<h3 id="added-23">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/h1"><code>@h1</code></a></li>
 <li>Add <a href="../components/detail/h2"><code>@h2</code></a></li>
@@ -1167,7 +1187,7 @@ is the first element of the navigation.</li>
 <li>Fix <a href="../components/detail/separator--green-pattern-wide"><code>@separator--green-pattern-wide</code></a> width in IE</li>
 <li>Fix <a href="../components/detail/separator--gray-bars-wide"><code>@separator--gray-bars-wide</code></a> width in IE</li>
 </ul>
-<h3 id="removed-7">Removed</h3>
+<h3 id="removed-8">Removed</h3>
 <ul>
 <li>Removed <code>.vd-section-title</code> style</li>
 </ul>
@@ -1185,7 +1205,7 @@ is the first element of the navigation.</li>
 <li>Remove <code>.small</code> class on <a href="../components/detail/footer"><code>@footer</code></a> and <a href="../components/detail/footer--securise"><code>@footer--securise</code></a></li>
 <li>Remove <code>.text-muted</code> class in <a href="../components/detail/footer"><code>@footer</code></a></li>
 </ul>
-<h3 id="added-23">Added</h3>
+<h3 id="added-24">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/demande-detail"><code>@demande-detail</code></a> files (.config and .html)</li>
 <li>Add <a href="../components/detail/message-detail"><code>@message-detail</code></a> files (.config and .html)</li>
@@ -1199,7 +1219,7 @@ is the first element of the navigation.</li>
 <li>Fix <a href="../components/detail/link"><code>@link</code></a> color</li>
 <li>Fix link color and decoration in <a href="../components/detail/nav-side"><code>@nav-side</code></a></li>
 </ul>
-<h3 id="removed-8">Removed</h3>
+<h3 id="removed-9">Removed</h3>
 <ul>
 <li>Remove <a href="../components/detail/separator--default--black"><code>@separator--default--black</code></a></li>
 <li>Remove <a href="../components/detail/separator--gray-pattern"><code>@separator--gray-pattern</code></a></li>
@@ -1215,7 +1235,7 @@ is the first element of the navigation.</li>
 <ul>
 <li>The <a href="../components/detail/alert"><code>@alert</code></a> molecule has been renamed <a href="../components/detail/alert--default"><code>@alert--default</code></a></li>
 </ul>
-<h3 id="added-24">Added</h3>
+<h3 id="added-25">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/alert--fixed"><code>@alert--fixed</code></a> molecule</li>
 </ul>
@@ -1227,7 +1247,7 @@ is the first element of the navigation.</li>
 <li>Remove <a href="../components/detail/separator--gray-bars-wide"><code>@separator--gray-bars-wide</code></a> in <a href="../components/detail/teaser-list--homepage"><code>@teaser-list--homepage</code></a></li>
 <li><a href="../components/detail/input--error"><code>@input--error</code></a> use <code>.vd-form-group-danger</code> style</li>
 </ul>
-<h3 id="added-25">Added</h3>
+<h3 id="added-26">Added</h3>
 <ul>
 <li>Add <code>.vd-form-group-danger</code> style for form elements</li>
 <li>Add <a href="../components/detail/fieldset--error"><code>@fieldset--error</code></a></li>
@@ -1237,7 +1257,7 @@ is the first element of the navigation.</li>
 <ul>
 <li>Fix missing name in <a href="../components/detail/fieldset--checkbox"><code>@fieldset--checkbox</code></a></li>
 </ul>
-<h3 id="removed-9">Removed</h3>
+<h3 id="removed-10">Removed</h3>
 <ul>
 <li>Remove <a href="../components/detail/checkbox--warning"><code>@checkbox--warning</code></a></li>
 <li>Remove <a href="../components/detail/radio--warning"><code>@radio--warning</code></a></li>
@@ -1266,7 +1286,7 @@ is the first element of the navigation.</li>
 <li>Rename <a href="../components/detail/demandes"><code>@demandes</code></a> in <a href="../components/detail/historique"><code>@historique</code></a> and change content</li>
 <li>Rename <a href="../components/detail/acceuil-securise"><code>@acceuil-securise</code></a> in <a href="../components/detail/tableau-de-bord"><code>@tableau-de-bord</code></a> and change content</li>
 </ul>
-<h3 id="added-26">Added</h3>
+<h3 id="added-27">Added</h3>
 <ul>
 <li>Add <a href="../components/detail/teaser--small-media"><code>@teaser--small-media</code></a> component</li>
 <li>Add <code>styleModifier</code> in <a href="../components/detail/figure"><code>@figure</code></a></li>
@@ -1324,7 +1344,7 @@ is the first element of the navigation.</li>
 <ul>
 <li>Fix missing <code>name</code> attribute config in <a href="../components/detail/radio"><code>@radio</code></a></li>
 </ul>
-<h3 id="removed-10">Removed</h3>
+<h3 id="removed-11">Removed</h3>
 <ul>
 <li>Removed feedback molecule</li>
 </ul>
@@ -1356,7 +1376,7 @@ is the first element of the navigation.</li>
 <li>Blockquote use <code>&lt;cite&gt;</code> element instead of <code>&lt;footer&gt;</code> for references</li>
 <li>teaser-small–alt use headings font</li>
 </ul>
-<h3 id="added-27">Added</h3>
+<h3 id="added-28">Added</h3>
 <ul>
 <li>Add news-latest–media organim</li>
 </ul>
@@ -1366,7 +1386,7 @@ is the first element of the navigation.</li>
 <li>List-links use the default font weight</li>
 <li>Fix input width based on number of chars. Width is now based on the width of a <code>M</code> instead of a <code>9</code>.</li>
 </ul>
-<h3 id="removed-11">Removed</h3>
+<h3 id="removed-12">Removed</h3>
 <ul>
 <li>Remove figure–caption component</li>
 <li>Remove teaser–left component</li>
@@ -1394,7 +1414,7 @@ is the first element of the navigation.</li>
 <li>Make design of nav-side more obvious</li>
 <li>Clean up CSS</li>
 </ul>
-<h3 id="added-28">Added</h3>
+<h3 id="added-29">Added</h3>
 <ul>
 <li>Add color component</li>
 <li>Add datalist component</li>
@@ -1415,7 +1435,7 @@ is the first element of the navigation.</li>
 <li>Fix horizontal alignment of pagination</li>
 <li>Fix missing breadcrumbs</li>
 </ul>
-<h3 id="removed-12">Removed</h3>
+<h3 id="removed-13">Removed</h3>
 <ul>
 <li>Remove <code>.flex-row</code> class (was overriding a B4 class and was never used)</li>
 <li>Remove legacy Toolbox styleguide assets</li>
@@ -1430,7 +1450,7 @@ is the first element of the navigation.</li>
 <li>Add margin after nav-side</li>
 <li>Add stylelint-order npm dependency</li>
 </ul>
-<h3 id="added-29">Added</h3>
+<h3 id="added-30">Added</h3>
 <ul>
 <li>Add style for tabs content</li>
 <li>Add page polluants-atmospheriques</li>
@@ -1464,7 +1484,7 @@ is the first element of the navigation.</li>
 <li>Separate number of step and step title in formulaire-prestation</li>
 <li>Hide to screen reader paragraph about mandatory fields in form</li>
 </ul>
-<h3 id="added-30">Added</h3>
+<h3 id="added-31">Added</h3>
 <ul>
 <li>Add template–2-col-nav template</li>
 <li>Add help text in dates molecule</li>
@@ -1478,7 +1498,7 @@ is the first element of the navigation.</li>
 <li>Fix dates molecule alignment on Firefox</li>
 <li>Fix a11y of social-icons</li>
 </ul>
-<h3 id="removed-13">Removed</h3>
+<h3 id="removed-14">Removed</h3>
 <ul>
 <li>Removed teaser-link component</li>
 </ul>
@@ -1491,7 +1511,7 @@ is the first element of the navigation.</li>
 <li>Change position of update-time in teaser-alternate</li>
 <li>Link on header in teaser-alternate is black</li>
 </ul>
-<h3 id="added-31">Added</h3>
+<h3 id="added-32">Added</h3>
 <ul>
 <li>Add formulaire-prestation template variants</li>
 <li>Add alert molecule</li>
@@ -1545,7 +1565,7 @@ is the first element of the navigation.</li>
 <li>Update boostrap-variables to last Alpha 6 version</li>
 <li>Reduce height of header search-form #607</li>
 </ul>
-<h3 id="added-32">Added</h3>
+<h3 id="added-33">Added</h3>
 <ul>
 <li>Add <code>bower.json</code></li>
 <li>Add theme template for geographic services</li>
@@ -1586,7 +1606,7 @@ is the first element of the navigation.</li>
 <li>Fix list-boxed elements in column mode #606</li>
 <li>Fix search input button in IE #605</li>
 </ul>
-<h3 id="removed-14">Removed</h3>
+<h3 id="removed-15">Removed</h3>
 <ul>
 <li>Remove image alignment styles</li>
 <li>Remove unnecessary <code>role=navigation</code> on <code>&lt;nav&gt;</code></li>
@@ -1621,7 +1641,7 @@ is the first element of the navigation.</li>
 <li>Changed link color if it has <code>.h[1-6]</code> class #383</li>
 <li>Changed list style type to disc #432</li>
 </ul>
-<h3 id="added-33">Added</h3>
+<h3 id="added-34">Added</h3>
 <ul>
 <li>Add content on “Accueil” page</li>
 <li>Add teaser-left molecule</li>
@@ -1652,7 +1672,7 @@ is the first element of the navigation.</li>
 <li>Fix the spacing in the header #559</li>
 <li>Fix breadcrumb invisible on mobile #588</li>
 </ul>
-<h3 id="removed-15">Removed</h3>
+<h3 id="removed-16">Removed</h3>
 <ul>
 <li>Removed content in nav-primary molecule</li>
 <li>Removed <code>.vd-teaser-alternate-2</code> styles</li>
@@ -1682,7 +1702,7 @@ is the first element of the navigation.</li>
 <li>Remove <code>&lt;hr&gt;</code> from vd-teaser component and replace with CSS #521</li>
 <li>Setup the search form for communiques de presse #437</li>
 </ul>
-<h2 id="added-34">Added</h2>
+<h2 id="added-35">Added</h2>
 <ul>
 <li>Add a page Communiqué de press détail alternate</li>
 <li>Add a teaser-alternate-2 molecule</li>
@@ -1742,7 +1762,7 @@ is the first element of the navigation.</li>
 <li>Pagination use inline-list instead of grid</li>
 <li>Remove “Tout l’agenda” button on Accueil</li>
 </ul>
-<h3 id="added-35">Added</h3>
+<h3 id="added-36">Added</h3>
 <ul>
 <li>Add new Blockquote style and make it the default one #487</li>
 <li>Add new Update Time atom #447</li>
@@ -1770,7 +1790,7 @@ is the first element of the navigation.</li>
 <li>Implement a bigger gutter-width (90px) #476</li>
 <li>Implement logo with coat off arms only on mobile #458</li>
 </ul>
-<h3 id="added-36">Added</h3>
+<h3 id="added-37">Added</h3>
 <ul>
 <li>Add Agenda feeds organims</li>
 <li>Add Images atom</li>
@@ -1810,12 +1830,12 @@ is the first element of the navigation.</li>
 <li>foehn is now based on bootstrap v4</li>
 <li>foehn use <a href="http://frontend.github.io/toolbox/">toolbox</a> for documentation</li>
 </ul>
-<h3 id="added-37">Added</h3>
+<h3 id="added-38">Added</h3>
 <ul>
 <li>Add all basics components</li>
 </ul>
 <h2 id="080---2016-08-23"><a href="https://github.com/DSI-VD/foehn/compare/v0.7.0...v0.8.0">0.8.0</a> - 2016-08-23</h2>
-<h3 id="added-38">Added</h3>
+<h3 id="added-39">Added</h3>
 <ul>
 <li>Forms style use based on (WTF, forms ?](<a href="http://wtfforms.com/">http://wtfforms.com/</a>)</li>
 </ul>
@@ -1825,7 +1845,7 @@ is the first element of the navigation.</li>
 <li>Add clearfix in <code>.o-wrapper</code></li>
 </ul>
 <h2 id="070---2016-08-17"><a href="https://github.com/DSI-VD/foehn/compare/v0.6.1...v0.7.0">0.7.0</a> - 2016-08-17</h2>
-<h3 id="added-39">Added</h3>
+<h3 id="added-40">Added</h3>
 <ul>
 <li>Add style for the header</li>
 <li>Add <code>.vd-layout__item--lap-and-up--3-4</code> class</li>
@@ -1921,7 +1941,7 @@ is the first element of the navigation.</li>
 <ul>
 <li>Fix mega menu column width on lap-and-up viewport</li>
 </ul>
-<h3 id="removed-16">Removed</h3>
+<h3 id="removed-17">Removed</h3>
 <ul>
 <li>Remove <code>vd-list-block</code> class</li>
 <li>Remove auto styling for <code>vd-list-inline</code> childrens</li>
@@ -1959,7 +1979,7 @@ is the first element of the navigation.</li>
 <li>Update CSS linting rules</li>
 </ul>
 <h2 id="060---2016-05-25"><a href="https://github.com/DSI-VD/foehn/compare/v0.5.0...v0.6.0">0.6.0</a> - 2016-05-25</h2>
-<h3 id="added-40">Added</h3>
+<h3 id="added-41">Added</h3>
 <ul>
 <li>Add text accessibility documentation</li>
 <li>Add <code>.vd-color-text--*</code> classes to set text color</li>
@@ -1996,7 +2016,7 @@ is the first element of the navigation.</li>
 <li>Fix missing <code>vd-*</code> prefix in Footnote atom</li>
 </ul>
 <h2 id="050---2016-04-29"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.2...v0.5.0">0.5.0</a> - 2016-04-29</h2>
-<h3 id="added-41">Added</h3>
+<h3 id="added-42">Added</h3>
 <ul>
 <li>Provide a <code>/dist</code> folder with all foehn files</li>
 <li>Add a changelog</li>
@@ -2023,7 +2043,7 @@ is the first element of the navigation.</li>
 <li>Fix <code>foehn.css</code> table of content</li>
 </ul>
 <h2 id="042-2016-04-14"><a href="https://github.com/DSI-VD/foehn/compare/v0.4.1...v0.4.2">0.4.2</a> 2016-04-14</h2>
-<h3 id="added-42">Added</h3>
+<h3 id="added-43">Added</h3>
 <ul>
 <li>Add style for transparent buttons</li>
 <li>Add style for full width buttons</li>
@@ -2039,7 +2059,7 @@ is the first element of the navigation.</li>
 <li>The CSS is beautified at the end of the build</li>
 <li>Update <em>normalize.css</em></li>
 </ul>
-<h3 id="removed-17">Removed</h3>
+<h3 id="removed-18">Removed</h3>
 <ul>
 <li>Font comparaison pages are removed</li>
 </ul>
@@ -2049,7 +2069,7 @@ is the first element of the navigation.</li>
 <li>Update building documetation</li>
 </ul>
 <h2 id="040---2016-02-16"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.1...v0.4.0">0.4.0</a> - 2016-02-16</h2>
-<h3 id="added-43">Added</h3>
+<h3 id="added-44">Added</h3>
 <ul>
 <li>Added styles for alert boxes</li>
 <li>Added styles for select menu</li>
@@ -2067,7 +2087,7 @@ is the first element of the navigation.</li>
 <li>Fix active state on button wasn’t working</li>
 </ul>
 <h2 id="031-2016-02-23"><a href="https://github.com/DSI-VD/foehn/compare/v0.3.0...v0.3.1">0.3.1</a> 2016-02-23</h2>
-<h3 id="added-44">Added</h3>
+<h3 id="added-45">Added</h3>
 <ul>
 <li>More grays variations are added to the color palette</li>
 </ul>
@@ -2076,7 +2096,7 @@ is the first element of the navigation.</li>
 <li>Forms are more readable</li>
 </ul>
 <h2 id="030---2016-02-19"><a href="https://github.com/DSI-VD/foehn/compare/v0.2.1...v0.3.0">0.3.0</a> - 2016-02-19</h2>
-<h3 id="added-45">Added</h3>
+<h3 id="added-46">Added</h3>
 <ul>
 <li>Color palette documentation and create CSS variables for colors</li>
 <li>Added basic styles for buttons</li>
@@ -2095,7 +2115,7 @@ is the first element of the navigation.</li>
 <li>Update Stylelint</li>
 <li>Set letter-spacing to 0 for <code>&lt;cite&gt;</code></li>
 </ul>
-<h3 id="removed-18">Removed</h3>
+<h3 id="removed-19">Removed</h3>
 <ul>
 <li>Removed Typekit javascripts</li>
 <li>Removed <code>picturefill</code> polyfill</li>
@@ -2107,7 +2127,7 @@ is the first element of the navigation.</li>
 <li>Set letter-spacing in blockquotes to 0</li>
 </ul>
 <h2 id="020---2016-02-11"><a href="https://github.com/DSI-VD/foehn/compare/v0.1.0...v0.2.0">0.2.0</a> - 2016-02-11</h2>
-<h3 id="added-46">Added</h3>
+<h3 id="added-47">Added</h3>
 <ul>
 <li>PostCSS is used to generate the stylesheets</li>
 <li><code>postcss-hidden</code> is used to create styles that hide things</li>
@@ -2118,7 +2138,7 @@ is the first element of the navigation.</li>
 <li>Webfontloader is used to load asynchronously fonts and avoid FOIT</li>
 <li>Use stylelint to lint CSS code and provide a consistant way to write styles</li>
 </ul>
-<h3 id="removed-19">Removed</h3>
+<h3 id="removed-20">Removed</h3>
 <ul>
 <li>Removed mixin that automaticaly generate classes base on breakpoints</li>
 </ul>
@@ -2129,7 +2149,7 @@ is the first element of the navigation.</li>
 <li>Fix nesting problems in IE with layouts items</li>
 </ul>
 <h2 id="01---2015-09-23">0.1 - 2015-09-23</h2>
-<h3 id="added-47">Added</h3>
+<h3 id="added-48">Added</h3>
 <ul>
 <li>Atom: Headings</li>
 <li>Atom: Paragraph</li>
@@ -5364,7 +5384,7 @@ is the first element of the navigation.</li>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -5388,7 +5408,31 @@ is the first element of the navigation.</li>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/login--logged-pro" data-pjax>
+                <span>Logged Pro</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -7031,7 +7075,31 @@ is the first element of the navigation.</li>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/header-application--logged" data-pjax>
+                <span>Logged</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -7055,7 +7123,7 @@ is the first element of the navigation.</li>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -7079,7 +7147,7 @@ is the first element of the navigation.</li>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>

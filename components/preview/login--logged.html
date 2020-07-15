@@ -34,20 +34,29 @@
   </head>
   <body>
 
-    <section class="small">
+    <section class="vd-login mb-3">
   <h2 class="sr-only">Votre identité</h2>
-  <p class="mb-0">
-    <span class="fas fa-lock" aria-hidden="true"></span>
-    
-    <a href="#">Jean Villard Gilles</a>
-    
-  </p>
-  
-  <p class="mb-0">
-    <a href="#">Se déconnecter</a>
-  </p>
-  
+  <div class="d-flex flex-wrap justify-content-end align-items-center">
+    <div class="align-self-center text-right mr-1">
+      <p class="mb-0">
+      <span class="sr-only">Usager: </span>
+        <a href="#">Jean Villard Gilles</a>
+      </p>
+      <ul class="mb-0 small list-inline">
+          <li class="list-inline-item">
+            <a href="#">Paramètre de connexion</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Se déconnecter</a>
+          </li>
+        </ul>
+      </div>
+    <figure class="m-0 vd-login__avatar">
+        <span aria-hiden="true" class="fas fa-user fa-2x vd-login__avatar__image"></span>
+      </figure>
+    </div>
 </section>
+
 
 
     <script src="../../assets/scripts/jquery.slim.min.js"></script>
