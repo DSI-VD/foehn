@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Upgrade [Bootstrap to 4.5.0](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
 
 ### Fixes
+- Fix closing `<h3>` tag in `@search-item`
 - Fix `@page-title` not showing the right heading
 - Fix HTML tags showing up in components
 - Remove deprecated `bg-variant` mixin

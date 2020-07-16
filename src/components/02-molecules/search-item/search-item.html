@@ -1,8 +1,8 @@
-{% if heading.styleModifier -%}
-  <h4 class="{{ heading.styleModifier }}">
-{%- else -%}
-  <h3>
-{%- endif %}
+<h3
+  {%- if heading.styleModifier %}
+  class="{{ heading.styleModifier }}"
+  {%- endif -%}
+  >
   <a href="{{ url }}">
     {{ title }}
     {%- if type.file %}
@@ -12,15 +12,15 @@
 </h3>
 {% if type and not type.file -%}
   <p class="small">
-    {%- if type.news -%}
-      Actualité du {{ type.news.date }}
-    {%- elif type.prestation -%}
-    Préstation
-    {%- elif type.communique -%}
-      Communiqué de presse du {{ type.communique.date }}
-    {%- endif -%}
+  {%- if type.news -%}
+  Actualité du {{ type.news.date }}
+  {%- elif type.prestation -%}
+  Préstation
+  {%- elif type.communique -%}
+  Communiqué de presse du {{ type.communique.date }}
+  {%- endif -%}
   </p>
-{%- endif %}
-<p>
+  {%- endif %}
+  <p>
   {{ excerpt | safe }}
-</p>
+  </p>
