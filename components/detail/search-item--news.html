@@ -176,11 +176,11 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-52ba12e6452066bf4c7192646cfc4003-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre>{% if heading.styleModifier -%}
-  <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ heading.styleModifier }}"</span>&gt;</span>
-{%- else -%}
-  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
-{%- endif %}
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>
+  {%<span class="hljs-attr">-</span> <span class="hljs-attr">if</span> <span class="hljs-attr">heading.styleModifier</span> %}
+  <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ heading.styleModifier }}"</span>
+  {%<span class="hljs-attr">-</span> <span class="hljs-attr">endif</span> <span class="hljs-attr">-</span>%}
+  &gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ url }}"</span>&gt;</span>
     {{ title }}
     {%- if type.file %}
@@ -190,18 +190,18 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 {% if type and not type.file -%}
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small"</span>&gt;</span>
-    {%- if type.news -%}
-      Actualité du {{ type.news.date }}
-    {%- elif type.prestation -%}
-    Préstation
-    {%- elif type.communique -%}
-      Communiqué de presse du {{ type.communique.date }}
-    {%- endif -%}
+  {%- if type.news -%}
+  Actualité du {{ type.news.date }}
+  {%- elif type.prestation -%}
+  Préstation
+  {%- elif type.communique -%}
+  Communiqué de presse du {{ type.communique.date }}
+  {%- endif -%}
   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-{%- endif %}
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  {%- endif %}
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
   {{ excerpt | safe }}
-<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
     </code>
 </div>
 
