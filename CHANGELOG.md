@@ -22,6 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix HTML tags showing in `@error-500` and `error-404`
 - Upgrade a bunch of modules that you do note need to take care of
 
+### Removes
+- Remove [Pa11y](https://pa11y.org/) for accessibility test
+
 ## [1.6.0] - 2020-04-16
 
 ### Added
