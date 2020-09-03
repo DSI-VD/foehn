@@ -1,5 +1,0 @@
-- The update time is not mandatory.
-- Sharing buttons are not required.
-- The footer with its 3 bands of colors is mandatory.
-- The logo is mandatory.
-- The links to the center can be personalized according to the needs of the business application.

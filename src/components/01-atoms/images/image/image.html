@@ -1,9 +1,0 @@
-<img
-    {% if class %}class="{{ class }}{% if styleModifier %} {{ styleModifier }}{% endif %}"
-    {% elif styleModifier %} class="{{ styleModifier }}" {% endif %}
-    src="{{ src }}"
-    {%if srcset %}srcset="
-      {%- for item in srcset -%}
-      {{ item.file }} {{ item.width }}{% if not loop.last %}, {% endif %}
-      {%- endfor -%}
-    "{% endif %} alt="{{ alt }}">
