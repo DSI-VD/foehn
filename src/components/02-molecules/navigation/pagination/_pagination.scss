@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+/**
+ * 1. unstyle list
+ */
+
+.vd-pagination {
+  margin-bottom: 3em;
+}
+
+.vd-pagination__list {
+  padding-left: 0; /* [1] */
+  list-style: none; /* [1] */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vd-pagination__item {
+  margin-top: 1em;
+  flex: 0 1 auto;
+  padding: $spacer/4;
+
+  &--next {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  & + &--next {
+    margin-left: inherit;
+  }
+
+  &.is-active {
+    color: $pagination-active-color;
+    pointer-events: none;
+    background-color: $pagination-active-bg;
+  }
+
+  &.is-disabled {
+    color: $pagination-disabled-color;
+  }
+}
+
+.vd-pagination__link {
+  display: block;
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.vd-pagination__title {
+  text-decoration: none;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.3em;
+  }
+}
+
+.vd-pagination__label {
+  display: block;
+  font-size: 0.8em;
+}

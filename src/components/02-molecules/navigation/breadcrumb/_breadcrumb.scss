@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+/**
+ * Breadcrumb
+ *
+ * 1. Hacks that allow the pattern background set with `vd-bg-pattern-gray` to
+ *    aligne nicely between the breadcrum and the title
+ * 2. Set space around the arrows
+ * 3. Set position of the arrows
+ */
+
+.breadcrumb-item {
+  @include media-breakpoint-down(sm){
+    min-height: 1.5rem; /* [1] */
+    font-size: $small-font-size;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  position: absolute; /* [3] */
+  left: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  margin-left: .25rem; /* [2] */
+  position: relative; /* [3] */
+  padding-left: 0.75rem; /* [2] */
+}

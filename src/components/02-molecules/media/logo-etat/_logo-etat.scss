@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+/**
+ * Logo of the website
+ *
+ * 1. Offset the blason on the left
+ * 2. Fix SVG in <img> tags not scaling in IE9, IE10, IE11
+ *    https://gist.github.com/larrybotha/7881691
+ * 3. Align little blason at the end (bottom)
+ * 4. Align image at the start (top)
+ * 5. Fix SVG not showing in IE
+ */
+.vd-logo {
+  margin-bottom: $spacer;
+  display: inline-block;
+
+  &--alt {
+    display: flex;
+
+    .vd-logo__image {
+      align-self: flex-start; /* [4] */
+    }
+  }
+
+  &__blason {
+    position: absolute;
+    width: 1.8em;
+    margin-left: -3 * $spacer; /* [1] */
+
+    img {
+      width: 100%; /* [2] */
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 2 * $spacer;
+      align-self: flex-end; /* [3] */
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+
+  &__image {
+    width: 12em;
+    height: auto;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      max-width: 12em; /* [5] */
+      width: auto; /* [5] */
+    }
+  }
+
+}

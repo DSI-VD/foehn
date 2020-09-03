@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+/***
+ * Remove icon inside the input form.
+ *
+ * 1. Hide the SVG
+ * 2. Override bootstrap padding for the SVG. It makes values invisible on small
+ *    inputs
+ *    It must be hardcoded. Bootstrap do not have any varaible that can be set
+ *    to remove that padding.
+ */
+
+.form-control.is-valid,
+.was-validated .form-control:valid,
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background: none;
+  padding-right: 0.75rem;
+}

@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+/**
+ * List
+ */
+
+ul {
+  list-style-type: disc;
+}
+
+/**
+ * multi column list
+ */
+ul.vd-list-columns {
+  @include media-breakpoint-up(sm) {
+    column-count: 2;
+  }
+}

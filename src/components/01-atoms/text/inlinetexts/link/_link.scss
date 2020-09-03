@@ -1,0 +1,66 @@
+/**
+ * Links
+ *
+ * 1. Links with a heading class should be the default color
+ * 2. Focus style
+ * 3. Visited style
+ */
+a {
+  text-decoration-skip-ink: auto;
+
+  &.h1,
+  &.h2,
+  &.h3,
+  &.h4,
+  &.h5,
+  &.h6 {
+    color: currentColor; /* [1] */
+  }
+
+  &:focus {
+    @include vd-focus; /* [2] */
+  }
+
+  &:visited:not(.btn) {
+    color: $vd-visited; /* [3] */
+  }
+
+  &[rel^="category"]:before {
+    content: "#";
+  }
+
+  @media print {
+    color: $black !important;
+  }
+}
+
+/**
+ * Style the links that are inside a paragraph
+ *
+ * 1. Break long url
+ * 2. Write the url after the link
+ */
+@media print {
+  p a {
+    word-wrap: break-word; /* [1] */
+
+    &:before,
+    &:after {
+      font-size: 80%;
+      color: $gray-500;
+    }
+
+    &:before {
+      content: "["; /* [2] */
+    }
+
+    &:after {
+      content: "]("attr(href) ")"; /* [2] */
+    }
+  }
+}
+
+// fix Firefox focus bug
+.list-unstyled li a > .h3 {
+  line-height: normal;
+}

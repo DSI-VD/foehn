@@ -1,0 +1,101 @@
+@charset 'UTF-8';
+
+.vd-teaser-card {
+  position: relative;
+  // padding-bottom: 1em;
+  border: 0;
+  // 👺 Proof of concept of the nice angled layout and dog ear effect
+  // clip-path: polygon(0 0, 76% 0, 100% 7%, 100% 96%, 4% 100%);
+
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 24%;
+  //   height: 30%;
+  //   background: inherit;
+  //   clip-path: polygon(0 0, 100% 23%, 70% 100%);
+  // }
+
+  .card-title {
+    text-align: center;
+    font-family: $font-family-base;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+}
+
+a.vd-teaser-card {
+  text-decoration: none;
+}
+
+/**
+ * Placeholder for card content
+ *
+ * 1. Make the text visible
+ */
+%card-inside {
+  .card-title,
+  .card-text,
+  a {
+    color: $white; /* [1] */
+  }
+
+  a {
+    @include hover {
+      color: $gray-300; /* [1] */
+    }
+
+    &:visited {
+      color: $white;
+    }
+
+    &:visited:hover {
+      color: $gray-300; /* [1] */
+    }
+  }
+}
+
+/**
+ * Green
+ */
+.vd-card-green {
+  @extend %card-inside;
+
+  background-color: $vd-primary-darker;
+}
+
+/**
+ * Light gray
+ *
+ * 1. Make the text visible
+ */
+.vd-card-lightgray {
+  background-color: $vd-neutral-light;
+
+  .card-title,
+  .card-text {
+    color: $vd-neutral-darker; /* [1] */
+  }
+}
+
+/**
+ * Dark gray
+ */
+.vd-card-darkgray {
+  background-color: $vd-neutral-dark;
+
+  @extend %card-inside;
+}
+
+/**
+ * Black
+ */
+.vd-card-black {
+  background-color: $black;
+
+  @extend %card-inside;
+}
