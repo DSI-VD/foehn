@@ -90,18 +90,6 @@ function styles() {
 }
 
 /*
- * Style for documentation
- */
-function docStyles() {
-    return gulp.src([`${paths.dest}/assets/styles/main.css`])
-        .pipe(postcss(wrapProcessors))
-        .pipe(rename({
-            prefix: 'doc-'
-        }))
-        .pipe(gulp.dest(`${paths.dest}/assets/styles`));
-}
-
-/*
  * Style linting
  */
 function lintstyles() {
@@ -279,7 +267,6 @@ const compile = gulp.series(
         xmls,
         lintscripts
     ),
-    docStyles,
     lintjson
 );
 
