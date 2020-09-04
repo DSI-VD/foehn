@@ -33,7 +33,6 @@ const wrapProcessors = [
 
 const paths = {
     build: `${__dirname}/dist`,
-    dest: `${__dirname}/tmp`,
     src: `${__dirname}/src`
 };
 
@@ -48,20 +47,10 @@ const banner = ['/**',
 
 
 /*
- * Clean Dest
- *
- * When developing, we do not clean dist/ folder to avoid nightmare of merge conflict.
- * dist folder is clean and rebuild only before new version release.
- */
-function cleanDest() {
-    return del(paths.dest);
-}
-
-/*
  * Clean
  */
 function clean() {
-    return del([paths.dest, paths.build]);
+    return del([paths.build]);
 }
 
 /*
@@ -271,5 +260,5 @@ const compile = gulp.series(
 );
 
 gulp.task('build', gulp.series(clean, compile));
-gulp.task('dev', gulp.series(cleanDest, compile, watch));
+gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(deploy));
