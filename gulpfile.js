@@ -54,18 +54,6 @@ function clean() {
 }
 
 /*
- * Deploy
- */
-function deploy() {
-    // Push contents of build folder to `gh-pages` branch
-    return gulp.src(`${paths.build}/**/*`)
-        .pipe(ghPages({
-            force: true,
-            remoteUrl: 'https://github.com/DSI-VD/foehn.git'
-        }));
-}
-
-/*
  * Styles
  */
 function styles() {
