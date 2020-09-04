@@ -249,4 +249,3 @@ const compile = gulp.series(
 
 gulp.task('build', gulp.series(clean, compile));
 gulp.task('dev', gulp.series(compile, watch));
-gulp.task('publish', gulp.series(deploy));
