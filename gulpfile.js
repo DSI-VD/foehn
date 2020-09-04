@@ -32,7 +32,7 @@ const wrapProcessors = [
 ];
 
 const paths = {
-    build: `${__dirname}/dist`,
+    dest: `${__dirname}/dist`,
     src: `${__dirname}/src`
 };
 
@@ -50,7 +50,7 @@ const banner = ['/**',
  * Clean
  */
 function clean() {
-    return del([paths.build]);
+    return del([`${paths.build}`]);
 }
 
 /*
