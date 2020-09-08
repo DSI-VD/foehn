@@ -95,16 +95,6 @@ function scriptsVendors() {
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
-function scriptsVendorsRename() {
-    return gulp.src([
-        'node_modules/@fortawesome/fontawesome-free/js/all.js'
-    ])
-        .pipe(rename({
-            prefix: 'fontawesome-'
-        }))
-        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
-}
-
 /*
  * Scripts footer
  *
@@ -235,7 +225,6 @@ const compile = gulp.series(
         styles,
         lintstyles,
         scriptsVendors,
-        scriptsVendorsRename,
         scriptsFooter,
         svg,
         images,
