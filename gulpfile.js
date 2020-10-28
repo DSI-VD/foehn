@@ -2,9 +2,7 @@
 
 const gulp = require('gulp');
 const del = require('del');
-const ghPages = require('gulp-gh-pages');
 const postcss = require('gulp-postcss');
-const prefixwrap = require('postcss-prefixwrap');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
@@ -22,14 +20,7 @@ const composer = require('gulp-uglify/composer');
 
 const minify = composer(uglifyjs, console);
 
-const processors = [
-    require('autoprefixer'),
-    require('cssnano')
-];
-
-const wrapProcessors = [
-    prefixwrap('.foehn-example')
-];
+const processors = [require('autoprefixer'), require('cssnano')];
 
 const paths = {
     dest: `${__dirname}/dist`,
@@ -39,12 +30,13 @@ const paths = {
 const header = require('gulp-header');
 const pkg = require('./package.json');
 
-const banner = ['/**',
+const banner = [
+    '/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
     ' * @version v<%= pkg.version %>',
     ' */',
-    ''].join('\n');
-
+    ''
+].join('\n');
 
 /*
  * Clean
@@ -57,7 +49,11 @@ function clean() {
  * Styles
  */
 function styles() {
-    return gulp.src([`${paths.src}/assets/styles/main.scss`, `${paths.src}/assets/styles/styleguide.scss`])
+    return gulp
+        .src([
+            `${paths.src}/assets/styles/main.scss`,
+            `${paths.src}/assets/styles/styleguide.scss`
+        ])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
@@ -70,28 +66,34 @@ function styles() {
  * Style linting
  */
 function lintstyles() {
-    return gulp.src([
-        `${paths.src}/assets/styles/**/*.s+(a|c)ss`,
-        `!${paths.src}/assets/styles/bootstrap-variables.scss`
-    ])
-        .pipe(stylelint({
-            failAfterError: false,
-            reporters: [{
-                formatter: 'string',
-                console: true
-            }]
-        }));
+    return gulp
+        .src([
+            `${paths.src}/assets/styles/**/*.s+(a|c)ss`,
+            `!${paths.src}/assets/styles/bootstrap-variables.scss`
+        ])
+        .pipe(
+            stylelint({
+                failAfterError: false,
+                reporters: [
+                    {
+                        formatter: 'string',
+                        console: true
+                    }
+                ]
+            })
+        );
 }
 
 /*
  * Scripts Vendors
  */
 function scriptsVendors() {
-    return gulp.src([
-        'node_modules/jquery/dist/jquery.slim.min.*',
-        'node_modules/popper.js/dist/umd/popper.min.*',
-        'node_modules/bootstrap/dist/js/bootstrap.min.*'
-    ])
+    return gulp
+        .src([
+            'node_modules/jquery/dist/jquery.slim.min.*',
+            'node_modules/popper.js/dist/umd/popper.min.*',
+            'node_modules/bootstrap/dist/js/bootstrap.min.*'
+        ])
         .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
 }
 
@@ -101,9 +103,8 @@ function scriptsVendors() {
  * the scripts that are placed in the footer of the document
  */
 function scriptsFooter() {
-    return gulp.src([
-        `${paths.src}/assets/scripts/nav-primary.js`
-    ])
+    return gulp
+        .src([`${paths.src}/assets/scripts/nav-primary.js`])
         .pipe(sourcemaps.init())
         .pipe(rename('foehn-scripts--footer.js'))
         .pipe(minify())
@@ -118,7 +119,8 @@ function scriptsFooter() {
  * We do not minify during the build to speed up the process
  */
 function svg() {
-    return gulp.src(`${paths.src}/assets/svg/**/*.svg`)
+    return gulp
+        .src(`${paths.src}/assets/svg/**/*.svg`)
         .pipe(gulp.dest(`${paths.dest}/assets/svg`));
 }
 
@@ -129,7 +131,8 @@ function svg() {
  * We do not minify during the build to speed up the process
  */
 function images() {
-    return gulp.src(`${paths.src}/assets/img/**/*.*`)
+    return gulp
+        .src(`${paths.src}/assets/img/**/*.*`)
         .pipe(gulp.dest(`${paths.dest}/assets/img`));
 }
 
@@ -137,7 +140,8 @@ function images() {
  * Fonts
  */
 function fonts() {
-    return gulp.src(`${paths.src}/assets/fonts/**/*.*`)
+    return gulp
+        .src(`${paths.src}/assets/fonts/**/*.*`)
         .pipe(gulp.dest(`${paths.dest}/assets/fonts`));
 }
 
@@ -145,7 +149,8 @@ function fonts() {
  * Manifest
  */
 function manifests() {
-    return gulp.src(`${paths.src}/assets/manifest/**/*.*`)
+    return gulp
+        .src(`${paths.src}/assets/manifest/**/*.*`)
         .pipe(gulp.dest(`${paths.dest}/assets/manifest`));
 }
 
@@ -153,7 +158,8 @@ function manifests() {
  * XML
  */
 function xmls() {
-    return gulp.src(`${paths.src}/assets/xml/**/*.*`)
+    return gulp
+        .src(`${paths.src}/assets/xml/**/*.*`)
         .pipe(gulp.dest(`${paths.dest}/assets/xml`));
 }
 
@@ -161,11 +167,8 @@ function xmls() {
  * Lint Scripts
  */
 function lintscripts() {
-    return gulp.src([
-        `${paths.src}/**/*.js`,
-        './*.js',
-        '!node_modules/**'
-    ])
+    return gulp
+        .src([`${paths.src}/**/*.js`, './*.js', '!node_modules/**'])
         .pipe(xo())
         .pipe(xo.format());
 }
@@ -179,12 +182,13 @@ function lintscripts() {
  *    once source maps files are generated
  */
 function lintjson() {
-    return gulp.src([
-        '*.json',
-        `${paths.src}/**/*.json`,
-        `${paths.dest}/**/*.css.map`, // [1]
-        `${paths.dest}/**/*.js.map` // [2]
-    ])
+    return gulp
+        .src([
+            '*.json',
+            `${paths.src}/**/*.json`,
+            `${paths.dest}/**/*.css.map`, // [1]
+            `${paths.dest}/**/*.js.map` // [2]
+        ])
         .pipe(jsonlint())
         .pipe(jsonlint.reporter());
 }
@@ -200,20 +204,12 @@ function lintjson() {
  * Do not forget to put `src/docs/changelog.md` in `.gitignore`
  */
 function copyChangelog() {
-    return gulp.src('CHANGELOG.md')
+    return gulp
+        .src('CHANGELOG.md')
         .pipe(replace(/`@(\S+)`/g, '[`@$1`](../components/detail/$1)'))
         .pipe(replace('](src/', '](../'))
         .pipe(rename('changelog.md'))
         .pipe(gulp.dest(`${paths.src}/docs/`));
-}
-
-/*
- * Watch
- */
-function watch() {
-    serve();
-    gulp.watch(`${paths.src}/**/*.scss`, gulp.parallel(lintstyles, styles));
-    gulp.watch([`${paths.src}/**/*.js`, './*.js'], gulp.parallel(lintscripts, scriptsFooter));
 }
 
 /*
@@ -237,4 +233,4 @@ const compile = gulp.series(
 );
 
 gulp.task('build', gulp.series(clean, compile));
-gulp.task('dev', gulp.series(compile, watch));
+gulp.task('dev', gulp.series(compile));
