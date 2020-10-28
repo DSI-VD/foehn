@@ -9,6 +9,7 @@ const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const xo = require('gulp-xo');
 const jsonlint = require('gulp-jsonlint');
+sass.compiler = require('dart-sass');
 
 /* Gulp-uglify must use uglify-es module becaus we use ESlint
  * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
