@@ -43,7 +43,7 @@ const banner = [
  * Clean
  */
 function clean() {
-    return del([`${paths.build}`]);
+    return del([`${paths.dest}`]);
 }
 
 /*
