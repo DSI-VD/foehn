@@ -52,8 +52,7 @@ function clean() {
 function styles() {
     return gulp
         .src([
-            `${paths.src}/assets/styles/main.scss`,
-            `${paths.src}/assets/styles/styleguide.scss`
+            `${paths.src}/assets/styles/main.scss`
         ])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
