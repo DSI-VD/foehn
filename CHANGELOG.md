@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Upgrade [Bootstrap to 4.4.0](https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/)
   - Upgrade [Bootstrap to 4.4.1](https://blog.getbootstrap.com/2019/11/28/bootstrap-4-4-1/)
   - Upgrade [Bootstrap to 4.5.0](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
+  - Upgrade [Bootstrap to 4.5.1](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
+  - Upgrade [Bootstrap to 4.5.2](https://blog.getbootstrap.com/2020/08/06/bootstrap-4-5-2/)
+  - Upgrade [Bootstrap to 4.5.3](https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/)
 
 ### Fixes
 
