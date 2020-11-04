@@ -1,6 +1,6 @@
 {
   "name": "@dsivd/foehn",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": "DSI VD <info.dsi@vd.ch>",
   "homepage": "https://dsi-vd.github.io/foehn/",
   "repository": {
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.4.2",
     "autoprefixer": "^9.1.0",
-    "bootstrap": "4.5.0",
+    "bootstrap": "4.5.3",
     "cssnano": "^4.0.5",
     "dart-sass": "^1.25.0",
     "del": "^5.1.0",

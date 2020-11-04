@@ -3,7 +3,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Unreleased]#
+
+# [1.7.0] - 2020-11-04
 
 ### Changed
 
@@ -14,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Upgrade [Bootstrap to 4.4.0](https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/)
   - Upgrade [Bootstrap to 4.4.1](https://blog.getbootstrap.com/2019/11/28/bootstrap-4-4-1/)
   - Upgrade [Bootstrap to 4.5.0](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
+  - Upgrade [Bootstrap to 4.5.1](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
+  - Upgrade [Bootstrap to 4.5.2](https://blog.getbootstrap.com/2020/08/06/bootstrap-4-5-2/)
+  - Upgrade [Bootstrap to 4.5.3](https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/)
 
 ### Fixes
 
@@ -2183,7 +2188,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Headings helpers
 - Responsive typography
 
-[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.6.0...HEAD
+[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.7.0...HEAD
+[1.7.0]: https://github.com/DSI-VD/foehn/compare/v1.6.0...v.1.7.0
 [1.6.0]: https://github.com/DSI-VD/foehn/compare/v1.5.3...v.1.6.0
 [1.5.3]: https://github.com/DSI-VD/foehn/compare/v1.5.2...v1.5.3
 [1.5.2]: https://github.com/DSI-VD/foehn/compare/v1.5.1...v1.5.2
