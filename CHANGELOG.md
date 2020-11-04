@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+
 - Change HTML structure of `@address` and `@address--search` for better
   accessibility.The link to the service page in the title contains text for
   screen readers that explains where the link leads.
@@ -15,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Upgrade [Bootstrap to 4.5.0](https://blog.getbootstrap.com/2020/05/12/bootstrap-4-5-0/)
 
 ### Fixes
+
+- Make relative url to image smaller in `.vd-bg-pattern-gray` class
 - Fix closing `<h3>` tag in `@search-item`
 - Fix `@page-title` not showing the right heading
 - Fix HTML tags showing up in components
@@ -28,9 +31,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.6.0] - 2020-04-16
 
 ### Added
+
 - Added [documentation about inset-text](src(docs/components/inset-text)
 
 ### Changed
+
 - Change HTML structure and CSS classes of `@domain-item` which is used in
   `@domain-list`
 - Change HTML structure and CSS classes of `@domain-item--small` which is used
@@ -41,12 +46,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.3] - 2020-03-10
 
 ### Fixes
+
 - Fix padding for inputs with a validation state
 - Upgrade a bunch of modules that you do note need to take care of
 
 ## [1.5.2] - 2020-02-13
 
 ### Fixes
+
 - Add missing `aria-describedby` that reference the error message on the
   `<fieldset>` of `@dates--danger`
 - Add missing `aria-describedby` that reference the error message in
@@ -55,10 +62,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.1] - 2020-02-12
 
 ### Added
+
 - Add [documentation for buttons](src/docs/components/button)
 - Add `@button--danger` component
 
 ### Fixes
+
 - Add focus style on `@radio` and `@checkbox`
 - Fix missing "Error: " introduction text when there's a error message in
   `@dates--danger` and `@input--help-error`
@@ -66,6 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.0] - 2020-01-22
 
 ### Added
+
 - Add `@fieldset--checkbox-error` component to be used in [documentation about
   error message](src/docs/components/error-message)
 - Add `@input--help-error` component to be used in [documentation about error
@@ -73,6 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add [documentation about error message](src/docs/components/error-message)
 
 ### Changed
+
 - The input's border is now red when there's is an error. See
   `@input--help-error` and `@dates-danger`. The `.form-control-danger` class has
   been replaced by `.is-invalid`
@@ -80,6 +91,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed `@fieldset--error` component to `@fieldset--radio-error`
 
 ### Fixes
+
 - Upgrade a bunch of modules that you do note need to take care of
 - Fix components example not showing properly in the doc
 - Remove table's summary because it's not used
@@ -88,11 +100,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.4.0] - 2019-11-20
 
 ### Added
+
 - Add [documentation for error summary](src/docs/components/error-summary)
 - Add `@error-summary` component
 - Add [documentation about header](src/docs/components/header)
 
 ### Changed
+
 - Fix table not being read properly in some screen readers. The
   `.table-responsive` class has been moved to a `<div>` element around the
   `<table>` one
@@ -104,12 +118,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a `role` attribute in `@header-application` and `@header-application--fluid`
 
 ### Fixes
+
 - Fix current page in `@breadcrumb` wasn't generated dynamically via nunjuck
 - Upgrade a bunch of modules that you do note need to take care of
 
 ## [1.3.0] - 2019-07-04
 
 ### Added
+
 - Add [documentation how to write titles](src/docs/writing-for-vdch/titles)
 - Add [documentation about task list page pattern](src/docs/patterns/task-list-pages)
   - Add `@task-list` and `@task-list-page` components
@@ -123,13 +139,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add documentation about [breadcrumb component](src/docs/components/breadcrumbs)
 
 ### Changed
+
 - Error message in `@input--validation-danger` is now red like in `@fieldset--error`
 - Change some behaviour of the `@breadcrumb`
   - On small screen font size is smaller and the parent pages is visibles
-  - Current page on use `aria-current` attribute instead of the text *"Vous êtes
-    ici:"*
+  - Current page on use `aria-current` attribute instead of the text _"Vous êtes
+    ici:"_
 
 ### Fixes
+
 - Upgrade a bunch of modules that you do note need to take care of. It fix some
   security vulnerabilities
 - Make "Etape x sur Y" texte optional in `@espace-securise--form`
@@ -137,6 +155,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.2.0] - 2019-04-16
 
 ### Changed
+
 - Upgrade Bootstrap from v4.1.3 to v4.3.1
   - Upgrade [Bootstrap to
     v4.3.1](https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/).
@@ -153,6 +172,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.2] - 2019-04-10
 
 ### Changed
+
 - Remove `aria-hidden="true"` on the `<h1>` in `@page-title-banner` component
   - Make sure to update component that include `@page-title-banner`
     - @template-communiques-presse-list
@@ -163,12 +183,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.1] - 2019-04-10
 
 ### Fix
+
 - Upgrade a bunch of modules that you do note need to take care of
 
 ## [1.1.0] - 2019-04-09
 
 ### Changed
-- The HTML structure of the templates have changed to avoid having a double `h1` 
+
+- The HTML structure of the templates have changed to avoid having a double `h1`
   in the page.
   - Here is a list of the change on `@contend`, `@departements`,
     `@detail-contact`, `@detail-prestation`, `@domaines`, `@error-500`,
@@ -190,40 +212,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
       visible.
     - Add a `<div class="container mt-5 vd-content">` around the content
   - Change CSS class of the `<h1>` tag to `class="container mt-0 pt-3"` in
-      `@page-title` component
+    `@page-title` component
 
 ### Fix
-- Fix `@pagniation` not showing in  `@template-communiques-presse-list--default`
+
+- Fix `@pagniation` not showing in `@template-communiques-presse-list--default`
   and `@template-communiques-presse-list--results`
 - Fix deprecated `text-decoration-skip: ink;` CSS property
 
 ## [1.0.6] - 2019-02-07
 
 ### Fix
+
 - typo
 
 ## [1.0.5] - 2019-02-07
 
 ### Changed
+
 - Inputs are required by default to be GDPR compliant
 
 ### Added
+
 - Add `@input-optional` component
 - Add documentation about LPrD law
 
 ### Fix
+
 - Fix link color to be compliant with WCAG AA
 
 ### Removed
+
 - Removed `@input-reuired`. Input are required by default.
 
 ## [1.0.4] - 2018-12-11
 
 ### Added
+
 - Add `@tree-view` component
 - Add a style modifier in `@breadcrumb`
 
 ### Fix
+
 - Foehn is available on npmjs.com
 - The npm package has a README
 - `src` folder is included in the npm package
@@ -231,18 +261,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade some modules
 
 ### Removed
+
 - Removed `@dropdown` component
 - Removed `@numbered-title` component
 
 ## [1.0.3] - 2018-11-28
 
 ### Fix
+
 - Fix `src/assets/svg/ETATVAUD-alt.svg` viewbox to be inlined in IE11
 - Fix button padding in `@search-form--default`
 
 ## [1.0.2] - 2018-11-20
 
 ### Fix
+
 - Fix logo positioning when there's no searh in the header
 - Fix logo hover style
 - Add automated a11y tests
@@ -253,6 +286,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.1] - 2018-11-01
 
 ### Fix
+
 - Move `@fortawesome/fontawesome-free`, `@frctl/fractal`, `@frctl/mandelbrot`,
   `faker`, `jquery` and `popper.js` dependencies in devDendencies since files
   are moved into Foehn's assets.
@@ -261,33 +295,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2018-10-31
 
 ### Fix
+
 - The name of the package is now `@dsivd/foehn`
 
 ## [0.54.0] - 2018-10-11
 
 ### Removed
+
 - Remove `foehn-scripts--header.js` in the `<head>` of the page. It contained
   only Font Face Observer which has been removed in favor of CSS font-display.
 
 ### Fix
+
 - Font loading strategy has been changed. CSS `font-display` is now used. It
   means some styles have been rewritten.
 
 ## [0.53.0] - 2018-10-03
 
 ### Changed
+
 - `@espace-securise` and `@espace-securise--form` use
   `@header-application--default` and `@login` at the top of the page instead of
-  `@header-securise`. It means this is the same for  `@connexion`, 
-  `@demande-detail`, `@documents`, `@formulaire-prestation-confirmation`, 
+  `@header-securise`. It means this is the same for `@connexion`,
+  `@demande-detail`, `@documents`, `@formulaire-prestation-confirmation`,
   `@historique`, `@messaga-detail`, `@prestations`, `@tableau-de-bord`
 - The navigation in `@espace-securise` is after the page title
 - `@logo-etat--alternate` use the new class `.vd-logo-alt`
 
 ### Added
+
 - Added a new logo with less height `@logo-alternate-2`
 
 ### Fix
+
 - Fix print with Firefox
 - Upgrade a bunch of modules that you do note need to take care of
 - Upgrade fontawesome to v5.3.1
@@ -299,6 +339,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   added
 
 ### Remove
+
 - Remove `@header-securise`
 - Remove pagination with page numbers `@pagination--pages`,
   `@pagination-pages-first` and `@pagination--pages-last`
@@ -307,6 +348,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.52.2] - 2018-08-14
 
 ### Added
+
 - add accessibility doc
 - add colors doc
 - add images doc
@@ -315,7 +357,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add textarea doc
 
 ### Fix
-- Change text "requis" for a more understandable "obligatoire" in 
+
+- Change text "requis" for a more understandable "obligatoire" in
   `@input-required`
 - Upgrade a bunch of modules that you do note need to take care of
 - Upgrade to Fontawesome 5.2. Fore more informaiotn, take a look at the
@@ -332,11 +375,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.52.1] - 2018-07-03
 
 ## Fix
+
 - Fix width of input with 2 characters in `@dates`
 
 ## [0.52.0] - 2018-06-20
 
 ### Changed
+
 - Replace `text-right` class with `text-md-right` in `@nav` component
 - Change HTML class of `@login` in `@header` component
 - Remove `media-lists` class and `<div>` in `@media-list`
@@ -344,70 +389,82 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.51.2] - 2018-06-07
 
 ### Fix
+
 - Fix favicon SVG file for Safari
 
 ## [0.51.1] - 2018-06-07
 
 ### Fix
+
 - Update favicons files
 
 ## [0.51.0] - 2018-06-07
 
 ### Changed
+
 - There's no more inline scripts to include in the `<head>`. Webfont loading
   scripts is in `foehn-scripts--header.js`.
 
 ### Fix
+
 - Minify JavaScript files
 
 ## [0.50.1] - 2018-05-30
 
 ### Fix - 2018-05-30
+
 - Fix light weight of Roboto Slab font was missing
 - Upgrade all node modules
 
 ## [0.50.0] - 2018-05-30
 
 ### Changed
+
 - Update fonts loading strategy to speed up font loading and internalize fonts.
   - Fonts are internilized in Foehn. We do not use Google Fonts service anymore.
-  - Use [Font Face Observer](https://github.com/bramstein/fontfaceobserver) 
+  - Use [Font Face Observer](https://github.com/bramstein/fontfaceobserver)
     instead of [webfontloader](https://github.com/typekit/webfontloader) to load
     fonts. Take a look at `@webfont-loading`.
-  - Font loading script is placed in the `<head>` of the document. Take a look 
+  - Font loading script is placed in the `<head>` of the document. Take a look
     at `@preview`.
   - Replace all `.wf-*` CSS class with a unique `.fonts-loaded` class for [FOUT](https://www.zachleat.com/web/webfont-glossary/#fout)
 - Upgrade to [Bootstrap 4.1.1](http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1-1/)
 - Upgrade to [Bootstrap 4.1](http://blog.getbootstrap.com/2018/04/09/bootstrap-4-1/)
-- The URL of Fontawesome JavaScript has changed in `@sript-header`. Fontawesome 
+- The URL of Fontawesome JavaScript has changed in `@sript-header`. Fontawesome
   is internalized inside foehn.
 
 ### Fix
+
 - Fontawesome updated to v5.1.0-4
 
 ## [0.49.0] - 2018-04-17
 
 ### Added
+
 - Add `@favicon` component, documentation and ressources
 
 ### Fix
+
 - Add a JSON linter to the build process
 
 ## [0.48.1] - 2018-03-20
 
 ### Fix
+
 - Remove banner in CSS source maps
 - Fix doc about wich files to put in the `<head>`.
 
 ## [0.48.0] - 2018-03-15
 
 ### Changed
+
 - Remove vendors concatenation in `@scripts-footer.html`
 - Remove image's caption in `@agenda` on `@accueil`
 
 ## [0.47.0] - 2018-03-14
 
 ### Changed
+
 - HTML markup of `@checkbox` has changed. The `<input>` is now outside of the
   `<label>`
 - JS vendors are concatenated inside one unique `vendors.js` file. See
@@ -417,25 +474,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `@scripts-footer`
 
 ### Added
+
 - Add a `@fieldset--yes-or-no` component
 
 ## [0.46.0] - 2018-03-1
 
 ### Changed
+
 - Add categories in `@publish-info`
 - Rename `@publish-time` in `@publish-info`
 
 ### Fix
+
 - Fix typo in `@input` notes
 
 ## [0.45.2] - 2018-03-01
 
 ### Fix
+
 - Fix link printing url
 
 ## [0.45.1] - 2018-02-28
 
 ### Fix
+
 - Refactor CSS
 - Fix wording in `@detail-prestation`
 - Fix `.row` are not correctly printed in Firefox
@@ -443,10 +505,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.45.0] - 2018-02-20
 
 ### Changed
+
 - Fix accessibility of `@autority-address--search`
 - Remove `@figure`'s caption in `@agenda`
 
 ### Fix
+
 - Refactor CSS
 - Fix wording of result heading in `@example-list`
 - Fix style of button linked to a phone number who are black on desktop
@@ -456,6 +520,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.44.0] - 2018-02-09
 
 ### Changed
+
 - Remove `@search-form--regular` in `@theme--default`
 - Change label of the search form in:
   - `@faq`
@@ -466,6 +531,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `@theme--list`
 
 ### Fix
+
 - Fix hidden descender in `@input` and `@select`
 - Fix color of `@list-links` when insiade a `@highlight`
 - Upgrade to Bootstrap 4
@@ -473,45 +539,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.43.0] - 2018-02-07
 
 ### Changed
+
 - Set the width of `@figure` in `@agenda` to be 50% on desktop bay adding
   `.vd-w-md-50` class
 
 ### Fix
+
 - Upgrade to Bootstrap 4 Beta 3
 
 ## [0.42.1] - 2018-02-06
 
 ### Fix
+
 - Fix `@search-form--default` icon messing around at certain viewport
 
 ## [0.42.0] - 2018-02-06
 
 ### Changed
+
 - Change title and links of `@index-menu` in `@detail-prestation`
 - Changed `%card-inside` styles to remove hover from text and have a white link visited color
 - Use `.nav.nav-pills` instead of `.nav` for the filter of the `@search` page
 - On mobile, `@login` comes before `@logo-etat` in `@header-securisee`.
 - Remove button "Tous les thèmes" and section "Les plus visités" that were only
   visible on mobile in `@accueil`
--  Change the structure of '@header', `@header--homepage` and `@header-securise`
-  - Use the new `@login` component
-  - Change spacing of `@search-form--default`
-  - Remove `@nav-mobile`
+- Change the structure of '@header', `@header--homepage` and `@header-securise`
+- Use the new `@login` component
+- Change spacing of `@search-form--default`
+- Remove `@nav-mobile`
 - Use flexbox to display `@nav` in `@header` and `@header--homepage`
 - Change `@nav-primary` styles
-  - Add a javascript on `@nav-primary` to close the navigation when loaded on a 
+  - Add a javascript on `@nav-primary` to close the navigation when loaded on a
     mobile device. Add `js-closeMenuOnMobile__*` classes to enable this feature.
     Take a loot at `@nav-primary--open` for documentation.
   - Rename menu button in `@nav-primary`
 - Add `foehn-scripts--footer.js` in the footer of all pages.
 - Add `.d-print-none` to `@nav-primary`, `@nav`.
 - Add `.d-print-none` to search form from `@theme--default`.
-- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to 
+- Add `.vd-print-full-width` to `@header` and `@header--homepage` in order to
   display `h1`replacing logo at 100% width (print)
-- Add `.vd-print-none` to search form row in `@template-communiques-presse-list` 
-- Add `.vd-print-full-width` to CP list results of 
+- Add `.vd-print-none` to search form row in `@template-communiques-presse-list`
+- Add `.vd-print-full-width` to CP list results of
   `@template-communiques-presse-list`
-- Add `.vd-print-none` to bottom Autorities section of  `@accueil` 
+- Add `.vd-print-none` to bottom Autorities section of `@accueil`
 - Add exception for print in `_breadcrumb.scss` to show all breadcrumb
 - Add a type of `communique` in `@search-item`
 - Fix `aria-label` in `@pagination`
@@ -522,13 +592,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove useless heading in `@search--no-search`
 
 ### Added
+
 - Add `@media-text-list` component in organisms
-- Add `@text-and-image--left`, `@text-and-image--top` and 
+- Add `@text-and-image--left`, `@text-and-image--top` and
   `@text-and-image--right` to show how to display images aside text.
-- Add  a `@figure` in `@agenda`
+- Add a `@figure` in `@agenda`
 - Add `@login` component
 
 ### Fix
+
 - Fix caption's width is the same as the images in a `.figure`
 - Remove CSS fix for Firefox ESR 45 in `.figure`
 - Fix poistion of the blason in `@logo-etat`
@@ -536,11 +608,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactor `@logo-etat` and `@nav-primary` spacings
 
 ### Removed
+
 - Remove `@nav-mobile`
 
 ## [0.41.0] - 2017-12-22
 
 ### Changed
+
 - Change how `@search` page is displayed
 - Upgrade Fontawesome to v5.
   - Add a documentation how to upgrade
@@ -572,13 +646,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `@search-form--regular-option`
 
 ### Added
+
 - Add `@search--no-results` and `@search--no-search` components
 - Add documentation about search pages.
 
 ## [0.40.0] - 2017-12-12
 
 ### Changed
-- Add `@search-form--regular` to `@news-list--default` and `@theme--default` 
+
+- Add `@search-form--regular` to `@news-list--default` and `@theme--default`
 - Reorder HTML element in `@teaser-small--alt.html` for better a11y
 - Change HTML structure in `@template-communiques-presse-list`
 - Add class `.vd-text-md-small` to aside of `@template-communiques-presse-detail` and `@template-communiques-presse-list--default`
@@ -588,7 +664,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change top nav with `.list-inline` for margin-right
 - Change layout of `@theme` for `@template--2-col`.
 - Change news title wording in `@news-list
-- Add class `.mt-0` to `@template--news-detail` 
+- Add class `.mt-0` to `@template--news-detail`
 - Add link to homepage to `@footer`
 - Hide footer titles, but keep them for accessibility (sr-only)
 - Merge first two footer columns into one displayed in columns by class `.vd-list-columns`
@@ -612,20 +688,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix column width in `@example-list`
 
 ### Added
+
 - Add documentation about link accessibility
 - Add new heading style `.vd-heading-light-alt`.
 
 ### Fix
+
 - Fix focus style overlapping headings chars
 - Use background image in class `.vd-bg-pattern-gray`
 
 ### Removed
+
 - Remove `@search-banner--half-width`
 
 ## [0.39.0] - 2017-11-03
 
 ### Changed
-- Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`, 
+
+- Fix a11y of "Voir plus" and "Voir moins" buttons in `@theme--default`,
   `@theme--list` and `@theme--geo`
 - Transfer padding from `li.btn` to contained `a` in `@button-tiles` for all the button surface to be clickable
 - Better `@button-tiles` css factoring
@@ -634,6 +714,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.38.0] - 2017-10-24
 
 ### Changed
+
 - Upgrade from Bootstrap Beta to Bootstrap Beta 2
 - Add `.d-flex flex-column` to `@template-communiques-presse-detail--default` header
 - Add div `.order-1` around all elements of `@template-communiques-presse-detail--default` header except title
@@ -642,9 +723,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.37.0] - 2017-10-20
 
 ### Changed
+
 - Better meta information in `@teaser` if there no authors
 
 ### Fix
+
 - Add `line-height:normal` to `.list-unstyled li a>.h3` to fix Firefox focus bug AND `.d-inline-block` to all links of `@departements`
 - Add style to links with rel="category" to add "#"
 - Fix `@teaser-card--default` background color
@@ -655,14 +738,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.36.0] - 2017-10-19
 
 ### Changed
+
 - Fix `@teaser-card` margins. Rename `.card-block` class in `.card-body`.
 
 ### Added
+
 - Add version number in CSS file
 - Add `@filter-list--default` component
 - Add `@filter-list--table` component
 
 ### Fix
+
 - Fix margin-bottom of the last element in `@highlight`
 - Fix `.vd-bg-pattern-gray` for IE and Firefox
 - Fix `@search-banner--default` button height
@@ -670,6 +756,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.35.0] - 2017-09-27
 
 ### Changed
+
 - Change class of `@domaines` list for `vd-menu-list-links` instead of `vd-list-links`
 - Add `.d-inline-block` class to `@list-boxed` to align second line
 - Add margin bottom to `@list-boxed` and `@list-links` list elements
@@ -677,6 +764,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactor `@autority-address`
 
 ### Added
+
 - Add variant `@autority-address--search`
 - Add variant `@service--search`
 - Add component `@detail-contact`
@@ -684,11 +772,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.34.0] - 2017-09-26
 
 ### Changed
+
 - Add 'toutes les actualités' in render of `@button-default` in `@teaser-list--homepage`
 - Add `.text-right` to div containing `@logo--white` in `@footer` to align it to the right
 - Add class `.w-100` to div containing `@logo--white` in `@footer`
 - Changed `@button-tiles` width to max 33% desktop, 100% mobile
-- Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder` 
+- Remove style italic from class `.form-control` in `_search-form.scss`, add it for `::placeholder`
 - Add `@download-list` to `@departements`
 - Changed `@download-list` for optional `h3`
 - Use CSS to change icon in `@nav-primary` (closed / open)
@@ -708,23 +797,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `aria-invalid=true` if `@textarea--danger`'s is invalid
 
 ### Added
+
 - Add `.vd-p` class to make text elements look like body text
 - Add `@logo` and `@logo--white` components
 - Add `@datalist--communes`
 
 ### Fix
+
 - Fix `@footer` use `@logo-white`
 
 ## [0.33.0] - 2017-09-15
 
 ### Changed
+
 - `@pagination` set to use new `@button--link` variant button
 - `@pagination` use Bootstrap helper class instead of custom class
 - Remove one `nav` from `detail-prestation` and add class to remaining `@index-menu`
 - Add sr-only title for services `<h2 class="sr-only">Services</h2>`
 - Changed `listIcon` structure in JSON files, adding one level with button (optional) and items inside.
 - Added accessible keys to JSON nodes in autority-address.config.json (accessibleName, accessibleLegend)
-- Add `aria-invalid="true"` Aria attribut and change help text on 
+- Add `aria-invalid="true"` Aria attribut and change help text on
   `@input--validation-danger` to warn screen readers that the value is invalid
 - Fix `@logo-etat--default` accessibility by removing `aria-labelledby` and
   adding `title` attribut
@@ -752,10 +844,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade [webfont.js](https://github.com/typekit/webfontloader) in `@webfont-loading`
 
 ### Added
+
 - Add `@button--link` variant to `@button`
 - Add `@figure-picture` component
 
 ### Fix
+
 - Fix `@nav` config for active page
 - Fix content in `@content`
 - Fix unordered and ordered lists spacings
@@ -764,6 +858,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix styles for [FOUT](https://css-tricks.com/fout-foit-foft/)
 
 ## Remove
+
 - Remove `@secure-tabs` component
 - Remove `@fixed-bottom-container` component
 - Remove `@tabs` component
@@ -772,21 +867,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.32.0] - 2017-08-30
 
 ### Changed
+
 - Fix update spacing utilities `{property}{sides}-1` becomes `{property}{sides}-3`
 
 ## [0.31.0] - 2017-08-30
 
 ### Changed
+
 - Fix `@nav` is not hidden on mobile
 - Fix `@nav-mobile` do not open
 - Fix the wrong scripts were included before the end of the `<body>` tag
 
 ### Fix
+
 - Fix `@nav-mobile` positionning
 
 ## [0.30.0] - 2017-08-29
 
 ### Changed
+
 - Remove hamburger icon in `@nav-mobile`
 - Remove `vd-btn-chevron-r` and `vd-btn-chevron-l` from all buttons
 - Update to Bootstrap 4 Beta
@@ -798,15 +897,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Update `@primary-nav`
 
 ### Fix
+
 - Fix `@nav` config
 
 ### Remove
+
 - Remove unused varaints of headings
 - Remove `@page-title-banner-prestation`
 
 ## [0.29.0] - 2017-08-22
 
 ### Changed
+
 - Add mt-0 to legends of date search fields JSON from `template-communiques-press-list.json`
 - Add "first" to `nav-side.config.json` for first element
 - Moddified `@nav-side`
@@ -824,8 +926,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tranform authority links into a list (`ul` -> `li`)
 - Change the structure of `@nav-mobile`
 
-
 ### Added
+
 - "reset search" button to reset search filters after a first choice in `@template-communiques-presse-list`
 - Add `.p` syle to make headings look like paragraph
 - Add `@results-list` organism
@@ -834,6 +936,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.28.1] - 2017-07-21
 
 ### Fix
+
 - Fix logo is visible in `@footer`
 - Fix link color in `@highlight`
 - Fix `.vd-bg-pattern-gray` dotted pattern use CSS instead of background SVG. It's now IE8 compatible.
@@ -842,6 +945,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.28.0] - 2017-07-14
 
 ### Changed
+
 - add `.pt-1` class to `domain-item` for Firefox bug in focus
 - `@theme` use `@template--default`
 - Add `.vd-content` class in `@template--default`
@@ -866,11 +970,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `.vd-content-column` style in `@template-communiques-presse-detail--alternate`
 
 ### Added
+
 - Add error 404 page `@error--default`
 - Add error 500 page `@error--500`
 - Add page `@news-list--categories`
 
 ### Fix
+
 - Fix `@theme--default` now extends a `@template--2-col` template
 - Fix light headers `.vd-heading-light` not affected by `.vd-text-md-small`
 - Fix `@list-boxed` list items margin
@@ -880,15 +986,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.27.0] - 2017-07-05
 
 ### Changed
+
 - Remove `vd-green-dark-2` color
 - `vd-green` is the brand color
 - Change HTML structure of `@logo-etat--default` and `@logo-etat--alternate`
 - Use [default twitter timeline](https://dev.twitter.com/web/embedded-timelines/user) in `@twitter-feed`
 
 ### Added
+
 - Add color palette documentation
 
 ### Fix
+
 - Fix missing `aria-hidden` in `@list-boxed` for font icon accessibility
 - Fix missing `role` attribute in `@search-form`
 - Fix `@social-icons` title in `@footer`
@@ -899,22 +1008,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add documentation about Google fonts styles
 
 ### Removed
+
 - Remove `@twitter-feed`
 
 ## [0.26.1] - 2017-06-08
 
 ### Changed
+
 - Rename `@prestation` in `@detail-prestation`
 
 ### Added
+
 - Add `@header--application` component
 
 ### Fix
+
 - Fix generation problem with `@detail-prestation`
 
 ## [0.26.0] - 2017-06-07
 
 ### Changed
+
 - Refactor lists in `@departements`
 - Use `text-decoration-skip` for better underlined links
 - Remove `<small>` tags in `@domain-item`
@@ -925,11 +1039,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Google CDN is used to get fonts
 
 ### Removed
+
 - Removed `@list-no-bullet`
 - Removed `.vd-list-no-bullet` style
 - Remove Graphik and Produkt fonts
 
 ### Fix
+
 - Fix margin of list of icons in `@teaser-list--homepage`
 - Fix margin of the first content element in `@accueil`
 - Fix text decoration of `:hover` link in `@nav-side`
@@ -939,6 +1055,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.25.0] - 2017-05-31
 
 ### Changed
+
 - Add margin before `@h1`, `@h2`, `@h3`, `@h4`, `@h5`, `@h6`, for better legibility
 - Replace `.vd-section-title` by `.vd-heading-light`
 - Add `.h4` class to `.vd-heading-light` headings in `@social-icons`
@@ -949,17 +1066,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `.h4` class to `.vd-heading-light` headings in `@twitter-feed`
 - Add `.h4` class to `.vd-heading-light` headings in `@service`
 - Add `.h4` class to `.vd-heading-light` headings in `@accueil`
-- Remove custom margin bottom  in `@faq-item`
-- Remove custom margin bottom  in `@avs13`
-- Remove custom margin bottom  in `@dates`
-- Remove custom margin bottom  in `@dates`
+- Remove custom margin bottom in `@faq-item`
+- Remove custom margin bottom in `@avs13`
+- Remove custom margin bottom in `@dates`
+- Remove custom margin bottom in `@dates`
 - Set margin top to null in `@domain-item`
 - Remove custom margin bottom in `@teaser`
 - Change `.mb-0` class by `.mt-0` in `@teaser-card`
 - Remove useless `<div>` in `@highlight`
-- Remove custom margin bottom  in `@agenda`
-- Remove custom margin bottom  in `@autority-address`
-- Remove custom margin bottom  in `@autority-info`
+- Remove custom margin bottom in `@agenda`
+- Remove custom margin bottom in `@autority-address`
+- Remove custom margin bottom in `@autority-info`
 - Remove margin top of `@search-form--regular` in `@faq`
 - Remove custom margin bottom in `@page-title-banner--form-presta`
 - Remove custom margin top in `@page-title-banner--prestation`
@@ -982,6 +1099,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `.vd-text-md-small` style in `@accueil`
 
 ### Added
+
 - Add `@h1`
 - Add `@h2`
 - Add `@h3`
@@ -992,6 +1110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `.vd-text-md-small` to make headings smaller when viewport is medium size
 
 ### Fix
+
 - Fix default grid gutter is `30px` width
 - Fix `@teaser-list--homepage` in `@accueil`
 - Fix `@separator--default` color
@@ -999,11 +1118,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix `@separator--gray-bars-wide` width in IE
 
 ### Removed
+
 - Removed `.vd-section-title` style
 
 ## [0.24.0] - 2017-05-30
 
 ### Changed
+
 - Remove `@separator--gray-pattern` in `@example-list`
 - Remove the `.vd-separator-wide` class and make all separators full width
 - `historique.config.json` updated with new data
@@ -1016,52 +1137,62 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove `.text-muted` class in `@footer`
 
 ### Added
+
 - Add `@demande-detail` files (.config and .html)
 - Add `@message-detail` files (.config and .html)
 - Add `@demande-historique.html` template
 - Add `@prestation.html` template
 
 ### Fix
+
 - Fix `@breadcrumb` font size
 - Fix `@footer` margin
 - Fix `@link` color
 - Fix link color and decoration in `@nav-side`
 
 ### Removed
+
 - Remove `@separator--default--black`
 - Remove `@separator--gray-pattern`
 
 ## [0.23.1] - 2017-05-17
 
 ### Changed
+
 - `@access-nav` molecule use `.sr-only` and `.sr-only-focusable` to hide navigation and make it focusable
 - `@access-nav` molecule use `.fixed-top`
 
 ## [0.23.0] - 2017-05-17
 
 ### Changed
+
 - The `@alert` molecule has been renamed `@alert--default`
 
 ### Added
+
 - Add `@alert--fixed` molecule
 
 ## [0.22.0] - 2017-05-09
 
 ### Changed
+
 - Change margin in `@footer`
 - Add `@update-time` in `@service`
 - Remove `@separator--gray-bars-wide` in `@teaser-list--homepage`
 - `@input--error` use `.vd-form-group-danger` style
 
 ### Added
+
 - Add `.vd-form-group-danger` style for form elements
 - Add `@fieldset--error`
 - Add `@textare--error`
 
 ### Fix
+
 - Fix missing name in `@fieldset--checkbox`
 
 ### Removed
+
 - Remove `@checkbox--warning`
 - Remove `@radio--warning`
 - Remove `@input--validation-warning`
@@ -1069,17 +1200,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.21.3] - 2017-05-03
 
 ### Fix
+
 - Change color of `:focus` style
 - Only upload the `dist/assets/` folder on the registry
 
 ## [0.21.2] - 2017-05-03
 
 ### Fix
+
 - Fix npm script
 
-## [0.21.1]  
+## [0.21.1]
 
 ### Changed
+
 - `@accueil` and `@teaser-list--homepage` use `@teaser--small-media` for the first image
 - Images can have a link in `@figure`
 - Change how information is displayed in `@tableau-de-bord`
@@ -1090,12 +1224,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rename `@acceuil-securise` in `@tableau-de-bord` and change content
 
 ### Added
+
 - Add `@teaser--small-media` component
 - Add `styleModifier` in `@figure`
 - Add `@news-list--projets` template
 - Add `@search-form--regular-option`component
 
 ### Fix
+
 - Fix `@figure` wasn't rendering in `@news-detail`
 - Fix missing `@lead` in `@news-detail`
 - Fix `@social-icons` has no title in `@news-detail`
@@ -1103,6 +1239,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.21.0] - 2017-04-21
 
 ### Changed
+
 - `@radio` only contain one radio button
 - `@checkbox` only contain one checkbox
 - Config navigation in `@prestationsa` page
@@ -1122,6 +1259,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use `@button--submit` in `@pagination`
 
 ### Add
+
 - Add `@fieldset--checkbox` molecule
 - Add `@nav-horizontal` molecule
 - Add `@modal` molecule
@@ -1141,20 +1279,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `@input--validation-success` molecule
 
 ## Fix
+
 - Fix missing `name` attribute config in `@radio`
 
 ### Removed
+
 - Removed feedback molecule
 
 ## [0.20.1] - 2017-04-06
 
 ### Fix
+
 - Remove unused bower.json
 - Fix line breaks in inline SVG
 
 ## [0.20.0] - 2017-04-06
 
 ### Changed
+
 - Agenda use default teaser
 - Service page use only teaser-list--default
 - Use teaser--default component in news-list page
@@ -1175,14 +1317,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - teaser-small--alt use headings font
 
 ### Added
+
 - Add news-latest--media organim
 
 ### Fix
+
 - Fix loading order of fonts
 - List-links use the default font weight
 - Fix input width based on number of chars. Width is now based on the width of a `M` instead of a `9`.
 
 ### Removed
+
 - Remove figure--caption component
 - Remove teaser--left component
 - Remove teaser--media component
@@ -1194,6 +1339,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.19.0] - 2017-03-21
 
 ### Changed
+
 - Add url on autority-address
 - Refactor page organisation
 - News-latest is in a `<section>`
@@ -1210,6 +1356,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Clean up CSS
 
 ### Added
+
 - Add color component
 - Add datalist component
 - Add select--multiple component
@@ -1224,17 +1371,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add style '.vd-list-no-bullet'
 
 ### Fixed
+
 - Fix missing pagination on news-list
 - Fix horizontal alignment of pagination
 - Fix missing breadcrumbs
 
 ### Removed
+
 - Remove `.flex-row` class (was overriding a B4 class and was never used)
 - Remove legacy Toolbox styleguide assets
 
 ## [0.18.0] - 2017-03-07
 
 ### Changed
+
 - Change alert color
 - Template engine is Nunjucks
 - Help-text molecule is a variation of input molecule
@@ -1857,14 +2007,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add style for background colors
 - Add `.list-bare` class to remove standard list styles
 - Add `.list-block` style for blocky list
-- HTML is linted via *htmllint*
+- HTML is linted via _htmllint_
 
 ### Changed
 
 - `<code>` use a background color from the palette
 - `toolkit.*` files are renamed in `foehn.*`
 - The CSS is beautified at the end of the build
-- Update *normalize.css*
+- Update _normalize.css_
 
 ### Removed
 
@@ -2033,8 +2183,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Headings helpers
 - Responsive typography
 
-
-[Unreleased]: https://github.com/DSI-VD/foehn/compare/v1.6.0...HEAD
+[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.6.0...HEAD
 [1.6.0]: https://github.com/DSI-VD/foehn/compare/v1.5.3...v.1.6.0
 [1.5.3]: https://github.com/DSI-VD/foehn/compare/v1.5.2...v1.5.3
 [1.5.2]: https://github.com/DSI-VD/foehn/compare/v1.5.1...v1.5.2
