@@ -1,4 +1,5 @@
 ---
+label: Textarea
 status: review
 ---
 
@@ -27,7 +28,6 @@ texte](./text-input).
 
 ## Fonctionnement
 
-
 <div class="foehn-example">
 {% render '@textarea', 
   {
@@ -40,14 +40,9 @@ texte](./text-input).
 </div>
 
 ```html
-{% render '@textarea', 
-  {
-    label: "Pouvez-vous fournir plus de détails ?",
-    helpText: "Ne saisissez pas d'informations financières, comme des numéros de
-      comptes banquaire ou de carte de crédit."
-  }, 
-  true
-%}
+{% render '@textarea', { label: "Pouvez-vous fournir plus de détails ?",
+helpText: "Ne saisissez pas d'informations financières, comme des numéros de
+comptes banquaire ou de carte de crédit." }, true %}
 ```
 
 ### Labelisez les zones de texte
@@ -79,18 +74,12 @@ de texte en renseignant l'atribut `rows`.
 </div>
 
 ```html
-{% render '@textarea', {
-    label: "Pouvez-vous fournir plus de détails ?",
-    rows: "10",
-    helpText: "Ne saisissez pas d'informations financières, comme des numéros de
-      comptes banquaire ou de carte de crédit."
-  }, 
-  true
-%}
+{% render '@textarea', { label: "Pouvez-vous fournir plus de détails ?", rows:
+"10", helpText: "Ne saisissez pas d'informations financières, comme des numéros
+de comptes banquaire ou de carte de crédit." }, true %}
 ```
 
 ### Ne désactivez pas le copier/coller
 
 Les utilisateurs doivent souvent copier et coller des informations dans une
 champs de saisie texte, vous ne devriez donc pas les empêcher de le faire.
-

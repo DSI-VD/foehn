@@ -1,3 +1,4 @@
 ---
+label: Checkboxes
 status: draft
 ---

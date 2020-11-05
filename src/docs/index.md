@@ -1,12 +1,13 @@
 ---
-title: Fœhn - VD.ch
+title: "Fœhn - VD.ch"
 ---
+
 **This styleguide has been designed to serve the purpose of the website vd.ch.**
 
 ## What is a styleguide ?
 
 According to wikipedia, a styleguide is:<br>
-*A set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. (It is often called a style sheet, though that term has other meanings.) A style guide establishes and enforces style to improve communication.*
+_A set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. (It is often called a style sheet, though that term has other meanings.) A style guide establishes and enforces style to improve communication._
 
 ## Framework
 
@@ -15,7 +16,7 @@ This styleguide is extensively based on the framework Bootstrap version 4 using 
 ## Content & hierarchy
 
 All the components are organized accordingly to the [atomic design](http://atomicdesign.bradfrost.com/) philosophy by Brad Frost.<br>
-  You can navigate through all theses components with the help of the left side navigation bar.
+You can navigate through all theses components with the help of the left side navigation bar.
 
 Additionaly, a few example pages are designed to give an overview of all these elements integrated together
 
@@ -34,6 +35,7 @@ With Yarn:
 ```bash
 $ yarn add https://github.com/DSI-VD/foehn
 ```
+
 or
 
 ```bash
@@ -57,8 +59,7 @@ $ npm install git+ssh://git@git.etat-de-vaud.ch:typo3/foehn
 Put this in your `<head/>` tag:
 
 ```html
-{% render '@styles-header' %}
-{% render '@scripts-header' %}
+{% render '@styles-header' %} {% render '@scripts-header' %}
 ```
 
 Put this just before the closing `</body>` tag:

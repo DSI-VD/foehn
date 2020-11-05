@@ -1,3 +1,4 @@
 ---
+label: Tag
 status: draft
 ---

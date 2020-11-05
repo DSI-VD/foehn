@@ -1,3 +1,4 @@
 ---
+label: Tabs
 status: draft
 ---

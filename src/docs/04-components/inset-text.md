@@ -1,6 +1,6 @@
 ---
 status: wip
-label: Text en encart
+label: "Text en encart"
 ---
 
 {{ '@highlight' | renderComponent | safe }}
@@ -8,6 +8,7 @@ label: Text en encart
 ## Quand utiliser ce composant
 
 Utilisez le composant de texte en encart pour différencier un bloc de texte du contenu qui l'entoure, par exemple:
+
 - citations
 - exemples
 - informations supplémentaires sur la page
@@ -16,7 +17,7 @@ Utilisez le composant de texte en encart pour différencier un bloc de texte du 
 
 Certains utilisateurs ne remarquent pas le texte en encart s'il est utilisé sur des pages complexes ou à proximité d'autres éléments visuellement proéminents. Pour cette raison, évitez d'utiliser le texte en encart pour mettre en évidence des informations très importantes que les utilisateurs doivent voir.
 
-Si vous devez attirer l'attention sur un contenu très important, comme des informations légales, utilisez plutôt le composant de [texte d'avertissement](./warning-text). 
+Si vous devez attirer l'attention sur un contenu très important, comme des informations légales, utilisez plutôt le composant de [texte d'avertissement](./warning-text).
 
 ## Fonctionnement
 
