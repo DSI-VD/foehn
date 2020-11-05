@@ -10,6 +10,8 @@ const replace = require('gulp-replace');
 const xo = require('gulp-xo');
 const jsonlint = require('gulp-jsonlint');
 sass.compiler = require('dart-sass');
+const path = require('path');
+
 
 /* Gulp-uglify must use uglify-es module becaus we use ESlint
  * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
@@ -24,8 +26,8 @@ const minify = composer(uglifyjs, console);
 const processors = [require('autoprefixer'), require('cssnano')];
 
 const paths = {
-    dest: `${__dirname}/dist`,
-    src: `${__dirname}/src`
+    build: path.join(__dirname, '/dist'),
+    src: path.join(__dirname, '/src')
 };
 
 const header = require('gulp-header');
