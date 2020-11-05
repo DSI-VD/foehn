@@ -11,6 +11,7 @@ const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const xo = require('gulp-xo');
 const jsonlint = require('gulp-jsonlint');
+const path = require('path');
 
 /* Gulp-uglify must use uglify-es module becaus we use ESlint
  * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
@@ -32,9 +33,9 @@ const wrapProcessors = [
 ];
 
 const paths = {
-    build: `${__dirname}/dist`,
-    dest: `${__dirname}/tmp`,
-    src: `${__dirname}/src`
+    build: path.join(__dirname, '/dist'),
+    dest: path.join(__dirname, '/tmp'),
+    src: path.join(__dirname, '/src')
 };
 
 const header = require('gulp-header');

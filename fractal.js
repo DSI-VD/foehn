@@ -1,9 +1,11 @@
 'use strict';
 
+const path = require('path');
+
 const paths = {
-    build: `${__dirname}/dist`,
-    src: `${__dirname}/src`,
-    static: `${__dirname}/tmp`
+    build: path.join(__dirname, '/dist'),
+    src: path.join(__dirname, '/src'),
+    static: path.join(__dirname, '/tmp')
 };
 
 const mandelbrot = require('@frctl/mandelbrot')({
