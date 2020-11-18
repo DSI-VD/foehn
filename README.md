@@ -3,10 +3,9 @@
 Fœhn (*føn*) is the design system build for [the website of the State of
 Vaud](http://www.vd.ch/).
 
-[Take a look at the documentation](http://dsi-vd.github.io/foehn/).
+[Take a look at the documentation](http://dsi-vd.github.io/foehn-design-system/).
 
-[Fractal](http://fractal.build/) and [Bootstrap
-4](http://v4-alpha.getbootstrap.com/) is used to build fœhn.
+[Bootstrap 4](http://www.getbootstrap.com/) is used to build fœhn.
 
 ## Changelog
 
