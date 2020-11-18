@@ -45,7 +45,7 @@ const banner = [
  * Clean
  */
 function clean() {
-    return del([`${paths.dest}`]);
+    return del([`${paths.build}`]);
 }
 
 /*
@@ -61,7 +61,7 @@ function styles() {
         .pipe(postcss(processors))
         .pipe(header(banner, {pkg}))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(`${paths.dest}/assets/styles`));
+        .pipe(gulp.dest(`${paths.build}/assets/styles`));
 }
 
 /*
@@ -96,7 +96,7 @@ function scriptsVendors() {
             'node_modules/popper.js/dist/umd/popper.min.*',
             'node_modules/bootstrap/dist/js/bootstrap.min.*'
         ])
-        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
+        .pipe(gulp.dest(`${paths.build}/assets/scripts/`));
 }
 
 /*
@@ -111,7 +111,7 @@ function scriptsFooter() {
         .pipe(rename('foehn-scripts--footer.js'))
         .pipe(minify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(`${paths.dest}/assets/scripts/`));
+        .pipe(gulp.dest(`${paths.build}/assets/scripts/`));
 }
 
 /*
@@ -123,7 +123,7 @@ function scriptsFooter() {
 function svg() {
     return gulp
         .src(`${paths.src}/assets/svg/**/*.svg`)
-        .pipe(gulp.dest(`${paths.dest}/assets/svg`));
+        .pipe(gulp.dest(`${paths.build}/assets/svg`));
 }
 
 /*
@@ -135,7 +135,7 @@ function svg() {
 function images() {
     return gulp
         .src(`${paths.src}/assets/img/**/*.*`)
-        .pipe(gulp.dest(`${paths.dest}/assets/img`));
+        .pipe(gulp.dest(`${paths.build}/assets/img`));
 }
 
 /*
@@ -144,7 +144,7 @@ function images() {
 function fonts() {
     return gulp
         .src(`${paths.src}/assets/fonts/**/*.*`)
-        .pipe(gulp.dest(`${paths.dest}/assets/fonts`));
+        .pipe(gulp.dest(`${paths.build}/assets/fonts`));
 }
 
 /*
@@ -153,7 +153,7 @@ function fonts() {
 function manifests() {
     return gulp
         .src(`${paths.src}/assets/manifest/**/*.*`)
-        .pipe(gulp.dest(`${paths.dest}/assets/manifest`));
+        .pipe(gulp.dest(`${paths.build}/assets/manifest`));
 }
 
 /*
@@ -162,7 +162,7 @@ function manifests() {
 function xmls() {
     return gulp
         .src(`${paths.src}/assets/xml/**/*.*`)
-        .pipe(gulp.dest(`${paths.dest}/assets/xml`));
+        .pipe(gulp.dest(`${paths.build}/assets/xml`));
 }
 
 /*
@@ -188,8 +188,8 @@ function lintjson() {
         .src([
             '*.json',
             `${paths.src}/**/*.json`,
-            `${paths.dest}/**/*.css.map`, // [1]
-            `${paths.dest}/**/*.js.map` // [2]
+            `${paths.build}/**/*.css.map`, // [1]
+            `${paths.build}/**/*.js.map` // [2]
         ])
         .pipe(jsonlint())
         .pipe(jsonlint.reporter());
