@@ -38,14 +38,6 @@ $ cd foehn
 $ yarn
 ```
 
-### Start a local server
-
-This will build sources, serve pages and watch for changes.
-
-```shell
-$ yarn start
-```
-
 ### Build
 
 Build `./src` to `./dist`
