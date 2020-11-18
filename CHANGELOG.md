@@ -14,8 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Documentation has been moved to another repo
-Structure and content of the distribution folder remain the same
+- Documentation has been moved to [foehn-design-system](https://github.com/DSI-VD/foehn-design-system) repo
+Structure and content of the distribution folder `dist` remain the same
 
 ### Fixes
 
