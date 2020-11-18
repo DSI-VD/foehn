@@ -54,25 +54,6 @@ Build `./src` to `./dist`
 $ yarn build
 ```
 
-## Test accessibility
-
-To test basic accessibility issues using [Pa11y](http://pa11y.org/).
-
-```
-$ yarn test-a11y
-```
-
-## Deploy the styleguide
-
-We deploy the styleguide to a `gh-pages` branch on Github. To do this, use the
-following command to build and then deploy the code:
-
-```shell
-$ yarn run deploy
-```
-
-The frontend can be viewed at this url: [](http://dsi-vd.github.io/foehn/).
-
 ## New version
 
 1. Make sure, the `CHANGELOG.md` is up to date. If not, update it and commit the
