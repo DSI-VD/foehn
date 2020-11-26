@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Lint files
 - Remove unused Fractal files
 - Remove unused gulp-replace module
 - Remove info about starting a local server in `README.md`. It not relevant anymore
