@@ -11,7 +11,6 @@ const jsonlint = require('gulp-jsonlint');
 sass.compiler = require('dart-sass');
 const path = require('path');
 
-
 /* Gulp-uglify must use uglify-es module becaus we use ESlint
  * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
  *     https://github.com/gruntjs/grunt-contrib-uglify/issues/477#issuecomment-305329757
