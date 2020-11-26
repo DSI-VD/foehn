@@ -6,7 +6,6 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
-const replace = require('gulp-replace');
 const xo = require('gulp-xo');
 const jsonlint = require('gulp-jsonlint');
 sass.compiler = require('dart-sass');

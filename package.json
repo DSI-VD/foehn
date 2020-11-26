@@ -47,7 +47,6 @@
     "gulp-jsonlint": "^1.2.1",
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-stylelint": "^13.0.0",
