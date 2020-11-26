@@ -10,19 +10,19 @@
  */
 
 .breadcrumb-item {
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     min-height: 1.5rem; /* [1] */
     font-size: $small-font-size;
   }
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item:before {
   position: absolute; /* [3] */
   left: 0;
 }
 
 .breadcrumb-item + .breadcrumb-item {
-  margin-left: .25rem; /* [2] */
+  margin-left: 0.25rem; /* [2] */
   position: relative; /* [3] */
   padding-left: 0.75rem; /* [2] */
 }
