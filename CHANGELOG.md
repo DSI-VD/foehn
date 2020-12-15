@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Remove unused `postcss-prefixwrap` module
+- Upgrade `stylelint` module
 
 ## [1.8.0-beta.3] - 2020-11-26
 
