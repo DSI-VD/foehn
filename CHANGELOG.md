@@ -5,13 +5,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Fixes
+
+- Remove unused `postcss-prefixwrap` module
+
 ## [1.8.0-beta.3] - 2020-11-26
 
 ### Fixes
 
 - Lint files
 - Remove unused Fractal files
-- Remove unused gulp-replace module
+- Remove unused `gulp-replace` module
 - Remove info about starting a local server in `README.md`. It not relevant anymore
 
 ## [1.8.0-beta.2] - 2020-11-18
@@ -26,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Documentation has been moved to [foehn-design-system](https://github.com/DSI-VD/foehn-design-system) repo
-Structure and content of the distribution folder `dist` remain the same
+  Structure and content of the distribution folder `dist` remain the same
 
 ### Fixes
 
@@ -59,6 +63,7 @@ Structure and content of the distribution folder `dist` remain the same
 - Upgrade a bunch of modules that you do note need to take care of
 
 ### Removes
+
 - Remove [Pa11y](https://pa11y.org/) for accessibility test
 
 ## [1.6.0] - 2020-04-16
