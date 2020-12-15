@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Upgrade `autoprefixer` and add `postcss` dependency to the project [as required](https://github.com/postcss/postcss/wiki/PostCSS-8-for-end-users)
 - Remove unused `postcss-prefixwrap` module
 - Upgrade `stylelint` module
 - Upgrade `gulp-sourcemaps` module
