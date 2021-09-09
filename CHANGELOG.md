@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.8.1] - 2021-09-09
+
 ### Fixes
 
 - Upgrade a bunch of node modules
@@ -2230,7 +2232,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Headings helpers
 - Responsive typography
 
-[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.8.0...HEAD
+[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.8.1...HEAD
+[1.8.1]: https://github.com/DSI-VD/foehn/compare/v1.8.0...v1.8.1
 [1.8.0]: https://github.com/DSI-VD/foehn/compare/v1.8.0-beta.3...v1.8.0
 [1.8.0-beta.3]: https://github.com/DSI-VD/foehn/compare/v1.8.0-beta.2...v1.8.0-beta.3
 [1.8.0-beta.2]: https://github.com/DSI-VD/foehn/compare/v1.8.0-beta.1...v1.8.0-beta.2
