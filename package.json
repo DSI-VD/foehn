@@ -55,7 +55,7 @@
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "postcss": "^8.3.6",
-    "sass": "^1.39.0",
+    "sass": "^1.39.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
