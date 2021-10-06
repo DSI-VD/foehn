@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Fixes
+
+- Fix disabled inputs not having a grey background when being invalid
+
 ## [1.8.2] - 2021-09-10
 
 ### Fixes
