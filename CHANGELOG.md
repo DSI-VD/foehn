@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Expose colors values in custom properties
 - Upgrade node modules
 
 ## [1.8.3] - 2021-10-07
