@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.8.4] - 2022-04-14
+
 ### Fixes
 
 - Expose colors values in custom properties
@@ -2251,7 +2253,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Headings helpers
 - Responsive typography
 
-[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.8.3...HEAD
+[unreleased]: https://github.com/DSI-VD/foehn/compare/v1.8.4...HEAD
+[1.8.4]: https://github.com/DSI-VD/foehn/compare/v1.8.3...v1.8.4
 [1.8.3]: https://github.com/DSI-VD/foehn/compare/v1.8.2...v1.8.3
 [1.8.2]: https://github.com/DSI-VD/foehn/compare/v1.8.1...v1.8.2
 [1.8.1]: https://github.com/DSI-VD/foehn/compare/v1.8.0...v1.8.1
