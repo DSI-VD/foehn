@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
+@use 'sass:math';
+
 .vd-list-boxed {
   li {
     margin-bottom: $spacer;
@@ -7,7 +9,7 @@
 
   .nav-link {
     display: inline;
-    padding: ($spacer / 5);
+    padding: (math.div($spacer, 5));
     background: $body-bg;
     color: $body-color;
     text-decoration: none;

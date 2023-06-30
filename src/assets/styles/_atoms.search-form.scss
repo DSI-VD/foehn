@@ -35,8 +35,8 @@
       color: $white;
     }
 
-    @include hover {
-      background: darken($vd-primary, 10%);
+    :hover {
+      background: shade-color($vd-primary, 10%);
     }
   }
 
@@ -70,9 +70,9 @@
       color: $white;
     }
 
-    @include hover {
-      background: darken($vd-primary, 10%);
-      border-color: darken($vd-primary, 10%);
+    :hover {
+      background: shade-color($vd-primary, 10%);
+      border-color: shade-color($vd-primary, 10%);
     }
   }
 

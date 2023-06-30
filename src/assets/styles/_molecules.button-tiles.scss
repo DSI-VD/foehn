@@ -1,5 +1,7 @@
 @charset ':UTF-8';
 
+@use "sass:math";
+
 /**
  * Button tiles
  *
@@ -15,8 +17,8 @@
 
   @include media-breakpoint-up(sm) {
     flex-direction: row;
-    margin-right: -$spacer/2;
-    margin-left: -$spacer/2;
+    margin-right: - math.div($spacer, 2);
+    margin-left: - math.div($spacer, 2);
   }
 
   &__item {
@@ -26,8 +28,8 @@
 
     @include media-breakpoint-up(sm) {
       flex: 1 0 30%; /* [3] */
-      margin-right: $spacer/2;
-      margin-left: $spacer/2;
+      margin-right: math.div($spacer, 2);
+      margin-left: math.div($spacer, 2);
       max-width: calc(33% - #{$spacer}); /* [3] */
     }
   }
@@ -35,7 +37,7 @@
   &__link {
     display: block;
     height: 100%; /* [2] */
-    padding: $spacer/2;
+    padding: math.div($spacer, 2);
     font-weight: $btn-font-weight;
     color: $black;
     text-decoration: none;

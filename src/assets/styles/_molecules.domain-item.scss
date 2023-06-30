@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
+@use 'sass:math';
+
 /**
  * Teaser links
  *
@@ -19,7 +21,7 @@
 }
 
 .vd-domain-item__link {
-  margin-top: $spacer / 4;
+  margin-top: math.div($spacer, 4);
 
   &:focus {
     outline: 0; /* [4] */
