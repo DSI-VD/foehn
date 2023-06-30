@@ -1,14 +1,12 @@
 'use strict';
 
 const gulp = require('gulp');
-const del = require('del');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass')(require('sass'));
 const stylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
 const xo = require('gulp-xo');
 const jsonlint = require('gulp-jsonlint');
-sass.compiler = require('dart-sass');
 const path = require('path');
 
 /* Gulp-uglify must use uglify-es module becaus we use ESlint
@@ -38,13 +36,6 @@ const banner = [
     ' */',
     ''
 ].join('\n');
-
-/*
- * Clean
- */
-function clean() {
-    return del([`${paths.build}`]);
-}
 
 /*
  * Styles
@@ -212,5 +203,4 @@ const compile = gulp.series(
     lintjson
 );
 
-gulp.task('build', gulp.series(clean, compile));
 gulp.task('dev', gulp.series(compile));
