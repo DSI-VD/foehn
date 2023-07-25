@@ -9,46 +9,24 @@ import stylelint from 'gulp-stylelint';
 import xo from 'gulp-xo';
 import jsonlint from 'gulp-jsonlint';
 import path from 'path';
-// const gulp = require('gulp');
-// const postcss = require('gulp-postcss');
-// const sass = require('gulp-sass')(require('sass'));
-// const stylelint = require('gulp-stylelint');
-// const rename = require('gulp-rename');
-// const xo = require('gulp-xo');
-// const jsonlint = require('gulp-jsonlint');
-// const path = require('path');
 import {deleteSync} from 'del';
 import { fileURLToPath } from "url";
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const sass = gulpSass(nodeSass);
-
-/* Gulp-uglify must use uglify-es module becaus we use ESlint
- * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
- *     https://github.com/gruntjs/grunt-contrib-uglify/issues/477#issuecomment-305329757
- */
 import sourcemaps from 'gulp-sourcemaps';
 import uglifyjs from 'uglify-es';
 import composer from 'gulp-uglify/composer.js';
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
 import header from 'gulp-header';
-import url from 'url';
-// const sourcemaps = require('gulp-sourcemaps');
-// const uglifyjs = require('uglify-es');
-// const composer = require('gulp-uglify/composer');
-
+import pkg from './package.json' assert { type: 'json' };
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const sass = gulpSass(nodeSass);
 const minify = composer(uglifyjs, console);
-
 const processors = [autoprefixer, cssnano];
-
 const paths = {
     build: path.join(__dirname, '/dist'),
     src: path.join(__dirname, '/src')
 };
-
-import pkg from './package.json' assert { type: 'json' };
-
 const banner = [
     '/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
