@@ -3,6 +3,7 @@
   "version": "1.8.4",
   "author": "DSI VD <info.dsi@vd.ch>",
   "homepage": "https://dsi-vd.github.io/foehn/",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/DSI-VD/foehn"
