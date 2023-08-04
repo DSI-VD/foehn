@@ -10,14 +10,15 @@ import xo from 'gulp-xo';
 import jsonlint from 'gulp-jsonlint';
 import path from 'path';
 import {deleteSync} from 'del';
-import { fileURLToPath } from "url";
+import {fileURLToPath} from 'url';
 import sourcemaps from 'gulp-sourcemaps';
 import uglifyjs from 'uglify-es';
 import composer from 'gulp-uglify/composer.js';
-import autoprefixer from "autoprefixer";
-import cssnano from "cssnano";
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
 import header from 'gulp-header';
-import pkg from './package.json' assert { type: 'json' };
+import {readFileSync} from 'fs';
+const pkg = JSON.parse(readFileSync('./package.json'));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const sass = gulpSass(nodeSass);
@@ -40,7 +41,7 @@ const banner = [
  */
 function clean() {
     const deleted = deleteSync([`${paths.build}`]);
-    return Promise.resolve(deleted)
+    return Promise.resolve(deleted);
 }
 
 /*
