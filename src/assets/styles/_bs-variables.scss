@@ -79,7 +79,7 @@ $body-color:                $gray-900 !default;
 $enable-caret:                true;
 $enable-rounded:              true;
 $enable-shadows:              true;
-$enable-gradients:            true;
+$enable-gradients:            false;
 $enable-transitions:          true;
 $enable-reduced-motion:       true;
 $enable-smooth-scroll:        true;
@@ -218,6 +218,7 @@ $blockquote-font-size:        $font-size-base;
 $blockquote-footer-color:     $gray-500;
 
 $hr-border-color:             $gray-800; // Allows for inherited colors
+$hr-opacity:                  1;
 
 $list-inline-padding:         5px;
 
@@ -237,7 +238,6 @@ $table-cell-padding-y-sm:     .3rem;
 $table-cell-padding-x-sm:     .3rem;
 
 $table-bg:                    null;
-$table-accent-bg:             rgba($black, .05);
 
 $table-hover-bg:              rgba($black, .075);
 
@@ -364,8 +364,9 @@ $pagination-disabled-border-color:  $gray-300;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     .75rem;
-$card-spacer-x:                     1.25rem;
+$card-spacer-y:                     1.3rem;
+$card-spacer-x:                     1.5rem;
+$card-title-spacer-y:               0.7rem;
 $card-border-color:                 rgba($black, .125);
 $card-cap-bg:                       rgba($black, .03);
 $card-img-overlay-padding:          1.25rem;
@@ -582,7 +583,7 @@ $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       $input-btn-font-size !default;
-$input-font-weight:                     700 !default;
+$input-font-weight:                     400;
 $input-line-height:                     $input-btn-line-height !default;
 $input-height-border:                   1px * 2 !default;
 $input-padding-y-sm:                    $input-btn-padding-y-sm !default;
@@ -596,6 +597,10 @@ $input-font-size-lg:                    $input-btn-font-size-lg !default;
 $input-line-height-lg:                  $input-btn-line-height-lg !default;
 $input-height-inner-half:               add($input-line-height * .5em, $input-padding-y) !default;
 $input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false)) !default;
+
+$btn-border-radius:           0;
+$btn-border-radius-sm:        0;
+$btn-border-radius-lg:        0;
 
 $displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex;
 $overflows: auto, hidden;
