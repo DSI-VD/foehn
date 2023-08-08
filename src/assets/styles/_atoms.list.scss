@@ -8,6 +8,11 @@ ul {
   list-style-type: disc;
 }
 
+ol,
+ul {
+  padding-left: 40px;
+}
+
 /**
  * multi column list
  */

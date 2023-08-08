@@ -13,6 +13,11 @@
   li {
     margin-bottom: $spacer;
   }
+
+  .nav-link {
+    color: $primary;
+    padding: .5rem 1rem;
+  }
 }
 
 .vd-menu-list-links {

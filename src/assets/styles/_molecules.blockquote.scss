@@ -31,13 +31,17 @@ blockquote cite,
   }
 }
 
+.blockquote-footer {
+  margin-top: 0;
+}
+
 /**
  * Apply the bootstrap style on native tags
  */
 blockquote cite {
   display: block;
   font-size: 80%; // back to default font-size
-  color: $blockquote-small-color;
+  color: $gray-500;
 }
 
 .blockquote-reverse {
@@ -51,7 +55,7 @@ blockquote cite {
   position: relative;
   margin: ($spacer * 1.5) 0;
   padding: ($spacer * 1.45) ($spacer * 1.8);
-  background: theme-color("dark");
+  background: $dark;
   border-radius: 10px;
   font-size: $font-size-base;
   line-height: 1.3;

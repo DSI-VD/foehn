@@ -60,6 +60,10 @@
     font-style: italic;
   }
 
+  > .form-control {
+    margin-left: 0 !important;
+  }
+
   .btn {
     background: $vd-primary-dark;
     border-color: $vd-primary-dark;

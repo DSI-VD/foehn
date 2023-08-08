@@ -3,6 +3,32 @@
 .h1,
 h1 {
   font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.h2,
+h2 {
+  font-size: 1.8rem;
+}
+
+.h3,
+h3 {
+  font-size: 1.5rem;
+}
+
+.h4,
+h4 {
+  font-size: 1.3rem;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+}
+
+.h6,
+h6 {
+  font-size: .9rem;
 }
 
 /**
@@ -37,6 +63,7 @@ h6 {
  */
 @each $breakpoint in map-keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
   // Allow columns to stretch full width below their breakpoints
   @for $i from 1 through $grid-columns {
     .col#{$infix}-#{$i} > :first-child {

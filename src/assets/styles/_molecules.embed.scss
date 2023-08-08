@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+.embed-responsive {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  .embed-responsive-item {
+    border: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
