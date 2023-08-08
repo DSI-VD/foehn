@@ -10,4 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set the menu as closed
         document.querySelector('.js-closeMenuOnMobile__container').classList.remove('show');
     }
-})
+});

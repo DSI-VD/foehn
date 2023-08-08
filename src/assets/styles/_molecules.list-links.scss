@@ -12,11 +12,12 @@
 
   li {
     margin-bottom: $spacer;
+    color: $primary;
   }
 
   .nav-link {
-    color: $primary;
     padding: .5rem 1rem;
+    color: $primary;
   }
 }
 

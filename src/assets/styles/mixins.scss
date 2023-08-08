@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-
 @use "sass:string";
 
 /// Replace `$search` with `$replace` in `$string`
@@ -38,7 +37,7 @@
 @mixin vd-focus() {
   background-color: $vd-focus;
   outline: 3px solid $vd-focus;
-  color: currentColor;
+  color: currentcolor;
 }
 
 @mixin vd-focus-outline() {
