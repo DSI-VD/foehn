@@ -5,6 +5,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- Upgrade Bootstrap to 5.3.0
+- Changes to gulpfile.js file to modernize it
+- Refactor JS to not use JQuery
+- Adapt SCSS after Bootstrap upgrade
+
+### Addedd
+
+- Stylelint preset for scss
+
+### Fixes
+
+- Lint errors in JS and SCSS files
+
 ## [1.8.4] - 2022-04-14
 
 ### Fixes

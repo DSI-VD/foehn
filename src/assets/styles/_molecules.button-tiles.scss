@@ -1,5 +1,4 @@
 @charset ':UTF-8';
-
 @use "sass:math";
 
 /**
@@ -63,7 +62,7 @@
     }
 
     &:visited {
-      color: currentColor !important;
+      color: currentcolor !important;
     }
   }
 }

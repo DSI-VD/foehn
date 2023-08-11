@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-
 @use "sass:math";
 
 /**
@@ -12,8 +11,7 @@
 
 .vd-header-application {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; /* [2] */
+  flex-flow: column wrap; /* [2] */
 
   @include media-breakpoint-up(md) {
     flex-direction: row; /* [2] */

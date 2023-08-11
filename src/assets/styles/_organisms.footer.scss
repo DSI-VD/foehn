@@ -9,11 +9,11 @@
 .footer {
   position: relative; /* [1] */
   padding: $spacer 0 $spacer;
-  background-image: url(../svg/bars_black.svg);
+  background-image: url("../svg/bars_black.svg");
   background-repeat: repeat-x;
   background-position: center bottom;
   background-size: auto 21px;
-  background-color: theme-color("dark");
+  background-color: $dark;
   border-bottom: 23px solid $vd-primary;
   color: $white; /* [2] */
 
