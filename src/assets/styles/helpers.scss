@@ -2,7 +2,7 @@
 
 // Background Helpers
 .vd-bg-pattern-gray {
-  background: transparent url(../img/bg_headings.gif) top left;
+  background: transparent url("../img/bg_headings.gif") top left;
 
   @media print {
     background: none !important;
@@ -65,11 +65,11 @@
 }
 
 .vd-link-invisible {
-  color: currentColor;
+  color: currentcolor;
   text-decoration: none;
 
   &:hover {
-    color: currentColor;
+    color: currentcolor;
   }
 }
 

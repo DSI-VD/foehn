@@ -14,6 +14,16 @@
   margin-bottom: $spacer;
   display: inline-block;
 
+  &__image {
+    width: 12em;
+    height: auto;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      max-width: 12em; /* [5] */
+      width: auto; /* [5] */
+    }
+  }
+
   &--alt {
     display: flex;
 
@@ -38,16 +48,6 @@
 
     @media print {
       display: none;
-    }
-  }
-
-  &__image {
-    width: 12em;
-    height: auto;
-
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      max-width: 12em; /* [5] */
-      width: auto; /* [5] */
     }
   }
 }

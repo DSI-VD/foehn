@@ -1,4 +1,6 @@
 @charset 'UTF-8';
+@use 'sass:math';
+@use 'sass:color';
 
 .vd-list-boxed {
   li {
@@ -7,7 +9,7 @@
 
   .nav-link {
     display: inline;
-    padding: ($spacer / 5);
+    padding: (math.div($spacer, 5));
     background: $body-bg;
     color: $body-color;
     text-decoration: none;
@@ -15,11 +17,11 @@
 
     &:hover,
     &:focus {
-      background: lighten($link-color, 65%);
+      background: color.adjust($link-color, $lightness: 65%);
     }
 
     &:active {
-      background: lighten($link-color, 55%);
+      background: color.adjust($link-color, $lightness: 55%);
     }
   }
 }

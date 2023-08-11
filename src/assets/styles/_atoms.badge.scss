@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
 .badge-pill {
-  border-radius: $badge-pill-border-radius;
+  border-radius: 10rem;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
