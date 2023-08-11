@@ -7,5 +7,5 @@
  */
 
 .form-check-input:focus {
-  @include vd-focus();
+  @include vd-focus;
 }
