@@ -45,7 +45,7 @@ a.vd-teaser-card {
   }
 
   a {
-    @include hover {
+    &:hover {
       color: $gray-300; /* [1] */
     }
 

@@ -1,36 +1,33 @@
 'use strict';
 
-const gulp = require('gulp');
-const del = require('del');
-const postcss = require('gulp-postcss');
-const sass = require('gulp-sass')(require('sass'));
-const stylelint = require('gulp-stylelint');
-const rename = require('gulp-rename');
-const xo = require('gulp-xo');
-const jsonlint = require('gulp-jsonlint');
-sass.compiler = require('dart-sass');
-const path = require('path');
-
-/* Gulp-uglify must use uglify-es module becaus we use ESlint
- * see https://www.npmjs.com/package/gulp-uglify#using-a-different-uglifyjs
- *     https://github.com/gruntjs/grunt-contrib-uglify/issues/477#issuecomment-305329757
- */
-const sourcemaps = require('gulp-sourcemaps');
-const uglifyjs = require('uglify-es');
-const composer = require('gulp-uglify/composer');
-
+import gulp from 'gulp';
+import postcss from 'gulp-postcss';
+import gulpSass from 'gulp-sass';
+import * as nodeSass from 'sass';
+import rename from 'gulp-rename';
+import stylelint from 'gulp-stylelint';
+import xo from 'gulp-xo';
+import jsonlint from 'gulp-jsonlint';
+import path from 'path';
+import {deleteSync} from 'del';
+import {fileURLToPath} from 'url';
+import sourcemaps from 'gulp-sourcemaps';
+import uglifyjs from 'uglify-es';
+import composer from 'gulp-uglify/composer.js';
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+import header from 'gulp-header';
+import {readFileSync} from 'fs';
+const pkg = JSON.parse(readFileSync('./package.json'));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const sass = gulpSass(nodeSass);
 const minify = composer(uglifyjs, console);
-
-const processors = [require('autoprefixer'), require('cssnano')];
-
+const processors = [autoprefixer, cssnano];
 const paths = {
     build: path.join(__dirname, '/dist'),
     src: path.join(__dirname, '/src')
 };
-
-const header = require('gulp-header');
-const pkg = require('./package.json');
-
 const banner = [
     '/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
@@ -43,7 +40,8 @@ const banner = [
  * Clean
  */
 function clean() {
-    return del([`${paths.build}`]);
+    const deleted = deleteSync([`${paths.build}`]);
+    return Promise.resolve(deleted);
 }
 
 /*
@@ -211,6 +209,5 @@ const compile = gulp.series(
     ),
     lintjson
 );
-
 gulp.task('build', gulp.series(clean, compile));
 gulp.task('dev', gulp.series(compile));

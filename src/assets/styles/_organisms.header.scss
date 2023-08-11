@@ -1,7 +1,9 @@
 @charset 'UTF-8';
 
+@use 'sass:math';
+
 .header {
-  padding-top: ($spacer / 1.5);
+  padding-top: (math.div($spacer, 1.5));
   background-image: url(../svg/long_pattern_squares_green.svg);
   background-repeat: repeat-x;
   background-position: center top;

@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
+@use "sass:math";
+
 /**
  * 1. unstyle list
  */
@@ -20,7 +22,7 @@
 .vd-pagination__item {
   margin-top: 1em;
   flex: 0 1 auto;
-  padding: $spacer/4;
+  padding: math.div($spacer, 4);
 
   &--next {
     text-align: right;

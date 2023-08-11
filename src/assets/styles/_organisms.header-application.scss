@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
+@use "sass:math";
+
 /**
  * header for application
  *
@@ -19,17 +21,17 @@
 }
 
 .vd-header-application__title {
-  margin-bottom: $spacer/2;
+  margin-bottom: math.div($spacer, 2);
   font-size: $h4-font-size;
   text-transform: uppercase;
 
   @include media-breakpoint-up(md) {
-    margin-top: $spacer/4;
+    margin-top: math.div($spacer, 4);
 
     &:before {
       content: "//"; /* [1] */
-      margin-left: $spacer/4; /* [1] */
-      margin-right: $spacer/4; /* [1] */
+      margin-left: math.div($spacer, 4); /* [1] */
+      margin-right: math.div($spacer, 4); /* [1] */
     }
   }
 }
