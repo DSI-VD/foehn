@@ -4,3 +4,27 @@
   padding-left: $spacer;
   border-left: 5px $vd-danger solid;
 }
+
+.form-group {
+  margin-bottom: 16px;
+
+  select {
+    appearance: auto;
+  }
+}
+
+.form-text {
+  display: block;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+legend {
+  font-size: 1.5rem;
+}

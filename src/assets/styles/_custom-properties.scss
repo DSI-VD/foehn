@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+:root {
+  --vd-primary-darker: #{$vd-primary-darker};
+  --vd-primary-dark: #{$vd-primary-dark};
+  --vd-primary: #{$vd-primary};
+  --vd-primary-light: #{$vd-primary-light};
+  --vd-primary-lighter: #{$vd-primary-lighter};
+  --vd-secondary-darker: #{$vd-secondary-darker};
+  --vd-secondary-dark: #{$vd-secondary-dark};
+  --vd-secondary: #{$vd-secondary};
+  --vd-secondary-light: #{$vd-secondary-light};
+  --vd-secondary-lighter: #{$vd-secondary-lighter};
+  --vd-neutral-darker: #{$vd-neutral-darker};
+  --vd-neutral-dark: #{$vd-neutral-dark};
+  --vd-neutral: #{$vd-neutral};
+  --vd-neutral-light: #{$vd-neutral-light};
+  --vd-neutral-lighter: #{$vd-neutral-lighter};
+  --vd-success: #{$vd-success};
+  --vd-warning: #{$vd-warning};
+  --vd-danger: #{$vd-danger};
+  --vd-info: #{$vd-info};
+  --vd-focus: #{$vd-focus};
+  --vd-visited: #{$vd-visited};
+  --vd-text-body: #{$body-color};
+}

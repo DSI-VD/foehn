@@ -12,6 +12,12 @@
 
   li {
     margin-bottom: $spacer;
+    color: $primary;
+  }
+
+  .nav-link {
+    padding: .5rem 1rem;
+    color: $primary;
   }
 }
 

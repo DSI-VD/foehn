@@ -1,5 +1,45 @@
 @charset 'UTF-8';
 
+/**
+ * regular search form
+ *
+ * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
+ *    see also CCWEB-9943
+ */
+.vd-search-form-regular {
+  ::placeholder {
+    font-style: italic;
+  }
+
+  > .form-control {
+    margin-left: 0 !important;
+  }
+
+  .btn {
+    background: $vd-primary-dark;
+    border-color: $vd-primary-dark;
+    color: $white;
+
+    &,
+    .svg-inline--fa {
+      color: $white;
+    }
+
+    &:hover {
+      background: shade-color($vd-primary, 10%);
+      border-color: shade-color($vd-primary, 10%);
+    }
+  }
+
+  .input-group-btn > .btn {
+    height: 2.375rem;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
 .vd-search-form {
   display: flex;
   border-top: 4px solid $black;
@@ -35,49 +75,13 @@
       color: $white;
     }
 
-    @include hover {
-      background: darken($vd-primary, 10%);
+    &:hover {
+      background: shade-color($vd-primary, 10%);
     }
   }
 
   ::placeholder {
     font-style: italic;
-  }
-
-  @media print {
-    display: none;
-  }
-}
-
-/**
- * regular search form
- *
- * 1. fix padding problem with padding group button http://d.pr/i/ObEPO8
- *    see also CCWEB-9943
- */
-.vd-search-form-regular {
-  ::placeholder {
-    font-style: italic;
-  }
-
-  .btn {
-    background: $vd-primary-dark;
-    border-color: $vd-primary-dark;
-    color: $white;
-
-    &,
-    .svg-inline--fa {
-      color: $white;
-    }
-
-    @include hover {
-      background: darken($vd-primary, 10%);
-      border-color: darken($vd-primary, 10%);
-    }
-  }
-
-  .input-group-btn > .btn {
-    height: 2.375rem;
   }
 
   @media print {
