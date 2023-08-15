@@ -2,9 +2,9 @@
 
 import gulp from 'gulp';
 import postcss from 'gulp-postcss';
+import concat from 'gulp-concat';
 import gulpSass from 'gulp-sass';
 import * as nodeSass from 'sass';
-import rename from 'gulp-rename';
 import stylelint from 'gulp-stylelint';
 import xo from 'gulp-xo';
 import jsonlint from 'gulp-jsonlint';
@@ -67,7 +67,7 @@ function lintstyles() {
     return gulp
         .src([
             `${paths.src}/assets/styles/**/*.s+(a|c)ss`,
-            `!${paths.src}/assets/styles/bootstrap-variables.scss`
+            `!${paths.src}/assets/styles/_bs-variables.scss`
         ])
         .pipe(
             stylelint({
@@ -102,9 +102,9 @@ function scriptsVendors() {
  */
 function scriptsFooter() {
     return gulp
-        .src([`${paths.src}/assets/scripts/nav-primary.js`])
+        .src([`${paths.src}/assets/scripts/**.js`])
         .pipe(sourcemaps.init())
-        .pipe(rename('foehn-scripts--footer.js'))
+        .pipe(concat('foehn-scripts--footer.js'))
         .pipe(minify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${paths.build}/assets/scripts/`));
