@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactor JS to not use JQuery
 - Adapt SCSS after Bootstrap upgrade
 
+#### Components changed
+
+- Refer to Bootstrap documentation of migration from 4 to 5 to get all changes : https://getbootstrap.com/docs/5.0/migration/
+- domain-item-small had its structure changed, check styleguide to see the changes
+
 ### Addedd
 
 - Stylelint preset for scss
