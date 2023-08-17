@@ -1,6 +1,12 @@
 @charset 'UTF-8';
 @use "sass:math";
 
+.vd-nav-empty__button {
+  @include media-breakpoint-up(md) {
+    height: 37px;
+  }
+}
+
 .vd-nav-primary {
   margin: 0 auto;
   border-bottom: 1px dotted $vd-primary;
