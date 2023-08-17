@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#login-form-collapse {
+  position: absolute;
+  z-index: 99;
+  background-color: $white;
+  margin-right: 1rem !important;
+  margin-top: 5rem !important;
+}
+
+@include media-breakpoint-up(md) {
+  #login-form-collapse {
+    margin-right: 0 !important;
+    margin-top: 3rem !important;
+  }
+}
+

@@ -2,25 +2,39 @@
   "ignoreFiles": [
     "src/assets/styles/main.scss",
     "src/assets/styles/main-variables.scss",
-    "src/assets/styles/bootstrap-variables.scss"
+    "src/assets/styles/_bs_variables.scss"
   ],
   "plugins": [
     "stylelint-order"
   ],
-  "extends": "stylelint-config-standard",
+  "extends": ["stylelint-config-standard-scss"],
   "rules": {
     "at-rule-no-vendor-prefix": true,
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["each", "else", "extend", "for", "function", "if", "include", "mixin", "return", "while"]
+        "ignoreAtRules": [
+          "each",
+          "else",
+          "extend",
+          "for",
+          "function",
+          "if",
+          "include",
+          "mixin",
+          "return",
+          "while",
+          "use"
+        ]
       }
     ],
     "media-feature-name-no-vendor-prefix" : true,
     "property-no-vendor-prefix": true,
     "selector-no-vendor-prefix": true,
+    "selector-class-pattern": "(.*?)",
     "value-no-vendor-prefix": true,
     "selector-pseudo-element-colon-notation": "single",
+    "color-function-notation": "legacy",
     "order/properties-order": [
       "content",
       "display",
