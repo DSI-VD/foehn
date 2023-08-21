@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+.vd-search-button-container {
+  top: 21%;
+  right: 2%;
+  z-index: 99;
+}
+
+.vd-search-icon {
+  font-size: 1.5rem;
+}
+
+.vd-search-form-width {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}
