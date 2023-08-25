@@ -23,10 +23,6 @@
 .vd-domain-item__link {
   margin-top: math.div($spacer, 4);
   color: $black;
-
-  &:focus {
-    outline: 0; /* [4] */
-  }
 }
 
 .vd-domain-item--big {
@@ -51,6 +47,10 @@
 
 .vd-domain-item__link-container {
   width: 100%;
+
+  &:focus {
+    outline: 0; /* [4] */
+  }
 
   &:hover {
     text-decoration: none;

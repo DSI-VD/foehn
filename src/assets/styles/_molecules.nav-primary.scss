@@ -1,9 +1,32 @@
 @charset 'UTF-8';
 @use "sass:math";
 
+.vd-nav-empty__button {
+  @include media-breakpoint-up(md) {
+    height: 37px;
+  }
+}
+
 .vd-nav-primary {
   margin: 0 auto;
   border-bottom: 1px dotted $vd-primary;
+
+  .vd-domain-item__link {
+    font-family: $font-family-sans-serif;
+
+    &.h1,
+    &.h2,
+    &.h3,
+    &.h4,
+    &.h5,
+    &.h6 {
+      color: $vd-primary-dark;
+    }
+
+    &:visited:not(.btn) {
+      color: $vd-primary-dark;
+    }
+  }
 }
 
 .vd-nav-primary__menu-container {
