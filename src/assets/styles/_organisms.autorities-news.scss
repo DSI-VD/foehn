@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+
+.vd-reel {
+  display: flex;
+  block-size: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: $vd-primary-dark transparent;
+}
+
+.vd-reel::-webkit-scrollbar {
+  block-size: 1rem;
+}
+
+.vd-reel::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.vd-reel::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-image: linear-gradient($vd-primary-dark 0, $vd-primary-dark 0.25rem, $vd-primary-dark 0.25rem, $vd-primary-dark 0.75rem, $vd-primary-dark 0.75rem);
+}
+
+.vd-reel > * {
+  flex: 0 0 auto;
+  width: 400px;
+}
+
+
+.vd-reel > img {
+  block-size: 100%;
+  flex-basis: auto;
+  width: auto;
+}
+
+.vd-reel > * + * {
+  margin-inline-start: 1rem;
+}
+
+.vd-reel.overflowing {
+  padding-block-end: 1rem;
+}
+
+.vd-sticker-title {
+  z-index: 55;
+  top: -50px;
+  transform: rotate(-5deg);
+  left: -10px;
+}
