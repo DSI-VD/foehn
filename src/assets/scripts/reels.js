@@ -2,12 +2,12 @@
  * Code related to reels
  */
 document.addEventListener('DOMContentLoaded', () => {
-    const reels = Array.from(document.querySelectorAll('.vd-reel'));
-    const toggleOverflowClass = elem => {
-        elem.classList.toggle('overflowing', elem.scrollWidth > elem.clientWidth);
+    const reels = [...document.querySelectorAll('.vd-reel')];
+    const toggleOverflowClass = element => {
+        element.classList.toggle('overflowing', element.scrollWidth > element.clientWidth);
     };
 
-    for (let reel of reels) {
+    for (const reel of reels) {
         if ('ResizeObserver' in window) {
             new ResizeObserver(entries => {
                 toggleOverflowClass(entries[0].target);

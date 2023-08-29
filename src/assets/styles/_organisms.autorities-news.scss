@@ -26,7 +26,6 @@
   width: 400px;
 }
 
-
 .vd-reel > img {
   block-size: 100%;
   flex-basis: auto;
@@ -44,6 +43,6 @@
 .vd-sticker-title {
   z-index: 55;
   top: -50px;
-  transform: rotate(-5deg);
   left: -10px;
+  transform: rotate(-5deg);
 }
