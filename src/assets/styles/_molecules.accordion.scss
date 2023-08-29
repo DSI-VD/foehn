@@ -2,16 +2,19 @@
 
 .accordion-button {
   padding-right: 7em;
+
   &:after {
     position: absolute;
     right: 1.3em;
   }
+
   &:before {
     Content: 'Ouvrir';
     float: right;
     position: absolute;
     right: 3em;
   }
+
   &:not(.collapsed):before {
     content: 'Fermer';
   }
