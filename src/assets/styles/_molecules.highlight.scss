@@ -6,10 +6,22 @@
  * 1. Make link accessible
  * 2. Remove bottom margin of the last element
  */
+.highlight-dark {
+  --highlight-color: #{$white};
+  --highlight-background-color: #{$dark};
+  --highlight-title-color: #{$vd-primary-lighter};
+}
+
+.highlight-light {
+  --highlight-color: #{$black};
+  --highlight-background-color: #{$vd-neutral-light};
+  --highlight-title-color: #{$vd-primary-dark};
+}
+
 .vd-highlight {
   padding: ($spacer * 2) ($spacer * 3);
-  background: $dark;
-  color: $white;
+  background: var(--highlight-background-color);
+  color: var(--highlight-color);
 
   > h1,
   > .h1,
@@ -32,14 +44,14 @@
   h5, .h5,
   h6, .h6 {
     font-weight: 300;
-    color: $vd-primary-lighter;
+    color: var(--highlight-title-color);
   }
   /* stylelint-enable */
 
   a {
     &,
     &:visited {
-      color: $white; /* [1] */
+      color: var(--highlight-color); /* [1] */
     }
 
     &:focus {
@@ -52,6 +64,6 @@
   }
 
   .vd-list-links {
-    color: $white;
+    color: var(--highlight-color);
   }
 }
