@@ -11,7 +11,7 @@
  * 5. Fix SVG not showing in IE
  */
 .vd-logo {
-  margin-bottom: $spacer;
+  margin-bottom: $spacer * 3;
   display: inline-block;
 
   &__image {

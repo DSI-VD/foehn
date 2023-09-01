@@ -67,16 +67,13 @@
  *    Bootstrap
  */
 .vd-nav-primary__button {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  min-width: $spacer * 11.5; /* [1] */
-  color: $body-color; /* [2] */
-
-  @include vd-pattern-dotted($pattern-dotted-green);
+  min-width: $spacer * 11; /* [1] */
+  position: absolute;
+  margin-top: - $spacer * 6!important;
 
   .fas,
   .svg-inline--fa {
-    color: $body-color; /* [2] */
+    color: $white; /* [2] */
   }
 
   &:not(.collapsed) {
