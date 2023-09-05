@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+.box-shadow-hover {
+  transition: all .2s ease;
+  &:hover,
+  &:active {
+    box-shadow: var(--bs-box-shadow);
+    transition: all .3s ease;
+  }
+}
