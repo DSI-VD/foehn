@@ -23,7 +23,8 @@
 
 .vd-reel > * {
   flex: 0 0 auto;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .vd-reel > img {
