@@ -69,7 +69,11 @@
 .vd-nav-primary__button {
   min-width: $spacer * 11; /* [1] */
   position: absolute;
-  margin-top: - $spacer * 6!important;
+  margin-top: - $spacer * 2.5!important;
+
+  @include media-breakpoint-up(md) {
+    margin-top: - $spacer * 6!important;
+  }
 
   .fas,
   .svg-inline--fa {
