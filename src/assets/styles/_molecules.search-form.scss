@@ -27,3 +27,11 @@
     width: 50%;
   }
 }
+
+.vd-search-suggestion-link {
+  color: inherit !important;
+
+  :hover {
+    color: $vd-primary;
+  }
+}
