@@ -5,20 +5,6 @@
   block-size: auto;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-color: $vd-primary-dark transparent;
-}
-
-.vd-reel::-webkit-scrollbar {
-  block-size: 1rem;
-}
-
-.vd-reel::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.vd-reel::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  background-image: linear-gradient($vd-primary-dark 0, $vd-primary-dark 0.25rem, $vd-primary-dark 0.25rem, $vd-primary-dark 0.75rem, $vd-primary-dark 0.75rem);
 }
 
 .vd-reel > * {
