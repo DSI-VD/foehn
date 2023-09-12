@@ -64,3 +64,16 @@ a {
 .list-unstyled li a > .h3 {
   line-height: normal;
 }
+
+.arrow-right {
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    font: var(--fa-font-solid);
+    content: "\f061";
+    position: absolute;
+    top: 0.3rem;
+    right: -1.5rem;
+  }
+}
