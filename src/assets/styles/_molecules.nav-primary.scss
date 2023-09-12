@@ -71,10 +71,6 @@
   position: absolute;
   margin-top: - $spacer * 2.5!important;
 
-  @include media-breakpoint-up(md) {
-    margin-top: - $spacer * 6!important;
-  }
-
   .fas,
   .svg-inline--fa {
     color: $white; /* [2] */

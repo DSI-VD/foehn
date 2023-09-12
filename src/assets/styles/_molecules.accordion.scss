@@ -2,10 +2,12 @@
 
 .accordion-button {
   padding-right: 7em;
+  cursor: pointer;
 
   &:after {
     position: absolute;
     right: 1.3em;
+    top: 1.2rem;
   }
 
   &:before {
@@ -17,5 +19,15 @@
 
   &:not(.collapsed):before {
     content: 'Fermer';
+  }
+}
+
+.accordion-button-subheader {
+  &:after {
+    top: 2.1rem;
+  }
+
+  &:before {
+    top: 1.9rem;
   }
 }
