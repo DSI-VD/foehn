@@ -9,7 +9,7 @@ $utilities: map-merge(
         values: map-merge(
           $theme-colors,
           (
-            "inherit": inherit !important,
+            "inherit": inherit,
           )
         )
       )
