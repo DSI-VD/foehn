@@ -7,7 +7,7 @@ $utilities: map-merge(
         property: color,
         class: text,
         values: map-merge(
-          $theme-colors,
+          $utilities-text-colors,
           (
             "inherit": inherit,
           )
