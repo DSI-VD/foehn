@@ -12,6 +12,19 @@ $utilities: map-merge(
             "inherit": inherit,
           )
         )
+      ),
+      "border-color": (
+        property: border-color,
+        class: border,
+        local-vars: (
+          "border-opacity": 1
+        ),
+        values: map-merge(
+          $utilities-border-colors,
+          (
+            "light": $vd-neutral-light,
+          )
+        )
       )
     )
 );
