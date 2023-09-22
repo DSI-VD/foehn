@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+.hover-primary {
+  &:hover {
+    color: $vd-primary !important;
+  }
+}
+
+.hover-bg-primary {
+  &:hover {
+    color: $white !important;
+  }
+}
+
+.hover-secondary {
+  &:hover {
+    color: $gray-600 !important;
+  }
+}
+
+.hover-bg-secondary {
+  &:hover {
+    color: $white !important;
+  }
+}
