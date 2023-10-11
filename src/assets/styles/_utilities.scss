@@ -13,6 +13,11 @@ $utilities: map-merge(
           $utilities-text-colors,
           (
             "inherit": inherit,
+            "tertiary-darker": $vd-tertiary-darker,
+            "tertiary-dark": $vd-tertiary-dark,
+            "tertiary": $vd-tertiary,
+            "tertiary-light": $vd-tertiary-light,
+            "tertiary-lighter": $vd-tertiary-lighter
           )
         )
       ),
@@ -26,6 +31,23 @@ $utilities: map-merge(
           $utilities-border-colors,
           (
             "light": $vd-neutral-light,
+          )
+        )
+      ),
+      "background-color": (
+        property: background-color,
+        class: bg,
+        local-vars: (
+          "bg-opacity": 1
+        ),
+        values: map-merge(
+          $utilities-bg-colors,
+          (
+            "tertiary-darker": $vd-tertiary-darker,
+            "tertiary-dark": $vd-tertiary-dark,
+            "tertiary": $vd-tertiary,
+            "tertiary-light": $vd-tertiary-light,
+            "tertiary-lighter": $vd-tertiary-lighter
           )
         )
       )
