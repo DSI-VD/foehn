@@ -31,6 +31,19 @@ $utilities: map-merge(
           $utilities-border-colors,
           (
             "light": $vd-neutral-light,
+            "primary-darker": $vd-primary-darker,
+            "primary-dark": $vd-primary-dark,
+            "primary-light": $vd-primary-light,
+            "primary-lighter": $vd-primary-lighter,
+            "secondary-darker": $vd-secondary-darker,
+            "secondary-dark": $vd-secondary-dark,
+            "secondary-light": $vd-secondary-light,
+            "secondary-lighter": $vd-secondary-lighter,
+            "tertiary-darker": $vd-tertiary-darker,
+            "tertiary-dark": $vd-tertiary-dark,
+            "tertiary": $vd-tertiary,
+            "tertiary-light": $vd-tertiary-light,
+            "tertiary-lighter": $vd-tertiary-lighter
           )
         )
       ),
