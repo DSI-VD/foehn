@@ -25,7 +25,19 @@ try {
         }
 
     node('chromium-headless') {
+        stage("[Foehn] : Clone repository") {
+          echo "Cloning the repository with branch ${sourceBranch}"
+          checkout scm
+          gitCheckoutBranch(sourceBranch)
+        }
+
+        stage("[Foehn] : Install project") {
+          echo "Install project"
+          runYarnCommand("install", nodeVersion)
+        }
+
         stage("[Foehn] : Pushing to Github") {
+          echo "Push to Github"
           runGitCommand("remote add Github ${githubRepo}")
           runGitCommand("push Github ${sourceBranch}")
         }
