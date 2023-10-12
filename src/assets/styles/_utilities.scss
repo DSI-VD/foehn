@@ -13,6 +13,11 @@ $utilities: map-merge(
           $utilities-text-colors,
           (
             "inherit": inherit,
+            "tertiary-darker": $vd-tertiary-darker,
+            "tertiary-dark": $vd-tertiary-dark,
+            "tertiary": $vd-tertiary,
+            "tertiary-light": $vd-tertiary-light,
+            "tertiary-lighter": $vd-tertiary-lighter
           )
         )
       ),
@@ -26,6 +31,44 @@ $utilities: map-merge(
           $utilities-border-colors,
           (
             "light": $vd-neutral-light,
+            "primary-darker": $vd-primary-darker,
+            "primary-dark": $vd-primary-dark,
+            "primary-light": $vd-primary-light,
+            "primary-lighter": $vd-primary-lighter,
+            "secondary-darker": $vd-secondary-darker,
+            "secondary-dark": $vd-secondary-dark,
+            "secondary-light": $vd-secondary-light,
+            "secondary-lighter": $vd-secondary-lighter,
+            "tertiary-darker": $vd-tertiary-darker,
+            "tertiary-dark": $vd-tertiary-dark,
+            "tertiary": $vd-tertiary,
+            "tertiary-light": $vd-tertiary-light,
+            "tertiary-lighter": $vd-tertiary-lighter
+          )
+        )
+      ),
+      "background-color": (
+        property: background-color,
+        class: bg,
+        local-vars: (
+          "bg-opacity": 1
+        ),
+        values: map-merge(
+          $utilities-bg-colors,
+          (
+            "primary-darker": $vd-primary-darker,
+            "primary-dark": $vd-primary-dark,
+            "primary-light": $vd-primary-light,
+            "primary-lighter": $vd-primary-lighter,
+            "secondary-darker": $vd-secondary-darker,
+            "secondary-dark": $vd-secondary-dark,
+            "secondary-light": $vd-secondary-light,
+            "secondary-lighter": $vd-secondary-lighter,
+            "tertiary-darker": $vd-tertiary-darker,
+            "tertiary-dark": $vd-tertiary-dark,
+            "tertiary": $vd-tertiary,
+            "tertiary-light": $vd-tertiary-light,
+            "tertiary-lighter": $vd-tertiary-lighter
           )
         )
       )
