@@ -38,6 +38,7 @@ try {
 
         stage("[Foehn] : Pushing to Github") {
           echo "Push to Github"
+          runGitCommand("remote remove Github")
           runGitCommand("remote add Github ${githubRepo}")
           runGitCommand("push Github ${sourceBranch}")
         }
