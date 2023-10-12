@@ -48,7 +48,7 @@ try {
         }
 
         stage("[Foehn] : Deploy to npmjs") {
-          runYarnCommand("publish --tag ${newVersion}")
+          runNpmCommand("publish --tag ${newVersion}")
         }
     }
 } catch (e) {
@@ -61,6 +61,14 @@ def runYarnCommand(String command, String nodeVersion) {
     def sourceNodeResult = sourceNode(nodeVersion)
     def yarnCommand = "yarn ${command}"
     def cmd = sourceNodeResult ? sourceNodeResult + " && " + yarnCommand : yarnCommand
+    echo "Running: ${cmd}"
+    sh cmd
+}
+
+def runNpmCommand(String command, String nodeVersion) {
+    def sourceNodeResult = sourceNode(nodeVersion)
+    def npmCommand = "npm ${command}"
+    def cmd = sourceNodeResult ? sourceNodeResult + " && " + npmCommand : npmCommand
     echo "Running: ${cmd}"
     sh cmd
 }
