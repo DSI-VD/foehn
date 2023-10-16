@@ -5,6 +5,7 @@ try {
     def nodeVersion = params.NODE_VERSION
     def githubRepo = params.GITHUB_REPO
     def sourceBranch = params.SOURCE_BRANCH
+    def preRelease = params.PRE_RELEASE
 
     println "Releasing Foehn ${newVersion}, nodeVersion=${nodeVersion}"
 
@@ -21,14 +22,16 @@ try {
     }
 
     if (!sourceBranch) {
-            throw new Exception('Missing build parameter "SOURCE_BRANCH"')
-        }
+        throw new Exception('Missing build parameter "SOURCE_BRANCH"')
+    }
+
+    def branchName = sourceBranch.replace("origin/", "")
 
     node('chromium-headless') {
         stage("[Foehn] : Clone repository") {
-          echo "Cloning the repository with branch ${sourceBranch}"
+          echo "Cloning the repository with branch ${branchName}"
           checkout scm
-          gitCheckoutBranch(sourceBranch)
+          gitCheckoutBranch(branchName)
         }
 
         stage("[Foehn] : Install project") {
@@ -40,7 +43,7 @@ try {
           echo "Push to Github"
           runGitCommand("remote remove Github")
           runGitCommand("remote add Github ${githubRepo}")
-          runGitCommand("push Github ${sourceBranch}")
+          runGitCommand("push Github ${branchName}")
         }
 
         stage("[Foehn] : Push new version to Github") {
