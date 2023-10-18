@@ -623,3 +623,5 @@ $user-selects: all, auto, none;
 $print-page-size: a3;
 $print-body-min-width: map.get($grid-breakpoints, "lg");
 
+$accordion-button-active-bg: $vd-primary-lighter;
+
