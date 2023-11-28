@@ -1,15 +1,15 @@
 @Library('pee-library') _
 
 try {
-    def newVersion = params.NEW_VERSION
+    def gitVersion = params.GIT_VERSION
     def nodeVersion = params.NODE_VERSION
     def githubRepo = params.GITHUB_REPO
     def sourceBranch = params.SOURCE_BRANCH
-    def preRelease = params.PRE_RELEASE
+    def npmVersion = params.NPM_VERSION
 
-    println "Releasing Foehn ${newVersion}, nodeVersion=${nodeVersion}"
+    println "Releasing Foehn ${gitVersion}, nodeVersion=${nodeVersion}"
 
-    if (!newVersion) {
+    if (!gitVersion) {
         throw new Exception('Missing build parameter "NEW_VERSION"')
     }
 
@@ -50,11 +50,11 @@ try {
             }
 
             stage("[Foehn] : Push new version to Github") {
-              runGitCommand("push Github ${newVersion}")
+              runGitCommand("push Github ${gitVersion}")
             }
 
             stage("[Foehn] : Deploy to npmjs") {
-              runNpmCommand("publish --tag ${newVersion}")
+              runNpmCommand("publish --tag ${npmVersion}")
             }
         }
     }
