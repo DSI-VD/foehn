@@ -54,9 +54,8 @@ try {
             }
 
             stage("[Foehn] : Deploy to npmjs") {
-              runNpmCommand("config set registry https://registry.npmjs.org/")
-              runNpmCommand("build")
-              runNpmCommand("publish --tag ${npmVersion}")
+              runNpmCommand("config set registry https://registry.npmjs.org/", nodeVersion)
+              runNpmCommand("publish --tag ${npmVersion}", nodeVersion)
             }
         }
     }
@@ -76,7 +75,7 @@ def runYarnCommand(String command, String nodeVersion) {
 
 def runNpmCommand(String command, String nodeVersion) {
     def sourceNodeResult = sourceNode(nodeVersion)
-    def npmCommand = "npm ${command}"
+    def npmCommand = "npm run ${command}"
     def cmd = sourceNodeResult ? sourceNodeResult + " && " + npmCommand : npmCommand
     echo "Running: ${cmd}"
     sh cmd
