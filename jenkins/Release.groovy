@@ -25,33 +25,37 @@ try {
         throw new Exception('Missing build parameter "SOURCE_BRANCH"')
     }
 
+    def buildDir = "release-job"
     def branchName = sourceBranch.replace("origin/", "")
 
     node('chromium-headless') {
-        stage("[Foehn] : Clone repository") {
-          echo "Cloning the repository with branch ${branchName}"
-          checkout scm
-          gitCheckoutBranch(branchName)
-        }
+        sh "rm -Rf ${buildDir} ; mkdir -p ${buildDir}"
 
-        stage("[Foehn] : Install project") {
-          echo "Install project"
-          runYarnCommand("install", nodeVersion)
-        }
+        dir(buildDir) {
+            stage("[Foehn] : Clone repository") {
+              echo "Cloning the repository with branch ${branchName}"
+              checkout scm
+              gitCheckoutBranch(branchName)
+            }
 
-        stage("[Foehn] : Pushing to Github") {
-          echo "Push to Github"
-          runGitCommand("remote remove Github")
-          runGitCommand("remote add Github ${githubRepo}")
-          runGitCommand("push Github ${branchName}")
-        }
+            stage("[Foehn] : Install project") {
+              echo "Install project"
+              runYarnCommand("install", nodeVersion)
+            }
 
-        stage("[Foehn] : Push new version to Github") {
-          runGitCommand("push Github ${newVersion}")
-        }
+            stage("[Foehn] : Pushing to Github") {
+              echo "Push to Github"
+              runGitCommand("remote add Github ${githubRepo}")
+              runGitCommand("push Github ${branchName}")
+            }
 
-        stage("[Foehn] : Deploy to npmjs") {
-          runNpmCommand("publish --tag ${newVersion}")
+            stage("[Foehn] : Push new version to Github") {
+              runGitCommand("push Github ${newVersion}")
+            }
+
+            stage("[Foehn] : Deploy to npmjs") {
+              runNpmCommand("publish --tag ${newVersion}")
+            }
         }
     }
 } catch (e) {
