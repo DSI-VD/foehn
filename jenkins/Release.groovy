@@ -55,7 +55,7 @@ try {
 
             stage("[Foehn] : Deploy to npmjs") {
               runNpmCommand("config set registry https://registry.npmjs.org/", nodeVersion)
-              runNpmCommand("run publish --tag ${npmVersion}", nodeVersion)
+              runNpmCommand("publish --tag ${npmVersion}", nodeVersion)
             }
         }
     }
