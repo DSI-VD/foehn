@@ -22,3 +22,7 @@
   margin-top: 0;
   margin-bottom: $spacer;
 }
+
+section:not(:has(h2,h3,h4)) {
+  padding-top: 3rem !important;
+}
