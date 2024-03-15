@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [unreleased]
+## [2.0.0]
 
 ### Changed
 
@@ -16,10 +16,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Refer to Bootstrap documentation of migration from 4 to 5 to get all changes : https://getbootstrap.com/docs/5.0/migration/
 - domain-item-small had its structure changed, check styleguide to see the changes
+- vd-highlight now requires highlight-dark class to have the previous behaviour.
+- padding-left was added to ul and ol tags
+- section tags will have a padding-top if no h* tags as a child
+- tables have some added styling
+- nav-primary was slightly changed, may not be breaking in most cases but check in case
+- nav-link button now is bold by default
+- 
 
 ### Addedd
 
 - Stylelint preset for scss
+- vd-reel component added
+- Tertiary color added
+- Accordion component added
+- List of links component added
+- 
 
 ### Fixes
 
