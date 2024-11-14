@@ -398,6 +398,9 @@ $tooltip-margin: 0; // TODO: remove this in v6
 
 $form-feedback-tooltip-line-height: $line-height-base;
 
+// Form checkboxes
+$form-check-input-border: var(--#{$prefix}border-width) solid $vd-neutral-dark;
+
 // scss-docs-end tooltip-feedback-variables
 
 
