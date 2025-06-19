@@ -92,3 +92,20 @@ a.btn {
     color: $link-hover-color;
   }
 }
+
+.btn-more {
+  box-shadow: none;
+  text-transform: none;
+  .link-text {
+    text-decoration: underline;
+  }
+
+  .fas:before {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  &.collapsed .fas:before {
+    transform: rotate(-90deg);
+  }
+}
