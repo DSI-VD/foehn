@@ -31,3 +31,8 @@
     top: 1.9rem;
   }
 }
+
+.accordion-standalone .accordion-item:not(:first-of-type) {
+  border: var(--bs-accordion-border-width) solid
+  var(--bs-accordion-border-color);
+}
