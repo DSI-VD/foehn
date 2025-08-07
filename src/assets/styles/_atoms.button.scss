@@ -99,6 +99,14 @@ a.btn {
 
   .link-text {
     text-decoration: underline;
+
+    &-opened {
+      display: inline-block;
+    }
+
+    &-closed {
+      display: none;
+    }
   }
 
   .fas:before {
@@ -106,7 +114,19 @@ a.btn {
     transition: all 0.3s ease;
   }
 
-  &.collapsed .fas:before {
-    transform: rotate(-90deg);
+  &.collapsed {
+    .fas:before {
+      transform: rotate(-90deg);
+    }
+
+    .link-text {
+      &-opened {
+        display: none;
+      }
+
+      &-closed {
+        display: inline-block;
+      }
+    }
   }
 }
