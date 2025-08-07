@@ -1,5 +1,13 @@
 @charset 'UTF-8';
 
+@include media-breakpoint-down(md) {
+  .accordion-body .vd-highlight {
+    ol, ul {
+      padding-left: 20px;
+    }
+  }
+}
+
 .accordion-button {
   padding-right: 7em;
   cursor: pointer;
