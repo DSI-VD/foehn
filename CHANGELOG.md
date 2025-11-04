@@ -5,7 +5,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Next changes]
 
-## Added
+## [2.0.13]
+
+### Added
 
 - Class d-contents to add display: contents anywhere
 
