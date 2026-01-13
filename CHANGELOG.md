@@ -5,6 +5,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Next changes]
 
+## [2.0.14]
+
+### Changed
+
+- Upgrade font-awesome to v7.1
+- Update README for boostrap version (4 -> 5)
+
 ## [2.0.13]
 
 ### Added

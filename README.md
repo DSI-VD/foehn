@@ -5,7 +5,7 @@ Vaud](http://www.vd.ch/).
 
 [Take a look at the documentation](https://dsi-vd.github.io/foehn-design-system/).
 
-[Bootstrap 4](http://www.getbootstrap.com/) is used to build fœhn.
+[Bootstrap 5](http://www.getbootstrap.com/) is used to build fœhn.
 
 ## Changelog
 
