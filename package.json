@@ -31,7 +31,6 @@
     "npm": ">=3.10.3"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^7.1.0",
     "@popperjs/core": "^2.11.8",
     "autoprefixer": "^10.4.15",
     "bootstrap": "^5.3.1",

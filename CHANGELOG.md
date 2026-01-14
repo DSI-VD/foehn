@@ -5,6 +5,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Next changes]
 
+## [2.0.15]
+
+### Remove
+
+- Remove fontawesome, it's not used here anymore. The dependency is loaded directly inside the project
+
 ## [2.0.14]
 
 ### Changed
