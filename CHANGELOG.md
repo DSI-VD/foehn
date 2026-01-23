@@ -100,6 +100,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Lint errors in JS and SCSS files
+- Allow more recent versions of npm
 
 ## [1.8.4] - 2022-04-14
 
