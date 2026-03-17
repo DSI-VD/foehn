@@ -1,5 +1,3 @@
-@charset 'UTF-8';
-
 @include media-breakpoint-down(md) {
   .accordion-body .vd-highlight {
     ol, ul {
@@ -9,8 +7,8 @@
 }
 
 .accordion-button {
-  padding-right: 7em;
   cursor: pointer;
+  padding-right: 7em;
 
   &:after {
     position: absolute;
@@ -19,7 +17,7 @@
   }
 
   &:before {
-    Content: 'Ouvrir';
+    content: 'Ouvrir';
     float: right;
     position: absolute;
     right: 3em;

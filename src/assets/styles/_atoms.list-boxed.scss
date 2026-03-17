@@ -1,4 +1,3 @@
-@charset 'UTF-8';
 @use 'sass:math';
 @use 'sass:color';
 
@@ -8,10 +7,10 @@
   }
 
   .nav-link {
-    display: inline;
-    padding: (math.div($spacer, 5));
     background: $body-bg;
     color: $body-color;
+    display: inline;
+    padding: (math.div($spacer, 5));
     text-decoration: none;
     transition: background 0.2s;
 

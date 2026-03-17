@@ -1,5 +1,3 @@
-@charset 'UTF-8';
-
 .container-small {
   @include media-breakpoint-up(md) {
     width: 768px;

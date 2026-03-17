@@ -1,4 +1,3 @@
-@charset 'UTF-8';
 @use "sass:math";
 
 /**
@@ -19,8 +18,8 @@
 }
 
 .vd-header-application__title {
-  margin-bottom: math.div($spacer, 2);
   font-size: $h4-font-size;
+  margin-bottom: math.div($spacer, 2);
   text-transform: uppercase;
 
   @include media-breakpoint-up(md) {

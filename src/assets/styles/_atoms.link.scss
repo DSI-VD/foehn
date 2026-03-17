@@ -42,12 +42,12 @@ a {
  */
 @media print {
   p a {
-    word-wrap: break-word; /* [1] */
+    overflow-wrap: break-word; /* [1] */
 
     &:before,
     &:after {
-      font-size: 80%;
       color: $gray-500;
+      font-size: 80%;
     }
 
     &:before {
@@ -70,10 +70,10 @@ a {
   position: relative;
 
   &:after {
-    font: var(--fa-font-solid);
     content: "\f061";
+    font: var(--fa-font-solid);
     position: absolute;
-    top: 0.3rem;
     right: 0;
+    top: 0.3rem;
   }
 }

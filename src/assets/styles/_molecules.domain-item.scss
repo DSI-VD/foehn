@@ -1,4 +1,3 @@
-@charset 'UTF-8';
 @use 'sass:math';
 
 /**
@@ -21,8 +20,8 @@
 }
 
 .vd-domain-item__link {
-  margin-top: math.div($spacer, 4);
   color: $black;
+  margin-top: math.div($spacer, 4);
 }
 
 .vd-domain-item--big {

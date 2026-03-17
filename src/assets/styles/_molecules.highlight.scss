@@ -1,5 +1,3 @@
-@charset 'UTF-8';
-
 /**
  * Highlight visually content
  *
@@ -7,21 +5,21 @@
  * 2. Remove bottom margin of the last element
  */
 .highlight-dark {
-  --highlight-color: #{$white};
   --highlight-background-color: #{$dark};
+  --highlight-color: #{$white};
   --highlight-title-color: #{$vd-primary-lighter};
 }
 
 .highlight-light {
-  --highlight-color: #{$black};
   --highlight-background-color: #{$vd-neutral-light};
+  --highlight-color: #{$black};
   --highlight-title-color: #{$vd-primary-dark};
 }
 
 .vd-highlight {
-  padding: ($spacer * 2) ($spacer * 3);
   background: var(--highlight-background-color);
   color: var(--highlight-color);
+  padding: ($spacer * 2) ($spacer * 3);
 
   > h1,
   > .h1,
@@ -43,8 +41,8 @@
   h4, .h4,
   h5, .h5,
   h6, .h6 {
-    font-weight: 300;
     color: var(--highlight-title-color);
+    font-weight: 300;
   }
   /* stylelint-enable */
 

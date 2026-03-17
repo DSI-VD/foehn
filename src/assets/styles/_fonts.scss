@@ -1,15 +1,13 @@
-@charset 'UTF-8';
-
 /**
  * Fonts are downloaded here https://google-webfonts-helper.herokuapp.com/
  */
 
 /* roboto-slab-700 - latin */
 @font-face {
-  font-family: 'Roboto Slab';
   font-display: fallback;
-  font-weight: 700;
+  font-family: 'Roboto Slab';
   font-style: normal;
+  font-weight: 700;
   src: url('../fonts/roboto-slab-v7-latin-700.eot');
   src:
     local('Roboto Slab Bold'),
@@ -23,10 +21,10 @@
 
 /* roboto-slab-regular - latin */
 @font-face {
-  font-family: 'Roboto Slab';
   font-display: fallback;
-  font-weight: 400;
+  font-family: 'Roboto Slab';
   font-style: normal;
+  font-weight: 400;
   src: url('../fonts/roboto-slab-v7-latin-regular.eot');
   src:
     local('Roboto Slab Regular'),
@@ -40,10 +38,10 @@
 
 /* roboto-slab-300 - latin */
 @font-face {
-  font-family: 'Roboto Slab';
   font-display: fallback;
-  font-weight: 400;
+  font-family: 'Roboto Slab';
   font-style: normal;
+  font-weight: 400;
   src: url('../fonts/roboto-slab-v7-latin-300.eot');
   src:
     local('Roboto Slab Light'),
@@ -57,10 +55,10 @@
 
 /* open-sans-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
   font-display: fallback;
-  font-weight: 400;
+  font-family: 'Open Sans';
   font-style: normal;
+  font-weight: 400;
   src: url('../fonts/open-sans-v15-latin-regular.eot');
   src:
     local('Open Sans Regular'),
@@ -74,10 +72,10 @@
 
 /* open-sans-italic - latin */
 @font-face {
-  font-family: 'Open Sans';
   font-display: fallback;
-  font-weight: 400;
+  font-family: 'Open Sans';
   font-style: italic;
+  font-weight: 400;
   src: url('../fonts/open-sans-v15-latin-italic.eot');
   src:
     local('Open Sans Italic'),
@@ -91,10 +89,10 @@
 
 /* open-sans-700 - latin */
 @font-face {
-  font-family: 'Open Sans';
   font-display: fallback;
-  font-weight: 700;
+  font-family: 'Open Sans';
   font-style: normal;
+  font-weight: 700;
   src: url('../fonts/open-sans-v15-latin-700.eot');
   src:
     local('Open Sans Bold'),
@@ -108,10 +106,10 @@
 
 /* open-sans-700italic - latin */
 @font-face {
-  font-family: 'Open Sans';
   font-display: fallback;
-  font-weight: 700;
+  font-family: 'Open Sans';
   font-style: italic;
+  font-weight: 700;
   src: url('../fonts/open-sans-v15-latin-700italic.eot');
   src:
     local('Open Sans Bold Italic'),
@@ -131,8 +129,8 @@
  */
 
 body {
-  font-variant-ligatures: common-ligatures, contextual; /* [1] */
   font-feature-settings: "kern"; /* [1] */
   font-kerning: normal; /* [1] */
+  font-variant-ligatures: common-ligatures, contextual; /* [1] */
   text-rendering: optimizelegibility;
 }

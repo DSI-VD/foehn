@@ -1,13 +1,11 @@
-@charset "UTF-8";
-
 #login-form-collapse,
 #logout-form-collapse {
-  position: absolute;
-  z-index: 1000;
   background-color: $white;
   margin-left: -1rem !important;
   margin-right: 0 !important;
   margin-top: 6rem !important;
+  position: absolute;
+  z-index: 1000;
 }
 
 @include media-breakpoint-up(md) {
