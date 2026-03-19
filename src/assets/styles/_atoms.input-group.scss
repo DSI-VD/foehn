@@ -1,5 +1,3 @@
-@charset 'UTF-8';
-
 /**
  * 1. Overrides Bootstrap behavior: it's broken in IE if we don't specify
  *    shrink and basis value.
@@ -7,8 +5,8 @@
 
 .input-group-btn {
   > .btn {
+    box-shadow: none;
     flex: 1 1 auto; /* [1] */
     padding: ($input-btn-padding-y * 0.8) $input-btn-padding-x;
-    box-shadow: none;
   }
 }

@@ -1,18 +1,18 @@
-@charset 'UTF-8';
-
 .vd-nowcard {
   .item {
     background: #fff;
-    padding: 1em;
     border: 1px solid #e0e0e0;
+    padding: 1em;
   }
 
   a {
     text-decoration: none;
+
     &:hover,
     &:active {
       text-decoration: underline;
     }
+
     &:focus {
       background: none;
       outline: none;

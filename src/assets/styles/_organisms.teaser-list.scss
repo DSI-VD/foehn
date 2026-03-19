@@ -1,10 +1,10 @@
-@charset 'UTF-8';
-
 /**
  * A list that add some background on odd elements
  */
 
 .vd-teaser-list-striped {
+  margin-bottom: $spacer;
+
   .vd-teaser-list-striped-item:nth-of-type(odd) {
     background-color: $vd-neutral-lighter;
     border-bottom: 1px solid $vd-neutral-lighter;
@@ -14,6 +14,4 @@
       border-bottom: none !important;
     }
   }
-
-  margin-bottom: $spacer;
 }

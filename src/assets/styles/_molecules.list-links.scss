@@ -1,23 +1,21 @@
-@charset 'UTF-8';
-
 /**
  * square bullet list
  */
 .vd-list-links,
 .vd-menu-list-links {
-  padding-left: $spacer;
-  list-style-type: square;
   color: $black;
+  list-style-type: square;
   margin-bottom: ($spacer * 2);
+  padding-left: $spacer;
 
   li {
-    margin-bottom: $spacer;
     color: $primary;
+    margin-bottom: $spacer;
   }
 
   .nav-link {
-    padding: .5rem 1rem;
     color: $primary;
+    padding: 0.5rem 1rem;
   }
 }
 

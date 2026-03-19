@@ -1,5 +1,3 @@
-@charset 'UTF-8';
-
 .blockquote-footer {
   margin-top: 0;
 }
@@ -12,13 +10,13 @@ blockquote cite,
 }
 
 .vd-blockquote-bubble {
-  position: relative;
-  margin: ($spacer * 1.5) 0;
-  padding: ($spacer * 1.45) ($spacer * 1.8);
   background: $dark;
   border-radius: 10px;
   font-size: $font-size-base;
   line-height: 1.3;
+  margin: ($spacer * 1.5) 0;
+  padding: ($spacer * 1.45) ($spacer * 1.8);
+  position: relative;
 
   &:before {
     content: none;
@@ -27,11 +25,11 @@ blockquote cite,
   &:after {
     content: '';
     display: block;
-    position: absolute;
-    top: 100%;
-    right: 40px;
-    width: 41px;
     height: 18px;
+    position: absolute;
+    right: 40px;
+    top: 100%;
+    width: 41px;
 
     @include media-breakpoint-up(sm) { right: 80px; }
 
@@ -39,17 +37,17 @@ blockquote cite,
   }
 
   p {
-    font-style: italic;
-    font-family: $headings-font-family;
     color: $vd-primary-light;
+    font-family: $headings-font-family;
+    font-style: italic;
   }
 
   img {
+    bottom: $spacer * 0.8;
+    height: auto;
     position: absolute;
     right: -50px;
-    bottom: $spacer * 0.8;
     width: 80px;
-    height: auto;
 
     @include media-breakpoint-up(sm) {
       right: -75px;
@@ -58,28 +56,28 @@ blockquote cite,
   }
 
   .blockquote-footer {
-    font-size: $font-size-base;
     color: $white;
+    font-size: $font-size-base;
   }
 }
 
 blockquote,
 .blockquote {
-  position: relative;
-  padding-left: $spacer * 4;
-  font-size: $font-size-lg;
   color: $gray-500;
+  font-size: $font-size-lg;
+  padding-left: $spacer * 4;
+  position: relative;
 
   &:before {
+    color: $link-color;
     content: '“';
-    position: absolute;
-    top: 0;
-    left: 0;
     font-family: $font-family-serif;
     font-size: 3rem;
-    line-height: 1.3;
     font-weight: 700;
-    color: $link-color;
+    left: 0;
+    line-height: 1.3;
+    position: absolute;
+    top: 0;
   }
 
   p:last-of-type {
@@ -91,15 +89,15 @@ blockquote,
  * Apply the bootstrap style on native tags
  */
 blockquote cite {
+  color: $gray-500;
   display: block;
   font-size: 80%; // back to default font-size
-  color: $gray-500;
 }
 
 .blockquote-reverse {
   &:after {
-    right: auto;
     left: 40px;
+    right: auto;
   }
 }
 
@@ -108,8 +106,8 @@ blockquote cite {
   padding-right: $spacer * 2;
 
   @include media-breakpoint-up(sm) {
-    margin-right: $spacer * 5;
     margin-left: $spacer;
+    margin-right: $spacer * 5;
     padding-right: $spacer * 4.5;
   }
 }

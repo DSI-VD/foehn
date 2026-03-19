@@ -9,8 +9,8 @@
  * Style figure caption
  */
 .figure-caption {
-  font-style: italic;
   color: $gray-500;
+  font-style: italic;
   text-align: left;
 }
 
@@ -18,11 +18,11 @@
  * Style for credits inside figcaption
  */
 .vd-figure-credits {
+  color: $body-color;
   display: block;
   font-size: 80%;
-  font-weight: 500;
   font-style: normal;
-  color: $body-color;
+  font-weight: 500;
 
   &:before {
     content: '/\0000a0';

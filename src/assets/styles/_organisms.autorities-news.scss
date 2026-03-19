@@ -1,16 +1,13 @@
-@charset 'UTF-8';
-
 .vd-reel {
-  display: flex;
   block-size: auto;
-  overflow-x: auto;
-  overflow-y: hidden;
+  display: flex;
+  overflow: auto hidden;
 }
 
 .vd-reel > * {
   flex: 0 0 auto;
-  width: 100%;
   max-width: 400px;
+  width: 100%;
 }
 
 .vd-reel > img {
@@ -28,8 +25,8 @@
 }
 
 .vd-sticker-title {
-  z-index: 55;
-  top: -50px;
   left: -10px;
+  top: -50px;
   transform: rotate(-5deg);
+  z-index: 55;
 }

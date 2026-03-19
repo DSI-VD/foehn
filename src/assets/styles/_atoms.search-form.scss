@@ -1,5 +1,3 @@
-@charset 'UTF-8';
-
 /**
  * regular search form
  *
@@ -41,24 +39,24 @@
 }
 
 .vd-search-form {
-  display: flex;
-  border-top: 4px solid $black;
   border-bottom: 4px solid $black;
+  border-top: 4px solid $black;
+  display: flex;
   margin-bottom: $spacer;
 
   .form-control {
-    padding-top: 0;
+    border-color: transparent;
     padding-bottom: 0;
     padding-left: 0;
-    border-color: transparent;
+    padding-top: 0;
     transition:
       padding 0.11s ease-in,
       border 0.11s;
 
     &:focus {
-      padding-left: $input-btn-padding-y;
       border: 2px solid $vd-focus;
       box-shadow: none;
+      padding-left: $input-btn-padding-y;
     }
   }
 
@@ -67,8 +65,8 @@
   }
 
   .input-group-btn > .btn {
-    padding: 0.365rem 0.8rem;
     background: $vd-primary-dark;
+    padding: 0.365rem 0.8rem;
 
     &,
     .svg-inline--fa {
