@@ -5,6 +5,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Next changes]
 
+## [2.1.0]
+
+### Changed
+
+- Upgrading all dependencies
+- Use our team coding convention
+- Adapt gulpfile and scripts
+
 ## [2.0.15]
 
 ### Remove

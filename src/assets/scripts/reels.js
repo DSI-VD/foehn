@@ -1,6 +1,3 @@
-/**
- * Code related to reels
- */
 document.addEventListener('DOMContentLoaded', () => {
     const reels = [...document.querySelectorAll('.vd-reel')];
     const toggleOverflowClass = element => {
