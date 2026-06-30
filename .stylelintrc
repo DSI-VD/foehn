@@ -29,6 +29,7 @@
       }
     ],
     "color-function-notation": "legacy",
+    "max-nesting-depth": 3,
     "media-feature-name-no-vendor-prefix" : true,
     "order/properties-order": null,
     "order/properties-alphabetical-order": true,

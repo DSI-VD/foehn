@@ -1,12 +1,10 @@
-/**
- * Code related to collapses
- */
 document.addEventListener('DOMContentLoaded', () => {
     const loginCollapse = new bootstrap.Collapse('#login-form-collapse', {
         toggle: false
     });
+
     document.addEventListener('click', event => {
-        if (!document.querySelector('#login-form-collapse').contains(event.target)) {
+        if (document.querySelector('#login-form-collapse').contains(event.target) === false) {
             loginCollapse.hide();
         }
     });
