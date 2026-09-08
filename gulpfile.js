@@ -19,7 +19,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const minify = composer(uglifyjs, console);
-const processors = [autoprefixer, cssnano];
+const processors = [
+    autoprefixer,
+    cssnano({
+        preset: ['default', {
+            svgo: false
+        }]
+    })
+];
 
 const PATHS = {
     build: path.join(__dirname, '/dist'),
@@ -48,9 +55,7 @@ const styles = () => src([PATHS.src + '/assets/styles/main.scss'])
     .pipe(dest(PATHS.build + '/assets/styles'));
 
 const scriptsVendors = () => src([
-    'node_modules/jquery/dist/jquery.slim.min.*',
-    'node_modules/popper.js/dist/umd/popper.min.*',
-    'node_modules/bootstrap/dist/js/bootstrap.min.*'
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.min.*'
 ])
     .pipe(dest(PATHS.build + '/assets/scripts/'));
 
@@ -64,10 +69,16 @@ const scriptsFooter = () => src([PATHS.src + '/assets/scripts/**.js'])
 const svg = () => src(PATHS.src + '/assets/svg/**/*.svg')
     .pipe(dest(PATHS.build + '/assets/svg'));
 
-const images = () => src(PATHS.src + '/assets/img/**/*.*')
+const images = () => src(
+    PATHS.src + '/assets/img/**/*.*',
+    {encoding: false}
+)
     .pipe(dest(PATHS.build + '/assets/img'));
 
-const fonts = () => src(PATHS.src + '/assets/fonts/**/*.*')
+const fonts = () => src(
+    PATHS.src + '/assets/fonts/**/*.*',
+    {encoding: false}
+)
     .pipe(dest(PATHS.build + '/assets/fonts'));
 
 const manifests = () => src(PATHS.src + '/assets/manifest/**/*.*')
