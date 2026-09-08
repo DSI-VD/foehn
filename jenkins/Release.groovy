@@ -10,7 +10,7 @@ try {
     println "Releasing Foehn ${gitVersion}, nodeVersion=${nodeVersion}"
 
     if (!gitVersion) {
-        throw new Exception('Missing build parameter "NEW_VERSION"')
+        throw new Exception('Missing build parameter "GIT_VERSION"')
     }
 
     if (!nodeVersion) {
