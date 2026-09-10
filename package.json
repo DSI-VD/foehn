@@ -1,6 +1,6 @@
 {
   "name": "@dsivd/foehn",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "DSI VD <info.dsi@vd.ch>",
   "homepage": "https://dsi-vd.github.io/foehn/",
   "type": "module",
@@ -36,9 +36,6 @@
     "lint:js": "xo",
     "prepublishOnly": "gulp build",
     "publish-version": "npm run build && npm publish --tag latest"
-  },
-  "engines": {
-    "node": ">=18"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
